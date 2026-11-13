@@ -33,7 +33,7 @@ python run.py --seed spread-1
 python -m unittest discover -s tests -v
 ```
 
-The default strategy is deliberately conservative: decline unparsed notes, trade-ins and private addresses; require local driver supply; cap unresolved orders; quote enough to cover fees and margin. This is a fallback and experimental control, not our finished competitive policy.
+The default strategy is config F (docs/experiments/2026-11-13-capacity-sweep.md): accept notes that an interim keyword filter (note_filter.py) finds harmless and decline the rest; decline trade-ins and private addresses; require at least one local driver; no open-order cap; quote enough to cover fees and margin. Delivery capacity is now the binding constraint: the worst practice week was 92.5% on time. A dynamic capacity guard and the full note parser (#3) are next.
 
 ## Experiments
 

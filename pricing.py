@@ -1,14 +1,17 @@
 """Order selection and quotes. Pure policy, no network calls or credentials."""
 from dataclasses import dataclass, asdict
+from note_filter import is_safe_note
 
 @dataclass
 class Policy:
+    # Config F (docs/experiments/2026-11-13-capacity-sweep.md): the open-order cap of 16
+    # was the binding limit; delivery capacity is now the constraint to guard.
     price_multiplier: float = 1.45
     fee_multiplier: float = 1.25
     max_drive_minutes: int = 300
-    min_local_drivers: int = 2
-    max_open_orders: int = 16
-    allow_notes: bool = False
+    min_local_drivers: int = 1
+    max_open_orders: int = 10_000
+    allow_notes: bool = False  # True ignores notes entirely; False still accepts safe notes
     margin_floor_cents: int = 1000
 
     def to_dict(self):
@@ -17,8 +20,8 @@ class Policy:
 def prices_for(request, now, roads, drivers, orders, policy):
     options = request['options']
     decline = {options[0]['kind']: 100_000_000}
-    # Start conservatively. Note parsing is a separate team's module to develop.
-    if request.get('note') and not policy.allow_notes:
+    # Decline notes that may change the work until the full parser (#3) is integrated.
+    if not policy.allow_notes and not is_safe_note(request.get('note')):
         return decline
     if len(request['legs']) != 1:
         return decline
