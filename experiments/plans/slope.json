@@ -1,0 +1,28 @@
+[
+  {
+    "label": "adaptive-long-queue-slope8",
+    "seed": "holdout-2",
+    "settings": {
+      "adaptive": true,
+      "margin": 0.1,
+      "priceFloor": 0,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "maxKm": 550,
+      "demandSlope": 8
+    }
+  },
+  {
+    "label": "adaptive-long-queue-slope8",
+    "seed": "holdout-3",
+    "settings": {
+      "adaptive": true,
+      "margin": 0.1,
+      "priceFloor": 0,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "maxKm": 550,
+      "demandSlope": 8
+    }
+  }
+]

@@ -1,0 +1,200 @@
+[
+  {
+    "label": "reroute-regression",
+    "seed": "formal-unseen-20261113-08",
+    "settings": {
+      "price": 1.42,
+      "fee": 1.05,
+      "margin": 0.1,
+      "capacity": 0.18,
+      "maxKm": 550,
+      "minDrivers": 12,
+      "notes": true,
+      "adaptive": true,
+      "earlyOffers": false,
+      "safetySlack": false,
+      "backlog": 0.04,
+      "priceFloor": 0,
+      "costRatio": 1.15,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "demandSlope": 14
+    }
+  },
+  {
+    "label": "validation-final",
+    "seed": "formal-unseen-20261113-09",
+    "settings": {
+      "price": 1.42,
+      "fee": 1.05,
+      "margin": 0.1,
+      "capacity": 0.18,
+      "maxKm": 550,
+      "minDrivers": 12,
+      "notes": true,
+      "adaptive": true,
+      "earlyOffers": false,
+      "safetySlack": false,
+      "backlog": 0.04,
+      "priceFloor": 0,
+      "costRatio": 1.15,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "demandSlope": 14
+    }
+  },
+  {
+    "label": "validation-final",
+    "seed": "formal-unseen-20261113-10",
+    "settings": {
+      "price": 1.42,
+      "fee": 1.05,
+      "margin": 0.1,
+      "capacity": 0.18,
+      "maxKm": 550,
+      "minDrivers": 12,
+      "notes": true,
+      "adaptive": true,
+      "earlyOffers": false,
+      "safetySlack": false,
+      "backlog": 0.04,
+      "priceFloor": 0,
+      "costRatio": 1.15,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "demandSlope": 14
+    }
+  },
+  {
+    "label": "validation-final",
+    "seed": "formal-unseen-20261113-11",
+    "settings": {
+      "price": 1.42,
+      "fee": 1.05,
+      "margin": 0.1,
+      "capacity": 0.18,
+      "maxKm": 550,
+      "minDrivers": 12,
+      "notes": true,
+      "adaptive": true,
+      "earlyOffers": false,
+      "safetySlack": false,
+      "backlog": 0.04,
+      "priceFloor": 0,
+      "costRatio": 1.15,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "demandSlope": 14
+    }
+  },
+  {
+    "label": "validation-final",
+    "seed": "formal-unseen-20261113-12",
+    "settings": {
+      "price": 1.42,
+      "fee": 1.05,
+      "margin": 0.1,
+      "capacity": 0.18,
+      "maxKm": 550,
+      "minDrivers": 12,
+      "notes": true,
+      "adaptive": true,
+      "earlyOffers": false,
+      "safetySlack": false,
+      "backlog": 0.04,
+      "priceFloor": 0,
+      "costRatio": 1.15,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "demandSlope": 14
+    }
+  },
+  {
+    "label": "validation-final",
+    "seed": "formal-unseen-20261113-13",
+    "settings": {
+      "price": 1.42,
+      "fee": 1.05,
+      "margin": 0.1,
+      "capacity": 0.18,
+      "maxKm": 550,
+      "minDrivers": 12,
+      "notes": true,
+      "adaptive": true,
+      "earlyOffers": false,
+      "safetySlack": false,
+      "backlog": 0.04,
+      "priceFloor": 0,
+      "costRatio": 1.15,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "demandSlope": 14
+    }
+  },
+  {
+    "label": "validation-final",
+    "seed": "formal-unseen-20261113-14",
+    "settings": {
+      "price": 1.42,
+      "fee": 1.05,
+      "margin": 0.1,
+      "capacity": 0.18,
+      "maxKm": 550,
+      "minDrivers": 12,
+      "notes": true,
+      "adaptive": true,
+      "earlyOffers": false,
+      "safetySlack": false,
+      "backlog": 0.04,
+      "priceFloor": 0,
+      "costRatio": 1.15,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "demandSlope": 14
+    }
+  },
+  {
+    "label": "validation-final",
+    "seed": "formal-unseen-20261113-15",
+    "settings": {
+      "price": 1.42,
+      "fee": 1.05,
+      "margin": 0.1,
+      "capacity": 0.18,
+      "maxKm": 550,
+      "minDrivers": 12,
+      "notes": true,
+      "adaptive": true,
+      "earlyOffers": false,
+      "safetySlack": false,
+      "backlog": 0.04,
+      "priceFloor": 0,
+      "costRatio": 1.15,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "demandSlope": 14
+    }
+  },
+  {
+    "label": "validation-final",
+    "seed": "formal-unseen-20261113-16",
+    "settings": {
+      "price": 1.42,
+      "fee": 1.05,
+      "margin": 0.1,
+      "capacity": 0.18,
+      "maxKm": 550,
+      "minDrivers": 12,
+      "notes": true,
+      "adaptive": true,
+      "earlyOffers": false,
+      "safetySlack": false,
+      "backlog": 0.04,
+      "priceFloor": 0,
+      "costRatio": 1.15,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "demandSlope": 14
+    }
+  }
+]

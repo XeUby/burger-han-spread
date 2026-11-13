@@ -1,0 +1,14 @@
+{
+  "purpose": "Fresh final validation after correcting route-change fees; round1 is development evidence for this correction",
+  "candidateLabel": "validation-final",
+  "seeds": [
+    "formal-unseen-20261113-09",
+    "formal-unseen-20261113-10",
+    "formal-unseen-20261113-11",
+    "formal-unseen-20261113-12",
+    "formal-unseen-20261113-13",
+    "formal-unseen-20261113-14",
+    "formal-unseen-20261113-15",
+    "formal-unseen-20261113-16"
+  ]
+}

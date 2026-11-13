@@ -1,0 +1,19 @@
+[
+  {
+    "label": "adaptive",
+    "seed": "holdout-3",
+    "settings": {
+      "adaptive": true,
+      "margin": 0.1,
+      "priceFloor": 0,
+      "trustStep": 0.01
+    }
+  },
+  {
+    "label": "early-offers",
+    "seed": "holdout-3",
+    "settings": {
+      "earlyOffers": true
+    }
+  }
+]

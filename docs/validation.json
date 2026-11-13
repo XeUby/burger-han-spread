@@ -1,0 +1,350 @@
+{
+  "level": 8,
+  "sourceSha256": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+  "validationRuns": [
+    {
+      "worldId": "w1937eaf885387948933b",
+      "seed": "holdout-3",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.28,
+        "capacity": 0.18,
+        "maxKm": 400,
+        "minDrivers": 12,
+        "notes": true
+      },
+      "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+      "marginCents": 259197,
+      "revenueCents": 695811,
+      "marginShare": 0.3725106386648098,
+      "wonOrders": 57,
+      "onTimeShare": 1,
+      "undeliveredShare": 0,
+      "ranked": true
+    },
+    {
+      "worldId": "w65288bae5e4a8c3d8f5e",
+      "seed": "holdout-5",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.28,
+        "capacity": 0.18,
+        "maxKm": 400,
+        "minDrivers": 12,
+        "notes": true
+      },
+      "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+      "marginCents": 652731,
+      "revenueCents": 1748100,
+      "marginShare": 0.3733945426463017,
+      "wonOrders": 198,
+      "onTimeShare": 0.9949494949494949,
+      "undeliveredShare": 0,
+      "ranked": true
+    },
+    {
+      "worldId": "w7ae145e3ea74526ee4bf",
+      "seed": "holdout-2",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.28,
+        "capacity": 0.18,
+        "maxKm": 400,
+        "minDrivers": 12,
+        "notes": true
+      },
+      "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+      "marginCents": 670696,
+      "revenueCents": 1909423,
+      "marginShare": 0.3512558505894189,
+      "wonOrders": 214,
+      "onTimeShare": 0.9766355140186916,
+      "undeliveredShare": 0,
+      "ranked": true
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "ranked": 3,
+    "totalMarginCents": 1582624,
+    "minimumOnTimeShare": 0.9766355140186916
+  },
+  "developmentRuns": [
+    {
+      "worldId": "w8405cf6edccd772072d8",
+      "seed": "spread-1",
+      "settings": {
+        "price": 1.5,
+        "fee": 1.05,
+        "margin": 0.32,
+        "capacity": 0.15,
+        "maxKm": 350,
+        "minDrivers": 8,
+        "notes": true
+      },
+      "marginCents": 468835,
+      "revenueCents": 1124105,
+      "marginShare": 0.41707402778210223,
+      "wonOrders": 146,
+      "onTimeShare": 0.9863013698630136,
+      "undeliveredShare": 0,
+      "ranked": true
+    },
+    {
+      "worldId": "w663faa84f482d819d856",
+      "seed": "validate-1",
+      "settings": {
+        "price": 1.5,
+        "fee": 1.05,
+        "margin": 0.32,
+        "capacity": 0.15,
+        "maxKm": 350,
+        "minDrivers": 8,
+        "notes": true
+      },
+      "marginCents": 475061,
+      "revenueCents": 1112375,
+      "marginShare": 0.4270691088886392,
+      "wonOrders": 125,
+      "onTimeShare": 1,
+      "undeliveredShare": 0,
+      "ranked": true
+    },
+    {
+      "worldId": "wd010ab552268190f208a",
+      "seed": "validate-2",
+      "settings": {
+        "price": 1.5,
+        "fee": 1.05,
+        "margin": 0.32,
+        "capacity": 0.15,
+        "maxKm": 350,
+        "minDrivers": 8,
+        "notes": true
+      },
+      "marginCents": 615764,
+      "revenueCents": 1562029,
+      "marginShare": 0.3942077899962165,
+      "wonOrders": 165,
+      "onTimeShare": 0.9878787878787879,
+      "undeliveredShare": 0,
+      "ranked": true
+    },
+    {
+      "worldId": "we43e501acc2d915aca99",
+      "seed": "validate-1",
+      "settings": {
+        "price": 1.35,
+        "fee": 0.95,
+        "margin": 0.25,
+        "capacity": 0.3,
+        "maxKm": 500,
+        "minDrivers": 5,
+        "notes": true
+      },
+      "marginCents": 893104,
+      "revenueCents": 2448508,
+      "marginShare": 0.3647543728670684,
+      "wonOrders": 277,
+      "onTimeShare": 0.9855595667870036,
+      "undeliveredShare": 0,
+      "ranked": true
+    },
+    {
+      "worldId": "waa03ec4a9d305821e0e1",
+      "seed": "spread-1",
+      "settings": {
+        "price": 1.35,
+        "fee": 0.95,
+        "margin": 0.25,
+        "capacity": 0.3,
+        "maxKm": 500,
+        "minDrivers": 5,
+        "notes": true
+      },
+      "marginCents": 783414,
+      "revenueCents": 2459367,
+      "marginShare": 0.31854294214730866,
+      "wonOrders": 278,
+      "onTimeShare": 0.9460431654676259,
+      "undeliveredShare": 0,
+      "ranked": true
+    },
+    {
+      "worldId": "wd219768ea907dfeb7b60",
+      "seed": "holdout-1",
+      "settings": {
+        "price": 1.35,
+        "fee": 0.95,
+        "margin": 0.25,
+        "capacity": 0.3,
+        "maxKm": 500,
+        "minDrivers": 8,
+        "notes": true
+      },
+      "revision": "7ae30fd9952a2d8735f4d0a0685953ba89a7904997bdc458f8c50b604bc43225",
+      "marginCents": 439360,
+      "revenueCents": 1141149,
+      "marginShare": 0.38501545372252,
+      "wonOrders": 137,
+      "onTimeShare": 1,
+      "undeliveredShare": 0,
+      "ranked": true
+    },
+    {
+      "worldId": "wa239e7bccef696cf0214",
+      "seed": "spread-1",
+      "settings": {
+        "price": 1.35,
+        "fee": 0.95,
+        "margin": 0.25,
+        "capacity": 0.3,
+        "maxKm": 500,
+        "minDrivers": 8,
+        "notes": true
+      },
+      "revision": "7ae30fd9952a2d8735f4d0a0685953ba89a7904997bdc458f8c50b604bc43225",
+      "marginCents": 788326,
+      "revenueCents": 2347175,
+      "marginShare": 0.3358616208846805,
+      "wonOrders": 270,
+      "onTimeShare": 0.9666666666666667,
+      "undeliveredShare": 0,
+      "ranked": true
+    },
+    {
+      "worldId": "w23dc3ed7976dc481981f",
+      "seed": "holdout-2",
+      "settings": {
+        "price": 1.35,
+        "fee": 0.95,
+        "margin": 0.25,
+        "capacity": 0.3,
+        "maxKm": 500,
+        "minDrivers": 8,
+        "notes": true
+      },
+      "revision": "7ae30fd9952a2d8735f4d0a0685953ba89a7904997bdc458f8c50b604bc43225",
+      "marginCents": 693785,
+      "revenueCents": 2722909,
+      "marginShare": 0.2547955146499571,
+      "wonOrders": 298,
+      "onTimeShare": 0.9093959731543624,
+      "undeliveredShare": 0,
+      "ranked": true
+    },
+    {
+      "worldId": "w815d24fedae64f9f5cf4",
+      "seed": "holdout-3",
+      "settings": {
+        "price": 1.35,
+        "fee": 0.95,
+        "margin": 0.25,
+        "capacity": 0.3,
+        "maxKm": 500,
+        "minDrivers": 8,
+        "notes": true
+      },
+      "revision": "79d59866cb58a529346a964c3d4917f2d529d1f4aafaf42e4eaa439a136a3991",
+      "marginCents": 556393,
+      "revenueCents": 1590888,
+      "marginShare": 0.3497373793755437,
+      "wonOrders": 133,
+      "onTimeShare": 0.9849624060150376,
+      "undeliveredShare": 0,
+      "ranked": true
+    },
+    {
+      "worldId": "w27f9f6d54106931d0f1d",
+      "seed": "holdout-4",
+      "settings": {
+        "price": 1.35,
+        "fee": 0.95,
+        "margin": 0.25,
+        "capacity": 0.3,
+        "maxKm": 500,
+        "minDrivers": 8,
+        "notes": true
+      },
+      "revision": "79d59866cb58a529346a964c3d4917f2d529d1f4aafaf42e4eaa439a136a3991",
+      "marginCents": 730272,
+      "revenueCents": 2037922,
+      "marginShare": 0.3583414870637836,
+      "wonOrders": 218,
+      "onTimeShare": 0.9908256880733946,
+      "undeliveredShare": 0,
+      "ranked": true
+    },
+    {
+      "worldId": "w1937eaf885387948933b",
+      "seed": "holdout-3",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.28,
+        "capacity": 0.18,
+        "maxKm": 400,
+        "minDrivers": 12,
+        "notes": true
+      },
+      "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+      "marginCents": 259197,
+      "revenueCents": 695811,
+      "marginShare": 0.3725106386648098,
+      "wonOrders": 57,
+      "onTimeShare": 1,
+      "undeliveredShare": 0,
+      "ranked": true
+    },
+    {
+      "worldId": "w65288bae5e4a8c3d8f5e",
+      "seed": "holdout-5",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.28,
+        "capacity": 0.18,
+        "maxKm": 400,
+        "minDrivers": 12,
+        "notes": true
+      },
+      "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+      "marginCents": 652731,
+      "revenueCents": 1748100,
+      "marginShare": 0.3733945426463017,
+      "wonOrders": 198,
+      "onTimeShare": 0.9949494949494949,
+      "undeliveredShare": 0,
+      "ranked": true
+    },
+    {
+      "worldId": "w7ae145e3ea74526ee4bf",
+      "seed": "holdout-2",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.28,
+        "capacity": 0.18,
+        "maxKm": 400,
+        "minDrivers": 12,
+        "notes": true
+      },
+      "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+      "marginCents": 670696,
+      "revenueCents": 1909423,
+      "marginShare": 0.3512558505894189,
+      "wonOrders": 214,
+      "onTimeShare": 0.9766355140186916,
+      "undeliveredShare": 0,
+      "ranked": true
+    }
+  ],
+  "limitations": [
+    "Three full weeks tested on the final source revision; thirteen completed development runs across policy variants.",
+    "The live runner has a local integration test; no real test final has been played.",
+    "Official ranking attempts and Junction submission have not been made."
+  ]
+}

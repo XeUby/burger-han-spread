@@ -1,0 +1,30 @@
+{
+  "selectedAt": "2026-11-13T21:57:40.362Z",
+  "policy": "adaptive-long-queue",
+  "settings": {
+    "price": 1.42,
+    "fee": 1.05,
+    "margin": 0.1,
+    "capacity": 0.18,
+    "maxKm": 550,
+    "minDrivers": 12,
+    "notes": true,
+    "adaptive": true,
+    "earlyOffers": false,
+    "safetySlack": false,
+    "backlog": 0.04,
+    "priceFloor": 0,
+    "costRatio": 1.15,
+    "trustStep": 0.01,
+    "sameDayBacklog": 4,
+    "demandSlope": 14
+  },
+  "developmentSeeds": [
+    "holdout-2",
+    "holdout-3",
+    "spread-1",
+    "validate-1",
+    "holdout-4"
+  ],
+  "selection": "Selected before inspecting reserved-week outcomes: substantial gains on all five development seeds and minimum on-time share above 96%. Slope8 showed only a small mixed gain on two seeds; retain slope14 with five-week confirmation. Pickup slack was worse on the difficult week; early offers did not materially improve profit. Holdout results will not be used for tuning this selected candidate."
+}

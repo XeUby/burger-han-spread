@@ -1,0 +1,6 @@
+[
+  { "label": "adaptive-example", "seed": "new-study-1", "settings": {} },
+  { "label": "fixed-price-example", "seed": "new-study-1", "settings": { "adaptive": false } },
+  { "label": "adaptive-example", "seed": "new-study-2", "settings": {} },
+  { "label": "fixed-price-example", "seed": "new-study-2", "settings": { "adaptive": false } }
+]

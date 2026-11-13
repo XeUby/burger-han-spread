@@ -1,0 +1,847 @@
+{
+  "notesSha256": "84b9e4d932f6aa8610a5a3a611cf325cfb086c3ebbdb93f6f97b0eb4f4cdee83",
+  "limitation": "Supply rosters were not saved. Candidates satisfy note, geometry and time gates only; minDrivers, dynamic backlog and actual win probability still need live evaluation. Historical accepted long routes passed the old >=8 weighted-driver gate, not today's >=12 gate. No historical dispatched route exceeded 500 km.",
+  "finalLongRequests": {
+    "requests": 266,
+    "originalNotes": 177,
+    "expandedNotes": 202,
+    "premium": 9,
+    "manual": 1
+  },
+  "timeFeasibleCandidates": {
+    "requests": 199,
+    "originalNotes": 174,
+    "expandedNotes": 199,
+    "premium": 8,
+    "manual": 1
+  },
+  "byDistance": {
+    "500": {
+      "requests": 103,
+      "originalNotes": 91,
+      "expandedNotes": 103,
+      "premium": 6,
+      "manual": 1
+    },
+    "550": {
+      "requests": 44,
+      "originalNotes": 41,
+      "expandedNotes": 44,
+      "premium": 0,
+      "manual": 0
+    },
+    "600": {
+      "requests": 52,
+      "originalNotes": 42,
+      "expandedNotes": 52,
+      "premium": 2,
+      "manual": 0
+    }
+  },
+  "byPickup": {
+    "espoo": {
+      "requests": 12,
+      "originalNotes": 10,
+      "expandedNotes": 12,
+      "premium": 0,
+      "manual": 0
+    },
+    "helsinki": {
+      "requests": 11,
+      "originalNotes": 9,
+      "expandedNotes": 11,
+      "premium": 0,
+      "manual": 0
+    },
+    "hyvinkaa": {
+      "requests": 20,
+      "originalNotes": 18,
+      "expandedNotes": 20,
+      "premium": 3,
+      "manual": 0
+    },
+    "joensuu": {
+      "requests": 6,
+      "originalNotes": 5,
+      "expandedNotes": 6,
+      "premium": 0,
+      "manual": 1
+    },
+    "jyvaskyla": {
+      "requests": 2,
+      "originalNotes": 1,
+      "expandedNotes": 2,
+      "premium": 0,
+      "manual": 0
+    },
+    "kajaani": {
+      "requests": 2,
+      "originalNotes": 2,
+      "expandedNotes": 2,
+      "premium": 0,
+      "manual": 0
+    },
+    "kokkola": {
+      "requests": 2,
+      "originalNotes": 2,
+      "expandedNotes": 2,
+      "premium": 0,
+      "manual": 0
+    },
+    "kouvola": {
+      "requests": 3,
+      "originalNotes": 1,
+      "expandedNotes": 3,
+      "premium": 0,
+      "manual": 0
+    },
+    "kuopio": {
+      "requests": 7,
+      "originalNotes": 6,
+      "expandedNotes": 7,
+      "premium": 0,
+      "manual": 0
+    },
+    "lahti": {
+      "requests": 4,
+      "originalNotes": 4,
+      "expandedNotes": 4,
+      "premium": 0,
+      "manual": 0
+    },
+    "lappeenranta": {
+      "requests": 3,
+      "originalNotes": 2,
+      "expandedNotes": 3,
+      "premium": 0,
+      "manual": 0
+    },
+    "lempaala": {
+      "requests": 6,
+      "originalNotes": 6,
+      "expandedNotes": 6,
+      "premium": 0,
+      "manual": 0
+    },
+    "mikkeli": {
+      "requests": 3,
+      "originalNotes": 1,
+      "expandedNotes": 3,
+      "premium": 1,
+      "manual": 0
+    },
+    "oulu": {
+      "requests": 40,
+      "originalNotes": 35,
+      "expandedNotes": 40,
+      "premium": 2,
+      "manual": 0
+    },
+    "pori": {
+      "requests": 1,
+      "originalNotes": 1,
+      "expandedNotes": 1,
+      "premium": 0,
+      "manual": 0
+    },
+    "porvoo": {
+      "requests": 6,
+      "originalNotes": 6,
+      "expandedNotes": 6,
+      "premium": 0,
+      "manual": 0
+    },
+    "raisio": {
+      "requests": 7,
+      "originalNotes": 7,
+      "expandedNotes": 7,
+      "premium": 0,
+      "manual": 0
+    },
+    "rauma": {
+      "requests": 1,
+      "originalNotes": 0,
+      "expandedNotes": 1,
+      "premium": 0,
+      "manual": 0
+    },
+    "rovaniemi": {
+      "requests": 6,
+      "originalNotes": 5,
+      "expandedNotes": 6,
+      "premium": 0,
+      "manual": 0
+    },
+    "tampere": {
+      "requests": 11,
+      "originalNotes": 10,
+      "expandedNotes": 11,
+      "premium": 1,
+      "manual": 0
+    },
+    "turku": {
+      "requests": 4,
+      "originalNotes": 3,
+      "expandedNotes": 4,
+      "premium": 0,
+      "manual": 0
+    },
+    "vaasa": {
+      "requests": 10,
+      "originalNotes": 10,
+      "expandedNotes": 10,
+      "premium": 0,
+      "manual": 0
+    },
+    "vantaa": {
+      "requests": 19,
+      "originalNotes": 18,
+      "expandedNotes": 19,
+      "premium": 1,
+      "manual": 0
+    },
+    "ylivieska": {
+      "requests": 13,
+      "originalNotes": 12,
+      "expandedNotes": 13,
+      "premium": 0,
+      "manual": 0
+    }
+  },
+  "historicalLanes": [
+    {
+      "lane": "tampere → oulu",
+      "km": 485.5,
+      "orders": 4,
+      "late": 0,
+      "profitEuros": 315.47,
+      "premium": 0
+    },
+    {
+      "lane": "lempaala → oulu",
+      "km": 497.4,
+      "orders": 4,
+      "late": 1,
+      "profitEuros": 268.94,
+      "premium": 0
+    },
+    {
+      "lane": "kuopio → raisio",
+      "km": 447.8,
+      "orders": 3,
+      "late": 0,
+      "profitEuros": 250.1,
+      "premium": 0
+    },
+    {
+      "lane": "espoo → kokkola",
+      "km": 489.9,
+      "orders": 3,
+      "late": 0,
+      "profitEuros": 237.26,
+      "premium": 0
+    },
+    {
+      "lane": "helsinki → vaasa",
+      "km": 417.8,
+      "orders": 3,
+      "late": 0,
+      "profitEuros": 214.41,
+      "premium": 0
+    },
+    {
+      "lane": "lahti → kokkola",
+      "km": 408.4,
+      "orders": 3,
+      "late": 0,
+      "profitEuros": 207.4,
+      "premium": 0
+    },
+    {
+      "lane": "turku → kokkola",
+      "km": 432.6,
+      "orders": 3,
+      "late": 0,
+      "profitEuros": 196.11,
+      "premium": 0
+    },
+    {
+      "lane": "vantaa → kokkola",
+      "km": 486.4,
+      "orders": 3,
+      "late": 0,
+      "profitEuros": 171.78,
+      "premium": 0
+    },
+    {
+      "lane": "hyvinkaa → joensuu",
+      "km": 406.2,
+      "orders": 2,
+      "late": 0,
+      "profitEuros": 115.27,
+      "premium": 0
+    },
+    {
+      "lane": "hyvinkaa → ylivieska",
+      "km": 479.2,
+      "orders": 1,
+      "late": 0,
+      "profitEuros": 71.01,
+      "premium": 0
+    },
+    {
+      "lane": "porvoo → vaasa",
+      "km": 438.2,
+      "orders": 1,
+      "late": 0,
+      "profitEuros": 70.39,
+      "premium": 0
+    },
+    {
+      "lane": "kuopio → turku",
+      "km": 447.6,
+      "orders": 1,
+      "late": 0,
+      "profitEuros": 69.74,
+      "premium": 0
+    },
+    {
+      "lane": "oulu → tampere",
+      "km": 485.5,
+      "orders": 1,
+      "late": 0,
+      "profitEuros": 67.86,
+      "premium": 0
+    },
+    {
+      "lane": "helsinki → kokkola",
+      "km": 498.2,
+      "orders": 1,
+      "late": 0,
+      "profitEuros": 64.61,
+      "premium": 0
+    },
+    {
+      "lane": "kokkola → raisio",
+      "km": 447.6,
+      "orders": 1,
+      "late": 0,
+      "profitEuros": 60.13,
+      "premium": 0
+    },
+    {
+      "lane": "joensuu → espoo",
+      "km": 444.7,
+      "orders": 1,
+      "late": 0,
+      "profitEuros": 59.83,
+      "premium": 0
+    },
+    {
+      "lane": "joensuu → helsinki",
+      "km": 425.2,
+      "orders": 1,
+      "late": 0,
+      "profitEuros": 58.62,
+      "premium": 0
+    },
+    {
+      "lane": "helsinki → joensuu",
+      "km": 425.2,
+      "orders": 1,
+      "late": 0,
+      "profitEuros": 56.51,
+      "premium": 0
+    },
+    {
+      "lane": "turku → ylivieska",
+      "km": 486.5,
+      "orders": 1,
+      "late": 0,
+      "profitEuros": 55.77,
+      "premium": 0
+    },
+    {
+      "lane": "hyvinkaa → kokkola",
+      "km": 446.9,
+      "orders": 2,
+      "late": 0,
+      "profitEuros": 54.82,
+      "premium": 0
+    },
+    {
+      "lane": "raisio → kuopio",
+      "km": 447.8,
+      "orders": 1,
+      "late": 0,
+      "profitEuros": 52.71,
+      "premium": 0
+    },
+    {
+      "lane": "vantaa → vaasa",
+      "km": 411.6,
+      "orders": 1,
+      "late": 0,
+      "profitEuros": 51.38,
+      "premium": 0
+    },
+    {
+      "lane": "porvoo → kokkola",
+      "km": 482,
+      "orders": 1,
+      "late": 0,
+      "profitEuros": 31.96,
+      "premium": 0
+    },
+    {
+      "lane": "oulu → savonlinna",
+      "km": 444.7,
+      "orders": 1,
+      "late": 1,
+      "profitEuros": -160.55,
+      "premium": 0
+    }
+  ],
+  "historicalOrders": [
+    {
+      "world": "w23dc3ed7976dc481981f",
+      "id": "R00012",
+      "from": "raisio",
+      "to": "kuopio",
+      "km": 447.8,
+      "premium": false,
+      "late": false,
+      "profit": 52.71
+    },
+    {
+      "world": "w23dc3ed7976dc481981f",
+      "id": "R00137",
+      "from": "hyvinkaa",
+      "to": "kokkola",
+      "km": 446.9,
+      "premium": false,
+      "late": false,
+      "profit": -3.59
+    },
+    {
+      "world": "w23dc3ed7976dc481981f",
+      "id": "R00165",
+      "from": "espoo",
+      "to": "kokkola",
+      "km": 489.9,
+      "premium": false,
+      "late": false,
+      "profit": 69.4
+    },
+    {
+      "world": "w23dc3ed7976dc481981f",
+      "id": "R00207",
+      "from": "hyvinkaa",
+      "to": "kokkola",
+      "km": 446.9,
+      "premium": false,
+      "late": false,
+      "profit": 58.41
+    },
+    {
+      "world": "w23dc3ed7976dc481981f",
+      "id": "R00307",
+      "from": "vantaa",
+      "to": "vaasa",
+      "km": 411.6,
+      "premium": false,
+      "late": false,
+      "profit": 51.38
+    },
+    {
+      "world": "w23dc3ed7976dc481981f",
+      "id": "R00347",
+      "from": "lempaala",
+      "to": "oulu",
+      "km": 497.4,
+      "premium": false,
+      "late": false,
+      "profit": 76.92
+    },
+    {
+      "world": "w23dc3ed7976dc481981f",
+      "id": "R00429",
+      "from": "hyvinkaa",
+      "to": "joensuu",
+      "km": 406.2,
+      "premium": false,
+      "late": false,
+      "profit": 52.8
+    },
+    {
+      "world": "w23dc3ed7976dc481981f",
+      "id": "R00482",
+      "from": "vantaa",
+      "to": "kokkola",
+      "km": 486.4,
+      "premium": false,
+      "late": false,
+      "profit": 63.79
+    },
+    {
+      "world": "w23dc3ed7976dc481981f",
+      "id": "R00542",
+      "from": "lempaala",
+      "to": "oulu",
+      "km": 497.4,
+      "premium": false,
+      "late": false,
+      "profit": 70.02
+    },
+    {
+      "world": "w23dc3ed7976dc481981f",
+      "id": "R00573",
+      "from": "tampere",
+      "to": "oulu",
+      "km": 485.5,
+      "premium": false,
+      "late": false,
+      "profit": 101.33
+    },
+    {
+      "world": "w23dc3ed7976dc481981f",
+      "id": "R00699",
+      "from": "turku",
+      "to": "kokkola",
+      "km": 432.6,
+      "premium": false,
+      "late": false,
+      "profit": 59.02
+    },
+    {
+      "world": "w23dc3ed7976dc481981f",
+      "id": "R00739",
+      "from": "lahti",
+      "to": "kokkola",
+      "km": 408.4,
+      "premium": false,
+      "late": false,
+      "profit": 79.92
+    },
+    {
+      "world": "w23dc3ed7976dc481981f",
+      "id": "R00789",
+      "from": "kuopio",
+      "to": "turku",
+      "km": 447.6,
+      "premium": false,
+      "late": false,
+      "profit": 69.74
+    },
+    {
+      "world": "w23dc3ed7976dc481981f",
+      "id": "R00801",
+      "from": "porvoo",
+      "to": "kokkola",
+      "km": 482,
+      "premium": false,
+      "late": false,
+      "profit": 31.96
+    },
+    {
+      "world": "w23dc3ed7976dc481981f",
+      "id": "R00813",
+      "from": "helsinki",
+      "to": "vaasa",
+      "km": 417.8,
+      "premium": false,
+      "late": false,
+      "profit": 69.37
+    },
+    {
+      "world": "w23dc3ed7976dc481981f",
+      "id": "R00824",
+      "from": "vantaa",
+      "to": "kokkola",
+      "km": 486.4,
+      "premium": false,
+      "late": false,
+      "profit": 44.5
+    },
+    {
+      "world": "w23dc3ed7976dc481981f",
+      "id": "R00924",
+      "from": "hyvinkaa",
+      "to": "joensuu",
+      "km": 406.2,
+      "premium": false,
+      "late": false,
+      "profit": 62.47
+    },
+    {
+      "world": "w23dc3ed7976dc481981f",
+      "id": "R00931",
+      "from": "oulu",
+      "to": "savonlinna",
+      "km": 444.7,
+      "premium": false,
+      "late": true,
+      "profit": -160.55
+    },
+    {
+      "world": "w815d24fedae64f9f5cf4",
+      "id": "R00175",
+      "from": "porvoo",
+      "to": "vaasa",
+      "km": 438.2,
+      "premium": false,
+      "late": false,
+      "profit": 70.39
+    },
+    {
+      "world": "w815d24fedae64f9f5cf4",
+      "id": "R00378",
+      "from": "turku",
+      "to": "kokkola",
+      "km": 432.6,
+      "premium": false,
+      "late": false,
+      "profit": 54.43
+    },
+    {
+      "world": "w815d24fedae64f9f5cf4",
+      "id": "R00398",
+      "from": "tampere",
+      "to": "oulu",
+      "km": 485.5,
+      "premium": false,
+      "late": false,
+      "profit": 59.51
+    },
+    {
+      "world": "w815d24fedae64f9f5cf4",
+      "id": "R00399",
+      "from": "turku",
+      "to": "ylivieska",
+      "km": 486.5,
+      "premium": false,
+      "late": false,
+      "profit": 55.77
+    },
+    {
+      "world": "w815d24fedae64f9f5cf4",
+      "id": "R00564",
+      "from": "helsinki",
+      "to": "kokkola",
+      "km": 498.2,
+      "premium": false,
+      "late": false,
+      "profit": 64.61
+    },
+    {
+      "world": "w815d24fedae64f9f5cf4",
+      "id": "R00640",
+      "from": "kuopio",
+      "to": "raisio",
+      "km": 447.8,
+      "premium": false,
+      "late": false,
+      "profit": 85.69
+    },
+    {
+      "world": "w815d24fedae64f9f5cf4",
+      "id": "R00641",
+      "from": "kuopio",
+      "to": "raisio",
+      "km": 447.8,
+      "premium": false,
+      "late": false,
+      "profit": 68.51
+    },
+    {
+      "world": "w815d24fedae64f9f5cf4",
+      "id": "R00647",
+      "from": "kuopio",
+      "to": "raisio",
+      "km": 447.8,
+      "premium": false,
+      "late": false,
+      "profit": 95.9
+    },
+    {
+      "world": "w815d24fedae64f9f5cf4",
+      "id": "R00660",
+      "from": "helsinki",
+      "to": "joensuu",
+      "km": 425.2,
+      "premium": false,
+      "late": false,
+      "profit": 56.51
+    },
+    {
+      "world": "w815d24fedae64f9f5cf4",
+      "id": "R00735",
+      "from": "tampere",
+      "to": "oulu",
+      "km": 485.5,
+      "premium": false,
+      "late": false,
+      "profit": 85.99
+    },
+    {
+      "world": "w815d24fedae64f9f5cf4",
+      "id": "R00743",
+      "from": "lempaala",
+      "to": "oulu",
+      "km": 497.4,
+      "premium": false,
+      "late": true,
+      "profit": 52.23
+    },
+    {
+      "world": "w815d24fedae64f9f5cf4",
+      "id": "R00794",
+      "from": "tampere",
+      "to": "oulu",
+      "km": 485.5,
+      "premium": false,
+      "late": false,
+      "profit": 68.64
+    },
+    {
+      "world": "w815d24fedae64f9f5cf4",
+      "id": "R00831",
+      "from": "espoo",
+      "to": "kokkola",
+      "km": 489.9,
+      "premium": false,
+      "late": false,
+      "profit": 101.88
+    },
+    {
+      "world": "w815d24fedae64f9f5cf4",
+      "id": "R00892",
+      "from": "joensuu",
+      "to": "helsinki",
+      "km": 425.2,
+      "premium": false,
+      "late": false,
+      "profit": 58.62
+    },
+    {
+      "world": "w815d24fedae64f9f5cf4",
+      "id": "R00906",
+      "from": "lempaala",
+      "to": "oulu",
+      "km": 497.4,
+      "premium": false,
+      "late": false,
+      "profit": 69.77
+    },
+    {
+      "world": "w815d24fedae64f9f5cf4",
+      "id": "R01008",
+      "from": "helsinki",
+      "to": "vaasa",
+      "km": 417.8,
+      "premium": false,
+      "late": false,
+      "profit": 73.36
+    },
+    {
+      "world": "w27f9f6d54106931d0f1d",
+      "id": "R00116",
+      "from": "lahti",
+      "to": "kokkola",
+      "km": 408.4,
+      "premium": false,
+      "late": false,
+      "profit": 65.12
+    },
+    {
+      "world": "w27f9f6d54106931d0f1d",
+      "id": "R00229",
+      "from": "lahti",
+      "to": "kokkola",
+      "km": 408.4,
+      "premium": false,
+      "late": false,
+      "profit": 62.36
+    },
+    {
+      "world": "w27f9f6d54106931d0f1d",
+      "id": "R00268",
+      "from": "hyvinkaa",
+      "to": "ylivieska",
+      "km": 479.2,
+      "premium": false,
+      "late": false,
+      "profit": 71.01
+    },
+    {
+      "world": "w27f9f6d54106931d0f1d",
+      "id": "R00300",
+      "from": "oulu",
+      "to": "tampere",
+      "km": 485.5,
+      "premium": false,
+      "late": false,
+      "profit": 67.86
+    },
+    {
+      "world": "w27f9f6d54106931d0f1d",
+      "id": "R00783",
+      "from": "vantaa",
+      "to": "kokkola",
+      "km": 486.4,
+      "premium": false,
+      "late": false,
+      "profit": 63.49
+    },
+    {
+      "world": "w27f9f6d54106931d0f1d",
+      "id": "R00834",
+      "from": "turku",
+      "to": "kokkola",
+      "km": 432.6,
+      "premium": false,
+      "late": false,
+      "profit": 82.66
+    },
+    {
+      "world": "w27f9f6d54106931d0f1d",
+      "id": "R00847",
+      "from": "espoo",
+      "to": "kokkola",
+      "km": 489.9,
+      "premium": false,
+      "late": false,
+      "profit": 65.98
+    },
+    {
+      "world": "w27f9f6d54106931d0f1d",
+      "id": "R00889",
+      "from": "joensuu",
+      "to": "espoo",
+      "km": 444.7,
+      "premium": false,
+      "late": false,
+      "profit": 59.83
+    },
+    {
+      "world": "w27f9f6d54106931d0f1d",
+      "id": "R00902",
+      "from": "kokkola",
+      "to": "raisio",
+      "km": 447.6,
+      "premium": false,
+      "late": false,
+      "profit": 60.13
+    },
+    {
+      "world": "w27f9f6d54106931d0f1d",
+      "id": "R00972",
+      "from": "helsinki",
+      "to": "vaasa",
+      "km": 417.8,
+      "premium": false,
+      "late": false,
+      "profit": 71.68
+    }
+  ]
+}

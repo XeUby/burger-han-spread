@@ -1,0 +1,1188 @@
+{
+  "scope": "A targeted same-seed regression after a bug was discovered in round-one validation. This seed is now development data. No fresh formal-unseen-20261113-09 through -16 outcomes are read or included.",
+  "method": "Read only the two explicitly allowlisted completed worlds, compare R00809 and their terminal ledger/score, and assert identical settings and original request/quote/outcome. Whole-week changes also include effects on other rerouted jobs and downstream driver/trust interactions.",
+  "mechanism": {
+    "originalRoad": {
+      "from": "jyvaskyla",
+      "to": "jyvaskyla",
+      "km": 12,
+      "minutes": 25
+    },
+    "changedRoad": {
+      "from": "jyvaskyla",
+      "to": "kuopio",
+      "km": 145.5,
+      "minutes": 106
+    },
+    "fixedMobilizationMinutes": 45,
+    "feeScale": 2.157142857142857,
+    "originalOpeningFloorCents": 2000,
+    "expectedNewOpeningFloorCents": 4314
+  },
+  "runs": {
+    "before": {
+      "status": "complete",
+      "worldId": "w8e1fd9795d32b6d0de92",
+      "level": 8,
+      "seed": "formal-unseen-20261113-08",
+      "label": "validation-candidate",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "0b8d200ce7c85d4c04aac9411fb884e1382f2e5337a43916163c41bac4d9cd26",
+      "worldScore": {
+        "marginCents": 1036210,
+        "revenueCents": 2988994,
+        "marginShare": 0.3466751689698942,
+        "wonOrders": 305,
+        "onTimeShare": 0.9934426229508196,
+        "undeliveredShare": 0.003278688524590164,
+        "ranked": true
+      },
+      "request": {
+        "request": {
+          "id": "R00809",
+          "dealerId": "D02",
+          "batchId": "B0088",
+          "arrivedAt": 5229,
+          "respondBy": 5244,
+          "legs": [
+            {
+              "car": {
+                "premium": false,
+                "electric": true,
+                "chargePercent": 16
+              },
+              "pickup": {
+                "placeId": "jyvaskyla",
+                "privateAddress": false,
+                "window": {
+                  "from": 5229,
+                  "to": 6960
+                },
+                "hours": {
+                  "opens": 420,
+                  "closes": 1080,
+                  "weekdays": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  "saturday": {
+                    "opens": 540,
+                    "closes": 840
+                  }
+                }
+              },
+              "delivery": {
+                "placeId": "jyvaskyla",
+                "privateAddress": false,
+                "window": {
+                  "from": 5229,
+                  "to": 6960
+                },
+                "hours": {
+                  "opens": 480,
+                  "closes": 1260,
+                  "weekdays": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  "saturday": {
+                    "opens": 540,
+                    "closes": 840
+                  }
+                }
+              }
+            }
+          ],
+          "options": [
+            {
+              "kind": "next_day",
+              "deadline": 6960,
+              "listPriceCents": 2300
+            }
+          ],
+          "referenceFeeCents": 1569,
+          "note": null
+        },
+        "quote": {
+          "next_day": 3564
+        },
+        "outcome": "won",
+        "option": "next_day"
+      },
+      "order": {
+        "id": "R00809",
+        "dealerId": "D02",
+        "option": "next_day",
+        "priceCents": 3564,
+        "deadline": 6960,
+        "legs": [
+          {
+            "car": {
+              "premium": false,
+              "electric": true,
+              "chargePercent": 16
+            },
+            "pickup": {
+              "placeId": "jyvaskyla",
+              "privateAddress": false,
+              "window": {
+                "from": 5229,
+                "to": 6960
+              },
+              "hours": {
+                "opens": 420,
+                "closes": 1080,
+                "weekdays": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "saturday": {
+                  "opens": 540,
+                  "closes": 840
+                }
+              }
+            },
+            "delivery": {
+              "placeId": "kuopio",
+              "privateAddress": false,
+              "window": {
+                "from": 5229,
+                "to": 6960
+              },
+              "hours": {
+                "opens": 480,
+                "closes": 1260,
+                "weekdays": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "saturday": {
+                  "opens": 540,
+                  "closes": 840
+                }
+              }
+            }
+          }
+        ],
+        "status": "waiting",
+        "deliveredAt": [
+          null
+        ],
+        "lastPickupAt": 6839
+      },
+      "changes": [
+        {
+          "seq": 4262,
+          "at": 5364,
+          "kind": "order_changed",
+          "order": {
+            "id": "R00809",
+            "dealerId": "D02",
+            "option": "next_day",
+            "priceCents": 3564,
+            "deadline": 6960,
+            "legs": [
+              {
+                "car": {
+                  "premium": false,
+                  "electric": true,
+                  "chargePercent": 16
+                },
+                "pickup": {
+                  "placeId": "jyvaskyla",
+                  "privateAddress": false,
+                  "window": {
+                    "from": 5229,
+                    "to": 6960
+                  },
+                  "hours": {
+                    "opens": 420,
+                    "closes": 1080,
+                    "weekdays": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4
+                    ],
+                    "saturday": {
+                      "opens": 540,
+                      "closes": 840
+                    }
+                  }
+                },
+                "delivery": {
+                  "placeId": "kuopio",
+                  "privateAddress": false,
+                  "window": {
+                    "from": 5229,
+                    "to": 6960
+                  },
+                  "hours": {
+                    "opens": 480,
+                    "closes": 1260,
+                    "weekdays": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4
+                    ],
+                    "saturday": {
+                      "opens": 540,
+                      "closes": 840
+                    }
+                  }
+                }
+              }
+            ],
+            "status": "waiting",
+            "deliveredAt": [
+              null
+            ],
+            "lastPickupAt": 6839
+          },
+          "message": {
+            "text": "Suunnitelma muuttui: auto toimitetaan kohteeseen Kuopio, ei Jyv\u00e4skyl\u00e4.",
+            "language": "fi"
+          }
+        }
+      ],
+      "bookings": [],
+      "pickups": [],
+      "deliveries": [],
+      "deliveredAt": null,
+      "onTime": false,
+      "marginCents": -7128,
+      "ledger": [
+        {
+          "at": 14280,
+          "kind": "undelivered_penalty",
+          "cents": -7128,
+          "orderId": "R00809",
+          "gigId": null,
+          "detail": "Not delivered when the world ended"
+        }
+      ],
+      "gigs": [
+        {
+          "gigId": "g240",
+          "postedAt": 5244,
+          "status": "withdrawn",
+          "firstViewedAt": 5255,
+          "firstViewedFeeCents": 2000,
+          "maxViewedFeeCents": 2000,
+          "views": 33,
+          "finalSchedule": [
+            {
+              "at": 5244,
+              "feeCents": 2000
+            },
+            {
+              "at": 6599,
+              "feeCents": 2900
+            },
+            {
+              "at": 6719,
+              "feeCents": 3800
+            },
+            {
+              "at": 6779,
+              "feeCents": 5000
+            }
+          ]
+        },
+        {
+          "gigId": "g258",
+          "postedAt": 5364,
+          "status": "withdrawn",
+          "firstViewedAt": 5367,
+          "firstViewedFeeCents": 2000,
+          "maxViewedFeeCents": 5000,
+          "views": 121,
+          "finalSchedule": [
+            {
+              "at": 6784,
+              "feeCents": 5000
+            },
+            {
+              "at": 6814,
+              "feeCents": 5000
+            },
+            {
+              "at": 6844,
+              "feeCents": 5000
+            },
+            {
+              "at": 6874,
+              "feeCents": 5000
+            }
+          ]
+        },
+        {
+          "gigId": "g310",
+          "postedAt": 6840,
+          "status": "withdrawn",
+          "firstViewedAt": 6841,
+          "firstViewedFeeCents": 5000,
+          "maxViewedFeeCents": 5000,
+          "views": 220,
+          "finalSchedule": [
+            {
+              "at": 13990,
+              "feeCents": 5000
+            },
+            {
+              "at": 14020,
+              "feeCents": 5000
+            },
+            {
+              "at": 14050,
+              "feeCents": 5000
+            },
+            {
+              "at": 14080,
+              "feeCents": 5000
+            }
+          ]
+        }
+      ],
+      "eventCounts": {
+        "order_won": 1,
+        "gig_viewed": 374,
+        "order_changed": 1,
+        "offer_answered": 261,
+        "deadline_close": 3,
+        "gig_expired": 2,
+        "ledger": 1
+      },
+      "timeline": [
+        {
+          "seq": 3916,
+          "at": 5244,
+          "kind": "order_won",
+          "order": {
+            "id": "R00809",
+            "dealerId": "D02",
+            "option": "next_day",
+            "priceCents": 3564,
+            "deadline": 6960,
+            "legs": [
+              {
+                "car": {
+                  "premium": false,
+                  "electric": true,
+                  "chargePercent": 16
+                },
+                "pickup": {
+                  "placeId": "jyvaskyla",
+                  "privateAddress": false,
+                  "window": {
+                    "from": 5229,
+                    "to": 6960
+                  },
+                  "hours": {
+                    "opens": 420,
+                    "closes": 1080,
+                    "weekdays": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4
+                    ],
+                    "saturday": {
+                      "opens": 540,
+                      "closes": 840
+                    }
+                  }
+                },
+                "delivery": {
+                  "placeId": "jyvaskyla",
+                  "privateAddress": false,
+                  "window": {
+                    "from": 5229,
+                    "to": 6960
+                  },
+                  "hours": {
+                    "opens": 480,
+                    "closes": 1260,
+                    "weekdays": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4
+                    ],
+                    "saturday": {
+                      "opens": 540,
+                      "closes": 840
+                    }
+                  }
+                }
+              }
+            ],
+            "status": "waiting",
+            "deliveredAt": [
+              null
+            ],
+            "lastPickupAt": 6839
+          }
+        },
+        {
+          "seq": 4262,
+          "at": 5364,
+          "kind": "order_changed",
+          "order": {
+            "id": "R00809",
+            "dealerId": "D02",
+            "option": "next_day",
+            "priceCents": 3564,
+            "deadline": 6960,
+            "legs": [
+              {
+                "car": {
+                  "premium": false,
+                  "electric": true,
+                  "chargePercent": 16
+                },
+                "pickup": {
+                  "placeId": "jyvaskyla",
+                  "privateAddress": false,
+                  "window": {
+                    "from": 5229,
+                    "to": 6960
+                  },
+                  "hours": {
+                    "opens": 420,
+                    "closes": 1080,
+                    "weekdays": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4
+                    ],
+                    "saturday": {
+                      "opens": 540,
+                      "closes": 840
+                    }
+                  }
+                },
+                "delivery": {
+                  "placeId": "kuopio",
+                  "privateAddress": false,
+                  "window": {
+                    "from": 5229,
+                    "to": 6960
+                  },
+                  "hours": {
+                    "opens": 480,
+                    "closes": 1260,
+                    "weekdays": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4
+                    ],
+                    "saturday": {
+                      "opens": 540,
+                      "closes": 840
+                    }
+                  }
+                }
+              }
+            ],
+            "status": "waiting",
+            "deliveredAt": [
+              null
+            ],
+            "lastPickupAt": 6839
+          },
+          "message": {
+            "text": "Suunnitelma muuttui: auto toimitetaan kohteeseen Kuopio, ei Jyv\u00e4skyl\u00e4.",
+            "language": "fi"
+          }
+        },
+        {
+          "seq": 5352,
+          "at": 6659,
+          "kind": "deadline_close",
+          "orderId": "R00809",
+          "lastPickupAt": 6839
+        },
+        {
+          "seq": 5875,
+          "at": 6840,
+          "kind": "gig_expired",
+          "gigId": "g258"
+        },
+        {
+          "seq": 5876,
+          "at": 6840,
+          "kind": "deadline_close",
+          "orderId": "R00809",
+          "lastPickupAt": 6839
+        },
+        {
+          "seq": 6620,
+          "at": 14040,
+          "kind": "gig_expired",
+          "gigId": "g310"
+        },
+        {
+          "seq": 6621,
+          "at": 14040,
+          "kind": "deadline_close",
+          "orderId": "R00809",
+          "lastPickupAt": 6839
+        },
+        {
+          "seq": 6622,
+          "at": 14280,
+          "kind": "ledger",
+          "line": {
+            "at": 14280,
+            "kind": "undelivered_penalty",
+            "cents": -7128,
+            "orderId": "R00809",
+            "gigId": null,
+            "detail": "Not delivered when the world ended"
+          }
+        }
+      ],
+      "offerOutcomes": {
+        "declined": 43,
+        "expired": 218
+      }
+    },
+    "after": {
+      "status": "complete",
+      "worldId": "w6fb9cdd546c36f5fa418",
+      "level": 8,
+      "seed": "formal-unseen-20261113-08",
+      "label": "reroute-regression",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+      "worldScore": {
+        "marginCents": 1049061,
+        "revenueCents": 2993023,
+        "marginShare": 0.35050215116957,
+        "wonOrders": 305,
+        "onTimeShare": 1,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "request": {
+        "request": {
+          "id": "R00809",
+          "dealerId": "D02",
+          "batchId": "B0088",
+          "arrivedAt": 5229,
+          "respondBy": 5244,
+          "legs": [
+            {
+              "car": {
+                "premium": false,
+                "electric": true,
+                "chargePercent": 16
+              },
+              "pickup": {
+                "placeId": "jyvaskyla",
+                "privateAddress": false,
+                "window": {
+                  "from": 5229,
+                  "to": 6960
+                },
+                "hours": {
+                  "opens": 420,
+                  "closes": 1080,
+                  "weekdays": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  "saturday": {
+                    "opens": 540,
+                    "closes": 840
+                  }
+                }
+              },
+              "delivery": {
+                "placeId": "jyvaskyla",
+                "privateAddress": false,
+                "window": {
+                  "from": 5229,
+                  "to": 6960
+                },
+                "hours": {
+                  "opens": 480,
+                  "closes": 1260,
+                  "weekdays": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  "saturday": {
+                    "opens": 540,
+                    "closes": 840
+                  }
+                }
+              }
+            }
+          ],
+          "options": [
+            {
+              "kind": "next_day",
+              "deadline": 6960,
+              "listPriceCents": 2300
+            }
+          ],
+          "referenceFeeCents": 1569,
+          "note": null
+        },
+        "quote": {
+          "next_day": 3564
+        },
+        "outcome": "won",
+        "option": "next_day"
+      },
+      "order": {
+        "id": "R00809",
+        "dealerId": "D02",
+        "option": "next_day",
+        "priceCents": 3564,
+        "deadline": 6960,
+        "legs": [
+          {
+            "car": {
+              "premium": false,
+              "electric": true,
+              "chargePercent": 16
+            },
+            "pickup": {
+              "placeId": "jyvaskyla",
+              "privateAddress": false,
+              "window": {
+                "from": 5229,
+                "to": 6960
+              },
+              "hours": {
+                "opens": 420,
+                "closes": 1080,
+                "weekdays": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "saturday": {
+                  "opens": 540,
+                  "closes": 840
+                }
+              }
+            },
+            "delivery": {
+              "placeId": "kuopio",
+              "privateAddress": false,
+              "window": {
+                "from": 5229,
+                "to": 6960
+              },
+              "hours": {
+                "opens": 480,
+                "closes": 1260,
+                "weekdays": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "saturday": {
+                  "opens": 540,
+                  "closes": 840
+                }
+              }
+            }
+          }
+        ],
+        "status": "delivered",
+        "deliveredAt": [
+          6919
+        ],
+        "lastPickupAt": 6839
+      },
+      "changes": [
+        {
+          "seq": 4214,
+          "at": 5364,
+          "kind": "order_changed",
+          "order": {
+            "id": "R00809",
+            "dealerId": "D02",
+            "option": "next_day",
+            "priceCents": 3564,
+            "deadline": 6960,
+            "legs": [
+              {
+                "car": {
+                  "premium": false,
+                  "electric": true,
+                  "chargePercent": 16
+                },
+                "pickup": {
+                  "placeId": "jyvaskyla",
+                  "privateAddress": false,
+                  "window": {
+                    "from": 5229,
+                    "to": 6960
+                  },
+                  "hours": {
+                    "opens": 420,
+                    "closes": 1080,
+                    "weekdays": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4
+                    ],
+                    "saturday": {
+                      "opens": 540,
+                      "closes": 840
+                    }
+                  }
+                },
+                "delivery": {
+                  "placeId": "kuopio",
+                  "privateAddress": false,
+                  "window": {
+                    "from": 5229,
+                    "to": 6960
+                  },
+                  "hours": {
+                    "opens": 480,
+                    "closes": 1260,
+                    "weekdays": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4
+                    ],
+                    "saturday": {
+                      "opens": 540,
+                      "closes": 840
+                    }
+                  }
+                }
+              }
+            ],
+            "status": "delivered",
+            "deliveredAt": [
+              6919
+            ],
+            "lastPickupAt": 6839
+          },
+          "message": {
+            "text": "Suunnitelma muuttui: auto toimitetaan kohteeseen Kuopio, ei Jyv\u00e4skyl\u00e4.",
+            "language": "fi"
+          }
+        }
+      ],
+      "bookings": [
+        {
+          "seq": 4596,
+          "at": 6295,
+          "kind": "gig_booked",
+          "gigId": "g258",
+          "driverId": "0wov-0083",
+          "feeCents": 4314
+        }
+      ],
+      "pickups": [
+        {
+          "seq": 5679,
+          "at": 6806,
+          "kind": "picked_up",
+          "gigId": "g258",
+          "orderId": "R00809",
+          "leg": 0,
+          "placeId": "jyvaskyla"
+        }
+      ],
+      "deliveries": [
+        {
+          "seq": 5874,
+          "at": 6919,
+          "kind": "delivered",
+          "gigId": "g258",
+          "orderId": "R00809",
+          "leg": 0,
+          "placeId": "kuopio"
+        }
+      ],
+      "deliveredAt": 6919,
+      "onTime": true,
+      "marginCents": -750,
+      "ledger": [
+        {
+          "at": 6919,
+          "kind": "revenue",
+          "cents": 3564,
+          "orderId": "R00809",
+          "gigId": null,
+          "detail": "Delivered"
+        },
+        {
+          "at": 6919,
+          "kind": "driver_fee",
+          "cents": -4314,
+          "orderId": "R00809",
+          "gigId": "g258",
+          "detail": "Driver fee"
+        }
+      ],
+      "gigs": [
+        {
+          "gigId": "g240",
+          "postedAt": 5244,
+          "status": "withdrawn",
+          "firstViewedAt": 5251,
+          "firstViewedFeeCents": 2000,
+          "maxViewedFeeCents": 2000,
+          "views": 22,
+          "finalSchedule": [
+            {
+              "at": 5244,
+              "feeCents": 2000
+            },
+            {
+              "at": 6599,
+              "feeCents": 2900
+            },
+            {
+              "at": 6719,
+              "feeCents": 3800
+            },
+            {
+              "at": 6779,
+              "feeCents": 5000
+            }
+          ]
+        },
+        {
+          "gigId": "g258",
+          "postedAt": 5364,
+          "status": "done",
+          "firstViewedAt": 5366,
+          "firstViewedFeeCents": 4314,
+          "maxViewedFeeCents": 4314,
+          "views": 44,
+          "finalSchedule": [
+            {
+              "at": 5364,
+              "feeCents": 4314
+            },
+            {
+              "at": 6599,
+              "feeCents": 6256
+            },
+            {
+              "at": 6719,
+              "feeCents": 8197
+            },
+            {
+              "at": 6779,
+              "feeCents": 10786
+            }
+          ]
+        }
+      ],
+      "eventCounts": {
+        "order_won": 1,
+        "gig_viewed": 66,
+        "order_changed": 1,
+        "gig_booked": 1,
+        "gig_started": 1,
+        "picked_up": 1,
+        "delivered": 1,
+        "ledger": 2
+      },
+      "timeline": [
+        {
+          "seq": 3891,
+          "at": 5244,
+          "kind": "order_won",
+          "order": {
+            "id": "R00809",
+            "dealerId": "D02",
+            "option": "next_day",
+            "priceCents": 3564,
+            "deadline": 6960,
+            "legs": [
+              {
+                "car": {
+                  "premium": false,
+                  "electric": true,
+                  "chargePercent": 16
+                },
+                "pickup": {
+                  "placeId": "jyvaskyla",
+                  "privateAddress": false,
+                  "window": {
+                    "from": 5229,
+                    "to": 6960
+                  },
+                  "hours": {
+                    "opens": 420,
+                    "closes": 1080,
+                    "weekdays": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4
+                    ],
+                    "saturday": {
+                      "opens": 540,
+                      "closes": 840
+                    }
+                  }
+                },
+                "delivery": {
+                  "placeId": "jyvaskyla",
+                  "privateAddress": false,
+                  "window": {
+                    "from": 5229,
+                    "to": 6960
+                  },
+                  "hours": {
+                    "opens": 480,
+                    "closes": 1260,
+                    "weekdays": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4
+                    ],
+                    "saturday": {
+                      "opens": 540,
+                      "closes": 840
+                    }
+                  }
+                }
+              }
+            ],
+            "status": "waiting",
+            "deliveredAt": [
+              null
+            ],
+            "lastPickupAt": 6839
+          }
+        },
+        {
+          "seq": 4214,
+          "at": 5364,
+          "kind": "order_changed",
+          "order": {
+            "id": "R00809",
+            "dealerId": "D02",
+            "option": "next_day",
+            "priceCents": 3564,
+            "deadline": 6960,
+            "legs": [
+              {
+                "car": {
+                  "premium": false,
+                  "electric": true,
+                  "chargePercent": 16
+                },
+                "pickup": {
+                  "placeId": "jyvaskyla",
+                  "privateAddress": false,
+                  "window": {
+                    "from": 5229,
+                    "to": 6960
+                  },
+                  "hours": {
+                    "opens": 420,
+                    "closes": 1080,
+                    "weekdays": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4
+                    ],
+                    "saturday": {
+                      "opens": 540,
+                      "closes": 840
+                    }
+                  }
+                },
+                "delivery": {
+                  "placeId": "kuopio",
+                  "privateAddress": false,
+                  "window": {
+                    "from": 5229,
+                    "to": 6960
+                  },
+                  "hours": {
+                    "opens": 480,
+                    "closes": 1260,
+                    "weekdays": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4
+                    ],
+                    "saturday": {
+                      "opens": 540,
+                      "closes": 840
+                    }
+                  }
+                }
+              }
+            ],
+            "status": "delivered",
+            "deliveredAt": [
+              6919
+            ],
+            "lastPickupAt": 6839
+          },
+          "message": {
+            "text": "Suunnitelma muuttui: auto toimitetaan kohteeseen Kuopio, ei Jyv\u00e4skyl\u00e4.",
+            "language": "fi"
+          }
+        },
+        {
+          "seq": 4596,
+          "at": 6295,
+          "kind": "gig_booked",
+          "gigId": "g258",
+          "driverId": "0wov-0083",
+          "feeCents": 4314
+        },
+        {
+          "seq": 5465,
+          "at": 6702,
+          "kind": "gig_started",
+          "gigId": "g258",
+          "driverId": "0wov-0083"
+        },
+        {
+          "seq": 5679,
+          "at": 6806,
+          "kind": "picked_up",
+          "gigId": "g258",
+          "orderId": "R00809",
+          "leg": 0,
+          "placeId": "jyvaskyla"
+        },
+        {
+          "seq": 5874,
+          "at": 6919,
+          "kind": "delivered",
+          "gigId": "g258",
+          "orderId": "R00809",
+          "leg": 0,
+          "placeId": "kuopio"
+        },
+        {
+          "seq": 5875,
+          "at": 6919,
+          "kind": "ledger",
+          "line": {
+            "at": 6919,
+            "kind": "revenue",
+            "cents": 3564,
+            "orderId": "R00809",
+            "gigId": null,
+            "detail": "Delivered"
+          }
+        },
+        {
+          "seq": 5876,
+          "at": 6919,
+          "kind": "ledger",
+          "line": {
+            "at": 6919,
+            "kind": "driver_fee",
+            "cents": -4314,
+            "orderId": "R00809",
+            "gigId": "g258",
+            "detail": "Driver fee"
+          }
+        }
+      ],
+      "offerOutcomes": {}
+    }
+  },
+  "differences": {
+    "orderMarginCents": 6378,
+    "worldMarginCents": 12851,
+    "worldOnTimeShare": 0.006557377049180357,
+    "worldUndeliveredShare": -0.003278688524590164
+  },
+  "limitations": [
+    "This regression tests one previously observed failure, not generalization.",
+    "Original customer price cannot change after the dealer changes the route; a successful recovery can still lose money.",
+    "The same-seed full-week result is not an estimate of the isolated effect on R00809 because corrected fees can change other orders and downstream decisions."
+  ]
+}

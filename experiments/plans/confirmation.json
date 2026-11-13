@@ -1,0 +1,64 @@
+[
+  {
+    "label": "adaptive-long-queue",
+    "seed": "spread-1",
+    "settings": {
+      "adaptive": true,
+      "margin": 0.1,
+      "priceFloor": 0,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "maxKm": 550
+    }
+  },
+  {
+    "label": "adaptive-long-queue",
+    "seed": "validate-1",
+    "settings": {
+      "adaptive": true,
+      "margin": 0.1,
+      "priceFloor": 0,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "maxKm": 550
+    }
+  },
+  {
+    "label": "adaptive-long-queue",
+    "seed": "holdout-4",
+    "settings": {
+      "adaptive": true,
+      "margin": 0.1,
+      "priceFloor": 0,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "maxKm": 550
+    }
+  },
+  {
+    "label": "pickup-slack",
+    "seed": "holdout-2",
+    "settings": {
+      "adaptive": true,
+      "margin": 0.1,
+      "priceFloor": 0,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "maxKm": 550,
+      "safetySlack": true
+    }
+  },
+  {
+    "label": "pickup-slack",
+    "seed": "holdout-3",
+    "settings": {
+      "adaptive": true,
+      "margin": 0.1,
+      "priceFloor": 0,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "maxKm": 550,
+      "safetySlack": true
+    }
+  }
+]

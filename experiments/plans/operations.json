@@ -1,0 +1,30 @@
+[
+  {
+    "label": "lower-fee",
+    "seed": "holdout-2",
+    "settings": {
+      "fee": 0.95
+    }
+  },
+  {
+    "label": "lower-fee",
+    "seed": "holdout-3",
+    "settings": {
+      "fee": 0.95
+    }
+  },
+  {
+    "label": "longer-lanes",
+    "seed": "holdout-2",
+    "settings": {
+      "maxKm": 550
+    }
+  },
+  {
+    "label": "longer-lanes",
+    "seed": "holdout-3",
+    "settings": {
+      "maxKm": 550
+    }
+  }
+]

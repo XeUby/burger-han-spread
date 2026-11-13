@@ -1,0 +1,48 @@
+[
+  {
+    "label": "adaptive-queue",
+    "seed": "holdout-2",
+    "settings": {
+      "adaptive": true,
+      "margin": 0.1,
+      "priceFloor": 0,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4
+    }
+  },
+  {
+    "label": "adaptive-queue",
+    "seed": "holdout-3",
+    "settings": {
+      "adaptive": true,
+      "margin": 0.1,
+      "priceFloor": 0,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4
+    }
+  },
+  {
+    "label": "adaptive-long-queue",
+    "seed": "holdout-2",
+    "settings": {
+      "adaptive": true,
+      "margin": 0.1,
+      "priceFloor": 0,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "maxKm": 550
+    }
+  },
+  {
+    "label": "adaptive-long-queue",
+    "seed": "holdout-3",
+    "settings": {
+      "adaptive": true,
+      "margin": 0.1,
+      "priceFloor": 0,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "maxKm": 550
+    }
+  }
+]

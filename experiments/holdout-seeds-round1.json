@@ -1,0 +1,13 @@
+{
+  "purpose": "Unseen paired final validation; no candidate tuning on these results",
+  "seeds": [
+    "formal-unseen-20261113-01",
+    "formal-unseen-20261113-02",
+    "formal-unseen-20261113-03",
+    "formal-unseen-20261113-04",
+    "formal-unseen-20261113-05",
+    "formal-unseen-20261113-06",
+    "formal-unseen-20261113-07",
+    "formal-unseen-20261113-08"
+  ]
+}

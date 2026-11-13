@@ -1,0 +1,1063 @@
+{
+  "final": {
+    "summary": {
+      "n": 469,
+      "late": 6,
+      "marginEuros": 15996.86,
+      "costRatio": 1.1082044732259204,
+      "feeRatios": {
+        "mean": 1.1377595651155232,
+        "median": 1.0500470873133325,
+        "p90": 1.2903225806451613,
+        "p95": 1.5750250083361121,
+        "max": 4.54847104749512
+      },
+      "raised": 29,
+      "raisedExtraEuros": 873.4,
+      "bookDelay": {
+        "mean": 46.44776119402985,
+        "median": 2,
+        "p90": 46,
+        "p95": 146,
+        "max": 1589
+      },
+      "offered": 23,
+      "offerWins": 0,
+      "drops": 62
+    },
+    "offers": {
+      "declined": 39,
+      "expired": 90
+    },
+    "runs": [
+      {
+        "world": "w7ae145e3ea74526ee4bf",
+        "offers": {
+          "declined": 28,
+          "expired": 68
+        }
+      },
+      {
+        "world": "w1937eaf885387948933b",
+        "offers": {
+          "declined": 2,
+          "expired": 1
+        }
+      },
+      {
+        "world": "w65288bae5e4a8c3d8f5e",
+        "offers": {
+          "expired": 21,
+          "declined": 9
+        }
+      }
+    ],
+    "byBacklog": {
+      "0": {
+        "n": 186,
+        "late": 3,
+        "marginEuros": 6581.22,
+        "costRatio": 1.1146527523671501,
+        "feeRatios": {
+          "mean": 1.1440149872347434,
+          "median": 1.050062465627328,
+          "p90": 1.2468827930174564,
+          "p95": 1.4231891748474397,
+          "max": 4.54847104749512
+        },
+        "raised": 11,
+        "raisedExtraEuros": 366.95,
+        "bookDelay": {
+          "mean": 35.795698924731184,
+          "median": 1.0,
+          "p90": 31,
+          "p95": 76,
+          "max": 1045
+        },
+        "offered": 6,
+        "offerWins": 0,
+        "drops": 25
+      },
+      "0.5-2": {
+        "n": 194,
+        "late": 1,
+        "marginEuros": 6644.14,
+        "costRatio": 1.0929343226106627,
+        "feeRatios": {
+          "mean": 1.1188329086998787,
+          "median": 1.050027553027053,
+          "p90": 1.2903225806451613,
+          "p95": 1.5750264177527298,
+          "max": 2.1290617848970252
+        },
+        "raised": 12,
+        "raisedExtraEuros": 277.3,
+        "bookDelay": {
+          "mean": 31.783505154639176,
+          "median": 2.0,
+          "p90": 37,
+          "p95": 84,
+          "max": 1130
+        },
+        "offered": 11,
+        "offerWins": 0,
+        "drops": 27
+      },
+      "2.5-4": {
+        "n": 53,
+        "late": 2,
+        "marginEuros": 1540.36,
+        "costRatio": 1.1621598059883655,
+        "feeRatios": {
+          "mean": 1.184669370335666,
+          "median": 1.0500770416024654,
+          "p90": 1.36986301369863,
+          "p95": 1.5752043596730245,
+          "max": 2.625079872204473
+        },
+        "raised": 5,
+        "raisedExtraEuros": 219.15,
+        "bookDelay": {
+          "mean": 60.0377358490566,
+          "median": 1,
+          "p90": 74,
+          "p95": 112,
+          "max": 1589
+        },
+        "offered": 5,
+        "offerWins": 0,
+        "drops": 7
+      },
+      "4.5+": {
+        "n": 36,
+        "late": 0,
+        "marginEuros": 1231.14,
+        "costRatio": 1.0791525002073141,
+        "feeRatios": {
+          "mean": 1.1383718749430913,
+          "median": 1.0500462446687067,
+          "p90": 1.321003963011889,
+          "p95": 1.4144271570014144,
+          "max": 1.9059720457433291
+        },
+        "raised": 1,
+        "raisedExtraEuros": 10.0,
+        "bookDelay": {
+          "mean": 160.5,
+          "median": 4.0,
+          "p90": 766,
+          "p95": 805,
+          "max": 833
+        },
+        "offered": 1,
+        "offerWins": 0,
+        "drops": 3
+      }
+    },
+    "byDistance": {
+      "0-70": {
+        "n": 148,
+        "late": 1,
+        "marginEuros": 3188.36,
+        "costRatio": 1.1658938923599569,
+        "feeRatios": {
+          "mean": 1.2080081929170252,
+          "median": 1.102537172642491,
+          "p90": 1.4306151645207439,
+          "p95": 1.5752599890530925,
+          "max": 4.54847104749512
+        },
+        "raised": 12,
+        "raisedExtraEuros": 188.98,
+        "bookDelay": {
+          "mean": 45.13513513513514,
+          "median": 2.0,
+          "p90": 69,
+          "p95": 140,
+          "max": 825
+        },
+        "offered": 10,
+        "offerWins": 0,
+        "drops": 11
+      },
+      "150-250": {
+        "n": 155,
+        "late": 2,
+        "marginEuros": 5748.31,
+        "costRatio": 1.1079259133947474,
+        "feeRatios": {
+          "mean": 1.1095184614462983,
+          "median": 1.0500311720698254,
+          "p90": 1.130050669091854,
+          "p95": 1.5749565888481574,
+          "max": 2.6251962323390896
+        },
+        "raised": 11,
+        "raisedExtraEuros": 460.05,
+        "bookDelay": {
+          "mean": 51.66451612903226,
+          "median": 2,
+          "p90": 48,
+          "p95": 158,
+          "max": 1589
+        },
+        "offered": 9,
+        "offerWins": 0,
+        "drops": 18
+      },
+      "250-400": {
+        "n": 81,
+        "late": 0,
+        "marginEuros": 4701.86,
+        "costRatio": 1.0692246294336154,
+        "feeRatios": {
+          "mean": 1.0688947408690415,
+          "median": 1.0500167466785755,
+          "p90": 1.1299967849105133,
+          "p95": 1.1300499319110304,
+          "max": 1.2406157169862273
+        },
+        "raised": 1,
+        "raisedExtraEuros": 21.18,
+        "bookDelay": {
+          "mean": 43.25925925925926,
+          "median": 2,
+          "p90": 26,
+          "p95": 117,
+          "max": 872
+        },
+        "offered": 0,
+        "offerWins": 0,
+        "drops": 13
+      },
+      "70-150": {
+        "n": 85,
+        "late": 3,
+        "marginEuros": 2358.33,
+        "costRatio": 1.1316914397866755,
+        "feeRatios": {
+          "mean": 1.1325669170928474,
+          "median": 1.0500424088210347,
+          "p90": 1.2299727520435968,
+          "p95": 1.5749676863420938,
+          "max": 2.6251203079884506
+        },
+        "raised": 5,
+        "raisedExtraEuros": 203.19,
+        "bookDelay": {
+          "mean": 42.258823529411764,
+          "median": 2,
+          "p90": 22,
+          "p95": 52,
+          "max": 1130
+        },
+        "offered": 4,
+        "offerWins": 0,
+        "drops": 20
+      }
+    },
+    "byReady": {
+      "future": {
+        "n": 243,
+        "late": 4,
+        "marginEuros": 8922.13,
+        "costRatio": 1.085795882120584,
+        "feeRatios": {
+          "mean": 1.1137169667853075,
+          "median": 1.0500376222723853,
+          "p90": 1.2299727520435968,
+          "p95": 1.366120218579235,
+          "max": 4.54847104749512
+        },
+        "raised": 9,
+        "raisedExtraEuros": 278.07,
+        "bookDelay": {
+          "mean": 5.1193415637860085,
+          "median": 1,
+          "p90": 7,
+          "p95": 12,
+          "max": 339
+        },
+        "offered": 3,
+        "offerWins": 0,
+        "drops": 54
+      },
+      "nearNow": {
+        "n": 226,
+        "late": 2,
+        "marginEuros": 7074.73,
+        "costRatio": 1.1368499035256003,
+        "feeRatios": {
+          "mean": 1.1636106774794277,
+          "median": 1.0500676270783913,
+          "p90": 1.4738393515106853,
+          "p95": 1.5751730959446093,
+          "max": 2.6251962323390896
+        },
+        "raised": 20,
+        "raisedExtraEuros": 595.33,
+        "bookDelay": {
+          "mean": 90.88495575221239,
+          "median": 2.5,
+          "p90": 146,
+          "p95": 781,
+          "max": 1589
+        },
+        "offered": 20,
+        "offerWins": 0,
+        "drops": 8
+      }
+    },
+    "byRaised": {
+      "opening": {
+        "n": 440,
+        "late": 1,
+        "marginEuros": 16024.9,
+        "costRatio": 1.073564296070867,
+        "feeRatios": {
+          "mean": 1.0924127758403102,
+          "median": 1.0500411300048742,
+          "p90": 1.2299968947313942,
+          "p95": 1.2853470437017995,
+          "max": 1.858736059479554
+        },
+        "raised": 0,
+        "raisedExtraEuros": 0.0,
+        "bookDelay": {
+          "mean": 42.08409090909091,
+          "median": 2.0,
+          "p90": 34,
+          "p95": 112,
+          "max": 1130
+        },
+        "offered": 4,
+        "offerWins": 0,
+        "drops": 56
+      },
+      "raised": {
+        "n": 29,
+        "late": 5,
+        "marginEuros": -28.04,
+        "costRatio": 1.7304842693009772,
+        "feeRatios": {
+          "mean": 1.8257798161877197,
+          "median": 1.5751730959446093,
+          "p90": 2.625079872204473,
+          "p95": 2.6251203079884506,
+          "max": 4.54847104749512
+        },
+        "raised": 29,
+        "raisedExtraEuros": 873.4,
+        "bookDelay": {
+          "mean": 112.65517241379311,
+          "median": 37,
+          "p90": 146,
+          "p95": 158,
+          "max": 1589
+        },
+        "offered": 19,
+        "offerWins": 0,
+        "drops": 6
+      }
+    },
+    "byOffer": {
+      "notOffered": {
+        "n": 446,
+        "late": 3,
+        "marginEuros": 16014.07,
+        "costRatio": 1.081828132055138,
+        "feeRatios": {
+          "mean": 1.1061525963064662,
+          "median": 1.0500419020742555,
+          "p90": 1.2376237623762376,
+          "p95": 1.2953367875647668,
+          "max": 4.54847104749512
+        },
+        "raised": 10,
+        "raisedExtraEuros": 285.59,
+        "bookDelay": {
+          "mean": 41.55156950672646,
+          "median": 1.5,
+          "p90": 34,
+          "p95": 100,
+          "max": 1130
+        },
+        "offered": 0,
+        "offerWins": 0,
+        "drops": 58
+      },
+      "offered": {
+        "n": 23,
+        "late": 3,
+        "marginEuros": -17.21,
+        "costRatio": 1.7597160289791802,
+        "feeRatios": {
+          "mean": 1.7506599168041925,
+          "median": 1.5751867489444624,
+          "p90": 1.9059720457433291,
+          "p95": 2.625079872204473,
+          "max": 2.6251962323390896
+        },
+        "raised": 19,
+        "raisedExtraEuros": 587.81,
+        "bookDelay": {
+          "mean": 141.3913043478261,
+          "median": 65,
+          "p90": 146,
+          "p95": 158,
+          "max": 1589
+        },
+        "offered": 23,
+        "offerWins": 0,
+        "drops": 4
+      }
+    },
+    "byDelay": {
+      "0-10": {
+        "n": 375,
+        "late": 4,
+        "marginEuros": 13379.58,
+        "costRatio": 1.0844178516231036,
+        "feeRatios": {
+          "mean": 1.1065528574332693,
+          "median": 1.050041242782513,
+          "p90": 1.2300304520965097,
+          "p95": 1.2953367875647668,
+          "max": 4.54847104749512
+        },
+        "raised": 9,
+        "raisedExtraEuros": 329.02,
+        "bookDelay": {
+          "mean": 2.136,
+          "median": 1,
+          "p90": 5,
+          "p95": 7,
+          "max": 10
+        },
+        "offered": 2,
+        "offerWins": 0,
+        "drops": 52
+      },
+      "11-60": {
+        "n": 51,
+        "late": 0,
+        "marginEuros": 1555.98,
+        "costRatio": 1.1697711930222834,
+        "feeRatios": {
+          "mean": 1.20822905051298,
+          "median": 1.0500940733772341,
+          "p90": 1.575070821529745,
+          "p95": 1.5751867489444624,
+          "max": 1.858736059479554
+        },
+        "raised": 8,
+        "raisedExtraEuros": 178.85,
+        "bookDelay": {
+          "mean": 27.352941176470587,
+          "median": 22,
+          "p90": 45,
+          "p95": 48,
+          "max": 55
+        },
+        "offered": 9,
+        "offerWins": 0,
+        "drops": 5
+      },
+      "181+": {
+        "n": 22,
+        "late": 1,
+        "marginEuros": 716.42,
+        "costRatio": 1.1823389064947365,
+        "feeRatios": {
+          "mean": 1.2119610436665864,
+          "median": 1.0641073448211302,
+          "p90": 1.2690355329949239,
+          "p95": 1.4144271570014144,
+          "max": 2.625079872204473
+        },
+        "raised": 2,
+        "raisedExtraEuros": 108.6,
+        "bookDelay": {
+          "mean": 798.3181818181819,
+          "median": 808.5,
+          "p90": 998,
+          "p95": 1045,
+          "max": 1589
+        },
+        "offered": 2,
+        "offerWins": 0,
+        "drops": 2
+      },
+      "61-180": {
+        "n": 21,
+        "late": 1,
+        "marginEuros": 344.88,
+        "costRatio": 1.4018283888961727,
+        "feeRatios": {
+          "mean": 1.4461471411846434,
+          "median": 1.5749565888481574,
+          "p90": 1.9059720457433291,
+          "p95": 2.0686213349968807,
+          "max": 2.6251962323390896
+        },
+        "raised": 10,
+        "raisedExtraEuros": 256.93,
+        "bookDelay": {
+          "mean": 96.42857142857143,
+          "median": 84,
+          "p90": 146,
+          "p95": 146,
+          "max": 158
+        },
+        "offered": 10,
+        "offerWins": 0,
+        "drops": 3
+      }
+    }
+  },
+  "aggressive": {
+    "summary": {
+      "n": 649,
+      "late": 31,
+      "marginEuros": 19938.25,
+      "costRatio": 1.0765955891895707,
+      "feeRatios": {
+        "mean": 1.1013603310991213,
+        "median": 0.9500466369571976,
+        "p90": 1.425055928411633,
+        "p95": 1.7341040462427746,
+        "max": 4.899154196486663
+      },
+      "raised": 95,
+      "raisedExtraEuros": 3837.06,
+      "bookDelay": {
+        "mean": 203.45146379044684,
+        "median": 5,
+        "p90": 762,
+        "p95": 988,
+        "max": 5516
+      },
+      "offered": 78,
+      "offerWins": 5,
+      "drops": 69
+    },
+    "offers": {
+      "accepted": 5,
+      "expired": 537,
+      "declined": 157
+    },
+    "runs": [
+      {
+        "world": "w23dc3ed7976dc481981f",
+        "offers": {
+          "accepted": 2,
+          "expired": 470,
+          "declined": 128
+        }
+      },
+      {
+        "world": "w815d24fedae64f9f5cf4",
+        "offers": {
+          "expired": 29,
+          "declined": 14,
+          "accepted": 2
+        }
+      },
+      {
+        "world": "w27f9f6d54106931d0f1d",
+        "offers": {
+          "accepted": 1,
+          "expired": 38,
+          "declined": 15
+        }
+      }
+    ],
+    "byBacklog": {
+      "0": {
+        "n": 205,
+        "late": 5,
+        "marginEuros": 7051.69,
+        "costRatio": 1.0491757101773354,
+        "feeRatios": {
+          "mean": 1.0687869922681137,
+          "median": 0.9500650195058518,
+          "p90": 1.1302498670919723,
+          "p95": 1.4250511520327374,
+          "max": 4.899154196486663
+        },
+        "raised": 16,
+        "raisedExtraEuros": 799.1,
+        "bookDelay": {
+          "mean": 131.29756097560977,
+          "median": 3,
+          "p90": 200,
+          "p95": 926,
+          "max": 4818
+        },
+        "offered": 12,
+        "offerWins": 0,
+        "drops": 16
+      },
+      "0.5-2": {
+        "n": 217,
+        "late": 7,
+        "marginEuros": 7229.67,
+        "costRatio": 1.0661271309063938,
+        "feeRatios": {
+          "mean": 1.072677086563573,
+          "median": 0.9500318775900541,
+          "p90": 1.4249558563861096,
+          "p95": 1.4251046025104603,
+          "max": 2.8751793400286942
+        },
+        "raised": 28,
+        "raisedExtraEuros": 1229.48,
+        "bookDelay": {
+          "mean": 187.7188940092166,
+          "median": 4,
+          "p90": 217,
+          "p95": 1071,
+          "max": 5516
+        },
+        "offered": 21,
+        "offerWins": 4,
+        "drops": 22
+      },
+      "2.5-4": {
+        "n": 96,
+        "late": 4,
+        "marginEuros": 3203.64,
+        "costRatio": 1.042145448263949,
+        "feeRatios": {
+          "mean": 1.0604123220088981,
+          "median": 0.9500208454681223,
+          "p90": 1.425082603074271,
+          "p95": 1.4251913709116215,
+          "max": 2.109721733004579
+        },
+        "raised": 16,
+        "raisedExtraEuros": 447.55,
+        "bookDelay": {
+          "mean": 97.70833333333333,
+          "median": 6.0,
+          "p90": 291,
+          "p95": 699,
+          "max": 980
+        },
+        "offered": 13,
+        "offerWins": 1,
+        "drops": 16
+      },
+      "4.5+": {
+        "n": 131,
+        "late": 15,
+        "marginEuros": 2453.25,
+        "costRatio": 1.1917179792671113,
+        "feeRatios": {
+          "mean": 1.2298550440550902,
+          "median": 0.9500903342366757,
+          "p90": 1.9043596730245231,
+          "p95": 2.2538552787663106,
+          "max": 2.546378653113088
+        },
+        "raised": 35,
+        "raisedExtraEuros": 1360.93,
+        "bookDelay": {
+          "mean": 419.91603053435114,
+          "median": 21,
+          "p90": 1328,
+          "p95": 1695,
+          "max": 5270
+        },
+        "offered": 32,
+        "offerWins": 0,
+        "drops": 15
+      }
+    },
+    "byDistance": {
+      "0-70": {
+        "n": 162,
+        "late": 5,
+        "marginEuros": 2983.7,
+        "costRatio": 1.1127194563990652,
+        "feeRatios": {
+          "mean": 1.182989147628401,
+          "median": 1.0132325219244325,
+          "p90": 1.4265335235378032,
+          "p95": 1.858736059479554,
+          "max": 4.899154196486663
+        },
+        "raised": 26,
+        "raisedExtraEuros": 394.77,
+        "bookDelay": {
+          "mean": 100.89506172839506,
+          "median": 4.0,
+          "p90": 188,
+          "p95": 795,
+          "max": 1952
+        },
+        "offered": 21,
+        "offerWins": 2,
+        "drops": 10
+      },
+      "150-250": {
+        "n": 216,
+        "late": 6,
+        "marginEuros": 6952.21,
+        "costRatio": 1.0455406037410326,
+        "feeRatios": {
+          "mean": 1.0503797636449121,
+          "median": 0.9500197578133917,
+          "p90": 1.4249851455733809,
+          "p95": 1.4251240800958411,
+          "max": 2.3752503576537913
+        },
+        "raised": 31,
+        "raisedExtraEuros": 1143.52,
+        "bookDelay": {
+          "mean": 197.20833333333334,
+          "median": 4.0,
+          "p90": 763,
+          "p95": 986,
+          "max": 5270
+        },
+        "offered": 26,
+        "offerWins": 3,
+        "drops": 31
+      },
+      "250-400": {
+        "n": 115,
+        "late": 11,
+        "marginEuros": 4721.54,
+        "costRatio": 1.1100777746907504,
+        "feeRatios": {
+          "mean": 1.1144420782681024,
+          "median": 0.9500368052999631,
+          "p90": 1.3774183796856105,
+          "p95": 2.3750142742948497,
+          "max": 2.575153854177532
+        },
+        "raised": 13,
+        "raisedExtraEuros": 1351.27,
+        "bookDelay": {
+          "mean": 360.89565217391305,
+          "median": 11,
+          "p90": 980,
+          "p95": 1574,
+          "max": 5516
+        },
+        "offered": 11,
+        "offerWins": 0,
+        "drops": 12
+      },
+      "400+": {
+        "n": 44,
+        "late": 2,
+        "marginEuros": 2641.53,
+        "costRatio": 1.05479798835155,
+        "feeRatios": {
+          "mean": 1.0604037707441465,
+          "median": 0.950040696523146,
+          "p90": 1.1300333922608525,
+          "p95": 1.4249607808959386,
+          "max": 2.3750301859454237
+        },
+        "raised": 5,
+        "raisedExtraEuros": 388.64,
+        "bookDelay": {
+          "mean": 396.97727272727275,
+          "median": 11.5,
+          "p90": 928,
+          "p95": 1149,
+          "max": 4695
+        },
+        "offered": 4,
+        "offerWins": 0,
+        "drops": 4
+      },
+      "70-150": {
+        "n": 112,
+        "late": 7,
+        "marginEuros": 2639.27,
+        "costRatio": 1.0825778870139116,
+        "feeRatios": {
+          "mean": 1.0842676705951209,
+          "median": 0.9500488280784793,
+          "p90": 1.4251173708920188,
+          "p95": 1.7744672046348025,
+          "max": 2.074032105760151
+        },
+        "raised": 20,
+        "raisedExtraEuros": 558.86,
+        "bookDelay": {
+          "mean": 126.14285714285714,
+          "median": 3.0,
+          "p90": 76,
+          "p95": 324,
+          "max": 4185
+        },
+        "offered": 16,
+        "offerWins": 0,
+        "drops": 12
+      }
+    },
+    "byReady": {
+      "future": {
+        "n": 371,
+        "late": 16,
+        "marginEuros": 12455.77,
+        "costRatio": 1.0512871233300645,
+        "feeRatios": {
+          "mean": 1.0675583189185813,
+          "median": 0.9500311009744972,
+          "p90": 1.2903225806451613,
+          "p95": 1.4685027834749487,
+          "max": 4.899154196486663
+        },
+        "raised": 33,
+        "raisedExtraEuros": 1808.09,
+        "bookDelay": {
+          "mean": 112.07277628032345,
+          "median": 3,
+          "p90": 54,
+          "p95": 324,
+          "max": 5516
+        },
+        "offered": 24,
+        "offerWins": 0,
+        "drops": 53
+      },
+      "nearNow": {
+        "n": 278,
+        "late": 15,
+        "marginEuros": 7482.48,
+        "costRatio": 1.114970006721538,
+        "feeRatios": {
+          "mean": 1.1464702106637987,
+          "median": 0.9500874081813141,
+          "p90": 1.4251665812403895,
+          "p95": 1.9039060627845674,
+          "max": 2.574958023506836
+        },
+        "raised": 62,
+        "raisedExtraEuros": 2028.97,
+        "bookDelay": {
+          "mean": 325.3992805755396,
+          "median": 20.0,
+          "p90": 946,
+          "p95": 1397,
+          "max": 4695
+        },
+        "offered": 54,
+        "offerWins": 5,
+        "drops": 16
+      }
+    },
+    "byRaised": {
+      "opening": {
+        "n": 554,
+        "late": 4,
+        "marginEuros": 20800.82,
+        "costRatio": 0.9817028815807581,
+        "feeRatios": {
+          "mean": 0.9953846357168932,
+          "median": 0.9500266999143493,
+          "p90": 1.1299937251621,
+          "p95": 1.189767995240928,
+          "max": 1.6611295681063123
+        },
+        "raised": 0,
+        "raisedExtraEuros": 0.0,
+        "bookDelay": {
+          "mean": 119.3971119133574,
+          "median": 4.0,
+          "p90": 321,
+          "p95": 857,
+          "max": 3787
+        },
+        "offered": 2,
+        "offerWins": 0,
+        "drops": 47
+      },
+      "raised": {
+        "n": 95,
+        "late": 27,
+        "marginEuros": -862.57,
+        "costRatio": 1.72090010188277,
+        "feeRatios": {
+          "mean": 1.7193659652228512,
+          "median": 1.4251655629139073,
+          "p90": 2.3750301859454237,
+          "p95": 2.3752503576537913,
+          "max": 4.899154196486663
+        },
+        "raised": 95,
+        "raisedExtraEuros": 3837.06,
+        "bookDelay": {
+          "mean": 693.6210526315789,
+          "median": 126,
+          "p90": 1695,
+          "p95": 4191,
+          "max": 5516
+        },
+        "offered": 76,
+        "offerWins": 5,
+        "drops": 22
+      }
+    },
+    "byOffer": {
+      "notOffered": {
+        "n": 571,
+        "late": 5,
+        "marginEuros": 21090.95,
+        "costRatio": 0.9921813400447781,
+        "feeRatios": {
+          "mean": 1.0129553424481976,
+          "median": 0.9500296033155713,
+          "p90": 1.1300635785649409,
+          "p95": 1.2903225806451613,
+          "max": 4.899154196486663
+        },
+        "raised": 19,
+        "raisedExtraEuros": 414.72,
+        "bookDelay": {
+          "mean": 159.2784588441331,
+          "median": 4,
+          "p90": 553,
+          "p95": 926,
+          "max": 5516
+        },
+        "offered": 0,
+        "offerWins": 0,
+        "drops": 49
+      },
+      "offered": {
+        "n": 78,
+        "late": 26,
+        "marginEuros": -1152.7,
+        "costRatio": 1.776314465026019,
+        "feeRatios": {
+          "mean": 1.748530183915499,
+          "median": 1.4252110052616902,
+          "p90": 2.37505496116078,
+          "p95": 2.3752503576537913,
+          "max": 2.8751793400286942
+        },
+        "raised": 76,
+        "raisedExtraEuros": 3422.34,
+        "bookDelay": {
+          "mean": 526.8205128205128,
+          "median": 127.0,
+          "p90": 1604,
+          "p95": 1699,
+          "max": 4818
+        },
+        "offered": 78,
+        "offerWins": 5,
+        "drops": 20
+      }
+    },
+    "byDelay": {
+      "0-10": {
+        "n": 391,
+        "late": 9,
+        "marginEuros": 12581.52,
+        "costRatio": 1.0190272975262307,
+        "feeRatios": {
+          "mean": 1.0438164340622862,
+          "median": 0.9500328191663931,
+          "p90": 1.2292562999385372,
+          "p95": 1.4250323136579062,
+          "max": 4.899154196486663
+        },
+        "raised": 23,
+        "raisedExtraEuros": 979.44,
+        "bookDelay": {
+          "mean": 2.6189258312020463,
+          "median": 2,
+          "p90": 6,
+          "p95": 7,
+          "max": 10
+        },
+        "offered": 19,
+        "offerWins": 0,
+        "drops": 46
+      },
+      "11-60": {
+        "n": 118,
+        "late": 4,
+        "marginEuros": 4228.4,
+        "costRatio": 1.0477438128902035,
+        "feeRatios": {
+          "mean": 1.0723198042017068,
+          "median": 0.95002956933686,
+          "p90": 1.4250434111518426,
+          "p95": 1.4738393515106853,
+          "max": 2.2538552787663106
+        },
+        "raised": 16,
+        "raisedExtraEuros": 469.87,
+        "bookDelay": {
+          "mean": 26.372881355932204,
+          "median": 22.0,
+          "p90": 46,
+          "p95": 54,
+          "max": 60
+        },
+        "offered": 12,
+        "offerWins": 3,
+        "drops": 15
+      },
+      "181+": {
+        "n": 101,
+        "late": 18,
+        "marginEuros": 1922.82,
+        "costRatio": 1.3038220101350575,
+        "feeRatios": {
+          "mean": 1.3281700617532275,
+          "median": 1.1299914228533308,
+          "p90": 2.3749529898458066,
+          "p95": 2.3751730959446093,
+          "max": 2.8751793400286942
+        },
+        "raised": 40,
+        "raisedExtraEuros": 2069.31,
+        "bookDelay": {
+          "mean": 1223.1683168316831,
+          "median": 872,
+          "p90": 2690,
+          "p95": 4191,
+          "max": 5516
+        },
+        "offered": 34,
+        "offerWins": 0,
+        "drops": 6
+      },
+      "61-180": {
+        "n": 39,
+        "late": 0,
+        "marginEuros": 1205.51,
+        "costRatio": 1.114423021146149,
+        "feeRatios": {
+          "mean": 1.178761949540986,
+          "median": 1.030009871668312,
+          "p90": 1.425179856115108,
+          "p95": 1.4252427184466019,
+          "max": 2.0686213349968807
+        },
+        "raised": 16,
+        "raisedExtraEuros": 318.44,
+        "bookDelay": {
+          "mean": 111.8974358974359,
+          "median": 115,
+          "p90": 158,
+          "p95": 159,
+          "max": 180
+        },
+        "offered": 13,
+        "offerWins": 2,
+        "drops": 2
+      }
+    }
+  }
+}

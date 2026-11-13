@@ -1,0 +1,18 @@
+{
+  "price": 1.42,
+  "fee": 1.05,
+  "margin": 0.1,
+  "capacity": 0.18,
+  "maxKm": 550,
+  "minDrivers": 12,
+  "notes": true,
+  "adaptive": true,
+  "earlyOffers": false,
+  "safetySlack": false,
+  "backlog": 0.04,
+  "priceFloor": 0,
+  "costRatio": 1.15,
+  "trustStep": 0.01,
+  "sameDayBacklog": 4,
+  "demandSlope": 14
+}
