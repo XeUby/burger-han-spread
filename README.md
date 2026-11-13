@@ -5,7 +5,13 @@ Official challenge: https://spread.bahnexpress.com/how
 
 Status: working practice prototype, undergoing strategy evaluation. **Not yet validated in a live final.**
 Repository: https://github.com/XeUby/burger-han-spread
-Preliminary Junction submission is not confirmed.
+Preliminary Junction draft was saved successfully on 13 November. Final submission is still pending.
+
+## Team: start here
+
+Read [CONTRIBUTING.md](CONTRIBUTING.md) for setup, a ready-to-use AI prompt and the fork/branch/PR workflow.
+Tasks: [Doni — pricing #1](https://github.com/XeUby/burger-han-spread/issues/1), [yerzham — drivers #2](https://github.com/XeUby/burger-han-spread/issues/2), [Yera — notes #3](https://github.com/XeUby/burger-han-spread/issues/3), [Boris — integration #4](https://github.com/XeUby/burger-han-spread/issues/4).
+No write invitation yet? Fork the public repository and submit a pull request. Offline unit tests need no team key.
 
 ## Setup (Python 3.12 recommended)
 

@@ -1,6 +1,6 @@
 # Preliminary Junction submission — draft text
 
-Status: prepared locally, NOT submitted to Junction Platform.
+Status: preliminary draft saved on Junction Platform on 13 November 2026; UI confirmed "Draft saved successfully". Final submission is pending. The saved title is "Burger Han — Spread Dispatcher"; the saved description includes the eight-week practice results and repository URL. The platform roster has Boris, Doni and Yera; Yerzhan will join later.
 
 Project name: Burger Han — Spread Dispatcher
 

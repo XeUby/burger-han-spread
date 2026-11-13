@@ -17,7 +17,7 @@ def main():
     p.add_argument('--baseline',action='store_true')
     p.add_argument('--output',default='results/benchmark.json')
     args=p.parse_args()
-    policy=Policy(1.45,1.25,300,2,16,False,1000)
+    policy=Policy()
     def task(seed):
         opts=Namespace(seed=seed,level=8,board=False,resume=None,baseline=args.baseline)
         try:

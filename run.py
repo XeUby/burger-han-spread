@@ -77,6 +77,7 @@ def main():
     load_env()
     from transport import ResilientClient as Client
     from pricing import Policy
+    defaults = Policy()
     p = argparse.ArgumentParser()
     p.add_argument('--seed',default=None)
     p.add_argument('--level',type=int,choices=range(1,9),default=8)
@@ -84,16 +85,21 @@ def main():
     p.add_argument('--resume',help='Resume only your recorded practice world ID after interruption')
     p.add_argument('--board',action='store_true')
     p.add_argument('--final',action='store_true')
-    p.add_argument('--price',type=float,default=1.45)
-    p.add_argument('--fee',type=float,default=1.25)
-    p.add_argument('--max-drive',type=int,default=300)
-    p.add_argument('--min-drivers',type=int,default=2)
-    p.add_argument('--max-open',type=int,default=16)
-    p.add_argument('--margin-floor',type=int,default=1000)
+    p.add_argument('--price',type=float,default=defaults.price_multiplier)
+    p.add_argument('--fee',type=float,default=defaults.fee_multiplier)
+    p.add_argument('--max-drive',type=int,default=defaults.max_drive_minutes)
+    p.add_argument('--min-drivers',type=int,default=defaults.min_local_drivers)
+    p.add_argument('--max-open',type=int,default=defaults.max_open_orders)
+    p.add_argument('--margin-floor',type=int,default=defaults.margin_floor_cents)
     args = p.parse_args()
     if args.board and args.seed:
         p.error('--board cannot be combined with --seed')
-    policy = Policy(args.price,args.fee,args.max_drive,args.min_drivers,args.max_open)
+    policy = defaults
+    policy.price_multiplier = args.price
+    policy.fee_multiplier = args.fee
+    policy.max_drive_minutes = args.max_drive
+    policy.min_local_drivers = args.min_drivers
+    policy.max_open_orders = args.max_open
     policy.margin_floor_cents = args.margin_floor
     if args.final:
         from final_runner import run_final

@@ -5,6 +5,8 @@ Every leg in a trade-in must be on time. Public rule files are local in docs/.
 
 Each teammate gives their AI the repository and ONE assignment below. Work in separate clones and branches, open a PR; no direct push to main. Do not send your AI a screenshot containing the key: set .env locally.
 
+Owners: A = Doni / derzetta (#1); B = yerzham (#2); C = Yera, GitHub username pending (#3); D = Boris / XeUby (#4). See CONTRIBUTING.md for exact setup, fork and PR instructions. Invitations are not yet sent; forks allow work to begin without write access.
+
 ## A — Pricing and admission (feature/pricing)
 Own pricing.py and tests/test_pricing_*.py.
 Improve prices_for(request, now, roads, drivers, orders, policy) -> dict[option, integer cents].
@@ -39,7 +41,7 @@ Keep final entry point conservative until live test succeeds.
 You are working on Burger Han's Spread challenge. Read AGENTS.md and docs/TEAM.md first. You own assignment [A/B/C]. Implement that assignment on your feature branch, keeping existing interfaces. Read the official rules and SDK types. Preserve other teammates' work. Never publish credentials or delete their worlds. Return code, tests and measured paired-seed results, including failures and limitations. Ask the integrator for new event/state hooks rather than editing their modules concurrently.
 
 ## Required event checklist (Helsinki)
-- Friday 13 November 23:59: preliminary Junction submission. Still needs platform confirmation.
+- Friday 13 November: preliminary Junction draft saved successfully. The final submission remains pending. Yerzhan will be added to the Junction roster later.
 - Saturday 14 November 14:00 and 20:00: test finals. Use one designated operator.
 - Sunday 15 November before 07:30: registration completed; stable version selected and machine ready.
 - Sunday 08:00: final begins, ~34 minutes. One process, stable network, automatic recovery.
