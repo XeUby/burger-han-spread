@@ -1,0 +1,102 @@
+{
+  "label": "champion",
+  "promotedFrom": "validation-final",
+  "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+  "settings": {
+    "price": 1.42,
+    "fee": 1.05,
+    "margin": 0.1,
+    "capacity": 0.18,
+    "maxKm": 550,
+    "minDrivers": 12,
+    "notes": true,
+    "adaptive": true,
+    "earlyOffers": false,
+    "safetySlack": false,
+    "backlog": 0.04,
+    "priceFloor": 0,
+    "costRatio": 1.15,
+    "trustStep": 0.01,
+    "sameDayBacklog": 4,
+    "demandSlope": 14
+  },
+  "previous": {
+    "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+    "meanMarginCentsOnAll": 554189.625
+  },
+  "meanMarginCentsOnAll": 841862.25,
+  "weeks": {
+    "formal-unseen-20261113-09": {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "marginCents": 695990,
+      "revenueCents": 2270620,
+      "wonOrders": 275,
+      "onTimeShare": 0.9963636363636363,
+      "undeliveredShare": 0,
+      "ranked": true
+    },
+    "formal-unseen-20261113-10": {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "marginCents": 1025230,
+      "revenueCents": 3007070,
+      "wonOrders": 298,
+      "onTimeShare": 0.9865771812080537,
+      "undeliveredShare": 0,
+      "ranked": true
+    },
+    "formal-unseen-20261113-11": {
+      "worldId": "w679c0fd4b18e923880c6",
+      "marginCents": 759825,
+      "revenueCents": 2217882,
+      "wonOrders": 245,
+      "onTimeShare": 0.9959183673469387,
+      "undeliveredShare": 0,
+      "ranked": true
+    },
+    "formal-unseen-20261113-12": {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "marginCents": 1048361,
+      "revenueCents": 3250583,
+      "wonOrders": 323,
+      "onTimeShare": 0.978328173374613,
+      "undeliveredShare": 0,
+      "ranked": true
+    },
+    "formal-unseen-20261113-13": {
+      "worldId": "w2f96a475ae718d1589d9",
+      "marginCents": 995695,
+      "revenueCents": 2792012,
+      "wonOrders": 305,
+      "onTimeShare": 0.9934426229508196,
+      "undeliveredShare": 0,
+      "ranked": true
+    },
+    "formal-unseen-20261113-14": {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "marginCents": 613634,
+      "revenueCents": 2030734,
+      "wonOrders": 226,
+      "onTimeShare": 0.995575221238938,
+      "undeliveredShare": 0,
+      "ranked": true
+    },
+    "formal-unseen-20261113-15": {
+      "worldId": "w735d87d8fe1b99845667",
+      "marginCents": 837822,
+      "revenueCents": 2897681,
+      "wonOrders": 285,
+      "onTimeShare": 0.9614035087719298,
+      "undeliveredShare": 0,
+      "ranked": true
+    },
+    "formal-unseen-20261113-16": {
+      "worldId": "wce13500dc9c2829611d1",
+      "marginCents": 758341,
+      "revenueCents": 2436170,
+      "wonOrders": 306,
+      "onTimeShare": 0.9836601307189542,
+      "undeliveredShare": 0,
+      "ranked": true
+    }
+  }
+}

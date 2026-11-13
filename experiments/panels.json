@@ -1,0 +1,40 @@
+{
+  "rule": {
+    "minOnTimeShare": 0.94,
+    "minMeanGainCents": 5000,
+    "maxLosingShare": 0.25
+  },
+  "panels": {
+    "screen": {
+      "purpose": "First look at an idea. Holds the champion's two lowest-margin weeks (09, 14) and its two lowest on-time weeks (12, 15).",
+      "seeds": [
+        "formal-unseen-20261113-09",
+        "formal-unseen-20261113-12",
+        "formal-unseen-20261113-14",
+        "formal-unseen-20261113-15"
+      ]
+    },
+    "confirm": {
+      "purpose": "Second half of panel all. Play it only after screen passes.",
+      "seeds": [
+        "formal-unseen-20261113-10",
+        "formal-unseen-20261113-11",
+        "formal-unseen-20261113-13",
+        "formal-unseen-20261113-16"
+      ]
+    },
+    "fresh": {
+      "purpose": "Weeks nobody tuned on. Play once, for the champion and the last candidate, before the code freeze on Saturday evening.",
+      "seeds": [
+        "bh-fresh-20261114-01",
+        "bh-fresh-20261114-02",
+        "bh-fresh-20261114-03",
+        "bh-fresh-20261114-04",
+        "bh-fresh-20261114-05",
+        "bh-fresh-20261114-06",
+        "bh-fresh-20261114-07",
+        "bh-fresh-20261114-08"
+      ]
+    }
+  }
+}
