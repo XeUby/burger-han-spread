@@ -1,5 +1,22 @@
 # Measured results — 13 November 2026
 
+## Config F (current default, 13–14 November)
+
+Safe-note filter, min local drivers=1, no open-order cap; other parameters unchanged. Same seeds as below.
+
+| Seed | Margin EUR | Orders | On time |
+|---|---:|---:|---:|
+| spread-1 | 4701.95 | 203 | 96.06% |
+| burger-validation-1 | 3519.18 | 132 | 100.00% |
+| burger-holdout-1 | 3690.40 | 128 | 100.00% |
+| burger-holdout-2 | 2971.94 | 100 | 100.00% |
+| burger-holdout-3 | 3823.36 | 133 | 96.99% |
+| burger-holdout-4 | 5740.99 | 254 | 92.52% |
+
+Mean over 6 weeks: EUR 4074.64 (previous policy on the same seeds: EUR 1850.08). Measured via a monkeypatched run of the same logic; a run through `run.py` after the code change is still pending (all 8 team practice slots were busy). Holdout-4 at 92.5% is close to the 90% minimum. Full sweep: docs/experiments/2026-11-13-capacity-sweep.md.
+
+## Previous selected policy
+
 Level 8, official server. All amounts are simulated euros. These are practice results, not leaderboard ranks or a prediction of the final.
 
 Selected policy: price=1.45, opening fee=1.25, min local drivers=2, max open orders=16, max driving=300 minutes, margin floor=1000 cents. Notes, private addresses and trade-ins are currently declined.
