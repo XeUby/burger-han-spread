@@ -1,0 +1,287 @@
+[
+  {
+    "world_id": "w05847665121f8082a0c5",
+    "seed": "burger-holdout-3",
+    "level": 8,
+    "baseline": false,
+    "policy": {
+      "price_multiplier": 1.45,
+      "fee_multiplier": 1.25,
+      "max_drive_minutes": 300,
+      "min_local_drivers": 2,
+      "max_open_orders": 16,
+      "allow_notes": false,
+      "margin_floor_cents": 1000
+    },
+    "score": {
+      "marginCents": 170379,
+      "revenueCents": 662643,
+      "marginShare": 0.25712034987165033,
+      "wonOrders": 61,
+      "onTimeShare": 0.9672131147540983,
+      "undeliveredShare": 0,
+      "ranked": true
+    }
+  },
+  {
+    "world_id": "w271da832aa4f5c250ccd",
+    "seed": "spread-1",
+    "level": 8,
+    "baseline": false,
+    "policy": {
+      "price_multiplier": 1.65,
+      "fee_multiplier": 1.35,
+      "max_drive_minutes": 300,
+      "min_local_drivers": 4,
+      "max_open_orders": 8,
+      "allow_notes": false
+    },
+    "score": {
+      "marginCents": 67408,
+      "revenueCents": 167930,
+      "marginShare": 0.40140534746620615,
+      "wonOrders": 17,
+      "onTimeShare": 1,
+      "undeliveredShare": 0,
+      "ranked": true
+    }
+  },
+  {
+    "world_id": "w58d02213b33b9c80bce6",
+    "seed": "burger-validation-1",
+    "level": 8,
+    "baseline": false,
+    "policy": {
+      "price_multiplier": 1.45,
+      "fee_multiplier": 1.25,
+      "max_drive_minutes": 300,
+      "min_local_drivers": 2,
+      "max_open_orders": 16,
+      "allow_notes": false,
+      "margin_floor_cents": 1000
+    },
+    "score": {
+      "marginCents": 199010,
+      "revenueCents": 704902,
+      "marginShare": 0.2823229328332165,
+      "wonOrders": 69,
+      "onTimeShare": 1,
+      "undeliveredShare": 0,
+      "ranked": true
+    }
+  },
+  {
+    "world_id": "w5e0db6c747154cfe6351",
+    "seed": "burger-holdout-5",
+    "level": 8,
+    "baseline": false,
+    "policy": {
+      "price_multiplier": 1.45,
+      "fee_multiplier": 1.25,
+      "max_drive_minutes": 300,
+      "min_local_drivers": 2,
+      "max_open_orders": 16,
+      "allow_notes": false,
+      "margin_floor_cents": 1000
+    },
+    "score": {
+      "marginCents": 202846,
+      "revenueCents": 749345,
+      "marginShare": 0.27069774269528724,
+      "wonOrders": 63,
+      "onTimeShare": 0.9841269841269841,
+      "undeliveredShare": 0.015873015873015872,
+      "ranked": true
+    }
+  },
+  {
+    "world_id": "w622e1b004b496980c0bf",
+    "seed": "burger-validation-2",
+    "level": 8,
+    "baseline": false,
+    "policy": {
+      "price_multiplier": 1.45,
+      "fee_multiplier": 1.25,
+      "max_drive_minutes": 300,
+      "min_local_drivers": 2,
+      "max_open_orders": 16,
+      "allow_notes": false,
+      "margin_floor_cents": 1000
+    },
+    "score": {
+      "marginCents": 248888,
+      "revenueCents": 913588,
+      "marginShare": 0.27242914749318076,
+      "wonOrders": 81,
+      "onTimeShare": 1,
+      "undeliveredShare": 0,
+      "ranked": true
+    }
+  },
+  {
+    "world_id": "w7330c367ee580bdbb079",
+    "seed": "burger-holdout-4",
+    "level": 8,
+    "baseline": false,
+    "policy": {
+      "price_multiplier": 1.45,
+      "fee_multiplier": 1.25,
+      "max_drive_minutes": 300,
+      "min_local_drivers": 2,
+      "max_open_orders": 16,
+      "allow_notes": false,
+      "margin_floor_cents": 1000
+    },
+    "score": {
+      "marginCents": 192954,
+      "revenueCents": 702395,
+      "marginShare": 0.27470867531801907,
+      "wonOrders": 66,
+      "onTimeShare": 1,
+      "undeliveredShare": 0,
+      "ranked": true
+    }
+  },
+  {
+    "world_id": "w8a46846fca55489cb3a1",
+    "seed": "spread-1",
+    "level": 8,
+    "baseline": false,
+    "policy": {
+      "price_multiplier": 1.45,
+      "fee_multiplier": 1.25,
+      "max_drive_minutes": 300,
+      "min_local_drivers": 2,
+      "max_open_orders": 16,
+      "allow_notes": false,
+      "margin_floor_cents": 1000
+    },
+    "score": {
+      "marginCents": 171242,
+      "revenueCents": 588766,
+      "marginShare": 0.2908489960357765,
+      "wonOrders": 65,
+      "onTimeShare": 0.9846153846153847,
+      "undeliveredShare": 0,
+      "ranked": true
+    }
+  },
+  {
+    "world_id": "w8c9eb9b467edb239705c",
+    "seed": "spread-1",
+    "level": 8,
+    "baseline": true,
+    "policy": {
+      "price_multiplier": 1.65,
+      "fee_multiplier": 1.35,
+      "max_drive_minutes": 300,
+      "min_local_drivers": 4,
+      "max_open_orders": 8,
+      "allow_notes": false,
+      "margin_floor_cents": 2500
+    },
+    "score": {
+      "marginCents": -7126908,
+      "revenueCents": 7124100,
+      "marginShare": -1.0003941550511644,
+      "wonOrders": 946,
+      "onTimeShare": 0.46617336152219874,
+      "undeliveredShare": 0.011627906976744186,
+      "ranked": false
+    }
+  },
+  {
+    "world_id": "wa2164053f02c82e7441f",
+    "seed": "burger-holdout-2",
+    "level": 8,
+    "baseline": false,
+    "policy": {
+      "price_multiplier": 1.45,
+      "fee_multiplier": 1.25,
+      "max_drive_minutes": 300,
+      "min_local_drivers": 2,
+      "max_open_orders": 16,
+      "allow_notes": false,
+      "margin_floor_cents": 1000
+    },
+    "score": {
+      "marginCents": 172647,
+      "revenueCents": 643738,
+      "marginShare": 0.26819451391715265,
+      "wonOrders": 57,
+      "onTimeShare": 0.9824561403508771,
+      "undeliveredShare": 0,
+      "ranked": true
+    }
+  },
+  {
+    "world_id": "wb7b7f7ce67245cd88828",
+    "seed": "burger-holdout-1",
+    "level": 8,
+    "baseline": false,
+    "policy": {
+      "price_multiplier": 1.45,
+      "fee_multiplier": 1.25,
+      "max_drive_minutes": 300,
+      "min_local_drivers": 2,
+      "max_open_orders": 16,
+      "allow_notes": false,
+      "margin_floor_cents": 1000
+    },
+    "score": {
+      "marginCents": 203809,
+      "revenueCents": 718712,
+      "marginShare": 0.28357534033103665,
+      "wonOrders": 69,
+      "onTimeShare": 1,
+      "undeliveredShare": 0,
+      "ranked": true
+    }
+  },
+  {
+    "world_id": "wd99c1f6cc06192b5c668",
+    "seed": "burger-validation-2",
+    "level": 8,
+    "baseline": false,
+    "policy": {
+      "price_multiplier": 1.65,
+      "fee_multiplier": 1.35,
+      "max_drive_minutes": 300,
+      "min_local_drivers": 4,
+      "max_open_orders": 8,
+      "allow_notes": false
+    },
+    "score": {
+      "marginCents": 116157,
+      "revenueCents": 367705,
+      "marginShare": 0.3158972545926762,
+      "wonOrders": 23,
+      "onTimeShare": 1,
+      "undeliveredShare": 0,
+      "ranked": true
+    }
+  },
+  {
+    "world_id": "we06a3683cd02640e5f8e",
+    "seed": "burger-validation-1",
+    "level": 8,
+    "baseline": false,
+    "policy": {
+      "price_multiplier": 1.65,
+      "fee_multiplier": 1.35,
+      "max_drive_minutes": 300,
+      "min_local_drivers": 4,
+      "max_open_orders": 8,
+      "allow_notes": false
+    },
+    "score": {
+      "marginCents": 25416,
+      "revenueCents": 76925,
+      "marginShare": 0.33039974000649985,
+      "wonOrders": 6,
+      "onTimeShare": 1,
+      "undeliveredShare": 0,
+      "ranked": true
+    }
+  }
+]

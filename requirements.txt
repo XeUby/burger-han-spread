@@ -1,0 +1,2 @@
+https://spread.bahnexpress.com/kit/spread-0.1.0-py3-none-any.whl
+truststore==0.10.5; sys_platform == 'win32'
