@@ -81,6 +81,14 @@ npm run practice -- --board
 
 One invocation consumes one official ranking attempt. No ranking attempt, live final, deployment or Junction submission was performed by this work.
 
+## Team workflow
+
+Every change is one idea on one branch, compared with the shared champion on the same fixed weeks before it merges. [AGENTS.md](AGENTS.md) has the rules, the commands and the owners; `analysis/gate.py` gives the verdict and writes the record to `docs/journal/`.
+
+```bash
+python analysis/gate.py status
+```
+
 ## Reproduce and extend
 
 Run a new paired example study:
