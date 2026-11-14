@@ -1,0 +1,514 @@
+[
+ {
+  "label": "v3-tyres",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "v3-drivers3",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "v3-far",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-all",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "minDrivers": 3,
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-tyres",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "v3-drivers3",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "v3-far",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-all",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "minDrivers": 3,
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-tyres",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "v3-drivers3",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "v3-far",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-all",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "minDrivers": 3,
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-tyres",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "v3-drivers3",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "v3-far",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-all",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "minDrivers": 3,
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-tyres",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "v3-drivers3",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "v3-far",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-all",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "minDrivers": 3,
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-tyres",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "v3-drivers3",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "v3-far",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-all",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "minDrivers": 3,
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-tyres",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "v3-drivers3",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "v3-far",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-all",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "minDrivers": 3,
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-tyres",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "v3-drivers3",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "v3-far",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-all",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "minDrivers": 3,
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-tyres",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "v3-drivers3",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "v3-far",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-all",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "minDrivers": 3,
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-tyres",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "v3-drivers3",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "v3-far",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-all",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "minDrivers": 3,
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-tyres",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "v3-drivers3",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "v3-far",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-all",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "minDrivers": 3,
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-tyres",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "v3-drivers3",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "v3-far",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-all",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "minDrivers": 3,
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-tyres",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "v3-drivers3",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "v3-far",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-all",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "minDrivers": 3,
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-tyres",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "v3-drivers3",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "v3-far",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-all",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "minDrivers": 3,
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-tyres",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "v3-drivers3",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "v3-far",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-all",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "minDrivers": 3,
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-tyres",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "v3-drivers3",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "v3-far",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "maxKm": 1200
+  }
+ },
+ {
+  "label": "v3-all",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "minDrivers": 3,
+   "maxKm": 1200
+  }
+ }
+]

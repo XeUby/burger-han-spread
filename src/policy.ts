@@ -90,6 +90,8 @@ export class Dispatcher extends Desk {
   snow: { from: number; to: number; places: Set<string> }[] = []
   /** Orders and requests whose car is still on summer tyres. */
   tyres = new Set<string>()
+  /** Why requests were declined, for the record. */
+  declines = new Map<string, number>()
   /** A post was refused because the world already has a live gig for its car, so the dispatcher lost track of a gig. */
   resync = false
   noteFacts = new Map<string, { rules: NoteRules; timed: TimedNote | null }>()
@@ -136,16 +138,18 @@ export class Dispatcher extends Desk {
       return
     }
     this.quoted.add(request.id)
-    const reject = () => {
+    const reject = (reason = "other") => {
+      this.declines.set(reason, (this.declines.get(reason) ?? 0) + 1)
       if (this.level >= 4) this.outbox.push({ type: "quote", requestId: request.id, prices: { [request.options[0]!.kind]: 100_000_000 } })
     }
     const rules = this.noteRules(request)
-    if (!rules.safe || (!this.settings.notes && request.note)) return reject()
+    if (!rules.safe || (!this.settings.notes && request.note)) return reject(request.legs.length > 1 ? "trade-in note" : request.legs.some(l => l.pickup.privateAddress || l.delivery.privateAddress) ? "private note" : "note")
     const plan = this.plannedRequest(request)
     const leg = plan.legs[0]!
     const road = this.network.road(leg.pickup.placeId, leg.delivery.placeId)
     const supply = this.supply(request)
-    if (road.km > this.settings.maxKm || road.km < this.settings.minKm || supply < this.settings.minDrivers) return reject()
+    if (road.km > this.settings.maxKm || road.km < this.settings.minKm) return reject("distance")
+    if (supply < this.settings.minDrivers) return reject("few drivers")
     const day = Math.floor(leg.pickup.window.from / 1440)
     let load = 0
     let unbooked = 0
@@ -164,8 +168,8 @@ export class Dispatcher extends Desk {
     const partner = this.settings.pairQuote > 0 ? this.partnerFor(request) : null
     if (partner) this.partners.set(request.id, partner)
     else this.partners.delete(request.id)
-    if (!partner && load >= Math.max(1, supply * this.settings.capacity)) return reject()
-    if (!partner && unbooked >= Math.max(2, supply * this.settings.backlog)) return reject()
+    if (!partner && load >= Math.max(1, supply * this.settings.capacity)) return reject("capacity")
+    if (!partner && unbooked >= Math.max(2, supply * this.settings.backlog)) return reject("backlog")
     const fee = this.baseFee(request)
     const trust = 1 + this.settings.trustStep * Math.min(25, this.trust.get(request.dealerId) ?? 0)
     const prices: Record<string, number> = {}
@@ -183,13 +187,13 @@ export class Dispatcher extends Desk {
       if (this.level <= 3 && option.listPriceCents < fee * 1.3) continue
       prices[option.kind] = price
     }
-    if (!Object.keys(prices).length) return reject()
+    if (!Object.keys(prices).length) return reject("no feasible option")
     if (this.settings.adaptive && this.level >= 4) {
       const options = request.options.filter(option => option.kind in prices)
       const list = Math.min(...options.map(option => option.listPriceCents))
       const features = this.features(request)
       const choice = this.market.optimize(features, { costCents: fee * this.settings.costRatio * this.routeCost(request) * (partner ? this.settings.pairQuote : 1), listPriceCents: list, trust, minPrice: Math.ceil(fee / (1 - this.settings.margin) + this.settings.priceFloor) })
-      if (choice.expectedProfitCents <= 0) return reject()
+      if (choice.expectedProfitCents <= 0) return reject("no profit")
       if (this.settings.sameDayPremium === 1 && this.settings.laterDiscount === 1) {
         for (const option of options) prices[option.kind] = Math.ceil(option.listPriceCents * trust * choice.ratio)
         this.bids.set(request.id, { features, ratio: choice.ratio })
