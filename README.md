@@ -38,6 +38,8 @@ A payout-only screen separates a 15% unbundled fee cut from customer pricing: fu
 
 Recombining already-waiting single-car gigs found only three extra pairs per week and €42.96/week of modeled opening-fee savings in six old weeks. This is an opportunity screen, not measured profit; the small exposure does not justify a live test yet ([screen](docs/rolling-bundles-screen.json)).
 
+An offline screen found 57.67 rejected requests per week with feasible later-day pickup and delivery. Replaying the original market model reproduced all 5,807 historical option prices exactly and estimated €518.99/week of added contribution before future capacity and booking effects. This motivates evaluating capacity across service days, but no policy or live trial has been added ([audit](docs/flexible-admission-screen.md)).
+
 Both study runners cap workers at four, serialize their own creations, and check total unfinished server worlds before each creation. Coordinate separate runners so their creation checks cannot race. Raw world logs and credentials remain local.
 
 ## Method

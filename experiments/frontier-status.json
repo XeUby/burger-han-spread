@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T03:25:49.128181+00:00",
+  "updatedAt": "2026-11-14T03:35:57.289541+00:00",
   "objective": "Continue systematic search toward the global optimum; practice only, no ranking submission.",
   "maximumConcurrentPlays": 4,
   "currentConcurrency": {
@@ -559,7 +559,9 @@
     "maximumJobs": 1,
     "trials": 24,
     "pairs": 12,
-    "candidateRevision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea"
+    "candidateRevision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+    "completedTrials": 3,
+    "startedTrials": 4
   },
   "completedPayoutScreen": {
     "sessionId": 76828,
@@ -652,5 +654,22 @@
       }
     }
   },
-  "leaderboardMetrics": "docs/leaderboard-metrics.json"
+  "leaderboardMetrics": "docs/leaderboard-metrics.json",
+  "flexibleAdmissionScreen": {
+    "report": "docs/flexible-admission-screen.json",
+    "summary": {
+      "weeks": 6,
+      "commerciallyQuotedGateMismatches": 0,
+      "flexibleRejectedRequests": 346,
+      "flexibleRejectedRequestsPerWeek": 57.666666666666664,
+      "dailyCapacityRejected": 197,
+      "backlogRejected": 149,
+      "quotePriceMismatches": 0,
+      "replayedQuotes": 3474,
+      "replayedOptionPrices": 5807,
+      "meanModeledAdditionalWins": 26.845077757947237,
+      "meanModeledAdditionalMarginEuros": 518.9876324333575
+    },
+    "decision": "Potential next candidate, not a measured profit gain. Need a bounded future-day allocation accounting for existing work before any rollout. Do not alter the frozen payout evaluation."
+  }
 }
