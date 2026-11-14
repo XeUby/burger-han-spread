@@ -36,6 +36,8 @@ export type Settings = {
   sitAfter: number; sitFee: number
   /** Pair a newly won car with a car whose gig has waited at least this many minutes without a driver; 0 for never. */
   pairOpen: number
+  /** A request whose car can ride with one of our waiting cars is priced at this share of its cost, and the limits on open work do not refuse it; 0 for off. */
+  pairQuote: number
   /** The fee, in full fees, a day and half a day before the last pickup, for a gig that no driver has taken. */
   climbDay: number; climbHalfDay: number
   /** What a route really costs against the dispatcher's estimate, for routes under 50 km, from 50 km to 100 km, and longer. */
@@ -45,7 +47,7 @@ export const defaults: Settings = {
   price: 1.42, fee: 1.05, payout: 0.85, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
   notes: true, noteSpelling: false, relist: false, openingOnly: true, adaptive: true, earlyOffers: false, safetySlack: false,
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, noteReader: true, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
-  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180,
+  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0,
   earlyClimb: true,
 }
 
@@ -54,7 +56,7 @@ export function validateSettings(value: unknown): asserts value is Partial<Setti
   for (const [key, field] of Object.entries(value)) {
     if (!(key in defaults)) throw new Error(`Unknown setting: ${key}`)
     if (typeof defaults[key as keyof Settings] === "boolean") { if (typeof field !== "boolean") throw new Error(`${key} must be boolean`); continue }
-    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait", "sitAfter", "pairOpen"].includes(key))) throw new Error(`${key} must be a positive number`)
+    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait", "sitAfter", "pairOpen", "pairQuote"].includes(key))) throw new Error(`${key} must be a positive number`)
     if (key === "bundleWait" && (!Number.isInteger(field) || field > 30)) throw new Error("bundleWait must be an integer from 0 to 30")
     if ((key === "margin" || key === "capacity") && field >= 1) throw new Error(`${key} must be below 1`)
     if (key === "placePrior" && field > 2) throw new Error("placePrior must be at most 2")
@@ -69,6 +71,8 @@ export class Dispatcher extends Desk {
   pending = new Set<string>()
   quoted = new Set<string>()
   lateReposts = new Map<string, number>()
+  /** Request or order id -> the waiting order that its car can ride with. */
+  partners = new Map<string, string>()
   /** A post was refused because the world already has a live gig for its car, so the dispatcher lost track of a gig. */
   resync = false
   noteFacts = new Map<string, { rules: NoteRules; timed: TimedNote | null }>()
@@ -140,8 +144,11 @@ export class Dispatcher extends Desk {
         if (this.pending.has(other.id) || (order?.status !== "delivered" && !this.gigsOf(other.id).some(id => this.booked.has(id)))) unbooked += weight
       }
     }
-    if (load >= Math.max(1, supply * this.settings.capacity)) return reject()
-    if (unbooked >= Math.max(2, supply * this.settings.backlog)) return reject()
+    const partner = this.settings.pairQuote > 0 ? this.partnerFor(request) : null
+    if (partner) this.partners.set(request.id, partner)
+    else this.partners.delete(request.id)
+    if (!partner && load >= Math.max(1, supply * this.settings.capacity)) return reject()
+    if (!partner && unbooked >= Math.max(2, supply * this.settings.backlog)) return reject()
     const fee = this.baseFee(request)
     const trust = 1 + this.settings.trustStep * Math.min(25, this.trust.get(request.dealerId) ?? 0)
     const prices: Record<string, number> = {}
@@ -164,7 +171,7 @@ export class Dispatcher extends Desk {
       const options = request.options.filter(option => option.kind in prices)
       const list = Math.min(...options.map(option => option.listPriceCents))
       const features = this.features(request)
-      const choice = this.market.optimize(features, { costCents: fee * this.settings.costRatio * this.routeCost(request), listPriceCents: list, trust, minPrice: Math.ceil(fee / (1 - this.settings.margin) + this.settings.priceFloor) })
+      const choice = this.market.optimize(features, { costCents: fee * this.settings.costRatio * this.routeCost(request) * (partner ? this.settings.pairQuote : 1), listPriceCents: list, trust, minPrice: Math.ceil(fee / (1 - this.settings.margin) + this.settings.priceFloor) })
       if (choice.expectedProfitCents <= 0) return reject()
       if (this.settings.sameDayPremium === 1 && this.settings.laterDiscount === 1) {
         for (const option of options) prices[option.kind] = Math.ceil(option.listPriceCents * trust * choice.ratio)
@@ -265,6 +272,37 @@ export class Dispatcher extends Desk {
     const trust = 1 + this.settings.trustStep * Math.min(25, this.trust.get(request.dealerId) ?? 0)
     const list = Math.min(...request.options.map(option => option.listPriceCents))
     return this.market.optimize(this.features(request), { costCents: fee * this.settings.costRatio * this.routeCost(request), listPriceCents: list, trust, minPrice: Math.ceil(fee / (1 - this.settings.margin) + this.settings.priceFloor) }).expectedProfitCents
+  }
+
+  /** One of our waiting cars that this request's car can share a gig with: the new car's pickup near the waiting car's
+   * delivery, or its delivery near the waiting car's pickup, on the same day and in time for both deadlines. */
+  partnerFor(request: PriceRequest): string | null {
+    if (request.legs.length !== 1) return null
+    const b = request.legs[0]!
+    if (b.pickup.privateAddress || b.delivery.privateAddress) return null
+    const deadline = Math.min(...request.options.map(option => option.deadline))
+    const drive = (from: string, to: string) => from === to ? 0 : Math.ceil(this.network.minutes(from, to) * 1.15)
+    const near = (from: string, to: string) => from === to || this.network.km(from, to) <= 30
+    const taken = new Set(this.partners.values())
+    for (const order of this.orders.values()) {
+      if (order.status !== "waiting" || order.legs.length !== 1 || taken.has(order.id) || this.urgent.has(order.id)) continue
+      const a = order.legs[0]!
+      if (a.pickup.privateAddress || a.delivery.privateAddress || this.hoursFor(this.requests.get(order.id))) continue
+      const gigs = this.gigsOf(order.id)
+      if (gigs.some(gigId => this.booked.has(gigId) || (this.posts.get(gigId)?.stops.length ?? 0) > 2)) continue
+      const start = this.now + 60
+      if (near(a.delivery.placeId, b.pickup.placeId)) {
+        const aDone = Math.max(a.pickup.window.from, start) + drive(a.pickup.placeId, a.delivery.placeId) + 20
+        const bStart = Math.max(aDone + drive(a.delivery.placeId, b.pickup.placeId) + 10, b.pickup.window.from)
+        if (aDone <= order.deadline - 30 && bStart + drive(b.pickup.placeId, b.delivery.placeId) + 20 <= deadline - 30 && Math.floor(aDone / 1440) === Math.floor(bStart / 1440)) return order.id
+      }
+      if (near(b.delivery.placeId, a.pickup.placeId)) {
+        const bDone = Math.max(b.pickup.window.from, start) + drive(b.pickup.placeId, b.delivery.placeId) + 20
+        const aStart = Math.max(bDone + drive(b.delivery.placeId, a.pickup.placeId) + 10, a.pickup.window.from)
+        if (bDone <= deadline - 30 && aStart <= order.lastPickupAt && Math.floor(bDone / 1440) === Math.floor(aStart / 1440)) return order.id
+      }
+    }
+    return null
   }
 
   /** Drivers ask more than the typical fee for a short route, which hardly pays their trip to the car and home. */
@@ -380,10 +418,11 @@ export class Dispatcher extends Desk {
     const fresh = candidates.length
     // Cars whose gig has waited without a driver can ride with a newly won car, as the second car of one gig.
     const waiting: string[] = []
-    if (this.settings.pairOpen > 0 && this.settings.bundlePairs) for (const [gigId, post] of this.posts) {
+    if ((this.settings.pairOpen > 0 || this.settings.pairQuote > 0) && this.settings.bundlePairs) for (const [gigId, post] of this.posts) {
       const order = this.orders.get(post.stops[0]!.orderId)
       if (!order || post.stops.length !== 2 || order.legs.length !== 1 || this.booked.has(gigId) || this.urgent.has(order.id) || this.legGigs.get(order.id)?.get(0) !== gigId) continue
-      if (this.now - (this.postedAt.get(gigId) ?? this.now) < this.settings.pairOpen || this.pickupBy(order) < this.now + 360 || this.hoursFor(this.requests.get(order.id))) continue
+      const partnered = items.some(([id]) => this.partners.get(id) === order.id)
+      if ((!partnered && (this.settings.pairOpen === 0 || this.now - (this.postedAt.get(gigId) ?? this.now) < this.settings.pairOpen)) || this.pickupBy(order) < this.now + 360 || this.hoursFor(this.requests.get(order.id))) continue
       if (this.outbox.some(action => "gigId" in action && action.gigId === gigId)) continue
       candidates.push({ order, post: { ...post, schedule: this.feesFor(order, 1, false) }, noteSafe: this.noteRules(this.requests.get(order.id)).safe })
       waiting.push(gigId)
@@ -434,6 +473,7 @@ export class Dispatcher extends Desk {
     }
     if (event.kind === "order_won") this.pending.delete(event.order.id)
     if (event.kind === "order_lost") this.pending.delete(event.requestId)
+    if (event.kind === "order_lost") this.partners.delete(event.requestId)
     if (event.kind === "gig_viewed") {
       if (!this.seen.has(event.gigId)) this.seen.set(event.gigId, new Set())
       this.seen.get(event.gigId)!.add(event.driverId)
