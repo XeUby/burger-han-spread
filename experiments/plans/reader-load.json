@@ -1,0 +1,130 @@
+[
+ {
+  "label": "reader-cost125",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "noteReader": true,
+   "costRatio": 1.25
+  }
+ },
+ {
+  "label": "reader-cap030",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "noteReader": true,
+   "capacity": 0.3
+  }
+ },
+ {
+  "label": "reader-cost125",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "noteReader": true,
+   "costRatio": 1.25
+  }
+ },
+ {
+  "label": "reader-cap030",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "noteReader": true,
+   "capacity": 0.3
+  }
+ },
+ {
+  "label": "reader-cost125",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "noteReader": true,
+   "costRatio": 1.25
+  }
+ },
+ {
+  "label": "reader-cap030",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "noteReader": true,
+   "capacity": 0.3
+  }
+ },
+ {
+  "label": "reader-cost125",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "noteReader": true,
+   "costRatio": 1.25
+  }
+ },
+ {
+  "label": "reader-cap030",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "noteReader": true,
+   "capacity": 0.3
+  }
+ },
+ {
+  "label": "reader-cost125",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "noteReader": true,
+   "costRatio": 1.25
+  }
+ },
+ {
+  "label": "reader-cap030",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "noteReader": true,
+   "capacity": 0.3
+  }
+ },
+ {
+  "label": "reader-cost125",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "noteReader": true,
+   "costRatio": 1.25
+  }
+ },
+ {
+  "label": "reader-cap030",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "noteReader": true,
+   "capacity": 0.3
+  }
+ },
+ {
+  "label": "reader-cost125",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "noteReader": true,
+   "costRatio": 1.25
+  }
+ },
+ {
+  "label": "reader-cap030",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "noteReader": true,
+   "capacity": 0.3
+  }
+ },
+ {
+  "label": "reader-cost125",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "noteReader": true,
+   "costRatio": 1.25
+  }
+ },
+ {
+  "label": "reader-cap030",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "noteReader": true,
+   "capacity": 0.3
+  }
+ }
+]

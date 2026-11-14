@@ -10,6 +10,8 @@ export type TimedNote = {
   pickup?: HoursBound
   delivery?: HoursBound
   readyAt?: number
+  /** A tighter deadline from the note. */
+  deadline?: number
 }
 
 /** Reads explicit opening hours, equipment and supported readiness clauses; rejects any unknown remainder. */

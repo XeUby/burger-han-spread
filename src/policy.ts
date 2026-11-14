@@ -5,6 +5,7 @@ import { normalizeNote } from "./note-spelling.ts"
 import { canRelist } from "./relisting.ts"
 import { readReadiness } from "./readiness.ts"
 import { readHours } from "./hours-note.ts"
+import { readFacts } from "./note-reader.ts"
 import { planTimedLeg, withNoteHours } from "./hours-plan.ts"
 import type { TimedNote } from "./hours-note.ts"
 import { lateRescueApplies, lateRescueSchedule } from "./late-rescue.ts"
@@ -23,16 +24,18 @@ import type { Action, ActionResult, DeskEvent, DeskSnapshot, DriverProfile, FeeS
 export type Settings = {
   price: number; fee: number; payout: number; margin: number; capacity: number; maxKm: number; minDrivers: number
   notes: boolean; noteSpelling: boolean; relist: boolean; openingOnly: boolean; adaptive: boolean; earlyOffers: boolean; safetySlack: boolean
-  auction: boolean; allowPrivate: boolean; tradeIns: boolean; homeOffers: boolean; readiness: boolean; bundlePairs: boolean; timedNotes: boolean; lateRescue: boolean
+  auction: boolean; allowPrivate: boolean; tradeIns: boolean; homeOffers: boolean; readiness: boolean; bundlePairs: boolean; timedNotes: boolean; noteReader: boolean; lateRescue: boolean
   sameDayPremium: number; laterDiscount: number; placePrior: number; bundleWait: number
   backlog: number; priceFloor: number; costRatio: number; trustStep: number; sameDayBacklog: number; demandSlope: number
   earlyClimb: boolean
+  /** What a route really costs against the dispatcher's estimate, for routes under 50 km, from 50 km to 100 km, and longer. */
+  shortCost: number; middleCost: number; longCost: number
 }
 export const defaults: Settings = {
   price: 1.42, fee: 1.05, payout: 0.85, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
   notes: true, noteSpelling: false, relist: false, openingOnly: true, adaptive: true, earlyOffers: false, safetySlack: false,
-  auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
-  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14,
+  auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, noteReader: false, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
+  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1,
   earlyClimb: true,
 }
 
@@ -55,6 +58,7 @@ export class Dispatcher extends Desk {
   settings: Settings
   pending = new Set<string>()
   quoted = new Set<string>()
+  noteFacts = new Map<string, { rules: NoteRules; timed: TimedNote | null }>()
   trust = new Map<string, number>()
   deliveredOrders = new Set<string>()
   raised = new Map<string, number>()
@@ -147,7 +151,7 @@ export class Dispatcher extends Desk {
       const options = request.options.filter(option => option.kind in prices)
       const list = Math.min(...options.map(option => option.listPriceCents))
       const features = this.features(request)
-      const choice = this.market.optimize(features, { costCents: fee * this.settings.costRatio, listPriceCents: list, trust, minPrice: Math.ceil(fee / (1 - this.settings.margin) + this.settings.priceFloor) })
+      const choice = this.market.optimize(features, { costCents: fee * this.settings.costRatio * this.routeCost(request), listPriceCents: list, trust, minPrice: Math.ceil(fee / (1 - this.settings.margin) + this.settings.priceFloor) })
       if (choice.expectedProfitCents <= 0) return reject()
       if (this.settings.sameDayPremium === 1 && this.settings.laterDiscount === 1) {
         for (const option of options) prices[option.kind] = Math.ceil(option.listPriceCents * trust * choice.ratio)
@@ -163,8 +167,30 @@ export class Dispatcher extends Desk {
   }
 
   hoursFor(request: PriceRequest | undefined): TimedNote | null {
+    if (this.settings.noteReader) return this.factsFor(request).timed
     if (!this.settings.timedNotes || !request || request.legs.length !== 1 || request.legs[0]!.pickup.privateAddress || request.legs[0]!.delivery.privateAddress) return null
     return readHours(request.note, request.arrivedAt)
+  }
+
+  /** What the full reader makes of the request's note: whether the dispatcher can serve it, and its times when it has any. */
+  factsFor(request: PriceRequest | undefined): { rules: NoteRules; timed: TimedNote | null } {
+    const unsafe = { rules: { safe: false, manual: false, plates: false }, timed: null }
+    if (!request?.note) return { rules: { safe: true, manual: false, plates: false }, timed: null }
+    const known = this.noteFacts.get(request.id)
+    if (known) return known
+    const facts = readFacts(request.note, request.arrivedAt)
+    let result: { rules: NoteRules; timed: TimedNote | null } = unsafe
+    // A car on summer tyres cannot be collected in snow; the dispatcher does not plan around snow yet.
+    if (facts && !facts.summerTyres) {
+      const rules = { safe: true, manual: facts.manual, plates: facts.plates }
+      const hasTimes = facts.readyAt !== undefined || facts.deadline !== undefined || !!facts.pickup || !!facts.delivery
+      const simple = request.legs.length === 1 && !request.legs[0]!.pickup.privateAddress && !request.legs[0]!.delivery.privateAddress
+      if (!hasTimes) result = { rules, timed: null }
+      // Times in the note of a trade-in or of a private address do not say which car or stop they mean.
+      else if (simple) result = { rules, timed: { ...rules, safe: true, pickup: facts.pickup, delivery: facts.delivery, readyAt: facts.readyAt, deadline: facts.deadline } }
+    }
+    this.noteFacts.set(request.id, result)
+    return result
   }
 
   readinessFor(request: PriceRequest): Readiness | null {
@@ -176,23 +202,29 @@ export class Dispatcher extends Desk {
 
   noteRules(request: PriceRequest | undefined): NoteRules {
     const note = request?.note ?? null
+    if (this.settings.noteReader) return this.factsFor(request).timed ?? this.factsFor(request).rules
     return this.hoursFor(request) ?? (request ? this.readinessFor(request) : null) ?? readNote(this.settings.noteSpelling ? normalizeNote(note) : note)
   }
 
   plannedRequest(request: PriceRequest): PriceRequest {
-    if (this.settings.noteSpelling) {
+    if (this.settings.noteSpelling && !this.settings.noteReader) {
       const note = normalizeNote(request.note)
       if (note !== request.note) request = { ...request, note }
     }
     const readiness = this.readinessFor(request)
     const hours = this.hoursFor(request)
+    if (this.settings.noteReader && request.note && !hours) {
+      // The feasibility check reads the note with the short reader, so it gets the note's meaning in that reader's words.
+      const rules = this.factsFor(request).rules
+      if (rules.safe) return { ...request, note: rules.manual || rules.plates ? { language: "en", text: [rules.manual ? "Manual gearbox" : "", rules.plates ? "No plates" : ""].filter(Boolean).join(". ") } : null }
+    }
     if (!readiness && !hours) return request
     const first = request.legs[0]!
     const readyAt = Math.max(first.pickup.window.from, readiness?.readyAt ?? 0)
     const delay = Math.max(0, Math.floor(readyAt / 1440) - Math.floor(first.pickup.window.from / 1440)) * 1440
     const rules = hours ?? readiness!
     const equipment = [rules.manual ? "Manual gearbox" : "", rules.plates ? "No plates" : ""].filter(Boolean).join(". ")
-    const options = request.options.map(option => ({ ...option, deadline: option.deadline + delay }))
+    const options = request.options.map(option => ({ ...option, deadline: Math.min(option.deadline + delay, hours?.deadline ?? Infinity) }))
       .filter(option => option.deadline <= 7 * 1440 + 1200 && Math.floor(option.deadline / 1440) % 7 < 5)
     const leg = { ...first,
       pickup: { ...first.pickup, window: { from: readyAt, to: first.pickup.window.to + delay } },
@@ -219,7 +251,13 @@ export class Dispatcher extends Desk {
     const fee = this.baseFee(request)
     const trust = 1 + this.settings.trustStep * Math.min(25, this.trust.get(request.dealerId) ?? 0)
     const list = Math.min(...request.options.map(option => option.listPriceCents))
-    return this.market.optimize(this.features(request), { costCents: fee * this.settings.costRatio, listPriceCents: list, trust, minPrice: Math.ceil(fee / (1 - this.settings.margin) + this.settings.priceFloor) }).expectedProfitCents
+    return this.market.optimize(this.features(request), { costCents: fee * this.settings.costRatio * this.routeCost(request), listPriceCents: list, trust, minPrice: Math.ceil(fee / (1 - this.settings.margin) + this.settings.priceFloor) }).expectedProfitCents
+  }
+
+  /** Drivers ask more than the typical fee for a short route, which hardly pays their trip to the car and home. */
+  routeCost(request: PriceRequest): number {
+    const km = this.network.km(request.legs[0]!.pickup.placeId, request.legs[0]!.delivery.placeId)
+    return km < 50 ? this.settings.shortCost : km < 100 ? this.settings.middleCost : this.settings.longCost
   }
 
   supply(request: PriceRequest): number {
@@ -243,7 +281,7 @@ export class Dispatcher extends Desk {
 
   pickupBy(order: Order): number {
     const hours = this.hoursFor(this.requests.get(order.id))
-    if (hours) return planTimedLeg(order.legs[0]!, hours, order.deadline, this.now, this.network)?.latestPickupAt ?? this.now
+    if (hours) return planTimedLeg(order.legs[0]!, hours, Math.min(order.deadline, hours.deadline ?? Infinity), this.now, this.network)?.latestPickupAt ?? this.now
     if (!this.settings.safetySlack || order.legs.length !== 1) return order.lastPickupAt
     const request = this.requests.get(order.id)
     const rules = this.noteRules(request)
@@ -299,12 +337,12 @@ export class Dispatcher extends Desk {
         { orderId: order.id, leg, kind: "delivery" as const },
       ]
     })
-    const hold = this.settings.bundleWait > 0 && this.level >= 3 && order.legs.length === 1 && rules.safe && !order.legs[0]!.pickup.privateAddress && !order.legs[0]!.delivery.privateAddress && !retry.pickupFrom && !retry.manualLicence && !retry.plates && !this.urgent.has(order.id) && this.pickupBy(order) > this.now + 360
+    const hold = this.settings.bundleWait > 0 && this.level >= 3 && order.legs.length === 1 && rules.safe && !(this.settings.noteReader && this.hoursFor(request)) && !order.legs[0]!.pickup.privateAddress && !order.legs[0]!.delivery.privateAddress && !retry.pickupFrom && !retry.manualLicence && !retry.plates && !this.urgent.has(order.id) && this.pickupBy(order) > this.now + 360
     const post: PostAction = { type: "post", stops, audience: { experienced: legs.some(i => order.legs[i]!.car.premium), manualLicence: rules.manual || retry.manualLicence }, schedule: this.feesFor(order, legs.length, !hold) }
     const hours = this.hoursFor(request)
     if (hours) {
       const restrictions = { ...hours, plates: hours.plates || retry.plates, readyAt: Math.max(hours.readyAt ?? 0, retry.pickupFrom) }
-      const timed = planTimedLeg(order.legs[0]!, restrictions, order.deadline, this.now + 30, this.network)
+      const timed = planTimedLeg(order.legs[0]!, restrictions, Math.min(order.deadline, hours.deadline ?? Infinity), this.now + 30, this.network)
         ?? planTimedLeg(order.legs[0]!, restrictions, Math.max(order.deadline, this.now + 7 * 1440), this.now + 30, this.network)
       if (!timed) {
         const reason = `No route inside parsed note hours for ${order.id}`

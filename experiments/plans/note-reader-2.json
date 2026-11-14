@@ -1,0 +1,58 @@
+[
+ {
+  "label": "reader",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "noteReader": true
+  }
+ },
+ {
+  "label": "reader",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "noteReader": true
+  }
+ },
+ {
+  "label": "reader",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "noteReader": true
+  }
+ },
+ {
+  "label": "reader",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "noteReader": true
+  }
+ },
+ {
+  "label": "reader",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "noteReader": true
+  }
+ },
+ {
+  "label": "reader",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "noteReader": true
+  }
+ },
+ {
+  "label": "reader",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "noteReader": true
+  }
+ },
+ {
+  "label": "reader",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "noteReader": true
+  }
+ }
+]

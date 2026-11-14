@@ -29,7 +29,7 @@ async function create(seed: string) {
   try {
     let announced = false
     while (!stopped) {
-      if ((await client.worlds()).filter(world => !world.ended).length < 4) return await client.create(8, { seed })
+      if ((await client.worlds()).filter(world => !world.ended).length < Number(process.env.SPREAD_PLAY_CAP ?? 4)) return await client.create(8, { seed })
       if (!announced) console.log(`Waiting below the four-play cap: ${seed}`)
       announced = true
       await new Promise(resolve => setTimeout(resolve, 5000))
