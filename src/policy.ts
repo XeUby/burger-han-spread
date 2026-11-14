@@ -47,6 +47,8 @@ export type Settings = {
   longPayout: number
   /** Choose each single car's opening fee with the booking model: what a gig that no driver takes at its opening costs more, in typical fees; 0 for off. */
   bookMiss: number
+  /** Take cars still on summer tyres, and collect them outside the snow that a forecast announces. */
+  summerTyres: boolean
   /** The fee, in full fees, a day and half a day before the last pickup, for a gig that no driver has taken. */
   climbDay: number; climbHalfDay: number
   /** What a route really costs against the dispatcher's estimate, for routes under 50 km, from 50 km to 100 km, and longer. */
@@ -56,7 +58,7 @@ export const defaults: Settings = {
   price: 1.42, fee: 1.05, payout: 0.85, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
   notes: true, noteSpelling: false, relist: false, openingOnly: true, adaptive: true, earlyOffers: false, safetySlack: false,
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, noteReader: true, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
-  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0, minKm: 0, longPayout: 0.85, bookMiss: 0,
+  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0, minKm: 0, longPayout: 0.85, bookMiss: 0, summerTyres: false,
   earlyClimb: true,
 }
 
@@ -84,6 +86,10 @@ export class Dispatcher extends Desk {
   partners = new Map<string, string>()
   /** Orders whose two-car gig found no driver in time: they go alone from now on. */
   unpaired = new Set<string>()
+  /** Snow from forecasts: when and where. */
+  snow: { from: number; to: number; places: Set<string> }[] = []
+  /** Orders and requests whose car is still on summer tyres. */
+  tyres = new Set<string>()
   /** A post was refused because the world already has a live gig for its car, so the dispatcher lost track of a gig. */
   resync = false
   noteFacts = new Map<string, { rules: NoteRules; timed: TimedNote | null }>()
@@ -212,7 +218,8 @@ export class Dispatcher extends Desk {
     const facts = readFacts(request.note, request.arrivedAt)
     let result: { rules: NoteRules; timed: TimedNote | null } = unsafe
     // A car on summer tyres cannot be collected in snow; the dispatcher does not plan around snow yet.
-    if (facts && !facts.summerTyres) {
+    if (facts?.summerTyres && this.settings.summerTyres) this.tyres.add(request.id)
+    if (facts && (!facts.summerTyres || this.settings.summerTyres)) {
       const rules = { safe: true, manual: facts.manual, plates: facts.plates }
       const hasTimes = facts.readyAt !== undefined || facts.deadline !== undefined || !!facts.pickup || !!facts.delivery
       const simple = request.legs.length === 1 && !request.legs[0]!.pickup.privateAddress && !request.legs[0]!.delivery.privateAddress
@@ -329,6 +336,18 @@ export class Dispatcher extends Desk {
     return null
   }
 
+  /** A car on summer tyres cannot be collected while snow falls at its pickup or its delivery place: start after it. */
+  afterSnow(orderId: string, leg: Order["legs"][number], from: number): number {
+    if (!this.tyres.has(orderId)) return from
+    for (let moved = true; moved;) {
+      moved = false
+      for (const snow of this.snow) {
+        if ((snow.places.has(leg.pickup.placeId) || snow.places.has(leg.delivery.placeId)) && snow.from <= from + 720 && snow.to > from) { from = snow.to; moved = true }
+      }
+    }
+    return from
+  }
+
   /** The opening fee of a single car, in typical fees, from the booking model. */
   openingFor(order: Order, request: PriceRequest): number {
     const leg = order.legs[0]!
@@ -427,7 +446,7 @@ export class Dispatcher extends Desk {
     const rules = this.noteRules(request)
     const stops: PostAction["stops"] = legs.flatMap(leg => {
       const car = order.legs[leg]!
-      const from = Math.max(car.pickup.window.from, retry.pickupFrom, this.readinessFor(request)?.readyAt ?? 0)
+      const from = this.afterSnow(order.id, car, Math.max(car.pickup.window.from, retry.pickupFrom, this.readinessFor(request)?.readyAt ?? 0))
       const cutoff = this.pickupBy(order)
       const to = this.settings.safetySlack && cutoff > Math.max(from, this.now + 30) ? Math.min(car.pickup.window.to, cutoff) : Math.max(from, car.pickup.window.to)
       return [
@@ -519,6 +538,7 @@ export class Dispatcher extends Desk {
     if (event.kind === "order_won") this.pending.delete(event.order.id)
     if (event.kind === "order_lost") this.pending.delete(event.requestId)
     if (event.kind === "order_lost") this.partners.delete(event.requestId)
+    if (event.kind === "forecast") this.snow.push({ from: event.from, to: event.to, places: new Set(event.placeIds) })
     if (event.kind === "gig_viewed") {
       if (!this.seen.has(event.gigId)) this.seen.set(event.gigId, new Set())
       this.seen.get(event.gigId)!.add(event.driverId)
