@@ -9,8 +9,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "research/value"))
-from report import load_world, paired, summarize
+sys.path.insert(0, str(ROOT))
+from research.value.report import load_world, paired, summarize
 
 
 def read(path):
@@ -34,6 +34,8 @@ def solver_audit(decisions):
         "fallbacks": sum(d["result"]["usedBaselineFallback"] for d in solves),
         "omittedCandidates": sum(d["omitted"] for d in solves),
         "largestCandidateSet": max((len(d["input"]["alternatives"]) for d in solves), default=0),
+        "framesWithFutureValue": sum(any(o["futureCents"] != 0 for c in d["input"]["alternatives"] for o in c.get("outcomes", [])) for d in solves),
+        "framesWithPaymentChoices": sum(any((p.get("multiplier") or 1) > 1 for p in d.get("plans", {}).values()) for d in solves),
         "actions": dict(Counter(d["action"]["type"] for d in actions)),
         "changedQuotes": changed_quotes,
         "anchoredQuotes": sum(d["plan"]["kind"] == "quote" and bool(d["plan"].get("anchor")) for d in executed),
@@ -124,7 +126,7 @@ def main():
             kinds = set().union(*(r["ledger"] for r in rows), *(r["ledger"] for r in control.values()))
             summary["meanLedgerDifferenceEuros"] = {kind: statistics.mean(r["ledger"].get(kind, 0) - control[r["seed"]]["ledger"].get(kind, 0) for r in rows) / 100 for kind in sorted(kinds)}
             assert abs(sum(summary["meanLedgerDifferenceEuros"].values()) - summary["versusBenchmark"]["meanEuros"]) < 1e-6
-            summary["planner"] = {name: sum(r["planner"][name] for r in rows) for name in ["solves", "fallbacks", "omittedCandidates", "changedQuotes", "anchoredQuotes", "bundledPosts", "higherPaidPosts", "meaningfulActions", "heldOverflow", "neutralDeadlineExpirations"]}
+            summary["planner"] = {name: sum(r["planner"][name] for r in rows) for name in ["solves", "fallbacks", "omittedCandidates", "framesWithFutureValue", "framesWithPaymentChoices", "changedQuotes", "anchoredQuotes", "bundledPosts", "higherPaidPosts", "meaningfulActions", "heldOverflow", "neutralDeadlineExpirations"]}
             checks = {"profit": summary["versusBenchmark"]["meanEuros"] >= gate["meanPairedGainEuros"], "qualification": summary["qualified"] == summary["weeks"], "weeklyOnTime": summary["minimumOnTime"] >= gate["minimumWeeklyOnTime"], "aggregateOnTime": summary["aggregateOnTime"] >= control_summary["aggregateOnTime"] - gate["maximumAggregateOnTimeDrop"], "undelivered": summary["undelivered"] == gate["undelivered"], "failedVisits": summary["failedVisits"] == gate["failedVisits"], "operations": not any(r["runtimeFailures"] for r in rows), "mechanismExercised": summary["planner"]["meaningfulActions"] > 0}
             summary["developmentChecks"] = checks
             summary["developmentGatePassed"] = arm != "benchmark" and all(checks.values())
