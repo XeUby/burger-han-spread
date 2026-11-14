@@ -224,25 +224,29 @@
       "seed": "note-spelling-unseen-20261114-6e740a3630050c2d",
       "side": "baseline",
       "worldId": "w05c7c136c1ff39724db3",
-      "startedAt": "2026-11-14T01:56:22.170Z"
+      "startedAt": "2026-11-14T01:56:22.170Z",
+      "completedAt": "2026-11-14T01:59:52.197Z"
     },
     {
       "seed": "note-spelling-unseen-20261114-6e740a3630050c2d",
       "side": "candidate",
       "worldId": "wb938037efdc55437d704",
-      "startedAt": "2026-11-14T01:56:37.020Z"
+      "startedAt": "2026-11-14T01:56:37.020Z",
+      "completedAt": "2026-11-14T01:59:58.064Z"
     },
     {
       "seed": "note-spelling-unseen-20261114-c07ddff01f6c5f00",
       "side": "baseline",
       "worldId": "w0a2762d880b912ef91d1",
-      "startedAt": "2026-11-14T01:56:38.039Z"
+      "startedAt": "2026-11-14T01:56:38.039Z",
+      "completedAt": "2026-11-14T01:59:57.279Z"
     },
     {
       "seed": "note-spelling-unseen-20261114-c07ddff01f6c5f00",
       "side": "candidate",
       "worldId": "wc93886b2b5bc4b534125",
-      "startedAt": "2026-11-14T01:56:41.579Z"
+      "startedAt": "2026-11-14T01:56:41.579Z",
+      "completedAt": "2026-11-14T02:00:09.148Z"
     }
   ]
 }

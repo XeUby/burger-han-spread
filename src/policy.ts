@@ -2,6 +2,7 @@ import { Desk } from "./desk.ts"
 import { Network, lastPickup, needsCharge } from "./planning.ts"
 import { readNote } from "./notes.ts"
 import { normalizeNote } from "./note-spelling.ts"
+import { canRelist } from "./relisting.ts"
 import { readReadiness } from "./readiness.ts"
 import { readHours } from "./hours-note.ts"
 import { planTimedLeg, withNoteHours } from "./hours-plan.ts"
@@ -21,14 +22,14 @@ import type { Action, ActionResult, DeskEvent, DeskSnapshot, DriverProfile, FeeS
 
 export type Settings = {
   price: number; fee: number; margin: number; capacity: number; maxKm: number; minDrivers: number
-  notes: boolean; noteSpelling: boolean; adaptive: boolean; earlyOffers: boolean; safetySlack: boolean
+  notes: boolean; noteSpelling: boolean; relist: boolean; adaptive: boolean; earlyOffers: boolean; safetySlack: boolean
   auction: boolean; allowPrivate: boolean; tradeIns: boolean; homeOffers: boolean; readiness: boolean; bundlePairs: boolean; timedNotes: boolean; lateRescue: boolean
   sameDayPremium: number; laterDiscount: number; placePrior: number; bundleWait: number
   backlog: number; priceFloor: number; costRatio: number; trustStep: number; sameDayBacklog: number; demandSlope: number
 }
 export const defaults: Settings = {
   price: 1.42, fee: 1.05, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
-  notes: true, noteSpelling: false, adaptive: true, earlyOffers: false, safetySlack: false,
+  notes: true, noteSpelling: false, relist: false, adaptive: true, earlyOffers: false, safetySlack: false,
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
   backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14,
 }
@@ -71,6 +72,8 @@ export class Dispatcher extends Desk {
   bids = new Map<string, { features: MarketFeatures; ratio: number }>()
   deferred = new Map<string, PriceRequest>()
   held = new Map<string, { post: PostAction; at: number }>()
+  postedAt = new Map<string, number>()
+  relisted = new Set<string>()
 
   constructor(world: World, level: number, now: number, map: WorldMap, drivers: DriverProfile[], settings: Partial<Settings> = {}) {
     super(world, level, now)
@@ -415,6 +418,26 @@ export class Dispatcher extends Desk {
     }
   }
 
+  override carry(post: PostAction, gigId: string): void {
+    super.carry(post, gigId)
+    if (this.settings.relist) this.postedAt.set(gigId, this.now)
+  }
+
+  async relistOpenGigs(): Promise<void> {
+    if (!this.settings.relist) return
+    for (const [gigId, post] of this.posts) {
+      const order = this.orders.get(post.stops[0]!.orderId)
+      if (!order || this.relisted.has(order.id) || this.booked.has(gigId)) continue
+      if (this.legGigs.get(order.id)?.get(0) !== gigId || !canRelist(order, post, this.now, this.postedAt.get(gigId) ?? this.now)) continue
+      if (this.outbox.some(action => "gigId" in action && action.gigId === gigId)) continue
+      this.relisted.add(order.id)
+      const actions: Action[] = [{ type: "withdraw", gigId }]
+      const results = await this.world.act(actions)
+      this.readResults(actions, results)
+      if (results.length === 1 && results[0]!.ok) this.outbox.push(structuredClone(post))
+    }
+  }
+
   async tick(): Promise<void> {
     this.flushBundles()
     const ready = [...this.deferred.values()].filter(request => request.respondBy <= this.now + 5)
@@ -442,6 +465,7 @@ export class Dispatcher extends Desk {
         }
       }
     }
+    await this.relistOpenGigs()
     if (this.settings.homeOffers && this.level >= 3) {
       const posts = this.outbox.filter(action => action.type === "post")
       for (let i = this.outbox.length - 1; i >= 0; i--) if (this.outbox[i]!.type === "post") this.outbox.splice(i, 1)
@@ -530,6 +554,13 @@ export class Dispatcher extends Desk {
       }
     }
     await super.rejoin(snapshot, history)
+    if (this.settings.relist) {
+      for (const gig of snapshot.gigs) {
+        this.postedAt.set(gig.id, gig.postedAt)
+        // A withdrawn gig may be our earlier attempt; never repeat it after restarting.
+        if (gig.status === "withdrawn") for (const stop of gig.stops) this.relisted.add(stop.orderId)
+      }
+    }
     for (const order of snapshot.orders) if (order.status === "delivered") this.deliveredOrders.add(order.id)
     this.lastSeq = history.at(-1)?.seq ?? -1
   }

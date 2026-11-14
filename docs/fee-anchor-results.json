@@ -1,0 +1,558 @@
+{
+  "scope": "Three complete ordinary-practice arms on one old high-rescue development seed, same frozen late-rescue policy and intended visible fee schedules. No ranking or live final.",
+  "protocol": {
+    "declaredAt": "2026-11-14T01:52:33.273638+00:00",
+    "hypothesis": "A gig may retain its creation fee as a learning reference even when repriced before the practice clock advances. Changing that reference alone could alter drivers later willingness to wait for raises. This is unproven.",
+    "scope": "Three complete ordinary-practice arms on one old high-rescue development seed, same frozen late-rescue policy and intended visible fee schedules. No ranking or live final.",
+    "seed": "formal-unseen-20261113-15",
+    "bundle": "experiments/frontier/late-rescue",
+    "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+    "settings": {
+      "price": 1.42,
+      "fee": 1.05,
+      "margin": 0.1,
+      "capacity": 0.35,
+      "maxKm": 700,
+      "minDrivers": 8,
+      "notes": true,
+      "adaptive": true,
+      "earlyOffers": false,
+      "safetySlack": false,
+      "auction": false,
+      "allowPrivate": false,
+      "tradeIns": false,
+      "homeOffers": false,
+      "readiness": false,
+      "bundlePairs": true,
+      "sameDayPremium": 1,
+      "laterDiscount": 1,
+      "placePrior": 0,
+      "bundleWait": 15,
+      "backlog": 0.08,
+      "priceFloor": 0,
+      "costRatio": 1.15,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "demandSlope": 14,
+      "timedNotes": false,
+      "lateRescue": true
+    },
+    "factors": [
+      0.5,
+      1,
+      2
+    ],
+    "files": {
+      "research/fee-anchor/probe.ts": "556781cdb6770b56573ffced1a8e51f22baa020275d3f35f98f0144d05b51a3b",
+      "research/fee-anchor/transport.ts": "de6bd362749cd5ebe071ee818dbd7f6fe3d5156e859dbc0c2de4c4984d295aa0"
+    },
+    "control": "Factor1 follows identical post-then-restore calls; compare its whole-week result with archived controlw6893e7d9cdd984154dfe as an additional call-order check.",
+    "archivedControl": "w6893e7d9cdd984154dfe",
+    "method": "Apply all pending actions without advancing. Multiply only newly posted fee schedules by the arm factor, then restore every successful post to its original schedule. Only then advance. Restore the original action acknowledgements to the unchanged dispatcher and journal every changed post and restoration.",
+    "failureRule": "Any missing acknowledgement, uncertain mutation or refused restoration stops that arm before advancing. Retain it as a failed attempt, never silently replace it. An uncertain advance also stops the arm; it does not enter the dispatcher recovery loop.",
+    "decision": "Inspect the first public event divergence and complete-week margin, fees, delivery and drops. Identical whole event histories across factors would reject this mechanism on the tested stream. A nonzero difference is mechanism evidence only; confirm on another old seed before policy selection.",
+    "maximumConcurrentPlays": 4,
+    "probePlays": 3,
+    "launchConstraint": "Refuse to start while any other practice world is unfinished. Do not compete with the active fresh spelling evaluation.",
+    "limitations": [
+      "No fee-learning internal state is observed; an event difference can establish sensitivity to creation/reprice history but cannot uniquely identify the implementation.",
+      "The practice clock stands still between calls. A live clock can move before restoration, exposing the temporary fee; a useful practice effect is not a live-safe policy without testing delayed restoration.",
+      "All arms keep the intended visible fees unchanged at each clock advance. This probe does not yet test cheaper intended fees."
+    ],
+    "frozenAt": "2026-11-14T02:00:35.843515+00:00"
+  },
+  "probe": {
+    "protocol": {
+      "declaredAt": "2026-11-14T01:52:33.273638+00:00",
+      "hypothesis": "A gig may retain its creation fee as a learning reference even when repriced before the practice clock advances. Changing that reference alone could alter drivers later willingness to wait for raises. This is unproven.",
+      "scope": "Three complete ordinary-practice arms on one old high-rescue development seed, same frozen late-rescue policy and intended visible fee schedules. No ranking or live final.",
+      "seed": "formal-unseen-20261113-15",
+      "bundle": "experiments/frontier/late-rescue",
+      "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "timedNotes": false,
+        "lateRescue": true
+      },
+      "factors": [
+        0.5,
+        1,
+        2
+      ],
+      "files": {
+        "research/fee-anchor/probe.ts": "556781cdb6770b56573ffced1a8e51f22baa020275d3f35f98f0144d05b51a3b",
+        "research/fee-anchor/transport.ts": "de6bd362749cd5ebe071ee818dbd7f6fe3d5156e859dbc0c2de4c4984d295aa0"
+      },
+      "control": "Factor1 follows identical post-then-restore calls; compare its whole-week result with archived controlw6893e7d9cdd984154dfe as an additional call-order check.",
+      "archivedControl": "w6893e7d9cdd984154dfe",
+      "method": "Apply all pending actions without advancing. Multiply only newly posted fee schedules by the arm factor, then restore every successful post to its original schedule. Only then advance. Restore the original action acknowledgements to the unchanged dispatcher and journal every changed post and restoration.",
+      "failureRule": "Any missing acknowledgement, uncertain mutation or refused restoration stops that arm before advancing. Retain it as a failed attempt, never silently replace it. An uncertain advance also stops the arm; it does not enter the dispatcher recovery loop.",
+      "decision": "Inspect the first public event divergence and complete-week margin, fees, delivery and drops. Identical whole event histories across factors would reject this mechanism on the tested stream. A nonzero difference is mechanism evidence only; confirm on another old seed before policy selection.",
+      "maximumConcurrentPlays": 4,
+      "probePlays": 3,
+      "launchConstraint": "Refuse to start while any other practice world is unfinished. Do not compete with the active fresh spelling evaluation.",
+      "limitations": [
+        "No fee-learning internal state is observed; an event difference can establish sensitivity to creation/reprice history but cannot uniquely identify the implementation.",
+        "The practice clock stands still between calls. A live clock can move before restoration, exposing the temporary fee; a useful practice effect is not a live-safe policy without testing delayed restoration.",
+        "All arms keep the intended visible fees unchanged at each clock advance. This probe does not yet test cheaper intended fees."
+      ],
+      "frozenAt": "2026-11-14T02:00:35.843515+00:00"
+    },
+    "protocolSha256": "4756f146c21855fbbb97ebc6455b9325985ebdbc4dd5ad61aded8a954de5c502",
+    "startedAt": "2026-11-14T02:01:17.210Z",
+    "terminal": true,
+    "arms": [
+      {
+        "factor": 0.5,
+        "worldId": "w4827d7757294e6a08469",
+        "status": "complete",
+        "score": {
+          "marginCents": 1036966,
+          "revenueCents": 3819965,
+          "marginShare": 0.27145955525770527,
+          "wonOrders": 329,
+          "onTimeShare": 0.9361702127659575,
+          "undeliveredShare": 0,
+          "ranked": true
+        }
+      },
+      {
+        "factor": 1,
+        "worldId": "w39ec7c5bcc2874eadce0",
+        "status": "complete",
+        "score": {
+          "marginCents": 1036966,
+          "revenueCents": 3819965,
+          "marginShare": 0.27145955525770527,
+          "wonOrders": 329,
+          "onTimeShare": 0.9361702127659575,
+          "undeliveredShare": 0,
+          "ranked": true
+        }
+      },
+      {
+        "factor": 2,
+        "worldId": "w97c919d63f4ed37b7cf5",
+        "status": "complete",
+        "score": {
+          "marginCents": 1036966,
+          "revenueCents": 3819965,
+          "marginShare": 0.27145955525770527,
+          "wonOrders": 329,
+          "onTimeShare": 0.9361702127659575,
+          "undeliveredShare": 0,
+          "ranked": true
+        }
+      }
+    ]
+  },
+  "records": [
+    {
+      "factor": 0.5,
+      "worldId": "w4827d7757294e6a08469",
+      "status": "complete",
+      "score": {
+        "marginCents": 1036966,
+        "revenueCents": 3819965,
+        "marginShare": 0.27145955525770527,
+        "wonOrders": 329,
+        "onTimeShare": 0.9361702127659575,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "result": {
+        "worldId": "w4827d7757294e6a08469",
+        "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 1.15,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14
+        },
+        "marginCents": 1036966,
+        "revenueCents": 3819965,
+        "wonOrders": 329,
+        "onTimeShare": 0.9361702127659575,
+        "undeliveredShare": 0,
+        "ranked": true,
+        "onTimeOrders": 308,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00303",
+          "R00426",
+          "R00581",
+          "R00586",
+          "R00620",
+          "R00628",
+          "R00687",
+          "R00698",
+          "R00699",
+          "R00708",
+          "R00779",
+          "R00780",
+          "R00786",
+          "R00804",
+          "R00808",
+          "R00828",
+          "R00830",
+          "R00831",
+          "R00832",
+          "R00835",
+          "R00845"
+        ],
+        "undeliveredOrderIds": [],
+        "label": "fee-anchor-0.5",
+        "files": {
+          "meta": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w4827d7757294e6a08469.meta.json",
+            "sha256": "387a091383803b7036a662dab91b76c9d2e30ea58867b06b97c487eab5bd2ef4"
+          },
+          "snapshot": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w4827d7757294e6a08469.snapshot.json",
+            "sha256": "c2cbd4f587d72d4a4b61c33f5f7005483cba05d92062b3a45fc261a88d5f451a"
+          },
+          "score": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w4827d7757294e6a08469.score.json",
+            "sha256": "626d7de88f7235e862de90533a883c4a05331493d75cf0ed1d5411fc12fb21c1"
+          },
+          "events": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w4827d7757294e6a08469.events.json",
+            "sha256": "61e651e62ca5234bb6bc2c7e0e209aed31a607599514f2febaa908eab76f1d40"
+          }
+        }
+      },
+      "journal": {
+        "restoredPosts": 341,
+        "failedPosts": 0,
+        "journalSha256": "1a20db9b4fc12f5ace638d89cd1694089ea78907339d704823ffff3a037a7b12"
+      },
+      "ledgerCents": {
+        "revenue": 3819965,
+        "driver_fee": -2661944,
+        "release_fee": -12053,
+        "late_refund": -109002
+      },
+      "drops": 50,
+      "actionErrors": [],
+      "recoveries": [],
+      "gainCents": 0,
+      "eventsComparedWithFactor1": {
+        "identical": true,
+        "commonPrefixEvents": 11941,
+        "referenceEvents": 11941,
+        "treatmentEvents": 11941,
+        "bookingsBeforeDifference": 357,
+        "referenceFirstDifference": null,
+        "treatmentFirstDifference": null
+      }
+    },
+    {
+      "factor": 1,
+      "worldId": "w39ec7c5bcc2874eadce0",
+      "status": "complete",
+      "score": {
+        "marginCents": 1036966,
+        "revenueCents": 3819965,
+        "marginShare": 0.27145955525770527,
+        "wonOrders": 329,
+        "onTimeShare": 0.9361702127659575,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "result": {
+        "worldId": "w39ec7c5bcc2874eadce0",
+        "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 1.15,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14
+        },
+        "marginCents": 1036966,
+        "revenueCents": 3819965,
+        "wonOrders": 329,
+        "onTimeShare": 0.9361702127659575,
+        "undeliveredShare": 0,
+        "ranked": true,
+        "onTimeOrders": 308,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00303",
+          "R00426",
+          "R00581",
+          "R00586",
+          "R00620",
+          "R00628",
+          "R00687",
+          "R00698",
+          "R00699",
+          "R00708",
+          "R00779",
+          "R00780",
+          "R00786",
+          "R00804",
+          "R00808",
+          "R00828",
+          "R00830",
+          "R00831",
+          "R00832",
+          "R00835",
+          "R00845"
+        ],
+        "undeliveredOrderIds": [],
+        "label": "fee-anchor-1",
+        "files": {
+          "meta": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w39ec7c5bcc2874eadce0.meta.json",
+            "sha256": "c57d729c3465b93ef65980d438c82d3b4d41dc0f7dde9de3eed8adbae8d6a501"
+          },
+          "snapshot": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w39ec7c5bcc2874eadce0.snapshot.json",
+            "sha256": "277c49d1b50bf25a6c1412a6bde64fe9dfb30bf719daa79649d77d1f9f789629"
+          },
+          "score": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w39ec7c5bcc2874eadce0.score.json",
+            "sha256": "626d7de88f7235e862de90533a883c4a05331493d75cf0ed1d5411fc12fb21c1"
+          },
+          "events": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w39ec7c5bcc2874eadce0.events.json",
+            "sha256": "61e651e62ca5234bb6bc2c7e0e209aed31a607599514f2febaa908eab76f1d40"
+          }
+        }
+      },
+      "journal": {
+        "restoredPosts": 341,
+        "failedPosts": 0,
+        "journalSha256": "caa583f50143b08dea72686b0f882eb77345803d99f24673e6de73b15f9d9794"
+      },
+      "ledgerCents": {
+        "revenue": 3819965,
+        "driver_fee": -2661944,
+        "release_fee": -12053,
+        "late_refund": -109002
+      },
+      "drops": 50,
+      "actionErrors": [],
+      "recoveries": [],
+      "gainCents": 0,
+      "eventsComparedWithFactor1": {
+        "identical": true,
+        "commonPrefixEvents": 11941,
+        "referenceEvents": 11941,
+        "treatmentEvents": 11941,
+        "bookingsBeforeDifference": 357,
+        "referenceFirstDifference": null,
+        "treatmentFirstDifference": null
+      }
+    },
+    {
+      "factor": 2,
+      "worldId": "w97c919d63f4ed37b7cf5",
+      "status": "complete",
+      "score": {
+        "marginCents": 1036966,
+        "revenueCents": 3819965,
+        "marginShare": 0.27145955525770527,
+        "wonOrders": 329,
+        "onTimeShare": 0.9361702127659575,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "result": {
+        "worldId": "w97c919d63f4ed37b7cf5",
+        "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 1.15,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14
+        },
+        "marginCents": 1036966,
+        "revenueCents": 3819965,
+        "wonOrders": 329,
+        "onTimeShare": 0.9361702127659575,
+        "undeliveredShare": 0,
+        "ranked": true,
+        "onTimeOrders": 308,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00303",
+          "R00426",
+          "R00581",
+          "R00586",
+          "R00620",
+          "R00628",
+          "R00687",
+          "R00698",
+          "R00699",
+          "R00708",
+          "R00779",
+          "R00780",
+          "R00786",
+          "R00804",
+          "R00808",
+          "R00828",
+          "R00830",
+          "R00831",
+          "R00832",
+          "R00835",
+          "R00845"
+        ],
+        "undeliveredOrderIds": [],
+        "label": "fee-anchor-2",
+        "files": {
+          "meta": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w97c919d63f4ed37b7cf5.meta.json",
+            "sha256": "f5f77559e8722ff87ef3157a7af93e8d537ec8133f56d81aec753b226afbc80a"
+          },
+          "snapshot": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w97c919d63f4ed37b7cf5.snapshot.json",
+            "sha256": "4e9d46988ba003ec49b9c3efd370e28a9247fcb2454512c17e1da1a72ad8b211"
+          },
+          "score": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w97c919d63f4ed37b7cf5.score.json",
+            "sha256": "626d7de88f7235e862de90533a883c4a05331493d75cf0ed1d5411fc12fb21c1"
+          },
+          "events": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w97c919d63f4ed37b7cf5.events.json",
+            "sha256": "61e651e62ca5234bb6bc2c7e0e209aed31a607599514f2febaa908eab76f1d40"
+          }
+        }
+      },
+      "journal": {
+        "restoredPosts": 341,
+        "failedPosts": 0,
+        "journalSha256": "2c5bbfb2e706d10be833f5fdb4c7040c4ff84c1431facb637ae80e11199d59fb"
+      },
+      "ledgerCents": {
+        "revenue": 3819965,
+        "driver_fee": -2661944,
+        "release_fee": -12053,
+        "late_refund": -109002
+      },
+      "drops": 50,
+      "actionErrors": [],
+      "recoveries": [],
+      "gainCents": 0,
+      "eventsComparedWithFactor1": {
+        "identical": true,
+        "commonPrefixEvents": 11941,
+        "referenceEvents": 11941,
+        "treatmentEvents": 11941,
+        "bookingsBeforeDifference": 357,
+        "referenceFirstDifference": null,
+        "treatmentFirstDifference": null
+      }
+    }
+  ],
+  "factor1VersusArchivedControl": {
+    "marginDifferenceCents": 0,
+    "events": {
+      "identical": true,
+      "commonPrefixEvents": 11941,
+      "referenceEvents": 11941,
+      "treatmentEvents": 11941,
+      "bookingsBeforeDifference": 357,
+      "referenceFirstDifference": null,
+      "treatmentFirstDifference": null
+    }
+  },
+  "allFactorsIdenticalEvents": true
+}

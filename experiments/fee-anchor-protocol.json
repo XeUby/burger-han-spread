@@ -42,12 +42,12 @@
   ],
   "files": {
     "research/fee-anchor/probe.ts": "556781cdb6770b56573ffced1a8e51f22baa020275d3f35f98f0144d05b51a3b",
-    "research/fee-anchor/transport.ts": "1006a41ab0472ac2fd98474a09b9de227bb74bbbe10bb5afec6e3c0470d10417"
+    "research/fee-anchor/transport.ts": "de6bd362749cd5ebe071ee818dbd7f6fe3d5156e859dbc0c2de4c4984d295aa0"
   },
   "control": "Factor1 follows identical post-then-restore calls; compare its whole-week result with archived controlw6893e7d9cdd984154dfe as an additional call-order check.",
   "archivedControl": "w6893e7d9cdd984154dfe",
   "method": "Apply all pending actions without advancing. Multiply only newly posted fee schedules by the arm factor, then restore every successful post to its original schedule. Only then advance. Restore the original action acknowledgements to the unchanged dispatcher and journal every changed post and restoration.",
-  "failureRule": "Any missing acknowledgement, uncertain mutation or refused restoration stops that arm before advancing. Retain it as a failed attempt, never silently replace it.",
+  "failureRule": "Any missing acknowledgement, uncertain mutation or refused restoration stops that arm before advancing. Retain it as a failed attempt, never silently replace it. An uncertain advance also stops the arm; it does not enter the dispatcher recovery loop.",
   "decision": "Inspect the first public event divergence and complete-week margin, fees, delivery and drops. Identical whole event histories across factors would reject this mechanism on the tested stream. A nonzero difference is mechanism evidence only; confirm on another old seed before policy selection.",
   "maximumConcurrentPlays": 4,
   "probePlays": 3,
@@ -57,5 +57,5 @@
     "The practice clock stands still between calls. A live clock can move before restoration, exposing the temporary fee; a useful practice effect is not a live-safe policy without testing delayed restoration.",
     "All arms keep the intended visible fees unchanged at each clock advance. This probe does not yet test cheaper intended fees."
   ],
-  "frozenAt": "2026-11-14T01:57:08.839239+00:00"
+  "frozenAt": "2026-11-14T02:00:35.843515+00:00"
 }

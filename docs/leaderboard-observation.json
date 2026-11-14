@@ -1,5 +1,5 @@
 {
-  "observedAt": "2026-11-14T01:27:38.214662+00:00",
+  "observedAt": "2026-11-14T02:14:42.537Z",
   "source": "https://spread.bahnexpress.com/v1/leaderboards/practice?level=8",
   "limitation": "Different secret seeds from all our ordinary practice worlds; not a controlled comparison or a projected rank.",
   "board": {
@@ -369,7 +369,7 @@
         {
           "rank": 8,
           "team": "davinci-s-night-shift",
-          "name": "DaVinci\u2019s Night Shift",
+          "name": "DaVinci’s Night Shift",
           "played": 5,
           "ranked": true,
           "marginCents": 7474219,
@@ -2306,6 +2306,57 @@
         },
         {
           "rank": 45,
+          "team": "the-delusionals",
+          "name": "The Delusionals",
+          "played": 5,
+          "ranked": true,
+          "marginCents": 4079252,
+          "onTimeShare": 0.9736842105263158,
+          "runs": [
+            {
+              "run": 1,
+              "marginCents": 920995,
+              "onTimeShare": 0.9818181818181818,
+              "wonOrders": 330,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 2,
+              "marginCents": 960150,
+              "onTimeShare": 0.97911227154047,
+              "wonOrders": 383,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 3,
+              "marginCents": 602155,
+              "onTimeShare": 0.9497907949790795,
+              "wonOrders": 239,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 4,
+              "marginCents": 800815,
+              "onTimeShare": 0.9841269841269841,
+              "wonOrders": 252,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 5,
+              "marginCents": 795137,
+              "onTimeShare": 0.9683544303797469,
+              "wonOrders": 316,
+              "ranked": true,
+              "deletedAt": null
+            }
+          ]
+        },
+        {
+          "rank": 46,
           "team": "burger-han",
           "name": "Burger Han",
           "played": 5,
@@ -2356,7 +2407,7 @@
           ]
         },
         {
-          "rank": 46,
+          "rank": 47,
           "team": "elysa-s-secret",
           "name": "Elysa's Secret",
           "played": 5,
@@ -2407,7 +2458,7 @@
           ]
         },
         {
-          "rank": 47,
+          "rank": 48,
           "team": "spread-on-the-bread",
           "name": "Spread on the Bread",
           "played": 5,
@@ -2458,7 +2509,7 @@
           ]
         },
         {
-          "rank": 48,
+          "rank": 49,
           "team": "jaffa",
           "name": "jaffa",
           "played": 5,
@@ -2509,7 +2560,7 @@
           ]
         },
         {
-          "rank": 49,
+          "rank": 50,
           "team": "evil-club",
           "name": "Evil Club",
           "played": 5,
@@ -2560,7 +2611,58 @@
           ]
         },
         {
-          "rank": 50,
+          "rank": 51,
+          "team": "dz-dealer",
+          "name": "Dz-dealer",
+          "played": 5,
+          "ranked": true,
+          "marginCents": 3186871,
+          "onTimeShare": 0.9567411679884643,
+          "runs": [
+            {
+              "run": 1,
+              "marginCents": 610110,
+              "onTimeShare": 0.9714285714285714,
+              "wonOrders": 280,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 2,
+              "marginCents": 653119,
+              "onTimeShare": 0.9816176470588235,
+              "wonOrders": 272,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 3,
+              "marginCents": 610561,
+              "onTimeShare": 0.953405017921147,
+              "wonOrders": 279,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 4,
+              "marginCents": 687949,
+              "onTimeShare": 0.9448529411764706,
+              "wonOrders": 272,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 5,
+              "marginCents": 625132,
+              "onTimeShare": 0.9330985915492958,
+              "wonOrders": 284,
+              "ranked": true,
+              "deletedAt": null
+            }
+          ]
+        },
+        {
+          "rank": 52,
           "team": "team-co-tai",
           "name": "Team co Tai",
           "played": 5,
@@ -2611,7 +2713,7 @@
           ]
         },
         {
-          "rank": 51,
+          "rank": 53,
           "team": "cazola-de-barro",
           "name": "Cazola de Barro",
           "played": 5,
@@ -2662,7 +2764,7 @@
           ]
         },
         {
-          "rank": 52,
+          "rank": 54,
           "team": "stingman",
           "name": "Stingman",
           "played": 5,
@@ -2713,7 +2815,7 @@
           ]
         },
         {
-          "rank": 53,
+          "rank": 55,
           "team": "abc",
           "name": "abc",
           "played": 5,
@@ -3275,6 +3377,41 @@
         },
         {
           "rank": null,
+          "team": "source-exp",
+          "name": "source-exp",
+          "played": 3,
+          "ranked": false,
+          "marginCents": null,
+          "onTimeShare": null,
+          "runs": [
+            {
+              "run": 1,
+              "marginCents": 1334899,
+              "onTimeShare": 0.9777777777777777,
+              "wonOrders": 360,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 2,
+              "marginCents": 1680219,
+              "onTimeShare": 0.9835294117647059,
+              "wonOrders": 425,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 3,
+              "marginCents": 1276713,
+              "onTimeShare": 0.9621212121212122,
+              "wonOrders": 396,
+              "ranked": true,
+              "deletedAt": null
+            }
+          ]
+        },
+        {
+          "rank": null,
           "team": "newkaabi",
           "name": "NewKaabi",
           "played": 2,
@@ -3318,6 +3455,16 @@
               "deletedAt": null
             }
           ]
+        },
+        {
+          "rank": null,
+          "team": "3topwr1",
+          "name": "3ToPwr1",
+          "played": 0,
+          "ranked": false,
+          "marginCents": null,
+          "onTimeShare": null,
+          "runs": []
         },
         {
           "rank": null,
@@ -3531,16 +3678,6 @@
         },
         {
           "rank": null,
-          "team": "dz-dealer",
-          "name": "Dz-dealer",
-          "played": 0,
-          "ranked": false,
-          "marginCents": null,
-          "onTimeShare": null,
-          "runs": []
-        },
-        {
-          "rank": null,
           "team": "ex-actum",
           "name": "EX-ACTUM",
           "played": 0,
@@ -3741,6 +3878,16 @@
         },
         {
           "rank": null,
+          "team": "lalalala",
+          "name": "lalalala",
+          "played": 0,
+          "ranked": false,
+          "marginCents": null,
+          "onTimeShare": null,
+          "runs": []
+        },
+        {
+          "rank": null,
           "team": "lizards",
           "name": "lizards",
           "played": 0,
@@ -3852,7 +3999,7 @@
         {
           "rank": null,
           "team": "robottika-sienheiluttelijat",
-          "name": "robottik\u00e4sienheiluttelijat",
+          "name": "robottikäsienheiluttelijat",
           "played": 0,
           "ranked": false,
           "marginCents": null,
@@ -3931,16 +4078,6 @@
         },
         {
           "rank": null,
-          "team": "source-exp",
-          "name": "source-exp",
-          "played": 0,
-          "ranked": false,
-          "marginCents": null,
-          "onTimeShare": null,
-          "runs": []
-        },
-        {
-          "rank": null,
           "team": "t2",
           "name": "T2",
           "played": 0,
@@ -3962,7 +4099,7 @@
         {
           "rank": null,
           "team": "tekeva-t-toljottajat",
-          "name": "Tekev\u00e4t Toljottajat",
+          "name": "Tekevät Toljottajat",
           "played": 0,
           "ranked": false,
           "marginCents": null,
@@ -4003,16 +4140,6 @@
           "rank": null,
           "team": "test1221",
           "name": "test1221",
-          "played": 0,
-          "ranked": false,
-          "marginCents": null,
-          "onTimeShare": null,
-          "runs": []
-        },
-        {
-          "rank": null,
-          "team": "the-delusionals",
-          "name": "The Delusionals",
           "played": 0,
           "ranked": false,
           "marginCents": null,
@@ -5054,6 +5181,16 @@
         },
         {
           "rank": null,
+          "team": "3topwr1",
+          "name": "3ToPwr1",
+          "played": 0,
+          "ranked": false,
+          "marginCents": null,
+          "onTimeShare": null,
+          "runs": []
+        },
+        {
+          "rank": null,
           "team": "4-horses",
           "name": "4-Horses",
           "played": 0,
@@ -5385,7 +5522,7 @@
         {
           "rank": null,
           "team": "davinci-s-night-shift",
-          "name": "DaVinci\u2019s Night Shift",
+          "name": "DaVinci’s Night Shift",
           "played": 0,
           "ranked": false,
           "marginCents": null,
@@ -5724,6 +5861,16 @@
         },
         {
           "rank": null,
+          "team": "lalalala",
+          "name": "lalalala",
+          "played": 0,
+          "ranked": false,
+          "marginCents": null,
+          "onTimeShare": null,
+          "runs": []
+        },
+        {
+          "rank": null,
           "team": "lizards",
           "name": "lizards",
           "played": 0,
@@ -5945,7 +6092,7 @@
         {
           "rank": null,
           "team": "robottika-sienheiluttelijat",
-          "name": "robottik\u00e4sienheiluttelijat",
+          "name": "robottikäsienheiluttelijat",
           "played": 0,
           "ranked": false,
           "marginCents": null,
@@ -6115,7 +6262,7 @@
         {
           "rank": null,
           "team": "tekeva-t-toljottajat",
-          "name": "Tekev\u00e4t Toljottajat",
+          "name": "Tekevät Toljottajat",
           "played": 0,
           "ranked": false,
           "marginCents": null,

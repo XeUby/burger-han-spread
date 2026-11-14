@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-14T01:58:27.083819+00:00",
+  "updatedAt": "2026-11-14T02:18:43.778832+00:00",
   "objective": "Continue systematic search toward the global optimum; practice only, no ranking submission.",
   "maximumConcurrentPlays": 4,
   "currentConcurrency": {
     "maximumConcurrentPlays": 4,
     "activeRunners": 1,
-    "note": "Fresh paired runner2482 owns experiments/note-spelling-validation-manifest.json. Do not edit its live manifest or launch the fee-anchor probe before it ends."
+    "note": "Only runner92095, four matched screen worlds. No probe forks remain."
   },
   "completedCombinationStudy": {
     "sessionId": 84558,
@@ -66,16 +66,15 @@
     "700km-only bundle treatment ends at7407.63/9410.50 euros, minimum96.6% on time. It gains versus the old baseline in both weeks but not versus bundles alone. No900km experiment scheduled."
   ],
   "nextSteps": [
-    "Poll fresh paired session2482 without restarting. Candidate and baseline source/settings are immutable; all16 attempts remain in the manifest.",
-    "When terminal, run python3 analysis/frontier_validation.py --manifest experiments/note-spelling-validation-manifest.json --output docs/note-spelling-validation and python3 analysis/note_spelling_audit.py. Apply the declared promotion rule without tuning to the panel.",
-    "Only after every other play ends, run the prepared3-arm fee-anchor mechanism probe. It tests creation-fee history while restoring identical visible fees before each clock advance. It is not a live-safe implementation.",
-    "Keep noteSpelling disabled by default unless fresh evidence clears the declared rule. Preserve the validated late-rescue source and report.",
-    "Maintain at most4 unfinished plays; no ranking or final submissions. Push coherent checkpoints to codex/standalone-dispatcher."
+    "Poll screen92095 without restarting; preserve all four attempts.",
+    "Audit complete-week ledger, on-time delivery, fees, drops, relisting count and errors. Apply predeclared screening gate before four confirmation seeds.",
+    "Keep noteSpelling and relist false until independent validation passes.",
+    "No ranking or final; at most4 unfinished plays."
   ],
   "validationStatus": "All16 fresh paired trials complete. Candidate mean10411.59 euros versus8242.34, +26.32%;7/8 positive;8/8 qualified; minimum94.94% on time; no undelivered orders. Full report docs/frontier-validation.md. No ranking submission.",
   "checks": {
-    "nodeSuite": 101,
-    "researchTests": 11,
+    "nodeSuite": 105,
+    "researchTests": 12,
     "pythonReportTests": 9,
     "typecheck": "passed"
   },
@@ -254,19 +253,10 @@
     },
     "decision": "Passed the predeclared criteria: all4 qualified with no undelivered orders, +208.64 euros on12 and exact unchanged ledgers on09/14/16. The2 rejected reprices on16 also occur in its control."
   },
-  "currentStudy": {
-    "sessionId": 2482,
-    "kind": "note-spelling fresh paired evaluation",
-    "terminal": false,
-    "trials": 16,
-    "manifest": "experiments/note-spelling-validation-manifest.json",
-    "baselineRevision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
-    "candidateRevision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa"
-  },
   "runtimeDefault": {
     "selection": "experiments/current-selection.json",
     "config": "experiments/final-config.json",
-    "revision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa",
+    "revision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c",
     "sourceReference": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
     "conformance": "docs/late-rescue-conformance.json"
   },
@@ -373,11 +363,110 @@
   },
   "feeAnchorProbe": {
     "protocol": "experiments/fee-anchor-protocol.json",
-    "status": "prepared, not launched",
+    "status": "running",
     "plays": 3,
     "source": "research/fee-anchor/probe.ts",
-    "testsPassed": 3,
+    "testsPassed": 4,
     "launchConstraint": "No unfinished practice worlds; never compete with the live paired runner.",
-    "limitation": "Zero-time restoration in practice does not establish live-clock safety."
+    "limitation": "Zero-time restoration in practice does not establish live-clock safety.",
+    "sessionId": 40111,
+    "worlds": [
+      {
+        "factor": 0.5,
+        "worldId": "w4827d7757294e6a08469"
+      },
+      {
+        "factor": 1,
+        "worldId": "w39ec7c5bcc2874eadce0"
+      },
+      {
+        "factor": 2,
+        "worldId": "w97c919d63f4ed37b7cf5"
+      }
+    ]
+  },
+  "noteSpellingValidation": {
+    "sessionId": 2482,
+    "terminal": true,
+    "report": "docs/note-spelling-validation.json",
+    "audit": "docs/note-spelling-validation-audit.json",
+    "paired": {
+      "meanDifferenceCents": 18486.875,
+      "medianDifferenceCents": 35366.5,
+      "minimumDifferenceCents": -115742,
+      "maximumDifferenceCents": 89905,
+      "totalDifferenceCents": 147895,
+      "relativeMeanImprovement": 0.019496066973824666,
+      "meanDifferenceBootstrap95Cents": [
+        -25104.75,
+        52720.64687499997
+      ],
+      "wins": 6,
+      "ties": 0,
+      "losses": 2,
+      "twoSidedExactSignTestP": 0.2890625
+    },
+    "candidate": {
+      "weeks": 8,
+      "qualifiedWeeks": 8,
+      "qualificationOneSided95Lower": 0.6876560219336321,
+      "meanMarginCents": 966723,
+      "medianMarginCents": 1038680.5,
+      "minMarginCents": 605705,
+      "maxMarginCents": 1194778,
+      "totalMarginCents": 7733784,
+      "totalRevenueCents": 25569545,
+      "wonOrders": 2476,
+      "onTimeOrders": 2440,
+      "undeliveredOrders": 0,
+      "aggregateOnTimeShare": 0.9854604200323102,
+      "aggregateUndeliveredShare": 0.0,
+      "minOnTimeShare": 0.9691358024691358
+    },
+    "auditSummary": {
+      "pairs": 8,
+      "correctedOrders": 65,
+      "lateCorrectedOrders": 0,
+      "changedCorrectedOrders": 1,
+      "changedWithPublicRequestDifferences": 0,
+      "unchangedWithUnmodeledRestrictions": 0,
+      "correctedOrderFailedVisits": 0,
+      "candidateActionErrors": 3,
+      "baselineActionErrors": 2
+    },
+    "promotionRulePassed": false,
+    "decision": "Keep noteSpelling disabled:95% paired bootstrap interval includes zero despite positive mean. Do not tune on these seeds and keep calling them unseen."
+  },
+  "completedFeeAnchor": {
+    "sessionId": 40111,
+    "kind": "fee-anchor mechanism probe",
+    "terminal": true,
+    "trials": 3,
+    "protocol": "experiments/fee-anchor-protocol.json",
+    "manifest": "runs/fee-anchor-probe.json",
+    "sourceRevision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+    "report": "docs/fee-anchor-results.json",
+    "decision": "Drop zero-time creation-fee anchoring: all3 arms have identical11941 events,341restored posts each and10369.66euros margin; factor1 also matches archived control exactly."
+  },
+  "completedRelistingProbe": {
+    "sessionId": 86724,
+    "kind": "relisting mechanism probe",
+    "terminal": true,
+    "protocol": "experiments/relisting-protocol.json",
+    "manifest": "runs/relisting-probe.json",
+    "baseWorldId": "wd214406cadcb458eff7b",
+    "maximumConcurrentPlays": 4,
+    "report": "docs/relisting-results.json",
+    "decision": "Proceed to bounded policy screen: same fees produced5vs3 bookings and47vs28 views across12cases; all36forks deleted, sham and hold histories identical, base11941events identical to archive."
+  },
+  "currentStudy": {
+    "sessionId": 92095,
+    "kind": "bounded relisting full-policy screen",
+    "terminal": false,
+    "protocol": "experiments/relisting-policy-protocol.json",
+    "plan": "experiments/plans/relisting.json",
+    "maximumJobs": 4,
+    "trials": 4,
+    "revision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c"
   }
 }

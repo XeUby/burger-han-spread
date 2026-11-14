@@ -31,9 +31,14 @@ export function anchorTransport(real: World, factor: number, record: (row: Ancho
   }
   const advance = async ({ actions = [], ...target }: Advance) => {
     const results = await act(actions)
-    const step = await real.advance(target)
-    now = step.now
-    return { ...step, results }
+    try {
+      const step = await real.advance(target)
+      now = step.now
+      return { ...step, results }
+    } catch (error) {
+      record({ at: now, stage: "advance-error", error: String(error) })
+      throw new Error(`Anchor advance stopped: ${String(error)}`)
+    }
   }
   return new Proxy(real, { get(target, key) {
     if (key === "act") return act

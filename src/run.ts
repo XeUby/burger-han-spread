@@ -153,6 +153,7 @@ async function rebuildPractice(previous: Dispatcher, world: World, map: WorldMap
   for (const [gig, count] of previous.homeOffersSent) desk.homeOffersSent.set(gig, Math.max(count, desk.homeOffersSent.get(gig) ?? 0))
   for (const [gig, at] of previous.lastOffer) desk.lastOffer.set(gig, at)
   for (const [gig, at] of previous.raised) desk.raised.set(gig, at)
+  for (const orderId of previous.relisted) desk.relisted.add(orderId)
   for (const event of history) {
     if (event.kind === "gig_viewed") desk.viewedAt.set(event.driverId, event.at)
     if (event.kind === "gig_booked") desk.gigDriver.set(event.gigId, event.driverId)

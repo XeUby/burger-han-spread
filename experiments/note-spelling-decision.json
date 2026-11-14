@@ -1,0 +1,12 @@
+{
+  "decidedAt": "2026-11-14T02:06:49.433131+00:00",
+  "selected": false,
+  "candidateRevision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa",
+  "baselineRevision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+  "validation": "docs/note-spelling-validation.json",
+  "audit": "docs/note-spelling-validation-audit.json",
+  "rule": "Require all8 candidate weeks qualified, no undelivered orders, positive mean paired gain with a positive95% paired bootstrap lower endpoint, and no unmodeled restrictions or failed visits on corrected-note orders. Inspect all operational errors and keep all attempts.",
+  "failedCondition": "Positive95% paired bootstrap lower endpoint: observed-25104.75 cents.",
+  "defaultNoteSpelling": false,
+  "interpretation": "Mean profit improved but the fresh sample is too variable to clear the declared rule. This does not establish a negative expected effect. Any further policy tuning or validation requires a clearly separated dataset and protocol."
+}

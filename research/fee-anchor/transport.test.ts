@@ -1,6 +1,7 @@
 import test from "node:test"
 import assert from "node:assert/strict"
 import { anchorTransport } from "./transport.ts"
+import { Unreachable } from "../../experiments/frontier/late-rescue/vendor/typescript/spread.ts"
 import type { World } from "../../experiments/frontier/late-rescue/vendor/typescript/spread.ts"
 import type { Action, PostAction } from "../../experiments/frontier/late-rescue/vendor/typescript/types.ts"
 
@@ -31,4 +32,9 @@ test("a missing post acknowledgement cannot advance with an unknown temporary fe
   const raw = { act: async () => [], advance: async () => { advanced = true } } as unknown as World
   await assert.rejects(anchorTransport(raw, 2, () => {}).advance({ to: 10, actions: [post] }), /Missing action acknowledgements/)
   assert.equal(advanced, false)
+})
+
+test("an uncertain clock advance stops the probe instead of entering automatic recovery", async () => {
+  const raw = { act: async () => [], advance: async () => { throw new Unreachable(0, "reply lost") } } as unknown as World
+  await assert.rejects(anchorTransport(raw, 2, () => {}).advance({ to: 10 }), error => error instanceof Error && !(error instanceof Unreachable) && error.message.includes("Anchor advance stopped"))
 })

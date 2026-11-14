@@ -7,6 +7,7 @@
   "minDrivers": 8,
   "notes": true,
   "noteSpelling": false,
+  "relist": false,
   "adaptive": true,
   "earlyOffers": false,
   "safetySlack": false,
