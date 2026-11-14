@@ -1,0 +1,1312 @@
+{
+  "scope": "At most twelve isolated early same-day jobs, three deterministic forks per job. Compare normal public posting, normal posting plus three85%-fee direct offers, and a10-minute low-public-fee offer window followed by the normal public fee. This is a booking-mechanism probe, not whole-week profit or fulfillment evidence.",
+  "caseLimit": 12,
+  "actualCases": 10,
+  "stopAtWorldMinute": 900,
+  "seed": "mechanics-offer-window-01",
+  "baseWorld": "wa1567bcd9502df55494b",
+  "baseDeleted": true,
+  "evidenceSha256": "cee18292e3efa88502f9f9663d2e1c357c792f8c5b54d77c75ecd67b65a1e00b",
+  "summary": {
+    "public": {
+      "cases": 10,
+      "bookedAt30Minutes": 8,
+      "acceptedOffers": 0,
+      "declinedOffers": 0,
+      "expiredOffers": 0,
+      "meanFinalBookedFeeCents": 5505.375
+    },
+    "public-with-offers": {
+      "cases": 10,
+      "bookedAt30Minutes": 8,
+      "acceptedOffers": 0,
+      "declinedOffers": 2,
+      "expiredOffers": 28,
+      "meanFinalBookedFeeCents": 5505.375
+    },
+    "offer-window": {
+      "cases": 10,
+      "bookedAt30Minutes": 7,
+      "acceptedOffers": 0,
+      "declinedOffers": 2,
+      "expiredOffers": 28,
+      "meanFinalBookedFeeCents": 5602.714285714285
+    }
+  },
+  "limitations": [
+    "Only isolated early same-day jobs in one practice seed. No week-level throughput, quota consumption, drops, late costs or net profit estimate.",
+    "Nearby driver profiles do not reveal active work schedules. Recipients are chosen before fork outcomes, identically across offer arms.",
+    "The one-cent public fee isolates public competition, but may teach severe future raise expectations. No later-order learning effects are measured.",
+    "Booked-only average fees compare potentially different booked subsets. Use the paired case table before interpreting savings.",
+    "All temporary worlds were deleted after preserving observations; no ranking attempt was used."
+  ],
+  "cases": [
+    {
+      "requestId": "R00008",
+      "pickup": "porvoo",
+      "delivery": "kouvola",
+      "openingFeeCents": 4526,
+      "offeredFeeCents": 3847,
+      "recipients": [
+        "m1wk-0268",
+        "m1wk-0732",
+        "m1wk-0740"
+      ],
+      "arms": [
+        {
+          "arm": "public",
+          "worldId": "w9b7c336c1f4a3588ac24",
+          "deleted": true,
+          "status": "booked",
+          "firstBookedAfterMinutes": 16,
+          "firstBookedFeeCents": 4526,
+          "finalFeeCents": 4526,
+          "acceptedOffers": 0,
+          "declinedOffers": 0,
+          "expiredOffers": 0,
+          "bookings": [
+            {
+              "seq": 70,
+              "at": 587,
+              "kind": "gig_booked",
+              "gigId": "g1",
+              "driverId": "m1wk-0750",
+              "feeCents": 4526
+            }
+          ],
+          "answers": []
+        },
+        {
+          "arm": "public-with-offers",
+          "worldId": "wb2bc4d01294fc909b2a2",
+          "deleted": true,
+          "status": "booked",
+          "firstBookedAfterMinutes": 16,
+          "firstBookedFeeCents": 4526,
+          "finalFeeCents": 4526,
+          "acceptedOffers": 0,
+          "declinedOffers": 1,
+          "expiredOffers": 2,
+          "bookings": [
+            {
+              "seq": 73,
+              "at": 587,
+              "kind": "gig_booked",
+              "gigId": "g1",
+              "driverId": "m1wk-0750",
+              "feeCents": 4526
+            }
+          ],
+          "answers": [
+            {
+              "seq": 48,
+              "at": 581,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0268",
+              "answer": "expired"
+            },
+            {
+              "seq": 49,
+              "at": 581,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0732",
+              "answer": "expired"
+            },
+            {
+              "seq": 50,
+              "at": 581,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0740",
+              "answer": "declined"
+            }
+          ]
+        },
+        {
+          "arm": "offer-window",
+          "worldId": "we94627d0d6cdeece2cab",
+          "deleted": true,
+          "status": "booked",
+          "firstBookedAfterMinutes": 16,
+          "firstBookedFeeCents": 4526,
+          "finalFeeCents": 4526,
+          "acceptedOffers": 0,
+          "declinedOffers": 1,
+          "expiredOffers": 2,
+          "bookings": [
+            {
+              "seq": 62,
+              "at": 587,
+              "kind": "gig_booked",
+              "gigId": "g1",
+              "driverId": "m1wk-0750",
+              "feeCents": 4526
+            }
+          ],
+          "answers": [
+            {
+              "seq": 40,
+              "at": 581,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0268",
+              "answer": "expired"
+            },
+            {
+              "seq": 41,
+              "at": 581,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0732",
+              "answer": "expired"
+            },
+            {
+              "seq": 42,
+              "at": 581,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0740",
+              "answer": "declined"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requestId": "R00024",
+      "pickup": "vantaa",
+      "delivery": "pori",
+      "openingFeeCents": 6965,
+      "offeredFeeCents": 5920,
+      "recipients": [
+        "m1wk-0001",
+        "m1wk-0015",
+        "m1wk-0024"
+      ],
+      "arms": [
+        {
+          "arm": "public",
+          "worldId": "w3f3911d01ff28dc29e73",
+          "deleted": true,
+          "status": "working",
+          "firstBookedAfterMinutes": 19,
+          "firstBookedFeeCents": 6965,
+          "finalFeeCents": 6965,
+          "acceptedOffers": 0,
+          "declinedOffers": 0,
+          "expiredOffers": 0,
+          "bookings": [
+            {
+              "seq": 105,
+              "at": 609,
+              "kind": "gig_booked",
+              "gigId": "g1",
+              "driverId": "m1wk-0824",
+              "feeCents": 6965
+            }
+          ],
+          "answers": []
+        },
+        {
+          "arm": "public-with-offers",
+          "worldId": "wb63aa9196636b01a9362",
+          "deleted": true,
+          "status": "working",
+          "firstBookedAfterMinutes": 19,
+          "firstBookedFeeCents": 6965,
+          "finalFeeCents": 6965,
+          "acceptedOffers": 0,
+          "declinedOffers": 1,
+          "expiredOffers": 2,
+          "bookings": [
+            {
+              "seq": 108,
+              "at": 609,
+              "kind": "gig_booked",
+              "gigId": "g1",
+              "driverId": "m1wk-0824",
+              "feeCents": 6965
+            }
+          ],
+          "answers": [
+            {
+              "seq": 95,
+              "at": 600,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0001",
+              "answer": "expired"
+            },
+            {
+              "seq": 96,
+              "at": 600,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0015",
+              "answer": "expired"
+            },
+            {
+              "seq": 97,
+              "at": 600,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0024",
+              "answer": "declined"
+            }
+          ]
+        },
+        {
+          "arm": "offer-window",
+          "worldId": "w93e91aeb540f2faec177",
+          "deleted": true,
+          "status": "working",
+          "firstBookedAfterMinutes": 19,
+          "firstBookedFeeCents": 6965,
+          "finalFeeCents": 6965,
+          "acceptedOffers": 0,
+          "declinedOffers": 1,
+          "expiredOffers": 2,
+          "bookings": [
+            {
+              "seq": 84,
+              "at": 609,
+              "kind": "gig_booked",
+              "gigId": "g1",
+              "driverId": "m1wk-0824",
+              "feeCents": 6965
+            }
+          ],
+          "answers": [
+            {
+              "seq": 67,
+              "at": 600,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0001",
+              "answer": "expired"
+            },
+            {
+              "seq": 68,
+              "at": 600,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0015",
+              "answer": "expired"
+            },
+            {
+              "seq": 69,
+              "at": 600,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0024",
+              "answer": "declined"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requestId": "R00036",
+      "pickup": "hyvinkaa",
+      "delivery": "lempaala",
+      "openingFeeCents": 5030,
+      "offeredFeeCents": 4276,
+      "recipients": [
+        "m1wk-0010",
+        "m1wk-0107",
+        "m1wk-0133"
+      ],
+      "arms": [
+        {
+          "arm": "public",
+          "worldId": "w2d3b153e3daac87c5a9d",
+          "deleted": true,
+          "status": "booked",
+          "firstBookedAfterMinutes": 13,
+          "firstBookedFeeCents": 5030,
+          "finalFeeCents": 5030,
+          "acceptedOffers": 0,
+          "declinedOffers": 0,
+          "expiredOffers": 0,
+          "bookings": [
+            {
+              "seq": 94,
+              "at": 632,
+              "kind": "gig_booked",
+              "gigId": "g1",
+              "driverId": "m1wk-0720",
+              "feeCents": 5030
+            }
+          ],
+          "answers": []
+        },
+        {
+          "arm": "public-with-offers",
+          "worldId": "w54c2e412079c431e9fd4",
+          "deleted": true,
+          "status": "booked",
+          "firstBookedAfterMinutes": 13,
+          "firstBookedFeeCents": 5030,
+          "finalFeeCents": 5030,
+          "acceptedOffers": 0,
+          "declinedOffers": 0,
+          "expiredOffers": 3,
+          "bookings": [
+            {
+              "seq": 97,
+              "at": 632,
+              "kind": "gig_booked",
+              "gigId": "g1",
+              "driverId": "m1wk-0720",
+              "feeCents": 5030
+            }
+          ],
+          "answers": [
+            {
+              "seq": 92,
+              "at": 629,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0010",
+              "answer": "expired"
+            },
+            {
+              "seq": 93,
+              "at": 629,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0107",
+              "answer": "expired"
+            },
+            {
+              "seq": 94,
+              "at": 629,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0133",
+              "answer": "expired"
+            }
+          ]
+        },
+        {
+          "arm": "offer-window",
+          "worldId": "w1e47ce5804f707bcc627",
+          "deleted": true,
+          "status": "booked",
+          "firstBookedAfterMinutes": 13,
+          "firstBookedFeeCents": 5030,
+          "finalFeeCents": 5030,
+          "acceptedOffers": 0,
+          "declinedOffers": 0,
+          "expiredOffers": 3,
+          "bookings": [
+            {
+              "seq": 91,
+              "at": 632,
+              "kind": "gig_booked",
+              "gigId": "g1",
+              "driverId": "m1wk-0720",
+              "feeCents": 5030
+            }
+          ],
+          "answers": [
+            {
+              "seq": 86,
+              "at": 629,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0010",
+              "answer": "expired"
+            },
+            {
+              "seq": 87,
+              "at": 629,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0107",
+              "answer": "expired"
+            },
+            {
+              "seq": 88,
+              "at": 629,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0133",
+              "answer": "expired"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requestId": "R00041",
+      "pickup": "raisio",
+      "delivery": "helsinki",
+      "openingFeeCents": 5707,
+      "offeredFeeCents": 4851,
+      "recipients": [
+        "m1wk-0011",
+        "m1wk-0025",
+        "m1wk-0060"
+      ],
+      "arms": [
+        {
+          "arm": "public",
+          "worldId": "w230bb5452d91a8d1c405",
+          "deleted": true,
+          "status": "booked",
+          "firstBookedAfterMinutes": 1,
+          "firstBookedFeeCents": 5707,
+          "finalFeeCents": 5707,
+          "acceptedOffers": 0,
+          "declinedOffers": 0,
+          "expiredOffers": 0,
+          "bookings": [
+            {
+              "seq": 96,
+              "at": 642,
+              "kind": "gig_booked",
+              "gigId": "g1",
+              "driverId": "m1wk-0606",
+              "feeCents": 5707
+            }
+          ],
+          "answers": []
+        },
+        {
+          "arm": "public-with-offers",
+          "worldId": "wb1865c303ab9a6db685b",
+          "deleted": true,
+          "status": "booked",
+          "firstBookedAfterMinutes": 1,
+          "firstBookedFeeCents": 5707,
+          "finalFeeCents": 5707,
+          "acceptedOffers": 0,
+          "declinedOffers": 0,
+          "expiredOffers": 3,
+          "bookings": [
+            {
+              "seq": 96,
+              "at": 642,
+              "kind": "gig_booked",
+              "gigId": "g1",
+              "driverId": "m1wk-0606",
+              "feeCents": 5707
+            }
+          ],
+          "answers": [
+            {
+              "seq": 109,
+              "at": 651,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0011",
+              "answer": "expired"
+            },
+            {
+              "seq": 110,
+              "at": 651,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0025",
+              "answer": "expired"
+            },
+            {
+              "seq": 111,
+              "at": 651,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0060",
+              "answer": "expired"
+            }
+          ]
+        },
+        {
+          "arm": "offer-window",
+          "worldId": "wac8c11f2b93728c3601a",
+          "deleted": true,
+          "status": "booked",
+          "firstBookedAfterMinutes": 11,
+          "firstBookedFeeCents": 5707,
+          "finalFeeCents": 5707,
+          "acceptedOffers": 0,
+          "declinedOffers": 0,
+          "expiredOffers": 3,
+          "bookings": [
+            {
+              "seq": 112,
+              "at": 652,
+              "kind": "gig_booked",
+              "gigId": "g1",
+              "driverId": "m1wk-0500",
+              "feeCents": 5707
+            }
+          ],
+          "answers": [
+            {
+              "seq": 107,
+              "at": 651,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0011",
+              "answer": "expired"
+            },
+            {
+              "seq": 108,
+              "at": 651,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0025",
+              "answer": "expired"
+            },
+            {
+              "seq": 109,
+              "at": 651,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0060",
+              "answer": "expired"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requestId": "R00054",
+      "pickup": "hyvinkaa",
+      "delivery": "tampere",
+      "openingFeeCents": 4824,
+      "offeredFeeCents": 4100,
+      "recipients": [
+        "m1wk-0010",
+        "m1wk-0107",
+        "m1wk-0133"
+      ],
+      "arms": [
+        {
+          "arm": "public",
+          "worldId": "w7f3e3621436ecf85346a",
+          "deleted": true,
+          "status": "booked",
+          "firstBookedAfterMinutes": 3,
+          "firstBookedFeeCents": 4824,
+          "finalFeeCents": 4824,
+          "acceptedOffers": 0,
+          "declinedOffers": 0,
+          "expiredOffers": 0,
+          "bookings": [
+            {
+              "seq": 120,
+              "at": 665,
+              "kind": "gig_booked",
+              "gigId": "g1",
+              "driverId": "m1wk-0587",
+              "feeCents": 4824
+            }
+          ],
+          "answers": []
+        },
+        {
+          "arm": "public-with-offers",
+          "worldId": "we1ca3af8957679855c6c",
+          "deleted": true,
+          "status": "booked",
+          "firstBookedAfterMinutes": 3,
+          "firstBookedFeeCents": 4824,
+          "finalFeeCents": 4824,
+          "acceptedOffers": 0,
+          "declinedOffers": 0,
+          "expiredOffers": 3,
+          "bookings": [
+            {
+              "seq": 120,
+              "at": 665,
+              "kind": "gig_booked",
+              "gigId": "g1",
+              "driverId": "m1wk-0587",
+              "feeCents": 4824
+            }
+          ],
+          "answers": [
+            {
+              "seq": 125,
+              "at": 672,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0010",
+              "answer": "expired"
+            },
+            {
+              "seq": 126,
+              "at": 672,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0107",
+              "answer": "expired"
+            },
+            {
+              "seq": 127,
+              "at": 672,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0133",
+              "answer": "expired"
+            }
+          ]
+        },
+        {
+          "arm": "offer-window",
+          "worldId": "wb6b6b144e9b75c4cc6d7",
+          "deleted": true,
+          "status": "open",
+          "firstBookedAfterMinutes": null,
+          "firstBookedFeeCents": null,
+          "finalFeeCents": null,
+          "acceptedOffers": 0,
+          "declinedOffers": 0,
+          "expiredOffers": 3,
+          "bookings": [],
+          "answers": [
+            {
+              "seq": 123,
+              "at": 672,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0010",
+              "answer": "expired"
+            },
+            {
+              "seq": 124,
+              "at": 672,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0107",
+              "answer": "expired"
+            },
+            {
+              "seq": 125,
+              "at": 672,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0133",
+              "answer": "expired"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requestId": "R00070",
+      "pickup": "espoo",
+      "delivery": "tampere",
+      "openingFeeCents": 5009,
+      "offeredFeeCents": 4258,
+      "recipients": [
+        "m1wk-0002",
+        "m1wk-0009",
+        "m1wk-0031"
+      ],
+      "arms": [
+        {
+          "arm": "public",
+          "worldId": "w62274764a93289f9c7e4",
+          "deleted": true,
+          "status": "open",
+          "firstBookedAfterMinutes": null,
+          "firstBookedFeeCents": null,
+          "finalFeeCents": null,
+          "acceptedOffers": 0,
+          "declinedOffers": 0,
+          "expiredOffers": 0,
+          "bookings": [],
+          "answers": []
+        },
+        {
+          "arm": "public-with-offers",
+          "worldId": "we7eb8f4cba5e744ebf92",
+          "deleted": true,
+          "status": "open",
+          "firstBookedAfterMinutes": null,
+          "firstBookedFeeCents": null,
+          "finalFeeCents": null,
+          "acceptedOffers": 0,
+          "declinedOffers": 0,
+          "expiredOffers": 3,
+          "bookings": [],
+          "answers": [
+            {
+              "seq": 181,
+              "at": 716,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0002",
+              "answer": "expired"
+            },
+            {
+              "seq": 182,
+              "at": 716,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0009",
+              "answer": "expired"
+            },
+            {
+              "seq": 183,
+              "at": 716,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0031",
+              "answer": "expired"
+            }
+          ]
+        },
+        {
+          "arm": "offer-window",
+          "worldId": "wd67b2a5e86fa84a2702e",
+          "deleted": true,
+          "status": "open",
+          "firstBookedAfterMinutes": null,
+          "firstBookedFeeCents": null,
+          "finalFeeCents": null,
+          "acceptedOffers": 0,
+          "declinedOffers": 0,
+          "expiredOffers": 3,
+          "bookings": [],
+          "answers": [
+            {
+              "seq": 156,
+              "at": 716,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0002",
+              "answer": "expired"
+            },
+            {
+              "seq": 157,
+              "at": 716,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0009",
+              "answer": "expired"
+            },
+            {
+              "seq": 158,
+              "at": 716,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0031",
+              "answer": "expired"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requestId": "R00091",
+      "pickup": "tampere",
+      "delivery": "hyvinkaa",
+      "openingFeeCents": 5925,
+      "offeredFeeCents": 5036,
+      "recipients": [
+        "m1wk-0028",
+        "m1wk-0062",
+        "m1wk-0125"
+      ],
+      "arms": [
+        {
+          "arm": "public",
+          "worldId": "w114cd423f77b3b61a412",
+          "deleted": true,
+          "status": "booked",
+          "firstBookedAfterMinutes": 3,
+          "firstBookedFeeCents": 5925,
+          "finalFeeCents": 5925,
+          "acceptedOffers": 0,
+          "declinedOffers": 0,
+          "expiredOffers": 0,
+          "bookings": [
+            {
+              "seq": 198,
+              "at": 764,
+              "kind": "gig_booked",
+              "gigId": "g1",
+              "driverId": "m1wk-0340",
+              "feeCents": 5925
+            }
+          ],
+          "answers": []
+        },
+        {
+          "arm": "public-with-offers",
+          "worldId": "wa7d92227d2338f4da2a4",
+          "deleted": true,
+          "status": "booked",
+          "firstBookedAfterMinutes": 3,
+          "firstBookedFeeCents": 5925,
+          "finalFeeCents": 5925,
+          "acceptedOffers": 0,
+          "declinedOffers": 0,
+          "expiredOffers": 3,
+          "bookings": [
+            {
+              "seq": 198,
+              "at": 764,
+              "kind": "gig_booked",
+              "gigId": "g1",
+              "driverId": "m1wk-0340",
+              "feeCents": 5925
+            }
+          ],
+          "answers": [
+            {
+              "seq": 205,
+              "at": 771,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0028",
+              "answer": "expired"
+            },
+            {
+              "seq": 206,
+              "at": 771,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0062",
+              "answer": "expired"
+            },
+            {
+              "seq": 207,
+              "at": 771,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0125",
+              "answer": "expired"
+            }
+          ]
+        },
+        {
+          "arm": "offer-window",
+          "worldId": "wf8a1bd0d2cd7b2f60eba",
+          "deleted": true,
+          "status": "booked",
+          "firstBookedAfterMinutes": 12,
+          "firstBookedFeeCents": 5925,
+          "finalFeeCents": 5925,
+          "acceptedOffers": 0,
+          "declinedOffers": 0,
+          "expiredOffers": 3,
+          "bookings": [
+            {
+              "seq": 208,
+              "at": 773,
+              "kind": "gig_booked",
+              "gigId": "g1",
+              "driverId": "m1wk-0089",
+              "feeCents": 5925
+            }
+          ],
+          "answers": [
+            {
+              "seq": 203,
+              "at": 771,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0028",
+              "answer": "expired"
+            },
+            {
+              "seq": 204,
+              "at": 771,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0062",
+              "answer": "expired"
+            },
+            {
+              "seq": 205,
+              "at": 771,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0125",
+              "answer": "expired"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requestId": "R00109",
+      "pickup": "tampere",
+      "delivery": "salo",
+      "openingFeeCents": 7453,
+      "offeredFeeCents": 6335,
+      "recipients": [
+        "m1wk-0028",
+        "m1wk-0062",
+        "m1wk-0125"
+      ],
+      "arms": [
+        {
+          "arm": "public",
+          "worldId": "w4afcb1c676c93b8a2723",
+          "deleted": true,
+          "status": "booked",
+          "firstBookedAfterMinutes": 5,
+          "firstBookedFeeCents": 7453,
+          "finalFeeCents": 7453,
+          "acceptedOffers": 0,
+          "declinedOffers": 0,
+          "expiredOffers": 0,
+          "bookings": [
+            {
+              "seq": 233,
+              "at": 804,
+              "kind": "gig_booked",
+              "gigId": "g1",
+              "driverId": "m1wk-0382",
+              "feeCents": 7453
+            }
+          ],
+          "answers": []
+        },
+        {
+          "arm": "public-with-offers",
+          "worldId": "wc8ae91ea47657509cd53",
+          "deleted": true,
+          "status": "booked",
+          "firstBookedAfterMinutes": 5,
+          "firstBookedFeeCents": 7453,
+          "finalFeeCents": 7453,
+          "acceptedOffers": 0,
+          "declinedOffers": 0,
+          "expiredOffers": 3,
+          "bookings": [
+            {
+              "seq": 233,
+              "at": 804,
+              "kind": "gig_booked",
+              "gigId": "g1",
+              "driverId": "m1wk-0382",
+              "feeCents": 7453
+            }
+          ],
+          "answers": [
+            {
+              "seq": 240,
+              "at": 809,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0028",
+              "answer": "expired"
+            },
+            {
+              "seq": 241,
+              "at": 809,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0062",
+              "answer": "expired"
+            },
+            {
+              "seq": 242,
+              "at": 809,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0125",
+              "answer": "expired"
+            }
+          ]
+        },
+        {
+          "arm": "offer-window",
+          "worldId": "wffd7635a52ad24539fb1",
+          "deleted": true,
+          "status": "booked",
+          "firstBookedAfterMinutes": 11,
+          "firstBookedFeeCents": 7453,
+          "finalFeeCents": 7453,
+          "acceptedOffers": 0,
+          "declinedOffers": 0,
+          "expiredOffers": 3,
+          "bookings": [
+            {
+              "seq": 239,
+              "at": 810,
+              "kind": "gig_booked",
+              "gigId": "g1",
+              "driverId": "m1wk-0103",
+              "feeCents": 7453
+            }
+          ],
+          "answers": [
+            {
+              "seq": 235,
+              "at": 809,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0028",
+              "answer": "expired"
+            },
+            {
+              "seq": 236,
+              "at": 809,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0062",
+              "answer": "expired"
+            },
+            {
+              "seq": 237,
+              "at": 809,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0125",
+              "answer": "expired"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requestId": "R00130",
+      "pickup": "hyvinkaa",
+      "delivery": "vantaa",
+      "openingFeeCents": 3613,
+      "offeredFeeCents": 3071,
+      "recipients": [
+        "m1wk-0010",
+        "m1wk-0107",
+        "m1wk-0133"
+      ],
+      "arms": [
+        {
+          "arm": "public",
+          "worldId": "wc1d86da2068811886a75",
+          "deleted": true,
+          "status": "booked",
+          "firstBookedAfterMinutes": 2,
+          "firstBookedFeeCents": 3613,
+          "finalFeeCents": 3613,
+          "acceptedOffers": 0,
+          "declinedOffers": 0,
+          "expiredOffers": 0,
+          "bookings": [
+            {
+              "seq": 268,
+              "at": 857,
+              "kind": "gig_booked",
+              "gigId": "g1",
+              "driverId": "m1wk-0382",
+              "feeCents": 3613
+            }
+          ],
+          "answers": []
+        },
+        {
+          "arm": "public-with-offers",
+          "worldId": "w13cf0e784d4d511a91ce",
+          "deleted": true,
+          "status": "booked",
+          "firstBookedAfterMinutes": 2,
+          "firstBookedFeeCents": 3613,
+          "finalFeeCents": 3613,
+          "acceptedOffers": 0,
+          "declinedOffers": 0,
+          "expiredOffers": 3,
+          "bookings": [
+            {
+              "seq": 268,
+              "at": 857,
+              "kind": "gig_booked",
+              "gigId": "g1",
+              "driverId": "m1wk-0382",
+              "feeCents": 3613
+            }
+          ],
+          "answers": [
+            {
+              "seq": 272,
+              "at": 865,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0010",
+              "answer": "expired"
+            },
+            {
+              "seq": 273,
+              "at": 865,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0107",
+              "answer": "expired"
+            },
+            {
+              "seq": 274,
+              "at": 865,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0133",
+              "answer": "expired"
+            }
+          ]
+        },
+        {
+          "arm": "offer-window",
+          "worldId": "w18935726e986031f2360",
+          "deleted": true,
+          "status": "booked",
+          "firstBookedAfterMinutes": 11,
+          "firstBookedFeeCents": 3613,
+          "finalFeeCents": 3613,
+          "acceptedOffers": 0,
+          "declinedOffers": 0,
+          "expiredOffers": 3,
+          "bookings": [
+            {
+              "seq": 274,
+              "at": 866,
+              "kind": "gig_booked",
+              "gigId": "g1",
+              "driverId": "m1wk-0263",
+              "feeCents": 3613
+            }
+          ],
+          "answers": [
+            {
+              "seq": 270,
+              "at": 865,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0010",
+              "answer": "expired"
+            },
+            {
+              "seq": 271,
+              "at": 865,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0107",
+              "answer": "expired"
+            },
+            {
+              "seq": 272,
+              "at": 865,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0133",
+              "answer": "expired"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requestId": "R00142",
+      "pickup": "lahti",
+      "delivery": "hyvinkaa",
+      "openingFeeCents": 3256,
+      "offeredFeeCents": 2768,
+      "recipients": [
+        "m1wk-0004",
+        "m1wk-0012",
+        "m1wk-0046"
+      ],
+      "arms": [
+        {
+          "arm": "public",
+          "worldId": "w9bb30a09197b81cb126f",
+          "deleted": true,
+          "status": "open",
+          "firstBookedAfterMinutes": null,
+          "firstBookedFeeCents": null,
+          "finalFeeCents": null,
+          "acceptedOffers": 0,
+          "declinedOffers": 0,
+          "expiredOffers": 0,
+          "bookings": [],
+          "answers": []
+        },
+        {
+          "arm": "public-with-offers",
+          "worldId": "w5eef6706f4c27ff1de39",
+          "deleted": true,
+          "status": "open",
+          "firstBookedAfterMinutes": null,
+          "firstBookedFeeCents": null,
+          "finalFeeCents": null,
+          "acceptedOffers": 0,
+          "declinedOffers": 0,
+          "expiredOffers": 3,
+          "bookings": [],
+          "answers": [
+            {
+              "seq": 299,
+              "at": 910,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0004",
+              "answer": "expired"
+            },
+            {
+              "seq": 300,
+              "at": 910,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0012",
+              "answer": "expired"
+            },
+            {
+              "seq": 301,
+              "at": 910,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0046",
+              "answer": "expired"
+            }
+          ]
+        },
+        {
+          "arm": "offer-window",
+          "worldId": "wf181008cba6fea47d0f3",
+          "deleted": true,
+          "status": "open",
+          "firstBookedAfterMinutes": null,
+          "firstBookedFeeCents": null,
+          "finalFeeCents": null,
+          "acceptedOffers": 0,
+          "declinedOffers": 0,
+          "expiredOffers": 3,
+          "bookings": [],
+          "answers": [
+            {
+              "seq": 296,
+              "at": 910,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0004",
+              "answer": "expired"
+            },
+            {
+              "seq": 297,
+              "at": 910,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0012",
+              "answer": "expired"
+            },
+            {
+              "seq": 298,
+              "at": 910,
+              "kind": "offer_answered",
+              "gigId": "g1",
+              "driverId": "m1wk-0046",
+              "answer": "expired"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -14,7 +14,18 @@
     "jobs": 2,
     "rankedSubmission": false
   },
-  "summary": null,
+  "summary": {
+    "pairs": 2,
+    "pairedGainsCents": [
+      2222,
+      103236
+    ],
+    "meanGainCents": 52729,
+    "positivePairs": 2,
+    "qualifiedTreatments": 2,
+    "hoursFailedVisits": 0,
+    "hoursUndelivered": 0
+  },
   "records": [
     {
       "label": "hours-control",
@@ -181,13 +192,194 @@
       "label": "hours-control",
       "seed": "formal-unseen-20261113-15",
       "worldId": "w5b49acb1da9497bc29c9",
-      "status": "pending"
+      "status": "complete",
+      "result": {
+        "worldId": "w5b49acb1da9497bc29c9",
+        "revision": "f34787f4f6a814a3d16254c970b95acf07382378c5c868a4e834d1bc2e7da642",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 1.15,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14
+        },
+        "marginCents": 909626,
+        "revenueCents": 3819965,
+        "wonOrders": 329,
+        "onTimeShare": 0.9361702127659575,
+        "undeliveredShare": 0,
+        "ranked": true,
+        "onTimeOrders": 308,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00303",
+          "R00426",
+          "R00581",
+          "R00586",
+          "R00620",
+          "R00628",
+          "R00687",
+          "R00698",
+          "R00699",
+          "R00708",
+          "R00779",
+          "R00780",
+          "R00786",
+          "R00804",
+          "R00808",
+          "R00828",
+          "R00830",
+          "R00831",
+          "R00832",
+          "R00835",
+          "R00845"
+        ],
+        "undeliveredOrderIds": [],
+        "label": "hours-control",
+        "files": {
+          "meta": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w5b49acb1da9497bc29c9.meta.json",
+            "sha256": "6d7aaa69f602f9f3d16e589db9f144c0d9384e70461c315cb519e9169c42ecc7"
+          },
+          "snapshot": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w5b49acb1da9497bc29c9.snapshot.json",
+            "sha256": "aa6f13ab2f1d39fa24d41835fdc412a1b2ca4ca067dfcbb75ed8b788e0b70fb4"
+          },
+          "score": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w5b49acb1da9497bc29c9.score.json",
+            "sha256": "93b270968d159f20bc8fadcd3a6093a90ee9bba476cb125c8e25e779a43b6eac"
+          },
+          "events": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w5b49acb1da9497bc29c9.events.json",
+            "sha256": "a5d4894f175f6ed0e646336bca41093006d712f5bc315936cecbc2e6584b999e"
+          }
+        }
+      },
+      "hoursOrders": {
+        "wonIncludingCancelled": 0,
+        "noncancelled": 0,
+        "lateOrderIds": [],
+        "undeliveredOrderIds": [],
+        "failedVisits": [],
+        "changedOrders": []
+      },
+      "actionErrors": []
     },
     {
       "label": "hours-treatment",
       "seed": "formal-unseen-20261113-15",
       "worldId": "w99c032109acf6fea335a",
-      "status": "pending"
+      "status": "complete",
+      "result": {
+        "worldId": "w99c032109acf6fea335a",
+        "revision": "f34787f4f6a814a3d16254c970b95acf07382378c5c868a4e834d1bc2e7da642",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 1.15,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14
+        },
+        "marginCents": 1012862,
+        "revenueCents": 3968926,
+        "wonOrders": 342,
+        "onTimeShare": 0.9590643274853801,
+        "undeliveredShare": 0,
+        "ranked": true,
+        "onTimeOrders": 328,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00161",
+          "R00550",
+          "R00645",
+          "R00687",
+          "R00698",
+          "R00699",
+          "R00779",
+          "R00780",
+          "R00796",
+          "R00804",
+          "R00832",
+          "R00843",
+          "R00845",
+          "R00855"
+        ],
+        "undeliveredOrderIds": [],
+        "label": "hours-treatment",
+        "files": {
+          "meta": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w99c032109acf6fea335a.meta.json",
+            "sha256": "76f932e241dee8c675aa2ca4625b237092e8397aa1b61b1e2f763455d6127fe8"
+          },
+          "snapshot": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w99c032109acf6fea335a.snapshot.json",
+            "sha256": "db0edb4ff442f4f4b4a4a016b1c98b397d482c0874933af12c2c9968eb43952f"
+          },
+          "score": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w99c032109acf6fea335a.score.json",
+            "sha256": "bc238cf3cac5b971ec0bde6817b40b5249f7d867a02f84f5c844617945577f07"
+          },
+          "events": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w99c032109acf6fea335a.events.json",
+            "sha256": "6bd16ae695223aff3083e0e92d542bfa9791cc9c4aec6bd1d15667e845e0a289"
+          }
+        }
+      },
+      "hoursOrders": {
+        "wonIncludingCancelled": 12,
+        "noncancelled": 12,
+        "lateOrderIds": [],
+        "undeliveredOrderIds": [],
+        "failedVisits": [],
+        "changedOrders": [
+          "R00646"
+        ]
+      },
+      "actionErrors": []
     }
   ]
 }

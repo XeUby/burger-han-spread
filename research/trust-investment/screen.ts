@@ -6,7 +6,7 @@ import type { Order, Reveal } from "../../vendor/typescript/types.ts"
 
 const worlds = ["w09f7d47c59507d4e46cb", "w5e573ada5fed0a67a4a8", "w679c0fd4b18e923880c6", "w6ffd0c010757c76f97d8", "w2f96a475ae718d1589d9", "w8b85572a9b6fc286e4ec", "w735d87d8fe1b99845667", "wce13500dc9c2829611d1"]
 const read = (path: string) => JSON.parse(fs.readFileSync(path, "utf8"))
-const weeks = []
+const weeks: { worldId: string; seed: string; offered: number; meanTrustPointEuros: number; maximumTrustPointEuros: number; modeledPricingGainEuros: number; additionalExpectedWins: number; quotesReduced: number }[] = []
 for (const worldId of worlds) {
   const reveal: Reveal = read(`runs/${worldId}.reveal.json`)
   const orders: Order[] = read(`runs/${worldId}.snapshot.json`).orders

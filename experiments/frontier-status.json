@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T00:36:15.527792+00:00",
+  "updatedAt": "2026-11-14T00:45:04.443283+00:00",
   "objective": "Continue systematic search toward the global optimum; practice only, no ranking submission.",
   "maximumConcurrentPlays": 4,
   "currentConcurrency": {
@@ -64,10 +64,10 @@
     "700km-only bundle treatment ends at7407.63/9410.50 euros, minimum96.6% on time. It gains versus the old baseline in both weeks but not versus bundles alone. No900km experiment scheduled."
   ],
   "nextSteps": [
-    "Poll session5231. Preserve all four note-hours development outcomes. Audit note-specific failed visits and compare matched controls before any further experiment.",
-    "Do not tune against the completed fresh frontier evaluation and continue calling it unseen.",
-    "Maintain at most4 unfinished plays. No ranking or final submissions.",
-    "Continue structural optimization research, screening weak hypotheses before using simulation slots.",
+    "Poll note-hours confirmation session88871. First two weeks completed, second two running. Preserve all four outcomes.",
+    "Build the four-week confirmation report against experiments/note-hours-confirmation-protocol.json; use exact source/settings and ledger reconciliation. Audit parsed-hours failed visits, late orders, changes and action errors. No promotion from partial outcomes.",
+    "Offer-window probe session42393 is terminal; all its temporary worlds deleted. Evidence docs/offer-window-probe.json shows no accepted cheap offers and one fewer prompt booking. Do not repeat this weak profile-selected variant.",
+    "No ranking or final submissions; maximum4 unfinished plays. Continue structural research without adapting to the completed fresh evaluation panel.",
     "Push coherent checkpoints to codex/standalone-dispatcher."
   ],
   "validationStatus": "All16 fresh paired trials complete. Candidate mean10411.59 euros versus8242.34, +26.32%;7/8 positive;8/8 qualified; minimum94.94% on time; no undelivered orders. Full report docs/frontier-validation.md. No ranking submission.",
@@ -111,7 +111,7 @@
       "truthCases": 45,
       "unchangedCases": 44,
       "unchangedUnmodeledRestrictions": 0,
-      "profitTested": "Development experiment running; no completed profit inference yet.",
+      "profitTested": "Two development pairs complete: gains22.22/1032.36 euros; both qualified;36 parsed-hours orders all on time, no failed visits or action errors. Four-week confirmation running.",
       "probeEvidence": "docs/note-hours-probe.json"
     },
     "jointAcquisition": {
@@ -122,6 +122,16 @@
     "trustInvestment": {
       "screen": "docs/trust-investment-screen.json",
       "finding": "Optimistic retrospective continuation-value pricing screen models318.60 euros/week but adds28.36 expected wins; no capacity displacement or booking delay modeled. Do not integrate this weak version ahead of larger structural gains."
+    },
+    "offerWindow": {
+      "sessionId": 42393,
+      "script": "research/offer-window/probe.ts",
+      "report": "runs/offer-window-probe.json",
+      "scope": "Twelve isolated same-day jobs, three paired arms via sequential forks. At most one base plus one fork live, alongside at most two confirmation worlds. Deletes only its own temporary worlds. Booking-mechanism test, not weekly profit or fulfillment evidence.",
+      "terminal": true,
+      "baseDeleted": true,
+      "evidence": "docs/offer-window-probe.json",
+      "finding": "Ten jobs before15:00; no accepted offers among30 in either offer arm. Normal public posting booked8/10 within30min; the10-minute cheap-public phase booked7/10. No measured fee saving. Do not integrate profile-selected opening offers based on this result."
     }
   },
   "completedFreshEvaluation": {
@@ -133,7 +143,7 @@
     "trials": 16,
     "terminal": true
   },
-  "currentStudy": {
+  "completedHoursScreen": {
     "sessionId": 5231,
     "kind": "Note-hours development screen",
     "plan": "experiments/plans/note-hours.json",
@@ -144,6 +154,37 @@
     "firstWorlds": [
       "w9d5670b3d63668d52477",
       "we902c03beea299d5f314"
+    ],
+    "terminal": true,
+    "study": "runs/study-1794616773326.json",
+    "summary": {
+      "pairs": 2,
+      "pairedGainsCents": [
+        2222,
+        103236
+      ],
+      "meanGainCents": 52729,
+      "positivePairs": 2,
+      "qualifiedTreatments": 2,
+      "hoursFailedVisits": 0,
+      "hoursUndelivered": 0
+    }
+  },
+  "currentStudy": {
+    "sessionId": 88871,
+    "kind": "Note-hours development confirmation",
+    "plan": "experiments/plans/note-hours-confirmation.json",
+    "protocol": "experiments/note-hours-confirmation-protocol.json",
+    "maximumJobs": 2,
+    "trials": 4,
+    "frozenBundle": "runs/frozen/91cbeb051868111637bf4a872c630803895c5f7969a70d41212bc3fe04cb6056/7a2ba42d56b09cfd2b52ef157c663831d05cd591fe87d74a707e4db6577f60c0",
+    "firstWorlds": [
+      "w83fed5c0ac39bf69a814",
+      "w364cb2e151fb283326ce"
+    ],
+    "secondWorlds": [
+      "wb642dfe9ed8ec3e241f2",
+      "wacd4f422afb1a4c54f81"
     ]
   }
 }
