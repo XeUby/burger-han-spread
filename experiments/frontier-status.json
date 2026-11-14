@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T06:16:30.349579+00:00",
+  "updatedAt": "2026-11-14T06:24:29.227168+00:00",
   "objective": "Broader optimization retained; current user priority is levels1-7 compatibility followed by five ranked runs each before09:00 Helsinki, using unchanged validated control.",
   "maximumConcurrentPlays": 4,
   "currentConcurrency": {
@@ -1170,7 +1170,24 @@
     "decision": "Reject feature model: four-week mean RMSE gain over scalar only0.365%, wins2/4; no fresh policy validation."
   },
   "currentOperation": {
-    "protocol": "experiments/levels-ranking-protocol.json",
-    "noLevel8OrFinal": true
+    "protocol": "experiments/plans/levels-factorial.json",
+    "role": "development only",
+    "trials": 36,
+    "uniqueSeedBlocks": 3,
+    "maximumConcurrentWorlds": 4,
+    "rankingHeld": true,
+    "noFinal": true
+  },
+  "rankedOutcome": {
+    "report": "docs/levels-ranked.json",
+    "completedLevels": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "runsPerLevel": 1,
+    "remainingAttemptsNotCreated": 31,
+    "reason": "Cross-level competitiveness not established. User instructed finish existing worlds and work on improvement."
   }
 }

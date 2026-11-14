@@ -1,0 +1,225 @@
+{
+  "mode": "ranked",
+  "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+  "season": 4,
+  "finishedAt": "2026-11-14T06:21:17.399Z",
+  "stopped": true,
+  "remaining": [
+    {
+      "level": 6,
+      "run": 1
+    },
+    {
+      "level": 7,
+      "run": 1
+    },
+    {
+      "level": 1,
+      "run": 2
+    },
+    {
+      "level": 2,
+      "run": 2
+    },
+    {
+      "level": 3,
+      "run": 2
+    },
+    {
+      "level": 4,
+      "run": 2
+    },
+    {
+      "level": 5,
+      "run": 2
+    },
+    {
+      "level": 6,
+      "run": 2
+    },
+    {
+      "level": 7,
+      "run": 2
+    },
+    {
+      "level": 1,
+      "run": 3
+    },
+    {
+      "level": 2,
+      "run": 3
+    },
+    {
+      "level": 3,
+      "run": 3
+    },
+    {
+      "level": 4,
+      "run": 3
+    },
+    {
+      "level": 5,
+      "run": 3
+    },
+    {
+      "level": 6,
+      "run": 3
+    },
+    {
+      "level": 7,
+      "run": 3
+    },
+    {
+      "level": 1,
+      "run": 4
+    },
+    {
+      "level": 2,
+      "run": 4
+    },
+    {
+      "level": 3,
+      "run": 4
+    },
+    {
+      "level": 4,
+      "run": 4
+    },
+    {
+      "level": 5,
+      "run": 4
+    },
+    {
+      "level": 6,
+      "run": 4
+    },
+    {
+      "level": 7,
+      "run": 4
+    },
+    {
+      "level": 1,
+      "run": 5
+    },
+    {
+      "level": 2,
+      "run": 5
+    },
+    {
+      "level": 3,
+      "run": 5
+    },
+    {
+      "level": 4,
+      "run": 5
+    },
+    {
+      "level": 5,
+      "run": 5
+    },
+    {
+      "level": 6,
+      "run": 5
+    },
+    {
+      "level": 7,
+      "run": 5
+    }
+  ],
+  "results": [
+    {
+      "level": 1,
+      "run": 1,
+      "worldId": "w6516d12e279ef0a68c15",
+      "score": {
+        "marginCents": 92347,
+        "revenueCents": 274600,
+        "marginShare": 0.3362964311726147,
+        "wonOrders": 75,
+        "onTimeShare": 0.9866666666666667,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [
+        {
+          "at": 6367,
+          "message": "Cannot reach https://spread.bahnexpress.com: no answer in 20 seconds. Check SPREAD_URL, and that the server runs",
+          "resumedAt": 6370,
+          "lastSeq": 4279
+        }
+      ],
+      "completedAt": "2026-11-14T06:21:13.757Z"
+    },
+    {
+      "level": 2,
+      "run": 1,
+      "worldId": "wc3bc19d05e17f5628fd3",
+      "score": {
+        "marginCents": 60536,
+        "revenueCents": 203200,
+        "marginShare": 0.2979133858267716,
+        "wonOrders": 59,
+        "onTimeShare": 0.9830508474576272,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [],
+      "completedAt": "2026-11-14T06:21:15.576Z"
+    },
+    {
+      "level": 3,
+      "run": 1,
+      "worldId": "web5c08517e2d75e2e404",
+      "score": {
+        "marginCents": 86972,
+        "revenueCents": 291600,
+        "marginShare": 0.29825788751714677,
+        "wonOrders": 78,
+        "onTimeShare": 1,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [
+        {
+          "at": 5578,
+          "message": "Cannot reach https://spread.bahnexpress.com: no answer in 20 seconds. Check SPREAD_URL, and that the server runs",
+          "resumedAt": 5590,
+          "lastSeq": 2758
+        }
+      ],
+      "completedAt": "2026-11-14T06:21:16.680Z"
+    },
+    {
+      "level": 4,
+      "run": 1,
+      "worldId": "wdb4f2388e35cbbf8be8d",
+      "score": {
+        "marginCents": 84988,
+        "revenueCents": 338319,
+        "marginShare": 0.25120670136764417,
+        "wonOrders": 47,
+        "onTimeShare": 1,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [
+        {
+          "at": 5397,
+          "message": "Cannot reach https://spread.bahnexpress.com: no answer in 20 seconds. Check SPREAD_URL, and that the server runs",
+          "resumedAt": 5399,
+          "lastSeq": 3699
+        }
+      ],
+      "completedAt": "2026-11-14T06:21:17.399Z"
+    },
+    {
+      "level": 5,
+      "run": 1,
+      "error": "Error: Cannot reach https://spread.bahnexpress.com: New ranked attempts held by user: finish existing worlds only. Check SPREAD_URL, and that the server runs"
+    }
+  ]
+}

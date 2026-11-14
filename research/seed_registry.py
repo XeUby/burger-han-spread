@@ -13,11 +13,13 @@ known = {row["seed"]: row for row in previous["seeds"]}
 observed = defaultdict(list)
 labels = set()
 policies = set()
+hidden = []
 for file in sorted((root / "runs").glob("*.meta.json")):
     meta = json.loads(file.read_text())
     seed = meta.get("seed")
     if not isinstance(seed, str) or not seed:
-        raise ValueError(f"A world without a named seed cannot establish a unique week: {file}")
+        hidden.append({"worldId":meta["worldId"],"level":meta["level"],"label":meta.get("label"),"metaSha256":hashlib.sha256(file.read_bytes()).hexdigest(),"reason":"Server-selected ranked seed is hidden; never counted as an independent named development week."})
+        continue
     world = meta["worldId"]
     labels.add(meta.get("label"))
     policies.add((meta.get("revision"), json.dumps(meta.get("settings"), sort_keys=True)))
@@ -26,6 +28,6 @@ now = datetime.now(timezone.utc).isoformat()
 for seed, worlds in observed.items():
     row = known.setdefault(seed, {"seed": seed, "retiredAt": now})
     row.update(role="development-or-historical-evidence", eligibleForFreshValidation=False, worlds=worlds, reason="This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence.")
-report = {"updatedAt": now, "unit": "unique simulation seed/week; repeated worlds are not independent replications", "worldRecords": sum(len(rows) for rows in observed.values()), "uniqueNamedWeeks": len(known), "distinctLabels": len(labels), "distinctSourceSettingsCombinations": len(policies), "interpretation": "Counts document the adaptive search, not independent tests or a guarantee that distinct deterministic seeds are IID. Every observed seed is conservatively unavailable for any future untouched panel.", "seeds": [known[seed] for seed in sorted(known)]}
+report = {"updatedAt": now, "unit": "unique simulation seed/week; repeated worlds are not independent replications", "worldRecords": sum(len(rows) for rows in observed.values()), "uniqueNamedWeeks": len(known), "distinctLabels": len(labels), "distinctSourceSettingsCombinations": len(policies), "interpretation": "Counts document the adaptive search, not independent tests or a guarantee that distinct deterministic seeds are IID. Every observed seed is conservatively unavailable for any future untouched panel.", "hiddenSeedWorlds":hidden, "seeds": [known[seed] for seed in sorted(known)]}
 path.write_text(json.dumps(report, indent=2)+"\n")
 print(json.dumps({key: report[key] for key in ["worldRecords", "uniqueNamedWeeks", "distinctLabels", "distinctSourceSettingsCombinations"]}))

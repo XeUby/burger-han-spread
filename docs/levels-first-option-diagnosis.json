@@ -1,0 +1,3703 @@
+{
+  "at": "2026-11-14T06:28:39.103296+00:00",
+  "source": "Official handbook level1-3 rule, and complete archived development reveals.",
+  "interpretation": "Association and semantic mismatch, not causal benefit estimate.",
+  "records": [
+    {
+      "worldId": "w48164337cd530770fe22",
+      "omittedFirstOptionWins": 1,
+      "lateAmongOmitted": 0,
+      "orders": [
+        {
+          "id": "R00935",
+          "quote": {
+            "next_day": 4793
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6835
+          ],
+          "late": false
+        }
+      ]
+    },
+    {
+      "worldId": "webeee44e6e0ce5e3ba9f",
+      "omittedFirstOptionWins": 149,
+      "lateAmongOmitted": 34,
+      "orders": [
+        {
+          "id": "R00013",
+          "quote": {
+            "next_day": 20874
+          },
+          "actualOption": "same_day",
+          "deadline": 1200,
+          "deliveredAt": [
+            1152
+          ],
+          "late": false
+        },
+        {
+          "id": "R00014",
+          "quote": {
+            "next_day": 23856
+          },
+          "actualOption": "same_day",
+          "deadline": 1200,
+          "deliveredAt": [
+            1053
+          ],
+          "late": false
+        },
+        {
+          "id": "R00031",
+          "quote": {
+            "next_day": 14626
+          },
+          "actualOption": "same_day",
+          "deadline": 1200,
+          "deliveredAt": [
+            1074
+          ],
+          "late": false
+        },
+        {
+          "id": "R00038",
+          "quote": {
+            "next_day": 20448
+          },
+          "actualOption": "same_day",
+          "deadline": 1200,
+          "deliveredAt": [
+            1148
+          ],
+          "late": false
+        },
+        {
+          "id": "R00048",
+          "quote": {
+            "next_day": 23146
+          },
+          "actualOption": "same_day",
+          "deadline": 1200,
+          "deliveredAt": [
+            1980
+          ],
+          "late": true
+        },
+        {
+          "id": "R00066",
+          "quote": {
+            "next_day": 18744,
+            "within_3_days": 17466
+          },
+          "actualOption": "same_day",
+          "deadline": 1200,
+          "deliveredAt": [
+            1136
+          ],
+          "late": false
+        },
+        {
+          "id": "R00067",
+          "quote": {
+            "next_day": 18744
+          },
+          "actualOption": "same_day",
+          "deadline": 1200,
+          "deliveredAt": [
+            1175
+          ],
+          "late": false
+        },
+        {
+          "id": "R00077",
+          "quote": {
+            "next_day": 19880
+          },
+          "actualOption": "same_day",
+          "deadline": 1200,
+          "deliveredAt": [
+            1171
+          ],
+          "late": false
+        },
+        {
+          "id": "R00079",
+          "quote": {
+            "next_day": 5254
+          },
+          "actualOption": "same_day",
+          "deadline": 1200,
+          "deliveredAt": [
+            1037
+          ],
+          "late": false
+        },
+        {
+          "id": "R00081",
+          "quote": {
+            "next_day": 15762,
+            "within_3_days": 14626
+          },
+          "actualOption": "same_day",
+          "deadline": 1200,
+          "deliveredAt": [
+            1192
+          ],
+          "late": false
+        },
+        {
+          "id": "R00104",
+          "quote": {
+            "next_day": 24282
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2561
+          ],
+          "late": false
+        },
+        {
+          "id": "R00220",
+          "quote": {
+            "next_day": 24282
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2488
+          ],
+          "late": false
+        },
+        {
+          "id": "R00221",
+          "quote": {
+            "next_day": 24282
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2443
+          ],
+          "late": false
+        },
+        {
+          "id": "R00227",
+          "quote": {
+            "next_day": 9088
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2587
+          ],
+          "late": false
+        },
+        {
+          "id": "R00233",
+          "quote": {
+            "next_day": 5112
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2385
+          ],
+          "late": false
+        },
+        {
+          "id": "R00238",
+          "quote": {
+            "next_day": 5112
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2176
+          ],
+          "late": false
+        },
+        {
+          "id": "R00239",
+          "quote": {
+            "next_day": 9230,
+            "within_3_days": 8520
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2585
+          ],
+          "late": false
+        },
+        {
+          "id": "R00255",
+          "quote": {
+            "next_day": 15762
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2646
+          ],
+          "late": true
+        },
+        {
+          "id": "R00256",
+          "quote": {
+            "next_day": 5254
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2470
+          ],
+          "late": false
+        },
+        {
+          "id": "R00257",
+          "quote": {
+            "next_day": 8236
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2522
+          ],
+          "late": false
+        },
+        {
+          "id": "R00274",
+          "quote": {
+            "next_day": 5112,
+            "within_3_days": 4828
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2545
+          ],
+          "late": false
+        },
+        {
+          "id": "R00275",
+          "quote": {
+            "next_day": 8520,
+            "within_3_days": 7952
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2574
+          ],
+          "late": false
+        },
+        {
+          "id": "R00277",
+          "quote": {
+            "next_day": 3692
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2176
+          ],
+          "late": false
+        },
+        {
+          "id": "R00285",
+          "quote": {
+            "next_day": 24282
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5453
+          ],
+          "late": false
+        },
+        {
+          "id": "R00286",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2542
+          ],
+          "late": false
+        },
+        {
+          "id": "R00290",
+          "quote": {
+            "next_day": 3692
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2293
+          ],
+          "late": false
+        },
+        {
+          "id": "R00291",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2514
+          ],
+          "late": false
+        },
+        {
+          "id": "R00298",
+          "quote": {
+            "next_day": 3692
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2461
+          ],
+          "late": false
+        },
+        {
+          "id": "R00299",
+          "quote": {
+            "next_day": 3692
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2279
+          ],
+          "late": false
+        },
+        {
+          "id": "R00310",
+          "quote": {
+            "next_day": 16472
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2554
+          ],
+          "late": false
+        },
+        {
+          "id": "R00312",
+          "quote": {
+            "next_day": 5254
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2404
+          ],
+          "late": false
+        },
+        {
+          "id": "R00314",
+          "quote": {
+            "next_day": 6390
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            null
+          ],
+          "late": true
+        },
+        {
+          "id": "R00316",
+          "quote": {
+            "next_day": 3692
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2348
+          ],
+          "late": false
+        },
+        {
+          "id": "R00321",
+          "quote": {
+            "next_day": 16472
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            3813
+          ],
+          "late": true
+        },
+        {
+          "id": "R00326",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2466
+          ],
+          "late": false
+        },
+        {
+          "id": "R00330",
+          "quote": {
+            "next_day": 6816
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2571
+          ],
+          "late": false
+        },
+        {
+          "id": "R00333",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2420
+          ],
+          "late": false
+        },
+        {
+          "id": "R00377",
+          "quote": {
+            "next_day": 17608
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            5284
+          ],
+          "late": true
+        },
+        {
+          "id": "R00424",
+          "quote": {
+            "next_day": 9230
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            3963
+          ],
+          "late": false
+        },
+        {
+          "id": "R00429",
+          "quote": {
+            "next_day": 15478
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            5124
+          ],
+          "late": true
+        },
+        {
+          "id": "R00452",
+          "quote": {
+            "next_day": 3692
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            4049
+          ],
+          "late": false
+        },
+        {
+          "id": "R00466",
+          "quote": {
+            "next_day": 19880
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            null
+          ],
+          "late": true
+        },
+        {
+          "id": "R00474",
+          "quote": {
+            "next_day": 10508
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            5114
+          ],
+          "late": true
+        },
+        {
+          "id": "R00478",
+          "quote": {
+            "next_day": 11786
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            3954
+          ],
+          "late": false
+        },
+        {
+          "id": "R00481",
+          "quote": {
+            "next_day": 9230
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            4066
+          ],
+          "late": false
+        },
+        {
+          "id": "R00485",
+          "quote": {
+            "next_day": 3692
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            3820
+          ],
+          "late": false
+        },
+        {
+          "id": "R00495",
+          "quote": {
+            "next_day": 17892
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            4024
+          ],
+          "late": false
+        },
+        {
+          "id": "R00499",
+          "quote": {
+            "next_day": 15478
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            5133
+          ],
+          "late": true
+        },
+        {
+          "id": "R00504",
+          "quote": {
+            "next_day": 8520
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            5097
+          ],
+          "late": true
+        },
+        {
+          "id": "R00505",
+          "quote": {
+            "next_day": 9798
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            4004
+          ],
+          "late": false
+        },
+        {
+          "id": "R00510",
+          "quote": {
+            "next_day": 17182
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            5212
+          ],
+          "late": true
+        },
+        {
+          "id": "R00512",
+          "quote": {
+            "next_day": 5112
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            3873
+          ],
+          "late": false
+        },
+        {
+          "id": "R00513",
+          "quote": {
+            "next_day": 6390
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            3967
+          ],
+          "late": false
+        },
+        {
+          "id": "R00514",
+          "quote": {
+            "next_day": 12496
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            5096
+          ],
+          "late": true
+        },
+        {
+          "id": "R00515",
+          "quote": {
+            "next_day": 20874
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5440
+          ],
+          "late": false
+        },
+        {
+          "id": "R00517",
+          "quote": {
+            "next_day": 5254
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            4018
+          ],
+          "late": false
+        },
+        {
+          "id": "R00521",
+          "quote": {
+            "next_day": 20874
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5408
+          ],
+          "late": false
+        },
+        {
+          "id": "R00541",
+          "quote": {
+            "next_day": 13774
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            10811
+          ],
+          "late": true
+        },
+        {
+          "id": "R00544",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            3980
+          ],
+          "late": false
+        },
+        {
+          "id": "R00550",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            3953
+          ],
+          "late": false
+        },
+        {
+          "id": "R00626",
+          "quote": {
+            "next_day": 9088,
+            "within_3_days": 8378
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5429
+          ],
+          "late": false
+        },
+        {
+          "id": "R00628",
+          "quote": {
+            "next_day": 9088,
+            "within_3_days": 8378
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5461
+          ],
+          "late": false
+        },
+        {
+          "id": "R00634",
+          "quote": {
+            "next_day": 6816,
+            "within_3_days": 6248
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            6300
+          ],
+          "late": true
+        },
+        {
+          "id": "R00635",
+          "quote": {
+            "next_day": 18602
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            6670
+          ],
+          "late": true
+        },
+        {
+          "id": "R00638",
+          "quote": {
+            "next_day": 10934
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5482
+          ],
+          "late": false
+        },
+        {
+          "id": "R00641",
+          "quote": {
+            "next_day": 6816,
+            "within_3_days": 6248
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            6844
+          ],
+          "late": true
+        },
+        {
+          "id": "R00642",
+          "quote": {
+            "next_day": 17466
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            6542
+          ],
+          "late": true
+        },
+        {
+          "id": "R00643",
+          "quote": {
+            "next_day": 6816
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            7860
+          ],
+          "late": true
+        },
+        {
+          "id": "R00644",
+          "quote": {
+            "next_day": 10934
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5498
+          ],
+          "late": false
+        },
+        {
+          "id": "R00646",
+          "quote": {
+            "next_day": 10934
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5487
+          ],
+          "late": false
+        },
+        {
+          "id": "R00647",
+          "quote": {
+            "next_day": 15478,
+            "within_3_days": 14342
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            6595
+          ],
+          "late": true
+        },
+        {
+          "id": "R00650",
+          "quote": {
+            "next_day": 15478,
+            "within_3_days": 14342
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5478
+          ],
+          "late": false
+        },
+        {
+          "id": "R00651",
+          "quote": {
+            "next_day": 10934
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5495
+          ],
+          "late": false
+        },
+        {
+          "id": "R00653",
+          "quote": {
+            "next_day": 5112
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5049
+          ],
+          "late": false
+        },
+        {
+          "id": "R00656",
+          "quote": {
+            "next_day": 8236
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5435
+          ],
+          "late": false
+        },
+        {
+          "id": "R00658",
+          "quote": {
+            "next_day": 9230,
+            "within_3_days": 8520
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5484
+          ],
+          "late": false
+        },
+        {
+          "id": "R00659",
+          "quote": {
+            "next_day": 3692
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5334
+          ],
+          "late": false
+        },
+        {
+          "id": "R00660",
+          "quote": {
+            "next_day": 3692
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5415
+          ],
+          "late": false
+        },
+        {
+          "id": "R00662",
+          "quote": {
+            "next_day": 9230
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5480
+          ],
+          "late": false
+        },
+        {
+          "id": "R00663",
+          "quote": {
+            "next_day": 5112,
+            "within_3_days": 4828
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5432
+          ],
+          "late": false
+        },
+        {
+          "id": "R00665",
+          "quote": {
+            "next_day": 6816
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            6455
+          ],
+          "late": true
+        },
+        {
+          "id": "R00666",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5303
+          ],
+          "late": false
+        },
+        {
+          "id": "R00667",
+          "quote": {
+            "next_day": 6816
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5446
+          ],
+          "late": false
+        },
+        {
+          "id": "R00671",
+          "quote": {
+            "next_day": 6816,
+            "within_3_days": 6248
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            6843
+          ],
+          "late": true
+        },
+        {
+          "id": "R00672",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5407
+          ],
+          "late": false
+        },
+        {
+          "id": "R00675",
+          "quote": {
+            "next_day": 6816,
+            "within_3_days": 6248
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            6517
+          ],
+          "late": true
+        },
+        {
+          "id": "R00678",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5277
+          ],
+          "late": false
+        },
+        {
+          "id": "R00679",
+          "quote": {
+            "next_day": 8236
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5427
+          ],
+          "late": false
+        },
+        {
+          "id": "R00680",
+          "quote": {
+            "next_day": 6816,
+            "within_3_days": 6248
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            6421
+          ],
+          "late": true
+        },
+        {
+          "id": "R00682",
+          "quote": {
+            "next_day": 6816,
+            "within_3_days": 6248
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            6409
+          ],
+          "late": true
+        },
+        {
+          "id": "R00683",
+          "quote": {
+            "next_day": 6816
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5290
+          ],
+          "late": false
+        },
+        {
+          "id": "R00684",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5410
+          ],
+          "late": false
+        },
+        {
+          "id": "R00687",
+          "quote": {
+            "next_day": 5112
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5097
+          ],
+          "late": false
+        },
+        {
+          "id": "R00688",
+          "quote": {
+            "next_day": 5112,
+            "within_3_days": 4828
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5473
+          ],
+          "late": false
+        },
+        {
+          "id": "R00689",
+          "quote": {
+            "next_day": 9372,
+            "within_3_days": 8662
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            null
+          ],
+          "late": true
+        },
+        {
+          "id": "R00702",
+          "quote": {
+            "next_day": 20874
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            6496
+          ],
+          "late": true
+        },
+        {
+          "id": "R00704",
+          "quote": {
+            "next_day": 20874
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5434
+          ],
+          "late": false
+        },
+        {
+          "id": "R00716",
+          "quote": {
+            "next_day": 6248
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5366
+          ],
+          "late": false
+        },
+        {
+          "id": "R00718",
+          "quote": {
+            "next_day": 3976
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5144
+          ],
+          "late": false
+        },
+        {
+          "id": "R00720",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5379
+          ],
+          "late": false
+        },
+        {
+          "id": "R00727",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5406
+          ],
+          "late": false
+        },
+        {
+          "id": "R00729",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5371
+          ],
+          "late": false
+        },
+        {
+          "id": "R00742",
+          "quote": {
+            "next_day": 6390
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5270
+          ],
+          "late": false
+        },
+        {
+          "id": "R00761",
+          "quote": {
+            "next_day": 5254
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5397
+          ],
+          "late": false
+        },
+        {
+          "id": "R00766",
+          "quote": {
+            "next_day": 5254
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5419
+          ],
+          "late": false
+        },
+        {
+          "id": "R00794",
+          "quote": {
+            "next_day": 21016
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            10994
+          ],
+          "late": true
+        },
+        {
+          "id": "R00822",
+          "quote": {
+            "next_day": 6390
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6890
+          ],
+          "late": false
+        },
+        {
+          "id": "R00823",
+          "quote": {
+            "next_day": 6390
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6847
+          ],
+          "late": false
+        },
+        {
+          "id": "R00824",
+          "quote": {
+            "next_day": 9088
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6917
+          ],
+          "late": false
+        },
+        {
+          "id": "R00825",
+          "quote": {
+            "next_day": 8236
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            7923
+          ],
+          "late": true
+        },
+        {
+          "id": "R00826",
+          "quote": {
+            "next_day": 8236
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6697
+          ],
+          "late": false
+        },
+        {
+          "id": "R00829",
+          "quote": {
+            "next_day": 12922
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6899
+          ],
+          "late": false
+        },
+        {
+          "id": "R00831",
+          "quote": {
+            "next_day": 12922
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            10799
+          ],
+          "late": true
+        },
+        {
+          "id": "R00832",
+          "quote": {
+            "next_day": 12922
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            11172
+          ],
+          "late": true
+        },
+        {
+          "id": "R00833",
+          "quote": {
+            "next_day": 5112
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6875
+          ],
+          "late": false
+        },
+        {
+          "id": "R00837",
+          "quote": {
+            "next_day": 7242
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6852
+          ],
+          "late": false
+        },
+        {
+          "id": "R00840",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6560
+          ],
+          "late": false
+        },
+        {
+          "id": "R00841",
+          "quote": {
+            "next_day": 3692
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6827
+          ],
+          "late": false
+        },
+        {
+          "id": "R00842",
+          "quote": {
+            "next_day": 3692
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6796
+          ],
+          "late": false
+        },
+        {
+          "id": "R00850",
+          "quote": {
+            "next_day": 18602
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            11086
+          ],
+          "late": true
+        },
+        {
+          "id": "R00851",
+          "quote": {
+            "next_day": 3834
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6762
+          ],
+          "late": false
+        },
+        {
+          "id": "R00852",
+          "quote": {
+            "next_day": 10934
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6940
+          ],
+          "late": false
+        },
+        {
+          "id": "R00854",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6712
+          ],
+          "late": false
+        },
+        {
+          "id": "R00864",
+          "quote": {
+            "next_day": 3834
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6578
+          ],
+          "late": false
+        },
+        {
+          "id": "R00865",
+          "quote": {
+            "next_day": 6390
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6751
+          ],
+          "late": false
+        },
+        {
+          "id": "R00872",
+          "quote": {
+            "next_day": 6674
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6799
+          ],
+          "late": false
+        },
+        {
+          "id": "R00873",
+          "quote": {
+            "next_day": 3976
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6630
+          ],
+          "late": false
+        },
+        {
+          "id": "R00880",
+          "quote": {
+            "next_day": 5112
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6727
+          ],
+          "late": false
+        },
+        {
+          "id": "R00884",
+          "quote": {
+            "next_day": 17466
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6778
+          ],
+          "late": false
+        },
+        {
+          "id": "R00886",
+          "quote": {
+            "next_day": 17466
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6875
+          ],
+          "late": false
+        },
+        {
+          "id": "R00887",
+          "quote": {
+            "next_day": 7242
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6944
+          ],
+          "late": false
+        },
+        {
+          "id": "R00889",
+          "quote": {
+            "next_day": 5112
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6890
+          ],
+          "late": false
+        },
+        {
+          "id": "R00891",
+          "quote": {
+            "next_day": 9372
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6941
+          ],
+          "late": false
+        },
+        {
+          "id": "R00892",
+          "quote": {
+            "next_day": 7668
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            7990
+          ],
+          "late": true
+        },
+        {
+          "id": "R00894",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6820
+          ],
+          "late": false
+        },
+        {
+          "id": "R00903",
+          "quote": {
+            "next_day": 6390
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6827
+          ],
+          "late": false
+        },
+        {
+          "id": "R00904",
+          "quote": {
+            "next_day": 6390
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6696
+          ],
+          "late": false
+        },
+        {
+          "id": "R00906",
+          "quote": {
+            "next_day": 11076
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            7992
+          ],
+          "late": true
+        },
+        {
+          "id": "R00911",
+          "quote": {
+            "next_day": 9940
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6946
+          ],
+          "late": false
+        },
+        {
+          "id": "R00919",
+          "quote": {
+            "next_day": 12496
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6819
+          ],
+          "late": false
+        },
+        {
+          "id": "R00920",
+          "quote": {
+            "next_day": 11786
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            8022
+          ],
+          "late": true
+        },
+        {
+          "id": "R00921",
+          "quote": {
+            "next_day": 5112
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6776
+          ],
+          "late": false
+        },
+        {
+          "id": "R00922",
+          "quote": {
+            "next_day": 9088
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6892
+          ],
+          "late": false
+        },
+        {
+          "id": "R00923",
+          "quote": {
+            "next_day": 5254
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6804
+          ],
+          "late": false
+        },
+        {
+          "id": "R00924",
+          "quote": {
+            "next_day": 5112
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6744
+          ],
+          "late": false
+        },
+        {
+          "id": "R00928",
+          "quote": {
+            "next_day": 8520
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6898
+          ],
+          "late": false
+        },
+        {
+          "id": "R00931",
+          "quote": {
+            "next_day": 3834
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6785
+          ],
+          "late": false
+        },
+        {
+          "id": "R00933",
+          "quote": {
+            "next_day": 8236
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6830
+          ],
+          "late": false
+        },
+        {
+          "id": "R00935",
+          "quote": {
+            "next_day": 3834
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6833
+          ],
+          "late": false
+        }
+      ]
+    },
+    {
+      "worldId": "w5a1c1f8644b6fb371c7c",
+      "omittedFirstOptionWins": 153,
+      "lateAmongOmitted": 24,
+      "orders": [
+        {
+          "id": "R00013",
+          "quote": {
+            "next_day": 20874
+          },
+          "actualOption": "same_day",
+          "deadline": 1200,
+          "deliveredAt": [
+            1152
+          ],
+          "late": false
+        },
+        {
+          "id": "R00014",
+          "quote": {
+            "next_day": 23856
+          },
+          "actualOption": "same_day",
+          "deadline": 1200,
+          "deliveredAt": [
+            1053
+          ],
+          "late": false
+        },
+        {
+          "id": "R00031",
+          "quote": {
+            "next_day": 14626
+          },
+          "actualOption": "same_day",
+          "deadline": 1200,
+          "deliveredAt": [
+            1074
+          ],
+          "late": false
+        },
+        {
+          "id": "R00038",
+          "quote": {
+            "next_day": 20448
+          },
+          "actualOption": "same_day",
+          "deadline": 1200,
+          "deliveredAt": [
+            1148
+          ],
+          "late": false
+        },
+        {
+          "id": "R00048",
+          "quote": {
+            "next_day": 23146
+          },
+          "actualOption": "same_day",
+          "deadline": 1200,
+          "deliveredAt": [
+            1980
+          ],
+          "late": true
+        },
+        {
+          "id": "R00066",
+          "quote": {
+            "next_day": 18744,
+            "within_3_days": 17466
+          },
+          "actualOption": "same_day",
+          "deadline": 1200,
+          "deliveredAt": [
+            1110
+          ],
+          "late": false
+        },
+        {
+          "id": "R00067",
+          "quote": {
+            "next_day": 18744
+          },
+          "actualOption": "same_day",
+          "deadline": 1200,
+          "deliveredAt": [
+            1171
+          ],
+          "late": false
+        },
+        {
+          "id": "R00077",
+          "quote": {
+            "next_day": 19880
+          },
+          "actualOption": "same_day",
+          "deadline": 1200,
+          "deliveredAt": [
+            1171
+          ],
+          "late": false
+        },
+        {
+          "id": "R00079",
+          "quote": {
+            "next_day": 5254
+          },
+          "actualOption": "same_day",
+          "deadline": 1200,
+          "deliveredAt": [
+            1082
+          ],
+          "late": false
+        },
+        {
+          "id": "R00081",
+          "quote": {
+            "next_day": 15762,
+            "within_3_days": 14626
+          },
+          "actualOption": "same_day",
+          "deadline": 1200,
+          "deliveredAt": [
+            1132
+          ],
+          "late": false
+        },
+        {
+          "id": "R00104",
+          "quote": {
+            "next_day": 24282
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2557
+          ],
+          "late": false
+        },
+        {
+          "id": "R00220",
+          "quote": {
+            "next_day": 24282
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2383
+          ],
+          "late": false
+        },
+        {
+          "id": "R00221",
+          "quote": {
+            "next_day": 24282
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2469
+          ],
+          "late": false
+        },
+        {
+          "id": "R00227",
+          "quote": {
+            "next_day": 9088
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2464
+          ],
+          "late": false
+        },
+        {
+          "id": "R00233",
+          "quote": {
+            "next_day": 5112
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2513
+          ],
+          "late": false
+        },
+        {
+          "id": "R00238",
+          "quote": {
+            "next_day": 5112
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2389
+          ],
+          "late": false
+        },
+        {
+          "id": "R00239",
+          "quote": {
+            "next_day": 9230,
+            "within_3_days": 8520
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2521
+          ],
+          "late": false
+        },
+        {
+          "id": "R00255",
+          "quote": {
+            "next_day": 15762
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            3962
+          ],
+          "late": true
+        },
+        {
+          "id": "R00256",
+          "quote": {
+            "next_day": 5254
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2413
+          ],
+          "late": false
+        },
+        {
+          "id": "R00257",
+          "quote": {
+            "next_day": 8236
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2464
+          ],
+          "late": false
+        },
+        {
+          "id": "R00274",
+          "quote": {
+            "next_day": 5112,
+            "within_3_days": 4828
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2535
+          ],
+          "late": false
+        },
+        {
+          "id": "R00275",
+          "quote": {
+            "next_day": 8520,
+            "within_3_days": 7952
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2571
+          ],
+          "late": false
+        },
+        {
+          "id": "R00277",
+          "quote": {
+            "next_day": 3692
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2414
+          ],
+          "late": false
+        },
+        {
+          "id": "R00285",
+          "quote": {
+            "next_day": 24282
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5312
+          ],
+          "late": false
+        },
+        {
+          "id": "R00286",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2467
+          ],
+          "late": false
+        },
+        {
+          "id": "R00290",
+          "quote": {
+            "next_day": 3692
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2415
+          ],
+          "late": false
+        },
+        {
+          "id": "R00291",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2411
+          ],
+          "late": false
+        },
+        {
+          "id": "R00298",
+          "quote": {
+            "next_day": 3692
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2491
+          ],
+          "late": false
+        },
+        {
+          "id": "R00299",
+          "quote": {
+            "next_day": 3692
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2354
+          ],
+          "late": false
+        },
+        {
+          "id": "R00310",
+          "quote": {
+            "next_day": 16472
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2509
+          ],
+          "late": false
+        },
+        {
+          "id": "R00312",
+          "quote": {
+            "next_day": 5254
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2515
+          ],
+          "late": false
+        },
+        {
+          "id": "R00314",
+          "quote": {
+            "next_day": 6390
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            null
+          ],
+          "late": true
+        },
+        {
+          "id": "R00316",
+          "quote": {
+            "next_day": 3692
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2384
+          ],
+          "late": false
+        },
+        {
+          "id": "R00321",
+          "quote": {
+            "next_day": 16472
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            3773
+          ],
+          "late": true
+        },
+        {
+          "id": "R00326",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2466
+          ],
+          "late": false
+        },
+        {
+          "id": "R00333",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 2640,
+          "deliveredAt": [
+            2418
+          ],
+          "late": false
+        },
+        {
+          "id": "R00377",
+          "quote": {
+            "next_day": 17608
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            5192
+          ],
+          "late": true
+        },
+        {
+          "id": "R00424",
+          "quote": {
+            "next_day": 9230
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            3673
+          ],
+          "late": false
+        },
+        {
+          "id": "R00429",
+          "quote": {
+            "next_day": 15478
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            5247
+          ],
+          "late": true
+        },
+        {
+          "id": "R00452",
+          "quote": {
+            "next_day": 3692
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            3630
+          ],
+          "late": false
+        },
+        {
+          "id": "R00466",
+          "quote": {
+            "next_day": 19880
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            null
+          ],
+          "late": true
+        },
+        {
+          "id": "R00474",
+          "quote": {
+            "next_day": 10508
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            5012
+          ],
+          "late": true
+        },
+        {
+          "id": "R00478",
+          "quote": {
+            "next_day": 11786
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            3958
+          ],
+          "late": false
+        },
+        {
+          "id": "R00481",
+          "quote": {
+            "next_day": 9230
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            4045
+          ],
+          "late": false
+        },
+        {
+          "id": "R00485",
+          "quote": {
+            "next_day": 3692
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            3905
+          ],
+          "late": false
+        },
+        {
+          "id": "R00495",
+          "quote": {
+            "next_day": 17892
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            4060
+          ],
+          "late": false
+        },
+        {
+          "id": "R00499",
+          "quote": {
+            "next_day": 15478
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            4078
+          ],
+          "late": false
+        },
+        {
+          "id": "R00504",
+          "quote": {
+            "next_day": 8520
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            5078
+          ],
+          "late": true
+        },
+        {
+          "id": "R00505",
+          "quote": {
+            "next_day": 9798
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            4074
+          ],
+          "late": false
+        },
+        {
+          "id": "R00510",
+          "quote": {
+            "next_day": 17182
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            5108
+          ],
+          "late": true
+        },
+        {
+          "id": "R00512",
+          "quote": {
+            "next_day": 5112
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            3869
+          ],
+          "late": false
+        },
+        {
+          "id": "R00513",
+          "quote": {
+            "next_day": 6390
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            3889
+          ],
+          "late": false
+        },
+        {
+          "id": "R00514",
+          "quote": {
+            "next_day": 12496
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            5462
+          ],
+          "late": true
+        },
+        {
+          "id": "R00515",
+          "quote": {
+            "next_day": 20874
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            6744
+          ],
+          "late": true
+        },
+        {
+          "id": "R00517",
+          "quote": {
+            "next_day": 5254
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            4020
+          ],
+          "late": false
+        },
+        {
+          "id": "R00521",
+          "quote": {
+            "next_day": 20874
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5411
+          ],
+          "late": false
+        },
+        {
+          "id": "R00541",
+          "quote": {
+            "next_day": 13774
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6857
+          ],
+          "late": false
+        },
+        {
+          "id": "R00544",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            3966
+          ],
+          "late": false
+        },
+        {
+          "id": "R00550",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 4080,
+          "deliveredAt": [
+            3949
+          ],
+          "late": false
+        },
+        {
+          "id": "R00617",
+          "quote": {
+            "next_day": 3834
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5036
+          ],
+          "late": false
+        },
+        {
+          "id": "R00625",
+          "quote": {
+            "next_day": 9088,
+            "within_3_days": 8520
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5439
+          ],
+          "late": false
+        },
+        {
+          "id": "R00626",
+          "quote": {
+            "next_day": 9088,
+            "within_3_days": 8378
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5434
+          ],
+          "late": false
+        },
+        {
+          "id": "R00627",
+          "quote": {
+            "next_day": 9372
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5475
+          ],
+          "late": false
+        },
+        {
+          "id": "R00628",
+          "quote": {
+            "next_day": 9088,
+            "within_3_days": 8378
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5436
+          ],
+          "late": false
+        },
+        {
+          "id": "R00632",
+          "quote": {
+            "next_day": 9372,
+            "within_3_days": 8662
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            6468
+          ],
+          "late": true
+        },
+        {
+          "id": "R00633",
+          "quote": {
+            "next_day": 9372
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            6365
+          ],
+          "late": true
+        },
+        {
+          "id": "R00635",
+          "quote": {
+            "next_day": 18602
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5514
+          ],
+          "late": false
+        },
+        {
+          "id": "R00638",
+          "quote": {
+            "next_day": 10934
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5476
+          ],
+          "late": false
+        },
+        {
+          "id": "R00641",
+          "quote": {
+            "next_day": 6816,
+            "within_3_days": 6248
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            6451
+          ],
+          "late": true
+        },
+        {
+          "id": "R00642",
+          "quote": {
+            "next_day": 17466
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            6557
+          ],
+          "late": true
+        },
+        {
+          "id": "R00643",
+          "quote": {
+            "next_day": 6816
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5428
+          ],
+          "late": false
+        },
+        {
+          "id": "R00644",
+          "quote": {
+            "next_day": 10934
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5343
+          ],
+          "late": false
+        },
+        {
+          "id": "R00646",
+          "quote": {
+            "next_day": 10934
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5383
+          ],
+          "late": false
+        },
+        {
+          "id": "R00647",
+          "quote": {
+            "next_day": 15478,
+            "within_3_days": 14342
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5495
+          ],
+          "late": false
+        },
+        {
+          "id": "R00650",
+          "quote": {
+            "next_day": 15478,
+            "within_3_days": 14342
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5497
+          ],
+          "late": false
+        },
+        {
+          "id": "R00651",
+          "quote": {
+            "next_day": 10934
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5457
+          ],
+          "late": false
+        },
+        {
+          "id": "R00653",
+          "quote": {
+            "next_day": 5112
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5064
+          ],
+          "late": false
+        },
+        {
+          "id": "R00656",
+          "quote": {
+            "next_day": 8236
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5416
+          ],
+          "late": false
+        },
+        {
+          "id": "R00658",
+          "quote": {
+            "next_day": 9230,
+            "within_3_days": 8520
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5484
+          ],
+          "late": false
+        },
+        {
+          "id": "R00659",
+          "quote": {
+            "next_day": 3692
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5069
+          ],
+          "late": false
+        },
+        {
+          "id": "R00660",
+          "quote": {
+            "next_day": 3692
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5174
+          ],
+          "late": false
+        },
+        {
+          "id": "R00662",
+          "quote": {
+            "next_day": 9230
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5426
+          ],
+          "late": false
+        },
+        {
+          "id": "R00663",
+          "quote": {
+            "next_day": 5112,
+            "within_3_days": 4828
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5338
+          ],
+          "late": false
+        },
+        {
+          "id": "R00665",
+          "quote": {
+            "next_day": 6816
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            6640
+          ],
+          "late": true
+        },
+        {
+          "id": "R00666",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5405
+          ],
+          "late": false
+        },
+        {
+          "id": "R00667",
+          "quote": {
+            "next_day": 6816
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5454
+          ],
+          "late": false
+        },
+        {
+          "id": "R00671",
+          "quote": {
+            "next_day": 6816,
+            "within_3_days": 6248
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            6449
+          ],
+          "late": true
+        },
+        {
+          "id": "R00672",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5405
+          ],
+          "late": false
+        },
+        {
+          "id": "R00675",
+          "quote": {
+            "next_day": 6816,
+            "within_3_days": 6248
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            6481
+          ],
+          "late": true
+        },
+        {
+          "id": "R00678",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5276
+          ],
+          "late": false
+        },
+        {
+          "id": "R00679",
+          "quote": {
+            "next_day": 8236
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5400
+          ],
+          "late": false
+        },
+        {
+          "id": "R00680",
+          "quote": {
+            "next_day": 6816,
+            "within_3_days": 6248
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            6679
+          ],
+          "late": true
+        },
+        {
+          "id": "R00682",
+          "quote": {
+            "next_day": 6816,
+            "within_3_days": 6248
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            6873
+          ],
+          "late": true
+        },
+        {
+          "id": "R00683",
+          "quote": {
+            "next_day": 6816
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5286
+          ],
+          "late": false
+        },
+        {
+          "id": "R00684",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5414
+          ],
+          "late": false
+        },
+        {
+          "id": "R00687",
+          "quote": {
+            "next_day": 5112
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5407
+          ],
+          "late": false
+        },
+        {
+          "id": "R00688",
+          "quote": {
+            "next_day": 5112,
+            "within_3_days": 4828
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5346
+          ],
+          "late": false
+        },
+        {
+          "id": "R00689",
+          "quote": {
+            "next_day": 9372,
+            "within_3_days": 8662
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            null
+          ],
+          "late": true
+        },
+        {
+          "id": "R00702",
+          "quote": {
+            "next_day": 20874
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5465
+          ],
+          "late": false
+        },
+        {
+          "id": "R00704",
+          "quote": {
+            "next_day": 20874
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5501
+          ],
+          "late": false
+        },
+        {
+          "id": "R00716",
+          "quote": {
+            "next_day": 6248
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5310
+          ],
+          "late": false
+        },
+        {
+          "id": "R00718",
+          "quote": {
+            "next_day": 3976
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5333
+          ],
+          "late": false
+        },
+        {
+          "id": "R00720",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5391
+          ],
+          "late": false
+        },
+        {
+          "id": "R00727",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5247
+          ],
+          "late": false
+        },
+        {
+          "id": "R00729",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5379
+          ],
+          "late": false
+        },
+        {
+          "id": "R00742",
+          "quote": {
+            "next_day": 6390
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5411
+          ],
+          "late": false
+        },
+        {
+          "id": "R00761",
+          "quote": {
+            "next_day": 5254
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5408
+          ],
+          "late": false
+        },
+        {
+          "id": "R00766",
+          "quote": {
+            "next_day": 5254
+          },
+          "actualOption": "same_day",
+          "deadline": 5520,
+          "deliveredAt": [
+            5415
+          ],
+          "late": false
+        },
+        {
+          "id": "R00794",
+          "quote": {
+            "next_day": 21016
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6873
+          ],
+          "late": false
+        },
+        {
+          "id": "R00822",
+          "quote": {
+            "next_day": 6390
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6869
+          ],
+          "late": false
+        },
+        {
+          "id": "R00823",
+          "quote": {
+            "next_day": 6390
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6715
+          ],
+          "late": false
+        },
+        {
+          "id": "R00824",
+          "quote": {
+            "next_day": 9088
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6746
+          ],
+          "late": false
+        },
+        {
+          "id": "R00825",
+          "quote": {
+            "next_day": 8236
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6834
+          ],
+          "late": false
+        },
+        {
+          "id": "R00826",
+          "quote": {
+            "next_day": 8236
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6691
+          ],
+          "late": false
+        },
+        {
+          "id": "R00829",
+          "quote": {
+            "next_day": 12922
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6957
+          ],
+          "late": false
+        },
+        {
+          "id": "R00831",
+          "quote": {
+            "next_day": 12922
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6777
+          ],
+          "late": false
+        },
+        {
+          "id": "R00832",
+          "quote": {
+            "next_day": 12922
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6958
+          ],
+          "late": false
+        },
+        {
+          "id": "R00833",
+          "quote": {
+            "next_day": 5112
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6805
+          ],
+          "late": false
+        },
+        {
+          "id": "R00837",
+          "quote": {
+            "next_day": 7242
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6824
+          ],
+          "late": false
+        },
+        {
+          "id": "R00840",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6636
+          ],
+          "late": false
+        },
+        {
+          "id": "R00841",
+          "quote": {
+            "next_day": 3692
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6736
+          ],
+          "late": false
+        },
+        {
+          "id": "R00842",
+          "quote": {
+            "next_day": 3692
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6627
+          ],
+          "late": false
+        },
+        {
+          "id": "R00850",
+          "quote": {
+            "next_day": 18602
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6796
+          ],
+          "late": false
+        },
+        {
+          "id": "R00851",
+          "quote": {
+            "next_day": 3834
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6595
+          ],
+          "late": false
+        },
+        {
+          "id": "R00852",
+          "quote": {
+            "next_day": 10934
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6933
+          ],
+          "late": false
+        },
+        {
+          "id": "R00854",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6682
+          ],
+          "late": false
+        },
+        {
+          "id": "R00864",
+          "quote": {
+            "next_day": 3834
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6576
+          ],
+          "late": false
+        },
+        {
+          "id": "R00865",
+          "quote": {
+            "next_day": 6390
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6748
+          ],
+          "late": false
+        },
+        {
+          "id": "R00872",
+          "quote": {
+            "next_day": 6674
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6760
+          ],
+          "late": false
+        },
+        {
+          "id": "R00873",
+          "quote": {
+            "next_day": 3976
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6803
+          ],
+          "late": false
+        },
+        {
+          "id": "R00880",
+          "quote": {
+            "next_day": 5112
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6929
+          ],
+          "late": false
+        },
+        {
+          "id": "R00884",
+          "quote": {
+            "next_day": 17466
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6829
+          ],
+          "late": false
+        },
+        {
+          "id": "R00886",
+          "quote": {
+            "next_day": 17466
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6800
+          ],
+          "late": false
+        },
+        {
+          "id": "R00887",
+          "quote": {
+            "next_day": 7242
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6937
+          ],
+          "late": false
+        },
+        {
+          "id": "R00889",
+          "quote": {
+            "next_day": 5112
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6781
+          ],
+          "late": false
+        },
+        {
+          "id": "R00891",
+          "quote": {
+            "next_day": 9372
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6869
+          ],
+          "late": false
+        },
+        {
+          "id": "R00892",
+          "quote": {
+            "next_day": 7668
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            7992
+          ],
+          "late": true
+        },
+        {
+          "id": "R00894",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6874
+          ],
+          "late": false
+        },
+        {
+          "id": "R00903",
+          "quote": {
+            "next_day": 6390
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6857
+          ],
+          "late": false
+        },
+        {
+          "id": "R00904",
+          "quote": {
+            "next_day": 6390
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6831
+          ],
+          "late": false
+        },
+        {
+          "id": "R00906",
+          "quote": {
+            "next_day": 11076
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6967
+          ],
+          "late": true
+        },
+        {
+          "id": "R00911",
+          "quote": {
+            "next_day": 9940
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6921
+          ],
+          "late": false
+        },
+        {
+          "id": "R00919",
+          "quote": {
+            "next_day": 12496
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6877
+          ],
+          "late": false
+        },
+        {
+          "id": "R00920",
+          "quote": {
+            "next_day": 11786
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6946
+          ],
+          "late": false
+        },
+        {
+          "id": "R00921",
+          "quote": {
+            "next_day": 5112
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6775
+          ],
+          "late": false
+        },
+        {
+          "id": "R00922",
+          "quote": {
+            "next_day": 9088
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6943
+          ],
+          "late": false
+        },
+        {
+          "id": "R00923",
+          "quote": {
+            "next_day": 5254
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6782
+          ],
+          "late": false
+        },
+        {
+          "id": "R00924",
+          "quote": {
+            "next_day": 5112
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6871
+          ],
+          "late": false
+        },
+        {
+          "id": "R00928",
+          "quote": {
+            "next_day": 8520
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6915
+          ],
+          "late": false
+        },
+        {
+          "id": "R00929",
+          "quote": {
+            "next_day": 4686
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6744
+          ],
+          "late": false
+        },
+        {
+          "id": "R00931",
+          "quote": {
+            "next_day": 3834
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6719
+          ],
+          "late": false
+        },
+        {
+          "id": "R00933",
+          "quote": {
+            "next_day": 8236
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6902
+          ],
+          "late": false
+        },
+        {
+          "id": "R00935",
+          "quote": {
+            "next_day": 3834
+          },
+          "actualOption": "same_day",
+          "deadline": 6960,
+          "deliveredAt": [
+            6758
+          ],
+          "late": false
+        }
+      ]
+    }
+  ]
+}

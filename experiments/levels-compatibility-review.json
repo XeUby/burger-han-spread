@@ -1,0 +1,59 @@
+{
+  "approved": true,
+  "reviewedAt": "2026-11-14T06:18:06.916385+00:00",
+  "reportSha256": "5cd192c729be4aaec0ee373dadabd712633a4ab7ee6df64a980ba3005b32a1bd",
+  "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+  "checks": "All seven terminal; exact frozen revision/settings; score reconciled to ledger and snapshot; qualified; zero action errors, recoveries, undelivered orders or failed visits. No tuning.",
+  "limitations": "One compatibility week per level is not a safety guarantee or policy comparison.",
+  "results": [
+    {
+      "level": 1,
+      "worldId": "w48164337cd530770fe22",
+      "profitEuros": 663.2,
+      "onTimeShare": 0.9868421052631579,
+      "orders": 76
+    },
+    {
+      "level": 2,
+      "worldId": "w2e1a5ea4a948980a4e12",
+      "profitEuros": 726.72,
+      "onTimeShare": 0.9868421052631579,
+      "orders": 76
+    },
+    {
+      "level": 3,
+      "worldId": "wc79e70c2b47ca151ba50",
+      "profitEuros": 828.48,
+      "onTimeShare": 1,
+      "orders": 76
+    },
+    {
+      "level": 4,
+      "worldId": "wec608f7bdf7a34a53c52",
+      "profitEuros": 1265.84,
+      "onTimeShare": 0.9772727272727273,
+      "orders": 44
+    },
+    {
+      "level": 5,
+      "worldId": "w777f5384e6a5d6ee3e09",
+      "profitEuros": 801.34,
+      "onTimeShare": 1,
+      "orders": 33
+    },
+    {
+      "level": 6,
+      "worldId": "w161228e64d5cdf992727",
+      "profitEuros": 1561.02,
+      "onTimeShare": 1,
+      "orders": 59
+    },
+    {
+      "level": 7,
+      "worldId": "w00020b2903e9a263e9b6",
+      "profitEuros": 4869.67,
+      "onTimeShare": 0.9696969696969697,
+      "orders": 165
+    }
+  ]
+}

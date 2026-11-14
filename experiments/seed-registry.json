@@ -1,11 +1,41 @@
 {
-  "updatedAt": "2026-11-14T06:16:30.532933+00:00",
+  "updatedAt": "2026-11-14T06:29:18.149983+00:00",
   "unit": "unique simulation seed/week; repeated worlds are not independent replications",
-  "worldRecords": 298,
-  "uniqueNamedWeeks": 73,
-  "distinctLabels": 81,
-  "distinctSourceSettingsCombinations": 64,
+  "worldRecords": 319,
+  "uniqueNamedWeeks": 75,
+  "distinctLabels": 86,
+  "distinctSourceSettingsCombinations": 67,
   "interpretation": "Counts document the adaptive search, not independent tests or a guarantee that distinct deterministic seeds are IID. Every observed seed is conservatively unavailable for any future untouched panel.",
+  "hiddenSeedWorlds": [
+    {
+      "worldId": "w6516d12e279ef0a68c15",
+      "level": 1,
+      "label": "levels-ranked-1-1",
+      "metaSha256": "2ba041a106bd358fe0975f2a20587cca02ead0ee29e4ae7af76692116f5ecf55",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    },
+    {
+      "worldId": "wc3bc19d05e17f5628fd3",
+      "level": 2,
+      "label": "levels-ranked-2-1",
+      "metaSha256": "0fef9188452e7068e68482a2ee75e2e39ddb80e3af9084ea7b4c6500a1bc566c",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    },
+    {
+      "worldId": "wdb4f2388e35cbbf8be8d",
+      "level": 4,
+      "label": "levels-ranked-4-1",
+      "metaSha256": "d0c57ced9a646f5a8be80c70b7df33a615a0e761fde0fed45027d548c0b0fe61",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    },
+    {
+      "worldId": "web5c08517e2d75e2e404",
+      "level": 3,
+      "label": "levels-ranked-3-1",
+      "metaSha256": "980edb64a18696e32b81d9d3cf6d3d9f9bf948c33c1134aff94e983948eedde0",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    }
+  ],
   "seeds": [
     {
       "seed": "cost-development-20261114-0671a6fd582581ca",
@@ -1961,14 +1991,14 @@
           "worldId": "w00020b2903e9a263e9b6",
           "label": "levels-compatibility-7-1",
           "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
-          "hasTerminalArtifacts": false,
+          "hasTerminalArtifacts": true,
           "metaSha256": "152eec0d62cc79c1d2eeb0f3e9df3cf061211203eed2b69ceaf0bd208bf34a74"
         },
         {
           "worldId": "w161228e64d5cdf992727",
           "label": "levels-compatibility-6-1",
           "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
-          "hasTerminalArtifacts": false,
+          "hasTerminalArtifacts": true,
           "metaSha256": "4a23ed629d53b70cd647488964818adb5a6620e689aed8624e4684143e12acb7"
         },
         {
@@ -1986,18 +2016,46 @@
           "metaSha256": "bc6fc494ba733e6f625e61d0377f3f0eb6aed4a7d1c7c12ac96f2ddcd931a054"
         },
         {
+          "worldId": "w5a1c1f8644b6fb371c7c",
+          "label": "levels-abundance",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "88fd3d39159e96272df1ad356231a3e40587bfe3bd1dc36fa5baee444d7d7317"
+        },
+        {
           "worldId": "w777f5384e6a5d6ee3e09",
           "label": "levels-compatibility-5-1",
           "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
-          "hasTerminalArtifacts": false,
+          "hasTerminalArtifacts": true,
           "metaSha256": "6ca7d5dd335b7f7b3f125aee9ae473ce741680703f0aa8b26664786cbdfaaddd"
+        },
+        {
+          "worldId": "w7c5ba2e85b8169167e83",
+          "label": "levels-abundance",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "e1d613a1a167e6dc8bb27a45383eebc473be255be00130d99b35ef2dd320b436"
         },
         {
           "worldId": "wc79e70c2b47ca151ba50",
           "label": "levels-compatibility-3-1",
           "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
-          "hasTerminalArtifacts": false,
+          "hasTerminalArtifacts": true,
           "metaSha256": "d6d9ac9174c22ba0a781b615c36e777a95bed9bb6b720c2f0032301a6088f73f"
+        },
+        {
+          "worldId": "wd1938dfb64b92b37823e",
+          "label": "levels-abundance",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "e5f67f7c14cfccf949f7c640d9c869a615ca84829e990c9ed9de3567b55498f8"
+        },
+        {
+          "worldId": "webeee44e6e0ce5e3ba9f",
+          "label": "levels-abundance",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "52e27c0908b32d8a5911c231b2bb8f225d50de3a3166e84244af6e863adfd08a"
         },
         {
           "worldId": "wec608f7bdf7a34a53c52",
@@ -2005,6 +2063,143 @@
           "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
           "hasTerminalArtifacts": true,
           "metaSha256": "e749ade57e825027cd6599a41bdb30959f2237179b5224a34ffb342d2efe2618"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "levels-development-2dba6ebe7258e63082c0",
+      "retiredAt": "2026-11-14T06:29:18.149983+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w27a9907f165ecf084fdd",
+          "label": "levels-factorial-coupled",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "15775f229cf04b5e698347e1492c173934f22fdabad7fa0cf33f26938db06472"
+        },
+        {
+          "worldId": "w2c19623fbf433f74d721",
+          "label": "levels-factorial-admission",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "0ba5a3e69895b89ac0a9a63e742c6e488acf4140c6d5d4a619d046a9897f50f9"
+        },
+        {
+          "worldId": "w306c00398d50539c240a",
+          "label": "levels-factorial-coupled",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "24fe0ef0ef039b4b14640dd8f36e66940d3e0a7f6ce7ceddaca1d03d25e923f2"
+        },
+        {
+          "worldId": "w47491c82a13c1d83e9a0",
+          "label": "levels-factorial-control",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "fc1a3da64ce6f5c4fe168ea5db7396d9defa28c8db69f09d737528d812af0cc7"
+        },
+        {
+          "worldId": "w5116b209e946fa965290",
+          "label": "levels-factorial-control",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "b5b153f80427efb1241ce1ba0cdea1affb7d1f12053ebecf006b976a9424b922"
+        },
+        {
+          "worldId": "w562ee881484b356be5a1",
+          "label": "levels-factorial-economics",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "26a0c45bdaec35a5f73fe9753ccaa0535d0c759b997fa98c1a9403ff5ffe63f4"
+        },
+        {
+          "worldId": "w65ce2375e71ae977f3f5",
+          "label": "levels-factorial-admission",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "c4302abb9f24ede53b17f3736928e0cedae33625606877964d4734011d536058"
+        },
+        {
+          "worldId": "w78586356f37a5f476c13",
+          "label": "levels-factorial-economics",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "146200acf04d5ac6e304d9388497026fa8b5871633f55b632e556db944937a7b"
+        },
+        {
+          "worldId": "wb49083477d3eb3d95a67",
+          "label": "levels-factorial-control",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "4a6dc0b5f9a1c2fa6750ff98a01e96ffd70fcceee9a774dfc125645d5c9ba481"
+        },
+        {
+          "worldId": "wd710371e8b867e7ad1a8",
+          "label": "levels-factorial-admission",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "0bf68f2e671e77168c0630f656837ad51db5b09632eaf01db3ac59107a82fece"
+        },
+        {
+          "worldId": "wefba6c81a14aa79c4e3a",
+          "label": "levels-factorial-economics",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "4a541a7311978b0eefc72591e28096676ff2d218efd1f38eab0dd26bbb8401d5"
+        },
+        {
+          "worldId": "wf5a5345afaedfacd6b63",
+          "label": "levels-factorial-coupled",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "d03b8f5f8ef5c8c743de58f0ff1a974a83c8f7fb25fb5e71fa3c64dd70780838"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "levels-development-fbc5ca1adb2a1671179f",
+      "retiredAt": "2026-11-14T06:29:18.149983+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w691fc93cd1779dc26409",
+          "label": "levels-factorial-coupled",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": false,
+          "metaSha256": "82c4fcb80fc278dc9d8220bc26a473e0ad5a61ecac86a70be9bfd6c1d6af48d9"
+        },
+        {
+          "worldId": "w7d9ba46ce5cc133ef351",
+          "label": "levels-factorial-control",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": false,
+          "metaSha256": "827c30c17e0253bfdc0d030fac5e20d09ac583dff11fbe200df7747f913ed6b8"
+        },
+        {
+          "worldId": "w865af007c8c4d2826911",
+          "label": "levels-factorial-admission",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": false,
+          "metaSha256": "26fef11e02a551d1b28efb79722a692febcc65f74941e28e42741d3cb568e77d"
+        },
+        {
+          "worldId": "wbf4daaa0a55e39e76ed0",
+          "label": "levels-factorial-control",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "c7f2a1b7854aafdd3fc94fedd76bfc70ba7aadd6de214e8e55856aac876830fd"
+        },
+        {
+          "worldId": "we639f30108f27a9c2480",
+          "label": "levels-factorial-economics",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": false,
+          "metaSha256": "41ed32a30228a115cf3d997752d748047b2bcfe9c1f92b7348632bc4ef40f3f9"
         }
       ],
       "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."

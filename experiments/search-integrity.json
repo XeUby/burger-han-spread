@@ -44,6 +44,12 @@
     "maximumUnfinishedTeamPracticeWorlds": 4,
     "coordination": "Check shared occupancy before every serialized creation. Fill available slots with planned useful development trials; never exceed four or duplicate a runner after a polling timeout.",
     "rankingAllowed": false,
-    "finalAllowed": false
+    "finalAllowed": false,
+    "rankingAuthorization": {
+      "updatedAt": "2026-11-14T06:24:29.226250+00:00",
+      "scope": "User initially authorized levels1-7, then rejected poor competitiveness and instructed finishing already-started runs while improving. Four ranked runs (first at levels1-4) completed; no further ranking without credible cross-level evidence.",
+      "cutoff": "2026-11-14T07:00:00Z",
+      "alreadyStartedCompleted": true
+    }
   }
 }
