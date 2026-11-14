@@ -1,11 +1,19 @@
 {
-  "observedAt": "2026-11-14T03:23:03.816Z",
+  "observedAt": "2026-11-14T03:53:04.474Z",
   "source": "https://spread.bahnexpress.com/v1/leaderboards/practice?level=8",
   "season": 4,
   "round": "Saturday 00:00",
   "leaders": [
     {
       "rank": 1,
+      "name": "freya",
+      "meanWeeklyMarginEuros": 17185.022,
+      "meanWeeklyOrders": 426.6,
+      "marginEurosPerOrder": 40.28368963900609,
+      "onTimeShare": 0.972808251289264
+    },
+    {
+      "rank": 2,
       "name": "Team Anonymous",
       "meanWeeklyMarginEuros": 16631.512,
       "meanWeeklyOrders": 408.6,
@@ -13,7 +21,7 @@
       "onTimeShare": 0.9456681350954479
     },
     {
-      "rank": 2,
+      "rank": 3,
       "name": "skadi",
       "meanWeeklyMarginEuros": 16094.572,
       "meanWeeklyOrders": 446.4,
@@ -21,7 +29,7 @@
       "onTimeShare": 0.9681899641577061
     },
     {
-      "rank": 3,
+      "rank": 4,
       "name": "razors",
       "meanWeeklyMarginEuros": 16082.538,
       "meanWeeklyOrders": 424.4,
@@ -29,7 +37,7 @@
       "onTimeShare": 0.9637134778510839
     },
     {
-      "rank": 4,
+      "rank": 5,
       "name": "ppo",
       "meanWeeklyMarginEuros": 16045.166,
       "meanWeeklyOrders": 451.0,
@@ -37,7 +45,7 @@
       "onTimeShare": 0.9596452328159645
     },
     {
-      "rank": 5,
+      "rank": 6,
       "name": "klmisbest",
       "meanWeeklyMarginEuros": 16008.614,
       "meanWeeklyOrders": 458.0,
@@ -45,7 +53,7 @@
       "onTimeShare": 0.9620087336244542
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "Juhus",
       "meanWeeklyMarginEuros": 16006.004,
       "meanWeeklyOrders": 373.2,
@@ -53,7 +61,7 @@
       "onTimeShare": 0.9748124330117899
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "akanegakirru",
       "meanWeeklyMarginEuros": 15349.752,
       "meanWeeklyOrders": 434.0,
@@ -61,7 +69,7 @@
       "onTimeShare": 0.9576036866359448
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "hakunamaTATA",
       "meanWeeklyMarginEuros": 15229.156,
       "meanWeeklyOrders": 427.8,
@@ -69,20 +77,12 @@
       "onTimeShare": 0.9625993454885461
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "source-exp",
       "meanWeeklyMarginEuros": 15094.914,
       "meanWeeklyOrders": 390.6,
       "marginEurosPerOrder": 38.64545314900154,
       "onTimeShare": 0.96415770609319
-    },
-    {
-      "rank": 10,
-      "name": "DaVinci\u2019s Night Shift",
-      "meanWeeklyMarginEuros": 14948.438,
-      "meanWeeklyOrders": 427.2,
-      "marginEurosPerOrder": 34.99166198501873,
-      "onTimeShare": 0.976123595505618
     }
   ],
   "interpretation": "These public outcomes describe volume and margin per order jointly. Neither alone is the objective; the aggregates do not identify a causal strategy.",

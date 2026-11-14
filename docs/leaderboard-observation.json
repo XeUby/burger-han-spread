@@ -1,5 +1,5 @@
 {
-  "observedAt": "2026-11-14T03:23:03.816Z",
+  "observedAt": "2026-11-14T03:53:04.474Z",
   "source": "https://spread.bahnexpress.com/v1/leaderboards/practice?level=8",
   "data": {
     "level": 8,
@@ -10,6 +10,57 @@
       "teams": [
         {
           "rank": 1,
+          "team": "freya",
+          "name": "freya",
+          "played": 5,
+          "ranked": true,
+          "marginCents": 8592511,
+          "onTimeShare": 0.972808251289264,
+          "runs": [
+            {
+              "run": 1,
+              "marginCents": 1721086,
+              "onTimeShare": 0.9889624724061811,
+              "wonOrders": 453,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 2,
+              "marginCents": 1750309,
+              "onTimeShare": 0.9860788863109049,
+              "wonOrders": 431,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 3,
+              "marginCents": 1570284,
+              "onTimeShare": 0.9642857142857143,
+              "wonOrders": 420,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 4,
+              "marginCents": 1814443,
+              "onTimeShare": 0.9618138424821002,
+              "wonOrders": 419,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 5,
+              "marginCents": 1736389,
+              "onTimeShare": 0.9609756097560975,
+              "wonOrders": 410,
+              "ranked": true,
+              "deletedAt": null
+            }
+          ]
+        },
+        {
+          "rank": 2,
           "team": "team-anonymous",
           "name": "Team Anonymous",
           "played": 5,
@@ -60,7 +111,7 @@
           ]
         },
         {
-          "rank": 2,
+          "rank": 3,
           "team": "skadi",
           "name": "skadi",
           "played": 5,
@@ -111,7 +162,7 @@
           ]
         },
         {
-          "rank": 3,
+          "rank": 4,
           "team": "razors",
           "name": "razors",
           "played": 5,
@@ -162,7 +213,7 @@
           ]
         },
         {
-          "rank": 4,
+          "rank": 5,
           "team": "ppo",
           "name": "ppo",
           "played": 5,
@@ -213,7 +264,7 @@
           ]
         },
         {
-          "rank": 5,
+          "rank": 6,
           "team": "klmisbest",
           "name": "klmisbest",
           "played": 5,
@@ -264,7 +315,7 @@
           ]
         },
         {
-          "rank": 6,
+          "rank": 7,
           "team": "juhus",
           "name": "Juhus",
           "played": 5,
@@ -315,7 +366,7 @@
           ]
         },
         {
-          "rank": 7,
+          "rank": 8,
           "team": "akanegakirru",
           "name": "akanegakirru",
           "played": 5,
@@ -366,7 +417,7 @@
           ]
         },
         {
-          "rank": 8,
+          "rank": 9,
           "team": "hakunamatata",
           "name": "hakunamaTATA",
           "played": 5,
@@ -417,7 +468,7 @@
           ]
         },
         {
-          "rank": 9,
+          "rank": 10,
           "team": "source-exp",
           "name": "source-exp",
           "played": 5,
@@ -468,7 +519,7 @@
           ]
         },
         {
-          "rank": 10,
+          "rank": 11,
           "team": "davinci-s-night-shift",
           "name": "DaVinci’s Night Shift",
           "played": 5,
@@ -519,7 +570,7 @@
           ]
         },
         {
-          "rank": 11,
+          "rank": 12,
           "team": "bob-the-builders",
           "name": "Bob the builders",
           "played": 5,
@@ -621,7 +672,7 @@
           ]
         },
         {
-          "rank": 12,
+          "rank": 13,
           "team": "eth",
           "name": "eth",
           "played": 5,
@@ -672,7 +723,7 @@
           ]
         },
         {
-          "rank": 13,
+          "rank": 14,
           "team": "applejuice",
           "name": "AppleJuice",
           "played": 5,
@@ -723,7 +774,7 @@
           ]
         },
         {
-          "rank": 14,
+          "rank": 15,
           "team": "rulers",
           "name": "rulers",
           "played": 5,
@@ -774,7 +825,7 @@
           ]
         },
         {
-          "rank": 15,
+          "rank": 16,
           "team": "northbound-dispatch",
           "name": "Northbound Dispatch",
           "played": 5,
@@ -825,7 +876,58 @@
           ]
         },
         {
-          "rank": 16,
+          "rank": 17,
+          "team": "builder",
+          "name": "Builder",
+          "played": 5,
+          "ranked": true,
+          "marginCents": 6793541,
+          "onTimeShare": 0.9539551357733176,
+          "runs": [
+            {
+              "run": 1,
+              "marginCents": 1376720,
+              "onTimeShare": 0.9751381215469613,
+              "wonOrders": 362,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 2,
+              "marginCents": 1575056,
+              "onTimeShare": 0.97911227154047,
+              "wonOrders": 383,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 3,
+              "marginCents": 1295246,
+              "onTimeShare": 0.9449275362318841,
+              "wonOrders": 345,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 4,
+              "marginCents": 1152269,
+              "onTimeShare": 0.9273927392739274,
+              "wonOrders": 303,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 5,
+              "marginCents": 1394250,
+              "onTimeShare": 0.9335548172757475,
+              "wonOrders": 301,
+              "ranked": true,
+              "deletedAt": null
+            }
+          ]
+        },
+        {
+          "rank": 18,
           "team": "upsala",
           "name": "Upsala",
           "played": 5,
@@ -876,7 +978,7 @@
           ]
         },
         {
-          "rank": 17,
+          "rank": 19,
           "team": "edge101",
           "name": "Edge101",
           "played": 5,
@@ -927,7 +1029,7 @@
           ]
         },
         {
-          "rank": 18,
+          "rank": 20,
           "team": "pfjfjfjfj",
           "name": "pfjfjfjfj",
           "played": 5,
@@ -978,7 +1080,7 @@
           ]
         },
         {
-          "rank": 19,
+          "rank": 21,
           "team": "team-moonshot",
           "name": "Team Moonshot",
           "played": 5,
@@ -1029,7 +1131,7 @@
           ]
         },
         {
-          "rank": 20,
+          "rank": 22,
           "team": "no-empty-miles",
           "name": "No Empty Miles",
           "played": 5,
@@ -1080,7 +1182,7 @@
           ]
         },
         {
-          "rank": 21,
+          "rank": 23,
           "team": "hiver-8s",
           "name": "Hiver 8s",
           "played": 5,
@@ -1131,7 +1233,7 @@
           ]
         },
         {
-          "rank": 22,
+          "rank": 24,
           "team": "musta-helmi",
           "name": "MUSTA HELMI",
           "played": 5,
@@ -1182,7 +1284,7 @@
           ]
         },
         {
-          "rank": 23,
+          "rank": 25,
           "team": "team-alpha",
           "name": "Team Alpha",
           "played": 5,
@@ -1233,7 +1335,7 @@
           ]
         },
         {
-          "rank": 24,
+          "rank": 26,
           "team": "hackandseek",
           "name": "HackandSeek",
           "played": 5,
@@ -1284,7 +1386,58 @@
           ]
         },
         {
-          "rank": 25,
+          "rank": 27,
+          "team": "fenec-sisu",
+          "name": "Fenec-Sisu",
+          "played": 5,
+          "ranked": true,
+          "marginCents": 6041014,
+          "onTimeShare": 0.9646074646074646,
+          "runs": [
+            {
+              "run": 1,
+              "marginCents": 1074778,
+              "onTimeShare": 0.9644012944983819,
+              "wonOrders": 309,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 2,
+              "marginCents": 1202216,
+              "onTimeShare": 0.9830508474576272,
+              "wonOrders": 295,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 3,
+              "marginCents": 1194771,
+              "onTimeShare": 0.9711538461538461,
+              "wonOrders": 312,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 4,
+              "marginCents": 1168259,
+              "onTimeShare": 0.9539473684210527,
+              "wonOrders": 304,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 5,
+              "marginCents": 1400990,
+              "onTimeShare": 0.9520958083832335,
+              "wonOrders": 334,
+              "ranked": true,
+              "deletedAt": null
+            }
+          ]
+        },
+        {
+          "rank": 28,
           "team": "alignas",
           "name": "alignas",
           "played": 5,
@@ -1335,7 +1488,7 @@
           ]
         },
         {
-          "rank": 26,
+          "rank": 29,
           "team": "rome-wasn-t-built-in-48h",
           "name": "Rome wasn't built in 48h",
           "played": 5,
@@ -1386,7 +1539,7 @@
           ]
         },
         {
-          "rank": 27,
+          "rank": 30,
           "team": "toro019",
           "name": "toro019",
           "played": 5,
@@ -1437,7 +1590,7 @@
           ]
         },
         {
-          "rank": 28,
+          "rank": 31,
           "team": "mrekk",
           "name": "mrekk",
           "played": 5,
@@ -1488,7 +1641,7 @@
           ]
         },
         {
-          "rank": 29,
+          "rank": 32,
           "team": "bahnana",
           "name": "bahnana",
           "played": 5,
@@ -1539,7 +1692,7 @@
           ]
         },
         {
-          "rank": 30,
+          "rank": 33,
           "team": "cookiezi",
           "name": "Cookiezi",
           "played": 5,
@@ -1590,7 +1743,7 @@
           ]
         },
         {
-          "rank": 31,
+          "rank": 34,
           "team": "lightning-mcqueen",
           "name": "Lightning McQueen",
           "played": 5,
@@ -1641,7 +1794,7 @@
           ]
         },
         {
-          "rank": 32,
+          "rank": 35,
           "team": "swarm-dispatch",
           "name": "Swarm Dispatch",
           "played": 5,
@@ -1692,7 +1845,7 @@
           ]
         },
         {
-          "rank": 33,
+          "rank": 36,
           "team": "wubwoofwolf",
           "name": "WubWoofWolf",
           "played": 5,
@@ -1743,7 +1896,7 @@
           ]
         },
         {
-          "rank": 34,
+          "rank": 37,
           "team": "noidea",
           "name": "NoIdea",
           "played": 5,
@@ -1794,7 +1947,7 @@
           ]
         },
         {
-          "rank": 35,
+          "rank": 38,
           "team": "bidcast",
           "name": "Bidcast",
           "played": 5,
@@ -1845,7 +1998,7 @@
           ]
         },
         {
-          "rank": 36,
+          "rank": 39,
           "team": "semi-tired-finns",
           "name": "semi-tired finns",
           "played": 5,
@@ -1896,7 +2049,7 @@
           ]
         },
         {
-          "rank": 37,
+          "rank": 40,
           "team": "ts",
           "name": "TS",
           "played": 5,
@@ -1947,7 +2100,7 @@
           ]
         },
         {
-          "rank": 38,
+          "rank": 41,
           "team": "pelaaja-juhlii",
           "name": "pelaaja juhlii",
           "played": 5,
@@ -1998,7 +2151,7 @@
           ]
         },
         {
-          "rank": 39,
+          "rank": 42,
           "team": "bready",
           "name": "Bready",
           "played": 5,
@@ -2049,7 +2202,7 @@
           ]
         },
         {
-          "rank": 40,
+          "rank": 43,
           "team": "bahn67",
           "name": "bahn67",
           "played": 5,
@@ -2100,7 +2253,7 @@
           ]
         },
         {
-          "rank": 41,
+          "rank": 44,
           "team": "cs-and-ds-greeks",
           "name": "CS and DS greeks",
           "played": 5,
@@ -2151,7 +2304,7 @@
           ]
         },
         {
-          "rank": 42,
+          "rank": 45,
           "team": "the-oracular-esoterics",
           "name": "The Oracular Esoterics",
           "played": 5,
@@ -2202,7 +2355,7 @@
           ]
         },
         {
-          "rank": 43,
+          "rank": 46,
           "team": "indubitably",
           "name": "Indubitably",
           "played": 5,
@@ -2253,7 +2406,7 @@
           ]
         },
         {
-          "rank": 44,
+          "rank": 47,
           "team": "testt",
           "name": "testt",
           "played": 5,
@@ -2304,7 +2457,7 @@
           ]
         },
         {
-          "rank": 45,
+          "rank": 48,
           "team": "rbc",
           "name": "RBC",
           "played": 5,
@@ -2355,7 +2508,7 @@
           ]
         },
         {
-          "rank": 46,
+          "rank": 49,
           "team": "robobogosort",
           "name": "robobogosort",
           "played": 5,
@@ -2406,7 +2559,7 @@
           ]
         },
         {
-          "rank": 47,
+          "rank": 50,
           "team": "odyssey",
           "name": "Odyssey",
           "played": 5,
@@ -2457,7 +2610,7 @@
           ]
         },
         {
-          "rank": 48,
+          "rank": 51,
           "team": "granmamas-belotas",
           "name": "Granmamas Belotas",
           "played": 5,
@@ -2508,7 +2661,7 @@
           ]
         },
         {
-          "rank": 49,
+          "rank": 52,
           "team": "the-delusionals",
           "name": "The Delusionals",
           "played": 5,
@@ -2559,7 +2712,7 @@
           ]
         },
         {
-          "rank": 50,
+          "rank": 53,
           "team": "burger-han",
           "name": "Burger Han",
           "played": 5,
@@ -2610,7 +2763,7 @@
           ]
         },
         {
-          "rank": 51,
+          "rank": 54,
           "team": "elysa-s-secret",
           "name": "Elysa's Secret",
           "played": 5,
@@ -2661,7 +2814,7 @@
           ]
         },
         {
-          "rank": 52,
+          "rank": 55,
           "team": "spread-on-the-bread",
           "name": "Spread on the Bread",
           "played": 5,
@@ -2712,7 +2865,7 @@
           ]
         },
         {
-          "rank": 53,
+          "rank": 56,
           "team": "jaffa",
           "name": "jaffa",
           "played": 5,
@@ -2763,7 +2916,7 @@
           ]
         },
         {
-          "rank": 54,
+          "rank": 57,
           "team": "evil-club",
           "name": "Evil Club",
           "played": 5,
@@ -2814,7 +2967,7 @@
           ]
         },
         {
-          "rank": 55,
+          "rank": 58,
           "team": "dz-dealer",
           "name": "Dz-dealer",
           "played": 5,
@@ -2865,7 +3018,7 @@
           ]
         },
         {
-          "rank": 56,
+          "rank": 59,
           "team": "team-co-tai",
           "name": "Team co Tai",
           "played": 5,
@@ -2916,7 +3069,7 @@
           ]
         },
         {
-          "rank": 57,
+          "rank": 60,
           "team": "cazola-de-barro",
           "name": "Cazola de Barro",
           "played": 5,
@@ -2967,7 +3120,7 @@
           ]
         },
         {
-          "rank": 58,
+          "rank": 61,
           "team": "stingman",
           "name": "Stingman",
           "played": 5,
@@ -3018,7 +3171,7 @@
           ]
         },
         {
-          "rank": 59,
+          "rank": 62,
           "team": "abc",
           "name": "abc",
           "played": 5,
@@ -3529,6 +3682,57 @@
         },
         {
           "rank": null,
+          "team": "duoha-dispatch",
+          "name": "duoha-dispatch",
+          "played": 5,
+          "ranked": false,
+          "marginCents": -109082,
+          "onTimeShare": 0.9302325581395349,
+          "runs": [
+            {
+              "run": 1,
+              "marginCents": -55158,
+              "onTimeShare": 0.9543568464730291,
+              "wonOrders": 241,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 2,
+              "marginCents": 178822,
+              "onTimeShare": 0.9556451612903226,
+              "wonOrders": 248,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 3,
+              "marginCents": 5145,
+              "onTimeShare": 0.9415584415584416,
+              "wonOrders": 154,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 4,
+              "marginCents": 112675,
+              "onTimeShare": 0.9054726368159204,
+              "wonOrders": 201,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 5,
+              "marginCents": -350566,
+              "onTimeShare": 0.8829787234042553,
+              "wonOrders": 188,
+              "ranked": false,
+              "deletedAt": null
+            }
+          ]
+        },
+        {
+          "rank": null,
           "team": "house-starter",
           "name": "House starter",
           "played": 5,
@@ -3574,33 +3778,6 @@
               "onTimeShare": 0.4575892857142857,
               "wonOrders": 896,
               "ranked": false,
-              "deletedAt": null
-            }
-          ]
-        },
-        {
-          "rank": null,
-          "team": "freya",
-          "name": "freya",
-          "played": 2,
-          "ranked": false,
-          "marginCents": null,
-          "onTimeShare": null,
-          "runs": [
-            {
-              "run": 1,
-              "marginCents": 1721086,
-              "onTimeShare": 0.9889624724061811,
-              "wonOrders": 453,
-              "ranked": true,
-              "deletedAt": null
-            },
-            {
-              "run": 2,
-              "marginCents": 1750309,
-              "onTimeShare": 0.9860788863109049,
-              "wonOrders": 431,
-              "ranked": true,
               "deletedAt": null
             }
           ]
@@ -3823,8 +4000,8 @@
         },
         {
           "rank": null,
-          "team": "builder",
-          "name": "Builder",
+          "team": "calzini",
+          "name": "calzini",
           "played": 0,
           "ranked": false,
           "marginCents": null,
@@ -3863,28 +4040,8 @@
         },
         {
           "rank": null,
-          "team": "duoha-dispatch",
-          "name": "duoha-dispatch",
-          "played": 0,
-          "ranked": false,
-          "marginCents": null,
-          "onTimeShare": null,
-          "runs": []
-        },
-        {
-          "rank": null,
           "team": "ex-actum",
           "name": "EX-ACTUM",
-          "played": 0,
-          "ranked": false,
-          "marginCents": null,
-          "onTimeShare": null,
-          "runs": []
-        },
-        {
-          "rank": null,
-          "team": "fenec-sisu",
-          "name": "Fenec-Sisu",
           "played": 0,
           "ranked": false,
           "marginCents": null,
@@ -5648,6 +5805,16 @@
           "rank": null,
           "team": "burger-han",
           "name": "Burger Han",
+          "played": 0,
+          "ranked": false,
+          "marginCents": null,
+          "onTimeShare": null,
+          "runs": []
+        },
+        {
+          "rank": null,
+          "team": "calzini",
+          "name": "calzini",
           "played": 0,
           "ranked": false,
           "marginCents": null,

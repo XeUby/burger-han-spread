@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-14T03:48:18.363448+00:00",
+  "updatedAt": "2026-11-14T03:54:25.355139+00:00",
   "objective": "Continue systematic search toward the global optimum; practice only, no ranking submission.",
   "maximumConcurrentPlays": 4,
   "currentConcurrency": {
     "maximumConcurrentPlays": 4,
     "activeRunners": 1,
-    "note": "Our runner76828 uses1worker and waits whenever4team worlds are unfinished. Another runner is using the shared key; do not delete its worlds. Viewer probe27448 stopped and all its worlds are deleted."
+    "note": "Paired runner84112 uses one worker and waits whenever four team worlds are unfinished. Last API check found one unfinished world, belonging to this study. Both user-named stuck worlds are absent. Do not delete external worlds."
   },
   "completedCombinationStudy": {
     "sessionId": 84558,
@@ -362,7 +362,7 @@
   },
   "feeAnchorProbe": {
     "protocol": "experiments/fee-anchor-protocol.json",
-    "status": "running",
+    "status": "complete",
     "plays": 3,
     "source": "research/fee-anchor/probe.ts",
     "testsPassed": 4,
@@ -382,7 +382,8 @@
         "factor": 2,
         "worldId": "w97c919d63f4ed37b7cf5"
       }
-    ]
+    ],
+    "terminal": true
   },
   "noteSpellingValidation": {
     "sessionId": 2482,
@@ -560,9 +561,24 @@
     "trials": 24,
     "pairs": 12,
     "candidateRevision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
-    "completedTrials": 8,
-    "startedTrials": 9,
-    "audit": "docs/payout-validation-audit.json"
+    "completedTrials": 10,
+    "startedTrials": 11,
+    "audit": "docs/payout-validation-audit.json",
+    "auditSummary": {
+      "baseline": {
+        "completed": 5,
+        "failedVisits": 0,
+        "actionErrors": 2,
+        "recoveries": 0
+      },
+      "candidate": {
+        "completed": 5,
+        "failedVisits": 0,
+        "actionErrors": 2,
+        "recoveries": 0
+      }
+    },
+    "reviewedErrors": "Both errors in each side of the fifth pair follow a same-minute drop and rebooking. Exact gig event contexts are retained in the audit. No failed visits, undelivered orders or recoveries in the five complete pairs."
   },
   "completedPayoutScreen": {
     "sessionId": 76828,

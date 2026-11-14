@@ -28,6 +28,15 @@ for pair in manifest["pairs"]:
             errors = json.loads((root / f"runs/{world}.errors.json").read_text())
             counts = dict(Counter(event["kind"] for event in events))
             row.update(status="complete", marginCents=result["marginCents"], qualified=result["ranked"], onTimeShare=result["onTimeShare"], undeliveredOrders=result["undeliveredOrders"], eventCounts=counts, failedVisits=[event for event in events if event["kind"] == "visit_failed"], actionErrors=errors, recoveries=json.loads((root / f"runs/{world}.recoveries.json").read_text()))
+            row["actionErrorContexts"] = [
+                {"error": error, "sameMinuteGigEvents": [
+                    event for event in events
+                    if error["action"].get("gigId") is not None
+                    and event.get("gigId") == error["action"]["gigId"]
+                    and event["at"] == error["at"]
+                ]}
+                for error in errors
+            ]
         records.append(row)
 terminal = all(row["status"] == "complete" for row in records)
 summary = {side: {"completed": sum(row["status"] == "complete" for row in records if row["side"] == side), "failedVisits": sum(len(row.get("failedVisits", [])) for row in records if row["side"] == side), "actionErrors": sum(len(row.get("actionErrors", [])) for row in records if row["side"] == side), "recoveries": sum(len(row.get("recoveries", [])) for row in records if row["side"] == side)} for side in ["baseline", "candidate"]}
