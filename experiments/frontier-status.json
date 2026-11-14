@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T03:09:38.132968+00:00",
+  "updatedAt": "2026-11-14T03:19:00.331070+00:00",
   "objective": "Continue systematic search toward the global optimum; practice only, no ranking submission.",
   "maximumConcurrentPlays": 4,
   "currentConcurrency": {
@@ -559,7 +559,12 @@
     "manifest": "experiments/payout-confirmation-manifest.json",
     "plan": "experiments/plans/payout-confirmation.json",
     "maximumJobs": 1,
-    "trials": 4
+    "trials": 4,
+    "completedTrials": 2,
+    "completedGainsCents": [
+      155600,
+      221277
+    ]
   },
   "completedPayoutScreen": {
     "sessionId": 76828,
@@ -602,5 +607,24 @@
       "meanModeledFeeSavingEuros": 42.95666666666667
     },
     "decision": "Defer live test: three additional pairs per week and only42.96euros modeled opening-fee discount; no counterfactual bookings or profits."
+  },
+  "earlyRescueScreen": {
+    "report": "docs/early-rescue-screen.json",
+    "summary": {
+      "weeks": 6,
+      "orders": 81,
+      "ordersPerWeek": 13.5,
+      "late": 18,
+      "noViews": 0,
+      "meanHypotheticalFlat125DifferenceEuros": -36.095
+    },
+    "decision": "Defer live test.80active selected orders across6weeks; hypothetical flat1.25opening fulfillment has negative driver-cost difference, and avoided refunds/trust are untested."
+  },
+  "conditionalFreshEvaluation": {
+    "script": "research/payout/freeze-validation.py",
+    "pairs": 12,
+    "workers": 1,
+    "status": "Not reserved or launched. Requires all four confirmation weeks and the frozen gate to pass.",
+    "promotionRule": "All12candidate weeks qualified; zero undelivered and failed visits; positive paired mean and positive95%paired bootstrap lower endpoint; inspect every action error."
   }
 }
