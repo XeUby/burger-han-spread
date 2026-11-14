@@ -26,12 +26,14 @@ export type Settings = {
   auction: boolean; allowPrivate: boolean; tradeIns: boolean; homeOffers: boolean; readiness: boolean; bundlePairs: boolean; timedNotes: boolean; lateRescue: boolean
   sameDayPremium: number; laterDiscount: number; placePrior: number; bundleWait: number
   backlog: number; priceFloor: number; costRatio: number; trustStep: number; sameDayBacklog: number; demandSlope: number
+  earlyClimb: number
 }
 export const defaults: Settings = {
   price: 1.42, fee: 1.05, payout: 0.85, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
   notes: true, noteSpelling: false, relist: false, openingOnly: true, adaptive: true, earlyOffers: false, safetySlack: false,
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
   backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14,
+  earlyClimb: 0,
 }
 
 export function validateSettings(value: unknown): asserts value is Partial<Settings> {
@@ -39,7 +41,7 @@ export function validateSettings(value: unknown): asserts value is Partial<Setti
   for (const [key, field] of Object.entries(value)) {
     if (!(key in defaults)) throw new Error(`Unknown setting: ${key}`)
     if (typeof defaults[key as keyof Settings] === "boolean") { if (typeof field !== "boolean") throw new Error(`${key} must be boolean`); continue }
-    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait"].includes(key))) throw new Error(`${key} must be a positive number`)
+    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait", "earlyClimb"].includes(key))) throw new Error(`${key} must be a positive number`)
     if (key === "bundleWait" && (!Number.isInteger(field) || field > 30)) throw new Error("bundleWait must be an integer from 0 to 30")
     if ((key === "margin" || key === "capacity") && field >= 1) throw new Error(`${key} must be below 1`)
     if (key === "placePrior" && field > 2) throw new Error("placePrior must be at most 2")
@@ -267,14 +269,19 @@ export class Dispatcher extends Desk {
     const rescue = this.urgent.has(order.id)
     const pickupBy = this.pickupBy(order)
     const remaining = pickupBy - this.now
-    const start = rescue ? remaining <= 60 ? 2.5 : remaining <= 120 ? 1.9 : 1.5 : 1
+    const strong = this.settings.earlyClimb >= 2
+    const start = rescue ? remaining <= 60 ? 2.5 : remaining <= 120 ? (strong ? 2.1 : 1.9) : (strong ? 1.7 : 1.5) : 1
     if (this.level === 1) return pay([{ at: this.now, feeCents: Math.round(fee * start) }], start === 1)
     // A steady initial price avoids teaching drivers to wait for hourly increases.
     const due = Math.max(this.now + 30, pickupBy - 240)
+    // A gig that no driver has taken a day before its last pickup will not find one in the last four hours:
+    // a driver needs time to see the gig and to reach the car. So the fee starts to climb a day ahead.
+    const early = this.settings.earlyClimb > 0 ? [{ at: pickupBy - 1440, feeCents: Math.round(fee * Math.max(start, 1.2)) }, { at: pickupBy - 720, feeCents: Math.round(fee * Math.max(start, 1.45)) }].filter(step => step.at >= this.now + 30 && step.at < due) : []
     return pay([
       { at: this.now, feeCents: Math.round(fee * start) },
-      { at: due, feeCents: Math.round(fee * Math.max(start, 1.45)) },
-      { at: Math.max(due + 30, pickupBy - 120), feeCents: Math.round(fee * Math.max(start, 1.9)) },
+      ...early,
+      { at: due, feeCents: Math.round(fee * Math.max(start, strong ? 1.7 : 1.45)) },
+      { at: Math.max(due + 30, pickupBy - 120), feeCents: Math.round(fee * Math.max(start, strong ? 2.1 : 1.9)) },
       { at: Math.max(due + 60, pickupBy - 60), feeCents: Math.round(fee * Math.max(start, 2.5)) },
     ], start === 1)
   }
