@@ -12,7 +12,7 @@ Level 8, round "Saturday 09:00", teams with five ranked weeks:
 | 10th, AppleJuice | €13,744 | 374 | €36.7 | 97.0% |
 | House best | €10,132 | 292 | €34.7 | 96.9% |
 
-The ten best teams earn about what House best earns on an order. They win 28% to 42% more orders. Our dispatcher earns €32 an order on our forty practice weeks and wins 303 orders a week, so our gap is orders, not margin an order.
+The ten best teams earn about what House best earns on an order. They win 28% to 42% more orders. Our dispatcher with the early climb earns €33 an order on our forty practice weeks and wins 293 orders a week. Those are other weeks than the ranking weeks, so the two are not a paired comparison. The larger gap is orders.
 
 ## Which requests we do not quote
 
