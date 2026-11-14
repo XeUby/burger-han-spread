@@ -1,0 +1,7408 @@
+{
+ "source": "40 level 8 practice weeks of the team (reveals), single-car public requests only",
+ "meaning": "Dealer notes that none of readNote, note spelling, readHours and readReadiness accepts at d15dfd6. Count is the number of requests in the 40 weeks.",
+ "requestsPerWeek": 100.3,
+ "distinctNotes": 1850,
+ "notes": [
+  {
+   "count": 13,
+   "text": "Manuaalivaihteet, kuski tarvii manuaalikortin."
+  },
+  {
+   "count": 11,
+   "text": "toimitus perille viim. huomenna klo 20"
+  },
+  {
+   "count": 9,
+   "text": "Akku heikko, voi tarvita apukäynnistyksen"
+  },
+  {
+   "count": 8,
+   "text": "Tankissa vähän"
+  },
+  {
+   "count": 8,
+   "text": "Sommardäcken i bakluckan, följer med. Tack på förhand"
+  },
+  {
+   "count": 7,
+   "text": "Auto vielä kesärenkailla."
+  },
+  {
+   "count": 7,
+   "text": "Weak battery, may need a jump start."
+  },
+  {
+   "count": 7,
+   "text": "perillä huomenna klo 14 mennessä"
+  },
+  {
+   "count": 7,
+   "text": "No plates, bring transfer plates."
+  },
+  {
+   "count": 7,
+   "text": "Released after payment, not before 14:30"
+  },
+  {
+   "count": 6,
+   "text": "auto vielä kesärenkailla"
+  },
+  {
+   "count": 6,
+   "text": "Low on fuel."
+  },
+  {
+   "count": 6,
+   "text": "Voi noutaa torstaina klo 10 alkaen."
+  },
+  {
+   "count": 6,
+   "text": "Collect before 19:00. At destination tomorrow 20:00 latest. Ref 748536."
+  },
+  {
+   "count": 6,
+   "text": "Skyltarna borttagna, ta med provskyltar. Sommardäcken i bakluckan, följer med."
+  },
+  {
+   "count": 6,
+   "text": "Huom aukioloaat arkisin klo 8-16. Kiitos, thx"
+  },
+  {
+   "count": 6,
+   "text": "Odottaa osia, valmis huomenna puoli neljältä"
+  },
+  {
+   "count": 6,
+   "text": "Mottagaren har öppet kl 9–20"
+  },
+  {
+   "count": 6,
+   "text": "Luovutus vasta kun maksettu, aikaisintaan pe klo 14."
+  },
+  {
+   "count": 6,
+   "text": "Voi noutaa klo 13.30 alkaen."
+  },
+  {
+   "count": 6,
+   "text": "ostaja maksaa ensin, auton saa klo 13.30 alkaen. varaus 149585."
+  },
+  {
+   "count": 6,
+   "text": "still on summer tyres"
+  },
+  {
+   "count": 6,
+   "text": "hi. receiving weekdays 7:00 - 21:00 only. must be at destination by fri 17:00"
+  },
+  {
+   "count": 6,
+   "text": "Hi there. At destination Thu 20:00 latest"
+  },
+  {
+   "count": 6,
+   "text": "auto valmistuu keskiviikkona klo 14, ei kun klo 13"
+  },
+  {
+   "count": 6,
+   "text": "klivet puuttuu, tuo siirtokilvet. lisärenkaat mukaan"
+  },
+  {
+   "count": 6,
+   "text": "hei vaan. perillä keskiviikkona klo 16 mennessä / måste vara framme senast på onsdag kl 16"
+  },
+  {
+   "count": 6,
+   "text": "ostaja maksaa ensin, auton saa huomenna klo 9 alkaen, eikun klo 10"
+  },
+  {
+   "count": 6,
+   "text": "haetava ennen klo 20 / collect before 20:00. oltava perilla viimeistaan huomenna klo 19."
+  },
+  {
+   "count": 6,
+   "text": "Ostaja maksaa ensin, auton saa huomenna klo 13.30 alkaen."
+  },
+  {
+   "count": 6,
+   "text": "hi. still on summer tyres."
+  },
+  {
+   "count": 6,
+   "text": "Winter tyres not fitted yet."
+  },
+  {
+   "count": 6,
+   "text": "asiakas tulee hakeman, perillä viim. to klo 16.00."
+  },
+  {
+   "count": 6,
+   "text": "Perillä perjantaina klo 20 mennessä / At destination Friday 20:00 latest! Kiitos paljon"
+  },
+  {
+   "count": 6,
+   "text": "Moikka. Asiakas tulee hakemaan, perillä viim. keskiviikkona klo 12. Renkaat kyydissä"
+  },
+  {
+   "count": 6,
+   "text": "Asiakas tulee hakemaan, perillä viim. keskiviikkona klo 12! Varaus 541253."
+  },
+  {
+   "count": 6,
+   "text": "receiving 7 am - 9 pm only. must be at destination by the day after tomorrow 8 pm."
+  },
+  {
+   "count": 6,
+   "text": "auto valmis vasta huomenna klo 15.30, ei kun klo 14.30"
+  },
+  {
+   "count": 6,
+   "text": "Huolto kesken, valmis huomena klo 12.00"
+  },
+  {
+   "count": 6,
+   "text": "Hei vaan. Asiakas tulee hakemaan, perillä viim. klo 19. Nouto arkisin klo 7 - 20."
+  },
+  {
+   "count": 6,
+   "text": "asiakas maksaa tänään kahdelta, luovutus sen jälkeen"
+  },
+  {
+   "count": 6,
+   "text": "hi. receiving 8:00-20:00 only. ready for pickup from 14:00. spare wheels in the boot"
+  },
+  {
+   "count": 6,
+   "text": "vastaanottava liike auki arkiisin klo 9.00-21.00, soita asiakkaalle tuntia ennen perillä oloa"
+  },
+  {
+   "count": 6,
+   "text": "At destination tomorrow 12:00 latest. Destination open 8:00-20:00"
+  },
+  {
+   "count": 6,
+   "text": "at destination thu 8pm latets."
+  },
+  {
+   "count": 6,
+   "text": "Maksun jälkeen, ei ennen klo 14.30"
+  },
+  {
+   "count": 6,
+   "text": "Auto valmis vasta huomenna klo 14. Ilmoita kun lähdet. Hyvää pivänjatkoa."
+  },
+  {
+   "count": 6,
+   "text": "Viimeistään ylihuomenna 16.30 perillä!"
+  },
+  {
+   "count": 6,
+   "text": "toimitus perille viim. huomenna klo 18.00. rengassarja mukaan."
+  },
+  {
+   "count": 6,
+   "text": "Released after payment, not before tomorrow 9:00."
+  },
+  {
+   "count": 6,
+   "text": "Oltava perillä viimeistään huomenna klo 15.00"
+  },
+  {
+   "count": 6,
+   "text": "kan hämtas fre kl 9 och framåt. mottagaren har öppet 9-20. nyckeln i bilen. tack"
+  },
+  {
+   "count": 6,
+   "text": "Nouto arksiin 10.00 - 15.30. t. myynti."
+  },
+  {
+   "count": 6,
+   "text": "Moikka. Manuaalivaihteet, kuski tarvii manuaalikortin. Terveisin myynti"
+  },
+  {
+   "count": 6,
+   "text": "maaksun jalkeen, ei ennen huomenna puoli kahdeltatoista"
+  },
+  {
+   "count": 6,
+   "text": "Huom aukioloajat arkisin klo 10-15. Asiakas tulee hakemaan, perillä viim. to klo 20"
+  },
+  {
+   "count": 6,
+   "text": "meillä auki arkisin klo 10–16.30"
+  },
+  {
+   "count": 6,
+   "text": "Måste vara framme senast i morgon kl 16"
+  },
+  {
+   "count": 6,
+   "text": "Toimitus perille viim. klo 18. Vastaanottava liike auki arkisin 9 - 20. Renkaat takakontissa, menee mukana."
+  },
+  {
+   "count": 6,
+   "text": "in the workshop, ready 12:00"
+  },
+  {
+   "count": 6,
+   "text": "toimitus perille viim. perjantainna klo 14.30, kiitos paljon."
+  },
+  {
+   "count": 6,
+   "text": "aisakas tulee hakemaan, perilla viim. ylihuomenna klo 20"
+  },
+  {
+   "count": 6,
+   "text": "terve. huolto kesken, valmis pe klo 9. vastaanottava liike auki klo 10-15. avaimet huollon tiskiltä"
+  },
+  {
+   "count": 6,
+   "text": "Oltava perillä viimeistään huomenna klo 12.30. Vastaanotto arkisin klo 9 - 21"
+  },
+  {
+   "count": 6,
+   "text": "Nouto arkisin 10.00-14.30. Oltava perillä viimeistään huomenna klo 20.00"
+  },
+  {
+   "count": 6,
+   "text": "Ready for pickup from Fri 9:30. Receiving weekdays 9:00-21:00 only. Key in the car"
+  },
+  {
+   "count": 6,
+   "text": "No plates, bring transfer plates. Booking ref 286275."
+  },
+  {
+   "count": 6,
+   "text": "Still on summer tyres. Key box code 3695"
+  },
+  {
+   "count": 6,
+   "text": "hi. not ready before friday 10:30."
+  },
+  {
+   "count": 6,
+   "text": "Klar, kan hämtas direkt"
+  },
+  {
+   "count": 6,
+   "text": "vastaanotto arkisin 8 - 21. noudettavissa aikaisintaan pe klo 10. kiitos"
+  },
+  {
+   "count": 6,
+   "text": "Perillä liike kiinni klo 16.30 jälkeen. Noudettavissa arkisin klo 9-18. Kiitos, thx."
+  },
+  {
+   "count": 6,
+   "text": "Oltava perillä viimeistään huomenna klo 17"
+  },
+  {
+   "count": 6,
+   "text": "Noudettavissa arkisin 7-20. Toimitus perille viim. huomenna klo 12.30. Viite 109668"
+  },
+  {
+   "count": 6,
+   "text": "Terve, auto valmistuu huomenna yhdeksältä."
+  },
+  {
+   "count": 6,
+   "text": "Auto valmis vasta klo 12.30. Kiitti."
+  },
+  {
+   "count": 6,
+   "text": "Low on fuel, our ref: 878713"
+  },
+  {
+   "count": 6,
+   "text": "hej. klar först i morgon kl 7. måste vara framme senast i morgon kl 19! däcken ligger i bilen, ska med"
+  },
+  {
+   "count": 6,
+   "text": "Moi. Oltava perillä viimeistään klo 18."
+  },
+  {
+   "count": 6,
+   "text": "Pitää hakea ennen kello 15.30"
+  },
+  {
+   "count": 6,
+   "text": "Huolto kessken, valmis klo 14. Kesärenkaat vanteineen takakontissa"
+  },
+  {
+   "count": 6,
+   "text": "Receiving weekdays 9:00-20:00 only. Not ready before 14:00"
+  },
+  {
+   "count": 6,
+   "text": "Not ready before 14:00"
+  },
+  {
+   "count": 6,
+   "text": "Liike auki arkisn 10 - 14"
+  },
+  {
+   "count": 6,
+   "text": "Perillä auki 8:sta 21:een. Auki vain 15:een asti"
+  },
+  {
+   "count": 6,
+   "text": "Kesärenkaat alla, ei talvirenkaita"
+  },
+  {
+   "count": 6,
+   "text": "Ready, collect right away. At destination tomorrow 20:00 latest."
+  },
+  {
+   "count": 6,
+   "text": "Noudettavissa aikaisintaan huomenna puoli yhdeltätoista"
+  },
+  {
+   "count": 6,
+   "text": "Maksun jälkeen, ei ennen huomenna klo 10.30. Avaimet huollon tiskiltä"
+  },
+  {
+   "count": 6,
+   "text": "Vastaaanottava liike auki arkisin 9.00-21.00. Toimitus perille viim. huomenna klo 18.00"
+  },
+  {
+   "count": 6,
+   "text": "Must be at destination by Monday 20:00. Summer tyres in the trunk, go with the car. Thank you."
+  },
+  {
+   "count": 6,
+   "text": "Mokka, noudettavissa arkisin 9.00 - 17.00, meidän viite 739674, hyvää päivänjatkoa."
+  },
+  {
+   "count": 6,
+   "text": "toimitus perille viim. su klo 18. korjaus: ma. noudettavissa arkisin klo 9 - 18"
+  },
+  {
+   "count": 6,
+   "text": "Hei, perillä ma klo 14 mennessä"
+  },
+  {
+   "count": 6,
+   "text": "Haettava ennen klo 15.30, ei kun klo 14.30. Vastaanottava liike auki arkisin klo 9-20"
+  },
+  {
+   "count": 6,
+   "text": "valmis, voi hakea heti. asiaakas tulee hakemaan, perillä viim. ma klo 12"
+  },
+  {
+   "count": 6,
+   "text": "Toimitus perille viim. klo 16. Soita asiakkaalle tuntia ennen perillä oloa"
+  },
+  {
+   "count": 6,
+   "text": "Valmis, voi hakea heti. Asiakas tulee hakemaan, perillä viim. maanantaina kello 14."
+  },
+  {
+   "count": 6,
+   "text": "Hei. Kahden jälkeen ei enää luovutuksia!"
+  },
+  {
+   "count": 6,
+   "text": "Released after payment, not before 16:00."
+  },
+  {
+   "count": 6,
+   "text": "Luovutus vasta kun maksettu, aikaisintaan klo 14.30."
+  },
+  {
+   "count": 6,
+   "text": "Hämtas före kl 18"
+  },
+  {
+   "count": 6,
+   "text": "Hei. Asiakas tulee hakemaan, perillä viim. ma klo 15"
+  },
+  {
+   "count": 6,
+   "text": "takaluukku jumittaa, avaimet huollon tiskiltä."
+  },
+  {
+   "count": 6,
+   "text": "Moikka. Auto valmis, nouto heti kun sopii. Asiakas tulee hakemaan, perillä viim. ma klo 18"
+  },
+  {
+   "count": 6,
+   "text": "Moi. Toimitus viimeistään maannataina klo 1800."
+  },
+  {
+   "count": 6,
+   "text": "Toimitus perille viim. ma klo 20.00! Viitenro 226745"
+  },
+  {
+   "count": 6,
+   "text": "Receiving shop open Mon-Fri 8:00–17:00. Ref 850484"
+  },
+  {
+   "count": 6,
+   "text": "Must be at destination by Mon 3pm (not 4pm)"
+  },
+  {
+   "count": 6,
+   "text": "Kesärenkaat alla, ei talvirenkaita."
+  },
+  {
+   "count": 6,
+   "text": "It's a manual."
+  },
+  {
+   "count": 5,
+   "text": "Huom vielä kesärenkaat alla."
+  },
+  {
+   "count": 5,
+   "text": "Takaluukku jumittaa."
+  },
+  {
+   "count": 5,
+   "text": "Luovutus vasta kun maksettu, aikaisintaan klo 12"
+  },
+  {
+   "count": 5,
+   "text": "Perillä liike kiinni klo 16.30 jälkeen"
+  },
+  {
+   "count": 5,
+   "text": "tankissa vähän."
+  },
+  {
+   "count": 5,
+   "text": "At destination tomorrow 14:00 latest."
+  },
+  {
+   "count": 5,
+   "text": "ostaja maksaa ensin, auton saa huomenna klo 12 alkaen"
+  },
+  {
+   "count": 4,
+   "text": "summer tyres on, no winters"
+  },
+  {
+   "count": 4,
+   "text": "Low on fuel"
+  },
+  {
+   "count": 4,
+   "text": "Receiving shop open 8am-9pm"
+  },
+  {
+   "count": 4,
+   "text": "at destination 15:00 latest, ready now, order no 379684"
+  },
+  {
+   "count": 4,
+   "text": "Kohde auki 9-20. Perillä to klo 20 mennessä! 2 sarjaa renkaita, toinen sarja kontissa"
+  },
+  {
+   "count": 4,
+   "text": "At destination Thursday 18:00 latest"
+  },
+  {
+   "count": 4,
+   "text": "moi. perillä keskiviikkona klo 20.00 mennessä. viitenro 966560. kiitos, thx."
+  },
+  {
+   "count": 4,
+   "text": "Liike auki arkiisn 9 - 15.30"
+  },
+  {
+   "count": 4,
+   "text": "Toimitus perille viim. perjantaina klo 16.30."
+  },
+  {
+   "count": 4,
+   "text": "Mottagaren stänger kl 18."
+  },
+  {
+   "count": 4,
+   "text": "at destination fri 16:00 latest. open weekdays 8:00-20:00. call 10 min before you arrive."
+  },
+  {
+   "count": 4,
+   "text": "Asiakas tulee hakeman, perillä viim. to klo 19.00"
+  },
+  {
+   "count": 4,
+   "text": "auton voi hakea ma-pe klo 8-15.30"
+  },
+  {
+   "count": 4,
+   "text": "low on fuel."
+  },
+  {
+   "count": 4,
+   "text": "Manual, driver needs a manual licence. Br, sales"
+  },
+  {
+   "count": 4,
+   "text": "at desstination thu 16:00 latest. open 9:00-18:00"
+  },
+  {
+   "count": 4,
+   "text": "Terve. Manuaalivaihteet, kuski tarvii manuaalikotin. Viite 818403"
+  },
+  {
+   "count": 4,
+   "text": "noudettavissa aikaisintaan huomenna klo 10 (ei klo 9). nouto arkisin 7-19"
+  },
+  {
+   "count": 4,
+   "text": "akku heikko, voi tarvita apukäynnistyksen."
+  },
+  {
+   "count": 4,
+   "text": "Tankissa vähän, rengassarja mukaan, t. myynti."
+  },
+  {
+   "count": 4,
+   "text": "oltava perillä viimeistään huomenna klo 17.00. kiitos, thx."
+  },
+  {
+   "count": 4,
+   "text": "Vastaanottava liike auki arkisin 9-20. Huolto keesken, valmis huomenna klo 8."
+  },
+  {
+   "count": 4,
+   "text": "destination open mon-fri 8am-8pm."
+  },
+  {
+   "count": 4,
+   "text": "perillä to klo 14 mennessä. huolto kesken, valmis huomenna klo 7"
+  },
+  {
+   "count": 4,
+   "text": "Moikka. Vastaanottava liike auki arkisin klo 7 - 21. Toimitus perille viim. to klo 20! Terveisin myynti"
+  },
+  {
+   "count": 4,
+   "text": "Huolto kesken, valmmis klo 15.45. Nouto 8-17. Kiitos paljon"
+  },
+  {
+   "count": 4,
+   "text": "Måste vara framme senast i morgon kl 15.30"
+  },
+  {
+   "count": 4,
+   "text": "lisärnekaat mukaan. soita n. tuntia ennen saapumista."
+  },
+  {
+   "count": 4,
+   "text": "noudettavissa aikaisintaan huomenna klo 8. oltava perillä viimeistään maanantaina klo 20. kiitos paljon."
+  },
+  {
+   "count": 4,
+   "text": "Moikka. Preillä maanantai 20 mennessä"
+  },
+  {
+   "count": 4,
+   "text": "Hei vaan, auto vielä kesärenkailla."
+  },
+  {
+   "count": 4,
+   "text": "Hi, at destination Friday 15:00 latest, our ref: 173229."
+  },
+  {
+   "count": 4,
+   "text": "Perillä huomenna klo 13.00 mennessä"
+  },
+  {
+   "count": 4,
+   "text": "Oltava perillä viimeistään perjantaina klo 21, ei kun klo 20. Vastaanotto 8 - 21"
+  },
+  {
+   "count": 4,
+   "text": "asiakas tulee hakeman, perillä viim. huomenna klo 20."
+  },
+  {
+   "count": 4,
+   "text": "moi. kohde auki ma-pe 8:sta 20:een. oltava perillä viimeistään perjanatina kello 20"
+  },
+  {
+   "count": 4,
+   "text": "Hejsan. Kan hämtas tidigast tors kl 10. Öppet kl 7 - 18. Ordernr 371702"
+  },
+  {
+   "count": 4,
+   "text": "Released after payment, not before tomorrow 12:00"
+  },
+  {
+   "count": 4,
+   "text": "Haettava ennen klo 15.30, ei kun klo 16.30"
+  },
+  {
+   "count": 4,
+   "text": "At destination Moonday 18:00 latest!"
+  },
+  {
+   "count": 4,
+   "text": "Asiakas tulee hakemaan, perillä viim. ma klo 15.00"
+  },
+  {
+   "count": 4,
+   "text": "oltava perillä viimeistään maanantaina klo 14."
+  },
+  {
+   "count": 4,
+   "text": "Pitää olla perillä ma 19 mennessä, ei 18.00!"
+  },
+  {
+   "count": 4,
+   "text": "Haetatva ennen klo 20"
+  },
+  {
+   "count": 4,
+   "text": "Oltava perillä viimeistään humoenna klo 19.00 (ei klo 18.00)"
+  },
+  {
+   "count": 4,
+   "text": "asiakas noutaa huomenna 14.00, auton oltava silloin perillä"
+  },
+  {
+   "count": 4,
+   "text": "17.00 jälkeen ei enää luovutuksia."
+  },
+  {
+   "count": 4,
+   "text": "ostaja maksaa ensin, auton saa perjantaina klo 12.00 alkaen. kiitos"
+  },
+  {
+   "count": 4,
+   "text": "At destination Mon 16:00 latest. Collect before 20:00, not 21:00."
+  },
+  {
+   "count": 4,
+   "text": "Luovutus vasta kun maksettu, aikaisintaan pe klo 11"
+  },
+  {
+   "count": 4,
+   "text": "maksun jälkeen, ei ennen huomenna klo 12.30. kiitos"
+  },
+  {
+   "count": 4,
+   "text": "Asiakas tulee hakemaan, perillä viim. pe klo 16"
+  },
+  {
+   "count": 4,
+   "text": "perilä huomenna klo 20.00 mennessä. soita 20 min ennen"
+  },
+  {
+   "count": 4,
+   "text": "Noudettavissa aikaisintaan huomenna yhdeltätoista. Kohteen aukioloajat ma-pe 8 - 20."
+  },
+  {
+   "count": 4,
+   "text": "Luovutus vasta kun maksettu, aikaisintaan huomenna klo 12. Hyvää päivänjatkoa"
+  },
+  {
+   "count": 4,
+   "text": "Must be at destination by Fri 12:00."
+  },
+  {
+   "count": 4,
+   "text": "destination open mon–fri 8am-4:30pm. extra set of tyres in the boot, take along. thank you"
+  },
+  {
+   "count": 4,
+   "text": "Oltava perillä viimeistään huomenna klo 16."
+  },
+  {
+   "count": 4,
+   "text": "Framme senast kl 17.30. Vi stänger kl 20.00"
+  },
+  {
+   "count": 4,
+   "text": "Moikka. Tankissa vähän"
+  },
+  {
+   "count": 4,
+   "text": "hi there. must be at destination by tomorrow 15:00."
+  },
+  {
+   "count": 4,
+   "text": "Luovutetaan kun maksu näkyy, aikaisintaan huomenna 10:30"
+  },
+  {
+   "count": 4,
+   "text": "Moi. Liike auki arkisn 7-17."
+  },
+  {
+   "count": 4,
+   "text": "liike menee kiinni klo 1530, kiitti."
+  },
+  {
+   "count": 4,
+   "text": "Vastaanotto arkissin klo 9-21. Nouto ennen klo 17!"
+  },
+  {
+   "count": 4,
+   "text": "Liike kiinni klo 19, haettava ennen sitä. Noudettavissa aikaisintaan klo 14."
+  },
+  {
+   "count": 4,
+   "text": "Vielä kesärenkaat, talvet puuttuu."
+  },
+  {
+   "count": 4,
+   "text": "Liike kiinni klo 15.30, haettava ennen sitä. Oltava perillä viimeistään ma klo 20. Soita liikkeeseen ennen kuin tulet."
+  },
+  {
+   "count": 4,
+   "text": "Moikka, auto valmistuu huomenna neljältä."
+  },
+  {
+   "count": 4,
+   "text": "Kilvet poitsettu, ota koekilvet."
+  },
+  {
+   "count": 4,
+   "text": "not ready before tmrw 3pm. nboody here after 6pm"
+  },
+  {
+   "count": 4,
+   "text": "perillä ma 19 mennessä. meillä auki arkipäivisin 9–18. kiitos paljon"
+  },
+  {
+   "count": 4,
+   "text": "buyer pays first, pickup from tomorrow 11:30."
+  },
+  {
+   "count": 4,
+   "text": "noudettavissa arkisin 8 - 20 / pickup weekdays 8:00-20:00 only. voi noutaa klo 14 alkaen. korjaus: klo 15."
+  },
+  {
+   "count": 4,
+   "text": "Toimitus perille viim. huomenna klo 20. Kohde auki arkisin klo 7-20"
+  },
+  {
+   "count": 4,
+   "text": "perillä ma klo 20 mennessä. huom aukioloajat arkisin 9 - 20. terveisin myynti"
+  },
+  {
+   "count": 4,
+   "text": "Hei. Perillä ma klo 12 meennessä! Nouto ennen klo 18. Renkaat kyydissä"
+  },
+  {
+   "count": 4,
+   "text": "perillä liike kiinni klo 15.00 jälkeen. auto pihalla ruudussa 3, avain tiskiltä"
+  },
+  {
+   "count": 4,
+   "text": "Asiakas tulee hakemaan, perillä viim. huomenna klo 20.00. Avain autossa"
+  },
+  {
+   "count": 4,
+   "text": "manual trnasmission, no automatic. extra set of tyres in the boot, take along."
+  },
+  {
+   "count": 4,
+   "text": "terve. asiakas tulee hakemaan, perillä viim. maanantaina klo 20.00. liike kiinni klo 17.00, haettava ennen sitä. avaimet huollon tiskiltä."
+  },
+  {
+   "count": 4,
+   "text": "huolto kesen, valmis huomenna klo 10.30"
+  },
+  {
+   "count": 4,
+   "text": "kohde auki arkisin klo 7 - 20. huolto kesken, valmis klo 12"
+  },
+  {
+   "count": 4,
+   "text": "sommardäcekn i bakluckan, följer med. tack på förhand"
+  },
+  {
+   "count": 4,
+   "text": "Buyer pays first, pickup from 15:30"
+  },
+  {
+   "count": 4,
+   "text": "voi noutaa klo 14 alkaen. nouto ennen klo 20. t. myynti."
+  },
+  {
+   "count": 4,
+   "text": "vastanaotto arkisin 9 - 16. nouto arkisin 7 - 19. tilausnro 376558"
+  },
+  {
+   "count": 4,
+   "text": "Kohde auki arkiisin klo 7 - 15, lisäksi 4 kesärengasta tavaratilassa"
+  },
+  {
+   "count": 4,
+   "text": "destination open weekdays 8:00-20:00. at destination monday 20:00 latest!"
+  },
+  {
+   "count": 4,
+   "text": "nouto ennen klo 18. asiakas tulee hakemaan, perillä viim. maanantaina klo 20"
+  },
+  {
+   "count": 4,
+   "text": "Handover once paid, today 15:30 at the earliest. Our ref: 560106."
+  },
+  {
+   "count": 4,
+   "text": "Colleect Mon-Fri 7am–7pm"
+  },
+  {
+   "count": 4,
+   "text": "Oltava perillä viimeistään maanantaina klo 19. Vastaanotto arkisin klo 9-21"
+  },
+  {
+   "count": 4,
+   "text": "toimitus viimeistaan maanantaina 20:00."
+  },
+  {
+   "count": 4,
+   "text": "Kiire, asiakas odottaa. Perillä maanantaina 14.00 mennessä. Auton voi hakea arkisin klo 8.00-20.00"
+  },
+  {
+   "count": 4,
+   "text": "Oltava perillä viimeistään maanantaina 20:00. Voi noutaa 19 alkaen"
+  },
+  {
+   "count": 4,
+   "text": "ring kunden en timme innan. tack på förhand"
+  },
+  {
+   "count": 4,
+   "text": "Oltava perillä viimeistään maanantaina klo 19 / Must be at destination by Monday 19:00. Kohde auki arkisin klo 7-20."
+  },
+  {
+   "count": 4,
+   "text": "moikka. asiakas tulee hakemaan, perillä viim. maanantaina klo 17.00. t. myynti"
+  },
+  {
+   "count": 4,
+   "text": "Car has no pltaes, bring trade plates"
+  },
+  {
+   "count": 4,
+   "text": "Still on summer tyres"
+  },
+  {
+   "count": 4,
+   "text": "summer tyres on, no winters."
+  },
+  {
+   "count": 4,
+   "text": "It's a manual"
+  },
+  {
+   "count": 4,
+   "text": "Luovutus vasta kun maksettu, aikaisintaan huomenna klo 12.30"
+  },
+  {
+   "count": 4,
+   "text": "Terve. Toimitus perille viim. huomenna klo 15! t. myynti."
+  },
+  {
+   "count": 4,
+   "text": "Liike kiinni puoli kolmelta, haettava ennen sitä. Kiitos etukäteen."
+  },
+  {
+   "count": 4,
+   "text": "Framme senast på onsdag kl 12"
+  },
+  {
+   "count": 4,
+   "text": "Hei. Asiakas tulee hakemaan, perillä viim. huomenna klo 15. Kiitos, thx."
+  },
+  {
+   "count": 4,
+   "text": "maksun jälkeen, ei ennen kolmelta."
+  },
+  {
+   "count": 4,
+   "text": "luovutus vasta kun maksettu, aikaisintaan huomenna klo 9.30."
+  },
+  {
+   "count": 4,
+   "text": "Asiakas tulee hakemaan, preillä viim. torstaina klo 20.00"
+  },
+  {
+   "count": 4,
+   "text": "noudettavissa aikaisintaan ke klo 11.30. avain autossa."
+  },
+  {
+   "count": 4,
+   "text": "Small dent right door, take photos at pickup. Thx"
+  },
+  {
+   "count": 4,
+   "text": "saa hakea vasta tänään klo 18 jälkeen"
+  },
+  {
+   "count": 4,
+   "text": "In the workshhop, ready tomorrow 8:30"
+  },
+  {
+   "count": 4,
+   "text": "Valmiina huomenna kello 7 alkaen."
+  },
+  {
+   "count": 4,
+   "text": "Terve. Auto valmis vasta to klo 14.00. Soita asap jos tulee ongelmia"
+  },
+  {
+   "count": 4,
+   "text": "Must arrive by the day after tomorrow 16:00"
+  },
+  {
+   "count": 4,
+   "text": "Öppet kl 8-14"
+  },
+  {
+   "count": 4,
+   "text": "Hei. Voi noutaa torstaina klo 13 alkaen."
+  },
+  {
+   "count": 4,
+   "text": "luovutus vasta kun maksettu, aikaisintana klo 15. terveisin myynti."
+  },
+  {
+   "count": 4,
+   "text": "pitää olla perillä huomenna klo 1530 mennessä, kiitti"
+  },
+  {
+   "count": 4,
+   "text": "vår ref 852130"
+  },
+  {
+   "count": 4,
+   "text": "auto valmis vasta torstaina klo 13. soita liikkeeseen ennen kuin tulet."
+  },
+  {
+   "count": 4,
+   "text": "Not ready befroe tomorrow 9:00"
+  },
+  {
+   "count": 4,
+   "text": "Mottagning varddagar kl 9-20. Måste vara framme senast i morgon kl 14"
+  },
+  {
+   "count": 4,
+   "text": "Perillä huomenna klo 13 mennessä. t. myynti"
+  },
+  {
+   "count": 4,
+   "text": "At destination Mon 16:00 latest, not 15:00"
+  },
+  {
+   "count": 4,
+   "text": "Saa hakea vasta pe 8 jälkeen (ei 9.00). Viitenro 718429"
+  },
+  {
+   "count": 4,
+   "text": "toimitus perille viim. torstaina klo 20. avaimet huollosta"
+  },
+  {
+   "count": 4,
+   "text": "perillä torstaina klo 16 mennessä!"
+  },
+  {
+   "count": 4,
+   "text": "Auto valmistuu huomennna 9.30."
+  },
+  {
+   "count": 4,
+   "text": "huolto kesken, valmis to klo 14. kesarenkaat vanteineen takakontissa"
+  },
+  {
+   "count": 4,
+   "text": "At destinaation tomorrow 20:00 latest. Call asap if any issues"
+  },
+  {
+   "count": 4,
+   "text": "Huolto kesken, valmis perjantaina klo 10.30"
+  },
+  {
+   "count": 4,
+   "text": "Toimitus perille viim. ma klo 17. Vastaanotto klo 9 - 21"
+  },
+  {
+   "count": 4,
+   "text": "summer tyres on, no winters. key box code 7238."
+  },
+  {
+   "count": 4,
+   "text": "Liike kiinni klo 18, haettava ennen sitä. Noudettavissa aikaisintaan to klo 10. Avaimet toimistosta"
+  },
+  {
+   "count": 4,
+   "text": "noudettavissa aikaisintaan huomenna klo 13.00 (ei klo 12.00). vastaanottava liike auki klo 8.00 - 21.00"
+  },
+  {
+   "count": 4,
+   "text": "Toimitus perille viim. huomenna klo 20.00"
+  },
+  {
+   "count": 4,
+   "text": "ostaja maksaa ensin, auton saa huomenna klo 12.30 alkaen."
+  },
+  {
+   "count": 4,
+   "text": "Asiakas tulee hakemaan, perillä viim. klo 12"
+  },
+  {
+   "count": 4,
+   "text": "Kan hämtas i morgon kl 8 och framåt, inte kl 7. Hälsningar."
+  },
+  {
+   "count": 4,
+   "text": "noudettavissa arkisin klo 9 - 15. kiitoos."
+  },
+  {
+   "count": 4,
+   "text": "Hei vaan. Noudettavissa aikaisintaan klo 13. Kiitos paljon."
+  },
+  {
+   "count": 4,
+   "text": "Hei vaan. Ostaja maksaa ensin, auton saa huomenna puoli kahdestatoista alkaen. Renkaat kyydissä"
+  },
+  {
+   "count": 4,
+   "text": "toimitus perille viim. klo 15"
+  },
+  {
+   "count": 4,
+   "text": "huollto kesken, valmis klo 15, ei kun klo 16"
+  },
+  {
+   "count": 4,
+   "text": "must be at destination by 19:00. correction: 18:00. open 7:00-18:00"
+  },
+  {
+   "count": 4,
+   "text": "hello. must be at destination by friday 13:00."
+  },
+  {
+   "count": 4,
+   "text": "vasatanotto klo 18 asti"
+  },
+  {
+   "count": 4,
+   "text": "maksun jälkeen, ei ennen klo 16.00"
+  },
+  {
+   "count": 4,
+   "text": "noudettavissa aikaisintaan pe klo 11"
+  },
+  {
+   "count": 4,
+   "text": "Call 30 min before you arive. Thank you."
+  },
+  {
+   "count": 4,
+   "text": "Oltava perillä viimeistään huomenna klo 13. Terveisin myynti"
+  },
+  {
+   "count": 4,
+   "text": "Oltava perillä viimeistään huomenna klo 18.00"
+  },
+  {
+   "count": 4,
+   "text": "Deliver no later than the day after tomorrow 8 pm."
+  },
+  {
+   "count": 4,
+   "text": "Toimitus perille viim. maanantaina klo 14"
+  },
+  {
+   "count": 4,
+   "text": "pitää olla perillä maanantaina klo 20 mennessä. rengassarja takapenkillä, kulkee mukana"
+  },
+  {
+   "count": 4,
+   "text": "low on fuel. call 30 min before you arrive."
+  },
+  {
+   "count": 4,
+   "text": "mottagaren har öppet kl 9-20"
+  },
+  {
+   "count": 4,
+   "text": "Måste vara framme senast på fredg kl 15, nej förlåt, kl 14! Ordernr 407347."
+  },
+  {
+   "count": 4,
+   "text": "Moikka, huom vielä kesärenkaat alla"
+  },
+  {
+   "count": 4,
+   "text": "Noudettavissa aikaisintaan klo 11.30. Meidän viite 749809"
+  },
+  {
+   "count": 4,
+   "text": "valmiina huomenna puoli yhdeksästä alkaen"
+  },
+  {
+   "count": 4,
+   "text": "Haetava ennen klo 18.00."
+  },
+  {
+   "count": 4,
+   "text": "Perillä klo 15.00 mennessä."
+  },
+  {
+   "count": 4,
+   "text": "vastaanotto klo 16.00 asti. soita ennen nouoa"
+  },
+  {
+   "count": 4,
+   "text": "Taalla ei ketaan kello 15.30 jalkeen, soita liikkeeseen ennen kuin tulet."
+  },
+  {
+   "count": 4,
+   "text": "kauppa kesken: luovutus vasta maksun jälkeen, klo 13.30 alkaen."
+  },
+  {
+   "count": 4,
+   "text": "Must be at destination by 20:00. Car in bay 37, keys at the desk"
+  },
+  {
+   "count": 4,
+   "text": "Auto valmsi vasta klo 13, ei kun klo 14"
+  },
+  {
+   "count": 4,
+   "text": "Latest arrival tomrrow 6pm."
+  },
+  {
+   "count": 4,
+   "text": "Huom vielä kesärenkaat alla, kiitos etukäteen"
+  },
+  {
+   "count": 4,
+   "text": "Moikka, perillä huomenna klo 16.00 mennessä"
+  },
+  {
+   "count": 4,
+   "text": "Huomenna puoli kahdeltatoista valmis."
+  },
+  {
+   "count": 4,
+   "text": "Asiakas tulee hakemaan, perillä viim. maanantaina klo 18.30"
+  },
+  {
+   "count": 4,
+   "text": "nouto arkisin klo 7 - 18. huolto kesken, valmis huomenna klo 7 (ei klo 8)"
+  },
+  {
+   "count": 4,
+   "text": "must be at destination by mon 20:00."
+  },
+  {
+   "count": 4,
+   "text": "perillä liike kiinni klo 16 jälkeen, terveisin myynti"
+  },
+  {
+   "count": 4,
+   "text": "no plates, bring transfer plates. call the customer an hour before arrival"
+  },
+  {
+   "count": 4,
+   "text": "Vastaanottava liike auki klo 7–21. Viimeistään ylihuomenna klo 20 perillä, eikun maanantai. Hyvää päivänjatkoa."
+  },
+  {
+   "count": 4,
+   "text": "terve. kohde auki arkisin 9:stä 21:een"
+  },
+  {
+   "count": 4,
+   "text": "hei. vastaanottava liike auki arkisin klo 8-20. huom aukioloajat arkkisin klo 8-14.30."
+  },
+  {
+   "count": 4,
+   "text": "Liike auki arkisin 8:sta 18:aan, kiiots"
+  },
+  {
+   "count": 4,
+   "text": "Maksun jälkeen, ei ennen klo 12.30"
+  },
+  {
+   "count": 4,
+   "text": "perillä ma klo 12 mennessä"
+  },
+  {
+   "count": 4,
+   "text": "Valmiina pihalla, toimitus perille viim. maanantaina klo 20"
+  },
+  {
+   "count": 4,
+   "text": "Vår ref 794229"
+  },
+  {
+   "count": 4,
+   "text": "Ready for pickup from 16:00. We close at 18:00."
+  },
+  {
+   "count": 4,
+   "text": "Oltava perillä viimeistään klo 19! Kohde auki arkisin klo 9-20. Kiitos etukäteen."
+  },
+  {
+   "count": 4,
+   "text": "toimitus perille viim. maanantaina klo 20.00. ylimääräinen rengassarja takakontissa, mukaan"
+  },
+  {
+   "count": 4,
+   "text": "Auto valimina, haettavissa heti. Nouto ennen klo 18."
+  },
+  {
+   "count": 4,
+   "text": "haku viimeistään klo 18.00."
+  },
+  {
+   "count": 4,
+   "text": "must be at destination by mnday 12:00, not 13:00. key in the car"
+  },
+  {
+   "count": 3,
+   "text": "terve. oltava perillä viimeistään klo 15"
+  },
+  {
+   "count": 3,
+   "text": "Hej, mottagaren stänger kl 17."
+  },
+  {
+   "count": 3,
+   "text": "kohde auki klo 9 - 21. perillä huomenna klo 20 mennessä"
+  },
+  {
+   "count": 3,
+   "text": "In the workshop, ready Thursday 12:00. Thanks in advance."
+  },
+  {
+   "count": 3,
+   "text": "call 10 min before you arive"
+  },
+  {
+   "count": 3,
+   "text": "Asiakas tulee hakemaan, perillä viim. huomenna klo 20."
+  },
+  {
+   "count": 3,
+   "text": "Luovutetaan kun maksu näkyy, aikaisintaan tänään kello 15.30"
+  },
+  {
+   "count": 3,
+   "text": "vastaanotto arkisin 9.00-21.00. asiakas tulee hakemaan, perillä viim. huomenna klo 20.00"
+  },
+  {
+   "count": 3,
+   "text": "moi, perillä perjantaina klo 13 mennessä"
+  },
+  {
+   "count": 3,
+   "text": "toimitus perille viim. huomenna 16:00 (ei 17:00)"
+  },
+  {
+   "count": 3,
+   "text": "Toimitus perille viim. huomenna kahdelta. Ylimääräinen rengassarja takakontissa, mukaan. Kiitos, thx"
+  },
+  {
+   "count": 3,
+   "text": "ostaja maksaa ensin, auton saa huomenna klo 11 alkaen. terveisin myynti."
+  },
+  {
+   "count": 3,
+   "text": "asiakas tulee hakemaan, perillä viim. huomenna klo 19!"
+  },
+  {
+   "count": 3,
+   "text": "noudettavissa aikaisintaan to klo 10."
+  },
+  {
+   "count": 3,
+   "text": "moi. tankissa vähän."
+  },
+  {
+   "count": 3,
+   "text": "huom aukioloajat arkisin 8 - 19. toimitus perille viim. klo 13.30. avaimet huollon tiskiltä"
+  },
+  {
+   "count": 3,
+   "text": "mokka. perillä to klo 12 mennessä"
+  },
+  {
+   "count": 3,
+   "text": "Pickup only after payment, from tomorrow 3:30pm"
+  },
+  {
+   "count": 3,
+   "text": "hei. auto valmis vasta to klo 12.00. haettava ennen klo 20.00"
+  },
+  {
+   "count": 3,
+   "text": "Huolto kesken, valmis huomenna klo 10.45. 4 rengasta vannteilla tavaratilassa"
+  },
+  {
+   "count": 3,
+   "text": "must be at destination by thursday 20:00. keys from reception."
+  },
+  {
+   "count": 3,
+   "text": "at destination tomorrow 13:30 latest!"
+  },
+  {
+   "count": 3,
+   "text": "Hejsan. Hämtning vardagar 9 - 15.30. Framme senast tors kl 20."
+  },
+  {
+   "count": 3,
+   "text": "toimitus perille viim. to klo 20.00. kohde auki arkisin klo 7.00-20.00."
+  },
+  {
+   "count": 3,
+   "text": "toimitus perille viim. huomenna klo 16. korjaus: klo 15"
+  },
+  {
+   "count": 3,
+   "text": "Open weekdays 9:00-20:00. Must be at destination by Monday 20:00. Booking ref 742135. Thanks"
+  },
+  {
+   "count": 3,
+   "text": "noudettavissa aikaisintaan torstaina klo 12."
+  },
+  {
+   "count": 3,
+   "text": "kohde auki arkisin klo 7.00 - 21.00. noudettavissa aikaisintaan torstaina klo 12.00"
+  },
+  {
+   "count": 3,
+   "text": "Auto valmis vasta huomenna yhdeksältä. Noudettavissa 7:stä 19:ään."
+  },
+  {
+   "count": 3,
+   "text": "Receiving 7:00-20:00 only. Must be at destination by tomorrow 20:00. Call before pikcup"
+  },
+  {
+   "count": 3,
+   "text": "asiakas tulee hakemaan, perillä viim. huomenna klo 15. tilausnumero 991257."
+  },
+  {
+   "count": 3,
+   "text": "Odottaa osia, valmis huomenna yhdeltä."
+  },
+  {
+   "count": 3,
+   "text": "Car is ready and waiting. At destination tomorrow 20:00 latest"
+  },
+  {
+   "count": 3,
+   "text": "Hei. Luovutus vasta kun maksettu, aikaisintaan klo 14.30"
+  },
+  {
+   "count": 3,
+   "text": "Hei. Voi nooutaa klo 13.30 alkaen"
+  },
+  {
+   "count": 3,
+   "text": "Perjantaina klo 13 valmis"
+  },
+  {
+   "count": 3,
+   "text": "vastaanottava liike auki 9 - 21. noudettavissa aikaisintaan perjantaina puoli yhdeltätoista"
+  },
+  {
+   "count": 3,
+   "text": "Huolto kessken, valmis huomenna klo 10.30. Kiitos, thx"
+  },
+  {
+   "count": 3,
+   "text": "Must be at destination by tomorrow 20:00."
+  },
+  {
+   "count": 3,
+   "text": "Nobody here after 7pm. Correction: 6pm. Br, sales."
+  },
+  {
+   "count": 3,
+   "text": "Must be at destination by 18:00. In the workshop, ready 13:00"
+  },
+  {
+   "count": 3,
+   "text": "Hi there. Manual, driver needs a manual licence."
+  },
+  {
+   "count": 3,
+   "text": "Auto valmis vasta klo 14, hyvää päivänjatkoa"
+  },
+  {
+   "count": 3,
+   "text": "Vastaanotto ma–pe 10:stä 15:een."
+  },
+  {
+   "count": 3,
+   "text": "Käsivaihteinen"
+  },
+  {
+   "count": 3,
+   "text": "Perillä auki 9-21. Meillä auki 8-19."
+  },
+  {
+   "count": 3,
+   "text": "Oltava perillä viimeistään huomenna klo 14.30. Tilausnro 620686"
+  },
+  {
+   "count": 3,
+   "text": "At destination tomorrow 13:00 latest, second set of wheels in the back"
+  },
+  {
+   "count": 3,
+   "text": "asiaaks tulee hakemaan, perillä viim. huomenna klo 15.00. soita ennen noutoa. kiitos taas."
+  },
+  {
+   "count": 3,
+   "text": "Svagt batteri. Mvh försäljningen."
+  },
+  {
+   "count": 3,
+   "text": "Framme senast i morgon kl 19."
+  },
+  {
+   "count": 3,
+   "text": "Hello. Suummer tyres on, no winters. Thx."
+  },
+  {
+   "count": 3,
+   "text": "Released after payment, not before 14:00."
+  },
+  {
+   "count": 3,
+   "text": "released after payment, not before 14:00. thanks in advance"
+  },
+  {
+   "count": 3,
+   "text": "noudettavissa aikaisintaan klo 12.30"
+  },
+  {
+   "count": 3,
+   "text": "toimitus perille viim. maanantaina klo 20.00. noudettavissa arkisin 8.00 - 14.30. kiitti."
+  },
+  {
+   "count": 3,
+   "text": "Ostaja maksaa ensin, auton saa huomenna klo 11 alkaen"
+  },
+  {
+   "count": 3,
+   "text": "nouto arkisin klo 8-16.30 / open weekdays 8:00-16:30. perillä klo 20 mennessä. kiitos taas."
+  },
+  {
+   "count": 3,
+   "text": "luovutus vasta kun maksettu, aikaisintaan huomenna klo 13. soita liikkeeseen ennen kuin tulet."
+  },
+  {
+   "count": 3,
+   "text": "Lisärenkkaat mukaan."
+  },
+  {
+   "count": 3,
+   "text": "Opening hours 8:00–19:00. Receiving 8:00–20:00 only"
+  },
+  {
+   "count": 3,
+   "text": "perillä huomenna klo 17 mennessä. lisäksi 4 kesärengasta tavaratilassa"
+  },
+  {
+   "count": 3,
+   "text": "Auto vlamis vasta huomenna kello 9. Vastaanotto ma–pe klo 7-20. Rengassarja mukaan. t. myynti."
+  },
+  {
+   "count": 3,
+   "text": "Oltava perillä viimeistään maanantaina klo 15. Liike kiinni klo 19, haettava ennen sitä. Soita liikkeeseen ennen kuin tulet."
+  },
+  {
+   "count": 3,
+   "text": "oltava perillä viimeistään huomenna neljältä. kohde auki arkipäivisin 7:stä 20:een"
+  },
+  {
+   "count": 3,
+   "text": "Huom vielä kesärennkaat alla"
+  },
+  {
+   "count": 3,
+   "text": "Vastaanotto klo 16.00 asti"
+  },
+  {
+   "count": 3,
+   "text": "receiving until 16:00 only"
+  },
+  {
+   "count": 3,
+   "text": "toimitus perille viim. ma klo 20!"
+  },
+  {
+   "count": 3,
+   "text": "At destination tomorrow 14:00 latest"
+  },
+  {
+   "count": 3,
+   "text": "toimitus perille viim. huomenna klo 20. nouto ennen klo 19"
+  },
+  {
+   "count": 3,
+   "text": "Öppet vardagar 8-16. Sommardäcken i bakluckan, följer med"
+  },
+  {
+   "count": 3,
+   "text": "winter tyres not fitted yet"
+  },
+  {
+   "count": 3,
+   "text": "toimitus perille viim. maanantaina klo 17.30."
+  },
+  {
+   "count": 3,
+   "text": "hei vaan. oltava perillä viimeistään maanantai 20:00. toimitusosoite auki ma-pe klo 9 - 21"
+  },
+  {
+   "count": 3,
+   "text": "Toimitus perille viim. klo 20"
+  },
+  {
+   "count": 3,
+   "text": "Vastaanottava liike auki arkipäivisin 8:sta 20:een. Noudettavissa arkipäivisin klo 8.00 - 16.30. Renkaat kyydissä."
+  },
+  {
+   "count": 3,
+   "text": "noudettavissa aikaisintaan klo 13.30, kiitos"
+  },
+  {
+   "count": 3,
+   "text": "Collect Mon–Fri 7:00–18:00. Must arrive by Mon 20:00."
+  },
+  {
+   "count": 3,
+   "text": "auto vielä kesärenkailla. kiitos, thx"
+  },
+  {
+   "count": 3,
+   "text": "Manuaali, ei automatti."
+  },
+  {
+   "count": 3,
+   "text": "Perillä klo 18 mennesssä"
+  },
+  {
+   "count": 3,
+   "text": "Auto valims vasta klo 16. Viite 308346"
+  },
+  {
+   "count": 3,
+   "text": "Spare wheels in the boot, call 20 min befre you arrive"
+  },
+  {
+   "count": 3,
+   "text": "Receiving 7am-8pm only / Vastaanotto arkisni 7-20, cheers"
+  },
+  {
+   "count": 3,
+   "text": "At destination 19:00 latest. Key box code 3031."
+  },
+  {
+   "count": 3,
+   "text": "Nouto arkisin 8:sta 18:aan. Pitää olla perillä ma kello 15:00 mennnessä"
+  },
+  {
+   "count": 3,
+   "text": "Kan hämtas tidigast kl 16.00. Tack på förhand"
+  },
+  {
+   "count": 3,
+   "text": "perillä maanantaina klo 12.30 mennessä"
+  },
+  {
+   "count": 3,
+   "text": "at destination monday noon latest"
+  },
+  {
+   "count": 3,
+   "text": "reekisterikilvet irrotettu"
+  },
+  {
+   "count": 3,
+   "text": "måste vara framme senast mån kl 20, hälsningar."
+  },
+  {
+   "count": 3,
+   "text": "frammme senast mån kl 18, ring innan hämtning, tack på förhand."
+  },
+  {
+   "count": 3,
+   "text": "Ready for pickup from 18:00"
+  },
+  {
+   "count": 3,
+   "text": "Hejsan. Sommardäcken i bakluckan, följer med. Tack på förhand"
+  },
+  {
+   "count": 3,
+   "text": "auto valmis vasta perjantaina klo 9, viite 304700"
+  },
+  {
+   "count": 3,
+   "text": "At destination tomorrow 20:00 latest. Collect before 18:00. Thhanks in advance"
+  },
+  {
+   "count": 3,
+   "text": "Haku viimeistään viideltä. Korjaus: kello 18.00. Vastaanotto onnisstuu arkipäivisin 9.00–20.00. Ilmoita kun lähdet"
+  },
+  {
+   "count": 3,
+   "text": "Vastaanotto arkisin 7-16.30. Valmmis, voi hakea heti"
+  },
+  {
+   "count": 3,
+   "text": "Must arrive by tomorrow 8pm! Open Mon–Fri 10am-3pm."
+  },
+  {
+   "count": 3,
+   "text": "Asiakas tulee hakemaan, perillä viim. ke klo 20. Vastaanottava liike auki arkisin 9-21"
+  },
+  {
+   "count": 3,
+   "text": "Perillä klo 16.00 mennessä. Korjaus: klo 17.00. Auto pihalla ruuudssa 15, avain tiskiltä"
+  },
+  {
+   "count": 3,
+   "text": "Noudettavissa aikaisintaan torstaina klo 14.00. Vastaanottava liike auki arkisin 9.00-20.00. Tilausnumero 576394. Kiitos etukäteen"
+  },
+  {
+   "count": 3,
+   "text": "nouto ennen klo 17 / nobody here after 5pm. vastaanotto arkisin 8-21"
+  },
+  {
+   "count": 3,
+   "text": "pitää olla perillä huomenna kello 15.30 mennessä"
+  },
+  {
+   "count": 3,
+   "text": "framme senast tors kl 20!"
+  },
+  {
+   "count": 3,
+   "text": "Toimitus perille viim. huomenna klo 20.00."
+  },
+  {
+   "count": 3,
+   "text": "toimitus perille viim. perjantai klo 20.00"
+  },
+  {
+   "count": 3,
+   "text": "must be at destination by tomorrow 18:00, thx"
+  },
+  {
+   "count": 3,
+   "text": "Hei. Asiakas tulee hakemaan, perillä viim. keskiviikkona klo 20"
+  },
+  {
+   "count": 3,
+   "text": "Huolto kesken, valmis keskiviikkona klo 12"
+  },
+  {
+   "count": 3,
+   "text": "Kohteen akuioloajat ma-pe klo 8–21. Noudettavissa aikaisintaan huomenna kello 9.30. Hyvää päivänjatkoa."
+  },
+  {
+   "count": 3,
+   "text": "Kohde auki arkisin 8-20. Toimitus perille viim. keskiviikkona klo 14. Avain autossa."
+  },
+  {
+   "count": 3,
+   "text": "Receiving weekdays 9:00 - 20:00 only. At destination tomorrow 15:00 latest!"
+  },
+  {
+   "count": 3,
+   "text": "Hämtas före kl 15. Ring innan hämtning. Tack"
+  },
+  {
+   "count": 3,
+   "text": "At destination Wednesday 9pm latest. Correction: 8pm. Pickup Mon–Fri 9am - 6pm only"
+  },
+  {
+   "count": 3,
+   "text": "oltava perillä viimeistään huuomenna klo 19!"
+  },
+  {
+   "count": 3,
+   "text": "Perillä huomenna klo 20.00 mennessä."
+  },
+  {
+   "count": 3,
+   "text": "asiakas tulee hakemaan, perillä viim. huomenna klo 13. kiitos"
+  },
+  {
+   "count": 3,
+   "text": "Kohde auki 8:sta 20:een"
+  },
+  {
+   "count": 3,
+   "text": "toimitus perille viim. huomenna klo 16.00."
+  },
+  {
+   "count": 3,
+   "text": "toimitus perille viim. klo 16."
+  },
+  {
+   "count": 3,
+   "text": "Huolto kesken, valmis klo 13.00. t. myynti"
+  },
+  {
+   "count": 3,
+   "text": "weak battery, may need a jump start."
+  },
+  {
+   "count": 3,
+   "text": "buyer pays first, pickup from 13:00. cheers"
+  },
+  {
+   "count": 3,
+   "text": "Bilen står klar. Nyckelbx, kod 4023."
+  },
+  {
+   "count": 3,
+   "text": "Receiving weekdays 8 am–9 pm only. Customer picks it up tmrw noon, must be there by then. Second set of wheels in the back"
+  },
+  {
+   "count": 3,
+   "text": "Måste vara framme senast fre 20"
+  },
+  {
+   "count": 3,
+   "text": "vastaanotto arkkisin klo 8-18."
+  },
+  {
+   "count": 3,
+   "text": "In the workshop, ready 16:00."
+  },
+  {
+   "count": 3,
+   "text": "kohde auki klo 8-20. noudettavissa aikaisintaan huomenna klo 12.30. korjaus: klo 13.30. avaimet toimistosta"
+  },
+  {
+   "count": 3,
+   "text": "Framme senast torsdag kl 17:00."
+  },
+  {
+   "count": 3,
+   "text": "Asiakas tulee hakemaan, perillä viim. torstaina klo 20. Liike auki arkisin 9-16.30."
+  },
+  {
+   "count": 3,
+   "text": "Call the customer an hour before arirval"
+  },
+  {
+   "count": 3,
+   "text": "Perillä auki klo 9-21. Pesu kesken, haettavissa huomenna kymmenen jälkeen. Kiitos etukäteen."
+  },
+  {
+   "count": 3,
+   "text": "moi. manuaalivaihteet, kuski tarvii manuaalikortin."
+  },
+  {
+   "count": 3,
+   "text": "Vastaanottava liike auki arkisin 8-20. Asiakas tulee hakemaan, perillä viim. huomenna klo 18.30. Soita ennen noutoa. Kiitos etukäteen."
+  },
+  {
+   "count": 3,
+   "text": "auto vielä kesärenkailla, terveisin myynti"
+  },
+  {
+   "count": 3,
+   "text": "ready for pickup from thursday 12:00"
+  },
+  {
+   "count": 3,
+   "text": "at destination tomorrow 20:00 latest / asiakas tulee hakemaan, perillä viim. huomenna klo 20. collect before 16:00."
+  },
+  {
+   "count": 3,
+   "text": "pitaa olla perilla huomenna kahteen mennessa"
+  },
+  {
+   "count": 3,
+   "text": "Kohde auki arkisin klo 8-21 / Mottagaren har öppet vardagar 8-21"
+  },
+  {
+   "count": 3,
+   "text": "Vastaanottava liike auki klo 8 - 21. Asiakas tulee hakemaan, perillä viim. klo 18. t. myynti"
+  },
+  {
+   "count": 3,
+   "text": "Hej. Vår ref 758642."
+  },
+  {
+   "count": 3,
+   "text": "Toimitus viimeistään perjantaina klo 20. Auto valmis vasta huomenna klo 7"
+  },
+  {
+   "count": 3,
+   "text": "Moikka. Perillä pe klo 17.30 mennessä. Huolto kesken, valmis huomenna klo 9.00. Tilausnro 422584."
+  },
+  {
+   "count": 3,
+   "text": "Maksun jälkeen, ei ennen huomenna puoli yhdeksältä. Rengassarja takapenkillä, kulkee mukana"
+  },
+  {
+   "count": 3,
+   "text": "oltava perillä viimeistään perjantaina klo 13."
+  },
+  {
+   "count": 3,
+   "text": "voi noutaa huomenna klo 11 alkaen. soita kun olet lähhellä."
+  },
+  {
+   "count": 3,
+   "text": "Mottagaren har öppet vardagar 9-20 / Vastaanotto klo 9-20. Kan hämtas tidigast i morgon kl 9. Sommardäcken i bakluckan, följer med"
+  },
+  {
+   "count": 3,
+   "text": "Summer tyres on, no winters"
+  },
+  {
+   "count": 3,
+   "text": "hei. asiakas tulee hakemaan, perillä viim. maanantaina klo 18"
+  },
+  {
+   "count": 3,
+   "text": "Moi. Huom aukioloajat arkisin klo 9.00-16.30 / Öppettider kl 9 - 16:30"
+  },
+  {
+   "count": 3,
+   "text": "At destination tomorrow 14:30 latest"
+  },
+  {
+   "count": 3,
+   "text": "Hei. Meillä auki ma-pe 9-20. Asiakas noutaa huomenna kolmelta, auton oltava silloin perillä. Viitenro 682820"
+  },
+  {
+   "count": 3,
+   "text": "Hei vaan. Lisäreknaat mukaan"
+  },
+  {
+   "count": 3,
+   "text": "Asiakas tulee hakemaan, perillä viim. huomenna klo 12. Valmis, voi hakea heti"
+  },
+  {
+   "count": 3,
+   "text": "Extra däcksats i bagaget, ska med. Tack på förhand"
+  },
+  {
+   "count": 3,
+   "text": "Asiakas noutaa pe. 20.00, auton oltava silloin perillä. Pitää hakea ennen 19."
+  },
+  {
+   "count": 3,
+   "text": "hej, vår ref 14171, tack"
+  },
+  {
+   "count": 3,
+   "text": "toimitus perille viim. ma klo 16"
+  },
+  {
+   "count": 3,
+   "text": "asiakas tulee hakemaan, perillä viim. huomenna klo 20!"
+  },
+  {
+   "count": 3,
+   "text": "toimitus perille viim. huomenna klo 12.00. valmis, voi hakea heti. kiitos, thx"
+  },
+  {
+   "count": 3,
+   "text": "Noudettavissa aikaisintaan klo 14.00, kiitti"
+  },
+  {
+   "count": 3,
+   "text": "hämtas före kl 20. måste vara framme senast på måndag kl 19"
+  },
+  {
+   "count": 3,
+   "text": "huom akuioloajat 7 - 18"
+  },
+  {
+   "count": 3,
+   "text": "Ready for pickup from tomorrow 9:00. Must be at destination by Mon 20:00. Call before pickup"
+  },
+  {
+   "count": 3,
+   "text": "liike menee kiinni 18.00 / collect before 18:00."
+  },
+  {
+   "count": 3,
+   "text": "Pitää olla perillä maanantaina klo 2000 mennssä. Auki vain 18:aan asti. Kiitos paljon"
+  },
+  {
+   "count": 3,
+   "text": "At destination tmrw 12.00 latest, not 11.00. Keys at service desk"
+  },
+  {
+   "count": 3,
+   "text": "Must be at destination by Monday 13:30, cheers"
+  },
+  {
+   "count": 3,
+   "text": "Hejsan. Öppet vardagar kl 10 - 15."
+  },
+  {
+   "count": 3,
+   "text": "Liike kiinni klo 20.00, haettava ennen sitä. Oltava perillä viimeistään ma klo 12.00"
+  },
+  {
+   "count": 3,
+   "text": "must be at destination by tomorrow 19:00. keys from reception"
+  },
+  {
+   "count": 3,
+   "text": "Toimitus perille viim. huomnena klo 20"
+  },
+  {
+   "count": 3,
+   "text": "At destination Monday 19:00 latest. Call asap if any issues. Thanks"
+  },
+  {
+   "count": 3,
+   "text": "Toimitus perille viim. maanantaina klo 20.00. Auto valmis, nouto heti kun sopii."
+  },
+  {
+   "count": 3,
+   "text": "Luovutus vasta kun maksettu, aikaisintaan klo 15. Soita 30 min ennen!"
+  },
+  {
+   "count": 3,
+   "text": "Hej. Utlämning efter betalning, från klockan halv två"
+  },
+  {
+   "count": 3,
+   "text": "ei rekkareita, koekilvet tarvittaan"
+  },
+  {
+   "count": 3,
+   "text": "Asiakas tulee hakemaan, perillä viim. klo 18."
+  },
+  {
+   "count": 3,
+   "text": "Vastaannotto onnistuu ma-pe klo 9.00 - 20.00. Pitää olla perillä maanantaina klo 20.00 mennessä!"
+  },
+  {
+   "count": 3,
+   "text": "toimitus perille viim. maanantaina klo 12.00"
+  },
+  {
+   "count": 3,
+   "text": "Vastaanotto arkisin 10-16. Haettava ennen klo 19, ei klo 18"
+  },
+  {
+   "count": 3,
+   "text": "Perillä maanantaina klo 14 mennessä. 4 rengasta vanteilla tavaratilassa. Kiitos etukäteen"
+  },
+  {
+   "count": 3,
+   "text": "Kohde auki klo 8-21. Perillä maanantaina klo 20 mennessä."
+  },
+  {
+   "count": 3,
+   "text": "Haettvaa ennen klo 16.30. Valmis, voi hakea heti"
+  },
+  {
+   "count": 3,
+   "text": "Vastaanotto klo 18 asti. Ilmoita kun lähdet"
+  },
+  {
+   "count": 3,
+   "text": "Vastaanotto klo 16 asti. Terveisin myynti"
+  },
+  {
+   "count": 3,
+   "text": "Ready for pickup from 17:00. At destination Mon 16:00 latest"
+  },
+  {
+   "count": 3,
+   "text": "Toimitus perille viim. maanantaina klo 20. Vastaanotto arkisin klo 7-20. Lisärenkaat mukaan"
+  },
+  {
+   "count": 3,
+   "text": "Summer tyres on, no winters."
+  },
+  {
+   "count": 3,
+   "text": "Weak battery, may need a jump start"
+  },
+  {
+   "count": 3,
+   "text": "akku heikko, voi tarvita apukäynnistyksen"
+  },
+  {
+   "count": 3,
+   "text": "Måste vara framme senast 14.00. Hämtning mån-fre kl 9.00–18.00. Nycklar i receptionen"
+  },
+  {
+   "count": 3,
+   "text": "auto vlmis vasta huomenna klo 9."
+  },
+  {
+   "count": 3,
+   "text": "huolto kesken, valmis klo 13.30"
+  },
+  {
+   "count": 3,
+   "text": "Auto valmis vasta klo 13.30."
+  },
+  {
+   "count": 3,
+   "text": "Takaluukku jumittaa. Viite 721665."
+  },
+  {
+   "count": 3,
+   "text": "Kolmen jälkeen ei enää luovutuksia, avaimet huollon tiskiltä"
+  },
+  {
+   "count": 3,
+   "text": "Auto valmis vasta klo 15 (ei klo 16). Nouto ennen klo 18. Kesärenkaat vanteineen takakontissa"
+  },
+  {
+   "count": 3,
+   "text": "haettava ennen klo 17. soita ennen nooutoa. kiitos taas."
+  },
+  {
+   "count": 3,
+   "text": "voi notuaa huomenna klo 12.00 alkaen."
+  },
+  {
+   "count": 3,
+   "text": "Not ready beore 15:30. Car in bay 18, keys at the desk"
+  },
+  {
+   "count": 3,
+   "text": "Auto vlmis, nouto heti kun sopii. Perillä huomenna klo 20 mennessä"
+  },
+  {
+   "count": 3,
+   "text": "Ready for pickup from Wed 14:30. Correction: Thu."
+  },
+  {
+   "count": 3,
+   "text": "Kohde auki arkisin klo 10-16 / Mottagaren har öppet kl 10-16."
+  },
+  {
+   "count": 3,
+   "text": "Hei. Auto valmis vasta huomenna klo 12.30. Korjaus: klo 13.30"
+  },
+  {
+   "count": 3,
+   "text": "it's a manual, key box code 2420."
+  },
+  {
+   "count": 3,
+   "text": "Terve. Huolto kesken, valmis huomenna puoli kahdeltatoista. Hyvää päivänjatkoa"
+  },
+  {
+   "count": 3,
+   "text": "auto vielä kesärenkailla. renkaat takakontissa, menee mukanna"
+  },
+  {
+   "count": 3,
+   "text": "ostaja maksaa ensin, auton saa huomenna klo 13.30 alkaen. rengassarja takapenkillä, kulkee mukana."
+  },
+  {
+   "count": 3,
+   "text": "Nouto ennen klo 15.30, aavimet myyjältä."
+  },
+  {
+   "count": 3,
+   "text": "perillä huomenna klo 13 menessä."
+  },
+  {
+   "count": 3,
+   "text": "hi, collect mon-fri 9:00 - 18:00 / huom aukioloajat arkisin klo 9.00 - 18.00"
+  },
+  {
+   "count": 3,
+   "text": "oltava perillä viimeistään huomenna klo 16, kiitos taas"
+  },
+  {
+   "count": 3,
+   "text": "Asiakas tulee hakemaan, perillä viim. pe klo 19.00"
+  },
+  {
+   "count": 3,
+   "text": "Noudettavissa aikaissintaan huomenna klo 11.30"
+  },
+  {
+   "count": 3,
+   "text": "Must be at destination by Friday 20:00. Open weekdays 9:00-16:00. Thanks"
+  },
+  {
+   "count": 3,
+   "text": "terve. saa hakea vasta huomenna klo 9 jälkeen"
+  },
+  {
+   "count": 3,
+   "text": "Ready for pickup from tomorow 14:00, not 15:00"
+  },
+  {
+   "count": 3,
+   "text": "In the workshop, ready Thursday 14:00. Collect before 18:00"
+  },
+  {
+   "count": 3,
+   "text": "Maksun jälkeen, ei ennen huomenna klo 12. Tilausnro 625804."
+  },
+  {
+   "count": 3,
+   "text": "valmis, voi hakea heti. kohde auki arkisin 7 - 20. soita ennen noutooa"
+  },
+  {
+   "count": 3,
+   "text": "Maksun jälkeen, ei ennen huomenna klo 12"
+  },
+  {
+   "count": 3,
+   "text": "We close at 18:00, not 19:00! Booking ref 412974"
+  },
+  {
+   "count": 3,
+   "text": "Auto on valmis noudettavaksi, oltava perillä viimeistään huomenna klo 12, avaimet myyjältä"
+  },
+  {
+   "count": 3,
+   "text": "Buyer pays first, pickup from tomorrow 12:30. Call the customer an hour before arrival"
+  },
+  {
+   "count": 3,
+   "text": "released after payment, not before 15:00"
+  },
+  {
+   "count": 3,
+   "text": "Noudettavissa aikaisintaan to. klo 7."
+  },
+  {
+   "count": 3,
+   "text": "Hei vaan. Voi noutaa klo 14.00 alkaen. Haettava ennen klo 18.00. Kiitos"
+  },
+  {
+   "count": 3,
+   "text": "Noudettavissa arkisin klo 7-17. Kohde auki arkissin klo 8-20"
+  },
+  {
+   "count": 3,
+   "text": "hämttning vardagar kl 9 - 15.30, tack på förhand."
+  },
+  {
+   "count": 3,
+   "text": "ostaja maksaa ensin, auton saa huomenna klo 12.30 alkaen. tilausnumero 388844"
+  },
+  {
+   "count": 3,
+   "text": "maksun jälkeen, ei ennen huomenna klo 12.00"
+  },
+  {
+   "count": 3,
+   "text": "Kohde auki arksiin klo 7.00-17.00"
+  },
+  {
+   "count": 3,
+   "text": "Asiakas tulee hakemaan, perillä viim. to klo 20.00. 4 rengasta vanteilla tavaratilassa"
+  },
+  {
+   "count": 3,
+   "text": "Hej, mottagaren har öppet vardagar kl 7 - 20, mvh försäljningen"
+  },
+  {
+   "count": 3,
+   "text": "auto valmis vasta pe klo 14. meidän viite 386458"
+  },
+  {
+   "count": 3,
+   "text": "Huolto kesken, valmis to klo 10.00."
+  },
+  {
+   "count": 3,
+   "text": "Maksun jälkeen, ei ennen huomenna klo 13.00."
+  },
+  {
+   "count": 3,
+   "text": "Avoinna arkisin 9:stä 18:aan"
+  },
+  {
+   "count": 3,
+   "text": "luovutetaan kun maksu näkyy, aikaisintaan perjantaina puoli kahdeltatoista."
+  },
+  {
+   "count": 3,
+   "text": "toimitus perille viim. maanantaina klo 16!"
+  },
+  {
+   "count": 3,
+   "text": "Must be at destination by tomorrow 19:00! Destination open 7:00-20:00. Our ref: 687518"
+  },
+  {
+   "count": 3,
+   "text": "toimitus perille viim. torstaina klo 12. vastaanottava liike auki arkisin klo 9-20."
+  },
+  {
+   "count": 3,
+   "text": "Vastaanotto arkisin 7-21. Toimitus perille viim. huomenna klo 20"
+  },
+  {
+   "count": 3,
+   "text": "Not ready before tomorrow 11:30. Must be at destination by tomorrow 15:00."
+  },
+  {
+   "count": 3,
+   "text": "Öppet vardagar kl 9.00-14.00"
+  },
+  {
+   "count": 3,
+   "text": "At destination tomorrow 17:30 latest, thanks in advance"
+  },
+  {
+   "count": 3,
+   "text": "öppet vardagar 7-18. mottagning vardagar 7-21"
+  },
+  {
+   "count": 3,
+   "text": "Toimitus perille viim. pe klo 16"
+  },
+  {
+   "count": 3,
+   "text": "weak battery, may need a jump start. booking ref 695747. thanks in advance."
+  },
+  {
+   "count": 3,
+   "text": "Toimitus perille viim. huomenna klo 16.30"
+  },
+  {
+   "count": 3,
+   "text": "hei vaan. perillä huomenna klo 19 mennessä. huom aukiioloajat arkisin 9 - 20."
+  },
+  {
+   "count": 3,
+   "text": "Pickup weekdays 9:00 - 18:00 only. At destination tomorrow 14:00 latest. Thanks."
+  },
+  {
+   "count": 3,
+   "text": "Moikka. Huom aukioloajat klo 9 - 20. Toimitus perille viim. huomenna klo 19. t. myynti."
+  },
+  {
+   "count": 3,
+   "text": "Auto vielä kesärenkailla. Rengassaraj mukaan"
+  },
+  {
+   "count": 3,
+   "text": "Hei. Asiakas tulee hakemaan, perillä viim. huomenna klo 18!"
+  },
+  {
+   "count": 3,
+   "text": "Hei. Oltava perillä viimeistään huomenna klo 16.30! Vastaanotto arkisin 7-21."
+  },
+  {
+   "count": 3,
+   "text": "perillä perjantaina klo 20 mennessä. huom aukioloajat arkisin klo 9 - 18"
+  },
+  {
+   "count": 3,
+   "text": "Huolto kesken, valmis perjantaina klo 11. Kiitos etukäteen"
+  },
+  {
+   "count": 3,
+   "text": "Vastaanotto klo 16 asti."
+  },
+  {
+   "count": 3,
+   "text": "Auton voi hakea ma-pe 9 - 18. Terveisin myynti"
+  },
+  {
+   "count": 3,
+   "text": "preillä auki arkisin 9:stä 21:een. auto valmis vasta huomenna yhdeksältä."
+  },
+  {
+   "count": 3,
+   "text": "Auto vielä kesärenkailla"
+  },
+  {
+   "count": 3,
+   "text": "Noudettavissa aikaisintaan klo 14."
+  },
+  {
+   "count": 3,
+   "text": "Nouto arkisin klo 7.00-20.00 / Öppettider vardagar kl 7 - 20, kiitos taas"
+  },
+  {
+   "count": 3,
+   "text": "mottagaren stänger kl 16, nej förlåt, kl 17"
+  },
+  {
+   "count": 3,
+   "text": "Hi. Handover once paid, tomorrow 12:00 at the earliest. Thank you."
+  },
+  {
+   "count": 3,
+   "text": "Ostaja maksaa ensin, auton saa kahdesta alkaen"
+  },
+  {
+   "count": 3,
+   "text": "luovutus vasta kun maksettu, aikaisintaan klo 16. soita kun olet lähellä. kiitos etukäteen"
+  },
+  {
+   "count": 3,
+   "text": "Noudettavissa aikaisintaan klo 14. Terveisin myynti"
+  },
+  {
+   "count": 3,
+   "text": "ready, collect right away. receiving mon-fri 8am-4:30pm only. key in the car"
+  },
+  {
+   "count": 3,
+   "text": "Huom vielä kesärenkaat alla. Soita kun olet lähellä. t. myynti"
+  },
+  {
+   "count": 3,
+   "text": "ostaja maksaa ensin, auton saa huomenna klo 8.30 alkaen"
+  },
+  {
+   "count": 3,
+   "text": "Perillä maanantaina klo 20 mennessä! Soita kun olet lähellä"
+  },
+  {
+   "count": 3,
+   "text": "Kiire, asiakas odottaa. Perillä huomenna neljään mennessä."
+  },
+  {
+   "count": 3,
+   "text": "Buyer pays first, pickup from 10:30"
+  },
+  {
+   "count": 3,
+   "text": "Framme senast på måndag kl 20. Hämtning kl 9-14.30"
+  },
+  {
+   "count": 3,
+   "text": "auto valmmiina, haettavissa heti. nouto ennen klo 18"
+  },
+  {
+   "count": 3,
+   "text": "auto on valmis noudettavaksi. toimitus perille viim. maanantaina klo 13."
+  },
+  {
+   "count": 3,
+   "text": "ostaja maksaa ensin, auton saa klo 15 alkaen. kiitos, thx."
+  },
+  {
+   "count": 3,
+   "text": "Hei. Perillä maanantaina klo 13.00 mennessä."
+  },
+  {
+   "count": 3,
+   "text": "Picukp weekdays 9:00 - 18:00 only."
+  },
+  {
+   "count": 3,
+   "text": "Asiakas noutaa maanantaina 20.00, auton oltava silloin perillä. Kohde auki arkisin klo 7–21"
+  },
+  {
+   "count": 3,
+   "text": "Customer picks it up today 7pm, must be there by then! Call 30 min before you arrive. Cheers."
+  },
+  {
+   "count": 3,
+   "text": "Liike auki arkisin 9 - 20. Perillä liike kiinni klo 16.30 jälkeen. Kiitos paljon"
+  },
+  {
+   "count": 3,
+   "text": "Perillä maanantaina klo 20.00 mennessä. Liike auki klo 7.00 - 18.00. Kiitos taas."
+  },
+  {
+   "count": 3,
+   "text": "Oltava perillä viimeistään maanantaina klo 20"
+  },
+  {
+   "count": 3,
+   "text": "Framme senast på måndag kl 20.00"
+  },
+  {
+   "count": 3,
+   "text": "täällä ei ketään puoli kolmen jälkeen, soita asap jos tulee ongelmia"
+  },
+  {
+   "count": 3,
+   "text": "Toimitus perille viim. klo 14, soita 20 min ennen"
+  },
+  {
+   "count": 3,
+   "text": "Torstai kello 10 valmis."
+  },
+  {
+   "count": 3,
+   "text": "måste vara framme senast i dag kl 20:00."
+  },
+  {
+   "count": 3,
+   "text": "Mottagning vardagar kl 8-21. Kan hämtas i morgon kl 10.30 och framåt. Extra däcksats i bagaget, ska med"
+  },
+  {
+   "count": 3,
+   "text": "Terve, voi noutaa klo 15 alkaen"
+  },
+  {
+   "count": 3,
+   "text": "Receiving shop open weekdays 8:00–20:00. Collect before 19:00."
+  },
+  {
+   "count": 3,
+   "text": "Toimitus perille viim. torstaina klo 20!"
+  },
+  {
+   "count": 3,
+   "text": "Maksun jälkeen, ei ennen ke klo 11. Kiitos, thx"
+  },
+  {
+   "count": 3,
+   "text": "Receiving weekdays 9:00-20:00 only. At destination Wedneday 20:00 latest. Cheers"
+  },
+  {
+   "count": 3,
+   "text": "Asiakas tulee hakemaan, perillä viim. huomenna klo 12."
+  },
+  {
+   "count": 3,
+   "text": "Liike kiinni klo 18, haettava ennen sitä. Noudettavissa aikaisintaan perjantaina klo 8."
+  },
+  {
+   "count": 3,
+   "text": "At destinatin Wed 15:00 latest"
+  },
+  {
+   "count": 3,
+   "text": "Måste vara framme senast i morgon kl 20.00. Hälsningar"
+  },
+  {
+   "count": 3,
+   "text": "auto valmina, haettavissa heti. renkaat takakontissa, menee mukana"
+  },
+  {
+   "count": 3,
+   "text": "moi. takaluukuk jumittaa."
+  },
+  {
+   "count": 3,
+   "text": "Ollaan täällä 18:aan saakka"
+  },
+  {
+   "count": 3,
+   "text": "Auton voi hakea ma–pe 9:00-19:00"
+  },
+  {
+   "count": 3,
+   "text": "Oltava perillä viimeistään perjantaina klo 20.00, hyvää päivänjatkoa."
+  },
+  {
+   "count": 3,
+   "text": "Vi stänger 18.00. Mottagaren har öppet 9–20."
+  },
+  {
+   "count": 3,
+   "text": "toimitus perille viim. huomenna klo 18"
+  },
+  {
+   "count": 3,
+   "text": "at destination tomorrow 18:00 latest"
+  },
+  {
+   "count": 3,
+   "text": "nobody here after 6 pm"
+  },
+  {
+   "count": 3,
+   "text": "hei vaan. vastaanottava liike auki arrkisin 9 - 16.30"
+  },
+  {
+   "count": 3,
+   "text": "Maksun jälkeen, ei ennen huomenna puoli yhdeltätoista. Soita asap jos tulee ongelmia"
+  },
+  {
+   "count": 3,
+   "text": "Ostaja maksaa ensin, auton saa klo 11 alkaen."
+  },
+  {
+   "count": 3,
+   "text": "Oltava perillä viimeistään huomenna klo 20. Meidän viite 204107"
+  },
+  {
+   "count": 3,
+   "text": "Ei klipiä, siirtokilvet mukaan."
+  },
+  {
+   "count": 3,
+   "text": "huom aukioloajat arisin 9.00-14.30"
+  },
+  {
+   "count": 3,
+   "text": "noudettavissa aikaisintaan pe klo 14."
+  },
+  {
+   "count": 3,
+   "text": "Auto valmis vasta to klo 13."
+  },
+  {
+   "count": 3,
+   "text": "oltava perillä viimeistään huomenna klo 20. auto on valmis noudettavaksi"
+  },
+  {
+   "count": 3,
+   "text": "Released after payment, not before tomorrow 11:00"
+  },
+  {
+   "count": 3,
+   "text": "Hi, colllect before 18:00, thank you"
+  },
+  {
+   "count": 3,
+   "text": "At destination Friday 20:00 latest."
+  },
+  {
+   "count": 3,
+   "text": "Released after payment, not before tomorrow 13:30. Order no 562630."
+  },
+  {
+   "count": 3,
+   "text": "Toimitus perille viim. huomenna klo 20. t. myynti"
+  },
+  {
+   "count": 3,
+   "text": "Voi noutaa perjantaina klo 10.30 alkaen"
+  },
+  {
+   "count": 3,
+   "text": "Viiden jälkeen ei enää luovutuksia / Hämtas före kl 17"
+  },
+  {
+   "count": 3,
+   "text": "destination clloses at 16:00. our ref: 107024"
+  },
+  {
+   "count": 3,
+   "text": "No plates, bring transfer plates!"
+  },
+  {
+   "count": 3,
+   "text": "Liike sulkee puoli kolmelta. Soita asiakkaalle tuntia ennen perillä oloa"
+  },
+  {
+   "count": 3,
+   "text": "Luovutetaan kun maksu näkyy, aikaisintaan perjantaina 14.00."
+  },
+  {
+   "count": 3,
+   "text": "hei vaan. manuaalivaihteet, kuski tarvii manuaalikortin."
+  },
+  {
+   "count": 3,
+   "text": "at destination fri 14:00 latest. booking ref 717228"
+  },
+  {
+   "count": 3,
+   "text": "Noudettavissa aikaisintaan perjantaina klo 13, meidän viite 528495"
+  },
+  {
+   "count": 3,
+   "text": "Noudettavissa aikaisintaan pe klo 7"
+  },
+  {
+   "count": 3,
+   "text": "luovutus vasta kun maksettu, aikaisintaan huomenna klo 10.30. avain autossa"
+  },
+  {
+   "count": 3,
+   "text": "Kohde auki arkisin klo 7 - 21. Voi noutaa huomenna klo 10.30 alkaen (ei klo 9.30)"
+  },
+  {
+   "count": 3,
+   "text": "Kan hämtas tidigast på fredag kl 13 / Auto valmistuu ylihuomenna yhdeltä"
+  },
+  {
+   "count": 3,
+   "text": "Nouto arkisin 9:stä 17:ään. Auto valmistuu huomenna 8.00"
+  },
+  {
+   "count": 3,
+   "text": "maksun jälkeen, ei ennen huomenna kello 11. t. myynti."
+  },
+  {
+   "count": 3,
+   "text": "Saa hakea vasta pe. kahdentoista jälkeen."
+  },
+  {
+   "count": 3,
+   "text": "oltava perillä viimeistään huomenna klo 16.30. kiitos"
+  },
+  {
+   "count": 3,
+   "text": "At destination tomorow 20:00 latest."
+  },
+  {
+   "count": 3,
+   "text": "still on summr tyres."
+  },
+  {
+   "count": 3,
+   "text": "Hi. Pickup weeekdays 7:00 - 14:30 only. Extra set of tyres in the boot, take along"
+  },
+  {
+   "count": 3,
+   "text": "Collect Mon-Fri 9am-5pm"
+  },
+  {
+   "count": 3,
+   "text": "Destinatioon open 9:00 - 21:00."
+  },
+  {
+   "count": 3,
+   "text": "Noudettavissa aikaisintaan huomenna klo 12.30. Soita kun olet lähllä."
+  },
+  {
+   "count": 3,
+   "text": "not ready befoe 15:00"
+  },
+  {
+   "count": 3,
+   "text": "We close at 16:30. At destination 20:00 latest. Thanks in advance."
+  },
+  {
+   "count": 3,
+   "text": "maksun jälkeen, ei ennen huomenna 15.00"
+  },
+  {
+   "count": 3,
+   "text": "ei rekkareita, kokeilvet tarvitaan"
+  },
+  {
+   "count": 3,
+   "text": "hi. in the workshop, ready tomrrow 10:30"
+  },
+  {
+   "count": 3,
+   "text": "ollaan täällä neljään saakka."
+  },
+  {
+   "count": 3,
+   "text": "Asiakas tulee hakemaan, perillä viim. maanantaina klo 20. Voi noutaa klo 17 alkaen."
+  },
+  {
+   "count": 3,
+   "text": "Hej. Mtotagaren stänger kl 15"
+  },
+  {
+   "count": 3,
+   "text": "Takaluukku jumittaa. Kiitos paljon"
+  },
+  {
+   "count": 3,
+   "text": "oltava perillä viimeistään huomenna klo 19.00"
+  },
+  {
+   "count": 3,
+   "text": "Auto valmis vasta huomenna klo 10.00, ei klo 9.00. Viite 797314."
+  },
+  {
+   "count": 3,
+   "text": "liike auki 8 - 14. asiakas noutaa maanantaina klo 20, auton oltava silloin perillä"
+  },
+  {
+   "count": 3,
+   "text": "akku heikko, voi tarvita apukäynnistyksen. soita ennen noutoa."
+  },
+  {
+   "count": 3,
+   "text": "At destination Monday 14:00 latest. Second set of wheels in the back"
+  },
+  {
+   "count": 3,
+   "text": "Hi. Summer tyres on, no winters"
+  },
+  {
+   "count": 3,
+   "text": "asiakas maksaa puoli kolmelta, luovutus sen jälkeen"
+  },
+  {
+   "count": 3,
+   "text": "Valmiina pihalla. Toimitus perille viim. maanantaina klo 20."
+  },
+  {
+   "count": 3,
+   "text": "We close at 18:00! At destination 20:00 latest. Booking ref 451535. Br, sales"
+  },
+  {
+   "count": 3,
+   "text": "Toimitus perille viim. ma klo 14. Ylimääräinen rengassarja takakontissa, mukaan"
+  },
+  {
+   "count": 3,
+   "text": "hei vaan. liike auki arksiin klo 8 - 20."
+  },
+  {
+   "count": 3,
+   "text": "Vastaanotto neljään asti. Auto pihalla ruudussa 34, avain tiskiltä"
+  },
+  {
+   "count": 3,
+   "text": "Perillä ma klo 12.00 mennessä"
+  },
+  {
+   "count": 3,
+   "text": "Valmiina pihalla. Toimitus perille viim. su klo 20. Korjaus: ma. Soita liikkeeseen ennen kuin tulet"
+  },
+  {
+   "count": 3,
+   "text": "nouto 8-17, t. myyynti"
+  },
+  {
+   "count": 3,
+   "text": "Toimitus perille viim. maanantaina klo 17.30. Kiitti"
+  },
+  {
+   "count": 3,
+   "text": "At destination Monday 12:30 latest"
+  },
+  {
+   "count": 3,
+   "text": "Hei vaan. Asiakas tulee hakemaan, perillä viim. ma klo 18."
+  },
+  {
+   "count": 3,
+   "text": "liike sulkee 19:00. perillä auki arkisin klo 9:00–20:00. kiitos paljon."
+  },
+  {
+   "count": 3,
+   "text": "At destination Monday 19:00 latest"
+  },
+  {
+   "count": 3,
+   "text": "Latest arrival Mon 8 pm"
+  },
+  {
+   "count": 3,
+   "text": "At destination Mon 20:00 latest, thanks in advance"
+  },
+  {
+   "count": 3,
+   "text": "hi. at destiantion monday 20:00 latest (not sunday). key in the car"
+  },
+  {
+   "count": 3,
+   "text": "vastaanotto klo 18.00 asti."
+  },
+  {
+   "count": 2,
+   "text": "Toimitus perille viim. huomenna klo 20!"
+  },
+  {
+   "count": 2,
+   "text": "terve. voi noutaa klo 11.30 allkaen"
+  },
+  {
+   "count": 2,
+   "text": "moi. perillä huomenna klo 15 mennessä. vastaanotto arkisin klo 7-21"
+  },
+  {
+   "count": 2,
+   "text": "Ready for pickup from 14:00"
+  },
+  {
+   "count": 2,
+   "text": "Hi there, at destination tomorrow 15:00 latest."
+  },
+  {
+   "count": 2,
+   "text": "Still on smumer tyres"
+  },
+  {
+   "count": 2,
+   "text": "Perillä liike kiinni klo 16.30 jälkeen. Liike kiinni klo 18, haettava ennen sitä."
+  },
+  {
+   "count": 2,
+   "text": "Must be at destination by tomorrow 20:00! Key box code 6434"
+  },
+  {
+   "count": 2,
+   "text": "Noudettavissa aikaisintaan huomenna klo 8, ei kun klo 9. Tilausnumero 78328"
+  },
+  {
+   "count": 2,
+   "text": "Call the customer an hour before arrrival."
+  },
+  {
+   "count": 2,
+   "text": "Perillä huomenna klo 20 mennessä. Nouto arkisin klo 8-19. Kiitos"
+  },
+  {
+   "count": 2,
+   "text": "Nouto arkisin 9 - 20. Vastaanottava liike auki arkissin 9 - 21. Avain autossa"
+  },
+  {
+   "count": 2,
+   "text": "destination open weekdays 7:00-21:00. at destination tomorrow 20:00 latest (not 21:00)"
+  },
+  {
+   "count": 2,
+   "text": "Toimitus perille viim. huomenna klo 14"
+  },
+  {
+   "count": 2,
+   "text": "oltava perillä viimeistään huomenna klo 20"
+  },
+  {
+   "count": 2,
+   "text": "Ollaan täällä klo 15.30 saakka. Kiitos paljon"
+  },
+  {
+   "count": 2,
+   "text": "auto vielä kesärenkailla. soita ennen noutoa"
+  },
+  {
+   "count": 2,
+   "text": "perillä huomenna klo 14 mennessä, rengassarja mukkaan"
+  },
+  {
+   "count": 2,
+   "text": "Oltava perillä viimeistään ke klo 20."
+  },
+  {
+   "count": 2,
+   "text": "at destination tomorrow 16:30 latest"
+  },
+  {
+   "count": 2,
+   "text": "car won't be ready until tomorrow 4pm. opening hours mon-fri 7am - 8pm"
+  },
+  {
+   "count": 2,
+   "text": "Lisärennkaat mukaan"
+  },
+  {
+   "count": 2,
+   "text": "Moi. Noudettavissa aikaisintaan kello 1330. Tilausnumero 260325."
+  },
+  {
+   "count": 2,
+   "text": "Asiakas tulee hakemaan, perillä viim. klo 17.30!"
+  },
+  {
+   "count": 2,
+   "text": "at destination tomorrow 20:00 latest. collect before 15:00. cheers."
+  },
+  {
+   "count": 2,
+   "text": "terve. akku heikko, voi tarvita apukäynnistyksen"
+  },
+  {
+   "count": 2,
+   "text": "Asiakas tulee hakemaan, perillä viim. torstaina klo 20. Liike auki arkisin 9-15"
+  },
+  {
+   "count": 2,
+   "text": "moi. vastaanotto onnistuu arkipäivisin 7.00–17.00. haku viimeistään klo 18.00."
+  },
+  {
+   "count": 2,
+   "text": "must arrive by tomorrow 7pm, sorry, i mean 8pm"
+  },
+  {
+   "count": 2,
+   "text": "noudettavissa aikaisintaan klo 13.30. viite 319435"
+  },
+  {
+   "count": 2,
+   "text": "Not ready before tomorrow 12:45. Must be at destination by tomorrow 19:00"
+  },
+  {
+   "count": 2,
+   "text": "Not ready before Fri 12:30, call 30 min before you arrive."
+  },
+  {
+   "count": 2,
+   "text": "Moi. Noudettavissa aikaisintaan huomenna klo 8. Perillä liike kiinni klo 16 jälkeen. Kiitos."
+  },
+  {
+   "count": 2,
+   "text": "Perillä huomenna klo 14.00 mennessä. Tiausnumero 690401"
+  },
+  {
+   "count": 2,
+   "text": "Asiakas tulee hakemaan, perillä viim. to klo 20. Liike kiinni klo 19, haettava ennen sitä"
+  },
+  {
+   "count": 2,
+   "text": "Ostaja maksaa ensin, auton saa kolmesta alkaen"
+  },
+  {
+   "count": 2,
+   "text": "perillä auki arkisin klo 9 - 20. perillä ylihuomenna klo 21 mennessä. korjaus: klo 20."
+  },
+  {
+   "count": 2,
+   "text": "Hejsan. Framme senast på fredag kl 16. Klar först på fredag kl 9."
+  },
+  {
+   "count": 2,
+   "text": "vstaanottava liike auki klo 7-18"
+  },
+  {
+   "count": 2,
+   "text": "Collect bfeore 19:00 / Nouto ennen klo 19. Ready for pickup from 16:00."
+  },
+  {
+   "count": 2,
+   "text": "Hi. Pickup Mon-Fri 9am - 6pm only"
+  },
+  {
+   "count": 2,
+   "text": "voi noutaa torstaina klo 13 alkaen. liike kiinni klo 20, haettava ennen sitä."
+  },
+  {
+   "count": 2,
+   "text": "Toimitusosoite auki ma-pe 8:sta 21:een. Valmiina to. klo 10.30 alkaen. Kiitti."
+  },
+  {
+   "count": 2,
+   "text": "Vastaanotto klo 18 asti, meidän viite 168486."
+  },
+  {
+   "count": 2,
+   "text": "Hi there. Not ready befre 11:30. Call 10 min before you arrive"
+  },
+  {
+   "count": 2,
+   "text": "auto vielä kesärenkailla. viite 622237. kiitos etukäteen"
+  },
+  {
+   "count": 2,
+   "text": "In the workshop, ready tomorrow 8:30 (not 9:30)"
+  },
+  {
+   "count": 2,
+   "text": "plaates removed, bring trade plates"
+  },
+  {
+   "count": 2,
+   "text": "Shop closes 6pm"
+  },
+  {
+   "count": 2,
+   "text": "Kauppa kesken: luovutus vasta maksun jälkeen, huomenna 9.30 alkaen"
+  },
+  {
+   "count": 2,
+   "text": "Auto vallmis vasta klo 14."
+  },
+  {
+   "count": 2,
+   "text": "Hei. Huom vielä kesärenkaat alla"
+  },
+  {
+   "count": 2,
+   "text": "at destination friday 20:00 latest. ref 532611"
+  },
+  {
+   "count": 2,
+   "text": "Viiitenro 37102"
+  },
+  {
+   "count": 2,
+   "text": "oltava perillä viimeistään huomenna klo 12.00! kiitos"
+  },
+  {
+   "count": 2,
+   "text": "Voi noutaa klo 15.30 alkaen. Soita 30 min ennen"
+  },
+  {
+   "count": 2,
+   "text": "kan hämtas i morgon kl 7 och framåt"
+  },
+  {
+   "count": 2,
+   "text": "voi nouata perjantaina klo 7 alkaen (ei huomenna). kiitos."
+  },
+  {
+   "count": 2,
+   "text": "vastaanottava liike auki arkisin klo 8-20. toimitus perille viim. ma klo 15!"
+  },
+  {
+   "count": 2,
+   "text": "Haettava ennen klo 20 / Vi stänger kl 20."
+  },
+  {
+   "count": 2,
+   "text": "Perilla pe klo 20 mennessa"
+  },
+  {
+   "count": 2,
+   "text": "moi, ei automaatti vaan manuuaali, soita asap jos tulee ongelmia"
+  },
+  {
+   "count": 2,
+   "text": "arkisin 7-18 nouto onnistuu. avaimet myyjältä"
+  },
+  {
+   "count": 2,
+   "text": "Hi. Receiving weekdays 9:00 - 20:00 only. In the workshpo, ready tomorrow 11:00."
+  },
+  {
+   "count": 2,
+   "text": "Aukioloajat: ma-pe 7 - 20. Odottaa osia, valmis huomenna klo 14.30"
+  },
+  {
+   "count": 2,
+   "text": "Hei. Oltava perillä viimeistään maanantai puoli yhdeltä / Framme senast på måndag klockan halv ett. Odottaa osia, valmis huomenna 11.45"
+  },
+  {
+   "count": 2,
+   "text": "Vår ref 668586"
+  },
+  {
+   "count": 2,
+   "text": "Nouto ennen klo 20. Perillä huomenna klo 12.30 mennessä. Soita 20 min ennen"
+  },
+  {
+   "count": 2,
+   "text": "lisärenkata mukaan."
+  },
+  {
+   "count": 2,
+   "text": "Ostaja maksaa ensin, auton saa huomenna klo 9 alkaen."
+  },
+  {
+   "count": 2,
+   "text": "Auto vielä kesärenkailla. Soita ennen noutoa. Kiitos taas"
+  },
+  {
+   "count": 2,
+   "text": "released after payment, not before tomorrow 12:00. call 15 min before you arrive. br, sales"
+  },
+  {
+   "count": 2,
+   "text": "Asiakas tulee hakemaan, perillä viim. huomenna klo 15"
+  },
+  {
+   "count": 2,
+   "text": "Öppet mån-fre 7-15.30. Mvh försäljningen"
+  },
+  {
+   "count": 2,
+   "text": "pappren i handskfacket."
+  },
+  {
+   "count": 2,
+   "text": "car is ready and waitig. thank you."
+  },
+  {
+   "count": 2,
+   "text": "nouto ennen klo 20. huolto kesken, valmis klo 16. avain autossa"
+  },
+  {
+   "count": 2,
+   "text": "Not ready before tomorrow 7:00. Receiving until 16:30 only."
+  },
+  {
+   "count": 2,
+   "text": "Huolto kesken, valmis klo 17. Nouto ennen klo 18"
+  },
+  {
+   "count": 2,
+   "text": "Vastaanottava liike auki arkisin klo 8.00 - 20.00. Perillä huomenna klo 17.00 mennessä. Avain avainboksissa, koodi 7697"
+  },
+  {
+   "count": 2,
+   "text": "Auto valmis, nouto heti kun sopii. Kiire, asiakas odottaa. Perillä maanantaina klo 19 mennessä"
+  },
+  {
+   "count": 2,
+   "text": "toimitus perille viim. huomenna klo 20. nouto ennen klo 18. hyvää päivänjatkoa."
+  },
+  {
+   "count": 2,
+   "text": "asiakas tulee hakemaan, perilla viim. maanantaina klo 20. hyvaa paivanjatkoa"
+  },
+  {
+   "count": 2,
+   "text": "Huolto kesken, valmis huomenna klo 13.00, ei klo 12.00. Kiitos"
+  },
+  {
+   "count": 2,
+   "text": "maksun jäleken, ei ennen huomenna klo 9.30. kiitti"
+  },
+  {
+   "count": 2,
+   "text": "Hi there. Ltaest arrival tmrw 8pm. Not ready before tmrw 8am"
+  },
+  {
+   "count": 2,
+   "text": "Destination open weekdays 8:00-21:00. At destination Monday 13:00 latest! Br, sales."
+  },
+  {
+   "count": 2,
+   "text": "Receiving until 16:30 only."
+  },
+  {
+   "count": 2,
+   "text": "Kiire, asiakas odottaa. Perillä huomenna klo 19 mennessä"
+  },
+  {
+   "count": 2,
+   "text": "perilla maanantaina klo 20 mennessa. haettava ennen klo 14."
+  },
+  {
+   "count": 2,
+   "text": "Aukioloajat: arkisin 9:stä 14:ään, rengassarja mukaan."
+  },
+  {
+   "count": 2,
+   "text": "Pappren i hansdkfacket. Referens 874571"
+  },
+  {
+   "count": 2,
+   "text": "Bilen står klar."
+  },
+  {
+   "count": 2,
+   "text": "Manual, driver needs a manual licence. Our ref: 990356"
+  },
+  {
+   "count": 2,
+   "text": "Huoto kesken, valmis klo 14."
+  },
+  {
+   "count": 2,
+   "text": "Hej. Klar, kan hämtas direkt. Öppet vardagar 8.00 - 15.30. Mvh försäljningen"
+  },
+  {
+   "count": 2,
+   "text": "Asiakas tulee hakemaan, perillä viim. maanantaina klo 20.00"
+  },
+  {
+   "count": 2,
+   "text": "auto valims, nouto heti kun sopii"
+  },
+  {
+   "count": 2,
+   "text": "At destination 6:30pm latest. Call 10 min before you arrive"
+  },
+  {
+   "count": 2,
+   "text": "Huolto kesken, valmis klo 15.30. Vaastaanottava liike auki klo 9.00-21.00"
+  },
+  {
+   "count": 2,
+   "text": "takaluukku jumittaa, kiitti"
+  },
+  {
+   "count": 2,
+   "text": "still on summer tyres."
+  },
+  {
+   "count": 2,
+   "text": "not ready before tomorrow 9:00. shop closes 15:00."
+  },
+  {
+   "count": 2,
+   "text": "Oltava perillä viimeistään huomenna klo 16 / Framme senast i morgon kl 16.00"
+  },
+  {
+   "count": 2,
+   "text": "Not ready before 4:30pm, sorry, I mean 3:30pm"
+  },
+  {
+   "count": 2,
+   "text": "moikka. vastaanottava liike auki arkisin klo 10-16.30. auto valmis vasta torstaina klo 7."
+  },
+  {
+   "count": 2,
+   "text": "Voi noutaa keskiviikkona klo 8.45 alkaen. Tilausnro 898833"
+  },
+  {
+   "count": 2,
+   "text": "moi. huolto kesken, valmis to klo 14"
+  },
+  {
+   "count": 2,
+   "text": "auto valmis vasta ke klo 7.00"
+  },
+  {
+   "count": 2,
+   "text": "Voi noutaa torstaina klo 10 alkaen"
+  },
+  {
+   "count": 2,
+   "text": "toimitus perille viim. torstaina klo 13.00!"
+  },
+  {
+   "count": 2,
+   "text": "perillä to klo 20 mennessä!"
+  },
+  {
+   "count": 2,
+   "text": "Perillä liike kiinni klo 18 jälkeen, varaus 989622"
+  },
+  {
+   "count": 2,
+   "text": "Liike kiinni klo 17, haettava ennen sitä, ei kun klo 18. Lisärekaat mukaan"
+  },
+  {
+   "count": 2,
+   "text": "Ready for pickup from 16:00. Call before pickup. Thanks in advance"
+  },
+  {
+   "count": 2,
+   "text": "Huom aukioloajta arkisin klo 8-17"
+  },
+  {
+   "count": 2,
+   "text": "Ready for pickup from tomorrow 8:45. Must be at destination by tomorrow 19:00."
+  },
+  {
+   "count": 2,
+   "text": "nouto ennen klo 17, ei kun klo 16."
+  },
+  {
+   "count": 2,
+   "text": "Kohde suklee klo 16.00. Valmiina pihalla."
+  },
+  {
+   "count": 2,
+   "text": "Oltava perillä viimeistään huomenna 19.00"
+  },
+  {
+   "count": 2,
+   "text": "ostaja maksaa ensin, auton saa huomenna klo 14.00 alkaen."
+  },
+  {
+   "count": 2,
+   "text": "Must be at destination by Friday 18:00. Booking ref 943206."
+  },
+  {
+   "count": 2,
+   "text": "small dent right door, take photos at pickup. call asap if any isssues"
+  },
+  {
+   "count": 2,
+   "text": "Maksun jälkeen, ei ennen huomenna klo 13."
+  },
+  {
+   "count": 2,
+   "text": "terve. vastaanotto ma-pe 7:stä 20:een."
+  },
+  {
+   "count": 2,
+   "text": "Maksun jälkeen, ei ennen huomenna klo 13.30"
+  },
+  {
+   "count": 2,
+   "text": "Pitää olla perillä pe neljään mennessä, kiitos, thx"
+  },
+  {
+   "count": 2,
+   "text": "not ready before 12:30 / valmiina kello 12.30 alkaen. call before pickkup"
+  },
+  {
+   "count": 2,
+   "text": "Must be at destination by Fri 20:00. Thanks in advance"
+  },
+  {
+   "count": 2,
+   "text": "toimitus perille viim. huomenna klo 20. avaimet myyjältä."
+  },
+  {
+   "count": 2,
+   "text": "Moikka. Oltava perillä viimeistään klo 15.00"
+  },
+  {
+   "count": 2,
+   "text": "Huolto kesken, valmis huomenna yhdeltätoista"
+  },
+  {
+   "count": 2,
+   "text": "Takaluukku jumittaa. Soita kun olet lähellä"
+  },
+  {
+   "count": 2,
+   "text": "huolto kesken, valmis klo 15.30"
+  },
+  {
+   "count": 2,
+   "text": "Moi. Auton voi hakea 7:sta 18:aan. Voi noutaa huomenna 12:sta alkaen. Viite 535232."
+  },
+  {
+   "count": 2,
+   "text": "huom aukioolajat arkisin klo 9.00-20.00."
+  },
+  {
+   "count": 2,
+   "text": "Perillä huomenna klo 18 mennessä!"
+  },
+  {
+   "count": 2,
+   "text": "Huom aukioloajat 9 - 20. Toimitus perille viim. maanantaina klo 18."
+  },
+  {
+   "count": 2,
+   "text": "call 30 min before you arrivve."
+  },
+  {
+   "count": 2,
+   "text": "Perillä pe klo 16.00 mennessä. Auto on valmis noudettavaksi. Viitenro 470501"
+  },
+  {
+   "count": 2,
+   "text": "Oltava perillä viimeistään huomenna 14.30"
+  },
+  {
+   "count": 2,
+   "text": "moikka, käsivaihteinen"
+  },
+  {
+   "count": 2,
+   "text": "Luovutus vasta kun maksettu, aikaisintaan huomenna klo 12."
+  },
+  {
+   "count": 2,
+   "text": "Saknar skyltar, ta med provskyltar."
+  },
+  {
+   "count": 2,
+   "text": "Perillä torstaina klo 20.00 mennessä. Ilmoita kun lähdet"
+  },
+  {
+   "count": 2,
+   "text": "vår ref 693939. ring innan hämtning."
+  },
+  {
+   "count": 2,
+   "text": "To. klo 13 valmis. Vastaanottava liike auki ma-pe 7 - 20."
+  },
+  {
+   "count": 2,
+   "text": "Auto valmis vasta pe klo 16"
+  },
+  {
+   "count": 2,
+   "text": "Vastaanottava liike auki klo 7-21. Terveisin myynit"
+  },
+  {
+   "count": 2,
+   "text": "Vastaanotto arkisn 7 - 20"
+  },
+  {
+   "count": 2,
+   "text": "nouto ennen klo 16.30 / vi stänger kl 16.30"
+  },
+  {
+   "count": 2,
+   "text": "Buyer pays first, pickup from tomorrow 12:00"
+  },
+  {
+   "count": 2,
+   "text": "Must be at destination by Mon 20:00. Pickup weekdays 7:00-19:00 only. Car in bay 22, keys at the desk"
+  },
+  {
+   "count": 2,
+   "text": "earliest pickup tomorrow 9 am. opening hours weekdays 10 am–2 pm"
+  },
+  {
+   "count": 2,
+   "text": "perillä auki vain neljään asti. auto valmiina, haettavissa heti"
+  },
+  {
+   "count": 2,
+   "text": "At destination tomorrow 19:00 latest."
+  },
+  {
+   "count": 2,
+   "text": "kesärenkaat alla, ei talvirenkaita"
+  },
+  {
+   "count": 2,
+   "text": "At destination Mon 19:00 latest"
+  },
+  {
+   "count": 2,
+   "text": "toimitus perille viim. huomenna klo 20."
+  },
+  {
+   "count": 2,
+   "text": "Kan hämtas tidigast i morgon kl 9.00. Öppet vardagar kl 9.00-14.00."
+  },
+  {
+   "count": 2,
+   "text": "maksun jälkeen, ei ennen huomenna klo 12.00. renkaat takakontissa, menee mukana."
+  },
+  {
+   "count": 2,
+   "text": "Huomenna 7.00 vaalmis."
+  },
+  {
+   "count": 2,
+   "text": "toimitus perille viim. huomenna klo 14."
+  },
+  {
+   "count": 2,
+   "text": "Must be at destination by Mon 12:00 / Oltava perillä viimeistään maanantaina klo 12"
+  },
+  {
+   "count": 2,
+   "text": "Oltava perillä viimeistään maanantaina klo 13.30."
+  },
+  {
+   "count": 2,
+   "text": "Moi. Toimitus viimeistään maanantaina klo 20. Ma-pe 10-17 nouto onnistuu"
+  },
+  {
+   "count": 2,
+   "text": "Perillä huomenna klo 20.00 mennessä! Valmis, voi hakea heti. Soita 20 min ennen"
+  },
+  {
+   "count": 2,
+   "text": "Luovutus vasta kun maksettu, aikaisintaan huomenna kahdeltatoista"
+  },
+  {
+   "count": 2,
+   "text": "Nouto ennen klo 15.30. Toimitus perille viim. sunnuntaina klo 20, ei kun maanantaina"
+  },
+  {
+   "count": 2,
+   "text": "Perillä maanantaina klo 20 mennessä!"
+  },
+  {
+   "count": 2,
+   "text": "Maksun jälkeen, ei ennen huomenna klo 11.30"
+  },
+  {
+   "count": 2,
+   "text": "Hejsan. Bilen står klar."
+  },
+  {
+   "count": 2,
+   "text": "moi. huolto kesken, valmis huomenna klo 7.00. toimitus perille viim. ma klo 19.00."
+  },
+  {
+   "count": 2,
+   "text": "Destination open weekdays 8:00-21:00, call 30 min before you arriive, thanks"
+  },
+  {
+   "count": 2,
+   "text": "Toimitus perille viim. huomenna klo 14. 4 rengasta vanteilla tavaratilassa"
+  },
+  {
+   "count": 2,
+   "text": "Moi. Nouto ennen klo 18 (ei klo 17)"
+  },
+  {
+   "count": 2,
+   "text": "Ready for pickup from tomorrow 7:00, sorry, I mean 8:00. Booking ref 365009"
+  },
+  {
+   "count": 2,
+   "text": "ei rekkaeita, koekilvet tarvitaan. kiitos, thx"
+  },
+  {
+   "count": 2,
+   "text": "perillä huomenna klo 13.00 mennessä"
+  },
+  {
+   "count": 2,
+   "text": "At destination tomorrow 18:00 latest! Receiving weekdays 8:00 - 20:00 only. Thanks in advance."
+  },
+  {
+   "count": 2,
+   "text": "Buyer pays first, pickup from tomorrow 12:00. Key box code 1099"
+  },
+  {
+   "count": 2,
+   "text": "Mottagaren har öppet 7 - 20"
+  },
+  {
+   "count": 2,
+   "text": "Auto ilman kiliä."
+  },
+  {
+   "count": 2,
+   "text": "Not ready before tomorrow 9:00. At destination Mon 16:00 latest. Call 30 min befoer you arrive"
+  },
+  {
+   "count": 2,
+   "text": "Summer tyres on, no winters. Call the customer an hour before arrival"
+  },
+  {
+   "count": 2,
+   "text": "it's a manual."
+  },
+  {
+   "count": 2,
+   "text": "Nouto ennen klo 15.30. Korjaus: klo 16.30, t. myynti"
+  },
+  {
+   "count": 2,
+   "text": "Opening hours Mon-Fri 9am - 7pm. Order no 852112."
+  },
+  {
+   "count": 2,
+   "text": "in the workshop, ready 14:00. br, sales"
+  },
+  {
+   "count": 2,
+   "text": "Öppet 9-19. Måste vara framme senast på måndag kl 20!"
+  },
+  {
+   "count": 2,
+   "text": "Ready for pickup from 15:30 / Huolto kesken, valmis klo 15.30."
+  },
+  {
+   "count": 2,
+   "text": "Liike auki arkisin klo 7 - 19. Perillä ma klo 20 mennessä. t. myynti"
+  },
+  {
+   "count": 2,
+   "text": "oltava perillä viimeistään ma klo 20."
+  },
+  {
+   "count": 2,
+   "text": "Kesärenkaat alla, ei talvirenkaita. Rengassarja muakan."
+  },
+  {
+   "count": 2,
+   "text": "Toimitus perille viim. ma klo 19. Noudettavissa klo 9-20"
+  },
+  {
+   "count": 2,
+   "text": "Asiakas tulee hakemaan, perillä viim. maanantaina kolmelta!"
+  },
+  {
+   "count": 2,
+   "text": "Auto vielä kesärenkailla. Kiitos taas"
+  },
+  {
+   "count": 2,
+   "text": "voi noutaa klo 18 alkaen. vastaanotto klo 10 - 18."
+  },
+  {
+   "count": 2,
+   "text": "Perillä liike kiinni klo 17.00 jälkeen / Destination closes at 17:00. Soita asiakkaalle tuntia ennen perillä oloa. Kiitti"
+  },
+  {
+   "count": 2,
+   "text": "moi. toimitus perille viim. ma klo 15."
+  },
+  {
+   "count": 2,
+   "text": "perillä maanantaina klo 20.00 mennessä."
+  },
+  {
+   "count": 2,
+   "text": "manual, driver needs a manual licence"
+  },
+  {
+   "count": 1,
+   "text": "saknar skyltar, ta med provskyltar. ordernr 397094."
+  },
+  {
+   "count": 1,
+   "text": "Nouto ennen klo 19. Auto pihalla ruudussa 30, avain tisklitä"
+  },
+  {
+   "count": 1,
+   "text": "Moikka. Perillä klo 13 mennessä, eikun klo 14"
+  },
+  {
+   "count": 1,
+   "text": "manuaalviaihteinen"
+  },
+  {
+   "count": 1,
+   "text": "ready for pickup from thursday 10:00 / huuolto kesken, valmis torstaina klo 10. destination open 9:00-21:00"
+  },
+  {
+   "count": 1,
+   "text": "Asiakas tulee hakemaan, perillä viim. huomenna klo 20. Liike kiinni klo 20, haettaa ennen sitä. Kiitti."
+  },
+  {
+   "count": 1,
+   "text": "Perillä perjantaina klo 20 mennessä."
+  },
+  {
+   "count": 1,
+   "text": "Moikka, nouto ennen klo 14.30 / Hämtsa före kl 14.30."
+  },
+  {
+   "count": 1,
+   "text": "hei. ostaja maksaa ensin, auton saa huomnena klo 12 alkaen. korjaus: klo 13."
+  },
+  {
+   "count": 1,
+   "text": "Ready for pickup from 1pm"
+  },
+  {
+   "count": 1,
+   "text": "kiire, asiakas odottaa. perillä huomenna 16:00 mennessä. liike auki arkisin 7:00–18:00. varaus 847843"
+  },
+  {
+   "count": 1,
+   "text": "Moi. Nouto ennen klo 18.00. Toimitus perille viim. huomenna klo 14.00. Soita 15 min ennen."
+  },
+  {
+   "count": 1,
+   "text": "kesärenkaat alla, ei talvirenkaita. soita kun olet lähellä"
+  },
+  {
+   "count": 1,
+   "text": "no plates, bring transfer plates"
+  },
+  {
+   "count": 1,
+   "text": "not ready befre tomorrow 14:00"
+  },
+  {
+   "count": 1,
+   "text": "collect before 20:00 (not 19:00). at destination tomorrow 14:30 latest"
+  },
+  {
+   "count": 1,
+   "text": "nouto ennen klo 18.00. asiakas tulee hakemaan, perillä viim. perjantaina klo 20.00."
+  },
+  {
+   "count": 1,
+   "text": "voi noutaa ke klo 13 alkaen"
+  },
+  {
+   "count": 1,
+   "text": "Perillä auki arkisin 9.00-20.00."
+  },
+  {
+   "count": 1,
+   "text": "Vastaanotto onnistuu arkisin 7 - 21. Ollaan täällä klo 20 saakka"
+  },
+  {
+   "count": 1,
+   "text": "Saa hakea vasta huomenna puoli neljän jälkeen. Kohde auki arkipäivisin 9.00–20.00. Terveisin myynti."
+  },
+  {
+   "count": 1,
+   "text": "framme senast i morgon kl 13.30"
+  },
+  {
+   "count": 1,
+   "text": "Obs sommardäck på."
+  },
+  {
+   "count": 1,
+   "text": "oltava perillä viimeistään huomenna klo 19.00, kiitos taas"
+  },
+  {
+   "count": 1,
+   "text": "Vastaanottava liike auki arkisin klo 8.00-21.00. Liike auki arkisin klo 8.00-17.00. Rengassarja mkaan. Kiitos"
+  },
+  {
+   "count": 1,
+   "text": "Auto valmis vasta pe klo 10. Noudettavissa arkisin klo 9 - 18. Tilausnro 115087"
+  },
+  {
+   "count": 1,
+   "text": "Asiakas tulee hakemaan, perillä viim. huomenna klo 17. Kiitos."
+  },
+  {
+   "count": 1,
+   "text": "Vastaanottava liike auki arkisin 7-20. Voi noutaa pe klo 14 alkaen"
+  },
+  {
+   "count": 1,
+   "text": "must arrive by tmrw 20:00"
+  },
+  {
+   "count": 1,
+   "text": "toimitus perille viim. huomenna klo 14.30. kiitos etukäteen."
+  },
+  {
+   "count": 1,
+   "text": "Ostaja maksaa ensin, auton saa huomenna klo 9.30 alkaen"
+  },
+  {
+   "count": 1,
+   "text": "Oltava perillä viimeistään ma klo 15"
+  },
+  {
+   "count": 1,
+   "text": "Voi noutaa perjantaina klo 9 alkaen / Klar först på fredag kl 9. Oltava perillä viimeistään perjantaina klo 16!"
+  },
+  {
+   "count": 1,
+   "text": "customer picks it up fri 12:30, must be there by then. thx"
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. pe klo 17!"
+  },
+  {
+   "count": 1,
+   "text": "Oltava perillä viimeistään perjantaina klo 19. Nouto arkisin 7 - 19."
+  },
+  {
+   "count": 1,
+   "text": "käsivaihteet."
+  },
+  {
+   "count": 1,
+   "text": "nobody here after 6 pm / liike kiinni 18.00, haettava ennen sitä. order no 836250. thx"
+  },
+  {
+   "count": 1,
+   "text": "Toimtius perille viim. huomenna klo 14."
+  },
+  {
+   "count": 1,
+   "text": "Framme senast i morgon kl 20.00"
+  },
+  {
+   "count": 1,
+   "text": "oltava perillä viimeistään perjantaina klo 20."
+  },
+  {
+   "count": 1,
+   "text": "Perillä perjantaina klo 16.00 mennessä"
+  },
+  {
+   "count": 1,
+   "text": "perrillä ma klo 20.00 mennessä"
+  },
+  {
+   "count": 1,
+   "text": "Moi. Ostaja maksaa ensin, auton saa huomenna klo 11 alkaen"
+  },
+  {
+   "count": 1,
+   "text": "perillä liike kiinni klo 16.30 jälkeen."
+  },
+  {
+   "count": 1,
+   "text": "asiakas tulee hakemaan, perillä viim. huomenna klo 14"
+  },
+  {
+   "count": 1,
+   "text": "hello, must be at destination by friday 18:00"
+  },
+  {
+   "count": 1,
+   "text": "summer tyres on, no winters. call the customer an hour before arrival"
+  },
+  {
+   "count": 1,
+   "text": "Nouto ennen klo 14.30 / Hämtas före kl 14.30."
+  },
+  {
+   "count": 1,
+   "text": "nouto ennen klo 14. asiakas tulee hakemaan, perillä viim. huomenna klo 20. kiitos, thx"
+  },
+  {
+   "count": 1,
+   "text": "Voi noutaa klo 13.30 alkaen (ei klo 14.30). Haettava ennen klo 18."
+  },
+  {
+   "count": 1,
+   "text": "Luovutus vasta kun maksettu, aikaisintaan klo 15"
+  },
+  {
+   "count": 1,
+   "text": "Mottagaren har öppet mån-fre kl 8–21. Vår ref 704193"
+  },
+  {
+   "count": 1,
+   "text": "Hi. In the workshop, ready Fri 11:30."
+  },
+  {
+   "count": 1,
+   "text": "Huolto ksken, valmis huomenna klo 9.30. Avain avainboksissa, koodi 8676. Kiitos."
+  },
+  {
+   "count": 1,
+   "text": "Terve. Oltava perillä viimeistään ma klo 20"
+  },
+  {
+   "count": 1,
+   "text": "Nouto ennen klo 18. Oltava perillä viimeistään huomenna klo 18. Kiitos taas"
+  },
+  {
+   "count": 1,
+   "text": "Toimitus viimeistään maanantaina kello 20.00"
+  },
+  {
+   "count": 1,
+   "text": "luovutus vasta kun maksettu, aikaisintaan huomenna klo 12.00."
+  },
+  {
+   "count": 1,
+   "text": "toimitus perille viim. huomenna klo 13"
+  },
+  {
+   "count": 1,
+   "text": "Buyer pays first, pickup from tomorrow 9:30. Call before pickup."
+  },
+  {
+   "count": 1,
+   "text": "Auto valmis vasta huomenna klo 14 (ei klo 13)"
+  },
+  {
+   "count": 1,
+   "text": "voi noutaa huomenna klo 8 alkaen. oltava perillä viimeistään maanantaina klo 13.30"
+  },
+  {
+   "count": 1,
+   "text": "Hei. Huomenna kello 9 valmis. Auto pihalla ruudussa 5, avain tiskiltä"
+  },
+  {
+   "count": 1,
+   "text": "Asiakas tulee hakemaan, perillä viim. huomenna klo 20.00. Kiitti."
+  },
+  {
+   "count": 1,
+   "text": "framme senast på månddag kl 18.30. ring innan hämtning. mvh försäljningen"
+  },
+  {
+   "count": 1,
+   "text": "maksun jälkeen, ei ennen huomenna klo 9.00"
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. ma klo 20. Haettava ennen klo 18"
+  },
+  {
+   "count": 1,
+   "text": "extra set of tyres in the boot, take along. call 15 min before you arirve."
+  },
+  {
+   "count": 1,
+   "text": "Måste vara framme senast i morgon kl 19, nej förlåt, kl 20"
+  },
+  {
+   "count": 1,
+   "text": "Must be at destination by Monday 20:00. Pickup weekdays 9:00-19:00 only"
+  },
+  {
+   "count": 1,
+   "text": "Perillä huomenna klo 20 mennessä"
+  },
+  {
+   "count": 1,
+   "text": "luovutus vasta kun maksettu, aikaisintaan huomenna klo 14."
+  },
+  {
+   "count": 1,
+   "text": "Voi noutaa huomenna puoli yhdestä alkaen. Toimitusosoite auki arkipäivisin 8.00–21.00"
+  },
+  {
+   "count": 1,
+   "text": "mottagning kl 9.00 - 17.00. kan hämtas i morgon klockan nio och framåt."
+  },
+  {
+   "count": 1,
+   "text": "auto valmistuu kahdeltatoista. täällä ei ketään 20 jälkeen! avaimet huollon tiskiltä"
+  },
+  {
+   "count": 1,
+   "text": "Moi. Voi noutaa klo 12 alkaen. Liike auki arkisni 9-18."
+  },
+  {
+   "count": 1,
+   "text": "must be at destination by mon 20:00, not sun!"
+  },
+  {
+   "count": 1,
+   "text": "luovutus vasta kun maksettu, aikaisintaan klo 14.30"
+  },
+  {
+   "count": 1,
+   "text": "vår ref 747706."
+  },
+  {
+   "count": 1,
+   "text": "Perillä ma klo 20 mennessä. Nouto arkisin 10 - 16"
+  },
+  {
+   "count": 1,
+   "text": "Hej, bilen står klar"
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. ma klo 20.00. Huolto kesken, valmis klo 14.30"
+  },
+  {
+   "count": 1,
+   "text": "Auto vielä kesärenkailla, kiitti"
+  },
+  {
+   "count": 1,
+   "text": "Opening hours Mon–Fri 8am–4pm"
+  },
+  {
+   "count": 1,
+   "text": "haettaa ennen klo 18.00. 2 sarjaa renkaita, toinen sarja kontissa"
+  },
+  {
+   "count": 1,
+   "text": "asiakas tulee hakemaan, perilla viim. ma klo 17!"
+  },
+  {
+   "count": 1,
+   "text": "Tankissa vähän, kiitos taas"
+  },
+  {
+   "count": 1,
+   "text": "toimitus perille viim. ma klo 19.00, t. myynti."
+  },
+  {
+   "count": 1,
+   "text": "Manuaalivaihteet, kuski tarvii manuaalikortin"
+  },
+  {
+   "count": 1,
+   "text": "Auki vain 16 asti"
+  },
+  {
+   "count": 1,
+   "text": "Collect before 18:00. At destination Thu 12:00 latest"
+  },
+  {
+   "count": 1,
+   "text": "Huolto kesken, valmis klo 13. Kohde auki arkisin klo 9-21"
+  },
+  {
+   "count": 1,
+   "text": "toimitus perille viim. pe klo 20! kiitos, thx"
+  },
+  {
+   "count": 1,
+   "text": "Valmiina puoli yhdestä alkaen. Kiitos"
+  },
+  {
+   "count": 1,
+   "text": "Oltava perillä viimeitään pe kello 18. Meidän viite 963127"
+  },
+  {
+   "count": 1,
+   "text": "we close at 19:00. at destination tomorrow 19:00 latest. keys from reception. br, sales"
+  },
+  {
+   "count": 1,
+   "text": "Moi, pitää olla perillä keskiviikkona kello 1400 mennessä"
+  },
+  {
+   "count": 1,
+   "text": "Perillä torstaina klo 20 mennessä. Kiitti."
+  },
+  {
+   "count": 1,
+   "text": "asiakas tulee hakemaan, perillä viim. huomenna klo 19.00!"
+  },
+  {
+   "count": 1,
+   "text": "hei. vastaanottava liike auki arkisin klo 9 - 20. oltava perillä viimeistään to klo 20. kiitti."
+  },
+  {
+   "count": 1,
+   "text": "Must be at destination by tomorrow 14:00. We close at 20:00. Call the customer an hour before arrival"
+  },
+  {
+   "count": 1,
+   "text": "Keskiviikkona 8.30 valmis."
+  },
+  {
+   "count": 1,
+   "text": "Receiving weekdays 8:00-20:00 only. Ready for pickup from Thursday 14:00"
+  },
+  {
+   "count": 1,
+   "text": "Moikka. Perillä huomenna klo 20 mennessä. Huolto kesken, valmis klo 19. 2 sarjaa renkaita, toinen sarja kontissa"
+  },
+  {
+   "count": 1,
+   "text": "In the workshop, ready 11:30"
+  },
+  {
+   "count": 1,
+   "text": "olava perillä viimeistään maanantaina klo 20. tilausnumero 259730."
+  },
+  {
+   "count": 1,
+   "text": "hello. not ready before friday 9:30. we close at 20:00. keys from reception. thank you"
+  },
+  {
+   "count": 1,
+   "text": "vastaanotto arkisin 9 - 20. huolto kesken, vaalmis to klo 9.30. soita 30 min ennen"
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. maanantaina klo 20.00."
+  },
+  {
+   "count": 1,
+   "text": "aukioloajat: arkisin 7-17"
+  },
+  {
+   "count": 1,
+   "text": "Must be at destination by tomorrow 20:00, booking ref 50049, thanks in advance"
+  },
+  {
+   "count": 1,
+   "text": "Hämtning kl 9 - 19. Framme senast på torsdag kl 18."
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. torstaina klo 20.00, soita ennen noutoa"
+  },
+  {
+   "count": 1,
+   "text": "Opening hours 7:00 - 20:00 / Nouto 7-20."
+  },
+  {
+   "count": 1,
+   "text": "Auto ilman kiilpiä. Kiitos, thx"
+  },
+  {
+   "count": 1,
+   "text": "asiakas noutaa maanantaina kello 20, auton oltava silloin perillä."
+  },
+  {
+   "count": 1,
+   "text": "must be at destination by tomorrow 14:00!"
+  },
+  {
+   "count": 1,
+   "text": "Vastaanotto arkisn 7-21, ilmoita kun lähdet."
+  },
+  {
+   "count": 1,
+   "text": "luovutus vasta kun maksettu, aikaisintaan huomenna klo 8.30"
+  },
+  {
+   "count": 1,
+   "text": "Kan hämtas tidigast i morgon klockan två. Tack."
+  },
+  {
+   "count": 1,
+   "text": "perillä huomenna klo 20 mennessä."
+  },
+  {
+   "count": 1,
+   "text": "Periillä auki 7 - 20. Viimeistään huomenna kahdelta perillä. Kiitos taas"
+  },
+  {
+   "count": 1,
+   "text": "sommardäcken i bakluckan, följer med. tack på förhand"
+  },
+  {
+   "count": 1,
+   "text": "huolto kesken, valmis huomenna klo 8. korjaus: klo 7. oltava perillä viimeistään perjantaina puoli neljältä"
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. perjantaina klo 15.00."
+  },
+  {
+   "count": 1,
+   "text": "Hello. Released after payment, not before tomorrow 11:30. Cheers"
+  },
+  {
+   "count": 1,
+   "text": "asiakas tulee hakemaan, perillä viim. perjantaina klo 19"
+  },
+  {
+   "count": 1,
+   "text": "mottagaren har öppet mån-fre 9.00 - 21.00"
+  },
+  {
+   "count": 1,
+   "text": "Poistettu reisteristä, tarvitaan siirtokilvet."
+  },
+  {
+   "count": 1,
+   "text": "Hej. Mottagaren har öppet vardagar kl 7-16. Mvh försäljningen."
+  },
+  {
+   "count": 1,
+   "text": "Manal gearbox"
+  },
+  {
+   "count": 1,
+   "text": "auto on valmis noudettavakssi"
+  },
+  {
+   "count": 1,
+   "text": "meilla auki klo 10–15.30, kiitti."
+  },
+  {
+   "count": 1,
+   "text": "viimeistään huomenna kello 20 perillä"
+  },
+  {
+   "count": 1,
+   "text": "At destination Mon 20:00 latest!"
+  },
+  {
+   "count": 1,
+   "text": "Car has no plattes, bring trade plates"
+  },
+  {
+   "count": 1,
+   "text": "Öppet vardagar 9.00-16.30. Hälsningar"
+  },
+  {
+   "count": 1,
+   "text": "perillä liike kiinni klo 17.00 jälkeen"
+  },
+  {
+   "count": 1,
+   "text": "Perillä ma klo 18 mennessä"
+  },
+  {
+   "count": 1,
+   "text": "vastaanotto klo 16.30 asti. noudettavissa aikaisintaan huomenna klo 12.45, ei kun klo 11.45. soita liikkeeseen ennen kuin tulet!"
+  },
+  {
+   "count": 1,
+   "text": "Huom aukioloajat klo 9 - 18. Noudettavissa aikaisintaan klo 11.30. Soita ennen noutoa"
+  },
+  {
+   "count": 1,
+   "text": "Haettava ennen klo 17, eikun klo 16. Toimitus perille viim. huomenna klo 20"
+  },
+  {
+   "count": 1,
+   "text": "Moikka. Luovutus vasta kun maksettu, aikaisintaan huomenna klo 11"
+  },
+  {
+   "count": 1,
+   "text": "avoinna ma-pe 9:stä 15:een. kiitos, thx."
+  },
+  {
+   "count": 1,
+   "text": "deliver no later than monday 8pm. not ready before tomorrow 8am."
+  },
+  {
+   "count": 1,
+   "text": "Ready for pickkup from tomorrow 11:00."
+  },
+  {
+   "count": 1,
+   "text": "kohde auki ma-pe 9:stä 20:een. valmis noudettavaksi huomenna 11.30 jälkeen."
+  },
+  {
+   "count": 1,
+   "text": "Deliver no later than Monday 3:30pm! Receiving shop open Mon-Fri 7am - 8pm. Car in bay 5, keys at the desk"
+  },
+  {
+   "count": 1,
+   "text": "Perilla huomenna klo 19 mennessa. Vastaanottava liike auki arkisin klo 8-20. Viite 648203."
+  },
+  {
+   "count": 1,
+   "text": "At destination tmrw 5 pm latest. Receiving weekdays 9 am-8 pm only. Summer tyres in the trunk, go with the car"
+  },
+  {
+   "count": 1,
+   "text": "At destination Monday 20:00 latest. Open weekdays 9:00-16:00"
+  },
+  {
+   "count": 1,
+   "text": "Receiving weekdys 9:00 - 17:00 only"
+  },
+  {
+   "count": 1,
+   "text": "receiving until 15:00 only. key in the car. thanks"
+  },
+  {
+   "count": 1,
+   "text": "Perillä huomenna klo 20 mennessä."
+  },
+  {
+   "count": 1,
+   "text": "Moikka. Perillä huomenna 19 mennessä"
+  },
+  {
+   "count": 1,
+   "text": "Moikka, valmiina pihalla, oltava perillä viimeistään maanantaina klo 17.00! Kiitti."
+  },
+  {
+   "count": 1,
+   "text": "Must be at destination by tomorrow 12:00."
+  },
+  {
+   "count": 1,
+   "text": "Must be at destination by tomorrow 15:00. Destination open 7:00-21:00."
+  },
+  {
+   "count": 1,
+   "text": "at destination mon 20:00 latest. pickup weekdays 9:00-15:30 only. key in the car."
+  },
+  {
+   "count": 1,
+   "text": "At destination Monday 12:00 latest. Thanks."
+  },
+  {
+   "count": 1,
+   "text": "oltava perillä viimeistään maanantaina klo 19. soita asap jos tulee ongelmia."
+  },
+  {
+   "count": 1,
+   "text": "Huom vielä kesärenkaat alla"
+  },
+  {
+   "count": 1,
+   "text": "auto valmis vasta klo 16, lisäksi 4 kesärengasta tavaratilassa, kiitos etukäteen"
+  },
+  {
+   "count": 1,
+   "text": "Aiakas tulee hakemaan, perillä viim. ma klo 13."
+  },
+  {
+   "count": 1,
+   "text": "Vastaaotto arkisin klo 8 - 20. Noudettavissa arkisin klo 9 - 18. Renkaat kyydissä"
+  },
+  {
+   "count": 1,
+   "text": "Oltava perillä viimeistään ma. viideltä. Kohde auki 7:stä 21:een. Kesärenkaat vanteineen takakontissa"
+  },
+  {
+   "count": 1,
+   "text": "Asiakas tulee hakemaan, perillä viim. maanantai klo 18."
+  },
+  {
+   "count": 1,
+   "text": "asiakas tulee hakemaan, perillä viim. perjantaina klo 20. vastaanotto arkisin 8-21. avaimet huollon tiskiltä"
+  },
+  {
+   "count": 1,
+   "text": "huolto kesken, valmis klo 12.30."
+  },
+  {
+   "count": 1,
+   "text": "Must be at destination by Thu 20:00"
+  },
+  {
+   "count": 1,
+   "text": "Moikka. Manuaalivaihteet, kuski tarvii manuaalikortin"
+  },
+  {
+   "count": 1,
+   "text": "must be at destination by thu 16:00. collect before 18:00. thanks in advance"
+  },
+  {
+   "count": 1,
+   "text": "Moikka. Haettava ennen puolta kolmea"
+  },
+  {
+   "count": 1,
+   "text": "Maksun jälkeen, ei ennen huomenna klo 11.30. Soita liikkeeseen ennen kuin tulet. Kiitos taas."
+  },
+  {
+   "count": 1,
+   "text": "ostaja maksaa ensin, auton saa huomenna klo 12.30 alkaen"
+  },
+  {
+   "count": 1,
+   "text": "liike kiinni klo 15.30, haettava ennen sita. oltava perilla viimeistaan torstaina klo 20."
+  },
+  {
+   "count": 1,
+   "text": "hello. manual, driver needs a manual licence"
+  },
+  {
+   "count": 1,
+   "text": "moikka. oltava perillä viimeistään ke klo 12.00. avain avainboksissa, koodi 3599."
+  },
+  {
+   "count": 1,
+   "text": "Måste vara framme senast på onsdag kl 12! Mottagaren har öppet vardagar 7-20"
+  },
+  {
+   "count": 1,
+   "text": "must be at destination by 16:00 (not 15:00)"
+  },
+  {
+   "count": 1,
+   "text": "Ready tmrw noon at the earliset"
+  },
+  {
+   "count": 1,
+   "text": "Manuaailvaihteinen."
+  },
+  {
+   "count": 1,
+   "text": "Terve. Oltava perillä viimeistään huoomenna klo 17."
+  },
+  {
+   "count": 1,
+   "text": "perillä liike kiinni klo 18 jälkeen."
+  },
+  {
+   "count": 1,
+   "text": "Not ready before Wed 14:00, thanks."
+  },
+  {
+   "count": 1,
+   "text": "perillä huomenna klo 20 mennessä, eikun klo 19"
+  },
+  {
+   "count": 1,
+   "text": "Nodettavissa aikaisintaan huomenna klo 7"
+  },
+  {
+   "count": 1,
+   "text": "Mottagaren har öppet vardagar kl 8 - 21."
+  },
+  {
+   "count": 1,
+   "text": "perillä huomenna klo 12.30 mennessä"
+  },
+  {
+   "count": 1,
+   "text": "Destination open Mon–Fri 7:00–20:00"
+  },
+  {
+   "count": 1,
+   "text": "Öppettider vardagar 9.00-16.00."
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. torstaina klo 20.00. Noudettavissa aikaisintaan huomenna klo 9.30."
+  },
+  {
+   "count": 1,
+   "text": "liike menee kiinni kello 18, hyvää päivänjatkoa."
+  },
+  {
+   "count": 1,
+   "text": "Receiving weekdays 8:00-20:00 only. Must be at destination by Monday 20:00."
+  },
+  {
+   "count": 1,
+   "text": "Moikka. Auto vielä ksärenkailla. Viite 823572."
+  },
+  {
+   "count": 1,
+   "text": "Huolto kesken, valmis to klo 13"
+  },
+  {
+   "count": 1,
+   "text": "Maksun jälkeen, ei ennen huomenna klo 11."
+  },
+  {
+   "count": 1,
+   "text": "Asiakas tulee hakemaan, perillä viim. perjantaina klo 21, eikun klo 20. Liike kiinni klo 18, haettava ennen sitä."
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. huomenna klo 18. Kiitos, thx."
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. huomenna klo 12.30. Auto pihalla ruudussa 17, avain tiskiltä."
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. pe klo 20.00. Vastaanottava liike auki 8.00 - 20.00. Kiitos taas"
+  },
+  {
+   "count": 1,
+   "text": "Huolto kesken, valmis perjantaina klo 15.00. Vastaanottava liike auki arkisin klo 9.00 - 20.00. Soita liikkeeseen ennen kuin tulet."
+  },
+  {
+   "count": 1,
+   "text": "Måste vara frame senast i morgon kl 14.30, ring kunden en timme innan."
+  },
+  {
+   "count": 1,
+   "text": "huolto kesken, valmis huomennna klo 8.30"
+  },
+  {
+   "count": 1,
+   "text": "saa hakea vasta kolmen jälkeen. renkaat kyydissä"
+  },
+  {
+   "count": 1,
+   "text": "Perillä perjantaina klo 20 mennessä"
+  },
+  {
+   "count": 1,
+   "text": "vastaanottava liike auki klo 9-20. toimitus perille viim. maanantaina klo 20"
+  },
+  {
+   "count": 1,
+   "text": "oltava perillä viimeistään maanantaina klo 14.30. rengassarja mukaan"
+  },
+  {
+   "count": 1,
+   "text": "not ready before friday 10:30, not tomorrow"
+  },
+  {
+   "count": 1,
+   "text": "must be at destination by mon 19:00. thank you"
+  },
+  {
+   "count": 1,
+   "text": "Mottagning till kl 16. Rferens 293318. Hälsningar."
+  },
+  {
+   "count": 1,
+   "text": "Perillä perjantaina klo 20 mennessä. Noudettavissa arkisin 8-18."
+  },
+  {
+   "count": 1,
+   "text": "moi. vlmis, voi hakea heti."
+  },
+  {
+   "count": 1,
+   "text": "kesärenkaat alla, ei talvirenkaita. kiitti"
+  },
+  {
+   "count": 1,
+   "text": "Kilevt poistettu, ota koekilvet"
+  },
+  {
+   "count": 1,
+   "text": "Viimeistään huomenna klo 16.30 perillä! Toimitusosoite auki klo 9 - 21. Kiitos."
+  },
+  {
+   "count": 1,
+   "text": "Must be at destination by tomorrow 13:00, sorry, I mean 14:00!"
+  },
+  {
+   "count": 1,
+   "text": "oltava perillä viimeistään maanantaina klo 20. terveisin myynti"
+  },
+  {
+   "count": 1,
+   "text": "Auto valmis vasta perjantaina klo 7, meidän viite 857810"
+  },
+  {
+   "count": 1,
+   "text": "hei. maksun jälkeen, ei ennen huomenna klo 13"
+  },
+  {
+   "count": 1,
+   "text": "valmis noudettavaksi perjantaina puoli kymmenen jälkeen. avain avainboksissa, koodi 8917. kiitos paljon"
+  },
+  {
+   "count": 1,
+   "text": "Luovutus vasta kun maksettu, aikaisintaan huomenna klo 10.30. Rengassarja mukaan"
+  },
+  {
+   "count": 1,
+   "text": "Inte klar förrän i morgon 7.30. Ordernr 912893."
+  },
+  {
+   "count": 1,
+   "text": "ready for pickup from tomorrow 7:00. at destination mon 20:00 latest."
+  },
+  {
+   "count": 1,
+   "text": "perillä huomenna klo 17 mennessä."
+  },
+  {
+   "count": 1,
+   "text": "Ostaja maksaa ensin, auton saa tänään 16:sta alkaen"
+  },
+  {
+   "count": 1,
+   "text": "huuolto kesken, valmis huomenna klo 10."
+  },
+  {
+   "count": 1,
+   "text": "At destination Mon 19:00 latest."
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. maanantaina klo 12. Huolto kesken, valmis huomenna klo 8"
+  },
+  {
+   "count": 1,
+   "text": "Perilla ma kahteen mennessa / Ska vara på plats senast på måndag 14. Meidan viite 729556"
+  },
+  {
+   "count": 1,
+   "text": "asiakas tulee hakemaan, perillä viim. huomenna klo 16. viitenro 930530."
+  },
+  {
+   "count": 1,
+   "text": "Maksun jälkeen, ei ennen huomenna kello 9.30."
+  },
+  {
+   "count": 1,
+   "text": "Open 9.00 - 20.00. Receiving shop open 7.00 - 21.00. Thanks"
+  },
+  {
+   "count": 1,
+   "text": "Still on summer tyres, br, sales"
+  },
+  {
+   "count": 1,
+   "text": "Däcken ligger i bilen, ska med. Tack på förhand"
+  },
+  {
+   "count": 1,
+   "text": "Receiving shop open 7am–9pm"
+  },
+  {
+   "count": 1,
+   "text": "Hei. Nouto arkisin klo 7 - 19 / Pickup weekdays 7:00-19:00 only. Toimitus perille viim. maanantaina klo 15"
+  },
+  {
+   "count": 1,
+   "text": "Asiakas tulee hakemaan, perillä viim. maanantaina kahdeltatoista. Viite 866370."
+  },
+  {
+   "count": 1,
+   "text": "asiakas tulee hakemaan, perillä viim. maanantaina klo 17"
+  },
+  {
+   "count": 1,
+   "text": "at destination monday 16:30 latest. ready, collect right away. keys at service desk. br, sales."
+  },
+  {
+   "count": 1,
+   "text": "Haettava ennen klo 16.30. Perillä maanantaina klo 20 mennessä. Tilausnro 686332. Kiitos, thx"
+  },
+  {
+   "count": 1,
+   "text": "At destination Mon 12:00 latest."
+  },
+  {
+   "count": 1,
+   "text": "mottagning till kl 17. ring 15 min innan. tack"
+  },
+  {
+   "count": 1,
+   "text": "At destination Mon 20:00 latest."
+  },
+  {
+   "count": 1,
+   "text": "Hej. Kundn hämtar måndag 14.30, bilen måste vara där då."
+  },
+  {
+   "count": 1,
+   "text": "Toimiitus viimeistään maanantaina klo 14.00!"
+  },
+  {
+   "count": 1,
+   "text": "pitää olla perillä maanantaina klo 19.00 mennessä"
+  },
+  {
+   "count": 1,
+   "text": "Must be at destination by Mon 21:00. Correction: 20:00."
+  },
+  {
+   "count": 1,
+   "text": "Terve, perillä ma klo 15 mennessä, renkaat kyydissä."
+  },
+  {
+   "count": 1,
+   "text": "Hi there, at destination Monday 15:00 latest"
+  },
+  {
+   "count": 1,
+   "text": "At destination Mon 1 pm latest. Extra set of tyres in the boot, take along"
+  },
+  {
+   "count": 1,
+   "text": "framme senast på måndag klockan två."
+  },
+  {
+   "count": 1,
+   "text": "Noudettavissa aikaisintaan pe klo 16."
+  },
+  {
+   "count": 1,
+   "text": "Not ready before Wednesday 9:00. Thanks in advance."
+  },
+  {
+   "count": 1,
+   "text": "Kohde auki arkisin klo 8-21. Asiakas tulee hakemaan, perillä viim. klo 18. Soita 10 min ennen"
+  },
+  {
+   "count": 1,
+   "text": "huolto kesken, valmis keskiviikkona klo 14"
+  },
+  {
+   "count": 1,
+   "text": "Lämnas ut efter betalning, tidigast kl 12. Ordernr 539913. Mvh försäljningen."
+  },
+  {
+   "count": 1,
+   "text": "pitää olla perillä huomenna klo 20 mennessä / framme senast i morgon kl 20. kiitos paljon."
+  },
+  {
+   "count": 1,
+   "text": "Hello. Ready for pickup from 12:00. Pickup weekdays 9:00-20:00 only."
+  },
+  {
+   "count": 1,
+   "text": "Perillä huomenna klo 16 mennsesä"
+  },
+  {
+   "count": 1,
+   "text": "Noudettavissa aiikaisintaan klo 15.30, kiitos taas"
+  },
+  {
+   "count": 1,
+   "text": "Hei vaan. Nouto arkisin 9 - 19. Perillä liike kiinni klo 16 jälkeen."
+  },
+  {
+   "count": 1,
+   "text": "asiakas tulee hakemaan, perillä viim. huomenna puoli kolmelta. renkaat takakontissa, menee mukana"
+  },
+  {
+   "count": 1,
+   "text": "Hejsan, hämtas före kl 16.30"
+  },
+  {
+   "count": 1,
+   "text": "lämnas ut efter betalning, tidigast på fredag kl 12.30"
+  },
+  {
+   "count": 1,
+   "text": "Not ready befroe Thu 14:00."
+  },
+  {
+   "count": 1,
+   "text": "Terve. Soita n. tutnia ennen saapumista."
+  },
+  {
+   "count": 1,
+   "text": "vastaanotto arkisin 7 - 21. rngassarja takapenkillä, kulkee mukana"
+  },
+  {
+   "count": 1,
+   "text": "Destination closes at 16:30 / Toimitukset vastaanotetaan klo 16.30 asti. Summer tyres in the trunk, go with the car."
+  },
+  {
+   "count": 1,
+   "text": "oltava perillä viimeistään huomenna klo 14."
+  },
+  {
+   "count": 1,
+   "text": "Hei. Pesu kesken, haettavissa homenna kymmenen jälkeen"
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. huomenna klo 12."
+  },
+  {
+   "count": 1,
+   "text": "Hei. Huolto kesken, valmis keskiviikkona klo 13. Terveisin myynti"
+  },
+  {
+   "count": 1,
+   "text": "Not ready before Wednesday 12:30."
+  },
+  {
+   "count": 1,
+   "text": "Must be at destination by tomorrow 15:00 / Oltava perillä viimeistään huomenna klo 15. Thanks."
+  },
+  {
+   "count": 1,
+   "text": "Perillä ke klo 20.00 menenssä. Voi noutaa huomenna klo 9.00 alkaen. Terveisin myynti"
+  },
+  {
+   "count": 1,
+   "text": "huom aukioloajat arkisin 9 - 16. voi noutaa torstaina klo 9 alkaen"
+  },
+  {
+   "count": 1,
+   "text": "Buyer pays first, pickup from Wednesday 12:00 (not 13:00). Our ref: 812140."
+  },
+  {
+   "count": 1,
+   "text": "Noudettavissa aikaisintaan ke klo 14.30"
+  },
+  {
+   "count": 1,
+   "text": "pitää olla perillä torstaina 20.00 mennessä! kohteen aukioloajat ma-pe klo 9.00 - 20.00. kiitso."
+  },
+  {
+   "count": 1,
+   "text": "In the workshop, ready Wednesday 14:00. Extra set of tyres in the boot, take along"
+  },
+  {
+   "count": 1,
+   "text": "Liike kiinni klo 20, haettava ennen sitä. Asiakas tulee hakemaan, perillä viim. ke klo 20. Kiitos paljon"
+  },
+  {
+   "count": 1,
+   "text": "Must be at destination by 19:00."
+  },
+  {
+   "count": 1,
+   "text": "Mottagren har öppet 7.00 - 21.00"
+  },
+  {
+   "count": 1,
+   "text": "car won't be ready until tomorrow 8am. must be at destination by thursday 8pm"
+  },
+  {
+   "count": 1,
+   "text": "Vastaaanottava liike auki arkisin 8-21"
+  },
+  {
+   "count": 1,
+   "text": "Vastaanottava liike auki arkisin 7-20. Asiakas tulee hakemaan, perillä viim. torstaina klo 15 (ei klo 16)"
+  },
+  {
+   "count": 1,
+   "text": "Asiakas noutaa ylihuomenna klo 15, auton oltava silloin perillä! Perillä auki arkisin klo 9-20."
+  },
+  {
+   "count": 1,
+   "text": "Huom vielä kesärenkaat alla. Soita liikkeeseen ennen kuin tulet."
+  },
+  {
+   "count": 1,
+   "text": "Pitää hakea ennen 16. Auto valmis, nouto heti kun sopii"
+  },
+  {
+   "count": 1,
+   "text": "Noudettavissa arkisin 8 - 19. Asiakas tulee hakemaan, perillä viim. huomenna klo 15. t. myynti."
+  },
+  {
+   "count": 1,
+   "text": "receiving shop open 7 am-8 pm. pickup 8 am-6 pm only. car in bay 32, keys at the desk."
+  },
+  {
+   "count": 1,
+   "text": "Liike menee kiinni klo 2000! Meidän viite 554055. Terveisin myynti"
+  },
+  {
+   "count": 1,
+   "text": "Kesärenkaat alla, ei talvirenkaia."
+  },
+  {
+   "count": 1,
+   "text": "Huom vielä kesärenaat alla. Auto pihalla ruudussa 11, avain tiskiltä"
+  },
+  {
+   "count": 1,
+   "text": "Huolto kesken, valmis pe klo 9. Nouto ennen klo 20. Soita n. tuntia ennen saapumista. t. myynti"
+  },
+  {
+   "count": 1,
+   "text": "Ready for pickup from tomorrow 9:00. Receiving until 18:00 only"
+  },
+  {
+   "count": 1,
+   "text": "Receiving wekdays 7:00-16:00 only, thank you."
+  },
+  {
+   "count": 1,
+   "text": "Aukioloajat: ma–pe klo 8.00 - 20.00. Perillä auki ma–pe klo 10.00 - 17.00"
+  },
+  {
+   "count": 1,
+   "text": "Pitää hakea ennen neljää, tilausnro 445010"
+  },
+  {
+   "count": 1,
+   "text": "Oltava perillä viimeistään perjantaina klo 20.00. Vastaanottava liike auki arkisin 7.00-21.00. Avaimet huollosta."
+  },
+  {
+   "count": 1,
+   "text": "auki vain klo 14.30 asti."
+  },
+  {
+   "count": 1,
+   "text": "Klar först kl 11.00, ordernr 976015."
+  },
+  {
+   "count": 1,
+   "text": "Oltava perillä viimeistään huomenna klo 18. Huom aukioloajat arkisin 9-20. t. myynti"
+  },
+  {
+   "count": 1,
+   "text": "mottaagren har öppet 7.00-20.00."
+  },
+  {
+   "count": 1,
+   "text": "Kesärenkaat alla, ei talvirenkaita. Avaimet myyjältä"
+  },
+  {
+   "count": 1,
+   "text": "måste vara framme senast i mogon kl 12, inte kl 11."
+  },
+  {
+   "count": 1,
+   "text": "kunden hämtar fredag klockan 20.00, bilen måste vara där då! tack på förhand"
+  },
+  {
+   "count": 1,
+   "text": "hi, low on fuel."
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. pe klo 20.00. Soita ennen noutoa"
+  },
+  {
+   "count": 1,
+   "text": "Oltava perillä viimeistään huomenna klo 19.00 (ei klo 20.00)"
+  },
+  {
+   "count": 1,
+   "text": "Haettava ennen klo 20. Asiakas tulee hakemaan, perillä viim. ma klo 20. Avaimet huollno tiskiltä. Kiitos paljon"
+  },
+  {
+   "count": 1,
+   "text": "Auki vain klo 19.00 asti."
+  },
+  {
+   "count": 1,
+   "text": "Must be at destination by tomorrow 12:30. Keys from reception"
+  },
+  {
+   "count": 1,
+   "text": "noudettavissa aikaisintaan klo 19.00. perillä huomenna klo 20.00 mennessä. soita 15 min ennen"
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. huomenna klo 16.00, kiitos etukäteen."
+  },
+  {
+   "count": 1,
+   "text": "hei vaan. kohde auki arkisin 7–20. arkisin 9–20 nouto onnistuu. t. myynti"
+  },
+  {
+   "count": 1,
+   "text": "Bilen står på plats 34, nyckeln i kassan. Vår ref 370989"
+  },
+  {
+   "count": 1,
+   "text": "kesärenkaat alla, ei talvirenakita"
+  },
+  {
+   "count": 1,
+   "text": "Vastaanotto arkisin 9 - 17. Noudettavissa aikaisintaan klo 19. Varaus 958008. Kiitos, thx"
+  },
+  {
+   "count": 1,
+   "text": "Pesu kesken, haettavissa huomenna puoli kahdentoista jälkeen"
+  },
+  {
+   "count": 1,
+   "text": "Asiakas tulee hakemaan, perillä viim. huomenna klo 15.30. Huolto kesken, valmis klo 19. Soita liikkeeseen ennen kuin tulet. Kiitos"
+  },
+  {
+   "count": 1,
+   "text": "huomenna kahdeltatoista valmis"
+  },
+  {
+   "count": 1,
+   "text": "Vår ref 135309. Ring 30 min innan."
+  },
+  {
+   "count": 1,
+   "text": "Nouto ennen klo 14.30, eikun klo 15.30."
+  },
+  {
+   "count": 1,
+   "text": "At destination Mon 20:00 latest. Ready for pickup from toorrow 7:00. Our ref: 901261"
+  },
+  {
+   "count": 1,
+   "text": "automaattivaihteinen, ei manuaali. avaimet huollon tiskiltä. t. myynti."
+  },
+  {
+   "count": 1,
+   "text": "terve. liike kiinni klo 18, haettava ennen sitä (ei klo 17)! lisäksi 4 kesärengasta tavaratilassa"
+  },
+  {
+   "count": 1,
+   "text": "Hejsan. Bilen står klar. Mottagaren har öppet vardagar 7.00-20.00."
+  },
+  {
+   "count": 1,
+   "text": "Hejasn. Måste vara framme senast i morgon kl 19. Rättelse: kl 20. Mottagaren har öppet vardagar kl 9-20"
+  },
+  {
+   "count": 1,
+   "text": "Klo 15.30 valmis"
+  },
+  {
+   "count": 1,
+   "text": "Ostaja maksaa ensin, auton saa huomenna klo 11.00 alkaen."
+  },
+  {
+   "count": 1,
+   "text": "Haettaa ennen klo 16.30."
+  },
+  {
+   "count": 1,
+   "text": "asiakas tulee hakemaan, perillä viim. huomenna klo 20."
+  },
+  {
+   "count": 1,
+   "text": "hämtas före klockan halv fyra. klar först i morgon 8.00. referes 299683"
+  },
+  {
+   "count": 1,
+   "text": "asiakas tulee hakemaan, perillä viim. ma klo 18.00. nouto ennen klo 19.00"
+  },
+  {
+   "count": 1,
+   "text": "Poisstettu rekisteristä, tarvitaan siirtokilvet!"
+  },
+  {
+   "count": 1,
+   "text": "Perillä maanantaina klo 20 mennessä"
+  },
+  {
+   "count": 1,
+   "text": "Auto valmis vasta klo 20.00. Korjaus: klo 19.00. Auto pihalla ruudussa 23, avain tiskiltä"
+  },
+  {
+   "count": 1,
+   "text": "liike kiinni klo 16.30, haettava ennen sitä. toimitus perille viim. maanantaina klo 20"
+  },
+  {
+   "count": 1,
+   "text": "Auto valmis vasta klo 11.30. Noudettavissa klo 9.00-19.00. 2 sarjaa renkaita, toinen sarja kontissa. Terveisin myynti."
+  },
+  {
+   "count": 1,
+   "text": "Earliest pickup 12.30"
+  },
+  {
+   "count": 1,
+   "text": "kiire, asiakas odottaa. perillä viiteen mennessä"
+  },
+  {
+   "count": 1,
+   "text": "Liike auki arkisin klo 7 - 19. Auto valmis vasta klo 13."
+  },
+  {
+   "count": 1,
+   "text": "perillä liike kiinni klo 17 jälkeen"
+  },
+  {
+   "count": 1,
+   "text": "Luovutus vasta kun maksettu, aikaisintaan klo 12."
+  },
+  {
+   "count": 1,
+   "text": "hi there, at destinatino mon 14:00 latest"
+  },
+  {
+   "count": 1,
+   "text": "aukioloajat: ma-pe klo 9 - 15, kiitos, thx"
+  },
+  {
+   "count": 1,
+   "text": "Ostaja maksaa ensin, auton saa klo 15.30 alkaen. Soita 20 min ennen."
+  },
+  {
+   "count": 1,
+   "text": "mottagning vardagar kl 8.00 - 20.00. ingen utlämning efter klockan 16.30"
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. maanantaina klo 18."
+  },
+  {
+   "count": 1,
+   "text": "Pitää olla perillä maanantaina kello 15.30 mennessä. 4 rengasta vanteilla tavaratilassa."
+  },
+  {
+   "count": 1,
+   "text": "nouto 8 - 18. asiakas tulee hakemaan, perillä viim. maanantaina klo 17.30"
+  },
+  {
+   "count": 1,
+   "text": "At destination Monday 12:30 latest. Pickup 8:00-20:00 only."
+  },
+  {
+   "count": 1,
+   "text": "poistettu rekisteristä, tarvitaan siirrtokilvet"
+  },
+  {
+   "count": 1,
+   "text": "not ready before 18:00"
+  },
+  {
+   "count": 1,
+   "text": "Olltava perillä viimeistään maanantaina klo 15.30. t. myynti"
+  },
+  {
+   "count": 1,
+   "text": "perillä ke klo 20 mennessä / at destintion wednesday 20:00 latest. kohde auki arkisin klo 9 - 20. terveisin myynti"
+  },
+  {
+   "count": 1,
+   "text": "it's a manual"
+  },
+  {
+   "count": 1,
+   "text": "Asiakas tulee hakemaan, perillä viim. perjantaina klo 14"
+  },
+  {
+   "count": 1,
+   "text": "must be at destination by tomorrow 1pm. pickup 9am - 6pm only."
+  },
+  {
+   "count": 1,
+   "text": "Extra däcksats i bagaget, ska med. Vår ref 828158."
+  },
+  {
+   "count": 1,
+   "text": "must arrive by thursday 20.00. extra set of tyres in the boot, take along"
+  },
+  {
+   "count": 1,
+   "text": "Hei vaan. Maksun jalkeen, ei ennen huomenna klo 13."
+  },
+  {
+   "count": 1,
+   "text": "terve. perillä liike kiinni klo 17 jälkeen. renkaat kyydissä."
+  },
+  {
+   "count": 1,
+   "text": "Manuaalivaihteet, kuski tarvii manuaalikortin. Avain avainboksissa, koodi 2332."
+  },
+  {
+   "count": 1,
+   "text": "Moikka, toimitus perille viim. huomenna klo 16.00"
+  },
+  {
+   "count": 1,
+   "text": "Mottagaren har öppet mån-fre 9–21"
+  },
+  {
+   "count": 1,
+   "text": "kohde auki klo 9-20. toimitus perille viim. klo 19. soita n. tuntia ennen saapumista"
+  },
+  {
+   "count": 1,
+   "text": "Manaualivaihteet, kuski tarvii manuaalikortin"
+  },
+  {
+   "count": 1,
+   "text": "nouto ennen klo 19.00. ylimääräinen rengassarja takakontissa, mkuaan"
+  },
+  {
+   "count": 1,
+   "text": "Receiviing until 16:00 only"
+  },
+  {
+   "count": 1,
+   "text": "kohde auki arkisin klo 9.00-21.00. perillä huomenna klo 15.30 mennessä"
+  },
+  {
+   "count": 1,
+   "text": "Vastaanotto klo 15 asti. Haettava ennen klo 19, ei klo 18. Kiitos"
+  },
+  {
+   "count": 1,
+   "text": "Oltava perillä viimeistään ylihuomenna klo 15"
+  },
+  {
+   "count": 1,
+   "text": "Peerillä perjantaina klo 17.30 mennessä!"
+  },
+  {
+   "count": 1,
+   "text": "At destination Friday 8pm latest. We close at 6pm."
+  },
+  {
+   "count": 1,
+   "text": "Hei vaan. Vastaanottava liike auki arkisin klo 8 - 20. Perillä huomenna klo 12 mennessä! Avaimet huollon tiskiltä"
+  },
+  {
+   "count": 1,
+   "text": "Destination open 8:00 - 20:00. Must be at destination by Fri 14:00. Thanks"
+  },
+  {
+   "count": 1,
+   "text": "luovutus vasta kun maksettu, aikaisintaan huomenna klo 11.30. t. myynti."
+  },
+  {
+   "count": 1,
+   "text": "maksun jalkeen, ei ennen klo 12.30"
+  },
+  {
+   "count": 1,
+   "text": "at destination thursday 20:00 latest."
+  },
+  {
+   "count": 1,
+   "text": "Hi there. Must arrive by 19:00"
+  },
+  {
+   "count": 1,
+   "text": "maksun jälkeen, ei ennen huomenna klo 13"
+  },
+  {
+   "count": 1,
+   "text": "Ostaja maksaa ensin, auton saa huomenna klo 9 alkaen"
+  },
+  {
+   "count": 1,
+   "text": "Öppettider varadgar 9-15, ring 20 min innan"
+  },
+  {
+   "count": 1,
+   "text": "hei vaan. huolto kesken, valmis klo 15. vastaanottava liike auki arkisin 8-20. kiitos taas."
+  },
+  {
+   "count": 1,
+   "text": "pickup weekdays 9:00 - 18:00 only. in the workshop, ready 13:00"
+  },
+  {
+   "count": 1,
+   "text": "perillä klo 14 mennessä."
+  },
+  {
+   "count": 1,
+   "text": "Receiving shop open 9am-9pm"
+  },
+  {
+   "count": 1,
+   "text": "måste vara framme senast på måndag kl 20.00!"
+  },
+  {
+   "count": 1,
+   "text": "Not ready before Thursday 13:00. Destination open weekdays 8:00-20:00."
+  },
+  {
+   "count": 1,
+   "text": "Huolto kesken, valmis klo 15.30. Tilausnumero 265733"
+  },
+  {
+   "count": 1,
+   "text": "huolto ksken, valmis huomenna klo 11."
+  },
+  {
+   "count": 1,
+   "text": "asiakas tulee hakemaan, perillä viim. maanantaina klo 20! ilmoita kun lähdet. hyvää päivänjatkoa"
+  },
+  {
+   "count": 1,
+   "text": "receiving weekdays 8:00 - 21:00 only. at destination tomorrow 19:00 latest."
+  },
+  {
+   "count": 1,
+   "text": "moi, vastaanotto klo 17 asti"
+  },
+  {
+   "count": 1,
+   "text": "Payment clears tmrw 1pm, no pickup before that. Call before pickup"
+  },
+  {
+   "count": 1,
+   "text": "Maksun jalkeen, ei ennen huomenna klo 10.30"
+  },
+  {
+   "count": 1,
+   "text": "auto valmis, nouto heti kun sopii. toimitus perille viim. huomenna klo 16. korjaus: klo 15."
+  },
+  {
+   "count": 1,
+   "text": "Payment clears tmrw 11:30, no pickup before that. Cheers."
+  },
+  {
+   "count": 1,
+   "text": "Hi. In the worksshop, ready Thursday 10 am"
+  },
+  {
+   "count": 1,
+   "text": "Asiakas tulee hakemaan, preillä viim. pe klo 13.00. Soita n. tuntia ennen saapumista"
+  },
+  {
+   "count": 1,
+   "text": "lisärenkata mukaan. tilausnro 525601"
+  },
+  {
+   "count": 1,
+   "text": "perillä pe klo 20 mennessä / must be at destination by friday 20:00"
+  },
+  {
+   "count": 1,
+   "text": "Auto valmis vasta huomenna klo 9. Oltava perillä viimeistään huomena klo 18"
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. huomenna klo 18.00, kiitos etukäteen"
+  },
+  {
+   "count": 1,
+   "text": "must be at destination by modnay 19:00. car is ready and waiting."
+  },
+  {
+   "count": 1,
+   "text": "Auto on vallmis noudettavaksi. Asiakas tulee hakemaan, perillä viim. maanantaina klo 20"
+  },
+  {
+   "count": 1,
+   "text": "vsataanottava liike auki arkisin 10-17."
+  },
+  {
+   "count": 1,
+   "text": "Hei. Nouto ariksin klo 9 - 16 / Opening hours weekdays 9 am–4 pm"
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. ma klo 20"
+  },
+  {
+   "count": 1,
+   "text": "Must be at destination by Mon 8 pm!"
+  },
+  {
+   "count": 1,
+   "text": "Hello, not ready befre 15:30."
+  },
+  {
+   "count": 1,
+   "text": "Framme senast fre kl 20.00. Hälsningar"
+  },
+  {
+   "count": 1,
+   "text": "In the workshop, ready 16:00"
+  },
+  {
+   "count": 1,
+   "text": "auto valmis vasta huomenna klo 8, ei kun klo 9. oltava perillä viimeistään maanantaina klo 20"
+  },
+  {
+   "count": 1,
+   "text": "framme senast på måndag kl 20. däcken ligger i bilen, ska med"
+  },
+  {
+   "count": 1,
+   "text": "At destination Friday 20:00 latest"
+  },
+  {
+   "count": 1,
+   "text": "klar först på freag kl 9, ring innan hämtning"
+  },
+  {
+   "count": 1,
+   "text": "Perillä maanantaina klo 20 mennessä. Auto valmis vasta huomenna klo 9"
+  },
+  {
+   "count": 1,
+   "text": "maksun jälken, ei ennen huomenna klo 12.00. korjaus: klo 13.00"
+  },
+  {
+   "count": 1,
+   "text": "auto valmis vasta klo 17. kiitos etukäteen"
+  },
+  {
+   "count": 1,
+   "text": "asiakas tulee hakemaan, perillä viim. ma klo 17. kiitos taas"
+  },
+  {
+   "count": 1,
+   "text": "we close at 18:00. must be at destination by monday 20:00."
+  },
+  {
+   "count": 1,
+   "text": "Maksun jälkeen, ei ennen huomenna klo 10.30. Tilausnumero 520237"
+  },
+  {
+   "count": 1,
+   "text": "ready for pickup from tomorrow 10:00. correction: 11:00"
+  },
+  {
+   "count": 1,
+   "text": "lisärnekaat mukaan."
+  },
+  {
+   "count": 1,
+   "text": "täällä ei ketään puoli neljän jälkeen, terveisin myynti"
+  },
+  {
+   "count": 1,
+   "text": "Mksun jälkeen, ei ennen huomenna klo 11.30."
+  },
+  {
+   "count": 1,
+   "text": "pitää olla perillä ma 15.30 mennessä"
+  },
+  {
+   "count": 1,
+   "text": "must be at destination by mon 20:00. destination open weekdays 8:00-20:00. spare wheels in the boot. thanks"
+  },
+  {
+   "count": 1,
+   "text": "Luovutus vasta kun maksettu, aikaisintaan huomenna klo 12"
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. maanantaina kahdelta"
+  },
+  {
+   "count": 1,
+   "text": "asiakas tulee hakemaan, perillä viim. maanantaina klo 13.30. vastaanotto arkisin klo 9-20. avain autossa."
+  },
+  {
+   "count": 1,
+   "text": "Auto valmis vasta huomeenna klo 10.30"
+  },
+  {
+   "count": 1,
+   "text": "Must be at destination by Monday 20:00. Collect before 19:00. Keys from reception"
+  },
+  {
+   "count": 1,
+   "text": "Perillä huomenna klo 19.00 mennessä. Korjaus: klo 18.00! Kiitos, thx."
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. maanantaina klo 18.30"
+  },
+  {
+   "count": 1,
+   "text": "Vastaanottava liike auki arkisin 7.00-21.00 / Destination open 7:00 - 21:00. Toimitus viimeistään maanantaina klo 15.30!"
+  },
+  {
+   "count": 1,
+   "text": "Vår ref 203945"
+  },
+  {
+   "count": 1,
+   "text": "toimitus perille viim. klo 19.30, eikun klo 18.30"
+  },
+  {
+   "count": 1,
+   "text": "Asiakas tulee hakemaan, perilla viim. ma klo 14.30. Varaus 916873."
+  },
+  {
+   "count": 1,
+   "text": "Noudettavissa arkisin klo 9-19. Toimitus perille viim. maanantaina klo 16.30. Terveisin myynti"
+  },
+  {
+   "count": 1,
+   "text": "Must be at destination by 19:00"
+  },
+  {
+   "count": 1,
+   "text": "Liike auki ariksin klo 10.00-17.00."
+  },
+  {
+   "count": 1,
+   "text": "receivig until 15:00 only"
+  },
+  {
+   "count": 1,
+   "text": "Moi. Tankissa vähän."
+  },
+  {
+   "count": 1,
+   "text": "terve. luovutus vasta kun maksettu, aikaisintaan huomenna klo 15.30"
+  },
+  {
+   "count": 1,
+   "text": "Maksun jälkeen, ei ennen huomenna klo 13.30. Hyvää päivänjatkoa"
+  },
+  {
+   "count": 1,
+   "text": "hei. luovutus vasta kun maksettu, aikaisintaan huomenna klo 9.30"
+  },
+  {
+   "count": 1,
+   "text": "hi there, at destination tomorrow 20:00 latest."
+  },
+  {
+   "count": 1,
+   "text": "auto valmis vasta torstaina klo 11"
+  },
+  {
+   "count": 1,
+   "text": "Huolto kesken, valmis ke klo 13. Liike auki arkisin 7-18. t. myynti."
+  },
+  {
+   "count": 1,
+   "text": "Voi noutaa perjantaina klo 15.30 alken, eikun klo 14.30."
+  },
+  {
+   "count": 1,
+   "text": "kan hämtas tidigast på fredag kl 12.45"
+  },
+  {
+   "count": 1,
+   "text": "huolto kesken, valmis perjantaina klo 12.45. avaimet huollon tiskiltä"
+  },
+  {
+   "count": 1,
+   "text": "Maksun jälkeen, ei ennen klo 14.00. Soita liikkeeseen ennen kuin tulet"
+  },
+  {
+   "count": 1,
+   "text": "noudettavissa aikaisintaan keskiviikkona klo 9.00. hyvää päivänjatkoa"
+  },
+  {
+   "count": 1,
+   "text": "Noudettavissa akisin klo 9-14.30"
+  },
+  {
+   "count": 1,
+   "text": "at destination fri 20:00 latest! collect before 18:00"
+  },
+  {
+   "count": 1,
+   "text": "noudettavissa aikaisintaan perjantaina klo 14"
+  },
+  {
+   "count": 1,
+   "text": "Noudettavissa aikaisintaan to kahdeltatoista"
+  },
+  {
+   "count": 1,
+   "text": "car has no plates, bring trade plaates."
+  },
+  {
+   "count": 1,
+   "text": "hei, auto vielä kesärenkailla."
+  },
+  {
+   "count": 1,
+   "text": "Liike auki ma-pe 8:sta 18:aan. Noudettavissa aikaisintaan huomenna puoli yhdeltätoista"
+  },
+  {
+   "count": 1,
+   "text": "Vastaanottava liike auki arksiin 8-21, hyvää päivänjatkoa"
+  },
+  {
+   "count": 1,
+   "text": "rekistreikilvet irrotettu"
+  },
+  {
+   "count": 1,
+   "text": "hei. valmiina huomenna puoli yhdestätoista alkaen. vastaanotto klo 7 - 21."
+  },
+  {
+   "count": 1,
+   "text": "takaluukku jumittaa"
+  },
+  {
+   "count": 1,
+   "text": "haettava ennen klo 18. toimitus perille viim. perjantaina klo 20."
+  },
+  {
+   "count": 1,
+   "text": "Hei. Manuaalli, ei automaatti."
+  },
+  {
+   "count": 1,
+   "text": "ready now. latest arrival 5pm! thanks in advance"
+  },
+  {
+   "count": 1,
+   "text": "Maksun jälkeen, ei ennen klo 13.00. t. myynti."
+  },
+  {
+   "count": 1,
+   "text": "Terve. Kilvvet puuttuu, tuo siirtokilvet. Viitenro 675698"
+  },
+  {
+   "count": 1,
+   "text": "Pitää olla perillä huomenna 15 mennessä"
+  },
+  {
+   "count": 1,
+   "text": "Soita n. tunttia ennen saapumista. Kiitos, thx"
+  },
+  {
+   "count": 1,
+   "text": "Auto valmis vasta torstaina klo 14"
+  },
+  {
+   "count": 1,
+   "text": "Voi noutaa perjantai 11 alkaen"
+  },
+  {
+   "count": 1,
+   "text": "Odottaa osia, valmis huomenna yhdeltätoista"
+  },
+  {
+   "count": 1,
+   "text": "pickpu by 6pm at the latest"
+  },
+  {
+   "count": 1,
+   "text": "at destination tomorrow 18:00 latst."
+  },
+  {
+   "count": 1,
+   "text": "liike auki klo 7-18. perillä huomenna klo 13 mennessä"
+  },
+  {
+   "count": 1,
+   "text": "At destintion tomorrow 19:00 latest."
+  },
+  {
+   "count": 1,
+   "text": "Vielä kesärenkaat, talvet puuttuu. Tilausnro 946056."
+  },
+  {
+   "count": 1,
+   "text": "Ready for pickup from Thu 10:00. Thanks in advance"
+  },
+  {
+   "count": 1,
+   "text": "huolto kesken, valmis to klo 14"
+  },
+  {
+   "count": 1,
+   "text": "valmis noudettavaksi huomenna yhdentoista jälkeen. rengassarja takapenkillä, kulkee mukana"
+  },
+  {
+   "count": 1,
+   "text": "Referens 682697. Tack på förhand."
+  },
+  {
+   "count": 1,
+   "text": "vår ref 474394. mvh försäljningen"
+  },
+  {
+   "count": 1,
+   "text": "Auto valmis vasta torstaina klo 14.00, kiitos taas"
+  },
+  {
+   "count": 1,
+   "text": "ostaja maksaa ensin, auton saa klo 11.30 alkaen."
+  },
+  {
+   "count": 1,
+   "text": "ostaja maksaa ensin, auton saa perjantaina klo 12 alkaen. soita ennen noutoa. kiitos."
+  },
+  {
+   "count": 1,
+   "text": "Huolto kesken, valmis klo 14. Vastaanotto arkisn klo 9-21"
+  },
+  {
+   "count": 1,
+   "text": "Haettava ennen klo 18.00. Noudettavissa aikaisintaan klo 16.00"
+  },
+  {
+   "count": 1,
+   "text": "valmiina huomenna puoli yhdestätoista alaken"
+  },
+  {
+   "count": 1,
+   "text": "Oltva perillä viimeistään perjantaina klo 12.00. Voi noutaa huomenna klo 12.30 alkaen"
+  },
+  {
+   "count": 1,
+   "text": "not ready before tomorrow 10:30. at destination friday 20:00 latest"
+  },
+  {
+   "count": 1,
+   "text": "hei. asiakas tulee hakemaan, perillä viim. ma klo 15.00. soita n. tuntia ennen saapumista"
+  },
+  {
+   "count": 1,
+   "text": "Hei. Ostaja maksaa ensin, auton saa kello 14:30 alkaen"
+  },
+  {
+   "count": 1,
+   "text": "Moikka. Akku heikko, voi tarvita apukäynnistyksen"
+  },
+  {
+   "count": 1,
+   "text": "perillä perjantana klo 12.00 mennessä, ei klo 13.00. vastaanotto arkisin 9.00-20.00."
+  },
+  {
+   "count": 1,
+   "text": "Täällä ei ketään 20 jälkeen. Toimitusosoite auki arkipäivisin 8–21"
+  },
+  {
+   "count": 1,
+   "text": "At destination tomorrow 20:00 latest! Collect before 15:00. Thx"
+  },
+  {
+   "count": 1,
+   "text": "Hi. Weak battery, may need a jump start"
+  },
+  {
+   "count": 1,
+   "text": "toimitus perille viim. huomenna klo 14.30. avaimet huollosta."
+  },
+  {
+   "count": 1,
+   "text": "Valmiina perjantaina 9 alkaen. Liike sulkee 18.00!"
+  },
+  {
+   "count": 1,
+   "text": "Asiakas tulee hakemaan, perilla viim. ma klo 17"
+  },
+  {
+   "count": 1,
+   "text": "liike auki arkisin 9 - 19. toimitus peerille viim. huomenna klo 20."
+  },
+  {
+   "count": 1,
+   "text": "noudettavissa aikaisintaan tänään puoli kahdelta. nouto arkipäivisin 9-19."
+  },
+  {
+   "count": 1,
+   "text": "Hei vaan. Noudettavissa aikaisintaan klo 12.30. Liike auki arkisin klo 9.00-19.00"
+  },
+  {
+   "count": 1,
+   "text": "maksun jälkeen, ei ennen huomenna klo 13. meidän viite 150268. kiitti"
+  },
+  {
+   "count": 1,
+   "text": "Asiakas tulee hakemaan, perillä viim. ma klo 20."
+  },
+  {
+   "count": 1,
+   "text": "collect before 15.30! in the workshop, ready tomorrow 9.00, not 8.00"
+  },
+  {
+   "count": 1,
+   "text": "Oltava perillä viimeistään huomenna klo 20"
+  },
+  {
+   "count": 1,
+   "text": "opening hours weekdays 9.00-17.00. receiving weekdays 7.00-21.00 only"
+  },
+  {
+   "count": 1,
+   "text": "Valmsi, voi hakea heti"
+  },
+  {
+   "count": 1,
+   "text": "hei. toimitusosoite auki ma-pe 8.00-20.00. auto valmis vasta huomenna yhdeltä. lisäksi 4 kesärengasta tavaratilassa"
+  },
+  {
+   "count": 1,
+   "text": "Moi, voi noutaa klo 12.30 alkaen."
+  },
+  {
+   "count": 1,
+   "text": "Framme senast kl 18.30."
+  },
+  {
+   "count": 1,
+   "text": "Talvirenkita ei vielä vaihdettu"
+  },
+  {
+   "count": 1,
+   "text": "Hei. Perillä maanantaina klo 21 mennessä. Korjaus: klo 20"
+  },
+  {
+   "count": 1,
+   "text": "Ostaja maksaa ensin, auton saa klo 13 alkaen. Kiitos"
+  },
+  {
+   "count": 1,
+   "text": "luovutus vasta kun maksettu, aikaisintaan klo 15. viite 756384"
+  },
+  {
+   "count": 1,
+   "text": "Call befoer pickup!"
+  },
+  {
+   "count": 1,
+   "text": "ready 4 pm at the earliset. destination open weekdays 7 am-8 pm. call the customer an hour before arrival. thanks in advance"
+  },
+  {
+   "count": 1,
+   "text": "At destination Monday 12:00 latest."
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. maanantaina klo 20. Auto valmis, nouto heti kun sopii"
+  },
+  {
+   "count": 1,
+   "text": "Asiakas tulee hakemaan, perillä viim. maanantaina klo 16. Kiitos, thx"
+  },
+  {
+   "count": 1,
+   "text": "Picukp from our yard."
+  },
+  {
+   "count": 1,
+   "text": "manuaalivaihteet, kuski tarvii maunaalikortin."
+  },
+  {
+   "count": 1,
+   "text": "Must be at destination by Mnday 12:30"
+  },
+  {
+   "count": 1,
+   "text": "Ostaja maksaa ensin, auton saa huomenna klo 9.30 alkaen. t. myynti"
+  },
+  {
+   "count": 1,
+   "text": "Vastaanottava liike auki arkisin klo 8-21. Toimitus perille viim. ke klo 20. 2 sarjaa renkaita, toinen sarja kontissa"
+  },
+  {
+   "count": 1,
+   "text": "At destination Thursday 20:00 latest"
+  },
+  {
+   "count": 1,
+   "text": "perillä huomenna klo 20.00 mennessä."
+  },
+  {
+   "count": 1,
+   "text": "Hello. Ready for pickup from tomorrow 10:00. Call the customer an hour beforre arrival"
+  },
+  {
+   "count": 1,
+   "text": "At destination Wednesday 16:00 latest. Not ready before tomorrow 7:00."
+  },
+  {
+   "count": 1,
+   "text": "Viimeistään klo 18 perillä."
+  },
+  {
+   "count": 1,
+   "text": "Buyer pays first, pickup from tomorrow 12:30"
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. huomenna klo 14.00, kiitos, thx."
+  },
+  {
+   "count": 1,
+   "text": "Däcken ligger i bilen, ska med. Vår ref 592387"
+  },
+  {
+   "count": 1,
+   "text": "Order no 803974. Call 30 min befre you arrive. Thx."
+  },
+  {
+   "count": 1,
+   "text": "Asakas tulee hakemaan, perillä viim. to klo 16."
+  },
+  {
+   "count": 1,
+   "text": "Auki vain puoli kolmeen asti"
+  },
+  {
+   "count": 1,
+   "text": "in the workshop, ready thursday 10:00, not 11:00"
+  },
+  {
+   "count": 1,
+   "text": "noudettavisa aikaisintaan to klo 9"
+  },
+  {
+   "count": 1,
+   "text": "huolto kesken, valmis to klo 9"
+  },
+  {
+   "count": 1,
+   "text": "not ready before wednesday 12:00"
+  },
+  {
+   "count": 1,
+   "text": "voi noutaa pe klo 11 alkaen (ei klo 10). avaimet myyjältä. terveisin myynti"
+  },
+  {
+   "count": 1,
+   "text": "noudettavissa aikaisintan klo 12.30"
+  },
+  {
+   "count": 1,
+   "text": "Oltava perillä viimeistään huomenna klo 20."
+  },
+  {
+   "count": 1,
+   "text": "Måste vara framme senast tors kl 16.00"
+  },
+  {
+   "count": 1,
+   "text": "nouto ennen klo 18. vastaaanotto 8-21"
+  },
+  {
+   "count": 1,
+   "text": "nouto ennen 16.00. kiire, asiakas odottaa. perillä perjantaina 20.00 mennessä. soita asap jos tulee ongelmia. hyvää päivänjatkoa."
+  },
+  {
+   "count": 1,
+   "text": "Nouto 9.00-18.00. Vastaanotatva liike auki 8.00-20.00"
+  },
+  {
+   "count": 1,
+   "text": "Oltava perillä viimeistään maanantaina klo 20."
+  },
+  {
+   "count": 1,
+   "text": "Liike menee kiinni kello 18. Voi noutaa huomenna kello 14 alkaen"
+  },
+  {
+   "count": 1,
+   "text": "auki vain kello 20 asti! kohde auki ma-pe klo 7 - 20"
+  },
+  {
+   "count": 1,
+   "text": "Hei. Huolto ksken, valmis pe klo 10.30"
+  },
+  {
+   "count": 1,
+   "text": "destination open 8:00 - 21:00. at destination tomorrow 14:00 latest."
+  },
+  {
+   "count": 1,
+   "text": "Oltava perillä viimeistään perjantaina klo 14, viitenro 547269, hyvää päivänjatkoa"
+  },
+  {
+   "count": 1,
+   "text": "hei. aukioloajat: klo 8-18"
+  },
+  {
+   "count": 1,
+   "text": "Noudettavissa aikaisintaan huomenna puoli yhdeltätoista. Hyvää päivänjatkoa"
+  },
+  {
+   "count": 1,
+   "text": "auton voi hakea arkisin 8:sta 18:aan"
+  },
+  {
+   "count": 1,
+   "text": "vastaanottava liike auki ma-pe 8:sta 20:een. kiire, asiakas odottaa. perillä ylihuomenna klo 19:00 mennessä"
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. huomenna klo 15"
+  },
+  {
+   "count": 1,
+   "text": "vstaanottava liike auki klo 9 - 20"
+  },
+  {
+   "count": 1,
+   "text": "Perillä auki 9–20. Odottaa osia, valmis huomenna 11.00, ei kun 10.00"
+  },
+  {
+   "count": 1,
+   "text": "Receiving weekdays 7:00-20:00 only. Must be at destination by tomorrow 20:00"
+  },
+  {
+   "count": 1,
+   "text": "Summer tyres on, no winters. Thx."
+  },
+  {
+   "count": 1,
+   "text": "Liike auki arkisin klo 9-16, lisrenkaat mukaan."
+  },
+  {
+   "count": 1,
+   "text": "Moi. Perillä ma klo 20 mennessä. 2 sarjaa renkaita, toinen sarja kontissa."
+  },
+  {
+   "count": 1,
+   "text": "huomenna kello 14 valmis."
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. ylihuomenna kello 16"
+  },
+  {
+   "count": 1,
+   "text": "Must be at destination by Fri 18:00."
+  },
+  {
+   "count": 1,
+   "text": "Mottagning vardagar 7 - 21. Hämtas före kl 20"
+  },
+  {
+   "count": 1,
+   "text": "Perillä ylihuomenna klo 18 mennessä. Viite 428351."
+  },
+  {
+   "count": 1,
+   "text": "must be at destination by mon 20:00. collect before 18:00. thanks in advance"
+  },
+  {
+   "count": 1,
+   "text": "Lämnas ut efter betalning, tidigast kl 12.00. Hälsningar."
+  },
+  {
+   "count": 1,
+   "text": "Tankissa vähän."
+  },
+  {
+   "count": 1,
+   "text": "Vastaanotto klo 15 asti, ei klo 14"
+  },
+  {
+   "count": 1,
+   "text": "asiakas tulee hakemaaan, perillä viim. maanantaina klo 20, ei sunnuntaina. nouto ennen klo 15.30. rengassarja mukaan"
+  },
+  {
+   "count": 1,
+   "text": "oltava perillä viimeistään huomenna klo 15.30. korjaus: klo 14.30"
+  },
+  {
+   "count": 1,
+   "text": "Small dent right door, take photos at pickup"
+  },
+  {
+   "count": 1,
+   "text": "Must arrive by Mon 8pm. Destination open Mon-Fri 8am - 8pm. Br, sales"
+  },
+  {
+   "count": 1,
+   "text": "at destination monday 20:00 latest. second set of wheels in the back. thank you"
+  },
+  {
+   "count": 1,
+   "text": "liike auki 8.00-18.00. kiire, asiakas odottaa. perillä huomenna klo 20.00 mennessä (ei klo 19.00). ylimääräinen rengassarja takakontissa, mukaan"
+  },
+  {
+   "count": 1,
+   "text": "Moikka. Ostaja maksaa ensin, auton saa huomenna klo 14 alkaen. Soita asap jos tulee ongelmia"
+  },
+  {
+   "count": 1,
+   "text": "Manuaalivaihteet, kuski tarvii manuaalikortin. Lisärenkaat mukaan."
+  },
+  {
+   "count": 1,
+   "text": "Asiakas noutaa huomenna klo 15, auton oltava silloin perillä, ei klo 14."
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. maanantaina klo 19.00"
+  },
+  {
+   "count": 1,
+   "text": "Oltava perillä viimeistään huomenna klo 15.00. Tilausnro 612224."
+  },
+  {
+   "count": 1,
+   "text": "kohde auki arkisin 9.00 - 20.00. perillä ma klo 20.00 mennessä, ei su!"
+  },
+  {
+   "count": 1,
+   "text": "huolto kesken, valmis huomenna klo 7. perillä ma klo 20 mennessä. kiitos paljon"
+  },
+  {
+   "count": 1,
+   "text": "Terve. Perillä maanantaina klo 13.00 mennessä."
+  },
+  {
+   "count": 1,
+   "text": "open mon-fri 7am–3:30pm."
+  },
+  {
+   "count": 1,
+   "text": "Huomenna klo 10 valmis, tilausnumero 563912"
+  },
+  {
+   "count": 1,
+   "text": "Voi noutaa huomenna klo 7 alkaen. Perillä ma klo 20 mennessä! Soita ennen noutoa."
+  },
+  {
+   "count": 1,
+   "text": "Perillä ma klo 17 mennessä"
+  },
+  {
+   "count": 1,
+   "text": "perillä maanantaina klo 20 mennessä. huom aukioloajat arkisin klo 7 - 16.30. soita kun olet lähellä"
+  },
+  {
+   "count": 1,
+   "text": "Akku heikko, voi tarvita apukäynnistyksen."
+  },
+  {
+   "count": 1,
+   "text": "ostaja maksaa ensin, auton saa klo 11.30 alkaen. lisärenkaat mkuaan"
+  },
+  {
+   "count": 1,
+   "text": "buyer pays first, pickup from 14:30."
+  },
+  {
+   "count": 1,
+   "text": "at destination mon 20:00 latest. pickup 9:00 - 18:00 only"
+  },
+  {
+   "count": 1,
+   "text": "oltava perillä viimeistään maanantaina kello 20.00. kiitos."
+  },
+  {
+   "count": 1,
+   "text": "At destination Monday 20:00 latest"
+  },
+  {
+   "count": 1,
+   "text": "asiakas tulee hakemaan, perillä viim. maanantaina klo 20.00. rengassarja mukaan"
+  },
+  {
+   "count": 1,
+   "text": "Vastaanotto 9:stä 20:een. Avain avainboksissa, koodi 4535."
+  },
+  {
+   "count": 1,
+   "text": "Auki vain 17 asti, terveisin myynti."
+  },
+  {
+   "count": 1,
+   "text": "Viimeistään maanantaina 16.30 perillä (ei 17.30)"
+  },
+  {
+   "count": 1,
+   "text": "Perillä ma klo 15 mennessä"
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. ma klo 20.00! Soita ennen noutoa"
+  },
+  {
+   "count": 1,
+   "text": "Perillä ma klo 18.00 mennessä. Avaimet toimistosta"
+  },
+  {
+   "count": 1,
+   "text": "Terve. Asiakas tulee hakemaan, perillä viim. ma klo 17"
+  },
+  {
+   "count": 1,
+   "text": "oltava perillä viimeistään ma klo 20"
+  },
+  {
+   "count": 1,
+   "text": "Auto vielä kesärenkailla. Auto pihalla ruudussa 11, avain tiskiltä."
+  },
+  {
+   "count": 1,
+   "text": "Nouto arkisin klo 7.00 - 18.00. Oltava perillä viimeistään maanantaina klo 14.00. Avain avainboksissa, koodi 9541."
+  },
+  {
+   "count": 1,
+   "text": "perillä ma klo 18 menessä (ei klo 17)! viite 918804"
+  },
+  {
+   "count": 1,
+   "text": "Perillä kello 13 mennessä"
+  },
+  {
+   "count": 1,
+   "text": "Kohde auki arkisin 7-20. Voi noutaa klo 11 alkaen. Tilausnro 873134."
+  },
+  {
+   "count": 1,
+   "text": "liike sulkee kello 20. viimeistään kello 20 perillä"
+  },
+  {
+   "count": 1,
+   "text": "hello, not ready before 15:30"
+  },
+  {
+   "count": 1,
+   "text": "Terve. Noudettavissa aikaisintaan klo 14.30. Avaimet huollon tiskiltä"
+  },
+  {
+   "count": 1,
+   "text": "huolto kesken, valmis ke klo 13. avain avainboksissa, koodi 8517."
+  },
+  {
+   "count": 1,
+   "text": "Terve. Aukioloajat: arkisin 8 - 19. Meidän viite 58685."
+  },
+  {
+   "count": 1,
+   "text": "oltava perillä viimeistään torstaina klo 20, auto on valmis noudettavaksi, tilausnro 56839, hyvää päivänjatkoa."
+  },
+  {
+   "count": 1,
+   "text": "Valmis, voi hakea heti. Asiakas tulee hakeman, perillä viim. huomenna klo 20. Renkaat kyydissä."
+  },
+  {
+   "count": 1,
+   "text": "oltava perilla viimeistaan huomenna klo 20.00. vastaanottava liike auki arkisin 7.00-21.00."
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. keskiviikkona klo 20, tilausnro 290323, kiitos."
+  },
+  {
+   "count": 1,
+   "text": "auto valmis, nouto heti kun sopii. perillä torstaina klo 20 mennessä."
+  },
+  {
+   "count": 1,
+   "text": "voi noutaa keskiviikkona klo 12 alkaen. lisarenkaat mukaan."
+  },
+  {
+   "count": 1,
+   "text": "Asiakas tulee hakemaan, perillä viim. ke klo 13.00"
+  },
+  {
+   "count": 1,
+   "text": "at destination tmrw 19:00 latest"
+  },
+  {
+   "count": 1,
+   "text": "toimitus perille viim. to klo 16"
+  },
+  {
+   "count": 1,
+   "text": "Oltava perilla viimeistaan maanantaina klo 20.00. Noudettavissa aikaisintaan huomenna klo 10.15"
+  },
+  {
+   "count": 1,
+   "text": "Vastaanotto arkisiin 9-20."
+  },
+  {
+   "count": 1,
+   "text": "Voi noutaa klo 13 alkaen. Tilausnumero 425368. Kiits paljon."
+  },
+  {
+   "count": 1,
+   "text": "poistetttu rekisteristä, tarvitaan siirtokilvet"
+  },
+  {
+   "count": 1,
+   "text": "Must be at destination by tmoorrow 8 pm."
+  },
+  {
+   "count": 1,
+   "text": "Vastaanottto klo 10-18."
+  },
+  {
+   "count": 1,
+   "text": "lisärekaat mukaan. hyvää päivänjatkoa."
+  },
+  {
+   "count": 1,
+   "text": "Hei. Noudettavissa aikaisintaan klo 14.30"
+  },
+  {
+   "count": 1,
+   "text": "vastaanotto klo 15 asti. haettava ennen klo 20."
+  },
+  {
+   "count": 1,
+   "text": "hei, toimitus perille viim. to klo 13.30"
+  },
+  {
+   "count": 1,
+   "text": "Asiakas tulee hakemaan, perillä viim. perjantaina klo 20.00. Vastaanottava liike auki arkisin 8.00 - 20.00. Varaus 851413."
+  },
+  {
+   "count": 1,
+   "text": "vastaanottava liike auki klo 9 - 21. noudettavissa aikaisintaan torstaina klo 13. kiitti"
+  },
+  {
+   "count": 1,
+   "text": "Must be at destination by tomorrow 14:00!"
+  },
+  {
+   "count": 1,
+   "text": "Maksun jälkeen, ei ennen huomenna 15.30."
+  },
+  {
+   "count": 1,
+   "text": "Moikka. Huom vielä kesärenkaat alla."
+  },
+  {
+   "count": 1,
+   "text": "Mottagaren har öppet vardagar 7 - 21."
+  },
+  {
+   "count": 1,
+   "text": "At destination Thursday 17:00 latest!"
+  },
+  {
+   "count": 1,
+   "text": "Voi noutaa to klo 10 alkaen."
+  },
+  {
+   "count": 1,
+   "text": "Odottaa osia, valmis torstaina 10:00."
+  },
+  {
+   "count": 1,
+   "text": "Not ready before Thursday 12:00"
+  },
+  {
+   "count": 1,
+   "text": "Pckup from our yard."
+  },
+  {
+   "count": 1,
+   "text": "Moi, auto vielä kesärenkailla, kiitos"
+  },
+  {
+   "count": 1,
+   "text": "perilla to klo 16 mennessa. auto valmis vasta huomenna klo 9"
+  },
+  {
+   "count": 1,
+   "text": "oltava perillä viimeistään maanantaina klo 13"
+  },
+  {
+   "count": 1,
+   "text": "Pickup Mon-Fri 8:00-19:00 only"
+  },
+  {
+   "count": 1,
+   "text": "asiakas tulee hkaemaan, perillä viim. huomenna klo 20.00. huom aukioloajat arkisin 8.00-15.30. viite 925344. t. myynti"
+  },
+  {
+   "count": 1,
+   "text": "Auto on valmis noudettavaksi. Noudettavissa arkisiin 8.00 - 16.00. Tilausnro 773304."
+  },
+  {
+   "count": 1,
+   "text": "it's a manual. br, sales."
+  },
+  {
+   "count": 1,
+   "text": "At destination Friday 14:00 latest."
+  },
+  {
+   "count": 1,
+   "text": "Vastaanotto klo 18 asti. Rengassarja takapenkillä, kulkee mukana"
+  },
+  {
+   "count": 1,
+   "text": "at destination mon 15:00 latest. in the workshop, ready fri 8:00"
+  },
+  {
+   "count": 1,
+   "text": "Lisäreenkaat mukaan."
+  },
+  {
+   "count": 1,
+   "text": "Collect before 18:00. Must be at destination by Mon 20:00. Spare wheels in the boot."
+  },
+  {
+   "count": 1,
+   "text": "Perillä klo 16.30 mennessä."
+  },
+  {
+   "count": 1,
+   "text": "Obs manuell."
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. klo 18.00, eikun klo 19.00."
+  },
+  {
+   "count": 1,
+   "text": "Saa hakea vasta huomenna kello 13 jälkeen."
+  },
+  {
+   "count": 1,
+   "text": "Summer tyres on, no winters. Thx"
+  },
+  {
+   "count": 1,
+   "text": "huolto kesken, valmis perjantaina klo 11. kesärenkaat vanteineen takakontissa"
+  },
+  {
+   "count": 1,
+   "text": "Perillä perjantaina klo 20 mennessä, avaimet huollon tiskiltä"
+  },
+  {
+   "count": 1,
+   "text": "Huom vielä kesärenkaat alla. t. myynti."
+  },
+  {
+   "count": 1,
+   "text": "Liike kiinni puoli viideltä, haettava ennen sitä. Korjaus: puoli neljältä"
+  },
+  {
+   "count": 1,
+   "text": "Asiakas tulee hakemaan, perillä viim. huomenna klo 13.30!"
+  },
+  {
+   "count": 1,
+   "text": "deliver no later than fri 1pm. in the workshop, ready tmrw 8am. car in bay 2, keys at the desk."
+  },
+  {
+   "count": 1,
+   "text": "Vi stänger kl 16!"
+  },
+  {
+   "count": 1,
+   "text": "Vastaanotto klo 9-20. Voi noutaa klo 13 alkaen"
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. huomenna klo 19!"
+  },
+  {
+   "count": 1,
+   "text": "At destination Mon 17:00 latest!"
+  },
+  {
+   "count": 1,
+   "text": "8.00-16.30 nouto onnstuu"
+  },
+  {
+   "count": 1,
+   "text": "Moikka. Perillä maanantaina klo 20 mennessä. Nouto arkisin klo 7 - 20"
+  },
+  {
+   "count": 1,
+   "text": "Voi noutaa huomenna klo 8 alkaen. Asiakas tulee hakemaan, perillä viim. maanantaina klo 20."
+  },
+  {
+   "count": 1,
+   "text": "huom vielä kesärenkaat alla. soita 30 min ennen"
+  },
+  {
+   "count": 1,
+   "text": "Hello. Open Mon–Fri 10:00–15:30. Call the customer an hour before arrival"
+  },
+  {
+   "count": 1,
+   "text": "moikka. ostaja maksaa ensin, auton saa huomenna klo 13 alkaen. kiitos paljon"
+  },
+  {
+   "count": 1,
+   "text": "Nouto ennen klo 18.00 / Hämtas före kl 18. Toimitus perille viim. ma klo 20.00. Avain avainboksissa, koodi 3178"
+  },
+  {
+   "count": 1,
+   "text": "Receiving weekdays 9:00-21:00 only. At destination tomorrow 12:00 latest. Keys at service desk."
+  },
+  {
+   "count": 1,
+   "text": "maksun jälkeen, ei ennen klo 15, ei kun klo 16"
+  },
+  {
+   "count": 1,
+   "text": "Auto valims vasta huomenna klo 12. Soita n. tuntia ennen saapumista."
+  },
+  {
+   "count": 1,
+   "text": "Olatva perillä viimeistään maanantaina klo 20, viite 521207"
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. huomenna klo 18."
+  },
+  {
+   "count": 1,
+   "text": "auto valmisstuu tänään 16.00"
+  },
+  {
+   "count": 1,
+   "text": "Käsivaihteinen, renkaat kyydissä"
+  },
+  {
+   "count": 1,
+   "text": "Receiving until 16:00 only."
+  },
+  {
+   "count": 1,
+   "text": "hi. at destination monday 20:00 latest."
+  },
+  {
+   "count": 1,
+   "text": "Released after payment, not before 1:30pm. Extra set of tyres in the boot, take along"
+  },
+  {
+   "count": 1,
+   "text": "huom vielä kesärenkaat alla. varaus 795853"
+  },
+  {
+   "count": 1,
+   "text": "Maksun jälkeen, ei ennen tänään puoli kolmelta"
+  },
+  {
+   "count": 1,
+   "text": "Luovutus vasta kun maksettu, aikaisintaan klo 16."
+  },
+  {
+   "count": 1,
+   "text": "Perillä liike kiinni klo 16.30 jälkeen / Mottagaren stänger kl 16.30"
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. maanantaina klo 21, eikun klo 20. Soita n. tuntia ennen saapumista."
+  },
+  {
+   "count": 1,
+   "text": "moi. toimitus perillle viim. klo 20. kiitti"
+  },
+  {
+   "count": 1,
+   "text": "Moi. Auto valmis vasta klo 15. Vastaanotto arkisin 9-20. Viitenro 180982"
+  },
+  {
+   "count": 1,
+   "text": "Pick up no later than 2:30pm."
+  },
+  {
+   "count": 1,
+   "text": "vastaanotto klo 17.00 asti. nouto ennen klo 18.00. kiitos paljon."
+  },
+  {
+   "count": 1,
+   "text": "no plates, bring transfer plates. cheers"
+  },
+  {
+   "count": 1,
+   "text": "vastaanottava liike auki arkisin 8-21. asiakas tulee hakemaan, perillä viim. maanantaina klo 12. soita asiakkaalle tuntia ennen perillä oloa."
+  },
+  {
+   "count": 1,
+   "text": "Måste vara framme senast kl 17. Öppet vardagar kl 8-19."
+  },
+  {
+   "count": 1,
+   "text": "Manuell, inte automat."
+  },
+  {
+   "count": 1,
+   "text": "Must be at destination by Monday 20:00. Ref 974078. Thanks in advance"
+  },
+  {
+   "count": 1,
+   "text": "Summer tyres on, no winters. Thanks in advance."
+  },
+  {
+   "count": 1,
+   "text": "Must be at destination by Monday 12:00. Ready now."
+  },
+  {
+   "count": 1,
+   "text": "perillä ma klo 13 mennessä. kiitti"
+  },
+  {
+   "count": 1,
+   "text": "auto vielä kesärenkailla. hyvää päivänjatkoa"
+  },
+  {
+   "count": 1,
+   "text": "haettava ennen klo 20. toimitus perille viim. huomenna klo 19. kiitos, thx"
+  },
+  {
+   "count": 1,
+   "text": "Auto vamlis, nouto heti kun sopii. Huom aukioloajat klo 10.00 - 15.00."
+  },
+  {
+   "count": 1,
+   "text": "vastaanotto arkisin klo 7-20. asiakas tulee hakeaan, perillä viim. pe klo 20"
+  },
+  {
+   "count": 1,
+   "text": "Hello. Must be at destination by Wednesday 20:00. In the workshop, ready tomorrow 8:00."
+  },
+  {
+   "count": 1,
+   "text": "Hei vaan, vastaanotto klo 16.00 asti, lisärenkaat mukaan"
+  },
+  {
+   "count": 1,
+   "text": "vastaanotto arkisin 8 - 21. perillä klo 18 mennessä"
+  },
+  {
+   "count": 1,
+   "text": "at destination wednesday 15:00 latest. in the workshop, ready toomrrow 8:30."
+  },
+  {
+   "count": 1,
+   "text": "Liike kiinni klo 16, haettava ennen sitä, ei klo 17."
+  },
+  {
+   "count": 1,
+   "text": "Hej. Mottagaren har öppet kl 7 - 21. Öppettider kl 8 - 16.30. Hälsningar"
+  },
+  {
+   "count": 1,
+   "text": "Perillä keskiviikkona klo 12.30 mennessä, meidän viite 696370."
+  },
+  {
+   "count": 1,
+   "text": "Hei. Maksun jalkeen, ei ennen klo 16"
+  },
+  {
+   "count": 1,
+   "text": "Perillä liike kiinni klo 16.00 jälkene"
+  },
+  {
+   "count": 1,
+   "text": "auto vielä kesärenkailla. renkaat takakontissa, menee mukana. kiitti"
+  },
+  {
+   "count": 1,
+   "text": "noudettavissa aikaisintaan huomenna kymmeneltä, avaimet huollosta."
+  },
+  {
+   "count": 1,
+   "text": "Nouto ennen klo 15 / Vi stänger kl 15."
+  },
+  {
+   "count": 1,
+   "text": "Valmiia pihalla"
+  },
+  {
+   "count": 1,
+   "text": "toimitus perille viim. ke klo 15. liike kiinnni klo 19, haettava ennen sitä. kesärenkaat vanteineen takakontissa. kiitos"
+  },
+  {
+   "count": 1,
+   "text": "Moi. Kauppa kesken: luovutus vasta maksun jälkeen, torstaina kahdestatoista alkaen."
+  },
+  {
+   "count": 1,
+   "text": "still on summer tyres, order no 57611"
+  },
+  {
+   "count": 1,
+   "text": "hi there. must be at destination by tomorrow 12:00!"
+  },
+  {
+   "count": 1,
+   "text": "Destination open Mon–Fri 8:00-20:00. Customer picks it up Friday 20:00, must be there by then. Thx."
+  },
+  {
+   "count": 1,
+   "text": "Vastaanotto 8-21. Terveisin myyynti."
+  },
+  {
+   "count": 1,
+   "text": "liike auki arkisin 8-20. perillä liike kiinni klo 18 jälkeen."
+  },
+  {
+   "count": 1,
+   "text": "Akku heikko, voi tarvita apukäynnistyksen. Kiitos, thx"
+  },
+  {
+   "count": 1,
+   "text": "In the workshop, ready Wednesday 14:00"
+  },
+  {
+   "count": 1,
+   "text": "Vatsaanotto klo 7-21"
+  },
+  {
+   "count": 1,
+   "text": "Sommardäcken i bakluckan, följer med. Nycklar i receptionen. Tack på förhand"
+  },
+  {
+   "count": 1,
+   "text": "Takaluukku jumittaa. Kiitos paljon."
+  },
+  {
+   "count": 1,
+   "text": "Ostaja maksaa ensin, auton saa huomenna klo 10.30 alkaen. Avaimet toimistosta."
+  },
+  {
+   "count": 1,
+   "text": "Must be at destination by Thursday 13:00. In the workshop, ready tomorrow 8:00"
+  },
+  {
+   "count": 1,
+   "text": "asiakas tulee hakemaan, perillä viim. to klo 17.00!"
+  },
+  {
+   "count": 1,
+   "text": "Pickup weekdays 9:00-18:00 only. At destination tomorrow 20:00 latest. Call asap if any issues"
+  },
+  {
+   "count": 1,
+   "text": "Noudettavissa aiaisintaan huomenna klo 10. Terveisin myynti."
+  },
+  {
+   "count": 1,
+   "text": "moi. valmiina perjantaina kahdestatoista alkaen"
+  },
+  {
+   "count": 1,
+   "text": "toimitus perille viim. huomenna klo 18.00. korjaus: klo 17.00. avaimet huollon tiskiltä. kiitos, thx."
+  },
+  {
+   "count": 1,
+   "text": "Mottagaren har öppet 9-20"
+  },
+  {
+   "count": 1,
+   "text": "Hei. Toimitus perille viim. maanantaina klo 20. Auto pihalla ruudussa 6, avain tiskiltä"
+  },
+  {
+   "count": 1,
+   "text": "maksun jälkeen, ei ennen klo 13.30"
+  },
+  {
+   "count": 1,
+   "text": "Ready for pickup from 14:00 / Auto valmis vasta klo 14."
+  },
+  {
+   "count": 1,
+   "text": "ready for pickup from 15:30."
+  },
+  {
+   "count": 1,
+   "text": "Framme senast tors kl 20, nej förlåt, fre. Däcken ligger i bilen, ska med"
+  },
+  {
+   "count": 1,
+   "text": "car is ready and waiitng"
+  },
+  {
+   "count": 1,
+   "text": "At destination Thu 12:00 latset"
+  },
+  {
+   "count": 1,
+   "text": "auto valmis vasta klo 15.00, soita kun olet lähellä!"
+  },
+  {
+   "count": 1,
+   "text": "hei vaan. auto valmis vasta huomenna klo 12. avaimet toimiistosta. kiitos etukäteen"
+  },
+  {
+   "count": 1,
+   "text": "perillä huommenna klo 13:30 mennessä. auki vain klo 20 asti. meidän viite 21936"
+  },
+  {
+   "count": 1,
+   "text": "Hi there. Receiving shop open weekdays 7.00 - 20.00. Call 30 min before you arrive!"
+  },
+  {
+   "count": 1,
+   "text": "Öppet vardagar kl 9 - 18"
+  },
+  {
+   "count": 1,
+   "text": "manual, driver needs a manual licence. cheers."
+  },
+  {
+   "count": 1,
+   "text": "takaluukku jumittaa."
+  },
+  {
+   "count": 1,
+   "text": "Auto valmis vasta torstaina klo 10."
+  },
+  {
+   "count": 1,
+   "text": "perillä ma klo 18.00 mennessä"
+  },
+  {
+   "count": 1,
+   "text": "käsivaihteinen"
+  },
+  {
+   "count": 1,
+   "text": "hello. at destination 15:00 latesst"
+  },
+  {
+   "count": 1,
+   "text": "Earliest pickup tomorrow noon."
+  },
+  {
+   "count": 1,
+   "text": "Receiving shop open Mon–Fri 9am–8pm. Must arrive by Friday 1pm."
+  },
+  {
+   "count": 1,
+   "text": "Noudettavissa aikaisintaan klo 15. Vastaanotto arkisin klo 8-20"
+  },
+  {
+   "count": 1,
+   "text": "Noudettavissa aikaisintaan klo 16.00. Kojraus: klo 15.00."
+  },
+  {
+   "count": 1,
+   "text": "vastaanotto klo 15 asti"
+  },
+  {
+   "count": 1,
+   "text": "buyer pays first, pickup from fri 11:30"
+  },
+  {
+   "count": 1,
+   "text": "Nouto arkisin klo 8-18. Oltava perillä viimeistään ma klo 20. Ylimääräinen rengassarja takakontissa, mukaan. Kiitos taas"
+  },
+  {
+   "count": 1,
+   "text": "vastaanotto klo 18 asti"
+  },
+  {
+   "count": 1,
+   "text": "Vastaanotto klo 18.00 asti"
+  },
+  {
+   "count": 1,
+   "text": "Receiving Mon–Fri 8am-9pm only, spare wheels in the boot."
+  },
+  {
+   "count": 1,
+   "text": "It's a manual. Cheers"
+  },
+  {
+   "count": 1,
+   "text": "Vastaanotto klo 18.00 asti."
+  },
+  {
+   "count": 1,
+   "text": "Perillä liike kiinni klo 17.30 jälkeen, eikun klo 16.30. Voi noutaa huomenna klo 11.15 alkaen"
+  },
+  {
+   "count": 1,
+   "text": "Collect befre 17:00."
+  },
+  {
+   "count": 1,
+   "text": "Hello. Summer tyres on, no winters"
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. maanantaina klo 20.00. Vastaanotto 8.00-21.00. Viitenro 966691"
+  },
+  {
+   "count": 1,
+   "text": "At destination tomorrow 15:00 latest!"
+  },
+  {
+   "count": 1,
+   "text": "Moi. Perillä auki arkisin klo 8-20."
+  },
+  {
+   "count": 1,
+   "text": "Asiakas tulee hakemaan, perillä viim. huomenna kello 13"
+  },
+  {
+   "count": 1,
+   "text": "Manual, driver needs a manual licence."
+  },
+  {
+   "count": 1,
+   "text": "Takaluukku jumittaa"
+  },
+  {
+   "count": 1,
+   "text": "Toimitusosote auki 9-20."
+  },
+  {
+   "count": 1,
+   "text": "asiakas tulee hakemaan, perillä viim. huomenna klo 16"
+  },
+  {
+   "count": 1,
+   "text": "ready for pckup from 11:30"
+  },
+  {
+   "count": 1,
+   "text": "hei vaan. asiakas maksaa huomenna kahdeltatoista, luovutus sen jälkeen. kiitos taas"
+  },
+  {
+   "count": 1,
+   "text": "terve. aukioloajat: ma-pe klo 9:00–17:00."
+  },
+  {
+   "count": 1,
+   "text": "asiakas tulee hakemaan, perillä viim. ma klo 20. vastaanotto arkisin 9-21."
+  },
+  {
+   "count": 1,
+   "text": "Moikka. Voi noutaa klo 14 alkaen. Avaimet toimistosta."
+  },
+  {
+   "count": 1,
+   "text": "released after payment, not before 13:30."
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. huomenna klo 13, tilausnro 860468."
+  },
+  {
+   "count": 1,
+   "text": "Auto vlmis vasta klo 15.00 / Kan hämtas kl 15 och framåt"
+  },
+  {
+   "count": 1,
+   "text": "Obs sommardäck på"
+  },
+  {
+   "count": 1,
+   "text": "buyer pays first, pickup from 14:00"
+  },
+  {
+   "count": 1,
+   "text": "auto vielä kesärenkailla. renkaat takakontissa, menee mukana. kiitos etukäteen."
+  },
+  {
+   "count": 1,
+   "text": "Huolto kesken, valmis klo 13. Kiitos, thx"
+  },
+  {
+   "count": 1,
+   "text": "terve. liisärenkaat mukaan. soita kun olet lähellä"
+  },
+  {
+   "count": 1,
+   "text": "Moikka. Liike kiinni viideltä, haettava ennen sitä. Valmiina huomenna klo 8.00 alkaen. 2 sarjaa renkaita, toinen sarja kontissa"
+  },
+  {
+   "count": 1,
+   "text": "Hello. Released after payment, not before tomorrow 13:30"
+  },
+  {
+   "count": 1,
+   "text": "Lämnas ut efter betalning, tidigast i morgon kl 13"
+  },
+  {
+   "count": 1,
+   "text": "Luovutus vasta kun maksettu, aikaisintaan huomenna klo 15."
+  },
+  {
+   "count": 1,
+   "text": "Oltava perillä viimeistään ma klo 17. Viitenro 971343"
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. maanantaina klo 12, avaimet toimistosta."
+  },
+  {
+   "count": 1,
+   "text": "Released after payment, not before tomorrow 15:30"
+  },
+  {
+   "count": 1,
+   "text": "noudettavissa klo 7.00 - 19.00. oltava perillä viimeistään ma klo 20.00. avaimet huollon tiskiltä."
+  },
+  {
+   "count": 1,
+   "text": "måste vara framme senast mån kl 20 / perillä maanantaina klo 20 mennessä! ring kunden en timme innan"
+  },
+  {
+   "count": 1,
+   "text": "Oltava perillä viimeistään maanantaina klo 20, kiitti"
+  },
+  {
+   "count": 1,
+   "text": "Luovutus vasta kun maksettu, aikaisintaan huomenna klo 12.30."
+  },
+  {
+   "count": 1,
+   "text": "Maksun jälkeen, ei ennen huomenna klo 10.30."
+  },
+  {
+   "count": 1,
+   "text": "Hei. Kohde sulkee klo 16.00, eikun klo 15.00"
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. maanantaina klo 12."
+  },
+  {
+   "count": 1,
+   "text": "lämnas ut efter betalning, tidigast kl 14. nyckeln i bilen. tack"
+  },
+  {
+   "count": 1,
+   "text": "toimitus perille viim. ma klo 13.00"
+  },
+  {
+   "count": 1,
+   "text": "Oltava perillä viimeistään klo 16.00. Vastaanottava liike auki 7.00 - 20.00"
+  },
+  {
+   "count": 1,
+   "text": "Perilla maanantaina klo 12 mennessa. Haettava ennen klo 20. Kiitos taas."
+  },
+  {
+   "count": 1,
+   "text": "Oltava perillä viimeistään maanantai kahdelta"
+  },
+  {
+   "count": 1,
+   "text": "Kohde auki arkisin klo 9.00 - 21.00. 4 rengasta vanteilal tavaratilassa. Kiitos."
+  },
+  {
+   "count": 1,
+   "text": "oltava perillä viimeistään ma klo 20.00"
+  },
+  {
+   "count": 1,
+   "text": "Asiakas tulee hakemaan, perillä viim. ma klo 12."
+  },
+  {
+   "count": 1,
+   "text": "hej. öppet mån-fre kl 9-16.30. bilen står på plats 38, nyckeln i kassan"
+  },
+  {
+   "count": 1,
+   "text": "toimitus perille viim. ma klo 17.00, soita 30 min ennen."
+  },
+  {
+   "count": 1,
+   "text": "At destination Monday 18:00 latest. Ready, collect right away. Call asap if any issues."
+  },
+  {
+   "count": 1,
+   "text": "Pickup Mon–Fri 9am - 7pm only. Second set of wheels in the back."
+  },
+  {
+   "count": 1,
+   "text": "kilvet puutuu, tuo siirtokilvet. soita n. tuntia ennen saapumista"
+  },
+  {
+   "count": 1,
+   "text": "moi, oltava perillä viimeistään maaanantaina klo 17.00, soita n. tuntia ennen saapumista, kiitos taas."
+  },
+  {
+   "count": 1,
+   "text": "must be at destination by monday 14:00. second set of wheels in the back."
+  },
+  {
+   "count": 1,
+   "text": "Perillä ma klo 17 mennessä. Liike kiinni klo 20, haettava ennen sitä. Renkaat takakontissa, menee mukana"
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. maanantaina klo 12.30."
+  },
+  {
+   "count": 1,
+   "text": "Must be at destination by Mon 15:30, call 30 min before you arrive."
+  },
+  {
+   "count": 1,
+   "text": "Perillä huomenna klo 20 mennessä. Kiitos taas"
+  },
+  {
+   "count": 1,
+   "text": "Buyer pays first, pickup from tomororw 10:30."
+  },
+  {
+   "count": 1,
+   "text": "auto valmis vasta ke klo 11"
+  },
+  {
+   "count": 1,
+   "text": "It's a manual, thanks."
+  },
+  {
+   "count": 1,
+   "text": "Vastaanottava liike auki arkisin klo 9-20. Huolto kesken, valmis torstaina klo 14. Terveisin myynti"
+  },
+  {
+   "count": 1,
+   "text": "Hi. Ready for pickup from 15:00. Key in the car."
+  },
+  {
+   "count": 1,
+   "text": "Auto valmiina, haettavissa heti. Vastaanotto kolmeen asti. Kesärenkaat vanteineen takakontissa."
+  },
+  {
+   "count": 1,
+   "text": "Asiakas noutaa tänään 20.00, auton oltava silloin perillä. Auton voi hakea klo 9 - 19. Rengassarja takapenkillä, kulkee mukana."
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. klo 20:00. Avain avainboksissa, koodi 1011"
+  },
+  {
+   "count": 1,
+   "text": "ostaja maksaa ensin, auton saa klo 15 alkaen"
+  },
+  {
+   "count": 1,
+   "text": "Hello. In the workshop, ready Wednesday 14:00"
+  },
+  {
+   "count": 1,
+   "text": "Oltava perillä viimeistään ke klo 15.30"
+  },
+  {
+   "count": 1,
+   "text": "Moikka. Toimitus perille viim. ylihuomenna puoli neljältä"
+  },
+  {
+   "count": 1,
+   "text": "Pitää hakea ennen klo 19."
+  },
+  {
+   "count": 1,
+   "text": "toimitus perille viim. to klo 19. kohde auki 9-21. avain avainboksissa, koodi 8134"
+  },
+  {
+   "count": 1,
+   "text": "hämtning kl 7 - 18. kan hämtas tors kl 11 och framåt. nyckeln i bilen."
+  },
+  {
+   "count": 1,
+   "text": "Luovutus vasta kun maksettu, aikaisintaan huomenna klo 11.00. Kiitos taas"
+  },
+  {
+   "count": 1,
+   "text": "Perillä torstaina 20 mennessä"
+  },
+  {
+   "count": 1,
+   "text": "must be at destination by tomorrow 20:00"
+  },
+  {
+   "count": 1,
+   "text": "Must be at dstination by Wed 15:00"
+  },
+  {
+   "count": 1,
+   "text": "hei vaan. perillä huomenna klo 19 mennessä!"
+  },
+  {
+   "count": 1,
+   "text": "Mottagaren har öppet vardagar 9-16.30, mvh försäljningen"
+  },
+  {
+   "count": 1,
+   "text": "Manuaalivaihteet, kuski tarvii manuaalikortin. Kiitos taas"
+  },
+  {
+   "count": 1,
+   "text": "Huolto kesken, valmis torstaina klo 12.00. Kiitos etukäteen"
+  },
+  {
+   "count": 1,
+   "text": "Must be at dsetination by Fri 8pm!"
+  },
+  {
+   "count": 1,
+   "text": "hi there. must be at destination by friday 20:00. pickup 9:00 - 18:00 only."
+  },
+  {
+   "count": 1,
+   "text": "ostaja maksaa ensin, auton saa klo 11 alkaen. korjaus: klo 12."
+  },
+  {
+   "count": 1,
+   "text": "Voi noutaa klo 13 alkaen. Avain avainboksissa, koodi 7755."
+  },
+  {
+   "count": 1,
+   "text": "perillä liike kiinni klo 17.00 jälkeen. haettava ennen klo 19.00. yllimääräinen rengassarja takakontissa, mukaan."
+  },
+  {
+   "count": 1,
+   "text": "Voi noutaa klo 11.30 alkaen"
+  },
+  {
+   "count": 1,
+   "text": "Open until 5 pm only"
+  },
+  {
+   "count": 1,
+   "text": "moi. huolto kesken, valmis klo 15, ei kun klo 14"
+  },
+  {
+   "count": 1,
+   "text": "Destination closes at 18:00. Call the cusomer an hour before arrival. Thx"
+  },
+  {
+   "count": 1,
+   "text": "manuaalivaihteet, kuski tarvii manuaalikortin"
+  },
+  {
+   "count": 1,
+   "text": "Ostaja maksaa ensin, auton saa huomenna klo 10.30 alkaen. Kiitos"
+  },
+  {
+   "count": 1,
+   "text": "hi. buyer pays first, pickup from 14:00, not 15:00."
+  },
+  {
+   "count": 1,
+   "text": "Öppet mån-fre 9 - 15.30. Tack på förahnd."
+  },
+  {
+   "count": 1,
+   "text": "Klar först på torsdag kl 14.00 / Auto valmis vasta ylihuomenna klo 14. Vi stänger kl 18.00."
+  },
+  {
+   "count": 1,
+   "text": "vastaanotto klo 17.00 asti. rengassarja takapenkillä, kulkee mukana. t. myynti"
+  },
+  {
+   "count": 1,
+   "text": "Hej. Hämtas före kl 19.00. Kan hämtas tidigast i morgon kl 12.00. Nycklar i receptionen"
+  },
+  {
+   "count": 1,
+   "text": "Saknar skyltar, ta med provskyltar. Nycklar i receptionen. Tack"
+  },
+  {
+   "count": 1,
+   "text": "Hei. Huolto kesken, valmis to klo 12. Vastaanotto arkisin 9-20. Meidän viite 375074."
+  },
+  {
+   "count": 1,
+   "text": "toimitus perille viim. huomenna klo 14.30, avaimet huollosta."
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. huomenna klo 14. Haettava ennen klo 18. Avaimet toimistosta"
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. huomenna klo 20. Vastaanottava liike auki klo 8-21. Lisärenkaat mukaan."
+  },
+  {
+   "count": 1,
+   "text": "Hello. Must be at destination by tomorrow 3pm / Toimitus perille viim. huomenna kolmelta"
+  },
+  {
+   "count": 1,
+   "text": "Perillä auki arkisin klo 9.00 - 17.00"
+  },
+  {
+   "count": 1,
+   "text": "Asiakas tulee hakemaan, perillä viim. huomenna klo 20. Rengassarja mukaan. Kiitos etukäteen."
+  },
+  {
+   "count": 1,
+   "text": "at destination monday 20:00 lateest. thank you."
+  },
+  {
+   "count": 1,
+   "text": "Noudettavissa aikaisintaan torstaina klo 12.00 / In the workshop, ready Thursday 12:00"
+  },
+  {
+   "count": 1,
+   "text": "Arkipäivisin klo 9 - 15 nouto onnistuu, ilmoita kun lähdet"
+  },
+  {
+   "count": 1,
+   "text": "Released after payment, not before tmrw 4pm."
+  },
+  {
+   "count": 1,
+   "text": "At destination Monday 8pm latest"
+  },
+  {
+   "count": 1,
+   "text": "Asiakas tulee hakemaan, perillä viim. maanantaina klo 15!"
+  },
+  {
+   "count": 1,
+   "text": "Vi stängger kl 18. Måste vara framme senast på måndag kl 20"
+  },
+  {
+   "count": 1,
+   "text": "Auto vielä kesärenkailla. Kiitos etukäteen"
+  },
+  {
+   "count": 1,
+   "text": "lisärrenkaat mukaan."
+  },
+  {
+   "count": 1,
+   "text": "At destination Monday 16:00 latest!"
+  },
+  {
+   "count": 1,
+   "text": "Luovutetaan kun maksu näkyy, aikaisintaan huomenna klo 1100. Soita n. tuntia ennen saapumista"
+  },
+  {
+   "count": 1,
+   "text": "Auto valis vasta klo 14"
+  },
+  {
+   "count": 1,
+   "text": "sommardäcken i bakluckan, följer med. vår ref 661200"
+  },
+  {
+   "count": 1,
+   "text": "Toimitukset vastaanotetaan klo 18 asti. Nouto ma-pe klo 9-18"
+  },
+  {
+   "count": 1,
+   "text": "Perillä klo 20.00 mennessä. Nouto arkisin 9.00-14.30"
+  },
+  {
+   "count": 1,
+   "text": "Moi. Auton voi hakea ma-pe klo 9:00–17:00."
+  },
+  {
+   "count": 1,
+   "text": "Ready for pickup from Fri 10:00."
+  },
+  {
+   "count": 1,
+   "text": "Kiire, asiakas odottaa. Perillä huomenna klo 2000 mennessä. Saa hakea vasta huomenna klo 8.00 jälkeen"
+  },
+  {
+   "count": 1,
+   "text": "Luovutus vasta kun mkasettu, aikaisintaan klo 16.00."
+  },
+  {
+   "count": 1,
+   "text": "Must be at dstination by 19:00!"
+  },
+  {
+   "count": 1,
+   "text": "Haettava ennen klo 14. Oltava perillä viimeistään huomenna klo 20. Ilmoita kun lähdet"
+  },
+  {
+   "count": 1,
+   "text": "Moi, huom vielä kesärenkaat alla."
+  },
+  {
+   "count": 1,
+   "text": "ostaja maksaa ensin, auton saa huomenna klo 10.30 alkaen. auto pihalla ruudussa 2, avain tiskiltä"
+  },
+  {
+   "count": 1,
+   "text": "Huolto kesken, valmis huomenna klo 12, eikun klo 11."
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. perjanttaina klo 16"
+  },
+  {
+   "count": 1,
+   "text": "Vastaanotto klo 16.30 asti / Destination clses at 16:30"
+  },
+  {
+   "count": 1,
+   "text": "toimitus perille viim. huomenna klo 14. vastaanottava liike auki arkisin 9 - 20. avaimet toimistosta. kiitti"
+  },
+  {
+   "count": 1,
+   "text": "pickup by 3 pm at the latest. call 30 min before you arrive. cheers."
+  },
+  {
+   "count": 1,
+   "text": "kilvet puuttuu, tuo siirtokivet."
+  },
+  {
+   "count": 1,
+   "text": "At destination 17:00 latest / Viimeistään 17.00 perillä."
+  },
+  {
+   "count": 1,
+   "text": "Hei. Huom aukioloajat klo 7-19. Oltava perillä viimeistään huomnna klo 20!"
+  },
+  {
+   "count": 1,
+   "text": "Ostaja maksaa ensin, auton saa huomenna klo 12.00 alkaen"
+  },
+  {
+   "count": 1,
+   "text": "Pickup only after payment, from 3pm."
+  },
+  {
+   "count": 1,
+   "text": "Kiire, asiakas odottaa. Perillä klo 19:00 mennessä."
+  },
+  {
+   "count": 1,
+   "text": "Must be at destintion by tomorrow 20:00, thank you."
+  },
+  {
+   "count": 1,
+   "text": "Toimitus perille viim. ma klo 13"
+  },
+  {
+   "count": 1,
+   "text": "Pickup weekdays 9:00-18:00 only. Destination open weekdays 7:00-20:00. Second set of wheeels in the back"
+  },
+  {
+   "count": 1,
+   "text": "moi. auto vlamis vasta klo 16."
+  },
+  {
+   "count": 1,
+   "text": "Hello. Buyer pays first, pickup from tomorrow 11:30"
+  },
+  {
+   "count": 1,
+   "text": "Pick up no later than 7pm."
+  },
+  {
+   "count": 1,
+   "text": "perillä liike kiinni klo 15 jälkeen"
+  },
+  {
+   "count": 1,
+   "text": "ostaja maksaa ensin, auton saa huomenna klo 12.30 alkaen. rengassarja mukaan. kiitos"
+  },
+  {
+   "count": 1,
+   "text": "Valmiina huomenna 7:stä alkaen, kiitos taas"
+  },
+  {
+   "count": 1,
+   "text": "toimitus perille viim. huomenna klo 17"
+  },
+  {
+   "count": 1,
+   "text": "Vastaanotto ma-pe 9:stä 21:een. Soita asap jos tulee ongelmia."
+  },
+  {
+   "count": 1,
+   "text": "tankisssa vähän"
+  },
+  {
+   "count": 1,
+   "text": "Kiire, asiakas odottaa. Perillä 20 mennessä! Vastaanotto onnistuu arkipäivisin 8–20. 4 rengasta vanteilla tavaratilassa."
+  },
+  {
+   "count": 1,
+   "text": "Perillä liike kiinni klo 15 jälkeen."
+  },
+  {
+   "count": 1,
+   "text": "asiakas noutaa maanantaina klo 20, auton oltava silloin perillä. kiitos paljon."
+  },
+  {
+   "count": 1,
+   "text": "Vastaanotto klo 15.00 asti"
+  },
+  {
+   "count": 1,
+   "text": "Moi. Auto valmiina, haettavissa heti. Toimitus perille viim. 19.00"
+  },
+  {
+   "count": 1,
+   "text": "Asiakas tulee hakemaan, perilla viim. klo 20. Auto valmiina, haettavissa heti"
+  },
+  {
+   "count": 1,
+   "text": "noudettavissa aikaisintaan klo 16.00. kiitos taas"
+  },
+  {
+   "count": 1,
+   "text": "Asiakas tulee hakemaan, perillä viim. maanantaina klo 17"
+  },
+  {
+   "count": 1,
+   "text": "Noudettavissa arkisin klo 7 - 19 / Pickup weekdays 7:00-19:00 only. Asiakas tulee hakemaan, perillä viim. maanantaina klo 20 (ei sunnuntaina)"
+  },
+  {
+   "count": 1,
+   "text": "Hello. Must be at destination by Mnday 20:00!"
+  },
+  {
+   "count": 1,
+   "text": "oltava perillä viimeistään ma klo 18"
+  },
+  {
+   "count": 1,
+   "text": "Moikka. Oltava perilla viimeistaan maanantaina klo 20"
+  },
+  {
+   "count": 1,
+   "text": "must be at destination by monday 19:00."
+  },
+  {
+   "count": 1,
+   "text": "Must be at destination by Mon 16:00"
+  },
+  {
+   "count": 1,
+   "text": "hi there. manual, driver needs a mnual licence"
+  },
+  {
+   "count": 1,
+   "text": "kiire, asiakas odottaa. perilla maanantai kello 20 mennessa. auto valmis, nouto heti kun sopii"
+  }
+ ]
+}
