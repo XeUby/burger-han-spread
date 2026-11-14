@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-14T11:26:05.860701+00:00",
+  "updatedAt": "2026-11-14T11:57:06.463528+00:00",
   "unit": "unique simulation seed/week; repeated worlds are not independent replications",
-  "worldRecords": 496,
+  "worldRecords": 502,
   "uniqueNamedWeeks": 84,
-  "distinctLabels": 136,
-  "distinctSourceSettingsCombinations": 103,
+  "distinctLabels": 142,
+  "distinctSourceSettingsCombinations": 104,
   "interpretation": "Counts document the adaptive search, not independent tests or a guarantee that distinct deterministic seeds are IID. Every observed seed is conservatively unavailable for any future untouched panel.",
   "hiddenSeedWorlds": [
     {
@@ -2821,6 +2821,13 @@
           "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
           "hasTerminalArtifacts": true,
           "metaSha256": "e9b90bb378c9d1892344508b6409a75a5d7b3b11122f7d8d64d7bae7a1747dae"
+        },
+        {
+          "worldId": "wfa9669d678095e9a90f4",
+          "label": "option-specific-development-v1-1",
+          "revision": "21b4931978631f9ef79d64022c4dc91fbf79a15471e48404f5240c28fe35e6bc",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "cb4e297a7b9e5820a321ac530ba4263cc0afdce1f7355124227565293dc75b55"
         }
       ],
       "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
@@ -2881,6 +2888,13 @@
           "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
           "hasTerminalArtifacts": true,
           "metaSha256": "69c8c8bf89d254b1c905730948bd82d1e9bbdd3eea11e83372f13fe01bcf0480"
+        },
+        {
+          "worldId": "w949c61459e530060b9cc",
+          "label": "option-specific-development-v1-6",
+          "revision": "21b4931978631f9ef79d64022c4dc91fbf79a15471e48404f5240c28fe35e6bc",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "b3460a099af8fb7ea82cef74a7102d0bb59a65aacfc58c035d8414a742949684"
         }
       ],
       "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
@@ -2943,6 +2957,13 @@
           "metaSha256": "921f7e4f3f7426a545f6003e85f9e67db9aec4e31209356838e9137d84ad5d47"
         },
         {
+          "worldId": "wc551fd9a7dc54ac45750",
+          "label": "option-specific-development-v1-2",
+          "revision": "21b4931978631f9ef79d64022c4dc91fbf79a15471e48404f5240c28fe35e6bc",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "ac64146991a9ef505d20c228d5cd359c06aa8e2561b82625259f711a9737fe2b"
+        },
+        {
           "worldId": "wcec3ccd3a02b20ed13a9",
           "label": "level8-estimate-v1-payments",
           "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
@@ -2972,6 +2993,13 @@
       "role": "development-or-historical-evidence",
       "eligibleForFreshValidation": false,
       "worlds": [
+        {
+          "worldId": "w159fe75356c007abe148",
+          "label": "option-specific-development-v1-3",
+          "revision": "21b4931978631f9ef79d64022c4dc91fbf79a15471e48404f5240c28fe35e6bc",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "e543422e8fbb2eb6eaceaa5aa86c0e69e7556cf1c851cd6bf5cf7e9dddd8cee9"
+        },
         {
           "worldId": "w46870f3259ec08d9c079",
           "label": "coverage-development-v2-3",
@@ -3045,6 +3073,13 @@
           "metaSha256": "4042e8ed64b9758577e1c013a0a0460968a225bb0dfebcb7addb0ad31fdfaea9"
         },
         {
+          "worldId": "w76af7dbcc42f31715813",
+          "label": "option-specific-development-v1-4",
+          "revision": "21b4931978631f9ef79d64022c4dc91fbf79a15471e48404f5240c28fe35e6bc",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "107f8ce5e74803a9e3cce0bf72c13f5923546993e02d3adaf8c7e4d706e36e59"
+        },
+        {
           "worldId": "waf26bf46d2c781be6dc6",
           "label": "bundle-payment-ablation-v1-control-low-4",
           "revision": "8e54dff93813f8a70dceeadba90e85289bb983adf257cbbad67f2461c6794615",
@@ -3080,6 +3115,13 @@
           "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
           "hasTerminalArtifacts": true,
           "metaSha256": "cc41e881e92128149e6fc3f79fb1f3e3dd46b30fe22e5565ae72bc7368b3d3a8"
+        },
+        {
+          "worldId": "w07ed50f642200c1bd409",
+          "label": "option-specific-development-v1-5",
+          "revision": "21b4931978631f9ef79d64022c4dc91fbf79a15471e48404f5240c28fe35e6bc",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "f2c1cfa481e5386c340fadd1f1075228865a21b6fafc47e63562e1ae1daf0afa"
         },
         {
           "worldId": "w1006906b294a00137a7c",

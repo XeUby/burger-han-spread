@@ -165,7 +165,8 @@
     "ablationDiagnostic": "Portfolio low-high +1025.405euros/week (paired-t95[-42.92,2093.73]); portfolio-control at high +611.235[-403.36,1625.83], at low +1767.385[-288.78,3823.55]. Control low-high -130.745[-2007.07,1745.58]. Interaction+1156.15[-1589.46,3901.76]. Payment convention contributes materially on these blocks but is not a portable control improvement; whole-package contrast does not isolate the optimizer. Retain candidate, proceed to coverage/intervention stage, no promotion.",
     "ablationFollowup": "bundle-payment-followup-v1: exact unchanged portfolio/high freeze completed4/4, all qualified, zero undelivered/failed visits/fines/action errors/recoveries. Observed event prefixes exactly reproduce all four interrupted attempts. Original panel remains incomplete, total20attempts across four seed blocks,16whole-policy outcomes plus4retained failures.",
     "coverage": "coverage-development-v2:8/8 complete and qualified, mean10874.72375euros, paired loss482.6575 versus archived candidate.192 acquisition assignments,30wins;320 randomized direct-post openings,263 booked within120. Batch interception gap left2097offers unrandomized;protocolConformant=false. H3 unsupported, H2 direct-only. Corrected source hook and10policy/7report tests; correction not deployed. No replacement or promotion.",
-    "modelChecks": "coverage-model-check-v1:fixed leave-one-seed-out logistic models fail predeclared gates. Acquisition Brier constant.20325,new.17958,existing adaptive demand.14233 (6/8improved versus constant, worse than incumbent). Booking constant.14780,new.13426 but only5/8improved; award/posting target mismatch prevents comparable incumbent check. No replacement promoted, no hyperparameter search, full costs/capacity unvalidated."
+    "modelChecks": "coverage-model-check-v1:fixed leave-one-seed-out logistic models fail predeclared gates. Acquisition Brier constant.20325,new.17958,existing adaptive demand.14233 (6/8improved versus constant, worse than incumbent). Booking constant.14780,new.13426 but only5/8improved; award/posting target mismatch prevents comparable incumbent check. No replacement promoted, no hyperparameter search, full costs/capacity unvalidated.",
+    "optionSpecific": "Six new option-specific worlds all qualified but lost all6paired weeks:11456.75euros versus12013.97, paired-557.21[-890.75,-223.67]. More orders(+18.83/week) but driver fees+1067.55 exceeded revenue+579.49. All7771solves OPTIMAL, max208alternatives, zero360cap hits. Reject variant; no tuning or promotion. Full reports retain all6worlds and administrative5+1drain/continuation."
   },
   "revisedSequence": [
     {
@@ -182,7 +183,8 @@
     {
       "priority": 3,
       "work": "Two structural replacements on six predeclared paired development seeds, reusing exact archived candidate controls only with verified conformance. Test option-aware acquisition/capacity, then two-new-request routing with driver-aware fulfillment.",
-      "maximumNewWorlds": 12
+      "maximumNewWorlds": 12,
+      "status": "First structural comparison completed:6new option-specific worlds rejected on all6paired weeks. Six-world second structural allocation remains unspent; must target fulfillment economics/partial-win routes with a distinct prospective hypothesis. Own concurrency capped at4, shared cap8."
     }
   ]
 }

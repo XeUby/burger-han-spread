@@ -137,6 +137,13 @@ export class Dispatcher extends Mechanisms {
     return { action, ratio: bid?.ratio ?? this.settings.price, order: { id: request.id, dealerId: request.dealerId, option: options[0]!.kind, priceCents: Math.min(...Object.values(action.prices) as number[]), deadline, legs: request.legs, status: "waiting", deliveredAt: [null], lastPickupAt: feasible.latestPickupAt } }
   }
 
+  proposals(request: PriceRequest): NonNullable<ReturnType<Dispatcher["proposal"]>>[] {
+    const proposal = this.proposal(request)
+    return proposal ? [proposal] : []
+  }
+
+  alternativeLimit(): number { return 120 }
+
   buildFrame(): Frame {
     const requests = [...this.waiting.values()].sort((a,b) => a.respondBy-b.respondBy).slice(0,3)
     const owned = this.owned(requests), plans = new Map<string, Plan>()
@@ -165,7 +172,7 @@ export class Dispatcher extends Mechanisms {
     }
     const costs=new Map<string,{cost:number;late:number;future:number;early:number;work:number}>()
     const fulfillment = (order: Order, post: PostAction, multiplier: number, s: number) => {
-      const key=`${order.id}:${multiplier}:${s}`
+      const key=`${order.id}:${order.option}:${order.deadline}:${multiplier}:${s}`
       const cached=costs.get(key)
       if(cached) return cached
       const request = {...this.requests.get(order.id)!,legs:order.legs}, m = this.model(request,order.deadline), shock = SHOCKS[s]!
@@ -182,7 +189,7 @@ export class Dispatcher extends Mechanisms {
       return result
     }
     const add = (claims: string[], plan: Plan, outcomes: Outcome[], baseline=false) => {
-      if (input.alternatives.length>=120 && !baseline) { omitted++; return }
+      if (input.alternatives.length>=this.alternativeLimit() && !baseline) { omitted++; return }
       const id = `p${input.alternatives.length}`
       input.alternatives.push({ id, observedAt: this.now, claims, outcomes }); plans.set(id,plan)
       if (baseline) input.baseline.push(id)
@@ -210,9 +217,7 @@ export class Dispatcher extends Mechanisms {
       if (route) for (const multiplier of feeOptions) add(items.map(o=>o.order.id),{kind:"fulfill",due:Math.min(...items.map(o=>o.due)),owned:items,action:pay(route.post,multiplier),multiplier},ownedOutcomes(items,multiplier,route))
     }
     for (const o of owned.filter(o=>!o.gigId)) for (const multiplier of feeOptions.filter(m=>m!==1)) add([o.order.id],{kind:"fulfill",due:o.due,owned:[o],action:pay(o.post,multiplier),multiplier},ownedOutcomes([o],multiplier))
-    for (const request of requests) {
-      const proposal=this.proposal(request)
-      if (!proposal) continue
+    for (const request of requests) for (const proposal of this.proposals(request)) {
       const order=proposal.order, post=this.singlePost(order)
       const choices: { anchor?:Owned; route?:BundlePlan }[]=[{}]
       for (const anchor of owned) {

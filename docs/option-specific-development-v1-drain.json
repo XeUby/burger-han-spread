@@ -1,0 +1,78 @@
+{
+  "checkedAt": "2026-11-14T11:51:39.819Z",
+  "ownCreated": [
+    "wfa9669d678095e9a90f4",
+    "wc551fd9a7dc54ac45750",
+    "w159fe75356c007abe148",
+    "w76af7dbcc42f31715813",
+    "w07ed50f642200c1bd409"
+  ],
+  "ownUnfinished": [
+    {
+      "worldId": "wfa9669d678095e9a90f4",
+      "kind": "practice",
+      "level": 8,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": false
+    },
+    {
+      "worldId": "wc551fd9a7dc54ac45750",
+      "kind": "practice",
+      "level": 8,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": false
+    },
+    {
+      "worldId": "w76af7dbcc42f31715813",
+      "kind": "practice",
+      "level": 8,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": false
+    },
+    {
+      "worldId": "w07ed50f642200c1bd409",
+      "kind": "practice",
+      "level": 8,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": false
+    }
+  ],
+  "otherUnfinished": [
+    {
+      "worldId": "f45cf30e8dc0e31907942",
+      "kind": "final",
+      "level": 8,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": false
+    },
+    {
+      "worldId": "webb878901bb293303b1f",
+      "kind": "practice",
+      "level": 8,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": false
+    },
+    {
+      "worldId": "wa9d3a1ab9f48c08fd93b",
+      "kind": "practice",
+      "level": 8,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": false
+    }
+  ],
+  "newCreationStopped": true
+}

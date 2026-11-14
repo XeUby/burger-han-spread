@@ -1,0 +1,13 @@
+{
+  "effectiveAt": "2026-11-14T11:49:28.980135+00:00",
+  "originalManifest": "experiments/option-specific-development-v1.json",
+  "maximumUnfinishedTeamWorlds": 8,
+  "action": "SIGINT sent to verified runner PID77359: stops creation, retains active policy execution. Five worlds were already created before the user instruction; sixth case must remain not_started in this runner.",
+  "continuation": "After draining this runner, resume only the never-created case under a separate attempts file, at most4own workers and8unfinished team worlds. Preserve all original attempts and policy/source/settings/seeds; no replacement of failed or completed cases.",
+  "knownExternalWorlds": [
+    "wb3c4e99c46876eeecc0c",
+    "w9cbde8c6ba5f35ca9d6f",
+    "f45cf30e8dc0e31907942"
+  ],
+  "maximumConcurrentOwnRuns": 4
+}

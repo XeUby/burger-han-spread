@@ -1,0 +1,26 @@
+{
+  "frozenAt": "2026-11-14T11:47:23.894254+00:00",
+  "role": "Six matched familiar development weeks; option-specific acquisition versus exact archived candidate",
+  "design": "docs/option-specific-study-design.md",
+  "seeds": [
+    "level8-estimate-12912cd52d9ef00ea35490e8",
+    "level8-estimate-502fd2d71b59b218d9af949c",
+    "level8-estimate-b87f6821707b892a55d34716",
+    "level8-estimate-c5d2d97a139c8d2c999d17b2",
+    "level8-estimate-fa0f948061c4c308cc69f2ac",
+    "level8-estimate-2e646af6a3e79187503ccc80"
+  ],
+  "selection": "First six level8-estimate-v1 seeds in manifest order, chosen before this experiment; all retired development weeks.",
+  "changes": "Enumerate the already admitted delivery options as separate single-option quotes with exact revenue/deadline/dealer windows. Preserve demand model, payment convention, admission gates and scenario economics. Separate option/deadline cost caches. Allow360alternatives to hold enumerated options; unchanged solver/time budget.",
+  "controls": "Six exact archived portfolio-payments outcomes; default and single-option conformance tested against the frozen source.",
+  "analysis": "Paired whole-week profit, qualification, throughput, payments/refunds, undelivered, failed visits, fines, action/runtime failures and candidate omissions. Six paired weeks, not twelve independent observations. Report descriptive uncertainty; no promotion or rank claim.",
+  "gate": "Mean paired gain>=1500euros/week, all six qualifying, minimum weekly on-time>=.92, no undelivered, failed visits or fines. Passing only supports a next frozen structural experiment.",
+  "stopping": "Exactly six new worlds, no retries/replacements or outcome-based tuning. Runtime failure stops new creation while active worlds retain outcomes. Original600second runtime budget.",
+  "operations": {
+    "workers": 6,
+    "capacity": 8,
+    "sharedLock": "runs/team-world-creation.lock",
+    "mode": "practice"
+  },
+  "authorization": "Unranked only; no ranking, test finals, finals, deletion or forks."
+}

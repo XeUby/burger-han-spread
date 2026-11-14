@@ -1,5 +1,7 @@
 # Spread research handoff — 14 November 2026
 
+**Latest capacity instruction: this assistant may run at most FOUR concurrent worlds.** The shared team cap remains EIGHT unfinished worlds. Use at most4own workers, count existing team worlds under the shared lock, and let previously launched runs drain. See `experiments/team-capacity-policy.json`.
+
 ## Resumed research — after noon
 
 The user resumed local development and unranked research, then prioritized estimating the current best level-8 policy before further development. Ranking, test finals and finals remain unauthorized. The earlier paused status below is historical.
@@ -70,13 +72,25 @@ Equal-week Brier scores: acquisition constant0.20325, new logistic0.17958, exist
 
 Full results and held-out predictions: `docs/coverage-model-check-v1-results.json`. Cost modeling remains unvalidated: first-gig fees and partly allocated order ledgers are not full continuation costs or capacity opportunity cost. Keep the existing demand model and current policy. Next structural work should preserve this strong demand baseline and isolate option-specific acquisition/fulfillment valuation; it must not smuggle in the rejected fitted models or treat a probability-horizon mismatch as a validated cost model. Any corrected offer coverage requires a separate prospective freeze.
 
+## Live option-specific comparison: rejected
+
+`option-specific-development-v1` tested six new unranked worlds against the exact archived candidate on the first six estimate seeds. Every candidate quote offered one consistent delivery option, with its revenue, deadline and dealer windows; the existing demand and fulfillment models remained. A per-option/deadline cost-cache key prevents cross-option reuse. The alternative cap increased120to360 to accommodate enumeration. Seven option tests plus eight existing portfolio tests cover conformance, option identity/windows, cost separation, real-solver mutual exclusion and crowded candidate coverage. The translated frozen bundle passed TypeScript checks.
+
+All six worlds completed and qualified, with zero undelivered orders, failed visits, fines, action errors, recoveries or runtime failures. The policy lost all6pairs: mean profit €11,456.75 versus €12,013.97, paired loss €557.21/week (descriptive paired-t95 −€890.75 to −€223.67; bootstrap −€771.84 to −€317.15). Orders increased333.33 versus314.50, but revenue gained only€579.49 while driver fees rose€1,067.55, refunds€46.49 and release fees€22.67. Minimum weekly on-time93.01%; six successes give only60.70% one-sided95 qualification lower bound. Reject this implementation; no promotion or tuning on these seeds.
+
+The candidate audit records7,771solver calls, allOPTIMAL; maximum208alternatives, zero360-cap hits, and zero multi-option substantive quotes. The1,551omissions in existing telemetry concern requests outside the current bounded frame, not evidence that the360alternative cap was hit. This result is counterevidence to replacing menus with these single-option decisions under the retained economics. It does not prove that accurate menu-choice valuation is unnecessary or identify a single causal reason for loss. The extra volume did not pay for its fulfillment costs.
+
+During execution, the user imposed **four concurrent runs for this assistant**, explicitly not a four-world team cap. Five worlds had already started; SIGINT stopped creation while they finished normally. The sixth case remainednot_started in the original journal. After all five ended, a separately frozen continuation created exactly that never-created case, with one worker. The original runner exit1 records administrative cancellation of pending creation, not a failed policy world. No world was replaced or deleted. The three other team worlds were left untouched. `experiments/team-capacity-policy.json` records four own runs and eight shared unfinished worlds for all future work; the option freezer now defaults to four workers.
+
+Evidence: `docs/option-specific-development-v1-results.json`, original/continuation operation audits, `experiments/option-specific-development-v1-capacity-amendment.json`, both attempt journals and frozen source archive. All six own worlds are ended. Next structural work must address action-conditioned fulfillment/continuation costs and preserve the strong demand baseline; increased acquisition or solver optimality alone is insufficient. The broader competitive objective remains open.
+
 Read this first, then follow the evidence links. Workspace: `/Users/yerzham/Documents/ChatGPT/BAHN`. Branch: `codex/standalone-dispatcher`. Research/results commit before this handoff: `faa043d`, pushed to origin. This handoff compiles completed work; it does not resume experiments or authorize ranking. The persistent research goal is paused at the user's request.
 
 ## Current status and authority
 
 - The objective remains substantially better whole-week net profit with reliable qualification, ultimately competitive with the leaderboard. It has **not** been achieved. Successful execution, qualifying weeks, and competitive performance are distinct.
 - All ranking authorization for the noon round expired on 14 November at 12:00 Helsinki. No new ranked runs, test finals, or finals without renewed explicit permission. `experiments/search-integrity.json` records ranking as closed.
-- The latest user limit is **eight unfinished team worlds total**, superseding four. Older frozen manifests intentionally retain stricter limits. Coordinate with other runners and serialize creation using the shared lock; a local lock alone is not proof that a job is live.
+- This assistant is limited to **four concurrent runs**; the shared team cap remains **eight unfinished worlds total**. Older frozen manifests intentionally retain stricter limits. Coordinate with other runners and serialize creation using the shared lock; a local lock alone is not proof that a job is live.
 - No active relevant Node runner was found in the process check after noon. The last retained official server inventory at 11:59:02 Helsinki showed zero unfinished team worlds. These are dated observations: recheck both processes and server state before acting.
 - No scheduler fix was made after the upper-level incident. The paused continuation only read files and inspected processes. Do not mistake the proposed repair below for implemented code.
 - Credentials remain local in ignored `.env`; raw runs and environments are ignored. Never print credentials or put them in commits. Commands must be one complete physical line each.

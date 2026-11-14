@@ -1,0 +1,105 @@
+{
+  "checkedAt": "2026-11-14T11:57:08.667Z",
+  "manifest": "experiments/option-specific-development-v1-continuation.json",
+  "cases": [
+    {
+      "trial": {
+        "id": "option-specific-development-v1-6",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "level": 8,
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "payout": 0.85,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "noteSpelling": false,
+          "relist": false,
+          "openingOnly": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 1.15,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14,
+          "firstOptionOnly": true,
+          "openingCostAdmission": true,
+          "actionGuard": true,
+          "portfolio": true,
+          "futureValue": true,
+          "paymentChoice": true,
+          "optionQuotes": true
+        }
+      },
+      "status": "completed",
+      "worldId": "w949c61459e530060b9cc",
+      "score": {
+        "marginCents": 1080372,
+        "revenueCents": 3271233,
+        "marginShare": 0.33026445991465603,
+        "wonOrders": 343,
+        "onTimeShare": 0.9620991253644315,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "official": {
+        "worldId": "w949c61459e530060b9cc",
+        "kind": "practice",
+        "level": 8,
+        "parent": null,
+        "season": null,
+        "boardRun": null,
+        "ended": true
+      }
+    }
+  ],
+  "maximumObservedBeforeCreation": 3,
+  "unfinishedTeamWorlds": [
+    {
+      "worldId": "f45cf30e8dc0e31907942",
+      "kind": "final",
+      "level": 8,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": false
+    },
+    {
+      "worldId": "webb878901bb293303b1f",
+      "kind": "practice",
+      "level": 8,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": false
+    },
+    {
+      "worldId": "wa9d3a1ab9f48c08fd93b",
+      "kind": "practice",
+      "level": 8,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": false
+    }
+  ],
+  "limitation": "The shared lock serializes cooperating local creators. Server checks cannot guarantee external runners honor the same lock between observations."
+}

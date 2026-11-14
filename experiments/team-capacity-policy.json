@@ -1,0 +1,7 @@
+{
+  "effectiveAt": "2026-11-14T11:49:28.980135+00:00",
+  "authority": "User clarification: I mean you, not within team. You should not run more than4",
+  "maximumUnfinishedTeamWorlds": 8,
+  "scope": "This assistant may run at most4concurrent worlds. The existing shared team cap remains8. Five started before the instruction are draining with creation stopped; later continuations use workers<=4 and capacity<=8.",
+  "maximumConcurrentOwnRuns": 4
+}
