@@ -1,0 +1,466 @@
+[
+ {
+  "label": "v3-open",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "v3-soft05",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "softLimits": 0.5
+  }
+ },
+ {
+  "label": "v3-soft10",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "softLimits": 1.0
+  }
+ },
+ {
+  "label": "v3-soft20",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "softLimits": 2.0
+  }
+ },
+ {
+  "label": "v3-open",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "v3-soft05",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "softLimits": 0.5
+  }
+ },
+ {
+  "label": "v3-soft10",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "softLimits": 1.0
+  }
+ },
+ {
+  "label": "v3-soft20",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "softLimits": 2.0
+  }
+ },
+ {
+  "label": "v3-open",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "v3-soft05",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "softLimits": 0.5
+  }
+ },
+ {
+  "label": "v3-soft10",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "softLimits": 1.0
+  }
+ },
+ {
+  "label": "v3-soft20",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "softLimits": 2.0
+  }
+ },
+ {
+  "label": "v3-open",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "v3-soft05",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "softLimits": 0.5
+  }
+ },
+ {
+  "label": "v3-soft10",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "softLimits": 1.0
+  }
+ },
+ {
+  "label": "v3-soft20",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "softLimits": 2.0
+  }
+ },
+ {
+  "label": "v3-open",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "v3-soft05",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "softLimits": 0.5
+  }
+ },
+ {
+  "label": "v3-soft10",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "softLimits": 1.0
+  }
+ },
+ {
+  "label": "v3-soft20",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "softLimits": 2.0
+  }
+ },
+ {
+  "label": "v3-open",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "v3-soft05",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "softLimits": 0.5
+  }
+ },
+ {
+  "label": "v3-soft10",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "softLimits": 1.0
+  }
+ },
+ {
+  "label": "v3-soft20",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "softLimits": 2.0
+  }
+ },
+ {
+  "label": "v3-open",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "v3-soft05",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "softLimits": 0.5
+  }
+ },
+ {
+  "label": "v3-soft10",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "softLimits": 1.0
+  }
+ },
+ {
+  "label": "v3-soft20",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "softLimits": 2.0
+  }
+ },
+ {
+  "label": "v3-open",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "v3-soft05",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "softLimits": 0.5
+  }
+ },
+ {
+  "label": "v3-soft10",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "softLimits": 1.0
+  }
+ },
+ {
+  "label": "v3-soft20",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true,
+   "summerTyres": true,
+   "maxKm": 5000,
+   "softLimits": 2.0
+  }
+ },
+ {
+  "label": "slope10",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "demandSlope": 10
+  }
+ },
+ {
+  "label": "slope7",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "demandSlope": 7
+  }
+ },
+ {
+  "label": "slope10",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "demandSlope": 10
+  }
+ },
+ {
+  "label": "slope7",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "demandSlope": 7
+  }
+ },
+ {
+  "label": "slope10",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "demandSlope": 10
+  }
+ },
+ {
+  "label": "slope7",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "demandSlope": 7
+  }
+ },
+ {
+  "label": "slope10",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "demandSlope": 10
+  }
+ },
+ {
+  "label": "slope7",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "demandSlope": 7
+  }
+ },
+ {
+  "label": "slope10",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "demandSlope": 10
+  }
+ },
+ {
+  "label": "slope7",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "demandSlope": 7
+  }
+ },
+ {
+  "label": "slope10",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "demandSlope": 10
+  }
+ },
+ {
+  "label": "slope7",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "demandSlope": 7
+  }
+ },
+ {
+  "label": "slope10",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "demandSlope": 10
+  }
+ },
+ {
+  "label": "slope7",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "demandSlope": 7
+  }
+ },
+ {
+  "label": "slope10",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "demandSlope": 10
+  }
+ },
+ {
+  "label": "slope7",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "demandSlope": 7
+  }
+ }
+]
