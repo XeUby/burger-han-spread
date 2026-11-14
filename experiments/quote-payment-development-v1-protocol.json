@@ -1,0 +1,26 @@
+{
+  "frozenAt": "2026-11-14T16:21:08.903652+00:00",
+  "role": "Six familiar matched development weeks; quote payment consistency ablation",
+  "design": "docs/quote-payment-study-design.md",
+  "seeds": [
+    "level8-estimate-12912cd52d9ef00ea35490e8",
+    "level8-estimate-502fd2d71b59b218d9af949c",
+    "level8-estimate-b87f6821707b892a55d34716",
+    "level8-estimate-c5d2d97a139c8d2c999d17b2",
+    "level8-estimate-fa0f948061c4c308cc69f2ac",
+    "level8-estimate-2e646af6a3e79187503ccc80"
+  ],
+  "selection": "First six level8-estimate-v1 seeds; repeatedly used development only.",
+  "changes": "Remove premium-payment quote alternatives; preserve default quotes, menus, admission, economics, owned-job payment choices and execution. Filter after original frame generation and audit omissions.",
+  "controls": "Exact archived portfolio-payments outcomes; disabled and retained-frame conformance tested.",
+  "analysis": "All paired weekly outcomes, uncertainty, qualification bounds, removal counts, selected multipliers and failures.",
+  "gate": "Mean paired gain>=1500euros/week, all six qualifying, minimum weekly on-time>=.92, no undelivered, failed visits, fines or runtime failures. No promotion.",
+  "stopping": "Exactly six new worlds, no retries, replacements, tuning or outcome-based stopping. Failure stops new creation; active cases retain outcomes.600second world budget.",
+  "operations": {
+    "workers": 4,
+    "capacity": 8,
+    "sharedLock": "runs/team-world-creation.lock",
+    "mode": "practice"
+  },
+  "authorization": "Unranked only; no ranking, finals, deletion or forks."
+}
