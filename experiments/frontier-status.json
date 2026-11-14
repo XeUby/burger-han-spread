@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-11-14T05:51:46.012177+00:00",
-  "objective": "Continue systematic search toward the global optimum; practice only, no ranking submission.",
+  "updatedAt": "2026-11-14T06:16:30.349579+00:00",
+  "objective": "Broader optimization retained; current user priority is levels1-7 compatibility followed by five ranked runs each before09:00 Helsinki, using unchanged validated control.",
   "maximumConcurrentPlays": 4,
   "currentConcurrency": {
-    "activeRunners": 0,
-    "unfinishedTeamWorlds": 0,
+    "activeRunners": 4,
     "maximumConcurrentPlays": 4,
-    "note": "Runner65170 exited0 after all9worlds completed. Shared API inventory is empty."
+    "note": "levels compatibility scheduler; live team inventory remains authoritative"
   },
   "completedCombinationStudy": {
     "sessionId": 84558,
@@ -1091,5 +1090,87 @@
         "fineCents": 0
       }
     }
+  },
+  "cost-calibration": {
+    "report": "docs/cost-calibration-results.json",
+    "summary": {
+      "terminal": true,
+      "completed": 4,
+      "decision": "Reject this calibration for promotion; retain every development outcome",
+      "promotionAllowed": false,
+      "meanMarginCents": 1071259,
+      "meanGainCents": -102185.75,
+      "minimumGainCents": -281016,
+      "qualified": 4,
+      "meanOrders": 387.25,
+      "aggregateOnTimeShare": 0.9509360877985797,
+      "minimumOnTimeShare": 0.9131652661064426,
+      "undelivered": 0,
+      "failedVisits": 0,
+      "meanDriverFeesCents": 2770711.75,
+      "meanLateRefundsCents": 109532.25,
+      "actionErrors": 1,
+      "recoveries": 0,
+      "baseline": {
+        "meanMarginCents": 1173444.75,
+        "meanOrders": 329.25,
+        "aggregateOnTimeShare": 0.9650721336370539,
+        "qualified": 4,
+        "meanDriverFeesCents": 2295982.25,
+        "meanLateRefundsCents": 74795.25
+      },
+      "meanLedgerGainCents": {
+        "driver_fee": -474729.5,
+        "late_refund": -34737,
+        "release_fee": 1578.25,
+        "revenue": 405702.5
+      },
+      "eligibleForFreshValidation": false
+    }
+  },
+  "cost-premium": {
+    "report": "docs/cost-premium-results.json",
+    "summary": {
+      "terminal": true,
+      "completed": 4,
+      "decision": "Reject this cost-ratio policy for promotion; retain every development outcome",
+      "promotionAllowed": false,
+      "meanMarginCents": 1107004.75,
+      "meanGainCents": -66440,
+      "minimumGainCents": -138960,
+      "qualified": 4,
+      "meanOrders": 232.25,
+      "aggregateOnTimeShare": 0.9720129171151776,
+      "minimumOnTimeShare": 0.9485981308411215,
+      "undelivered": 0,
+      "failedVisits": 0,
+      "meanDriverFeesCents": 1566729,
+      "meanLateRefundsCents": 35718,
+      "actionErrors": 4,
+      "recoveries": 0,
+      "baseline": {
+        "meanMarginCents": 1173444.75,
+        "meanOrders": 329.25,
+        "aggregateOnTimeShare": 0.9650721336370539,
+        "qualified": 4,
+        "meanDriverFeesCents": 2295982.25,
+        "meanLateRefundsCents": 74795.25
+      },
+      "meanLedgerGainCents": {
+        "driver_fee": 729253.25,
+        "late_refund": 39077.25,
+        "release_fee": 2019.5,
+        "revenue": -836790
+      },
+      "eligibleForFreshValidation": false
+    }
+  },
+  "fulfillmentCostPrediction": {
+    "report": "docs/fulfillment-cost-assessment.json",
+    "decision": "Reject feature model: four-week mean RMSE gain over scalar only0.365%, wins2/4; no fresh policy validation."
+  },
+  "currentOperation": {
+    "protocol": "experiments/levels-ranking-protocol.json",
+    "noLevel8OrFinal": true
   }
 }

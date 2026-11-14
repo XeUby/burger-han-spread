@@ -1,0 +1,76 @@
+{
+  "protocol": "experiments/cost-premium-protocol.json",
+  "protocolSha256": "4e2b12955a279e2773de0dae40a52c01fbf15080642c4162fb5ae9c902b7c2ee",
+  "worlds": [
+    {
+      "label": "cost-premium",
+      "seed": "cost-development-20261114-0671a6fd582581ca",
+      "worldId": "w1c625a913b4253e4af9a"
+    },
+    {
+      "label": "cost-premium",
+      "seed": "cost-development-20261114-5540924d1a9eab19",
+      "worldId": "wf7090274c13a3bed80b6"
+    },
+    {
+      "label": "cost-premium",
+      "seed": "cost-development-20261114-92b3ba4ed4d2e449",
+      "worldId": "w397628d4ef728e75cba6"
+    },
+    {
+      "label": "cost-premium",
+      "seed": "cost-development-20261114-a92ca803a91fbe65",
+      "worldId": "w832b26f7eb21b09ce4e4"
+    }
+  ],
+  "attempts": [
+    {
+      "label": "cost-premium",
+      "seed": "cost-development-20261114-0671a6fd582581ca",
+      "worldId": "w1c625a913b4253e4af9a",
+      "startedAt": "2026-11-14T06:10:04.294Z"
+    },
+    {
+      "label": "cost-premium",
+      "seed": "cost-development-20261114-5540924d1a9eab19",
+      "worldId": "wf7090274c13a3bed80b6",
+      "startedAt": "2026-11-14T06:10:04.480Z"
+    },
+    {
+      "label": "cost-premium",
+      "seed": "cost-development-20261114-92b3ba4ed4d2e449",
+      "worldId": "w397628d4ef728e75cba6",
+      "startedAt": "2026-11-14T06:10:04.601Z"
+    },
+    {
+      "label": "cost-premium",
+      "seed": "cost-development-20261114-a92ca803a91fbe65",
+      "worldId": "w832b26f7eb21b09ce4e4",
+      "startedAt": "2026-11-14T06:10:04.710Z"
+    },
+    {
+      "label": "cost-premium",
+      "seed": "cost-development-20261114-a92ca803a91fbe65",
+      "worldId": "w832b26f7eb21b09ce4e4",
+      "completedAt": "2026-11-14T06:11:19.007Z"
+    },
+    {
+      "label": "cost-premium",
+      "seed": "cost-development-20261114-92b3ba4ed4d2e449",
+      "worldId": "w397628d4ef728e75cba6",
+      "completedAt": "2026-11-14T06:11:22.925Z"
+    },
+    {
+      "label": "cost-premium",
+      "seed": "cost-development-20261114-5540924d1a9eab19",
+      "worldId": "wf7090274c13a3bed80b6",
+      "completedAt": "2026-11-14T06:11:24.839Z"
+    },
+    {
+      "label": "cost-premium",
+      "seed": "cost-development-20261114-0671a6fd582581ca",
+      "worldId": "w1c625a913b4253e4af9a",
+      "completedAt": "2026-11-14T06:11:25.336Z"
+    }
+  ]
+}

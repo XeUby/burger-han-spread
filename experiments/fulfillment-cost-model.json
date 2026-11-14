@@ -1,0 +1,353 @@
+{
+  "frozenAt": "2026-11-14T06:01:38.427657+00:00",
+  "recipe": {
+    "declaredAt": "2026-11-14T06:01:27.408229+00:00",
+    "trainingWorlds": [
+      "wccca731d04dbfacbaba0",
+      "w7b412da927edcef0081e",
+      "w1a7b82a91f712427b624",
+      "w2464fa0a1a5ce6878d47",
+      "w657d3e2075cdc8dcb443",
+      "wb238803dfa49a69c2e0a"
+    ],
+    "featuresSha256": "50153cc359c873d8fa5d8999ec6b6c2eab239e9053e2bcccaa323707827624de",
+    "priorRatio": 1.15,
+    "ridgePenalty": 10,
+    "ratioBounds": [
+      0.65,
+      3.0
+    ],
+    "fit": "Additive connected-order-group costs, squared group expense error with fixed ridge penalty. Predict each request from public arrival features only. No seed or order identifier feature, hyperparameter sweep, or shared-fee allocation to individual cars.",
+    "newDevelopmentPanel": "experiments/cost-development-protocol.json",
+    "heldoutPredictionGate": {
+      "meanWeeklyRmseImprovementOverBothBaselines": 0.05,
+      "weeksBeatingBothBaselinesAtLeast": 3,
+      "absoluteAggregateBiasAtMost": 0.1
+    },
+    "decision": "Fit once on six named old weeks before reading new development outcomes. Assess all four new weeks, including failures. No model revision after that assessment may reuse those four weeks as held out. Passing only justifies frozen whole-policy development trials, not promotion.",
+    "promotion": "Any selected policy needs an entirely new untouched paired validation panel with candidate source/model/settings frozen and profit/reliability/multiplicity criteria declared before play."
+  },
+  "names": [
+    "intercept",
+    "roadHours",
+    "logOriginSupply",
+    "logDestinationSupply",
+    "supplyImbalance",
+    "readyLeadDays",
+    "latestServiceDays",
+    "readyHour",
+    "fridayReady",
+    "weekendReady",
+    "batch",
+    "manual",
+    "plates",
+    "premium",
+    "charging",
+    "regionalLoad"
+  ],
+  "beta": [
+    -0.17137404189887262,
+    0.03898137313811215,
+    0.020359812021639962,
+    0.02884094718611999,
+    0.014135225274201151,
+    -0.045357448365565656,
+    -0.021527576152914906,
+    -0.05912357141160605,
+    0.030056879565730416,
+    0.0,
+    0.025863041847081783,
+    0.03890253962362188,
+    0.11597260256144984,
+    -0.03734614279660247,
+    0.001602977221017168,
+    0.045741834053425995
+  ],
+  "calibratedBeta": [
+    -0.17196212496610622,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "trainingDataSha256": "19d5e05089d533dfc7e6cbf7fa3ce7ffe6d218a9b342a30fc6621ad1fb521c08",
+  "trainingWeeks": [
+    {
+      "worldId": "wccca731d04dbfacbaba0",
+      "seed": "formal-unseen-20261113-09",
+      "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+      "includedOrders": 295,
+      "excludedOrders": 5,
+      "includedCostCents": 1570356,
+      "excludedCostCents": 14888,
+      "totalCostCents": 1585244,
+      "eventsSha256": "d90668ba2e873111c78831d32cd02bfb1153c8423ccfe2a52cab574ca057a715"
+    },
+    {
+      "worldId": "w7b412da927edcef0081e",
+      "seed": "formal-unseen-20261113-10",
+      "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+      "includedOrders": 375,
+      "excludedOrders": 1,
+      "includedCostCents": 2787859,
+      "excludedCostCents": 4155,
+      "totalCostCents": 2792014,
+      "eventsSha256": "5483fe96516f7e95b139ef5feaf92f5f21bd220d02121dc84fdbdd73dfd2b2dd"
+    },
+    {
+      "worldId": "w1a7b82a91f712427b624",
+      "seed": "formal-unseen-20261113-12",
+      "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+      "includedOrders": 362,
+      "excludedOrders": 6,
+      "includedCostCents": 2414754,
+      "excludedCostCents": 41522,
+      "totalCostCents": 2456276,
+      "eventsSha256": "fe3b4da1b3057f2e9b3fbe897b3828cb3a2a122388c1154c8f676d5526991bd5"
+    },
+    {
+      "worldId": "w2464fa0a1a5ce6878d47",
+      "seed": "formal-unseen-20261113-14",
+      "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+      "includedOrders": 270,
+      "excludedOrders": 5,
+      "includedCostCents": 1699685,
+      "excludedCostCents": 22133,
+      "totalCostCents": 1721818,
+      "eventsSha256": "62106a660702220b72fa50687fb610b593dac4c4180bfcfbe38fc76ec80d0d38"
+    },
+    {
+      "worldId": "w657d3e2075cdc8dcb443",
+      "seed": "formal-unseen-20261113-15",
+      "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+      "includedOrders": 322,
+      "excludedOrders": 8,
+      "includedCostCents": 2541185,
+      "excludedCostCents": 36699,
+      "totalCostCents": 2577884,
+      "eventsSha256": "90b9450c287db94bdc5a3e00bec0a593c620a563d85381f037ff6237226a2ad3"
+    },
+    {
+      "worldId": "wb238803dfa49a69c2e0a",
+      "seed": "formal-unseen-20261113-16",
+      "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+      "includedOrders": 357,
+      "excludedOrders": 4,
+      "includedCostCents": 1868805,
+      "excludedCostCents": 11122,
+      "totalCostCents": 1879927,
+      "eventsSha256": "d3a03c43bbb7410a998d9b103dba78149ccbcbfa8cca95e7cfc14b788f7e62cb"
+    }
+  ],
+  "developmentCrossValidation": {
+    "unit": "unique week",
+    "folds": [
+      {
+        "seed": "formal-unseen-20261113-09",
+        "fixed": {
+          "groups": 264,
+          "orders": 295,
+          "groupRmseCents": 2194.4054774041556,
+          "absoluteGroupErrorPerOrderCents": 1705.3576271186437,
+          "actualCostCents": 1570356.0,
+          "predictedCostCents": 2009194.9,
+          "biasShare": 0.27945185677642514
+        },
+        "calibrated": {
+          "groups": 264,
+          "orders": 295,
+          "groupRmseCents": 1202.6189503080532,
+          "absoluteGroupErrorPerOrderCents": 866.4950141550947,
+          "actualCostCents": 1570356.0,
+          "predictedCostCents": 1727064.2822129165,
+          "biasShare": 0.09979156459612755
+        },
+        "features": {
+          "groups": 264,
+          "orders": 295,
+          "groupRmseCents": 1213.0051101671104,
+          "absoluteGroupErrorPerOrderCents": 792.4302066494118,
+          "actualCostCents": 1570356.0,
+          "predictedCostCents": 1696271.002350021,
+          "biasShare": 0.08018245693971363
+        }
+      },
+      {
+        "seed": "formal-unseen-20261113-10",
+        "fixed": {
+          "groups": 326,
+          "orders": 375,
+          "groupRmseCents": 4192.405726417745,
+          "absoluteGroupErrorPerOrderCents": 2438.856933333333,
+          "actualCostCents": 2787859.0,
+          "predictedCostCents": 3258873.4499999997,
+          "biasShare": 0.1689520345182449
+        },
+        "calibrated": {
+          "groups": 326,
+          "orders": 375,
+          "groupRmseCents": 3853.645696140571,
+          "absoluteGroupErrorPerOrderCents": 1474.6393695939835,
+          "actualCostCents": 2787859.0,
+          "predictedCostCents": 2762716.4877986964,
+          "biasShare": -0.009018573823605614
+        },
+        "features": {
+          "groups": 326,
+          "orders": 375,
+          "groupRmseCents": 3822.3718018473896,
+          "absoluteGroupErrorPerOrderCents": 1481.239783108497,
+          "actualCostCents": 2787859.0,
+          "predictedCostCents": 2765623.5098584807,
+          "biasShare": -0.00797583024877491
+        }
+      },
+      {
+        "seed": "formal-unseen-20261113-12",
+        "fixed": {
+          "groups": 316,
+          "orders": 362,
+          "groupRmseCents": 3483.901134790376,
+          "absoluteGroupErrorPerOrderCents": 2212.711049723757,
+          "actualCostCents": 2414754.0,
+          "predictedCostCents": 2810287.1999999997,
+          "biasShare": 0.16379854842356606
+        },
+        "calibrated": {
+          "groups": 316,
+          "orders": 362,
+          "groupRmseCents": 3155.462948979712,
+          "absoluteGroupErrorPerOrderCents": 1382.784165324456,
+          "actualCostCents": 2414754.0,
+          "predictedCostCents": 2386763.6733628097,
+          "biasShare": -0.01159137810194755
+        },
+        "features": {
+          "groups": 316,
+          "orders": 362,
+          "groupRmseCents": 3131.036512811549,
+          "absoluteGroupErrorPerOrderCents": 1365.4553467883559,
+          "actualCostCents": 2414754.0,
+          "predictedCostCents": 2377212.4643114563,
+          "biasShare": -0.015546732995801461
+        }
+      },
+      {
+        "seed": "formal-unseen-20261113-14",
+        "fixed": {
+          "groups": 240,
+          "orders": 270,
+          "groupRmseCents": 2715.098277748584,
+          "absoluteGroupErrorPerOrderCents": 2004.8507407407405,
+          "actualCostCents": 1699685.0,
+          "predictedCostCents": 2125777.3,
+          "biasShare": 0.2506889806052297
+        },
+        "calibrated": {
+          "groups": 240,
+          "orders": 270,
+          "groupRmseCents": 1812.6465836663272,
+          "absoluteGroupErrorPerOrderCents": 1086.548423846449,
+          "actualCostCents": 1699685.0,
+          "predictedCostCents": 1826439.357646837,
+          "biasShare": 0.07457520519792604
+        },
+        "features": {
+          "groups": 240,
+          "orders": 270,
+          "groupRmseCents": 1930.2391910255842,
+          "absoluteGroupErrorPerOrderCents": 1098.5056889529164,
+          "actualCostCents": 1699685.0,
+          "predictedCostCents": 1827186.2002992106,
+          "biasShare": 0.07501460582355593
+        }
+      },
+      {
+        "seed": "formal-unseen-20261113-15",
+        "fixed": {
+          "groups": 282,
+          "orders": 322,
+          "groupRmseCents": 5090.066338523239,
+          "absoluteGroupErrorPerOrderCents": 2757.663354037267,
+          "actualCostCents": 2541185.0,
+          "predictedCostCents": 2763406.3,
+          "biasShare": 0.08744790324199135
+        },
+        "calibrated": {
+          "groups": 282,
+          "orders": 322,
+          "groupRmseCents": 5235.57049546433,
+          "absoluteGroupErrorPerOrderCents": 1847.3588190565638,
+          "actualCostCents": 2541185.0,
+          "predictedCostCents": 2285265.4262935854,
+          "biasShare": -0.100708753477773
+        },
+        "features": {
+          "groups": 282,
+          "orders": 322,
+          "groupRmseCents": 5242.625431717094,
+          "absoluteGroupErrorPerOrderCents": 1752.8254874530455,
+          "actualCostCents": 2541185.0,
+          "predictedCostCents": 2222748.442995673,
+          "biasShare": -0.12531026155290814
+        }
+      },
+      {
+        "seed": "formal-unseen-20261113-16",
+        "fixed": {
+          "groups": 293,
+          "orders": 357,
+          "groupRmseCents": 2426.7601842005643,
+          "absoluteGroupErrorPerOrderCents": 1630.6081232492993,
+          "actualCostCents": 1868805.0,
+          "predictedCostCents": 2330877.5,
+          "biasShare": 0.24725559916631207
+        },
+        "calibrated": {
+          "groups": 293,
+          "orders": 357,
+          "groupRmseCents": 1614.3925263433068,
+          "absoluteGroupErrorPerOrderCents": 871.1639166212311,
+          "actualCostCents": 1868805.0,
+          "predictedCostCents": 2002050.001397195,
+          "biasShare": 0.07129957453944887
+        },
+        "features": {
+          "groups": 293,
+          "orders": 357,
+          "groupRmseCents": 1620.9913662168108,
+          "absoluteGroupErrorPerOrderCents": 804.1282440244929,
+          "actualCostCents": 1868805.0,
+          "predictedCostCents": 1967436.0765846018,
+          "biasShare": 0.052777618095307816
+        }
+      }
+    ],
+    "summary": {
+      "fixed": {
+        "meanWeeklyGroupRmseCents": 3350.4395231807775,
+        "meanWeeklyAbsoluteGroupErrorPerOrderCents": 2125.0079713671735
+      },
+      "calibrated": {
+        "meanWeeklyGroupRmseCents": 2812.3895334837166,
+        "meanWeeklyAbsoluteGroupErrorPerOrderCents": 1254.8316180996296
+      },
+      "features": {
+        "meanWeeklyGroupRmseCents": 2826.7115689642565,
+        "meanWeeklyAbsoluteGroupErrorPerOrderCents": 1215.7641261627866
+      }
+    }
+  },
+  "interpretation": "Leave-one-week-out development evidence only. The four new development weeks have not been read by this script. Full-policy profit and reliability remain untested."
+}

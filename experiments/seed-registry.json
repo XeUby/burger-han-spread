@@ -1,0 +1,2754 @@
+{
+  "updatedAt": "2026-11-14T06:16:30.532933+00:00",
+  "unit": "unique simulation seed/week; repeated worlds are not independent replications",
+  "worldRecords": 298,
+  "uniqueNamedWeeks": 73,
+  "distinctLabels": 81,
+  "distinctSourceSettingsCombinations": 64,
+  "interpretation": "Counts document the adaptive search, not independent tests or a guarantee that distinct deterministic seeds are IID. Every observed seed is conservatively unavailable for any future untouched panel.",
+  "seeds": [
+    {
+      "seed": "cost-development-20261114-0671a6fd582581ca",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w1c625a913b4253e4af9a",
+          "label": "cost-premium",
+          "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "4a173d38893cfa73a32f1fef45650939616447a100acf40080b6269c644b517b"
+        },
+        {
+          "worldId": "wd6875d168b31efa9603b",
+          "label": "cost-development-control",
+          "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "05e3311c420f21a1b7ef0853d207f14a4c75e2cf1e408105f3096d54ac140115"
+        },
+        {
+          "worldId": "wed8f1c756ad98e321fc6",
+          "label": "cost-calibration",
+          "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "b1d263416a238d324702a56e8abf03814f9693354c7bc420bc8cb86c30df14b7"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "cost-development-20261114-5540924d1a9eab19",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "wc14f6ddca184f36568fb",
+          "label": "cost-calibration",
+          "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "50877beb69e91288ad05d4d6525c7f75a805accb15cb4a6c57528034e13fc9e4"
+        },
+        {
+          "worldId": "we46cd933896ca0a75eae",
+          "label": "cost-development-control",
+          "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "a2a644e18142dfaff3c8f08b9c1ef51db1390a314a3a7b949a89fa93dcb1e4f6"
+        },
+        {
+          "worldId": "wf7090274c13a3bed80b6",
+          "label": "cost-premium",
+          "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "2556b3c1d7010487ceabb04f799539107117cf3da350a0e3d265d7fc0971d6f4"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "cost-development-20261114-92b3ba4ed4d2e449",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w0af413244da4ca9f7714",
+          "label": "cost-calibration",
+          "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "500a7f7734bac55524c8418817892075e14625d86a878aeb7f68695c2a91608d"
+        },
+        {
+          "worldId": "w397628d4ef728e75cba6",
+          "label": "cost-premium",
+          "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "28d450672d4f1cb04dc20bf5f9e188734565315ae31fbaddca1d76be16dd3db9"
+        },
+        {
+          "worldId": "wf5ac6ed151931c7073a4",
+          "label": "cost-development-control",
+          "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "28ee14ee995ed1058e53c494363552fc6d839b1b8b9dd9c4cb3677d3538ef2d3"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "cost-development-20261114-a92ca803a91fbe65",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w46c2c116aa79bff82fc9",
+          "label": "cost-calibration",
+          "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "0d9254db5f9232f981115110ccf4b87bde835451b472091e2d1a0537dba4bed4"
+        },
+        {
+          "worldId": "w832b26f7eb21b09ce4e4",
+          "label": "cost-premium",
+          "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "dae894d3710116646f6ef73634ac7fc30bc156eef85a565983d54799e0ff6e61"
+        },
+        {
+          "worldId": "w934ce22d13d562c36526",
+          "label": "cost-development-control",
+          "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "4c783de40b5b3747ed0acc497b611a0cfebfed82e4a3162ba61e78240bae88bc"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "formal-unseen-20261113-01",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w491340143d15a316668c",
+          "label": "validation-candidate",
+          "revision": "0b8d200ce7c85d4c04aac9411fb884e1382f2e5337a43916163c41bac4d9cd26",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "08766ca2ea70402436116facebe36651991a8858262d1dd9a782b2ae54004ffb"
+        },
+        {
+          "worldId": "w8db9b06508b4ebddbb6a",
+          "label": null,
+          "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "a26b3960eeae13eec52d734e755310429214c75f3bbf15c9a4773be8ca2e3f29"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "formal-unseen-20261113-02",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w098203a19658b4a4883e",
+          "label": null,
+          "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "53e2e9c9498cb2a04f01898ac099178a8bb2985489a347d81b19b3194ab42c5b"
+        },
+        {
+          "worldId": "wc77bebb20668e8d3378f",
+          "label": "validation-candidate",
+          "revision": "0b8d200ce7c85d4c04aac9411fb884e1382f2e5337a43916163c41bac4d9cd26",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "9f337acc040ec3c484b931cf5de80d5ec42d8633dbe59a8d5accb4f00c7cc093"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "formal-unseen-20261113-03",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w1aa585e5ab3eedcb2311",
+          "label": null,
+          "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "381cf51e975761c57a1d6ecf855287967872704fc2e1a0a2bc087049158064e2"
+        },
+        {
+          "worldId": "waf9a9f4088b838638064",
+          "label": "validation-candidate",
+          "revision": "0b8d200ce7c85d4c04aac9411fb884e1382f2e5337a43916163c41bac4d9cd26",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "5d5d5a6d4b69c2f5d4173769eb44364b1a483706e28397ac51b93ff62b3fd0e8"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "formal-unseen-20261113-04",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w5dbd69444b1f927e7ed3",
+          "label": "validation-candidate",
+          "revision": "0b8d200ce7c85d4c04aac9411fb884e1382f2e5337a43916163c41bac4d9cd26",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "b7598c07dbca7cef60b5ef0cf384fb1877625664c2c62eea796cb08fbbf1f6a4"
+        },
+        {
+          "worldId": "w74fb4befd265f6a3b2f8",
+          "label": null,
+          "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "5629663f290e2e4083ec092dc6989672916bbe43bd53b56edbaa99a9a48648e1"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "formal-unseen-20261113-05",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w3cacf28249c0731760eb",
+          "label": "validation-candidate",
+          "revision": "0b8d200ce7c85d4c04aac9411fb884e1382f2e5337a43916163c41bac4d9cd26",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "a9055b8136b99567f0b56d397ddbb62334d9d66f52e647f1a23c55e34aa122c9"
+        },
+        {
+          "worldId": "wd181cae9f305896c0ac0",
+          "label": null,
+          "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "e252d0725b2fd5fd76220f851c1557066f32e8cab73bb594d656f02694530f06"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "formal-unseen-20261113-06",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w5938f3809abe0d6f051b",
+          "label": "validation-candidate",
+          "revision": "0b8d200ce7c85d4c04aac9411fb884e1382f2e5337a43916163c41bac4d9cd26",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "e4ec8895587399b4422610db878075b14fc217a125e7b7640068256330d2dbaa"
+        },
+        {
+          "worldId": "w9ff6d6660d9fa3adcd1a",
+          "label": null,
+          "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "b31c96114ae332b2965158b86f4f003a0d826300300b7d8faf1efc12a2e1f196"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "formal-unseen-20261113-07",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w236b3d6bf7463aaad22d",
+          "label": null,
+          "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "434ba4567b12c36e0efc02eaf8c104edb94214c5a2a3846b4210736ca158156e"
+        },
+        {
+          "worldId": "wb97a9a6e26526614e85b",
+          "label": "validation-candidate",
+          "revision": "0b8d200ce7c85d4c04aac9411fb884e1382f2e5337a43916163c41bac4d9cd26",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "f7de5a67f21522d54cb1093fb80a516deb8d120b5369e84644a957dee5cb230c"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "formal-unseen-20261113-08",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w6fb9cdd546c36f5fa418",
+          "label": "reroute-regression",
+          "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "fd7e933d956b55063d0c18d8338246b1e090d3a0010ebc174bc46abb3145c2c3"
+        },
+        {
+          "worldId": "w8e1fd9795d32b6d0de92",
+          "label": "validation-candidate",
+          "revision": "0b8d200ce7c85d4c04aac9411fb884e1382f2e5337a43916163c41bac4d9cd26",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "588e5ec2bd5bb0b8265f2f2817ea89574a64b5200b39db9d39bd5e436d0c2e9a"
+        },
+        {
+          "worldId": "wc84dd74f934bdcece0f1",
+          "label": null,
+          "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "5c6b6671df2f2b74c4538f377ecc4d2fb19f0f66cc2cd69a8cf07d77b60f3a31"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "formal-unseen-20261113-09",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w09f7d47c59507d4e46cb",
+          "label": "validation-final",
+          "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "e39cc3783edbefdc2b57e1a0b60119305e527482f8cb79e5f533ed740d9dee90"
+        },
+        {
+          "worldId": "w14d6b0034235af787311",
+          "label": "frontier-confirm-volume",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "b343e06da7b442ccadea24d6712827f6492d965bce0d81a19473b3e274cab43f"
+        },
+        {
+          "worldId": "w26cfd2cb7171bcbe2330",
+          "label": "architecture-volume",
+          "revision": "7aefc3b1aee04d3f73f28be3ab572c189b28195655f3217a939b922f0e28d0cb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "c714f754652ab88a027bcf286e2f09d4f384befef1001e1ee8249628748db3d1"
+        },
+        {
+          "worldId": "w28546145888e2bb89189",
+          "label": null,
+          "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "d3aeef52ae29e0008c6c588dc8d0b554fe557a7ed9bc99619c064249fe161f13"
+        },
+        {
+          "worldId": "w406b70eb89ac72b49962",
+          "label": "multi-routes",
+          "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "01bff93b238f86d4670b6200bef23fa186565a1b42e00be61ab802df1bbe2d62"
+        },
+        {
+          "worldId": "w417bd5032d92a61df786",
+          "label": "multi-routes-volume",
+          "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "db3d736093627af918c6d4dbd6de99fe48f55f1d3bb7edd0128dfc7fb542f541"
+        },
+        {
+          "worldId": "w6a557fa3a54f6b98cb9d",
+          "label": "frontier-confirm-middle",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "cd46643090a3e171ad5ad17fecc59e9c4ca3e23921c993071df3c013af852c3b"
+        },
+        {
+          "worldId": "w83fed5c0ac39bf69a814",
+          "label": "hours-confirmation",
+          "revision": "f34787f4f6a814a3d16254c970b95acf07382378c5c868a4e834d1bc2e7da642",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "97ccfeb5664f758707cc857446b84fd0512efa98fd86a76b50b97b5ef375219c"
+        },
+        {
+          "worldId": "w895f839f04cb5bd7d8f3",
+          "label": "architecture-calendar",
+          "revision": "7aefc3b1aee04d3f73f28be3ab572c189b28195655f3217a939b922f0e28d0cb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "598df6db6711c9b573c9e4143103f8c480f4117157e1b77a18e9aa67621e972b"
+        },
+        {
+          "worldId": "w9092313fc502252b79ab",
+          "label": "late-rescue-confirmation",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "6a603c7008d1de2a687a96b8852364531464838262c55fadf83d1c208185d3e0"
+        },
+        {
+          "worldId": "w96d2a3f86efc4146273b",
+          "label": "frontier-confirm-bundles",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "938e9f6826f3e2aa1cb32bc19874447d5a9273b5d5aabaa9b4d1ccb8b025fd0f"
+        },
+        {
+          "worldId": "wba03b8b4a03344ef49c2",
+          "label": "note-spelling-confirmation",
+          "revision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "c1b9f751e176be142eb669348d0ca1f640808429405ca922462442c02d23d536"
+        },
+        {
+          "worldId": "wccca731d04dbfacbaba0",
+          "label": "payout-confirmation",
+          "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "f906240a14bf2dcabe024f7fdd205a53c3afc56fa9fd1286c175b3d69a82293e"
+        },
+        {
+          "worldId": "wd563bc13b1f42700786d",
+          "label": "architecture-joint",
+          "revision": "7aefc3b1aee04d3f73f28be3ab572c189b28195655f3217a939b922f0e28d0cb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "c9ea8ad99248b548da36cbf9b925461a4f96d367105889bf7a756091c597c93f"
+        },
+        {
+          "worldId": "wfe07e294d16b34f26734",
+          "label": "relisting-confirmation",
+          "revision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "48ec8c2b54281661caa51307f3831ca33dec0c392950cb393d0ac697e7218bd3"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "formal-unseen-20261113-10",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w0c6ce51dfdf6d4cc3970",
+          "label": "late-rescue-control",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "a1d67e373f9540ab321c8eb5b438bc961d38f21a409d68dc962399beabbb0a8f"
+        },
+        {
+          "worldId": "w23bc77907bce490b80f8",
+          "label": null,
+          "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "fa292c1ef1aaeb9db817d9e12dc1545de9284b6f81548d68e5943e55bbc382ce"
+        },
+        {
+          "worldId": "w364cb2e151fb283326ce",
+          "label": "hours-confirmation",
+          "revision": "f34787f4f6a814a3d16254c970b95acf07382378c5c868a4e834d1bc2e7da642",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "3c5eab3e1a521c28d0c214eb919bba83084528ad8dd34a1633573cb31682ea5b"
+        },
+        {
+          "worldId": "w47c0ea9c41007983b01e",
+          "label": "late-rescue-treatment",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "47ddd7414a900e90ba46bae0e2d93095fc40a7f78a98667c099e78353bedc230"
+        },
+        {
+          "worldId": "w5e573ada5fed0a67a4a8",
+          "label": "validation-final",
+          "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "71e2eaa1273f490aab59b07d7644e8045281176fca6b27a939dd4fe6f5aae402"
+        },
+        {
+          "worldId": "w795d29e846e3829728f4",
+          "label": "frontier-confirm-volume",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "717944642a867cd1af4649cf8171aec4ad09be8215d2c361adfec3fbca218d29"
+        },
+        {
+          "worldId": "w7a78e6cbd50d84b152b2",
+          "label": "multi-routes-volume",
+          "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "7f1458f72004231a882c157d2361980318b67115d530c9b2f79bc45f89be781c"
+        },
+        {
+          "worldId": "w7b412da927edcef0081e",
+          "label": "payout-confirmation",
+          "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "7f73c32e846df4f8364c7932da427a4ee7ae598846f361c3a8d078249d5c8f8c"
+        },
+        {
+          "worldId": "w97b999bf37a6bef0cebd",
+          "label": "architecture-calendar",
+          "revision": "7aefc3b1aee04d3f73f28be3ab572c189b28195655f3217a939b922f0e28d0cb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "92356ccfbc0e6451354de089def6bf2f8341b6897b54e3e9a32b0a7796cc33b9"
+        },
+        {
+          "worldId": "wc664ad40d8c725e20ceb",
+          "label": "frontier-confirm-bundles",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "bbf0ad2ee712206d683c3a8cd43bde059e8f5669ca3db799174248641f655dc2"
+        },
+        {
+          "worldId": "wdf16d36a697cd6bb2ae8",
+          "label": "relisting-confirmation",
+          "revision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "d480b14a7c4d8ba10dec81b7420584b6e444613617bc1673ec4cf331775411b6"
+        },
+        {
+          "worldId": "we0ac74d423b2b6b67210",
+          "label": "note-spelling-confirmation",
+          "revision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "907d75f4e3528b64eab9211f25145294871cf3b2b729cbe86f2c72cd1782258a"
+        },
+        {
+          "worldId": "we222deaf9db3752f0a43",
+          "label": "architecture-joint",
+          "revision": "7aefc3b1aee04d3f73f28be3ab572c189b28195655f3217a939b922f0e28d0cb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "3ebaafecb82199a9293324babbb42b03ccda1dbea95840cd27da20504ee7a0d3"
+        },
+        {
+          "worldId": "we3efda00d277484da060",
+          "label": "architecture-volume",
+          "revision": "7aefc3b1aee04d3f73f28be3ab572c189b28195655f3217a939b922f0e28d0cb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "6a600faad88525ab3827580b625bf53490893cd8ad67870b913bd583d7dc20f4"
+        },
+        {
+          "worldId": "we4883293d109f419cd24",
+          "label": "multi-routes",
+          "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "45ace9f77c5a485a8e263dc796a511c44799a2725d9596d308542ce49450ec25"
+        },
+        {
+          "worldId": "wfdda684945fc65378d51",
+          "label": "frontier-confirm-middle",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "c329d563a27c178eba94c8b516d894a328c751b4648a9d23cd139eea72413d44"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "formal-unseen-20261113-11",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w679c0fd4b18e923880c6",
+          "label": "validation-final",
+          "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "b04d293ec459bee48a8a3ef07fc79edae6403d7dcc75a6a35c14924cb51150cc"
+        },
+        {
+          "worldId": "wc4b4ee8306fff95c8f04",
+          "label": null,
+          "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "8b94072049e46d90d8fadddb07d363164deaf28e9d8cf9fcc3b823bbfe1d9c52"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "formal-unseen-20261113-12",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w1a7b82a91f712427b624",
+          "label": "payout-confirmation",
+          "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "36402f3ab8e97c3abed252d212b3d8633e89d7f187a43a65fce8e6c1b7201055"
+        },
+        {
+          "worldId": "w34f8674a055426932926",
+          "label": null,
+          "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "fb9224adce236d8e93c3726615c103ea80dcd12e5090cdb259ac06178d435f33"
+        },
+        {
+          "worldId": "w488ffad22efd5faf742a",
+          "label": "late-rescue-confirmation",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "4a4a16f6e4664c43cff66699d8f3922432f6f9853bead8679da7d8f20e54a3eb"
+        },
+        {
+          "worldId": "w6ffd0c010757c76f97d8",
+          "label": "validation-final",
+          "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "b5aaa899338e315965968e95de95ad3f1f898d411896fb44b6119b3f30499386"
+        },
+        {
+          "worldId": "w7b65415d1b10189612be",
+          "label": "frontier-confirm-bundles",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "5fa9aa41440aed0be898411b8674d2503a215679dfe09cf6baead2fe41ef50ce"
+        },
+        {
+          "worldId": "w8d3b74b46f91484396eb",
+          "label": "frontier-confirm-middle",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "bb9913f1979762b0d7f01f5d54b2d4828fc5c02649d268bf54bbc13a62327fb0"
+        },
+        {
+          "worldId": "wb13de58d75398916c47e",
+          "label": "note-spelling-confirmation",
+          "revision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "67c2f14242d258a944ab7ee91b4c6ad2fd8bc6cd8865ecdf961e89d04e207130"
+        },
+        {
+          "worldId": "wb642dfe9ed8ec3e241f2",
+          "label": "hours-confirmation",
+          "revision": "f34787f4f6a814a3d16254c970b95acf07382378c5c868a4e834d1bc2e7da642",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "7d4e79b9eeb5293fbd55e55e4fe6f8e0292802d5d00f46eb9e1f2191bd3dbab2"
+        },
+        {
+          "worldId": "weed5a9d372b110558fee",
+          "label": "relisting-confirmation",
+          "revision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "c535f36e6c610efab6167a689b1e1c246ecb86be8074c1228574defb9b932061"
+        },
+        {
+          "worldId": "wf5eaeba5a1ba7b164ded",
+          "label": "frontier-confirm-volume",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "2ed397243ea67b35f3e4b34e789cb1d57cebc0154eac4e8ceb87559583e68fb8"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "formal-unseen-20261113-13",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w2f96a475ae718d1589d9",
+          "label": "validation-final",
+          "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "f0a8d464d3b969d9f9fad6796d756a8439b190755a854fb2a9aeb89843da4e9a"
+        },
+        {
+          "worldId": "wd1be2dd14998e1af9795",
+          "label": null,
+          "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "59aad0e3442f864589b06b14dd7dfc0b1a808b724985a383cd29c0103a8b0829"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "formal-unseen-20261113-14",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w0b0a425cf803342bff2d",
+          "label": "frontier-auction",
+          "revision": "b5771f2b53463474c801350875253e32aa9d5f7d9b689125abed39c55914437d",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "b8b5e843c501a41a97497c5e9a31f5305e24ae5b52d67d33bb5b01cc39ab805d"
+        },
+        {
+          "worldId": "w0e07ef2533e2ef02bd0e",
+          "label": "frontier-place",
+          "revision": "82bb3e17fc97e929df1d3045da6f1845536b0a871d961b00cae6066021e808b8",
+          "hasTerminalArtifacts": false,
+          "metaSha256": "a2637f7a0a47258cb9a69b2b60c82154c854bacce51361157e1276f8f1306908"
+        },
+        {
+          "worldId": "w10682dbecb79031bcb6a",
+          "label": "viewed-fee-control",
+          "revision": "0e657e59f7b50d5295f526bc70a703ca666c30e063faf7e297620bf48540333d",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "f22e38b0e2de40b1acff2d4910a7c25385e10b4563d1268e8cebfaf9585b19a5"
+        },
+        {
+          "worldId": "w161b1029585b69b3b961",
+          "label": "frontier-private",
+          "revision": "b275b77df060268224f5149bb915fa13d4ca38a51253d054b3be2f3617031037",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "e2cd6fb54b00d0510917cab0b5d61afea61af50d5ee7d717509a57987775c668"
+        },
+        {
+          "worldId": "w17c6b3a16f21a0f36d6c",
+          "label": "multi-routes",
+          "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "6ba4a63e39839adf07345a459a6aa6d91285872c77f47cbd090d5f29a90991ab"
+        },
+        {
+          "worldId": "w1aad6d5a3f1151d2f113",
+          "label": "architecture-joint",
+          "revision": "7aefc3b1aee04d3f73f28be3ab572c189b28195655f3217a939b922f0e28d0cb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "091ad6ab5803a91991d6920cb490c9d0c60d8600de10a0d89a0d790975d29875"
+        },
+        {
+          "worldId": "w1bd8065707cf59b1d97b",
+          "label": "relisting-control",
+          "revision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "5a406a36b210e6064a25c7948525f8fc4afc236e769f3566018c01a9bd20bb73"
+        },
+        {
+          "worldId": "w1da4784220098c5bdb89",
+          "label": "frontier-readiness",
+          "revision": "82bb3e17fc97e929df1d3045da6f1845536b0a871d961b00cae6066021e808b8",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "7e589edeed0d0e23e40d9ce15bce9fa667c26bae00146b63e6b368f76e2f1f52"
+        },
+        {
+          "worldId": "w1db4a6f2c0dad7c7f8a9",
+          "label": null,
+          "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "b9b847b49bc3187b6f8170806b9a30b99a59ac9dd91e62edb7a9e9e310ce4dc8"
+        },
+        {
+          "worldId": "w20c5ca88e01d2716f070",
+          "label": "multi-routes-volume",
+          "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "52ae5f14f90ec15ccc8b5cb661d6deec9942cc8eb6c5a1cb872747ddb03608e4"
+        },
+        {
+          "worldId": "w2464fa0a1a5ce6878d47",
+          "label": "payout-opening",
+          "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "0dc36b912f11a2975b4d913c1d58b2a3c895a649b381a873b81e56baa2cb6a19"
+        },
+        {
+          "worldId": "w25b56cb7e8683980a036",
+          "label": "viewed-fee-pulse",
+          "revision": "0e657e59f7b50d5295f526bc70a703ca666c30e063faf7e297620bf48540333d",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "683f28b108a0823b6e1ef632575a9c93251e55d37265550cbcfef73c66112a55"
+        },
+        {
+          "worldId": "w2620836810b2c940651c",
+          "label": "relisting-treatment",
+          "revision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "9a5219256a5e74b6a8c53a15c9a56bdc5306721521bee5284f1e225cadcd2876"
+        },
+        {
+          "worldId": "w2d3a9c88f6ffd8d14e27",
+          "label": "frontier-long-bundles",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "9623ffa9ceaa4af7fbd2f3910888c78b4ec3cea7bc2035e976f4c57765ab911b"
+        },
+        {
+          "worldId": "w32ba8c00df1e65678d84",
+          "label": "note-spelling-control",
+          "revision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "60ab9c0fa6fa70fb5cbdc9742bbbe8c86d3404fa5243108e9f9845896b2c23b3"
+        },
+        {
+          "worldId": "w395b7bda84b55781e474",
+          "label": "architecture-calendar",
+          "revision": "7aefc3b1aee04d3f73f28be3ab572c189b28195655f3217a939b922f0e28d0cb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "e59b1cccecfd50bac663e93b988ee366c87721c16038f787c623431ab6d68ff4"
+        },
+        {
+          "worldId": "w3d80a69ff94fd19a1968",
+          "label": "frontier-home",
+          "revision": "943e5f0c11bae7705ff78ee262055c7c801a0c6f305ab069923ddea5f6fc759d",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "a7c81f885ed153c2d83ee55b1c1534d17b092e544435d57f5b1526f673e7d253"
+        },
+        {
+          "worldId": "w3faccc007c8c0bd5ff41",
+          "label": "late-rescue-confirmation",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "7eb5f1823c49e9ec3471df1e457d326574847f4dcc83434b784e65dd42c82beb"
+        },
+        {
+          "worldId": "w4fb61d1e0897ffb8fda9",
+          "label": "frontier-volume-bundles",
+          "revision": "613614078c6d91c159073de4aacad323ae653d09f102df9bb13400c83538872c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "3e3192297194918cf9b69c8ff97d839c7e8fe09969c147e5a3f33a173a130eba"
+        },
+        {
+          "worldId": "w503ea3dd6214bb39d8ba",
+          "label": "frontier-home-volume",
+          "revision": "943e5f0c11bae7705ff78ee262055c7c801a0c6f305ab069923ddea5f6fc759d",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "9a43bffe2b290f53098397a04dbb7b7ffe404702155d96cb93453d30bf3a92c9"
+        },
+        {
+          "worldId": "w5274695ce6e5f901b990",
+          "label": "frontier-place",
+          "revision": "82bb3e17fc97e929df1d3045da6f1845536b0a871d961b00cae6066021e808b8",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "aab5364c91318c262dc13138196046cb8a422b4ade45679cb976f4245c4a604c"
+        },
+        {
+          "worldId": "w5dd2ed60ca60ca57ffe7",
+          "label": "frontier-menu",
+          "revision": "b275b77df060268224f5149bb915fa13d4ca38a51253d054b3be2f3617031037",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "fba19d7d97e99ab71bab1ef0ef71b84423c243f5487069672e7e820c82a42d14"
+        },
+        {
+          "worldId": "w6510b58d9684c4e12af7",
+          "label": "frontier-auction-bundles",
+          "revision": "613614078c6d91c159073de4aacad323ae653d09f102df9bb13400c83538872c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "653cb628c0547e6864b6d88ec6d61f2742cefae2cf60d4ef47170f9f5aa252ef"
+        },
+        {
+          "worldId": "w7273d67bac0d5ac43621",
+          "label": "architecture-volume",
+          "revision": "7aefc3b1aee04d3f73f28be3ab572c189b28195655f3217a939b922f0e28d0cb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "7e5116dd142d3f6e490578b31e73dd61b64c64d7633ecab7eaa302ebd5744412"
+        },
+        {
+          "worldId": "w756acf8ea6b691151370",
+          "label": "frontier-hold-control",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "7f6ad76164c557b4ff6ce38f4199b4e4f3834e62770d4fff6b339b8cd15b8259"
+        },
+        {
+          "worldId": "w7614b7389a072cf595cc",
+          "label": "multi-routes-control",
+          "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "c21fd05cf48bb4281f1534b77fbc3265b6ab809ef8f5656071f9d314532aa9d0"
+        },
+        {
+          "worldId": "w857bb4caa5eb9e914921",
+          "label": "note-spelling-treatment",
+          "revision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "58048a60dae9384e05978a777d752a9b2d69e0c95ad37512765503545b4a1ed7"
+        },
+        {
+          "worldId": "w889572145e5939648feb",
+          "label": "architecture-control",
+          "revision": "7aefc3b1aee04d3f73f28be3ab572c189b28195655f3217a939b922f0e28d0cb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "6d6b10a128ebbbd6aa982898e7dc464545e06347a600048a4309058fcdf37b87"
+        },
+        {
+          "worldId": "w8b85572a9b6fc286e4ec",
+          "label": "validation-final",
+          "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "e8252be169191246a23224630c598ec036ca8b51a1f621391acfef72fbb0bf17"
+        },
+        {
+          "worldId": "w979261929ce968cdba3d",
+          "label": "frontier-volume-auction",
+          "revision": "a722a1aed31e3c7679535937cc13a201b9e1b0aef8066d371a4f7304870c6a59",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "f41bb000d2f4d7c65f183becdee2c662ddbc25ff16c51169f4d7c56705296198"
+        },
+        {
+          "worldId": "w99c7c7b8d252586f6e4e",
+          "label": "frontier-shadow",
+          "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "13e6ba1c10d2df8f75c0e6c6e20959cd12e01d2dbadff8567286711daa7588dd"
+        },
+        {
+          "worldId": "w9cdbfcc2e855bb9ff85f",
+          "label": "frontier-trade",
+          "revision": "b275b77df060268224f5149bb915fa13d4ca38a51253d054b3be2f3617031037",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "60db50da4d3dd0e7f06967136208c7e54cbb19ed3cd77e1d027c744176c2dc88"
+        },
+        {
+          "worldId": "w9d5670b3d63668d52477",
+          "label": "hours-control",
+          "revision": "f34787f4f6a814a3d16254c970b95acf07382378c5c868a4e834d1bc2e7da642",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "ebe64f14a776fadbc692113b9fd5b10f40c1df763439c24badf625430e7e662e"
+        },
+        {
+          "worldId": "wa5afd1798215289a4e96",
+          "label": "frontier-readiness",
+          "revision": "82bb3e17fc97e929df1d3045da6f1845536b0a871d961b00cae6066021e808b8",
+          "hasTerminalArtifacts": false,
+          "metaSha256": "545067d329c83d6362e27cb9d9d49eafb5c1ef3b53b6bd1adc5104b8e9603834"
+        },
+        {
+          "worldId": "wb1b8eab4c135037229ed",
+          "label": "payout-full",
+          "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "c1de4dc3c928eb36b726850ab5c248a6bbb2807d9266fa6cfb25d39ff513c6f4"
+        },
+        {
+          "worldId": "wce8e82d056867e77200c",
+          "label": "frontier-volume",
+          "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "527ad2f3c3714ae10bb3752e05553b42b86d5e7ee857bc3f8c5b12eaf8731439"
+        },
+        {
+          "worldId": "we902c03beea299d5f314",
+          "label": "hours-treatment",
+          "revision": "f34787f4f6a814a3d16254c970b95acf07382378c5c868a4e834d1bc2e7da642",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "df4664142a0be00ba2540ba3108ac0a7f15c77a33ab02ec24f655d6713f6d5b2"
+        },
+        {
+          "worldId": "wea7341e3bdc4e2a1d2aa",
+          "label": "frontier-lowfee",
+          "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "73f2a493f09fada74811909cd59766591de40fb3cf3fab9936a600474bd96156"
+        },
+        {
+          "worldId": "wfc46ca550b8a4944dbd3",
+          "label": "frontier-bundles",
+          "revision": "613614078c6d91c159073de4aacad323ae653d09f102df9bb13400c83538872c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "f0292cddf66c9af8c914b7dcd09c5245dd9b6b855f140624d989234aaf786ce9"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "formal-unseen-20261113-15",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w039210a04d4ae45b4567",
+          "label": "frontier-volume",
+          "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "5302c2425e87fdb2937ada80211e9b9f47792562444161467554e93877ccf7ad"
+        },
+        {
+          "worldId": "w1e571df1d29a158e5690",
+          "label": "frontier-lowfee",
+          "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "8c3ceded2941898875563f9dca7424261ffcf5364bbcb7305b574c21d9a7780e"
+        },
+        {
+          "worldId": "w254075f877f4963e1ffc",
+          "label": "frontier-trade",
+          "revision": "b275b77df060268224f5149bb915fa13d4ca38a51253d054b3be2f3617031037",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "7a7630fc20d4e19c0c25e4b5b7fa5e0ba8f53dc0b69fc410435ae10ee4401775"
+        },
+        {
+          "worldId": "w382de8fc40c146afa28f",
+          "label": "viewed-fee-pulse",
+          "revision": "0e657e59f7b50d5295f526bc70a703ca666c30e063faf7e297620bf48540333d",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "61ac56f9737471aba353c541053b80272126597923bf2f257293afb6fd33d643"
+        },
+        {
+          "worldId": "w39ec7c5bcc2874eadce0",
+          "label": "fee-anchor-1",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "c57d729c3465b93ef65980d438c82d3b4d41dc0f7dde9de3eed8adbae8d6a501"
+        },
+        {
+          "worldId": "w4827d7757294e6a08469",
+          "label": "fee-anchor-0.5",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "387a091383803b7036a662dab91b76c9d2e30ea58867b06b97c487eab5bd2ef4"
+        },
+        {
+          "worldId": "w4e2dd6764bf103de283b",
+          "label": "relisting-treatment",
+          "revision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "920ce511836d69bfb39b336ea3b607d696bfb31a58330e31a2cd3d5e6092d061"
+        },
+        {
+          "worldId": "w506347aee75ef1aa8dae",
+          "label": "viewer-offers-probe-base",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": false,
+          "metaSha256": "6516c21bdbbb61f01be1f30042607dfbe9c187bb559c822f67395562697569b8"
+        },
+        {
+          "worldId": "w566fc6348194e5c4c9d0",
+          "label": "frontier-place",
+          "revision": "82bb3e17fc97e929df1d3045da6f1845536b0a871d961b00cae6066021e808b8",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "ddc90d4062be716a938aa8f48255453fdeb5eae0946fee330be86c30d8e7037c"
+        },
+        {
+          "worldId": "w58455be33975d14abe85",
+          "label": "frontier-home",
+          "revision": "943e5f0c11bae7705ff78ee262055c7c801a0c6f305ab069923ddea5f6fc759d",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "9917cea13d9e2c3b5a53cec3d4da054e107057bdbe283553165f921c9d163ef1"
+        },
+        {
+          "worldId": "w5b49acb1da9497bc29c9",
+          "label": "hours-control",
+          "revision": "f34787f4f6a814a3d16254c970b95acf07382378c5c868a4e834d1bc2e7da642",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "6d7aaa69f602f9f3d16e589db9f144c0d9384e70461c315cb519e9169c42ecc7"
+        },
+        {
+          "worldId": "w5eebc0627e34e58dc24a",
+          "label": "frontier-long-bundles",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "d688052d4eaef20b96dbd6d14de9a6b311ee87f80ac92d24fb5781f3df9287da"
+        },
+        {
+          "worldId": "w657d3e2075cdc8dcb443",
+          "label": "payout-opening",
+          "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "6cfe18c0f48328dcc2df0b3ba6b1b54c8096738b68c9b4a367d3ffcff8c42c97"
+        },
+        {
+          "worldId": "w67dd2997c4471c9b2e6c",
+          "label": "frontier-auction-bundles",
+          "revision": "613614078c6d91c159073de4aacad323ae653d09f102df9bb13400c83538872c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "22cd8dc07cf0e942e1766438823701c2e765f0d24412e1debfeaf3161bc312b4"
+        },
+        {
+          "worldId": "w6893e7d9cdd984154dfe",
+          "label": "late-rescue-treatment",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "22c1f10a2ce6e67616e403b96b2636b2e91410fbab1b59fbd1f42a43eb6ba882"
+        },
+        {
+          "worldId": "w6a6204837557cd28bdf5",
+          "label": "frontier-bundles",
+          "revision": "613614078c6d91c159073de4aacad323ae653d09f102df9bb13400c83538872c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "3d45aed21bff438f53557c019a29b315730a787a904f2664b05b4e4ed68ccbb8"
+        },
+        {
+          "worldId": "w6f3f73c3a233bc2c7b2e",
+          "label": "note-spelling-treatment",
+          "revision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "fdb72e3b6f618d740e2b29b35ac43b397f62ab597b7907ce4c85b6d8558d85d6"
+        },
+        {
+          "worldId": "w7312ddf95b8b851811af",
+          "label": "payout-full",
+          "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "0ada7c6f195732a5ff0a2a0d477ce83eb42661633d9a7010c785a5dca2e7fb8c"
+        },
+        {
+          "worldId": "w735d87d8fe1b99845667",
+          "label": "validation-final",
+          "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "7a05b718c1a75618f553b79fe92601fab47d5efe21942d82312f2584e47b69a4"
+        },
+        {
+          "worldId": "w73a9b99847220c8c1e54",
+          "label": "frontier-hold-control",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "d0bb2ffcd611bdc19cc88582775732b44e12802c2804797691dce6fe063227ad"
+        },
+        {
+          "worldId": "w73d7e06307a17b7156b5",
+          "label": "frontier-volume-auction",
+          "revision": "a722a1aed31e3c7679535937cc13a201b9e1b0aef8066d371a4f7304870c6a59",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "419917aafb9ef5962f171b7c6cc74bb15b5e68524a1d8681b749e3e1ff79c4fe"
+        },
+        {
+          "worldId": "w771a67e4380c9de4d000",
+          "label": "frontier-private",
+          "revision": "b275b77df060268224f5149bb915fa13d4ca38a51253d054b3be2f3617031037",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "68b6c771a43c514e7937c9239fb39bf612f47f30a4c2ed631fee96b3faba479d"
+        },
+        {
+          "worldId": "w7dcdc79d2d9edc8e4504",
+          "label": null,
+          "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "87bb98f3526c56252c3cd9dad06c636fb523ba393df7b89f0b094285cd4c55a8"
+        },
+        {
+          "worldId": "w8009f8eec43876a31c73",
+          "label": "frontier-auction",
+          "revision": "b5771f2b53463474c801350875253e32aa9d5f7d9b689125abed39c55914437d",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "f7ea22da1d36524b5448f03e484816488648cde6b805f339449035b76d3b36d1"
+        },
+        {
+          "worldId": "w83e930b0f35b6c5f8b21",
+          "label": "frontier-shadow",
+          "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "6d1e963bc51df986d6798103a4b5ea373e0d939330362c72f855c7c7ac29a6cc"
+        },
+        {
+          "worldId": "w890db0be192dd1dc54ad",
+          "label": "note-spelling-control",
+          "revision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "9d22f2c549e736d166b19e8a0b709a99f2e549c40dba69f589ae577c75b68a0e"
+        },
+        {
+          "worldId": "w8ab6d1da1ce44b95c1d2",
+          "label": "relisting-control",
+          "revision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "617984f030a985a67b79699a4f83dd2c24582b272f3f994d37f5e7d6c241cf3c"
+        },
+        {
+          "worldId": "w97c919d63f4ed37b7cf5",
+          "label": "fee-anchor-2",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "f5f77559e8722ff87ef3157a7af93e8d537ec8133f56d81aec753b226afbc80a"
+        },
+        {
+          "worldId": "w99b4289766e90c5fab26",
+          "label": "architecture-volume",
+          "revision": "7aefc3b1aee04d3f73f28be3ab572c189b28195655f3217a939b922f0e28d0cb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "7f64d4ea5826e08f8bdea635e041611cbac53ffda06807306225efe33021d467"
+        },
+        {
+          "worldId": "w99c032109acf6fea335a",
+          "label": "hours-treatment",
+          "revision": "f34787f4f6a814a3d16254c970b95acf07382378c5c868a4e834d1bc2e7da642",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "76f932e241dee8c675aa2ca4625b237092e8397aa1b61b1e2f763455d6127fe8"
+        },
+        {
+          "worldId": "wa4e6f5d74f88f5e31e1d",
+          "label": "architecture-calendar",
+          "revision": "7aefc3b1aee04d3f73f28be3ab572c189b28195655f3217a939b922f0e28d0cb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "2d5d85eaf285bc44bee572b349ec9a64a355d20005f7d5d5de8da218143b4c2d"
+        },
+        {
+          "worldId": "wa95ca6d08a9dc0c7eaa8",
+          "label": "frontier-menu",
+          "revision": "b275b77df060268224f5149bb915fa13d4ca38a51253d054b3be2f3617031037",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "a6e113c33cd6d6a525ffacaaf4562df45ebb6bce2ad62d897ce2a0f69c669027"
+        },
+        {
+          "worldId": "waeca76492dc84a5916dc",
+          "label": "frontier-readiness",
+          "revision": "82bb3e17fc97e929df1d3045da6f1845536b0a871d961b00cae6066021e808b8",
+          "hasTerminalArtifacts": false,
+          "metaSha256": "9dbc104817583244d46f68b6cb7a65c6c26478cc3758fc70d27bdbca738abc0a"
+        },
+        {
+          "worldId": "wb1b1a8df323bb1093170",
+          "label": "architecture-joint",
+          "revision": "7aefc3b1aee04d3f73f28be3ab572c189b28195655f3217a939b922f0e28d0cb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "845069b87d18b97959d99f667968e0895e921d5db2c87346ab0c444097383427"
+        },
+        {
+          "worldId": "wd214406cadcb458eff7b",
+          "label": "relisting-probe-base",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "eba1194fb44c0c4dd523fbdd9705ffc5081d8b1ecae7036f145d82a2ab078482"
+        },
+        {
+          "worldId": "wdc572ff35a8e729813c7",
+          "label": "multi-routes",
+          "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "dee53961ecbb5fcc1daaad5747ad7c3e851226d3eb303ed9ad042b3771e77bda"
+        },
+        {
+          "worldId": "wde70f6509f014550a4a8",
+          "label": "late-rescue-control",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "9bf36ab2e059012bdab02b52ff370c4d0d46eb764733c228c968de615dfad372"
+        },
+        {
+          "worldId": "we2b77ac2bf4ae7932f79",
+          "label": "frontier-volume-bundles",
+          "revision": "613614078c6d91c159073de4aacad323ae653d09f102df9bb13400c83538872c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "8eb11c4f7660178b9db2103795a7bb28ed026ef22e6e1579ff3ab62f1eb26bde"
+        },
+        {
+          "worldId": "web1721ff5273f4c325d6",
+          "label": "multi-routes-volume",
+          "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "d457330a51b97f02471cd0584fc42e1c8f289b615ac050e6a4731e3d0ffbfbdd"
+        },
+        {
+          "worldId": "wed656323634466eafdf7",
+          "label": "frontier-readiness",
+          "revision": "82bb3e17fc97e929df1d3045da6f1845536b0a871d961b00cae6066021e808b8",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "16cb7116a22897a7c5c5992e9414357385430c9d21c745218238b4a2784d5ebd"
+        },
+        {
+          "worldId": "wf35eb3e3be383cc52619",
+          "label": "frontier-home-volume",
+          "revision": "943e5f0c11bae7705ff78ee262055c7c801a0c6f305ab069923ddea5f6fc759d",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "fcc1baed51837a14f58ae5e3c978dc3067c8e61e930f206cf820be89ea817d89"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "formal-unseen-20261113-16",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w3b92ad0e00a3d9a0302b",
+          "label": "relisting-confirmation",
+          "revision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "102f361fcd4bf3df8109ffa5847928c6bf6a46db576c7eab2f5dc8e7779b0f08"
+        },
+        {
+          "worldId": "w4195b508b871fa206908",
+          "label": "note-spelling-confirmation",
+          "revision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "a13ac82d7124ed3418fdbabca526b93f06261033c4c5a7c85e13d9a90fbc3578"
+        },
+        {
+          "worldId": "w4540ace394fa9cf26371",
+          "label": null,
+          "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "68c2f30a35cd1efd4f7c3f128d967eb498c73f2519aea2a4fe35938f6b8525d9"
+        },
+        {
+          "worldId": "w609a33cccbd601c9c2f5",
+          "label": "frontier-confirm-middle",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "9065afc04a6810c5efd6376bcd53fb74e8c43d464b929ec74fea2bd97a0d0823"
+        },
+        {
+          "worldId": "w6827dbe8df0766bdbc8f",
+          "label": "frontier-confirm-bundles",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "dea284f4d079b7d63d026f65e1d425ed5565cfe389b130dc65d567866c863907"
+        },
+        {
+          "worldId": "w9a4b2d98037747387f31",
+          "label": "frontier-confirm-volume",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "e2c42a73aba7c8c1144ff7d00bde89d920c2d90c846b36e8b0828be5fb543028"
+        },
+        {
+          "worldId": "wa7bcf5d1654b6d337c61",
+          "label": "late-rescue-confirmation",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "53ea6cb9f0c71e5cedfeda0166148e3b4de60593fcb2b11ab4679f1ec83b76c1"
+        },
+        {
+          "worldId": "wacd4f422afb1a4c54f81",
+          "label": "hours-confirmation",
+          "revision": "f34787f4f6a814a3d16254c970b95acf07382378c5c868a4e834d1bc2e7da642",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "e25ecba4fdde87773542aa7dadc34490db6321b929bd70f716172b25687445c7"
+        },
+        {
+          "worldId": "wb238803dfa49a69c2e0a",
+          "label": "payout-confirmation",
+          "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "8f34d920907db88a13b725a47463d5da62d3e008043704fde65e11714529a4a3"
+        },
+        {
+          "worldId": "wce13500dc9c2829611d1",
+          "label": "validation-final",
+          "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "65b2e9cd7528ecb6e4f313556d59e5dea4276a5be982964fcf5164c0d02a7159"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "frontier-unseen-20261114-19325279220dd249",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w2aabdee2d303f39f1b63",
+          "label": "frontier-evaluation-baseline",
+          "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "e684aad08a4a4f7e40ca598df7d9883bbe81a259dc6d6e27b081817c4f945ace"
+        },
+        {
+          "worldId": "w370727e2f84b6616e27d",
+          "label": "frontier-evaluation-candidate",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "59627ade9e6f51e0bafa5f73d0ab7670b06418d1f0ce4697b8abab34a4e2dbc6"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "frontier-unseen-20261114-4d17ec2759243bc1",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w7d747b57779c24ebbe3c",
+          "label": "frontier-evaluation-baseline",
+          "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "4d718e3456e2e3c26e64b131d39dff7e65f41137ea4970a56e2f4a1ac10d890f"
+        },
+        {
+          "worldId": "wf97529eaa1a9ec8a52c5",
+          "label": "frontier-evaluation-candidate",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "be7f73398eebce6f1a2ba574e19d9680f34a7519b008d60a17f9850fc4b5007e"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "frontier-unseen-20261114-7233f333bf3d7c2e",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w08aa7edba012c50a9f39",
+          "label": "frontier-evaluation-baseline",
+          "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "34de11372331ef59d68ff1cc49def6775e2004c7765ae029aae00d297bfa8873"
+        },
+        {
+          "worldId": "w99ca20e04eb4a3578ba3",
+          "label": "frontier-evaluation-candidate",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "ca60bc2a6b789441645294c9561ac8d4f15cd9e50a91a0df7cf2ca29d43e57de"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "frontier-unseen-20261114-779e9add6b14a18b",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "wed077baaf55738a03245",
+          "label": "frontier-evaluation-candidate",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "dc773e0c785390edd7977b2dbf71fb15a15f8fc749d744fc1c0040195c7bb13c"
+        },
+        {
+          "worldId": "wff88ce1176b470133d6b",
+          "label": "frontier-evaluation-baseline",
+          "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "cefdc1e2644a08b12c1327c2df5e8f3c9e7a98516d8d6f7f93fe426fe31e061b"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "frontier-unseen-20261114-7f39dd564e731085",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w6780460f61aa419c17c2",
+          "label": "frontier-evaluation-candidate",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "510a99c983367f232a4151adf9a2256e31692d1db6f756a6186a83d8f339d172"
+        },
+        {
+          "worldId": "w90cc53e21105f50b767c",
+          "label": "frontier-evaluation-baseline",
+          "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "9e59441926b59a6d022fb892dc6cd74c82179293530a1ca0ed14f611c07a41c2"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "frontier-unseen-20261114-98dcde7a3d066a80",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w9bad3f6f3bb2a05f6e37",
+          "label": "frontier-evaluation-baseline",
+          "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "6ea8c5da87124ce014e3d03f2e52e1ff83e5418e8f7b76d8a2fcc548adaca140"
+        },
+        {
+          "worldId": "wda6efe29b349ddafa66e",
+          "label": "frontier-evaluation-candidate",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "3c8854ae87844a461ba7ee4f63eab6ad6f903e6d51af7156f03042eebf6790c3"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "frontier-unseen-20261114-b256738651c1125d",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w94ce568c0df96c131a31",
+          "label": "frontier-evaluation-baseline",
+          "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "007748d62823397649b45157e9565b205ed4e4c01dc2ca8e0d05812511485d08"
+        },
+        {
+          "worldId": "wcda57d99f627c20ea663",
+          "label": "frontier-evaluation-candidate",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "baf3203e41e0f66a6977696f7dff7118b29265ff9e6df48f05cf2e424cd53d35"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "frontier-unseen-20261114-f5efce54acaddce6",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w531ed4987e09834cc1c1",
+          "label": "frontier-evaluation-candidate",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "4b65637f637510e63b8a9b3fab69b518763ab7deeae2d198ec0328b983adef2e"
+        },
+        {
+          "worldId": "wf2522db2a6cd59f8b269",
+          "label": "frontier-evaluation-baseline",
+          "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "f53e847d34c1f7468e2b5e8c2426cec3cf1e35f4fed2cbff4e62386077c1b38e"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "holdout-1",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "wd219768ea907dfeb7b60",
+          "label": null,
+          "revision": "7ae30fd9952a2d8735f4d0a0685953ba89a7904997bdc458f8c50b604bc43225",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "9b92fcf3ae789b971dcce662e82af34579d00da3a7ec21b74bc50699ad8e5774"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "holdout-2",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w02a4c43da3febb915ee0",
+          "label": null,
+          "revision": "d2b845444d83ecc606673db50bdc41acdf93d48e6bcb013eab8d37109aec25ad",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "174a215447dfe332d50cd6dee4d10ab26603d4425b2c480a3b2f5b15015577ca"
+        },
+        {
+          "worldId": "w1bffb098519f0532dddf",
+          "label": "adaptive-long-queue-slope8",
+          "revision": "90ff71348942ccf050b82ce6a3aecf7df18e694cba59dd843dd487f2c3d58364",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "b58109c95adebdead580e2b870f38264603dabf557e5d0016eb926f6e1793583"
+        },
+        {
+          "worldId": "w23dc3ed7976dc481981f",
+          "label": null,
+          "revision": "7ae30fd9952a2d8735f4d0a0685953ba89a7904997bdc458f8c50b604bc43225",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "abcea294bc0c45ee7f7b8e025cdd7d181e3c1c6e82338079ce7e9aced9d32ee0"
+        },
+        {
+          "worldId": "w3591ff0a651c0c537534",
+          "label": "early-offers",
+          "revision": "17b1224980d77b093031437873fd1f163189cfef5874ff5c07fab974ba02f9af",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "b63464f9c7eade5a44002a9f31b1fea98e29bf4dd6f5e25d9e54c9e3ead70629"
+        },
+        {
+          "worldId": "w3fca9ffa55f37ab764d3",
+          "label": "longer-lanes",
+          "revision": "924b936ea48327bbaa49d123ada1a7be6fd1339c86cc192e0a9fa1d91e065220",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "2173d28072d7445fc7ecee0d5ff1be2140aa456929caeac3d11f88983adb9874"
+        },
+        {
+          "worldId": "w407935d7c04a30632ccf",
+          "label": "adaptive-queue",
+          "revision": "e3a2ecc6cfef7e62140bbef240e9e4ed16d9751f0cfe0987719e1a6f4d2e5c8a",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "7b94cd4d12deed699b4c0b9e0ce669ab691c8caac1f5707c40ca54635da1b180"
+        },
+        {
+          "worldId": "w424199fbdd008fcbd84e",
+          "label": "lower-fee",
+          "revision": "924b936ea48327bbaa49d123ada1a7be6fd1339c86cc192e0a9fa1d91e065220",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "c1bdab3df91f3e7db7ba8da61bf4de41bc26a87aa66dc7d25e49773e793242c1"
+        },
+        {
+          "worldId": "w7972495096c0af8b9de8",
+          "label": "adaptive-long-queue",
+          "revision": "e3a2ecc6cfef7e62140bbef240e9e4ed16d9751f0cfe0987719e1a6f4d2e5c8a",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "a52ff9b3357f8898e6685d76425b58513ce3fb777063485f62f1b31ece7b3c73"
+        },
+        {
+          "worldId": "w7ae145e3ea74526ee4bf",
+          "label": null,
+          "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "e1d97d8c46d0b50cfd8329eeab2ee5dcbcbda36e0fdaa86a8ebb0cd41a90d904"
+        },
+        {
+          "worldId": "w9afefc9b7af4685ebbe7",
+          "label": "pickup-slack",
+          "revision": "2c84d39c6cc215451283d24e5da710118f24b326b8277809e86f62fa6155c3b7",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "3eececaceff138915e642f928bb8cbcc8348a78ccbb3f0dab650e0fa8fe3377a"
+        },
+        {
+          "worldId": "wa91ce8c1daea7f4c9cc6",
+          "label": null,
+          "revision": "4b0c95577d07d8ddb72e10ca1346c559f952444eec9122456dc63a819383458b",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "9d06d114c039ed2b35ecb09c83ae54997980aceb169f8ab4dfcbf75d84d1392e"
+        },
+        {
+          "worldId": "wb081cd387816513c47a1",
+          "label": "adaptive",
+          "revision": "17b1224980d77b093031437873fd1f163189cfef5874ff5c07fab974ba02f9af",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "3e38058a64167050cf501cda0505de715d11c9ba8319faffb0053cc8fc35db7f"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "holdout-3",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w1161968626d8d95ecec7",
+          "label": "pickup-slack",
+          "revision": "ba4e4416ba9ae41be61070a159b40196ab140c749b325147a8cbafe61c9f0df5",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "3c23b692a5bcc59bd2bf352be76ec87e2472e502d67e08507ad0f02050377f15"
+        },
+        {
+          "worldId": "w1937eaf885387948933b",
+          "label": null,
+          "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "323152762b3c434247bac1fcad8fa1df620cda86754a57d9c51108493c33e767"
+        },
+        {
+          "worldId": "w1a6d8e9945cd53876178",
+          "label": "longer-lanes",
+          "revision": "924b936ea48327bbaa49d123ada1a7be6fd1339c86cc192e0a9fa1d91e065220",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "a31903584323adbadcdb3d9f572efd9ce3e2d98fcf3d5ee065e4bd1f06f5faef"
+        },
+        {
+          "worldId": "w425c685b27f98760e324",
+          "label": "adaptive",
+          "revision": "924b936ea48327bbaa49d123ada1a7be6fd1339c86cc192e0a9fa1d91e065220",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "8546fd9e73efc66b3ae6d65e353dc84d68f67aa09c3f051f548d1781efcece20"
+        },
+        {
+          "worldId": "w50fa55273a0979412d8f",
+          "label": null,
+          "revision": "4b0c95577d07d8ddb72e10ca1346c559f952444eec9122456dc63a819383458b",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "434921cdcc34fe3fd73a6364c4d2035552885a216e5c1666866374eae76dfdd6"
+        },
+        {
+          "worldId": "w5cef648043cabe2ee04d",
+          "label": "adaptive-long-queue-slope8",
+          "revision": "90ff71348942ccf050b82ce6a3aecf7df18e694cba59dd843dd487f2c3d58364",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "2bd55cf265f891a09bc1f5fda9275d9b0642b3641679c7eba7ebb1f45ac6005a"
+        },
+        {
+          "worldId": "w815d24fedae64f9f5cf4",
+          "label": null,
+          "revision": "79d59866cb58a529346a964c3d4917f2d529d1f4aafaf42e4eaa439a136a3991",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "a6c8edad1c592f475952f0ddd9aea03a0319f09edcc141903482eb0096b4f6b9"
+        },
+        {
+          "worldId": "w991dc1f588362b881fd3",
+          "label": "adaptive-queue",
+          "revision": "e3a2ecc6cfef7e62140bbef240e9e4ed16d9751f0cfe0987719e1a6f4d2e5c8a",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "bcf6fa2870a7429fcc5f5979eb23aec91e80563e4778a1274675bc547bee437b"
+        },
+        {
+          "worldId": "wb3d622258c94129d2be0",
+          "label": "early-offers",
+          "revision": "924b936ea48327bbaa49d123ada1a7be6fd1339c86cc192e0a9fa1d91e065220",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "683ce9d8d1510f62a28b43759f8d5dba52da3121d2d2eecef2b2f8cf0e2060c7"
+        },
+        {
+          "worldId": "wb865ff1c21970cb0fef2",
+          "label": "adaptive-long-queue",
+          "revision": "e3a2ecc6cfef7e62140bbef240e9e4ed16d9751f0cfe0987719e1a6f4d2e5c8a",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "17c1a6bc9cfe175aedaacf924e3bcd3d40cda7a3d48489e37c998ff9ecf54b5b"
+        },
+        {
+          "worldId": "wcb25f567eb387833fa43",
+          "label": null,
+          "revision": "d2b845444d83ecc606673db50bdc41acdf93d48e6bcb013eab8d37109aec25ad",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "f4d9ebee501bb4015b1f2dc9e67a2a15ca31a369a97984cc1c23f46289604b72"
+        },
+        {
+          "worldId": "wf3fc8555ff7371f60d31",
+          "label": "lower-fee",
+          "revision": "924b936ea48327bbaa49d123ada1a7be6fd1339c86cc192e0a9fa1d91e065220",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "ca83dbadd034d1ec6fe4fe5b54dee465c4a082c9d73ca124d50955ab4b59cd82"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "holdout-4",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w27f9f6d54106931d0f1d",
+          "label": null,
+          "revision": "79d59866cb58a529346a964c3d4917f2d529d1f4aafaf42e4eaa439a136a3991",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "13223e0a0906f0949aa5b5f1bac0051df7bdc3459e900e87d2329d8e83a061f6"
+        },
+        {
+          "worldId": "w4b0c114dfc99d7eb4329",
+          "label": null,
+          "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "ed5629f1974cb3f8076b13e35576cdfa28e609ba64a7feb843af815e32889086"
+        },
+        {
+          "worldId": "wb915d7ae809d2fec7776",
+          "label": "adaptive-long-queue",
+          "revision": "2c84d39c6cc215451283d24e5da710118f24b326b8277809e86f62fa6155c3b7",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "2241e71e34f119445a8d1d77b418d5d81bb0fde2bb3faf4b8e37fcca02f90ac1"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "holdout-5",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w65288bae5e4a8c3d8f5e",
+          "label": null,
+          "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "218e08e0dc14b8e212231305d8c4eab6614ffdae26318288340b6e05f560ac57"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-5916726ab4e9f863",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "wa6e982433a45fbcdd401",
+          "label": "late-rescue-evaluation-candidate",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "12296e5e43b22933d5f1fca7149a4c5e4a0c75a5031a021320fe64cd9fd7a6fa"
+        },
+        {
+          "worldId": "wd88b3ed2a95472802fe4",
+          "label": "late-rescue-evaluation-baseline",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "ff1a90ef9367a4150a0e846584c51a6d074d8e210d50fd01b3bb7b4cf62cfc2b"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-5e15a0a3962a54ba",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w19ad9c95aa672e0b58b4",
+          "label": "late-rescue-evaluation-baseline",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "55cfb5fc592568636c95fc3edf11dab65a721ae086a398541db7f2d40cbd95a9"
+        },
+        {
+          "worldId": "wc3a6f0a7ce2eaeb508e2",
+          "label": "late-rescue-evaluation-candidate",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "64ef8df64ea7683047ccbabc828c06dd661deb22d57b0f585d99896cd71beb3d"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-824df9f835246148",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w1c1994a0583f1b960853",
+          "label": "late-rescue-evaluation-baseline",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "2cf1791b04a7efe3839b4aa4572b6a590c1962ff3856d00c79d94a608badaf40"
+        },
+        {
+          "worldId": "wada29dbdd78bf506f315",
+          "label": "late-rescue-evaluation-candidate",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "a660753dd0cc232d7b5fa525d4ac844c3af1f997179b355922c9d43ee548d58b"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-864cfcc97f2cade5",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w2a2f50f79c60f9a8503f",
+          "label": "late-rescue-evaluation-candidate",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "11ba1229674e6b5eedff089968f81561523449744f1b733be10382a4daf6860d"
+        },
+        {
+          "worldId": "w6c27a619f4da86e45a93",
+          "label": "late-rescue-evaluation-baseline",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "e72ba69c5b6d966703033fe0df18d2bd480e36c6b41d96a3c1e5eb8d8b6efafb"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-9b483a1a53deba54",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "wa8a176feea958e9bf80f",
+          "label": "late-rescue-evaluation-candidate",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "5ef699fc1d2afa0e3664db56ce89d96d68dc802c690ad49a0379d911db2182c1"
+        },
+        {
+          "worldId": "wd56e99c79ef5a6a8953e",
+          "label": "late-rescue-evaluation-baseline",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "e55246b21b1ffb6f01dc22b177fc77a88cf4d957483788657e6170491d919cba"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-c551e105a48e2148",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w23b23a9de15d1374e9d6",
+          "label": "late-rescue-evaluation-baseline",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "1148c27aa428564ac1e93a5010122dbfd4669fb023419b9286681c305936f6b2"
+        },
+        {
+          "worldId": "wfa55a0b7e052e3eb9f94",
+          "label": "late-rescue-evaluation-candidate",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "67010e7383f5b24bb2119843554af51446cf3ab46f06a9ebc65d70dcabff9d70"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-e48160564a27cf74",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w49061de8484c00420b4f",
+          "label": "late-rescue-evaluation-baseline",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "1e960c138f31363eeb03ccf4b82baaa8a6081a0b13fb10d6ef6748e4f6a228de"
+        },
+        {
+          "worldId": "w70550a8c599b38df78ac",
+          "label": "late-rescue-evaluation-candidate",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "3040b61dc35ef5842d3d95146149794e6564b889ab1ac70bc8241bc767526132"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-e4ee0c5739a75ad0",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "wbea5dbdaebeff5638d1c",
+          "label": "late-rescue-evaluation-candidate",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "daf7b727b12029f172c1e0197fd93922abb3abb53253e3816c28d3ca51cb5d9f"
+        },
+        {
+          "worldId": "wc950e844bea34b4bd79a",
+          "label": "late-rescue-evaluation-baseline",
+          "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "caa40e68e56c0d30822a364e0eef38db82b28ef2d4d3cf08e1861baad7803e50"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "level-compatibility-20261114",
+      "retiredAt": "2026-11-14T06:16:30.532933+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w00020b2903e9a263e9b6",
+          "label": "levels-compatibility-7-1",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": false,
+          "metaSha256": "152eec0d62cc79c1d2eeb0f3e9df3cf061211203eed2b69ceaf0bd208bf34a74"
+        },
+        {
+          "worldId": "w161228e64d5cdf992727",
+          "label": "levels-compatibility-6-1",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": false,
+          "metaSha256": "4a23ed629d53b70cd647488964818adb5a6620e689aed8624e4684143e12acb7"
+        },
+        {
+          "worldId": "w2e1a5ea4a948980a4e12",
+          "label": "levels-compatibility-2-1",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "8919320a424424d8cab2eae42e053ef1bc18a6c34747bfac3e05dc85aa6ae77b"
+        },
+        {
+          "worldId": "w48164337cd530770fe22",
+          "label": "levels-compatibility-1-1",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "bc6fc494ba733e6f625e61d0377f3f0eb6aed4a7d1c7c12ac96f2ddcd931a054"
+        },
+        {
+          "worldId": "w777f5384e6a5d6ee3e09",
+          "label": "levels-compatibility-5-1",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": false,
+          "metaSha256": "6ca7d5dd335b7f7b3f125aee9ae473ce741680703f0aa8b26664786cbdfaaddd"
+        },
+        {
+          "worldId": "wc79e70c2b47ca151ba50",
+          "label": "levels-compatibility-3-1",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": false,
+          "metaSha256": "d6d9ac9174c22ba0a781b615c36e777a95bed9bb6b720c2f0032301a6088f73f"
+        },
+        {
+          "worldId": "wec608f7bdf7a34a53c52",
+          "label": "levels-compatibility-4-1",
+          "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "e749ade57e825027cd6599a41bdb30959f2237179b5224a34ffb342d2efe2618"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-309e12dc0f90a102",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w2e9187237875066192e1",
+          "label": "note-spelling-evaluation-candidate",
+          "revision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "84877768c2c588f9e89556ef6b7b7d782c8c51de3d0c3c096358562d726a2f65"
+        },
+        {
+          "worldId": "wf8fe012802581848040f",
+          "label": "note-spelling-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "fabf37dcef0b78a66d5894584b56d18373d7f5c55e98b748e5a326e5bccc3747"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-5914d58b5b701bdc",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w3fc02045dd321beb8d6f",
+          "label": "note-spelling-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "33328d8845fe7f48fc98457dd47f4bfbc68a1c6142022d32db03c59715147508"
+        },
+        {
+          "worldId": "w4db41aefe518eca7aac9",
+          "label": "note-spelling-evaluation-candidate",
+          "revision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "90618f0614ef78dccba1c3389046b38eca2f361ba7c63baaf7655314c3dca160"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-6e740a3630050c2d",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w05c7c136c1ff39724db3",
+          "label": "note-spelling-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "f778547d7001f2671c38c43188fcc1668a3c80d784ac59f3bd49b2f6afd00629"
+        },
+        {
+          "worldId": "wb938037efdc55437d704",
+          "label": "note-spelling-evaluation-candidate",
+          "revision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "4739e5995e9b54c8b9e59c1fafc6b1c621cb755dc30cb10fb61da51ab3b6b581"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-8bc883348a90d012",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w0be5b75baa67039789b8",
+          "label": "note-spelling-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "f933e21e2a5129cd82839fe76ab1367fe67f4a163fe2e5f0caebecf505dc34fe"
+        },
+        {
+          "worldId": "w1299cdda80236cab3770",
+          "label": "note-spelling-evaluation-candidate",
+          "revision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "19e38de908b84d28766038ca490e509583eed4737be81ae9cfc14bb8fddf1bc9"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-b0a0611536d3eb20",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "wb6570508fe39f334178a",
+          "label": "note-spelling-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "3077b14bd26ecb52f533e31f356885940136682c427f12e268001a7c0fe145e4"
+        },
+        {
+          "worldId": "wf7c45bf5664bf3a25125",
+          "label": "note-spelling-evaluation-candidate",
+          "revision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "5f7a849dcf475a681f0a42af880ce9c959ce8f40d9c3802fdf0f40d9d2d0f980"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-c07ddff01f6c5f00",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w0a2762d880b912ef91d1",
+          "label": "note-spelling-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "d7f85f96cf9b62b701fe9f001fd6b82dff06ea5bc4a79cd7737fb9a4ca3d7f90"
+        },
+        {
+          "worldId": "wc93886b2b5bc4b534125",
+          "label": "note-spelling-evaluation-candidate",
+          "revision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "12ae8a89aeed1989ddf502a82f220884d8374f7a1a8fb0446a3ebadd40d053cb"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-df5da3c0bccf1e98",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "wddbfe455d9d22b4aa67c",
+          "label": "note-spelling-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "49a828fe22d0e9e824a903b0b325bf9df34ead4255f13d5e3f412581124ab56d"
+        },
+        {
+          "worldId": "we2331462004a20b30ac5",
+          "label": "note-spelling-evaluation-candidate",
+          "revision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "3e7e5973eb806935d98b17e9eb879ffc018ac5b732a1dfc17985794b048bf2ba"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-f78979dd4e5b3a7c",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w8c4afff7ce388130bd35",
+          "label": "note-spelling-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "bf4707f591da4a1795d248e0302fb93f9a88d3589a97dbe3257e908836351f1e"
+        },
+        {
+          "worldId": "wd4f662403988d00ca037",
+          "label": "note-spelling-evaluation-candidate",
+          "revision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "3faf40adb5bbf17a306e6445974d67f10a3988a95d225df20c0be148c07583fc"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "payout-unseen-20261114-11d2bc22e5a2e17d",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w62f0984788410938c8b4",
+          "label": "payout-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "a8382c105999d9943fe0edbcff41d13c8ab8e465b3a6919bf127fa1cc69054af"
+        },
+        {
+          "worldId": "wa9b528f059f37e37c717",
+          "label": "payout-evaluation-candidate",
+          "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "0474d8dedfa168542e5fba4382f40e4d6503c195d057b4e263c3822be5bb3b51"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "payout-unseen-20261114-166d26adce8afd0e",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w41dfb468b53ad569c41a",
+          "label": "payout-evaluation-candidate",
+          "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "529fa5c959ba13751ac96bf005d74be24531f1bca723a21722de0b9dba4a8b96"
+        },
+        {
+          "worldId": "w71f86a6450f582f13e62",
+          "label": "payout-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "81f21483b1e5d5bf8454f90a3494a5f42f191af7e46880f798409adff2a411c1"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "payout-unseen-20261114-1954b8aff04d03b3",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w09695636c500760ddad6",
+          "label": "payout-evaluation-candidate",
+          "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "53e9c006a36849f7d3c3dc7ede732115cb5d3b79c01bc4a28b6d3a241a9a531c"
+        },
+        {
+          "worldId": "w43eaf76796aa26a5b328",
+          "label": "payout-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "7c5d142927dc1341b661d64e0f0b30fec9d89cbebfb274f93fe3b543d8e2f3ae"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "payout-unseen-20261114-1c6cfe93689d0a32",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w15a04360a544c329bb74",
+          "label": "payout-evaluation-candidate",
+          "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "052e66797c75b2f71e9b3d24043609dfea48a0067fe468b5d8aef29706a80392"
+        },
+        {
+          "worldId": "w9792c36af80435e8356d",
+          "label": "payout-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "45787fd4223b4c888bc81f1c428c0e222947b11e1378e823bdd036e06acec79c"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "payout-unseen-20261114-266a2575198d039b",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w52ad5b635ac9d9a2a4a7",
+          "label": "payout-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "b190534af3a36952ef62fd05c67fe41a46fb7c7db377d474b8d905da17d87757"
+        },
+        {
+          "worldId": "w899f3eb9598758f34fcb",
+          "label": "payout-evaluation-candidate",
+          "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "4eed6039b68c6aacc7c28892d89eab89a3359b2bf9fb1a27bbe3aa3bb503eea7"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "payout-unseen-20261114-2b782dea15c2c930",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w49612a1b08ad3d5d7143",
+          "label": "payout-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "6a79a607fda7707ce1ded2d309c588d20766cd1420376a3042d716150c7e15e1"
+        },
+        {
+          "worldId": "wa4a11bda0d9a8b8928dd",
+          "label": "payout-evaluation-candidate",
+          "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "ba83c1abe43b7500a0c682e585f0512583f6b917accaabe715e5502b112415db"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "payout-unseen-20261114-619e961538a5119e",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "wd481f1b570d17886c38b",
+          "label": "payout-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "e5b7502338d027bfa6e6cd0d9d776187daa8cd5c280223bfff3497e0b670888a"
+        },
+        {
+          "worldId": "wda18264c0af79369622f",
+          "label": "payout-evaluation-candidate",
+          "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "e73779ac922347af67a7296091a2c6abe88470cac1862f8b11fda93e6c820771"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "payout-unseen-20261114-8a0fdb3994ac5c0e",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w41c1a8d2426d61c029e1",
+          "label": "payout-evaluation-candidate",
+          "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "07078d4f2c3bb20eb9f5475db0c92c2a4ced943de04ef6db456e6c97ffee2e55"
+        },
+        {
+          "worldId": "we01419f6f195fbdd5f7e",
+          "label": "payout-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "83e4ab6f1abb8a13f90cd7fae2d3a247e8cd449d5e97b99aecae50a7ce8f8cb2"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "payout-unseen-20261114-bdbb0af73763c605",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w14cd72c5bdfa45326d2e",
+          "label": "payout-evaluation-candidate",
+          "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "a3a073e3a7bc230a6dcf1878c8019da7fa3e95d1785e92d82e542d482804c8ec"
+        },
+        {
+          "worldId": "wf3375255613b903cec06",
+          "label": "payout-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "8d8fcac633ebb2c02278586ed8a432b25a52f855f9078c02907a3b4b6b0b6352"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "payout-unseen-20261114-bfc8b37c1c3b01b5",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w8efb30b6ad8d38f3b698",
+          "label": "payout-evaluation-candidate",
+          "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "ba07ba982405fc2111baad936036ab8f9685ab8d18dd72842d30845a56d66c08"
+        },
+        {
+          "worldId": "wad509d6e69fbca969ac3",
+          "label": "payout-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "676ff87747bc440a156995516bd0e4e5511310109841b67069f0172ac9400770"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "payout-unseen-20261114-df10216ee874354b",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w69dc986161ca61b80710",
+          "label": "payout-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "e383787273a793d2994098b67d83432a7815c256945073f19794373300d72e35"
+        },
+        {
+          "worldId": "w9e1bab078a65289af454",
+          "label": "payout-evaluation-candidate",
+          "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "03f73229f77f853fb31f3c3810a16ee819f775dc122858139f23d13918fcb170"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "payout-unseen-20261114-e2258b662e732c8e",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w9318346c090839395093",
+          "label": "payout-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "b5b425fd46ae8de8969200b7f37e1e8ee920fdbfd3bcc20e7e9c7abca8e69e36"
+        },
+        {
+          "worldId": "we80a390f2852a537e1dd",
+          "label": "payout-evaluation-candidate",
+          "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "ca904f22687cb5d7ed421c27039b9f05fc6ecaf7bb1170a408ead609e3ed13a1"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "relisting-unseen-20261114-44179069f811e12a",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w04e60027b7b2b4d7b58b",
+          "label": "relisting-evaluation-candidate",
+          "revision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "a4e31b126e25ae9d2c7e677006380f7e80eff2bd1e0e68fa791edcfd6d06d9ef"
+        },
+        {
+          "worldId": "w91564fd780e4bc249119",
+          "label": "relisting-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "7e9aeddc90610dfe9cf64a953007a1d0036d3e63d69f3d0578a0b84c7baa6bdf"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "relisting-unseen-20261114-49994c1da1bed296",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w119bd36598fdf32552b2",
+          "label": "relisting-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "fda4a82d588f1cdaa3e6679eb8f2b4873f51e78199654602e85db2f33bce5d51"
+        },
+        {
+          "worldId": "wcab3544664a8a0e5ac1e",
+          "label": "relisting-evaluation-candidate",
+          "revision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "681c0ed71196ab4eb188c30c586cd9426c487ae4b02e4fdd7688fd21366ac495"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "relisting-unseen-20261114-5291bd44e58fc0b8",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w204e5b617a8a34fb8b1b",
+          "label": "relisting-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "2a24f3e79dc42a5a9cc693fa0216b6bf8bee0e5192331bc4d2e0209158aa2093"
+        },
+        {
+          "worldId": "w90976401207ea6e356ad",
+          "label": "relisting-evaluation-candidate",
+          "revision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "80d5ce6a899226015937a915a1f19588f122ab38e75484d4edac0a8ba03f922e"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "relisting-unseen-20261114-593862ba0453d993",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w7eaa6b3210b790c25028",
+          "label": "relisting-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "c5710399d06a9f652c53dcb73994570a001df6e7770027d5bc39f5fec74de690"
+        },
+        {
+          "worldId": "w8baaaa6df86b54b0124f",
+          "label": "relisting-evaluation-candidate",
+          "revision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "52e2d55925b0e1402122ffe98aa4f25ee56228bcc92039bd5861a565d84a4720"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "relisting-unseen-20261114-664fad94342f003c",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w84f9b01fde2cae59d96e",
+          "label": "relisting-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "c288cde566a6acc57a04183a0c0873068b459f59994f57c24a7f2c1421cbdc73"
+        },
+        {
+          "worldId": "wfc55b9fd2c33edcf38d2",
+          "label": "relisting-evaluation-candidate",
+          "revision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "c109f620563fd3aca557666031ccc613e9810d84a8f75855249b7177355d9fc7"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "relisting-unseen-20261114-85e7c8159eb228d3",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w25bd5a8dbece356a4b6a",
+          "label": "relisting-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "9f5ac030ea6437069e19667727f725939417284d6ecf4b61e2ea6da364ad4025"
+        },
+        {
+          "worldId": "w948237ee99b62929f498",
+          "label": "relisting-evaluation-candidate",
+          "revision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "2484fa9cbc62059f892ad5f538cb426464baaa9215ae509157120bb9321f993d"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "relisting-unseen-20261114-ae921d2f5a004c5c",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w129775e44fd461f4366b",
+          "label": "relisting-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "12630711390b6b96ddd5b10448bb0b57b1f6c4dd06769ffafbe393e5fdb8f86d"
+        },
+        {
+          "worldId": "wdff0665ab413b6995114",
+          "label": "relisting-evaluation-candidate",
+          "revision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "3d66390870085060dccd4a3b05259b2ef6bd8c4e719aa5f3ba2aa69c792cc8d7"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "relisting-unseen-20261114-be6ccba2d5332cc6",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w20a5b10fafcb6b7ad129",
+          "label": "relisting-evaluation-baseline",
+          "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "a264f3bdb0b8262a638a3791f4ccce0e24f124eea78110a640cc6a324071fcb2"
+        },
+        {
+          "worldId": "w5c65064df8ed758335b3",
+          "label": "relisting-evaluation-candidate",
+          "revision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "ccec832e58944d5664810812cb3c4f8c358be6f932d4a949b5e7b8640949d61f"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "spread-1",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w8405cf6edccd772072d8",
+          "label": null,
+          "revision": null,
+          "hasTerminalArtifacts": true,
+          "metaSha256": "3d8ab1553e4432b67c1340369810f584ec94d89c413d90e0971143fe1f19babc"
+        },
+        {
+          "worldId": "wa239e7bccef696cf0214",
+          "label": null,
+          "revision": "7ae30fd9952a2d8735f4d0a0685953ba89a7904997bdc458f8c50b604bc43225",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "12e75a3570d5c9c805fa8521a2dbe617ab7550521bbb667564b64744ca92c8e9"
+        },
+        {
+          "worldId": "waa03ec4a9d305821e0e1",
+          "label": null,
+          "revision": null,
+          "hasTerminalArtifacts": true,
+          "metaSha256": "7af505271d8a93228f934d84722c2a89bbbc651b38042dd6b8359b3554c0ae05"
+        },
+        {
+          "worldId": "wc0e4705e1d3ee56724b4",
+          "label": null,
+          "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "3fa39cc7989a2e7015460c8256424c7f88b5f1ba8c80ef151facc8556696220c"
+        },
+        {
+          "worldId": "wd415561aaf36894b76de",
+          "label": "adaptive-long-queue",
+          "revision": "82a2917e12b7985265ad55efca9ead3b6e979b597857d557d0ed7db7761e25af",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "d60acfdf8799bdd194de6ebabb2742c7a64dacb73a1c74ecb66939dca7f46cbc"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "validate-1",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w3ea5ca2f5b8e9b30987b",
+          "label": null,
+          "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "e74f5ccfb722febe22c60f2806a8f3346130bac8146e29f65b039394bc73e306"
+        },
+        {
+          "worldId": "w663faa84f482d819d856",
+          "label": null,
+          "revision": null,
+          "hasTerminalArtifacts": true,
+          "metaSha256": "90ddf60ab5771bf3902b90517313e1d0a62e236116eece1f063ff87b1f72d48b"
+        },
+        {
+          "worldId": "wbcb207675e32e9aff20f",
+          "label": "adaptive-long-queue",
+          "revision": "82a2917e12b7985265ad55efca9ead3b6e979b597857d557d0ed7db7761e25af",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "bf0408866f2826f0a9640f66e0fc9f8083541d16958763e825e48eaa0582e5ad"
+        },
+        {
+          "worldId": "we43e501acc2d915aca99",
+          "label": null,
+          "revision": null,
+          "hasTerminalArtifacts": true,
+          "metaSha256": "b1a516faaca60d7db06c2dd51f638069c0df5bb0bd9065a8a335bf70a87e79ad"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "validate-2",
+      "retiredAt": "2026-11-14T06:06:43.569158+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "wd010ab552268190f208a",
+          "label": null,
+          "revision": null,
+          "hasTerminalArtifacts": true,
+          "metaSha256": "c9ca06edebb8f86e800d8963273de909075839ce09c9b59d2e17c48ece626094"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    }
+  ]
+}

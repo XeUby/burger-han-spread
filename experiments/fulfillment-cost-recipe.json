@@ -1,0 +1,27 @@
+{
+  "declaredAt": "2026-11-14T06:01:27.408229+00:00",
+  "trainingWorlds": [
+    "wccca731d04dbfacbaba0",
+    "w7b412da927edcef0081e",
+    "w1a7b82a91f712427b624",
+    "w2464fa0a1a5ce6878d47",
+    "w657d3e2075cdc8dcb443",
+    "wb238803dfa49a69c2e0a"
+  ],
+  "featuresSha256": "50153cc359c873d8fa5d8999ec6b6c2eab239e9053e2bcccaa323707827624de",
+  "priorRatio": 1.15,
+  "ridgePenalty": 10,
+  "ratioBounds": [
+    0.65,
+    3.0
+  ],
+  "fit": "Additive connected-order-group costs, squared group expense error with fixed ridge penalty. Predict each request from public arrival features only. No seed or order identifier feature, hyperparameter sweep, or shared-fee allocation to individual cars.",
+  "newDevelopmentPanel": "experiments/cost-development-protocol.json",
+  "heldoutPredictionGate": {
+    "meanWeeklyRmseImprovementOverBothBaselines": 0.05,
+    "weeksBeatingBothBaselinesAtLeast": 3,
+    "absoluteAggregateBiasAtMost": 0.1
+  },
+  "decision": "Fit once on six named old weeks before reading new development outcomes. Assess all four new weeks, including failures. No model revision after that assessment may reuse those four weeks as held out. Passing only justifies frozen whole-policy development trials, not promotion.",
+  "promotion": "Any selected policy needs an entirely new untouched paired validation panel with candidate source/model/settings frozen and profit/reliability/multiplicity criteria declared before play."
+}

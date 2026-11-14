@@ -1,0 +1,1158 @@
+{
+  "protocol": {
+    "declaredAt": "2026-11-14T06:04:31.411434+00:00",
+    "bundle": "research/multi-routes/bundle",
+    "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+    "baselines": [
+      {
+        "worldId": "wd6875d168b31efa9603b",
+        "seed": "cost-development-20261114-0671a6fd582581ca",
+        "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "payout": 0.85,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "noteSpelling": false,
+          "relist": false,
+          "openingOnly": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 1.15,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14,
+          "multiRoutes": false
+        },
+        "marginCents": 1037113,
+        "wonOrders": 302,
+        "onTimeShare": 0.9503311258278145
+      },
+      {
+        "worldId": "we46cd933896ca0a75eae",
+        "seed": "cost-development-20261114-5540924d1a9eab19",
+        "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "payout": 0.85,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "noteSpelling": false,
+          "relist": false,
+          "openingOnly": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 1.15,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14,
+          "multiRoutes": false
+        },
+        "marginCents": 1713660,
+        "wonOrders": 403,
+        "onTimeShare": 0.9751861042183623
+      },
+      {
+        "worldId": "wf5ac6ed151931c7073a4",
+        "seed": "cost-development-20261114-92b3ba4ed4d2e449",
+        "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "payout": 0.85,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "noteSpelling": false,
+          "relist": false,
+          "openingOnly": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 1.15,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14,
+          "multiRoutes": false
+        },
+        "marginCents": 867660,
+        "wonOrders": 320,
+        "onTimeShare": 0.95625
+      },
+      {
+        "worldId": "w934ce22d13d562c36526",
+        "seed": "cost-development-20261114-a92ca803a91fbe65",
+        "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "payout": 0.85,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "noteSpelling": false,
+          "relist": false,
+          "openingOnly": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 1.15,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14,
+          "multiRoutes": false
+        },
+        "marginCents": 1075346,
+        "wonOrders": 292,
+        "onTimeShare": 0.976027397260274
+      }
+    ],
+    "settings": {
+      "price": 1.42,
+      "fee": 1.05,
+      "payout": 0.85,
+      "margin": 0.1,
+      "capacity": 0.35,
+      "maxKm": 700,
+      "minDrivers": 8,
+      "notes": true,
+      "noteSpelling": false,
+      "relist": false,
+      "openingOnly": true,
+      "adaptive": true,
+      "earlyOffers": false,
+      "safetySlack": false,
+      "auction": false,
+      "allowPrivate": false,
+      "tradeIns": false,
+      "homeOffers": false,
+      "readiness": false,
+      "bundlePairs": true,
+      "timedNotes": false,
+      "lateRescue": true,
+      "sameDayPremium": 1,
+      "laterDiscount": 1,
+      "placePrior": 0,
+      "bundleWait": 15,
+      "backlog": 0.08,
+      "priceFloor": 0,
+      "costRatio": 0.9780378750338937,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "demandSlope": 14,
+      "multiRoutes": false
+    },
+    "modelSha256": "d19c53a0797dd69af0650972121dc5f80b09965b7447d004244f7833da567628",
+    "scope": "Four matched development weeks. The four seeds were used for cost-model assessment and are permanently retired from future validation. Four repeated treatment runs provide four paired weeks, not eight independent weeks.",
+    "selectionHistory": "The16feature model failed its held-out development gate. The simpler scalar calibration was fitted earlier on six old weeks and inspected alongside the feature model on four new weeks. Selecting it for this experiment uses those outcomes; this is development selection across models, not an untouched test.",
+    "hypothesis": "The incumbent1.15quote-cost multiplier overestimates actual fulfillment expense. A calibrated expected cost may win additional profitable work and improve price-demand decisions while preserving driver pay, route composition and capacity protection.",
+    "falsification": "Reject if lower quotes reduce contribution or create enough congestion and late refunds to erase additional revenue. Prediction accuracy alone does not imply profitable policy improvement.",
+    "plan": "experiments/plans/cost-calibration.json",
+    "attempts": "experiments/cost-calibration-attempts.jsonl",
+    "maximumJobs": 4,
+    "maximumConcurrentPlays": 4,
+    "gate": {
+      "meanPairedGainEurosAtLeast": 1500,
+      "worstPairedGainEurosAtLeast": -1000,
+      "qualified": 4,
+      "undelivered": 0,
+      "failedVisits": 0
+    },
+    "next": "Only a passing frozen policy can be selected for an entirely fresh paired validation panel. Declare candidate hashes, complete panel size, profit/reliability criteria and sequential multiplicity allocation before any validation play. Do not promote from these four development weeks.",
+    "retention": "Retain every attempt, action error and failed week. Stop new trials on runner failure; no silent replacement. No ranking or final."
+  },
+  "summary": {
+    "terminal": true,
+    "completed": 4,
+    "decision": "Reject this calibration for promotion; retain every development outcome",
+    "promotionAllowed": false,
+    "meanMarginCents": 1071259,
+    "meanGainCents": -102185.75,
+    "minimumGainCents": -281016,
+    "qualified": 4,
+    "meanOrders": 387.25,
+    "aggregateOnTimeShare": 0.9509360877985797,
+    "minimumOnTimeShare": 0.9131652661064426,
+    "undelivered": 0,
+    "failedVisits": 0,
+    "meanDriverFeesCents": 2770711.75,
+    "meanLateRefundsCents": 109532.25,
+    "actionErrors": 1,
+    "recoveries": 0,
+    "baseline": {
+      "meanMarginCents": 1173444.75,
+      "meanOrders": 329.25,
+      "aggregateOnTimeShare": 0.9650721336370539,
+      "qualified": 4,
+      "meanDriverFeesCents": 2295982.25,
+      "meanLateRefundsCents": 74795.25
+    },
+    "meanLedgerGainCents": {
+      "driver_fee": -474729.5,
+      "late_refund": -34737,
+      "release_fee": 1578.25,
+      "revenue": 405702.5
+    },
+    "eligibleForFreshValidation": false
+  },
+  "records": [
+    {
+      "label": "cost-calibration",
+      "seed": "cost-development-20261114-0671a6fd582581ca",
+      "worldId": "wed8f1c756ad98e321fc6",
+      "status": "complete",
+      "result": {
+        "worldId": "wed8f1c756ad98e321fc6",
+        "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "payout": 0.85,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "noteSpelling": false,
+          "relist": false,
+          "openingOnly": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 0.9780378750338937,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14,
+          "multiRoutes": false
+        },
+        "marginCents": 756097,
+        "revenueCents": 3731647,
+        "wonOrders": 357,
+        "onTimeShare": 0.9131652661064426,
+        "undeliveredShare": 0,
+        "ranked": true,
+        "onTimeOrders": 326,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00108",
+          "R00249",
+          "R00279",
+          "R00324",
+          "R00325",
+          "R00346",
+          "R00408",
+          "R00419",
+          "R00439",
+          "R00477",
+          "R00498",
+          "R00638",
+          "R00645",
+          "R00736",
+          "R00738",
+          "R00739",
+          "R00740",
+          "R00751",
+          "R00799",
+          "R00806",
+          "R00813",
+          "R00815",
+          "R00816",
+          "R00826",
+          "R00830",
+          "R00840",
+          "R00841",
+          "R00866",
+          "R00872",
+          "R00899",
+          "R01010"
+        ],
+        "undeliveredOrderIds": [],
+        "label": "cost-calibration",
+        "files": {
+          "meta": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/wed8f1c756ad98e321fc6.meta.json",
+            "sha256": "b1d263416a238d324702a56e8abf03814f9693354c7bc420bc8cb86c30df14b7"
+          },
+          "snapshot": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/wed8f1c756ad98e321fc6.snapshot.json",
+            "sha256": "dd0bdc1775f32c813c4386e67ba922278663b9e7b2945e8ded8ccdc5824850f2"
+          },
+          "score": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/wed8f1c756ad98e321fc6.score.json",
+            "sha256": "f1211e814814e927b596fab7c3969e445dea1d80b123df2f81d1bc0283b0cb5b"
+          },
+          "events": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/wed8f1c756ad98e321fc6.events.json",
+            "sha256": "ff46be808e400f964ef3007f1ebf86257c3740840c13b7936b9bf91140bcc328"
+          }
+        }
+      },
+      "baseline": {
+        "worldId": "wd6875d168b31efa9603b",
+        "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "payout": 0.85,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "noteSpelling": false,
+          "relist": false,
+          "openingOnly": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 1.15,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14,
+          "multiRoutes": false
+        },
+        "marginCents": 1037113,
+        "revenueCents": 3452016,
+        "wonOrders": 302,
+        "onTimeShare": 0.9503311258278145,
+        "undeliveredShare": 0,
+        "ranked": true,
+        "onTimeOrders": 287,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00108",
+          "R00310",
+          "R00346",
+          "R00390",
+          "R00423",
+          "R00439",
+          "R00681",
+          "R00738",
+          "R00772",
+          "R00813",
+          "R00816",
+          "R00826",
+          "R00830",
+          "R00840",
+          "R00902"
+        ],
+        "undeliveredOrderIds": [],
+        "label": "cost-development-control",
+        "files": {
+          "meta": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/wd6875d168b31efa9603b.meta.json",
+            "sha256": "05e3311c420f21a1b7ef0853d207f14a4c75e2cf1e408105f3096d54ac140115"
+          },
+          "snapshot": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/wd6875d168b31efa9603b.snapshot.json",
+            "sha256": "74fb800a0c3cd4316de8384c174b91085f9c7c9adb1d60b15bec1fc1d6d7a0e5"
+          },
+          "score": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/wd6875d168b31efa9603b.score.json",
+            "sha256": "fd75cb9906c7dd04a1df51e0a61d68f4117156373c2c50b89482c32c5d45efe9"
+          },
+          "events": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/wd6875d168b31efa9603b.events.json",
+            "sha256": "9b3b2eadc2bce0fa9269dde18642f9fb4c2fbfc93d3a61f04096b53d04a150ee"
+          }
+        }
+      },
+      "ledgerCents": {
+        "driver_fee": -2791899,
+        "late_refund": -183651,
+        "revenue": 3731647
+      },
+      "baselineLedgerCents": {
+        "driver_fee": -2304190,
+        "late_refund": -103597,
+        "release_fee": -7116,
+        "revenue": 3452016
+      },
+      "gainCents": -281016,
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": [],
+      "errorContexts": []
+    },
+    {
+      "label": "cost-calibration",
+      "seed": "cost-development-20261114-5540924d1a9eab19",
+      "worldId": "wc14f6ddca184f36568fb",
+      "status": "complete",
+      "result": {
+        "worldId": "wc14f6ddca184f36568fb",
+        "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "payout": 0.85,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "noteSpelling": false,
+          "relist": false,
+          "openingOnly": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 0.9780378750338937,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14,
+          "multiRoutes": false
+        },
+        "marginCents": 1770029,
+        "revenueCents": 4722086,
+        "wonOrders": 451,
+        "onTimeShare": 0.9778270509977827,
+        "undeliveredShare": 0,
+        "ranked": true,
+        "onTimeOrders": 441,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00002",
+          "R00187",
+          "R00459",
+          "R00465",
+          "R00560",
+          "R00579",
+          "R00690",
+          "R00715",
+          "R00855",
+          "R00900"
+        ],
+        "undeliveredOrderIds": [],
+        "label": "cost-calibration",
+        "files": {
+          "meta": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/wc14f6ddca184f36568fb.meta.json",
+            "sha256": "50877beb69e91288ad05d4d6525c7f75a805accb15cb4a6c57528034e13fc9e4"
+          },
+          "snapshot": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/wc14f6ddca184f36568fb.snapshot.json",
+            "sha256": "0339fa70f0342f8de05bd01a7546304d6107c60c763ff83a7547f57b091f6a3b"
+          },
+          "score": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/wc14f6ddca184f36568fb.score.json",
+            "sha256": "74afab3a184c8648f9946fde73e46d84ae756c57889e1639734cd043ad9383da"
+          },
+          "events": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/wc14f6ddca184f36568fb.events.json",
+            "sha256": "1e84f0009d1a9556549b16b7e9fe660cf5b4a916821288d16d2dc2a251272ca4"
+          }
+        }
+      },
+      "baseline": {
+        "worldId": "we46cd933896ca0a75eae",
+        "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "payout": 0.85,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "noteSpelling": false,
+          "relist": false,
+          "openingOnly": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 1.15,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14,
+          "multiRoutes": false
+        },
+        "marginCents": 1713660,
+        "revenueCents": 4353746,
+        "wonOrders": 403,
+        "onTimeShare": 0.9751861042183623,
+        "undeliveredShare": 0,
+        "ranked": true,
+        "onTimeOrders": 393,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00398",
+          "R00454",
+          "R00458",
+          "R00579",
+          "R00597",
+          "R00599",
+          "R00607",
+          "R00855",
+          "R00940",
+          "R00948"
+        ],
+        "undeliveredOrderIds": [],
+        "label": "cost-development-control",
+        "files": {
+          "meta": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/we46cd933896ca0a75eae.meta.json",
+            "sha256": "a2a644e18142dfaff3c8f08b9c1ef51db1390a314a3a7b949a89fa93dcb1e4f6"
+          },
+          "snapshot": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/we46cd933896ca0a75eae.snapshot.json",
+            "sha256": "c5159c243cb413627f99d01e0e373a6f1a06279a99e69ad9eebbe7c8d41177c8"
+          },
+          "score": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/we46cd933896ca0a75eae.score.json",
+            "sha256": "21dfb6d10be1ec8c0554ea6505b1be0fc4f1d10a3c51594d56055f651ede0fbb"
+          },
+          "events": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/we46cd933896ca0a75eae.events.json",
+            "sha256": "c362c3e2a0fe36a195e17b44cab3526cac8a32a2188fe1defad7b08cd74c7501"
+          }
+        }
+      },
+      "ledgerCents": {
+        "driver_fee": -2906472,
+        "late_refund": -41196,
+        "release_fee": -4389,
+        "revenue": 4722086
+      },
+      "baselineLedgerCents": {
+        "driver_fee": -2551760,
+        "late_refund": -76980,
+        "release_fee": -11346,
+        "revenue": 4353746
+      },
+      "gainCents": 56369,
+      "failedVisits": [],
+      "actionErrors": [
+        {
+          "at": 3782,
+          "action": {
+            "type": "reprice",
+            "gigId": "g200",
+            "schedule": [
+              {
+                "at": 3782,
+                "feeCents": 11036
+              },
+              {
+                "at": 3812,
+                "feeCents": 11036
+              },
+              {
+                "at": 3842,
+                "feeCents": 13979
+              },
+              {
+                "at": 3902,
+                "feeCents": 18393
+              }
+            ]
+          },
+          "reason": "Gig g200 is not open"
+        }
+      ],
+      "recoveries": [],
+      "errorContexts": [
+        {
+          "error": {
+            "at": 3782,
+            "action": {
+              "type": "reprice",
+              "gigId": "g200",
+              "schedule": [
+                {
+                  "at": 3782,
+                  "feeCents": 11036
+                },
+                {
+                  "at": 3812,
+                  "feeCents": 11036
+                },
+                {
+                  "at": 3842,
+                  "feeCents": 13979
+                },
+                {
+                  "at": 3902,
+                  "feeCents": 18393
+                }
+              ]
+            },
+            "reason": "Gig g200 is not open"
+          },
+          "sameMinuteGigEvents": [
+            {
+              "seq": 5127,
+              "at": 3782,
+              "kind": "gig_viewed",
+              "gigId": "g200",
+              "driverId": "lzcz-0746"
+            },
+            {
+              "seq": 5128,
+              "at": 3782,
+              "kind": "gig_booked",
+              "gigId": "g200",
+              "driverId": "lzcz-0746",
+              "feeCents": 11036
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cost-calibration",
+      "seed": "cost-development-20261114-92b3ba4ed4d2e449",
+      "worldId": "w0af413244da4ca9f7714",
+      "status": "complete",
+      "result": {
+        "worldId": "w0af413244da4ca9f7714",
+        "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "payout": 0.85,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "noteSpelling": false,
+          "relist": false,
+          "openingOnly": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 0.9780378750338937,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14,
+          "multiRoutes": false
+        },
+        "marginCents": 735773,
+        "revenueCents": 3718030,
+        "wonOrders": 383,
+        "onTimeShare": 0.9399477806788512,
+        "undeliveredShare": 0,
+        "ranked": true,
+        "onTimeOrders": 360,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00016",
+          "R00209",
+          "R00254",
+          "R00276",
+          "R00340",
+          "R00344",
+          "R00438",
+          "R00490",
+          "R00491",
+          "R00531",
+          "R00538",
+          "R00550",
+          "R00553",
+          "R00555",
+          "R00586",
+          "R00594",
+          "R00667",
+          "R00764",
+          "R00780",
+          "R00812",
+          "R00821",
+          "R00823",
+          "R00868"
+        ],
+        "undeliveredOrderIds": [],
+        "label": "cost-calibration",
+        "files": {
+          "meta": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w0af413244da4ca9f7714.meta.json",
+            "sha256": "500a7f7734bac55524c8418817892075e14625d86a878aeb7f68695c2a91608d"
+          },
+          "snapshot": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w0af413244da4ca9f7714.snapshot.json",
+            "sha256": "29ee43dfddc9aaa66abcf2bcd11e5fb6f5dfa938520088c2776124121c1b3014"
+          },
+          "score": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w0af413244da4ca9f7714.score.json",
+            "sha256": "6dd1d353e2575cae7a742d14486292c95cba90c856646663c9b02ab723f7dfe6"
+          },
+          "events": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w0af413244da4ca9f7714.events.json",
+            "sha256": "4dcf5f261759a96c85476d918ed6655753cf244cc59b5b1210bb29b8dcf1e19d"
+          }
+        }
+      },
+      "baseline": {
+        "worldId": "wf5ac6ed151931c7073a4",
+        "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "payout": 0.85,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "noteSpelling": false,
+          "relist": false,
+          "openingOnly": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 1.15,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14,
+          "multiRoutes": false
+        },
+        "marginCents": 867660,
+        "revenueCents": 3207572,
+        "wonOrders": 320,
+        "onTimeShare": 0.95625,
+        "undeliveredShare": 0,
+        "ranked": true,
+        "onTimeOrders": 306,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00016",
+          "R00054",
+          "R00209",
+          "R00340",
+          "R00373",
+          "R00407",
+          "R00490",
+          "R00491",
+          "R00538",
+          "R00586",
+          "R00594",
+          "R00803",
+          "R00812",
+          "R00868"
+        ],
+        "undeliveredOrderIds": [],
+        "label": "cost-development-control",
+        "files": {
+          "meta": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/wf5ac6ed151931c7073a4.meta.json",
+            "sha256": "28ee14ee995ed1058e53c494363552fc6d839b1b8b9dd9c4cb3677d3538ef2d3"
+          },
+          "snapshot": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/wf5ac6ed151931c7073a4.snapshot.json",
+            "sha256": "c240de826ebbe84cae627d9d7a606cf92bc36a7ace06552c96c528b7770f9d18"
+          },
+          "score": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/wf5ac6ed151931c7073a4.score.json",
+            "sha256": "cecd4791e40a7905e9ff4f962e1854658e2dd091db18cd1cdf271de1e1d8ddc9"
+          },
+          "events": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/wf5ac6ed151931c7073a4.events.json",
+            "sha256": "94276e7237d3b289877c6a9aa7034d2c5439f987c9ef25d3d539757646c5e733"
+          }
+        }
+      },
+      "ledgerCents": {
+        "driver_fee": -2820242,
+        "late_refund": -140761,
+        "release_fee": -21254,
+        "revenue": 3718030
+      },
+      "baselineLedgerCents": {
+        "driver_fee": -2254007,
+        "late_refund": -68123,
+        "release_fee": -17782,
+        "revenue": 3207572
+      },
+      "gainCents": -131887,
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": [],
+      "errorContexts": []
+    },
+    {
+      "label": "cost-calibration",
+      "seed": "cost-development-20261114-a92ca803a91fbe65",
+      "worldId": "w46c2c116aa79bff82fc9",
+      "status": "complete",
+      "result": {
+        "worldId": "w46c2c116aa79bff82fc9",
+        "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "payout": 0.85,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "noteSpelling": false,
+          "relist": false,
+          "openingOnly": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 0.9780378750338937,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14,
+          "multiRoutes": false
+        },
+        "marginCents": 1023137,
+        "revenueCents": 3664180,
+        "wonOrders": 358,
+        "onTimeShare": 0.9664804469273743,
+        "undeliveredShare": 0,
+        "ranked": true,
+        "onTimeOrders": 346,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00510",
+          "R00666",
+          "R00686",
+          "R00689",
+          "R00713",
+          "R00765",
+          "R00785",
+          "R00786",
+          "R00894",
+          "R00917",
+          "R00937",
+          "R00939"
+        ],
+        "undeliveredOrderIds": [],
+        "label": "cost-calibration",
+        "files": {
+          "meta": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w46c2c116aa79bff82fc9.meta.json",
+            "sha256": "0d9254db5f9232f981115110ccf4b87bde835451b472091e2d1a0537dba4bed4"
+          },
+          "snapshot": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w46c2c116aa79bff82fc9.snapshot.json",
+            "sha256": "19c77a66d5d45b2e6fceacacb7edf0c24ab3cc0e84429b7029797e58edcee26d"
+          },
+          "score": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w46c2c116aa79bff82fc9.score.json",
+            "sha256": "ef225d2b31f4169a8b7f3cc53dc81d723e98987f9ea89605b60fe73ddab94b30"
+          },
+          "events": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w46c2c116aa79bff82fc9.events.json",
+            "sha256": "f7ccb9fe5353f562063b87c04b89fc6c1239b3bcc6a1a7d90de9f5e223f54a96"
+          }
+        }
+      },
+      "baseline": {
+        "worldId": "w934ce22d13d562c36526",
+        "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "payout": 0.85,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "noteSpelling": false,
+          "relist": false,
+          "openingOnly": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 1.15,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14,
+          "multiRoutes": false
+        },
+        "marginCents": 1075346,
+        "revenueCents": 3199799,
+        "wonOrders": 292,
+        "onTimeShare": 0.976027397260274,
+        "undeliveredShare": 0,
+        "ranked": true,
+        "onTimeOrders": 285,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00666",
+          "R00765",
+          "R00785",
+          "R00786",
+          "R00811",
+          "R00879",
+          "R00946"
+        ],
+        "undeliveredOrderIds": [],
+        "label": "cost-development-control",
+        "files": {
+          "meta": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w934ce22d13d562c36526.meta.json",
+            "sha256": "4c783de40b5b3747ed0acc497b611a0cfebfed82e4a3162ba61e78240bae88bc"
+          },
+          "snapshot": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w934ce22d13d562c36526.snapshot.json",
+            "sha256": "d3e00328536dabe81aacaac00333cab90c200993876870ebe42b2a7b18f0841f"
+          },
+          "score": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w934ce22d13d562c36526.score.json",
+            "sha256": "ab11064cf28b229fe5e14f54f141b6d96928e964b8220dd0ec4fe7189080a398"
+          },
+          "events": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w934ce22d13d562c36526.events.json",
+            "sha256": "56078cf25eef19da8a75dae116581efa6aa302597a3bc7a20c004bd8dcf83f3b"
+          }
+        }
+      },
+      "ledgerCents": {
+        "driver_fee": -2564234,
+        "late_refund": -72521,
+        "release_fee": -4288,
+        "revenue": 3664180
+      },
+      "baselineLedgerCents": {
+        "driver_fee": -2073972,
+        "late_refund": -50481,
+        "revenue": 3199799
+      },
+      "gainCents": -52209,
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": [],
+      "errorContexts": []
+    }
+  ],
+  "attempts": [
+    {
+      "label": "cost-calibration",
+      "seed": "cost-development-20261114-0671a6fd582581ca",
+      "worldId": "wed8f1c756ad98e321fc6",
+      "startedAt": "2026-11-14T06:04:36.092Z"
+    },
+    {
+      "label": "cost-calibration",
+      "seed": "cost-development-20261114-5540924d1a9eab19",
+      "worldId": "wc14f6ddca184f36568fb",
+      "startedAt": "2026-11-14T06:04:36.285Z"
+    },
+    {
+      "label": "cost-calibration",
+      "seed": "cost-development-20261114-92b3ba4ed4d2e449",
+      "worldId": "w0af413244da4ca9f7714",
+      "startedAt": "2026-11-14T06:04:36.419Z"
+    },
+    {
+      "label": "cost-calibration",
+      "seed": "cost-development-20261114-a92ca803a91fbe65",
+      "worldId": "w46c2c116aa79bff82fc9",
+      "startedAt": "2026-11-14T06:04:36.527Z"
+    },
+    {
+      "label": "cost-calibration",
+      "seed": "cost-development-20261114-a92ca803a91fbe65",
+      "worldId": "w46c2c116aa79bff82fc9",
+      "completedAt": "2026-11-14T06:06:11.395Z"
+    },
+    {
+      "label": "cost-calibration",
+      "seed": "cost-development-20261114-92b3ba4ed4d2e449",
+      "worldId": "w0af413244da4ca9f7714",
+      "completedAt": "2026-11-14T06:06:12.551Z"
+    },
+    {
+      "label": "cost-calibration",
+      "seed": "cost-development-20261114-0671a6fd582581ca",
+      "worldId": "wed8f1c756ad98e321fc6",
+      "completedAt": "2026-11-14T06:06:20.330Z"
+    },
+    {
+      "label": "cost-calibration",
+      "seed": "cost-development-20261114-5540924d1a9eab19",
+      "worldId": "wc14f6ddca184f36568fb",
+      "completedAt": "2026-11-14T06:06:21.378Z"
+    }
+  ],
+  "evidenceUnit": "Four unique development weeks, each with a matched control and candidate. Eight worlds do not constitute eight independent weeks. All four seeds were used to assess cost models and are unavailable for future untouched validation."
+}

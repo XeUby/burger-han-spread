@@ -1,0 +1,155 @@
+{
+  "assessedAt": "2026-11-14T06:02:45.256845+00:00",
+  "frozenAt": "2026-11-14T06:01:38.427657+00:00",
+  "modelSha256": "d19c53a0797dd69af0650972121dc5f80b09965b7447d004244f7833da567628",
+  "dataSha256": "da07c9cb96c1257bf14f25cc5ac860bb2cfe1138fab92baed9892e5e44c64dfa",
+  "uniqueWeeks": 4,
+  "folds": [
+    {
+      "seed": "cost-development-20261114-0671a6fd582581ca",
+      "fixed": {
+        "groups": 267,
+        "orders": 301,
+        "groupRmseCents": 5382.966032567132,
+        "absoluteGroupErrorPerOrderCents": 2841.517940199335,
+        "actualCostCents": 2397311.0,
+        "predictedCostCents": 2628847.0999999996,
+        "biasShare": 0.09658158661934134
+      },
+      "calibrated": {
+        "groups": 267,
+        "orders": 301,
+        "groupRmseCents": 5356.463959742789,
+        "absoluteGroupErrorPerOrderCents": 1963.747809178143,
+        "actualCostCents": 2397311.0,
+        "predictedCostCents": 2235749.5925852293,
+        "biasShare": -0.06739276106219448
+      },
+      "features": {
+        "groups": 267,
+        "orders": 301,
+        "groupRmseCents": 5372.244000389236,
+        "absoluteGroupErrorPerOrderCents": 1975.6260689927565,
+        "actualCostCents": 2397311.0,
+        "predictedCostCents": 2232279.5056454046,
+        "biasShare": -0.06884025241389019
+      }
+    },
+    {
+      "seed": "cost-development-20261114-5540924d1a9eab19",
+      "fixed": {
+        "groups": 343,
+        "orders": 403,
+        "groupRmseCents": 3786.7887622195153,
+        "absoluteGroupErrorPerOrderCents": 2229.9204714640196,
+        "actualCostCents": 2628740.0,
+        "predictedCostCents": 3168140.75,
+        "biasShare": 0.2051936479073624
+      },
+      "calibrated": {
+        "groups": 343,
+        "orders": 403,
+        "groupRmseCents": 3384.7305521979424,
+        "absoluteGroupErrorPerOrderCents": 1235.674169481235,
+        "actualCostCents": 2628740.0,
+        "predictedCostCents": 2694401.4321202487,
+        "biasShare": 0.024978290785794322
+      },
+      "features": {
+        "groups": 343,
+        "orders": 403,
+        "groupRmseCents": 3348.959825742352,
+        "absoluteGroupErrorPerOrderCents": 1201.9724632482964,
+        "actualCostCents": 2628740.0,
+        "predictedCostCents": 2679364.380900194,
+        "biasShare": 0.01925804031596657
+      }
+    },
+    {
+      "seed": "cost-development-20261114-92b3ba4ed4d2e449",
+      "fixed": {
+        "groups": 262,
+        "orders": 318,
+        "groupRmseCents": 4723.06442925472,
+        "absoluteGroupErrorPerOrderCents": 2422.224685534591,
+        "actualCostCents": 2294682.0,
+        "predictedCostCents": 2535923.65,
+        "biasShare": 0.10513075450105931
+      },
+      "calibrated": {
+        "groups": 262,
+        "orders": 318,
+        "groupRmseCents": 4716.759453931423,
+        "absoluteGroupErrorPerOrderCents": 1655.253924387213,
+        "actualCostCents": 2294682.0,
+        "predictedCostCents": 2156721.198168866,
+        "biasShare": -0.06012196976798277
+      },
+      "features": {
+        "groups": 262,
+        "orders": 318,
+        "groupRmseCents": 4732.651424067434,
+        "absoluteGroupErrorPerOrderCents": 1637.457873321158,
+        "actualCostCents": 2294682.0,
+        "predictedCostCents": 2136225.8463466996,
+        "biasShare": -0.06905364388324844
+      }
+    },
+    {
+      "seed": "cost-development-20261114-a92ca803a91fbe65",
+      "fixed": {
+        "groups": 256,
+        "orders": 290,
+        "groupRmseCents": 4080.7634631545106,
+        "absoluteGroupErrorPerOrderCents": 2437.683620689654,
+        "actualCostCents": 2102450.0,
+        "predictedCostCents": 2524241.95,
+        "biasShare": 0.20061925372779368
+      },
+      "calibrated": {
+        "groups": 256,
+        "orders": 290,
+        "groupRmseCents": 3630.0858006967733,
+        "absoluteGroupErrorPerOrderCents": 1397.3038700520417,
+        "actualCostCents": 2102450.0,
+        "predictedCostCents": 2146786.289434272,
+        "biasShare": 0.02108791620931366
+      },
+      "features": {
+        "groups": 256,
+        "orders": 290,
+        "groupRmseCents": 3571.8715740146467,
+        "absoluteGroupErrorPerOrderCents": 1295.0087723542676,
+        "actualCostCents": 2102450.0,
+        "predictedCostCents": 2110783.8419310623,
+        "biasShare": 0.003963871640734434
+      }
+    }
+  ],
+  "summary": {
+    "fixed": {
+      "meanWeeklyGroupRmseCents": 4493.3956717989695,
+      "aggregateBiasShare": 0.15217474286554764
+    },
+    "calibrated": {
+      "meanWeeklyGroupRmseCents": 4272.009941642232,
+      "aggregateBiasShare": -0.02011257636526684
+    },
+    "features": {
+      "meanWeeklyGroupRmseCents": 4256.431706053418,
+      "aggregateBiasShare": -0.028072194414205855
+    }
+  },
+  "improvementOverBaselines": {
+    "fixed": 0.05273605599274578,
+    "calibrated": 0.0036465822415258087
+  },
+  "weeksBeatingBothBaselines": 2,
+  "gatePassed": false,
+  "decision": "Reject this feature model as insufficient. Retire all four weeks into development; do not refit and call them held out.",
+  "limitations": [
+    "This tests prediction on admitted-order groups, not causal profit or safety.",
+    "Only four new development weeks; the unit of evidence is the week, not1721training groups or repeated runs.",
+    "Comparisons across models constitute development selection. A selected dispatcher still requires a wholly fresh, predeclared paired validation panel with multiplicity accounted for."
+  ]
+}
