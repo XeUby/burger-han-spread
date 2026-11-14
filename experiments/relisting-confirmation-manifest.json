@@ -1,0 +1,27 @@
+{
+  "assignedAt": "2026-11-14T02:24:15.950758+00:00",
+  "protocol": "experiments/relisting-confirmation-protocol.json",
+  "protocolSha256": "70a918d9b947c2d10ff6836f96b13927ab2445f1f4568ec45a73ea2ff1f07ff3",
+  "worlds": [
+    {
+      "worldId": "wfe07e294d16b34f26734",
+      "seed": "formal-unseen-20261113-09",
+      "label": "relisting-confirmation"
+    },
+    {
+      "worldId": "wdf16d36a697cd6bb2ae8",
+      "seed": "formal-unseen-20261113-10",
+      "label": "relisting-confirmation"
+    },
+    {
+      "worldId": "weed5a9d372b110558fee",
+      "seed": "formal-unseen-20261113-12",
+      "label": "relisting-confirmation"
+    },
+    {
+      "worldId": "w3b92ad0e00a3d9a0302b",
+      "seed": "formal-unseen-20261113-16",
+      "label": "relisting-confirmation"
+    }
+  ]
+}

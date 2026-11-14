@@ -1,0 +1,164 @@
+{
+  "baseline": {
+    "bundle": "experiments/frontier/late-rescue",
+    "role": "selected candidate: volume+bundles+late-rescue; eight fresh paired weeks validated",
+    "settings": {
+      "price": 1.42,
+      "fee": 1.05,
+      "margin": 0.1,
+      "capacity": 0.35,
+      "maxKm": 700,
+      "minDrivers": 8,
+      "notes": true,
+      "adaptive": true,
+      "earlyOffers": false,
+      "safetySlack": false,
+      "auction": false,
+      "allowPrivate": false,
+      "tradeIns": false,
+      "homeOffers": false,
+      "readiness": false,
+      "bundlePairs": true,
+      "sameDayPremium": 1,
+      "laterDiscount": 1,
+      "placePrior": 0,
+      "bundleWait": 15,
+      "backlog": 0.08,
+      "priceFloor": 0,
+      "costRatio": 1.15,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "demandSlope": 14,
+      "timedNotes": false,
+      "lateRescue": true
+    },
+    "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef"
+  },
+  "bootstrap": {
+    "samples": 10000,
+    "seed": 2026111402
+  },
+  "selectionFrozenAt": "2026-11-14T02:27:53.589771+00:00",
+  "labelPrefix": "relisting-evaluation",
+  "unseenDeclaration": "All8 cryptographically random seeds reserved after confirmation and before any play. No seed in this panel or earlier fresh panels is used to tune the frozen candidate while called unseen.",
+  "reservation": {
+    "reservedAt": "2026-11-14T02:27:53.589771+00:00",
+    "purpose": "Fresh paired evaluation after fixed relisting candidate passed both development gates. None of these cryptographically random seeds has been played or inspected.",
+    "seeds": [
+      "relisting-unseen-20261114-44179069f811e12a",
+      "relisting-unseen-20261114-593862ba0453d993",
+      "relisting-unseen-20261114-ae921d2f5a004c5c",
+      "relisting-unseen-20261114-5291bd44e58fc0b8",
+      "relisting-unseen-20261114-664fad94342f003c",
+      "relisting-unseen-20261114-be6ccba2d5332cc6",
+      "relisting-unseen-20261114-85e7c8159eb228d3",
+      "relisting-unseen-20261114-49994c1da1bed296"
+    ]
+  },
+  "candidate": {
+    "bundle": "experiments/frontier/relisting",
+    "revision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c",
+    "settings": {
+      "price": 1.42,
+      "fee": 1.05,
+      "margin": 0.1,
+      "capacity": 0.35,
+      "maxKm": 700,
+      "minDrivers": 8,
+      "notes": true,
+      "noteSpelling": false,
+      "relist": true,
+      "adaptive": true,
+      "earlyOffers": false,
+      "safetySlack": false,
+      "auction": false,
+      "allowPrivate": false,
+      "tradeIns": false,
+      "homeOffers": false,
+      "readiness": false,
+      "bundlePairs": true,
+      "timedNotes": false,
+      "lateRescue": true,
+      "sameDayPremium": 1,
+      "laterDiscount": 1,
+      "placePrior": 0,
+      "bundleWait": 15,
+      "backlog": 0.08,
+      "priceFloor": 0,
+      "costRatio": 1.15,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "demandSlope": 14
+    },
+    "role": "Bounded one-repost candidate; development gates passed, independent evaluation pending"
+  },
+  "promotionRule": "Require all8 candidate weeks qualified, no undelivered orders, positive mean paired gain with a positive95% paired bootstrap lower endpoint, and no failed visits. Inspect all action errors and retain every attempt. No default change before all trials and audit complete.",
+  "pairs": [
+    {
+      "seed": "relisting-unseen-20261114-44179069f811e12a",
+      "baselineWorldId": "w91564fd780e4bc249119",
+      "candidateWorldId": "w04e60027b7b2b4d7b58b"
+    },
+    {
+      "seed": "relisting-unseen-20261114-593862ba0453d993",
+      "baselineWorldId": "w7eaa6b3210b790c25028",
+      "candidateWorldId": "w8baaaa6df86b54b0124f"
+    },
+    {
+      "seed": "relisting-unseen-20261114-ae921d2f5a004c5c",
+      "baselineWorldId": null,
+      "candidateWorldId": null
+    },
+    {
+      "seed": "relisting-unseen-20261114-5291bd44e58fc0b8",
+      "baselineWorldId": null,
+      "candidateWorldId": null
+    },
+    {
+      "seed": "relisting-unseen-20261114-664fad94342f003c",
+      "baselineWorldId": null,
+      "candidateWorldId": null
+    },
+    {
+      "seed": "relisting-unseen-20261114-be6ccba2d5332cc6",
+      "baselineWorldId": null,
+      "candidateWorldId": null
+    },
+    {
+      "seed": "relisting-unseen-20261114-85e7c8159eb228d3",
+      "baselineWorldId": null,
+      "candidateWorldId": null
+    },
+    {
+      "seed": "relisting-unseen-20261114-49994c1da1bed296",
+      "baselineWorldId": null,
+      "candidateWorldId": null
+    }
+  ],
+  "attempts": [
+    {
+      "seed": "relisting-unseen-20261114-44179069f811e12a",
+      "side": "baseline",
+      "worldId": "w91564fd780e4bc249119",
+      "startedAt": "2026-11-14T02:27:57.603Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-44179069f811e12a",
+      "side": "candidate",
+      "worldId": "w04e60027b7b2b4d7b58b",
+      "startedAt": "2026-11-14T02:27:57.822Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-593862ba0453d993",
+      "side": "baseline",
+      "worldId": "w7eaa6b3210b790c25028",
+      "startedAt": "2026-11-14T02:27:58.017Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-593862ba0453d993",
+      "side": "candidate",
+      "worldId": "w8baaaa6df86b54b0124f",
+      "startedAt": "2026-11-14T02:27:58.204Z"
+    }
+  ]
+}

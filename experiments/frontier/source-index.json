@@ -156,6 +156,6 @@
       "sameDayBacklog": 4,
       "demandSlope": 14
     },
-    "role": "Bounded one-repost research candidate; off by default; full-policy screen pending"
+    "role": "Bounded one-repost candidate; two-seed screen and four-seed confirmation passed; default off pending fresh evaluation"
   }
 }

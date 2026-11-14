@@ -1,0 +1,9 @@
+{
+  "recordedAt": "2026-11-14T02:22:40.387460+00:00",
+  "source": "https://spread.bahnexpress.com/kit/HANDBOOK.md",
+  "verifiedCurrent": true,
+  "correction": "The handbook specifies one notification per order for each driver even after reposting. New notifications occur after drops or no-shows. The original hypothesis that voluntary reposting renews notifications is therefore unsupported.",
+  "observedEvidence": "Across12 paired fork cases identical reposting produced47views and5bookings versus28views and3bookings within30min. Holding and unchanged repricing had identical histories. This establishes an effect of the intervention on this stream, not its internal cause.",
+  "interpretation": "Potential changes in app discovery, timing, gig identity or random draws cannot be separated by this probe. Do not describe the result as a notification exploit.",
+  "studyStatus": "Correction recorded while full-week policy screen92095 is running. Existing protocol and source remain frozen; selection thresholds remain unchanged."
+}

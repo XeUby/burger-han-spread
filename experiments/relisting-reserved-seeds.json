@@ -1,0 +1,14 @@
+{
+  "reservedAt": "2026-11-14T02:27:53.589771+00:00",
+  "purpose": "Fresh paired evaluation after fixed relisting candidate passed both development gates. None of these cryptographically random seeds has been played or inspected.",
+  "seeds": [
+    "relisting-unseen-20261114-44179069f811e12a",
+    "relisting-unseen-20261114-593862ba0453d993",
+    "relisting-unseen-20261114-ae921d2f5a004c5c",
+    "relisting-unseen-20261114-5291bd44e58fc0b8",
+    "relisting-unseen-20261114-664fad94342f003c",
+    "relisting-unseen-20261114-be6ccba2d5332cc6",
+    "relisting-unseen-20261114-85e7c8159eb228d3",
+    "relisting-unseen-20261114-49994c1da1bed296"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "assignedAt": "2026-11-14T02:19:53.941077+00:00",
+  "protocol": "experiments/relisting-policy-protocol.json",
+  "protocolSha256": "971a0293954391c7b06bef85c688af8d0e5753ebf17e2a8bade3f04810bcc225",
+  "worlds": [
+    {
+      "worldId": "w1bd8065707cf59b1d97b",
+      "seed": "formal-unseen-20261113-14",
+      "label": "relisting-control"
+    },
+    {
+      "worldId": "w2620836810b2c940651c",
+      "seed": "formal-unseen-20261113-14",
+      "label": "relisting-treatment"
+    },
+    {
+      "worldId": "w8ab6d1da1ce44b95c1d2",
+      "seed": "formal-unseen-20261113-15",
+      "label": "relisting-control"
+    },
+    {
+      "worldId": "w4e2dd6764bf103de283b",
+      "seed": "formal-unseen-20261113-15",
+      "label": "relisting-treatment"
+    }
+  ]
+}

@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-14T02:18:43.778832+00:00",
+  "updatedAt": "2026-11-14T02:29:07.016560+00:00",
   "objective": "Continue systematic search toward the global optimum; practice only, no ranking submission.",
   "maximumConcurrentPlays": 4,
   "currentConcurrency": {
     "maximumConcurrentPlays": 4,
     "activeRunners": 1,
-    "note": "Only runner92095, four matched screen worlds. No probe forks remain."
+    "note": "Only paired runner2921; four unfinished worlds at most. All earlier probes/screens/confirmation terminal."
   },
   "completedCombinationStudy": {
     "sessionId": 84558,
@@ -66,10 +66,11 @@
     "700km-only bundle treatment ends at7407.63/9410.50 euros, minimum96.6% on time. It gains versus the old baseline in both weeks but not versus bundles alone. No900km experiment scheduled."
   ],
   "nextSteps": [
-    "Poll screen92095 without restarting; preserve all four attempts.",
-    "Audit complete-week ledger, on-time delivery, fees, drops, relisting count and errors. Apply predeclared screening gate before four confirmation seeds.",
-    "Keep noteSpelling and relist false until independent validation passes.",
-    "No ranking or final; at most4 unfinished plays."
+    "Poll runner2921 without restarting or rewriting its live manifest. Preserve every attempt.",
+    "After all16finish run python3 analysis/frontier_validation.py --manifest experiments/relisting-validation-manifest.json --output docs/relisting-validation and python3 analysis/policy_audit.py --manifest experiments/relisting-validation-manifest.json --output docs/relisting-validation-audit.json.",
+    "Apply frozen promotion rule: all8candidate weeks qualified, no undelivered orders, positive mean and positive95% paired bootstrap lower endpoint, no failed visits, inspect all errors.",
+    "Only if gate passes consider promotion; current default remains validated late-rescue with relist false.",
+    "Keep at most4unfinished plays and no ranking/final. Push coherent checkpoint."
   ],
   "validationStatus": "All16 fresh paired trials complete. Candidate mean10411.59 euros versus8242.34, +26.32%;7/8 positive;8/8 qualified; minimum94.94% on time; no undelivered orders. Full report docs/frontier-validation.md. No ranking submission.",
   "checks": {
@@ -459,14 +460,57 @@
     "report": "docs/relisting-results.json",
     "decision": "Proceed to bounded policy screen: same fees produced5vs3 bookings and47vs28 views across12cases; all36forks deleted, sham and hold histories identical, base11941events identical to archive."
   },
-  "currentStudy": {
+  "completedRelistingScreen": {
     "sessionId": 92095,
     "kind": "bounded relisting full-policy screen",
-    "terminal": false,
+    "terminal": true,
     "protocol": "experiments/relisting-policy-protocol.json",
     "plan": "experiments/plans/relisting.json",
     "maximumJobs": 4,
     "trials": 4,
-    "revision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c"
+    "revision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c",
+    "report": "docs/relisting-policy-results.json",
+    "study": "runs/study-1794622929405.json",
+    "summary": {
+      "pairs": 2,
+      "meanGainCents": 25222,
+      "minimumGainCents": 22081,
+      "qualifiedTreatments": 2,
+      "undeliveredTreatments": 0,
+      "treatmentActionErrors": 0,
+      "treatmentRecoveries": 0,
+      "gatePassed": true
+    }
+  },
+  "completedRelistingConfirmation": {
+    "sessionId": 22354,
+    "kind": "bounded relisting confirmation",
+    "terminal": true,
+    "protocol": "experiments/relisting-confirmation-protocol.json",
+    "plan": "experiments/plans/relisting-confirmation.json",
+    "manifest": "experiments/relisting-confirmation-manifest.json",
+    "maximumJobs": 4,
+    "trials": 4,
+    "study": "runs/study-1794623206051.json",
+    "report": "docs/relisting-confirmation-results.json",
+    "summary": {
+      "pairs": 4,
+      "meanGainCents": 38908,
+      "minimumGainCents": -7112,
+      "qualifiedTreatments": 4,
+      "undeliveredTreatments": 0,
+      "treatmentActionErrors": 3,
+      "treatmentRecoveries": 0,
+      "gatePassed": true
+    }
+  },
+  "currentStudy": {
+    "sessionId": 2921,
+    "kind": "fresh paired relisting evaluation",
+    "terminal": false,
+    "manifest": "experiments/relisting-validation-manifest.json",
+    "maximumJobs": 4,
+    "trials": 16,
+    "candidateRevision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c"
   }
 }

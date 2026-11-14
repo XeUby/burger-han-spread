@@ -1,0 +1,21 @@
+{
+  "method": "Compare complete matched-control public event histories with archived late-rescue policy on the same old development seeds.",
+  "comparisons": [
+    {
+      "current": "w1bd8065707cf59b1d97b",
+      "archive": "w3faccc007c8c0bd5ff41",
+      "eventsIdentical": true,
+      "events": 6824,
+      "currentSha256": "a8c7f182e596609c94848404720a5a52dc26263dc1647b79bd549a2d9c3e9093",
+      "archiveSha256": "a8c7f182e596609c94848404720a5a52dc26263dc1647b79bd549a2d9c3e9093"
+    },
+    {
+      "current": "w8ab6d1da1ce44b95c1d2",
+      "archive": "w6893e7d9cdd984154dfe",
+      "eventsIdentical": true,
+      "events": 11941,
+      "currentSha256": "61e651e62ca5234bb6bc2c7e0e209aed31a607599514f2febaa908eab76f1d40",
+      "archiveSha256": "61e651e62ca5234bb6bc2c7e0e209aed31a607599514f2febaa908eab76f1d40"
+    }
+  ]
+}

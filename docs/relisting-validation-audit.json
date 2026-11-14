@@ -1,0 +1,143 @@
+{
+  "manifest": "experiments/relisting-validation-manifest.json",
+  "terminal": false,
+  "attempts": [
+    {
+      "seed": "relisting-unseen-20261114-44179069f811e12a",
+      "side": "baseline",
+      "worldId": "w91564fd780e4bc249119",
+      "startedAt": "2026-11-14T02:27:57.603Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-44179069f811e12a",
+      "side": "candidate",
+      "worldId": "w04e60027b7b2b4d7b58b",
+      "startedAt": "2026-11-14T02:27:57.822Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-593862ba0453d993",
+      "side": "baseline",
+      "worldId": "w7eaa6b3210b790c25028",
+      "startedAt": "2026-11-14T02:27:58.017Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-593862ba0453d993",
+      "side": "candidate",
+      "worldId": "w8baaaa6df86b54b0124f",
+      "startedAt": "2026-11-14T02:27:58.204Z"
+    }
+  ],
+  "runnerErrors": [],
+  "summary": {
+    "baseline": {
+      "completed": 0,
+      "failedVisits": 0,
+      "actionErrors": 0,
+      "recoveries": 0
+    },
+    "candidate": {
+      "completed": 0,
+      "failedVisits": 0,
+      "actionErrors": 0,
+      "recoveries": 0
+    }
+  },
+  "records": [
+    {
+      "seed": "relisting-unseen-20261114-44179069f811e12a",
+      "side": "baseline",
+      "worldId": "w91564fd780e4bc249119",
+      "status": "pending"
+    },
+    {
+      "seed": "relisting-unseen-20261114-44179069f811e12a",
+      "side": "candidate",
+      "worldId": "w04e60027b7b2b4d7b58b",
+      "status": "pending"
+    },
+    {
+      "seed": "relisting-unseen-20261114-593862ba0453d993",
+      "side": "baseline",
+      "worldId": "w7eaa6b3210b790c25028",
+      "status": "pending"
+    },
+    {
+      "seed": "relisting-unseen-20261114-593862ba0453d993",
+      "side": "candidate",
+      "worldId": "w8baaaa6df86b54b0124f",
+      "status": "pending"
+    },
+    {
+      "seed": "relisting-unseen-20261114-ae921d2f5a004c5c",
+      "side": "baseline",
+      "worldId": null,
+      "status": "pending"
+    },
+    {
+      "seed": "relisting-unseen-20261114-ae921d2f5a004c5c",
+      "side": "candidate",
+      "worldId": null,
+      "status": "pending"
+    },
+    {
+      "seed": "relisting-unseen-20261114-5291bd44e58fc0b8",
+      "side": "baseline",
+      "worldId": null,
+      "status": "pending"
+    },
+    {
+      "seed": "relisting-unseen-20261114-5291bd44e58fc0b8",
+      "side": "candidate",
+      "worldId": null,
+      "status": "pending"
+    },
+    {
+      "seed": "relisting-unseen-20261114-664fad94342f003c",
+      "side": "baseline",
+      "worldId": null,
+      "status": "pending"
+    },
+    {
+      "seed": "relisting-unseen-20261114-664fad94342f003c",
+      "side": "candidate",
+      "worldId": null,
+      "status": "pending"
+    },
+    {
+      "seed": "relisting-unseen-20261114-be6ccba2d5332cc6",
+      "side": "baseline",
+      "worldId": null,
+      "status": "pending"
+    },
+    {
+      "seed": "relisting-unseen-20261114-be6ccba2d5332cc6",
+      "side": "candidate",
+      "worldId": null,
+      "status": "pending"
+    },
+    {
+      "seed": "relisting-unseen-20261114-85e7c8159eb228d3",
+      "side": "baseline",
+      "worldId": null,
+      "status": "pending"
+    },
+    {
+      "seed": "relisting-unseen-20261114-85e7c8159eb228d3",
+      "side": "candidate",
+      "worldId": null,
+      "status": "pending"
+    },
+    {
+      "seed": "relisting-unseen-20261114-49994c1da1bed296",
+      "side": "baseline",
+      "worldId": null,
+      "status": "pending"
+    },
+    {
+      "seed": "relisting-unseen-20261114-49994c1da1bed296",
+      "side": "candidate",
+      "worldId": null,
+      "status": "pending"
+    }
+  ]
+}
