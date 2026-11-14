@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-11-14T05:15:09.866179+00:00",
+  "updatedAt": "2026-11-14T05:23:24.786637+00:00",
   "objective": "Continue systematic search toward the global optimum; practice only, no ranking submission.",
   "maximumConcurrentPlays": 4,
   "currentConcurrency": {
+    "activeRunners": 1,
     "maximumConcurrentPlays": 4,
-    "activeRunners": 0,
-    "note": "Both architecture workers and the control replication ended. Shared API inventory contains no unfinished team worlds.",
-    "unfinishedTeamWorlds": 0
+    "note": "Runner46336 has two workers and checks team unfinished worlds before every serialized create. Team inventory was empty before launch."
   },
   "completedCombinationStudy": {
     "sessionId": 84558,
@@ -67,9 +66,9 @@
     "700km-only bundle treatment ends at7407.63/9410.50 euros, minimum96.6% on time. It gains versus the old baseline in both weeks but not versus bundles alone. No900km experiment scheduled."
   ],
   "nextSteps": [
-    "Preserve current validated control and every completed architecture outcome. No candidate passed the substantial-gain screen; do not start fresh validation.",
-    "Investigate a distinct driver-learning/payment mechanism with a bounded probe before any further full-week panel. First viewed fee is the learning anchor; creation-only changes were already disproven.",
-    "Before future expanded admission trials, reassess charging and equipment when a booked route changes. Do not rewrite frozen outcomes or attribute the architecture losses to the small fine."
+    "Finish both frozen first-view premium treatment weeks and verify exact control replication before interpreting outcomes.",
+    "Continue unchanged to seeds09and10 only if mean gain is at least1500euros, neither week loses profit, and both meet qualification and delivery gates. No magnitude, duration or budget rescue after failure.",
+    "Preserve the validated control and all failed architecture trials; no ranking or final submissions."
   ],
   "validationStatus": "All16 fresh paired trials complete. Candidate mean10411.59 euros versus8242.34, +26.32%;7/8 positive;8/8 qualified; minimum94.94% on time; no undelivered orders. Full report docs/frontier-validation.md. No ranking submission.",
   "checks": {
@@ -78,7 +77,8 @@
     "pythonReportTests": 9,
     "typecheck": "passed",
     "selectedPolicyConformanceActions": 5614,
-    "architectureResearchTests": 6
+    "architectureResearchTests": 6,
+    "viewedFeeResearchTests": 5
   },
   "completedControlsStudy": {
     "sessionId": 72446,
@@ -556,26 +556,16 @@
     "decision": "Stop under declared failure rule. Four-play guard saw3external active worlds. No offers accepted among7same-fee and7discount offers; no target booking/view difference. Retain as incomplete, not a12case negative study. Defer this version."
   },
   "currentStudy": {
-    "kind": "three architectural departures on matched development weeks",
-    "phase": "completed: all three implementations rejected",
-    "sessionId": 77504,
-    "terminal": true,
-    "protocol": "experiments/architectures-protocol.json",
-    "manifest": "experiments/architectures-manifest.json",
-    "report": "docs/architectures-results.json",
-    "revision": "7aefc3b1aee04d3f73f28be3ab572c189b28195655f3217a939b922f0e28d0cb",
-    "treatmentTrials": 12,
-    "controlTrials": 1,
+    "kind": "bounded first-view driver fee experiment",
+    "sessionId": 46336,
+    "terminal": false,
+    "phase": "frozen two-week treatment screen plus control replication",
+    "protocol": "experiments/viewed-fee-protocol.json",
+    "manifest": "experiments/viewed-fee-manifest.json",
+    "report": "docs/viewed-fee-results.json",
+    "revision": "0e657e59f7b50d5295f526bc70a703ca666c30e063faf7e297620bf48540333d",
     "maximumJobs": 2,
-    "maximumConcurrentPlays": 4,
-    "controlSessionId": 6450,
-    "controlTerminal": true,
-    "controlWorldId": "w889572145e5939648feb",
-    "controlExactEventMatch": true,
-    "controlStudy": "runs/study-1794632045391.json",
-    "study": "runs/study-1794633170323.json",
-    "decision": "experiments/architectures-decision.json",
-    "completedTreatmentTrials": 12
+    "maximumConcurrentPlays": 4
   },
   "completedPayoutScreen": {
     "sessionId": 76828,
@@ -900,5 +890,27 @@
         "fineCents": 10000
       }
     }
+  },
+  "completedArchitectureStudy": {
+    "kind": "three architectural departures on matched development weeks",
+    "phase": "completed: all three implementations rejected",
+    "sessionId": 77504,
+    "terminal": true,
+    "protocol": "experiments/architectures-protocol.json",
+    "manifest": "experiments/architectures-manifest.json",
+    "report": "docs/architectures-results.json",
+    "revision": "7aefc3b1aee04d3f73f28be3ab572c189b28195655f3217a939b922f0e28d0cb",
+    "treatmentTrials": 12,
+    "controlTrials": 1,
+    "maximumJobs": 2,
+    "maximumConcurrentPlays": 4,
+    "controlSessionId": 6450,
+    "controlTerminal": true,
+    "controlWorldId": "w889572145e5939648feb",
+    "controlExactEventMatch": true,
+    "controlStudy": "runs/study-1794632045391.json",
+    "study": "runs/study-1794633170323.json",
+    "decision": "experiments/architectures-decision.json",
+    "completedTreatmentTrials": 12
   }
 }

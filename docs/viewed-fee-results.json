@@ -1,0 +1,1076 @@
+{
+  "protocol": {
+    "declaredAt": "2026-11-14T05:20:58.344986+00:00",
+    "bundle": "research/viewed-fee/bundle",
+    "revision": "0e657e59f7b50d5295f526bc70a703ca666c30e063faf7e297620bf48540333d",
+    "baselines": [
+      {
+        "worldId": "w2464fa0a1a5ce6878d47",
+        "seed": "formal-unseen-20261113-14",
+        "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "payout": 0.85,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "noteSpelling": false,
+          "relist": false,
+          "openingOnly": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 1.15,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14
+        },
+        "marginCents": 1012020
+      },
+      {
+        "worldId": "w657d3e2075cdc8dcb443",
+        "seed": "formal-unseen-20261113-15",
+        "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "payout": 0.85,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "noteSpelling": false,
+          "relist": false,
+          "openingOnly": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 1.15,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14
+        },
+        "marginCents": 1106377
+      }
+    ],
+    "plan": "experiments/plans/viewed-fee.json",
+    "attempts": "experiments/viewed-fee-attempts.jsonl",
+    "scope": "Two whole-week mechanism/development trials on old seeds14 and15 plus exact control replication. No fresh validation, ranking or final.",
+    "mechanism": "During day0, eligible first posts with at least360minutes pickup slack initially show1.5times their normal opening fee. After5minutes restore their exact original schedule if unbooked. Reserve the entire possible extra opening payment per exposure, with a600euro total reservation cap. Never repeat an order's premium. Existing admission, customer pricing, routing and subsequent fees remain the validated control's policy.",
+    "largeGainSource": "A bounded early investment may teach enough active drivers that fees do not reliably rise, reducing later waiting, rescue fees and lateness. Drivers who book during exposure really receive the premium; its cost counts against the result.",
+    "priorEvidence": "The zero-time creation-price test had identical event streams because no driver viewed the temporary price. This experiment advances the clock while the higher price is visible. It tests actual first-view exposure, not an unobserved creation anchor.",
+    "falsification": "Reject if there is no material eligible exposure or if the complete-week savings do not cover the early investment. A changed booking stream alone is not profitable mechanism evidence. Public records do not expose hidden beliefs or whether every viewer could perform the job.",
+    "screeningGate": {
+      "meanGainEurosAtLeast": 1500,
+      "minimumGainEurosAtLeast": 0,
+      "qualified": 2,
+      "undelivered": 0,
+      "failedVisits": 0
+    },
+    "nextGate": "Only a passing two-week result proceeds, unchanged, to old seeds09 and10. Require positive gain on both confirmation weeks and all qualification/reliability gates before a fresh independent panel. Do not tune the pulse magnitude, duration or budget after failure.",
+    "control": "The disabled wrapper must exactly reproduce archived seed14 events and score. A mismatch blocks causal interpretation until resolved with new matched controls.",
+    "measurement": [
+      "net profit",
+      "qualification",
+      "throughput",
+      "driver fees",
+      "late refunds",
+      "on-time orders",
+      "undelivered orders",
+      "failed visits",
+      "fines",
+      "exposures and views",
+      "early premium bookings",
+      "restored schedules",
+      "action errors"
+    ],
+    "maximumConcurrentPlays": 4,
+    "maximumJobs": 2,
+    "interruption": "Retain every attempt and stop new trials on an error. A transport error stops experimental mode rather than rebuilding without exposure state. No silent replacement.",
+    "limits": [
+      "The600euro cap bounds reserved initial premiums relative to normal opening fees, not whole-policy loss after trajectories diverge.",
+      "Old matched seeds are development evidence. No projected leaderboard rank or global-optimality claim.",
+      "The first-day treatment changes immediate booking cost as well as possible later learning; it does not isolate a hidden belief variable."
+    ]
+  },
+  "summary": {
+    "terminal": false,
+    "controlExactMatch": true,
+    "decision": "pending complete frozen panel"
+  },
+  "records": [
+    {
+      "label": "viewed-fee-control",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w10682dbecb79031bcb6a",
+      "status": "complete",
+      "result": {
+        "worldId": "w10682dbecb79031bcb6a",
+        "revision": "0e657e59f7b50d5295f526bc70a703ca666c30e063faf7e297620bf48540333d",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "payout": 0.85,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "noteSpelling": false,
+          "relist": false,
+          "openingOnly": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 1.15,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14,
+          "viewedFee": false
+        },
+        "marginCents": 1012020,
+        "revenueCents": 2733838,
+        "wonOrders": 271,
+        "onTimeShare": 0.985239852398524,
+        "undeliveredShare": 0,
+        "ranked": true,
+        "onTimeOrders": 267,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00843",
+          "R00858",
+          "R00917",
+          "R00921"
+        ],
+        "undeliveredOrderIds": [],
+        "label": "viewed-fee-control",
+        "files": {
+          "meta": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w10682dbecb79031bcb6a.meta.json",
+            "sha256": "f22e38b0e2de40b1acff2d4910a7c25385e10b4563d1268e8cebfaf9585b19a5"
+          },
+          "snapshot": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w10682dbecb79031bcb6a.snapshot.json",
+            "sha256": "7ef88c2b258098b94e98a97f65e63a30deb9c258fb50e29bd2382cb1518fe577"
+          },
+          "score": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w10682dbecb79031bcb6a.score.json",
+            "sha256": "08f5cebe3c474425061602ce6ef5f01baf5dca7e9bc9c465205bd0f4a0cf7815"
+          },
+          "events": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w10682dbecb79031bcb6a.events.json",
+            "sha256": "62106a660702220b72fa50687fb610b593dac4c4180bfcfbe38fc76ec80d0d38"
+          }
+        }
+      },
+      "ledgerCents": {
+        "driver_fee": -1698312,
+        "late_refund": -20687,
+        "release_fee": -2819,
+        "revenue": 2733838
+      },
+      "exposure": {
+        "reservedCents": 0,
+        "exposures": []
+      },
+      "metrics": {
+        "exposures": 0,
+        "reservedCents": 0,
+        "viewsDuringExposure": 0,
+        "earlyPremiumBookings": 0,
+        "earlyPremiumCents": 0,
+        "restored": 0,
+        "firstBookingsBelowExposedFee": 0
+      },
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": [],
+      "errorContexts": [],
+      "baseline": {
+        "worldId": "w2464fa0a1a5ce6878d47",
+        "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "payout": 0.85,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "noteSpelling": false,
+          "relist": false,
+          "openingOnly": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 1.15,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14
+        },
+        "marginCents": 1012020,
+        "revenueCents": 2733838,
+        "wonOrders": 271,
+        "onTimeShare": 0.985239852398524,
+        "undeliveredShare": 0,
+        "ranked": true,
+        "onTimeOrders": 267,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00843",
+          "R00858",
+          "R00917",
+          "R00921"
+        ],
+        "undeliveredOrderIds": [],
+        "label": "payout-opening",
+        "files": {
+          "meta": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w2464fa0a1a5ce6878d47.meta.json",
+            "sha256": "0dc36b912f11a2975b4d913c1d58b2a3c895a649b381a873b81e56baa2cb6a19"
+          },
+          "snapshot": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w2464fa0a1a5ce6878d47.snapshot.json",
+            "sha256": "6b07d7170eb285a3344a88760dd6f4ef091a1e5599b08ef8a32e35353fd01000"
+          },
+          "score": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w2464fa0a1a5ce6878d47.score.json",
+            "sha256": "08f5cebe3c474425061602ce6ef5f01baf5dca7e9bc9c465205bd0f4a0cf7815"
+          },
+          "events": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w2464fa0a1a5ce6878d47.events.json",
+            "sha256": "62106a660702220b72fa50687fb610b593dac4c4180bfcfbe38fc76ec80d0d38"
+          }
+        }
+      },
+      "baselineLedgerCents": {
+        "driver_fee": -1698312,
+        "late_refund": -20687,
+        "release_fee": -2819,
+        "revenue": 2733838
+      },
+      "gainCents": 0,
+      "exactControlEventMatch": true
+    },
+    {
+      "label": "viewed-fee-pulse",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w25b56cb7e8683980a036",
+      "status": "complete",
+      "result": {
+        "worldId": "w25b56cb7e8683980a036",
+        "revision": "0e657e59f7b50d5295f526bc70a703ca666c30e063faf7e297620bf48540333d",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "payout": 0.85,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "noteSpelling": false,
+          "relist": false,
+          "openingOnly": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 1.15,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14,
+          "viewedFee": true
+        },
+        "marginCents": 972391,
+        "revenueCents": 2769490,
+        "wonOrders": 273,
+        "onTimeShare": 0.9853479853479854,
+        "undeliveredShare": 0,
+        "ranked": true,
+        "onTimeOrders": 269,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00830",
+          "R00843",
+          "R00871",
+          "R00941"
+        ],
+        "undeliveredOrderIds": [],
+        "label": "viewed-fee-pulse",
+        "files": {
+          "meta": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w25b56cb7e8683980a036.meta.json",
+            "sha256": "683f28b108a0823b6e1ef632575a9c93251e55d37265550cbcfef73c66112a55"
+          },
+          "snapshot": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w25b56cb7e8683980a036.snapshot.json",
+            "sha256": "5076d7bbc39ab6768bb602194f10e7ab97e2e9ec7ddfd49fcd1cdfbe201abffd"
+          },
+          "score": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w25b56cb7e8683980a036.score.json",
+            "sha256": "53be072f3d539f05a49fe942fae7e546c233c67fec790940ac734bbc34a9c56b"
+          },
+          "events": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w25b56cb7e8683980a036.events.json",
+            "sha256": "20c5cfd6bd002b347e91ae0b676dc5744917c8835800715c41ee031c134d76a2"
+          }
+        }
+      },
+      "ledgerCents": {
+        "driver_fee": -1774836,
+        "late_refund": -19444,
+        "release_fee": -2819,
+        "revenue": 2769490
+      },
+      "exposure": {
+        "reservedCents": 23910,
+        "exposures": [
+          {
+            "at": 682,
+            "until": 687,
+            "feeCents": 2550,
+            "extraCents": 850,
+            "original": [
+              {
+                "at": 667,
+                "feeCents": 1700
+              },
+              {
+                "at": 2374,
+                "feeCents": 2900
+              },
+              {
+                "at": 2494,
+                "feeCents": 3800
+              },
+              {
+                "at": 2554,
+                "feeCents": 5000
+              }
+            ],
+            "orders": [
+              "R00044"
+            ],
+            "views": 1,
+            "gigId": "g1",
+            "bookedAt": 685,
+            "bookedFeeCents": 2550
+          },
+          {
+            "at": 724,
+            "until": 729,
+            "feeCents": 4773,
+            "extraCents": 1591,
+            "original": [
+              {
+                "at": 709,
+                "feeCents": 3182
+              },
+              {
+                "at": 2279,
+                "feeCents": 5427
+              },
+              {
+                "at": 2399,
+                "feeCents": 7112
+              },
+              {
+                "at": 2459,
+                "feeCents": 9358
+              }
+            ],
+            "orders": [
+              "R00072"
+            ],
+            "views": 1,
+            "gigId": "g2",
+            "bookedAt": 725,
+            "bookedFeeCents": 4773
+          },
+          {
+            "at": 779,
+            "until": 784,
+            "feeCents": 8415,
+            "extraCents": 2805,
+            "original": [
+              {
+                "at": 764,
+                "feeCents": 5610
+              },
+              {
+                "at": 2269,
+                "feeCents": 9570
+              },
+              {
+                "at": 2389,
+                "feeCents": 12540
+              },
+              {
+                "at": 2449,
+                "feeCents": 16500
+              }
+            ],
+            "orders": [
+              "R00106"
+            ],
+            "views": 1,
+            "gigId": "g3",
+            "bookedAt": 780,
+            "bookedFeeCents": 8415
+          },
+          {
+            "at": 831,
+            "until": 836,
+            "feeCents": 4355,
+            "extraCents": 1452,
+            "original": [
+              {
+                "at": 816,
+                "feeCents": 2903
+              },
+              {
+                "at": 6599,
+                "feeCents": 4952
+              },
+              {
+                "at": 6719,
+                "feeCents": 6489
+              },
+              {
+                "at": 6779,
+                "feeCents": 8538
+              }
+            ],
+            "orders": [
+              "R00117"
+            ],
+            "views": 2,
+            "gigId": "g4",
+            "bookedAt": 832,
+            "bookedFeeCents": 4355
+          },
+          {
+            "at": 831,
+            "until": 836,
+            "feeCents": 5174,
+            "extraCents": 1725,
+            "original": [
+              {
+                "at": 823,
+                "feeCents": 3449
+              },
+              {
+                "at": 2279,
+                "feeCents": 5884
+              },
+              {
+                "at": 2399,
+                "feeCents": 7710
+              },
+              {
+                "at": 2459,
+                "feeCents": 10145
+              }
+            ],
+            "orders": [
+              "R00122"
+            ],
+            "views": 3,
+            "gigId": "g5",
+            "bookedAt": 832,
+            "bookedFeeCents": 5174
+          },
+          {
+            "at": 849,
+            "until": 854,
+            "feeCents": 2550,
+            "extraCents": 850,
+            "original": [
+              {
+                "at": 834,
+                "feeCents": 1700
+              },
+              {
+                "at": 2279,
+                "feeCents": 2900
+              },
+              {
+                "at": 2399,
+                "feeCents": 3800
+              },
+              {
+                "at": 2459,
+                "feeCents": 5000
+              }
+            ],
+            "orders": [
+              "R00127"
+            ],
+            "views": 1,
+            "gigId": "g6",
+            "bookedAt": 850,
+            "bookedFeeCents": 2550
+          },
+          {
+            "at": 1033,
+            "until": 1038,
+            "feeCents": 4791,
+            "extraCents": 1597,
+            "original": [
+              {
+                "at": 1018,
+                "feeCents": 3194
+              },
+              {
+                "at": 2336,
+                "feeCents": 5449
+              },
+              {
+                "at": 2456,
+                "feeCents": 7140
+              },
+              {
+                "at": 2516,
+                "feeCents": 9395
+              }
+            ],
+            "orders": [
+              "R00177"
+            ],
+            "views": 2,
+            "gigId": "g7",
+            "bookedAt": 1034,
+            "bookedFeeCents": 4791
+          },
+          {
+            "at": 1074,
+            "until": 1079,
+            "feeCents": 3587,
+            "extraCents": 1196,
+            "original": [
+              {
+                "at": 1059,
+                "feeCents": 2391
+              },
+              {
+                "at": 2279,
+                "feeCents": 4079
+              },
+              {
+                "at": 2399,
+                "feeCents": 5345
+              },
+              {
+                "at": 2459,
+                "feeCents": 7033
+              }
+            ],
+            "orders": [
+              "R00189"
+            ],
+            "views": 1,
+            "gigId": "g8",
+            "bookedAt": 1075,
+            "bookedFeeCents": 3587
+          },
+          {
+            "at": 1074,
+            "until": 1079,
+            "feeCents": 2550,
+            "extraCents": 850,
+            "original": [
+              {
+                "at": 1070,
+                "feeCents": 1700
+              },
+              {
+                "at": 2279,
+                "feeCents": 2900
+              },
+              {
+                "at": 2399,
+                "feeCents": 3800
+              },
+              {
+                "at": 2459,
+                "feeCents": 5000
+              }
+            ],
+            "orders": [
+              "R00197"
+            ],
+            "views": 1,
+            "gigId": "g9",
+            "bookedAt": 1075,
+            "bookedFeeCents": 2550
+          },
+          {
+            "at": 1097,
+            "until": 1102,
+            "feeCents": 9512,
+            "extraCents": 3171,
+            "original": [
+              {
+                "at": 1082,
+                "feeCents": 6341
+              },
+              {
+                "at": 3678,
+                "feeCents": 10817
+              },
+              {
+                "at": 3798,
+                "feeCents": 14174
+              },
+              {
+                "at": 3858,
+                "feeCents": 18650
+              }
+            ],
+            "orders": [
+              "R00204"
+            ],
+            "views": 2,
+            "gigId": "g10",
+            "bookedAt": 1098,
+            "bookedFeeCents": 9512
+          },
+          {
+            "at": 1097,
+            "until": 1102,
+            "feeCents": 9806,
+            "extraCents": 3269,
+            "original": [
+              {
+                "at": 1083,
+                "feeCents": 6537
+              },
+              {
+                "at": 3678,
+                "feeCents": 11151
+              },
+              {
+                "at": 3798,
+                "feeCents": 14611
+              },
+              {
+                "at": 3858,
+                "feeCents": 19225
+              }
+            ],
+            "orders": [
+              "R00206"
+            ],
+            "views": 1,
+            "gigId": "g11",
+            "bookedAt": 1098,
+            "bookedFeeCents": 9806
+          },
+          {
+            "at": 1097,
+            "until": 1102,
+            "feeCents": 2550,
+            "extraCents": 850,
+            "original": [
+              {
+                "at": 1088,
+                "feeCents": 1700
+              },
+              {
+                "at": 5159,
+                "feeCents": 2900
+              },
+              {
+                "at": 5279,
+                "feeCents": 3800
+              },
+              {
+                "at": 5339,
+                "feeCents": 5000
+              }
+            ],
+            "orders": [
+              "R00212"
+            ],
+            "views": 4,
+            "gigId": "g12",
+            "bookedAt": 1098,
+            "bookedFeeCents": 2550
+          },
+          {
+            "at": 1097,
+            "until": 1102,
+            "feeCents": 4631,
+            "extraCents": 1544,
+            "original": [
+              {
+                "at": 1094,
+                "feeCents": 3087
+              },
+              {
+                "at": 2339,
+                "feeCents": 5266
+              },
+              {
+                "at": 2459,
+                "feeCents": 6901
+              },
+              {
+                "at": 2519,
+                "feeCents": 9080
+              }
+            ],
+            "orders": [
+              "R00214"
+            ],
+            "views": 2,
+            "gigId": "g13",
+            "bookedAt": 1098,
+            "bookedFeeCents": 4631
+          },
+          {
+            "at": 1147,
+            "until": 1152,
+            "feeCents": 3930,
+            "extraCents": 1310,
+            "original": [
+              {
+                "at": 1132,
+                "feeCents": 2620
+              },
+              {
+                "at": 2362,
+                "feeCents": 4469
+              },
+              {
+                "at": 2482,
+                "feeCents": 5856
+              },
+              {
+                "at": 2542,
+                "feeCents": 7705
+              }
+            ],
+            "orders": [
+              "R00216"
+            ],
+            "views": 3,
+            "gigId": "g14",
+            "bookedAt": 1148,
+            "bookedFeeCents": 3930
+          },
+          {
+            "at": 1147,
+            "until": 1152,
+            "feeCents": 2550,
+            "extraCents": 850,
+            "original": [
+              {
+                "at": 1142,
+                "feeCents": 1700
+              },
+              {
+                "at": 2339,
+                "feeCents": 2900
+              },
+              {
+                "at": 2459,
+                "feeCents": 3800
+              },
+              {
+                "at": 2519,
+                "feeCents": 5000
+              }
+            ],
+            "orders": [
+              "R00218"
+            ],
+            "views": 2,
+            "gigId": "g15",
+            "bookedAt": 1148,
+            "bookedFeeCents": 2550
+          }
+        ]
+      },
+      "metrics": {
+        "exposures": 15,
+        "reservedCents": 23910,
+        "viewsDuringExposure": 27,
+        "earlyPremiumBookings": 15,
+        "earlyPremiumCents": 23910,
+        "restored": 0,
+        "firstBookingsBelowExposedFee": 0
+      },
+      "failedVisits": [],
+      "actionErrors": [
+        {
+          "at": 6659,
+          "action": {
+            "type": "reprice",
+            "gigId": "g220",
+            "schedule": [
+              {
+                "at": 6659,
+                "feeCents": 3963
+              },
+              {
+                "at": 6689,
+                "feeCents": 3963
+              },
+              {
+                "at": 6719,
+                "feeCents": 5020
+              },
+              {
+                "at": 6779,
+                "feeCents": 6605
+              }
+            ]
+          },
+          "reason": "Gig g220 is not open"
+        }
+      ],
+      "recoveries": [],
+      "errorContexts": [
+        {
+          "error": {
+            "at": 6659,
+            "action": {
+              "type": "reprice",
+              "gigId": "g220",
+              "schedule": [
+                {
+                  "at": 6659,
+                  "feeCents": 3963
+                },
+                {
+                  "at": 6689,
+                  "feeCents": 3963
+                },
+                {
+                  "at": 6719,
+                  "feeCents": 5020
+                },
+                {
+                  "at": 6779,
+                  "feeCents": 6605
+                }
+              ]
+            },
+            "reason": "Gig g220 is not open"
+          },
+          "sameMinuteGigEvents": [
+            {
+              "seq": 6908,
+              "at": 6659,
+              "kind": "gig_viewed",
+              "gigId": "g220",
+              "driverId": "w9qr-0294"
+            },
+            {
+              "seq": 6909,
+              "at": 6659,
+              "kind": "gig_booked",
+              "gigId": "g220",
+              "driverId": "w9qr-0294",
+              "feeCents": 3963
+            }
+          ]
+        }
+      ],
+      "baseline": {
+        "worldId": "w2464fa0a1a5ce6878d47",
+        "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "payout": 0.85,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "noteSpelling": false,
+          "relist": false,
+          "openingOnly": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 1.15,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14
+        },
+        "marginCents": 1012020,
+        "revenueCents": 2733838,
+        "wonOrders": 271,
+        "onTimeShare": 0.985239852398524,
+        "undeliveredShare": 0,
+        "ranked": true,
+        "onTimeOrders": 267,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00843",
+          "R00858",
+          "R00917",
+          "R00921"
+        ],
+        "undeliveredOrderIds": [],
+        "label": "payout-opening",
+        "files": {
+          "meta": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w2464fa0a1a5ce6878d47.meta.json",
+            "sha256": "0dc36b912f11a2975b4d913c1d58b2a3c895a649b381a873b81e56baa2cb6a19"
+          },
+          "snapshot": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w2464fa0a1a5ce6878d47.snapshot.json",
+            "sha256": "6b07d7170eb285a3344a88760dd6f4ef091a1e5599b08ef8a32e35353fd01000"
+          },
+          "score": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w2464fa0a1a5ce6878d47.score.json",
+            "sha256": "08f5cebe3c474425061602ce6ef5f01baf5dca7e9bc9c465205bd0f4a0cf7815"
+          },
+          "events": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w2464fa0a1a5ce6878d47.events.json",
+            "sha256": "62106a660702220b72fa50687fb610b593dac4c4180bfcfbe38fc76ec80d0d38"
+          }
+        }
+      },
+      "baselineLedgerCents": {
+        "driver_fee": -1698312,
+        "late_refund": -20687,
+        "release_fee": -2819,
+        "revenue": 2733838
+      },
+      "gainCents": -39629
+    },
+    {
+      "label": "viewed-fee-pulse",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "w382de8fc40c146afa28f",
+      "status": "pending"
+    }
+  ],
+  "attempts": [
+    {
+      "label": "viewed-fee-control",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w10682dbecb79031bcb6a",
+      "startedAt": "2026-11-14T05:21:11.655Z"
+    },
+    {
+      "label": "viewed-fee-pulse",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w25b56cb7e8683980a036",
+      "startedAt": "2026-11-14T05:21:11.867Z"
+    },
+    {
+      "label": "viewed-fee-pulse",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w25b56cb7e8683980a036",
+      "completedAt": "2026-11-14T05:22:55.012Z"
+    },
+    {
+      "label": "viewed-fee-pulse",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "w382de8fc40c146afa28f",
+      "startedAt": "2026-11-14T05:22:55.147Z"
+    },
+    {
+      "label": "viewed-fee-control",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w10682dbecb79031bcb6a",
+      "completedAt": "2026-11-14T05:22:55.528Z"
+    }
+  ],
+  "interpretation": "Exposure counts and lower subsequent fees do not reveal hidden beliefs or establish that every viewer was eligible. Early premiums compare actual initial bookings with that same gig's intended opening fee, not a counterfactual world. Whole-week matched net profit is the economic test."
+}

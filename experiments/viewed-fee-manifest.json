@@ -1,0 +1,53 @@
+{
+  "protocol": "experiments/viewed-fee-protocol.json",
+  "protocolSha256": "f303c0ef294bd450bef61dac7b894f5f23bc542bf61ddc9a698f0a069adb8771",
+  "worlds": [
+    {
+      "label": "viewed-fee-control",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w10682dbecb79031bcb6a"
+    },
+    {
+      "label": "viewed-fee-pulse",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w25b56cb7e8683980a036"
+    },
+    {
+      "label": "viewed-fee-pulse",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "w382de8fc40c146afa28f"
+    }
+  ],
+  "attempts": [
+    {
+      "label": "viewed-fee-control",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w10682dbecb79031bcb6a",
+      "startedAt": "2026-11-14T05:21:11.655Z"
+    },
+    {
+      "label": "viewed-fee-pulse",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w25b56cb7e8683980a036",
+      "startedAt": "2026-11-14T05:21:11.867Z"
+    },
+    {
+      "label": "viewed-fee-pulse",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w25b56cb7e8683980a036",
+      "completedAt": "2026-11-14T05:22:55.012Z"
+    },
+    {
+      "label": "viewed-fee-pulse",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "w382de8fc40c146afa28f",
+      "startedAt": "2026-11-14T05:22:55.147Z"
+    },
+    {
+      "label": "viewed-fee-control",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w10682dbecb79031bcb6a",
+      "completedAt": "2026-11-14T05:22:55.528Z"
+    }
+  ]
+}
