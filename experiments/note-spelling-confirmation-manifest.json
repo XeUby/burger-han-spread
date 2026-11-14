@@ -1,0 +1,26 @@
+{
+  "protocol": "experiments/note-spelling-confirmation-protocol.json",
+  "protocolSha256": "ca4002eda91f8391346319e33f4bbde70a280fa5df2ef7e70921e0b8e9e64e3c",
+  "worlds": [
+    {
+      "worldId": "wba03b8b4a03344ef49c2",
+      "label": "note-spelling-confirmation",
+      "seed": "formal-unseen-20261113-09"
+    },
+    {
+      "worldId": "we0ac74d423b2b6b67210",
+      "label": "note-spelling-confirmation",
+      "seed": "formal-unseen-20261113-10"
+    },
+    {
+      "worldId": "wb13de58d75398916c47e",
+      "label": "note-spelling-confirmation",
+      "seed": "formal-unseen-20261113-12"
+    },
+    {
+      "worldId": "w4195b508b871fa206908",
+      "label": "note-spelling-confirmation",
+      "seed": "formal-unseen-20261113-16"
+    }
+  ]
+}

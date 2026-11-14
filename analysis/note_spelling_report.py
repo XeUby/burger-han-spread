@@ -4,17 +4,23 @@ import hashlib
 import json
 import statistics
 import subprocess
+import sys
 from collections import Counter
 from pathlib import Path
 
 from frontier_validation import load_world
 
 ROOT = Path(__file__).resolve().parents[1]
-manifest = json.loads((ROOT / "experiments/note-spelling-manifest.json").read_text())
+confirmation = "--confirmation" in sys.argv
+name = "note-spelling-confirmation" if confirmation else "note-spelling"
+manifest = json.loads((ROOT / f"experiments/{name}-manifest.json").read_text())
 protocol_path = ROOT / manifest["protocol"]
 if hashlib.sha256(protocol_path.read_bytes()).hexdigest() != manifest["protocolSha256"]:
     raise ValueError("Protocol changed after trial assignment")
 protocol = json.loads(protocol_path.read_text())
+baselines = {row["seed"]: row for row in protocol.get("baselines", [])}
+if confirmation and hashlib.sha256((ROOT / protocol["parentProtocol"]).read_bytes()).hexdigest() != protocol["parentProtocolSha256"]:
+    raise ValueError("Parent protocol changed")
 plan = json.loads((ROOT / protocol["plan"]).read_text())
 trials = {(row["label"], row["seed"]): row for row in plan}
 keys = [(row["label"], row["seed"]) for row in manifest["worlds"]]
@@ -59,18 +65,31 @@ console.log(JSON.stringify(rows.flatMap(({request})=>!readNote(request.note).saf
         row["correctedOrderFailedVisits"] = [event for event in row["failedVisits"] if event["orderId"] in corrected]
         row["actionErrors"] = json.loads((ROOT / f"runs/{world}.errors.json").read_text())
         row["recoveries"] = json.loads((ROOT / f"runs/{world}.recoveries.json").read_text())
+        if confirmation:
+            baseline = baselines[entry["seed"]]
+            row["baseline"] = load_world(ROOT, baseline["worldId"], entry["seed"], baseline)
+            baseline_ledger = Counter()
+            for event in json.loads((ROOT / f"runs/{baseline['worldId']}.events.json").read_text()):
+                if event["kind"] == "ledger":
+                    baseline_ledger[event["line"]["kind"]] += event["line"]["cents"]
+            row["baselineLedgerCents"] = dict(baseline_ledger)
     records.append(row)
 
 summary, pairs = None, []
 if all(row["status"] == "complete" for row in records):
-    for seed in protocol["screeningSeeds"]:
-        a = next(row for row in records if row["seed"] == seed and row["label"] == "note-spelling-control")
-        b = next(row for row in records if row["seed"] == seed and row["label"] == "note-spelling-treatment")
+    for seed in protocol["confirmationSeeds" if confirmation else "screeningSeeds"]:
+        if confirmation:
+            b = next(row for row in records if row["seed"] == seed)
+            a = {"result": b["baseline"], "ledgerCents": b["baselineLedgerCents"]}
+        else:
+            a = next(row for row in records if row["seed"] == seed and row["label"] == "note-spelling-control")
+            b = next(row for row in records if row["seed"] == seed and row["label"] == "note-spelling-treatment")
         pairs.append({"seed": seed, "gainCents": b["result"]["marginCents"] - a["result"]["marginCents"], "componentDifferencesCents": {key: b["ledgerCents"].get(key, 0) - a["ledgerCents"].get(key, 0) for key in sorted(a["ledgerCents"].keys() | b["ledgerCents"].keys())}})
-    treated = [row for row in records if row["label"] == "note-spelling-treatment"]
+    treated = records if confirmation else [row for row in records if row["label"] == "note-spelling-treatment"]
     summary = {"pairs": len(pairs), "meanGainCents": statistics.mean(pair["gainCents"] for pair in pairs), "minimumGainCents": min(pair["gainCents"] for pair in pairs), "qualifiedTreatments": sum(row["result"]["ranked"] for row in treated), "undeliveredTreatments": sum(row["result"]["undeliveredOrders"] for row in treated), "correctedOrders": sum(len(row["correctedOrders"]) for row in treated), "lateCorrectedOrders": sum(not order["onTime"] for row in treated for order in row["correctedOrders"]), "correctedOrderFailedVisits": sum(len(row["correctedOrderFailedVisits"]) for row in treated)}
-    gate = protocol["screeningGate"]
-    summary["screeningGatePassed"] = summary["meanGainCents"] > 100 * gate["meanPairedGainEurosGreaterThan"] and summary["minimumGainCents"] >= 100 * gate["worstPairedGainEurosAtLeast"] and summary["qualifiedTreatments"] == len(treated) and summary["undeliveredTreatments"] == 0 and summary["correctedOrderFailedVisits"] == 0
+    gate = protocol["confirmationGate" if confirmation else "screeningGate"]
+    summary["gatePassed"] = summary["meanGainCents"] > 100 * gate["meanPairedGainEurosGreaterThan"] and summary["minimumGainCents"] >= 100 * gate["worstPairedGainEurosAtLeast"] and summary["qualifiedTreatments"] == len(treated) and summary["undeliveredTreatments"] == 0 and summary["correctedOrderFailedVisits"] == 0
 report = {"scope": protocol["scope"], "limitation": "Old development screening, not independent generalization evidence. Includes every declared trial and all ledger costs, including shared gigs.", "protocol": protocol, "manifest": manifest, "summary": summary, "pairs": pairs, "records": records}
-(ROOT / "docs/note-spelling-results.json").write_text(json.dumps(report, indent=2) + "\n")
+output = name if confirmation else "note-spelling-results"
+(ROOT / f"docs/{output}.json").write_text(json.dumps(report, indent=2) + "\n")
 print(json.dumps(summary if summary else [{key: row[key] for key in ["worldId", "label", "seed", "status"]} for row in records], indent=2))
