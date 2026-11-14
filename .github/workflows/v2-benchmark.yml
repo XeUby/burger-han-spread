@@ -1,0 +1,67 @@
+name: V2 ten-week level-8 benchmark
+on:
+  push:
+    branches: [experiment/burger-han-v2]
+    paths:
+      - '.github/workflows/v2-benchmark.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: spread-v2-10-weeks
+  cancel-in-progress: false
+jobs:
+  ten-week-benchmark:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      SPREAD_KEY: ${{ secrets.SPREAD_KEY }}
+      SPREAD_URL: https://spread.bahnexpress.com
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check configured secret
+        shell: bash
+        run: |
+          if [ -z "$SPREAD_KEY" ]; then
+            echo "::error::Missing GitHub Actions secret SPREAD_KEY. No real simulation started."
+            exit 1
+          fi
+      - name: Install official dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Run local checks
+        run: python -m unittest discover -s tests -v
+      - name: Run EXACTLY ten level-8 practice weeks
+        run: |
+          python v2_benchmark.py --seeds \
+            burger-v2-10-01 burger-v2-10-02 burger-v2-10-03 burger-v2-10-04 burger-v2-10-05 \
+            burger-v2-10-06 burger-v2-10-07 burger-v2-10-08 burger-v2-10-09 burger-v2-10-10
+      - name: Validate ten complete results and reveal metrics
+        run: |
+          python - <<'PY'
+          import json,sys
+          from pathlib import Path
+          path=Path('results-v2/benchmark.json')
+          if not path.exists():
+              sys.exit('No benchmark results written')
+          records=json.loads(path.read_text())
+          print('Completed successful weeks:',sum('score' in r for r in records),'/',len(records))
+          print('Per week: seed; EUR margin; on-time; qualified; orders')
+          for r in records:
+              s=r.get('score')
+              if s:
+                  print(r['seed'],s['marginCents']/100,s['onTimeShare'],s['ranked'],s['wonOrders'])
+              else: print(r.get('seed'), 'ERROR',str(r.get('error'))[:100])
+          if len(records)!=10 or any('score' not in r for r in records):
+              sys.exit('Incomplete ten-week experiment')
+          PY
+      - name: Upload logs and summaries (do not publish team key)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: spread-v2-ten-week-results
+          path: results-v2/
+          if-no-files-found: ignore
+          retention-days: 7
