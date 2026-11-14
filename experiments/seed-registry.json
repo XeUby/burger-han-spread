@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-14T08:18:05.967246+00:00",
+  "updatedAt": "2026-11-14T10:00:52.473996+00:00",
   "unit": "unique simulation seed/week; repeated worlds are not independent replications",
-  "worldRecords": 406,
+  "worldRecords": 460,
   "uniqueNamedWeeks": 76,
-  "distinctLabels": 102,
-  "distinctSourceSettingsCombinations": 84,
+  "distinctLabels": 114,
+  "distinctSourceSettingsCombinations": 93,
   "interpretation": "Counts document the adaptive search, not independent tests or a guarantee that distinct deterministic seeds are IID. Every observed seed is conservatively unavailable for any future untouched panel.",
   "hiddenSeedWorlds": [
     {
@@ -36,6 +36,34 @@
       "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
     },
     {
+      "worldId": "w2022c0359b91ce8d9988",
+      "level": 3,
+      "label": "levels-noon-ranked-3-5",
+      "metaSha256": "61ec9719734371f6605ac3b056aed050989b80475ce2ae9df50a2aeb6381c009",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    },
+    {
+      "worldId": "w2a48c38a5661e2320241",
+      "level": 2,
+      "label": "levels-noon-ranked-2-5",
+      "metaSha256": "5d5d165756333174ec17ee4e7b11ae63a00e6c87b611080ae5329f71f070e847",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    },
+    {
+      "worldId": "w2be18c1bb0a69b912914",
+      "level": 2,
+      "label": "levels-noon-ranked-2-4",
+      "metaSha256": "8c552baf73ec85ac86ae6612e9bc221c31e68f415746b4c6f176e67d53ed056c",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    },
+    {
+      "worldId": "w2cb7e3099b266602dede",
+      "level": 1,
+      "label": "levels-noon-ranked-1-3",
+      "metaSha256": "ca6685b5ac28a6b05b6e2c145c7a7d800f8b04fb3a329fdffdf3c3fd5f649b47",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    },
+    {
       "worldId": "w31cbd8708f164a778bf3",
       "level": 4,
       "label": "levels-deadline-eight-ranked-4-3",
@@ -43,10 +71,24 @@
       "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
     },
     {
+      "worldId": "w36627b34c1bd5cdb4665",
+      "level": 3,
+      "label": "levels-noon-ranked-3-1",
+      "metaSha256": "6c003108411efcfcd1fd1bdfe976a33ba7aeba711fcb5263133278eb0e7ccb81",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    },
+    {
       "worldId": "w3c236f0739af313f57e9",
       "level": 6,
       "label": "levels-deadline-ranked-6-1",
       "metaSha256": "1957022f0f92251be1ac3569bbc4de28e45731060e804ec003682bbbad1ccc56",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    },
+    {
+      "worldId": "w3d4d7fe709c5607aba8e",
+      "level": 3,
+      "label": "levels-noon-ranked-3-4",
+      "metaSha256": "f08ef4fdd5c120e86c4095fb51052626e712517332b070733f73d9853f190e62",
       "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
     },
     {
@@ -64,6 +106,13 @@
       "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
     },
     {
+      "worldId": "w462313ddab7bafd720f3",
+      "level": 4,
+      "label": "levels-noon-ranked-4-3",
+      "metaSha256": "49b022f651f4369c44cec3cf4a6d5f52fa6d40df7b23b483fb272017734be2a0",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    },
+    {
       "worldId": "w46c5562ae471c0106d82",
       "level": 1,
       "label": "levels-deadline-eight-ranked-1-5",
@@ -71,10 +120,38 @@
       "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
     },
     {
+      "worldId": "w49c9ef9eb9aec00635fb",
+      "level": 8,
+      "label": "levels-upper-ranked-8-1",
+      "metaSha256": "4b8f74006d25520c0e23693fbeac407f13c8bca32197409f0b7f1cdef501713b",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    },
+    {
       "worldId": "w4bca72b69372975a3ba2",
       "level": 5,
       "label": "levels-deadline-ranked-5-1",
       "metaSha256": "8644e3992fe28ac2161cfecd714367ab63fb24fe4e3ed75daf1c0c137c8f61b5",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    },
+    {
+      "worldId": "w4ced8adb47c5f862a24f",
+      "level": 3,
+      "label": "levels-noon-ranked-3-3",
+      "metaSha256": "9c876367a8c75de9078dec336f81d874cbede1e0dde7b6ffeaff8402bd354543",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    },
+    {
+      "worldId": "w4dfbd9e09f2813bc16b2",
+      "level": 4,
+      "label": "levels-noon-ranked-4-1",
+      "metaSha256": "a46ba7d27ea55f38573fec8e2980a5b11cc9468658a0cfc558b08243b5041557",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    },
+    {
+      "worldId": "w4ebfe73e50aa31b53c65",
+      "level": 2,
+      "label": "levels-noon-ranked-2-2",
+      "metaSha256": "6327e9b7de253c51b6d119322b433f592935746be0b614b6c35d761861abefe9",
       "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
     },
     {
@@ -92,6 +169,13 @@
       "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
     },
     {
+      "worldId": "w53ba157be5ea5dc37df7",
+      "level": 1,
+      "label": "levels-noon-ranked-1-4",
+      "metaSha256": "9e86cdd1f175a6e8ac86f28475fb74b57534eed402fff01f2a523c110b2d321a",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    },
+    {
       "worldId": "w5a2fa10fa078e74afee7",
       "level": 5,
       "label": "levels-deadline-eight-ranked-5-4",
@@ -106,10 +190,31 @@
       "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
     },
     {
+      "worldId": "w62d470cf7cf86028cfc3",
+      "level": 1,
+      "label": "levels-noon-ranked-1-5",
+      "metaSha256": "95d90b54e6762a5f3021c68605d0ee2320e77689af3e6b6fc92835d2f38854f7",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    },
+    {
       "worldId": "w6516d12e279ef0a68c15",
       "level": 1,
       "label": "levels-ranked-1-1",
       "metaSha256": "2ba041a106bd358fe0975f2a20587cca02ead0ee29e4ae7af76692116f5ecf55",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    },
+    {
+      "worldId": "w6a548e650a511b0bb9f4",
+      "level": 4,
+      "label": "levels-noon-ranked-4-2",
+      "metaSha256": "7d88a96e183e19646b907904813e1960572ad1b6bbd66019b640cdf1df6e5f05",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    },
+    {
+      "worldId": "w71b5d32943878b020ea0",
+      "level": 4,
+      "label": "levels-noon-ranked-4-5",
+      "metaSha256": "854be606e1208e97a2637bcb424c99a8543432d5e328c817301d63a32e80a35c",
       "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
     },
     {
@@ -148,6 +253,13 @@
       "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
     },
     {
+      "worldId": "w92b0ed9510280d368553",
+      "level": 1,
+      "label": "levels-noon-ranked-1-1",
+      "metaSha256": "e0271079046a423c4b7c19b316d98ec3e74c0b69c07b5b87e5a104a9c158093d",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    },
+    {
       "worldId": "w93f8a53fdbc8c0830d12",
       "level": 6,
       "label": "levels-deadline-ranked-6-2",
@@ -169,6 +281,20 @@
       "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
     },
     {
+      "worldId": "wa2daa9688ea60997b35c",
+      "level": 1,
+      "label": "levels-noon-ranked-1-2",
+      "metaSha256": "7bb0c54fc7827d38399e8bf3353b59b07184160eef1d27d23cef1b2019db635b",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    },
+    {
+      "worldId": "wa7c9cc582de114f6b7e1",
+      "level": 4,
+      "label": "levels-noon-ranked-4-4",
+      "metaSha256": "c6c50f71a212480c561a46dd3c0b48c58a884dbea0e75ed31ad0b9a925e49033",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    },
+    {
       "worldId": "waa88d5a68c6c3d66fd34",
       "level": 6,
       "label": "levels-deadline-eight-ranked-6-4",
@@ -180,6 +306,13 @@
       "level": 2,
       "label": "levels-deadline-eight-ranked-2-3",
       "metaSha256": "9a6d4ca9817f1d135d12e0c54b8385dd09427c81676df40f4db9ff716f11a0bd",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    },
+    {
+      "worldId": "wbe9129d89720fcb6542d",
+      "level": 2,
+      "label": "levels-noon-ranked-2-3",
+      "metaSha256": "7a7c8be1f68914215ffaf90aaca147d26842a96db1638e16aecf33b263cb0719",
       "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
     },
     {
@@ -201,6 +334,13 @@
       "level": 6,
       "label": "levels-deadline-eight-ranked-6-5",
       "metaSha256": "e996c1b44d6188e272c94ef6cf3a31aa376ebecaccc35ccfd730598c65475fe9",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    },
+    {
+      "worldId": "wca427d455040109f238f",
+      "level": 3,
+      "label": "levels-noon-ranked-3-2",
+      "metaSha256": "1c9bff150835612c1fd07bd42d6575c8d2d0bc4a372bc05b68e6a52e13b0b7f2",
       "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
     },
     {
@@ -229,6 +369,13 @@
       "level": 1,
       "label": "levels-deadline-eight-ranked-1-4",
       "metaSha256": "a6ee5bed3ef761e0cc18218baeb05c92db710b2fedc0b61b971fb146c10f6f53",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    },
+    {
+      "worldId": "we3298027e53e4bafa324",
+      "level": 2,
+      "label": "levels-noon-ranked-2-1",
+      "metaSha256": "be289961bc75d736bcc96f175d9c58b056e961a310fe562601cbbde065db51ea",
       "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
     },
     {
@@ -677,6 +824,13 @@
           "metaSha256": "1ab86e7620e7c8827d7e1b7c80a3df2e2c732225232b7071ba556520807cd293"
         },
         {
+          "worldId": "w78dda2c1fc558b8d9e85",
+          "label": "portfolio-v1-planner",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "bebb97e18911e8f0952ed60fb26937f1d76d797dc246fca1c906ccab04dee43d"
+        },
+        {
           "worldId": "w83fed5c0ac39bf69a814",
           "label": "hours-confirmation",
           "revision": "f34787f4f6a814a3d16254c970b95acf07382378c5c868a4e834d1bc2e7da642",
@@ -719,6 +873,13 @@
           "metaSha256": "e114d98bf0c6c55b16b456ffdd0919a9468639fa397ff9cf8f69526451c3b1d1"
         },
         {
+          "worldId": "wb50d9d6ba10280b2c658",
+          "label": "portfolio-v1-benchmark",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "389030fe224e2ce0867a65f5282ebaa47b3dc27fa9429a5fc1385c2300f25f5f"
+        },
+        {
           "worldId": "wba03b8b4a03344ef49c2",
           "label": "note-spelling-confirmation",
           "revision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa",
@@ -752,6 +913,20 @@
           "revision": "07484b381d9147cf8c5dbc659e521f0e494a83f234f53bbdd4d446bba2b1a8e3",
           "hasTerminalArtifacts": true,
           "metaSha256": "f62285141f12058886cd5dfd64b6cf92242ba447e80a3a5ba2f7104d8adbc48e"
+        },
+        {
+          "worldId": "wf18d9cd3fb1965bcf746",
+          "label": "portfolio-v1-future",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "799d069f8de3664b6955e8f61c20ce162ef552a826b69752af86077ce0bf8e37"
+        },
+        {
+          "worldId": "wf5b7ca248d1d5a3f2592",
+          "label": "portfolio-v1-payments",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "76ddb9adcc471e76a3f8a0d193ce8a0737612699da1ed16d8504cf6d3af44b59"
         },
         {
           "worldId": "wf6dadb9aa1076a8201ac",
@@ -796,6 +971,13 @@
           "revision": "c440065717076cc4d14d2aae3b395f15a98efbc35cb3dfcc3d47f18813f39be6",
           "hasTerminalArtifacts": true,
           "metaSha256": "fa292c1ef1aaeb9db817d9e12dc1545de9284b6f81548d68e5943e55bbc382ce"
+        },
+        {
+          "worldId": "w2d0e74e9d4f87346c5f9",
+          "label": "portfolio-v1-payments",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "ca91bcc6463274b8a06366bddd516ae3e7abbb8bb0e465368813674c48c1bba1"
         },
         {
           "worldId": "w364cb2e151fb283326ce",
@@ -854,6 +1036,13 @@
           "metaSha256": "7f73c32e846df4f8364c7932da427a4ee7ae598846f361c3a8d078249d5c8f8c"
         },
         {
+          "worldId": "w80d0b72340f5dc2b953f",
+          "label": "portfolio-v1-benchmark",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "ede873e5add80bfe57a9ff46b744367c687af370fcf96c862e54cbb4cf1bd878"
+        },
+        {
           "worldId": "w97b999bf37a6bef0cebd",
           "label": "architecture-calendar",
           "revision": "7aefc3b1aee04d3f73f28be3ab572c189b28195655f3217a939b922f0e28d0cb",
@@ -887,6 +1076,13 @@
           "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
           "hasTerminalArtifacts": true,
           "metaSha256": "bbf0ad2ee712206d683c3a8cd43bde059e8f5669ca3db799174248641f655dc2"
+        },
+        {
+          "worldId": "wd2d676a4335647803d4e",
+          "label": "portfolio-v1-future",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "53df5fae2dfbf3476379ebd9bd61157a00240ce84105a2913ae6dbb52b7e52aa"
         },
         {
           "worldId": "wd2ff4e15dfbb1527ee09",
@@ -936,6 +1132,13 @@
           "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
           "hasTerminalArtifacts": true,
           "metaSha256": "45ace9f77c5a485a8e263dc796a511c44799a2725d9596d308542ce49450ec25"
+        },
+        {
+          "worldId": "we77f983395020daeb6b2",
+          "label": "portfolio-v1-planner",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "c14a7f5f659120a30bd0bb252a343c82c5698773ffc3b399fa806e322a6df222"
         },
         {
           "worldId": "wfdda684945fc65378d51",
@@ -1149,6 +1352,13 @@
           "metaSha256": "b9b847b49bc3187b6f8170806b9a30b99a59ac9dd91e62edb7a9e9e310ce4dc8"
         },
         {
+          "worldId": "w1de351e03edd4fea5f06",
+          "label": "portfolio-v1-future",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "78f57c85659aaa5486cd32ca1c29f11486b06e60a97c735a5280a7f6a6b3002f"
+        },
+        {
           "worldId": "w20c5ca88e01d2716f070",
           "label": "multi-routes-volume",
           "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
@@ -1198,6 +1408,13 @@
           "metaSha256": "e59b1cccecfd50bac663e93b988ee366c87721c16038f787c623431ab6d68ff4"
         },
         {
+          "worldId": "w3c3efee91b64923eb8fb",
+          "label": "portfolio-v1-payments",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "bc51d9501d6e1d8480d0e7196d70a0d3eff4c07990288dce66896cfb3098a0da"
+        },
+        {
           "worldId": "w3d80a69ff94fd19a1968",
           "label": "frontier-home",
           "revision": "943e5f0c11bae7705ff78ee262055c7c801a0c6f305ab069923ddea5f6fc759d",
@@ -1210,6 +1427,13 @@
           "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
           "hasTerminalArtifacts": true,
           "metaSha256": "7eb5f1823c49e9ec3471df1e457d326574847f4dcc83434b784e65dd42c82beb"
+        },
+        {
+          "worldId": "w43d941ad78551f360180",
+          "label": "portfolio-v1-planner",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "8bb3d200536cc626d99a528fa03c2de195a39957355c9379f3dfcef04d1406db"
         },
         {
           "worldId": "w4942198ed86c34ca1b05",
@@ -1308,6 +1532,13 @@
           "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
           "hasTerminalArtifacts": true,
           "metaSha256": "e8252be169191246a23224630c598ec036ca8b51a1f621391acfef72fbb0bf17"
+        },
+        {
+          "worldId": "w94fc2a3b54767680f231",
+          "label": "portfolio-v1-benchmark",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "febc579fa88bc81b2daf76579bce81f74d59b48de072e0c0833228cf89a3cca6"
         },
         {
           "worldId": "w979261929ce968cdba3d",
@@ -1438,6 +1669,13 @@
           "metaSha256": "61ac56f9737471aba353c541053b80272126597923bf2f257293afb6fd33d643"
         },
         {
+          "worldId": "w39b3744d4a3071ba70ba",
+          "label": "portfolio-v1-benchmark",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "ad45b09aea5abedf226e7826772ee3b96be632077223d69fe85e9e634aae9842"
+        },
+        {
           "worldId": "w39ec7c5bcc2874eadce0",
           "label": "fee-anchor-1",
           "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
@@ -1501,6 +1739,13 @@
           "metaSha256": "d688052d4eaef20b96dbd6d14de9a6b311ee87f80ac92d24fb5781f3df9287da"
         },
         {
+          "worldId": "w643b2014ddb3c56ba44d",
+          "label": "portfolio-v1-planner",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "4b0e5e5f35ca83c4ef5bad2d9062b721923f3a649ddf73d5b882a9a65b881136"
+        },
+        {
           "worldId": "w657d3e2075cdc8dcb443",
           "label": "payout-opening",
           "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
@@ -1527,6 +1772,13 @@
           "revision": "613614078c6d91c159073de4aacad323ae653d09f102df9bb13400c83538872c",
           "hasTerminalArtifacts": true,
           "metaSha256": "3d45aed21bff438f53557c019a29b315730a787a904f2664b05b4e4ed68ccbb8"
+        },
+        {
+          "worldId": "w6f1c91b604772c2aba40",
+          "label": "portfolio-v1-future",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "9c819a9235938d0b1bda3d86a4f2d37abf93ae44ac5c866b94fcbececbf53394"
         },
         {
           "worldId": "w6f3f73c3a233bc2c7b2e",
@@ -1709,6 +1961,13 @@
           "revision": "613614078c6d91c159073de4aacad323ae653d09f102df9bb13400c83538872c",
           "hasTerminalArtifacts": true,
           "metaSha256": "8eb11c4f7660178b9db2103795a7bb28ed026ef22e6e1579ff3ab62f1eb26bde"
+        },
+        {
+          "worldId": "we331cceff6522aba0b88",
+          "label": "portfolio-v1-payments",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "b9ed8660f94b90db7f2f63bf525f8b52e49a9b651d9a0f223d258e9f6c950f7c"
         },
         {
           "worldId": "web1721ff5273f4c325d6",
@@ -2522,6 +2781,55 @@
       "eligibleForFreshValidation": false,
       "worlds": [
         {
+          "worldId": "w02797db20b740cc44fa1",
+          "label": "lower-v1-planner",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "9079c80b5d4a37f483d1dacaddf419113524647952354495765f0603b1864d1b"
+        },
+        {
+          "worldId": "w0fbb0ba5d96f4f34261d",
+          "label": "lower-v1-benchmark",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "94df2bf7ba11b477407b178a69bfd44aff5582f585f2d15013654a22782284d7"
+        },
+        {
+          "worldId": "w12a56f855405fe44aa7a",
+          "label": "lower-v1-benchmark",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "3624be2f35dbeddd8fdbec1f03dcb17f7c1c15c1398003a1b9126d9721c779f2"
+        },
+        {
+          "worldId": "w14a6c5d9724ce9b3a617",
+          "label": "lower-v1-planner",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "8a17b89dbb21ac1bb22508c21019956b1917bd800e18c165b42dc898c1f854f7"
+        },
+        {
+          "worldId": "w1937d0d8ca49f2d4b6ee",
+          "label": "corrected-transfer-v1-payment",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "1df296ef9d4a88dbbd128ee504d8f171dc6d20debae66126d25f244c2218d225"
+        },
+        {
+          "worldId": "w1d5992a68939fc4cb76e",
+          "label": "corrected-transfer-v1-joint",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "5cc3b6b666460eda334a6f21a1ea69a4c94253e57ea692dc7e54576050d0f96e"
+        },
+        {
+          "worldId": "w273c9e0e1663fdc68a40",
+          "label": "corrected-v1-joint",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "b8576fa55734da42196dea12a1100e115ab4c73908555d592959714e4888de9f"
+        },
+        {
           "worldId": "w27a9907f165ecf084fdd",
           "label": "levels-factorial-coupled",
           "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
@@ -2557,6 +2865,13 @@
           "metaSha256": "fc1a3da64ce6f5c4fe168ea5db7396d9defa28c8db69f09d737528d812af0cc7"
         },
         {
+          "worldId": "w4def3076a9571f4acd4f",
+          "label": "lower-v1-planner",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "09c180b5bed32550e6268294002cf29a2c56eac1849a8f5a4a65f75fb57263ef"
+        },
+        {
           "worldId": "w4f547b357c8276a8d9d1",
           "label": "levels-control",
           "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
@@ -2585,6 +2900,27 @@
           "metaSha256": "c4302abb9f24ede53b17f3736928e0cedae33625606877964d4734011d536058"
         },
         {
+          "worldId": "w71751a07bf46ff2db9de",
+          "label": "corrected-transfer-v1-joint",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "1381d233bcd8190ef74a72105aa1fed5496243370fc13d3b839d88a8e440d393"
+        },
+        {
+          "worldId": "w76da10056bbeece800f9",
+          "label": "moderate-transfer-v1-payment",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "667076d62caedf3462fe64646b70e430d6086409aabf726f1c4b36600a672c2e"
+        },
+        {
+          "worldId": "w7728c3f885057422feaa",
+          "label": "corrected-transfer-v1-joint",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "dc4dcc3602b97fb9d7b33f433f1e952f4a341f62901d4e1fdb6479532f61892c"
+        },
+        {
           "worldId": "w78586356f37a5f476c13",
           "label": "levels-factorial-economics",
           "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
@@ -2597,6 +2933,13 @@
           "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
           "hasTerminalArtifacts": true,
           "metaSha256": "602f8f65ec08689822823fd23537ac9d4fd809223399300697433b5df6af5653"
+        },
+        {
+          "worldId": "w8487682446873d6bfad6",
+          "label": "corrected-v1-payment",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "def451b6adb8253a486608e9a91f9aee0b974bed787068b9c3acfa0eda73121a"
         },
         {
           "worldId": "w8720d3e7691d0e5b6ae3",
@@ -2613,11 +2956,25 @@
           "metaSha256": "fadde8f3ff28dd68e97d33b4af03a6169be619154d398ec4f1cd5bedbafc92df"
         },
         {
+          "worldId": "w9615fa5e62c46b8e2f0c",
+          "label": "lower-v1-benchmark",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "bc562fd03a935af02015c3f1eaa136acce71d63480ae5389fc9adc577e861e7a"
+        },
+        {
           "worldId": "w9e99ce76d9eb67ebb0b9",
           "label": "value-v2-capacity",
           "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
           "hasTerminalArtifacts": true,
           "metaSha256": "985fc4b44c3a3d7623b9bbb59e1b97248f82cf30523779f41cb86ec6a03aefac"
+        },
+        {
+          "worldId": "wad12136f3b17d54d25c3",
+          "label": "lower-v1-planner",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "56699209b98a0924e223c308091aa5b1f6959e97896ec7ecbb9ab0e9d2b677d2"
         },
         {
           "worldId": "waeda567296abb9f833de",
@@ -2641,11 +2998,25 @@
           "metaSha256": "c3d568d6100c73a05a677dbd57e3a9ddf0299b9377a748b84d294d8440298a08"
         },
         {
+          "worldId": "wb77ec4a6363ae6033116",
+          "label": "moderate-transfer-v1-payment",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "8dd5b7b7d99ca3cea889e388a46c93731984b3963dff03d96f2835b35148236d"
+        },
+        {
           "worldId": "wb8f8ebcb1d0d64d2a2f0",
           "label": "levels-first-option",
           "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
           "hasTerminalArtifacts": true,
           "metaSha256": "0a71b9f72f0c3e74ec6b2b2bf082fd74a90eef54164fc98ebfafd0eaf9c7e4a6"
+        },
+        {
+          "worldId": "wbbb07b8d34caa979d33e",
+          "label": "lower-v1-benchmark",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "105f02e4b4ab91899eb391450fa07069bdc48f5c5ded1d48d02188c1010c4512"
         },
         {
           "worldId": "wbf91e5995833e471a122",
@@ -2660,6 +3031,20 @@
           "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
           "hasTerminalArtifacts": true,
           "metaSha256": "0bf68f2e671e77168c0630f656837ad51db5b09632eaf01db3ac59107a82fece"
+        },
+        {
+          "worldId": "wd8f72a73046cf47ad970",
+          "label": "corrected-v1-capacity",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "e694f3d062a6c2bb40794757fea1446b6c1ef77c13d0bc1fc5466601c1150786"
+        },
+        {
+          "worldId": "wdf72b71d8f99c9ebd82c",
+          "label": "corrected-transfer-v1-payment",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "c1ca6708d7a62a82d38f22d45b214df89c2e6a337b3a6edb6f3817d2bdd7e5e9"
         },
         {
           "worldId": "we172544a3931ba0ba03d",
@@ -2695,6 +3080,13 @@
           "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
           "hasTerminalArtifacts": true,
           "metaSha256": "d03b8f5f8ef5c8c743de58f0ff1a974a83c8f7fb25fb5e71fa3c64dd70780838"
+        },
+        {
+          "worldId": "wfa8aa5f5517d8ee48043",
+          "label": "corrected-transfer-v1-payment",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "1f2709b7512fe020cd862d9172a651d0c2db0154a05ec59f17a5f9ff391595be"
         }
       ],
       "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
@@ -2862,6 +3254,20 @@
       "eligibleForFreshValidation": false,
       "worlds": [
         {
+          "worldId": "w084ad46f757592fafb38",
+          "label": "lower-v1-planner",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "f0f280094993f312bfdee5b74d37e503abe78b3530052cfdc01547819181368c"
+        },
+        {
+          "worldId": "w15100e0f0137723f9dd4",
+          "label": "lower-v1-benchmark",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "8886190c329309772e234f3c18cb5f4f29fd4f11d2c7bc50eed5b753d03b23f4"
+        },
+        {
           "worldId": "w1ba57cb7df8f46c66227",
           "label": "value-v2-capacity",
           "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
@@ -2876,11 +3282,25 @@
           "metaSha256": "688a674e959f8ecff8e9a09c68a70225f777d5b023b705a686800253d591eb31"
         },
         {
+          "worldId": "w2998b0a571c5c158c036",
+          "label": "lower-v1-planner",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "aea5032f6e06d4294c389715af0372ff1d05838a290826c7b56f7444ed92c15f"
+        },
+        {
           "worldId": "w2c5eb295add36a159cd3",
           "label": "levels-factorial-economics",
           "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
           "hasTerminalArtifacts": true,
           "metaSha256": "1467683bfc686f44ce8395756ed298dfb57500d0b8780c114d161459f7dba7fd"
+        },
+        {
+          "worldId": "w2eee91e2c3c096d94fcb",
+          "label": "corrected-transfer-v1-joint",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "cdb4c46ea1a0c88c638c9629d5a9bd6a3383276dbde08f04a39da0f0ca1beb14"
         },
         {
           "worldId": "w3895c62b96546f004435",
@@ -2918,11 +3338,25 @@
           "metaSha256": "6ecd77582aa59f1d112a5d9075fb2e4a371d4c877c672eee2c9bcb253d04c475"
         },
         {
+          "worldId": "w4a2ab0ab101564743239",
+          "label": "corrected-transfer-v1-payment",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "0d1a348e2ec40205452a207e0e12833bd782ea6fce9cf029e56c93f8dc8334e1"
+        },
+        {
           "worldId": "w520345cfa861a3014f9b",
           "label": "levels-control",
           "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
           "hasTerminalArtifacts": true,
           "metaSha256": "42c228e4ec5d3503c2cd34b95738228cd3e3bf593282751c8a026ee1388bcd2f"
+        },
+        {
+          "worldId": "w53236a0e9eb12f7ba063",
+          "label": "corrected-v1-capacity",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "142dbbf4c0357496ae6b50756c0be2fe72d8ae125018b8396933c4bd0a2cf767"
         },
         {
           "worldId": "w5bd9370b385b3afab88d",
@@ -2953,11 +3387,32 @@
           "metaSha256": "827c30c17e0253bfdc0d030fac5e20d09ac583dff11fbe200df7747f913ed6b8"
         },
         {
+          "worldId": "w8170a0b6bc8549797bb7",
+          "label": "corrected-transfer-v1-payment",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "0c1dad566dbef46c0c47b8e0afb285c6e44c9dc279f4ba22408c4e5c94b0edb8"
+        },
+        {
           "worldId": "w865af007c8c4d2826911",
           "label": "levels-factorial-admission",
           "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
           "hasTerminalArtifacts": true,
           "metaSha256": "26fef11e02a551d1b28efb79722a692febcc65f74941e28e42741d3cb568e77d"
+        },
+        {
+          "worldId": "w872f6969a9c19a4a7737",
+          "label": "lower-v1-benchmark",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "ee58fcc279d74bd5551e8622f61d54897dd271549c0250bc3548de5c79069c65"
+        },
+        {
+          "worldId": "w8b39874f44df1fb11927",
+          "label": "moderate-transfer-v1-payment",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "267aff0856d41050b4e5e4cb5e8722ed1bfe05a5c7c56b72fd3585f55601800b"
         },
         {
           "worldId": "w8e54c6239c49e7ec4c6b",
@@ -2967,11 +3422,60 @@
           "metaSha256": "2cff5e553890121f0de030b163aece71fb64ef2ca9b4d78e41656f7441a21dbd"
         },
         {
+          "worldId": "w92f6ea2ac05be84ec7f6",
+          "label": "corrected-v1-payment",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "40dbd32246dcef37ca903d7d82887e1af028478f0f61615e1f0809ae5e033045"
+        },
+        {
+          "worldId": "w99d27eca03f592a534fa",
+          "label": "corrected-transfer-v1-joint",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "20d5059c82b87952247c796e939cde1e511b499143f22c087158aa053b212fa1"
+        },
+        {
+          "worldId": "w9b3e4ff4c535d2b22cbd",
+          "label": "lower-v1-planner",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "add3729f00cc665371610a63e249e89b4fe0f755d652f3cb8416e1f75e1ef66c"
+        },
+        {
+          "worldId": "wa139dbe6bba72275a0da",
+          "label": "lower-v1-planner",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "519056765767280ab2be7de3a8aca60e70af593610a88508200480d3d1fc142a"
+        },
+        {
+          "worldId": "wa145a8ef000b7c3d78ae",
+          "label": "moderate-transfer-v1-payment",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "bbe463018ff3ca003dfe53079525eb6ce2b7fd34a3a924808142b57714b08d9d"
+        },
+        {
+          "worldId": "wa53e9c04e30484918239",
+          "label": "lower-v1-benchmark",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "1518efaf366a7a35ffce9727a5f90c60394cec106f65df9ecf8b861ab79ae524"
+        },
+        {
           "worldId": "wab80f10837679f27d1e2",
           "label": "levels-first-option",
           "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
           "hasTerminalArtifacts": true,
           "metaSha256": "8892e27ce2b4898b2084260ecf0fd9f22ec0d26926ddc4ae39f3bbd3fddc6898"
+        },
+        {
+          "worldId": "wb991850affc4836fb3b8",
+          "label": "corrected-transfer-v1-payment",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "6161ae0e99684100bfb420d6bd4eceec69761c72a248d1a86b3fc5250ec0f61a"
         },
         {
           "worldId": "wbf4daaa0a55e39e76ed0",
@@ -2993,6 +3497,20 @@
           "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
           "hasTerminalArtifacts": true,
           "metaSha256": "42ed2f6e518248d58cc33146c204deba3c043b05fcb076b77347a0d84addcdfe"
+        },
+        {
+          "worldId": "wca076c37abfc10536c76",
+          "label": "corrected-v1-joint",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "7ca21a525695bd90b6542250bc900b1f2db699a39bfd448473847bc56dd41726"
+        },
+        {
+          "worldId": "wd05d1791b4e6ba1f3d46",
+          "label": "corrected-transfer-v1-joint",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "eee6422d7d9b8b66037c3717bfa54e6408fa17b1157c06138c409435a160e3c4"
         },
         {
           "worldId": "we17f8cd37363e757fb2b",
@@ -3035,6 +3553,13 @@
           "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
           "hasTerminalArtifacts": true,
           "metaSha256": "3688c43e5b8ea194da85c360499cd05ac8590fe1be8d4997cc3c8e4a54c56c3d"
+        },
+        {
+          "worldId": "wfe156eed4a6abf5d75d1",
+          "label": "lower-v1-benchmark",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "7a674f7ed7505c20efc78e8882a9fd7c83d568145e50a7a04c5594f5098b19b7"
         }
       ],
       "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."

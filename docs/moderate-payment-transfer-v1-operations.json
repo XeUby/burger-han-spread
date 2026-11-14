@@ -1,0 +1,58 @@
+{
+  "checkedAt": "2026-11-14T09:53:49.654Z",
+  "plan": "experiments/moderate-payment-transfer-v1.json",
+  "maximumObservedOccupancyBeforeCreation": 8,
+  "worlds": [
+    {
+      "worldId": "wb77ec4a6363ae6033116",
+      "kind": "practice",
+      "level": 2,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": true,
+      "label": "moderate-transfer-v1-payment",
+      "seed": "levels-development-2dba6ebe7258e63082c0",
+      "completedPolicyWallSeconds": 116.225
+    },
+    {
+      "worldId": "w8b39874f44df1fb11927",
+      "kind": "practice",
+      "level": 3,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": true,
+      "label": "moderate-transfer-v1-payment",
+      "seed": "levels-development-fbc5ca1adb2a1671179f",
+      "completedPolicyWallSeconds": 114.278
+    },
+    {
+      "worldId": "wa145a8ef000b7c3d78ae",
+      "kind": "practice",
+      "level": 2,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": true,
+      "label": "moderate-transfer-v1-payment",
+      "seed": "levels-development-fbc5ca1adb2a1671179f",
+      "completedPolicyWallSeconds": 109.215
+    },
+    {
+      "worldId": "w76da10056bbeece800f9",
+      "kind": "practice",
+      "level": 3,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": true,
+      "label": "moderate-transfer-v1-payment",
+      "seed": "levels-development-2dba6ebe7258e63082c0",
+      "completedPolicyWallSeconds": 109.512
+    }
+  ],
+  "unfinishedTeamWorlds": [],
+  "otherUnfinishedWorlds": [],
+  "limitation": "A shared local lock protects creation among cooperating runners. Server occupancy checks cannot prove the count between observations for external runners. No other runner's world was altered."
+}

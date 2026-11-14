@@ -1,0 +1,333 @@
+{
+  "generatedAt": "2026-11-14T10:00:53.067850+00:00",
+  "officialSnapshotAt": "2026-11-14T09:59:02.918Z",
+  "officialSnapshotSha256": "9346139446c4cb19ffa33263360d2054866a5b594f13c969fcaa9d5090401ec9",
+  "protocolSha256": "e02c6430a40dbe7b8872efd62ca28ab66667b1b5f28dde129026d3c0e6fcbaa7",
+  "season": 5,
+  "complete": false,
+  "completed": 1,
+  "expected": 20,
+  "lastCompletedAt": "2026-11-14T09:57:46.158Z",
+  "summary": [
+    {
+      "level": 8,
+      "completed": 1,
+      "qualifiedWeeks": 1,
+      "qualificationLower95": 0.05,
+      "totalProfitEuros": 7850.21,
+      "orders": 259,
+      "onTimeShare": 0.972972972972973,
+      "minimumOnTimeShare": 0.972972972972973,
+      "undelivered": 0,
+      "failedVisits": 0,
+      "driverPaymentsEuros": 15956.62,
+      "refundsEuros": 441.01,
+      "finesEuros": 0.0,
+      "actionErrors": 0,
+      "recoveries": 0,
+      "officialRank": null,
+      "officialPlayed": 1,
+      "officialQualified": false,
+      "leader": {
+        "team": "juhus",
+        "name": "Juhus",
+        "played": 5,
+        "totalProfitEuros": 79002.7
+      }
+    },
+    {
+      "level": 7,
+      "completed": 0,
+      "qualifiedWeeks": 0,
+      "qualificationLower95": 0,
+      "totalProfitEuros": 0.0,
+      "orders": 0,
+      "onTimeShare": null,
+      "minimumOnTimeShare": null,
+      "undelivered": 0,
+      "failedVisits": 0,
+      "driverPaymentsEuros": 0.0,
+      "refundsEuros": 0.0,
+      "finesEuros": 0.0,
+      "actionErrors": 0,
+      "recoveries": 0,
+      "officialRank": null,
+      "officialPlayed": 0,
+      "officialQualified": false,
+      "leader": {
+        "team": "klmisbest",
+        "name": "klmisbest",
+        "played": 5,
+        "totalProfitEuros": 59112.07
+      }
+    },
+    {
+      "level": 6,
+      "completed": 0,
+      "qualifiedWeeks": 0,
+      "qualificationLower95": 0,
+      "totalProfitEuros": 0.0,
+      "orders": 0,
+      "onTimeShare": null,
+      "minimumOnTimeShare": null,
+      "undelivered": 0,
+      "failedVisits": 0,
+      "driverPaymentsEuros": 0.0,
+      "refundsEuros": 0.0,
+      "finesEuros": 0.0,
+      "actionErrors": 0,
+      "recoveries": 0,
+      "officialRank": null,
+      "officialPlayed": 0,
+      "officialQualified": false,
+      "leader": {
+        "team": "house-strong",
+        "name": "House best",
+        "played": 5,
+        "totalProfitEuros": 40787.15
+      }
+    },
+    {
+      "level": 5,
+      "completed": 0,
+      "qualifiedWeeks": 0,
+      "qualificationLower95": 0,
+      "totalProfitEuros": 0.0,
+      "orders": 0,
+      "onTimeShare": null,
+      "minimumOnTimeShare": null,
+      "undelivered": 0,
+      "failedVisits": 0,
+      "driverPaymentsEuros": 0.0,
+      "refundsEuros": 0.0,
+      "finesEuros": 0.0,
+      "actionErrors": 0,
+      "recoveries": 0,
+      "officialRank": null,
+      "officialPlayed": 0,
+      "officialQualified": false,
+      "leader": {
+        "team": "house-strong",
+        "name": "House best",
+        "played": 5,
+        "totalProfitEuros": 33872.86
+      }
+    }
+  ],
+  "worlds": [
+    {
+      "level": 8,
+      "run": 1,
+      "status": "complete",
+      "worldId": "w49c9ef9eb9aec00635fb",
+      "startedAt": "2026-11-14T09:56:28.562Z",
+      "server": {
+        "worldId": "w49c9ef9eb9aec00635fb",
+        "kind": "practice",
+        "level": 8,
+        "parent": null,
+        "season": 5,
+        "boardRun": 1,
+        "ended": true
+      },
+      "runtimeFailures": [],
+      "completedAt": "2026-11-14T09:57:46.158Z",
+      "score": {
+        "marginCents": 785021,
+        "revenueCents": 2424784,
+        "marginShare": 0.323748837009812,
+        "wonOrders": 259,
+        "onTimeShare": 0.972972972972973,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 259,
+        "onTimeOrders": 252,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00380",
+          "R00532",
+          "R00588",
+          "R00627",
+          "R00827",
+          "R00871",
+          "R01006"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 2424784,
+        "driver_fee": -1595662,
+        "late_refund": -44101
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w49c9ef9eb9aec00635fb.meta.json",
+          "sha256": "4b8f74006d25520c0e23693fbeac407f13c8bca32197409f0b7f1cdef501713b"
+        },
+        "score": {
+          "path": "runs/w49c9ef9eb9aec00635fb.score.json",
+          "sha256": "7e3c1111e93e0af1dd251456c650a615ffb2f279b6c5dd5fe3506348f7ce9648"
+        },
+        "snapshot": {
+          "path": "runs/w49c9ef9eb9aec00635fb.snapshot.json",
+          "sha256": "40fe5edfac559b47b1b9bf59b455fdfc37e5b76f1def141f9b6f07f11f9ceb8b"
+        },
+        "events": {
+          "path": "runs/w49c9ef9eb9aec00635fb.events.json",
+          "sha256": "7f730514b277f7f1c5c21ef823bf81833f22b9b3f538f7e33c6c77d9176ac593"
+        },
+        "errors": {
+          "path": "runs/w49c9ef9eb9aec00635fb.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w49c9ef9eb9aec00635fb.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "level": 8,
+      "run": 2,
+      "status": "creation_rejected",
+      "creationFailures": [
+        {
+          "event": "failed",
+          "level": 8,
+          "run": 2,
+          "error": "Error: Ranking run 1 at level 8 has not ended; play it to its end or delete it first. client.worlds() lists them; client.world(worldId).delete() deletes one (HTTP 409)",
+          "at": "2026-11-14T09:56:28.884Z"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "run": 3,
+      "status": "creation_rejected",
+      "creationFailures": [
+        {
+          "event": "failed",
+          "level": 8,
+          "run": 3,
+          "error": "Error: Ranking run 1 at level 8 has not ended; play it to its end or delete it first. client.worlds() lists them; client.world(worldId).delete() deletes one (HTTP 409)",
+          "at": "2026-11-14T09:56:28.994Z"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "run": 4,
+      "status": "not_started"
+    },
+    {
+      "level": 8,
+      "run": 5,
+      "status": "not_started"
+    },
+    {
+      "level": 7,
+      "run": 1,
+      "status": "not_started"
+    },
+    {
+      "level": 7,
+      "run": 2,
+      "status": "not_started"
+    },
+    {
+      "level": 7,
+      "run": 3,
+      "status": "not_started"
+    },
+    {
+      "level": 7,
+      "run": 4,
+      "status": "not_started"
+    },
+    {
+      "level": 7,
+      "run": 5,
+      "status": "not_started"
+    },
+    {
+      "level": 6,
+      "run": 1,
+      "status": "not_started"
+    },
+    {
+      "level": 6,
+      "run": 2,
+      "status": "not_started"
+    },
+    {
+      "level": 6,
+      "run": 3,
+      "status": "not_started"
+    },
+    {
+      "level": 6,
+      "run": 4,
+      "status": "not_started"
+    },
+    {
+      "level": 6,
+      "run": 5,
+      "status": "not_started"
+    },
+    {
+      "level": 5,
+      "run": 1,
+      "status": "not_started"
+    },
+    {
+      "level": 5,
+      "run": 2,
+      "status": "not_started"
+    },
+    {
+      "level": 5,
+      "run": 3,
+      "status": "not_started"
+    },
+    {
+      "level": 5,
+      "run": 4,
+      "status": "not_started"
+    },
+    {
+      "level": 5,
+      "run": 5,
+      "status": "not_started"
+    }
+  ],
+  "maximumObservedOccupancyBeforeCreation": 1,
+  "unfinishedTeamWorlds": [],
+  "nonWorldFailures": [
+    {
+      "event": "failed",
+      "level": 8,
+      "run": 2,
+      "error": "Error: Ranking run 1 at level 8 has not ended; play it to its end or delete it first. client.worlds() lists them; client.world(worldId).delete() deletes one (HTTP 409)",
+      "at": "2026-11-14T09:56:28.884Z"
+    },
+    {
+      "event": "failed",
+      "level": 8,
+      "run": 3,
+      "error": "Error: Ranking run 1 at level 8 has not ended; play it to its end or delete it first. client.worlds() lists them; client.world(worldId).delete() deletes one (HTTP 409)",
+      "at": "2026-11-14T09:56:28.994Z"
+    }
+  ],
+  "limitations": [
+    "Explicitly authorized deadline deployment from best completed development evidence. This is not statistical promotion, not an untouched24-pair validation, and not a qualification guarantee. The prospective validation protocol remains unchanged.",
+    "Completed weeks used the frozen level-aware policy. No ranked-outcome tuning or replacement. Related levels are not independent seed blocks.",
+    "Qualification bounds are descriptive exact binomial bounds under IID-week assumptions; five successes give only54.93% lower confidence. Ranked weeks are not a randomized representative qualification guarantee.",
+    "Leaderboard positions and leader gaps refer only to the recorded snapshot of the same season and matched run numbers. No unmatched practice-to-leader ranking claim.",
+    "Levels 5\u20138 were separately authorized, starting with 8. The upper runner stopped after two rejected concurrent creations; only one level 8 week completed. No final or test final was entered."
+  ]
+}

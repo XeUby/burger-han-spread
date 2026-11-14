@@ -1,0 +1,82 @@
+{
+  "checkedAt": "2026-11-14T09:53:48.755Z",
+  "plan": "experiments/level1-corrected-economics-v1.json",
+  "maximumObservedOccupancyBeforeCreation": 4,
+  "worlds": [
+    {
+      "worldId": "w8487682446873d6bfad6",
+      "kind": "practice",
+      "level": 1,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": true,
+      "label": "corrected-v1-payment",
+      "seed": "levels-development-2dba6ebe7258e63082c0",
+      "completedPolicyWallSeconds": 96.655
+    },
+    {
+      "worldId": "wd8f72a73046cf47ad970",
+      "kind": "practice",
+      "level": 1,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": true,
+      "label": "corrected-v1-capacity",
+      "seed": "levels-development-2dba6ebe7258e63082c0",
+      "completedPolicyWallSeconds": 80.622
+    },
+    {
+      "worldId": "w273c9e0e1663fdc68a40",
+      "kind": "practice",
+      "level": 1,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": true,
+      "label": "corrected-v1-joint",
+      "seed": "levels-development-2dba6ebe7258e63082c0",
+      "completedPolicyWallSeconds": 92.551
+    },
+    {
+      "worldId": "w53236a0e9eb12f7ba063",
+      "kind": "practice",
+      "level": 1,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": true,
+      "label": "corrected-v1-capacity",
+      "seed": "levels-development-fbc5ca1adb2a1671179f",
+      "completedPolicyWallSeconds": 89.978
+    },
+    {
+      "worldId": "w92f6ea2ac05be84ec7f6",
+      "kind": "practice",
+      "level": 1,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": true,
+      "label": "corrected-v1-payment",
+      "seed": "levels-development-fbc5ca1adb2a1671179f",
+      "completedPolicyWallSeconds": 86.762
+    },
+    {
+      "worldId": "wca076c37abfc10536c76",
+      "kind": "practice",
+      "level": 1,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": true,
+      "label": "corrected-v1-joint",
+      "seed": "levels-development-fbc5ca1adb2a1671179f",
+      "completedPolicyWallSeconds": 86.008
+    }
+  ],
+  "unfinishedTeamWorlds": [],
+  "otherUnfinishedWorlds": [],
+  "limitation": "A shared local lock protects creation among cooperating runners. Server occupancy checks cannot prove the count between observations for external runners. No other runner's world was altered."
+}

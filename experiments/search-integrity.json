@@ -43,13 +43,13 @@
     "desiredConcurrentPracticeWorlds": 8,
     "maximumUnfinishedTeamPracticeWorlds": 8,
     "coordination": "User explicitly increased the limit at approximately11:35Helsinki on14November: remove4worldlimit,go8. This supersedes the four-world limit. Check shared occupancy before every serialized creation and use runs/team-world-creation.lock. Earlier running manifests retain their more restrictive guards; new eight-world manifests record the amendment. Never duplicate a runner after a polling timeout.",
-    "rankingAllowed": true,
+    "rankingAllowed": false,
     "currentRankingAuthorization": {
-      "protocol": "experiments/levels-noon-protocol.json",
-      "instruction": "start submitting best models/policies for ranking starting level 1-4. Pause before 5-8 if there is anything to learn from 1-4",
-      "scope": "Season5, five runs each at levels1–4 under one frozen policy; pause before5–8; no final or test final.",
+      "protocol": "experiments/levels-upper-protocol.json",
+      "instruction": "submit the best models for level 5-8 NOW; Start with 8; Do not overshoot past 12:00!",
+      "scope": "Season 5, levels 8,7,6,5; supersedes the earlier pause before 5\u20138; no final or test final.",
       "cutoff": "2026-11-14T09:59:55Z",
-      "evidence": "Explicitly authorized deadline deployment, not statistical promotion or24-pair validation."
+      "evidence": "Authorized deadline deployment, not statistical promotion."
     },
     "finalAllowed": false,
     "rankingAuthorization": {
@@ -59,6 +59,21 @@
       "cutoff": "2026-11-14T07:00:00Z"
     },
     "rankingClosed": {
+      "at": "2026-11-14T10:00:41.156364+00:00",
+      "reason": "Noon authorization expired. All twenty levels 1\u20134 worlds completed; one level 8 world completed; two concurrent creations rejected; levels 5\u20137 not started. No unfinished worlds or active ranked runner before noon. No further ranking without renewed authorization.",
+      "audits": [
+        "docs/levels-noon-ranked-audit.json",
+        "docs/levels-upper-ranked-audit.json"
+      ]
+    },
+    "priorNoonRankingAuthorization": {
+      "protocol": "experiments/levels-noon-protocol.json",
+      "instruction": "start submitting best models/policies for ranking starting level 1-4. Pause before 5-8 if there is anything to learn from 1-4",
+      "scope": "Season5, five runs each at levels1\u20134 under one frozen policy; pause before5\u20138; no final or test final.",
+      "cutoff": "2026-11-14T09:59:55Z",
+      "evidence": "Explicitly authorized deadline deployment, not statistical promotion or24-pair validation."
+    },
+    "priorRankingClosed": {
       "at": "2026-11-14T07:08:17.585468+00:00",
       "reason": "All 35 authorized ranked runs completed before the 09:00 Helsinki cutoff; authorization window has closed.",
       "audit": "docs/levels-ranked-audit.json"

@@ -1,0 +1,1775 @@
+{
+  "generatedAt": "2026-11-14T10:00:54.785290+00:00",
+  "officialSnapshotAt": "2026-11-14T09:53:16.479Z",
+  "officialSnapshotSha256": "fd6faa32a4eadd457a7bd11f2f2e22a2c1f2f58c0620cdde07003d7e95b19ad0",
+  "protocolSha256": "ba0313eb243a0c4d8cf5b46819b3a6002a2961c263b5cee39016a992f45a656f",
+  "season": 5,
+  "complete": true,
+  "completed": 20,
+  "expected": 20,
+  "lastCompletedAt": "2026-11-14T09:52:52.147Z",
+  "summary": [
+    {
+      "level": 1,
+      "completed": 5,
+      "qualifiedWeeks": 5,
+      "qualificationLower95": 0.5492802716530588,
+      "totalProfitEuros": 36942.42,
+      "orders": 3127,
+      "onTimeShare": 0.9731371921969939,
+      "minimumOnTimeShare": 0.9667774086378738,
+      "undelivered": 0,
+      "failedVisits": 0,
+      "driverPaymentsEuros": 192280.15,
+      "refundsEuros": 2640.35,
+      "finesEuros": 0.0,
+      "actionErrors": 0,
+      "recoveries": 0,
+      "officialRank": 5,
+      "officialPlayed": 5,
+      "officialQualified": true,
+      "leader": {
+        "team": "northbound-dispatch",
+        "name": "Northbound Dispatch",
+        "played": 5,
+        "totalProfitEuros": 60119.1
+      },
+      "matchedLeaderGapEuros": 23176.68
+    },
+    {
+      "level": 2,
+      "completed": 5,
+      "qualifiedWeeks": 5,
+      "qualificationLower95": 0.5492802716530588,
+      "totalProfitEuros": 38695.2,
+      "orders": 3100,
+      "onTimeShare": 0.9812903225806452,
+      "minimumOnTimeShare": 0.974025974025974,
+      "undelivered": 0,
+      "failedVisits": 0,
+      "driverPaymentsEuros": 184453.73,
+      "refundsEuros": 1665.85,
+      "finesEuros": 0.0,
+      "actionErrors": 0,
+      "recoveries": 0,
+      "officialRank": 5,
+      "officialPlayed": 5,
+      "officialQualified": true,
+      "leader": {
+        "team": "northbound-dispatch",
+        "name": "Northbound Dispatch",
+        "played": 5,
+        "totalProfitEuros": 57654.23
+      },
+      "matchedLeaderGapEuros": 18959.030000000006
+    },
+    {
+      "level": 3,
+      "completed": 5,
+      "qualifiedWeeks": 5,
+      "qualificationLower95": 0.5492802716530588,
+      "totalProfitEuros": 44806.98,
+      "orders": 3190,
+      "onTimeShare": 0.9836990595611286,
+      "minimumOnTimeShare": 0.9744744744744744,
+      "undelivered": 0,
+      "failedVisits": 0,
+      "driverPaymentsEuros": 177772.29,
+      "refundsEuros": 1484.25,
+      "finesEuros": 0.0,
+      "actionErrors": 0,
+      "recoveries": 0,
+      "officialRank": 5,
+      "officialPlayed": 5,
+      "officialQualified": true,
+      "leader": {
+        "team": "northbound-dispatch",
+        "name": "Northbound Dispatch",
+        "played": 5,
+        "totalProfitEuros": 79821.72
+      },
+      "matchedLeaderGapEuros": 35014.74
+    },
+    {
+      "level": 4,
+      "completed": 5,
+      "qualifiedWeeks": 5,
+      "qualificationLower95": 0.5492802716530588,
+      "totalProfitEuros": 15381.76,
+      "orders": 1555,
+      "onTimeShare": 0.9672025723472669,
+      "minimumOnTimeShare": 0.9575289575289575,
+      "undelivered": 0,
+      "failedVisits": 0,
+      "driverPaymentsEuros": 94356.24,
+      "refundsEuros": 1302.95,
+      "finesEuros": 0.0,
+      "actionErrors": 0,
+      "recoveries": 0,
+      "officialRank": 6,
+      "officialPlayed": 5,
+      "officialQualified": true,
+      "leader": {
+        "team": "northbound-dispatch",
+        "name": "Northbound Dispatch",
+        "played": 5,
+        "totalProfitEuros": 40283.09
+      },
+      "matchedLeaderGapEuros": 24901.329999999994
+    }
+  ],
+  "worlds": [
+    {
+      "level": 1,
+      "run": 1,
+      "status": "complete",
+      "worldId": "w92b0ed9510280d368553",
+      "startedAt": "2026-11-14T09:43:20.548Z",
+      "server": {
+        "worldId": "w92b0ed9510280d368553",
+        "kind": "practice",
+        "level": 1,
+        "parent": null,
+        "season": 5,
+        "boardRun": 1,
+        "ended": true
+      },
+      "runtimeFailures": [],
+      "completedAt": "2026-11-14T09:44:50.907Z",
+      "score": {
+        "marginCents": 832702,
+        "revenueCents": 4782100,
+        "marginShare": 0.17412893916898434,
+        "wonOrders": 641,
+        "onTimeShare": 0.9750390015600624,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 641,
+        "onTimeOrders": 625,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00164",
+          "R00209",
+          "R00222",
+          "R00223",
+          "R00259",
+          "R00261",
+          "R00263",
+          "R00303",
+          "R00442",
+          "R00491",
+          "R00533",
+          "R00748",
+          "R00813",
+          "R00814",
+          "R00826",
+          "R00904"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 4782100,
+        "driver_fee": -3886532,
+        "release_fee": -10756,
+        "late_refund": -52110
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w92b0ed9510280d368553.meta.json",
+          "sha256": "e0271079046a423c4b7c19b316d98ec3e74c0b69c07b5b87e5a104a9c158093d"
+        },
+        "score": {
+          "path": "runs/w92b0ed9510280d368553.score.json",
+          "sha256": "ca65d2e933f2ed914fbaa36bd36e0a76a547a4ac73405182b6524706d2054ba7"
+        },
+        "snapshot": {
+          "path": "runs/w92b0ed9510280d368553.snapshot.json",
+          "sha256": "cca6c2869172bd650a0da307834509af1dcede9fa7ea8b0e447f08685ccfdc26"
+        },
+        "events": {
+          "path": "runs/w92b0ed9510280d368553.events.json",
+          "sha256": "b7fe8c59fbb415cfc0199abe2e873fae06d46093af2f4437af650c67eeac1bf2"
+        },
+        "errors": {
+          "path": "runs/w92b0ed9510280d368553.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w92b0ed9510280d368553.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "level": 1,
+      "run": 2,
+      "status": "complete",
+      "worldId": "wa2daa9688ea60997b35c",
+      "startedAt": "2026-11-14T09:44:51.139Z",
+      "server": {
+        "worldId": "wa2daa9688ea60997b35c",
+        "kind": "practice",
+        "level": 1,
+        "parent": null,
+        "season": 5,
+        "boardRun": 2,
+        "ended": true
+      },
+      "runtimeFailures": [],
+      "completedAt": "2026-11-14T09:46:33.239Z",
+      "score": {
+        "marginCents": 819515,
+        "revenueCents": 4787100,
+        "marginShare": 0.17119237116417038,
+        "wonOrders": 649,
+        "onTimeShare": 0.9768875192604006,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 649,
+        "onTimeOrders": 634,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00006",
+          "R00047",
+          "R00051",
+          "R00077",
+          "R00182",
+          "R00286",
+          "R00295",
+          "R00613",
+          "R00636",
+          "R00682",
+          "R00725",
+          "R00727",
+          "R00749",
+          "R00786",
+          "R00834"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 4787100,
+        "driver_fee": -3919412,
+        "late_refund": -46415,
+        "release_fee": -1758
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/wa2daa9688ea60997b35c.meta.json",
+          "sha256": "7bb0c54fc7827d38399e8bf3353b59b07184160eef1d27d23cef1b2019db635b"
+        },
+        "score": {
+          "path": "runs/wa2daa9688ea60997b35c.score.json",
+          "sha256": "38a073c3802ad84e942a148d41d979085de8f8a7629d0f5f9f069561222d3f3c"
+        },
+        "snapshot": {
+          "path": "runs/wa2daa9688ea60997b35c.snapshot.json",
+          "sha256": "d80f863b98d72e28a99edc16b9d321bfaf43d2e7de50e5e96dd0e6f2b1791629"
+        },
+        "events": {
+          "path": "runs/wa2daa9688ea60997b35c.events.json",
+          "sha256": "f654dde2fa6e184e121912b7306e4579e68064297d34a4c34297ff1494863dfe"
+        },
+        "errors": {
+          "path": "runs/wa2daa9688ea60997b35c.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/wa2daa9688ea60997b35c.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "level": 1,
+      "run": 3,
+      "status": "complete",
+      "worldId": "w2cb7e3099b266602dede",
+      "startedAt": "2026-11-14T09:46:33.407Z",
+      "server": {
+        "worldId": "w2cb7e3099b266602dede",
+        "kind": "practice",
+        "level": 1,
+        "parent": null,
+        "season": 5,
+        "boardRun": 3,
+        "ended": true
+      },
+      "runtimeFailures": [],
+      "completedAt": "2026-11-14T09:48:06.382Z",
+      "score": {
+        "marginCents": 487263,
+        "revenueCents": 4671000,
+        "marginShare": 0.10431663455362877,
+        "wonOrders": 609,
+        "onTimeShare": 0.9671592775041051,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 609,
+        "onTimeOrders": 589,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00063",
+          "R00096",
+          "R00110",
+          "R00112",
+          "R00117",
+          "R00126",
+          "R00129",
+          "R00130",
+          "R00192",
+          "R00452",
+          "R00508",
+          "R00521",
+          "R00565",
+          "R00678",
+          "R00701",
+          "R00736",
+          "R00808",
+          "R00814",
+          "R00835",
+          "R00839"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 4671000,
+        "driver_fee": -4090849,
+        "release_fee": -9948,
+        "late_refund": -82940
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w2cb7e3099b266602dede.meta.json",
+          "sha256": "ca6685b5ac28a6b05b6e2c145c7a7d800f8b04fb3a329fdffdf3c3fd5f649b47"
+        },
+        "score": {
+          "path": "runs/w2cb7e3099b266602dede.score.json",
+          "sha256": "11968725757b2b3df66ef853bfb760c343f9aeb7c072ee3fd64ce707b8e6991f"
+        },
+        "snapshot": {
+          "path": "runs/w2cb7e3099b266602dede.snapshot.json",
+          "sha256": "4b78059dc93b9df2a3c7881be95aae20bcb47fef2c4b8dfa4e70f8d12d245617"
+        },
+        "events": {
+          "path": "runs/w2cb7e3099b266602dede.events.json",
+          "sha256": "891a09e0576c8ba783926d843cb3df32ccb11f0ea2e5f2821e78f80a55d0baa1"
+        },
+        "errors": {
+          "path": "runs/w2cb7e3099b266602dede.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w2cb7e3099b266602dede.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "level": 1,
+      "run": 4,
+      "status": "complete",
+      "worldId": "w53ba157be5ea5dc37df7",
+      "startedAt": "2026-11-14T09:48:06.635Z",
+      "server": {
+        "worldId": "w53ba157be5ea5dc37df7",
+        "kind": "practice",
+        "level": 1,
+        "parent": null,
+        "season": 5,
+        "boardRun": 4,
+        "ended": true
+      },
+      "runtimeFailures": [],
+      "completedAt": "2026-11-14T09:49:41.870Z",
+      "score": {
+        "marginCents": 887410,
+        "revenueCents": 4586300,
+        "marginShare": 0.19349148551119638,
+        "wonOrders": 626,
+        "onTimeShare": 0.9792332268370607,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 626,
+        "onTimeOrders": 613,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00243",
+          "R00245",
+          "R00247",
+          "R00278",
+          "R00358",
+          "R00584",
+          "R00585",
+          "R00760",
+          "R00762",
+          "R00772",
+          "R00790",
+          "R00841",
+          "R00891"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 4586300,
+        "driver_fee": -3642238,
+        "release_fee": -21297,
+        "late_refund": -35355
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w53ba157be5ea5dc37df7.meta.json",
+          "sha256": "9e86cdd1f175a6e8ac86f28475fb74b57534eed402fff01f2a523c110b2d321a"
+        },
+        "score": {
+          "path": "runs/w53ba157be5ea5dc37df7.score.json",
+          "sha256": "0bbf0d584b7ecdd626bf36ff1422f7c66a3233f50b07211d45b34dedf6e24f49"
+        },
+        "snapshot": {
+          "path": "runs/w53ba157be5ea5dc37df7.snapshot.json",
+          "sha256": "494acefe5c0794f83252d4b4c11e24a761cd7cfb863d6689976632faa5027891"
+        },
+        "events": {
+          "path": "runs/w53ba157be5ea5dc37df7.events.json",
+          "sha256": "ceb95f7e72fe4c420f15cbf273d98f9dc6b0314d08301d82d1ad7725e18ba643"
+        },
+        "errors": {
+          "path": "runs/w53ba157be5ea5dc37df7.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w53ba157be5ea5dc37df7.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "level": 1,
+      "run": 5,
+      "status": "complete",
+      "worldId": "w62d470cf7cf86028cfc3",
+      "startedAt": "2026-11-14T09:49:42.541Z",
+      "server": {
+        "worldId": "w62d470cf7cf86028cfc3",
+        "kind": "practice",
+        "level": 1,
+        "parent": null,
+        "season": 5,
+        "boardRun": 5,
+        "ended": true
+      },
+      "runtimeFailures": [],
+      "completedAt": "2026-11-14T09:51:16.161Z",
+      "score": {
+        "marginCents": 667352,
+        "revenueCents": 4419800,
+        "marginShare": 0.15099144757681343,
+        "wonOrders": 602,
+        "onTimeShare": 0.9667774086378738,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 602,
+        "onTimeOrders": 582,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00037",
+          "R00058",
+          "R00170",
+          "R00252",
+          "R00295",
+          "R00324",
+          "R00333",
+          "R00335",
+          "R00404",
+          "R00425",
+          "R00438",
+          "R00489",
+          "R00584",
+          "R00696",
+          "R00707",
+          "R00741",
+          "R00812",
+          "R00887",
+          "R00913",
+          "R00930"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 4419800,
+        "driver_fee": -3688984,
+        "release_fee": -16249,
+        "late_refund": -47215
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w62d470cf7cf86028cfc3.meta.json",
+          "sha256": "95d90b54e6762a5f3021c68605d0ee2320e77689af3e6b6fc92835d2f38854f7"
+        },
+        "score": {
+          "path": "runs/w62d470cf7cf86028cfc3.score.json",
+          "sha256": "0d57b6c894efa321d64b973bd8730114f0084f074954b36e2a228ba378e11c49"
+        },
+        "snapshot": {
+          "path": "runs/w62d470cf7cf86028cfc3.snapshot.json",
+          "sha256": "0fcf44224a7542ac2fcea99d2943e430984a69c4f1dd77d0edbaa397401fe86f"
+        },
+        "events": {
+          "path": "runs/w62d470cf7cf86028cfc3.events.json",
+          "sha256": "aab5944d9dc915507404d61262553acbd06858b041310ed9855b7cc35573452f"
+        },
+        "errors": {
+          "path": "runs/w62d470cf7cf86028cfc3.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w62d470cf7cf86028cfc3.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "level": 2,
+      "run": 1,
+      "status": "complete",
+      "worldId": "we3298027e53e4bafa324",
+      "startedAt": "2026-11-14T09:43:20.921Z",
+      "server": {
+        "worldId": "we3298027e53e4bafa324",
+        "kind": "practice",
+        "level": 2,
+        "parent": null,
+        "season": 5,
+        "boardRun": 1,
+        "ended": true
+      },
+      "runtimeFailures": [],
+      "completedAt": "2026-11-14T09:44:50.176Z",
+      "score": {
+        "marginCents": 848124,
+        "revenueCents": 4280700,
+        "marginShare": 0.19812740906861026,
+        "wonOrders": 627,
+        "onTimeShare": 0.9920255183413078,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 627,
+        "onTimeOrders": 622,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00020",
+          "R00145",
+          "R00187",
+          "R00211",
+          "R00410"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 4280700,
+        "driver_fee": -3400880,
+        "late_refund": -12760,
+        "release_fee": -18936
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/we3298027e53e4bafa324.meta.json",
+          "sha256": "be289961bc75d736bcc96f175d9c58b056e961a310fe562601cbbde065db51ea"
+        },
+        "score": {
+          "path": "runs/we3298027e53e4bafa324.score.json",
+          "sha256": "c08b585f3e9ba304a1ad645481e2f819dbead1cd98a81954bd505865e4a0c6bf"
+        },
+        "snapshot": {
+          "path": "runs/we3298027e53e4bafa324.snapshot.json",
+          "sha256": "78098ecc2243df3059526fcabe53400be6fa975d7a952865c20a298fecf33144"
+        },
+        "events": {
+          "path": "runs/we3298027e53e4bafa324.events.json",
+          "sha256": "ef79c8264ae9c694b574b468d1d20328efa1e5e67bca8b349635d281c504d4d3"
+        },
+        "errors": {
+          "path": "runs/we3298027e53e4bafa324.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/we3298027e53e4bafa324.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "level": 2,
+      "run": 2,
+      "status": "complete",
+      "worldId": "w4ebfe73e50aa31b53c65",
+      "startedAt": "2026-11-14T09:44:50.344Z",
+      "server": {
+        "worldId": "w4ebfe73e50aa31b53c65",
+        "kind": "practice",
+        "level": 2,
+        "parent": null,
+        "season": 5,
+        "boardRun": 2,
+        "ended": true
+      },
+      "runtimeFailures": [],
+      "completedAt": "2026-11-14T09:46:28.680Z",
+      "score": {
+        "marginCents": 819956,
+        "revenueCents": 4575100,
+        "marginShare": 0.1792214377827807,
+        "wonOrders": 616,
+        "onTimeShare": 0.974025974025974,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 616,
+        "onTimeOrders": 600,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00008",
+          "R00060",
+          "R00071",
+          "R00121",
+          "R00134",
+          "R00152",
+          "R00229",
+          "R00265",
+          "R00294",
+          "R00430",
+          "R00525",
+          "R00665",
+          "R00737",
+          "R00753",
+          "R00890",
+          "R00896"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 4575100,
+        "driver_fee": -3714679,
+        "late_refund": -40465
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w4ebfe73e50aa31b53c65.meta.json",
+          "sha256": "6327e9b7de253c51b6d119322b433f592935746be0b614b6c35d761861abefe9"
+        },
+        "score": {
+          "path": "runs/w4ebfe73e50aa31b53c65.score.json",
+          "sha256": "111f8adc792355be62a22d6cb9959f6b2555ca1da304eb240a23e673bb365fea"
+        },
+        "snapshot": {
+          "path": "runs/w4ebfe73e50aa31b53c65.snapshot.json",
+          "sha256": "1424b4afa7573d6fd5da201ecab88e9b25062e3b1f8857acb483c0ee4df77244"
+        },
+        "events": {
+          "path": "runs/w4ebfe73e50aa31b53c65.events.json",
+          "sha256": "3fd8a64c7bbbb0f72851b1ac18d257f05cdcb469a149e9e9a05dc9db1dec1ec8"
+        },
+        "errors": {
+          "path": "runs/w4ebfe73e50aa31b53c65.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w4ebfe73e50aa31b53c65.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "level": 2,
+      "run": 3,
+      "status": "complete",
+      "worldId": "wbe9129d89720fcb6542d",
+      "startedAt": "2026-11-14T09:46:28.859Z",
+      "server": {
+        "worldId": "wbe9129d89720fcb6542d",
+        "kind": "practice",
+        "level": 2,
+        "parent": null,
+        "season": 5,
+        "boardRun": 3,
+        "ended": true
+      },
+      "runtimeFailures": [],
+      "completedAt": "2026-11-14T09:48:02.050Z",
+      "score": {
+        "marginCents": 808441,
+        "revenueCents": 4513200,
+        "marginShare": 0.17912811309049012,
+        "wonOrders": 617,
+        "onTimeShare": 0.9870340356564019,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 617,
+        "onTimeOrders": 609,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00082",
+          "R00153",
+          "R00184",
+          "R00406",
+          "R00435",
+          "R00513",
+          "R00660",
+          "R00698"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 4513200,
+        "driver_fee": -3683344,
+        "late_refund": -16215,
+        "release_fee": -5200
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/wbe9129d89720fcb6542d.meta.json",
+          "sha256": "7a7c8be1f68914215ffaf90aaca147d26842a96db1638e16aecf33b263cb0719"
+        },
+        "score": {
+          "path": "runs/wbe9129d89720fcb6542d.score.json",
+          "sha256": "9351d66a824ce80a012d2f52bc82126ea0b853a618b19b33ad7aa8ad7b6d3d64"
+        },
+        "snapshot": {
+          "path": "runs/wbe9129d89720fcb6542d.snapshot.json",
+          "sha256": "c8bf427b22459b563622eadde34d5980de17422b7e8be23acb9476dbb7c1f222"
+        },
+        "events": {
+          "path": "runs/wbe9129d89720fcb6542d.events.json",
+          "sha256": "dd8e6f0ab57ee78f18fa5f2dadbbea6c96a1e7ed987e626890b3a561c3161491"
+        },
+        "errors": {
+          "path": "runs/wbe9129d89720fcb6542d.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/wbe9129d89720fcb6542d.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "level": 2,
+      "run": 4,
+      "status": "complete",
+      "worldId": "w2be18c1bb0a69b912914",
+      "startedAt": "2026-11-14T09:48:02.229Z",
+      "server": {
+        "worldId": "w2be18c1bb0a69b912914",
+        "kind": "practice",
+        "level": 2,
+        "parent": null,
+        "season": 5,
+        "boardRun": 4,
+        "ended": true
+      },
+      "runtimeFailures": [],
+      "completedAt": "2026-11-14T09:49:37.546Z",
+      "score": {
+        "marginCents": 690209,
+        "revenueCents": 4708700,
+        "marginShare": 0.14658164673901503,
+        "wonOrders": 633,
+        "onTimeShare": 0.9747235387045814,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 633,
+        "onTimeOrders": 617,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00071",
+          "R00198",
+          "R00199",
+          "R00215",
+          "R00377",
+          "R00394",
+          "R00623",
+          "R00632",
+          "R00713",
+          "R00724",
+          "R00822",
+          "R00870",
+          "R00896",
+          "R00901",
+          "R00906",
+          "R00912"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 4708700,
+        "driver_fee": -3956075,
+        "release_fee": -7396,
+        "late_refund": -55020
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w2be18c1bb0a69b912914.meta.json",
+          "sha256": "8c552baf73ec85ac86ae6612e9bc221c31e68f415746b4c6f176e67d53ed056c"
+        },
+        "score": {
+          "path": "runs/w2be18c1bb0a69b912914.score.json",
+          "sha256": "513cd56292174984ac7cf48269c52e16a17ef842dd96cecbed48de5ffef77daf"
+        },
+        "snapshot": {
+          "path": "runs/w2be18c1bb0a69b912914.snapshot.json",
+          "sha256": "e0e3801d2a5e97b4220753797ed3a3fb212a821e4adb626e763534e3dbc2ea51"
+        },
+        "events": {
+          "path": "runs/w2be18c1bb0a69b912914.events.json",
+          "sha256": "c96a50f13ae294d2722a6cd5b4eb1e7dbb4b0004749d62c78c84dbffb2dc0dda"
+        },
+        "errors": {
+          "path": "runs/w2be18c1bb0a69b912914.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w2be18c1bb0a69b912914.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "level": 2,
+      "run": 5,
+      "status": "complete",
+      "worldId": "w2a48c38a5661e2320241",
+      "startedAt": "2026-11-14T09:49:37.759Z",
+      "server": {
+        "worldId": "w2a48c38a5661e2320241",
+        "kind": "practice",
+        "level": 2,
+        "parent": null,
+        "season": 5,
+        "boardRun": 5,
+        "ended": true
+      },
+      "runtimeFailures": [],
+      "completedAt": "2026-11-14T09:51:14.020Z",
+      "score": {
+        "marginCents": 702790,
+        "revenueCents": 4441900,
+        "marginShare": 0.15821832999392152,
+        "wonOrders": 607,
+        "onTimeShare": 0.9785831960461285,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 607,
+        "onTimeOrders": 594,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00117",
+          "R00122",
+          "R00171",
+          "R00178",
+          "R00212",
+          "R00278",
+          "R00390",
+          "R00410",
+          "R00495",
+          "R00506",
+          "R00535",
+          "R00688",
+          "R00691"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 4441900,
+        "driver_fee": -3690395,
+        "release_fee": -6590,
+        "late_refund": -42125
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w2a48c38a5661e2320241.meta.json",
+          "sha256": "5d5d165756333174ec17ee4e7b11ae63a00e6c87b611080ae5329f71f070e847"
+        },
+        "score": {
+          "path": "runs/w2a48c38a5661e2320241.score.json",
+          "sha256": "76f3e205008486954fc47d90a0f950c74469e13425f428d11f6f37aa98b4aab5"
+        },
+        "snapshot": {
+          "path": "runs/w2a48c38a5661e2320241.snapshot.json",
+          "sha256": "6a10961d8939b4d3946dfa66ab59a83a08aaeec0f7bafc97dfa89146cfef5d08"
+        },
+        "events": {
+          "path": "runs/w2a48c38a5661e2320241.events.json",
+          "sha256": "2ca45d4dae761b8c0faa1fbbe85b5d931b140b548342d8891407929dd19653fb"
+        },
+        "errors": {
+          "path": "runs/w2a48c38a5661e2320241.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w2a48c38a5661e2320241.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "level": 3,
+      "run": 1,
+      "status": "complete",
+      "worldId": "w36627b34c1bd5cdb4665",
+      "startedAt": "2026-11-14T09:43:21.098Z",
+      "server": {
+        "worldId": "w36627b34c1bd5cdb4665",
+        "kind": "practice",
+        "level": 3,
+        "parent": null,
+        "season": 5,
+        "boardRun": 1,
+        "ended": true
+      },
+      "runtimeFailures": [],
+      "completedAt": "2026-11-14T09:44:50.324Z",
+      "score": {
+        "marginCents": 916268,
+        "revenueCents": 4236100,
+        "marginShare": 0.21629989849153702,
+        "wonOrders": 609,
+        "onTimeShare": 0.986863711001642,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 609,
+        "onTimeOrders": 601,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00073",
+          "R00203",
+          "R00456",
+          "R00664",
+          "R00738",
+          "R00844",
+          "R00880",
+          "R00958"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 4236100,
+        "driver_fee": -3294659,
+        "late_refund": -14730,
+        "release_fee": -10443
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w36627b34c1bd5cdb4665.meta.json",
+          "sha256": "6c003108411efcfcd1fd1bdfe976a33ba7aeba711fcb5263133278eb0e7ccb81"
+        },
+        "score": {
+          "path": "runs/w36627b34c1bd5cdb4665.score.json",
+          "sha256": "9258a0fc6459ed32da7aa1f7c1a6c51df441117ace1fc4f07275a0b754fa404f"
+        },
+        "snapshot": {
+          "path": "runs/w36627b34c1bd5cdb4665.snapshot.json",
+          "sha256": "1c3ad362756ec1dc8ca6e6bf129e6ea09afa98a73e4f43e5cda5edfc4175a5ac"
+        },
+        "events": {
+          "path": "runs/w36627b34c1bd5cdb4665.events.json",
+          "sha256": "1eeffa7595a8ec3ca5bce9509b587fe88bb8f143b35c0197131d7adf2de44eb4"
+        },
+        "errors": {
+          "path": "runs/w36627b34c1bd5cdb4665.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w36627b34c1bd5cdb4665.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "level": 3,
+      "run": 2,
+      "status": "complete",
+      "worldId": "wca427d455040109f238f",
+      "startedAt": "2026-11-14T09:44:50.592Z",
+      "server": {
+        "worldId": "wca427d455040109f238f",
+        "kind": "practice",
+        "level": 3,
+        "parent": null,
+        "season": 5,
+        "boardRun": 2,
+        "ended": true
+      },
+      "runtimeFailures": [],
+      "completedAt": "2026-11-14T09:46:32.959Z",
+      "score": {
+        "marginCents": 753823,
+        "revenueCents": 4566700,
+        "marginShare": 0.16506952503996322,
+        "wonOrders": 635,
+        "onTimeShare": 0.9858267716535433,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 635,
+        "onTimeOrders": 626,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00010",
+          "R00050",
+          "R00228",
+          "R00247",
+          "R00583",
+          "R00653",
+          "R00719",
+          "R00873",
+          "R00926"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 4566700,
+        "driver_fee": -3765654,
+        "release_fee": -21913,
+        "late_refund": -25310
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/wca427d455040109f238f.meta.json",
+          "sha256": "1c9bff150835612c1fd07bd42d6575c8d2d0bc4a372bc05b68e6a52e13b0b7f2"
+        },
+        "score": {
+          "path": "runs/wca427d455040109f238f.score.json",
+          "sha256": "87d9d87d09468ea7d15a2c37cdef1c40b0052dbafdfc54225da5fda563a42e6a"
+        },
+        "snapshot": {
+          "path": "runs/wca427d455040109f238f.snapshot.json",
+          "sha256": "5f158ec630b28d44c9cc2232d1d8c820f429c65974141b09c674aae93d5d560f"
+        },
+        "events": {
+          "path": "runs/wca427d455040109f238f.events.json",
+          "sha256": "ae9575bb6ba111d08f09e383cedc0b463289ea38572cbe7bb807fbbe60d30d91"
+        },
+        "errors": {
+          "path": "runs/wca427d455040109f238f.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/wca427d455040109f238f.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "level": 3,
+      "run": 3,
+      "status": "complete",
+      "worldId": "w4ced8adb47c5f862a24f",
+      "startedAt": "2026-11-14T09:46:33.205Z",
+      "server": {
+        "worldId": "w4ced8adb47c5f862a24f",
+        "kind": "practice",
+        "level": 3,
+        "parent": null,
+        "season": 5,
+        "boardRun": 3,
+        "ended": true
+      },
+      "runtimeFailures": [],
+      "completedAt": "2026-11-14T09:48:06.611Z",
+      "score": {
+        "marginCents": 956547,
+        "revenueCents": 4966000,
+        "marginShare": 0.19261921063229964,
+        "wonOrders": 666,
+        "onTimeShare": 0.9744744744744744,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 666,
+        "onTimeOrders": 649,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00058",
+          "R00253",
+          "R00267",
+          "R00275",
+          "R00383",
+          "R00386",
+          "R00413",
+          "R00452",
+          "R00536",
+          "R00544",
+          "R00630",
+          "R00692",
+          "R00739",
+          "R00824",
+          "R00833",
+          "R00847",
+          "R00950"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 4966000,
+        "driver_fee": -3944723,
+        "late_refund": -58735,
+        "release_fee": -5995
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w4ced8adb47c5f862a24f.meta.json",
+          "sha256": "9c876367a8c75de9078dec336f81d874cbede1e0dde7b6ffeaff8402bd354543"
+        },
+        "score": {
+          "path": "runs/w4ced8adb47c5f862a24f.score.json",
+          "sha256": "bf8bc7b35c2fd1e1dbbc2aa1cd97e1317065b25814753148b18aff904be009a8"
+        },
+        "snapshot": {
+          "path": "runs/w4ced8adb47c5f862a24f.snapshot.json",
+          "sha256": "13e7609e1e0f5e3ce5037510601f4c878ff1152a0e1642052e68bf474f1af9d8"
+        },
+        "events": {
+          "path": "runs/w4ced8adb47c5f862a24f.events.json",
+          "sha256": "fd97491ae1cf2f85691d8ec545b8f7ca12c44da28e98d085987160adff35e832"
+        },
+        "errors": {
+          "path": "runs/w4ced8adb47c5f862a24f.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w4ced8adb47c5f862a24f.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "level": 3,
+      "run": 4,
+      "status": "complete",
+      "worldId": "w3d4d7fe709c5607aba8e",
+      "startedAt": "2026-11-14T09:48:06.814Z",
+      "server": {
+        "worldId": "w3d4d7fe709c5607aba8e",
+        "kind": "practice",
+        "level": 3,
+        "parent": null,
+        "season": 5,
+        "boardRun": 4,
+        "ended": true
+      },
+      "runtimeFailures": [],
+      "completedAt": "2026-11-14T09:49:40.806Z",
+      "score": {
+        "marginCents": 939975,
+        "revenueCents": 4273100,
+        "marginShare": 0.2199749596311811,
+        "wonOrders": 639,
+        "onTimeShare": 0.9827856025039123,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 639,
+        "onTimeOrders": 628,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00031",
+          "R00039",
+          "R00215",
+          "R00234",
+          "R00319",
+          "R00373",
+          "R00490",
+          "R00680",
+          "R00753",
+          "R00811",
+          "R00895"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 4273100,
+        "driver_fee": -3306540,
+        "late_refund": -22400,
+        "release_fee": -4185
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w3d4d7fe709c5607aba8e.meta.json",
+          "sha256": "f08ef4fdd5c120e86c4095fb51052626e712517332b070733f73d9853f190e62"
+        },
+        "score": {
+          "path": "runs/w3d4d7fe709c5607aba8e.score.json",
+          "sha256": "594f7b4ffa695254e12aa89354eabdbbf31fd39587530ca26c2540396187451d"
+        },
+        "snapshot": {
+          "path": "runs/w3d4d7fe709c5607aba8e.snapshot.json",
+          "sha256": "e604a7c0da58ca1f716015bd37fcb3fef01f06a00734d93f19e0063c7c92b500"
+        },
+        "events": {
+          "path": "runs/w3d4d7fe709c5607aba8e.events.json",
+          "sha256": "0907f7e450386e1d4ca9a60007b8b35da20ad2663b6373475cd463ec241f8680"
+        },
+        "errors": {
+          "path": "runs/w3d4d7fe709c5607aba8e.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w3d4d7fe709c5607aba8e.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "level": 3,
+      "run": 5,
+      "status": "complete",
+      "worldId": "w2022c0359b91ce8d9988",
+      "startedAt": "2026-11-14T09:49:41.020Z",
+      "server": {
+        "worldId": "w2022c0359b91ce8d9988",
+        "kind": "practice",
+        "level": 3,
+        "parent": null,
+        "season": 5,
+        "boardRun": 5,
+        "ended": true
+      },
+      "runtimeFailures": [],
+      "completedAt": "2026-11-14T09:51:16.653Z",
+      "score": {
+        "marginCents": 914085,
+        "revenueCents": 4419400,
+        "marginShare": 0.20683463818617912,
+        "wonOrders": 641,
+        "onTimeShare": 0.9890795631825273,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 641,
+        "onTimeOrders": 634,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00420",
+          "R00422",
+          "R00712",
+          "R00836",
+          "R00876",
+          "R00903",
+          "R00905"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 4419400,
+        "driver_fee": -3465653,
+        "release_fee": -12412,
+        "late_refund": -27250
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w2022c0359b91ce8d9988.meta.json",
+          "sha256": "61ec9719734371f6605ac3b056aed050989b80475ce2ae9df50a2aeb6381c009"
+        },
+        "score": {
+          "path": "runs/w2022c0359b91ce8d9988.score.json",
+          "sha256": "37b47a3a9473b09795c3c86c76ef64e25461f3dda8da85e108f08deaa7221615"
+        },
+        "snapshot": {
+          "path": "runs/w2022c0359b91ce8d9988.snapshot.json",
+          "sha256": "fc68ed0a29640d4bf17956c3c25285bf870d2bd9edfe13c8bd290c235605b6bd"
+        },
+        "events": {
+          "path": "runs/w2022c0359b91ce8d9988.events.json",
+          "sha256": "fb84fa4d672e94e95cb6f480cd5af69424ece238093f87bd8509dcc0e154e4dd"
+        },
+        "errors": {
+          "path": "runs/w2022c0359b91ce8d9988.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w2022c0359b91ce8d9988.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "level": 4,
+      "run": 1,
+      "status": "complete",
+      "worldId": "w4dfbd9e09f2813bc16b2",
+      "startedAt": "2026-11-14T09:43:21.403Z",
+      "server": {
+        "worldId": "w4dfbd9e09f2813bc16b2",
+        "kind": "practice",
+        "level": 4,
+        "parent": null,
+        "season": 5,
+        "boardRun": 1,
+        "ended": true
+      },
+      "runtimeFailures": [],
+      "completedAt": "2026-11-14T09:44:51.351Z",
+      "score": {
+        "marginCents": 623123,
+        "revenueCents": 3091153,
+        "marginShare": 0.20158271039964698,
+        "wonOrders": 402,
+        "onTimeShare": 0.9601990049751243,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 402,
+        "onTimeOrders": 386,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00012",
+          "R00026",
+          "R00071",
+          "R00153",
+          "R00272",
+          "R00275",
+          "R00354",
+          "R00380",
+          "R00386",
+          "R00388",
+          "R00432",
+          "R00459",
+          "R00516",
+          "R00578",
+          "R00694",
+          "R00903"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 3091153,
+        "driver_fee": -2418961,
+        "late_refund": -47561,
+        "release_fee": -1508
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w4dfbd9e09f2813bc16b2.meta.json",
+          "sha256": "a46ba7d27ea55f38573fec8e2980a5b11cc9468658a0cfc558b08243b5041557"
+        },
+        "score": {
+          "path": "runs/w4dfbd9e09f2813bc16b2.score.json",
+          "sha256": "38f44837d7422a62115f72fdc48d53d81a3d2216054e5d1b2e3eb7eff9eff25a"
+        },
+        "snapshot": {
+          "path": "runs/w4dfbd9e09f2813bc16b2.snapshot.json",
+          "sha256": "86ab7cf44f51b03f0343cfc06e5dc4c497ae3da65222f9333ff43746caebdfb7"
+        },
+        "events": {
+          "path": "runs/w4dfbd9e09f2813bc16b2.events.json",
+          "sha256": "b3eb9478259144352b05a31f2d700c0fef7846c6e93b4d93ae713c8eacfcc01c"
+        },
+        "errors": {
+          "path": "runs/w4dfbd9e09f2813bc16b2.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w4dfbd9e09f2813bc16b2.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "level": 4,
+      "run": 2,
+      "status": "complete",
+      "worldId": "w6a548e650a511b0bb9f4",
+      "startedAt": "2026-11-14T09:44:51.580Z",
+      "server": {
+        "worldId": "w6a548e650a511b0bb9f4",
+        "kind": "practice",
+        "level": 4,
+        "parent": null,
+        "season": 5,
+        "boardRun": 2,
+        "ended": true
+      },
+      "runtimeFailures": [],
+      "completedAt": "2026-11-14T09:46:26.643Z",
+      "score": {
+        "marginCents": 325867,
+        "revenueCents": 2498872,
+        "marginShare": 0.13040563902432778,
+        "wonOrders": 337,
+        "onTimeShare": 0.9614243323442137,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 337,
+        "onTimeOrders": 324,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00039",
+          "R00123",
+          "R00141",
+          "R00209",
+          "R00222",
+          "R00231",
+          "R00298",
+          "R00386",
+          "R00432",
+          "R00730",
+          "R00871",
+          "R00921",
+          "R00979"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 2498872,
+        "driver_fee": -2138486,
+        "late_refund": -33890,
+        "release_fee": -629
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w6a548e650a511b0bb9f4.meta.json",
+          "sha256": "7d88a96e183e19646b907904813e1960572ad1b6bbd66019b640cdf1df6e5f05"
+        },
+        "score": {
+          "path": "runs/w6a548e650a511b0bb9f4.score.json",
+          "sha256": "0b415121b255a65a4b95cb462a12d0480938f1d4a74bb9155aabc0d9819b7f19"
+        },
+        "snapshot": {
+          "path": "runs/w6a548e650a511b0bb9f4.snapshot.json",
+          "sha256": "c4f1eb875563984316118b3ffa1f403486883eab19f4af5d0311bd9eb570322f"
+        },
+        "events": {
+          "path": "runs/w6a548e650a511b0bb9f4.events.json",
+          "sha256": "c78e4761b5926a871381f93a5021acd53c7befadcff03e3824993ee1d55af39a"
+        },
+        "errors": {
+          "path": "runs/w6a548e650a511b0bb9f4.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w6a548e650a511b0bb9f4.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "level": 4,
+      "run": 3,
+      "status": "complete",
+      "worldId": "w462313ddab7bafd720f3",
+      "startedAt": "2026-11-14T09:46:26.919Z",
+      "server": {
+        "worldId": "w462313ddab7bafd720f3",
+        "kind": "practice",
+        "level": 4,
+        "parent": null,
+        "season": 5,
+        "boardRun": 3,
+        "ended": true
+      },
+      "runtimeFailures": [],
+      "completedAt": "2026-11-14T09:47:54.604Z",
+      "score": {
+        "marginCents": 250475,
+        "revenueCents": 1589492,
+        "marginShare": 0.15758179342834064,
+        "wonOrders": 266,
+        "onTimeShare": 0.981203007518797,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 266,
+        "onTimeOrders": 261,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00101",
+          "R00242",
+          "R00323",
+          "R00644",
+          "R00834"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 1589492,
+        "driver_fee": -1328537,
+        "late_refund": -10480
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w462313ddab7bafd720f3.meta.json",
+          "sha256": "49b022f651f4369c44cec3cf4a6d5f52fa6d40df7b23b483fb272017734be2a0"
+        },
+        "score": {
+          "path": "runs/w462313ddab7bafd720f3.score.json",
+          "sha256": "59425b3973d28ea50d3a626fa5c2c25ec18266167a1b70124716ce862a8a58e5"
+        },
+        "snapshot": {
+          "path": "runs/w462313ddab7bafd720f3.snapshot.json",
+          "sha256": "2885c91c51f54db79b4326cbaeb233f9682340c73e7df5f75332edcb14153cb7"
+        },
+        "events": {
+          "path": "runs/w462313ddab7bafd720f3.events.json",
+          "sha256": "9db3e3a75904b21a07397f5fe6d8e4321c3b14279bb66b1506e0d968e0e1de5a"
+        },
+        "errors": {
+          "path": "runs/w462313ddab7bafd720f3.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w462313ddab7bafd720f3.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "level": 4,
+      "run": 4,
+      "status": "complete",
+      "worldId": "wa7c9cc582de114f6b7e1",
+      "startedAt": "2026-11-14T09:47:55.191Z",
+      "server": {
+        "worldId": "wa7c9cc582de114f6b7e1",
+        "kind": "practice",
+        "level": 4,
+        "parent": null,
+        "season": 5,
+        "boardRun": 4,
+        "ended": true
+      },
+      "runtimeFailures": [],
+      "completedAt": "2026-11-14T09:51:29.540Z",
+      "score": {
+        "marginCents": 251200,
+        "revenueCents": 2076228,
+        "marginShare": 0.12098863901267105,
+        "wonOrders": 291,
+        "onTimeShare": 0.979381443298969,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 291,
+        "onTimeOrders": 285,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00328",
+          "R00341",
+          "R00403",
+          "R00560",
+          "R00838",
+          "R00853"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 2076228,
+        "driver_fee": -1804036,
+        "release_fee": -6221,
+        "late_refund": -14771
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/wa7c9cc582de114f6b7e1.meta.json",
+          "sha256": "c6c50f71a212480c561a46dd3c0b48c58a884dbea0e75ed31ad0b9a925e49033"
+        },
+        "score": {
+          "path": "runs/wa7c9cc582de114f6b7e1.score.json",
+          "sha256": "ff58f36cd46c8624c44d19890e3d7a8dd4c913fc088e4d304f3ad493a4fb38ae"
+        },
+        "snapshot": {
+          "path": "runs/wa7c9cc582de114f6b7e1.snapshot.json",
+          "sha256": "e184150f1e8d9db0356ede53c1185ff60b471009130f537b5421781d7fd36b57"
+        },
+        "events": {
+          "path": "runs/wa7c9cc582de114f6b7e1.events.json",
+          "sha256": "a57259daa184f36d1e4e1790f2041543e7b91279bde111ebaa3ca2cbd06861ed"
+        },
+        "errors": {
+          "path": "runs/wa7c9cc582de114f6b7e1.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/wa7c9cc582de114f6b7e1.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "level": 4,
+      "run": 5,
+      "status": "complete",
+      "worldId": "w71b5d32943878b020ea0",
+      "startedAt": "2026-11-14T09:51:29.703Z",
+      "server": {
+        "worldId": "w71b5d32943878b020ea0",
+        "kind": "practice",
+        "level": 4,
+        "parent": null,
+        "season": 5,
+        "boardRun": 5,
+        "ended": true
+      },
+      "runtimeFailures": [],
+      "completedAt": "2026-11-14T09:52:52.147Z",
+      "score": {
+        "marginCents": 87511,
+        "revenueCents": 1856708,
+        "marginShare": 0.04713234391191291,
+        "wonOrders": 259,
+        "onTimeShare": 0.9575289575289575,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 259,
+        "onTimeOrders": 248,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00166",
+          "R00171",
+          "R00271",
+          "R00311",
+          "R00359",
+          "R00376",
+          "R00429",
+          "R00623",
+          "R00715",
+          "R00854",
+          "R00971"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 1856708,
+        "driver_fee": -1745604,
+        "late_refund": -23593
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w71b5d32943878b020ea0.meta.json",
+          "sha256": "854be606e1208e97a2637bcb424c99a8543432d5e328c817301d63a32e80a35c"
+        },
+        "score": {
+          "path": "runs/w71b5d32943878b020ea0.score.json",
+          "sha256": "046c1fb17cafbe82c5f611f11858a06c03a80f31c50c06889715c9babd2dc81f"
+        },
+        "snapshot": {
+          "path": "runs/w71b5d32943878b020ea0.snapshot.json",
+          "sha256": "3a5b5dfe6bafe82e75ced70e3d5198372c15465b0bbeae757b865b116294fe9b"
+        },
+        "events": {
+          "path": "runs/w71b5d32943878b020ea0.events.json",
+          "sha256": "139525afa12d27ba9aed97ef30f9419ffce2a4e25be138649d6bc88312f9051a"
+        },
+        "errors": {
+          "path": "runs/w71b5d32943878b020ea0.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w71b5d32943878b020ea0.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    }
+  ],
+  "maximumObservedOccupancyBeforeCreation": 3,
+  "unfinishedTeamWorlds": [],
+  "nonWorldFailures": [],
+  "limitations": [
+    "Explicitly authorized deadline deployment from best completed development evidence. This is not statistical promotion, not an untouched24-pair validation, and not a qualification guarantee. The prospective validation protocol remains unchanged.",
+    "Completed weeks used the frozen level-aware policy. No ranked-outcome tuning or replacement. Related levels are not independent seed blocks.",
+    "Qualification bounds are descriptive exact binomial bounds under IID-week assumptions; five successes give only54.93% lower confidence. Ranked weeks are not a randomized representative qualification guarantee.",
+    "Leaderboard positions and leader gaps refer only to the recorded snapshot of the same season and matched run numbers. No unmatched practice-to-leader ranking claim.",
+    "Levels 5\u20138 were separately authorized, starting with 8. The upper runner stopped after two rejected concurrent creations; only one level 8 week completed. No final or test final was entered."
+  ]
+}

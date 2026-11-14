@@ -1,0 +1,10 @@
+{"event":"occupancy","unfinished":[],"at":"2026-11-14T09:56:28.455Z"}
+{"event":"creating","mode":"upper-ranked","level":8,"run":1,"at":"2026-11-14T09:56:28.485Z"}
+{"event":"created","mode":"upper-ranked","level":8,"run":1,"worldId":"w49c9ef9eb9aec00635fb","at":"2026-11-14T09:56:28.562Z"}
+{"event":"occupancy","unfinished":["w49c9ef9eb9aec00635fb"],"at":"2026-11-14T09:56:28.783Z"}
+{"event":"creating","mode":"upper-ranked","level":8,"run":2,"at":"2026-11-14T09:56:28.855Z"}
+{"event":"failed","level":8,"run":2,"error":"Error: Ranking run 1 at level 8 has not ended; play it to its end or delete it first. client.worlds() lists them; client.world(worldId).delete() deletes one (HTTP 409)","at":"2026-11-14T09:56:28.884Z"}
+{"event":"occupancy","unfinished":["w49c9ef9eb9aec00635fb"],"at":"2026-11-14T09:56:28.936Z"}
+{"event":"creating","mode":"upper-ranked","level":8,"run":3,"at":"2026-11-14T09:56:28.968Z"}
+{"event":"failed","level":8,"run":3,"error":"Error: Ranking run 1 at level 8 has not ended; play it to its end or delete it first. client.worlds() lists them; client.world(worldId).delete() deletes one (HTTP 409)","at":"2026-11-14T09:56:28.994Z"}
+{"event":"completed","level":8,"run":1,"worldId":"w49c9ef9eb9aec00635fb","score":{"marginCents":785021,"revenueCents":2424784,"marginShare":0.323748837009812,"wonOrders":259,"onTimeShare":0.972972972972973,"undeliveredShare":0,"ranked":true},"errors":[],"recoveries":[],"completedAt":"2026-11-14T09:57:46.158Z","at":"2026-11-14T09:57:46.158Z"}

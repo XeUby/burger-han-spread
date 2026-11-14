@@ -1,4 +1,4 @@
-"""Check all twenty frozen ranking attempts against terminal and official evidence."""
+"""Check frozen ranking attempts against terminal and official evidence."""
 
 import hashlib
 import json
@@ -14,23 +14,30 @@ from frontier_validation import order_counts
 
 read = lambda p: json.loads((ROOT / p).read_text())
 sha = lambda p: hashlib.sha256((ROOT / p).read_bytes()).hexdigest()
-protocol = read("experiments/levels-noon-protocol.json")
-inventory = read("runs/levels-noon-server.json")
+scope = sys.argv[1] if len(sys.argv) > 1 else "noon"
+assert scope in {"noon", "upper"}
+prefix = f"levels-{scope}"
+protocol = read(f"experiments/{prefix}-protocol.json")
+inventory = read(f"docs/{prefix}-server.json")
+levels = protocol["levels"]
 for file, expected in protocol["sourceFiles"].items():
     assert sha(file) == expected, file
-assert sha("research/ranked-levels/noon.ts") == protocol["launcherSha256"]
-attempts = [json.loads(line) for line in (ROOT / "experiments/levels-noon-ranked-attempts.jsonl").read_text().splitlines() if line]
+assert sha(f"research/ranked-levels/{scope}.ts") == protocol["launcherSha256"]
+attempts = [json.loads(line) for line in (ROOT / f"experiments/{prefix}-ranked-attempts.jsonl").read_text().splitlines() if line]
 created = [r for r in attempts if r["event"] == "created"]
 assert len({(r["level"], r["run"]) for r in created}) == len(created)
-assert all(r["level"] in [1,2,3,4] and 1 <= r["run"] <= 5 for r in created)
+assert all(r["level"] in levels and 1 <= r["run"] <= 5 for r in created)
 extras = {"firstOptionOnly": False, "openingCostAdmission": False, "actionGuard": False, "capacityValue": False, "routeValue": False, "driverValue": False, "paymentProbe": False, "randomSeed": 1, "portfolio": False, "futureValue": False, "paymentChoice": False}
 base = read("experiments/final-config.json")
 rows = []
-for level in [1,2,3,4]:
+for level in levels:
     for run_number in range(1,6):
         start = next((r for r in created if r["level"] == level and r["run"] == run_number), None)
-        row = {"level": level, "run": run_number, "status": "pending"}
+        row = {"level": level, "run": run_number, "status": "not_started"}
         if not start:
+            rejected = [r for r in attempts if r["event"] == "failed" and r["level"] == level and r["run"] == run_number and not r.get("worldId")]
+            if rejected:
+                row.update(status="creation_rejected", creationFailures=rejected)
             rows.append(row)
             continue
         world = start["worldId"]
@@ -72,7 +79,7 @@ for level in [1,2,3,4]:
         row.update(status="complete", completedAt=finish["completedAt"], score=score, counts=counts, ledgerCents=dict(ledger), failedVisits=sum(e["kind"] == "visit_failed" for e in events), errors=errors, recoveries=recoveries, files=files)
         rows.append(row)
 summary = []
-for level in [1,2,3,4]:
+for level in levels:
     done = [r for r in rows if r["level"] == level and r["status"] == "complete"]
     board = next(b for b in inventory["boards"] if b["level"] == level)
     season = next(s for s in [board["current"], board["previous"]] if s and s["season"] == protocol["season"])
@@ -85,6 +92,6 @@ for level in [1,2,3,4]:
         value["matchedLeaderGapEuros"] = value["leader"]["totalProfitEuros"] - value["totalProfitEuros"]
     summary.append(value)
 complete = all(r["status"] == "complete" for r in rows) and not any(r["event"] == "failed" for r in attempts)
-report = {"generatedAt": datetime.now(timezone.utc).isoformat(), "officialSnapshotAt": inventory["checkedAt"], "protocolSha256": sha("experiments/levels-noon-protocol.json"), "season": protocol["season"], "complete": complete, "completed": sum(r["status"] == "complete" for r in rows), "expected": 20, "lastCompletedAt": max((r["completedAt"] for r in rows if r["status"] == "complete"), default=None), "summary": summary, "worlds": rows, "maximumObservedOccupancyBeforeCreation": max((len(r["unfinished"]) for r in attempts if r["event"] == "occupancy"), default=0), "unfinishedTeamWorlds": [w for w in inventory["worlds"] if not w["ended"]], "nonWorldFailures": [r for r in attempts if r["event"] == "failed" and not r.get("worldId")], "limitations": [protocol["evidenceStatus"], "All twenty weeks used one frozen level-aware policy. No ranked-outcome tuning or replacement. Related levels are not twenty independent seed blocks.", "Qualification bounds are descriptive exact binomial bounds under IID-week assumptions; five successes give only54.93% lower confidence. Ranked weeks are not a randomized representative qualification guarantee.", "Leaderboard positions and leader gaps refer only to the recorded snapshot of the same season and matched run numbers. No unmatched practice-to-leader ranking claim.", "Levels5–8 are paused for review; no final or test final was entered."]}
-(ROOT / "docs/levels-noon-ranked-audit.json").write_text(json.dumps(report, indent=2) + "\n")
+report = {"generatedAt": datetime.now(timezone.utc).isoformat(), "officialSnapshotAt": inventory["checkedAt"], "officialSnapshotSha256": sha(f"docs/{prefix}-server.json"), "protocolSha256": sha(f"experiments/{prefix}-protocol.json"), "season": protocol["season"], "complete": complete, "completed": sum(r["status"] == "complete" for r in rows), "expected": 20, "lastCompletedAt": max((r["completedAt"] for r in rows if r["status"] == "complete"), default=None), "summary": summary, "worlds": rows, "maximumObservedOccupancyBeforeCreation": max((len(r["unfinished"]) for r in attempts if r["event"] == "occupancy"), default=0), "unfinishedTeamWorlds": [w for w in inventory["worlds"] if not w["ended"]], "nonWorldFailures": [r for r in attempts if r["event"] == "failed" and not r.get("worldId")], "limitations": [protocol["evidenceStatus"], "Completed weeks used the frozen level-aware policy. No ranked-outcome tuning or replacement. Related levels are not independent seed blocks.", "Qualification bounds are descriptive exact binomial bounds under IID-week assumptions; five successes give only54.93% lower confidence. Ranked weeks are not a randomized representative qualification guarantee.", "Leaderboard positions and leader gaps refer only to the recorded snapshot of the same season and matched run numbers. No unmatched practice-to-leader ranking claim.", "Levels 5–8 were separately authorized, starting with 8. The upper runner stopped after two rejected concurrent creations; only one level 8 week completed. No final or test final was entered."]}
+(ROOT / f"docs/{prefix}-ranked-audit.json").write_text(json.dumps(report, indent=2) + "\n")
 print(json.dumps({k: report[k] for k in ["complete", "completed", "lastCompletedAt", "summary"]}, indent=2))

@@ -1,0 +1,350 @@
+{
+  "mode": "noon-ranked",
+  "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+  "season": 5,
+  "finishedAt": "2026-11-14T09:52:52.149Z",
+  "stopped": false,
+  "remaining": [],
+  "results": [
+    {
+      "level": 1,
+      "run": 1,
+      "worldId": "w92b0ed9510280d368553",
+      "score": {
+        "marginCents": 832702,
+        "revenueCents": 4782100,
+        "marginShare": 0.17412893916898434,
+        "wonOrders": 641,
+        "onTimeShare": 0.9750390015600624,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [],
+      "completedAt": "2026-11-14T09:44:50.907Z"
+    },
+    {
+      "level": 1,
+      "run": 2,
+      "worldId": "wa2daa9688ea60997b35c",
+      "score": {
+        "marginCents": 819515,
+        "revenueCents": 4787100,
+        "marginShare": 0.17119237116417038,
+        "wonOrders": 649,
+        "onTimeShare": 0.9768875192604006,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [],
+      "completedAt": "2026-11-14T09:46:33.239Z"
+    },
+    {
+      "level": 1,
+      "run": 3,
+      "worldId": "w2cb7e3099b266602dede",
+      "score": {
+        "marginCents": 487263,
+        "revenueCents": 4671000,
+        "marginShare": 0.10431663455362877,
+        "wonOrders": 609,
+        "onTimeShare": 0.9671592775041051,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [],
+      "completedAt": "2026-11-14T09:48:06.382Z"
+    },
+    {
+      "level": 1,
+      "run": 4,
+      "worldId": "w53ba157be5ea5dc37df7",
+      "score": {
+        "marginCents": 887410,
+        "revenueCents": 4586300,
+        "marginShare": 0.19349148551119638,
+        "wonOrders": 626,
+        "onTimeShare": 0.9792332268370607,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [],
+      "completedAt": "2026-11-14T09:49:41.870Z"
+    },
+    {
+      "level": 1,
+      "run": 5,
+      "worldId": "w62d470cf7cf86028cfc3",
+      "score": {
+        "marginCents": 667352,
+        "revenueCents": 4419800,
+        "marginShare": 0.15099144757681343,
+        "wonOrders": 602,
+        "onTimeShare": 0.9667774086378738,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [],
+      "completedAt": "2026-11-14T09:51:16.161Z"
+    },
+    {
+      "level": 2,
+      "run": 1,
+      "worldId": "we3298027e53e4bafa324",
+      "score": {
+        "marginCents": 848124,
+        "revenueCents": 4280700,
+        "marginShare": 0.19812740906861026,
+        "wonOrders": 627,
+        "onTimeShare": 0.9920255183413078,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [],
+      "completedAt": "2026-11-14T09:44:50.176Z"
+    },
+    {
+      "level": 2,
+      "run": 2,
+      "worldId": "w4ebfe73e50aa31b53c65",
+      "score": {
+        "marginCents": 819956,
+        "revenueCents": 4575100,
+        "marginShare": 0.1792214377827807,
+        "wonOrders": 616,
+        "onTimeShare": 0.974025974025974,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [],
+      "completedAt": "2026-11-14T09:46:28.680Z"
+    },
+    {
+      "level": 2,
+      "run": 3,
+      "worldId": "wbe9129d89720fcb6542d",
+      "score": {
+        "marginCents": 808441,
+        "revenueCents": 4513200,
+        "marginShare": 0.17912811309049012,
+        "wonOrders": 617,
+        "onTimeShare": 0.9870340356564019,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [],
+      "completedAt": "2026-11-14T09:48:02.050Z"
+    },
+    {
+      "level": 2,
+      "run": 4,
+      "worldId": "w2be18c1bb0a69b912914",
+      "score": {
+        "marginCents": 690209,
+        "revenueCents": 4708700,
+        "marginShare": 0.14658164673901503,
+        "wonOrders": 633,
+        "onTimeShare": 0.9747235387045814,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [],
+      "completedAt": "2026-11-14T09:49:37.546Z"
+    },
+    {
+      "level": 2,
+      "run": 5,
+      "worldId": "w2a48c38a5661e2320241",
+      "score": {
+        "marginCents": 702790,
+        "revenueCents": 4441900,
+        "marginShare": 0.15821832999392152,
+        "wonOrders": 607,
+        "onTimeShare": 0.9785831960461285,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [],
+      "completedAt": "2026-11-14T09:51:14.020Z"
+    },
+    {
+      "level": 3,
+      "run": 1,
+      "worldId": "w36627b34c1bd5cdb4665",
+      "score": {
+        "marginCents": 916268,
+        "revenueCents": 4236100,
+        "marginShare": 0.21629989849153702,
+        "wonOrders": 609,
+        "onTimeShare": 0.986863711001642,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [],
+      "completedAt": "2026-11-14T09:44:50.324Z"
+    },
+    {
+      "level": 3,
+      "run": 2,
+      "worldId": "wca427d455040109f238f",
+      "score": {
+        "marginCents": 753823,
+        "revenueCents": 4566700,
+        "marginShare": 0.16506952503996322,
+        "wonOrders": 635,
+        "onTimeShare": 0.9858267716535433,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [],
+      "completedAt": "2026-11-14T09:46:32.959Z"
+    },
+    {
+      "level": 3,
+      "run": 3,
+      "worldId": "w4ced8adb47c5f862a24f",
+      "score": {
+        "marginCents": 956547,
+        "revenueCents": 4966000,
+        "marginShare": 0.19261921063229964,
+        "wonOrders": 666,
+        "onTimeShare": 0.9744744744744744,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [],
+      "completedAt": "2026-11-14T09:48:06.611Z"
+    },
+    {
+      "level": 3,
+      "run": 4,
+      "worldId": "w3d4d7fe709c5607aba8e",
+      "score": {
+        "marginCents": 939975,
+        "revenueCents": 4273100,
+        "marginShare": 0.2199749596311811,
+        "wonOrders": 639,
+        "onTimeShare": 0.9827856025039123,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [],
+      "completedAt": "2026-11-14T09:49:40.806Z"
+    },
+    {
+      "level": 3,
+      "run": 5,
+      "worldId": "w2022c0359b91ce8d9988",
+      "score": {
+        "marginCents": 914085,
+        "revenueCents": 4419400,
+        "marginShare": 0.20683463818617912,
+        "wonOrders": 641,
+        "onTimeShare": 0.9890795631825273,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [],
+      "completedAt": "2026-11-14T09:51:16.653Z"
+    },
+    {
+      "level": 4,
+      "run": 1,
+      "worldId": "w4dfbd9e09f2813bc16b2",
+      "score": {
+        "marginCents": 623123,
+        "revenueCents": 3091153,
+        "marginShare": 0.20158271039964698,
+        "wonOrders": 402,
+        "onTimeShare": 0.9601990049751243,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [],
+      "completedAt": "2026-11-14T09:44:51.351Z"
+    },
+    {
+      "level": 4,
+      "run": 2,
+      "worldId": "w6a548e650a511b0bb9f4",
+      "score": {
+        "marginCents": 325867,
+        "revenueCents": 2498872,
+        "marginShare": 0.13040563902432778,
+        "wonOrders": 337,
+        "onTimeShare": 0.9614243323442137,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [],
+      "completedAt": "2026-11-14T09:46:26.643Z"
+    },
+    {
+      "level": 4,
+      "run": 3,
+      "worldId": "w462313ddab7bafd720f3",
+      "score": {
+        "marginCents": 250475,
+        "revenueCents": 1589492,
+        "marginShare": 0.15758179342834064,
+        "wonOrders": 266,
+        "onTimeShare": 0.981203007518797,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [],
+      "completedAt": "2026-11-14T09:47:54.604Z"
+    },
+    {
+      "level": 4,
+      "run": 4,
+      "worldId": "wa7c9cc582de114f6b7e1",
+      "score": {
+        "marginCents": 251200,
+        "revenueCents": 2076228,
+        "marginShare": 0.12098863901267105,
+        "wonOrders": 291,
+        "onTimeShare": 0.979381443298969,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [],
+      "completedAt": "2026-11-14T09:51:29.540Z"
+    },
+    {
+      "level": 4,
+      "run": 5,
+      "worldId": "w71b5d32943878b020ea0",
+      "score": {
+        "marginCents": 87511,
+        "revenueCents": 1856708,
+        "marginShare": 0.04713234391191291,
+        "wonOrders": 259,
+        "onTimeShare": 0.9575289575289575,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [],
+      "completedAt": "2026-11-14T09:52:52.147Z"
+    }
+  ]
+}
