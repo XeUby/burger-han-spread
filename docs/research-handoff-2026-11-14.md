@@ -60,6 +60,16 @@ Next: independently verify the restricted exposure dataset, compare simple acqui
 
 Minimum support and model-screening gates are fixed in the identification plan. Adequate exposure counts only permit held-out model checks against simple baselines; they do not validate economics or justify promotion. The original architecture still lacks supported capacity value and customer menu choice. No ranked submission is authorized.
 
+## Fixed-model development checks
+
+`experiments/coverage-model-check-v1-protocol.json` froze one L2 logistic model per target, features, grouping, training-only scaling, library versions, source/data hashes and the existing gates before cross-validation scores were computed. This was retrospective development analysis of already inspected exposures, not untouched validation. Every fold holds out one complete underlying seed; seven seeds train, one tests. Two leakage tests prove held-out labels/features cannot affect fitted scaling or coefficients. No hyperparameter search or new worlds were used.
+
+`docs/coverage-demand-replay.json` reconstructs113 acquisition-response predictions from the frozen adaptive demand model. It uses exact successful substantive quote ratios from selected plans, excludes artificial declines, and updates only on observed outcomes before the exploratory request’s arrival event. All substantive quote ratios were recovered; arrival and quote/outcome order assertions pass. The replay is an offline reconstruction, not a new deployed model.
+
+Equal-week Brier scores: acquisition constant0.20325, new logistic0.17958, existing adaptive demand0.14233. The logistic improves0.02367 over constant and wins6/8folds, but loses to the stronger existing model, so it fails the development gate. Booking constant0.14780 versus logistic0.13426, gain0.01354, but only5/8folds improve. Booking also lacks a comparable incumbent check: the old booking prior was trained on120minutes from award, while the randomized-post outcomes start at posting. Neither fitted replacement passes. Descriptive eight-week gain intervals include zero; overlapping cross-validation training sets and familiar seeds prevent formal validation claims.
+
+Full results and held-out predictions: `docs/coverage-model-check-v1-results.json`. Cost modeling remains unvalidated: first-gig fees and partly allocated order ledgers are not full continuation costs or capacity opportunity cost. Keep the existing demand model and current policy. Next structural work should preserve this strong demand baseline and isolate option-specific acquisition/fulfillment valuation; it must not smuggle in the rejected fitted models or treat a probability-horizon mismatch as a validated cost model. Any corrected offer coverage requires a separate prospective freeze.
+
 Read this first, then follow the evidence links. Workspace: `/Users/yerzham/Documents/ChatGPT/BAHN`. Branch: `codex/standalone-dispatcher`. Research/results commit before this handoff: `faa043d`, pushed to origin. This handoff compiles completed work; it does not resume experiments or authorize ranking. The persistent research goal is paused at the user's request.
 
 ## Current status and authority

@@ -1,0 +1,5108 @@
+{
+  "scope": "Fixed-model leave-one-underlying-week-out development diagnostics. No hyperparameter search, promotion, causal policy ranking or new worlds. Same underlying seeds never cross a training/test fold.",
+  "protocol": "experiments/coverage-model-check-v1-protocol.json",
+  "acquisition": {
+    "observations": 113,
+    "positive": 30,
+    "features": [
+      "actualQuoteToList",
+      "roadHundredKm",
+      "eligibleHomeSupply",
+      "latestStartSlackHours",
+      "exploratoryExposure",
+      "weeklyDelayHours",
+      "arrivalHour"
+    ],
+    "scoresEqualWeekWeighted": {
+      "constant": {
+        "brier": 0.2032545100701405,
+        "logLoss": 0.5978807500144803
+      },
+      "logistic": {
+        "brier": 0.179582502015224,
+        "logLoss": 0.5262355782781258
+      },
+      "existingDemand": {
+        "brier": 0.14233340601094863,
+        "logLoss": 0.4829094767917691
+      }
+    },
+    "folds": [
+      {
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "n": 15,
+        "positive": 5,
+        "fit": {
+          "trainSeeds": [
+            "level8-estimate-13b39f93b74b237bc46f579b",
+            "level8-estimate-2e646af6a3e79187503ccc80",
+            "level8-estimate-4421e0179044aca015374bc1",
+            "level8-estimate-502fd2d71b59b218d9af949c",
+            "level8-estimate-b87f6821707b892a55d34716",
+            "level8-estimate-c5d2d97a139c8d2c999d17b2",
+            "level8-estimate-fa0f948061c4c308cc69f2ac"
+          ],
+          "testSeed": "level8-estimate-12912cd52d9ef00ea35490e8",
+          "mean": [
+            1.6226945546829228,
+            3.9282044836116223,
+            57.46315862708708,
+            56.109403215831705,
+            0.36583178726035853,
+            0.4285714285714285,
+            10.806521335807043
+          ],
+          "scale": [
+            0.22482880061044036,
+            2.534578034422553,
+            134.67852464327035,
+            39.280316505706665,
+            0.4816626316108095,
+            0.4948716593053931,
+            1.8068806661037575
+          ],
+          "coefficients": [
+            -1.2805557474005427,
+            0.24598409370630547,
+            0.36757430403037017,
+            -0.42778437657754986,
+            0.12129017687638294,
+            -0.07047365364677939,
+            0.21793700277041644
+          ],
+          "intercept": -1.50219277719723
+        },
+        "scores": {
+          "constant": {
+            "brier": 0.22604370982552804,
+            "logLoss": 0.6457714126928625,
+            "meanPrediction": 0.27151515151515154,
+            "observedRate": 0.3333333333333333
+          },
+          "logistic": {
+            "brier": 0.26517108515480337,
+            "logLoss": 0.7407218229137004,
+            "meanPrediction": 0.29092479996630183,
+            "observedRate": 0.3333333333333333
+          },
+          "existingDemand": {
+            "brier": 0.17380929928206865,
+            "logLoss": 0.6196556425281993,
+            "meanPrediction": 0.17368920737002042,
+            "observedRate": 0.3333333333333333
+          }
+        }
+      },
+      {
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "n": 15,
+        "positive": 2,
+        "fit": {
+          "trainSeeds": [
+            "level8-estimate-12912cd52d9ef00ea35490e8",
+            "level8-estimate-2e646af6a3e79187503ccc80",
+            "level8-estimate-4421e0179044aca015374bc1",
+            "level8-estimate-502fd2d71b59b218d9af949c",
+            "level8-estimate-b87f6821707b892a55d34716",
+            "level8-estimate-c5d2d97a139c8d2c999d17b2",
+            "level8-estimate-fa0f948061c4c308cc69f2ac"
+          ],
+          "testSeed": "level8-estimate-13b39f93b74b237bc46f579b",
+          "mean": [
+            1.6067344881251118,
+            3.756890197897339,
+            56.61220624613466,
+            53.77289527932378,
+            0.4039270253555968,
+            0.5714285714285716,
+            10.866203875489587
+          ],
+          "scale": [
+            0.21042625564836945,
+            2.449253004589649,
+            130.1081301716699,
+            39.19070117414445,
+            0.4906831804158111,
+            0.49487165930539395,
+            1.789382579171689
+          ],
+          "coefficients": [
+            -1.27164106484487,
+            0.3048616515475002,
+            0.35203867676106193,
+            -0.0629593316572951,
+            0.22501738872191931,
+            -0.14921934933350242,
+            0.07525648445066951
+          ],
+          "intercept": -1.2366999594783035
+        },
+        "scores": {
+          "constant": {
+            "brier": 0.14317195224977042,
+            "logLoss": 0.46926357372150457,
+            "meanPrediction": 0.29951515151515146,
+            "observedRate": 0.13333333333333333
+          },
+          "logistic": {
+            "brier": 0.11248780416752976,
+            "logLoss": 0.3504545531751282,
+            "meanPrediction": 0.2711559556280054,
+            "observedRate": 0.13333333333333333
+          },
+          "existingDemand": {
+            "brier": 0.11002569995265911,
+            "logLoss": 0.3794614335670011,
+            "meanPrediction": 0.10409690233134991,
+            "observedRate": 0.13333333333333333
+          }
+        }
+      },
+      {
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "n": 14,
+        "positive": 2,
+        "fit": {
+          "trainSeeds": [
+            "level8-estimate-12912cd52d9ef00ea35490e8",
+            "level8-estimate-13b39f93b74b237bc46f579b",
+            "level8-estimate-4421e0179044aca015374bc1",
+            "level8-estimate-502fd2d71b59b218d9af949c",
+            "level8-estimate-b87f6821707b892a55d34716",
+            "level8-estimate-c5d2d97a139c8d2c999d17b2",
+            "level8-estimate-fa0f948061c4c308cc69f2ac"
+          ],
+          "testSeed": "level8-estimate-2e646af6a3e79187503ccc80",
+          "mean": [
+            1.6188990740487152,
+            3.792099721706872,
+            62.15247835497835,
+            56.31620593692031,
+            0.42093382807668567,
+            0.42857142857142877,
+            10.854027004741312
+          ],
+          "scale": [
+            0.22758787586319226,
+            2.540927973939975,
+            138.015323719661,
+            39.42090850456148,
+            0.49370896331481867,
+            0.4948716593053937,
+            1.7985244033283607
+          ],
+          "coefficients": [
+            -1.3671793433657156,
+            0.22763321567136582,
+            0.2531248076569425,
+            -0.21377882039411583,
+            0.1765534478303261,
+            0.02597676077116494,
+            0.027679750629117754
+          ],
+          "intercept": -1.301066487055091
+        },
+        "scores": {
+          "constant": {
+            "brier": 0.14656206786694478,
+            "logLoss": 0.47633220706894214,
+            "meanPrediction": 0.2981410385936552,
+            "observedRate": 0.14285714285714285
+          },
+          "logistic": {
+            "brier": 0.12324388376132718,
+            "logLoss": 0.40762816281400166,
+            "meanPrediction": 0.2641339891005131,
+            "observedRate": 0.14285714285714285
+          },
+          "existingDemand": {
+            "brier": 0.13774415383256763,
+            "logLoss": 0.4623764953535692,
+            "meanPrediction": 0.1320272497487776,
+            "observedRate": 0.14285714285714285
+          }
+        }
+      },
+      {
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "n": 20,
+        "positive": 4,
+        "fit": {
+          "trainSeeds": [
+            "level8-estimate-12912cd52d9ef00ea35490e8",
+            "level8-estimate-13b39f93b74b237bc46f579b",
+            "level8-estimate-2e646af6a3e79187503ccc80",
+            "level8-estimate-502fd2d71b59b218d9af949c",
+            "level8-estimate-b87f6821707b892a55d34716",
+            "level8-estimate-c5d2d97a139c8d2c999d17b2",
+            "level8-estimate-fa0f948061c4c308cc69f2ac"
+          ],
+          "testSeed": "level8-estimate-4421e0179044aca015374bc1",
+          "mean": [
+            1.61587298843277,
+            3.8672282931354376,
+            66.73125386518241,
+            54.433093692022304,
+            0.3729746444032162,
+            0.42857142857142866,
+            10.602513399299118
+          ],
+          "scale": [
+            0.22746407328267146,
+            2.5360655742493647,
+            140.35527578400365,
+            39.34858625406667,
+            0.483595449767169,
+            0.4948716593053937,
+            1.624845185868933
+          ],
+          "coefficients": [
+            -1.2049530060821796,
+            0.2786465182046786,
+            0.3419157438762837,
+            -0.18754703686007743,
+            0.0437320245014274,
+            -0.005009337298783596,
+            0.20888311943859986
+          ],
+          "intercept": -1.3020538620411553
+        },
+        "scores": {
+          "constant": {
+            "brier": 0.1681734594247582,
+            "logLoss": 0.5217454304779372,
+            "meanPrediction": 0.29040718679816424,
+            "observedRate": 0.2
+          },
+          "logistic": {
+            "brier": 0.14097386739963574,
+            "logLoss": 0.44207558650830003,
+            "meanPrediction": 0.2374623350061927,
+            "observedRate": 0.2
+          },
+          "existingDemand": {
+            "brier": 0.14539668322516247,
+            "logLoss": 0.5311077160057023,
+            "meanPrediction": 0.06798871383034125,
+            "observedRate": 0.2
+          }
+        }
+      },
+      {
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "n": 12,
+        "positive": 6,
+        "fit": {
+          "trainSeeds": [
+            "level8-estimate-12912cd52d9ef00ea35490e8",
+            "level8-estimate-13b39f93b74b237bc46f579b",
+            "level8-estimate-2e646af6a3e79187503ccc80",
+            "level8-estimate-4421e0179044aca015374bc1",
+            "level8-estimate-b87f6821707b892a55d34716",
+            "level8-estimate-c5d2d97a139c8d2c999d17b2",
+            "level8-estimate-fa0f948061c4c308cc69f2ac"
+          ],
+          "testSeed": "level8-estimate-502fd2d71b59b218d9af949c",
+          "mean": [
+            1.629481617733378,
+            4.038468769325913,
+            57.8448252937538,
+            55.0080143269429,
+            0.3920222634508352,
+            0.5714285714285722,
+            10.633307050092768
+          ],
+          "scale": [
+            0.2181131725106046,
+            2.529263622021276,
+            131.19614346479247,
+            36.33549766738986,
+            0.48820160631620124,
+            0.49487165930539345,
+            1.4069805373412227
+          ],
+          "coefficients": [
+            -1.1680652095544846,
+            0.3786205264669709,
+            0.33964077994263564,
+            0.05180364388788071,
+            0.22399774828298386,
+            0.13209037398743395,
+            -0.20963136974668545
+          ],
+          "intercept": -1.535021001221417
+        },
+        "scores": {
+          "constant": {
+            "brier": 0.3134878053448061,
+            "logLoss": 0.839629327572388,
+            "meanPrediction": 0.248032134301205,
+            "observedRate": 0.5
+          },
+          "logistic": {
+            "brier": 0.25021669604495406,
+            "logLoss": 0.6784394191613314,
+            "meanPrediction": 0.22227617483003667,
+            "observedRate": 0.5
+          },
+          "existingDemand": {
+            "brier": 0.14248536714114443,
+            "logLoss": 0.4025865787111725,
+            "meanPrediction": 0.35000168251834624,
+            "observedRate": 0.5
+          }
+        }
+      },
+      {
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "n": 14,
+        "positive": 4,
+        "fit": {
+          "trainSeeds": [
+            "level8-estimate-12912cd52d9ef00ea35490e8",
+            "level8-estimate-13b39f93b74b237bc46f579b",
+            "level8-estimate-2e646af6a3e79187503ccc80",
+            "level8-estimate-4421e0179044aca015374bc1",
+            "level8-estimate-502fd2d71b59b218d9af949c",
+            "level8-estimate-c5d2d97a139c8d2c999d17b2",
+            "level8-estimate-fa0f948061c4c308cc69f2ac"
+          ],
+          "testSeed": "level8-estimate-b87f6821707b892a55d34716",
+          "mean": [
+            1.6111430848255777,
+            3.841405844155854,
+            50.64839672232532,
+            52.92930117501557,
+            0.4005256648113796,
+            0.5714285714285717,
+            10.783958977530432
+          ],
+          "scale": [
+            0.20765317702036237,
+            2.48690970032788,
+            121.46336268576697,
+            36.83542855371152,
+            0.49000495572879904,
+            0.4948716593053941,
+            1.76229536841598
+          ],
+          "coefficients": [
+            -1.3643396678998967,
+            0.16259626300889246,
+            0.43766845840365387,
+            -0.14071241153005987,
+            0.2897091096947982,
+            -0.050365246371655716,
+            -0.003743980344936131
+          ],
+          "intercept": -1.4237967843762085
+        },
+        "scores": {
+          "constant": {
+            "brier": 0.2041390479516651,
+            "logLoss": 0.5984117866396809,
+            "meanPrediction": 0.2781369973732067,
+            "observedRate": 0.2857142857142857
+          },
+          "logistic": {
+            "brier": 0.1778489668208389,
+            "logLoss": 0.535493552621168,
+            "meanPrediction": 0.2957838755866028,
+            "observedRate": 0.2857142857142857
+          },
+          "existingDemand": {
+            "brier": 0.1527385247780027,
+            "logLoss": 0.6637535179127549,
+            "meanPrediction": 0.13620948109540645,
+            "observedRate": 0.2857142857142857
+          }
+        }
+      },
+      {
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "n": 11,
+        "positive": 3,
+        "fit": {
+          "trainSeeds": [
+            "level8-estimate-12912cd52d9ef00ea35490e8",
+            "level8-estimate-13b39f93b74b237bc46f579b",
+            "level8-estimate-2e646af6a3e79187503ccc80",
+            "level8-estimate-4421e0179044aca015374bc1",
+            "level8-estimate-502fd2d71b59b218d9af949c",
+            "level8-estimate-b87f6821707b892a55d34716",
+            "level8-estimate-fa0f948061c4c308cc69f2ac"
+          ],
+          "testSeed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+          "mean": [
+            1.6173058237088425,
+            3.8598010204081628,
+            61.68151360544206,
+            53.1918707482993,
+            0.41258503401360536,
+            0.5714285714285708,
+            10.817199546485257
+          ],
+          "scale": [
+            0.20711898071838186,
+            2.480246987138547,
+            135.7864971643527,
+            38.21522322758317,
+            0.49229932329995885,
+            0.49487165930539373,
+            1.7741166505859793
+          ],
+          "coefficients": [
+            -1.3363217349613423,
+            0.30551731482158173,
+            0.45472909224061814,
+            0.0616013199441611,
+            0.213744076735609,
+            -0.047316812992908165,
+            0.07143982759214432
+          ],
+          "intercept": -1.3763466130187374
+        },
+        "scores": {
+          "constant": {
+            "brier": 0.1983975180459818,
+            "logLoss": 0.5860783489509401,
+            "meanPrediction": 0.2798273155416013,
+            "observedRate": 0.2727272727272727
+          },
+          "logistic": {
+            "brier": 0.20312332712585193,
+            "logLoss": 0.5575569506565915,
+            "meanPrediction": 0.30574479632174717,
+            "observedRate": 0.2727272727272727
+          },
+          "existingDemand": {
+            "brier": 0.10650915018204722,
+            "logLoss": 0.337926141764958,
+            "meanPrediction": 0.2945274649027883,
+            "observedRate": 0.2727272727272727
+          }
+        }
+      },
+      {
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "n": 12,
+        "positive": 4,
+        "fit": {
+          "trainSeeds": [
+            "level8-estimate-12912cd52d9ef00ea35490e8",
+            "level8-estimate-13b39f93b74b237bc46f579b",
+            "level8-estimate-2e646af6a3e79187503ccc80",
+            "level8-estimate-4421e0179044aca015374bc1",
+            "level8-estimate-502fd2d71b59b218d9af949c",
+            "level8-estimate-b87f6821707b892a55d34716",
+            "level8-estimate-c5d2d97a139c8d2c999d17b2"
+          ],
+          "testSeed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+          "mean": [
+            1.6206129079334908,
+            3.9495997217068624,
+            57.004944341372806,
+            55.43837146980002,
+            0.39202226345083496,
+            0.4285714285714289,
+            10.893029272314987
+          ],
+          "scale": [
+            0.22189790808910498,
+            2.4489633806462616,
+            130.70336306520701,
+            39.27531593974548,
+            0.4882016063162011,
+            0.49487165930539334,
+            1.7582570143795013
+          ],
+          "coefficients": [
+            -1.2515361112112027,
+            0.20796996158861364,
+            0.25832723903923477,
+            -0.2615861323399597,
+            0.15038910625458485,
+            -0.12352796361883367,
+            0.08413184116204894
+          ],
+          "intercept": -1.4272365559451257
+        },
+        "scores": {
+          "constant": {
+            "brier": 0.22606051985166956,
+            "logLoss": 0.6458139129915871,
+            "meanPrediction": 0.27137933726005853,
+            "observedRate": 0.3333333333333333
+          },
+          "logistic": {
+            "brier": 0.1635943856468511,
+            "logLoss": 0.49751457837478535,
+            "meanPrediction": 0.2455857323175725,
+            "observedRate": 0.3333333333333333
+          },
+          "existingDemand": {
+            "brier": 0.16995836969393682,
+            "logLoss": 0.46640828849079535,
+            "meanPrediction": 0.2586859938849415,
+            "observedRate": 0.3333333333333333
+          }
+        }
+      }
+    ],
+    "predictions": [
+      {
+        "id": "w5df35efe5742cd286daf:R00022",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27151515151515154,
+          "logistic": 0.2309379936320797,
+          "existingDemand": 0.00928292534785773
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:R00027",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27151515151515154,
+          "logistic": 0.5247304056820815,
+          "existingDemand": 0.00986942557119537
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:R00042",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27151515151515154,
+          "logistic": 0.6111037898977044,
+          "existingDemand": 0.04543774572680842
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:R00043",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27151515151515154,
+          "logistic": 0.6237867701869163,
+          "existingDemand": 0.028270207850849723
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:R00236",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27151515151515154,
+          "logistic": 0.034256840642528874,
+          "existingDemand": 0.0007991099599210534
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:R00244",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.27151515151515154,
+          "logistic": 0.3087584802468564,
+          "existingDemand": 0.09743744793170947
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:R00249",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27151515151515154,
+          "logistic": 0.16474686539148034,
+          "existingDemand": 0.013730028393306105
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:R00264",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27151515151515154,
+          "logistic": 0.35036092789452244,
+          "existingDemand": 0.4312004312826709
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:R00425",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.27151515151515154,
+          "logistic": 0.3933646255016978,
+          "existingDemand": 0.8343629535919144
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:R00494",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27151515151515154,
+          "logistic": 0.16358947407199836,
+          "existingDemand": 0.05650162825570802
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:R00515",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27151515151515154,
+          "logistic": 0.2445887023558845,
+          "existingDemand": 0.01271406441230705
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:R00662",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.27151515151515154,
+          "logistic": 0.30428767921971883,
+          "existingDemand": 0.2576677126905116
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:R00663",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.27151515151515154,
+          "logistic": 0.07136633742268707,
+          "existingDemand": 0.011814256044739378
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:R00690",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27151515151515154,
+          "logistic": 0.013494132341414389,
+          "existingDemand": 0.008204592502417838
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:R00705",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.27151515151515154,
+          "logistic": 0.32449897500695746,
+          "existingDemand": 0.7880455809883895
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:R00008",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2995151515151515,
+          "logistic": 0.017118170487662395,
+          "existingDemand": 8.548173200333065e-05
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:R00043",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2995151515151515,
+          "logistic": 0.17376760671982294,
+          "existingDemand": 0.03330802807026819
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:R00060",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.2995151515151515,
+          "logistic": 0.8350364325907463,
+          "existingDemand": 0.581013375843525
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:R00077",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2995151515151515,
+          "logistic": 0.8272052434861369,
+          "existingDemand": 0.6937221389180757
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:R00086",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2995151515151515,
+          "logistic": 0.35469885982688576,
+          "existingDemand": 0.20542001237913052
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:R00245",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2995151515151515,
+          "logistic": 0.08403490409586213,
+          "existingDemand": 0.0032667550436212226
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:R00248",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2995151515151515,
+          "logistic": 0.15527125543285847,
+          "existingDemand": 0.006558149042314199
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:R00436",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.2995151515151515,
+          "logistic": 0.4145224910212105,
+          "existingDemand": 0.025246957621912904
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:R00437",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2995151515151515,
+          "logistic": 0.07286189558679086,
+          "existingDemand": 5.532859526859059e-05
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:R00653",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2995151515151515,
+          "logistic": 0.13570618160931305,
+          "existingDemand": 0.008463208399914261
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:R00654",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2995151515151515,
+          "logistic": 0.024583430243861563,
+          "existingDemand": 2.4470227371131174e-05
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:R00669",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2995151515151515,
+          "logistic": 0.04179008369673128,
+          "existingDemand": 5.8734768202062764e-05
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:R00670",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2995151515151515,
+          "logistic": 0.0289212664220664,
+          "existingDemand": 5.79835265624222e-06
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:R00689",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2995151515151515,
+          "logistic": 0.5284603969953122,
+          "existingDemand": 0.0027270092571903843
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:R00705",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2995151515151515,
+          "logistic": 0.3733611162048192,
+          "existingDemand": 0.0014980867187948182
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:R00007",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 0,
+        "predictions": {
+          "constant": 0.29814103859365526,
+          "logistic": 0.12830255199524984,
+          "existingDemand": 0.023892689410582722
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:R00019",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 0,
+        "predictions": {
+          "constant": 0.29814103859365526,
+          "logistic": 0.4179068814658701,
+          "existingDemand": 0.3791483491401453
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:R00034",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 0,
+        "predictions": {
+          "constant": 0.29814103859365526,
+          "logistic": 0.18617567516608985,
+          "existingDemand": 0.06286952304916704
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:R00265",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 0,
+        "predictions": {
+          "constant": 0.29814103859365526,
+          "logistic": 0.37920526555438067,
+          "existingDemand": 0.5437676941051984
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:R00266",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 0,
+        "predictions": {
+          "constant": 0.29814103859365526,
+          "logistic": 0.344462244076356,
+          "existingDemand": 0.2670678430530458
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:R00288",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 0,
+        "predictions": {
+          "constant": 0.29814103859365526,
+          "logistic": 0.14371965000878587,
+          "existingDemand": 0.005720173568060513
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:R00306",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.29814103859365526,
+          "logistic": 0.590227215882709,
+          "existingDemand": 0.3304282933321113
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:R00492",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 0,
+        "predictions": {
+          "constant": 0.29814103859365526,
+          "logistic": 0.32352568525948555,
+          "existingDemand": 0.017296570187215417
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:R00493",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 0,
+        "predictions": {
+          "constant": 0.29814103859365526,
+          "logistic": 0.3300212620881314,
+          "existingDemand": 0.008075119151670088
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:R00498",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 0,
+        "predictions": {
+          "constant": 0.29814103859365526,
+          "logistic": 0.3497296647940542,
+          "existingDemand": 0.022507476375099
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:R00500",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 0,
+        "predictions": {
+          "constant": 0.29814103859365526,
+          "logistic": 0.051817229442631674,
+          "existingDemand": 1.5959931891067467e-05
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:R00535",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 0,
+        "predictions": {
+          "constant": 0.29814103859365526,
+          "logistic": 0.04410788484043238,
+          "existingDemand": 5.7389738588521176e-05
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:R00673",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.29814103859365526,
+          "logistic": 0.18797105956261695,
+          "existingDemand": 0.030805137600981376
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:R00692",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 0,
+        "predictions": {
+          "constant": 0.29814103859365526,
+          "logistic": 0.22070357727038936,
+          "existingDemand": 0.15672927783913013
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:R00008",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2904071867981642,
+          "logistic": 0.17553619717895613,
+          "existingDemand": 0.014860717011185532
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:R00056",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2904071867981642,
+          "logistic": 0.10734742263333172,
+          "existingDemand": 0.008567685358150678
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:R00060",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2904071867981642,
+          "logistic": 0.1938141677082816,
+          "existingDemand": 0.034411055445003925
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:R00068",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2904071867981642,
+          "logistic": 0.17088211294218134,
+          "existingDemand": 0.0070166636075473
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:R00073",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.2904071867981642,
+          "logistic": 0.3363168114880562,
+          "existingDemand": 0.17750559239635247
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:R00238",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2904071867981642,
+          "logistic": 0.09248369133783049,
+          "existingDemand": 0.00048036328245587025
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:R00300",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2904071867981642,
+          "logistic": 0.3836960772241888,
+          "existingDemand": 0.010917271895014551
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:R00303",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2904071867981642,
+          "logistic": 0.311645616483531,
+          "existingDemand": 0.0035205576982097575
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:R00330",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2904071867981642,
+          "logistic": 0.1821358349400388,
+          "existingDemand": 0.00020865992310153063
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:R00335",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2904071867981642,
+          "logistic": 0.474304931467248,
+          "existingDemand": 0.012773970513966231
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:R00428",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2904071867981642,
+          "logistic": 0.04666760760719714,
+          "existingDemand": 0.0002796988366289376
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:R00460",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2904071867981642,
+          "logistic": 0.11212838267778079,
+          "existingDemand": 0.0018871040389312362
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:R00462",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2904071867981642,
+          "logistic": 0.2671435021874159,
+          "existingDemand": 0.06985228588374628
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:R00465",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.2904071867981642,
+          "logistic": 0.17318367271577487,
+          "existingDemand": 0.005335570550853196
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:R00492",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.2904071867981642,
+          "logistic": 0.6794483652916025,
+          "existingDemand": 0.41703607110724034
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:R00618",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.2904071867981642,
+          "logistic": 0.19702747300380602,
+          "existingDemand": 0.12707692026603895
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:R00701",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2904071867981642,
+          "logistic": 0.3737028197288074,
+          "existingDemand": 0.3462797883448079
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:R00718",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2904071867981642,
+          "logistic": 0.10183487930774299,
+          "existingDemand": 0.004466857397063923
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:R00738",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2904071867981642,
+          "logistic": 0.07738861097690901,
+          "existingDemand": 0.0006701044341773045
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:R00745",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2904071867981642,
+          "logistic": 0.2925585232231731,
+          "existingDemand": 0.11662733861634904
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:R00021",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 0,
+        "predictions": {
+          "constant": 0.24803213430120497,
+          "logistic": 0.04269471909110569,
+          "existingDemand": 0.0030894915158480732
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:R00023",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 0,
+        "predictions": {
+          "constant": 0.24803213430120497,
+          "logistic": 0.2940467577667924,
+          "existingDemand": 0.07629628324328873
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:R00030",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.24803213430120497,
+          "logistic": 0.21640964564373644,
+          "existingDemand": 0.4775576197159223
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:R00047",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 0,
+        "predictions": {
+          "constant": 0.24803213430120497,
+          "logistic": 0.059776684550474794,
+          "existingDemand": 0.008753132926447624
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:R00242",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.24803213430120497,
+          "logistic": 0.3830279706235899,
+          "existingDemand": 0.20666220883501674
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:R00258",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 0,
+        "predictions": {
+          "constant": 0.24803213430120497,
+          "logistic": 0.05346816074014493,
+          "existingDemand": 7.757572783572716e-05
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:R00522",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 0,
+        "predictions": {
+          "constant": 0.24803213430120497,
+          "logistic": 0.0925038366796508,
+          "existingDemand": 0.48945561606070626
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:R00635",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.24803213430120497,
+          "logistic": 0.23896758694943054,
+          "existingDemand": 0.9849967535450469
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:R00637",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.24803213430120497,
+          "logistic": 0.15168283756002635,
+          "existingDemand": 0.752935739803667
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:R00673",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.24803213430120497,
+          "logistic": 0.69006872791602,
+          "existingDemand": 0.7590234571040324
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:R00689",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.24803213430120497,
+          "logistic": 0.30067636529309033,
+          "existingDemand": 0.3420761230014918
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:R00714",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 0,
+        "predictions": {
+          "constant": 0.24803213430120497,
+          "logistic": 0.14399080514637777,
+          "existingDemand": 0.09909618874085037
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:R00024",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27813699737320674,
+          "logistic": 0.01658392896890509,
+          "existingDemand": 0.001200810064367201
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:R00027",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27813699737320674,
+          "logistic": 0.28755614315932615,
+          "existingDemand": 0.009152148902903064
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:R00034",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.27813699737320674,
+          "logistic": 0.38237066236657274,
+          "existingDemand": 0.5502542849901402
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:R00041",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27813699737320674,
+          "logistic": 0.030088865535445573,
+          "existingDemand": 0.0004244396986827617
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:R00098",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27813699737320674,
+          "logistic": 0.08656173458352806,
+          "existingDemand": 0.013349769642261384
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:R00226",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27813699737320674,
+          "logistic": 0.0025547772364852106,
+          "existingDemand": 1.0655467888694587e-06
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:R00238",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27813699737320674,
+          "logistic": 0.045802699554448885,
+          "existingDemand": 0.0012925180047210314
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:R00433",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27813699737320674,
+          "logistic": 0.22081991082479457,
+          "existingDemand": 0.0442661693419173
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:R00518",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.27813699737320674,
+          "logistic": 0.37477528256150483,
+          "existingDemand": 0.0038449383663909874
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:R00521",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.27813699737320674,
+          "logistic": 0.3913379513934431,
+          "existingDemand": 0.06933460888665872
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:R00543",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27813699737320674,
+          "logistic": 0.034165872368385114,
+          "existingDemand": 0.0007530249402809373
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:R00629",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.27813699737320674,
+          "logistic": 0.8000630495852924,
+          "existingDemand": 0.9324576671175984
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:R00653",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27813699737320674,
+          "logistic": 0.527106113055836,
+          "existingDemand": 0.014902635847106317
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:R00659",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27813699737320674,
+          "logistic": 0.941187267018471,
+          "existingDemand": 0.2656986539858731
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:R00005",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27982731554160123,
+          "logistic": 0.20472234850437512,
+          "existingDemand": 0.19781611144141809
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:R00016",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27982731554160123,
+          "logistic": 0.31917542934473025,
+          "existingDemand": 0.2032853973274016
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:R00226",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27982731554160123,
+          "logistic": 0.019464268065152654,
+          "existingDemand": 0.0004747610645172871
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:R00229",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27982731554160123,
+          "logistic": 0.3209332450929048,
+          "existingDemand": 0.1676125309998054
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:R00274",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27982731554160123,
+          "logistic": 0.7622965799893627,
+          "existingDemand": 0.4408586523852784
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:R00493",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27982731554160123,
+          "logistic": 0.026874830706792176,
+          "existingDemand": 0.0003008934580830146
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:R00518",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27982731554160123,
+          "logistic": 0.0036771416140096466,
+          "existingDemand": 1.8449558752953844e-06
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:R00532",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.27982731554160123,
+          "logistic": 0.5581807785027717,
+          "existingDemand": 0.4829159625776687
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:R00655",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.27982731554160123,
+          "logistic": 0.2652372338011221,
+          "existingDemand": 0.6311356257307321
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:R00662",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.27982731554160123,
+          "logistic": 0.3653834920110319,
+          "existingDemand": 0.5788482010826398
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:R00690",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 0,
+        "predictions": {
+          "constant": 0.27982731554160123,
+          "logistic": 0.5172474119069654,
+          "existingDemand": 0.5365521329072512
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:R00004",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2713793372600585,
+          "logistic": 0.3313795106591809,
+          "existingDemand": 0.10104937008168295
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:R00006",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2713793372600585,
+          "logistic": 0.2703834696396297,
+          "existingDemand": 0.03141672620496931
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:R00021",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2713793372600585,
+          "logistic": 0.23309292461739045,
+          "existingDemand": 0.009446181486670546
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:R00025",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2713793372600585,
+          "logistic": 0.020099070829287215,
+          "existingDemand": 3.845188025371773e-06
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:R00323",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.2713793372600585,
+          "logistic": 0.542678943954175,
+          "existingDemand": 0.6299676016152809
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:R00467",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2713793372600585,
+          "logistic": 0.06263563009191823,
+          "existingDemand": 0.005100243466467829
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:R00485",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2713793372600585,
+          "logistic": 0.23030277153789133,
+          "existingDemand": 0.2964765155481663
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:R00492",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.2713793372600585,
+          "logistic": 0.14162378554818603,
+          "existingDemand": 0.23447263369094304
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:R00505",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2713793372600585,
+          "logistic": 0.1598784758648695,
+          "existingDemand": 0.6942810159105198
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:R00652",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.2713793372600585,
+          "logistic": 0.23003806384688077,
+          "existingDemand": 0.14388121015769928
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:R00701",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.2713793372600585,
+          "logistic": 0.6803539720243432,
+          "existingDemand": 0.9517646773497382
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:R00733",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 0,
+        "predictions": {
+          "constant": 0.2713793372600585,
+          "logistic": 0.04456216919711721,
+          "existingDemand": 0.0063719059191344645
+        }
+      }
+    ],
+    "brierGainOverConstant": 0.02367200805491649,
+    "descriptiveWeekT95": [
+      -0.004398996298340226,
+      0.05174301240817321
+    ],
+    "improvedWeeks": 6,
+    "existingHeuristicComparable": true,
+    "developmentGatePassed": false
+  },
+  "booking": {
+    "observations": 320,
+    "positive": 263,
+    "features": [
+      "sumOrderHundredKm",
+      "pickupSlackHours",
+      "minimumEligibleHomeSupply",
+      "actualOpeningEuros",
+      "openingMultiplier",
+      "weeklyDelayHours",
+      "ordersInPost",
+      "scheduleAgeHours"
+    ],
+    "scoresEqualWeekWeighted": {
+      "constant": {
+        "brier": 0.147799092097983,
+        "logLoss": 0.4733403915840137
+      },
+      "logistic": {
+        "brier": 0.13425828370137224,
+        "logLoss": 0.4244639437459065
+      }
+    },
+    "folds": [
+      {
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "n": 40,
+        "positive": 30,
+        "fit": {
+          "trainSeeds": [
+            "level8-estimate-13b39f93b74b237bc46f579b",
+            "level8-estimate-2e646af6a3e79187503ccc80",
+            "level8-estimate-4421e0179044aca015374bc1",
+            "level8-estimate-502fd2d71b59b218d9af949c",
+            "level8-estimate-b87f6821707b892a55d34716",
+            "level8-estimate-c5d2d97a139c8d2c999d17b2",
+            "level8-estimate-fa0f948061c4c308cc69f2ac"
+          ],
+          "testSeed": "level8-estimate-12912cd52d9ef00ea35490e8",
+          "mean": [
+            2.18559642857143,
+            40.12690476190477,
+            211.42535714285657,
+            64.61225000000002,
+            0.9948571428571422,
+            0.42857142857142855,
+            1.2142857142857142,
+            0.20440476190476187
+          ],
+          "scale": [
+            1.604807057157193,
+            29.600536988755394,
+            162.3220264954416,
+            36.93082381206112,
+            0.06285454540087791,
+            0.49487165930539284,
+            0.41032590332414454,
+            0.11361852622320778
+          ],
+          "coefficients": [
+            -1.607384402480085,
+            -0.2909356407365051,
+            0.3084129409944511,
+            1.6989315720576645,
+            0.1809804459595259,
+            0.08218097960862208,
+            0.4002994496694647,
+            -0.275981809697864
+          ],
+          "intercept": 1.9144868371540313
+        },
+        "scores": {
+          "constant": {
+            "brier": 0.19386600271616122,
+            "logLoss": 0.5826159816928649,
+            "meanPrediction": 0.8297872340425533,
+            "observedRate": 0.75
+          },
+          "logistic": {
+            "brier": 0.15317220272628213,
+            "logLoss": 0.450464144084176,
+            "meanPrediction": 0.8471472942965349,
+            "observedRate": 0.75
+          }
+        }
+      },
+      {
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "n": 40,
+        "positive": 31,
+        "fit": {
+          "trainSeeds": [
+            "level8-estimate-12912cd52d9ef00ea35490e8",
+            "level8-estimate-2e646af6a3e79187503ccc80",
+            "level8-estimate-4421e0179044aca015374bc1",
+            "level8-estimate-502fd2d71b59b218d9af949c",
+            "level8-estimate-b87f6821707b892a55d34716",
+            "level8-estimate-c5d2d97a139c8d2c999d17b2",
+            "level8-estimate-fa0f948061c4c308cc69f2ac"
+          ],
+          "testSeed": "level8-estimate-13b39f93b74b237bc46f579b",
+          "mean": [
+            2.213082142857146,
+            38.83154761904759,
+            215.2783928571421,
+            64.79592857142858,
+            0.9954285714285711,
+            0.5714285714285714,
+            1.2107142857142856,
+            0.20297619047619042
+          ],
+          "scale": [
+            1.6613132833380375,
+            29.18011711605117,
+            161.29254152865934,
+            37.59770413576621,
+            0.06433585346302885,
+            0.4948716593053934,
+            0.4078158598071009,
+            0.11107819098487161
+          ],
+          "coefficients": [
+            -1.901422429659475,
+            -0.20144602022460786,
+            0.323890668209333,
+            1.7128761958248377,
+            0.18173981187893595,
+            -0.10765795128243752,
+            0.5362625507777897,
+            -0.4874699300123717
+          ],
+          "intercept": 2.0418987627439895
+        },
+        "scores": {
+          "constant": {
+            "brier": 0.17700065389064937,
+            "logLoss": 0.5416927023498046,
+            "meanPrediction": 0.8262411347517731,
+            "observedRate": 0.775
+          },
+          "logistic": {
+            "brier": 0.17771764723617456,
+            "logLoss": 0.5585015192081809,
+            "meanPrediction": 0.8520284599998593,
+            "observedRate": 0.775
+          }
+        }
+      },
+      {
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "n": 40,
+        "positive": 36,
+        "fit": {
+          "trainSeeds": [
+            "level8-estimate-12912cd52d9ef00ea35490e8",
+            "level8-estimate-13b39f93b74b237bc46f579b",
+            "level8-estimate-4421e0179044aca015374bc1",
+            "level8-estimate-502fd2d71b59b218d9af949c",
+            "level8-estimate-b87f6821707b892a55d34716",
+            "level8-estimate-c5d2d97a139c8d2c999d17b2",
+            "level8-estimate-fa0f948061c4c308cc69f2ac"
+          ],
+          "testSeed": "level8-estimate-2e646af6a3e79187503ccc80",
+          "mean": [
+            2.1729821428571454,
+            38.727619047619044,
+            220.67589285714197,
+            63.92100000000001,
+            0.9954285714285711,
+            0.42857142857142855,
+            1.2285714285714284,
+            0.20196428571428565
+          ],
+          "scale": [
+            1.6873089742786058,
+            27.711870327162654,
+            167.21541586460958,
+            38.0289704285712,
+            0.06289868756944918,
+            0.49487165930539306,
+            0.4199125273342596,
+            0.1160917412018767
+          ],
+          "coefficients": [
+            -1.5370294381093073,
+            -0.30284155601332685,
+            0.3458968194386621,
+            1.430193892077464,
+            0.2101270701120131,
+            -0.13083229649088157,
+            0.45688551824913004,
+            -0.4134018556825144
+          ],
+          "intercept": 1.8281077762606541
+        },
+        "scores": {
+          "constant": {
+            "brier": 0.09837030330466275,
+            "logLoss": 0.3565976002226895,
+            "meanPrediction": 0.8085106382978722,
+            "observedRate": 0.9
+          },
+          "logistic": {
+            "brier": 0.10137719553599248,
+            "logLoss": 0.351744389633149,
+            "meanPrediction": 0.7491030284453688,
+            "observedRate": 0.9
+          }
+        }
+      },
+      {
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "n": 40,
+        "positive": 35,
+        "fit": {
+          "trainSeeds": [
+            "level8-estimate-12912cd52d9ef00ea35490e8",
+            "level8-estimate-13b39f93b74b237bc46f579b",
+            "level8-estimate-2e646af6a3e79187503ccc80",
+            "level8-estimate-502fd2d71b59b218d9af949c",
+            "level8-estimate-b87f6821707b892a55d34716",
+            "level8-estimate-c5d2d97a139c8d2c999d17b2",
+            "level8-estimate-fa0f948061c4c308cc69f2ac"
+          ],
+          "testSeed": "level8-estimate-4421e0179044aca015374bc1",
+          "mean": [
+            2.1701250000000027,
+            38.964226190476154,
+            222.03446428571343,
+            63.61189285714288,
+            0.994571428571428,
+            0.42857142857142855,
+            1.1857142857142857,
+            0.21130952380952375
+          ],
+          "scale": [
+            1.624979815946076,
+            27.738114196230494,
+            166.41860902039926,
+            36.70818525385554,
+            0.06337385026932786,
+            0.49487165930539306,
+            0.3888759311090346,
+            0.10870390570557394
+          ],
+          "coefficients": [
+            -1.87678064593092,
+            -0.4659551845769767,
+            0.4270755719485175,
+            1.8612180299467183,
+            0.27537043512891063,
+            -0.01831399196190661,
+            0.31366522506806654,
+            -0.3391290689811011
+          ],
+          "intercept": 1.8615469210152198
+        },
+        "scores": {
+          "constant": {
+            "brier": 0.11333685428298375,
+            "logLoss": 0.3911138286341386,
+            "meanPrediction": 0.8120567375886523,
+            "observedRate": 0.875
+          },
+          "logistic": {
+            "brier": 0.14613400330230145,
+            "logLoss": 0.45686047424745074,
+            "meanPrediction": 0.8319576804246257,
+            "observedRate": 0.875
+          }
+        }
+      },
+      {
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "n": 40,
+        "positive": 35,
+        "fit": {
+          "trainSeeds": [
+            "level8-estimate-12912cd52d9ef00ea35490e8",
+            "level8-estimate-13b39f93b74b237bc46f579b",
+            "level8-estimate-2e646af6a3e79187503ccc80",
+            "level8-estimate-4421e0179044aca015374bc1",
+            "level8-estimate-b87f6821707b892a55d34716",
+            "level8-estimate-c5d2d97a139c8d2c999d17b2",
+            "level8-estimate-fa0f948061c4c308cc69f2ac"
+          ],
+          "testSeed": "level8-estimate-502fd2d71b59b218d9af949c",
+          "mean": [
+            2.1357571428571447,
+            39.203333333333326,
+            207.80392857142795,
+            63.22282142857144,
+            0.9954285714285709,
+            0.5714285714285714,
+            1.2,
+            0.20720238095238092
+          ],
+          "scale": [
+            1.6194739947253973,
+            29.274340686325402,
+            154.11476284711824,
+            37.32605396421568,
+            0.0646901563341025,
+            0.4948716593053934,
+            0.39999999999999947,
+            0.11093358656985602
+          ],
+          "coefficients": [
+            -1.6322765626469418,
+            -0.3342666089529098,
+            0.23775093283540447,
+            1.6308858141923788,
+            0.17687219689216732,
+            0.04114668184843415,
+            0.41330313855604583,
+            -0.2656810065993066
+          ],
+          "intercept": 1.7723689150960935
+        },
+        "scores": {
+          "constant": {
+            "brier": 0.11333685428298376,
+            "logLoss": 0.3911138286341387,
+            "meanPrediction": 0.8120567375886523,
+            "observedRate": 0.875
+          },
+          "logistic": {
+            "brier": 0.08049467729717588,
+            "logLoss": 0.27615634126339816,
+            "meanPrediction": 0.8235135236298028,
+            "observedRate": 0.875
+          }
+        }
+      },
+      {
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "n": 40,
+        "positive": 35,
+        "fit": {
+          "trainSeeds": [
+            "level8-estimate-12912cd52d9ef00ea35490e8",
+            "level8-estimate-13b39f93b74b237bc46f579b",
+            "level8-estimate-2e646af6a3e79187503ccc80",
+            "level8-estimate-4421e0179044aca015374bc1",
+            "level8-estimate-502fd2d71b59b218d9af949c",
+            "level8-estimate-c5d2d97a139c8d2c999d17b2",
+            "level8-estimate-fa0f948061c4c308cc69f2ac"
+          ],
+          "testSeed": "level8-estimate-b87f6821707b892a55d34716",
+          "mean": [
+            2.15444642857143,
+            40.473571428571425,
+            217.42339285714223,
+            63.22410714285717,
+            0.9922857142857138,
+            0.5714285714285714,
+            1.2,
+            0.20583333333333328
+          ],
+          "scale": [
+            1.6062818125770504,
+            29.761873646650404,
+            163.8442926365152,
+            36.18842620708539,
+            0.0638563438748354,
+            0.4948716593053934,
+            0.3999999999999994,
+            0.10935280387025176
+          ],
+          "coefficients": [
+            -1.7224935816678633,
+            -0.3426621872628509,
+            0.29670217086729267,
+            1.6668118668244383,
+            0.23451688617960137,
+            0.040196450348638675,
+            0.6934016380058894,
+            0.025795980999917437
+          ],
+          "intercept": 1.8011290785906044
+        },
+        "scores": {
+          "constant": {
+            "brier": 0.11333685428298375,
+            "logLoss": 0.3911138286341386,
+            "meanPrediction": 0.8120567375886523,
+            "observedRate": 0.875
+          },
+          "logistic": {
+            "brier": 0.09981441624381823,
+            "logLoss": 0.33775000278475986,
+            "meanPrediction": 0.8557546911471698,
+            "observedRate": 0.875
+          }
+        }
+      },
+      {
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "n": 40,
+        "positive": 33,
+        "fit": {
+          "trainSeeds": [
+            "level8-estimate-12912cd52d9ef00ea35490e8",
+            "level8-estimate-13b39f93b74b237bc46f579b",
+            "level8-estimate-2e646af6a3e79187503ccc80",
+            "level8-estimate-4421e0179044aca015374bc1",
+            "level8-estimate-502fd2d71b59b218d9af949c",
+            "level8-estimate-b87f6821707b892a55d34716",
+            "level8-estimate-fa0f948061c4c308cc69f2ac"
+          ],
+          "testSeed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+          "mean": [
+            2.200878571428573,
+            38.87613095238093,
+            222.35714285714212,
+            64.46832142857146,
+            0.9937142857142851,
+            0.5714285714285714,
+            1.1892857142857143,
+            0.2083333333333333
+          ],
+          "scale": [
+            1.6229554036996705,
+            29.73425658384556,
+            164.77166170962494,
+            36.49840195675263,
+            0.06311376188103117,
+            0.4948716593053934,
+            0.39173541153827435,
+            0.10643949022503392
+          ],
+          "coefficients": [
+            -1.756442969361168,
+            -0.237117906363691,
+            0.37519629922410264,
+            1.6941337914611483,
+            0.2037340333016166,
+            -0.003203245024609833,
+            0.6481557301771962,
+            -0.2557479101889251
+          ],
+          "intercept": 1.9150168646760684
+        },
+        "scores": {
+          "constant": {
+            "brier": 0.14440923494794022,
+            "logLoss": 0.46384297403087693,
+            "meanPrediction": 0.8191489361702127,
+            "observedRate": 0.825
+          },
+          "logistic": {
+            "brier": 0.12493262033988421,
+            "logLoss": 0.40184733917929183,
+            "meanPrediction": 0.83111874239177,
+            "observedRate": 0.825
+          }
+        }
+      },
+      {
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "n": 40,
+        "positive": 28,
+        "fit": {
+          "trainSeeds": [
+            "level8-estimate-12912cd52d9ef00ea35490e8",
+            "level8-estimate-13b39f93b74b237bc46f579b",
+            "level8-estimate-2e646af6a3e79187503ccc80",
+            "level8-estimate-4421e0179044aca015374bc1",
+            "level8-estimate-502fd2d71b59b218d9af949c",
+            "level8-estimate-b87f6821707b892a55d34716",
+            "level8-estimate-c5d2d97a139c8d2c999d17b2"
+          ],
+          "testSeed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+          "mean": [
+            2.251957142857145,
+            37.87541666666665,
+            223.810178571428,
+            66.00367857142857,
+            0.996285714285714,
+            0.42857142857142855,
+            1.2214285714285713,
+            0.20130952380952374
+          ],
+          "scale": [
+            1.653281519850007,
+            29.24255830286109,
+            167.49233866797655,
+            37.6524295891794,
+            0.06277332073355976,
+            0.49487165930539306,
+            0.41520833226667525,
+            0.11410569899973283
+          ],
+          "coefficients": [
+            -1.580321104513203,
+            -0.2454896395639462,
+            0.24017410266887895,
+            1.5935996625887137,
+            0.33869755978573646,
+            0.0813557508547407,
+            0.37985550789504524,
+            -0.34491698581125874
+          ],
+          "intercept": 2.003782139269554
+        },
+        "scores": {
+          "constant": {
+            "brier": 0.2287359790754992,
+            "logLoss": 0.6686323884734579,
+            "meanPrediction": 0.8368794326241135,
+            "observedRate": 0.7
+          },
+          "logistic": {
+            "brier": 0.190423506929349,
+            "logLoss": 0.5623873395668454,
+            "meanPrediction": 0.7961687720436247,
+            "observedRate": 0.7
+          }
+        }
+      }
+    ],
+    "predictions": [
+      {
+        "id": "w5df35efe5742cd286daf:g1",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.8875433482464693
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g3",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.8734852438653974
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g4",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.7635446262981728
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g5",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.9078451814344044
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g7",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.7757434971686015
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g9",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.8098148111682074
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g10",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.8317789057543306
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g11",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.7403605559497558
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g12",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.6482506516392319
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g13",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.7562263676943982
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g14",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.8897770861185459
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g15",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.786570004995809
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g16",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.9075820453281004
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g17",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.9328176667449661
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g18",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.8784936734631044
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g19",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.9816709692679574
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g20",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.8811854150381574
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g21",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.9281031989824092
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g22",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.9856443511992653
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g23",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.8628563769908818
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g24",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.9781733165552641
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g25",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.9010357885093715
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g26",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.7803682387866545
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g27",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.8516610571782975
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g28",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.7925363534225155
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g29",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.848193348769048
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g30",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.5118572508657883
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g31",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.9234961461579038
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g32",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.7593356844162252
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g33",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.8804957055535688
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g34",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.8461064566996583
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g35",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.7204310835318705
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g36",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.9011201454230165
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g37",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.9352655073704867
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g38",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.7698930049559867
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g39",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.9113148142013583
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g40",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.8977275810955521
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g41",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.8700808739217083
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g42",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.7874020673048795
+        }
+      },
+      {
+        "id": "w5df35efe5742cd286daf:g43",
+        "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8297872340425533,
+          "logistic": 0.9901033697940705
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g1",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.6525553428350462
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g2",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.8030020677837438
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g3",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 0,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.8239322729233276
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g4",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.8839656604560512
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g5",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.7934904075079078
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g6",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.7365955523620635
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g7",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.9304554484349772
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g8",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 0,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.7977251264117856
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g9",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.7745909276008587
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g10",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.9890193781037652
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g11",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 0,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.7743059576608056
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g12",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 0,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.7856564988836859
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g13",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 0,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.8347337440813143
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g14",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.8845886526938144
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g16",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.8101925765474537
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g17",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.986835398571427
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g18",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.6886016316159692
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g19",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.9894458581794883
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g20",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.8399160799448759
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g21",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.9849889466288294
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g25",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.7853035134700351
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g26",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 0,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.6994212781294435
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g27",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.7317221722009614
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g28",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.776665038124849
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g29",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.8278806764725781
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g30",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.8849679749732943
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g31",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.9331179385090689
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g32",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.9115686390940243
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g33",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.976643486251041
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g34",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.8567364185171247
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g35",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.9854509847396626
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g36",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 0,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.9781869265528231
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g37",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 0,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.8727330278406574
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g38",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 0,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.8876828379073108
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g39",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.9362941437717515
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g40",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.8045938818618292
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g41",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.8220185657030146
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g42",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.8029200292042328
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g43",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.8944001263615037
+        }
+      },
+      {
+        "id": "wc646ec655db115b7184c:g44",
+        "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+        "target": 1,
+        "predictions": {
+          "constant": 0.826241134751773,
+          "logistic": 0.9482332110819721
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g1",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.8708217661354192
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g2",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.46827686284269876
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g3",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.9881792642707318
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g4",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.739134795362734
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g5",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.850300196267123
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g6",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.49206376934118273
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g7",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.6094760058789006
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g9",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.5876634417270388
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g10",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.6676237696997604
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g11",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.9857580203935961
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g12",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.4953248296834691
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g13",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.756997178971349
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g14",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.7597882395736762
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g15",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.6721195043020793
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g16",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.7755025588588843
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g17",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.8555245196152529
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g18",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.8599074233328626
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g19",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.7127838040744877
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g20",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.850827777658392
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g21",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.7896858320229777
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g22",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.8094573905291199
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g23",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.6588349787249531
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g24",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.7561160771694768
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g25",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.6809173444389193
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g26",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.7412283225607357
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g27",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.7417306887546614
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g28",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.8945381843800723
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g29",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.8760008458117642
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g30",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.6924987671789349
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g31",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.6104093912782694
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g32",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.8712947097263736
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g33",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.5915024531834506
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g34",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.8406608215563254
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g35",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.4564560220861448
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g36",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.8375387873782906
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g37",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.8151959146186025
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g38",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.8501042234209396
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g39",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.7821470155951642
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g40",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.7676771092225708
+        }
+      },
+      {
+        "id": "w57a87111e7f8c70f7ff2:g41",
+        "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8085106382978723,
+          "logistic": 0.9020525301873684
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g1",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.7902737887451351
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g2",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.620061404483691
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g3",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9827147485805614
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g4",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8580676010562914
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g5",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8866405910701386
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g6",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.6189182683731779
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g7",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8875251460693894
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g8",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8538397094471087
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g9",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9079782870703764
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g10",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9916250364664955
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g11",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8842661903897419
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g12",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9808223129498639
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g13",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9823864740675275
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g14",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.905245004503312
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g15",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9837576784374511
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g16",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8661548571516555
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g17",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.669465707845421
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g18",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8125690151196497
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g19",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8121987466114801
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g20",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9714827754174089
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g21",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.7616466320717705
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g22",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.838302939787241
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g23",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9027380967494427
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g25",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8420793339245147
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g26",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.48694129738838093
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g27",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.838371760749415
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g30",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9427302699643955
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g31",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.7677657983862
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g32",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9407978411817134
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g33",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9817471649575512
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g34",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9765451789338535
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g35",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.971563826252365
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g37",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9477804124581134
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g38",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8216189498352613
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g39",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9831689300072124
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g40",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.15501432738111134
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g41",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9389761010852689
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g42",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.2800791299329915
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g43",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.7034497535557767
+        }
+      },
+      {
+        "id": "wf6b5a0c39ea1134a8da9:g44",
+        "seed": "level8-estimate-4421e0179044aca015374bc1",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9309961285265737
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g1",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8816843506054745
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g2",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9216611178042505
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g3",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8422069654196269
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g4",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8818272885906454
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g5",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.87907752501061
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g6",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9868815806906878
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g7",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8869758546116309
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g8",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8051899268024926
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g9",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8795316638359181
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g10",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.5874120139420633
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g11",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.906324951748872
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g12",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.5764822008913807
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g13",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9584170965479796
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g14",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.7521118696942964
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g15",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.3687483818865998
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g16",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8591053011990801
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g17",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9896350000558158
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g18",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9310824552397474
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g20",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8365029490226815
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g21",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8436002205141059
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g22",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8982955370870812
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g23",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8522560325531147
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g24",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.905365385323681
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g25",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9634128463235921
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g26",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9821446804353102
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g29",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9231773151897065
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g30",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.7713905584290199
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g31",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.44052536186443386
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g32",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.7653655508828267
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g33",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9778764907640823
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g35",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.7128313842190573
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g36",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8703583292238419
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g37",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.773932766803611
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g38",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.6535342544540113
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g39",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.6456687139356887
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g40",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.7959310192935902
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g41",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.7773541497460045
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g42",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8496443256823093
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g44",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9343343000148696
+        }
+      },
+      {
+        "id": "wd820ad4cebadb01283c0:g45",
+        "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8726832288523236
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g1",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8986690426200235
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g2",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9550739716932893
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g3",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.7879823981209453
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g4",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.685026803983349
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g5",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8657929143920877
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g6",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8159989838199775
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g7",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9585252328492011
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g8",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8483181165706934
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g9",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8587652756243208
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g10",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.7817288470337942
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g11",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.6915621535780662
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g12",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9264721198081298
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g13",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.6996731745214791
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g14",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9032955455379799
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g15",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9410683767309259
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g16",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8459301074368296
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g17",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8531664087654445
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g18",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.49808940205131946
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g20",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9674000933476484
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g21",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9610057685367278
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g22",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9705606590230099
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g23",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8518066455493398
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g24",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9772208223820998
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g27",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.7334929828570673
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g28",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.7731944311542946
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g29",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9162554832203212
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g33",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9459283799727689
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g34",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9852169251132383
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g35",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8734446180279709
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g36",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9846856442746227
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g37",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.7039601644397235
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g38",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9515883768316233
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g39",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.7478629298878148
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g40",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8131803476002712
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g41",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8695450082417469
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g42",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8286133343437695
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g43",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9953205452304931
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g44",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.7382903733276962
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g45",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.9385460910906677
+        }
+      },
+      {
+        "id": "w46870f3259ec08d9c079:g46",
+        "seed": "level8-estimate-b87f6821707b892a55d34716",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8120567375886524,
+          "logistic": 0.8879291462960235
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g1",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.8906378391014669
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g2",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.7302216141108884
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g3",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.832191793700084
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g4",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.8152755719691666
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g5",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.7004054290369639
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g6",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.9823403667174895
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g7",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.8597282246183611
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g8",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.5361124301806881
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g9",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.5475070532926812
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g10",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.6361925445667141
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g11",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.9911297409055538
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g12",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.8517337692694413
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g13",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.8820628521505097
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g15",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.7608536234034222
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g16",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.7944837948189619
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g17",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.9760788197761053
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g19",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.8666377550373161
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g21",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.6513770157672336
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g22",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.9932245870448776
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g24",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.8029924980564099
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g25",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.4251180898616516
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g26",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.9655155546210474
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g27",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.6568089489886152
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g28",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.7820173634434231
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g29",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.8093847914804714
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g30",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.9826895092943629
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g31",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.9152559513589736
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g32",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.9946043024253186
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g33",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.8633397027440054
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g34",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.9914439986445793
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g35",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.9596726533242552
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g36",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.7992058030425638
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g37",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.8091046437457834
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g38",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.8589483253369278
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g39",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.8144141172003626
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g40",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.7369265048225893
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g41",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.9758722167451227
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g42",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.9945183061538552
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g43",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.9811539200467458
+        }
+      },
+      {
+        "id": "w658a1378b2ad0a8c7eae:g44",
+        "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8191489361702127,
+          "logistic": 0.8275676688658047
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g1",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.4729590092873667
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g2",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.7968173867776114
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g3",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.7942660573359467
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g4",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.6509093676169342
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g5",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.6767135228810106
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g6",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.8071935878353114
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g7",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.8659260867045874
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g8",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.9281911339646062
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g9",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.6162204227320837
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g10",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.8491386114880702
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g11",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.7614740516281393
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g12",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.787255559587441
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g13",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.7061759483630429
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g14",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.9077736341449884
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g15",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.8745389997103197
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g16",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.6301815225393583
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g17",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.8615718066134485
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g18",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.7193390573041134
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g19",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.6067832808278818
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g20",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.7075290675142298
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g21",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.939024635184041
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g22",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.8537052429764321
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g23",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.8520718228966306
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g24",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.9174976588627546
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g25",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.8452055793150597
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g26",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.8672936996313888
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g27",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.7381261859057441
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g28",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.7732690649419046
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g29",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.9485054194141885
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g30",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.7329666386228095
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g31",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.7657867207666298
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g32",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.7805033048984445
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g33",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.9807675993988388
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g34",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.8007977332886589
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g35",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.9898731910229216
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g36",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.7817616979222016
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g37",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.7733784360707012
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g38",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.8999715919386897
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g39",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 0,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.656553789381636
+        }
+      },
+      {
+        "id": "w1006906b294a00137a7c:g40",
+        "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+        "target": 1,
+        "predictions": {
+          "constant": 0.8368794326241135,
+          "logistic": 0.9287327544488216
+        }
+      }
+    ],
+    "brierGainOverConstant": 0.01354080839661076,
+    "descriptiveWeekT95": [
+      -0.0073788503899530795,
+      0.034460467183174595
+    ],
+    "improvedWeeks": 5,
+    "existingHeuristicComparable": false,
+    "developmentGatePassed": false
+  },
+  "bookingComparatorLimitation": "Existing portfolio booking prior predicts booking within120minutes from award, whereas these interventions measure120minutes from posting. The full action-conditioned heuristic was not reconstructed; the comparable-heuristic gate is unmet.",
+  "costModelLimitation": "First-gig payments and incompletely allocated order ledgers are not full continuation cost. No cost-prediction validation or capacity-value inference is claimed.",
+  "decision": "Keep the retained policy and simple baselines unless every predeclared model gate passes. Passing only permits a separately frozen structural experiment; it is not validation of policy economics."
+}
