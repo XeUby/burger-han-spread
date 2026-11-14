@@ -6,6 +6,7 @@
   "maxKm": 700,
   "minDrivers": 8,
   "notes": true,
+  "noteSpelling": false,
   "adaptive": true,
   "earlyOffers": false,
   "safetySlack": false,

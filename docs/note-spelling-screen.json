@@ -1,0 +1,2434 @@
+{
+  "scope": "Six explicit old development weeks. This prototype does not change production notes or dispatch.",
+  "method": "Derive long-word vocabulary from the existing harmless-clause patterns. Correct at most two words by a unique single insertion, deletion, substitution or adjacent transposition, then require the entire strict note parser to accept the result. Protect equipment and time words. Count public single-car requests passing static supply, distance and option timing gates.",
+  "limitations": [
+    "Static counts ignore admission congestion, sale probability and delivery costs.",
+    "A plausible correction is not proof of the note's true restrictions. Newly accepted examples require semantic review and a practice reveal probe before implementation.",
+    "The research prototype reads the parser source to obtain vocabulary; it is not a production parser design."
+  ],
+  "summary": {
+    "weeks": 6,
+    "correctedNotes": 157,
+    "meanStaticallyFeasibleRequests": 19.833333333333332
+  },
+  "protectedWords": [
+    "automatic",
+    "automaatti",
+    "automat",
+    "manual",
+    "manuaali",
+    "manuell",
+    "ready",
+    "valmis",
+    "valmiina",
+    "haettavissa",
+    "noudettavaksi",
+    "before",
+    "ennen",
+    "innan",
+    "tuntia",
+    "timme",
+    "arrival",
+    "arrive",
+    "collect",
+    "pickup",
+    "waiting"
+  ],
+  "vocabulary": [
+    "advance",
+    "ajettu",
+    "along",
+    "asiakkaalle",
+    "autossa",
+    "avaimet",
+    "avain",
+    "avainboksissa",
+    "bagaget",
+    "bakluckan",
+    "bilen",
+    "booking",
+    "buckla",
+    "bumper",
+    "cheers",
+    "customer",
+    "dacken",
+    "dacksats",
+    "edessa",
+    "erityista",
+    "etukateen",
+    "extra",
+    "foljer",
+    "forsaljningen",
+    "garden",
+    "glovebox",
+    "hakea",
+    "halsningar",
+    "hamtas",
+    "hamtning",
+    "hanskalokerossa",
+    "hejsan",
+    "hello",
+    "hoger",
+    "huollon",
+    "huollosta",
+    "huoltokirja",
+    "hyvaa",
+    "ilmoita",
+    "issues",
+    "kassan",
+    "kauppakirja",
+    "kesarengasta",
+    "kesarenkaat",
+    "kiitos",
+    "kiitti",
+    "kolhu",
+    "kontissa",
+    "koodi",
+    "kuljettajalle",
+    "kulkee",
+    "kunden",
+    "kuvaa",
+    "kyydissa",
+    "lahdet",
+    "lahella",
+    "ligger",
+    "liikkeen",
+    "liikkeeseen",
+    "lisaksi",
+    "liten",
+    "meidan",
+    "menee",
+    "moikka",
+    "mukaan",
+    "mukana",
+    "myyjalta",
+    "myynti",
+    "naarmu",
+    "normaali",
+    "nothing",
+    "noutaessa",
+    "nouto",
+    "noutoa",
+    "nyckelbox",
+    "nyckeln",
+    "nycklar",
+    "ongelmia",
+    "order",
+    "ordernr",
+    "ovessa",
+    "paivanjatkoa",
+    "paljon",
+    "paperit",
+    "papers",
+    "perilla",
+    "pesematta",
+    "pieni",
+    "pihalla",
+    "pihasta",
+    "plats",
+    "reception",
+    "receptionen",
+    "reference",
+    "referens",
+    "registreringsbevis",
+    "rekisteriote",
+    "rengassarja",
+    "rengasta",
+    "renkaat",
+    "renkaita",
+    "right",
+    "ruudussa",
+    "saapumista",
+    "sales",
+    "sarja",
+    "sarjaa",
+    "scratch",
+    "second",
+    "service",
+    "servicebok",
+    "siirto",
+    "soita",
+    "sommardacken",
+    "sopii",
+    "spare",
+    "special",
+    "standard",
+    "summer",
+    "takakontissa",
+    "takapenkilla",
+    "takapuskurissa",
+    "tassa",
+    "tavallinen",
+    "tavaratilassa",
+    "terve",
+    "terveisin",
+    "thank",
+    "thanks",
+    "there",
+    "tilausnro",
+    "tilausnumero",
+    "tiskilta",
+    "toimistosta",
+    "toimitus",
+    "toinen",
+    "transfer",
+    "transport",
+    "trunk",
+    "tulee",
+    "tulet",
+    "tyres",
+    "vanha",
+    "vanlig",
+    "vanteilla",
+    "vanteineen",
+    "varaus",
+    "vastaanottajalle",
+    "viite",
+    "wheels",
+    "ylimaarainen"
+  ],
+  "weeks": [
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "unsafe": 194,
+      "corrected": 26,
+      "eligible": 22
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "unsafe": 200,
+      "corrected": 29,
+      "eligible": 21
+    },
+    {
+      "worldId": "wf5eaeba5a1ba7b164ded",
+      "seed": "formal-unseen-20261113-12",
+      "unsafe": 181,
+      "corrected": 22,
+      "eligible": 17
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "unsafe": 192,
+      "corrected": 28,
+      "eligible": 21
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "unsafe": 209,
+      "corrected": 28,
+      "eligible": 19
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "unsafe": 192,
+      "corrected": 24,
+      "eligible": 19
+    }
+  ],
+  "rows": [
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00036",
+      "original": "2 sarjaa rennkaita, toinen sarja kontissa",
+      "normalized": "2 sarjaa renkaita, toinen sarja kontissa",
+      "edits": [
+        {
+          "from": "rennkaita",
+          "to": "renkaita"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00064",
+      "original": "Hejsan. Nycklar i recepionen.",
+      "normalized": "hejsan. nycklar i receptionen.",
+      "edits": [
+        {
+          "from": "recepionen",
+          "to": "receptionen"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00098",
+      "original": "Sumer tyres in the trunk, go with the car",
+      "normalized": "summer tyres in the trunk, go with the car",
+      "edits": [
+        {
+          "from": "sumer",
+          "to": "summer"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00177",
+      "original": "Ref 215142. Tahnks.",
+      "normalized": "ref 215142. thanks.",
+      "edits": [
+        {
+          "from": "tahnks",
+          "to": "thanks"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00195",
+      "original": "Lisärenkaat mukaaan.",
+      "normalized": "lisarenkaat mukaan.",
+      "edits": [
+        {
+          "from": "mukaaan",
+          "to": "mukaan"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00213",
+      "original": "lisärenkaat mukaaan",
+      "normalized": "lisarenkaat mukaan",
+      "edits": [
+        {
+          "from": "mukaaan",
+          "to": "mukaan"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00272",
+      "original": "auto liikkkeen edessa.",
+      "normalized": "auto liikkeen edessa.",
+      "edits": [
+        {
+          "from": "liikkkeen",
+          "to": "liikkeen"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00324",
+      "original": "Renassarja takapenkillä, kulkee mukana",
+      "normalized": "rengassarja takapenkilla, kulkee mukana",
+      "edits": [
+        {
+          "from": "renassarja",
+          "to": "rengassarja"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00342",
+      "original": "auto pihallla ruudussa 31, avain tiskiltä",
+      "normalized": "auto pihalla ruudussa 31, avain tiskilta",
+      "edits": [
+        {
+          "from": "pihallla",
+          "to": "pihalla"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00438",
+      "original": "hei vaan. 2 sarjaa renkaita, toinne sarja kontissa",
+      "normalized": "hei vaan. 2 sarjaa renkaita, toinen sarja kontissa",
+      "edits": [
+        {
+          "from": "toinne",
+          "to": "toinen"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00443",
+      "original": "Lisäksi 4 kesärengasta tavaratilassa, varraus 817870, terveisin myynti.",
+      "normalized": "lisaksi 4 kesarengasta tavaratilassa, varaus 817870, terveisin myynti.",
+      "edits": [
+        {
+          "from": "varraus",
+          "to": "varaus"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00453",
+      "original": "Nouto liikkeeen pihasta",
+      "normalized": "nouto liikkeen pihasta",
+      "edits": [
+        {
+          "from": "liikkeeen",
+          "to": "liikkeen"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00468",
+      "original": "Spare whheels in the boot. Keys from reception",
+      "normalized": "spare wheels in the boot. keys from reception",
+      "edits": [
+        {
+          "from": "whheels",
+          "to": "wheels"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00469",
+      "original": "rengassarja takapenikllä, kulkee mukana.",
+      "normalized": "rengassarja takapenkilla, kulkee mukana.",
+      "edits": [
+        {
+          "from": "takapeniklla",
+          "to": "takapenkilla"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00514",
+      "original": "ylimärääinen rengassarja takakontissa, mukaan. soita ennen noutoa!",
+      "normalized": "ylimaarainen rengassarja takakontissa, mukaan. soita ennen noutoa!",
+      "edits": [
+        {
+          "from": "ylimaraainen",
+          "to": "ylimaarainen"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00523",
+      "original": "4 rengasta vanteilla tavaaratilassa",
+      "normalized": "4 rengasta vanteilla tavaratilassa",
+      "edits": [
+        {
+          "from": "tavaaratilassa",
+          "to": "tavaratilassa"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00577",
+      "original": "Rengassarja taakapenkillä, kulkee mukana",
+      "normalized": "rengassarja takapenkilla, kulkee mukana",
+      "edits": [
+        {
+          "from": "taakapenkilla",
+          "to": "takapenkilla"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00607",
+      "original": "avaimet huollon tiskiltä. miedän viite 194458",
+      "normalized": "avaimet huollon tiskilta. meidan viite 194458",
+      "edits": [
+        {
+          "from": "miedan",
+          "to": "meidan"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00675",
+      "original": "avain auotssa",
+      "normalized": "avain autossa",
+      "edits": [
+        {
+          "from": "auotssa",
+          "to": "autossa"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00736",
+      "original": "Auto liikkeen edssä",
+      "normalized": "auto liikkeen edessa",
+      "edits": [
+        {
+          "from": "edssa",
+          "to": "edessa"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00852",
+      "original": "renkaat takakontissa, menee mkuana.",
+      "normalized": "renkaat takakontissa, menee mukana.",
+      "edits": [
+        {
+          "from": "mkuana",
+          "to": "mukana"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00862",
+      "original": "Hei vaan. Paperit kuljettaalle tiskiltä. Avaimet huollon tiskiltä. Terveisin myynti",
+      "normalized": "hei vaan. paperit kuljettajalle tiskilta. avaimet huollon tiskilta. terveisin myynti",
+      "edits": [
+        {
+          "from": "kuljettaalle",
+          "to": "kuljettajalle"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00897",
+      "original": "4 renagsta vanteilla tavaratilassa.",
+      "normalized": "4 rengasta vanteilla tavaratilassa.",
+      "edits": [
+        {
+          "from": "renagsta",
+          "to": "rengasta"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00963",
+      "original": "Varraus 382726",
+      "normalized": "varaus 382726",
+      "edits": [
+        {
+          "from": "varraus",
+          "to": "varaus"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R01019",
+      "original": "Renkaat takakontissa, menee mukanna",
+      "normalized": "renkaat takakontissa, menee mukana",
+      "edits": [
+        {
+          "from": "mukanna",
+          "to": "mukana"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R01026",
+      "original": "nouto liikkeeen pihasta",
+      "normalized": "nouto liikkeen pihasta",
+      "edits": [
+        {
+          "from": "liikkeeen",
+          "to": "liikkeen"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00001",
+      "original": "papers in the glvebox.",
+      "normalized": "papers in the glovebox.",
+      "edits": [
+        {
+          "from": "glvebox",
+          "to": "glovebox"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00006",
+      "original": "papeirt hanskalokerossa",
+      "normalized": "paperit hanskalokerossa",
+      "edits": [
+        {
+          "from": "papeirt",
+          "to": "paperit"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00013",
+      "original": "Meidään viite 135255.",
+      "normalized": "meidan viite 135255.",
+      "edits": [
+        {
+          "from": "meidaan",
+          "to": "meidan"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00018",
+      "original": "Varaus 351209. Kiiots, thx",
+      "normalized": "varaus 351209. kiitos, thx",
+      "edits": [
+        {
+          "from": "kiiots",
+          "to": "kiitos"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00027",
+      "original": "auto peesmättä.",
+      "normalized": "auto pesematta.",
+      "edits": [
+        {
+          "from": "peesmatta",
+          "to": "pesematta"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00046",
+      "original": "mediän viite 514304.",
+      "normalized": "meidan viite 514304.",
+      "edits": [
+        {
+          "from": "median",
+          "to": "meidan"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00193",
+      "original": "viite 336621. soita kun olet läähellä. kiitos etukäteen",
+      "normalized": "viite 336621. soita kun olet lahella. kiitos etukateen",
+      "edits": [
+        {
+          "from": "laahella",
+          "to": "lahella"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00207",
+      "original": "Kesärenkaat vanteineeen takakontissa.",
+      "normalized": "kesarenkaat vanteineen takakontissa.",
+      "edits": [
+        {
+          "from": "vanteineeen",
+          "to": "vanteineen"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00261",
+      "original": "4 rengasta vanteilla tavaratliassa.",
+      "normalized": "4 rengasta vanteilla tavaratilassa.",
+      "edits": [
+        {
+          "from": "tavaratliassa",
+          "to": "tavaratilassa"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00271",
+      "original": "Tavalllinen toimitus.",
+      "normalized": "tavallinen toimitus.",
+      "edits": [
+        {
+          "from": "tavalllinen",
+          "to": "tavallinen"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00344",
+      "original": "Lisärenkaat muakan",
+      "normalized": "lisarenkaat mukaan",
+      "edits": [
+        {
+          "from": "muakan",
+          "to": "mukaan"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00373",
+      "original": "Rengassarja takapenkillä, kulkeee mukana.",
+      "normalized": "rengassarja takapenkilla, kulkee mukana.",
+      "edits": [
+        {
+          "from": "kulkeee",
+          "to": "kulkee"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00389",
+      "original": "Smumer tyres in the trunk, go with the car",
+      "normalized": "summer tyres in the trunk, go with the car",
+      "edits": [
+        {
+          "from": "smumer",
+          "to": "summer"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00399",
+      "original": "avaimet huollosa",
+      "normalized": "avaimet huollosta",
+      "edits": [
+        {
+          "from": "huollosa",
+          "to": "huollosta"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00429",
+      "original": "rengassaja mukaan. viitenro 771803. kiitos taas.",
+      "normalized": "rengassarja mukaan. viitenro 771803. kiitos taas.",
+      "edits": [
+        {
+          "from": "rengassaja",
+          "to": "rengassarja"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00430",
+      "original": "Däcken liggeer i bilen, ska med.",
+      "normalized": "dacken ligger i bilen, ska med.",
+      "edits": [
+        {
+          "from": "liggeer",
+          "to": "ligger"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00569",
+      "original": "Rengassaraj mukaan, varaus 163989.",
+      "normalized": "rengassarja mukaan, varaus 163989.",
+      "edits": [
+        {
+          "from": "rengassaraj",
+          "to": "rengassarja"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00585",
+      "original": "summmer tyres in the trunk, go with the car.",
+      "normalized": "summer tyres in the trunk, go with the car.",
+      "edits": [
+        {
+          "from": "summmer",
+          "to": "summer"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00752",
+      "original": "Second set of weels in the back",
+      "normalized": "second set of wheels in the back",
+      "edits": [
+        {
+          "from": "weels",
+          "to": "wheels"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00756",
+      "original": "second set of wheeels in the back. keys from reception. thanks",
+      "normalized": "second set of wheels in the back. keys from reception. thanks",
+      "edits": [
+        {
+          "from": "wheeels",
+          "to": "wheels"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00805",
+      "original": "Extra däcksats i bagagte, ska med",
+      "normalized": "extra dacksats i bagaget, ska med",
+      "edits": [
+        {
+          "from": "bagagte",
+          "to": "bagaget"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00874",
+      "original": "rngassarja mukaan",
+      "normalized": "rengassarja mukaan",
+      "edits": [
+        {
+          "from": "rngassarja",
+          "to": "rengassarja"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00921",
+      "original": "kesärenkaat vanteineeen takakontissa",
+      "normalized": "kesarenkaat vanteineen takakontissa",
+      "edits": [
+        {
+          "from": "vanteineeen",
+          "to": "vanteineen"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00933",
+      "original": "second set of wheels in the back, ref 898574, thankks.",
+      "normalized": "second set of wheels in the back, ref 898574, thanks.",
+      "edits": [
+        {
+          "from": "thankks",
+          "to": "thanks"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00942",
+      "original": "Bookking ref 564675",
+      "normalized": "booking ref 564675",
+      "edits": [
+        {
+          "from": "bookking",
+          "to": "booking"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00943",
+      "original": "4 rengasta vanteillla tavaratilassa.",
+      "normalized": "4 rengasta vanteilla tavaratilassa.",
+      "edits": [
+        {
+          "from": "vanteillla",
+          "to": "vanteilla"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00982",
+      "original": "Hei. Liskäsi 4 kesärengasta tavaratilassa.",
+      "normalized": "hei. lisaksi 4 kesarengasta tavaratilassa.",
+      "edits": [
+        {
+          "from": "liskasi",
+          "to": "lisaksi"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R01008",
+      "original": "Sumer tyres in the trunk, go with the car.",
+      "normalized": "summer tyres in the trunk, go with the car.",
+      "edits": [
+        {
+          "from": "sumer",
+          "to": "summer"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R01030",
+      "original": "4 rengasta vanteilla tavaratilassa. Soita ennen nooutoa",
+      "normalized": "4 rengasta vanteilla tavaratilassa. soita ennen noutoa",
+      "edits": [
+        {
+          "from": "nooutoa",
+          "to": "noutoa"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wf5eaeba5a1ba7b164ded",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00057",
+      "original": "Ajetttu n. 142 tkm.",
+      "normalized": "ajettu n. 142 tkm.",
+      "edits": [
+        {
+          "from": "ajetttu",
+          "to": "ajettu"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wf5eaeba5a1ba7b164ded",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00146",
+      "original": "Däcken ligger i bilen, ska med. Hälsnigar.",
+      "normalized": "dacken ligger i bilen, ska med. halsningar.",
+      "edits": [
+        {
+          "from": "halsnigar",
+          "to": "halsningar"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wf5eaeba5a1ba7b164ded",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00223",
+      "original": "hei. avaimet toimistosta. tilausrno 379505.",
+      "normalized": "hei. avaimet toimistosta. tilausnro 379505.",
+      "edits": [
+        {
+          "from": "tilausrno",
+          "to": "tilausnro"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wf5eaeba5a1ba7b164ded",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00285",
+      "original": "ref 732213. keys at servicce desk.",
+      "normalized": "ref 732213. keys at service desk.",
+      "edits": [
+        {
+          "from": "servicce",
+          "to": "service"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "wf5eaeba5a1ba7b164ded",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00290",
+      "original": "Tialusnumero 266250. Kiitti",
+      "normalized": "tilausnumero 266250. kiitti",
+      "edits": [
+        {
+          "from": "tialusnumero",
+          "to": "tilausnumero"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wf5eaeba5a1ba7b164ded",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00333",
+      "original": "Rengassarjja mukaan",
+      "normalized": "rengassarja mukaan",
+      "edits": [
+        {
+          "from": "rengassarjja",
+          "to": "rengassarja"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "wf5eaeba5a1ba7b164ded",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00334",
+      "original": "Reenkaat takakontissa, menee mukana",
+      "normalized": "renkaat takakontissa, menee mukana",
+      "edits": [
+        {
+          "from": "reenkaat",
+          "to": "renkaat"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "wf5eaeba5a1ba7b164ded",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00407",
+      "original": "Tvaallinen toimitus.",
+      "normalized": "tavallinen toimitus.",
+      "edits": [
+        {
+          "from": "tvaallinen",
+          "to": "tavallinen"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wf5eaeba5a1ba7b164ded",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00503",
+      "original": "rengassarjja takapenkillä, kulkee mukana",
+      "normalized": "rengassarja takapenkilla, kulkee mukana",
+      "edits": [
+        {
+          "from": "rengassarjja",
+          "to": "rengassarja"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wf5eaeba5a1ba7b164ded",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00510",
+      "original": "spare whels in the boot",
+      "normalized": "spare wheels in the boot",
+      "edits": [
+        {
+          "from": "whels",
+          "to": "wheels"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wf5eaeba5a1ba7b164ded",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00525",
+      "original": "Second set of wheells in the back",
+      "normalized": "second set of wheels in the back",
+      "edits": [
+        {
+          "from": "wheells",
+          "to": "wheels"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wf5eaeba5a1ba7b164ded",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00564",
+      "original": "Renkaat kyyidssä",
+      "normalized": "renkaat kyydissa",
+      "edits": [
+        {
+          "from": "kyyidssa",
+          "to": "kyydissa"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wf5eaeba5a1ba7b164ded",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00583",
+      "original": "Rengassarja takapenkillä, kuulkee mukana. Viite 226562",
+      "normalized": "rengassarja takapenkilla, kulkee mukana. viite 226562",
+      "edits": [
+        {
+          "from": "kuulkee",
+          "to": "kulkee"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wf5eaeba5a1ba7b164ded",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00591",
+      "original": "4 rengasta vnteilla tavaratilassa. avaimet toimistosta",
+      "normalized": "4 rengasta vanteilla tavaratilassa. avaimet toimistosta",
+      "edits": [
+        {
+          "from": "vnteilla",
+          "to": "vanteilla"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wf5eaeba5a1ba7b164ded",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00649",
+      "original": "Hei. Ylimääräinen rengasarja takakontissa, mukaan",
+      "normalized": "hei. ylimaarainen rengassarja takakontissa, mukaan",
+      "edits": [
+        {
+          "from": "rengasarja",
+          "to": "rengassarja"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wf5eaeba5a1ba7b164ded",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00665",
+      "original": "Auto pihaalla ruudussa 32, avain tiskiltä. Soita asap jos tulee ongelmia",
+      "normalized": "auto pihalla ruudussa 32, avain tiskilta. soita asap jos tulee ongelmia",
+      "edits": [
+        {
+          "from": "pihaalla",
+          "to": "pihalla"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wf5eaeba5a1ba7b164ded",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00667",
+      "original": "Extra däcksts i bagaget, ska med. Bilen står på plats 36, nyckeln i kassan.",
+      "normalized": "extra dacksats i bagaget, ska med. bilen star pa plats 36, nyckeln i kassan.",
+      "edits": [
+        {
+          "from": "dacksts",
+          "to": "dacksats"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wf5eaeba5a1ba7b164ded",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00668",
+      "original": "Terve. Huooltokirja ja rekisteriote autossa",
+      "normalized": "terve. huoltokirja ja rekisteriote autossa",
+      "edits": [
+        {
+          "from": "huooltokirja",
+          "to": "huoltokirja"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wf5eaeba5a1ba7b164ded",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00669",
+      "original": "moikka. rengassarja takapenkillä, kulkeee mukana. ilmoita kun lähdet.",
+      "normalized": "moikka. rengassarja takapenkilla, kulkee mukana. ilmoita kun lahdet.",
+      "edits": [
+        {
+          "from": "kulkeee",
+          "to": "kulkee"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "wf5eaeba5a1ba7b164ded",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00836",
+      "original": "Paperit hanskalokerosssa.",
+      "normalized": "paperit hanskalokerossa.",
+      "edits": [
+        {
+          "from": "hanskalokerosssa",
+          "to": "hanskalokerossa"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wf5eaeba5a1ba7b164ded",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00845",
+      "original": "Ei erityitä.",
+      "normalized": "ei erityista.",
+      "edits": [
+        {
+          "from": "erityita",
+          "to": "erityista"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wf5eaeba5a1ba7b164ded",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00996",
+      "original": "Hi. Summr tyres in the trunk, go with the car.",
+      "normalized": "hi. summer tyres in the trunk, go with the car.",
+      "edits": [
+        {
+          "from": "summr",
+          "to": "summer"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00016",
+      "original": "keärenkaat vanteineen takakontissa",
+      "normalized": "kesarenkaat vanteineen takakontissa",
+      "edits": [
+        {
+          "from": "kearenkaat",
+          "to": "kesarenkaat"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00031",
+      "original": "kauppakirja mukana, anna vastaanottajlle.",
+      "normalized": "kauppakirja mukana, anna vastaanottajalle.",
+      "edits": [
+        {
+          "from": "vastaanottajlle",
+          "to": "vastaanottajalle"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00042",
+      "original": "Terve, rengassarja mukaan, kititi",
+      "normalized": "terve, rengassarja mukaan, kiitti",
+      "edits": [
+        {
+          "from": "kititi",
+          "to": "kiitti"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00064",
+      "original": "Spare wehels in the boot. Thank you.",
+      "normalized": "spare wheels in the boot. thank you.",
+      "edits": [
+        {
+          "from": "wehels",
+          "to": "wheels"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00136",
+      "original": "Ylimääräinen rengassarja takakontissa, mukaan. Soita ennen nouoa",
+      "normalized": "ylimaarainen rengassarja takakontissa, mukaan. soita ennen noutoa",
+      "edits": [
+        {
+          "from": "nouoa",
+          "to": "noutoa"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00147",
+      "original": "rengassaja takapenkillä, kulkee mukana.",
+      "normalized": "rengassarja takapenkilla, kulkee mukana.",
+      "edits": [
+        {
+          "from": "rengassaja",
+          "to": "rengassarja"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00164",
+      "original": "Lisäkksi 4 kesärengasta tavaratilassa, viite 287825",
+      "normalized": "lisaksi 4 kesarengasta tavaratilassa, viite 287825",
+      "edits": [
+        {
+          "from": "lisakksi",
+          "to": "lisaksi"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00273",
+      "original": "2 sarjaa rennkaita, toinen sarja kontissa",
+      "normalized": "2 sarjaa renkaita, toinen sarja kontissa",
+      "edits": [
+        {
+          "from": "rennkaita",
+          "to": "renkaita"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00278",
+      "original": "Papers in the gloovebox. Call asap if any issues.",
+      "normalized": "papers in the glovebox. call asap if any issues.",
+      "edits": [
+        {
+          "from": "gloovebox",
+          "to": "glovebox"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00321",
+      "original": "Spare weels in the boot. Thx",
+      "normalized": "spare wheels in the boot. thx",
+      "edits": [
+        {
+          "from": "weels",
+          "to": "wheels"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00370",
+      "original": "Renkaat takakontisssa, menee mukana.",
+      "normalized": "renkaat takakontissa, menee mukana.",
+      "edits": [
+        {
+          "from": "takakontisssa",
+          "to": "takakontissa"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00418",
+      "original": "hello. papers in the glovebox. cheerrs",
+      "normalized": "hello. papers in the glovebox. cheers",
+      "edits": [
+        {
+          "from": "cheerrs",
+          "to": "cheers"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00452",
+      "original": "Tavallinen toimtius",
+      "normalized": "tavallinen toimitus",
+      "edits": [
+        {
+          "from": "toimtius",
+          "to": "toimitus"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00538",
+      "original": "Referens 124079. Mvh fösäljningen",
+      "normalized": "referens 124079. mvh forsaljningen",
+      "edits": [
+        {
+          "from": "fosaljningen",
+          "to": "forsaljningen"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00569",
+      "original": "lisärenkaat mukaan, hyvää päivänjatkooa.",
+      "normalized": "lisarenkaat mukaan, hyvaa paivanjatkoa.",
+      "edits": [
+        {
+          "from": "paivanjatkooa",
+          "to": "paivanjatkoa"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00581",
+      "original": "Kesäenkaat vanteineen takakontissa.",
+      "normalized": "kesarenkaat vanteineen takakontissa.",
+      "edits": [
+        {
+          "from": "kesaenkaat",
+          "to": "kesarenkaat"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00615",
+      "original": "Docs in the glvoebox",
+      "normalized": "docs in the glovebox",
+      "edits": [
+        {
+          "from": "glvoebox",
+          "to": "glovebox"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00619",
+      "original": "Ylimaarainen rengassarja takakontissa, mukaaan.",
+      "normalized": "ylimaarainen rengassarja takakontissa, mukaan.",
+      "edits": [
+        {
+          "from": "mukaaan",
+          "to": "mukaan"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00629",
+      "original": "avaimmet myyjältä, soita liikkeeseen ennen kuin tulet, kiitos etukäteen",
+      "normalized": "avaimet myyjalta, soita liikkeeseen ennen kuin tulet, kiitos etukateen",
+      "edits": [
+        {
+          "from": "avaimmet",
+          "to": "avaimet"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00666",
+      "original": "2 sarjaa renkaita, toinen sarja kntissa",
+      "normalized": "2 sarjaa renkaita, toinen sarja kontissa",
+      "edits": [
+        {
+          "from": "kntissa",
+          "to": "kontissa"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00756",
+      "original": "Suummer tyres in the trunk, go with the car. Cheers.",
+      "normalized": "summer tyres in the trunk, go with the car. cheers.",
+      "edits": [
+        {
+          "from": "suummer",
+          "to": "summer"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00774",
+      "original": "Rengassarja muukaan",
+      "normalized": "rengassarja mukaan",
+      "edits": [
+        {
+          "from": "muukaan",
+          "to": "mukaan"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00834",
+      "original": "Renkaat taakakontissa, menee mukana",
+      "normalized": "renkaat takakontissa, menee mukana",
+      "edits": [
+        {
+          "from": "taakakontissa",
+          "to": "takakontissa"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00851",
+      "original": "2 sarjaa renkaita, toinen sarja konissa",
+      "normalized": "2 sarjaa renkaita, toinen sarja kontissa",
+      "edits": [
+        {
+          "from": "konissa",
+          "to": "kontissa"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00900",
+      "original": "Keys from recpetion.",
+      "normalized": "keys from reception.",
+      "edits": [
+        {
+          "from": "recpetion",
+          "to": "reception"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00902",
+      "original": "pieni kolhu oik. ovessa, kuvaa nutaessa. viite 387294.",
+      "normalized": "pieni kolhu oik. ovessa, kuvaa noutaessa. viite 387294.",
+      "edits": [
+        {
+          "from": "nutaessa",
+          "to": "noutaessa"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00915",
+      "original": "Ordernr 38338, nykceln i bilen",
+      "normalized": "ordernr 38338, nyckeln i bilen",
+      "edits": [
+        {
+          "from": "nykceln",
+          "to": "nyckeln"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00916",
+      "original": "4 rengasta vanteilla tavartailassa. Avaimet huollon tiskiltä",
+      "normalized": "4 rengasta vanteilla tavaratilassa. avaimet huollon tiskilta",
+      "edits": [
+        {
+          "from": "tavartailassa",
+          "to": "tavaratilassa"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00009",
+      "original": "Summeer tyres in the trunk, go with the car.",
+      "normalized": "summer tyres in the trunk, go with the car.",
+      "edits": [
+        {
+          "from": "summeer",
+          "to": "summer"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00219",
+      "original": "Kesärenkaat vanteineen takaakontissa. Kiitos taas.",
+      "normalized": "kesarenkaat vanteineen takakontissa. kiitos taas.",
+      "edits": [
+        {
+          "from": "takaakontissa",
+          "to": "takakontissa"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00236",
+      "original": "Paperit kuljettajalle tisikltä. Kiitos etukäteen.",
+      "normalized": "paperit kuljettajalle tiskilta. kiitos etukateen.",
+      "edits": [
+        {
+          "from": "tisiklta",
+          "to": "tiskilta"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00258",
+      "original": "hej. extra däckstas i bagaget, ska med",
+      "normalized": "hej. extra dacksats i bagaget, ska med",
+      "edits": [
+        {
+          "from": "dackstas",
+          "to": "dacksats"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00272",
+      "original": "Kauppakirja mukana, anna vastaaanottajalle. Avaimet huollosta",
+      "normalized": "kauppakirja mukana, anna vastaanottajalle. avaimet huollosta",
+      "edits": [
+        {
+          "from": "vastaaanottajalle",
+          "to": "vastaanottajalle"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00330",
+      "original": "ylimääränen rengassarja takakontissa, mukaan. kiitti",
+      "normalized": "ylimaarainen rengassarja takakontissa, mukaan. kiitti",
+      "edits": [
+        {
+          "from": "ylimaaranen",
+          "to": "ylimaarainen"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00373",
+      "original": "Lisäksi 4 kesärengasta tavaratialssa. Terveisin myynti",
+      "normalized": "lisaksi 4 kesarengasta tavaratilassa. terveisin myynti",
+      "edits": [
+        {
+          "from": "tavaratialssa",
+          "to": "tavaratilassa"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00374",
+      "original": "spare whels in the boot.",
+      "normalized": "spare wheels in the boot.",
+      "edits": [
+        {
+          "from": "whels",
+          "to": "wheels"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00434",
+      "original": "Terve. Huom manuaali. Renkaat takakontissa, menee mukkana",
+      "normalized": "terve. huom manuaali. renkaat takakontissa, menee mukana",
+      "edits": [
+        {
+          "from": "mukkana",
+          "to": "mukana"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00438",
+      "original": "Auto pihalal ruudussa 23, avain tiskiltä",
+      "normalized": "auto pihalla ruudussa 23, avain tiskilta",
+      "edits": [
+        {
+          "from": "pihalal",
+          "to": "pihalla"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00462",
+      "original": "Lisäksi 4 kesärengasta tavaratiassa",
+      "normalized": "lisaksi 4 kesarengasta tavaratilassa",
+      "edits": [
+        {
+          "from": "tavaratiassa",
+          "to": "tavaratilassa"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00475",
+      "original": "Paperit kuljettajalle tiskitlä. Viite 72888",
+      "normalized": "paperit kuljettajalle tiskilta. viite 72888",
+      "edits": [
+        {
+          "from": "tiskitla",
+          "to": "tiskilta"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00494",
+      "original": "kauppakirja mukana, anna vastaanottjalle",
+      "normalized": "kauppakirja mukana, anna vastaanottajalle",
+      "edits": [
+        {
+          "from": "vastaanottjalle",
+          "to": "vastaanottajalle"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00512",
+      "original": "Hei vaan. Pieni kolhu oik. ovessa, kuvaa nouaessa",
+      "normalized": "hei vaan. pieni kolhu oik. ovessa, kuvaa noutaessa",
+      "edits": [
+        {
+          "from": "nouaessa",
+          "to": "noutaessa"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00542",
+      "original": "ylimääräinen rengassarja taakontissa, mukaan",
+      "normalized": "ylimaarainen rengassarja takakontissa, mukaan",
+      "edits": [
+        {
+          "from": "taakontissa",
+          "to": "takakontissa"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00619",
+      "original": "avaiemt myyjältä",
+      "normalized": "avaimet myyjalta",
+      "edits": [
+        {
+          "from": "avaiemt",
+          "to": "avaimet"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00668",
+      "original": "Nothing secial.",
+      "normalized": "nothing special.",
+      "edits": [
+        {
+          "from": "secial",
+          "to": "special"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00675",
+      "original": "Auto pihalla ruudussa 3, avain tikiltä",
+      "normalized": "auto pihalla ruudussa 3, avain tiskilta",
+      "edits": [
+        {
+          "from": "tikilta",
+          "to": "tiskilta"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00686",
+      "original": "Rengassarja mukaaan",
+      "normalized": "rengassarja mukaan",
+      "edits": [
+        {
+          "from": "mukaaan",
+          "to": "mukaan"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00733",
+      "original": "Seocnd set of wheels in the back",
+      "normalized": "second set of wheels in the back",
+      "edits": [
+        {
+          "from": "seocnd",
+          "to": "second"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00750",
+      "original": "spare wheesl in the boot.",
+      "normalized": "spare wheels in the boot.",
+      "edits": [
+        {
+          "from": "wheesl",
+          "to": "wheels"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00837",
+      "original": "papres in the glovebox",
+      "normalized": "papers in the glovebox",
+      "edits": [
+        {
+          "from": "papres",
+          "to": "papers"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00854",
+      "original": "Lisäki 4 kesärengasta tavaratilassa.",
+      "normalized": "lisaksi 4 kesarengasta tavaratilassa.",
+      "edits": [
+        {
+          "from": "lisaki",
+          "to": "lisaksi"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00855",
+      "original": "paprs in the glovebox",
+      "normalized": "papers in the glovebox",
+      "edits": [
+        {
+          "from": "paprs",
+          "to": "papers"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00915",
+      "original": "Soita asap jos tulee ongelima.",
+      "normalized": "soita asap jos tulee ongelmia.",
+      "edits": [
+        {
+          "from": "ongelima",
+          "to": "ongelmia"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00989",
+      "original": "Hei. Auto pihalla ruudssa 8, avain tiskiltä. Kesärenkaat vanteineen takakontissa",
+      "normalized": "hei. auto pihalla ruudussa 8, avain tiskilta. kesarenkaat vanteineen takakontissa",
+      "edits": [
+        {
+          "from": "ruudssa",
+          "to": "ruudussa"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00996",
+      "original": "Summmer tyres in the trunk, go with the car",
+      "normalized": "summer tyres in the trunk, go with the car",
+      "edits": [
+        {
+          "from": "summmer",
+          "to": "summer"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00997",
+      "original": "Suummer tyres in the trunk, go with the car.",
+      "normalized": "summer tyres in the trunk, go with the car.",
+      "edits": [
+        {
+          "from": "suummer",
+          "to": "summer"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00003",
+      "original": "service book and reg paeprs in the car",
+      "normalized": "service book and reg papers in the car",
+      "edits": [
+        {
+          "from": "paeprs",
+          "to": "papers"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00048",
+      "original": "Viitenro 491171, soita ennen nouota",
+      "normalized": "viitenro 491171, soita ennen noutoa",
+      "edits": [
+        {
+          "from": "nouota",
+          "to": "noutoa"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00050",
+      "original": "hei. rengassarja mukaaan.",
+      "normalized": "hei. rengassarja mukaan.",
+      "edits": [
+        {
+          "from": "mukaaan",
+          "to": "mukaan"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00062",
+      "original": "4 rengasta vanteiilla tavaratilassa. kiitti",
+      "normalized": "4 rengasta vanteilla tavaratilassa. kiitti",
+      "edits": [
+        {
+          "from": "vanteiilla",
+          "to": "vanteilla"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00120",
+      "original": "Secod set of wheels in the back, ref 36784",
+      "normalized": "second set of wheels in the back, ref 36784",
+      "edits": [
+        {
+          "from": "secod",
+          "to": "second"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00166",
+      "original": "terve, kesärenkaaat vanteineen takakontissa",
+      "normalized": "terve, kesarenkaat vanteineen takakontissa",
+      "edits": [
+        {
+          "from": "kesarenkaaat",
+          "to": "kesarenkaat"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00168",
+      "original": "paperit kuljettajalel tiskiltä.",
+      "normalized": "paperit kuljettajalle tiskilta.",
+      "edits": [
+        {
+          "from": "kuljettajalel",
+          "to": "kuljettajalle"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00189",
+      "original": "Paperit hanskalokerossa. Kiios.",
+      "normalized": "paperit hanskalokerossa. kiitos.",
+      "edits": [
+        {
+          "from": "kiios",
+          "to": "kiitos"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00264",
+      "original": "Renkaat takakontssa, menee mukana. Soita 30 min ennen.",
+      "normalized": "renkaat takakontissa, menee mukana. soita 30 min ennen.",
+      "edits": [
+        {
+          "from": "takakontssa",
+          "to": "takakontissa"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00266",
+      "original": "4 rnegasta vanteilla tavaratilassa. Avaimet huollon tiskiltä",
+      "normalized": "4 rengasta vanteilla tavaratilassa. avaimet huollon tiskilta",
+      "edits": [
+        {
+          "from": "rnegasta",
+          "to": "rengasta"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00271",
+      "original": "Second set of whees in the back.",
+      "normalized": "second set of wheels in the back.",
+      "edits": [
+        {
+          "from": "whees",
+          "to": "wheels"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00273",
+      "original": "Avain avainboksisa, koodi 4506",
+      "normalized": "avain avainboksissa, koodi 4506",
+      "edits": [
+        {
+          "from": "avainboksisa",
+          "to": "avainboksissa"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00317",
+      "original": "Vanlig transprot, tack.",
+      "normalized": "vanlig transport, tack.",
+      "edits": [
+        {
+          "from": "transprot",
+          "to": "transport"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00335",
+      "original": "rengassaja takapenkillä, kulkee mukana.",
+      "normalized": "rengassarja takapenkilla, kulkee mukana.",
+      "edits": [
+        {
+          "from": "rengassaja",
+          "to": "rengassarja"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00347",
+      "original": "Renkaat kyydisä",
+      "normalized": "renkaat kyydissa",
+      "edits": [
+        {
+          "from": "kyydisa",
+          "to": "kyydissa"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00348",
+      "original": "second set of wehels in the back.",
+      "normalized": "second set of wheels in the back.",
+      "edits": [
+        {
+          "from": "wehels",
+          "to": "wheels"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00362",
+      "original": "Lisärenkaat mkuaan",
+      "normalized": "lisarenkaat mukaan",
+      "edits": [
+        {
+          "from": "mkuaan",
+          "to": "mukaan"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00438",
+      "original": "Spare whheels in the boot. Our ref: 598278.",
+      "normalized": "spare wheels in the boot. our ref: 598278.",
+      "edits": [
+        {
+          "from": "whheels",
+          "to": "wheels"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00462",
+      "original": "Rengassarja takapenkillä, kuklee mukana.",
+      "normalized": "rengassarja takapenkilla, kulkee mukana.",
+      "edits": [
+        {
+          "from": "kuklee",
+          "to": "kulkee"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00673",
+      "original": "Kesärenkaat vanteienen takakontissa.",
+      "normalized": "kesarenkaat vanteineen takakontissa.",
+      "edits": [
+        {
+          "from": "vanteienen",
+          "to": "vanteineen"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00761",
+      "original": "Kesärenkaat vanteineen takakkontissa. Viitenro 305643",
+      "normalized": "kesarenkaat vanteineen takakontissa. viitenro 305643",
+      "edits": [
+        {
+          "from": "takakkontissa",
+          "to": "takakontissa"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00838",
+      "original": "Kesäernkaat vanteineen takakontissa",
+      "normalized": "kesarenkaat vanteineen takakontissa",
+      "edits": [
+        {
+          "from": "kesaernkaat",
+          "to": "kesarenkaat"
+        }
+      ],
+      "staticallyFeasible": true
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R01001",
+      "original": "Kiiitos.",
+      "normalized": "kiitos.",
+      "edits": [
+        {
+          "from": "kiiitos",
+          "to": "kiitos"
+        }
+      ],
+      "staticallyFeasible": false
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R01006",
+      "original": "tliausnumero 791164.",
+      "normalized": "tilausnumero 791164.",
+      "edits": [
+        {
+          "from": "tliausnumero",
+          "to": "tilausnumero"
+        }
+      ],
+      "staticallyFeasible": true
+    }
+  ]
+}

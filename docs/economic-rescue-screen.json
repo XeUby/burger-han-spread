@@ -1,0 +1,192 @@
+{
+  "scope": "Six explicit old development weeks; no fresh evaluation outcomes.",
+  "hypothesis": "A small lateness budget may save more in emergency driver fees than it costs in refunds. Screen only expensive bookings that still delivered on time, to avoid re-counting the validated post-cutoff reset.",
+  "method": "Keep each paid single-car gig's final booking. On final on-time orders booked within120 minutes before lastPickupAt, compare actual paid fee with1.2 times route-adjusted opening plus a25% price refund. With hindsight, select at most3% of the week's noncancelled orders with positive differences.",
+  "limitations": [
+    "Optimistic descriptive screen, not a policy, causal estimate or rigorous global bound. Hindsight selects the best cases and uses the final week's order count.",
+    "A cheaper later driver may not exist. Added waiting can change drops, refunds, trust, demand and other drivers' work. None of those spillovers is modeled.",
+    "A25% refund assumes delivery no more than24 hours late; longer delays can cost substantially more. Future dealer trust loss is omitted.",
+    "A3% selected-order cap does not bound other late deliveries or guarantee qualification."
+  ],
+  "summary": {
+    "weeks": 6,
+    "meanSelectedOrders": 0.6666666666666666,
+    "meanOptimisticNetEuros": 13.526666666666666
+  },
+  "weeks": [
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "activeOrders": 304,
+      "maximumSelectedOrders": 9,
+      "onTimeFinalTwoHourBookings": 2,
+      "positiveOpportunities": 2,
+      "selected": 2,
+      "optimisticNetEuros": 59.73
+    },
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "activeOrders": 389,
+      "maximumSelectedOrders": 11,
+      "onTimeFinalTwoHourBookings": 0,
+      "positiveOpportunities": 0,
+      "selected": 0,
+      "optimisticNetEuros": 0
+    },
+    {
+      "worldId": "wf5eaeba5a1ba7b164ded",
+      "seed": "formal-unseen-20261113-12",
+      "activeOrders": 373,
+      "maximumSelectedOrders": 11,
+      "onTimeFinalTwoHourBookings": 1,
+      "positiveOpportunities": 0,
+      "selected": 0,
+      "optimisticNetEuros": 0
+    },
+    {
+      "worldId": "w9a4b2d98037747387f31",
+      "seed": "formal-unseen-20261113-16",
+      "activeOrders": 358,
+      "maximumSelectedOrders": 10,
+      "onTimeFinalTwoHourBookings": 0,
+      "positiveOpportunities": 0,
+      "selected": 0,
+      "optimisticNetEuros": 0
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "activeOrders": 275,
+      "maximumSelectedOrders": 8,
+      "onTimeFinalTwoHourBookings": 1,
+      "positiveOpportunities": 0,
+      "selected": 0,
+      "optimisticNetEuros": 0
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "activeOrders": 329,
+      "maximumSelectedOrders": 9,
+      "onTimeFinalTwoHourBookings": 3,
+      "positiveOpportunities": 2,
+      "selected": 2,
+      "optimisticNetEuros": 21.43
+    }
+  ],
+  "details": [
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "gigId": "g134",
+      "orderId": "R00556",
+      "bookedAt": 3845,
+      "lastPickupAt": 3959,
+      "deadline": 4080,
+      "priceCents": 3695,
+      "openingCents": 2000,
+      "feeCents": 3800,
+      "paidCents": 3800,
+      "assumedLaterFeeCents": 2400,
+      "assumedRefundCents": 924,
+      "optimisticNetCents": 476
+    },
+    {
+      "worldId": "w14d6b0034235af787311",
+      "seed": "formal-unseen-20261113-09",
+      "gigId": "g187",
+      "orderId": "R00754",
+      "bookedAt": 5370,
+      "lastPickupAt": 5413,
+      "deadline": 5520,
+      "priceCents": 9761,
+      "openingCents": 6106,
+      "feeCents": 15265,
+      "paidCents": 15265,
+      "assumedLaterFeeCents": 7327,
+      "assumedRefundCents": 2441,
+      "optimisticNetCents": 5497
+    },
+    {
+      "worldId": "wf5eaeba5a1ba7b164ded",
+      "seed": "formal-unseen-20261113-12",
+      "gigId": "g111",
+      "orderId": "R00280",
+      "bookedAt": 2508,
+      "lastPickupAt": 2615,
+      "deadline": 2640,
+      "priceCents": 4041,
+      "openingCents": 2000,
+      "feeCents": 3000,
+      "paidCents": 3000,
+      "assumedLaterFeeCents": 2400,
+      "assumedRefundCents": 1011,
+      "optimisticNetCents": -411
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "gigId": "g195",
+      "orderId": "R00866",
+      "bookedAt": 6726,
+      "lastPickupAt": 6839,
+      "deadline": 6960,
+      "priceCents": 6200,
+      "openingCents": 3324,
+      "feeCents": 4986,
+      "paidCents": 4986,
+      "assumedLaterFeeCents": 3989,
+      "assumedRefundCents": 1550,
+      "optimisticNetCents": -553
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "gigId": "g133",
+      "orderId": "R00453",
+      "bookedAt": 5355,
+      "lastPickupAt": 5444,
+      "deadline": 5520,
+      "priceCents": 8706,
+      "openingCents": 4615,
+      "feeCents": 6923,
+      "paidCents": 6923,
+      "assumedLaterFeeCents": 5538,
+      "assumedRefundCents": 2177,
+      "optimisticNetCents": -792
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "gigId": "g144",
+      "orderId": "R00494",
+      "bookedAt": 3870,
+      "lastPickupAt": 3959,
+      "deadline": 4080,
+      "priceCents": 9577,
+      "openingCents": 4112,
+      "feeCents": 7813,
+      "paidCents": 7813,
+      "assumedLaterFeeCents": 4934,
+      "assumedRefundCents": 2395,
+      "optimisticNetCents": 484
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "gigId": "g295",
+      "orderId": "R00902",
+      "bookedAt": 6728,
+      "lastPickupAt": 6839,
+      "deadline": 6960,
+      "priceCents": 6415,
+      "openingCents": 4661,
+      "feeCents": 8856,
+      "paidCents": 8856,
+      "assumedLaterFeeCents": 5593,
+      "assumedRefundCents": 1604,
+      "optimisticNetCents": 1659
+    }
+  ]
+}

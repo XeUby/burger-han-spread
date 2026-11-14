@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-14T01:27:38.214662+00:00",
+  "updatedAt": "2026-11-14T01:40:38.195724+00:00",
   "objective": "Continue systematic search toward the global optimum; practice only, no ranking submission.",
   "maximumConcurrentPlays": 4,
   "currentConcurrency": {
     "maximumConcurrentPlays": 4,
-    "activeRunners": 0,
-    "note": "Paired session30614 is terminal; all16 declared trials completed without retries."
+    "activeRunners": 1,
+    "note": "Frozen four-worker study63242 is active. No other runner or probe is active. All four world IDs are fixed in experiments/note-spelling-manifest.json."
   },
   "completedCombinationStudy": {
     "sessionId": 84558,
@@ -66,15 +66,15 @@
     "700km-only bundle treatment ends at7407.63/9410.50 euros, minimum96.6% on time. It gains versus the old baseline in both weeks but not versus bundles alone. No900km experiment scheduled."
   ],
   "nextSteps": [
-    "Keep the new validated late-rescue default and its frozen source intact. No ranking or final submissions.",
-    "Admission-credit screen has only7 affected requests/week. Menu-value correction models77.39 euros/week before congestion and adds23.49 expected wins. Neither justifies a full-policy experiment yet.",
-    "Investigate the economics of expensive pre-deadline rescues on old development worlds: a bounded risk budget may outperform paying every urgent fee. Quantify feasible exposure and trust/refund costs before implementation or plays.",
-    "Maintain at most4 unfinished plays, including any probe bases and forks.",
-    "Push coherent checkpoints to codex/standalone-dispatcher."
+    "Poll frozen study63242; do not restart it after an observation timeout and do not tune while it runs.",
+    "After all four worlds finish run python3 analysis/note_spelling_report.py; enforce the predeclared gate in experiments/note-spelling-protocol.json. Compare control margins against the previous late-rescue14/15 outcomes as a reproducibility check.",
+    "Only if screening passes, run the four predeclared confirmation seeds before reserving/freeze-testing a new unseen panel. Keep noteSpelling disabled in the validated default meanwhile.",
+    "Preserve validated late-rescue source16d and its independent eight-pair report. No ranking or final submissions.",
+    "Maintain at most4 unfinished plays. Push coherent checkpoints to codex/standalone-dispatcher."
   ],
   "validationStatus": "All16 fresh paired trials complete. Candidate mean10411.59 euros versus8242.34, +26.32%;7/8 positive;8/8 qualified; minimum94.94% on time; no undelivered orders. Full report docs/frontier-validation.md. No ranking submission.",
   "checks": {
-    "nodeSuite": 98,
+    "nodeSuite": 101,
     "researchTests": 8,
     "pythonReportTests": 9,
     "typecheck": "passed"
@@ -255,15 +255,20 @@
     "decision": "Passed the predeclared criteria: all4 qualified with no undelivered orders, +208.64 euros on12 and exact unchanged ledgers on09/14/16. The2 rejected reprices on16 also occur in its control."
   },
   "currentStudy": {
-    "sessionId": 30614,
-    "terminal": true,
-    "manifest": "experiments/late-rescue-validation-manifest.json",
-    "trials": 16
+    "sessionId": 63242,
+    "kind": "note-spelling paired development screen",
+    "terminal": false,
+    "trials": 4,
+    "plan": "experiments/plans/note-spelling.json",
+    "manifest": "experiments/note-spelling-manifest.json",
+    "protocol": "experiments/note-spelling-protocol.json",
+    "revision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa",
+    "bundle": "runs/frozen/8958e7182cdfd9f50229b29213816721203c7fdc7fa8eb301d12dd1c1205742b/7e0564988bdad783387b07db38fb8c3a113ba8978a1fe30280d2e4c0433040e1"
   },
   "runtimeDefault": {
     "selection": "experiments/current-selection.json",
     "config": "experiments/final-config.json",
-    "revision": "b7ac567386b724d50f7d300464bb3ad7a4a15d589b81bdb8ef5c9136ecd92823",
+    "revision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa",
     "sourceReference": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
     "conformance": "docs/late-rescue-conformance.json"
   },
@@ -315,5 +320,25 @@
   "menuValueScreen": {
     "report": "docs/menu-value-screen.json",
     "decision": "Defer; small model-only gain versus extra expected demand."
+  },
+  "economicRescueScreen": {
+    "report": "docs/economic-rescue-screen.json",
+    "meanOptimisticNetEuros": 13.526666666666666,
+    "decision": "Reject this pre-deadline variant; even optimistic hindsight exposure is negligible before trust costs."
+  },
+  "noteSpellingScreen": {
+    "report": "docs/note-spelling-screen.json",
+    "staticallyFeasibleRequestsPerWeek": 19.833333333333332,
+    "review": "Reviewed every newly accepted original/corrected note; only known harmless clauses become recognizable. Equipment and time words are protected.",
+    "probeSession": 10721,
+    "probeSeed": "formal-unseen-20261113-10",
+    "probeCases": 21,
+    "probeTerminal": true,
+    "probeWorldId": "w872041e419ceb516b2df",
+    "probeReport": "docs/note-spelling-probe.json",
+    "probeUnchanged": 21,
+    "probeUnmodeledRestrictions": 0,
+    "all157ReviewedCorrectionsReproduced": true,
+    "enabledByDefault": false
   }
 }

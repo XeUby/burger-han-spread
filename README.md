@@ -28,6 +28,8 @@ The late-rescue policy briefly lowers an unbooked single-car gig's fee after its
 
 A note-hours treatment passed its initial screen but [failed confirmation](docs/note-hours-confirmation.md), so it remains disabled. A [direct-offer head-start probe](docs/offer-window-probe.json) found no benefit. New offline screens found limited scope for [crediting completed work against daily capacity](docs/admission-screen.json) and only €77.39/week of modeled gain from [correcting the expected paid option value](docs/menu-value-screen.json), before extra congestion. Neither was added to the policy. [Current experiment state](experiments/frontier-status.json) records runs and decisions.
 
+A more aggressive pre-deadline fee cap had only €13.53/week of favorable hindsight exposure before omitted trust costs ([screen](docs/economic-rescue-screen.json)), so it was rejected. Strict spelling correction finds about20 otherwise-feasible requests/week in old data. Its [semantics probe](docs/note-spelling-probe.json) checked21 orders with no unmodeled restrictions; all157 reviewed corrections match the implementation. The feature remains disabled by default while a frozen, four-play matched development experiment runs under a [predeclared protocol](experiments/note-spelling-protocol.json).
+
 Both study runners cap workers at four, serialize their own creations, and check total unfinished server worlds before each creation. Coordinate separate runners so their creation checks cannot race. Raw world logs and credentials remain local.
 
 ## Method
@@ -59,7 +61,7 @@ Run the latest validated standalone default on an ordinary practice seed:
 node --env-file=.env src/run.ts --seed new-late-rescue-trial-1
 ```
 
-The independently validated bundle policy with late rescue is the default. Its complete settings are in [final-config.json](experiments/final-config.json), including disabled research switches. Runtime and integration tests: **98 passing**; isolated research tests: **8 passing**; statistical-report tests: **9 passing**. The live integration fixture advances the clock through the default bundle window. TypeScript checks include the experiment launchers.
+The independently validated bundle policy with late rescue is the default. Its complete settings are in [final-config.json](experiments/final-config.json), including disabled research switches. Runtime and integration tests: **101 passing**; isolated research tests: **8 passing**; statistical-report tests: **9 passing**. The live integration fixture advances the clock through the default bundle window. TypeScript checks include the experiment launchers.
 
 To play an active test final or final:
 

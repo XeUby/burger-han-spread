@@ -1,6 +1,7 @@
 import { Desk } from "./desk.ts"
 import { Network, lastPickup, needsCharge } from "./planning.ts"
 import { readNote } from "./notes.ts"
+import { normalizeNote } from "./note-spelling.ts"
 import { readReadiness } from "./readiness.ts"
 import { readHours } from "./hours-note.ts"
 import { planTimedLeg, withNoteHours } from "./hours-plan.ts"
@@ -20,14 +21,14 @@ import type { Action, ActionResult, DeskEvent, DeskSnapshot, DriverProfile, FeeS
 
 export type Settings = {
   price: number; fee: number; margin: number; capacity: number; maxKm: number; minDrivers: number
-  notes: boolean; adaptive: boolean; earlyOffers: boolean; safetySlack: boolean
+  notes: boolean; noteSpelling: boolean; adaptive: boolean; earlyOffers: boolean; safetySlack: boolean
   auction: boolean; allowPrivate: boolean; tradeIns: boolean; homeOffers: boolean; readiness: boolean; bundlePairs: boolean; timedNotes: boolean; lateRescue: boolean
   sameDayPremium: number; laterDiscount: number; placePrior: number; bundleWait: number
   backlog: number; priceFloor: number; costRatio: number; trustStep: number; sameDayBacklog: number; demandSlope: number
 }
 export const defaults: Settings = {
   price: 1.42, fee: 1.05, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
-  notes: true, adaptive: true, earlyOffers: false, safetySlack: false,
+  notes: true, noteSpelling: false, adaptive: true, earlyOffers: false, safetySlack: false,
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
   backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14,
 }
@@ -168,10 +169,15 @@ export class Dispatcher extends Desk {
   }
 
   noteRules(request: PriceRequest | undefined): NoteRules {
-    return this.hoursFor(request) ?? (request ? this.readinessFor(request) : null) ?? readNote(request?.note ?? null)
+    const note = request?.note ?? null
+    return this.hoursFor(request) ?? (request ? this.readinessFor(request) : null) ?? readNote(this.settings.noteSpelling ? normalizeNote(note) : note)
   }
 
   plannedRequest(request: PriceRequest): PriceRequest {
+    if (this.settings.noteSpelling) {
+      const note = normalizeNote(request.note)
+      if (note !== request.note) request = { ...request, note }
+    }
     const readiness = this.readinessFor(request)
     const hours = this.hoursFor(request)
     if (!readiness && !hours) return request

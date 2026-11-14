@@ -37,6 +37,10 @@ const harmless = [
   /(?:hei vaan|hi there|moikka|moi|hei|terve|hello|hi|hej|hejsan|kiitti|kiitos|thanks|thx|cheers|tack)/,
 ].map(phrase)
 
+export const harmlessWords = [...new Set(harmless.flatMap(pattern => pattern.source.match(/[a-z]{5,}/g) ?? []))].sort()
+
 const manualPhrases = phrase(/(?:kuljettajalla oltava oikeus ajaa manuaalia|ei automaatti vaan manuaali|manuaali,? ei automaatti|manual transmission,? no automatic|manual transmission|manual gearbox|stick shift|manuaalivaihteisto|manuaalivaihteinen|huom manuaali|manuaali|manuell vaxellada|manuellt vaxlad)/)
 const platePhrases = phrase(/(?:car has no plates,? bring trade plates|plates removed,? bring trade plates|unregistered,? needs trade plates|kilvet puuttuu,? tuo siirtokilvet|kilvet poistettu,? ota koekilvet|poistettu rekisterista,? tarvitaan siirtokilvet|ei rekkareita,? koekilvet tarvitaan|ei kilpia,? siirtokilvet mukaan|rekisterikilvet irrotettu|auto ilman kilpia|car has no plates|no plates|saknar skyltar|inga skyltar pa bilen)/)
+
+export const equipmentWords = [...new Set([manualPhrases, platePhrases].flatMap(pattern => pattern.source.match(/[a-z]{5,}/g) ?? []))]
 

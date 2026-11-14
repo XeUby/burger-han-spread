@@ -1,0 +1,48 @@
+{
+  "declaredAt": "2026-11-14T01:35:05.437447+00:00",
+  "scope": "Old development seeds only; strict harmless-note spelling correction. No ranking or final worlds.",
+  "hypothesis": "Recover otherwise feasible work rejected solely because of one or two unambiguous spelling errors in already recognized harmless clauses.",
+  "semanticsGate": {
+    "screen": "docs/note-spelling-screen.json",
+    "probeWorldId": "w872041e419ceb516b2df",
+    "required": "Every unchanged revealed selected order must have no unmodeled readiness, release time, equipment, tyre, deadline or hours restriction."
+  },
+  "implementationConstraint": "Opt-in only. Existing strict parser must accept the entire corrected note. Never correct protected equipment or timing words, numbers, short words, or ambiguous candidates. Maximum two single-edit word corrections. No policy tuning against fresh late-rescue evaluation seeds.",
+  "screeningSeeds": [
+    "formal-unseen-20261113-14",
+    "formal-unseen-20261113-15"
+  ],
+  "screeningArms": [
+    "same-source control with noteSpelling false",
+    "same-source treatment with noteSpelling true"
+  ],
+  "screeningGate": {
+    "allTrialsTerminal": true,
+    "allTreatmentsQualified": true,
+    "noUndeliveredOrders": true,
+    "meanPairedGainEurosGreaterThan": 100,
+    "worstPairedGainEurosAtLeast": -250,
+    "noNoteRelatedFailedVisits": true
+  },
+  "confirmationSeeds": [
+    "formal-unseen-20261113-09",
+    "formal-unseen-20261113-10",
+    "formal-unseen-20261113-12",
+    "formal-unseen-20261113-16"
+  ],
+  "confirmationGate": {
+    "allTrialsTerminal": true,
+    "allTreatmentsQualified": true,
+    "noUndeliveredOrders": true,
+    "meanPairedGainEurosGreaterThan": 0,
+    "worstPairedGainEurosAtLeast": -500,
+    "noNoteRelatedFailedVisits": true
+  },
+  "maximumConcurrentPlays": 4,
+  "freshValidation": "Only after development gates pass; freeze exact source/settings and predeclare a new paired panel before inspecting its outcomes.",
+  "frozenAt": "2026-11-14T01:37:51.870479+00:00",
+  "plan": "experiments/plans/note-spelling.json",
+  "revision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa",
+  "semanticsPassed": true,
+  "semanticsReport": "docs/note-spelling-probe.json"
+}
