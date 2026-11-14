@@ -1,0 +1,1292 @@
+{
+  "checkedAt": "2026-11-14T10:10:45.738Z",
+  "unfinished": [],
+  "boards": [
+    {
+      "level": 1,
+      "current": {
+        "season": 6,
+        "name": "Saturday 12:00",
+        "startedAt": "2026-11-14T10:00:16.428Z",
+        "teams": [
+          {
+            "rank": 1,
+            "team": "bready",
+            "name": "Bready",
+            "played": 5,
+            "ranked": true,
+            "marginCents": 5480396,
+            "onTimeShare": 0.9579363234952358,
+            "runs": [
+              {
+                "run": 1,
+                "marginCents": 1122841,
+                "onTimeShare": 0.9605110336817654,
+                "wonOrders": 861,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 2,
+                "marginCents": 1074197,
+                "onTimeShare": 0.9641148325358851,
+                "wonOrders": 836,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 3,
+                "marginCents": 928983,
+                "onTimeShare": 0.9502890173410404,
+                "wonOrders": 865,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 4,
+                "marginCents": 1039109,
+                "onTimeShare": 0.9497076023391813,
+                "wonOrders": 855,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 5,
+                "marginCents": 1315266,
+                "onTimeShare": 0.9650112866817155,
+                "wonOrders": 886,
+                "ranked": true,
+                "deletedAt": null
+              }
+            ]
+          },
+          {
+            "rank": null,
+            "team": "burger-han",
+            "name": "Burger Han",
+            "played": 0,
+            "ranked": false,
+            "marginCents": null,
+            "onTimeShare": null,
+            "runs": []
+          }
+        ]
+      },
+      "previous": {
+        "season": 5,
+        "name": "Saturday 09:00",
+        "startedAt": "2026-11-14T07:00:17.091Z",
+        "teams": [
+          {
+            "rank": 1,
+            "team": "northbound-dispatch",
+            "name": "Northbound Dispatch",
+            "played": 5,
+            "ranked": true,
+            "marginCents": 6011910,
+            "onTimeShare": 0.9520344920506602,
+            "runs": [
+              {
+                "run": 1,
+                "marginCents": 1387244,
+                "onTimeShare": 0.9646133682830931,
+                "wonOrders": 763,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 2,
+                "marginCents": 1349332,
+                "onTimeShare": 0.9733688415446072,
+                "wonOrders": 751,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 3,
+                "marginCents": 1022053,
+                "onTimeShare": 0.9413369713506139,
+                "wonOrders": 733,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 4,
+                "marginCents": 1238652,
+                "onTimeShare": 0.9423592493297587,
+                "wonOrders": 746,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 5,
+                "marginCents": 1014629,
+                "onTimeShare": 0.9373259052924791,
+                "wonOrders": 718,
+                "ranked": true,
+                "deletedAt": null
+              }
+            ]
+          },
+          {
+            "rank": 5,
+            "team": "burger-han",
+            "name": "Burger Han",
+            "played": 5,
+            "ranked": true,
+            "marginCents": 3694242,
+            "onTimeShare": 0.9731371921969939,
+            "runs": [
+              {
+                "run": 1,
+                "marginCents": 832702,
+                "onTimeShare": 0.9750390015600624,
+                "wonOrders": 641,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 2,
+                "marginCents": 819515,
+                "onTimeShare": 0.9768875192604006,
+                "wonOrders": 649,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 3,
+                "marginCents": 487263,
+                "onTimeShare": 0.9671592775041051,
+                "wonOrders": 609,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 4,
+                "marginCents": 887410,
+                "onTimeShare": 0.9792332268370607,
+                "wonOrders": 626,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 5,
+                "marginCents": 667352,
+                "onTimeShare": 0.9667774086378738,
+                "wonOrders": 602,
+                "ranked": true,
+                "deletedAt": null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "level": 2,
+      "current": {
+        "season": 6,
+        "name": "Saturday 12:00",
+        "startedAt": "2026-11-14T10:00:16.428Z",
+        "teams": [
+          {
+            "rank": 1,
+            "team": "bready",
+            "name": "Bready",
+            "played": 5,
+            "ranked": true,
+            "marginCents": 5238746,
+            "onTimeShare": 0.9489770143975751,
+            "runs": [
+              {
+                "run": 1,
+                "marginCents": 1064524,
+                "onTimeShare": 0.9485924112607099,
+                "wonOrders": 817,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 2,
+                "marginCents": 1050107,
+                "onTimeShare": 0.9492847854356307,
+                "wonOrders": 769,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 3,
+                "marginCents": 962833,
+                "onTimeShare": 0.9459798994974874,
+                "wonOrders": 796,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 4,
+                "marginCents": 1022931,
+                "onTimeShare": 0.9513797634691196,
+                "wonOrders": 761,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 5,
+                "marginCents": 1138351,
+                "onTimeShare": 0.9497549019607843,
+                "wonOrders": 816,
+                "ranked": true,
+                "deletedAt": null
+              }
+            ]
+          },
+          {
+            "rank": null,
+            "team": "burger-han",
+            "name": "Burger Han",
+            "played": 0,
+            "ranked": false,
+            "marginCents": null,
+            "onTimeShare": null,
+            "runs": []
+          }
+        ]
+      },
+      "previous": {
+        "season": 5,
+        "name": "Saturday 09:00",
+        "startedAt": "2026-11-14T07:00:17.091Z",
+        "teams": [
+          {
+            "rank": 1,
+            "team": "northbound-dispatch",
+            "name": "Northbound Dispatch",
+            "played": 5,
+            "ranked": true,
+            "marginCents": 5765423,
+            "onTimeShare": 0.9488852637302883,
+            "runs": [
+              {
+                "run": 1,
+                "marginCents": 1110501,
+                "onTimeShare": 0.941952506596306,
+                "wonOrders": 758,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 2,
+                "marginCents": 1220814,
+                "onTimeShare": 0.9415041782729805,
+                "wonOrders": 718,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 3,
+                "marginCents": 1210124,
+                "onTimeShare": 0.9695364238410596,
+                "wonOrders": 755,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 4,
+                "marginCents": 1173606,
+                "onTimeShare": 0.9445196211096076,
+                "wonOrders": 739,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 5,
+                "marginCents": 1050378,
+                "onTimeShare": 0.9463276836158192,
+                "wonOrders": 708,
+                "ranked": true,
+                "deletedAt": null
+              }
+            ]
+          },
+          {
+            "rank": 5,
+            "team": "burger-han",
+            "name": "Burger Han",
+            "played": 5,
+            "ranked": true,
+            "marginCents": 3869520,
+            "onTimeShare": 0.9812903225806452,
+            "runs": [
+              {
+                "run": 1,
+                "marginCents": 848124,
+                "onTimeShare": 0.9920255183413078,
+                "wonOrders": 627,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 2,
+                "marginCents": 819956,
+                "onTimeShare": 0.974025974025974,
+                "wonOrders": 616,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 3,
+                "marginCents": 808441,
+                "onTimeShare": 0.9870340356564019,
+                "wonOrders": 617,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 4,
+                "marginCents": 690209,
+                "onTimeShare": 0.9747235387045814,
+                "wonOrders": 633,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 5,
+                "marginCents": 702790,
+                "onTimeShare": 0.9785831960461285,
+                "wonOrders": 607,
+                "ranked": true,
+                "deletedAt": null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "current": {
+        "season": 6,
+        "name": "Saturday 12:00",
+        "startedAt": "2026-11-14T10:00:16.428Z",
+        "teams": [
+          {
+            "rank": 1,
+            "team": "bready",
+            "name": "Bready",
+            "played": 5,
+            "ranked": true,
+            "marginCents": 5693241,
+            "onTimeShare": 0.9393133462282398,
+            "runs": [
+              {
+                "run": 1,
+                "marginCents": 1099456,
+                "onTimeShare": 0.9307411907654921,
+                "wonOrders": 823,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 2,
+                "marginCents": 1002234,
+                "onTimeShare": 0.9339045287637698,
+                "wonOrders": 817,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 3,
+                "marginCents": 1053321,
+                "onTimeShare": 0.93875,
+                "wonOrders": 800,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 4,
+                "marginCents": 1226567,
+                "onTimeShare": 0.9418052256532067,
+                "wonOrders": 842,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 5,
+                "marginCents": 1311663,
+                "onTimeShare": 0.9508196721311475,
+                "wonOrders": 854,
+                "ranked": true,
+                "deletedAt": null
+              }
+            ]
+          },
+          {
+            "rank": null,
+            "team": "burger-han",
+            "name": "Burger Han",
+            "played": 0,
+            "ranked": false,
+            "marginCents": null,
+            "onTimeShare": null,
+            "runs": []
+          }
+        ]
+      },
+      "previous": {
+        "season": 5,
+        "name": "Saturday 09:00",
+        "startedAt": "2026-11-14T07:00:17.091Z",
+        "teams": [
+          {
+            "rank": 1,
+            "team": "northbound-dispatch",
+            "name": "Northbound Dispatch",
+            "played": 5,
+            "ranked": true,
+            "marginCents": 7982172,
+            "onTimeShare": 0.9510022271714922,
+            "runs": [
+              {
+                "run": 1,
+                "marginCents": 1645785,
+                "onTimeShare": 0.9501661129568106,
+                "wonOrders": 903,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 2,
+                "marginCents": 1622748,
+                "onTimeShare": 0.955456570155902,
+                "wonOrders": 898,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 3,
+                "marginCents": 1632454,
+                "onTimeShare": 0.947603121516165,
+                "wonOrders": 897,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 4,
+                "marginCents": 1507498,
+                "onTimeShare": 0.9474285714285714,
+                "wonOrders": 875,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 5,
+                "marginCents": 1573687,
+                "onTimeShare": 0.9541984732824428,
+                "wonOrders": 917,
+                "ranked": true,
+                "deletedAt": null
+              }
+            ]
+          },
+          {
+            "rank": 5,
+            "team": "burger-han",
+            "name": "Burger Han",
+            "played": 5,
+            "ranked": true,
+            "marginCents": 4480698,
+            "onTimeShare": 0.9836990595611286,
+            "runs": [
+              {
+                "run": 1,
+                "marginCents": 916268,
+                "onTimeShare": 0.986863711001642,
+                "wonOrders": 609,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 2,
+                "marginCents": 753823,
+                "onTimeShare": 0.9858267716535433,
+                "wonOrders": 635,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 3,
+                "marginCents": 956547,
+                "onTimeShare": 0.9744744744744744,
+                "wonOrders": 666,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 4,
+                "marginCents": 939975,
+                "onTimeShare": 0.9827856025039123,
+                "wonOrders": 639,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 5,
+                "marginCents": 914085,
+                "onTimeShare": 0.9890795631825273,
+                "wonOrders": 641,
+                "ranked": true,
+                "deletedAt": null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "current": {
+        "season": 6,
+        "name": "Saturday 12:00",
+        "startedAt": "2026-11-14T10:00:16.428Z",
+        "teams": [
+          {
+            "rank": 1,
+            "team": "bready",
+            "name": "Bready",
+            "played": 5,
+            "ranked": true,
+            "marginCents": 2919029,
+            "onTimeShare": 0.9409264768380791,
+            "runs": [
+              {
+                "run": 1,
+                "marginCents": 460531,
+                "onTimeShare": 0.917864476386037,
+                "wonOrders": 487,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 2,
+                "marginCents": 886859,
+                "onTimeShare": 0.9408602150537635,
+                "wonOrders": 558,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 3,
+                "marginCents": 557406,
+                "onTimeShare": 0.9551282051282052,
+                "wonOrders": 468,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 4,
+                "marginCents": 478020,
+                "onTimeShare": 0.9427860696517413,
+                "wonOrders": 402,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 5,
+                "marginCents": 536213,
+                "onTimeShare": 0.9497716894977168,
+                "wonOrders": 438,
+                "ranked": true,
+                "deletedAt": null
+              }
+            ]
+          },
+          {
+            "rank": null,
+            "team": "burger-han",
+            "name": "Burger Han",
+            "played": 0,
+            "ranked": false,
+            "marginCents": null,
+            "onTimeShare": null,
+            "runs": []
+          }
+        ]
+      },
+      "previous": {
+        "season": 5,
+        "name": "Saturday 09:00",
+        "startedAt": "2026-11-14T07:00:17.091Z",
+        "teams": [
+          {
+            "rank": 1,
+            "team": "northbound-dispatch",
+            "name": "Northbound Dispatch",
+            "played": 5,
+            "ranked": true,
+            "marginCents": 4028309,
+            "onTimeShare": 0.9492112350904194,
+            "runs": [
+              {
+                "run": 1,
+                "marginCents": 1210193,
+                "onTimeShare": 0.9688524590163935,
+                "wonOrders": 610,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 2,
+                "marginCents": 912593,
+                "onTimeShare": 0.9287020109689214,
+                "wonOrders": 547,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 3,
+                "marginCents": 630235,
+                "onTimeShare": 0.9715447154471545,
+                "wonOrders": 492,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 4,
+                "marginCents": 715514,
+                "onTimeShare": 0.9533468559837728,
+                "wonOrders": 493,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 5,
+                "marginCents": 559774,
+                "onTimeShare": 0.9190371991247265,
+                "wonOrders": 457,
+                "ranked": true,
+                "deletedAt": null
+              }
+            ]
+          },
+          {
+            "rank": 6,
+            "team": "burger-han",
+            "name": "Burger Han",
+            "played": 5,
+            "ranked": true,
+            "marginCents": 1538176,
+            "onTimeShare": 0.9672025723472669,
+            "runs": [
+              {
+                "run": 1,
+                "marginCents": 623123,
+                "onTimeShare": 0.9601990049751243,
+                "wonOrders": 402,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 2,
+                "marginCents": 325867,
+                "onTimeShare": 0.9614243323442137,
+                "wonOrders": 337,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 3,
+                "marginCents": 250475,
+                "onTimeShare": 0.981203007518797,
+                "wonOrders": 266,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 4,
+                "marginCents": 251200,
+                "onTimeShare": 0.979381443298969,
+                "wonOrders": 291,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 5,
+                "marginCents": 87511,
+                "onTimeShare": 0.9575289575289575,
+                "wonOrders": 259,
+                "ranked": true,
+                "deletedAt": null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "current": {
+        "season": 6,
+        "name": "Saturday 12:00",
+        "startedAt": "2026-11-14T10:00:16.428Z",
+        "teams": [
+          {
+            "rank": 1,
+            "team": "bready",
+            "name": "Bready",
+            "played": 5,
+            "ranked": true,
+            "marginCents": 2929731,
+            "onTimeShare": 0.9535752401280683,
+            "runs": [
+              {
+                "run": 1,
+                "marginCents": 599643,
+                "onTimeShare": 0.9449760765550239,
+                "wonOrders": 418,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 2,
+                "marginCents": 244253,
+                "onTimeShare": 0.9502487562189055,
+                "wonOrders": 201,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 3,
+                "marginCents": 857204,
+                "onTimeShare": 0.9502262443438914,
+                "wonOrders": 442,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 4,
+                "marginCents": 719094,
+                "onTimeShare": 0.9601769911504425,
+                "wonOrders": 452,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 5,
+                "marginCents": 509537,
+                "onTimeShare": 0.961218836565097,
+                "wonOrders": 361,
+                "ranked": true,
+                "deletedAt": null
+              }
+            ]
+          },
+          {
+            "rank": null,
+            "team": "burger-han",
+            "name": "Burger Han",
+            "played": 0,
+            "ranked": false,
+            "marginCents": null,
+            "onTimeShare": null,
+            "runs": []
+          }
+        ]
+      },
+      "previous": {
+        "season": 5,
+        "name": "Saturday 09:00",
+        "startedAt": "2026-11-14T07:00:17.091Z",
+        "teams": [
+          {
+            "rank": 1,
+            "team": "progresful",
+            "name": "Progresful",
+            "played": 5,
+            "ranked": true,
+            "marginCents": 2852909,
+            "onTimeShare": 0.9790602655771196,
+            "runs": [
+              {
+                "run": 1,
+                "marginCents": 605022,
+                "onTimeShare": 0.9832134292565947,
+                "wonOrders": 417,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 2,
+                "marginCents": 445638,
+                "onTimeShare": 0.9845679012345679,
+                "wonOrders": 324,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 3,
+                "marginCents": 655117,
+                "onTimeShare": 0.9851116625310173,
+                "wonOrders": 403,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 4,
+                "marginCents": 650925,
+                "onTimeShare": 0.9905882352941177,
+                "wonOrders": 425,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 5,
+                "marginCents": 496207,
+                "onTimeShare": 0.9511568123393316,
+                "wonOrders": 389,
+                "ranked": true,
+                "deletedAt": null
+              }
+            ]
+          },
+          {
+            "rank": null,
+            "team": "burger-han",
+            "name": "Burger Han",
+            "played": 0,
+            "ranked": false,
+            "marginCents": null,
+            "onTimeShare": null,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "level": 6,
+      "current": {
+        "season": 6,
+        "name": "Saturday 12:00",
+        "startedAt": "2026-11-14T10:00:16.428Z",
+        "teams": [
+          {
+            "rank": 1,
+            "team": "pfjfjfjfj",
+            "name": "pfjfjfjfj",
+            "played": 5,
+            "ranked": true,
+            "marginCents": 2638356,
+            "onTimeShare": 0.9781350482315112,
+            "runs": [
+              {
+                "run": 1,
+                "marginCents": 420847,
+                "onTimeShare": 0.9710144927536232,
+                "wonOrders": 276,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 2,
+                "marginCents": 547812,
+                "onTimeShare": 0.9779179810725552,
+                "wonOrders": 317,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 3,
+                "marginCents": 375933,
+                "onTimeShare": 0.9771863117870723,
+                "wonOrders": 263,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 4,
+                "marginCents": 588243,
+                "onTimeShare": 0.9708454810495627,
+                "wonOrders": 343,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 5,
+                "marginCents": 705521,
+                "onTimeShare": 0.9915730337078652,
+                "wonOrders": 356,
+                "ranked": true,
+                "deletedAt": null
+              }
+            ]
+          },
+          {
+            "rank": null,
+            "team": "burger-han",
+            "name": "Burger Han",
+            "played": 0,
+            "ranked": false,
+            "marginCents": null,
+            "onTimeShare": null,
+            "runs": []
+          }
+        ]
+      },
+      "previous": {
+        "season": 5,
+        "name": "Saturday 09:00",
+        "startedAt": "2026-11-14T07:00:17.091Z",
+        "teams": [
+          {
+            "rank": 1,
+            "team": "progresful",
+            "name": "Progresful",
+            "played": 5,
+            "ranked": true,
+            "marginCents": 3881399,
+            "onTimeShare": 0.9836427939876216,
+            "runs": [
+              {
+                "run": 1,
+                "marginCents": 717463,
+                "onTimeShare": 0.9794050343249427,
+                "wonOrders": 437,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 2,
+                "marginCents": 579750,
+                "onTimeShare": 0.9871134020618557,
+                "wonOrders": 388,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 3,
+                "marginCents": 1004306,
+                "onTimeShare": 0.9791271347248577,
+                "wonOrders": 527,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 4,
+                "marginCents": 824770,
+                "onTimeShare": 0.9826086956521739,
+                "wonOrders": 460,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 5,
+                "marginCents": 755110,
+                "onTimeShare": 0.9911111111111112,
+                "wonOrders": 450,
+                "ranked": true,
+                "deletedAt": null
+              }
+            ]
+          },
+          {
+            "rank": null,
+            "team": "burger-han",
+            "name": "Burger Han",
+            "played": 0,
+            "ranked": false,
+            "marginCents": null,
+            "onTimeShare": null,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "level": 7,
+      "current": {
+        "season": 6,
+        "name": "Saturday 12:00",
+        "startedAt": "2026-11-14T10:00:16.428Z",
+        "teams": [
+          {
+            "rank": 1,
+            "team": "akanegakirru",
+            "name": "akanegakirru",
+            "played": 5,
+            "ranked": true,
+            "marginCents": 5158401,
+            "onTimeShare": 0.9676860934795153,
+            "runs": [
+              {
+                "run": 1,
+                "marginCents": 1374732,
+                "onTimeShare": 0.9576059850374065,
+                "wonOrders": 401,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 2,
+                "marginCents": 1426572,
+                "onTimeShare": 0.9685990338164251,
+                "wonOrders": 414,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 3,
+                "marginCents": 586618,
+                "onTimeShare": 0.973421926910299,
+                "wonOrders": 301,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 4,
+                "marginCents": 1115769,
+                "onTimeShare": 0.9655172413793104,
+                "wonOrders": 348,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 5,
+                "marginCents": 654710,
+                "onTimeShare": 0.9776951672862454,
+                "wonOrders": 269,
+                "ranked": true,
+                "deletedAt": null
+              }
+            ]
+          },
+          {
+            "rank": null,
+            "team": "burger-han",
+            "name": "Burger Han",
+            "played": 0,
+            "ranked": false,
+            "marginCents": null,
+            "onTimeShare": null,
+            "runs": []
+          }
+        ]
+      },
+      "previous": {
+        "season": 5,
+        "name": "Saturday 09:00",
+        "startedAt": "2026-11-14T07:00:17.091Z",
+        "teams": [
+          {
+            "rank": 1,
+            "team": "klmisbest",
+            "name": "klmisbest",
+            "played": 5,
+            "ranked": true,
+            "marginCents": 5911207,
+            "onTimeShare": 0.9659033078880407,
+            "runs": [
+              {
+                "run": 1,
+                "marginCents": 776734,
+                "onTimeShare": 0.9467455621301775,
+                "wonOrders": 338,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 2,
+                "marginCents": 1718122,
+                "onTimeShare": 0.9719222462203023,
+                "wonOrders": 463,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 3,
+                "marginCents": 1360734,
+                "onTimeShare": 0.9732360097323601,
+                "wonOrders": 411,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 4,
+                "marginCents": 1150042,
+                "onTimeShare": 0.9713541666666666,
+                "wonOrders": 384,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 5,
+                "marginCents": 905575,
+                "onTimeShare": 0.962059620596206,
+                "wonOrders": 369,
+                "ranked": true,
+                "deletedAt": null
+              }
+            ]
+          },
+          {
+            "rank": null,
+            "team": "burger-han",
+            "name": "Burger Han",
+            "played": 0,
+            "ranked": false,
+            "marginCents": null,
+            "onTimeShare": null,
+            "runs": []
+          }
+        ]
+      }
+    },
+    {
+      "level": 8,
+      "current": {
+        "season": 6,
+        "name": "Saturday 12:00",
+        "startedAt": "2026-11-14T10:00:16.428Z",
+        "teams": [
+          {
+            "rank": 1,
+            "team": "freya",
+            "name": "freya",
+            "played": 5,
+            "ranked": true,
+            "marginCents": 9431910,
+            "onTimeShare": 0.9754210286754665,
+            "runs": [
+              {
+                "run": 1,
+                "marginCents": 1949955,
+                "onTimeShare": 0.9841986455981941,
+                "wonOrders": 443,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 2,
+                "marginCents": 2033715,
+                "onTimeShare": 0.9756637168141593,
+                "wonOrders": 452,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 3,
+                "marginCents": 1516236,
+                "onTimeShare": 0.9901719901719902,
+                "wonOrders": 407,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 4,
+                "marginCents": 2168696,
+                "onTimeShare": 0.9795918367346939,
+                "wonOrders": 490,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 5,
+                "marginCents": 1763308,
+                "onTimeShare": 0.945679012345679,
+                "wonOrders": 405,
+                "ranked": true,
+                "deletedAt": null
+              }
+            ]
+          },
+          {
+            "rank": null,
+            "team": "burger-han",
+            "name": "Burger Han",
+            "played": 0,
+            "ranked": false,
+            "marginCents": null,
+            "onTimeShare": null,
+            "runs": []
+          }
+        ]
+      },
+      "previous": {
+        "season": 5,
+        "name": "Saturday 09:00",
+        "startedAt": "2026-11-14T07:00:17.091Z",
+        "teams": [
+          {
+            "rank": 1,
+            "team": "juhus",
+            "name": "Juhus",
+            "played": 5,
+            "ranked": true,
+            "marginCents": 7900270,
+            "onTimeShare": 0.9799196787148594,
+            "runs": [
+              {
+                "run": 1,
+                "marginCents": 1170008,
+                "onTimeShare": 0.9792899408284024,
+                "wonOrders": 338,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 2,
+                "marginCents": 1707781,
+                "onTimeShare": 0.9925558312655087,
+                "wonOrders": 403,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 3,
+                "marginCents": 1698658,
+                "onTimeShare": 0.9877149877149877,
+                "wonOrders": 407,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 4,
+                "marginCents": 2019033,
+                "onTimeShare": 0.9787735849056604,
+                "wonOrders": 424,
+                "ranked": true,
+                "deletedAt": null
+              },
+              {
+                "run": 5,
+                "marginCents": 1304790,
+                "onTimeShare": 0.9619047619047619,
+                "wonOrders": 420,
+                "ranked": true,
+                "deletedAt": null
+              }
+            ]
+          },
+          {
+            "rank": null,
+            "team": "burger-han",
+            "name": "Burger Han",
+            "played": 1,
+            "ranked": false,
+            "marginCents": null,
+            "onTimeShare": null,
+            "runs": [
+              {
+                "run": 1,
+                "marginCents": 785021,
+                "onTimeShare": 0.972972972972973,
+                "wonOrders": 259,
+                "ranked": true,
+                "deletedAt": null
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "scope": "Official snapshot retaining the leader and burger-han in each round and level; listed scores unchanged. Full read-only response retained locally in runs/research-resume-server.json."
+}
