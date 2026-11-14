@@ -49,6 +49,8 @@ export type Settings = {
   bookMiss: number
   /** Take cars still on summer tyres, and collect them outside the snow that a forecast announces. */
   summerTyres: boolean
+  /** Instead of declining a request over the limits on drivers and open work, price it dearer: cost × (1 + softLimits × overload); 0 keeps the hard limits. */
+  softLimits: number
   /** The fee, in full fees, a day and half a day before the last pickup, for a gig that no driver has taken. */
   climbDay: number; climbHalfDay: number
   /** What a route really costs against the dispatcher's estimate, for routes under 50 km, from 50 km to 100 km, and longer. */
@@ -58,7 +60,7 @@ export const defaults: Settings = {
   price: 1.42, fee: 1.05, payout: 0.85, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
   notes: true, noteSpelling: false, relist: false, openingOnly: true, adaptive: true, earlyOffers: false, safetySlack: false,
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, noteReader: true, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
-  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0, minKm: 0, longPayout: 0.85, bookMiss: 0, summerTyres: false,
+  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0, minKm: 0, longPayout: 0.85, bookMiss: 0, summerTyres: false, softLimits: 0,
   earlyClimb: true,
 }
 
@@ -67,7 +69,7 @@ export function validateSettings(value: unknown): asserts value is Partial<Setti
   for (const [key, field] of Object.entries(value)) {
     if (!(key in defaults)) throw new Error(`Unknown setting: ${key}`)
     if (typeof defaults[key as keyof Settings] === "boolean") { if (typeof field !== "boolean") throw new Error(`${key} must be boolean`); continue }
-    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait", "sitAfter", "pairOpen", "pairQuote", "pairPatience", "minKm", "bookMiss"].includes(key))) throw new Error(`${key} must be a positive number`)
+    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait", "sitAfter", "pairOpen", "pairQuote", "pairPatience", "minKm", "bookMiss", "softLimits"].includes(key))) throw new Error(`${key} must be a positive number`)
     if (key === "bundleWait" && (!Number.isInteger(field) || field > 30)) throw new Error("bundleWait must be an integer from 0 to 30")
     if ((key === "margin" || key === "capacity") && field >= 1) throw new Error(`${key} must be below 1`)
     if (key === "placePrior" && field > 2) throw new Error("placePrior must be at most 2")
@@ -149,7 +151,11 @@ export class Dispatcher extends Desk {
     const road = this.network.road(leg.pickup.placeId, leg.delivery.placeId)
     const supply = this.supply(request)
     if (road.km > this.settings.maxKm || road.km < this.settings.minKm) return reject("distance")
-    if (supply < this.settings.minDrivers) return reject("few drivers")
+    let overload = 0
+    if (supply < this.settings.minDrivers) {
+      if (!this.settings.softLimits) return reject("few drivers")
+      overload += (this.settings.minDrivers - supply) / this.settings.minDrivers
+    }
     const day = Math.floor(leg.pickup.window.from / 1440)
     let load = 0
     let unbooked = 0
@@ -168,8 +174,16 @@ export class Dispatcher extends Desk {
     const partner = this.settings.pairQuote > 0 ? this.partnerFor(request) : null
     if (partner) this.partners.set(request.id, partner)
     else this.partners.delete(request.id)
-    if (!partner && load >= Math.max(1, supply * this.settings.capacity)) return reject("capacity")
-    if (!partner && unbooked >= Math.max(2, supply * this.settings.backlog)) return reject("backlog")
+    const capacityLimit = Math.max(1, supply * this.settings.capacity)
+    if (!partner && load >= capacityLimit) {
+      if (!this.settings.softLimits) return reject("capacity")
+      overload += (load + 1 - capacityLimit) / capacityLimit
+    }
+    const backlogLimit = Math.max(2, supply * this.settings.backlog)
+    if (!partner && unbooked >= backlogLimit) {
+      if (!this.settings.softLimits) return reject("backlog")
+      overload += (unbooked + 1 - backlogLimit) / backlogLimit
+    }
     const fee = this.baseFee(request)
     const trust = 1 + this.settings.trustStep * Math.min(25, this.trust.get(request.dealerId) ?? 0)
     const prices: Record<string, number> = {}
@@ -192,7 +206,7 @@ export class Dispatcher extends Desk {
       const options = request.options.filter(option => option.kind in prices)
       const list = Math.min(...options.map(option => option.listPriceCents))
       const features = this.features(request)
-      const choice = this.market.optimize(features, { costCents: fee * this.settings.costRatio * this.routeCost(request) * (partner ? this.settings.pairQuote : 1), listPriceCents: list, trust, minPrice: Math.ceil(fee / (1 - this.settings.margin) + this.settings.priceFloor) })
+      const choice = this.market.optimize(features, { costCents: fee * this.settings.costRatio * this.routeCost(request) * (partner ? this.settings.pairQuote : 1) * (1 + this.settings.softLimits * overload), listPriceCents: list, trust, minPrice: Math.ceil(fee / (1 - this.settings.margin) + this.settings.priceFloor) })
       if (choice.expectedProfitCents <= 0) return reject("no profit")
       if (this.settings.sameDayPremium === 1 && this.settings.laterDiscount === 1) {
         for (const option of options) prices[option.kind] = Math.ceil(option.listPriceCents * trust * choice.ratio)
