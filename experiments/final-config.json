@@ -16,7 +16,7 @@
   "readiness": false,
   "bundlePairs": true,
   "timedNotes": false,
-  "lateRescue": false,
+  "lateRescue": true,
   "sameDayPremium": 1,
   "laterDiscount": 1,
   "placePrior": 0,

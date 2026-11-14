@@ -55,7 +55,7 @@
   },
   "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef": {
     "bundle": "experiments/frontier/late-rescue",
-    "role": "late-rescue experimental candidate; confirmation pending",
+    "role": "selected candidate: volume+bundles+late-rescue; eight fresh paired weeks validated",
     "settings": {
       "price": 1.42,
       "fee": 1.05,

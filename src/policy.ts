@@ -28,7 +28,7 @@ export type Settings = {
 export const defaults: Settings = {
   price: 1.42, fee: 1.05, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
   notes: true, adaptive: true, earlyOffers: false, safetySlack: false,
-  auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, lateRescue: false, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
+  auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
   backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14,
 }
 

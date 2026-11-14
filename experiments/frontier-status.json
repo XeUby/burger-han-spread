@@ -1,10 +1,11 @@
 {
-  "updatedAt": "2026-11-14T01:11:08.085098+00:00",
+  "updatedAt": "2026-11-14T01:27:38.214662+00:00",
   "objective": "Continue systematic search toward the global optimum; practice only, no ranking submission.",
   "maximumConcurrentPlays": 4,
   "currentConcurrency": {
     "maximumConcurrentPlays": 4,
-    "note": "Paired runner30614 is active with four workers and a serialized server occupancy guard. Do not edit its live manifest or restart after a mere observation timeout."
+    "activeRunners": 0,
+    "note": "Paired session30614 is terminal; all16 declared trials completed without retries."
   },
   "completedCombinationStudy": {
     "sessionId": 84558,
@@ -65,10 +66,10 @@
     "700km-only bundle treatment ends at7407.63/9410.50 euros, minimum96.6% on time. It gains versus the old baseline in both weeks but not versus bundles alone. No900km experiment scheduled."
   ],
   "nextSteps": [
-    "Poll paired session30614. Let all16 declared worlds complete; preserve the live manifest and every attempt.",
-    "After completion run python3 analysis/frontier_validation.py --manifest experiments/late-rescue-validation-manifest.json --output docs/late-rescue-validation. Do not compare against old f8 baseline or tune the frozen source during evaluation.",
-    "Assess all8 paired profits, qualifications, undelivered counts and operational errors before promoting lateRescue. Root default is already the independently validated bundle incumbent, with new feature off.",
-    "Maintain at most4 unfinished plays. No ranking or final submissions. Continue structural research separately on old development data only.",
+    "Keep the new validated late-rescue default and its frozen source intact. No ranking or final submissions.",
+    "Admission-credit screen has only7 affected requests/week. Menu-value correction models77.39 euros/week before congestion and adds23.49 expected wins. Neither justifies a full-policy experiment yet.",
+    "Investigate the economics of expensive pre-deadline rescues on old development worlds: a bounded risk budget may outperform paying every urgent fee. Quantify feasible exposure and trust/refund costs before implementation or plays.",
+    "Maintain at most4 unfinished plays, including any probe bases and forks.",
     "Push coherent checkpoints to codex/standalone-dispatcher."
   ],
   "validationStatus": "All16 fresh paired trials complete. Candidate mean10411.59 euros versus8242.34, +26.32%;7/8 positive;8/8 qualified; minimum94.94% on time; no undelivered orders. Full report docs/frontier-validation.md. No ranking submission.",
@@ -255,19 +256,64 @@
   },
   "currentStudy": {
     "sessionId": 30614,
-    "kind": "Fresh late-rescue paired evaluation",
+    "terminal": true,
     "manifest": "experiments/late-rescue-validation-manifest.json",
-    "maximumJobs": 4,
-    "trials": 16,
-    "baselineRevision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
-    "candidateRevision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef"
+    "trials": 16
   },
   "runtimeDefault": {
-    "selectedPolicy": "validated volume+bundles",
-    "settings": "experiments/final-config.json",
-    "referenceRevision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
-    "conformance": "docs/default-conformance.json",
-    "runtimeRevision": "2a3754e9e1cf8d7e10cd74e970e662a511ca3a3b40703bdd9d65bb56fe0c4487",
-    "note": "Root defaults now match the validated bundle policy. Hours and late-rescue remain disabled. Unit fixtures explicitly select immediate posting where appropriate; live fixture exercises the default15-minute wait."
+    "selection": "experiments/current-selection.json",
+    "config": "experiments/final-config.json",
+    "revision": "b7ac567386b724d50f7d300464bb3ad7a4a15d589b81bdb8ef5c9136ecd92823",
+    "sourceReference": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+    "conformance": "docs/late-rescue-conformance.json"
+  },
+  "lateRescueValidation": {
+    "sessionId": 30614,
+    "terminal": true,
+    "manifest": "experiments/late-rescue-validation-manifest.json",
+    "report": "docs/late-rescue-validation.json",
+    "audit": "docs/late-rescue-validation-audit.json",
+    "paired": {
+      "meanDifferenceCents": 28264,
+      "medianDifferenceCents": 23921.5,
+      "minimumDifferenceCents": 0,
+      "maximumDifferenceCents": 62344,
+      "totalDifferenceCents": 226112,
+      "relativeMeanImprovement": 0.0311611236758087,
+      "meanDifferenceBootstrap95Cents": [
+        14915.5,
+        42322.39999999998
+      ],
+      "wins": 7,
+      "ties": 1,
+      "losses": 0,
+      "twoSidedExactSignTestP": 0.015625
+    },
+    "candidate": {
+      "weeks": 8,
+      "qualifiedWeeks": 8,
+      "qualificationOneSided95Lower": 0.6876560219336321,
+      "meanMarginCents": 935291.625,
+      "medianMarginCents": 973236.5,
+      "minMarginCents": 512435,
+      "maxMarginCents": 1172309,
+      "totalMarginCents": 7482333,
+      "totalRevenueCents": 24529182,
+      "wonOrders": 2323,
+      "onTimeOrders": 2273,
+      "undeliveredOrders": 0,
+      "aggregateOnTimeShare": 0.9784761084804132,
+      "aggregateUndeliveredShare": 0.0,
+      "minOnTimeShare": 0.9678456591639871
+    },
+    "promotedToDefault": true
+  },
+  "admissionScreen": {
+    "report": "docs/admission-screen.json",
+    "decision": "Defer; limited exposure, descriptive only."
+  },
+  "menuValueScreen": {
+    "report": "docs/menu-value-screen.json",
+    "decision": "Defer; small model-only gain versus extra expected demand."
   }
 }

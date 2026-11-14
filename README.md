@@ -4,29 +4,29 @@ A TypeScript dispatcher for Bahn's level 8 challenge. It learns the price market
 
 ## Latest independent comparison
 
-The broader-admission bundle candidate was frozen before an eight-week paired evaluation on new seeds. All sixteen ordinary practice worlds reached their terminal minute; their ledger totals and delivery counts reconcile with the official scores.
+The late-rescue candidate was frozen before eight fresh paired weeks. All sixteen ordinary practice worlds reached their terminal minute; their whole-week ledgers and delivery counts match the official scores.
 
-| Metric | Previous validated policy | Bundle candidate |
+| Metric | Validated bundle policy | Bundle policy + late rescue |
 | --- | ---: | ---: |
-| Mean weekly margin | €8,242.34 | **€10,411.59** |
+| Mean weekly margin | €9,070.28 | **€9,352.92** |
 | Qualified weeks | 8/8 | **8/8** |
-| Aggregate on-time delivery | 99.14% | 97.95% |
-| Lowest weekly on-time delivery | 98.10% | 94.94% |
+| Aggregate on-time delivery | 97.80% | 97.85% |
+| Lowest weekly on-time delivery | 96.46% | 96.78% |
 | Undelivered orders | 0 | 0 |
 
-Mean gain is **€2,169.25/week (+26.32%)**, positive in seven of eight paired weeks. The 95% paired bootstrap interval is €1,195.42–€3,048.48; the exact two-sided sign-test p-value is 0.0703. Eight weeks cannot establish a low rare-failure probability or global optimality. These are unranked practice results. See the [complete comparison](docs/frontier-validation.md), [machine-readable evidence](docs/frontier-validation.json), and [frozen manifest](experiments/frontier-validation-manifest.json).
+Mean gain is **€282.64/week (+3.12%)**, with seven wins, one tie and no losses. The 95% paired bootstrap interval is €149.16–€423.22; the exact two-sided sign-test p-value is 0.015625. Most of the gain is lower driver fees (€273.78/week), with smaller refunds (€8.75/week). Both arms had the same single rejected reprice and no network recoveries. See the [complete comparison](docs/late-rescue-validation.md), [audit](docs/late-rescue-validation-audit.json), and [frozen manifest](experiments/late-rescue-validation-manifest.json). These are ordinary practice results, with no ranking submissions.
 
-The public leaderboard leader averaged €16,006.00 over five different secret weeks at the recorded observation. That is a comparison target, not a controlled estimate of our rank. The [public snapshot](docs/leaderboard-observation.json) preserves the observation.
+The public leaderboard leader averaged €16,631.51 over five different secret weeks at the recorded observation. That is a comparison target, not a controlled estimate of our rank. The [public snapshot](docs/leaderboard-observation.json) preserves the observation.
 
-The prior policy had independently improved mean margin from €5,541.90 to €8,418.62 on an earlier eight-week panel. That historical evaluation and its reroute correction remain in [the earlier report](docs/optimization-validation.md). Those older seeds became development data for this research.
+On an earlier independent panel, broader admission plus bundles improved mean weekly margin from €8,242.34 to €10,411.59, a **26.32%** gain, with all eight weeks qualified. See the [bundle comparison](docs/frontier-validation.md). The earlier policy had improved from €5,541.90 to €8,418.62 on another panel ([report](docs/optimization-validation.md)). Means from different panels are not paired treatment comparisons. None establishes global optimality or a rare-failure guarantee.
 
 ## Research and reproducibility
 
-The selected source is frozen under `experiments/frontier/candidate/`; the previous source is under `experiments/frontier/baseline/`. Exact source hashes and settings are in [source-index.json](experiments/frontier/source-index.json). The selected configuration is also in [frontier-selected-config.json](experiments/frontier-selected-config.json). The standalone default now uses this validated bundle policy. [Conformance evidence](docs/default-conformance.json) compares every emitted action and decision time with the frozen implementation over three old development event streams. Research features remain opt-in.
+The selected source is frozen under `experiments/frontier/late-rescue/`; the previous validated bundle source remains under `experiments/frontier/candidate/`. Exact source hashes and settings are in [source-index.json](experiments/frontier/source-index.json). The complete current configuration is [final-config.json](experiments/final-config.json), with provenance in [current-selection.json](experiments/current-selection.json). The standalone default uses the validated late-rescue policy. [Conformance evidence](docs/late-rescue-conformance.json) compares all 5,614 emitted actions and decision times against the frozen source on three old development streams. Other research features remain opt-in.
 
-Development selection used [screening trials](docs/frontier-experiments.md) and a [four-week confirmation](docs/frontier-confirmation.md). A separate note-hours treatment passed an initial screen but [failed confirmation](docs/note-hours-confirmation.md), so it remains disabled. A controlled [direct-offer head-start probe](docs/offer-window-probe.json) also found no benefit. [Current experiment state](experiments/frontier-status.json) records runs and decisions. No ranking submission has been made by this research.
+The late-rescue policy briefly lowers an unbooked single-car gig's fee after its last possible on-time pickup. It then escalates again on a fixed clock, reaching the full rescue fee within six hours. Repricing cannot restart that clock. Booked drivers and shared gigs are excluded. Development [screening](docs/late-rescue-results.md) and [confirmation](docs/late-rescue-confirmation.md) preceded the fresh evaluation.
 
-A bounded fee reset after on-time pickup is already impossible gained €891.79 and €1,273.40 in two deliberately high-exposure development weeks. [Complete screening evidence](docs/late-rescue-results.md) includes all costs and refunds. [Broader confirmation](docs/late-rescue-confirmation.md) gained €208.64 on one week and left three unchanged. An eight-week fresh paired evaluation is running; this feature is not enabled in the validated incumbent.
+A note-hours treatment passed its initial screen but [failed confirmation](docs/note-hours-confirmation.md), so it remains disabled. A [direct-offer head-start probe](docs/offer-window-probe.json) found no benefit. New offline screens found limited scope for [crediting completed work against daily capacity](docs/admission-screen.json) and only €77.39/week of modeled gain from [correcting the expected paid option value](docs/menu-value-screen.json), before extra congestion. Neither was added to the policy. [Current experiment state](experiments/frontier-status.json) records runs and decisions.
 
 Both study runners cap workers at four, serialize their own creations, and check total unfinished server worlds before each creation. Coordinate separate runners so their creation checks cannot race. Raw world logs and credentials remain local.
 
@@ -53,13 +53,13 @@ npm test
 npm run practice -- --seed new-trial-1
 ```
 
-Run the exact latest validated bundle source on an ordinary practice seed:
+Run the latest validated standalone default on an ordinary practice seed:
 
 ```bash
-node --env-file=.env experiments/frontier/candidate/src/run.ts --seed new-bundle-trial-1 --config '{"capacity":0.35,"backlog":0.08,"minDrivers":8,"maxKm":700,"bundleWait":15}'
+node --env-file=.env src/run.ts --seed new-late-rescue-trial-1
 ```
 
-The independently validated bundle policy is the default. Its complete settings are in [final-config.json](experiments/final-config.json), including disabled research switches. Runtime and integration tests: **98 passing**; isolated research tests: **8 passing**; statistical-report tests: **9 passing**. The live integration fixture advances the clock through the default bundle window. TypeScript checks include the experiment launchers.
+The independently validated bundle policy with late rescue is the default. Its complete settings are in [final-config.json](experiments/final-config.json), including disabled research switches. Runtime and integration tests: **98 passing**; isolated research tests: **8 passing**; statistical-report tests: **9 passing**. The live integration fixture advances the clock through the default bundle window. TypeScript checks include the experiment launchers.
 
 To play an active test final or final:
 

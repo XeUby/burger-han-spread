@@ -2,17 +2,17 @@ import fs from "node:fs"
 import assert from "node:assert/strict"
 import { createHash } from "node:crypto"
 import { Dispatcher, defaults } from "../src/policy.ts"
-import { Dispatcher as ArchivedDispatcher } from "../experiments/frontier/candidate/src/policy.ts"
+import { Dispatcher as ArchivedDispatcher } from "../experiments/frontier/late-rescue/src/policy.ts"
 import type { World } from "../vendor/typescript/spread.ts"
-import type { World as ArchivedWorld } from "../experiments/frontier/candidate/vendor/typescript/spread.ts"
+import type { World as ArchivedWorld } from "../experiments/frontier/late-rescue/vendor/typescript/spread.ts"
 import type { Action, DeskEvent } from "../vendor/typescript/types.ts"
 
 const read = (path: string) => JSON.parse(fs.readFileSync(path, "utf8"))
-const referenceRevision = "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41"
+const referenceRevision = "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef"
 const reference = read("experiments/frontier/source-index.json")[referenceRevision]
 assert.deepEqual(Object.fromEntries(Object.keys(reference.settings).map(key => [key, defaults[key as keyof typeof defaults]])), reference.settings)
 assert.equal(defaults.timedNotes, false)
-assert.equal(defaults.lateRescue, false)
+assert.equal(defaults.lateRescue, true)
 assert.deepEqual(read("experiments/final-config.json"), defaults)
 const worlds = ["w0c6ce51dfdf6d4cc3970", "wde70f6509f014550a4a8", "w9d5670b3d63668d52477"]
 function host() {
@@ -57,6 +57,6 @@ for (const worldId of worlds) {
 }
 const hash = createHash("sha256")
 for (const name of fs.readdirSync("src").filter(name => name.endsWith(".ts")).sort()) hash.update(name).update(fs.readFileSync(`src/${name}`))
-const report = { method: "Run the current default dispatcher and the archived validated bundle policy through identical old development event streams and decision clocks. Both receive identical deterministic action acknowledgements. Compare every emitted action and every next-decision time.", limitation: "Behavioral conformance on recorded inputs, not a new simulation or a profit estimate. Fake acknowledgements do not reproduce every real server refusal. The immutable fresh evaluation policies are unaffected by this default change.", referenceRevision, currentRevision: hash.digest("hex"), defaults, results }
-fs.writeFileSync("docs/default-conformance.json", JSON.stringify(report, null, 2) + "\n")
+const report = { method: "Run the current default dispatcher and the archived validated late-rescue policy through identical old development event streams and decision clocks. Both receive identical deterministic action acknowledgements. Compare every emitted action and every next-decision time.", limitation: "Behavioral conformance on recorded inputs, not a new simulation or a profit estimate. Fake acknowledgements do not reproduce every real server refusal. The immutable fresh evaluation policies are unaffected by this default change.", referenceRevision, currentRevision: hash.digest("hex"), defaults, results }
+fs.writeFileSync("docs/late-rescue-conformance.json", JSON.stringify(report, null, 2) + "\n")
 console.log(JSON.stringify(results, null, 2))

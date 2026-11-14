@@ -1,0 +1,178 @@
+{
+  "all16AttemptsComplete": true,
+  "noRetriesOrDiscardedAttempts": true,
+  "meanComponentGainEuros": {
+    "driver_fee": 273.78125,
+    "late_refund": 8.75,
+    "release_fee": 0.0,
+    "revenue": 0.10875
+  },
+  "weeks": [
+    {
+      "seed": "late-rescue-unseen-20261114-5916726ab4e9f863",
+      "baseline": {
+        "worldId": "wd88b3ed2a95472802fe4",
+        "actionErrors": [],
+        "recoveries": []
+      },
+      "candidate": {
+        "worldId": "wa6e982433a45fbcdd401",
+        "actionErrors": [],
+        "recoveries": []
+      },
+      "sameErrors": true
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-e4ee0c5739a75ad0",
+      "baseline": {
+        "worldId": "wc950e844bea34b4bd79a",
+        "actionErrors": [],
+        "recoveries": []
+      },
+      "candidate": {
+        "worldId": "wbea5dbdaebeff5638d1c",
+        "actionErrors": [],
+        "recoveries": []
+      },
+      "sameErrors": true
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-e48160564a27cf74",
+      "baseline": {
+        "worldId": "w49061de8484c00420b4f",
+        "actionErrors": [],
+        "recoveries": []
+      },
+      "candidate": {
+        "worldId": "w70550a8c599b38df78ac",
+        "actionErrors": [],
+        "recoveries": []
+      },
+      "sameErrors": true
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-824df9f835246148",
+      "baseline": {
+        "worldId": "w1c1994a0583f1b960853",
+        "actionErrors": [],
+        "recoveries": []
+      },
+      "candidate": {
+        "worldId": "wada29dbdd78bf506f315",
+        "actionErrors": [],
+        "recoveries": []
+      },
+      "sameErrors": true
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-9b483a1a53deba54",
+      "baseline": {
+        "worldId": "wd56e99c79ef5a6a8953e",
+        "actionErrors": [],
+        "recoveries": []
+      },
+      "candidate": {
+        "worldId": "wa8a176feea958e9bf80f",
+        "actionErrors": [],
+        "recoveries": []
+      },
+      "sameErrors": true
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-864cfcc97f2cade5",
+      "baseline": {
+        "worldId": "w6c27a619f4da86e45a93",
+        "actionErrors": [],
+        "recoveries": []
+      },
+      "candidate": {
+        "worldId": "w2a2f50f79c60f9a8503f",
+        "actionErrors": [],
+        "recoveries": []
+      },
+      "sameErrors": true
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-c551e105a48e2148",
+      "baseline": {
+        "worldId": "w23b23a9de15d1374e9d6",
+        "actionErrors": [
+          {
+            "at": 3802,
+            "action": {
+              "type": "reprice",
+              "gigId": "g103",
+              "schedule": [
+                {
+                  "at": 3802,
+                  "feeCents": 4245
+                },
+                {
+                  "at": 3832,
+                  "feeCents": 4245
+                },
+                {
+                  "at": 3899,
+                  "feeCents": 5377
+                },
+                {
+                  "at": 3959,
+                  "feeCents": 7075
+                }
+              ]
+            },
+            "reason": "Gig g103 is not open"
+          }
+        ],
+        "recoveries": []
+      },
+      "candidate": {
+        "worldId": "wfa55a0b7e052e3eb9f94",
+        "actionErrors": [
+          {
+            "at": 3802,
+            "action": {
+              "type": "reprice",
+              "gigId": "g103",
+              "schedule": [
+                {
+                  "at": 3802,
+                  "feeCents": 4245
+                },
+                {
+                  "at": 3832,
+                  "feeCents": 4245
+                },
+                {
+                  "at": 3899,
+                  "feeCents": 5377
+                },
+                {
+                  "at": 3959,
+                  "feeCents": 7075
+                }
+              ]
+            },
+            "reason": "Gig g103 is not open"
+          }
+        ],
+        "recoveries": []
+      },
+      "sameErrors": true
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-5e15a0a3962a54ba",
+      "baseline": {
+        "worldId": "w19ad9c95aa672e0b58b4",
+        "actionErrors": [],
+        "recoveries": []
+      },
+      "candidate": {
+        "worldId": "wc3a6f0a7ce2eaeb508e2",
+        "actionErrors": [],
+        "recoveries": []
+      },
+      "sameErrors": true
+    }
+  ]
+}

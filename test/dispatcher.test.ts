@@ -150,13 +150,13 @@ test("rescue schedules stay bounded, ordered and whole even days late", () => {
   assert(Math.max(...steps.map(s => s.feeCents)) <= Math.ceil(d.baseFee(request()) * 2.5))
 })
 
-test("repricing near the deadline does not reset an already scheduled raise", () => {
+test("repricing through the last on-time pickup does not reset a scheduled raise", () => {
   const d = desk()
   d.requests.set("R1", request())
   d.urgent.add("R1")
   d.now = 680
   const earlier = d.feesFor(order(), 1)
-  for (const now of [790, 850, 920]) {
+  for (const now of [790, 850, order().lastPickupAt]) {
     d.now = now
     const shown = earlier.filter(s => s.at <= now).at(-1)!.feeCents
     assert(d.feesFor(order(), 1)[0]!.feeCents >= shown)

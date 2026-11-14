@@ -107,23 +107,23 @@
     },
     {
       "seed": "late-rescue-unseen-20261114-9b483a1a53deba54",
-      "baselineWorldId": null,
-      "candidateWorldId": null
+      "baselineWorldId": "wd56e99c79ef5a6a8953e",
+      "candidateWorldId": "wa8a176feea958e9bf80f"
     },
     {
       "seed": "late-rescue-unseen-20261114-864cfcc97f2cade5",
-      "baselineWorldId": null,
-      "candidateWorldId": null
+      "baselineWorldId": "w6c27a619f4da86e45a93",
+      "candidateWorldId": "w2a2f50f79c60f9a8503f"
     },
     {
       "seed": "late-rescue-unseen-20261114-c551e105a48e2148",
-      "baselineWorldId": null,
-      "candidateWorldId": null
+      "baselineWorldId": "w23b23a9de15d1374e9d6",
+      "candidateWorldId": "wfa55a0b7e052e3eb9f94"
     },
     {
       "seed": "late-rescue-unseen-20261114-5e15a0a3962a54ba",
-      "baselineWorldId": null,
-      "candidateWorldId": null
+      "baselineWorldId": "w19ad9c95aa672e0b58b4",
+      "candidateWorldId": "wc3a6f0a7ce2eaeb508e2"
     }
   ],
   "bootstrap": {
@@ -163,25 +163,85 @@
       "seed": "late-rescue-unseen-20261114-e48160564a27cf74",
       "side": "baseline",
       "worldId": "w49061de8484c00420b4f",
-      "startedAt": "2026-11-14T01:08:48.851Z"
+      "startedAt": "2026-11-14T01:08:48.851Z",
+      "completedAt": "2026-11-14T01:14:18.994Z"
     },
     {
       "seed": "late-rescue-unseen-20261114-e48160564a27cf74",
       "side": "candidate",
       "worldId": "w70550a8c599b38df78ac",
-      "startedAt": "2026-11-14T01:08:59.186Z"
+      "startedAt": "2026-11-14T01:08:59.186Z",
+      "completedAt": "2026-11-14T01:14:33.960Z"
     },
     {
       "seed": "late-rescue-unseen-20261114-824df9f835246148",
       "side": "baseline",
       "worldId": "w1c1994a0583f1b960853",
-      "startedAt": "2026-11-14T01:09:01.342Z"
+      "startedAt": "2026-11-14T01:09:01.342Z",
+      "completedAt": "2026-11-14T01:14:20.815Z"
     },
     {
       "seed": "late-rescue-unseen-20261114-824df9f835246148",
       "side": "candidate",
       "worldId": "wada29dbdd78bf506f315",
-      "startedAt": "2026-11-14T01:09:08.603Z"
+      "startedAt": "2026-11-14T01:09:08.603Z",
+      "completedAt": "2026-11-14T01:14:28.453Z"
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-9b483a1a53deba54",
+      "side": "baseline",
+      "worldId": "wd56e99c79ef5a6a8953e",
+      "startedAt": "2026-11-14T01:14:19.260Z",
+      "completedAt": "2026-11-14T01:19:36.580Z"
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-9b483a1a53deba54",
+      "side": "candidate",
+      "worldId": "wa8a176feea958e9bf80f",
+      "startedAt": "2026-11-14T01:14:21.038Z",
+      "completedAt": "2026-11-14T01:19:44.633Z"
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-864cfcc97f2cade5",
+      "side": "baseline",
+      "worldId": "w6c27a619f4da86e45a93",
+      "startedAt": "2026-11-14T01:14:29.115Z",
+      "completedAt": "2026-11-14T01:19:59.853Z"
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-864cfcc97f2cade5",
+      "side": "candidate",
+      "worldId": "w2a2f50f79c60f9a8503f",
+      "startedAt": "2026-11-14T01:14:34.475Z",
+      "completedAt": "2026-11-14T01:19:58.202Z"
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-c551e105a48e2148",
+      "side": "baseline",
+      "worldId": "w23b23a9de15d1374e9d6",
+      "startedAt": "2026-11-14T01:19:36.811Z",
+      "completedAt": "2026-11-14T01:24:46.183Z"
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-c551e105a48e2148",
+      "side": "candidate",
+      "worldId": "wfa55a0b7e052e3eb9f94",
+      "startedAt": "2026-11-14T01:19:44.963Z",
+      "completedAt": "2026-11-14T01:24:49.646Z"
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-5e15a0a3962a54ba",
+      "side": "baseline",
+      "worldId": "w19ad9c95aa672e0b58b4",
+      "startedAt": "2026-11-14T01:19:58.857Z",
+      "completedAt": "2026-11-14T01:25:08.945Z"
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-5e15a0a3962a54ba",
+      "side": "candidate",
+      "worldId": "wc3a6f0a7ce2eaeb508e2",
+      "startedAt": "2026-11-14T01:20:00.163Z",
+      "completedAt": "2026-11-14T01:24:49.179Z"
     }
   ]
 }

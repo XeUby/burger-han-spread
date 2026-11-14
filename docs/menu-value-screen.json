@@ -1,0 +1,285 @@
+{
+  "scope": "The fixed24-seed old market-training allowlist; no new evaluation worlds.",
+  "hypothesis": "For a shared ratio menu, optimize expected revenue using the conditional paid option list price rather than always the cheapest offered list price.",
+  "method": "Estimate option-choice frequencies by offered menu from other seed folds, with one pseudocount per option. Replay only preceding actual win/loss observations into the existing online demand model. Compare scalar quote optima at minimum versus mean paid list price, holding current modeled costs and demand fixed.",
+  "limitations": [
+    "A model-based screen, not identified counterfactual profit. Changing prices can change option shares, admission and future trust.",
+    "Option-choice probabilities are assumed constant over a small markup change; historical menus supply little independent price variation.",
+    "Uses only historically offered requests. Historical settings and prices differ from current policy.",
+    "Cent rounding may make tiny modeled differences negative; the reported estimates retain them."
+  ],
+  "summary": {
+    "weeks": 24,
+    "multipleMenus": 7600,
+    "historicalMultipleWins": 4374,
+    "historicalSlowerChoices": 697,
+    "meanModeledGainEuros": 77.38791767381446,
+    "meanModeledWinsChange": 23.488266951877407
+  },
+  "results": [
+    {
+      "worldId": "wd415561aaf36894b76de",
+      "seed": "spread-1",
+      "fold": 1,
+      "multiple": 343,
+      "historicalWon": 226,
+      "historicalSlow": 33,
+      "modeledGainCents": 8112.2448814170475,
+      "meanAbsoluteRatioChange": 0.0295758948311525,
+      "modeledWinsChange": 24.32665650525847
+    },
+    {
+      "worldId": "wbcb207675e32e9aff20f",
+      "seed": "validate-1",
+      "fold": 1,
+      "multiple": 379,
+      "historicalWon": 233,
+      "historicalSlow": 26,
+      "modeledGainCents": 9655.172035517282,
+      "meanAbsoluteRatioChange": 0.03432030879814621,
+      "modeledWinsChange": 29.96318290484974
+    },
+    {
+      "worldId": "wd010ab552268190f208a",
+      "seed": "validate-2",
+      "fold": 4,
+      "multiple": 256,
+      "historicalWon": 101,
+      "historicalSlow": 2,
+      "modeledGainCents": 3790.3528345658324,
+      "meanAbsoluteRatioChange": 0.02007820165939974,
+      "modeledWinsChange": 13.004075440329935
+    },
+    {
+      "worldId": "wd219768ea907dfeb7b60",
+      "seed": "holdout-1",
+      "fold": 1,
+      "multiple": 339,
+      "historicalWon": 91,
+      "historicalSlow": 7,
+      "modeledGainCents": 7616.538048394676,
+      "meanAbsoluteRatioChange": 0.03990532002815988,
+      "modeledWinsChange": 29.66843144222941
+    },
+    {
+      "worldId": "w9afefc9b7af4685ebbe7",
+      "seed": "holdout-2",
+      "fold": 3,
+      "multiple": 308,
+      "historicalWon": 216,
+      "historicalSlow": 44,
+      "modeledGainCents": 6688.428852263656,
+      "meanAbsoluteRatioChange": 0.02601701399796069,
+      "modeledWinsChange": 20.71782229376088
+    },
+    {
+      "worldId": "w1161968626d8d95ecec7",
+      "seed": "holdout-3",
+      "fold": 2,
+      "multiple": 385,
+      "historicalWon": 184,
+      "historicalSlow": 26,
+      "modeledGainCents": 15242.670629593873,
+      "meanAbsoluteRatioChange": 0.0407242998111313,
+      "modeledWinsChange": 40.0400760336808
+    },
+    {
+      "worldId": "wb915d7ae809d2fec7776",
+      "seed": "holdout-4",
+      "fold": 4,
+      "multiple": 232,
+      "historicalWon": 121,
+      "historicalSlow": 26,
+      "modeledGainCents": 7422.147067725557,
+      "meanAbsoluteRatioChange": 0.03617988523697875,
+      "modeledWinsChange": 21.15124131422746
+    },
+    {
+      "worldId": "w65288bae5e4a8c3d8f5e",
+      "seed": "holdout-5",
+      "fold": 3,
+      "multiple": 290,
+      "historicalWon": 144,
+      "historicalSlow": 21,
+      "modeledGainCents": 7082.77948833048,
+      "meanAbsoluteRatioChange": 0.02663287140031328,
+      "modeledWinsChange": 20.48669764565927
+    },
+    {
+      "worldId": "wc77bebb20668e8d3378f",
+      "seed": "formal-unseen-20261113-02",
+      "fold": 0,
+      "multiple": 321,
+      "historicalWon": 184,
+      "historicalSlow": 22,
+      "modeledGainCents": 9817.699848705759,
+      "meanAbsoluteRatioChange": 0.032342882863767866,
+      "modeledWinsChange": 27.386913076054665
+    },
+    {
+      "worldId": "w491340143d15a316668c",
+      "seed": "formal-unseen-20261113-01",
+      "fold": 1,
+      "multiple": 393,
+      "historicalWon": 205,
+      "historicalSlow": 45,
+      "modeledGainCents": 12778.895314116475,
+      "meanAbsoluteRatioChange": 0.03997999727881828,
+      "modeledWinsChange": 34.47358652982695
+    },
+    {
+      "worldId": "waf9a9f4088b838638064",
+      "seed": "formal-unseen-20261113-03",
+      "fold": 3,
+      "multiple": 298,
+      "historicalWon": 162,
+      "historicalSlow": 26,
+      "modeledGainCents": 6110.811803725476,
+      "meanAbsoluteRatioChange": 0.030907856720874812,
+      "modeledWinsChange": 23.01396573839248
+    },
+    {
+      "worldId": "w3cacf28249c0731760eb",
+      "seed": "formal-unseen-20261113-05",
+      "fold": 4,
+      "multiple": 292,
+      "historicalWon": 156,
+      "historicalSlow": 33,
+      "modeledGainCents": 5284.005901245239,
+      "meanAbsoluteRatioChange": 0.029095269793176084,
+      "modeledWinsChange": 20.232823724964447
+    },
+    {
+      "worldId": "w5dbd69444b1f927e7ed3",
+      "seed": "formal-unseen-20261113-04",
+      "fold": 3,
+      "multiple": 326,
+      "historicalWon": 262,
+      "historicalSlow": 35,
+      "modeledGainCents": 4594.440324042819,
+      "meanAbsoluteRatioChange": 0.01691566292702432,
+      "modeledWinsChange": 14.01556975681081
+    },
+    {
+      "worldId": "w5938f3809abe0d6f051b",
+      "seed": "formal-unseen-20261113-06",
+      "fold": 2,
+      "multiple": 316,
+      "historicalWon": 153,
+      "historicalSlow": 10,
+      "modeledGainCents": 7370.6184996898655,
+      "meanAbsoluteRatioChange": 0.038195519121056745,
+      "modeledWinsChange": 27.079913723513094
+    },
+    {
+      "worldId": "wb97a9a6e26526614e85b",
+      "seed": "formal-unseen-20261113-07",
+      "fold": 2,
+      "multiple": 306,
+      "historicalWon": 171,
+      "historicalSlow": 76,
+      "modeledGainCents": 12017.68065441683,
+      "meanAbsoluteRatioChange": 0.03493393069326206,
+      "modeledWinsChange": 27.50879887024098
+    },
+    {
+      "worldId": "w6fb9cdd546c36f5fa418",
+      "seed": "formal-unseen-20261113-08",
+      "fold": 0,
+      "multiple": 329,
+      "historicalWon": 209,
+      "historicalSlow": 9,
+      "modeledGainCents": 5105.221811661398,
+      "meanAbsoluteRatioChange": 0.02494565264582653,
+      "modeledWinsChange": 19.520971285685853
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "seed": "formal-unseen-20261113-09",
+      "fold": 1,
+      "multiple": 373,
+      "historicalWon": 203,
+      "historicalSlow": 16,
+      "modeledGainCents": 11640.005502651422,
+      "meanAbsoluteRatioChange": 0.03773443126916321,
+      "modeledWinsChange": 34.732297592337375
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "seed": "formal-unseen-20261113-11",
+      "fold": 1,
+      "multiple": 326,
+      "historicalWon": 185,
+      "historicalSlow": 8,
+      "modeledGainCents": 8039.990109615352,
+      "meanAbsoluteRatioChange": 0.03186769544739681,
+      "modeledWinsChange": 23.439152808355804
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "seed": "formal-unseen-20261113-10",
+      "fold": 1,
+      "multiple": 287,
+      "historicalWon": 200,
+      "historicalSlow": 44,
+      "modeledGainCents": 5123.81047717492,
+      "meanAbsoluteRatioChange": 0.025448750222546414,
+      "modeledWinsChange": 17.783044233742082
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "seed": "formal-unseen-20261113-13",
+      "fold": 2,
+      "multiple": 317,
+      "historicalWon": 238,
+      "historicalSlow": 23,
+      "modeledGainCents": 6392.742123378995,
+      "meanAbsoluteRatioChange": 0.02253014351586651,
+      "modeledWinsChange": 18.186924352389173
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "seed": "formal-unseen-20261113-12",
+      "fold": 0,
+      "multiple": 247,
+      "historicalWon": 196,
+      "historicalSlow": 33,
+      "modeledGainCents": 3252.1004336281367,
+      "meanAbsoluteRatioChange": 0.017422121871166898,
+      "modeledWinsChange": 10.33862523949077
+    },
+    {
+      "worldId": "w0b0a425cf803342bff2d",
+      "seed": "formal-unseen-20261113-14",
+      "fold": 1,
+      "multiple": 331,
+      "historicalWon": 155,
+      "historicalSlow": 30,
+      "modeledGainCents": 8650.269987191354,
+      "meanAbsoluteRatioChange": 0.037541300976242545,
+      "modeledWinsChange": 26.99482182597012
+    },
+    {
+      "worldId": "w8009f8eec43876a31c73",
+      "seed": "formal-unseen-20261113-15",
+      "fold": 3,
+      "multiple": 358,
+      "historicalWon": 234,
+      "historicalSlow": 48,
+      "modeledGainCents": 8517.398917557257,
+      "meanAbsoluteRatioChange": 0.025972792486969213,
+      "modeledWinsChange": 22.023528871359403
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "seed": "formal-unseen-20261113-16",
+      "fold": 2,
+      "multiple": 248,
+      "historicalWon": 145,
+      "historicalSlow": 54,
+      "modeledGainCents": 5424.976870545011,
+      "meanAbsoluteRatioChange": 0.03126118855695847,
+      "modeledWinsChange": 17.629285635927808
+    }
+  ]
+}
