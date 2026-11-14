@@ -1,0 +1,148 @@
+{
+  "reviewedAt": "2026-11-14T10:33:21.490268+00:00",
+  "decision": "Keep the frozen level8 candidate as a benchmark. Replace its inherited single-order candidate funnel and heuristic continuation economics before another tuning sweep. Preserve the historically validated control separately.",
+  "objective": "Higher whole-week net profit and reliable qualification competitive with relevant leaderboard leaders; this review and the eight-pair gain do not achieve that objective.",
+  "evidence": [
+    "docs/level8-estimate-v1-results.json",
+    "docs/level8-architecture-audit.json",
+    "docs/level8-admission-audit.json",
+    "docs/level8-estimate-board.json"
+  ],
+  "rules": {
+    "url": "https://spread.bahnexpress.com/kit/RULES.md",
+    "matchesLocal": "docs/RULES.md",
+    "sha256": "657c44f88e36d2dab3e0b0ea28d552bdfb9796cfd61ce49634a9e3a6dd10cdbc",
+    "verifiedLive": true
+  },
+  "competitiveScale": {
+    "candidateProfitPerWeek": 11357.38125,
+    "leaderProfitPerWeek": 19090.55,
+    "unmatchedShortfall": 7733.16875,
+    "candidateOrdersPerWeek": 299.5,
+    "leaderOrdersPerWeek": 446.2,
+    "candidateProfitPerOrder": 37.9211394,
+    "leaderProfitPerOrder": 42.7847378,
+    "interpretation": "Leader has about49% more orders and13% higher profit per order. Different seeds, policy selection and job mix prevent causal attribution or a predicted rank. This is a scale diagnostic, not a decomposition of achievable gains."
+  },
+  "findings": [
+    {
+      "priority": 1,
+      "name": "Candidate generation inherits the benchmark ceiling",
+      "code": [
+        "research/portfolio/policy.ts:120",
+        "src/policy.ts:103",
+        "src/admission.ts:12"
+      ],
+      "evidence": "3426/8269 requests had no quote alternative;304 were declined after a quote alternative existed. All10109 solves were OPTIMAL inside the supplied finite model. None reached the120-alternative cap. Enlarging or retuning the solver does not recover absent alternatives.",
+      "change": "Separate hard semantic/physical feasibility from economic acceptance. Generate option-specific solo and route alternatives from raw interpreted requests, including selected private and trade-in work. Economic rejection belongs after full continuation alternatives exist. Record every omitted class and gate.",
+      "notEstablished": "Missing candidates are not known profitable. Serving every request or loosening all limits is not justified."
+    },
+    {
+      "priority": 1,
+      "name": "Request interpretation removes a large market segment",
+      "code": [
+        "src/notes.ts:5",
+        "src/policy.ts:103",
+        "research/portfolio/policy.ts:129"
+      ],
+      "evidence": "1572 no-candidate requests fail the frozen note parser in the first-matching static audit;741 fail homeSupplyLimit;676 private and75 multi-leg exclusions follow earlier gates. Across overlapping categories,931/932 private singles and161/161 multi-leg requests had no candidate; the remaining private request expired before a portfolio action.",
+      "change": "Compile notes into explicit pickup/release/delivery/equipment constraints with provenance, corrections, negations and uncertainty. Reuse existing parsing and window utilities, but evaluate full semantic coverage separately from downstream policy value. Preserve abstention for unresolved restrictions.",
+      "contradiction": "Earlier timedNotes confirmation lost274.73euros/week. Merely enabling it again is rejected. The new mechanism must jointly price constrained windows, booking feasibility and routes; interpretation alone is not the economic model."
+    },
+    {
+      "priority": 1,
+      "name": "The driver model is not a model of offered actions",
+      "code": [
+        "research/portfolio/models.ts:14",
+        "research/portfolio/policy.ts:163",
+        "src/policy.ts:225",
+        "src/policy.ts:267"
+      ],
+      "evidence": "Supply counts home locations. Logistic booking features omit current offered fee, viewers, driver positions, actual schedule and manual-licence supply. Payment response uses assumed slopes0/4; the policy compares opening100%/108% while retaining inherited escalation.231 drops occurred across2171 booking events. The future consequences of learned escalation are not modeled.",
+      "change": "Maintain beliefs about feasible driver-time/location states and exposure, with censored booking/drop hazards conditioned on actual route, payment schedule and viewing history. Do not treat profiles as dispatchable capacity. Model opening payment, escalation, direct-offer channel and fallback together.",
+      "data": "Historical accepted-work labels are conditional associations. Collect bounded randomized unranked interventions with probabilities, eligibility, exact state, failed actions, unread/expired offers and censored outcomes before estimating causal fee effects."
+    },
+    {
+      "priority": 1,
+      "name": "Route-before-acceptance is only partly implemented",
+      "code": [
+        "research/portfolio/policy.ts:137",
+        "research/portfolio/policy.ts:211",
+        "src/bundles.ts:27"
+      ],
+      "evidence": "Frames considered multiple requests3303 times but no alternative joins two uncertain new requests. Candidate pool is three requests/six anchors;148 held overflows and1688 frame-level omissions were logged.671 anchored quotes and518 bundled posts show existing-anchor routing is active, so the critique is missing joint acquisition, not absence of routing.",
+      "change": "Build a rolling graph of feasible option-specific requests and commitments; include two-new-request pairs and return chains, with no-win/one-win/both-win branches, fallback solo cost, delays, booking survival and overlapping driver demand. Execute one action and rebuild. Larger routes only after pair coverage and economics pass.",
+      "notEstablished": "Repeated frame omissions are not1688 unique lost jobs or an estimate of missed profit. Geometric savings do not prove a driver will book."
+    },
+    {
+      "priority": 2,
+      "name": "Customer menu economics are collapsed into one number",
+      "code": [
+        "research/portfolio/policy.ts:130",
+        "research/portfolio/policy.ts:232",
+        "src/optimizer.ts:13"
+      ],
+      "evidence": "2503/4532 real quotes offered multiple options, but the planner uses earliest deadline/minimum revenue and one win probability at a common ratio. Actual rules choose among options by price and value. Day/place/dealer pricing effects do not explicitly infer a temporary regional outage or global price war.",
+      "change": "Represent each offered menu with option-specific win and selection probabilities, fulfillment costs and trust effects. Use simple regime beliefs with shrinkage and change detection before adding model complexity. Keep actual awarded-option semantics in tests.",
+      "risk": "Earliest deadline is conservative, not necessarily an implementation error. The economic bias and value of richer menus require policy experiments."
+    },
+    {
+      "priority": 2,
+      "name": "Capacity and future value are mostly heuristic or dormant",
+      "code": [
+        "research/portfolio/policy.ts:253",
+        "research/portfolio/policy.ts:270",
+        "research/portfolio/policy.ts:284",
+        "research/value/policy.ts:105"
+      ],
+      "evidence": "Future-value outputs were zero for seven weeks mean selected quote terms and less than0.00005euro mean magnitude for the eighth.56/10109 frames had any future term. Resources are local daily/backlog counts with home-supply multipliers; risk is an additive expected-lateness budget with pseudo-orders, not a qualification-probability constraint.",
+      "change": "Use a consistent time/location/equipment work ledger and marginal capacity values from continuation alternatives. Account for actual booked commitments, correlated shortage, end-of-day return costs and dealer trust. Choose either resource shadow costs or an equivalent terminal value formulation to avoid double charging. Calibrate risk on whole weeks and preserve explicit tail fallbacks.",
+      "notEstablished": "A count budget or expected late-order bound is not a reliability guarantee. Future value needs intervention evidence and decision sensitivity, not just a larger coefficient."
+    },
+    {
+      "priority": 2,
+      "name": "Execution integrity is separate from economic quality",
+      "code": [
+        "research/ranked-levels/upper.ts",
+        "research/portfolio/continue_estimate.ts"
+      ],
+      "evidence": "The estimate completed all16 unranked worlds; original worker exit143 was an audited idle drain. Seven waiting requests expired under the candidate; no financial/operational failure was hidden. The historical ranked concurrency defect remains unfixed.",
+      "change": "Build one durable case scheduler with shared occupancy checks, cancellation of waiting workers, immutable attempts and transport-level hard deadlines. Fake-server integration tests must cover the actual launch path. Do not reuse either historical upper launcher or one-off estimator continuation as a general ranking runner."
+    }
+  ],
+  "replacementArchitecture": [
+    "Observed events -> typed request/stop constraints plus uncertain driver and market state; no reveal fields or future labels.",
+    "Generate a broad, bounded graph of physically feasible option/route/payment/offer alternatives before economic acceptance. Retain explicit fallback and incumbent alternatives.",
+    "Predict joint customer choice, booking/drop and route outcomes under common scenarios, including partial wins and correlated regional shortage.",
+    "OR-Tools selects a feasible portfolio using expected customer revenue minus all fulfillment, refund, failure and capacity costs plus one consistent continuation value. NetworkX independently checks pure matching cases.",
+    "Execute the next action; update only from observations; preserve commitments and replan. Freeze priors, features, update rules, optimizer, risk limits and resets for evaluation."
+  ],
+  "boundedNextTranche": {
+    "phase0": {
+      "worlds": 0,
+      "work": "Implement request interpretation/candidate coverage contracts, explicit state and action-value interfaces, and scheduler integration tests. Validate current behavior under benchmark mode and decision-time causality. No replacement of selected controls."
+    },
+    "phase1": {
+      "maximumWorlds": 8,
+      "seedBlocks": 4,
+      "levels": [
+        3,
+        8
+      ],
+      "maximumRandomizedDecisionsPerWorld": 40,
+      "work": "Freeze a stratified payment/offer intervention protocol before play. Collect sufficient route/slack/geography/exposure coverage to compare pooled, regime-specific and driver-aware response models. Use block-level uncertainty;320 decisions are not320 independent weeks. Exact arms and eligibility require a separate frozen manifest after the code exists.",
+      "decision": "Reject unsupported or poorly calibrated response models; retain a simple prior/fallback when coverage is missing."
+    },
+    "phase2": {
+      "maximumWorlds": 16,
+      "seedBlocks": 4,
+      "maximumArms": 4,
+      "work": "Freeze current candidate, expanded semantic/option coverage with continuation economics, two-new-request routing added, and driver/capacity beliefs added. Use one declared four-block development panel and no rescue tuning. Preserve every case. No independent gain attribution without the declared ablations.",
+      "decision": "Whole-week net profit and qualification first; log candidate coverage, actual route formation, costs, drops and risk calibration. A1500euro gain only nominates a finalist and does not close the current7733euro unmatched gap."
+    },
+    "budget": "At most24 new unranked worlds in this tranche; at most8 unfinished team worlds, or a stricter frozen protocol limit. Stop creation on operational failure, account for every planned case, and never infer that a polling timeout stopped a worker.",
+    "validation": "Separate protected budget. Freeze one finalist before generating untouched seeds, obey search-integrity alpha allocation and minimum24 unique pairs, size upward for variance and reliability; no revision using validation outcomes while retaining the untouched label.",
+    "ranking": "Not authorized; only after explicit permission for a concrete frozen policy and round, and scheduler tests."
+  },
+  "status": "Architecture review complete; replacement architecture and experiments are proposed, not implemented or validated."
+}

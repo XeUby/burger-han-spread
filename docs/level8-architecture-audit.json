@@ -1,0 +1,392 @@
+{
+  "scope": "Decision coverage audit of eight frozen development candidate weeks. No counterfactual profit inferred for rejected work.",
+  "records": [
+    {
+      "worldId": "w59b538e829103da34e81",
+      "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+      "counts": {
+        "requests": 1038,
+        "awards": 315,
+        "noQuoteCandidate": 421,
+        "realQuotes": 565,
+        "quotedAwards": 315,
+        "anchoredQuotes": 89,
+        "multipleOptionsQuoted": 352,
+        "solverDecline": 52,
+        "uniqueRequestsWithAnyQuoteCandidate": 617,
+        "noExecutedPortfolioQuote": 0,
+        "quoteLost": 250,
+        "portfolioOverflow": 10,
+        "expiredWaiting": 0,
+        "bookings": 294,
+        "drops": 39,
+        "noShows": 2
+      },
+      "categories": {
+        "noQuoteCandidate:multiLeg": 21,
+        "noQuoteCandidate:publicSingle": 271,
+        "noQuoteCandidate:hasNoteOverlapping": 263,
+        "noQuoteCandidate:privateSingle": 129,
+        "solverDecline:publicSingle": 52,
+        "solverDecline:hasNoteOverlapping": 11,
+        "arrivals:multiLeg": 21,
+        "arrivals:publicSingle": 888,
+        "arrivals:privateSingle": 129
+      },
+      "frames": {
+        "total": 1291,
+        "optimal": 1291,
+        "fallback": 0,
+        "candidateCapReached": 0,
+        "omittedCandidates": 104,
+        "multipleRequests": 408
+      },
+      "meanQuotedModeledLateOrders": 0.03764232300884956,
+      "meanQuotedFutureValueEuros": 0.0
+    },
+    {
+      "worldId": "wcec3ccd3a02b20ed13a9",
+      "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+      "counts": {
+        "requests": 1031,
+        "awards": 380,
+        "realQuotes": 574,
+        "quotedAwards": 380,
+        "anchoredQuotes": 87,
+        "multipleOptionsQuoted": 270,
+        "noQuoteCandidate": 433,
+        "solverDecline": 24,
+        "uniqueRequestsWithAnyQuoteCandidate": 599,
+        "noExecutedPortfolioQuote": 0,
+        "quoteLost": 194,
+        "portfolioOverflow": 36,
+        "expiredWaiting": 0,
+        "bookings": 345,
+        "drops": 32,
+        "noShows": 0
+      },
+      "categories": {
+        "noQuoteCandidate:multiLeg": 24,
+        "noQuoteCandidate:hasNoteOverlapping": 272,
+        "noQuoteCandidate:publicSingle": 305,
+        "solverDecline:publicSingle": 24,
+        "solverDecline:hasNoteOverlapping": 8,
+        "noQuoteCandidate:privateSingle": 104,
+        "arrivals:publicSingle": 903,
+        "arrivals:multiLeg": 24,
+        "arrivals:privateSingle": 104
+      },
+      "frames": {
+        "total": 1300,
+        "optimal": 1300,
+        "fallback": 0,
+        "candidateCapReached": 0,
+        "omittedCandidates": 220,
+        "multipleRequests": 448
+      },
+      "meanQuotedModeledLateOrders": 0.03488963414634146,
+      "meanQuotedFutureValueEuros": 0.0
+    },
+    {
+      "worldId": "w5f0e575885726f779d25",
+      "seed": "level8-estimate-b87f6821707b892a55d34716",
+      "counts": {
+        "requests": 1030,
+        "awards": 265,
+        "realQuotes": 574,
+        "quotedAwards": 265,
+        "anchoredQuotes": 53,
+        "multipleOptionsQuoted": 326,
+        "noQuoteCandidate": 420,
+        "solverDecline": 36,
+        "uniqueRequestsWithAnyQuoteCandidate": 610,
+        "noExecutedPortfolioQuote": 0,
+        "quoteLost": 309,
+        "portfolioOverflow": 11,
+        "expiredWaiting": 0,
+        "bookings": 234,
+        "drops": 15,
+        "noShows": 1
+      },
+      "categories": {
+        "noQuoteCandidate:privateSingle": 130,
+        "noQuoteCandidate:hasNoteOverlapping": 254,
+        "noQuoteCandidate:publicSingle": 265,
+        "noQuoteCandidate:multiLeg": 25,
+        "solverDecline:publicSingle": 36,
+        "solverDecline:hasNoteOverlapping": 10,
+        "arrivals:publicSingle": 875,
+        "arrivals:privateSingle": 130,
+        "arrivals:multiLeg": 25
+      },
+      "frames": {
+        "total": 1231,
+        "optimal": 1231,
+        "fallback": 0,
+        "candidateCapReached": 0,
+        "omittedCandidates": 117,
+        "multipleRequests": 399
+      },
+      "meanQuotedModeledLateOrders": 0.023492051393728224,
+      "meanQuotedFutureValueEuros": 0.0
+    },
+    {
+      "worldId": "w68739c55fea234f8b7d3",
+      "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+      "counts": {
+        "requests": 1034,
+        "awards": 278,
+        "noQuoteCandidate": 471,
+        "realQuotes": 541,
+        "quotedAwards": 278,
+        "anchoredQuotes": 95,
+        "multipleOptionsQuoted": 288,
+        "solverDecline": 22,
+        "uniqueRequestsWithAnyQuoteCandidate": 563,
+        "noExecutedPortfolioQuote": 0,
+        "quoteLost": 263,
+        "portfolioOverflow": 23,
+        "expiredWaiting": 0,
+        "bookings": 239,
+        "drops": 21,
+        "noShows": 0
+      },
+      "categories": {
+        "noQuoteCandidate:privateSingle": 120,
+        "noQuoteCandidate:publicSingle": 331,
+        "noQuoteCandidate:hasNoteOverlapping": 269,
+        "noQuoteCandidate:multiLeg": 20,
+        "solverDecline:publicSingle": 22,
+        "solverDecline:hasNoteOverlapping": 7,
+        "arrivals:privateSingle": 120,
+        "arrivals:publicSingle": 894,
+        "arrivals:multiLeg": 20
+      },
+      "frames": {
+        "total": 1234,
+        "optimal": 1234,
+        "fallback": 0,
+        "candidateCapReached": 0,
+        "omittedCandidates": 209,
+        "multipleRequests": 384
+      },
+      "meanQuotedModeledLateOrders": 0.026528304066543437,
+      "meanQuotedFutureValueEuros": 0.0
+    },
+    {
+      "worldId": "wef657bf51113144113f2",
+      "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+      "counts": {
+        "requests": 1036,
+        "awards": 351,
+        "realQuotes": 544,
+        "quotedAwards": 351,
+        "anchoredQuotes": 102,
+        "multipleOptionsQuoted": 284,
+        "noQuoteCandidate": 452,
+        "solverDecline": 40,
+        "uniqueRequestsWithAnyQuoteCandidate": 584,
+        "noExecutedPortfolioQuote": 0,
+        "quoteLost": 193,
+        "portfolioOverflow": 31,
+        "expiredWaiting": 0,
+        "bookings": 316,
+        "drops": 44,
+        "noShows": 0
+      },
+      "categories": {
+        "noQuoteCandidate:publicSingle": 329,
+        "noQuoteCandidate:hasNoteOverlapping": 272,
+        "noQuoteCandidate:privateSingle": 97,
+        "noQuoteCandidate:multiLeg": 26,
+        "solverDecline:publicSingle": 40,
+        "solverDecline:hasNoteOverlapping": 19,
+        "arrivals:publicSingle": 913,
+        "arrivals:privateSingle": 97,
+        "arrivals:multiLeg": 26
+      },
+      "frames": {
+        "total": 1303,
+        "optimal": 1303,
+        "fallback": 0,
+        "candidateCapReached": 0,
+        "omittedCandidates": 275,
+        "multipleRequests": 406
+      },
+      "meanQuotedModeledLateOrders": 0.03711312040441177,
+      "meanQuotedFutureValueEuros": -4.5955882352941176e-05
+    },
+    {
+      "worldId": "w56e86c0c852e4e944201",
+      "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+      "counts": {
+        "requests": 1037,
+        "awards": 319,
+        "realQuotes": 560,
+        "quotedAwards": 319,
+        "anchoredQuotes": 90,
+        "multipleOptionsQuoted": 334,
+        "noQuoteCandidate": 424,
+        "solverDecline": 46,
+        "uniqueRequestsWithAnyQuoteCandidate": 611,
+        "noExecutedPortfolioQuote": 7,
+        "quoteLost": 241,
+        "portfolioOverflow": 15,
+        "expiredWaiting": 7,
+        "bookings": 294,
+        "drops": 41,
+        "noShows": 0
+      },
+      "categories": {
+        "noQuoteCandidate:publicSingle": 288,
+        "noQuoteCandidate:hasNoteOverlapping": 280,
+        "noQuoteCandidate:privateSingle": 115,
+        "solverDecline:publicSingle": 46,
+        "solverDecline:hasNoteOverlapping": 11,
+        "noQuoteCandidate:multiLeg": 21,
+        "arrivals:publicSingle": 900,
+        "arrivals:privateSingle": 116,
+        "arrivals:multiLeg": 21
+      },
+      "frames": {
+        "total": 1291,
+        "optimal": 1291,
+        "fallback": 0,
+        "candidateCapReached": 0,
+        "omittedCandidates": 540,
+        "multipleRequests": 462
+      },
+      "meanQuotedModeledLateOrders": 0.03657035714285714,
+      "meanQuotedFutureValueEuros": 0.0
+    },
+    {
+      "worldId": "we50f015c9133beb203b5",
+      "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+      "counts": {
+        "requests": 1033,
+        "awards": 237,
+        "noQuoteCandidate": 381,
+        "realQuotes": 609,
+        "quotedAwards": 237,
+        "anchoredQuotes": 78,
+        "multipleOptionsQuoted": 374,
+        "solverDecline": 43,
+        "uniqueRequestsWithAnyQuoteCandidate": 654,
+        "noExecutedPortfolioQuote": 0,
+        "quoteLost": 372,
+        "portfolioOverflow": 9,
+        "expiredWaiting": 0,
+        "bookings": 222,
+        "drops": 24,
+        "noShows": 0
+      },
+      "categories": {
+        "noQuoteCandidate:publicSingle": 259,
+        "noQuoteCandidate:hasNoteOverlapping": 258,
+        "solverDecline:publicSingle": 43,
+        "noQuoteCandidate:privateSingle": 113,
+        "noQuoteCandidate:multiLeg": 9,
+        "solverDecline:hasNoteOverlapping": 13,
+        "arrivals:publicSingle": 911,
+        "arrivals:privateSingle": 113,
+        "arrivals:multiLeg": 9
+      },
+      "frames": {
+        "total": 1221,
+        "optimal": 1221,
+        "fallback": 0,
+        "candidateCapReached": 0,
+        "omittedCandidates": 194,
+        "multipleRequests": 423
+      },
+      "meanQuotedModeledLateOrders": 0.025323522167487685,
+      "meanQuotedFutureValueEuros": 0.0
+    },
+    {
+      "worldId": "wc3af93a033080246cb56",
+      "seed": "level8-estimate-4421e0179044aca015374bc1",
+      "counts": {
+        "requests": 1030,
+        "awards": 278,
+        "realQuotes": 565,
+        "quotedAwards": 278,
+        "anchoredQuotes": 77,
+        "multipleOptionsQuoted": 275,
+        "noQuoteCandidate": 424,
+        "solverDecline": 41,
+        "uniqueRequestsWithAnyQuoteCandidate": 606,
+        "noExecutedPortfolioQuote": 0,
+        "quoteLost": 287,
+        "portfolioOverflow": 13,
+        "expiredWaiting": 0,
+        "bookings": 227,
+        "drops": 15,
+        "noShows": 0
+      },
+      "categories": {
+        "noQuoteCandidate:publicSingle": 286,
+        "noQuoteCandidate:hasNoteOverlapping": 275,
+        "noQuoteCandidate:privateSingle": 123,
+        "noQuoteCandidate:multiLeg": 15,
+        "solverDecline:publicSingle": 41,
+        "solverDecline:hasNoteOverlapping": 13,
+        "arrivals:publicSingle": 892,
+        "arrivals:privateSingle": 123,
+        "arrivals:multiLeg": 15
+      },
+      "frames": {
+        "total": 1238,
+        "optimal": 1238,
+        "fallback": 0,
+        "candidateCapReached": 0,
+        "omittedCandidates": 29,
+        "multipleRequests": 373
+      },
+      "meanQuotedModeledLateOrders": 0.027952676991150442,
+      "meanQuotedFutureValueEuros": 0.0
+    }
+  ],
+  "totals": {
+    "counts": {
+      "requests": 8269,
+      "awards": 2423,
+      "noQuoteCandidate": 3426,
+      "realQuotes": 4532,
+      "quotedAwards": 2423,
+      "anchoredQuotes": 671,
+      "multipleOptionsQuoted": 2503,
+      "solverDecline": 304,
+      "uniqueRequestsWithAnyQuoteCandidate": 4844,
+      "quoteLost": 2109,
+      "portfolioOverflow": 148,
+      "bookings": 2171,
+      "drops": 231,
+      "noShows": 3,
+      "noExecutedPortfolioQuote": 7,
+      "expiredWaiting": 7
+    },
+    "categories": {
+      "noQuoteCandidate:multiLeg": 161,
+      "noQuoteCandidate:publicSingle": 2334,
+      "noQuoteCandidate:hasNoteOverlapping": 2143,
+      "noQuoteCandidate:privateSingle": 931,
+      "solverDecline:publicSingle": 304,
+      "solverDecline:hasNoteOverlapping": 92,
+      "arrivals:multiLeg": 161,
+      "arrivals:publicSingle": 7176,
+      "arrivals:privateSingle": 932
+    },
+    "frames": {
+      "total": 10109,
+      "optimal": 10109,
+      "omittedCandidates": 1688,
+      "multipleRequests": 3303
+    }
+  },
+  "limitations": [
+    "No candidate does not imply profitable opportunity. Public-single exclusions still mix note, safety, feasibility and old admission gates.",
+    "Solver declines mix economic values and coupled constraints. The audit does not causally assign their loss.",
+    "Awards include later cancellations; scoreboard wonOrders excludes cancelled work.",
+    "Request rows and solver frames are not independent weeks."
+  ]
+}
