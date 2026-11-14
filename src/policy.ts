@@ -5,6 +5,7 @@ import { readReadiness } from "./readiness.ts"
 import { readHours } from "./hours-note.ts"
 import { planTimedLeg, withNoteHours } from "./hours-plan.ts"
 import type { TimedNote } from "./hours-note.ts"
+import { lateRescueApplies, lateRescueSchedule } from "./late-rescue.ts"
 import type { Readiness } from "./readiness.ts"
 import type { NoteRules } from "./notes.ts"
 import { PlaceDemandModel } from "./place-market.ts"
@@ -20,14 +21,14 @@ import type { Action, ActionResult, DeskEvent, DeskSnapshot, DriverProfile, FeeS
 export type Settings = {
   price: number; fee: number; margin: number; capacity: number; maxKm: number; minDrivers: number
   notes: boolean; adaptive: boolean; earlyOffers: boolean; safetySlack: boolean
-  auction: boolean; allowPrivate: boolean; tradeIns: boolean; homeOffers: boolean; readiness: boolean; bundlePairs: boolean; timedNotes: boolean
+  auction: boolean; allowPrivate: boolean; tradeIns: boolean; homeOffers: boolean; readiness: boolean; bundlePairs: boolean; timedNotes: boolean; lateRescue: boolean
   sameDayPremium: number; laterDiscount: number; placePrior: number; bundleWait: number
   backlog: number; priceFloor: number; costRatio: number; trustStep: number; sameDayBacklog: number; demandSlope: number
 }
 export const defaults: Settings = {
   price: 1.42, fee: 1.05, margin: 0.1, capacity: 0.18, maxKm: 550, minDrivers: 12,
   notes: true, adaptive: true, earlyOffers: false, safetySlack: false,
-  auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 0,
+  auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, lateRescue: false, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 0,
   backlog: 0.04, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14,
 }
 
@@ -52,6 +53,7 @@ export class Dispatcher extends Desk {
   trust = new Map<string, number>()
   deliveredOrders = new Set<string>()
   raised = new Map<string, number>()
+  lateResets = new Map<string, number>()
   offers = new Map<string, { driver: string; until: number }[]>()
   offerCount = new Map<string, number>()
   seen = new Map<string, Set<string>>()
@@ -245,6 +247,7 @@ export class Dispatcher extends Desk {
     // A dealer can replace a local trip with a long one after the price is agreed.
     const routeChange = Math.max(1, duration(order.legs) / duration(request.legs))
     const fee = this.baseFee({ ...request, legs: order.legs }) * routeChange * cars / order.legs.length
+    if (this.level >= 2 && this.settings.lateRescue && cars === 1 && lateRescueApplies(order, this.now)) return lateRescueSchedule(order, this.now, fee)
     const rescue = this.urgent.has(order.id)
     const pickupBy = this.pickupBy(order)
     const remaining = pickupBy - this.now
@@ -424,7 +427,9 @@ export class Dispatcher extends Desk {
           this.lastOffer.set(gigId, this.now)
           this.offer(gigId, order, order.lastPickupAt - this.now > 240 ? 1 : 3)
         }
-        if (this.now >= this.pickupBy(order) - 240 && (this.raised.get(gigId) ?? -Infinity) < this.now - 60) {
+        const resetLate = this.level >= 2 && this.settings.lateRescue && lateRescueApplies(order, this.now) && this.posts.get(gigId)?.stops.length === 2 && this.lateResets.get(gigId) !== order.lastPickupAt
+        if (resetLate || this.now >= this.pickupBy(order) - 240 && (this.raised.get(gigId) ?? -Infinity) < this.now - 60) {
+          if (resetLate) this.lateResets.set(gigId, order.lastPickupAt)
           this.raised.set(gigId, this.now)
           await this.raise(order.id)
           if (this.level >= 3) this.offer(gigId, order)

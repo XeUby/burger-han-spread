@@ -1,0 +1,4810 @@
+{
+  "scope": "Two old development weeks selected for high observed late-rescue spending in the descriptive screen. This is an enriched mechanism screen, not unbiased generalization evidence.",
+  "protocol": {
+    "frozenAt": "2026-11-14T00:54:34.143394+00:00",
+    "plan": "experiments/plans/late-rescue.json",
+    "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+    "scope": "Two old development weeks selected for high observed late-rescue spending in the descriptive screen. This is an enriched mechanism screen, not unbiased generalization evidence.",
+    "hypothesis": "After the public last-pickup time passes, reset the price of an unbooked public single-car gig to1.2 times its route-adjusted opening fee, rising to1.45/1.9/2.5 at120/240/360 minutes from that fixed cutoff. Repeated raises and restarts cannot postpone escalation. No shared or booked gig resets.",
+    "primary": "Whole-week ledger margin; matched identical source/settings except lateRescue flag. Retain every trial and operational error.",
+    "safety": "Both treatment weeks must qualify and finish with no undelivered orders. Record refunds, paid fees, late counts and activation traces; a cheaper opening alone is not success.",
+    "decision": "If both paired margins improve and safety criteria pass, test on a broader old development panel before reserving fresh validation seeds. Never tune this variant mid-study.",
+    "maximumConcurrentPlays": 4,
+    "jobs": 4,
+    "rankingSubmission": false,
+    "settings": {
+      "price": 1.42,
+      "fee": 1.05,
+      "margin": 0.1,
+      "capacity": 0.35,
+      "maxKm": 700,
+      "minDrivers": 8,
+      "notes": true,
+      "adaptive": true,
+      "earlyOffers": false,
+      "safetySlack": false,
+      "auction": false,
+      "allowPrivate": false,
+      "tradeIns": false,
+      "homeOffers": false,
+      "readiness": false,
+      "bundlePairs": true,
+      "sameDayPremium": 1,
+      "laterDiscount": 1,
+      "placePrior": 0,
+      "bundleWait": 15,
+      "backlog": 0.08,
+      "priceFloor": 0,
+      "costRatio": 1.15,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "demandSlope": 14,
+      "timedNotes": false,
+      "lateRescue": false
+    }
+  },
+  "manifest": {
+    "protocol": "experiments/late-rescue-protocol.json",
+    "protocolSha256": "a2d9a0f0989ba379034ebb826dff37c4d3e8db88448716bd7e8c4b2dff404125",
+    "worlds": [
+      {
+        "worldId": "w0c6ce51dfdf6d4cc3970",
+        "label": "late-rescue-control",
+        "seed": "formal-unseen-20261113-10"
+      },
+      {
+        "worldId": "w47c0ea9c41007983b01e",
+        "label": "late-rescue-treatment",
+        "seed": "formal-unseen-20261113-10"
+      },
+      {
+        "worldId": "wde70f6509f014550a4a8",
+        "label": "late-rescue-control",
+        "seed": "formal-unseen-20261113-15"
+      },
+      {
+        "worldId": "w6893e7d9cdd984154dfe",
+        "label": "late-rescue-treatment",
+        "seed": "formal-unseen-20261113-15"
+      }
+    ]
+  },
+  "summary": {
+    "pairs": 2,
+    "meanGainCents": 108259.5,
+    "positivePairs": 2,
+    "qualifiedTreatments": 2,
+    "undeliveredTreatments": 0,
+    "minimumTreatmentOnTimeShare": 0.9361702127659575
+  },
+  "pairs": [
+    {
+      "seed": "formal-unseen-20261113-10",
+      "gainCents": 89179,
+      "componentDifferencesCents": {
+        "driver_fee": 110225,
+        "late_refund": -3550,
+        "release_fee": -2444,
+        "revenue": -15052
+      }
+    },
+    {
+      "seed": "formal-unseen-20261113-15",
+      "gainCents": 127340,
+      "componentDifferencesCents": {
+        "driver_fee": 119748,
+        "late_refund": 7592,
+        "release_fee": 0,
+        "revenue": 0
+      }
+    }
+  ],
+  "records": [
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "label": "late-rescue-control",
+      "seed": "formal-unseen-20261113-10",
+      "status": "complete",
+      "result": {
+        "worldId": "w0c6ce51dfdf6d4cc3970",
+        "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": false,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 1.15,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14
+        },
+        "marginCents": 1317380,
+        "revenueCents": 4661000,
+        "wonOrders": 389,
+        "onTimeShare": 0.9562982005141388,
+        "undeliveredShare": 0,
+        "ranked": true,
+        "onTimeOrders": 372,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00227",
+          "R00260",
+          "R00493",
+          "R00516",
+          "R00543",
+          "R00638",
+          "R00655",
+          "R00683",
+          "R00719",
+          "R00734",
+          "R00765",
+          "R00777",
+          "R00803",
+          "R00858",
+          "R00877",
+          "R00891",
+          "R00893"
+        ],
+        "undeliveredOrderIds": [],
+        "label": "late-rescue-control",
+        "files": {
+          "meta": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w0c6ce51dfdf6d4cc3970.meta.json",
+            "sha256": "a1d67e373f9540ab321c8eb5b438bc961d38f21a409d68dc962399beabbb0a8f"
+          },
+          "snapshot": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w0c6ce51dfdf6d4cc3970.snapshot.json",
+            "sha256": "21bb098d24f927cd00fe797b4724ea23b93fd01a0734ec45d130125ec8dc2d6b"
+          },
+          "score": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w0c6ce51dfdf6d4cc3970.score.json",
+            "sha256": "00633fcad3749ea3a47ed369117975616372d885c8083b0a8e99fbbcc9396981"
+          },
+          "events": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w0c6ce51dfdf6d4cc3970.events.json",
+            "sha256": "f88ba5b8c46998ad07149ea3e75511170b82d7e616c07ecb5b8e91ee439a144e"
+          }
+        }
+      },
+      "ledgerCents": {
+        "revenue": 4661000,
+        "driver_fee": -3229924,
+        "late_refund": -113696
+      },
+      "lateBookings": [
+        {
+          "seq": 4182,
+          "at": 4022,
+          "kind": "gig_booked",
+          "gigId": "g192",
+          "driverId": "wm51-0702",
+          "feeCents": 18118,
+          "orderId": "R00493",
+          "lastPickupAt": 3973,
+          "deadline": 4080,
+          "views": [
+            {
+              "gigId": "g192",
+              "driverId": "wm51-0702",
+              "at": 4022,
+              "feeCents": 18118
+            }
+          ]
+        },
+        {
+          "seq": 4296,
+          "at": 4082,
+          "kind": "gig_booked",
+          "gigId": "g194",
+          "driverId": "wm51-0535",
+          "feeCents": 42120,
+          "orderId": "R00227",
+          "lastPickupAt": 3832,
+          "deadline": 4080,
+          "views": [
+            {
+              "gigId": "g194",
+              "driverId": "wm51-0237",
+              "at": 4081,
+              "feeCents": 42120
+            },
+            {
+              "gigId": "g194",
+              "driverId": "wm51-0535",
+              "at": 4082,
+              "feeCents": 42120
+            }
+          ]
+        },
+        {
+          "seq": 8605,
+          "at": 5558,
+          "kind": "gig_booked",
+          "gigId": "g297",
+          "driverId": "wm51-0421",
+          "feeCents": 41238,
+          "orderId": "R00543",
+          "lastPickupAt": 5215,
+          "deadline": 5520,
+          "views": [
+            {
+              "gigId": "g297",
+              "driverId": "wm51-0500",
+              "at": 5540,
+              "feeCents": 41238
+            },
+            {
+              "gigId": "g297",
+              "driverId": "wm51-0528",
+              "at": 5547,
+              "feeCents": 41238
+            },
+            {
+              "gigId": "g297",
+              "driverId": "wm51-0421",
+              "at": 5558,
+              "feeCents": 41238
+            }
+          ]
+        },
+        {
+          "seq": 8736,
+          "at": 5616,
+          "kind": "gig_booked",
+          "gigId": "g295",
+          "driverId": "wm51-0522",
+          "feeCents": 47470,
+          "orderId": "R00516",
+          "lastPickupAt": 5129,
+          "deadline": 5520,
+          "views": [
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0342",
+              "at": 5475,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0237",
+              "at": 5481,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0390",
+              "at": 5492,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0354",
+              "at": 5494,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0416",
+              "at": 5507,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0587",
+              "at": 5508,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0786",
+              "at": 5509,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0492",
+              "at": 5510,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0537",
+              "at": 5511,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0100",
+              "at": 5517,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0133",
+              "at": 5533,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0174",
+              "at": 5539,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0750",
+              "at": 5543,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0514",
+              "at": 5566,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0787",
+              "at": 5574,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0686",
+              "at": 5575,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0178",
+              "at": 5576,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0609",
+              "at": 5578,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0778",
+              "at": 5586,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0522",
+              "at": 5616,
+              "feeCents": 47470
+            }
+          ]
+        },
+        {
+          "seq": 12489,
+          "at": 6841,
+          "kind": "gig_booked",
+          "gigId": "g354",
+          "driverId": "wm51-0255",
+          "feeCents": 24135,
+          "orderId": "R00777",
+          "lastPickupAt": 6731,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g354",
+              "driverId": "wm51-0255",
+              "at": 6841,
+              "feeCents": 24135
+            }
+          ]
+        },
+        {
+          "seq": 12503,
+          "at": 6844,
+          "kind": "gig_booked",
+          "gigId": "g355",
+          "driverId": "wm51-0111",
+          "feeCents": 13665,
+          "orderId": "R00891",
+          "lastPickupAt": 6839,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g355",
+              "driverId": "wm51-0111",
+              "at": 6844,
+              "feeCents": 13665
+            }
+          ]
+        },
+        {
+          "seq": 12515,
+          "at": 6846,
+          "kind": "gig_booked",
+          "gigId": "g352",
+          "driverId": "wm51-0211",
+          "feeCents": 13163,
+          "orderId": "R00260",
+          "lastPickupAt": 6839,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g352",
+              "driverId": "wm51-0211",
+              "at": 6846,
+              "feeCents": 13163
+            }
+          ]
+        },
+        {
+          "seq": 12548,
+          "at": 6851,
+          "kind": "gig_booked",
+          "gigId": "g353",
+          "driverId": "wm51-0421",
+          "feeCents": 31635,
+          "orderId": "R00655",
+          "lastPickupAt": 6620,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g353",
+              "driverId": "wm51-0421",
+              "at": 6851,
+              "feeCents": 31635
+            }
+          ]
+        },
+        {
+          "seq": 12895,
+          "at": 6928,
+          "kind": "gig_booked",
+          "gigId": "g358",
+          "driverId": "wm51-0685",
+          "feeCents": 33298,
+          "orderId": "R00683",
+          "lastPickupAt": 6619,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g358",
+              "driverId": "wm51-0111",
+              "at": 6901,
+              "feeCents": 33298
+            },
+            {
+              "gigId": "g358",
+              "driverId": "wm51-0379",
+              "at": 6905,
+              "feeCents": 33298
+            },
+            {
+              "gigId": "g358",
+              "driverId": "wm51-0308",
+              "at": 6907,
+              "feeCents": 33298
+            },
+            {
+              "gigId": "g358",
+              "driverId": "wm51-0493",
+              "at": 6912,
+              "feeCents": 33298
+            },
+            {
+              "gigId": "g358",
+              "driverId": "wm51-0695",
+              "at": 6922,
+              "feeCents": 33298
+            },
+            {
+              "gigId": "g358",
+              "driverId": "wm51-0054",
+              "at": 6923,
+              "feeCents": 33298
+            },
+            {
+              "gigId": "g358",
+              "driverId": "wm51-0821",
+              "at": 6928,
+              "feeCents": 33298
+            },
+            {
+              "gigId": "g358",
+              "driverId": "wm51-0685",
+              "at": 6928,
+              "feeCents": 33298
+            }
+          ]
+        },
+        {
+          "seq": 13037,
+          "at": 6961,
+          "kind": "gig_booked",
+          "gigId": "g362",
+          "driverId": "wm51-0540",
+          "feeCents": 16198,
+          "orderId": "R00893",
+          "lastPickupAt": 6857,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0540",
+              "at": 6961,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0098",
+              "at": 8482,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0219",
+              "at": 8484,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0103",
+              "at": 8484,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0041",
+              "at": 8491,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0035",
+              "at": 8545,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0056",
+              "at": 8820,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0133",
+              "at": 9064,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0701",
+              "at": 9076,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0561",
+              "at": 9089,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0730",
+              "at": 9132,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0048",
+              "at": 9151,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0758",
+              "at": 9191,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0354",
+              "at": 9194,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0595",
+              "at": 9200,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0042",
+              "at": 9213,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0063",
+              "at": 9222,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0786",
+              "at": 9225,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0594",
+              "at": 9344,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0753",
+              "at": 9390,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0466",
+              "at": 9422,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0237",
+              "at": 9438,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0319",
+              "at": 9445,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0306",
+              "at": 9450,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0111",
+              "at": 9452,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0708",
+              "at": 9466,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0685",
+              "at": 9495,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0220",
+              "at": 9533,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0538",
+              "at": 9542,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0754",
+              "at": 9590,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0186",
+              "at": 9625,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0416",
+              "at": 9643,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0521",
+              "at": 9662,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0667",
+              "at": 9667,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0150",
+              "at": 9675,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0674",
+              "at": 9700,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0296",
+              "at": 9723,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0772",
+              "at": 9763,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0726",
+              "at": 9770,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0121",
+              "at": 9805,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0193",
+              "at": 9854,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0375",
+              "at": 9868,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0031",
+              "at": 9906,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0495",
+              "at": 9913,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0657",
+              "at": 9919,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0692",
+              "at": 9928,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0318",
+              "at": 9954,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0741",
+              "at": 9959,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0783",
+              "at": 10018,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0457",
+              "at": 10020,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0431",
+              "at": 10079,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0459",
+              "at": 10108,
+              "feeCents": 16198
+            }
+          ]
+        },
+        {
+          "seq": 13040,
+          "at": 6961,
+          "kind": "gig_booked",
+          "gigId": "g359",
+          "driverId": "wm51-0708",
+          "feeCents": 31445,
+          "orderId": "R00719",
+          "lastPickupAt": 6619,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g359",
+              "driverId": "wm51-0708",
+              "at": 6961,
+              "feeCents": 31445
+            }
+          ]
+        },
+        {
+          "seq": 13045,
+          "at": 6964,
+          "kind": "gig_booked",
+          "gigId": "g361",
+          "driverId": "wm51-0511",
+          "feeCents": 24553,
+          "orderId": "R00803",
+          "lastPickupAt": 6713,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g361",
+              "driverId": "wm51-0511",
+              "at": 6964,
+              "feeCents": 24553
+            }
+          ]
+        },
+        {
+          "seq": 13208,
+          "at": 7088,
+          "kind": "gig_booked",
+          "gigId": "g360",
+          "driverId": "wm51-0358",
+          "feeCents": 48255,
+          "orderId": "R00765",
+          "lastPickupAt": 6526,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g360",
+              "driverId": "wm51-0365",
+              "at": 6979,
+              "feeCents": 48255
+            },
+            {
+              "gigId": "g360",
+              "driverId": "wm51-0202",
+              "at": 7015,
+              "feeCents": 48255
+            },
+            {
+              "gigId": "g360",
+              "driverId": "wm51-0604",
+              "at": 7046,
+              "feeCents": 48255
+            },
+            {
+              "gigId": "g360",
+              "driverId": "wm51-0300",
+              "at": 7057,
+              "feeCents": 48255
+            },
+            {
+              "gigId": "g360",
+              "driverId": "wm51-0035",
+              "at": 7081,
+              "feeCents": 48255
+            },
+            {
+              "gigId": "g360",
+              "driverId": "wm51-0455",
+              "at": 7087,
+              "feeCents": 48255
+            },
+            {
+              "gigId": "g360",
+              "driverId": "wm51-0358",
+              "at": 7088,
+              "feeCents": 48255
+            }
+          ]
+        },
+        {
+          "seq": 14170,
+          "at": 10108,
+          "kind": "gig_booked",
+          "gigId": "g362",
+          "driverId": "wm51-0459",
+          "feeCents": 16198,
+          "orderId": "R00893",
+          "lastPickupAt": 6857,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0540",
+              "at": 6961,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0098",
+              "at": 8482,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0219",
+              "at": 8484,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0103",
+              "at": 8484,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0041",
+              "at": 8491,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0035",
+              "at": 8545,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0056",
+              "at": 8820,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0133",
+              "at": 9064,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0701",
+              "at": 9076,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0561",
+              "at": 9089,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0730",
+              "at": 9132,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0048",
+              "at": 9151,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0758",
+              "at": 9191,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0354",
+              "at": 9194,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0595",
+              "at": 9200,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0042",
+              "at": 9213,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0063",
+              "at": 9222,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0786",
+              "at": 9225,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0594",
+              "at": 9344,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0753",
+              "at": 9390,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0466",
+              "at": 9422,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0237",
+              "at": 9438,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0319",
+              "at": 9445,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0306",
+              "at": 9450,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0111",
+              "at": 9452,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0708",
+              "at": 9466,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0685",
+              "at": 9495,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0220",
+              "at": 9533,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0538",
+              "at": 9542,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0754",
+              "at": 9590,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0186",
+              "at": 9625,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0416",
+              "at": 9643,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0521",
+              "at": 9662,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0667",
+              "at": 9667,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0150",
+              "at": 9675,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0674",
+              "at": 9700,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0296",
+              "at": 9723,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0772",
+              "at": 9763,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0726",
+              "at": 9770,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0121",
+              "at": 9805,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0193",
+              "at": 9854,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0375",
+              "at": 9868,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0031",
+              "at": 9906,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0495",
+              "at": 9913,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0657",
+              "at": 9919,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0692",
+              "at": 9928,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0318",
+              "at": 9954,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0741",
+              "at": 9959,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0783",
+              "at": 10018,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0457",
+              "at": 10020,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0431",
+              "at": 10079,
+              "feeCents": 16198
+            },
+            {
+              "gigId": "g362",
+              "driverId": "wm51-0459",
+              "at": 10108,
+              "feeCents": 16198
+            }
+          ]
+        },
+        {
+          "seq": 14529,
+          "at": 11164,
+          "kind": "gig_booked",
+          "gigId": "g363",
+          "driverId": "wm51-0237",
+          "feeCents": 30558,
+          "orderId": "R00858",
+          "lastPickupAt": 10952,
+          "deadline": 11280,
+          "views": [
+            {
+              "gigId": "g363",
+              "driverId": "wm51-0237",
+              "at": 11164,
+              "feeCents": 30558
+            }
+          ]
+        }
+      ],
+      "actionErrors": []
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "label": "late-rescue-treatment",
+      "seed": "formal-unseen-20261113-10",
+      "status": "complete",
+      "result": {
+        "worldId": "w47c0ea9c41007983b01e",
+        "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 1.15,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14
+        },
+        "marginCents": 1406559,
+        "revenueCents": 4645948,
+        "wonOrders": 389,
+        "onTimeShare": 0.961439588688946,
+        "undeliveredShare": 0,
+        "ranked": true,
+        "onTimeOrders": 374,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00227",
+          "R00493",
+          "R00516",
+          "R00543",
+          "R00638",
+          "R00655",
+          "R00683",
+          "R00719",
+          "R00734",
+          "R00765",
+          "R00775",
+          "R00777",
+          "R00803",
+          "R00858",
+          "R00877"
+        ],
+        "undeliveredOrderIds": [],
+        "label": "late-rescue-treatment",
+        "files": {
+          "meta": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w47c0ea9c41007983b01e.meta.json",
+            "sha256": "47ddd7414a900e90ba46bae0e2d93095fc40a7f78a98667c099e78353bedc230"
+          },
+          "snapshot": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w47c0ea9c41007983b01e.snapshot.json",
+            "sha256": "ac5108669d2bc6530c91d9d658f29020c717fc70e5feee2569fed241c5d8fd7e"
+          },
+          "score": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w47c0ea9c41007983b01e.score.json",
+            "sha256": "902cbee3e233b5e86d03c03fee84e8df3907a296defba5c2c2231bdd6def37fa"
+          },
+          "events": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w47c0ea9c41007983b01e.events.json",
+            "sha256": "a64169966f47dd5037a0b33d23732e7c3f11b37843c79c52c34820a54b12561f"
+          }
+        }
+      },
+      "ledgerCents": {
+        "revenue": 4645948,
+        "driver_fee": -3119699,
+        "late_refund": -117246,
+        "release_fee": -2444
+      },
+      "lateBookings": [
+        {
+          "seq": 4183,
+          "at": 4022,
+          "kind": "gig_booked",
+          "gigId": "g192",
+          "driverId": "wm51-0702",
+          "feeCents": 8696,
+          "orderId": "R00493",
+          "lastPickupAt": 3973,
+          "deadline": 4080,
+          "views": [
+            {
+              "gigId": "g192",
+              "driverId": "wm51-0702",
+              "at": 4022,
+              "feeCents": 8696
+            }
+          ]
+        },
+        {
+          "seq": 4299,
+          "at": 4082,
+          "kind": "gig_booked",
+          "gigId": "g194",
+          "driverId": "wm51-0535",
+          "feeCents": 32011,
+          "orderId": "R00227",
+          "lastPickupAt": 3832,
+          "deadline": 4080,
+          "views": [
+            {
+              "gigId": "g194",
+              "driverId": "wm51-0237",
+              "at": 4081,
+              "feeCents": 32011
+            },
+            {
+              "gigId": "g194",
+              "driverId": "wm51-0535",
+              "at": 4082,
+              "feeCents": 32011
+            }
+          ]
+        },
+        {
+          "seq": 8608,
+          "at": 5616,
+          "kind": "gig_booked",
+          "gigId": "g295",
+          "driverId": "wm51-0522",
+          "feeCents": 47470,
+          "orderId": "R00516",
+          "lastPickupAt": 5129,
+          "deadline": 5520,
+          "views": [
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0304",
+              "at": 5470,
+              "feeCents": 36077
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0493",
+              "at": 5473,
+              "feeCents": 36077
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0035",
+              "at": 5501,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0416",
+              "at": 5507,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0793",
+              "at": 5509,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0495",
+              "at": 5509,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0537",
+              "at": 5544,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0742",
+              "at": 5549,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0623",
+              "at": 5561,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0345",
+              "at": 5572,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0701",
+              "at": 5604,
+              "feeCents": 47470
+            },
+            {
+              "gigId": "g295",
+              "driverId": "wm51-0522",
+              "at": 5616,
+              "feeCents": 47470
+            }
+          ]
+        },
+        {
+          "seq": 8833,
+          "at": 6081,
+          "kind": "gig_booked",
+          "gigId": "g297",
+          "driverId": "wm51-0685",
+          "feeCents": 41238,
+          "orderId": "R00543",
+          "lastPickupAt": 5215,
+          "deadline": 5520,
+          "views": [
+            {
+              "gigId": "g297",
+              "driverId": "wm51-0048",
+              "at": 5528,
+              "feeCents": 31341
+            },
+            {
+              "gigId": "g297",
+              "driverId": "wm51-0072",
+              "at": 5528,
+              "feeCents": 31341
+            },
+            {
+              "gigId": "g297",
+              "driverId": "wm51-0650",
+              "at": 5541,
+              "feeCents": 31341
+            },
+            {
+              "gigId": "g297",
+              "driverId": "wm51-0332",
+              "at": 5567,
+              "feeCents": 31341
+            },
+            {
+              "gigId": "g297",
+              "driverId": "wm51-0050",
+              "at": 5577,
+              "feeCents": 41238
+            },
+            {
+              "gigId": "g297",
+              "driverId": "wm51-0169",
+              "at": 5581,
+              "feeCents": 41238
+            },
+            {
+              "gigId": "g297",
+              "driverId": "wm51-0708",
+              "at": 5594,
+              "feeCents": 41238
+            },
+            {
+              "gigId": "g297",
+              "driverId": "wm51-0430",
+              "at": 5597,
+              "feeCents": 41238
+            },
+            {
+              "gigId": "g297",
+              "driverId": "wm51-0756",
+              "at": 5618,
+              "feeCents": 41238
+            },
+            {
+              "gigId": "g297",
+              "driverId": "wm51-0432",
+              "at": 5628,
+              "feeCents": 41238
+            },
+            {
+              "gigId": "g297",
+              "driverId": "wm51-0808",
+              "at": 5634,
+              "feeCents": 41238
+            },
+            {
+              "gigId": "g297",
+              "driverId": "wm51-0585",
+              "at": 5667,
+              "feeCents": 41238
+            },
+            {
+              "gigId": "g297",
+              "driverId": "wm51-0793",
+              "at": 5678,
+              "feeCents": 41238
+            },
+            {
+              "gigId": "g297",
+              "driverId": "wm51-0691",
+              "at": 6026,
+              "feeCents": 41238
+            },
+            {
+              "gigId": "g297",
+              "driverId": "wm51-0685",
+              "at": 6081,
+              "feeCents": 41238
+            }
+          ]
+        },
+        {
+          "seq": 12586,
+          "at": 6841,
+          "kind": "gig_booked",
+          "gigId": "g353",
+          "driverId": "wm51-0255",
+          "feeCents": 11585,
+          "orderId": "R00777",
+          "lastPickupAt": 6731,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g353",
+              "driverId": "wm51-0255",
+              "at": 6841,
+              "feeCents": 11585
+            }
+          ]
+        },
+        {
+          "seq": 12592,
+          "at": 6843,
+          "kind": "gig_booked",
+          "gigId": "g352",
+          "driverId": "wm51-0503",
+          "feeCents": 10721,
+          "orderId": "R00775",
+          "lastPickupAt": 6731,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g352",
+              "driverId": "wm51-0255",
+              "at": 6841,
+              "feeCents": 10721
+            },
+            {
+              "gigId": "g352",
+              "driverId": "wm51-0546",
+              "at": 6843,
+              "feeCents": 10721
+            },
+            {
+              "gigId": "g352",
+              "driverId": "wm51-0503",
+              "at": 6843,
+              "feeCents": 10721
+            }
+          ]
+        },
+        {
+          "seq": 12612,
+          "at": 6847,
+          "kind": "gig_booked",
+          "gigId": "g351",
+          "driverId": "wm51-0741",
+          "feeCents": 18348,
+          "orderId": "R00655",
+          "lastPickupAt": 6620,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g351",
+              "driverId": "wm51-0741",
+              "at": 6847,
+              "feeCents": 18348
+            }
+          ]
+        },
+        {
+          "seq": 12929,
+          "at": 6921,
+          "kind": "gig_booked",
+          "gigId": "g356",
+          "driverId": "wm51-0685",
+          "feeCents": 25306,
+          "orderId": "R00683",
+          "lastPickupAt": 6619,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g356",
+              "driverId": "wm51-0358",
+              "at": 6902,
+              "feeCents": 25306
+            },
+            {
+              "gigId": "g356",
+              "driverId": "wm51-0351",
+              "at": 6903,
+              "feeCents": 25306
+            },
+            {
+              "gigId": "g356",
+              "driverId": "wm51-0379",
+              "at": 6905,
+              "feeCents": 25306
+            },
+            {
+              "gigId": "g356",
+              "driverId": "wm51-0493",
+              "at": 6912,
+              "feeCents": 25306
+            },
+            {
+              "gigId": "g356",
+              "driverId": "wm51-0122",
+              "at": 6913,
+              "feeCents": 25306
+            },
+            {
+              "gigId": "g356",
+              "driverId": "wm51-0363",
+              "at": 6915,
+              "feeCents": 25306
+            },
+            {
+              "gigId": "g356",
+              "driverId": "wm51-0685",
+              "at": 6921,
+              "feeCents": 25306
+            }
+          ]
+        },
+        {
+          "seq": 13066,
+          "at": 6964,
+          "kind": "gig_booked",
+          "gigId": "g359",
+          "driverId": "wm51-0511",
+          "feeCents": 18660,
+          "orderId": "R00803",
+          "lastPickupAt": 6713,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g359",
+              "driverId": "wm51-0708",
+              "at": 6961,
+              "feeCents": 18660
+            },
+            {
+              "gigId": "g359",
+              "driverId": "wm51-0511",
+              "at": 6964,
+              "feeCents": 18660
+            }
+          ]
+        },
+        {
+          "seq": 13092,
+          "at": 6973,
+          "kind": "gig_booked",
+          "gigId": "g357",
+          "driverId": "wm51-0237",
+          "feeCents": 23898,
+          "orderId": "R00719",
+          "lastPickupAt": 6619,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g357",
+              "driverId": "wm51-0511",
+              "at": 6964,
+              "feeCents": 23898
+            },
+            {
+              "gigId": "g357",
+              "driverId": "wm51-0237",
+              "at": 6973,
+              "feeCents": 23898
+            }
+          ]
+        },
+        {
+          "seq": 13153,
+          "at": 7010,
+          "kind": "gig_booked",
+          "gigId": "g358",
+          "driverId": "wm51-0522",
+          "feeCents": 48255,
+          "orderId": "R00765",
+          "lastPickupAt": 6526,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g358",
+              "driverId": "wm51-0511",
+              "at": 6964,
+              "feeCents": 48255
+            },
+            {
+              "gigId": "g358",
+              "driverId": "wm51-0238",
+              "at": 6965,
+              "feeCents": 48255
+            },
+            {
+              "gigId": "g358",
+              "driverId": "wm51-0467",
+              "at": 6975,
+              "feeCents": 48255
+            },
+            {
+              "gigId": "g358",
+              "driverId": "wm51-0303",
+              "at": 6977,
+              "feeCents": 48255
+            },
+            {
+              "gigId": "g358",
+              "driverId": "wm51-0720",
+              "at": 6998,
+              "feeCents": 48255
+            },
+            {
+              "gigId": "g358",
+              "driverId": "wm51-0592",
+              "at": 7005,
+              "feeCents": 48255
+            },
+            {
+              "gigId": "g358",
+              "driverId": "wm51-0208",
+              "at": 7006,
+              "feeCents": 48255
+            },
+            {
+              "gigId": "g358",
+              "driverId": "wm51-0522",
+              "at": 7010,
+              "feeCents": 48255
+            }
+          ]
+        },
+        {
+          "seq": 14572,
+          "at": 11164,
+          "kind": "gig_booked",
+          "gigId": "g361",
+          "driverId": "wm51-0237",
+          "feeCents": 18593,
+          "orderId": "R00877",
+          "lastPickupAt": 10952,
+          "deadline": 11280,
+          "views": [
+            {
+              "gigId": "g361",
+              "driverId": "wm51-0813",
+              "at": 11161,
+              "feeCents": 18593
+            },
+            {
+              "gigId": "g361",
+              "driverId": "wm51-0237",
+              "at": 11164,
+              "feeCents": 18593
+            }
+          ]
+        },
+        {
+          "seq": 14580,
+          "at": 11165,
+          "kind": "gig_booked",
+          "gigId": "g360",
+          "driverId": "wm51-0111",
+          "feeCents": 17723,
+          "orderId": "R00858",
+          "lastPickupAt": 10952,
+          "deadline": 11280,
+          "views": [
+            {
+              "gigId": "g360",
+              "driverId": "wm51-0237",
+              "at": 11164,
+              "feeCents": 17723
+            },
+            {
+              "gigId": "g360",
+              "driverId": "wm51-0111",
+              "at": 11165,
+              "feeCents": 17723
+            }
+          ]
+        }
+      ],
+      "actionErrors": []
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "label": "late-rescue-control",
+      "seed": "formal-unseen-20261113-15",
+      "status": "complete",
+      "result": {
+        "worldId": "wde70f6509f014550a4a8",
+        "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": false,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 1.15,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14
+        },
+        "marginCents": 909626,
+        "revenueCents": 3819965,
+        "wonOrders": 329,
+        "onTimeShare": 0.9361702127659575,
+        "undeliveredShare": 0,
+        "ranked": true,
+        "onTimeOrders": 308,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00303",
+          "R00426",
+          "R00581",
+          "R00586",
+          "R00620",
+          "R00628",
+          "R00687",
+          "R00698",
+          "R00699",
+          "R00708",
+          "R00779",
+          "R00780",
+          "R00786",
+          "R00804",
+          "R00808",
+          "R00828",
+          "R00830",
+          "R00831",
+          "R00832",
+          "R00835",
+          "R00845"
+        ],
+        "undeliveredOrderIds": [],
+        "label": "late-rescue-control",
+        "files": {
+          "meta": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/wde70f6509f014550a4a8.meta.json",
+            "sha256": "9bf36ab2e059012bdab02b52ff370c4d0d46eb764733c228c968de615dfad372"
+          },
+          "snapshot": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/wde70f6509f014550a4a8.snapshot.json",
+            "sha256": "152c160cca5ec70bffa978b97678299e606a5c0b685612ae3d52b299c771c8bc"
+          },
+          "score": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/wde70f6509f014550a4a8.score.json",
+            "sha256": "93b270968d159f20bc8fadcd3a6093a90ee9bba476cb125c8e25e779a43b6eac"
+          },
+          "events": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/wde70f6509f014550a4a8.events.json",
+            "sha256": "a5d4894f175f6ed0e646336bca41093006d712f5bc315936cecbc2e6584b999e"
+          }
+        }
+      },
+      "ledgerCents": {
+        "revenue": 3819965,
+        "driver_fee": -2781692,
+        "release_fee": -12053,
+        "late_refund": -116594
+      },
+      "lateBookings": [
+        {
+          "seq": 3837,
+          "at": 4105,
+          "kind": "gig_booked",
+          "gigId": "g178",
+          "driverId": "pif6-0015",
+          "feeCents": 38578,
+          "orderId": "R00303",
+          "lastPickupAt": 3683,
+          "deadline": 4080,
+          "views": [
+            {
+              "gigId": "g178",
+              "driverId": "pif6-0476",
+              "at": 4083,
+              "feeCents": 38578
+            },
+            {
+              "gigId": "g178",
+              "driverId": "pif6-0142",
+              "at": 4092,
+              "feeCents": 38578
+            },
+            {
+              "gigId": "g178",
+              "driverId": "pif6-0015",
+              "at": 4105,
+              "feeCents": 38578
+            }
+          ]
+        },
+        {
+          "seq": 6661,
+          "at": 5404,
+          "kind": "gig_booked",
+          "gigId": "g282",
+          "driverId": "pif6-0599",
+          "feeCents": 15133,
+          "orderId": "R00620",
+          "lastPickupAt": 5399,
+          "deadline": 5520,
+          "views": [
+            {
+              "gigId": "g282",
+              "driverId": "pif6-0599",
+              "at": 5404,
+              "feeCents": 15133
+            }
+          ]
+        },
+        {
+          "seq": 6779,
+          "at": 5461,
+          "kind": "gig_booked",
+          "gigId": "g285",
+          "driverId": "pif6-0411",
+          "feeCents": 5000,
+          "orderId": "R00586",
+          "lastPickupAt": 5459,
+          "deadline": 5520,
+          "views": [
+            {
+              "gigId": "g285",
+              "driverId": "pif6-0411",
+              "at": 5461,
+              "feeCents": 5000
+            }
+          ]
+        },
+        {
+          "seq": 6868,
+          "at": 5475,
+          "kind": "gig_booked",
+          "gigId": "g286",
+          "driverId": "pif6-0228",
+          "feeCents": 31295,
+          "orderId": "R00581",
+          "lastPickupAt": 5263,
+          "deadline": 5520,
+          "views": [
+            {
+              "gigId": "g286",
+              "driverId": "pif6-0461",
+              "at": 5461,
+              "feeCents": 31295
+            },
+            {
+              "gigId": "g286",
+              "driverId": "pif6-0077",
+              "at": 5463,
+              "feeCents": 31295
+            },
+            {
+              "gigId": "g286",
+              "driverId": "pif6-0244",
+              "at": 5468,
+              "feeCents": 31295
+            },
+            {
+              "gigId": "g286",
+              "driverId": "pif6-0000",
+              "at": 5471,
+              "feeCents": 31295
+            },
+            {
+              "gigId": "g286",
+              "driverId": "pif6-0228",
+              "at": 5475,
+              "feeCents": 31295
+            }
+          ]
+        },
+        {
+          "seq": 7060,
+          "at": 5609,
+          "kind": "gig_booked",
+          "gigId": "g284",
+          "driverId": "pif6-0698",
+          "feeCents": 27293,
+          "orderId": "R00426",
+          "lastPickupAt": 5192,
+          "deadline": 5520,
+          "views": [
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0651",
+              "at": 5464,
+              "feeCents": 27293
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0003",
+              "at": 5465,
+              "feeCents": 27293
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0592",
+              "at": 5478,
+              "feeCents": 27293
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0433",
+              "at": 5484,
+              "feeCents": 27293
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0539",
+              "at": 5491,
+              "feeCents": 27293
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0418",
+              "at": 5506,
+              "feeCents": 27293
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0353",
+              "at": 5515,
+              "feeCents": 27293
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0663",
+              "at": 5530,
+              "feeCents": 27293
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0647",
+              "at": 5538,
+              "feeCents": 27293
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0686",
+              "at": 5538,
+              "feeCents": 27293
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0415",
+              "at": 5540,
+              "feeCents": 27293
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0020",
+              "at": 5540,
+              "feeCents": 27293
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0219",
+              "at": 5556,
+              "feeCents": 27293
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0604",
+              "at": 5564,
+              "feeCents": 27293
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0023",
+              "at": 5578,
+              "feeCents": 27293
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0251",
+              "at": 5589,
+              "feeCents": 27293
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0698",
+              "at": 5609,
+              "feeCents": 27293
+            }
+          ]
+        },
+        {
+          "seq": 10486,
+          "at": 6842,
+          "kind": "gig_booked",
+          "gigId": "g326",
+          "driverId": "pif6-0003",
+          "feeCents": 23428,
+          "orderId": "R00845",
+          "lastPickupAt": 6757,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g326",
+              "driverId": "pif6-0003",
+              "at": 6842,
+              "feeCents": 23428
+            }
+          ]
+        },
+        {
+          "seq": 10497,
+          "at": 6845,
+          "kind": "gig_booked",
+          "gigId": "g323",
+          "driverId": "pif6-0193",
+          "feeCents": 44915,
+          "orderId": "R00804",
+          "lastPickupAt": 6554,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g323",
+              "driverId": "pif6-0193",
+              "at": 6845,
+              "feeCents": 44915
+            }
+          ]
+        },
+        {
+          "seq": 10503,
+          "at": 6846,
+          "kind": "gig_booked",
+          "gigId": "g324",
+          "driverId": "pif6-0510",
+          "feeCents": 13400,
+          "orderId": "R00831",
+          "lastPickupAt": 6839,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g324",
+              "driverId": "pif6-0003",
+              "at": 6842,
+              "feeCents": 13400
+            },
+            {
+              "gigId": "g324",
+              "driverId": "pif6-0510",
+              "at": 6846,
+              "feeCents": 13400
+            }
+          ]
+        },
+        {
+          "seq": 10516,
+          "at": 6848,
+          "kind": "gig_booked",
+          "gigId": "g322",
+          "driverId": "pif6-0218",
+          "feeCents": 21588,
+          "orderId": "R00708",
+          "lastPickupAt": 6787,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g322",
+              "driverId": "pif6-0218",
+              "at": 6848,
+              "feeCents": 21588
+            }
+          ]
+        },
+        {
+          "seq": 10521,
+          "at": 6849,
+          "kind": "gig_booked",
+          "gigId": "g327",
+          "driverId": "pif6-0269",
+          "feeCents": 40593,
+          "orderId": "R00832",
+          "lastPickupAt": 6680,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g327",
+              "driverId": "pif6-0269",
+              "at": 6849,
+              "feeCents": 40593
+            },
+            {
+              "gigId": "g327",
+              "driverId": "pif6-0202",
+              "at": 9970,
+              "feeCents": 40593
+            },
+            {
+              "gigId": "g327",
+              "driverId": "pif6-0539",
+              "at": 9971,
+              "feeCents": 40593
+            },
+            {
+              "gigId": "g327",
+              "driverId": "pif6-0162",
+              "at": 9972,
+              "feeCents": 40593
+            },
+            {
+              "gigId": "g327",
+              "driverId": "pif6-0293",
+              "at": 10007,
+              "feeCents": 40593
+            },
+            {
+              "gigId": "g327",
+              "driverId": "pif6-0289",
+              "at": 10040,
+              "feeCents": 40593
+            },
+            {
+              "gigId": "g327",
+              "driverId": "pif6-0085",
+              "at": 10136,
+              "feeCents": 40593
+            },
+            {
+              "gigId": "g327",
+              "driverId": "pif6-0102",
+              "at": 10384,
+              "feeCents": 40593
+            }
+          ]
+        },
+        {
+          "seq": 10524,
+          "at": 6849,
+          "kind": "gig_booked",
+          "gigId": "g325",
+          "driverId": "pif6-0390",
+          "feeCents": 12158,
+          "orderId": "R00835",
+          "lastPickupAt": 6839,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g325",
+              "driverId": "pif6-0003",
+              "at": 6842,
+              "feeCents": 12158
+            },
+            {
+              "gigId": "g325",
+              "driverId": "pif6-0510",
+              "at": 6846,
+              "feeCents": 12158
+            },
+            {
+              "gigId": "g325",
+              "driverId": "pif6-0218",
+              "at": 6848,
+              "feeCents": 12158
+            },
+            {
+              "gigId": "g325",
+              "driverId": "pif6-0269",
+              "at": 6849,
+              "feeCents": 12158
+            },
+            {
+              "gigId": "g325",
+              "driverId": "pif6-0390",
+              "at": 6849,
+              "feeCents": 12158
+            }
+          ]
+        },
+        {
+          "seq": 10552,
+          "at": 6852,
+          "kind": "gig_booked",
+          "gigId": "g328",
+          "driverId": "pif6-0510",
+          "feeCents": 5000,
+          "orderId": "R00628",
+          "lastPickupAt": 6839,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0003",
+              "at": 6842,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0510",
+              "at": 6846,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0218",
+              "at": 6848,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0390",
+              "at": 6849,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0294",
+              "at": 6850,
+              "feeCents": 5000
+            }
+          ]
+        },
+        {
+          "seq": 10731,
+          "at": 6902,
+          "kind": "gig_booked",
+          "gigId": "g333",
+          "driverId": "pif6-0085",
+          "feeCents": 24085,
+          "orderId": "R00687",
+          "lastPickupAt": 6716,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g333",
+              "driverId": "pif6-0085",
+              "at": 6902,
+              "feeCents": 24085
+            }
+          ]
+        },
+        {
+          "seq": 10736,
+          "at": 6902,
+          "kind": "gig_booked",
+          "gigId": "g334",
+          "driverId": "pif6-0437",
+          "feeCents": 5000,
+          "orderId": "R00828",
+          "lastPickupAt": 6899,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g334",
+              "driverId": "pif6-0085",
+              "at": 6902,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g334",
+              "driverId": "pif6-0437",
+              "at": 6902,
+              "feeCents": 5000
+            }
+          ]
+        },
+        {
+          "seq": 10744,
+          "at": 6904,
+          "kind": "gig_booked",
+          "gigId": "g335",
+          "driverId": "pif6-0561",
+          "feeCents": 5000,
+          "orderId": "R00830",
+          "lastPickupAt": 6899,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g335",
+              "driverId": "pif6-0085",
+              "at": 6902,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g335",
+              "driverId": "pif6-0437",
+              "at": 6902,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g335",
+              "driverId": "pif6-0561",
+              "at": 6904,
+              "feeCents": 5000
+            }
+          ]
+        },
+        {
+          "seq": 10885,
+          "at": 6961,
+          "kind": "gig_booked",
+          "gigId": "g340",
+          "driverId": "pif6-0168",
+          "feeCents": 8340,
+          "orderId": "R00808",
+          "lastPickupAt": 6909,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g340",
+              "driverId": "pif6-0168",
+              "at": 6961,
+              "feeCents": 8340
+            }
+          ]
+        },
+        {
+          "seq": 10887,
+          "at": 6961,
+          "kind": "gig_booked",
+          "gigId": "g339",
+          "driverId": "pif6-0217",
+          "feeCents": 15578,
+          "orderId": "R00786",
+          "lastPickupAt": 6846,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0217",
+              "at": 6961,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0184",
+              "at": 9929,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0639",
+              "at": 9942,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0570",
+              "at": 9957,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0123",
+              "at": 9970,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0587",
+              "at": 9971,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0017",
+              "at": 9975,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0092",
+              "at": 9975,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0219",
+              "at": 9976,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0569",
+              "at": 10070,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0461",
+              "at": 10124,
+              "feeCents": 15578
+            }
+          ]
+        },
+        {
+          "seq": 10896,
+          "at": 6963,
+          "kind": "gig_booked",
+          "gigId": "g338",
+          "driverId": "pif6-0140",
+          "feeCents": 34135,
+          "orderId": "R00779",
+          "lastPickupAt": 6671,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g338",
+              "driverId": "pif6-0140",
+              "at": 6963,
+              "feeCents": 34135
+            }
+          ]
+        },
+        {
+          "seq": 10900,
+          "at": 6965,
+          "kind": "gig_booked",
+          "gigId": "g341",
+          "driverId": "pif6-0688",
+          "feeCents": 28820,
+          "orderId": "R00780",
+          "lastPickupAt": 6719,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g341",
+              "driverId": "pif6-0140",
+              "at": 6963,
+              "feeCents": 28820
+            },
+            {
+              "gigId": "g341",
+              "driverId": "pif6-0688",
+              "at": 6965,
+              "feeCents": 28820
+            }
+          ]
+        },
+        {
+          "seq": 10906,
+          "at": 6968,
+          "kind": "gig_booked",
+          "gigId": "g336",
+          "driverId": "pif6-0096",
+          "feeCents": 30815,
+          "orderId": "R00698",
+          "lastPickupAt": 6681,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g336",
+              "driverId": "pif6-0096",
+              "at": 6968,
+              "feeCents": 30815
+            }
+          ]
+        },
+        {
+          "seq": 10963,
+          "at": 6994,
+          "kind": "gig_booked",
+          "gigId": "g337",
+          "driverId": "pif6-0518",
+          "feeCents": 27073,
+          "orderId": "R00699",
+          "lastPickupAt": 6681,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g337",
+              "driverId": "pif6-0096",
+              "at": 6968,
+              "feeCents": 27073
+            },
+            {
+              "gigId": "g337",
+              "driverId": "pif6-0541",
+              "at": 6970,
+              "feeCents": 27073
+            },
+            {
+              "gigId": "g337",
+              "driverId": "pif6-0294",
+              "at": 6984,
+              "feeCents": 27073
+            },
+            {
+              "gigId": "g337",
+              "driverId": "pif6-0403",
+              "at": 6991,
+              "feeCents": 27073
+            },
+            {
+              "gigId": "g337",
+              "driverId": "pif6-0518",
+              "at": 6994,
+              "feeCents": 27073
+            }
+          ]
+        },
+        {
+          "seq": 11467,
+          "at": 10124,
+          "kind": "gig_booked",
+          "gigId": "g339",
+          "driverId": "pif6-0461",
+          "feeCents": 15578,
+          "orderId": "R00786",
+          "lastPickupAt": 6846,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0217",
+              "at": 6961,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0184",
+              "at": 9929,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0639",
+              "at": 9942,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0570",
+              "at": 9957,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0123",
+              "at": 9970,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0587",
+              "at": 9971,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0017",
+              "at": 9975,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0092",
+              "at": 9975,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0219",
+              "at": 9976,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0569",
+              "at": 10070,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0461",
+              "at": 10124,
+              "feeCents": 15578
+            }
+          ]
+        },
+        {
+          "seq": 11486,
+          "at": 10384,
+          "kind": "gig_booked",
+          "gigId": "g327",
+          "driverId": "pif6-0102",
+          "feeCents": 40593,
+          "orderId": "R00832",
+          "lastPickupAt": 6680,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g327",
+              "driverId": "pif6-0269",
+              "at": 6849,
+              "feeCents": 40593
+            },
+            {
+              "gigId": "g327",
+              "driverId": "pif6-0202",
+              "at": 9970,
+              "feeCents": 40593
+            },
+            {
+              "gigId": "g327",
+              "driverId": "pif6-0539",
+              "at": 9971,
+              "feeCents": 40593
+            },
+            {
+              "gigId": "g327",
+              "driverId": "pif6-0162",
+              "at": 9972,
+              "feeCents": 40593
+            },
+            {
+              "gigId": "g327",
+              "driverId": "pif6-0293",
+              "at": 10007,
+              "feeCents": 40593
+            },
+            {
+              "gigId": "g327",
+              "driverId": "pif6-0289",
+              "at": 10040,
+              "feeCents": 40593
+            },
+            {
+              "gigId": "g327",
+              "driverId": "pif6-0085",
+              "at": 10136,
+              "feeCents": 40593
+            },
+            {
+              "gigId": "g327",
+              "driverId": "pif6-0102",
+              "at": 10384,
+              "feeCents": 40593
+            }
+          ]
+        }
+      ],
+      "actionErrors": []
+    },
+    {
+      "worldId": "w6893e7d9cdd984154dfe",
+      "label": "late-rescue-treatment",
+      "seed": "formal-unseen-20261113-15",
+      "status": "complete",
+      "result": {
+        "worldId": "w6893e7d9cdd984154dfe",
+        "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 1.15,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14
+        },
+        "marginCents": 1036966,
+        "revenueCents": 3819965,
+        "wonOrders": 329,
+        "onTimeShare": 0.9361702127659575,
+        "undeliveredShare": 0,
+        "ranked": true,
+        "onTimeOrders": 308,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00303",
+          "R00426",
+          "R00581",
+          "R00586",
+          "R00620",
+          "R00628",
+          "R00687",
+          "R00698",
+          "R00699",
+          "R00708",
+          "R00779",
+          "R00780",
+          "R00786",
+          "R00804",
+          "R00808",
+          "R00828",
+          "R00830",
+          "R00831",
+          "R00832",
+          "R00835",
+          "R00845"
+        ],
+        "undeliveredOrderIds": [],
+        "label": "late-rescue-treatment",
+        "files": {
+          "meta": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w6893e7d9cdd984154dfe.meta.json",
+            "sha256": "22c1f10a2ce6e67616e403b96b2636b2e91410fbab1b59fbd1f42a43eb6ba882"
+          },
+          "snapshot": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w6893e7d9cdd984154dfe.snapshot.json",
+            "sha256": "62cea5cbc6eb9acb98b19c292207bf405f394cb34a405a93236cf1c13434516e"
+          },
+          "score": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w6893e7d9cdd984154dfe.score.json",
+            "sha256": "626d7de88f7235e862de90533a883c4a05331493d75cf0ed1d5411fc12fb21c1"
+          },
+          "events": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w6893e7d9cdd984154dfe.events.json",
+            "sha256": "61e651e62ca5234bb6bc2c7e0e209aed31a607599514f2febaa908eab76f1d40"
+          }
+        }
+      },
+      "ledgerCents": {
+        "revenue": 3819965,
+        "driver_fee": -2661944,
+        "release_fee": -12053,
+        "late_refund": -109002
+      },
+      "lateBookings": [
+        {
+          "seq": 3851,
+          "at": 4105,
+          "kind": "gig_booked",
+          "gigId": "g178",
+          "driverId": "pif6-0015",
+          "feeCents": 38578,
+          "orderId": "R00303",
+          "lastPickupAt": 3683,
+          "deadline": 4080,
+          "views": [
+            {
+              "gigId": "g178",
+              "driverId": "pif6-0476",
+              "at": 4083,
+              "feeCents": 38578
+            },
+            {
+              "gigId": "g178",
+              "driverId": "pif6-0142",
+              "at": 4092,
+              "feeCents": 38578
+            },
+            {
+              "gigId": "g178",
+              "driverId": "pif6-0015",
+              "at": 4105,
+              "feeCents": 38578
+            }
+          ]
+        },
+        {
+          "seq": 6691,
+          "at": 5404,
+          "kind": "gig_booked",
+          "gigId": "g282",
+          "driverId": "pif6-0599",
+          "feeCents": 7264,
+          "orderId": "R00620",
+          "lastPickupAt": 5399,
+          "deadline": 5520,
+          "views": [
+            {
+              "gigId": "g282",
+              "driverId": "pif6-0599",
+              "at": 5404,
+              "feeCents": 7264
+            }
+          ]
+        },
+        {
+          "seq": 6810,
+          "at": 5461,
+          "kind": "gig_booked",
+          "gigId": "g285",
+          "driverId": "pif6-0411",
+          "feeCents": 2400,
+          "orderId": "R00586",
+          "lastPickupAt": 5459,
+          "deadline": 5520,
+          "views": [
+            {
+              "gigId": "g285",
+              "driverId": "pif6-0411",
+              "at": 5461,
+              "feeCents": 2400
+            }
+          ]
+        },
+        {
+          "seq": 6899,
+          "at": 5475,
+          "kind": "gig_booked",
+          "gigId": "g286",
+          "driverId": "pif6-0228",
+          "feeCents": 18151,
+          "orderId": "R00581",
+          "lastPickupAt": 5263,
+          "deadline": 5520,
+          "views": [
+            {
+              "gigId": "g286",
+              "driverId": "pif6-0461",
+              "at": 5461,
+              "feeCents": 18151
+            },
+            {
+              "gigId": "g286",
+              "driverId": "pif6-0077",
+              "at": 5463,
+              "feeCents": 18151
+            },
+            {
+              "gigId": "g286",
+              "driverId": "pif6-0244",
+              "at": 5468,
+              "feeCents": 18151
+            },
+            {
+              "gigId": "g286",
+              "driverId": "pif6-0000",
+              "at": 5471,
+              "feeCents": 18151
+            },
+            {
+              "gigId": "g286",
+              "driverId": "pif6-0228",
+              "at": 5475,
+              "feeCents": 18151
+            }
+          ]
+        },
+        {
+          "seq": 7091,
+          "at": 5609,
+          "kind": "gig_booked",
+          "gigId": "g284",
+          "driverId": "pif6-0698",
+          "feeCents": 27293,
+          "orderId": "R00426",
+          "lastPickupAt": 5192,
+          "deadline": 5520,
+          "views": [
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0651",
+              "at": 5464,
+              "feeCents": 20742
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0003",
+              "at": 5465,
+              "feeCents": 20742
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0592",
+              "at": 5478,
+              "feeCents": 20742
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0433",
+              "at": 5484,
+              "feeCents": 20742
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0539",
+              "at": 5491,
+              "feeCents": 20742
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0418",
+              "at": 5506,
+              "feeCents": 20742
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0353",
+              "at": 5515,
+              "feeCents": 20742
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0663",
+              "at": 5530,
+              "feeCents": 20742
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0647",
+              "at": 5538,
+              "feeCents": 20742
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0686",
+              "at": 5538,
+              "feeCents": 20742
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0415",
+              "at": 5540,
+              "feeCents": 20742
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0020",
+              "at": 5540,
+              "feeCents": 20742
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0219",
+              "at": 5556,
+              "feeCents": 27293
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0604",
+              "at": 5564,
+              "feeCents": 27293
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0023",
+              "at": 5578,
+              "feeCents": 27293
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0251",
+              "at": 5589,
+              "feeCents": 27293
+            },
+            {
+              "gigId": "g284",
+              "driverId": "pif6-0698",
+              "at": 5609,
+              "feeCents": 27293
+            }
+          ]
+        },
+        {
+          "seq": 10520,
+          "at": 6842,
+          "kind": "gig_booked",
+          "gigId": "g326",
+          "driverId": "pif6-0003",
+          "feeCents": 11245,
+          "orderId": "R00845",
+          "lastPickupAt": 6757,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g326",
+              "driverId": "pif6-0003",
+              "at": 6842,
+              "feeCents": 11245
+            }
+          ]
+        },
+        {
+          "seq": 10531,
+          "at": 6845,
+          "kind": "gig_booked",
+          "gigId": "g323",
+          "driverId": "pif6-0193",
+          "feeCents": 34135,
+          "orderId": "R00804",
+          "lastPickupAt": 6554,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g323",
+              "driverId": "pif6-0193",
+              "at": 6845,
+              "feeCents": 34135
+            }
+          ]
+        },
+        {
+          "seq": 10553,
+          "at": 6849,
+          "kind": "gig_booked",
+          "gigId": "g327",
+          "driverId": "pif6-0269",
+          "feeCents": 23544,
+          "orderId": "R00832",
+          "lastPickupAt": 6680,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g327",
+              "driverId": "pif6-0269",
+              "at": 6849,
+              "feeCents": 23544
+            },
+            {
+              "gigId": "g327",
+              "driverId": "pif6-0417",
+              "at": 9975,
+              "feeCents": 40593
+            },
+            {
+              "gigId": "g327",
+              "driverId": "pif6-0271",
+              "at": 9977,
+              "feeCents": 40593
+            },
+            {
+              "gigId": "g327",
+              "driverId": "pif6-0559",
+              "at": 10052,
+              "feeCents": 40593
+            },
+            {
+              "gigId": "g327",
+              "driverId": "pif6-0102",
+              "at": 10384,
+              "feeCents": 40593
+            }
+          ]
+        },
+        {
+          "seq": 10557,
+          "at": 6849,
+          "kind": "gig_booked",
+          "gigId": "g324",
+          "driverId": "pif6-0390",
+          "feeCents": 6432,
+          "orderId": "R00831",
+          "lastPickupAt": 6839,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g324",
+              "driverId": "pif6-0003",
+              "at": 6842,
+              "feeCents": 6432
+            },
+            {
+              "gigId": "g324",
+              "driverId": "pif6-0510",
+              "at": 6846,
+              "feeCents": 6432
+            },
+            {
+              "gigId": "g324",
+              "driverId": "pif6-0218",
+              "at": 6848,
+              "feeCents": 6432
+            },
+            {
+              "gigId": "g324",
+              "driverId": "pif6-0390",
+              "at": 6849,
+              "feeCents": 6432
+            }
+          ]
+        },
+        {
+          "seq": 10580,
+          "at": 6850,
+          "kind": "gig_booked",
+          "gigId": "g325",
+          "driverId": "pif6-0294",
+          "feeCents": 5836,
+          "orderId": "R00835",
+          "lastPickupAt": 6839,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g325",
+              "driverId": "pif6-0003",
+              "at": 6842,
+              "feeCents": 5836
+            },
+            {
+              "gigId": "g325",
+              "driverId": "pif6-0510",
+              "at": 6846,
+              "feeCents": 5836
+            },
+            {
+              "gigId": "g325",
+              "driverId": "pif6-0390",
+              "at": 6849,
+              "feeCents": 5836
+            },
+            {
+              "gigId": "g325",
+              "driverId": "pif6-0294",
+              "at": 6850,
+              "feeCents": 5836
+            }
+          ]
+        },
+        {
+          "seq": 10642,
+          "at": 6859,
+          "kind": "gig_booked",
+          "gigId": "g328",
+          "driverId": "pif6-0168",
+          "feeCents": 2400,
+          "orderId": "R00628",
+          "lastPickupAt": 6839,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0073",
+              "at": 6847,
+              "feeCents": 2400
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0204",
+              "at": 6847,
+              "feeCents": 2400
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0454",
+              "at": 6857,
+              "feeCents": 2400
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0293",
+              "at": 6858,
+              "feeCents": 2400
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0168",
+              "at": 6859,
+              "feeCents": 2400
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0055",
+              "at": 8443,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0663",
+              "at": 8454,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0219",
+              "at": 8454,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0197",
+              "at": 8456,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0142",
+              "at": 8489,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0105",
+              "at": 8587,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0539",
+              "at": 8672,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0370",
+              "at": 9051,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0118",
+              "at": 9054,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0102",
+              "at": 9078,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0168",
+              "at": 9089,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0686",
+              "at": 9134,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0578",
+              "at": 9142,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0157",
+              "at": 9218,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0524",
+              "at": 9223,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0176",
+              "at": 9231,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0315",
+              "at": 9240,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0180",
+              "at": 9256,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0173",
+              "at": 9261,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0671",
+              "at": 9265,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0421",
+              "at": 9299,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0497",
+              "at": 9310,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0330",
+              "at": 9360,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0026",
+              "at": 9380,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0557",
+              "at": 9396,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0689",
+              "at": 9396,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0293",
+              "at": 9396,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0296",
+              "at": 9420,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0674",
+              "at": 9420,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0643",
+              "at": 9529,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0108",
+              "at": 9554,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0121",
+              "at": 9562,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0649",
+              "at": 9566,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0352",
+              "at": 9568,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0145",
+              "at": 9607,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0360",
+              "at": 9614,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0342",
+              "at": 9619,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0646",
+              "at": 9623,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0204",
+              "at": 9660,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0594",
+              "at": 9663,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0666",
+              "at": 9675,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0100",
+              "at": 9692,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0698",
+              "at": 9724,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0188",
+              "at": 9768,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0427",
+              "at": 9768,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0407",
+              "at": 9807,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0007",
+              "at": 9814,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0025",
+              "at": 9838,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0479",
+              "at": 9875,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0206",
+              "at": 9920,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0146",
+              "at": 9921,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0639",
+              "at": 9942,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0129",
+              "at": 9970,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0520",
+              "at": 9972,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0527",
+              "at": 9980,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0289",
+              "at": 10040,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0569",
+              "at": 10070,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0013",
+              "at": 10098,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0461",
+              "at": 10124,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0085",
+              "at": 10136,
+              "feeCents": 5000
+            }
+          ]
+        },
+        {
+          "seq": 10725,
+          "at": 6877,
+          "kind": "gig_booked",
+          "gigId": "g322",
+          "driverId": "pif6-0157",
+          "feeCents": 10362,
+          "orderId": "R00708",
+          "lastPickupAt": 6787,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g322",
+              "driverId": "pif6-0218",
+              "at": 6848,
+              "feeCents": 10362
+            },
+            {
+              "gigId": "g322",
+              "driverId": "pif6-0269",
+              "at": 6849,
+              "feeCents": 10362
+            },
+            {
+              "gigId": "g322",
+              "driverId": "pif6-0390",
+              "at": 6849,
+              "feeCents": 10362
+            },
+            {
+              "gigId": "g322",
+              "driverId": "pif6-0420",
+              "at": 6853,
+              "feeCents": 10362
+            },
+            {
+              "gigId": "g322",
+              "driverId": "pif6-0471",
+              "at": 6854,
+              "feeCents": 10362
+            },
+            {
+              "gigId": "g322",
+              "driverId": "pif6-0172",
+              "at": 6855,
+              "feeCents": 10362
+            },
+            {
+              "gigId": "g322",
+              "driverId": "pif6-0244",
+              "at": 6856,
+              "feeCents": 10362
+            },
+            {
+              "gigId": "g322",
+              "driverId": "pif6-0154",
+              "at": 6856,
+              "feeCents": 10362
+            },
+            {
+              "gigId": "g322",
+              "driverId": "pif6-0441",
+              "at": 6857,
+              "feeCents": 10362
+            },
+            {
+              "gigId": "g322",
+              "driverId": "pif6-0620",
+              "at": 6858,
+              "feeCents": 10362
+            },
+            {
+              "gigId": "g322",
+              "driverId": "pif6-0570",
+              "at": 6858,
+              "feeCents": 10362
+            },
+            {
+              "gigId": "g322",
+              "driverId": "pif6-0434",
+              "at": 6860,
+              "feeCents": 10362
+            },
+            {
+              "gigId": "g322",
+              "driverId": "pif6-0033",
+              "at": 6860,
+              "feeCents": 10362
+            },
+            {
+              "gigId": "g322",
+              "driverId": "pif6-0332",
+              "at": 6862,
+              "feeCents": 10362
+            },
+            {
+              "gigId": "g322",
+              "driverId": "pif6-0637",
+              "at": 6863,
+              "feeCents": 10362
+            },
+            {
+              "gigId": "g322",
+              "driverId": "pif6-0350",
+              "at": 6865,
+              "feeCents": 10362
+            },
+            {
+              "gigId": "g322",
+              "driverId": "pif6-0364",
+              "at": 6868,
+              "feeCents": 10362
+            },
+            {
+              "gigId": "g322",
+              "driverId": "pif6-0532",
+              "at": 6869,
+              "feeCents": 10362
+            },
+            {
+              "gigId": "g322",
+              "driverId": "pif6-0674",
+              "at": 6870,
+              "feeCents": 10362
+            },
+            {
+              "gigId": "g322",
+              "driverId": "pif6-0041",
+              "at": 6871,
+              "feeCents": 10362
+            },
+            {
+              "gigId": "g322",
+              "driverId": "pif6-0126",
+              "at": 6875,
+              "feeCents": 10362
+            },
+            {
+              "gigId": "g322",
+              "driverId": "pif6-0635",
+              "at": 6876,
+              "feeCents": 10362
+            },
+            {
+              "gigId": "g322",
+              "driverId": "pif6-0671",
+              "at": 6877,
+              "feeCents": 10362
+            },
+            {
+              "gigId": "g322",
+              "driverId": "pif6-0157",
+              "at": 6877,
+              "feeCents": 10362
+            }
+          ]
+        },
+        {
+          "seq": 10795,
+          "at": 6902,
+          "kind": "gig_booked",
+          "gigId": "g333",
+          "driverId": "pif6-0085",
+          "feeCents": 13969,
+          "orderId": "R00687",
+          "lastPickupAt": 6716,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g333",
+              "driverId": "pif6-0085",
+              "at": 6902,
+              "feeCents": 13969
+            }
+          ]
+        },
+        {
+          "seq": 10808,
+          "at": 6904,
+          "kind": "gig_booked",
+          "gigId": "g334",
+          "driverId": "pif6-0561",
+          "feeCents": 2400,
+          "orderId": "R00828",
+          "lastPickupAt": 6899,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g334",
+              "driverId": "pif6-0085",
+              "at": 6902,
+              "feeCents": 2400
+            },
+            {
+              "gigId": "g334",
+              "driverId": "pif6-0437",
+              "at": 6902,
+              "feeCents": 2400
+            },
+            {
+              "gigId": "g334",
+              "driverId": "pif6-0561",
+              "at": 6904,
+              "feeCents": 2400
+            }
+          ]
+        },
+        {
+          "seq": 10839,
+          "at": 6910,
+          "kind": "gig_booked",
+          "gigId": "g335",
+          "driverId": "pif6-0081",
+          "feeCents": 2400,
+          "orderId": "R00830",
+          "lastPickupAt": 6899,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g335",
+              "driverId": "pif6-0085",
+              "at": 6902,
+              "feeCents": 2400
+            },
+            {
+              "gigId": "g335",
+              "driverId": "pif6-0437",
+              "at": 6902,
+              "feeCents": 2400
+            },
+            {
+              "gigId": "g335",
+              "driverId": "pif6-0561",
+              "at": 6904,
+              "feeCents": 2400
+            },
+            {
+              "gigId": "g335",
+              "driverId": "pif6-0387",
+              "at": 6906,
+              "feeCents": 2400
+            },
+            {
+              "gigId": "g335",
+              "driverId": "pif6-0502",
+              "at": 6907,
+              "feeCents": 2400
+            },
+            {
+              "gigId": "g335",
+              "driverId": "pif6-0081",
+              "at": 6910,
+              "feeCents": 2400
+            }
+          ]
+        },
+        {
+          "seq": 10966,
+          "at": 6961,
+          "kind": "gig_booked",
+          "gigId": "g339",
+          "driverId": "pif6-0217",
+          "feeCents": 7477,
+          "orderId": "R00786",
+          "lastPickupAt": 6846,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0217",
+              "at": 6961,
+              "feeCents": 7477
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0089",
+              "at": 9902,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0162",
+              "at": 9904,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0671",
+              "at": 9905,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0085",
+              "at": 9910,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0698",
+              "at": 9932,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0590",
+              "at": 9971,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0289",
+              "at": 9974,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0271",
+              "at": 9977,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0527",
+              "at": 9980,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0051",
+              "at": 10005,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0109",
+              "at": 10008,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0279",
+              "at": 10031,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0461",
+              "at": 10124,
+              "feeCents": 15578
+            }
+          ]
+        },
+        {
+          "seq": 10975,
+          "at": 6963,
+          "kind": "gig_booked",
+          "gigId": "g338",
+          "driverId": "pif6-0140",
+          "feeCents": 25943,
+          "orderId": "R00779",
+          "lastPickupAt": 6671,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g338",
+              "driverId": "pif6-0140",
+              "at": 6963,
+              "feeCents": 25943
+            }
+          ]
+        },
+        {
+          "seq": 10979,
+          "at": 6965,
+          "kind": "gig_booked",
+          "gigId": "g341",
+          "driverId": "pif6-0688",
+          "feeCents": 21903,
+          "orderId": "R00780",
+          "lastPickupAt": 6719,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g341",
+              "driverId": "pif6-0140",
+              "at": 6963,
+              "feeCents": 21903
+            },
+            {
+              "gigId": "g341",
+              "driverId": "pif6-0688",
+              "at": 6965,
+              "feeCents": 21903
+            }
+          ]
+        },
+        {
+          "seq": 10985,
+          "at": 6968,
+          "kind": "gig_booked",
+          "gigId": "g336",
+          "driverId": "pif6-0096",
+          "feeCents": 23419,
+          "orderId": "R00698",
+          "lastPickupAt": 6681,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g336",
+              "driverId": "pif6-0096",
+              "at": 6968,
+              "feeCents": 23419
+            }
+          ]
+        },
+        {
+          "seq": 11020,
+          "at": 6978,
+          "kind": "gig_booked",
+          "gigId": "g340",
+          "driverId": "pif6-0126",
+          "feeCents": 4003,
+          "orderId": "R00808",
+          "lastPickupAt": 6909,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g340",
+              "driverId": "pif6-0140",
+              "at": 6963,
+              "feeCents": 4003
+            },
+            {
+              "gigId": "g340",
+              "driverId": "pif6-0635",
+              "at": 6970,
+              "feeCents": 4003
+            },
+            {
+              "gigId": "g340",
+              "driverId": "pif6-0667",
+              "at": 6971,
+              "feeCents": 4003
+            },
+            {
+              "gigId": "g340",
+              "driverId": "pif6-0671",
+              "at": 6973,
+              "feeCents": 4003
+            },
+            {
+              "gigId": "g340",
+              "driverId": "pif6-0126",
+              "at": 6978,
+              "feeCents": 4003
+            }
+          ]
+        },
+        {
+          "seq": 11035,
+          "at": 6983,
+          "kind": "gig_booked",
+          "gigId": "g337",
+          "driverId": "pif6-0293",
+          "feeCents": 20575,
+          "orderId": "R00699",
+          "lastPickupAt": 6681,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g337",
+              "driverId": "pif6-0096",
+              "at": 6968,
+              "feeCents": 20575
+            },
+            {
+              "gigId": "g337",
+              "driverId": "pif6-0459",
+              "at": 6980,
+              "feeCents": 20575
+            },
+            {
+              "gigId": "g337",
+              "driverId": "pif6-0293",
+              "at": 6983,
+              "feeCents": 20575
+            }
+          ]
+        },
+        {
+          "seq": 11780,
+          "at": 10124,
+          "kind": "gig_booked",
+          "gigId": "g339",
+          "driverId": "pif6-0461",
+          "feeCents": 15578,
+          "orderId": "R00786",
+          "lastPickupAt": 6846,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0217",
+              "at": 6961,
+              "feeCents": 7477
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0089",
+              "at": 9902,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0162",
+              "at": 9904,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0671",
+              "at": 9905,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0085",
+              "at": 9910,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0698",
+              "at": 9932,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0590",
+              "at": 9971,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0289",
+              "at": 9974,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0271",
+              "at": 9977,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0527",
+              "at": 9980,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0051",
+              "at": 10005,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0109",
+              "at": 10008,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0279",
+              "at": 10031,
+              "feeCents": 15578
+            },
+            {
+              "gigId": "g339",
+              "driverId": "pif6-0461",
+              "at": 10124,
+              "feeCents": 15578
+            }
+          ]
+        },
+        {
+          "seq": 11786,
+          "at": 10136,
+          "kind": "gig_booked",
+          "gigId": "g328",
+          "driverId": "pif6-0085",
+          "feeCents": 5000,
+          "orderId": "R00628",
+          "lastPickupAt": 6839,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0073",
+              "at": 6847,
+              "feeCents": 2400
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0204",
+              "at": 6847,
+              "feeCents": 2400
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0454",
+              "at": 6857,
+              "feeCents": 2400
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0293",
+              "at": 6858,
+              "feeCents": 2400
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0168",
+              "at": 6859,
+              "feeCents": 2400
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0055",
+              "at": 8443,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0663",
+              "at": 8454,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0219",
+              "at": 8454,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0197",
+              "at": 8456,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0142",
+              "at": 8489,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0105",
+              "at": 8587,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0539",
+              "at": 8672,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0370",
+              "at": 9051,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0118",
+              "at": 9054,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0102",
+              "at": 9078,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0168",
+              "at": 9089,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0686",
+              "at": 9134,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0578",
+              "at": 9142,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0157",
+              "at": 9218,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0524",
+              "at": 9223,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0176",
+              "at": 9231,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0315",
+              "at": 9240,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0180",
+              "at": 9256,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0173",
+              "at": 9261,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0671",
+              "at": 9265,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0421",
+              "at": 9299,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0497",
+              "at": 9310,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0330",
+              "at": 9360,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0026",
+              "at": 9380,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0557",
+              "at": 9396,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0689",
+              "at": 9396,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0293",
+              "at": 9396,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0296",
+              "at": 9420,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0674",
+              "at": 9420,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0643",
+              "at": 9529,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0108",
+              "at": 9554,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0121",
+              "at": 9562,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0649",
+              "at": 9566,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0352",
+              "at": 9568,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0145",
+              "at": 9607,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0360",
+              "at": 9614,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0342",
+              "at": 9619,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0646",
+              "at": 9623,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0204",
+              "at": 9660,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0594",
+              "at": 9663,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0666",
+              "at": 9675,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0100",
+              "at": 9692,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0698",
+              "at": 9724,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0188",
+              "at": 9768,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0427",
+              "at": 9768,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0407",
+              "at": 9807,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0007",
+              "at": 9814,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0025",
+              "at": 9838,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0479",
+              "at": 9875,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0206",
+              "at": 9920,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0146",
+              "at": 9921,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0639",
+              "at": 9942,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0129",
+              "at": 9970,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0520",
+              "at": 9972,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0527",
+              "at": 9980,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0289",
+              "at": 10040,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0569",
+              "at": 10070,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0013",
+              "at": 10098,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0461",
+              "at": 10124,
+              "feeCents": 5000
+            },
+            {
+              "gigId": "g328",
+              "driverId": "pif6-0085",
+              "at": 10136,
+              "feeCents": 5000
+            }
+          ]
+        },
+        {
+          "seq": 11799,
+          "at": 10384,
+          "kind": "gig_booked",
+          "gigId": "g327",
+          "driverId": "pif6-0102",
+          "feeCents": 40593,
+          "orderId": "R00832",
+          "lastPickupAt": 6680,
+          "deadline": 6960,
+          "views": [
+            {
+              "gigId": "g327",
+              "driverId": "pif6-0269",
+              "at": 6849,
+              "feeCents": 23544
+            },
+            {
+              "gigId": "g327",
+              "driverId": "pif6-0417",
+              "at": 9975,
+              "feeCents": 40593
+            },
+            {
+              "gigId": "g327",
+              "driverId": "pif6-0271",
+              "at": 9977,
+              "feeCents": 40593
+            },
+            {
+              "gigId": "g327",
+              "driverId": "pif6-0559",
+              "at": 10052,
+              "feeCents": 40593
+            },
+            {
+              "gigId": "g327",
+              "driverId": "pif6-0102",
+              "at": 10384,
+              "feeCents": 40593
+            }
+          ]
+        }
+      ],
+      "actionErrors": []
+    }
+  ]
+}

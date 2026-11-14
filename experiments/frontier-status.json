@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-14T00:49:28.395530+00:00",
+  "updatedAt": "2026-11-14T00:59:29.494555+00:00",
   "objective": "Continue systematic search toward the global optimum; practice only, no ranking submission.",
   "maximumConcurrentPlays": 4,
   "currentConcurrency": {
-    "ourActivePlays": 0,
-    "note": "All16 fresh evaluation worlds,4 hours-screen worlds,4 hours-confirmation worlds finished. Offer probe base and all30 temporary forks deleted after saving evidence."
+    "maximumConcurrentPlays": 4,
+    "note": "Four ordinary confirmation worlds running; source and settings frozen."
   },
   "completedCombinationStudy": {
     "sessionId": 84558,
@@ -65,15 +65,15 @@
     "700km-only bundle treatment ends at7407.63/9410.50 euros, minimum96.6% on time. It gains versus the old baseline in both weeks but not versus bundles alone. No900km experiment scheduled."
   ],
   "nextSteps": [
-    "No studies currently running. Keep the frozen volume-plus-bundles policy as the best independently validated incumbent.",
-    "Do not promote note-hours: confirmation failed. Do not repeat the ineffective profile-selected offer-window variant without new evidence.",
-    "Continue structural optimization on old development seeds only. Potential next screen: whether steep rescue fees remain economically justified once on-time delivery is already impossible; quantify the opportunity before using plays.",
-    "Maintain at most4 unfinished plays and no ranking/final submissions. Do not tune on the completed eight-week fresh frontier evaluation and still call it unseen.",
-    "Semi-regularly push coherent checkpoints to codex/standalone-dispatcher."
+    "Poll confirmation session19904; collect all4 old-seed outcomes, including no-exposure controls09/14. Verify explicit protocol criteria before further action.",
+    "If confirmation passes, use only the8 seeds reserved in experiments/late-rescue-reserved-seeds.json for a fresh paired comparison against frozen volume+bundles source36a. Freeze selection and exactsource/settings first. Do not use the older f8 source as the new baseline.",
+    "Maintain at most4 unfinished plays. No ranking or final submissions.",
+    "Keep note-hours and profile-selected offer-window variants disabled; neither passed its required evidence threshold.",
+    "Push coherent checkpoints to codex/standalone-dispatcher."
   ],
   "validationStatus": "All16 fresh paired trials complete. Candidate mean10411.59 euros versus8242.34, +26.32%;7/8 positive;8/8 qualified; minimum94.94% on time; no undelivered orders. Full report docs/frontier-validation.md. No ranking submission.",
   "checks": {
-    "nodeSuite": 94,
+    "nodeSuite": 98,
     "researchTests": 8,
     "pythonReportTests": 9,
     "typecheck": "passed"
@@ -133,6 +133,11 @@
       "baseDeleted": true,
       "evidence": "docs/offer-window-probe.json",
       "finding": "Ten jobs before15:00; no accepted offers among30 in either offer arm. Normal public posting booked8/10 within30min; the10-minute cheap-public phase booked7/10. No measured fee saving. Do not integrate profile-selected opening offers based on this result."
+    },
+    "lateRescue": {
+      "screen": "docs/late-rescue-screen.json",
+      "result": "docs/late-rescue-results.json",
+      "finding": "After-last-pickup paid fees expose1098.63 euros/week above opening fee in6 old development weeks. A six-hour bounded reset gains891.79/1273.40 euros on enriched seeds10/15, both qualified and no undelivered orders or action errors. Four broader development weeks running; no promotion yet."
     }
   },
   "completedFreshEvaluation": {
@@ -205,5 +210,36 @@
     },
     "decision": "Not selected: mean gain -274.725 euros, only2/4 positive. All4 qualified; no parsed-hours failed visits or undelivered orders."
   },
-  "currentStudy": null
+  "currentStudy": {
+    "sessionId": 19904,
+    "kind": "Late-rescue development confirmation",
+    "plan": "experiments/plans/late-rescue-confirmation.json",
+    "protocol": "experiments/late-rescue-confirmation-protocol.json",
+    "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+    "maximumJobs": 4,
+    "trials": 4,
+    "frozenBundle": "runs/frozen/4de3c61aece07401bd4e610a35fb52bf3e2f441826c43567a2a923c5d8aadcae/6a3646054553eee8eb07f5ca7e89f35b199e632e4c1d2462d1bcf7dc681d0e2a",
+    "manifest": "experiments/late-rescue-confirmation-manifest.json",
+    "worlds": [
+      "w9092313fc502252b79ab",
+      "w488ffad22efd5faf742a",
+      "w3faccc007c8c0bd5ff41",
+      "wa7bcf5d1654b6d337c61"
+    ]
+  },
+  "completedLateRescueScreen": {
+    "sessionId": 76830,
+    "terminal": true,
+    "study": "runs/study-1794617852564.json",
+    "protocol": "experiments/late-rescue-protocol.json",
+    "manifest": "experiments/late-rescue-manifest.json",
+    "summary": {
+      "pairs": 2,
+      "meanGainCents": 108259.5,
+      "positivePairs": 2,
+      "qualifiedTreatments": 2,
+      "undeliveredTreatments": 0,
+      "minimumTreatmentOnTimeShare": 0.9361702127659575
+    }
+  }
 }

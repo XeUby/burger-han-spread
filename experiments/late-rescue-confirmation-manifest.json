@@ -1,0 +1,26 @@
+{
+  "protocol": "experiments/late-rescue-confirmation-protocol.json",
+  "protocolSha256": "41ab5bad2a177ab7296b0eab44bf40df826de71a81cd0cbce8312b54b13ccec5",
+  "worlds": [
+    {
+      "worldId": "w9092313fc502252b79ab",
+      "label": "late-rescue-confirmation",
+      "seed": "formal-unseen-20261113-09"
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "label": "late-rescue-confirmation",
+      "seed": "formal-unseen-20261113-12"
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "label": "late-rescue-confirmation",
+      "seed": "formal-unseen-20261113-14"
+    },
+    {
+      "worldId": "wa7bcf5d1654b6d337c61",
+      "label": "late-rescue-confirmation",
+      "seed": "formal-unseen-20261113-16"
+    }
+  ]
+}

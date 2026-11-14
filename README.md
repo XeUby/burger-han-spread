@@ -26,6 +26,8 @@ The selected source is frozen under `experiments/frontier/candidate/`; the previ
 
 Development selection used [screening trials](docs/frontier-experiments.md) and a [four-week confirmation](docs/frontier-confirmation.md). A separate note-hours treatment passed an initial screen but [failed confirmation](docs/note-hours-confirmation.md), so it remains disabled. A controlled [direct-offer head-start probe](docs/offer-window-probe.json) also found no benefit. [Current experiment state](experiments/frontier-status.json) records runs and decisions. No ranking submission has been made by this research.
 
+A bounded fee reset after on-time pickup is already impossible gained €891.79 and €1,273.40 in two deliberately high-exposure development weeks. [Complete screening evidence](docs/late-rescue-results.md) includes all costs and refunds. Broader confirmation is running; this feature is not enabled in the validated incumbent.
+
 Both study runners cap workers at four, serialize their own creations, and check total unfinished server worlds before each creation. Coordinate separate runners so their creation checks cannot race. Raw world logs and credentials remain local.
 
 ## Method
@@ -57,7 +59,7 @@ Run the exact latest validated bundle source on an ordinary practice seed:
 node --env-file=.env experiments/frontier/candidate/src/run.ts --seed new-bundle-trial-1 --config '{"capacity":0.35,"backlog":0.08,"minDrivers":8,"maxKm":700,"bundleWait":15}'
 ```
 
-The optimized policy is the default. Its complete settings are in [final-config.json](experiments/final-config.json). Runtime and integration tests: **94 passing**; isolated research tests: **8 passing**; statistical-report tests: **9 passing**. TypeScript checks include the experiment launchers.
+The earlier optimized policy is the default. Its complete settings are in [final-config.json](experiments/final-config.json). Runtime and integration tests: **98 passing**; isolated research tests: **8 passing**; statistical-report tests: **9 passing**. TypeScript checks include the experiment launchers.
 
 To play an active test final or final:
 

@@ -1,0 +1,26 @@
+{
+  "protocol": "experiments/late-rescue-protocol.json",
+  "protocolSha256": "a2d9a0f0989ba379034ebb826dff37c4d3e8db88448716bd7e8c4b2dff404125",
+  "worlds": [
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "label": "late-rescue-control",
+      "seed": "formal-unseen-20261113-10"
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "label": "late-rescue-treatment",
+      "seed": "formal-unseen-20261113-10"
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "label": "late-rescue-control",
+      "seed": "formal-unseen-20261113-15"
+    },
+    {
+      "worldId": "w6893e7d9cdd984154dfe",
+      "label": "late-rescue-treatment",
+      "seed": "formal-unseen-20261113-15"
+    }
+  ]
+}
