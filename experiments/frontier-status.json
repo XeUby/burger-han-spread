@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-14T01:43:36.427780+00:00",
+  "updatedAt": "2026-11-14T01:58:27.083819+00:00",
   "objective": "Continue systematic search toward the global optimum; practice only, no ranking submission.",
   "maximumConcurrentPlays": 4,
   "currentConcurrency": {
     "maximumConcurrentPlays": 4,
     "activeRunners": 1,
-    "note": "Four-worker frozen confirmation28218 is active. Screening63242 and semantics10721 are terminal."
+    "note": "Fresh paired runner2482 owns experiments/note-spelling-validation-manifest.json. Do not edit its live manifest or launch the fee-anchor probe before it ends."
   },
   "completedCombinationStudy": {
     "sessionId": 84558,
@@ -66,16 +66,16 @@
     "700km-only bundle treatment ends at7407.63/9410.50 euros, minimum96.6% on time. It gains versus the old baseline in both weeks but not versus bundles alone. No900km experiment scheduled."
   ],
   "nextSteps": [
-    "Poll frozen confirmation28218. Do not restart after an observation timeout or tune the candidate while it runs.",
-    "After all four trials finish run python3 analysis/note_spelling_report.py --confirmation. Enforce the predeclared gate including all whole-week costs and no failed visits among corrected-note orders.",
-    "Only if confirmation passes, reserve eight genuinely new paired seeds and freeze an independent evaluation against validated16d late-rescue baseline. Do not reuse either prior fresh panel as unseen.",
-    "Keep noteSpelling disabled in the default until independent evidence warrants promotion. Source1970 with flag off matches validated16d on5614 replayed actions and both screening controls to the cent.",
-    "Maintain at most4 unfinished plays. No ranking or live final submissions. Push coherent checkpoints to codex/standalone-dispatcher."
+    "Poll fresh paired session2482 without restarting. Candidate and baseline source/settings are immutable; all16 attempts remain in the manifest.",
+    "When terminal, run python3 analysis/frontier_validation.py --manifest experiments/note-spelling-validation-manifest.json --output docs/note-spelling-validation and python3 analysis/note_spelling_audit.py. Apply the declared promotion rule without tuning to the panel.",
+    "Only after every other play ends, run the prepared3-arm fee-anchor mechanism probe. It tests creation-fee history while restoring identical visible fees before each clock advance. It is not a live-safe implementation.",
+    "Keep noteSpelling disabled by default unless fresh evidence clears the declared rule. Preserve the validated late-rescue source and report.",
+    "Maintain at most4 unfinished plays; no ranking or final submissions. Push coherent checkpoints to codex/standalone-dispatcher."
   ],
   "validationStatus": "All16 fresh paired trials complete. Candidate mean10411.59 euros versus8242.34, +26.32%;7/8 positive;8/8 qualified; minimum94.94% on time; no undelivered orders. Full report docs/frontier-validation.md. No ranking submission.",
   "checks": {
     "nodeSuite": 101,
-    "researchTests": 8,
+    "researchTests": 11,
     "pythonReportTests": 9,
     "typecheck": "passed"
   },
@@ -255,15 +255,13 @@
     "decision": "Passed the predeclared criteria: all4 qualified with no undelivered orders, +208.64 euros on12 and exact unchanged ledgers on09/14/16. The2 rejected reprices on16 also occur in its control."
   },
   "currentStudy": {
-    "sessionId": 28218,
-    "kind": "note-spelling development confirmation",
+    "sessionId": 2482,
+    "kind": "note-spelling fresh paired evaluation",
     "terminal": false,
-    "trials": 4,
-    "plan": "experiments/plans/note-spelling-confirmation.json",
-    "manifest": "experiments/note-spelling-confirmation-manifest.json",
-    "protocol": "experiments/note-spelling-confirmation-protocol.json",
-    "revision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa",
-    "bundle": "runs/frozen/8958e7182cdfd9f50229b29213816721203c7fdc7fa8eb301d12dd1c1205742b/d0a42cc24fae9f1490f357409412626a82100d49ab606dc28aea9f5f16b8d219"
+    "trials": 16,
+    "manifest": "experiments/note-spelling-validation-manifest.json",
+    "baselineRevision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+    "candidateRevision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa"
   },
   "runtimeDefault": {
     "selection": "experiments/current-selection.json",
@@ -353,6 +351,33 @@
       "failedVisits": 0,
       "errors": 0,
       "controlsReproduceArchivedMarginsToCent": true
+    },
+    "confirmation": {
+      "sessionId": 28218,
+      "terminal": true,
+      "study": "runs/study-1794620709519.json",
+      "report": "docs/note-spelling-confirmation.json",
+      "audit": "docs/note-spelling-confirmation-audit.json",
+      "summary": {
+        "pairs": 4,
+        "meanGainCents": 60075,
+        "minimumGainCents": 28851,
+        "qualifiedTreatments": 4,
+        "undeliveredTreatments": 0,
+        "correctedOrders": 40,
+        "lateCorrectedOrders": 0,
+        "correctedOrderFailedVisits": 0,
+        "gatePassed": true
+      }
     }
+  },
+  "feeAnchorProbe": {
+    "protocol": "experiments/fee-anchor-protocol.json",
+    "status": "prepared, not launched",
+    "plays": 3,
+    "source": "research/fee-anchor/probe.ts",
+    "testsPassed": 3,
+    "launchConstraint": "No unfinished practice worlds; never compete with the live paired runner.",
+    "limitation": "Zero-time restoration in practice does not establish live-clock safety."
   }
 }

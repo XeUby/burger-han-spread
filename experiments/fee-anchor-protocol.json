@@ -1,0 +1,61 @@
+{
+  "declaredAt": "2026-11-14T01:52:33.273638+00:00",
+  "hypothesis": "A gig may retain its creation fee as a learning reference even when repriced before the practice clock advances. Changing that reference alone could alter drivers later willingness to wait for raises. This is unproven.",
+  "scope": "Three complete ordinary-practice arms on one old high-rescue development seed, same frozen late-rescue policy and intended visible fee schedules. No ranking or live final.",
+  "seed": "formal-unseen-20261113-15",
+  "bundle": "experiments/frontier/late-rescue",
+  "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+  "settings": {
+    "price": 1.42,
+    "fee": 1.05,
+    "margin": 0.1,
+    "capacity": 0.35,
+    "maxKm": 700,
+    "minDrivers": 8,
+    "notes": true,
+    "adaptive": true,
+    "earlyOffers": false,
+    "safetySlack": false,
+    "auction": false,
+    "allowPrivate": false,
+    "tradeIns": false,
+    "homeOffers": false,
+    "readiness": false,
+    "bundlePairs": true,
+    "sameDayPremium": 1,
+    "laterDiscount": 1,
+    "placePrior": 0,
+    "bundleWait": 15,
+    "backlog": 0.08,
+    "priceFloor": 0,
+    "costRatio": 1.15,
+    "trustStep": 0.01,
+    "sameDayBacklog": 4,
+    "demandSlope": 14,
+    "timedNotes": false,
+    "lateRescue": true
+  },
+  "factors": [
+    0.5,
+    1,
+    2
+  ],
+  "files": {
+    "research/fee-anchor/probe.ts": "556781cdb6770b56573ffced1a8e51f22baa020275d3f35f98f0144d05b51a3b",
+    "research/fee-anchor/transport.ts": "1006a41ab0472ac2fd98474a09b9de227bb74bbbe10bb5afec6e3c0470d10417"
+  },
+  "control": "Factor1 follows identical post-then-restore calls; compare its whole-week result with archived controlw6893e7d9cdd984154dfe as an additional call-order check.",
+  "archivedControl": "w6893e7d9cdd984154dfe",
+  "method": "Apply all pending actions without advancing. Multiply only newly posted fee schedules by the arm factor, then restore every successful post to its original schedule. Only then advance. Restore the original action acknowledgements to the unchanged dispatcher and journal every changed post and restoration.",
+  "failureRule": "Any missing acknowledgement, uncertain mutation or refused restoration stops that arm before advancing. Retain it as a failed attempt, never silently replace it.",
+  "decision": "Inspect the first public event divergence and complete-week margin, fees, delivery and drops. Identical whole event histories across factors would reject this mechanism on the tested stream. A nonzero difference is mechanism evidence only; confirm on another old seed before policy selection.",
+  "maximumConcurrentPlays": 4,
+  "probePlays": 3,
+  "launchConstraint": "Refuse to start while any other practice world is unfinished. Do not compete with the active fresh spelling evaluation.",
+  "limitations": [
+    "No fee-learning internal state is observed; an event difference can establish sensitivity to creation/reprice history but cannot uniquely identify the implementation.",
+    "The practice clock stands still between calls. A live clock can move before restoration, exposing the temporary fee; a useful practice effect is not a live-safe policy without testing delayed restoration.",
+    "All arms keep the intended visible fees unchanged at each clock advance. This probe does not yet test cheaper intended fees."
+  ],
+  "frozenAt": "2026-11-14T01:57:08.839239+00:00"
+}

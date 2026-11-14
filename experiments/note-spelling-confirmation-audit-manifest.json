@@ -1,0 +1,95 @@
+{
+  "selectionFrozenAt": "2026-11-14T01:42:22.409179+00:00",
+  "unseenDeclaration": "Old development confirmation used to verify note semantics; not independent validation.",
+  "baseline": {
+    "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+    "bundle": "experiments/frontier/late-rescue",
+    "settings": {
+      "price": 1.42,
+      "fee": 1.05,
+      "margin": 0.1,
+      "capacity": 0.35,
+      "maxKm": 700,
+      "minDrivers": 8,
+      "notes": true,
+      "adaptive": true,
+      "earlyOffers": false,
+      "safetySlack": false,
+      "auction": false,
+      "allowPrivate": false,
+      "tradeIns": false,
+      "homeOffers": false,
+      "readiness": false,
+      "bundlePairs": true,
+      "timedNotes": false,
+      "lateRescue": true,
+      "sameDayPremium": 1,
+      "laterDiscount": 1,
+      "placePrior": 0,
+      "bundleWait": 15,
+      "backlog": 0.08,
+      "priceFloor": 0,
+      "costRatio": 1.15,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "demandSlope": 14
+    }
+  },
+  "candidate": {
+    "revision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa",
+    "bundle": "experiments/frontier/note-spelling",
+    "settings": {
+      "price": 1.42,
+      "fee": 1.05,
+      "margin": 0.1,
+      "capacity": 0.35,
+      "maxKm": 700,
+      "minDrivers": 8,
+      "notes": true,
+      "noteSpelling": true,
+      "adaptive": true,
+      "earlyOffers": false,
+      "safetySlack": false,
+      "auction": false,
+      "allowPrivate": false,
+      "tradeIns": false,
+      "homeOffers": false,
+      "readiness": false,
+      "bundlePairs": true,
+      "timedNotes": false,
+      "lateRescue": true,
+      "sameDayPremium": 1,
+      "laterDiscount": 1,
+      "placePrior": 0,
+      "bundleWait": 15,
+      "backlog": 0.08,
+      "priceFloor": 0,
+      "costRatio": 1.15,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "demandSlope": 14
+    }
+  },
+  "pairs": [
+    {
+      "seed": "formal-unseen-20261113-09",
+      "baselineWorldId": "w9092313fc502252b79ab",
+      "candidateWorldId": "wba03b8b4a03344ef49c2"
+    },
+    {
+      "seed": "formal-unseen-20261113-10",
+      "baselineWorldId": "w47c0ea9c41007983b01e",
+      "candidateWorldId": "we0ac74d423b2b6b67210"
+    },
+    {
+      "seed": "formal-unseen-20261113-12",
+      "baselineWorldId": "w488ffad22efd5faf742a",
+      "candidateWorldId": "wb13de58d75398916c47e"
+    },
+    {
+      "seed": "formal-unseen-20261113-16",
+      "baselineWorldId": "wa7bcf5d1654b6d337c61",
+      "candidateWorldId": "w4195b508b871fa206908"
+    }
+  ]
+}

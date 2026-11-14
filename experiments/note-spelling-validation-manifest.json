@@ -1,0 +1,248 @@
+{
+  "selectionFrozenAt": "2026-11-14T01:48:17.588583+00:00",
+  "labelPrefix": "note-spelling-evaluation",
+  "unseenDeclaration": "All8 cryptographically random seeds reserved after development confirmation and before any play. Neither this panel nor earlier fresh panels will be used for tuning while still called unseen.",
+  "reservation": {
+    "reservedAt": "2026-11-14T01:48:17.588583+00:00",
+    "purpose": "Fresh paired evaluation after fixed spelling candidate passed both predeclared development gates. None of these seeds has been played or inspected.",
+    "seeds": [
+      "note-spelling-unseen-20261114-f78979dd4e5b3a7c",
+      "note-spelling-unseen-20261114-8bc883348a90d012",
+      "note-spelling-unseen-20261114-df5da3c0bccf1e98",
+      "note-spelling-unseen-20261114-b0a0611536d3eb20",
+      "note-spelling-unseen-20261114-309e12dc0f90a102",
+      "note-spelling-unseen-20261114-5914d58b5b701bdc",
+      "note-spelling-unseen-20261114-6e740a3630050c2d",
+      "note-spelling-unseen-20261114-c07ddff01f6c5f00"
+    ]
+  },
+  "baseline": {
+    "bundle": "experiments/frontier/late-rescue",
+    "role": "selected candidate: volume+bundles+late-rescue; eight fresh paired weeks validated",
+    "settings": {
+      "price": 1.42,
+      "fee": 1.05,
+      "margin": 0.1,
+      "capacity": 0.35,
+      "maxKm": 700,
+      "minDrivers": 8,
+      "notes": true,
+      "adaptive": true,
+      "earlyOffers": false,
+      "safetySlack": false,
+      "auction": false,
+      "allowPrivate": false,
+      "tradeIns": false,
+      "homeOffers": false,
+      "readiness": false,
+      "bundlePairs": true,
+      "sameDayPremium": 1,
+      "laterDiscount": 1,
+      "placePrior": 0,
+      "bundleWait": 15,
+      "backlog": 0.08,
+      "priceFloor": 0,
+      "costRatio": 1.15,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "demandSlope": 14,
+      "timedNotes": false,
+      "lateRescue": true
+    },
+    "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef"
+  },
+  "candidate": {
+    "bundle": "experiments/frontier/note-spelling",
+    "role": "note-spelling candidate; development confirmation passed, fresh evaluation pending",
+    "settings": {
+      "price": 1.42,
+      "fee": 1.05,
+      "margin": 0.1,
+      "capacity": 0.35,
+      "maxKm": 700,
+      "minDrivers": 8,
+      "notes": true,
+      "noteSpelling": true,
+      "adaptive": true,
+      "earlyOffers": false,
+      "safetySlack": false,
+      "auction": false,
+      "allowPrivate": false,
+      "tradeIns": false,
+      "homeOffers": false,
+      "readiness": false,
+      "bundlePairs": true,
+      "timedNotes": false,
+      "lateRescue": true,
+      "sameDayPremium": 1,
+      "laterDiscount": 1,
+      "placePrior": 0,
+      "bundleWait": 15,
+      "backlog": 0.08,
+      "priceFloor": 0,
+      "costRatio": 1.15,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "demandSlope": 14
+    },
+    "revision": "1970e8fd325bb2a6de0154dba9a44f3b0816ad2e3a6f878a0a8368b7312681fa"
+  },
+  "promotionRule": "Require all8 candidate weeks qualified, no undelivered orders, positive mean paired gain with a positive95% paired bootstrap lower endpoint, and no unmodeled restrictions or failed visits on corrected-note orders. Inspect all operational errors and keep all attempts.",
+  "bootstrap": {
+    "samples": 10000,
+    "seed": 2026111402
+  },
+  "maximumConcurrentPlays": 4,
+  "pairs": [
+    {
+      "seed": "note-spelling-unseen-20261114-f78979dd4e5b3a7c",
+      "baselineWorldId": "w8c4afff7ce388130bd35",
+      "candidateWorldId": "wd4f662403988d00ca037"
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-8bc883348a90d012",
+      "baselineWorldId": "w0be5b75baa67039789b8",
+      "candidateWorldId": "w1299cdda80236cab3770"
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-df5da3c0bccf1e98",
+      "baselineWorldId": "wddbfe455d9d22b4aa67c",
+      "candidateWorldId": "we2331462004a20b30ac5"
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-b0a0611536d3eb20",
+      "baselineWorldId": "wb6570508fe39f334178a",
+      "candidateWorldId": "wf7c45bf5664bf3a25125"
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-309e12dc0f90a102",
+      "baselineWorldId": "wf8fe012802581848040f",
+      "candidateWorldId": "w2e9187237875066192e1"
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-5914d58b5b701bdc",
+      "baselineWorldId": "w3fc02045dd321beb8d6f",
+      "candidateWorldId": "w4db41aefe518eca7aac9"
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-6e740a3630050c2d",
+      "baselineWorldId": "w05c7c136c1ff39724db3",
+      "candidateWorldId": "wb938037efdc55437d704"
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-c07ddff01f6c5f00",
+      "baselineWorldId": "w0a2762d880b912ef91d1",
+      "candidateWorldId": "wc93886b2b5bc4b534125"
+    }
+  ],
+  "attempts": [
+    {
+      "seed": "note-spelling-unseen-20261114-f78979dd4e5b3a7c",
+      "side": "baseline",
+      "worldId": "w8c4afff7ce388130bd35",
+      "startedAt": "2026-11-14T01:48:30.284Z",
+      "completedAt": "2026-11-14T01:51:13.948Z"
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-f78979dd4e5b3a7c",
+      "side": "candidate",
+      "worldId": "wd4f662403988d00ca037",
+      "startedAt": "2026-11-14T01:48:30.432Z",
+      "completedAt": "2026-11-14T01:51:15.951Z"
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-8bc883348a90d012",
+      "side": "baseline",
+      "worldId": "w0be5b75baa67039789b8",
+      "startedAt": "2026-11-14T01:48:30.616Z",
+      "completedAt": "2026-11-14T01:51:07.912Z"
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-8bc883348a90d012",
+      "side": "candidate",
+      "worldId": "w1299cdda80236cab3770",
+      "startedAt": "2026-11-14T01:48:30.812Z",
+      "completedAt": "2026-11-14T01:51:13.618Z"
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-df5da3c0bccf1e98",
+      "side": "baseline",
+      "worldId": "wddbfe455d9d22b4aa67c",
+      "startedAt": "2026-11-14T01:51:08.135Z",
+      "completedAt": "2026-11-14T01:53:36.606Z"
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-df5da3c0bccf1e98",
+      "side": "candidate",
+      "worldId": "we2331462004a20b30ac5",
+      "startedAt": "2026-11-14T01:51:13.841Z",
+      "completedAt": "2026-11-14T01:53:43.636Z"
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-b0a0611536d3eb20",
+      "side": "baseline",
+      "worldId": "wb6570508fe39f334178a",
+      "startedAt": "2026-11-14T01:51:14.190Z",
+      "completedAt": "2026-11-14T01:53:38.016Z"
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-b0a0611536d3eb20",
+      "side": "candidate",
+      "worldId": "wf7c45bf5664bf3a25125",
+      "startedAt": "2026-11-14T01:51:16.141Z",
+      "completedAt": "2026-11-14T01:53:39.548Z"
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-309e12dc0f90a102",
+      "side": "baseline",
+      "worldId": "wf8fe012802581848040f",
+      "startedAt": "2026-11-14T01:53:36.795Z",
+      "completedAt": "2026-11-14T01:56:22.022Z"
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-309e12dc0f90a102",
+      "side": "candidate",
+      "worldId": "w2e9187237875066192e1",
+      "startedAt": "2026-11-14T01:53:38.185Z",
+      "completedAt": "2026-11-14T01:56:36.799Z"
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-5914d58b5b701bdc",
+      "side": "baseline",
+      "worldId": "w3fc02045dd321beb8d6f",
+      "startedAt": "2026-11-14T01:53:39.767Z",
+      "completedAt": "2026-11-14T01:56:37.800Z"
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-5914d58b5b701bdc",
+      "side": "candidate",
+      "worldId": "w4db41aefe518eca7aac9",
+      "startedAt": "2026-11-14T01:53:43.780Z",
+      "completedAt": "2026-11-14T01:56:41.155Z"
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-6e740a3630050c2d",
+      "side": "baseline",
+      "worldId": "w05c7c136c1ff39724db3",
+      "startedAt": "2026-11-14T01:56:22.170Z"
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-6e740a3630050c2d",
+      "side": "candidate",
+      "worldId": "wb938037efdc55437d704",
+      "startedAt": "2026-11-14T01:56:37.020Z"
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-c07ddff01f6c5f00",
+      "side": "baseline",
+      "worldId": "w0a2762d880b912ef91d1",
+      "startedAt": "2026-11-14T01:56:38.039Z"
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-c07ddff01f6c5f00",
+      "side": "candidate",
+      "worldId": "wc93886b2b5bc4b534125",
+      "startedAt": "2026-11-14T01:56:41.579Z"
+    }
+  ]
+}
