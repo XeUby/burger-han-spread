@@ -2,6 +2,16 @@
 
 **Latest capacity instruction: this assistant may run at most FOUR concurrent worlds.** The shared team cap remains EIGHT unfinished worlds. Use at most4own workers, count existing team worlds under the shared lock, and let previously launched runs drain. See `experiments/team-capacity-policy.json`.
 
+## Accepted-work fulfillment-cost diagnostic
+
+`research/cost-audit/report.py` and `docs/fulfillment-cost-diagnostic.json` compare executed acquisition forecasts with realized driver fees for all eligible accepted orders in the eight incumbent and six single-option development weeks. Input artifact hashes are verified. Anchored quotes, cancelled orders and any order ever included in a multi-order gig are excluded, so no shared fees are allocated. Conditional fee predictions are recovered from the scenario revenue and failure-penalty identity; two tests check probability/failure reconstruction and rejection of zero probability. Later solo repost fees remain included.
+
+The incumbent has1,317 eligible orders out of2,423 awards: actual fees average83.40% of predicted fees across weeks, with actual-minus-predicted averaging−€2,386.00/week. The rejected single-option variant has1,047 eligible orders out of2,025 awards:84.46% and−€2,357.77/week. Every audited week overpredicts fees on this selected subset. These results contradict broad underprediction as an established explanation for the option policy's loss. They do not identify costs for rejected work, validate bundled costs or justify a global downward correction. Eligibility uses future awards and bundling; this is retrospective diagnosis, not causal model validation or a policy comparison. Refunds, capacity and other costs are outside this fee-only diagnostic.
+
+The earlier joint-acquisition screen (`docs/joint-acquisition-screen.json`) estimated only€88.46/week incremental pricing value under its restricted assumptions. Do not treat that as evidence that a narrowly added pair-pricing mechanism will close the competitive gap. The next structural hypothesis must distinguish profitable candidate expansion from merely changing forecast scales, with actual intervention outcomes.
+
+At2026-11-14T12:06:15Z the official server had eight unfinished team worlds; none were launched by this continuation. The concurrent hybrid runner was verified live asPID89339. Its files remain another researcher's work and are not included in this audit. The level8 leader remained DaVinci’s Night Shift at€19,842.22/week on unmatched ranked seeds. Snapshot retained locally in `runs/current-cost-audit-server.json`. This is a dated observation, not permission to assume future occupancy or runner status.
+
 ## Resumed research — after noon
 
 The user resumed local development and unranked research, then prioritized estimating the current best level-8 policy before further development. Ranking, test finals and finals remain unauthorized. The earlier paused status below is historical.
