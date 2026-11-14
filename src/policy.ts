@@ -16,10 +16,12 @@ import { DemandModel } from "./optimizer.ts"
 import { planBundles } from "./bundles.ts"
 import { requestFeasibility } from "./admission.ts"
 import { priceMenu } from "./menu.ts"
+import { Fleet, fleetDefaults, type Queue, type Waiting } from "./fleet.ts"
+import { logFleet } from "./fleet-log.ts"
 import { chooseHomeOffers } from "./home-offers.ts"
 import type { MarketFeatures } from "./optimizer.ts"
 import type { World } from "../vendor/typescript/spread.ts"
-import type { Action, ActionResult, DeskEvent, DeskSnapshot, DriverProfile, FeeStep, Order, PostAction, PriceRequest, WorldMap } from "../vendor/typescript/types.ts"
+import type { Action, ActionResult, DeliveryOption, DeskEvent, DeskSnapshot, DriverProfile, FeeStep, Order, PostAction, PriceRequest, WorldMap } from "../vendor/typescript/types.ts"
 
 export type Settings = {
   price: number; fee: number; payout: number; margin: number; capacity: number; maxKm: number; minDrivers: number
@@ -36,6 +38,22 @@ export type Settings = {
   climbDay: number; climbHalfDay: number
   /** What a route really costs against the dispatcher's estimate, for routes under 50 km, from 50 km to 100 km, and longer. */
   shortCost: number; middleCost: number; longCost: number
+  /** Price against the drivers' cost — the fee plus the risk of a late car — instead of a flat share of the typical fee. */
+  fleetRisk: boolean
+  /** The share of won orders the drivers' model aims to deliver on time. */
+  fleetOnTime: number
+  /** What a late order pays back, as a share of its list price. */
+  fleetRefund: number
+  /** Euros one late order costs beyond its refund while we are still within the target. */
+  fleetLatePrice: number
+  /** How much of the harm to the cars that already wait we charge. */
+  fleetCrowding: number
+  /** Orders after which a week's first outcomes say something about its own drivers. */
+  fleetCalm: number
+  /** How firmly we hold, before a week's outcomes speak, that its world is the model's. */
+  fleetDoubt: number
+  /** One flat fee per gig, chosen from a grid of multiples of the typical fee. */
+  fleetFlatFee: boolean
 }
 export const defaults: Settings = {
   price: 1.42, fee: 1.05, payout: 0.85, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
@@ -43,6 +61,7 @@ export const defaults: Settings = {
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, noteReader: true, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
   backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1,
   earlyClimb: true,
+  fleetRisk: false, fleetOnTime: 0.95, fleetRefund: 0.54, fleetLatePrice: 300, fleetCrowding: 1, fleetCalm: 20, fleetDoubt: 4, fleetFlatFee: false,
 }
 
 export function validateSettings(value: unknown): asserts value is Partial<Settings> {
@@ -50,7 +69,7 @@ export function validateSettings(value: unknown): asserts value is Partial<Setti
   for (const [key, field] of Object.entries(value)) {
     if (!(key in defaults)) throw new Error(`Unknown setting: ${key}`)
     if (typeof defaults[key as keyof Settings] === "boolean") { if (typeof field !== "boolean") throw new Error(`${key} must be boolean`); continue }
-    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait"].includes(key))) throw new Error(`${key} must be a positive number`)
+    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait", "fleetLatePrice"].includes(key))) throw new Error(`${key} must be a positive number`)
     if (key === "bundleWait" && (!Number.isInteger(field) || field > 30)) throw new Error("bundleWait must be an integer from 0 to 30")
     if ((key === "margin" || key === "capacity") && field >= 1) throw new Error(`${key} must be below 1`)
     if (key === "placePrior" && field > 2) throw new Error("placePrior must be at most 2")
@@ -88,6 +107,8 @@ export class Dispatcher extends Desk {
   held = new Map<string, { post: PostAction; at: number }>()
   postedAt = new Map<string, number>()
   relisted = new Set<string>()
+  fleet: Fleet
+  bookedCount = 0
 
   constructor(world: World, level: number, now: number, map: WorldMap, drivers: DriverProfile[], settings: Partial<Settings> = {}) {
     super(world, level, now)
@@ -97,6 +118,16 @@ export class Dispatcher extends Desk {
     this.settings = { ...defaults, ...settings }
     const marketSettings = { threshold: level === 8 ? 1.4 : level === 7 ? 1.25 : 1, slope: this.settings.demandSlope }
     this.market = this.settings.placePrior > 0 ? new PlaceDemandModel(marketSettings, this.settings.placePrior) : new DemandModel(marketSettings)
+    const places = [...new Set(map.roads.flatMap(road => [road.from, road.to]))]
+    this.fleet = new Fleet({
+      ...fleetDefaults,
+      onTime: this.settings.fleetOnTime,
+      refund: this.settings.fleetRefund,
+      latePrice: this.settings.fleetLatePrice,
+      crowding: this.settings.fleetCrowding,
+      calm: this.settings.fleetCalm,
+      doubt: this.settings.fleetDoubt,
+    }, this.network, places, drivers.map(driver => driver.homePlaceId))
   }
 
   quote(request: PriceRequest, immediate = false): void {
@@ -139,6 +170,7 @@ export class Dispatcher extends Desk {
     const fee = this.baseFee(request)
     const trust = 1 + this.settings.trustStep * Math.min(25, this.trust.get(request.dealerId) ?? 0)
     const prices: Record<string, number> = {}
+    const latestOf = new Map<string, number>()
     for (const option of plan.options) {
       if (option.kind === "same_day" && supply < 15) continue
       if (option.kind === "same_day" && day === Math.floor(this.now / 1440) && unbooked >= this.settings.sameDayBacklog) continue
@@ -152,9 +184,25 @@ export class Dispatcher extends Desk {
       const price = Math.ceil(Math.max(option.listPriceCents * this.settings.price * trust, fee / (1 - this.settings.margin) + this.settings.priceFloor))
       if (this.level <= 3 && option.listPriceCents < fee * 1.3) continue
       prices[option.kind] = price
+      latestOf.set(option.kind, latest)
     }
     if (!Object.keys(prices).length) return reject()
-    if (this.settings.adaptive && this.level >= 4) {
+    if (this.settings.fleetRisk && this.settings.adaptive && this.level >= 4) {
+      // Every option is priced over its own cost — the fee this car will need plus the risk of a late one —
+      // so the dealer chooses the speed and we keep one margin over cost whichever it picks.
+      const queue = this.fleetQueue()
+      const features = this.features(request)
+      let best: { ratio: number; profit: number } | null = null
+      for (const option of request.options.filter(item => item.kind in prices)) {
+        const cost = this.fleetCost(request, option, latestOf.get(option.kind) ?? this.now, queue)
+        const choice = this.market.optimize(features, { costCents: cost, listPriceCents: option.listPriceCents, trust, minPrice: Math.ceil(cost) + 1 })
+        if (choice.expectedProfitCents <= 0) { delete prices[option.kind]; continue }
+        prices[option.kind] = Math.ceil(option.listPriceCents * trust * choice.ratio)
+        if (!best || choice.expectedProfitCents > best.profit) best = { ratio: choice.ratio, profit: choice.expectedProfitCents }
+      }
+      if (!best) return reject()
+      this.bids.set(request.id, { features, ratio: best.ratio })
+    } else if (this.settings.adaptive && this.level >= 4) {
       const options = request.options.filter(option => option.kind in prices)
       const list = Math.min(...options.map(option => option.listPriceCents))
       const features = this.features(request)
@@ -280,6 +328,58 @@ export class Dispatcher extends Desk {
     return count
   }
 
+  /** The fee an order's open gig shows now, as a multiple of the order's typical fee. */
+  postedMultiple(order: Order): number {
+    const post = this.gigsOf(order.id).map(id => this.posts.get(id)).find(Boolean)
+    const request = this.requests.get(order.id)
+    if (!post || !request) return 1
+    const step = post.schedule.findLast(item => item.at <= this.now) ?? post.schedule[0]
+    return step ? step.feeCents / Math.max(1, request.referenceFeeCents) : 1
+  }
+
+  /** The gigs that wait for a driver now: the queue this request's cars would join. */
+  fleetQueue(): Queue {
+    const waiting: Waiting[] = []
+    let late = 0
+    for (const order of this.orders.values()) {
+      if (order.status === "cancelled") continue
+      const undelivered = order.legs.map((_, leg) => leg).filter(leg => order.deliveredAt[leg] === null)
+      if (!undelivered.length) continue
+      const carried = undelivered.filter(leg => {
+        const gig = this.legGigs.get(order.id)?.get(leg)
+        return gig !== undefined && this.booked.has(gig)
+      })
+      if (carried.length < undelivered.length) {
+        const request = this.requests.get(order.id)
+        if (!request) continue
+        const option = request.options.find(item => item.kind === order.option) ?? request.options[0]!
+        const car = this.fleet.car({ ...request, legs: order.legs }, option, this.pickupBy(order), this.now, this.postedAt.get(order.id) ?? this.now)
+        waiting.push({ id: order.id, multiple: this.postedMultiple(order), car, listPrice: option.listPriceCents })
+      }
+      if (order.deliveredAt.every(at => at !== null) && !this.onTime(order)) late += 1
+    }
+    return this.fleet.queueOf(waiting, this.bookedCount, late)
+  }
+
+  onTime(order: Order): boolean {
+    return order.legs.every((leg, i) => order.deliveredAt[i]! <= Math.min(order.deadline, leg.delivery.privateAddress ? leg.delivery.window.to + 30 : Infinity))
+  }
+
+  /** What the drivers' model expects this car to cost us, in cents: its fee plus the risk of a late refund. */
+  fleetCost(request: PriceRequest, option: DeliveryOption, latestPickupAt: number, queue: Queue): number {
+    const car = this.fleet.car(request, option, latestPickupAt, this.now)
+    return this.fleet.cost(car, request.referenceFeeCents, option.listPriceCents, queue)
+  }
+
+  /** The flat fee, in cents, that the drivers' model finds cheapest for this order's car. */
+  fleetFee(request: PriceRequest, option: DeliveryOption, latestPickupAt: number, since?: number): { cents: number; multiple: number } {
+    const queue = this.fleetQueue()
+    const car = this.fleet.car(request, option, latestPickupAt, this.now, since)
+    const refund = this.settings.fleetRefund * option.listPriceCents
+    const choice = this.fleet.fee(car, request.referenceFeeCents, refund, this.fleet.latePriceOf(queue), queue)
+    return { cents: Math.max(1, Math.round(choice.multiple * request.referenceFeeCents)), multiple: choice.multiple }
+  }
+
   baseFee(request: PriceRequest): number {
     const supply = this.supply(request)
     const extra = supply < 20 ? 0.18 : supply < 50 ? 0.08 : 0
@@ -308,7 +408,11 @@ export class Dispatcher extends Desk {
     const duration = (legs: Order["legs"]) => 45 + legs.reduce((sum, leg) => sum + this.network.minutes(leg.pickup.placeId, leg.delivery.placeId), 0)
     // A dealer can replace a local trip with a long one after the price is agreed.
     const routeChange = Math.max(1, duration(order.legs) / duration(request.legs))
-    const fee = this.baseFee({ ...request, legs: order.legs }) * routeChange * cars / order.legs.length
+    let fee = this.baseFee({ ...request, legs: order.legs }) * routeChange * cars / order.legs.length
+    if (this.settings.fleetRisk) {
+      const option = request.options.find(item => item.kind === order.option) ?? request.options[0]!
+      fee = this.fleetFee({ ...request, legs: order.legs }, option, this.pickupBy(order), this.postedAt.get(order.id)).cents * cars / Math.max(1, order.legs.length)
+    }
     const pay = (schedule: FeeStep[], opening: boolean) => discounted ? this.payoutSchedule(schedule, opening) : schedule
     if (this.level >= 2 && this.settings.lateRescue && cars === 1 && lateRescueApplies(order, this.now)) return pay(lateRescueSchedule(order, this.now, this.settings.lateRepost ? fee * this.settings.lateFee / 1.2 : fee), false)
     const rescue = this.urgent.has(order.id)
@@ -316,6 +420,8 @@ export class Dispatcher extends Desk {
     const remaining = pickupBy - this.now
     const start = rescue ? remaining <= 60 ? 2.5 : remaining <= 120 ? 1.9 : 1.5 : 1
     if (this.level === 1) return pay([{ at: this.now, feeCents: Math.round(fee * start) }], start === 1)
+    // One flat fee per gig: a schedule with one step. A fee that rises teaches drivers to wait for the next step.
+    if (this.settings.fleetFlatFee) return pay([{ at: this.now, feeCents: Math.round(fee * start) }], start === 1)
     // A steady initial price avoids teaching drivers to wait for hourly increases.
     const due = Math.max(this.now + 30, pickupBy - 240)
     // A gig that no driver has taken a day before its last pickup will not find one in the last four hours:
@@ -358,6 +464,15 @@ export class Dispatcher extends Desk {
       }
       post.stops[0]!.window = timed.pickup
       post.stops[1]!.window = timed.delivery
+    }
+    if (this.settings.fleetRisk && !this.fleet.forecast.has(order.id)) {
+      // What the model said when this car went into the app, at the fee it actually shows: this week's outcomes are measured against it.
+      const option = request.options.find(item => item.kind === order.option) ?? request.options[0]!
+      const queue = this.fleetQueue()
+      const car = this.fleet.car({ ...request, legs: order.legs }, option, this.pickupBy(order), this.now)
+      const multiple = (post.schedule[0]?.feeCents ?? request.referenceFeeCents) / Math.max(1, request.referenceFeeCents)
+      this.fleet.forecast.set(order.id, this.fleet.logit(car, multiple, queue))
+      logFleet(process.env.FLEET_LOG, { kind: "post", orderId: order.id, at: this.now, multiple, typical: request.referenceFeeCents, list: option.listPriceCents, predicted: this.fleet.onTime(car, multiple, queue), car, backlog: queue.backlog, going: queue.going, known: queue.known, late: queue.late, world: queue.world })
     }
     if (hold) {
       this.held.set(order.id, { post, at: this.held.get(order.id)?.at ?? this.now })
@@ -409,7 +524,7 @@ export class Dispatcher extends Desk {
       this.seen.get(event.gigId)!.add(event.driverId)
       this.viewedAt.set(event.driverId, event.at)
     }
-    if (event.kind === "gig_booked") this.gigDriver.set(event.gigId, event.driverId)
+    if (event.kind === "gig_booked") { this.gigDriver.set(event.gigId, event.driverId); this.bookedCount += 1 }
     if (this.settings.homeOffers && event.kind === "offer_answered" && !this.offeredDrivers.get(event.gigId)?.has(event.driverId)) {
       const key = `${Math.floor(event.at / 1440)}:${event.driverId}`
       this.offerCount.set(key, (this.offerCount.get(key) ?? 0) + 1)
@@ -441,8 +556,12 @@ export class Dispatcher extends Desk {
         order.status = "delivered"
         this.deliveredOrders.add(order.id)
         const count = this.trust.get(order.dealerId) ?? 0
-        const onTime = order.legs.every((leg, i) => order.deliveredAt[i]! <= Math.min(order.deadline, leg.delivery.privateAddress ? leg.delivery.window.to + 30 : Infinity))
+        const onTime = this.onTime(order)
         this.trust.set(order.dealerId, onTime ? Math.min(25, count + 1) : Math.floor(count / 2))
+        this.fleet.ordersSoFar += 1
+        if (!onTime) this.fleet.lateSoFar += 1
+        this.fleet.outcome.set(order.id, onTime ? 1 : 0)
+        logFleet(process.env.FLEET_LOG, { kind: "outcome", orderId: order.id, at: this.now, onTime: onTime ? 1 : 0 })
       }
     }
   }

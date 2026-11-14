@@ -1,0 +1,10 @@
+﻿{
+  "fleetRisk": true,
+  "fleetLatePrice": 0,
+  "capacity": 0.9,
+  "backlog": 0.4,
+  "minDrivers": 2,
+  "allowPrivate": true,
+  "tradeIns": true,
+  "sameDayBacklog": 100
+}

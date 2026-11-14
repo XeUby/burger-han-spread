@@ -99,6 +99,28 @@ Full hashes identify the disk snapshots recorded in launch metadata. For newer r
 | pickup-slack | holdout-2 | `w9afefc9b7af4685ebbe7` | complete | `2c84d39c6cc215451283d24e5da710118f24b326b8277809e86f62fa6155c3b7` |
 | pickup-slack | holdout-3 | `w1161968626d8d95ecec7` | complete | `ba4e4416ba9ae41be61070a159b40196ab140c749b325147a8cbafe61c9f0df5` |
 
+## The fleet cost model (documented negative result)
+
+The strongest public reference team prices against a driver-cost model rather than a share of the typical fee: a logistic in fifteen signs estimates whether a car arrives on time, and the posted fee is the multiple of the typical fee that minimises fee plus expected late refund plus a shadow price for the room a late order eats under the delivery minimum. We re-implemented that mechanism in `src/fleet.ts` and `src/policy.ts` (flag `fleetRisk`, off by default, with `fleetOnTime`, `fleetRefund`, `fleetLatePrice`, `fleetCrowding`, `fleetCalm`, `fleetDoubt`, `fleetFlatFee`), refitted nothing, and tested it on our own seeds.
+
+The model is calibrated on our worlds to within three points (a default week: said 92.4%, did 94.5%; a `fleetRisk` week: said 91.3%, did 94.2%, `tools/fleet-calibration.py` over `FLEET_LOG` JSONL). It still loses money, because it raises the fee without buying on-time.
+
+| Configuration | Seed | Margin | Orders | On time | Qualified |
+|---|---|---:|---:|---:|---|
+| default (champion) | win-probe-1 | €8,086.68 | 296 | 95.3% | yes |
+| `fleetRisk` | win-probe-1 | €6,503.60 | 241 | 93.8% | yes |
+| `fleetRisk`, `fleetLatePrice=0` | win-probe-1 | €8,224.85 | 385 | 90.1% | yes |
+| `fleetRisk`, `fleetLatePrice=0`, wide admission | win-probe-1 | €5,032.91 | 555 | 76.0% | no |
+| wide admission only | win-probe-1 | €6,837.03 | 357 | 89.6% | no |
+| default (champion) | win-probe-2 | €9,543.34 | 347 | 94.5% | yes |
+| `fleetRisk` + `fleetFlatFee` | win-probe-2 | €7,017.59 | 308 | 94.2% | yes |
+
+- **Mechanism tested:** fee = argmin over the grid 0.85–1.5× of (fee + late refund risk + shadow-priced late orders + queue harm); every quote option priced at one margin over its own cost.
+- **Best case:** dropping the shadow price recovers the order count (385 vs 296) but spends the whole safety margin (90.1%, one late order from disqualification) for €138 more than the champion on that seed. Paired on `win-probe-2`, the flat-fee variant loses €2,525.75.
+- **Hypothesis (not validated):** the reference team's fitted fee weight (3.96) describes their worlds better than ours; our champion already posts about 0.89× the typical fee, so a grid that starts at 0.85× mostly raises our fees and buys no on-time.
+- **Decision:** the flag stays off; the champion is unchanged. The module and its seven behavioural tests stay in the tree so the mechanism can be re-tested with weights refitted on our own weeks.
+- **Known defects recorded, not fixed:** under wide admission the dispatcher repeats `withdraw`/`reprice` on gigs that are already closed (`Gig gN is not open`), and it retries `post` for orders whose pickup window has already ended (`R00716`, `R00622`); the latter is a guaranteed late delivery and belongs to admission, not to pricing.
+
 ## Reproduction and limits
 
 The report reads an explicit allowlist of development worlds. It never discovers or reads unseen score files. Rebuild it from the saved development files:
