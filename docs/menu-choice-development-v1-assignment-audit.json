@@ -1,0 +1,170 @@
+{
+  "scope": "Independent assignment/protocol conformance audit; no economic comparison.",
+  "attemptsSha256": "b8f2b4d69ee1a48579e1d97e976452451d9cf2bc3e8d02c8ec99f4688f5f0aa8",
+  "completedWorldsChecked": 16,
+  "plannedWorlds": 16,
+  "completePanel": true,
+  "worlds": [
+    {
+      "worldId": "w0af499851f04c19df7bb",
+      "trial": "menu-choice-development-v1-control-1",
+      "assignments": 0,
+      "days": {},
+      "decisionsSha256": "420415601da862e582692a143193f0a2aa8f69a3c857f3f2858f225ea8710a73"
+    },
+    {
+      "worldId": "w8e9c8531d2b51d32eef4",
+      "trial": "menu-choice-development-v1-menu-1",
+      "assignments": 37,
+      "days": {
+        "0": 8,
+        "1": 8,
+        "2": 8,
+        "3": 8,
+        "4": 5
+      },
+      "decisionsSha256": "e1d428b0820d0985a2fed28a963060e488715ca0870c47b520777c43a3ccd73b"
+    },
+    {
+      "worldId": "w2417863ed7200481ae2c",
+      "trial": "menu-choice-development-v1-menu-2",
+      "assignments": 39,
+      "days": {
+        "0": 8,
+        "1": 8,
+        "2": 8,
+        "3": 8,
+        "4": 7
+      },
+      "decisionsSha256": "3a00ace9e7a816996bf9c3a469d3c3940e792dfe1d0a222fe35f97e505382d72"
+    },
+    {
+      "worldId": "w02d30b19fb5264745173",
+      "trial": "menu-choice-development-v1-control-2",
+      "assignments": 0,
+      "days": {},
+      "decisionsSha256": "0426f8be20f43da4ec730c8e35f41bce02c0ab53f27f82ccc73166cb42755c51"
+    },
+    {
+      "worldId": "w81cef8c21d84efc1270d",
+      "trial": "menu-choice-development-v1-control-3",
+      "assignments": 0,
+      "days": {},
+      "decisionsSha256": "3eda90fe5dea2131e045fb504be22cc2284477b67eb617bcb8e99ecb1b581d60"
+    },
+    {
+      "worldId": "w6ef4baaf69055fce5106",
+      "trial": "menu-choice-development-v1-menu-3",
+      "assignments": 37,
+      "days": {
+        "0": 8,
+        "1": 8,
+        "2": 8,
+        "3": 8,
+        "4": 5
+      },
+      "decisionsSha256": "c9ae20bc2da89c129e94ba8990baecb427485e5b0eed72a29c3e3584eadad6c7"
+    },
+    {
+      "worldId": "w412266f816125b35d702",
+      "trial": "menu-choice-development-v1-menu-4",
+      "assignments": 40,
+      "days": {
+        "0": 8,
+        "1": 8,
+        "2": 8,
+        "3": 8,
+        "4": 8
+      },
+      "decisionsSha256": "8df98b69b126fa4ff81d50f54d0d947a635cde56bfab0c3ab73a4a0c16e68b12"
+    },
+    {
+      "worldId": "w1326f947e5133000fa37",
+      "trial": "menu-choice-development-v1-control-4",
+      "assignments": 0,
+      "days": {},
+      "decisionsSha256": "06e8a686e74b1acdcf6f25aec12e098aa8f50f54584fffd98a76cd1187d24641"
+    },
+    {
+      "worldId": "w5e5c876ba2720b202b32",
+      "trial": "menu-choice-development-v1-control-5",
+      "assignments": 0,
+      "days": {},
+      "decisionsSha256": "68de27c51f23d21bfd2c0ce65801176174e3eb4e8a8254660b8aa812becc953d"
+    },
+    {
+      "worldId": "wea9bbb2dabc34f2a5d61",
+      "trial": "menu-choice-development-v1-menu-5",
+      "assignments": 40,
+      "days": {
+        "0": 8,
+        "1": 8,
+        "2": 8,
+        "3": 8,
+        "4": 8
+      },
+      "decisionsSha256": "51c084e395b1ec11d4640bdf7aa7c9e0822fc1967478db228d052bcef3ab915b"
+    },
+    {
+      "worldId": "wcf66f19758e8af670850",
+      "trial": "menu-choice-development-v1-menu-6",
+      "assignments": 40,
+      "days": {
+        "0": 8,
+        "1": 8,
+        "2": 8,
+        "3": 8,
+        "4": 8
+      },
+      "decisionsSha256": "4b545d3d2551a642834f9959bbc1aa8e74a6843c75ad903a5cf242121ab17df1"
+    },
+    {
+      "worldId": "w3c325283398793e3b9af",
+      "trial": "menu-choice-development-v1-control-6",
+      "assignments": 0,
+      "days": {},
+      "decisionsSha256": "232f274c0e4a8e504296f90718c82af9f5c6e1375cb6842f59a3871db61d94da"
+    },
+    {
+      "worldId": "w6ef2c266e51e873c759f",
+      "trial": "menu-choice-development-v1-control-7",
+      "assignments": 0,
+      "days": {},
+      "decisionsSha256": "b1d0183b5daa944bcc45b4edaa51e82a783465ef4592043ee7b0c133c928dbf8"
+    },
+    {
+      "worldId": "wc3dc4a141b002fbd255b",
+      "trial": "menu-choice-development-v1-menu-7",
+      "assignments": 40,
+      "days": {
+        "0": 8,
+        "1": 8,
+        "2": 8,
+        "3": 8,
+        "4": 8
+      },
+      "decisionsSha256": "9325f48325b730b0839fec865ae3da74cab2df9a04276d9c9b0e235a6aea71fd"
+    },
+    {
+      "worldId": "w03f14b8e2ce6e77b8be3",
+      "trial": "menu-choice-development-v1-menu-8",
+      "assignments": 40,
+      "days": {
+        "0": 8,
+        "1": 8,
+        "2": 8,
+        "3": 8,
+        "4": 8
+      },
+      "decisionsSha256": "31f632c45f2f2194453d99a4f3a4b0ff878c2b28f039089aa82b4a1da902f513"
+    },
+    {
+      "worldId": "wea9a15a8913997db2f94",
+      "trial": "menu-choice-development-v1-control-8",
+      "assignments": 0,
+      "days": {},
+      "decisionsSha256": "085ab9c12b9ed8f148190ad0e0f1edd0503a379f3efc0bc25d27a0ff57a5e696"
+    }
+  ],
+  "assignmentsChecked": 313
+}
