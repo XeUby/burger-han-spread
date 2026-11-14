@@ -1,4 +1,4 @@
-"""Report every predeclared architecture trial, including failed and pending attempts."""
+"""Report every predeclared multi-route trial, including failed and pending attempts."""
 
 import hashlib
 import json
@@ -63,7 +63,7 @@ for entry in manifest["worlds"]:
         result = load_world(root, world, entry["seed"], expected)
         amounts, events = totals(world)
         assert sum(amounts.values()) == result["marginCents"]
-        row.update(status="complete", result=result, ledgerCents=amounts, failedVisits=[event for event in events if event["kind"] == "visit_failed"], actionErrors=json.loads((root / f"runs/{world}.errors.json").read_text()), recoveries=json.loads((root / f"runs/{world}.recoveries.json").read_text()), mechanism=json.loads((root / f"runs/{world}.architecture.json").read_text()))
+        row.update(status="complete", result=result, ledgerCents=amounts, failedVisits=[event for event in events if event["kind"] == "visit_failed"], actionErrors=json.loads((root / f"runs/{world}.errors.json").read_text()), recoveries=json.loads((root / f"runs/{world}.recoveries.json").read_text()), mechanism=json.loads((root / f"runs/{world}.multi-routes.json").read_text()))
         snapshot = json.loads((root / f"runs/{world}.snapshot.json").read_text())
         row["finalMultiOrderGigs"] = sum(len({stop["orderId"] for stop in gig["stops"]}) > 1 for gig in snapshot["gigs"])
         row["errorContexts"] = [{"error": error, "sameMinuteGigEvents": [event for event in events if error["action"].get("gigId") and event.get("gigId") == error["action"]["gigId"] and event["at"] == error["at"]]} for error in row["actionErrors"]]

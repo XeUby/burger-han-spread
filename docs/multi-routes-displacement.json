@@ -1,0 +1,151 @@
+{
+  "baselineWorld": "w7b412da927edcef0081e",
+  "treatmentWorld": "we4883293d109f419cd24",
+  "cases": [
+    {
+      "orderId": "R00406",
+      "baselinePickupAt": 2606,
+      "baselineDriver": "wm51-0287",
+      "treatmentLargeRoutesDuringBaselinePickup": []
+    },
+    {
+      "orderId": "R00354",
+      "baselinePickupAt": 3455,
+      "baselineDriver": "wm51-0318",
+      "treatmentLargeRoutesDuringBaselinePickup": []
+    },
+    {
+      "orderId": "R00300",
+      "baselinePickupAt": 3615,
+      "baselineDriver": "wm51-0237",
+      "treatmentLargeRoutesDuringBaselinePickup": []
+    },
+    {
+      "orderId": "R00315",
+      "baselinePickupAt": 4740,
+      "baselineDriver": "wm51-0048",
+      "treatmentLargeRoutesDuringBaselinePickup": []
+    },
+    {
+      "orderId": "R00516",
+      "baselinePickupAt": 4860,
+      "baselineDriver": "wm51-0459",
+      "treatmentLargeRoutesDuringBaselinePickup": []
+    },
+    {
+      "orderId": "R00449",
+      "baselinePickupAt": 4887,
+      "baselineDriver": "wm51-0786",
+      "treatmentLargeRoutesDuringBaselinePickup": []
+    },
+    {
+      "orderId": "R00485",
+      "baselinePickupAt": 4923,
+      "baselineDriver": "wm51-0328",
+      "treatmentLargeRoutesDuringBaselinePickup": []
+    },
+    {
+      "orderId": "R00543",
+      "baselinePickupAt": 4963,
+      "baselineDriver": "wm51-0797",
+      "treatmentLargeRoutesDuringBaselinePickup": []
+    },
+    {
+      "orderId": "R00349",
+      "baselinePickupAt": 5026,
+      "baselineDriver": "wm51-0680",
+      "treatmentLargeRoutesDuringBaselinePickup": []
+    },
+    {
+      "orderId": "R00734",
+      "baselinePickupAt": 5262,
+      "baselineDriver": "wm51-0459",
+      "treatmentLargeRoutesDuringBaselinePickup": []
+    },
+    {
+      "orderId": "R00783",
+      "baselinePickupAt": 6282,
+      "baselineDriver": "wm51-0290",
+      "treatmentLargeRoutesDuringBaselinePickup": []
+    },
+    {
+      "orderId": "R00767",
+      "baselinePickupAt": 6285,
+      "baselineDriver": "wm51-0048",
+      "treatmentLargeRoutesDuringBaselinePickup": []
+    },
+    {
+      "orderId": "R00633",
+      "baselinePickupAt": 6300,
+      "baselineDriver": "wm51-0358",
+      "treatmentLargeRoutesDuringBaselinePickup": []
+    },
+    {
+      "orderId": "R00729",
+      "baselinePickupAt": 6320,
+      "baselineDriver": "wm51-0662",
+      "treatmentLargeRoutesDuringBaselinePickup": []
+    },
+    {
+      "orderId": "R00683",
+      "baselinePickupAt": 6358,
+      "baselineDriver": "wm51-0421",
+      "treatmentLargeRoutesDuringBaselinePickup": []
+    },
+    {
+      "orderId": "R00647",
+      "baselinePickupAt": 6465,
+      "baselineDriver": "wm51-0522",
+      "treatmentLargeRoutesDuringBaselinePickup": []
+    },
+    {
+      "orderId": "R00770",
+      "baselinePickupAt": 6558,
+      "baselineDriver": "wm51-0237",
+      "treatmentLargeRoutesDuringBaselinePickup": [
+        "g264"
+      ]
+    },
+    {
+      "orderId": "R00850",
+      "baselinePickupAt": 6613,
+      "baselineDriver": "wm51-0416",
+      "treatmentLargeRoutesDuringBaselinePickup": []
+    },
+    {
+      "orderId": "R00803",
+      "baselinePickupAt": 6623,
+      "baselineDriver": "wm51-0330",
+      "treatmentLargeRoutesDuringBaselinePickup": []
+    },
+    {
+      "orderId": "R00456",
+      "baselinePickupAt": 6723,
+      "baselineDriver": "wm51-0714",
+      "treatmentLargeRoutesDuringBaselinePickup": []
+    },
+    {
+      "orderId": "R00777",
+      "baselinePickupAt": 6731,
+      "baselineDriver": "wm51-0206",
+      "treatmentLargeRoutesDuringBaselinePickup": []
+    },
+    {
+      "orderId": "R00880",
+      "baselinePickupAt": 10536,
+      "baselineDriver": "wm51-0237",
+      "treatmentLargeRoutesDuringBaselinePickup": []
+    },
+    {
+      "orderId": "R00983",
+      "baselinePickupAt": 10655,
+      "baselineDriver": "wm51-0318",
+      "treatmentLargeRoutesDuringBaselinePickup": []
+    }
+  ],
+  "conflictingBaselineDrivers": 1,
+  "interpretation": "Retrospective overlap only. A baseline driver busy on a treatment large route at the baseline pickup time suggests possible displacement, not a causal allocation effect; policies changed other bookings and timing too.",
+  "lateInTreatmentAndOnTimeInBaseline": 23,
+  "lateTreatmentOrdersAbsentFromActiveBaseline": 3,
+  "conclusion": "Only one of23matched orders that became late had its baseline driver on a treatment large route at the baseline pickup minute. Direct occupied-driver displacement is not supported as the dominant explanation by this check. Reservation and broader trajectory effects remain unmeasured."
+}

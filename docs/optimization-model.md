@@ -152,3 +152,36 @@ Of 39 exposed gigs, 38 booked during the higher-fee period. They incurred €821
 Decision: reject this implementation, with no adjustment of pulse duration, size or budget and no further confirmation or fresh validation. This does not prove that driver learning has no value. It shows that this bounded attempt to influence it did not earn back its cost. The validated control remains unchanged; no ranking or final was played.
 
 The next route-composition question is whether the pair-only architecture leaves useful three-or-more-car routes unused. In the four archived development controls, respectively 55, 109, 46 and 85 won requests belonged to batches containing at least three wins. These are acquisition-event counts, including later cancellations, not feasible route counts or a profit forecast. A useful next probe must test stop-window feasibility and actual shared work for larger routes before treating those batches as savings.
+
+## Multi-car routes and broader admission
+
+The [feasibility screen](multi-routes-screen.json) replayed first holding batches using public events in time order, without looking at later cancellations or terminal gig membership to select candidates. On the existing accepted work, a wider four-car route policy found 57 routes containing at least three cars and modeled €504.14/week lower opening fees. Simply increasing route length under the narrower payment assumptions added only €4.86/week beyond net-cost-aware pairs. Neither estimate predicted realized profit or ruled out an architecture that changes accepted work.
+
+The new planner enumerates sequential routes of up to four cars, checks all stop windows and stated hours, allows 90 minutes for booking, protects 30 minutes of delivery slack, and enforces the 720-minute driving limit. It prices the route using 80% of modeled saved work, capped at a 45% discount, and compares that fee against the actual discounted single-car alternatives. It chooses disjoint routes by exact set packing for queues up to 20 candidates and uses greedy packing above that size. Enumeration has a 30,000-extension limit; no tested batch hit that limit. These are finite-model optimization guarantees, not global dispatcher optimality.
+
+The [frozen protocol](../experiments/multi-routes-protocol.json) tested two policies on old matched seeds 09, 10, 14 and 15. Both hold jobs 30 minutes and use route-based pay. The first retains incumbent admission. The second raises regional daily capacity from 0.35 to 0.55 per weighted driver, backlog from 0.08 to 0.12, and the same-day unbooked limit from four to six. Customer pricing, the 700km route limit, minimum driver supply and cheap single-car opening fees remain the control's rules. This tests the interaction of expanded admission with different fulfillment, without the generous early driver payments that defeated the earlier volume architecture.
+
+The large-gain hypothesis was that less repeated travel and fewer driver commitments would reduce rescue costs and support additional profitable volume. It would be falsified if routes failed to book reliably, or if final driver costs and lateness consumed the additional revenue. Eight focused tests and strict TypeScript checking passed. An additional disabled-policy control exactly reproduced the archived seed14 event history and score.
+
+| Policy | Mean weekly net | Paired gain | Mean orders | Qualified | Aggregate on time | Mean driver fees | Mean late refunds |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Validated control | €11,790.90 | — | 316.25 | 4/4 | 96.28% | €20,969.28 | €664.68 |
+| Larger routes | €10,803.72 | −€987.19 | 315.25 | 4/4 | 95.00% | €21,506.14 | €1,038.56 |
+| Larger routes and broader admission | €11,767.98 | −€22.92 | 330.25 | 4/4 | 95.53% | €22,309.55 | €934.53 |
+
+| Development seed | Larger-route gain | Larger-route and volume gain |
+| --- | ---: | ---: |
+| 09 | +€19.74 | +€711.62 |
+| 10 | −€2,833.21 | −€1,207.51 |
+| 14 | −€1,032.77 | −€135.40 |
+| 15 | −€102.50 | +€539.61 |
+
+The first policy formed 73 three-or-four-car routes across four weeks; the volume policy formed 80. Thus larger route formation was implemented and exercised, rather than rejected by a narrow estimate alone. Broader admission increased throughput 4.43%, but its €1,579.64/week additional revenue was absorbed by €1,340.27 more driver fees and €269.85 more late refunds, partly offset by €7.56 lower release fees. Larger routes alone increased driver fees despite their modeled opening savings. Requested route savings are not final ledger savings.
+
+All eight treatment weeks qualified, with no undelivered orders, failed visits or recoveries. There were 63 late orders for larger routes and 59 for the volume version, versus 47 in the control. The route-only arm incurred one €100 charging fine after a booked destination change; the volume arm had no fines. One stale reprice after a same-minute booking was retained and audited. All nine worlds ended, including replication; terminal ledgers, source hashes and settings were checked against the frozen plan. Complete outcomes are in [multi-routes-results.json](multi-routes-results.json).
+
+A seed10 diagnostic found that 32 of the route-only policy's 33 late orders finished as single-car gigs; larger routes generally booked quickly. This suggested possible competition for drivers, but the [overlap check](multi-routes-displacement.json) found only one of 23 matched orders that became late had its baseline driver physically occupied on a treatment large route at the baseline pickup minute. That does not support direct displacement as the dominant explanation. Reservations, payment expectations, posting timing and other changed assignments remain possible causes; this analysis does not isolate them.
+
+Decision: reject both frozen implementations. Neither reached the €1,500/week improvement gate, and both exceeded the allowed €1,000 worst weekly loss. No candidate proceeds to confirmation or fresh validation; the validated control remains unchanged. No within-study parameter rescue is justified by the near-zero average of the volume arm.
+
+The public leaderboard was refreshed through its read-only API during this study. Its leading five-run average remained €17,185.02/week, with 97.28% on time; the [observation](multi-routes-board.json) preserves the timestamp and source. Those are different hidden ranking seeds. No rank or causal performance gap can be inferred for these development policies, and competitiveness remains unproven. No ranking or final was entered.

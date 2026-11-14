@@ -1,0 +1,106 @@
+{
+  "decidedAt": "2026-11-14T05:51:46.012177+00:00",
+  "report": "docs/multi-routes-results.json",
+  "protocol": "experiments/multi-routes-protocol.json",
+  "summary": {
+    "multi-routes": {
+      "completed": 4,
+      "decision": "reject this implementation as insufficient; no general rejection of the architecture",
+      "meanMarginCents": 1080371.5,
+      "meanGainCents": -98718.5,
+      "minimumGainCents": -283321,
+      "qualified": 4,
+      "undelivered": 0,
+      "failedVisits": 0,
+      "meanOrders": 315.25,
+      "relativeThroughputChange": -0.003162055335968361,
+      "aggregateOnTimeShare": 0.9500396510705789,
+      "minimumOnTimeShare": 0.912,
+      "meanDriverFeesCents": 2150614.25,
+      "meanLateRefundsCents": 103855.5,
+      "actionErrors": 0,
+      "gatePassed": false,
+      "baseline": {
+        "meanMarginCents": 1179090,
+        "meanOrders": 316.25,
+        "aggregateOnTimeShare": 0.9628458498023715,
+        "meanDriverFeesCents": 2096928,
+        "meanLateRefundsCents": 66467.75,
+        "qualified": 4,
+        "lateOrders": 47,
+        "undelivered": 0
+      },
+      "mechanismTotals": {
+        "flushes": 281,
+        "routes": 132,
+        "largeRoutes": 73,
+        "coveredOrders": 371,
+        "savedWorkMinutes": 20109,
+        "openingSavingCents": 134842,
+        "truncatedBatches": 0
+      },
+      "meanLedgerGainCents": {
+        "driver_fee": -53686.25,
+        "fine": -2500,
+        "late_refund": -37387.75,
+        "release_fee": 142.5,
+        "revenue": -5287
+      },
+      "lateOrders": 63,
+      "fineCents": 10000
+    },
+    "multi-routes-volume": {
+      "completed": 4,
+      "decision": "reject this implementation as insufficient; no general rejection of the architecture",
+      "meanMarginCents": 1176798,
+      "meanGainCents": -2292,
+      "minimumGainCents": -120751,
+      "qualified": 4,
+      "undelivered": 0,
+      "failedVisits": 0,
+      "meanOrders": 330.25,
+      "relativeThroughputChange": 0.04426877470355728,
+      "aggregateOnTimeShare": 0.9553368660105981,
+      "minimumOnTimeShare": 0.9175,
+      "meanDriverFeesCents": 2230955,
+      "meanLateRefundsCents": 93452.5,
+      "actionErrors": 1,
+      "gatePassed": false,
+      "baseline": {
+        "meanMarginCents": 1179090,
+        "meanOrders": 316.25,
+        "aggregateOnTimeShare": 0.9628458498023715,
+        "meanDriverFeesCents": 2096928,
+        "meanLateRefundsCents": 66467.75,
+        "qualified": 4,
+        "lateOrders": 47,
+        "undelivered": 0
+      },
+      "mechanismTotals": {
+        "flushes": 283,
+        "routes": 138,
+        "largeRoutes": 80,
+        "coveredOrders": 395,
+        "savedWorkMinutes": 20966,
+        "openingSavingCents": 138337,
+        "truncatedBatches": 0
+      },
+      "meanLedgerGainCents": {
+        "driver_fee": -134027,
+        "late_refund": -26984.75,
+        "release_fee": 756.25,
+        "revenue": 157963.5
+      },
+      "lateOrders": 59,
+      "fineCents": 0
+    }
+  },
+  "selectedForConfirmation": null,
+  "selectedPolicyChanged": false,
+  "rankingSubmitted": false,
+  "finalPlayed": false,
+  "unfinishedTeamWorldsAtCompletion": 0,
+  "decision": "Reject both frozen multi-route policies. No confirmation, fresh validation, or parameter rescue. Preserve the current validated control.",
+  "operationalAudit": "All9worlds ended; exact control event replication; no undelivered orders, failed visits, recoveries or search truncations. One stale reprice followed a same-minute booking. One100euro booked-route-change charging fine in the route-only arm remains in profit.",
+  "diagnostic": "docs/multi-routes-displacement.json"
+}
