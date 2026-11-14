@@ -124,9 +124,10 @@ export class Dispatcher extends Desk {
     if (load >= Math.max(1, supply * this.settings.capacity)) return reject()
     if (unbooked >= Math.max(2, supply * this.settings.backlog)) return reject()
     const fee = this.baseFee(request)
-    const trust = 1 + this.settings.trustStep * Math.min(25, this.trust.get(request.dealerId) ?? 0)
+    const trust = this.trustFactor(request.dealerId)
     const prices: Record<string, number> = {}
     for (const option of plan.options) {
+      if (this.level <= 3 && option.kind !== request.options[0]!.kind) continue
       if (option.kind === "same_day" && supply < 15) continue
       if (option.kind === "same_day" && day === Math.floor(this.now / 1440) && unbooked >= this.settings.sameDayBacklog) continue
       const feasible = requestFeasibility(plan, option.deadline, this.network, this.settings)
@@ -213,9 +214,13 @@ export class Dispatcher extends Desk {
     return Math.min(this.now + 30, ...[...this.deferred.values()].map(request => Math.max(this.now + 1, request.respondBy - 5)), ...[...this.held.values()].map(item => Math.max(this.now + 1, item.at + this.settings.bundleWait)))
   }
 
+  trustFactor(dealerId: string): number {
+    return this.level === 8 ? 1 + this.settings.trustStep * Math.min(25, this.trust.get(dealerId) ?? 0) : 1
+  }
+
   auctionValue(request: PriceRequest): number {
     const fee = this.baseFee(request)
-    const trust = 1 + this.settings.trustStep * Math.min(25, this.trust.get(request.dealerId) ?? 0)
+    const trust = this.trustFactor(request.dealerId)
     const list = Math.min(...request.options.map(option => option.listPriceCents))
     return this.market.optimize(this.features(request), { costCents: fee * this.settings.costRatio, listPriceCents: list, trust, minPrice: Math.ceil(fee / (1 - this.settings.margin) + this.settings.priceFloor) }).expectedProfitCents
   }

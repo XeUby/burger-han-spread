@@ -104,3 +104,16 @@ test("the actual solver consumes a public-state frame and dispatches one planned
     assert.equal((decision.result as {status:string}).status,"OPTIMAL")
   } finally {desk.closeSolver()}
 })
+
+test("cancellation events remove orders from the qualification risk allowance", async () => {
+  const clean = setup().desk, cancelled = setup().desk
+  for (let i = 0; i < 20; i++) {
+    const r = request(`cancelled${i}`)
+    cancelled.requests.set(r.id, r)
+    cancelled.orders.set(r.id, order(r))
+    await cancelled.handle({ seq: i + 1, at: 500, kind: "order_cancelled", orderId: r.id, gigs: [] })
+  }
+  assert.equal(cancelled.orders.size, 0)
+  clean.quote(request()); cancelled.quote(request())
+  assert.deepEqual(cancelled.buildFrame().input.lateBudget, clean.buildFrame().input.lateBudget)
+})

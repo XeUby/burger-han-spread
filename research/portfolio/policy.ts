@@ -227,7 +227,7 @@ export class Dispatcher extends Mechanisms {
       }
       const best=choices.slice(1).sort((a,b)=>b.route!.feeSavingCents-a.route!.feeSavingCents).slice(0,2)
       for (const choice of [choices[0]!,...best]) for (const multiplier of feeOptions) {
-        const trust=1+this.settings.trustStep*Math.min(25,this.trust.get(request.dealerId) ?? 0)
+        const trust=this.trustFactor(request.dealerId)
         let cost=0,loss=0
         for(let s=0;s<SHOCKS.length;s++) {
           const own=fulfillment(order,post,multiplier,s),old=choice.anchor ? fulfillment(choice.anchor.order,choice.anchor.post,1,s) : null

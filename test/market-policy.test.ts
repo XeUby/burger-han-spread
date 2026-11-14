@@ -208,3 +208,32 @@ test("the delay-only control holds eligible jobs then posts them separately", as
   assert.ok(posts.every(post => post.stops.length === 2))
   assert.equal(d.held.size, 0)
 })
+
+test("levels 1–3 cannot substitute a feasible later option for the awarded first option", () => {
+  for (const level of [1, 2, 3, 4]) {
+    const d = new Dispatcher({} as World, level, 500, map, drivers)
+    const r = request()
+    r.options[0]!.deadline = 550
+    d.quote(r)
+    assert.equal(d.pending.has(r.id), level === 4)
+    if (level <= 3) assert.deepEqual(d.outbox, [])
+  }
+})
+
+test("dealer trust affects quote prices and auction values only at level 8", () => {
+  for (const level of [1, 2, 3, 4, 5, 6, 7, 8]) {
+    const clean = new Dispatcher({} as World, level, 500, map, drivers)
+    const trusted = new Dispatcher({} as World, level, 500, map, drivers)
+    const r = request()
+    trusted.trust.set(r.dealerId, 25)
+    clean.quote(r)
+    trusted.quote(r)
+    if (level < 8) {
+      assert.deepEqual(trusted.outbox, clean.outbox)
+      assert.equal(trusted.auctionValue(r), clean.auctionValue(r))
+    } else {
+      assert.notDeepEqual(trusted.outbox, clean.outbox)
+      assert.ok(trusted.auctionValue(r) > clean.auctionValue(r))
+    }
+  }
+})

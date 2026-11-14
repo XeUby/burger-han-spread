@@ -2,6 +2,14 @@
 
 **Latest capacity instruction: this assistant may run at most FOUR concurrent worlds.** The shared team cap remains EIGHT unfinished worlds. Use at most4own workers, count existing team worlds under the shared lock, and let previously launched runs drain. See `experiments/team-capacity-policy.json`.
 
+## Capability corrections and review correction
+
+The unfrozen main dispatcher now evaluates only the server-awarded first option at levels 1–3, regardless of the research `firstOptionOnly` flag. Dealer trust enters prices and auction valuation only at level 8; the value and portfolio adapters use the same inherited factor. Counterexamples failed before these edits and passed after them; the full main/value/portfolio suite passed 135 tests, and all three TypeScript configurations passed. Historical bundles remain unchanged. This is rule conformance, not new profit evidence; other researchers' separate hybrid/regime implementations are outside these edits.
+
+**Correction to the review and my earlier acceptance:** cancelled orders do not remain in the live order map. `src/desk.ts` deletes them on cancellation and excludes them during snapshot recovery. A manually inserted cancelled order was an unreachable-state test, not evidence of a live counting bug. No cancellation-count fix was retained. An event-path regression confirms cancellation removes orders and leaves the portfolio allowance unchanged. The allowance remains a heuristic rather than a qualification guarantee.
+
+Next economic experiment: `docs/menu-choice-study-design.md` specifies a bounded randomized same-day price increase with later options/prices preserved. The historical screen finds 1,354 eligible menus and 318 bounded assignments across eight familiar weeks. This supports collecting option-choice evidence, not predicted profit or new deployment. No study worlds or freeze exist yet. The interrupted private world still counts toward this assistant's cap, so the proposed launcher permits three new concurrent worlds until that state is resolved.
+
 ## Private acquisition coverage: interrupted, no promotion
 
 The eight-pair frozen `private-coverage-development-v2` study completed 14 worlds. Coverage case 8 (`wf488bd0523f1119e8cd7`) failed at the first solver call, before any private assignment; its paired control was never started under the stopping rule. The failed world remains unfinished, retained without advancement or replacement, and counts toward occupancy. Official provenance and journal audit confirm maximum four own concurrent worlds. The other unfinished worlds belong to another researcher.

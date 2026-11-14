@@ -73,7 +73,7 @@ export class Dispatcher extends Control {
       }
     } else {
       const options = request.options.filter(o => o.kind in action.prices)
-      const trust = 1 + settings.trustStep*Math.min(25, this.trust.get(request.dealerId) ?? 0)
+      const trust = this.trustFactor(request.dealerId)
       const features = this.features(request)
       const choice = this.market.optimize(features, { costCents: cost, listPriceCents: Math.min(...options.map(o => o.listPriceCents)), trust, minPrice: Math.ceil(Math.max(1, fee/(1-settings.margin)-credit)) })
       for (const option of options) action.prices[option.kind] = Math.ceil(option.listPriceCents*trust*choice.ratio)
