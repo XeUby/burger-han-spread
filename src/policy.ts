@@ -53,6 +53,8 @@ export type Settings = {
   softLimits: number
   /** One flat fee, in full fees, until the deadline warning, instead of the climbing schedule; 0 for the climb. */
   flatFee: number
+  /** The fees of the last four hours before the last pickup, in full fees: at four hours, two hours and one hour. */
+  dueFee: number; rescue2: number; rescue1: number
   /** The fee, in full fees, a day and half a day before the last pickup, for a gig that no driver has taken. */
   climbDay: number; climbHalfDay: number
   /** What a route really costs against the dispatcher's estimate, for routes under 50 km, from 50 km to 100 km, and longer. */
@@ -62,7 +64,7 @@ export const defaults: Settings = {
   price: 1.42, fee: 1.05, payout: 0.85, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
   notes: true, noteSpelling: false, relist: false, openingOnly: true, adaptive: true, earlyOffers: false, safetySlack: false,
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, noteReader: true, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
-  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0, minKm: 0, longPayout: 0.85, bookMiss: 0, summerTyres: false, softLimits: 0, flatFee: 0,
+  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0, minKm: 0, longPayout: 0.85, bookMiss: 0, summerTyres: false, softLimits: 0, flatFee: 0, dueFee: 1.45, rescue2: 1.9, rescue1: 2.5,
   earlyClimb: true,
 }
 
@@ -442,7 +444,7 @@ export class Dispatcher extends Desk {
     const rescue = this.urgent.has(order.id)
     const pickupBy = this.pickupBy(order)
     const remaining = pickupBy - this.now
-    const start = rescue ? remaining <= 60 ? 2.5 : remaining <= 120 ? 1.9 : 1.5 : 1
+    const start = rescue ? remaining <= 60 ? this.settings.rescue1 : remaining <= 120 ? this.settings.rescue2 : Math.max(1.5, this.settings.dueFee) : 1
     if (this.level === 1) return pay([{ at: this.now, feeCents: Math.round(fee * start) }], start === 1)
     // Drivers learn from fees that rise and wait for them: one fee until the deadline warning, then the rescue fees.
     if (this.settings.flatFee > 0 && !rescue) return [{ at: this.now, feeCents: Math.round(fee * this.settings.flatFee) }]
@@ -456,9 +458,9 @@ export class Dispatcher extends Desk {
       { at: this.now, feeCents: Math.round(fee * start) },
       ...sit,
       ...early,
-      { at: due, feeCents: Math.round(fee * Math.max(start, 1.45)) },
-      { at: Math.max(due + 30, pickupBy - 120), feeCents: Math.round(fee * Math.max(start, 1.9)) },
-      { at: Math.max(due + 60, pickupBy - 60), feeCents: Math.round(fee * Math.max(start, 2.5)) },
+      { at: due, feeCents: Math.round(fee * Math.max(start, this.settings.dueFee)) },
+      { at: Math.max(due + 30, pickupBy - 120), feeCents: Math.round(fee * Math.max(start, this.settings.rescue2)) },
+      { at: Math.max(due + 60, pickupBy - 60), feeCents: Math.round(fee * Math.max(start, this.settings.rescue1)) },
     ], start === 1)
   }
 
