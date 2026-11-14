@@ -1,6 +1,9 @@
 """Check that audit counts preserve failed actions and solver fallbacks."""
 
+import hashlib
+import json
 import sys
+import tarfile
 import unittest
 from pathlib import Path
 
@@ -9,6 +12,13 @@ from research.portfolio.report import solver_audit
 
 
 class AuditTest(unittest.TestCase):
+    def test_archive_contains_exactly_the_frozen_sources(self):
+        root = Path(__file__).resolve().parents[2]
+        plan = json.loads((root / "experiments/portfolio-development-v1.json").read_text())
+        with tarfile.open(root / "experiments/portfolio-development-v1-source.tar.gz") as archive:
+            files = {m.name: hashlib.sha256(archive.extractfile(m).read()).hexdigest() for m in archive.getmembers() if m.isfile()}
+        self.assertEqual(files, plan["files"])
+
     def test_failed_actions_do_not_count_as_executed_mechanisms(self):
         rows = [
             {"kind": "portfolio_action", "plan": {"kind": "quote", "changedQuote": True}, "action": {"type": "quote"}, "result": {"ok": False}},

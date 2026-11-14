@@ -1,0 +1,17 @@
+{
+  "role": "Urgent level 1\u20134 development screen requested before the 12:00 Helsinki round change; no statistical promotion",
+  "frozenAt": "2026-11-14T09:24:09.396658+00:00",
+  "hypothesis": "The joint portfolio's pre-quote cost/booking models and route choices improve whole-week economics over the first-option/opening-cost candidate at levels 1\u20133 and the preserved control at level 4.",
+  "source": "Identical runtime, dependencies and solver assumptions to portfolio-development-v1; no new policy tuning.",
+  "comparison": "Two familiar seed blocks crossed with levels 1\u20134 and benchmark/planner. Analyze each level separately. Related level trials share seed blocks.",
+  "operations": {
+    "workers": 2,
+    "maximumUnfinishedTeamWorlds": 4,
+    "ranked": false,
+    "sharedCreationLock": "runs/team-world-creation.lock"
+  },
+  "stopping": "Complete all 16 worlds regardless of profit. Inherited runtime failure and 600-second world limit stop new creation and retain failures. No interim tuning or favorable stopping.",
+  "analysis": "Paired profit, qualification, orders, driver payments, refunds, undelivered work, visits, action/runtime failures, source hashes and control replications. Two blocks cannot establish reliability or satisfy the 24-pair validation floor.",
+  "decision": "This screen may reject an implementation or inform a separately authorized deployment decision. It cannot promote a new policy or replace fresh validation. No ranking, test final or final is authorized by this manifest.",
+  "deadlineContext": "User says the current round closes at 12:00 Helsinki. The API reports current season 5 but exposes no closing timestamp. Preserve time for a concrete, separately authorized frozen ranking plan."
+}

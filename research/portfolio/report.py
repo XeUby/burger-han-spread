@@ -48,8 +48,7 @@ def solver_audit(decisions):
     }
 
 
-def main():
-    plan_path = ROOT / (sys.argv[1] if len(sys.argv) > 1 else "experiments/portfolio-development-v1.json")
+def audit(plan_path):
     plan = read(plan_path)
     for name, expected in plan["files"].items():
         assert sha(ROOT / plan["bundle"] / name) == expected, name
@@ -106,6 +105,13 @@ def main():
         records.append(row)
     terminal = all(r["status"] == "complete" for r in records) and not any(a["event"] == "failed" for a in attempts)
     report = {"generatedAt": datetime.now(timezone.utc).isoformat(), "role": "Adaptive development only; no confirmatory or multiplicity-adjusted claims", "planSha256": sha(plan_path), "policyRevision": revision, "terminal": terminal, "completed": sum(r["status"] == "complete" for r in records), "expected": len(records), "uniqueSeedBlocks": len({r["seed"] for r in records}), "records": records, "summary": {}, "contrasts": {}, "selectedForValidation": None}
+    return plan, report
+
+
+def main():
+    plan_path = ROOT / (sys.argv[1] if len(sys.argv) > 1 else "experiments/portfolio-development-v1.json")
+    plan, report = audit(plan_path)
+    records = report["records"]
     archived = {"09": "wccca731d04dbfacbaba0", "10": "w7b412da927edcef0081e", "14": "w2464fa0a1a5ce6878d47", "15": "w657d3e2075cdc8dcb443"}
     replications = []
     for row in records:
@@ -115,7 +121,7 @@ def main():
         new = row["worldId"]
         replications.append({"seed": row["seed"], "archivedWorld": old, "newWorld": new, "identicalEvents": sha(ROOT / f"runs/{old}.events.json") == sha(ROOT / f"runs/{new}.events.json"), "identicalScore": read(ROOT / f"runs/{old}.score.json") == read(ROOT / f"runs/{new}.score.json")})
     report["benchmarkReplications"] = replications
-    if terminal:
+    if report["terminal"]:
         by_arm = {arm: [r for r in records if r["label"].endswith("-" + arm)] for arm in ["benchmark", "planner", "future", "payments"]}
         control = {r["seed"]: r for r in by_arm["benchmark"]}
         control_summary = summarize(by_arm["benchmark"])
