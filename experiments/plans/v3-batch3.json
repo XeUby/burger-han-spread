@@ -1,0 +1,234 @@
+[
+ {
+  "label": "slope10",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "demandSlope": 10
+  }
+ },
+ {
+  "label": "slope7",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "demandSlope": 7
+  }
+ },
+ {
+  "label": "offers",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "homeOffers": true
+  }
+ },
+ {
+  "label": "offers-early",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "homeOffers": true,
+   "earlyOffers": true
+  }
+ },
+ {
+  "label": "slope10",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "demandSlope": 10
+  }
+ },
+ {
+  "label": "slope7",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "demandSlope": 7
+  }
+ },
+ {
+  "label": "offers",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "homeOffers": true
+  }
+ },
+ {
+  "label": "offers-early",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "homeOffers": true,
+   "earlyOffers": true
+  }
+ },
+ {
+  "label": "slope10",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "demandSlope": 10
+  }
+ },
+ {
+  "label": "slope7",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "demandSlope": 7
+  }
+ },
+ {
+  "label": "offers",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "homeOffers": true
+  }
+ },
+ {
+  "label": "offers-early",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "homeOffers": true,
+   "earlyOffers": true
+  }
+ },
+ {
+  "label": "slope10",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "demandSlope": 10
+  }
+ },
+ {
+  "label": "slope7",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "demandSlope": 7
+  }
+ },
+ {
+  "label": "offers",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "homeOffers": true
+  }
+ },
+ {
+  "label": "offers-early",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "homeOffers": true,
+   "earlyOffers": true
+  }
+ },
+ {
+  "label": "slope10",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "demandSlope": 10
+  }
+ },
+ {
+  "label": "slope7",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "demandSlope": 7
+  }
+ },
+ {
+  "label": "offers",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "homeOffers": true
+  }
+ },
+ {
+  "label": "offers-early",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "homeOffers": true,
+   "earlyOffers": true
+  }
+ },
+ {
+  "label": "slope10",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "demandSlope": 10
+  }
+ },
+ {
+  "label": "slope7",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "demandSlope": 7
+  }
+ },
+ {
+  "label": "offers",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "homeOffers": true
+  }
+ },
+ {
+  "label": "offers-early",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "homeOffers": true,
+   "earlyOffers": true
+  }
+ },
+ {
+  "label": "slope10",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "demandSlope": 10
+  }
+ },
+ {
+  "label": "slope7",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "demandSlope": 7
+  }
+ },
+ {
+  "label": "offers",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "homeOffers": true
+  }
+ },
+ {
+  "label": "offers-early",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "homeOffers": true,
+   "earlyOffers": true
+  }
+ },
+ {
+  "label": "slope10",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "demandSlope": 10
+  }
+ },
+ {
+  "label": "slope7",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "demandSlope": 7
+  }
+ },
+ {
+  "label": "offers",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "homeOffers": true
+  }
+ },
+ {
+  "label": "offers-early",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "homeOffers": true,
+   "earlyOffers": true
+  }
+ }
+]
