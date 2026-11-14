@@ -25,3 +25,11 @@ These settings are now the defaults in `src/policy.ts` and in `experiments/final
 
 - The lowest on-time share is 91.7%, and a week under 90% scores nothing. 24 weeks cannot rule such a week out.
 - The gate asks for a lowest on-time share of 94%. The candidate does not meet it.
+
+## Test final, Saturday 20:00
+
+Played with this build (`7fa2d8a`) on the live clock: €9,749 margin, 258 orders, 98.8% on time, ranked. The test final plays Thursday to the end of the week.
+
+The live loop lost track of gigs: 5,821 refused posts ("already in a live gig") for 51 of 261 orders, and 301 reprices and offers to gigs that had been withdrawn. Practice weeks of the same build show none. Replayed offline with the final's own events and a world that accepts every action, the dispatcher posts every order on time and repeats no post, so the cause is in how the live world answers or in the order in which its events arrive, not in the policy. Not found yet.
+
+The fix does not depend on the cause: every five seconds the live loop reads the world's gigs and makes the dispatcher's gigs match them (`syncGigs`), and a refused duplicate post makes it read them at once. On two practice weeks with the sync after every step: €10,171 and €15,930 against €10,175 and €16,007 without it, the same on-time shares.

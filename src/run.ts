@@ -51,6 +51,7 @@ export async function practice(client: Client, options: { level?: number; seed?:
         const step = await connection.advance({ untilEvent: WAKE, max: Math.min(snapshot.endsAt, desk.nextDecisionAt()), actions })
         desk.readResults(actions, step.results)
         desk.now = step.now
+        if (process.env.SPREAD_SYNC_TEST) desk.syncGigs(await world.snapshot())
         for (const event of step.events) {
           record(event)
           if (event.seq <= desk.lastSeq) continue
@@ -224,6 +225,7 @@ export async function live(client: Client, settings: Partial<Settings>): Promise
       market = desk.market
       await desk.rejoin(snapshot, history)
       let lastClock = 0
+      let lastSync = 0
       while (desk.now < snapshot.endsAt) {
         const day = Math.floor(desk.now / 1440)
         const events = await world.events(desk.lastSeq)
@@ -237,6 +239,11 @@ export async function live(client: Client, settings: Partial<Settings>): Promise
         }
         await desk.tick()
         await desk.send()
+        // The world is the truth about gigs: every few seconds the dispatcher checks its gigs against it.
+        if (Date.now() - lastSync > 5000) {
+          desk.syncGigs(await world.snapshot())
+          lastSync = Date.now()
+        }
         if (Math.floor(desk.now / 1440) > day) report(world.id, await world.score())
         await sleep(150)
       }

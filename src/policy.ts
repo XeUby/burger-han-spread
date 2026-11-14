@@ -65,6 +65,8 @@ export class Dispatcher extends Desk {
   pending = new Set<string>()
   quoted = new Set<string>()
   lateReposts = new Map<string, number>()
+  /** A post was refused because the world already has a live gig for its car, so the dispatcher lost track of a gig. */
+  resync = false
   noteFacts = new Map<string, { rules: NoteRules; timed: TimedNote | null }>()
   trust = new Map<string, number>()
   deliveredOrders = new Set<string>()
@@ -498,6 +500,7 @@ export class Dispatcher extends Desk {
   }
 
   async tick(): Promise<void> {
+    if (this.resync) await this.relearnGigs()
     this.flushBundles()
     const ready = [...this.deferred.values()].filter(request => request.respondBy <= this.now + 5)
       .sort((a, b) => this.auctionValue(b) - this.auctionValue(a) || a.id.localeCompare(b.id))
@@ -542,6 +545,38 @@ export class Dispatcher extends Desk {
     this.lateReposts.set(order.id, order.lastPickupAt) // once for each last pickup time
     this.outbox.push({ ...post, stops: post.stops.map(stop => ({ ...stop, window: undefined })), schedule: this.feesFor(order, 1) })
     return true
+  }
+
+  /** Takes back from the world every live gig that the dispatcher does not know, as a restart would. */
+  async relearnGigs(): Promise<void> {
+    this.resync = false
+    this.syncGigs(await this.world.snapshot())
+  }
+
+  /** Makes the dispatcher's gigs match the world's: the world's live gigs are the truth. */
+  syncGigs(snapshot: DeskSnapshot): void {
+    for (const order of snapshot.orders) {
+      const known = this.orders.get(order.id)
+      if (known) order.deliveredAt.forEach((at, leg) => { if (at !== null) known.deliveredAt[leg] = at })
+    }
+    const live = new Map(snapshot.gigs.filter(gig => ["open", "booked", "working"].includes(gig.status)).map(gig => [gig.id, gig]))
+    for (const [orderId, legs] of this.legGigs) for (const [leg, gigId] of legs) {
+      if (live.has(gigId)) continue
+      legs.delete(leg)
+    }
+    for (const gig of live.values()) {
+      if (gig.status === "open") this.booked.delete(gig.id)
+      else this.booked.add(gig.id)
+      const open = gig.stops.filter(stop => this.orders.get(stop.orderId)?.deliveredAt[stop.leg] === null)
+      const known = open.every(stop => this.legGigs.get(stop.orderId)?.get(stop.leg) === gig.id)
+      if (known && this.posts.has(gig.id)) continue
+      for (const stop of open) {
+        this.held.delete(stop.orderId)
+        this.legGigs.set(stop.orderId, (this.legGigs.get(stop.orderId) ?? new Map()).set(stop.leg, gig.id))
+      }
+      this.posts.set(gig.id, { type: "post", stops: gig.stops, audience: gig.audience, schedule: gig.schedule })
+      console.error(JSON.stringify({ at: this.now, relearned: gig.id, orders: [...new Set(gig.stops.map(stop => stop.orderId))] }))
+    }
   }
 
   offer(gigId: string, order: Order, limit = 3): void {
@@ -591,6 +626,7 @@ export class Dispatcher extends Desk {
           this.bids.delete(action.requestId)
         }
         const reason = result && !result.ok ? result.reason : "missing action result"
+        if (action.type === "post" && reason.includes("already in a live gig")) this.resync = true
         this.failures.push({ at: this.now, action, reason })
         console.error(JSON.stringify({ at: this.now, action: action.type, reason }))
       }
