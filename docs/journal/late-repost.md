@@ -34,7 +34,19 @@ Eight weeks, the same for both versions (`bh-robust-20261114-03`, `-06`, `-09`, 
 
 The late orders stay late: no fee finds them a driver in time. They cost less.
 
+## One repost, and a lower fee
+
+The first version posted the gig again on every pass of the dispatcher, a new gig each half hour, because it remembered the repost by gig and not by order. Fixed: one repost for each last pickup time. A reposted gig was booked after 2 minutes in the median, by the first driver who looked at it, so 1.2 times the fee is more than a driver needs. Setting `lateFee` gives the first fee after the repost; the later steps scale with it.
+
+| On the same eight weeks, against the note reader alone | Mean difference | Weeks up / down | Lowest on-time share |
+| --- | ---: | ---: | ---: |
+| Repost on every pass, first fee 1.2 | +€583 (standard error €208) | 7 / 0 | 91.7% |
+| One repost, first fee 1.2 | +€265 (standard error €168) | 6 / 1 | 91.6% |
+| One repost, first fee 1.0 | +€657 (standard error €219) | 7 / 0 | 92.5% |
+
+The three do not differ by more than the noise. We keep one repost at the full fee: it is the cheapest and does the least in the drivers' app.
+
 ## What we do not know
 
-- Whether a driver would take such a gig below 1.2 times the fee. Not tried.
+- Whether a driver would take such a gig below the full fee. Not tried.
 - Whether the car arrives earlier than before. Not measured.

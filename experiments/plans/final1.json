@@ -1,0 +1,266 @@
+[
+ {
+  "label": "final1",
+  "seed": "bh-reader-20261114-01",
+  "settings": {
+   "noteReader": true,
+   "lateRepost": true,
+   "lateFee": 1.0,
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "final1",
+  "seed": "bh-reader-20261114-02",
+  "settings": {
+   "noteReader": true,
+   "lateRepost": true,
+   "lateFee": 1.0,
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "final1",
+  "seed": "bh-reader-20261114-03",
+  "settings": {
+   "noteReader": true,
+   "lateRepost": true,
+   "lateFee": 1.0,
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "final1",
+  "seed": "bh-reader-20261114-04",
+  "settings": {
+   "noteReader": true,
+   "lateRepost": true,
+   "lateFee": 1.0,
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "final1",
+  "seed": "bh-reader-20261114-05",
+  "settings": {
+   "noteReader": true,
+   "lateRepost": true,
+   "lateFee": 1.0,
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "final1",
+  "seed": "bh-reader-20261114-06",
+  "settings": {
+   "noteReader": true,
+   "lateRepost": true,
+   "lateFee": 1.0,
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "final1",
+  "seed": "bh-reader-20261114-07",
+  "settings": {
+   "noteReader": true,
+   "lateRepost": true,
+   "lateFee": 1.0,
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "final1",
+  "seed": "bh-reader-20261114-08",
+  "settings": {
+   "noteReader": true,
+   "lateRepost": true,
+   "lateFee": 1.0,
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "final1",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "noteReader": true,
+   "lateRepost": true,
+   "lateFee": 1.0,
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "final1",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "noteReader": true,
+   "lateRepost": true,
+   "lateFee": 1.0,
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "final1",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "noteReader": true,
+   "lateRepost": true,
+   "lateFee": 1.0,
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "final1",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "noteReader": true,
+   "lateRepost": true,
+   "lateFee": 1.0,
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "final1",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "noteReader": true,
+   "lateRepost": true,
+   "lateFee": 1.0,
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "final1",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "noteReader": true,
+   "lateRepost": true,
+   "lateFee": 1.0,
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "final1",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "noteReader": true,
+   "lateRepost": true,
+   "lateFee": 1.0,
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "final1",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "noteReader": true,
+   "lateRepost": true,
+   "lateFee": 1.0,
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "final1",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "noteReader": true,
+   "lateRepost": true,
+   "lateFee": 1.0,
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "final1",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "noteReader": true,
+   "lateRepost": true,
+   "lateFee": 1.0,
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "final1",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "noteReader": true,
+   "lateRepost": true,
+   "lateFee": 1.0,
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "final1",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "noteReader": true,
+   "lateRepost": true,
+   "lateFee": 1.0,
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "final1",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "noteReader": true,
+   "lateRepost": true,
+   "lateFee": 1.0,
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "final1",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "noteReader": true,
+   "lateRepost": true,
+   "lateFee": 1.0,
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "final1",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "noteReader": true,
+   "lateRepost": true,
+   "lateFee": 1.0,
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "final1",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "noteReader": true,
+   "lateRepost": true,
+   "lateFee": 1.0,
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ }
+]

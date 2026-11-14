@@ -30,6 +30,8 @@ export type Settings = {
   earlyClimb: boolean
   /** Post a gig again as soon as its last pickup time has passed, so a driver can take the late car for the next day. */
   lateRepost: boolean
+  /** The first fee of a gig posted again after its last pickup time, in full fees. */
+  lateFee: number
   /** The fee, in full fees, a day and half a day before the last pickup, for a gig that no driver has taken. */
   climbDay: number; climbHalfDay: number
   /** What a route really costs against the dispatcher's estimate, for routes under 50 km, from 50 km to 100 km, and longer. */
@@ -39,7 +41,7 @@ export const defaults: Settings = {
   price: 1.42, fee: 1.05, payout: 0.85, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
   notes: true, noteSpelling: false, relist: false, openingOnly: true, adaptive: true, earlyOffers: false, safetySlack: false,
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, noteReader: false, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
-  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.2, climbHalfDay: 1.45, lateRepost: false,
+  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.2, climbHalfDay: 1.45, lateRepost: false, lateFee: 1.2,
   earlyClimb: true,
 }
 
@@ -62,6 +64,7 @@ export class Dispatcher extends Desk {
   settings: Settings
   pending = new Set<string>()
   quoted = new Set<string>()
+  lateReposts = new Map<string, number>()
   noteFacts = new Map<string, { rules: NoteRules; timed: TimedNote | null }>()
   trust = new Map<string, number>()
   deliveredOrders = new Set<string>()
@@ -307,7 +310,7 @@ export class Dispatcher extends Desk {
     const routeChange = Math.max(1, duration(order.legs) / duration(request.legs))
     const fee = this.baseFee({ ...request, legs: order.legs }) * routeChange * cars / order.legs.length
     const pay = (schedule: FeeStep[], opening: boolean) => discounted ? this.payoutSchedule(schedule, opening) : schedule
-    if (this.level >= 2 && this.settings.lateRescue && cars === 1 && lateRescueApplies(order, this.now)) return pay(lateRescueSchedule(order, this.now, fee), false)
+    if (this.level >= 2 && this.settings.lateRescue && cars === 1 && lateRescueApplies(order, this.now)) return pay(lateRescueSchedule(order, this.now, this.settings.lateRepost ? fee * this.settings.lateFee / 1.2 : fee), false)
     const rescue = this.urgent.has(order.id)
     const pickupBy = this.pickupBy(order)
     const remaining = pickupBy - this.now
@@ -512,7 +515,7 @@ export class Dispatcher extends Desk {
           this.lastOffer.set(gigId, this.now)
           this.offer(gigId, order, order.lastPickupAt - this.now > 240 ? 1 : 3)
         }
-        const resetLate = this.level >= 2 && this.settings.lateRescue && lateRescueApplies(order, this.now) && this.posts.get(gigId)?.stops.length === 2 && this.lateResets.get(gigId) !== order.lastPickupAt
+        const resetLate = this.level >= 2 && this.settings.lateRescue && lateRescueApplies(order, this.now) && this.posts.get(gigId)?.stops.length === 2 && this.lateResets.get(gigId) !== order.lastPickupAt && this.lateReposts.get(order.id) !== order.lastPickupAt
         if (resetLate || this.now >= this.pickupBy(order) - 240 && (this.raised.get(gigId) ?? -Infinity) < this.now - 60) {
           if (resetLate) this.lateResets.set(gigId, order.lastPickupAt)
           this.raised.set(gigId, this.now)
@@ -536,6 +539,7 @@ export class Dispatcher extends Desk {
   async repostLate(order: Order, gigId: string): Promise<boolean> {
     const post = this.posts.get(gigId)
     if (!post || !await this.withdraw(order.id)) return false
+    this.lateReposts.set(order.id, order.lastPickupAt) // once for each last pickup time
     this.outbox.push({ ...post, stops: post.stops.map(stop => ({ ...stop, window: undefined })), schedule: this.feesFor(order, 1) })
     return true
   }
