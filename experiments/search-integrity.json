@@ -43,7 +43,14 @@
     "desiredConcurrentPracticeWorlds": 8,
     "maximumUnfinishedTeamPracticeWorlds": 8,
     "coordination": "User explicitly increased the limit at approximately11:35Helsinki on14November: remove4worldlimit,go8. This supersedes the four-world limit. Check shared occupancy before every serialized creation and use runs/team-world-creation.lock. Earlier running manifests retain their more restrictive guards; new eight-world manifests record the amendment. Never duplicate a runner after a polling timeout.",
-    "rankingAllowed": false,
+    "rankingAllowed": true,
+    "currentRankingAuthorization": {
+      "protocol": "experiments/levels-noon-protocol.json",
+      "instruction": "start submitting best models/policies for ranking starting level 1-4. Pause before 5-8 if there is anything to learn from 1-4",
+      "scope": "Season5, five runs each at levels1–4 under one frozen policy; pause before5–8; no final or test final.",
+      "cutoff": "2026-11-14T09:59:55Z",
+      "evidence": "Explicitly authorized deadline deployment, not statistical promotion or24-pair validation."
+    },
     "finalAllowed": false,
     "rankingAuthorization": {
       "at": "2026-11-14T06:46:29.833284+00:00",

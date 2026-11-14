@@ -1,0 +1,11 @@
+{
+  "role": "development nomination only",
+  "selectedForValidation": null,
+  "promoted": false,
+  "preservedSelection": "experiments/current-selection.json",
+  "lowerLevelCandidate": "research/low-level/bundle",
+  "report": "docs/portfolio-development-v1-results.json",
+  "findings": "docs/portfolio-development-findings.md",
+  "rankingAuthorized": false,
+  "finalAuthorized": false
+}
