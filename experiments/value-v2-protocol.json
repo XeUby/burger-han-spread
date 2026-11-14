@@ -1,0 +1,91 @@
+{
+  "version": 2,
+  "role": "Bounded architectural development, not independent validation or promotion",
+  "seedUnit": "Underlying seed across every policy, repeat, level and fork; six distinct seed blocks, not 34 independent observations",
+  "operations": {
+    "maximumUnfinishedTeamWorlds": 4,
+    "workers": 2,
+    "creation": "Local atomic creation lock plus server occupancy check before every creation. No other local research runner was active at preflight. Recheck server occupancy throughout; do not delete another runner's world.",
+    "ranked": false,
+    "testFinal": false,
+    "final": false
+  },
+  "priorEvidence": {
+    "calendar": "Rejected old implementation assumed 180 work minutes per local driver, assigned future service days and removed the incumbent gates. New capacity arm retains bounded count safeguards, does not impose service-day windows, and uses completed booking cohorts to change the price of outstanding work.",
+    "joint": "Rejected old implementation bought two uncertain requests jointly. New route arm credits only a feasible route involving an already won job; no second speculative quote win is required. Only 25% of modeled savings from open anchors, 50% from held anchors enter acquisition, and failed withdrawals preserve solo fulfillment.",
+    "driverOffers": "Old return-offer screen had few opportunities on the incumbent workload and was deferred without a live test. Reuse its tested feasibility helper on the changed capacity+route workload. Combined minus capacity-routes isolates this intervention; it is not a claim that a new offer heuristic is novel."
+  },
+  "arms": [
+    "benchmark",
+    "mechanisms",
+    "capacity",
+    "routes",
+    "capacity-routes",
+    "combined"
+  ],
+  "contrasts": [
+    "mechanisms minus benchmark isolates stale-action filtering at level8; first-option and opening-cost fixes matter only below level4",
+    "capacity minus mechanisms",
+    "routes minus mechanisms",
+    "capacity-routes minus mechanisms, with factorial interaction capacity-routes - capacity - routes + mechanisms",
+    "combined minus capacity-routes isolates driver offers under changed acquisition"
+  ],
+  "sample": {
+    "level8": "Four familiar seeds, all six arms: 24 worlds",
+    "levels1and4": "Two familiar underlying seeds, mechanisms versus capacity at each level: 8 worlds",
+    "randomizedPayments": "Two further worlds on the first two level8 seeds, mechanism policy with at most20 eligible single-car posts per week randomized equally among92%,100%,108% of initial pay. Keep escalation. Record actual selected fee and probability1/3, failures and censoring. These sequential interventions interfere within a world; do not call40 orders40 independent weeks."
+  },
+  "stopping": "Complete all34frozen worlds regardless of profit. Each world has a600second wall-time budget checked before each tick. Runtime/budget failures stop new creation, retain partial events/decisions/worlds, and let already-running worlds finish. A failed study cannot promote. Five-minute occupancy wait budget. No tuning or positive interim stopping.",
+  "developmentGate": {
+    "level8MeanGainEuros": 1500,
+    "versus": "mechanisms and preserved benchmark; report both",
+    "allCandidateWeeksQualified": true,
+    "minimumWeeklyOnTimeShare": 0.92,
+    "maximumAggregateOnTimeDrop": 0.005,
+    "undelivered": 0,
+    "failedVisits": 0,
+    "operationalFailures": 0,
+    "decision": "Only an arm satisfying every criterion may be proposed as a finalist; no promotion from this development panel. Poor results reject this implementation, not the architectural hypothesis. Inspect all action errors, fines and recoveries."
+  },
+  "analysis": {
+    "outcomes": [
+      "paired net profit",
+      "qualification",
+      "won orders",
+      "driver payments",
+      "refunds",
+      "undelivered",
+      "failed visits",
+      "fines",
+      "action errors",
+      "recoveries",
+      "creation/runtime failures"
+    ],
+    "uncertainty": "Per-level paired week outcomes, 95% paired-t intervals and paired bootstrap sensitivity, exact one-sided95% binomial lower bounds under IID-week assumptions. With four or two adaptive development blocks these are descriptive, not confirmatory multiplicity-adjusted claims.",
+    "accounting": "Reconcile every score margin to all ledger events. Never apportion a route fee arbitrarily to individual orders.",
+    "validation": "No validation seeds generated here. Freeze one finalist before reserving untouched seeds. Follow search-integrity.json alpha spending, at least24 unique pairs, variance/effect-size sizing and explicit qualification-probability target. This trial uses no alpha allocation and earns no promotion claim."
+  },
+  "onlineLearning": {
+    "startingPrior": "experiments/booking-response-prior.json; trained on57 historical seed groups, model comparison on19 distinct groups",
+    "updates": "At decision time use only award cohorts whose full120minute booking horizon has elapsed; exclude cohorts cancelled before the horizon. Regional observations weigh1 within70km and0.1 elsewhere. Starting prior has12 pseudo-orders. Each week starts from the same prior.",
+    "capacity": "Reserve pending probability plus half a Bernoulli standard deviation, capped1; outstanding unbooked work fully, booked work at0.25. Budget90 minutes per weighted home driver adjusted within[0.5,1.5] by the booking posterior/prior ratio. Opportunity price20c/min times squared load/budget capped3; positioning credit at most20% based only on prior observed request flow. Retain original daily/backlog gates at1.5x. These are frozen modeling assumptions, not driver assignment guarantees.",
+    "pricing": "Existing customer-choice model reoptimizes contribution with fulfillment proxy + capacity cost + booking-risk reserve - conservative anchored route credit. Original rescue payments remain except the separately randomized probes.",
+    "dataBoundary": "Seed, world IDs, final snapshots and reveal-only fields never enter live decision features. Public observations only. Offline and online model quality do not establish policy value."
+  },
+  "knownLimits": [
+    "Booked or moving low-charge reroutes cannot be amended through the API; incumbent charging-fine exposure remains and is logged.",
+    "Visible home drivers are not guaranteed supply; booking posterior is descriptive, not a causal driver-fee response.",
+    "The route credit uses a fixed uncertainty discount, not a calibrated anchor-survival model.",
+    "No private-address expansion, new note parser, whole-game optimality claim or leaderboard extrapolation.",
+    "Full process restarts abort the research trial. Transient recovery preserves model, RNG, route links and probe budget."
+  ],
+  "declaredAt": "2026-11-14T07:53:27.888709+00:00",
+  "previousProtocolSha256": "be94509751f6d5775dc965c767fe0e9b4e2c53b76934c6fcfdedc4473be33ba7",
+  "amendment": {
+    "reason": "v1 operational CPU failure; five completed worlds, two interrupted worlds and all27unstarted trials retained. See docs/value-development-interruption.json. The affected worlds were archived before administrative closure without further dispatch actions.",
+    "policyChange": "No price, payment, learning, routing, offer-feasibility or risk parameters changed. Skip provably ineligible/stale drivers before constructing offers, compute immutable open-gig features once per call, and refresh shared quotas before each driver. Behavioral equivalence test checks actions and quota state against frozenv1.",
+    "logging": "Journal decision telemetry after every tick and event batch, in addition to terminal artifacts. A fatal process exit can lose at most the current unfinished batch's telemetry; public server events remain recoverable.",
+    "newFreeze": "Repeat the complete34-world development panel under a new source/prior/protocol/launcher manifest. Repeats remain the same six underlying seed blocks. No claim from the interrupted panel is promoted.",
+    "audit": "docs/value-offer-performance.json"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "scope": "Disabled research policy versus current validated control on recorded inputs; not a counterfactual profit estimate",
+  "policySha256": "4f21e71f1104e2dde12cf20cf649454b6a2d8730d5b70b98e3f94c328c48b3c9",
+  "rows": [
+    {
+      "worldId": "wccca731d04dbfacbaba0",
+      "seed": "formal-unseen-20261113-09",
+      "identicalActions": 1402,
+      "identicalDecisionFrames": 3346
+    },
+    {
+      "worldId": "w7b412da927edcef0081e",
+      "seed": "formal-unseen-20261113-10",
+      "identicalActions": 1890,
+      "identicalDecisionFrames": 4782
+    },
+    {
+      "worldId": "w2464fa0a1a5ce6878d47",
+      "seed": "formal-unseen-20261113-14",
+      "identicalActions": 1425,
+      "identicalDecisionFrames": 3981
+    }
+  ]
+}

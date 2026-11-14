@@ -1,0 +1,87 @@
+{
+  "at": "2026-11-14T07:50:25.778Z",
+  "plan": "experiments/value-development-v1.json",
+  "operationalFailure": true,
+  "stoppingRuleDeviation": "No per-world wall-time cutoff was declared. This was an unplanned operational interruption prompted by measured CPU saturation and profiling, so no result from this panel can promote a policy.",
+  "completedBeforeInterruption": 5,
+  "interrupted": [
+    {
+      "worldId": "wf6dadb9aa1076a8201ac",
+      "seed": "formal-unseen-20261113-09",
+      "level": 8,
+      "label": "value-v1-combined",
+      "reason": "Unplanned operational interruption: CPU-bound repeated supply scans in return-offer selection. No favorable profit stopping. All active worlds on this process are censored, including the companion worker.",
+      "interruptedAt": 6617,
+      "endsAt": 14280,
+      "observedScore": {
+        "marginCents": 687604,
+        "revenueCents": 1726992,
+        "marginShare": 0.3981512363693636,
+        "wonOrders": 270,
+        "onTimeShare": 0.9770642201834863,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "administrativeScore": {
+        "marginCents": 802032,
+        "revenueCents": 2325112,
+        "marginShare": 0.3449433833724999,
+        "wonOrders": 271,
+        "onTimeShare": 0.959409594095941,
+        "undeliveredShare": 0.014760147601476014,
+        "ranked": true
+      },
+      "eventsSha256": "b99f1fde2e012a5244ed1408c0f49a76bf14b3793e80b539db13d2d8b7d25841",
+      "interpretation": "Administrative completion used no further dispatcher actions. Its score is not a full-week policy estimate. The pre-interruption state/events are retained. Decision telemetry held in memory was lost on process termination; later runner revisions journal it after every step."
+    },
+    {
+      "worldId": "wa0804cfb5ddf9f747b79",
+      "seed": "formal-unseen-20261113-10",
+      "level": 8,
+      "label": "value-v1-benchmark",
+      "reason": "Unplanned operational interruption: CPU-bound repeated supply scans in return-offer selection. No favorable profit stopping. All active worlds on this process are censored, including the companion worker.",
+      "interruptedAt": 662,
+      "endsAt": 14280,
+      "observedScore": {
+        "marginCents": 0,
+        "revenueCents": 0,
+        "marginShare": 0,
+        "wonOrders": 5,
+        "onTimeShare": 1,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "administrativeScore": {
+        "marginCents": -78807,
+        "revenueCents": 9620,
+        "marginShare": -8.191995841995842,
+        "wonOrders": 6,
+        "onTimeShare": 0.3333333333333333,
+        "undeliveredShare": 0.6666666666666666,
+        "ranked": false
+      },
+      "eventsSha256": "9dfd1b980fe8c9922872e9378b6ca741fb0f0c5a65e2273fa206254026f5d160",
+      "interpretation": "Administrative completion used no further dispatcher actions. Its score is not a full-week policy estimate. The pre-interruption state/events are retained. Decision telemetry held in memory was lost on process termination; later runner revisions journal it after every step."
+    }
+  ],
+  "unfinishedTeamWorlds": [
+    {
+      "worldId": "w9aea0b45a10bc0e36ad3",
+      "kind": "practice",
+      "level": 8,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": false
+    },
+    {
+      "worldId": "w89ecc3b79527b7a9a496",
+      "kind": "practice",
+      "level": 8,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": false
+    }
+  ]
+}

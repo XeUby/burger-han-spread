@@ -187,17 +187,20 @@ export class Dispatcher extends Control {
   }
 
   offerReturns(): void {
-    if (this.level < 3 || this.now < this.offersAfter) return
+    if (this.level < 3 || this.now < this.offersAfter || this.now%1440<420 || this.now%1440>=1380) return
+    let gigs: { gigId: string; post: PostAction; order: Order; open: boolean; openingFeeCents: number; publicFeeCents: number; openOffers: number }[] | undefined
     for (const driver of this.drivers) {
       const position = this.driverPlace.get(driver.id)
-      if (!position || [...this.legGigs.values()].some(legs => [...legs.values()].some(g => this.gigDriver.get(g)===driver.id && this.booked.has(g)))) continue
       const key = `${Math.floor(this.now/1440)}:${driver.id}`
-      const gigs = [...this.posts].flatMap(([gigId, post]) => {
+      if (!position || position.at>this.now || this.now-position.at>30 || this.network.km(position.place,driver.homePlaceId)<70 || (this.offerCount.get(key) ?? 0)>=2) continue
+      if ([...this.legGigs.values()].some(legs => [...legs.values()].some(g => this.gigDriver.get(g)===driver.id && this.booked.has(g)))) continue
+      gigs ??= [...this.posts].flatMap(([gigId, post]) => {
         const order = this.orders.get(post.stops[0]!.orderId)
         const request = order && this.requests.get(order.id)
-        if (!order || !request) return []
-        return [{ gigId, post, order, open: !this.booked.has(gigId) && this.legGigs.get(order.id)?.get(0)===gigId, openingFeeCents: this.baseFee(request)*this.settings.payout, publicFeeCents: (post.schedule.findLast(s => s.at<=this.now) ?? post.schedule[0]!).feeCents, openOffers: (this.offers.get(gigId) ?? []).filter(o => o.until>this.now).length }]
+        if (!order || !request || this.booked.has(gigId) || this.legGigs.get(order.id)?.get(0)!==gigId) return []
+        return [{ gigId, post, order, open: true, openingFeeCents: this.baseFee(request)*this.settings.payout, publicFeeCents: (post.schedule.findLast(s => s.at<=this.now) ?? post.schedule[0]!).feeCents, openOffers: 0 }]
       })
+      for (const gig of gigs) gig.openOffers=(this.offers.get(gig.gigId) ?? []).filter(o=>o.until>this.now).length
       const offer = chooseChainOffer(this.now, { driver, placeId: position.place, at: position.at }, gigs, this.network, { discount: .95, offersUsedToday: this.offerCount.get(key) ?? 0, attemptedGigIds: this.driverAttempts })
       if (!offer) continue
       const { action } = offer

@@ -1,0 +1,481 @@
+{
+  "at": "2026-11-14T07:39:00.545Z",
+  "unfinished": [
+    {
+      "worldId": "w2546c5963b2652566461",
+      "kind": "practice",
+      "level": 8,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": false
+    },
+    {
+      "worldId": "wf6dadb9aa1076a8201ac",
+      "kind": "practice",
+      "level": 8,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": false
+    }
+  ],
+  "trainingWorlds": [
+    {
+      "seed": "cost-development-20261114-0671a6fd582581ca",
+      "worldId": "w1c625a913b4253e4af9a",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "cost-development-20261114-5540924d1a9eab19",
+      "worldId": "wc14f6ddca184f36568fb",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "cost-development-20261114-92b3ba4ed4d2e449",
+      "worldId": "w0af413244da4ca9f7714",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "cost-development-20261114-a92ca803a91fbe65",
+      "worldId": "w46c2c116aa79bff82fc9",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "formal-unseen-20261113-01",
+      "worldId": "w491340143d15a316668c",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "formal-unseen-20261113-02",
+      "worldId": "wc77bebb20668e8d3378f",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "formal-unseen-20261113-03",
+      "worldId": "waf9a9f4088b838638064",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "formal-unseen-20261113-04",
+      "worldId": "w5dbd69444b1f927e7ed3",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "formal-unseen-20261113-05",
+      "worldId": "w3cacf28249c0731760eb",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "formal-unseen-20261113-06",
+      "worldId": "w5938f3809abe0d6f051b",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "formal-unseen-20261113-07",
+      "worldId": "wb97a9a6e26526614e85b",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "formal-unseen-20261113-08",
+      "worldId": "w6fb9cdd546c36f5fa418",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "formal-unseen-20261113-09",
+      "worldId": "w09f7d47c59507d4e46cb",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "formal-unseen-20261113-10",
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "formal-unseen-20261113-11",
+      "worldId": "w679c0fd4b18e923880c6",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "formal-unseen-20261113-12",
+      "worldId": "w1a7b82a91f712427b624",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "formal-unseen-20261113-13",
+      "worldId": "w2f96a475ae718d1589d9",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w0b0a425cf803342bff2d",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "w039210a04d4ae45b4567",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "formal-unseen-20261113-16",
+      "worldId": "w3b92ad0e00a3d9a0302b",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "frontier-unseen-20261114-19325279220dd249",
+      "worldId": "w2aabdee2d303f39f1b63",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "frontier-unseen-20261114-4d17ec2759243bc1",
+      "worldId": "w7d747b57779c24ebbe3c",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "frontier-unseen-20261114-7233f333bf3d7c2e",
+      "worldId": "w08aa7edba012c50a9f39",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "frontier-unseen-20261114-779e9add6b14a18b",
+      "worldId": "wed077baaf55738a03245",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "frontier-unseen-20261114-7f39dd564e731085",
+      "worldId": "w6780460f61aa419c17c2",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "frontier-unseen-20261114-98dcde7a3d066a80",
+      "worldId": "w9bad3f6f3bb2a05f6e37",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "frontier-unseen-20261114-b256738651c1125d",
+      "worldId": "w94ce568c0df96c131a31",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "frontier-unseen-20261114-f5efce54acaddce6",
+      "worldId": "w531ed4987e09834cc1c1",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "holdout-1",
+      "worldId": "wd219768ea907dfeb7b60",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "holdout-2",
+      "worldId": "w1bffb098519f0532dddf",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "holdout-3",
+      "worldId": "w1161968626d8d95ecec7",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "holdout-4",
+      "worldId": "wb915d7ae809d2fec7776",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "holdout-5",
+      "worldId": "w65288bae5e4a8c3d8f5e",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-5916726ab4e9f863",
+      "worldId": "wa6e982433a45fbcdd401",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-5e15a0a3962a54ba",
+      "worldId": "w19ad9c95aa672e0b58b4",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-824df9f835246148",
+      "worldId": "w1c1994a0583f1b960853",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-864cfcc97f2cade5",
+      "worldId": "w2a2f50f79c60f9a8503f",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-9b483a1a53deba54",
+      "worldId": "wa8a176feea958e9bf80f",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-c551e105a48e2148",
+      "worldId": "w23b23a9de15d1374e9d6",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-e48160564a27cf74",
+      "worldId": "w49061de8484c00420b4f",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-e4ee0c5739a75ad0",
+      "worldId": "wbea5dbdaebeff5638d1c",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "level-compatibility-20261114",
+      "worldId": "w00020b2903e9a263e9b6",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "levels-development-2dba6ebe7258e63082c0",
+      "worldId": "w27a9907f165ecf084fdd",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "levels-development-bd4beddd353cf287138f",
+      "worldId": "w04ecb99ab29bf586a64f",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "levels-development-fbc5ca1adb2a1671179f",
+      "worldId": "w1c1a0a0dc2ae65b6f9fd",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-309e12dc0f90a102",
+      "worldId": "w2e9187237875066192e1",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-5914d58b5b701bdc",
+      "worldId": "w3fc02045dd321beb8d6f",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-6e740a3630050c2d",
+      "worldId": "w05c7c136c1ff39724db3",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-8bc883348a90d012",
+      "worldId": "w0be5b75baa67039789b8",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-b0a0611536d3eb20",
+      "worldId": "wb6570508fe39f334178a",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-c07ddff01f6c5f00",
+      "worldId": "w0a2762d880b912ef91d1",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-df5da3c0bccf1e98",
+      "worldId": "wddbfe455d9d22b4aa67c",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-f78979dd4e5b3a7c",
+      "worldId": "w8c4afff7ce388130bd35",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "payout-unseen-20261114-11d2bc22e5a2e17d",
+      "worldId": "w62f0984788410938c8b4",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "payout-unseen-20261114-166d26adce8afd0e",
+      "worldId": "w41dfb468b53ad569c41a",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "payout-unseen-20261114-1954b8aff04d03b3",
+      "worldId": "w09695636c500760ddad6",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "payout-unseen-20261114-1c6cfe93689d0a32",
+      "worldId": "w15a04360a544c329bb74",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "payout-unseen-20261114-266a2575198d039b",
+      "worldId": "w52ad5b635ac9d9a2a4a7",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "payout-unseen-20261114-2b782dea15c2c930",
+      "worldId": "w49612a1b08ad3d5d7143",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "payout-unseen-20261114-619e961538a5119e",
+      "worldId": "wd481f1b570d17886c38b",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "payout-unseen-20261114-8a0fdb3994ac5c0e",
+      "worldId": "w41c1a8d2426d61c029e1",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "payout-unseen-20261114-bdbb0af73763c605",
+      "worldId": "w14cd72c5bdfa45326d2e",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "payout-unseen-20261114-bfc8b37c1c3b01b5",
+      "worldId": "w8efb30b6ad8d38f3b698",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "payout-unseen-20261114-df10216ee874354b",
+      "worldId": "w69dc986161ca61b80710",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "payout-unseen-20261114-e2258b662e732c8e",
+      "worldId": "w9318346c090839395093",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "relisting-unseen-20261114-44179069f811e12a",
+      "worldId": "w04e60027b7b2b4d7b58b",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "relisting-unseen-20261114-49994c1da1bed296",
+      "worldId": "w119bd36598fdf32552b2",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "relisting-unseen-20261114-5291bd44e58fc0b8",
+      "worldId": "w204e5b617a8a34fb8b1b",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "relisting-unseen-20261114-593862ba0453d993",
+      "worldId": "w7eaa6b3210b790c25028",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "relisting-unseen-20261114-664fad94342f003c",
+      "worldId": "w84f9b01fde2cae59d96e",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "relisting-unseen-20261114-85e7c8159eb228d3",
+      "worldId": "w25bd5a8dbece356a4b6a",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "relisting-unseen-20261114-ae921d2f5a004c5c",
+      "worldId": "w129775e44fd461f4366b",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "relisting-unseen-20261114-be6ccba2d5332cc6",
+      "worldId": "w20a5b10fafcb6b7ad129",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "spread-1",
+      "worldId": "wd415561aaf36894b76de",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "validate-1",
+      "worldId": "wbcb207675e32e9aff20f",
+      "known": true,
+      "parent": null
+    },
+    {
+      "seed": "validate-2",
+      "worldId": "wd010ab552268190f208a",
+      "known": true,
+      "parent": null
+    }
+  ]
+}

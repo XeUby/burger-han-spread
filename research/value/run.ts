@@ -8,6 +8,8 @@ import type { Score } from "../../vendor/typescript/types.ts"
 const path = process.argv[2]
 if (!path) throw new Error("Use node --env-file=.env research/value/run.ts PLAN")
 const plan = JSON.parse(await readFile(path, "utf8"))
+if (plan.protocolSha256 && createHash("sha256").update(await readFile(plan.protocol)).digest("hex")!==plan.protocolSha256) throw new Error("Frozen protocol changed")
+if (plan.launcherSha256 && createHash("sha256").update(await readFile(new URL(import.meta.url))).digest("hex")!==plan.launcherSha256) throw new Error("Frozen launcher changed")
 if (!Number.isInteger(plan.jobs) || plan.jobs < 1 || plan.jobs > 2 || plan.maximumUnfinishedTeamWorlds !== 4) throw new Error("Research uses at most two workers and four unfinished team worlds")
 for (const trial of plan.trials) if (!trial.seed || "board" in trial || "worldId" in trial || !Number.isInteger(trial.level) || trial.level<1 || trial.level>8) throw new Error("Only seeded unranked trials are permitted")
 for (const [file, hash] of Object.entries(plan.files)) {

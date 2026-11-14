@@ -1,0 +1,548 @@
+{
+  "generatedAt": "2026-11-14T07:53:27.812817+00:00",
+  "role": "development only, no confirmatory multiplicity-adjusted claims",
+  "planSha256": "1debab46c4b160b3c64999341c9da9fddc6b1d0bf91fae283fcae62f35971638",
+  "policyRevision": "07484b381d9147cf8c5dbc659e521f0e494a83f234f53bbdd4d446bba2b1a8e3",
+  "terminal": false,
+  "completed": 5,
+  "expected": 34,
+  "uniqueSeedBlocks": 6,
+  "records": [
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-09",
+      "label": "value-v1-benchmark",
+      "status": "complete",
+      "worldId": "w65ad22507ef96c4a9e2f",
+      "runtimeFailures": [],
+      "score": {
+        "marginCents": 970127,
+        "revenueCents": 2555371,
+        "wonOrders": 296,
+        "onTimeShare": 0.9797297297297297,
+        "ranked": true,
+        "onTimeOrders": 290,
+        "undeliveredOrders": 0
+      },
+      "ledger": {
+        "revenue": 2555371,
+        "driver_fee": -1566970,
+        "late_refund": -13173,
+        "release_fee": -5101
+      },
+      "failedVisits": 0,
+      "actionErrors": [],
+      "recoveries": [],
+      "mechanisms": {
+        "action_result": 1394,
+        "post": 270
+      },
+      "artifactHashes": {
+        "meta": "16903d937f07675ee8d644902a64a4452caf247031fda170e099c3515cd4d0bb",
+        "events": "d90668ba2e873111c78831d32cd02bfb1153c8423ccfe2a52cab574ca057a715",
+        "snapshot": "5339cc47cdfb8181da914d60e7b9c855caa71ab6e5414cdc18e7ef8b6b71a605",
+        "score": "7ad5ef8b252614e1b730b9e9cdeb0289e1345b0b2cf3120da92b01f4d9dc08a1",
+        "errors": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recoveries": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "decisions": "ad0f3d670f84667464c12af362fef9d29aef3386059f7baef5e89b83c4d0adc3"
+      },
+      "errorContexts": [],
+      "routeOutcomes": {
+        "joined": 0,
+        "fallback": 0,
+        "quotesWithCredit": 0,
+        "predictedCreditCents": 0,
+        "requestedOpeningSavingCents": 0
+      }
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-09",
+      "label": "value-v1-mechanisms",
+      "status": "complete",
+      "worldId": "wa7eb92af3766c12e3aef",
+      "runtimeFailures": [],
+      "score": {
+        "marginCents": 970127,
+        "revenueCents": 2555371,
+        "wonOrders": 296,
+        "onTimeShare": 0.9797297297297297,
+        "ranked": true,
+        "onTimeOrders": 290,
+        "undeliveredOrders": 0
+      },
+      "ledger": {
+        "revenue": 2555371,
+        "driver_fee": -1566970,
+        "late_refund": -13173,
+        "release_fee": -5101
+      },
+      "failedVisits": 0,
+      "actionErrors": [],
+      "recoveries": [],
+      "mechanisms": {
+        "action_result": 1394,
+        "post": 270
+      },
+      "artifactHashes": {
+        "meta": "e114d98bf0c6c55b16b456ffdd0919a9468639fa397ff9cf8f69526451c3b1d1",
+        "events": "d90668ba2e873111c78831d32cd02bfb1153c8423ccfe2a52cab574ca057a715",
+        "snapshot": "09f43f9a25a395166668cec3b9fca20fe921926a6d6a6f1b8604893b77caef26",
+        "score": "7ad5ef8b252614e1b730b9e9cdeb0289e1345b0b2cf3120da92b01f4d9dc08a1",
+        "errors": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recoveries": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "decisions": "ad0f3d670f84667464c12af362fef9d29aef3386059f7baef5e89b83c4d0adc3"
+      },
+      "errorContexts": [],
+      "routeOutcomes": {
+        "joined": 0,
+        "fallback": 0,
+        "quotesWithCredit": 0,
+        "predictedCreditCents": 0,
+        "requestedOpeningSavingCents": 0
+      }
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-09",
+      "label": "value-v1-capacity",
+      "status": "complete",
+      "worldId": "wec124a8fce19ba36c838",
+      "runtimeFailures": [],
+      "score": {
+        "marginCents": 971884,
+        "revenueCents": 2565266,
+        "wonOrders": 297,
+        "onTimeShare": 0.98989898989899,
+        "ranked": true,
+        "onTimeOrders": 294,
+        "undeliveredOrders": 0
+      },
+      "ledger": {
+        "revenue": 2565266,
+        "driver_fee": -1583891,
+        "late_refund": -6090,
+        "release_fee": -3401
+      },
+      "failedVisits": 0,
+      "actionErrors": [],
+      "recoveries": [],
+      "mechanisms": {
+        "quote_value": 632,
+        "action_result": 1386,
+        "post": 268,
+        "stale_skipped": 3
+      },
+      "artifactHashes": {
+        "meta": "f62285141f12058886cd5dfd64b6cf92242ba447e80a3a5ba2f7104d8adbc48e",
+        "events": "da4443709fed9771fae58471c469deb3d89c7d1882865032ec0eb1004f0c207c",
+        "snapshot": "47bb4d1a79454c04b09699a7550c04ca393e7c113f1402a85b9e77e471504e6b",
+        "score": "294f9527623a7cc996d36e9eb1a1f2a5f380431401dd99f4fb67ac2590664f72",
+        "errors": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recoveries": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "decisions": "4ff84ed6e667fb3c0c46f7e4de7c350c75a5142a0b73a024ec59b9c7014ae427"
+      },
+      "errorContexts": [],
+      "routeOutcomes": {
+        "joined": 0,
+        "fallback": 0,
+        "quotesWithCredit": 0,
+        "predictedCreditCents": 0,
+        "requestedOpeningSavingCents": 0
+      }
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-09",
+      "label": "value-v1-routes",
+      "status": "complete",
+      "worldId": "we89d8fc49f29979073e8",
+      "runtimeFailures": [],
+      "score": {
+        "marginCents": 1061169,
+        "revenueCents": 2689524,
+        "wonOrders": 308,
+        "onTimeShare": 0.987012987012987,
+        "ranked": true,
+        "onTimeOrders": 304,
+        "undeliveredOrders": 0
+      },
+      "ledger": {
+        "release_fee": -4631,
+        "revenue": 2689524,
+        "driver_fee": -1616152,
+        "late_refund": -7572
+      },
+      "failedVisits": 0,
+      "actionErrors": [],
+      "recoveries": [],
+      "mechanisms": {
+        "quote_value": 621,
+        "action_result": 1426,
+        "post": 292,
+        "route_joined": 36,
+        "route_fallback": 28
+      },
+      "artifactHashes": {
+        "meta": "6d4ed5af8587092357ef2882ced9ed7c0c71df34576c7a7f8f72002f92fef166",
+        "events": "31fae05038ae39bd976fdd052817b0471ebd8f88d502660ce1da0569e41af9c5",
+        "snapshot": "187dd2ec8bfd2e0b57985bc9c22fee2af11244540d21b2a39754f0af11cc57a0",
+        "score": "a850a588423c3106d1ec377f81f7288156bb47fb94bf4a209da800fcbc65d804",
+        "errors": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recoveries": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "decisions": "e72841e9e037d8ee95a22f2db6d5aea2d32811cfcc28a845cf948594114cdc2f"
+      },
+      "errorContexts": [],
+      "routeOutcomes": {
+        "joined": 36,
+        "fallback": 28,
+        "quotesWithCredit": 111,
+        "predictedCreditCents": 36833.25,
+        "requestedOpeningSavingCents": 32814
+      }
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-09",
+      "label": "value-v1-capacity-routes",
+      "status": "complete",
+      "worldId": "w2546c5963b2652566461",
+      "runtimeFailures": [],
+      "score": {
+        "marginCents": 1002006,
+        "revenueCents": 2633253,
+        "wonOrders": 305,
+        "onTimeShare": 0.9770491803278688,
+        "ranked": true,
+        "onTimeOrders": 298,
+        "undeliveredOrders": 0
+      },
+      "ledger": {
+        "release_fee": -4631,
+        "revenue": 2633253,
+        "driver_fee": -1605141,
+        "late_refund": -21475
+      },
+      "failedVisits": 0,
+      "actionErrors": [],
+      "recoveries": [],
+      "mechanisms": {
+        "quote_value": 632,
+        "action_result": 1445,
+        "post": 287,
+        "route_joined": 29,
+        "route_fallback": 33,
+        "stale_skipped": 2
+      },
+      "artifactHashes": {
+        "meta": "108639da80d54e460fd1612160a00085f06121e258ec556f860f8067fb5ab098",
+        "events": "25c09cacc4dd9340b361dd323f4b93c16cc6695f08acae91180b525ab03fe444",
+        "snapshot": "245444d2793c6fd14774098ec4544775732c9b8a4fa693b8b29524e052b5e5a7",
+        "score": "d59c0b248b8f94f4cf845dcb92e9ca0e05e98289cb4859dd0981070ee12905b9",
+        "errors": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recoveries": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "decisions": "35eec6577ffb68000f19cc68da968c6f312a1458670d0a20eeaf94e31e7ba68d"
+      },
+      "errorContexts": [],
+      "routeOutcomes": {
+        "joined": 29,
+        "fallback": 33,
+        "quotesWithCredit": 110,
+        "predictedCreditCents": 35708.75,
+        "requestedOpeningSavingCents": 22976
+      }
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-09",
+      "label": "value-v1-combined",
+      "status": "failed",
+      "worldId": "wf6dadb9aa1076a8201ac",
+      "runtimeFailures": [
+        {
+          "event": "failed",
+          "at": "2026-11-14T07:50:24.705Z",
+          "label": "value-v1-combined",
+          "seed": "formal-unseen-20261113-09",
+          "level": 8,
+          "settings": {
+            "price": 1.42,
+            "fee": 1.05,
+            "payout": 0.85,
+            "margin": 0.1,
+            "capacity": 0.35,
+            "maxKm": 700,
+            "minDrivers": 8,
+            "notes": true,
+            "noteSpelling": false,
+            "relist": false,
+            "openingOnly": true,
+            "adaptive": true,
+            "earlyOffers": false,
+            "safetySlack": false,
+            "auction": false,
+            "allowPrivate": false,
+            "tradeIns": false,
+            "homeOffers": false,
+            "readiness": false,
+            "bundlePairs": true,
+            "timedNotes": false,
+            "lateRescue": true,
+            "sameDayPremium": 1,
+            "laterDiscount": 1,
+            "placePrior": 0,
+            "bundleWait": 15,
+            "backlog": 0.08,
+            "priceFloor": 0,
+            "costRatio": 1.15,
+            "trustStep": 0.01,
+            "sameDayBacklog": 4,
+            "demandSlope": 14,
+            "firstOptionOnly": true,
+            "openingCostAdmission": true,
+            "actionGuard": true,
+            "capacityValue": true,
+            "routeValue": true,
+            "driverValue": true
+          },
+          "worldId": "wf6dadb9aa1076a8201ac",
+          "error": "Unplanned operational interruption: CPU-bound repeated supply scans in return-offer selection. No favorable profit stopping. All active worlds on this process are censored, including the companion worker.",
+          "interruptedAt": 6617
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-10",
+      "label": "value-v1-benchmark",
+      "status": "failed",
+      "worldId": "wa0804cfb5ddf9f747b79",
+      "runtimeFailures": [
+        {
+          "event": "failed",
+          "at": "2026-11-14T07:50:25.375Z",
+          "label": "value-v1-benchmark",
+          "seed": "formal-unseen-20261113-10",
+          "level": 8,
+          "settings": {
+            "price": 1.42,
+            "fee": 1.05,
+            "payout": 0.85,
+            "margin": 0.1,
+            "capacity": 0.35,
+            "maxKm": 700,
+            "minDrivers": 8,
+            "notes": true,
+            "noteSpelling": false,
+            "relist": false,
+            "openingOnly": true,
+            "adaptive": true,
+            "earlyOffers": false,
+            "safetySlack": false,
+            "auction": false,
+            "allowPrivate": false,
+            "tradeIns": false,
+            "homeOffers": false,
+            "readiness": false,
+            "bundlePairs": true,
+            "timedNotes": false,
+            "lateRescue": true,
+            "sameDayPremium": 1,
+            "laterDiscount": 1,
+            "placePrior": 0,
+            "bundleWait": 15,
+            "backlog": 0.08,
+            "priceFloor": 0,
+            "costRatio": 1.15,
+            "trustStep": 0.01,
+            "sameDayBacklog": 4,
+            "demandSlope": 14
+          },
+          "worldId": "wa0804cfb5ddf9f747b79",
+          "error": "Unplanned operational interruption: CPU-bound repeated supply scans in return-offer selection. No favorable profit stopping. All active worlds on this process are censored, including the companion worker.",
+          "interruptedAt": 662
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-10",
+      "label": "value-v1-mechanisms",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-10",
+      "label": "value-v1-capacity",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-10",
+      "label": "value-v1-routes",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-10",
+      "label": "value-v1-capacity-routes",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-10",
+      "label": "value-v1-combined",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "value-v1-benchmark",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "value-v1-mechanisms",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "value-v1-capacity",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "value-v1-routes",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "value-v1-capacity-routes",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "value-v1-combined",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "value-v1-benchmark",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "value-v1-mechanisms",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "value-v1-capacity",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "value-v1-routes",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "value-v1-capacity-routes",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "value-v1-combined",
+      "status": "pending"
+    },
+    {
+      "level": 1,
+      "seed": "levels-development-2dba6ebe7258e63082c0",
+      "label": "value-v1-mechanisms",
+      "status": "pending"
+    },
+    {
+      "level": 1,
+      "seed": "levels-development-2dba6ebe7258e63082c0",
+      "label": "value-v1-capacity",
+      "status": "pending"
+    },
+    {
+      "level": 4,
+      "seed": "levels-development-2dba6ebe7258e63082c0",
+      "label": "value-v1-mechanisms",
+      "status": "pending"
+    },
+    {
+      "level": 4,
+      "seed": "levels-development-2dba6ebe7258e63082c0",
+      "label": "value-v1-capacity",
+      "status": "pending"
+    },
+    {
+      "level": 1,
+      "seed": "levels-development-fbc5ca1adb2a1671179f",
+      "label": "value-v1-mechanisms",
+      "status": "pending"
+    },
+    {
+      "level": 1,
+      "seed": "levels-development-fbc5ca1adb2a1671179f",
+      "label": "value-v1-capacity",
+      "status": "pending"
+    },
+    {
+      "level": 4,
+      "seed": "levels-development-fbc5ca1adb2a1671179f",
+      "label": "value-v1-mechanisms",
+      "status": "pending"
+    },
+    {
+      "level": 4,
+      "seed": "levels-development-fbc5ca1adb2a1671179f",
+      "label": "value-v1-capacity",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-09",
+      "label": "value-v1-payment-probe",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-10",
+      "label": "value-v1-payment-probe",
+      "status": "pending"
+    }
+  ],
+  "summary": {},
+  "contrasts": {},
+  "selectedForValidation": null,
+  "benchmarkReplications": [
+    {
+      "seed": "formal-unseen-20261113-09",
+      "archivedWorld": "wccca731d04dbfacbaba0",
+      "newWorld": "w65ad22507ef96c4a9e2f",
+      "identicalEvents": true,
+      "identicalScore": true
+    }
+  ],
+  "limitations": [
+    "Familiar development seeds, four independent blocks atlevel8 and two atlevels1/4; cross-level trials share blocks.",
+    "Intervals are descriptive and unstable with2or4 observations; bootstrap cannot reveal unseen tails.",
+    "Exact qualification bounds assume IID weeks. Four successes provide only47.3% lower confidence, two only22.4%.",
+    "No panel here supports a promotion, rank claim or global optimum."
+  ]
+}

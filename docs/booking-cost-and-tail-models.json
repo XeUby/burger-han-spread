@@ -1,0 +1,1240 @@
+{
+  "role": "Supplemental development prediction study, not used in frozen v1/v2 policies",
+  "split": {
+    "train": [
+      "cost-development-20261114-0671a6fd582581ca",
+      "cost-development-20261114-5540924d1a9eab19",
+      "cost-development-20261114-92b3ba4ed4d2e449",
+      "formal-unseen-20261113-03",
+      "formal-unseen-20261113-06",
+      "formal-unseen-20261113-07",
+      "formal-unseen-20261113-08",
+      "formal-unseen-20261113-09",
+      "formal-unseen-20261113-11",
+      "formal-unseen-20261113-12",
+      "formal-unseen-20261113-13",
+      "formal-unseen-20261113-14",
+      "formal-unseen-20261113-15",
+      "formal-unseen-20261113-16",
+      "frontier-unseen-20261114-7233f333bf3d7c2e",
+      "frontier-unseen-20261114-779e9add6b14a18b",
+      "frontier-unseen-20261114-7f39dd564e731085",
+      "frontier-unseen-20261114-98dcde7a3d066a80",
+      "frontier-unseen-20261114-b256738651c1125d",
+      "holdout-1",
+      "holdout-2",
+      "holdout-3",
+      "holdout-4",
+      "holdout-5",
+      "late-rescue-unseen-20261114-5916726ab4e9f863",
+      "late-rescue-unseen-20261114-824df9f835246148",
+      "late-rescue-unseen-20261114-864cfcc97f2cade5",
+      "late-rescue-unseen-20261114-9b483a1a53deba54",
+      "late-rescue-unseen-20261114-c551e105a48e2148",
+      "late-rescue-unseen-20261114-e48160564a27cf74",
+      "late-rescue-unseen-20261114-e4ee0c5739a75ad0",
+      "level-compatibility-20261114",
+      "levels-development-2dba6ebe7258e63082c0",
+      "levels-development-bd4beddd353cf287138f",
+      "levels-development-fbc5ca1adb2a1671179f",
+      "note-spelling-unseen-20261114-309e12dc0f90a102",
+      "note-spelling-unseen-20261114-5914d58b5b701bdc",
+      "note-spelling-unseen-20261114-6e740a3630050c2d",
+      "note-spelling-unseen-20261114-8bc883348a90d012",
+      "note-spelling-unseen-20261114-b0a0611536d3eb20",
+      "note-spelling-unseen-20261114-c07ddff01f6c5f00",
+      "note-spelling-unseen-20261114-f78979dd4e5b3a7c",
+      "payout-unseen-20261114-11d2bc22e5a2e17d",
+      "payout-unseen-20261114-166d26adce8afd0e",
+      "payout-unseen-20261114-1c6cfe93689d0a32",
+      "payout-unseen-20261114-266a2575198d039b",
+      "payout-unseen-20261114-2b782dea15c2c930",
+      "payout-unseen-20261114-8a0fdb3994ac5c0e",
+      "payout-unseen-20261114-bdbb0af73763c605",
+      "payout-unseen-20261114-bfc8b37c1c3b01b5",
+      "payout-unseen-20261114-df10216ee874354b",
+      "payout-unseen-20261114-e2258b662e732c8e",
+      "relisting-unseen-20261114-5291bd44e58fc0b8",
+      "relisting-unseen-20261114-593862ba0453d993",
+      "relisting-unseen-20261114-85e7c8159eb228d3",
+      "relisting-unseen-20261114-ae921d2f5a004c5c",
+      "spread-1"
+    ],
+    "test": [
+      "cost-development-20261114-a92ca803a91fbe65",
+      "formal-unseen-20261113-01",
+      "formal-unseen-20261113-02",
+      "formal-unseen-20261113-04",
+      "formal-unseen-20261113-05",
+      "formal-unseen-20261113-10",
+      "frontier-unseen-20261114-19325279220dd249",
+      "frontier-unseen-20261114-4d17ec2759243bc1",
+      "frontier-unseen-20261114-f5efce54acaddce6",
+      "late-rescue-unseen-20261114-5e15a0a3962a54ba",
+      "note-spelling-unseen-20261114-df5da3c0bccf1e98",
+      "payout-unseen-20261114-1954b8aff04d03b3",
+      "payout-unseen-20261114-619e961538a5119e",
+      "relisting-unseen-20261114-44179069f811e12a",
+      "relisting-unseen-20261114-49994c1da1bed296",
+      "relisting-unseen-20261114-664fad94342f003c",
+      "relisting-unseen-20261114-be6ccba2d5332cc6",
+      "validate-1",
+      "validate-2"
+    ]
+  },
+  "costGroups": 20414,
+  "tailOrders": 21936,
+  "cost": {
+    "scalar": {
+      "meanWeekGroupRmseEuros": 21.37654265737482,
+      "weeks": [
+        {
+          "seed": "cost-development-20261114-a92ca803a91fbe65",
+          "groupRmseEuros": 44.15724783310996,
+          "totalErrorEuros": 1450.0617137843574
+        },
+        {
+          "seed": "formal-unseen-20261113-01",
+          "groupRmseEuros": 6.022656005087824,
+          "totalErrorEuros": 26.349284375151328
+        },
+        {
+          "seed": "formal-unseen-20261113-02",
+          "groupRmseEuros": 16.585584784893715,
+          "totalErrorEuros": -166.31792414256628
+        },
+        {
+          "seed": "formal-unseen-20261113-04",
+          "groupRmseEuros": 15.476562851986806,
+          "totalErrorEuros": -157.67053362113273
+        },
+        {
+          "seed": "formal-unseen-20261113-05",
+          "groupRmseEuros": 9.509984389867688,
+          "totalErrorEuros": 110.32195029977666
+        },
+        {
+          "seed": "formal-unseen-20261113-10",
+          "groupRmseEuros": 56.850003142811524,
+          "totalErrorEuros": -3397.3737249497826
+        },
+        {
+          "seed": "frontier-unseen-20261114-19325279220dd249",
+          "groupRmseEuros": 7.667084259315441,
+          "totalErrorEuros": -10.104311105741111
+        },
+        {
+          "seed": "frontier-unseen-20261114-4d17ec2759243bc1",
+          "groupRmseEuros": 13.258563639610246,
+          "totalErrorEuros": -68.28052707688111
+        },
+        {
+          "seed": "frontier-unseen-20261114-f5efce54acaddce6",
+          "groupRmseEuros": 15.181423616327168,
+          "totalErrorEuros": 249.793019699904
+        },
+        {
+          "seed": "late-rescue-unseen-20261114-5e15a0a3962a54ba",
+          "groupRmseEuros": 23.756214740736905,
+          "totalErrorEuros": -729.931221766798
+        },
+        {
+          "seed": "note-spelling-unseen-20261114-df5da3c0bccf1e98",
+          "groupRmseEuros": 12.154440268645086,
+          "totalErrorEuros": 344.79703326747006
+        },
+        {
+          "seed": "payout-unseen-20261114-1954b8aff04d03b3",
+          "groupRmseEuros": 40.6118729410599,
+          "totalErrorEuros": 1075.2427791400203
+        },
+        {
+          "seed": "payout-unseen-20261114-619e961538a5119e",
+          "groupRmseEuros": 50.55664544647153,
+          "totalErrorEuros": -1844.3903286673544
+        },
+        {
+          "seed": "relisting-unseen-20261114-44179069f811e12a",
+          "groupRmseEuros": 25.735754755613645,
+          "totalErrorEuros": -454.04065051963596
+        },
+        {
+          "seed": "relisting-unseen-20261114-49994c1da1bed296",
+          "groupRmseEuros": 18.543611966841453,
+          "totalErrorEuros": -75.59126943963876
+        },
+        {
+          "seed": "relisting-unseen-20261114-664fad94342f003c",
+          "groupRmseEuros": 12.492453032024963,
+          "totalErrorEuros": -248.6650872638973
+        },
+        {
+          "seed": "relisting-unseen-20261114-be6ccba2d5332cc6",
+          "groupRmseEuros": 15.381725279498127,
+          "totalErrorEuros": 730.9141627692452
+        },
+        {
+          "seed": "validate-1",
+          "groupRmseEuros": 9.630561229909382,
+          "totalErrorEuros": -89.6884990444292
+        },
+        {
+          "seed": "validate-2",
+          "groupRmseEuros": 12.581920306310247,
+          "totalErrorEuros": -87.79176927025314
+        }
+      ]
+    },
+    "additiveRidge": {
+      "meanWeekGroupRmseEuros": 21.147640481447365,
+      "weeks": [
+        {
+          "seed": "cost-development-20261114-a92ca803a91fbe65",
+          "groupRmseEuros": 41.65825935467963,
+          "totalErrorEuros": -29.0705736210557
+        },
+        {
+          "seed": "formal-unseen-20261113-01",
+          "groupRmseEuros": 7.7890022215725745,
+          "totalErrorEuros": -143.571269370006
+        },
+        {
+          "seed": "formal-unseen-20261113-02",
+          "groupRmseEuros": 16.166590324997294,
+          "totalErrorEuros": -344.303754818774
+        },
+        {
+          "seed": "formal-unseen-20261113-04",
+          "groupRmseEuros": 15.465717260396405,
+          "totalErrorEuros": 53.036616040413605
+        },
+        {
+          "seed": "formal-unseen-20261113-05",
+          "groupRmseEuros": 10.127745030377737,
+          "totalErrorEuros": -421.94967798594655
+        },
+        {
+          "seed": "formal-unseen-20261113-10",
+          "groupRmseEuros": 54.725090249147996,
+          "totalErrorEuros": -2876.6415783773973
+        },
+        {
+          "seed": "frontier-unseen-20261114-19325279220dd249",
+          "groupRmseEuros": 8.065085948246834,
+          "totalErrorEuros": 73.73385817479715
+        },
+        {
+          "seed": "frontier-unseen-20261114-4d17ec2759243bc1",
+          "groupRmseEuros": 14.029700113706472,
+          "totalErrorEuros": -43.246008720349806
+        },
+        {
+          "seed": "frontier-unseen-20261114-f5efce54acaddce6",
+          "groupRmseEuros": 15.412386246767614,
+          "totalErrorEuros": 182.33075544147496
+        },
+        {
+          "seed": "late-rescue-unseen-20261114-5e15a0a3962a54ba",
+          "groupRmseEuros": 23.081575217981865,
+          "totalErrorEuros": -678.9031027503536
+        },
+        {
+          "seed": "note-spelling-unseen-20261114-df5da3c0bccf1e98",
+          "groupRmseEuros": 12.795420113739441,
+          "totalErrorEuros": 269.1758734009495
+        },
+        {
+          "seed": "payout-unseen-20261114-1954b8aff04d03b3",
+          "groupRmseEuros": 39.49197022179285,
+          "totalErrorEuros": 194.13614528230983
+        },
+        {
+          "seed": "payout-unseen-20261114-619e961538a5119e",
+          "groupRmseEuros": 49.64756966254137,
+          "totalErrorEuros": -1624.00100487195
+        },
+        {
+          "seed": "relisting-unseen-20261114-44179069f811e12a",
+          "groupRmseEuros": 24.880981915281108,
+          "totalErrorEuros": -703.9880352084549
+        },
+        {
+          "seed": "relisting-unseen-20261114-49994c1da1bed296",
+          "groupRmseEuros": 18.469327549284397,
+          "totalErrorEuros": 122.99323365316775
+        },
+        {
+          "seed": "relisting-unseen-20261114-664fad94342f003c",
+          "groupRmseEuros": 12.03152231992815,
+          "totalErrorEuros": -235.85925413010122
+        },
+        {
+          "seed": "relisting-unseen-20261114-be6ccba2d5332cc6",
+          "groupRmseEuros": 16.436617995284617,
+          "totalErrorEuros": 399.3077205693535
+        },
+        {
+          "seed": "validate-1",
+          "groupRmseEuros": 9.226955658223794,
+          "totalErrorEuros": -65.22452706339939
+        },
+        {
+          "seed": "validate-2",
+          "groupRmseEuros": 12.303651743549805,
+          "totalErrorEuros": -208.71561706377574
+        }
+      ]
+    }
+  },
+  "deliveryTails": {
+    "0.95": {
+      "pooled": {
+        "meanWeekPinballHours": 0.49923149249820137,
+        "meanWeekCoverage": 0.9805118672818923,
+        "weeks": [
+          {
+            "seed": "cost-development-20261114-a92ca803a91fbe65",
+            "pinballHours": 1.1609636871508378,
+            "coverage": 0.9664804469273743
+          },
+          {
+            "seed": "formal-unseen-20261113-01",
+            "pinballHours": 0.0005885997521685254,
+            "coverage": 0.9962825278810409
+          },
+          {
+            "seed": "formal-unseen-20261113-02",
+            "pinballHours": 0.31912244897959186,
+            "coverage": 0.9918367346938776
+          },
+          {
+            "seed": "formal-unseen-20261113-04",
+            "pinballHours": 0.28558809523809525,
+            "coverage": 0.9914285714285714
+          },
+          {
+            "seed": "formal-unseen-20261113-05",
+            "pinballHours": 0.08371647509578543,
+            "coverage": 0.9961685823754789
+          },
+          {
+            "seed": "formal-unseen-20261113-10",
+            "pinballHours": 1.5247215081405312,
+            "coverage": 0.9562982005141388
+          },
+          {
+            "seed": "frontier-unseen-20261114-19325279220dd249",
+            "pinballHours": 0.19565128205128204,
+            "coverage": 0.9876923076923076
+          },
+          {
+            "seed": "frontier-unseen-20261114-4d17ec2759243bc1",
+            "pinballHours": 0.18075028636884305,
+            "coverage": 0.9862542955326461
+          },
+          {
+            "seed": "frontier-unseen-20261114-f5efce54acaddce6",
+            "pinballHours": 0.07605802792321117,
+            "coverage": 0.9869109947643979
+          },
+          {
+            "seed": "late-rescue-unseen-20261114-5e15a0a3962a54ba",
+            "pinballHours": 0.5506650641025641,
+            "coverage": 0.9743589743589743
+          },
+          {
+            "seed": "note-spelling-unseen-20261114-df5da3c0bccf1e98",
+            "pinballHours": 0.22348090277777777,
+            "coverage": 0.9826388888888888
+          },
+          {
+            "seed": "payout-unseen-20261114-1954b8aff04d03b3",
+            "pinballHours": 1.0145045662100454,
+            "coverage": 0.9561643835616438
+          },
+          {
+            "seed": "payout-unseen-20261114-619e961538a5119e",
+            "pinballHours": 1.3632099879663055,
+            "coverage": 0.9566787003610109
+          },
+          {
+            "seed": "relisting-unseen-20261114-44179069f811e12a",
+            "pinballHours": 0.4281523096129838,
+            "coverage": 0.9850187265917603
+          },
+          {
+            "seed": "relisting-unseen-20261114-49994c1da1bed296",
+            "pinballHours": 0.818624535315985,
+            "coverage": 0.9739776951672863
+          },
+          {
+            "seed": "relisting-unseen-20261114-664fad94342f003c",
+            "pinballHours": 0.6062672955974843,
+            "coverage": 0.969811320754717
+          },
+          {
+            "seed": "relisting-unseen-20261114-be6ccba2d5332cc6",
+            "pinballHours": 0.08050847457627118,
+            "coverage": 0.9932203389830508
+          },
+          {
+            "seed": "validate-1",
+            "pinballHours": 0.4288854166666667,
+            "coverage": 0.990625
+          },
+          {
+            "seed": "validate-2",
+            "pinballHours": 0.14393939393939395,
+            "coverage": 0.9878787878787879
+          }
+        ]
+      },
+      "boosted": {
+        "meanWeekPinballHours": 0.49923149249820137,
+        "meanWeekCoverage": 0.9805118672818923,
+        "weeks": [
+          {
+            "seed": "cost-development-20261114-a92ca803a91fbe65",
+            "pinballHours": 1.1609636871508378,
+            "coverage": 0.9664804469273743
+          },
+          {
+            "seed": "formal-unseen-20261113-01",
+            "pinballHours": 0.0005885997521685254,
+            "coverage": 0.9962825278810409
+          },
+          {
+            "seed": "formal-unseen-20261113-02",
+            "pinballHours": 0.31912244897959186,
+            "coverage": 0.9918367346938776
+          },
+          {
+            "seed": "formal-unseen-20261113-04",
+            "pinballHours": 0.28558809523809525,
+            "coverage": 0.9914285714285714
+          },
+          {
+            "seed": "formal-unseen-20261113-05",
+            "pinballHours": 0.08371647509578543,
+            "coverage": 0.9961685823754789
+          },
+          {
+            "seed": "formal-unseen-20261113-10",
+            "pinballHours": 1.5247215081405312,
+            "coverage": 0.9562982005141388
+          },
+          {
+            "seed": "frontier-unseen-20261114-19325279220dd249",
+            "pinballHours": 0.19565128205128204,
+            "coverage": 0.9876923076923076
+          },
+          {
+            "seed": "frontier-unseen-20261114-4d17ec2759243bc1",
+            "pinballHours": 0.18075028636884305,
+            "coverage": 0.9862542955326461
+          },
+          {
+            "seed": "frontier-unseen-20261114-f5efce54acaddce6",
+            "pinballHours": 0.07605802792321117,
+            "coverage": 0.9869109947643979
+          },
+          {
+            "seed": "late-rescue-unseen-20261114-5e15a0a3962a54ba",
+            "pinballHours": 0.5506650641025641,
+            "coverage": 0.9743589743589743
+          },
+          {
+            "seed": "note-spelling-unseen-20261114-df5da3c0bccf1e98",
+            "pinballHours": 0.22348090277777777,
+            "coverage": 0.9826388888888888
+          },
+          {
+            "seed": "payout-unseen-20261114-1954b8aff04d03b3",
+            "pinballHours": 1.0145045662100454,
+            "coverage": 0.9561643835616438
+          },
+          {
+            "seed": "payout-unseen-20261114-619e961538a5119e",
+            "pinballHours": 1.3632099879663055,
+            "coverage": 0.9566787003610109
+          },
+          {
+            "seed": "relisting-unseen-20261114-44179069f811e12a",
+            "pinballHours": 0.4281523096129838,
+            "coverage": 0.9850187265917603
+          },
+          {
+            "seed": "relisting-unseen-20261114-49994c1da1bed296",
+            "pinballHours": 0.818624535315985,
+            "coverage": 0.9739776951672863
+          },
+          {
+            "seed": "relisting-unseen-20261114-664fad94342f003c",
+            "pinballHours": 0.6062672955974843,
+            "coverage": 0.969811320754717
+          },
+          {
+            "seed": "relisting-unseen-20261114-be6ccba2d5332cc6",
+            "pinballHours": 0.08050847457627118,
+            "coverage": 0.9932203389830508
+          },
+          {
+            "seed": "validate-1",
+            "pinballHours": 0.4288854166666667,
+            "coverage": 0.990625
+          },
+          {
+            "seed": "validate-2",
+            "pinballHours": 0.14393939393939395,
+            "coverage": 0.9878787878787879
+          }
+        ]
+      }
+    },
+    "0.99": {
+      "pooled": {
+        "meanWeekPinballHours": 0.4127843779836771,
+        "meanWeekCoverage": 0.9898950317061151,
+        "weeks": [
+          {
+            "seed": "cost-development-20261114-a92ca803a91fbe65",
+            "pinballHours": 0.9023268156424584,
+            "coverage": 0.9804469273743017
+          },
+          {
+            "seed": "formal-unseen-20261113-01",
+            "pinballHours": 0.1676604708798019,
+            "coverage": 1.0
+          },
+          {
+            "seed": "formal-unseen-20261113-02",
+            "pinballHours": 0.3633551020408164,
+            "coverage": 0.9918367346938776
+          },
+          {
+            "seed": "formal-unseen-20261113-04",
+            "pinballHours": 0.32156523809523835,
+            "coverage": 0.9914285714285714
+          },
+          {
+            "seed": "formal-unseen-20261113-05",
+            "pinballHours": 0.190667943805875,
+            "coverage": 0.9961685823754789
+          },
+          {
+            "seed": "formal-unseen-20261113-10",
+            "pinballHours": 1.1232107969151672,
+            "coverage": 0.9665809768637532
+          },
+          {
+            "seed": "frontier-unseen-20261114-19325279220dd249",
+            "pinballHours": 0.19453025641025654,
+            "coverage": 0.9938461538461538
+          },
+          {
+            "seed": "frontier-unseen-20261114-4d17ec2759243bc1",
+            "pinballHours": 0.16576403207331059,
+            "coverage": 1.0
+          },
+          {
+            "seed": "frontier-unseen-20261114-f5efce54acaddce6",
+            "pinballHours": 0.16800043630017464,
+            "coverage": 0.9973821989528796
+          },
+          {
+            "seed": "late-rescue-unseen-20261114-5e15a0a3962a54ba",
+            "pinballHours": 0.3971266025641026,
+            "coverage": 0.9903846153846154
+          },
+          {
+            "seed": "note-spelling-unseen-20261114-df5da3c0bccf1e98",
+            "pinballHours": 0.16531423611111126,
+            "coverage": 1.0
+          },
+          {
+            "seed": "payout-unseen-20261114-1954b8aff04d03b3",
+            "pinballHours": 0.622878082191781,
+            "coverage": 0.9753424657534246
+          },
+          {
+            "seed": "payout-unseen-20261114-619e961538a5119e",
+            "pinballHours": 0.8829801444043323,
+            "coverage": 0.9638989169675091
+          },
+          {
+            "seed": "relisting-unseen-20261114-44179069f811e12a",
+            "pinballHours": 0.3767677902621725,
+            "coverage": 0.9887640449438202
+          },
+          {
+            "seed": "relisting-unseen-20261114-49994c1da1bed296",
+            "pinballHours": 0.6739194547707559,
+            "coverage": 0.9888475836431226
+          },
+          {
+            "seed": "relisting-unseen-20261114-664fad94342f003c",
+            "pinballHours": 0.33644213836478004,
+            "coverage": 0.9924528301886792
+          },
+          {
+            "seed": "relisting-unseen-20261114-be6ccba2d5332cc6",
+            "pinballHours": 0.1668192090395482,
+            "coverage": 1.0
+          },
+          {
+            "seed": "validate-1",
+            "pinballHours": 0.4574229166666669,
+            "coverage": 0.990625
+          },
+          {
+            "seed": "validate-2",
+            "pinballHours": 0.16615151515151533,
+            "coverage": 1.0
+          }
+        ]
+      },
+      "boosted": {
+        "meanWeekPinballHours": 0.22644486428802305,
+        "meanWeekCoverage": 0.9891089344659203,
+        "weeks": [
+          {
+            "seed": "cost-development-20261114-a92ca803a91fbe65",
+            "pinballHours": 0.16254675147804618,
+            "coverage": 0.9888268156424581
+          },
+          {
+            "seed": "formal-unseen-20261113-01",
+            "pinballHours": 0.0808737462206518,
+            "coverage": 1.0
+          },
+          {
+            "seed": "formal-unseen-20261113-02",
+            "pinballHours": 0.09313435389939058,
+            "coverage": 0.9959183673469387
+          },
+          {
+            "seed": "formal-unseen-20261113-04",
+            "pinballHours": 0.234240668133995,
+            "coverage": 0.9942857142857143
+          },
+          {
+            "seed": "formal-unseen-20261113-05",
+            "pinballHours": 0.1180516931041971,
+            "coverage": 0.9961685823754789
+          },
+          {
+            "seed": "formal-unseen-20261113-10",
+            "pinballHours": 0.36319785587098113,
+            "coverage": 0.987146529562982
+          },
+          {
+            "seed": "frontier-unseen-20261114-19325279220dd249",
+            "pinballHours": 0.14324868264310409,
+            "coverage": 0.9938461538461538
+          },
+          {
+            "seed": "frontier-unseen-20261114-4d17ec2759243bc1",
+            "pinballHours": 0.17321386026769003,
+            "coverage": 0.9896907216494846
+          },
+          {
+            "seed": "frontier-unseen-20261114-f5efce54acaddce6",
+            "pinballHours": 0.10274527215567149,
+            "coverage": 0.9973821989528796
+          },
+          {
+            "seed": "late-rescue-unseen-20261114-5e15a0a3962a54ba",
+            "pinballHours": 0.3635731512738622,
+            "coverage": 0.9871794871794872
+          },
+          {
+            "seed": "note-spelling-unseen-20261114-df5da3c0bccf1e98",
+            "pinballHours": 0.16248456302675085,
+            "coverage": 0.9895833333333334
+          },
+          {
+            "seed": "payout-unseen-20261114-1954b8aff04d03b3",
+            "pinballHours": 0.3956248755637146,
+            "coverage": 0.9863013698630136
+          },
+          {
+            "seed": "payout-unseen-20261114-619e961538a5119e",
+            "pinballHours": 0.5154414986060821,
+            "coverage": 0.9675090252707581
+          },
+          {
+            "seed": "relisting-unseen-20261114-44179069f811e12a",
+            "pinballHours": 0.1580289555412621,
+            "coverage": 0.9850187265917603
+          },
+          {
+            "seed": "relisting-unseen-20261114-49994c1da1bed296",
+            "pinballHours": 0.24176707960515667,
+            "coverage": 0.9851301115241635
+          },
+          {
+            "seed": "relisting-unseen-20261114-664fad94342f003c",
+            "pinballHours": 0.3376773833755487,
+            "coverage": 0.9773584905660377
+          },
+          {
+            "seed": "relisting-unseen-20261114-be6ccba2d5332cc6",
+            "pinballHours": 0.07263651986968638,
+            "coverage": 0.9932203389830508
+          },
+          {
+            "seed": "validate-1",
+            "pinballHours": 0.39922034190503153,
+            "coverage": 0.990625
+          },
+          {
+            "seed": "validate-2",
+            "pinballHours": 0.18474516893161486,
+            "coverage": 0.9878787878787879
+          }
+        ]
+      }
+    }
+  },
+  "costAudit": [
+    {
+      "seed": "cost-development-20261114-0671a6fd582581ca",
+      "worldId": "w1c625a913b4253e4af9a",
+      "includedCostCents": 1843609,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "cost-development-20261114-5540924d1a9eab19",
+      "worldId": "wc14f6ddca184f36568fb",
+      "includedCostCents": 2952057,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "cost-development-20261114-92b3ba4ed4d2e449",
+      "worldId": "w0af413244da4ca9f7714",
+      "includedCostCents": 2982257,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "cost-development-20261114-a92ca803a91fbe65",
+      "worldId": "w46c2c116aa79bff82fc9",
+      "includedCostCents": 2641043,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "formal-unseen-20261113-01",
+      "worldId": "w491340143d15a316668c",
+      "includedCostCents": 1761694,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "formal-unseen-20261113-02",
+      "worldId": "wc77bebb20668e8d3378f",
+      "includedCostCents": 1650561,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "formal-unseen-20261113-03",
+      "worldId": "waf9a9f4088b838638064",
+      "includedCostCents": 1867369,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "formal-unseen-20261113-04",
+      "worldId": "w5dbd69444b1f927e7ed3",
+      "includedCostCents": 2081699,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "formal-unseen-20261113-05",
+      "worldId": "w3cacf28249c0731760eb",
+      "includedCostCents": 1494220,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "formal-unseen-20261113-06",
+      "worldId": "w5938f3809abe0d6f051b",
+      "includedCostCents": 1112212,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "formal-unseen-20261113-07",
+      "worldId": "wb97a9a6e26526614e85b",
+      "includedCostCents": 1490683,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "formal-unseen-20261113-08",
+      "worldId": "w6fb9cdd546c36f5fa418",
+      "includedCostCents": 1943962,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "formal-unseen-20261113-09",
+      "worldId": "w09f7d47c59507d4e46cb",
+      "includedCostCents": 1574630,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "formal-unseen-20261113-10",
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "includedCostCents": 3343620,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "formal-unseen-20261113-11",
+      "worldId": "w679c0fd4b18e923880c6",
+      "includedCostCents": 1458057,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "formal-unseen-20261113-12",
+      "worldId": "w1a7b82a91f712427b624",
+      "includedCostCents": 2456276,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "formal-unseen-20261113-13",
+      "worldId": "w2f96a475ae718d1589d9",
+      "includedCostCents": 1796317,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w0b0a425cf803342bff2d",
+      "includedCostCents": 1435761,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "w039210a04d4ae45b4567",
+      "includedCostCents": 2920249,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "formal-unseen-20261113-16",
+      "worldId": "w3b92ad0e00a3d9a0302b",
+      "includedCostCents": 2073773,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "frontier-unseen-20261114-19325279220dd249",
+      "worldId": "w2aabdee2d303f39f1b63",
+      "includedCostCents": 1803088,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "frontier-unseen-20261114-4d17ec2759243bc1",
+      "worldId": "w7d747b57779c24ebbe3c",
+      "includedCostCents": 1780056,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "frontier-unseen-20261114-7233f333bf3d7c2e",
+      "worldId": "w08aa7edba012c50a9f39",
+      "includedCostCents": 2145181,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "frontier-unseen-20261114-779e9add6b14a18b",
+      "worldId": "wed077baaf55738a03245",
+      "includedCostCents": 1757949,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "frontier-unseen-20261114-7f39dd564e731085",
+      "worldId": "w6780460f61aa419c17c2",
+      "includedCostCents": 1586388,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "frontier-unseen-20261114-98dcde7a3d066a80",
+      "worldId": "w9bad3f6f3bb2a05f6e37",
+      "includedCostCents": 1606782,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "frontier-unseen-20261114-b256738651c1125d",
+      "worldId": "w94ce568c0df96c131a31",
+      "includedCostCents": 1713005,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "frontier-unseen-20261114-f5efce54acaddce6",
+      "worldId": "w531ed4987e09834cc1c1",
+      "includedCostCents": 2710571,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "holdout-1",
+      "worldId": "wd219768ea907dfeb7b60",
+      "includedCostCents": 701789,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "holdout-2",
+      "worldId": "w1bffb098519f0532dddf",
+      "includedCostCents": 1894854,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "holdout-3",
+      "worldId": "w1161968626d8d95ecec7",
+      "includedCostCents": 1737788,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "holdout-4",
+      "worldId": "wb915d7ae809d2fec7776",
+      "includedCostCents": 1727227,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "holdout-5",
+      "worldId": "w65288bae5e4a8c3d8f5e",
+      "includedCostCents": 1095369,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-5916726ab4e9f863",
+      "worldId": "wa6e982433a45fbcdd401",
+      "includedCostCents": 1672834,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-5e15a0a3962a54ba",
+      "worldId": "w19ad9c95aa672e0b58b4",
+      "includedCostCents": 2115960,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-824df9f835246148",
+      "worldId": "w1c1994a0583f1b960853",
+      "includedCostCents": 1346999,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-864cfcc97f2cade5",
+      "worldId": "w2a2f50f79c60f9a8503f",
+      "includedCostCents": 2453646,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-9b483a1a53deba54",
+      "worldId": "wa8a176feea958e9bf80f",
+      "includedCostCents": 2476715,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-c551e105a48e2148",
+      "worldId": "w23b23a9de15d1374e9d6",
+      "includedCostCents": 2533980,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-e48160564a27cf74",
+      "worldId": "w49061de8484c00420b4f",
+      "includedCostCents": 2105235,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-e4ee0c5739a75ad0",
+      "worldId": "wbea5dbdaebeff5638d1c",
+      "includedCostCents": 2463532,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "level-compatibility-20261114",
+      "worldId": "w00020b2903e9a263e9b6",
+      "includedCostCents": 1219103,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "levels-development-2dba6ebe7258e63082c0",
+      "worldId": "w27a9907f165ecf084fdd",
+      "includedCostCents": 4383284,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "levels-development-bd4beddd353cf287138f",
+      "worldId": "w04ecb99ab29bf586a64f",
+      "includedCostCents": 2235613,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "levels-development-fbc5ca1adb2a1671179f",
+      "worldId": "w1c1a0a0dc2ae65b6f9fd",
+      "includedCostCents": 150568,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-309e12dc0f90a102",
+      "worldId": "w2e9187237875066192e1",
+      "includedCostCents": 2857289,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-5914d58b5b701bdc",
+      "worldId": "w3fc02045dd321beb8d6f",
+      "includedCostCents": 2480453,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-6e740a3630050c2d",
+      "worldId": "w05c7c136c1ff39724db3",
+      "includedCostCents": 2233333,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-8bc883348a90d012",
+      "worldId": "w0be5b75baa67039789b8",
+      "includedCostCents": 1725370,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-b0a0611536d3eb20",
+      "worldId": "wb6570508fe39f334178a",
+      "includedCostCents": 1392039,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-c07ddff01f6c5f00",
+      "worldId": "w0a2762d880b912ef91d1",
+      "includedCostCents": 2153532,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-df5da3c0bccf1e98",
+      "worldId": "wddbfe455d9d22b4aa67c",
+      "includedCostCents": 2241650,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-f78979dd4e5b3a7c",
+      "worldId": "w8c4afff7ce388130bd35",
+      "includedCostCents": 2422084,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "payout-unseen-20261114-11d2bc22e5a2e17d",
+      "worldId": "w62f0984788410938c8b4",
+      "includedCostCents": 2068004,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "payout-unseen-20261114-166d26adce8afd0e",
+      "worldId": "w41dfb468b53ad569c41a",
+      "includedCostCents": 1884217,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "payout-unseen-20261114-1954b8aff04d03b3",
+      "worldId": "w09695636c500760ddad6",
+      "includedCostCents": 2749285,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "payout-unseen-20261114-1c6cfe93689d0a32",
+      "worldId": "w15a04360a544c329bb74",
+      "includedCostCents": 1615747,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "payout-unseen-20261114-266a2575198d039b",
+      "worldId": "w52ad5b635ac9d9a2a4a7",
+      "includedCostCents": 1883817,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "payout-unseen-20261114-2b782dea15c2c930",
+      "worldId": "w49612a1b08ad3d5d7143",
+      "includedCostCents": 2095690,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "payout-unseen-20261114-619e961538a5119e",
+      "worldId": "wd481f1b570d17886c38b",
+      "includedCostCents": 2354486,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "payout-unseen-20261114-8a0fdb3994ac5c0e",
+      "worldId": "w41c1a8d2426d61c029e1",
+      "includedCostCents": 2671725,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "payout-unseen-20261114-bdbb0af73763c605",
+      "worldId": "w14cd72c5bdfa45326d2e",
+      "includedCostCents": 1425754,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "payout-unseen-20261114-bfc8b37c1c3b01b5",
+      "worldId": "w8efb30b6ad8d38f3b698",
+      "includedCostCents": 2209365,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "payout-unseen-20261114-df10216ee874354b",
+      "worldId": "w69dc986161ca61b80710",
+      "includedCostCents": 2608842,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "payout-unseen-20261114-e2258b662e732c8e",
+      "worldId": "w9318346c090839395093",
+      "includedCostCents": 1857389,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "relisting-unseen-20261114-44179069f811e12a",
+      "worldId": "w04e60027b7b2b4d7b58b",
+      "includedCostCents": 2150255,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "relisting-unseen-20261114-49994c1da1bed296",
+      "worldId": "w119bd36598fdf32552b2",
+      "includedCostCents": 2075193,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "relisting-unseen-20261114-5291bd44e58fc0b8",
+      "worldId": "w204e5b617a8a34fb8b1b",
+      "includedCostCents": 1351292,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "relisting-unseen-20261114-593862ba0453d993",
+      "worldId": "w7eaa6b3210b790c25028",
+      "includedCostCents": 2003807,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "relisting-unseen-20261114-664fad94342f003c",
+      "worldId": "w84f9b01fde2cae59d96e",
+      "includedCostCents": 1959877,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "relisting-unseen-20261114-85e7c8159eb228d3",
+      "worldId": "w25bd5a8dbece356a4b6a",
+      "includedCostCents": 2151180,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "relisting-unseen-20261114-ae921d2f5a004c5c",
+      "worldId": "w129775e44fd461f4366b",
+      "includedCostCents": 1726208,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "relisting-unseen-20261114-be6ccba2d5332cc6",
+      "worldId": "w20a5b10fafcb6b7ad129",
+      "includedCostCents": 1690835,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "spread-1",
+      "worldId": "wd415561aaf36894b76de",
+      "includedCostCents": 1754191,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "validate-1",
+      "worldId": "wbcb207675e32e9aff20f",
+      "includedCostCents": 1866487,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    },
+    {
+      "seed": "validate-2",
+      "worldId": "wd010ab552268190f208a",
+      "includedCostCents": 946265,
+      "excludedCostCents": 0,
+      "unassignedCostCents": 0
+    }
+  ],
+  "limitations": [
+    "Shared route fees are assigned once to connected order groups; no arbitrary per-order fee labels. Additive model predictions are computed separately from each order's public award-time features and then summed for scoring.",
+    "Costs include actual refunds, fines and penalties; grouping is a target constraint, not a live feature.",
+    "Lateness is raw clock hours relative to final public deadlines, not business-day refund tiers. Cancelled/undelivered tail outcomes are excluded, not mislabeled as timely; qualification audit retains undelivered orders separately.",
+    "Historical policies lack action overlap. Better predictive scores cannot establish the value of different acceptance or payments.",
+    "No model search after reading the19test weeks; these remain development evidence and all model results are retained."
+  ]
+}

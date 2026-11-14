@@ -1,0 +1,404 @@
+{
+  "networkxVersion": "3.2.1",
+  "dispatcherSourceSha256": "298fb0b1cc5f7a04f3b3a926cc7734becf58b67529cd6bd13dd515db678e91a3",
+  "integerWeights": true,
+  "maximumCardinality": false,
+  "exactCases": 48,
+  "allExactCasesMatched": true,
+  "cases": [
+    {
+      "nodes": 2,
+      "edges": 0,
+      "kind": "exact-component",
+      "networkxWeight": 0,
+      "dispatcherWeight": 0,
+      "gap": 0
+    },
+    {
+      "nodes": 2,
+      "edges": 0,
+      "kind": "exact-component",
+      "networkxWeight": 0,
+      "dispatcherWeight": 0,
+      "gap": 0
+    },
+    {
+      "nodes": 2,
+      "edges": 0,
+      "kind": "exact-component",
+      "networkxWeight": 0,
+      "dispatcherWeight": 0,
+      "gap": 0
+    },
+    {
+      "nodes": 2,
+      "edges": 0,
+      "kind": "exact-component",
+      "networkxWeight": 0,
+      "dispatcherWeight": 0,
+      "gap": 0
+    },
+    {
+      "nodes": 2,
+      "edges": 1,
+      "kind": "exact-component",
+      "networkxWeight": 9279,
+      "dispatcherWeight": 9279,
+      "gap": 0
+    },
+    {
+      "nodes": 2,
+      "edges": 0,
+      "kind": "exact-component",
+      "networkxWeight": 0,
+      "dispatcherWeight": 0,
+      "gap": 0
+    },
+    {
+      "nodes": 2,
+      "edges": 1,
+      "kind": "exact-component",
+      "networkxWeight": 3545,
+      "dispatcherWeight": 3545,
+      "gap": 0
+    },
+    {
+      "nodes": 2,
+      "edges": 0,
+      "kind": "exact-component",
+      "networkxWeight": 0,
+      "dispatcherWeight": 0,
+      "gap": 0
+    },
+    {
+      "nodes": 4,
+      "edges": 2,
+      "kind": "exact-component",
+      "networkxWeight": 8917,
+      "dispatcherWeight": 8917,
+      "gap": 0
+    },
+    {
+      "nodes": 4,
+      "edges": 2,
+      "kind": "exact-component",
+      "networkxWeight": 9025,
+      "dispatcherWeight": 9025,
+      "gap": 0
+    },
+    {
+      "nodes": 4,
+      "edges": 2,
+      "kind": "exact-component",
+      "networkxWeight": 6211,
+      "dispatcherWeight": 6211,
+      "gap": 0
+    },
+    {
+      "nodes": 4,
+      "edges": 1,
+      "kind": "exact-component",
+      "networkxWeight": 5109,
+      "dispatcherWeight": 5109,
+      "gap": 0
+    },
+    {
+      "nodes": 4,
+      "edges": 1,
+      "kind": "exact-component",
+      "networkxWeight": 6147,
+      "dispatcherWeight": 6147,
+      "gap": 0
+    },
+    {
+      "nodes": 4,
+      "edges": 1,
+      "kind": "exact-component",
+      "networkxWeight": 4477,
+      "dispatcherWeight": 4477,
+      "gap": 0
+    },
+    {
+      "nodes": 4,
+      "edges": 4,
+      "kind": "exact-component",
+      "networkxWeight": 8853,
+      "dispatcherWeight": 8853,
+      "gap": 0
+    },
+    {
+      "nodes": 4,
+      "edges": 0,
+      "kind": "exact-component",
+      "networkxWeight": 0,
+      "dispatcherWeight": 0,
+      "gap": 0
+    },
+    {
+      "nodes": 6,
+      "edges": 5,
+      "kind": "exact-component",
+      "networkxWeight": 11016,
+      "dispatcherWeight": 11016,
+      "gap": 0
+    },
+    {
+      "nodes": 6,
+      "edges": 2,
+      "kind": "exact-component",
+      "networkxWeight": 5511,
+      "dispatcherWeight": 5511,
+      "gap": 0
+    },
+    {
+      "nodes": 6,
+      "edges": 2,
+      "kind": "exact-component",
+      "networkxWeight": 7341,
+      "dispatcherWeight": 7341,
+      "gap": 0
+    },
+    {
+      "nodes": 6,
+      "edges": 2,
+      "kind": "exact-component",
+      "networkxWeight": 15502,
+      "dispatcherWeight": 15502,
+      "gap": 0
+    },
+    {
+      "nodes": 6,
+      "edges": 2,
+      "kind": "exact-component",
+      "networkxWeight": 1973,
+      "dispatcherWeight": 1973,
+      "gap": 0
+    },
+    {
+      "nodes": 6,
+      "edges": 3,
+      "kind": "exact-component",
+      "networkxWeight": 8816,
+      "dispatcherWeight": 8816,
+      "gap": 0
+    },
+    {
+      "nodes": 6,
+      "edges": 5,
+      "kind": "exact-component",
+      "networkxWeight": 20508,
+      "dispatcherWeight": 20508,
+      "gap": 0
+    },
+    {
+      "nodes": 6,
+      "edges": 4,
+      "kind": "exact-component",
+      "networkxWeight": 8154,
+      "dispatcherWeight": 8154,
+      "gap": 0
+    },
+    {
+      "nodes": 10,
+      "edges": 14,
+      "kind": "exact-component",
+      "networkxWeight": 14981,
+      "dispatcherWeight": 14981,
+      "gap": 0
+    },
+    {
+      "nodes": 10,
+      "edges": 9,
+      "kind": "exact-component",
+      "networkxWeight": 33718,
+      "dispatcherWeight": 33718,
+      "gap": 0
+    },
+    {
+      "nodes": 10,
+      "edges": 15,
+      "kind": "exact-component",
+      "networkxWeight": 31908,
+      "dispatcherWeight": 31908,
+      "gap": 0
+    },
+    {
+      "nodes": 10,
+      "edges": 15,
+      "kind": "exact-component",
+      "networkxWeight": 37510,
+      "dispatcherWeight": 37510,
+      "gap": 0
+    },
+    {
+      "nodes": 10,
+      "edges": 12,
+      "kind": "exact-component",
+      "networkxWeight": 24137,
+      "dispatcherWeight": 24137,
+      "gap": 0
+    },
+    {
+      "nodes": 10,
+      "edges": 10,
+      "kind": "exact-component",
+      "networkxWeight": 24414,
+      "dispatcherWeight": 24414,
+      "gap": 0
+    },
+    {
+      "nodes": 10,
+      "edges": 11,
+      "kind": "exact-component",
+      "networkxWeight": 35735,
+      "dispatcherWeight": 35735,
+      "gap": 0
+    },
+    {
+      "nodes": 10,
+      "edges": 13,
+      "kind": "exact-component",
+      "networkxWeight": 32545,
+      "dispatcherWeight": 32545,
+      "gap": 0
+    },
+    {
+      "nodes": 14,
+      "edges": 25,
+      "kind": "exact-component",
+      "networkxWeight": 44687,
+      "dispatcherWeight": 44687,
+      "gap": 0
+    },
+    {
+      "nodes": 14,
+      "edges": 24,
+      "kind": "exact-component",
+      "networkxWeight": 44092,
+      "dispatcherWeight": 44092,
+      "gap": 0
+    },
+    {
+      "nodes": 14,
+      "edges": 23,
+      "kind": "exact-component",
+      "networkxWeight": 37441,
+      "dispatcherWeight": 37441,
+      "gap": 0
+    },
+    {
+      "nodes": 14,
+      "edges": 23,
+      "kind": "exact-component",
+      "networkxWeight": 47858,
+      "dispatcherWeight": 47858,
+      "gap": 0
+    },
+    {
+      "nodes": 14,
+      "edges": 21,
+      "kind": "exact-component",
+      "networkxWeight": 49058,
+      "dispatcherWeight": 49058,
+      "gap": 0
+    },
+    {
+      "nodes": 14,
+      "edges": 24,
+      "kind": "exact-component",
+      "networkxWeight": 44053,
+      "dispatcherWeight": 44053,
+      "gap": 0
+    },
+    {
+      "nodes": 14,
+      "edges": 22,
+      "kind": "exact-component",
+      "networkxWeight": 50111,
+      "dispatcherWeight": 50111,
+      "gap": 0
+    },
+    {
+      "nodes": 14,
+      "edges": 20,
+      "kind": "exact-component",
+      "networkxWeight": 45990,
+      "dispatcherWeight": 45990,
+      "gap": 0
+    },
+    {
+      "nodes": 20,
+      "edges": 46,
+      "kind": "exact-component",
+      "networkxWeight": 69351,
+      "dispatcherWeight": 69351,
+      "gap": 0
+    },
+    {
+      "nodes": 20,
+      "edges": 54,
+      "kind": "exact-component",
+      "networkxWeight": 67729,
+      "dispatcherWeight": 67729,
+      "gap": 0
+    },
+    {
+      "nodes": 20,
+      "edges": 48,
+      "kind": "exact-component",
+      "networkxWeight": 74222,
+      "dispatcherWeight": 74222,
+      "gap": 0
+    },
+    {
+      "nodes": 20,
+      "edges": 41,
+      "kind": "exact-component",
+      "networkxWeight": 67149,
+      "dispatcherWeight": 67149,
+      "gap": 0
+    },
+    {
+      "nodes": 20,
+      "edges": 45,
+      "kind": "exact-component",
+      "networkxWeight": 67546,
+      "dispatcherWeight": 67546,
+      "gap": 0
+    },
+    {
+      "nodes": 20,
+      "edges": 37,
+      "kind": "exact-component",
+      "networkxWeight": 68160,
+      "dispatcherWeight": 68160,
+      "gap": 0
+    },
+    {
+      "nodes": 20,
+      "edges": 46,
+      "kind": "exact-component",
+      "networkxWeight": 76494,
+      "dispatcherWeight": 76494,
+      "gap": 0
+    },
+    {
+      "nodes": 20,
+      "edges": 45,
+      "kind": "exact-component",
+      "networkxWeight": 66369,
+      "dispatcherWeight": 66369,
+      "gap": 0
+    },
+    {
+      "nodes": 25,
+      "edges": 24,
+      "kind": "large-component-greedy-counterexample",
+      "networkxWeight": 208,
+      "dispatcherWeight": 111,
+      "gap": 97
+    }
+  ],
+  "decision": "Use NetworkX for offline matching and as an independent reference. The existing dispatcher is exact only within its <=20-node component path; its larger-component greedy fallback has no general optimum guarantee. This graph-level check does not estimate policy profit or certify the full dispatch problem.",
+  "documentation": "https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.matching.max_weight_matching.html"
+}
