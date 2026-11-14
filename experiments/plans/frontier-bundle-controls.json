@@ -1,0 +1,34 @@
+[
+  {
+    "label": "frontier-long-bundles",
+    "seed": "formal-unseen-20261113-14",
+    "settings": {
+      "bundleWait": 15,
+      "maxKm": 700
+    }
+  },
+  {
+    "label": "frontier-long-bundles",
+    "seed": "formal-unseen-20261113-15",
+    "settings": {
+      "bundleWait": 15,
+      "maxKm": 700
+    }
+  },
+  {
+    "label": "frontier-hold-control",
+    "seed": "formal-unseen-20261113-14",
+    "settings": {
+      "bundleWait": 15,
+      "bundlePairs": false
+    }
+  },
+  {
+    "label": "frontier-hold-control",
+    "seed": "formal-unseen-20261113-15",
+    "settings": {
+      "bundleWait": 15,
+      "bundlePairs": false
+    }
+  }
+]

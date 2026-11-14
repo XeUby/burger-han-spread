@@ -1,0 +1,38 @@
+[
+  {
+    "label": "frontier-home",
+    "seed": "formal-unseen-20261113-14",
+    "settings": {
+      "homeOffers": true
+    }
+  },
+  {
+    "label": "frontier-home",
+    "seed": "formal-unseen-20261113-15",
+    "settings": {
+      "homeOffers": true
+    }
+  },
+  {
+    "label": "frontier-home-volume",
+    "seed": "formal-unseen-20261113-14",
+    "settings": {
+      "homeOffers": true,
+      "capacity": 0.35,
+      "backlog": 0.08,
+      "minDrivers": 8,
+      "maxKm": 700
+    }
+  },
+  {
+    "label": "frontier-home-volume",
+    "seed": "formal-unseen-20261113-15",
+    "settings": {
+      "homeOffers": true,
+      "capacity": 0.35,
+      "backlog": 0.08,
+      "minDrivers": 8,
+      "maxKm": 700
+    }
+  }
+]

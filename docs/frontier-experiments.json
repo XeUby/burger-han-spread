@@ -1,0 +1,6194 @@
+{
+  "scope": "Stage-two development screens on explicit seeds14 and15 only. The earlier final-validation seeds are now reused as development data. Future holdout outcomes are excluded before any score read.",
+  "baselineSource": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+  "descriptions": {
+    "frontier-volume": "Larger daily capacity0.35 and unbooked allowance0.08, minimum supply8, max700km; four parameter changes together.",
+    "frontier-shadow": "Capacity0.50, backlog0.12, minimum supply8, max700km, and expected cost multiplier2.0; tests aggressive cost-based pricing jointly with looser admission.",
+    "frontier-lowfee": "Volume settings plus opening fee0.85 instead of1.05. Also changes quote floors and demand-model cost inputs; not an isolated payout experiment.",
+    "frontier-auction": "Defer commercial admission until five minutes before response, with an initial losing placeholder; prioritize due requests by expected contribution and reserve pending capacity later.",
+    "frontier-private": "Allow feasible private-address single-car work while retaining baseline price/capacity settings.",
+    "frontier-trade": "Allow feasible two-leg trade-ins while retaining baseline price/capacity settings.",
+    "frontier-menu": "Same-day menu price multiplier1.12; later options unchanged.",
+    "frontier-volume-auction": "Combines the larger volume admission settings with deferred quote-window allocation.",
+    "frontier-readiness": "Readiness-aware admission/timing treatment; inspect the full stored settings and frozen source.",
+    "frontier-place": "Place-aware demand treatment; inspect the full stored settings and frozen source.",
+    "frontier-bundles": "Hold safe public single-car posts for up to15 minutes and match feasible sequential pairs; retain baseline admission and prices.",
+    "frontier-volume-bundles": "Pairing plus capacity0.35, backlog0.08, minimum supply8 and maximum700km.",
+    "frontier-auction-bundles": "Pairing plus deferred commercial quoting five minutes before the response deadline.",
+    "frontier-hold-control": "Hold posts for15 minutes but disable route pairing; isolates the posting delay.",
+    "frontier-long-bundles": "Pairing plus maximum700km, retaining baseline capacity, backlog and minimum supply.",
+    "frontier-home": "Cheap direct offers to qualified drivers living near the destination, retaining baseline admission.",
+    "frontier-home-volume": "Destination-home offers plus the four broader volume settings."
+  },
+  "summary": {
+    "frontier-auction": {
+      "completed": 2,
+      "qualified": 2,
+      "meanMarginCents": 766359.5,
+      "meanPairedGainCents": 40631.5,
+      "worstOnTimeShare": 0.9722222222222222,
+      "bothSeedsComplete": true
+    },
+    "frontier-auction-bundles": {
+      "completed": 2,
+      "qualified": 2,
+      "meanMarginCents": 807303.5,
+      "meanPairedGainCents": 81575.5,
+      "worstOnTimeShare": 0.986159169550173,
+      "bothSeedsComplete": true
+    },
+    "frontier-bundles": {
+      "completed": 2,
+      "qualified": 2,
+      "meanMarginCents": 798540.5,
+      "meanPairedGainCents": 72812.5,
+      "worstOnTimeShare": 0.9893238434163701,
+      "bothSeedsComplete": true
+    },
+    "frontier-hold-control": {
+      "completed": 2,
+      "qualified": 2,
+      "meanMarginCents": 775312,
+      "meanPairedGainCents": 49584,
+      "worstOnTimeShare": 0.9752650176678446,
+      "bothSeedsComplete": true
+    },
+    "frontier-home": {
+      "completed": 2,
+      "qualified": 2,
+      "meanMarginCents": 743448.5,
+      "meanPairedGainCents": 17720.5,
+      "worstOnTimeShare": 0.9683098591549296,
+      "bothSeedsComplete": true
+    },
+    "frontier-home-volume": {
+      "completed": 2,
+      "qualified": 2,
+      "meanMarginCents": 861935,
+      "meanPairedGainCents": 136207,
+      "worstOnTimeShare": 0.9335347432024169,
+      "bothSeedsComplete": true
+    },
+    "frontier-long-bundles": {
+      "completed": 2,
+      "qualified": 2,
+      "meanMarginCents": 840906.5,
+      "meanPairedGainCents": 115178.5,
+      "worstOnTimeShare": 0.9657534246575342,
+      "bothSeedsComplete": true
+    },
+    "frontier-lowfee": {
+      "completed": 2,
+      "qualified": 1,
+      "meanMarginCents": 753928.5,
+      "meanPairedGainCents": 28200.5,
+      "worstOnTimeShare": 0.8717277486910995,
+      "bothSeedsComplete": true
+    },
+    "frontier-menu": {
+      "completed": 2,
+      "qualified": 2,
+      "meanMarginCents": 704902,
+      "meanPairedGainCents": -20826,
+      "worstOnTimeShare": 0.9855595667870036,
+      "bothSeedsComplete": true
+    },
+    "frontier-place": {
+      "completed": 2,
+      "qualified": 2,
+      "meanMarginCents": 755179,
+      "meanPairedGainCents": 29451,
+      "worstOnTimeShare": 0.971830985915493,
+      "bothSeedsComplete": true
+    },
+    "frontier-private": {
+      "completed": 2,
+      "qualified": 2,
+      "meanMarginCents": 750337,
+      "meanPairedGainCents": 24609,
+      "worstOnTimeShare": 0.9576547231270358,
+      "bothSeedsComplete": true
+    },
+    "frontier-readiness": {
+      "completed": 2,
+      "qualified": 2,
+      "meanMarginCents": 726009,
+      "meanPairedGainCents": 281,
+      "worstOnTimeShare": 0.9616724738675958,
+      "bothSeedsComplete": true
+    },
+    "frontier-shadow": {
+      "completed": 2,
+      "qualified": 2,
+      "meanMarginCents": 236026.5,
+      "meanPairedGainCents": -489701.5,
+      "worstOnTimeShare": 1,
+      "bothSeedsComplete": true
+    },
+    "frontier-trade": {
+      "completed": 2,
+      "qualified": 2,
+      "meanMarginCents": 745050.5,
+      "meanPairedGainCents": 19322.5,
+      "worstOnTimeShare": 0.9551724137931035,
+      "bothSeedsComplete": true
+    },
+    "frontier-volume": {
+      "completed": 2,
+      "qualified": 2,
+      "meanMarginCents": 861576,
+      "meanPairedGainCents": 135848,
+      "worstOnTimeShare": 0.9335347432024169,
+      "bothSeedsComplete": true
+    },
+    "frontier-volume-auction": {
+      "completed": 2,
+      "qualified": 2,
+      "meanMarginCents": 804975,
+      "meanPairedGainCents": 79247,
+      "worstOnTimeShare": 0.9424242424242424,
+      "bothSeedsComplete": true
+    },
+    "frontier-volume-bundles": {
+      "completed": 2,
+      "qualified": 2,
+      "meanMarginCents": 886171.5,
+      "meanPairedGainCents": 160443.5,
+      "worstOnTimeShare": 0.9361702127659575,
+      "bothSeedsComplete": true
+    }
+  },
+  "pairedComparisons": [
+    {
+      "variant": "frontier-volume",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "w039210a04d4ae45b4567",
+      "baselineWorldId": "w735d87d8fe1b99845667",
+      "marginCents": 912874,
+      "baselineMarginCents": 837822,
+      "gainCents": 75052,
+      "relativeGain": 0.08957988689721685,
+      "onTimeShare": 0.9335347432024169,
+      "baselineOnTimeShare": 0.9614035087719298,
+      "qualified": true,
+      "won": 331,
+      "baselineWon": 285
+    },
+    {
+      "variant": "frontier-auction",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w0b0a425cf803342bff2d",
+      "baselineWorldId": "w8b85572a9b6fc286e4ec",
+      "marginCents": 635691,
+      "baselineMarginCents": 613634,
+      "gainCents": 22057,
+      "relativeGain": 0.03594487919509026,
+      "onTimeShare": 0.9912663755458515,
+      "baselineOnTimeShare": 0.995575221238938,
+      "qualified": true,
+      "won": 229,
+      "baselineWon": 226
+    },
+    {
+      "variant": "frontier-private",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w161b1029585b69b3b961",
+      "baselineWorldId": "w8b85572a9b6fc286e4ec",
+      "marginCents": 694846,
+      "baselineMarginCents": 613634,
+      "gainCents": 81212,
+      "relativeGain": 0.1323459912586329,
+      "onTimeShare": 0.9960629921259843,
+      "baselineOnTimeShare": 0.995575221238938,
+      "qualified": true,
+      "won": 254,
+      "baselineWon": 226
+    },
+    {
+      "variant": "frontier-readiness",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w1da4784220098c5bdb89",
+      "baselineWorldId": "w8b85572a9b6fc286e4ec",
+      "marginCents": 619671,
+      "baselineMarginCents": 613634,
+      "gainCents": 6037,
+      "relativeGain": 0.009838111969023844,
+      "onTimeShare": 0.9956521739130435,
+      "baselineOnTimeShare": 0.995575221238938,
+      "qualified": true,
+      "won": 230,
+      "baselineWon": 226
+    },
+    {
+      "variant": "frontier-lowfee",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "w1e571df1d29a158e5690",
+      "baselineWorldId": "w735d87d8fe1b99845667",
+      "marginCents": 688432,
+      "baselineMarginCents": 837822,
+      "gainCents": -149390,
+      "relativeGain": -0.17830756413653492,
+      "onTimeShare": 0.8717277486910995,
+      "baselineOnTimeShare": 0.9614035087719298,
+      "qualified": false,
+      "won": 382,
+      "baselineWon": 285
+    },
+    {
+      "variant": "frontier-trade",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "w254075f877f4963e1ffc",
+      "baselineWorldId": "w735d87d8fe1b99845667",
+      "marginCents": 869116,
+      "baselineMarginCents": 837822,
+      "gainCents": 31294,
+      "relativeGain": 0.03735160929171122,
+      "onTimeShare": 0.9551724137931035,
+      "baselineOnTimeShare": 0.9614035087719298,
+      "qualified": true,
+      "won": 290,
+      "baselineWon": 285
+    },
+    {
+      "variant": "frontier-long-bundles",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w2d3a9c88f6ffd8d14e27",
+      "baselineWorldId": "w8b85572a9b6fc286e4ec",
+      "marginCents": 740763,
+      "baselineMarginCents": 613634,
+      "gainCents": 127129,
+      "relativeGain": 0.20717398318867608,
+      "onTimeShare": 0.9957983193277311,
+      "baselineOnTimeShare": 0.995575221238938,
+      "qualified": true,
+      "won": 238,
+      "baselineWon": 226
+    },
+    {
+      "variant": "frontier-home",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w3d80a69ff94fd19a1968",
+      "baselineWorldId": "w8b85572a9b6fc286e4ec",
+      "marginCents": 616536,
+      "baselineMarginCents": 613634,
+      "gainCents": 2902,
+      "relativeGain": 0.00472920340137617,
+      "onTimeShare": 0.9955947136563876,
+      "baselineOnTimeShare": 0.995575221238938,
+      "qualified": true,
+      "won": 227,
+      "baselineWon": 226
+    },
+    {
+      "variant": "frontier-volume-bundles",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w4fb61d1e0897ffb8fda9",
+      "baselineWorldId": "w8b85572a9b6fc286e4ec",
+      "marginCents": 862717,
+      "baselineMarginCents": 613634,
+      "gainCents": 249083,
+      "relativeGain": 0.405914600559943,
+      "onTimeShare": 0.9927272727272727,
+      "baselineOnTimeShare": 0.995575221238938,
+      "qualified": true,
+      "won": 275,
+      "baselineWon": 226
+    },
+    {
+      "variant": "frontier-home-volume",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w503ea3dd6214bb39d8ba",
+      "baselineWorldId": "w8b85572a9b6fc286e4ec",
+      "marginCents": 810996,
+      "baselineMarginCents": 613634,
+      "gainCents": 197362,
+      "relativeGain": 0.3216282018271477,
+      "onTimeShare": 0.9816849816849816,
+      "baselineOnTimeShare": 0.995575221238938,
+      "qualified": true,
+      "won": 273,
+      "baselineWon": 226
+    },
+    {
+      "variant": "frontier-place",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w5274695ce6e5f901b990",
+      "baselineWorldId": "w8b85572a9b6fc286e4ec",
+      "marginCents": 603711,
+      "baselineMarginCents": 613634,
+      "gainCents": -9923,
+      "relativeGain": -0.01617087710263776,
+      "onTimeShare": 0.9911111111111112,
+      "baselineOnTimeShare": 0.995575221238938,
+      "qualified": true,
+      "won": 225,
+      "baselineWon": 226
+    },
+    {
+      "variant": "frontier-place",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "w566fc6348194e5c4c9d0",
+      "baselineWorldId": "w735d87d8fe1b99845667",
+      "marginCents": 906647,
+      "baselineMarginCents": 837822,
+      "gainCents": 68825,
+      "relativeGain": 0.0821475205950668,
+      "onTimeShare": 0.971830985915493,
+      "baselineOnTimeShare": 0.9614035087719298,
+      "qualified": true,
+      "won": 284,
+      "baselineWon": 285
+    },
+    {
+      "variant": "frontier-home",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "w58455be33975d14abe85",
+      "baselineWorldId": "w735d87d8fe1b99845667",
+      "marginCents": 870361,
+      "baselineMarginCents": 837822,
+      "gainCents": 32539,
+      "relativeGain": 0.03883760512376133,
+      "onTimeShare": 0.9683098591549296,
+      "baselineOnTimeShare": 0.9614035087719298,
+      "qualified": true,
+      "won": 284,
+      "baselineWon": 285
+    },
+    {
+      "variant": "frontier-menu",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w5dd2ed60ca60ca57ffe7",
+      "baselineWorldId": "w8b85572a9b6fc286e4ec",
+      "marginCents": 523509,
+      "baselineMarginCents": 613634,
+      "gainCents": -90125,
+      "relativeGain": -0.14687093609545754,
+      "onTimeShare": 1,
+      "baselineOnTimeShare": 0.995575221238938,
+      "qualified": true,
+      "won": 203,
+      "baselineWon": 226
+    },
+    {
+      "variant": "frontier-long-bundles",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "w5eebc0627e34e58dc24a",
+      "baselineWorldId": "w735d87d8fe1b99845667",
+      "marginCents": 941050,
+      "baselineMarginCents": 837822,
+      "gainCents": 103228,
+      "relativeGain": 0.12320994196858037,
+      "onTimeShare": 0.9657534246575342,
+      "baselineOnTimeShare": 0.9614035087719298,
+      "qualified": true,
+      "won": 292,
+      "baselineWon": 285
+    },
+    {
+      "variant": "frontier-auction-bundles",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w6510b58d9684c4e12af7",
+      "baselineWorldId": "w8b85572a9b6fc286e4ec",
+      "marginCents": 633999,
+      "baselineMarginCents": 613634,
+      "gainCents": 20365,
+      "relativeGain": 0.03318753524087659,
+      "onTimeShare": 1,
+      "baselineOnTimeShare": 0.995575221238938,
+      "qualified": true,
+      "won": 228,
+      "baselineWon": 226
+    },
+    {
+      "variant": "frontier-auction-bundles",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "w67dd2997c4471c9b2e6c",
+      "baselineWorldId": "w735d87d8fe1b99845667",
+      "marginCents": 980608,
+      "baselineMarginCents": 837822,
+      "gainCents": 142786,
+      "relativeGain": 0.1704252215864468,
+      "onTimeShare": 0.986159169550173,
+      "baselineOnTimeShare": 0.9614035087719298,
+      "qualified": true,
+      "won": 289,
+      "baselineWon": 285
+    },
+    {
+      "variant": "frontier-bundles",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "w6a6204837557cd28bdf5",
+      "baselineWorldId": "w735d87d8fe1b99845667",
+      "marginCents": 965203,
+      "baselineMarginCents": 837822,
+      "gainCents": 127381,
+      "relativeGain": 0.15203826111035523,
+      "onTimeShare": 0.9893238434163701,
+      "baselineOnTimeShare": 0.9614035087719298,
+      "qualified": true,
+      "won": 281,
+      "baselineWon": 285
+    },
+    {
+      "variant": "frontier-hold-control",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "w73a9b99847220c8c1e54",
+      "baselineWorldId": "w735d87d8fe1b99845667",
+      "marginCents": 932363,
+      "baselineMarginCents": 837822,
+      "gainCents": 94541,
+      "relativeGain": 0.11284139113081304,
+      "onTimeShare": 0.9752650176678446,
+      "baselineOnTimeShare": 0.9614035087719298,
+      "qualified": true,
+      "won": 283,
+      "baselineWon": 285
+    },
+    {
+      "variant": "frontier-volume-auction",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "w73d7e06307a17b7156b5",
+      "baselineWorldId": "w735d87d8fe1b99845667",
+      "marginCents": 768585,
+      "baselineMarginCents": 837822,
+      "gainCents": -69237,
+      "relativeGain": -0.0826392718262352,
+      "onTimeShare": 0.9424242424242424,
+      "baselineOnTimeShare": 0.9614035087719298,
+      "qualified": true,
+      "won": 330,
+      "baselineWon": 285
+    },
+    {
+      "variant": "frontier-hold-control",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w756acf8ea6b691151370",
+      "baselineWorldId": "w8b85572a9b6fc286e4ec",
+      "marginCents": 618261,
+      "baselineMarginCents": 613634,
+      "gainCents": 4627,
+      "relativeGain": 0.0075403253405124104,
+      "onTimeShare": 0.9955947136563876,
+      "baselineOnTimeShare": 0.995575221238938,
+      "qualified": true,
+      "won": 227,
+      "baselineWon": 226
+    },
+    {
+      "variant": "frontier-private",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "w771a67e4380c9de4d000",
+      "baselineWorldId": "w735d87d8fe1b99845667",
+      "marginCents": 805828,
+      "baselineMarginCents": 837822,
+      "gainCents": -31994,
+      "relativeGain": -0.03818710895631772,
+      "onTimeShare": 0.9576547231270358,
+      "baselineOnTimeShare": 0.9614035087719298,
+      "qualified": true,
+      "won": 307,
+      "baselineWon": 285
+    },
+    {
+      "variant": "frontier-auction",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "w8009f8eec43876a31c73",
+      "baselineWorldId": "w735d87d8fe1b99845667",
+      "marginCents": 897028,
+      "baselineMarginCents": 837822,
+      "gainCents": 59206,
+      "relativeGain": 0.07066656163242313,
+      "onTimeShare": 0.9722222222222222,
+      "baselineOnTimeShare": 0.9614035087719298,
+      "qualified": true,
+      "won": 288,
+      "baselineWon": 285
+    },
+    {
+      "variant": "frontier-shadow",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "w83e930b0f35b6c5f8b21",
+      "baselineWorldId": "w735d87d8fe1b99845667",
+      "marginCents": 389492,
+      "baselineMarginCents": 837822,
+      "gainCents": -448330,
+      "relativeGain": -0.535113663761515,
+      "onTimeShare": 1,
+      "baselineOnTimeShare": 0.9614035087719298,
+      "qualified": true,
+      "won": 38,
+      "baselineWon": 285
+    },
+    {
+      "variant": "frontier-volume-auction",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w979261929ce968cdba3d",
+      "baselineWorldId": "w8b85572a9b6fc286e4ec",
+      "marginCents": 841365,
+      "baselineMarginCents": 613634,
+      "gainCents": 227731,
+      "relativeGain": 0.37111861467910834,
+      "onTimeShare": 0.9891304347826086,
+      "baselineOnTimeShare": 0.995575221238938,
+      "qualified": true,
+      "won": 276,
+      "baselineWon": 226
+    },
+    {
+      "variant": "frontier-shadow",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w99c7c7b8d252586f6e4e",
+      "baselineWorldId": "w8b85572a9b6fc286e4ec",
+      "marginCents": 82561,
+      "baselineMarginCents": 613634,
+      "gainCents": -531073,
+      "relativeGain": -0.865455629903167,
+      "onTimeShare": 1,
+      "baselineOnTimeShare": 0.995575221238938,
+      "qualified": true,
+      "won": 18,
+      "baselineWon": 226
+    },
+    {
+      "variant": "frontier-trade",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w9cdbfcc2e855bb9ff85f",
+      "baselineWorldId": "w8b85572a9b6fc286e4ec",
+      "marginCents": 620985,
+      "baselineMarginCents": 613634,
+      "gainCents": 7351,
+      "relativeGain": 0.011979453550487795,
+      "onTimeShare": 1,
+      "baselineOnTimeShare": 0.995575221238938,
+      "qualified": true,
+      "won": 229,
+      "baselineWon": 226
+    },
+    {
+      "variant": "frontier-menu",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "wa95ca6d08a9dc0c7eaa8",
+      "baselineWorldId": "w735d87d8fe1b99845667",
+      "marginCents": 886295,
+      "baselineMarginCents": 837822,
+      "gainCents": 48473,
+      "relativeGain": 0.05785596463210552,
+      "onTimeShare": 0.9855595667870036,
+      "baselineOnTimeShare": 0.9614035087719298,
+      "qualified": true,
+      "won": 277,
+      "baselineWon": 285
+    },
+    {
+      "variant": "frontier-volume",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "wce8e82d056867e77200c",
+      "baselineWorldId": "w8b85572a9b6fc286e4ec",
+      "marginCents": 810278,
+      "baselineMarginCents": 613634,
+      "gainCents": 196644,
+      "relativeGain": 0.32045812324610434,
+      "onTimeShare": 0.9816849816849816,
+      "baselineOnTimeShare": 0.995575221238938,
+      "qualified": true,
+      "won": 273,
+      "baselineWon": 226
+    },
+    {
+      "variant": "frontier-volume-bundles",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "we2b77ac2bf4ae7932f79",
+      "baselineWorldId": "w735d87d8fe1b99845667",
+      "marginCents": 909626,
+      "baselineMarginCents": 837822,
+      "gainCents": 71804,
+      "relativeGain": 0.08570316845344239,
+      "onTimeShare": 0.9361702127659575,
+      "baselineOnTimeShare": 0.9614035087719298,
+      "qualified": true,
+      "won": 329,
+      "baselineWon": 285
+    },
+    {
+      "variant": "frontier-lowfee",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "wea7341e3bdc4e2a1d2aa",
+      "baselineWorldId": "w8b85572a9b6fc286e4ec",
+      "marginCents": 819425,
+      "baselineMarginCents": 613634,
+      "gainCents": 205791,
+      "relativeGain": 0.3353644028851075,
+      "onTimeShare": 0.9459459459459459,
+      "baselineOnTimeShare": 0.995575221238938,
+      "qualified": true,
+      "won": 333,
+      "baselineWon": 226
+    },
+    {
+      "variant": "frontier-readiness",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "wed656323634466eafdf7",
+      "baselineWorldId": "w735d87d8fe1b99845667",
+      "marginCents": 832347,
+      "baselineMarginCents": 837822,
+      "gainCents": -5475,
+      "relativeGain": -0.006534800948172714,
+      "onTimeShare": 0.9616724738675958,
+      "baselineOnTimeShare": 0.9614035087719298,
+      "qualified": true,
+      "won": 287,
+      "baselineWon": 285
+    },
+    {
+      "variant": "frontier-home-volume",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "wf35eb3e3be383cc52619",
+      "baselineWorldId": "w735d87d8fe1b99845667",
+      "marginCents": 912874,
+      "baselineMarginCents": 837822,
+      "gainCents": 75052,
+      "relativeGain": 0.08957988689721685,
+      "onTimeShare": 0.9335347432024169,
+      "baselineOnTimeShare": 0.9614035087719298,
+      "qualified": true,
+      "won": 331,
+      "baselineWon": 285
+    },
+    {
+      "variant": "frontier-bundles",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "wfc46ca550b8a4944dbd3",
+      "baselineWorldId": "w8b85572a9b6fc286e4ec",
+      "marginCents": 631878,
+      "baselineMarginCents": 613634,
+      "gainCents": 18244,
+      "relativeGain": 0.0297310774826689,
+      "onTimeShare": 1,
+      "baselineOnTimeShare": 0.995575221238938,
+      "qualified": true,
+      "won": 226,
+      "baselineWon": 226
+    }
+  ],
+  "auctionAttribution": [
+    {
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w0b0a425cf803342bff2d",
+      "commercialQuotesBefore": 459,
+      "commercialQuotesAfter": 471,
+      "decompositionCents": {
+        "commonOrdersProfitChange": 15802,
+        "newOrdersProfit": 28117,
+        "removedOrdersProfit": -19923,
+        "cancelledOrdersCostChange": -1939
+      },
+      "newWins": {
+        "orders": 9,
+        "late": 0,
+        "profitCents": 28117,
+        "ledger": {
+          "driver_fee": -58832,
+          "revenue": 86949
+        }
+      },
+      "removedWins": {
+        "orders": 6,
+        "late": 0,
+        "profitCents": 19923,
+        "ledger": {
+          "driver_fee": -34172,
+          "revenue": 54095
+        }
+      },
+      "commonBefore": {
+        "orders": 220,
+        "late": 1,
+        "profitCents": 616712,
+        "ledger": {
+          "driver_fee": -1358655,
+          "late_refund": -1272,
+          "revenue": 1976639
+        }
+      },
+      "commonAfter": {
+        "orders": 220,
+        "late": 2,
+        "profitCents": 632514,
+        "ledger": {
+          "driver_fee": -1349582,
+          "late_refund": -2407,
+          "revenue": 1984503
+        }
+      },
+      "newWinDetails": [
+        {
+          "id": "R00010",
+          "dealer": "D26",
+          "arrived": 504,
+          "respondBy": 519,
+          "fromPlace": "lempaala",
+          "toPlace": "tampere",
+          "quote": {
+            "same_day": 3209,
+            "next_day": 2971
+          },
+          "outcome": "won",
+          "option": "same_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            2640
+          ],
+          "priceCents": 3209,
+          "marginCents": 1209,
+          "ledger": {
+            "revenue": 3209,
+            "driver_fee": -2000
+          }
+        },
+        {
+          "id": "R00127",
+          "dealer": "D01",
+          "arrived": 819,
+          "respondBy": 834,
+          "fromPlace": "vantaa",
+          "toPlace": "espoo",
+          "quote": {
+            "same_day": 2972,
+            "next_day": 2767
+          },
+          "outcome": "won",
+          "option": "same_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            2640
+          ],
+          "priceCents": 2972,
+          "marginCents": 972,
+          "ledger": {
+            "revenue": 2972,
+            "driver_fee": -2000
+          }
+        },
+        {
+          "id": "R00268",
+          "dealer": "D03",
+          "arrived": 2074,
+          "respondBy": 2089,
+          "fromPlace": "jyvaskyla",
+          "toPlace": "kouvola",
+          "quote": {
+            "same_day": 10724,
+            "next_day": 9866,
+            "within_3_days": 9294
+          },
+          "outcome": "won",
+          "option": "same_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            2640
+          ],
+          "priceCents": 10724,
+          "marginCents": 3199,
+          "ledger": {
+            "revenue": 10724,
+            "driver_fee": -7525
+          }
+        },
+        {
+          "id": "R00387",
+          "dealer": "D01",
+          "arrived": 2445,
+          "respondBy": 2460,
+          "fromPlace": "vantaa",
+          "toPlace": "ylivieska",
+          "quote": {
+            "next_day": 23120
+          },
+          "outcome": "won",
+          "option": "next_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            4080
+          ],
+          "priceCents": 23120,
+          "marginCents": 4790,
+          "ledger": {
+            "revenue": 23120,
+            "driver_fee": -18330
+          }
+        },
+        {
+          "id": "R00423",
+          "dealer": "D02",
+          "arrived": 2650,
+          "respondBy": 2665,
+          "fromPlace": "espoo",
+          "toPlace": "helsinki",
+          "quote": {
+            "same_day": 3814,
+            "next_day": 3559
+          },
+          "outcome": "won",
+          "option": "same_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            4080
+          ],
+          "priceCents": 3814,
+          "marginCents": 1622,
+          "ledger": {
+            "revenue": 3814,
+            "driver_fee": -2192
+          }
+        },
+        {
+          "id": "R00459",
+          "dealer": "D02",
+          "arrived": 3478,
+          "respondBy": 3493,
+          "fromPlace": "tampere",
+          "toPlace": "oulu",
+          "quote": {
+            "next_day": 19521
+          },
+          "outcome": "won",
+          "option": "next_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            5520
+          ],
+          "priceCents": 19521,
+          "marginCents": 8611,
+          "ledger": {
+            "revenue": 19521,
+            "driver_fee": -10910
+          }
+        },
+        {
+          "id": "R00865",
+          "dealer": "D03",
+          "arrived": 6308,
+          "respondBy": 6323,
+          "fromPlace": "helsinki",
+          "toPlace": "vantaa",
+          "quote": {
+            "same_day": 3285,
+            "next_day": 3050
+          },
+          "outcome": "won",
+          "option": "same_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            6960
+          ],
+          "priceCents": 3285,
+          "marginCents": 1285,
+          "ledger": {
+            "revenue": 3285,
+            "driver_fee": -2000
+          }
+        },
+        {
+          "id": "R00877",
+          "dealer": "D01",
+          "arrived": 6352,
+          "respondBy": 6367,
+          "fromPlace": "hyvinkaa",
+          "toPlace": "lahti",
+          "quote": {
+            "same_day": 6656,
+            "next_day": 6156
+          },
+          "outcome": "won",
+          "option": "same_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            6960
+          ],
+          "priceCents": 6656,
+          "marginCents": 3219,
+          "ledger": {
+            "revenue": 6656,
+            "driver_fee": -3437
+          }
+        },
+        {
+          "id": "R00999",
+          "dealer": "D03",
+          "arrived": 6726,
+          "respondBy": 6741,
+          "fromPlace": "jyvaskyla",
+          "toPlace": "turku",
+          "quote": {
+            "next_day": 13648
+          },
+          "outcome": "won",
+          "option": "next_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            11280
+          ],
+          "priceCents": 13648,
+          "marginCents": 3210,
+          "ledger": {
+            "revenue": 13648,
+            "driver_fee": -10438
+          }
+        }
+      ],
+      "removedWinDetails": [
+        {
+          "id": "R00122",
+          "dealer": "D01",
+          "arrived": 808,
+          "respondBy": 823,
+          "fromPlace": "vantaa",
+          "toPlace": "lahti",
+          "quote": {
+            "same_day": 5533,
+            "next_day": 5081
+          },
+          "outcome": "won",
+          "option": "same_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            2640
+          ],
+          "priceCents": 5533,
+          "marginCents": 1475,
+          "ledger": {
+            "revenue": 5533,
+            "driver_fee": -4058
+          }
+        },
+        {
+          "id": "R00304",
+          "dealer": "D02",
+          "arrived": 2140,
+          "respondBy": 2155,
+          "fromPlace": "vantaa",
+          "toPlace": "helsinki",
+          "quote": {
+            "same_day": 3541,
+            "next_day": 3288
+          },
+          "outcome": "won",
+          "option": "same_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            6960
+          ],
+          "priceCents": 3541,
+          "marginCents": 1541,
+          "ledger": {
+            "revenue": 3541,
+            "driver_fee": -2000
+          }
+        },
+        {
+          "id": "R00382",
+          "dealer": "D30",
+          "arrived": 2435,
+          "respondBy": 2450,
+          "fromPlace": "tampere",
+          "toPlace": "hyvinkaa",
+          "quote": {
+            "next_day": 6445,
+            "within_3_days": 5939
+          },
+          "outcome": "won",
+          "option": "next_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            4080
+          ],
+          "priceCents": 6445,
+          "marginCents": 1811,
+          "ledger": {
+            "revenue": 6445,
+            "driver_fee": -4634
+          }
+        },
+        {
+          "id": "R00687",
+          "dealer": "D09",
+          "arrived": 5060,
+          "respondBy": 5075,
+          "fromPlace": "hameenlinna",
+          "toPlace": "raisio",
+          "quote": {
+            "same_day": 8962,
+            "next_day": 8384,
+            "within_3_days": 7805
+          },
+          "outcome": "won",
+          "option": "same_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            5520
+          ],
+          "priceCents": 8962,
+          "marginCents": 2632,
+          "ledger": {
+            "revenue": 8962,
+            "driver_fee": -6330
+          }
+        },
+        {
+          "id": "R00851",
+          "dealer": "D01",
+          "arrived": 5390,
+          "respondBy": 5405,
+          "fromPlace": "vantaa",
+          "toPlace": "ylivieska",
+          "quote": {
+            "same_day": 25871,
+            "next_day": 23931
+          },
+          "outcome": "won",
+          "option": "next_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            11280
+          ],
+          "priceCents": 23931,
+          "marginCents": 10626,
+          "ledger": {
+            "revenue": 23931,
+            "driver_fee": -13305
+          }
+        },
+        {
+          "id": "R00874",
+          "dealer": "D02",
+          "arrived": 6339,
+          "respondBy": 6354,
+          "fromPlace": "helsinki",
+          "toPlace": "hyvinkaa",
+          "quote": {
+            "same_day": 5683,
+            "next_day": 5245
+          },
+          "outcome": "won",
+          "option": "same_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            6960
+          ],
+          "priceCents": 5683,
+          "marginCents": 1838,
+          "ledger": {
+            "revenue": 5683,
+            "driver_fee": -3845
+          }
+        }
+      ],
+      "commonOptionChanges": 1,
+      "commonPriceChangeCents": 7864
+    },
+    {
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "w8009f8eec43876a31c73",
+      "commercialQuotesBefore": 465,
+      "commercialQuotesAfter": 476,
+      "decompositionCents": {
+        "commonOrdersProfitChange": 38969,
+        "newOrdersProfit": 48067,
+        "removedOrdersProfit": -30792,
+        "cancelledOrdersCostChange": 2962
+      },
+      "newWins": {
+        "orders": 16,
+        "late": 1,
+        "profitCents": 48067,
+        "ledger": {
+          "driver_fee": -130734,
+          "late_refund": -2256,
+          "revenue": 181057
+        }
+      },
+      "removedWins": {
+        "orders": 13,
+        "late": 2,
+        "profitCents": 30792,
+        "ledger": {
+          "driver_fee": -95093,
+          "late_refund": -2295,
+          "revenue": 128180
+        }
+      },
+      "commonBefore": {
+        "orders": 272,
+        "late": 9,
+        "profitCents": 828080,
+        "ledger": {
+          "driver_fee": -1902500,
+          "late_refund": -38921,
+          "revenue": 2769501
+        }
+      },
+      "commonAfter": {
+        "orders": 272,
+        "late": 7,
+        "profitCents": 867049,
+        "ledger": {
+          "driver_fee": -1911329,
+          "late_refund": -36987,
+          "revenue": 2815365
+        }
+      },
+      "newWinDetails": [
+        {
+          "id": "R00031",
+          "dealer": "D27",
+          "arrived": 629,
+          "respondBy": 644,
+          "fromPlace": "turku",
+          "toPlace": "ylivieska",
+          "quote": {
+            "next_day": 20180
+          },
+          "outcome": "won",
+          "option": "next_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            2640
+          ],
+          "priceCents": 20180,
+          "marginCents": 4480,
+          "ledger": {
+            "revenue": 20180,
+            "driver_fee": -15700
+          }
+        },
+        {
+          "id": "R00102",
+          "dealer": "D07",
+          "arrived": 823,
+          "respondBy": 838,
+          "fromPlace": "vantaa",
+          "toPlace": "hyvinkaa",
+          "quote": {
+            "next_day": 4721,
+            "within_3_days": 4291
+          },
+          "outcome": "won",
+          "option": "next_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            2640
+          ],
+          "priceCents": 4721,
+          "marginCents": 1588,
+          "ledger": {
+            "revenue": 4721,
+            "driver_fee": -3133
+          }
+        },
+        {
+          "id": "R00158",
+          "dealer": "D04",
+          "arrived": 961,
+          "respondBy": 976,
+          "fromPlace": "hyvinkaa",
+          "toPlace": "espoo",
+          "quote": {
+            "next_day": 5040
+          },
+          "outcome": "won",
+          "option": "next_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            2640
+          ],
+          "priceCents": 5040,
+          "marginCents": 1692,
+          "ledger": {
+            "revenue": 5040,
+            "driver_fee": -3348
+          }
+        },
+        {
+          "id": "R00253",
+          "dealer": "D08",
+          "arrived": 2066,
+          "respondBy": 2081,
+          "fromPlace": "hyvinkaa",
+          "toPlace": "helsinki",
+          "quote": {
+            "same_day": 5627,
+            "next_day": 5194,
+            "within_3_days": 4905
+          },
+          "outcome": "won",
+          "option": "same_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            2640
+          ],
+          "priceCents": 5627,
+          "marginCents": 2186,
+          "ledger": {
+            "revenue": 5627,
+            "driver_fee": -3441
+          }
+        },
+        {
+          "id": "R00342",
+          "dealer": "D01",
+          "arrived": 2333,
+          "respondBy": 2348,
+          "fromPlace": "oulu",
+          "toPlace": "lempaala",
+          "quote": {
+            "same_day": 25075,
+            "next_day": 23146,
+            "within_3_days": 21538
+          },
+          "outcome": "won",
+          "option": "next_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            5520
+          ],
+          "priceCents": 23146,
+          "marginCents": 5803,
+          "ledger": {
+            "revenue": 23146,
+            "driver_fee": -17343
+          }
+        },
+        {
+          "id": "R00421",
+          "dealer": "D01",
+          "arrived": 2542,
+          "respondBy": 2557,
+          "fromPlace": "helsinki",
+          "toPlace": "hyvinkaa",
+          "quote": {
+            "next_day": 5454,
+            "within_3_days": 5151
+          },
+          "outcome": "won",
+          "option": "next_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            4080
+          ],
+          "priceCents": 5454,
+          "marginCents": 2242,
+          "ledger": {
+            "revenue": 5454,
+            "driver_fee": -3212
+          }
+        },
+        {
+          "id": "R00446",
+          "dealer": "D02",
+          "arrived": 3512,
+          "respondBy": 3527,
+          "fromPlace": "hyvinkaa",
+          "toPlace": "hyvinkaa",
+          "quote": {
+            "next_day": 3128,
+            "within_3_days": 2856
+          },
+          "outcome": "won",
+          "option": "next_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            6960
+          ],
+          "priceCents": 3128,
+          "marginCents": 1128,
+          "ledger": {
+            "revenue": 3128,
+            "driver_fee": -2000
+          }
+        },
+        {
+          "id": "R00509",
+          "dealer": "D01",
+          "arrived": 3711,
+          "respondBy": 3726,
+          "fromPlace": "rovaniemi",
+          "toPlace": "seinajoki",
+          "quote": {
+            "next_day": 26351,
+            "within_3_days": 24582
+          },
+          "outcome": "won",
+          "option": "next_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            5520
+          ],
+          "priceCents": 26351,
+          "marginCents": 8343,
+          "ledger": {
+            "revenue": 26351,
+            "driver_fee": -18008
+          }
+        },
+        {
+          "id": "R00521",
+          "dealer": "D03",
+          "arrived": 3733,
+          "respondBy": 3748,
+          "fromPlace": "vantaa",
+          "toPlace": "hyvinkaa",
+          "quote": {
+            "same_day": 5301,
+            "next_day": 4998
+          },
+          "outcome": "won",
+          "option": "same_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            4080
+          ],
+          "priceCents": 5301,
+          "marginCents": 2153,
+          "ledger": {
+            "revenue": 5301,
+            "driver_fee": -3148
+          }
+        },
+        {
+          "id": "R00537",
+          "dealer": "D01",
+          "arrived": 3775,
+          "respondBy": 3790,
+          "fromPlace": "helsinki",
+          "toPlace": "turku",
+          "quote": {
+            "next_day": 10510,
+            "within_3_days": 9853
+          },
+          "outcome": "won",
+          "option": "next_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            5520
+          ],
+          "priceCents": 10510,
+          "marginCents": 3160,
+          "ledger": {
+            "revenue": 10510,
+            "driver_fee": -7350
+          }
+        },
+        {
+          "id": "R00581",
+          "dealer": "D11",
+          "arrived": 3893,
+          "respondBy": 3908,
+          "fromPlace": "tampere",
+          "toPlace": "ylivieska",
+          "quote": {
+            "same_day": 17163,
+            "next_day": 15809
+          },
+          "outcome": "won",
+          "option": "same_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            5520
+          ],
+          "priceCents": 17163,
+          "marginCents": 4645,
+          "ledger": {
+            "revenue": 17163,
+            "driver_fee": -12518
+          }
+        },
+        {
+          "id": "R00620",
+          "dealer": "D22",
+          "arrived": 4865,
+          "respondBy": 4880,
+          "fromPlace": "raisio",
+          "toPlace": "hameenlinna",
+          "quote": {
+            "same_day": 9024,
+            "next_day": 8441
+          },
+          "outcome": "won",
+          "option": "same_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": true,
+          "legDeadlines": [
+            5520
+          ],
+          "priceCents": 9024,
+          "marginCents": 715,
+          "ledger": {
+            "revenue": 9024,
+            "late_refund": -2256,
+            "driver_fee": -6053
+          }
+        },
+        {
+          "id": "R00920",
+          "dealer": "D06",
+          "arrived": 6471,
+          "respondBy": 6486,
+          "fromPlace": "seinajoki",
+          "toPlace": "lahti",
+          "quote": {
+            "next_day": 12792
+          },
+          "outcome": "won",
+          "option": "next_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            11280
+          ],
+          "priceCents": 12792,
+          "marginCents": 2373,
+          "ledger": {
+            "revenue": 12792,
+            "driver_fee": -10419
+          }
+        },
+        {
+          "id": "R00979",
+          "dealer": "D04",
+          "arrived": 6664,
+          "respondBy": 6679,
+          "fromPlace": "mikkeli",
+          "toPlace": "turku",
+          "quote": {
+            "next_day": 15801
+          },
+          "outcome": "won",
+          "option": "next_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            11280
+          ],
+          "priceCents": 15801,
+          "marginCents": 3475,
+          "ledger": {
+            "revenue": 15801,
+            "driver_fee": -12326
+          }
+        },
+        {
+          "id": "R01010",
+          "dealer": "D03",
+          "arrived": 6771,
+          "respondBy": 6786,
+          "fromPlace": "vantaa",
+          "toPlace": "tampere",
+          "quote": {
+            "next_day": 8688
+          },
+          "outcome": "won",
+          "option": "next_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            11280
+          ],
+          "priceCents": 8688,
+          "marginCents": 2592,
+          "ledger": {
+            "revenue": 8688,
+            "driver_fee": -6096
+          }
+        },
+        {
+          "id": "R01033",
+          "dealer": "D02",
+          "arrived": 6831,
+          "respondBy": 6846,
+          "fromPlace": "lempaala",
+          "toPlace": "vantaa",
+          "quote": {
+            "next_day": 8131
+          },
+          "outcome": "won",
+          "option": "next_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            11280
+          ],
+          "priceCents": 8131,
+          "marginCents": 1492,
+          "ledger": {
+            "revenue": 8131,
+            "driver_fee": -6639
+          }
+        }
+      ],
+      "removedWinDetails": [
+        {
+          "id": "R00022",
+          "dealer": "D15",
+          "arrived": 606,
+          "respondBy": 621,
+          "fromPlace": "hyvinkaa",
+          "toPlace": "tampere",
+          "quote": {
+            "same_day": 7523,
+            "next_day": 6976,
+            "within_3_days": 6428
+          },
+          "outcome": "won",
+          "option": "same_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            1200
+          ],
+          "priceCents": 7523,
+          "marginCents": 2586,
+          "ledger": {
+            "revenue": 7523,
+            "driver_fee": -4937
+          }
+        },
+        {
+          "id": "R00276",
+          "dealer": "D01",
+          "arrived": 2123,
+          "respondBy": 2138,
+          "fromPlace": "lempaala",
+          "toPlace": "vaasa",
+          "quote": {
+            "same_day": 15638,
+            "next_day": 14486,
+            "within_3_days": 13333
+          },
+          "outcome": "won",
+          "option": "next_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            4080
+          ],
+          "priceCents": 14486,
+          "marginCents": 3471,
+          "ledger": {
+            "revenue": 14486,
+            "driver_fee": -11015
+          }
+        },
+        {
+          "id": "R00361",
+          "dealer": "D27",
+          "arrived": 2361,
+          "respondBy": 2376,
+          "fromPlace": "seinajoki",
+          "toPlace": "lahti",
+          "quote": {
+            "next_day": 13411
+          },
+          "outcome": "won",
+          "option": "next_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": true,
+          "legDeadlines": [
+            4080
+          ],
+          "priceCents": 13411,
+          "marginCents": 2553,
+          "ledger": {
+            "revenue": 13411,
+            "late_refund": -1341,
+            "driver_fee": -9517
+          }
+        },
+        {
+          "id": "R00448",
+          "dealer": "D01",
+          "arrived": 3520,
+          "respondBy": 3535,
+          "fromPlace": "raisio",
+          "toPlace": "turku",
+          "quote": {
+            "same_day": 3629,
+            "next_day": 3326
+          },
+          "outcome": "won",
+          "option": "same_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            6960
+          ],
+          "priceCents": 3629,
+          "marginCents": 1629,
+          "ledger": {
+            "revenue": 3629,
+            "driver_fee": -2000
+          }
+        },
+        {
+          "id": "R00520",
+          "dealer": "D18",
+          "arrived": 3732,
+          "respondBy": 3747,
+          "fromPlace": "hyvinkaa",
+          "toPlace": "lempaala",
+          "quote": {
+            "same_day": 7036,
+            "next_day": 6622
+          },
+          "outcome": "won",
+          "option": "same_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            4080
+          ],
+          "priceCents": 7036,
+          "marginCents": -394,
+          "ledger": {
+            "revenue": 7036,
+            "driver_fee": -7430
+          }
+        },
+        {
+          "id": "R00550",
+          "dealer": "D12",
+          "arrived": 3825,
+          "respondBy": 3840,
+          "fromPlace": "hameenlinna",
+          "toPlace": "oulu",
+          "quote": {
+            "next_day": 22288
+          },
+          "outcome": "won",
+          "option": "next_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            6960
+          ],
+          "priceCents": 22288,
+          "marginCents": 5984,
+          "ledger": {
+            "revenue": 22288,
+            "driver_fee": -16304
+          }
+        },
+        {
+          "id": "R00640",
+          "dealer": "D20",
+          "arrived": 4882,
+          "respondBy": 4897,
+          "fromPlace": "espoo",
+          "toPlace": "helsinki",
+          "quote": {
+            "same_day": 4003,
+            "next_day": 3736
+          },
+          "outcome": "won",
+          "option": "same_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            5520
+          ],
+          "priceCents": 4003,
+          "marginCents": 2003,
+          "ledger": {
+            "revenue": 4003,
+            "driver_fee": -2000
+          }
+        },
+        {
+          "id": "R00663",
+          "dealer": "D18",
+          "arrived": 4938,
+          "respondBy": 4953,
+          "fromPlace": "hyvinkaa",
+          "toPlace": "hyvinkaa",
+          "quote": {
+            "same_day": 3818,
+            "next_day": 3512
+          },
+          "outcome": "won",
+          "option": "same_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": true,
+          "legDeadlines": [
+            6960
+          ],
+          "priceCents": 3818,
+          "marginCents": -2136,
+          "ledger": {
+            "revenue": 3818,
+            "late_refund": -954,
+            "driver_fee": -5000
+          }
+        },
+        {
+          "id": "R00719",
+          "dealer": "D03",
+          "arrived": 5027,
+          "respondBy": 5042,
+          "fromPlace": "vantaa",
+          "toPlace": "salo",
+          "quote": {
+            "same_day": 9492,
+            "next_day": 8761
+          },
+          "outcome": "won",
+          "option": "same_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            5520
+          ],
+          "priceCents": 9492,
+          "marginCents": 4771,
+          "ledger": {
+            "revenue": 9492,
+            "driver_fee": -4721
+          }
+        },
+        {
+          "id": "R00814",
+          "dealer": "D02",
+          "arrived": 5240,
+          "respondBy": 5255,
+          "fromPlace": "raisio",
+          "toPlace": "vantaa",
+          "quote": {
+            "next_day": 9795,
+            "within_3_days": 9142
+          },
+          "outcome": "won",
+          "option": "next_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            6960
+          ],
+          "priceCents": 9795,
+          "marginCents": 2532,
+          "ledger": {
+            "revenue": 9795,
+            "driver_fee": -7263
+          }
+        },
+        {
+          "id": "R00929",
+          "dealer": "D06",
+          "arrived": 6492,
+          "respondBy": 6507,
+          "fromPlace": "seinajoki",
+          "toPlace": "lahti",
+          "quote": {
+            "next_day": 12662
+          },
+          "outcome": "won",
+          "option": "next_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            11280
+          ],
+          "priceCents": 12662,
+          "marginCents": 2723,
+          "ledger": {
+            "revenue": 12662,
+            "driver_fee": -9939
+          }
+        },
+        {
+          "id": "R00942",
+          "dealer": "D06",
+          "arrived": 6510,
+          "respondBy": 6525,
+          "fromPlace": "seinajoki",
+          "toPlace": "helsinki",
+          "quote": {
+            "next_day": 12771
+          },
+          "outcome": "won",
+          "option": "next_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            11280
+          ],
+          "priceCents": 12771,
+          "marginCents": 3615,
+          "ledger": {
+            "revenue": 12771,
+            "driver_fee": -9156
+          }
+        },
+        {
+          "id": "R01036",
+          "dealer": "D02",
+          "arrived": 6838,
+          "respondBy": 6853,
+          "fromPlace": "lempaala",
+          "toPlace": "vantaa",
+          "quote": {
+            "next_day": 7266
+          },
+          "outcome": "won",
+          "option": "next_day",
+          "commercial": true,
+          "won": true,
+          "cancelled": false,
+          "late": false,
+          "legDeadlines": [
+            11280
+          ],
+          "priceCents": 7266,
+          "marginCents": 1455,
+          "ledger": {
+            "revenue": 7266,
+            "driver_fee": -5811
+          }
+        }
+      ],
+      "commonOptionChanges": 3,
+      "commonPriceChangeCents": 45864
+    }
+  ],
+  "mechanisticProbes": [
+    {
+      "type": "multi-pickup mechanics probe",
+      "seed": "mechanics-bundle-01",
+      "baseWorldId": "w674a04c4bd9f04a7bf65",
+      "file": "runs/bundle-probe-mechanics-bundle-01.json",
+      "requests": 2,
+      "totalProbes": 1,
+      "result": "Grouped pickups rejected by the documented post endpoint",
+      "deleted": true,
+      "actions": [
+        {
+          "kind": "grouped-first",
+          "action": {
+            "type": "post",
+            "stops": [
+              {
+                "orderId": "R00013",
+                "leg": 0,
+                "kind": "pickup",
+                "withPlates": false,
+                "withCharging": false
+              },
+              {
+                "orderId": "R00015",
+                "leg": 0,
+                "kind": "pickup",
+                "withPlates": false,
+                "withCharging": false
+              },
+              {
+                "orderId": "R00013",
+                "leg": 0,
+                "kind": "delivery"
+              },
+              {
+                "orderId": "R00015",
+                "leg": 0,
+                "kind": "delivery"
+              }
+            ],
+            "audience": {
+              "experienced": true,
+              "manualLicence": false
+            },
+            "schedule": [
+              {
+                "at": 607,
+                "feeCents": 38475
+              }
+            ]
+          },
+          "result": {
+            "ok": false,
+            "reason": "Deliver R00013 leg 0 before the next pickup: a driver moves one car at a time"
+          }
+        }
+      ],
+      "interpretation": "One ordinary post action with pickup-pickup-delivery-delivery was rejected: a driver moves one car at a time. Stopped on rejection and deleted the probe world. No fee, profit or timing treatment was tested."
+    },
+    {
+      "type": "menu-choice branch probes",
+      "seed": "mechanics-menu-01",
+      "baseWorldId": "w819973533a17fa186b5d",
+      "file": "runs/menu-probe-mechanics-menu-01.json",
+      "requests": 6,
+      "totalProbes": 109,
+      "rows": [
+        {
+          "requestId": "R00001",
+          "options": [
+            "same_day",
+            "next_day",
+            "within_3_days"
+          ],
+          "probes": 24,
+          "singleOptionWon": {
+            "same_day": 3
+          },
+          "multiOptionWon": {
+            "same_day": 3
+          },
+          "allOutcomes": {
+            "lost": 18,
+            "won": 6
+          }
+        },
+        {
+          "requestId": "R00002",
+          "options": [
+            "same_day",
+            "next_day"
+          ],
+          "probes": 17,
+          "singleOptionWon": {
+            "same_day": 2,
+            "next_day": 3
+          },
+          "multiOptionWon": {
+            "next_day": 3,
+            "same_day": 1
+          },
+          "allOutcomes": {
+            "lost": 8,
+            "won": 9
+          }
+        },
+        {
+          "requestId": "R00007",
+          "options": [
+            "same_day",
+            "next_day"
+          ],
+          "probes": 17,
+          "singleOptionWon": {
+            "same_day": 2,
+            "next_day": 3
+          },
+          "multiOptionWon": {
+            "same_day": 3,
+            "next_day": 1
+          },
+          "allOutcomes": {
+            "lost": 8,
+            "won": 9
+          }
+        },
+        {
+          "requestId": "R00011",
+          "options": [
+            "same_day",
+            "next_day"
+          ],
+          "probes": 17,
+          "singleOptionWon": {
+            "same_day": 2
+          },
+          "multiOptionWon": {
+            "same_day": 3
+          },
+          "allOutcomes": {
+            "lost": 12,
+            "won": 5
+          }
+        },
+        {
+          "requestId": "R00020",
+          "options": [
+            "same_day",
+            "next_day"
+          ],
+          "probes": 17,
+          "singleOptionWon": {
+            "same_day": 2,
+            "next_day": 2
+          },
+          "multiOptionWon": {
+            "same_day": 3,
+            "next_day": 1
+          },
+          "allOutcomes": {
+            "lost": 9,
+            "won": 8
+          }
+        },
+        {
+          "requestId": "R00024",
+          "options": [
+            "same_day",
+            "next_day"
+          ],
+          "probes": 17,
+          "singleOptionWon": {
+            "same_day": 2,
+            "next_day": 2
+          },
+          "multiOptionWon": {
+            "same_day": 3,
+            "next_day": 1
+          },
+          "allOutcomes": {
+            "lost": 9,
+            "won": 8
+          }
+        }
+      ],
+      "interpretation": "Paired decision-point forks characterize menu choice on a few requests. They are not full-policy weeks, independent samples, or profit benchmarks. Search brackets named win are not evidence of an actual winning quote unless a recorded probe won."
+    }
+  ],
+  "records": [
+    {
+      "variant": "baseline",
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "validation-final",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+      "status": "complete",
+      "actionErrors": [],
+      "interruption": null,
+      "score": {
+        "marginCents": 613634,
+        "revenueCents": 2030734,
+        "marginShare": 0.30217349982814096,
+        "wonOrders": 226,
+        "onTimeShare": 0.995575221238938,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2030734,
+        "driver_fee": -1405420,
+        "release_fee": -10408,
+        "late_refund": -1272
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 459,
+      "unquoted": 0,
+      "lateOrders": 1
+    },
+    {
+      "variant": "baseline",
+      "worldId": "w735d87d8fe1b99845667",
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "validation-final",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+      "status": "complete",
+      "actionErrors": [],
+      "interruption": null,
+      "score": {
+        "marginCents": 837822,
+        "revenueCents": 2897681,
+        "marginShare": 0.289135346506396,
+        "wonOrders": 285,
+        "onTimeShare": 0.9614035087719298,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2897681,
+        "driver_fee": -2017048,
+        "release_fee": -1595,
+        "late_refund": -41216
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 465,
+      "unquoted": 0,
+      "lateOrders": 11
+    },
+    {
+      "variant": "frontier-volume",
+      "worldId": "w039210a04d4ae45b4567",
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "frontier-volume",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+      "status": "complete",
+      "actionErrors": [
+        {
+          "at": 6659,
+          "action": {
+            "type": "reprice",
+            "gigId": "g318",
+            "schedule": [
+              {
+                "at": 6659,
+                "feeCents": 6992
+              },
+              {
+                "at": 6689,
+                "feeCents": 6992
+              },
+              {
+                "at": 6719,
+                "feeCents": 8856
+              },
+              {
+                "at": 6779,
+                "feeCents": 11653
+              }
+            ]
+          },
+          "reason": "Gig g318 is not open"
+        }
+      ],
+      "interruption": null,
+      "score": {
+        "marginCents": 912874,
+        "revenueCents": 3833123,
+        "marginShare": 0.23815411089078017,
+        "wonOrders": 331,
+        "onTimeShare": 0.9335347432024169,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 3833123,
+        "driver_fee": -2790421,
+        "release_fee": -11457,
+        "late_refund": -118371
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 566,
+      "unquoted": 0,
+      "lateOrders": 22
+    },
+    {
+      "variant": "frontier-auction",
+      "worldId": "w0b0a425cf803342bff2d",
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "frontier-auction",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": true,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "b5771f2b53463474c801350875253e32aa9d5f7d9b689125abed39c55914437d",
+      "status": "complete",
+      "actionErrors": [
+        {
+          "at": 6628,
+          "action": {
+            "type": "reprice",
+            "gigId": "g194",
+            "schedule": [
+              {
+                "at": 6628,
+                "feeCents": 4986
+              },
+              {
+                "at": 6658,
+                "feeCents": 4986
+              },
+              {
+                "at": 6719,
+                "feeCents": 6316
+              },
+              {
+                "at": 6779,
+                "feeCents": 8310
+              }
+            ]
+          },
+          "reason": "Gig g194 is not open"
+        }
+      ],
+      "interruption": null,
+      "score": {
+        "marginCents": 635691,
+        "revenueCents": 2071452,
+        "marginShare": 0.3068818394054026,
+        "wonOrders": 229,
+        "onTimeShare": 0.9912663755458515,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2071452,
+        "driver_fee": -1430038,
+        "late_refund": -2407,
+        "release_fee": -3316
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 471,
+      "unquoted": 0,
+      "lateOrders": 2
+    },
+    {
+      "variant": "frontier-place",
+      "worldId": "w0e07ef2533e2ef02bd0e",
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "frontier-place",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "chainOffers": false,
+        "readiness": false,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 1,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "82bb3e17fc97e929df1d3045da6f1845536b0a871d961b00cae6066021e808b8",
+      "status": "incomplete",
+      "actionErrors": [],
+      "interruption": "HTTP 502 during execution; coordinator reported server interruption. No terminal score exists, so this is not a failed delivery-policy result."
+    },
+    {
+      "variant": "frontier-private",
+      "worldId": "w161b1029585b69b3b961",
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "frontier-private",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": true,
+        "tradeIns": false,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "b275b77df060268224f5149bb915fa13d4ca38a51253d054b3be2f3617031037",
+      "status": "complete",
+      "actionErrors": [],
+      "interruption": null,
+      "score": {
+        "marginCents": 694846,
+        "revenueCents": 2265849,
+        "marginShare": 0.30666032908636015,
+        "wonOrders": 254,
+        "onTimeShare": 0.9960629921259843,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2265849,
+        "driver_fee": -1561599,
+        "release_fee": -8469,
+        "late_refund": -935
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 501,
+      "unquoted": 0,
+      "lateOrders": 1
+    },
+    {
+      "variant": "frontier-readiness",
+      "worldId": "w1da4784220098c5bdb89",
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "frontier-readiness",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "chainOffers": false,
+        "readiness": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "82bb3e17fc97e929df1d3045da6f1845536b0a871d961b00cae6066021e808b8",
+      "status": "complete",
+      "actionErrors": [],
+      "interruption": null,
+      "score": {
+        "marginCents": 619671,
+        "revenueCents": 2062949,
+        "marginShare": 0.3003811533876989,
+        "wonOrders": 230,
+        "onTimeShare": 0.9956521739130435,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2062949,
+        "driver_fee": -1437975,
+        "late_refund": -1987,
+        "release_fee": -3316
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 470,
+      "unquoted": 0,
+      "lateOrders": 1
+    },
+    {
+      "variant": "frontier-lowfee",
+      "worldId": "w1e571df1d29a158e5690",
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "frontier-lowfee",
+      "settings": {
+        "price": 1.42,
+        "fee": 0.85,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+      "status": "complete",
+      "actionErrors": [
+        {
+          "at": 10716,
+          "action": {
+            "type": "reprice",
+            "gigId": "g268",
+            "schedule": [
+              {
+                "at": 10716,
+                "feeCents": 17700
+              },
+              {
+                "at": 10746,
+                "feeCents": 17700
+              },
+              {
+                "at": 10776,
+                "feeCents": 22420
+              },
+              {
+                "at": 10836,
+                "feeCents": 29500
+              }
+            ]
+          },
+          "reason": "Gig g268 is not open"
+        }
+      ],
+      "interruption": null,
+      "score": {
+        "marginCents": 688432,
+        "revenueCents": 4107207,
+        "marginShare": 0.1676156083684119,
+        "wonOrders": 382,
+        "onTimeShare": 0.8717277486910995,
+        "undeliveredShare": 0,
+        "ranked": false
+      },
+      "ledger": {
+        "revenue": 4107207,
+        "driver_fee": -3168644,
+        "release_fee": -5394,
+        "late_refund": -244737
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 540,
+      "unquoted": 0,
+      "lateOrders": 49
+    },
+    {
+      "variant": "frontier-trade",
+      "worldId": "w254075f877f4963e1ffc",
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "frontier-trade",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "b275b77df060268224f5149bb915fa13d4ca38a51253d054b3be2f3617031037",
+      "status": "complete",
+      "actionErrors": [],
+      "interruption": null,
+      "score": {
+        "marginCents": 869116,
+        "revenueCents": 2985839,
+        "marginShare": 0.2910793247727021,
+        "wonOrders": 290,
+        "onTimeShare": 0.9551724137931035,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2985839,
+        "driver_fee": -2086235,
+        "release_fee": -1595,
+        "late_refund": -28893
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 470,
+      "unquoted": 0,
+      "lateOrders": 13
+    },
+    {
+      "variant": "frontier-long-bundles",
+      "worldId": "w2d3a9c88f6ffd8d14e27",
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "frontier-long-bundles",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 700,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+      "status": "complete",
+      "actionErrors": [
+        {
+          "at": 3741,
+          "action": {
+            "type": "reprice",
+            "gigId": "g91",
+            "schedule": [
+              {
+                "at": 3741,
+                "feeCents": 9264
+              },
+              {
+                "at": 3771,
+                "feeCents": 9264
+              },
+              {
+                "at": 3853,
+                "feeCents": 11734
+              },
+              {
+                "at": 3913,
+                "feeCents": 15440
+              }
+            ]
+          },
+          "reason": "Gig g91 is not open"
+        }
+      ],
+      "interruption": null,
+      "score": {
+        "marginCents": 740763,
+        "revenueCents": 2388645,
+        "marginShare": 0.31011849814434544,
+        "wonOrders": 238,
+        "onTimeShare": 0.9957983193277311,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2388645,
+        "driver_fee": -1636993,
+        "late_refund": -2420,
+        "release_fee": -8469
+      },
+      "sharedLedger": [
+        {
+          "at": 2369,
+          "kind": "driver_fee",
+          "cents": -8810,
+          "orderId": null,
+          "gigId": "g32",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 2522,
+          "kind": "driver_fee",
+          "cents": -16582,
+          "orderId": null,
+          "gigId": "g20",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3538,
+          "kind": "driver_fee",
+          "cents": -3705,
+          "orderId": null,
+          "gigId": "g53",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3582,
+          "kind": "driver_fee",
+          "cents": -4807,
+          "orderId": null,
+          "gigId": "g26",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3605,
+          "kind": "driver_fee",
+          "cents": -10331,
+          "orderId": null,
+          "gigId": "g24",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3679,
+          "kind": "driver_fee",
+          "cents": -9930,
+          "orderId": null,
+          "gigId": "g51",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3722,
+          "kind": "driver_fee",
+          "cents": -6124,
+          "orderId": null,
+          "gigId": "g46",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3760,
+          "kind": "driver_fee",
+          "cents": -19229,
+          "orderId": null,
+          "gigId": "g39",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 4990,
+          "kind": "driver_fee",
+          "cents": -7121,
+          "orderId": null,
+          "gigId": "g101",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 5142,
+          "kind": "driver_fee",
+          "cents": -14351,
+          "orderId": null,
+          "gigId": "g98",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6395,
+          "kind": "driver_fee",
+          "cents": -10961,
+          "orderId": null,
+          "gigId": "g62",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6407,
+          "kind": "driver_fee",
+          "cents": -10398,
+          "orderId": null,
+          "gigId": "g83",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6441,
+          "kind": "driver_fee",
+          "cents": -4481,
+          "orderId": null,
+          "gigId": "g146",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6556,
+          "kind": "driver_fee",
+          "cents": -10600,
+          "orderId": null,
+          "gigId": "g144",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6556,
+          "kind": "driver_fee",
+          "cents": -4832,
+          "orderId": null,
+          "gigId": "g192",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6618,
+          "kind": "driver_fee",
+          "cents": -11748,
+          "orderId": null,
+          "gigId": "g159",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6635,
+          "kind": "driver_fee",
+          "cents": -8384,
+          "orderId": null,
+          "gigId": "g145",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6646,
+          "kind": "driver_fee",
+          "cents": -9746,
+          "orderId": null,
+          "gigId": "g184",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6679,
+          "kind": "driver_fee",
+          "cents": -4571,
+          "orderId": null,
+          "gigId": "g193",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6685,
+          "kind": "driver_fee",
+          "cents": -10673,
+          "orderId": null,
+          "gigId": "g149",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6760,
+          "kind": "driver_fee",
+          "cents": -3691,
+          "orderId": null,
+          "gigId": "g191",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 7761,
+          "kind": "driver_fee",
+          "cents": -3262,
+          "orderId": null,
+          "gigId": "g213",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 7938,
+          "kind": "driver_fee",
+          "cents": -5531,
+          "orderId": null,
+          "gigId": "g211",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 10710,
+          "kind": "driver_fee",
+          "cents": -3563,
+          "orderId": null,
+          "gigId": "g208",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 10737,
+          "kind": "driver_fee",
+          "cents": -5320,
+          "orderId": null,
+          "gigId": "g209",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 11270,
+          "kind": "driver_fee",
+          "cents": -13168,
+          "orderId": null,
+          "gigId": "g207",
+          "detail": "Driver fee"
+        }
+      ],
+      "sharedLedgerCents": -221919,
+      "commercialQuotes": 494,
+      "unquoted": 0,
+      "lateOrders": 1
+    },
+    {
+      "variant": "frontier-home",
+      "worldId": "w3d80a69ff94fd19a1968",
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "frontier-home",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": true,
+        "readiness": false,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "943e5f0c11bae7705ff78ee262055c7c801a0c6f305ab069923ddea5f6fc759d",
+      "status": "complete",
+      "actionErrors": [],
+      "interruption": null,
+      "score": {
+        "marginCents": 616536,
+        "revenueCents": 2044172,
+        "marginShare": 0.3016067141121197,
+        "wonOrders": 227,
+        "onTimeShare": 0.9955947136563876,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2044172,
+        "driver_fee": -1415956,
+        "release_fee": -10408,
+        "late_refund": -1272
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 460,
+      "unquoted": 0,
+      "lateOrders": 1
+    },
+    {
+      "variant": "frontier-volume-bundles",
+      "worldId": "w4fb61d1e0897ffb8fda9",
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "frontier-volume-bundles",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "613614078c6d91c159073de4aacad323ae653d09f102df9bb13400c83538872c",
+      "status": "complete",
+      "actionErrors": [],
+      "interruption": null,
+      "score": {
+        "marginCents": 862717,
+        "revenueCents": 2785830,
+        "marginShare": 0.309680418403133,
+        "wonOrders": 275,
+        "onTimeShare": 0.9927272727272727,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2785830,
+        "driver_fee": -1906698,
+        "late_refund": -3099,
+        "release_fee": -3316,
+        "fine": -10000
+      },
+      "sharedLedger": [
+        {
+          "at": 2352,
+          "kind": "driver_fee",
+          "cents": -8810,
+          "orderId": null,
+          "gigId": "g35",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 2573,
+          "kind": "driver_fee",
+          "cents": -16582,
+          "orderId": null,
+          "gigId": "g21",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3545,
+          "kind": "driver_fee",
+          "cents": -3705,
+          "orderId": null,
+          "gigId": "g57",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3581,
+          "kind": "driver_fee",
+          "cents": -4807,
+          "orderId": null,
+          "gigId": "g28",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3588,
+          "kind": "driver_fee",
+          "cents": -6124,
+          "orderId": null,
+          "gigId": "g50",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3614,
+          "kind": "driver_fee",
+          "cents": -10331,
+          "orderId": null,
+          "gigId": "g26",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3682,
+          "kind": "driver_fee",
+          "cents": -9930,
+          "orderId": null,
+          "gigId": "g55",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3682,
+          "kind": "driver_fee",
+          "cents": -6565,
+          "orderId": null,
+          "gigId": "g51",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3818,
+          "kind": "driver_fee",
+          "cents": -19229,
+          "orderId": null,
+          "gigId": "g43",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 5195,
+          "kind": "driver_fee",
+          "cents": -14351,
+          "orderId": null,
+          "gigId": "g103",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 5263,
+          "kind": "driver_fee",
+          "cents": -7121,
+          "orderId": null,
+          "gigId": "g106",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6455,
+          "kind": "driver_fee",
+          "cents": -4481,
+          "orderId": null,
+          "gigId": "g153",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6570,
+          "kind": "driver_fee",
+          "cents": -4832,
+          "orderId": null,
+          "gigId": "g205",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6571,
+          "kind": "driver_fee",
+          "cents": -10600,
+          "orderId": null,
+          "gigId": "g150",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6577,
+          "kind": "driver_fee",
+          "cents": -8371,
+          "orderId": null,
+          "gigId": "g151",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6591,
+          "kind": "driver_fee",
+          "cents": -3691,
+          "orderId": null,
+          "gigId": "g204",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6630,
+          "kind": "driver_fee",
+          "cents": -9746,
+          "orderId": null,
+          "gigId": "g196",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6677,
+          "kind": "driver_fee",
+          "cents": -10673,
+          "orderId": null,
+          "gigId": "g156",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6715,
+          "kind": "driver_fee",
+          "cents": -10961,
+          "orderId": null,
+          "gigId": "g67",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6829,
+          "kind": "driver_fee",
+          "cents": -6628,
+          "orderId": null,
+          "gigId": "g206",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6836,
+          "kind": "driver_fee",
+          "cents": -6515,
+          "orderId": null,
+          "gigId": "g200",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6847,
+          "kind": "driver_fee",
+          "cents": -10398,
+          "orderId": null,
+          "gigId": "g88",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6853,
+          "kind": "driver_fee",
+          "cents": -11748,
+          "orderId": null,
+          "gigId": "g167",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 7856,
+          "kind": "driver_fee",
+          "cents": -3262,
+          "orderId": null,
+          "gigId": "g243",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 7873,
+          "kind": "driver_fee",
+          "cents": -4830,
+          "orderId": null,
+          "gigId": "g237",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 10759,
+          "kind": "driver_fee",
+          "cents": -7214,
+          "orderId": null,
+          "gigId": "g238",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 11098,
+          "kind": "driver_fee",
+          "cents": -5320,
+          "orderId": null,
+          "gigId": "g234",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 11119,
+          "kind": "driver_fee",
+          "cents": -3563,
+          "orderId": null,
+          "gigId": "g232",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 11222,
+          "kind": "driver_fee",
+          "cents": -13168,
+          "orderId": null,
+          "gigId": "g231",
+          "detail": "Driver fee"
+        }
+      ],
+      "sharedLedgerCents": -243556,
+      "commercialQuotes": 561,
+      "unquoted": 0,
+      "lateOrders": 2
+    },
+    {
+      "variant": "frontier-home-volume",
+      "worldId": "w503ea3dd6214bb39d8ba",
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "frontier-home-volume",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": true,
+        "readiness": false,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "943e5f0c11bae7705ff78ee262055c7c801a0c6f305ab069923ddea5f6fc759d",
+      "status": "complete",
+      "actionErrors": [
+        {
+          "at": 6719,
+          "action": {
+            "type": "reprice",
+            "gigId": "g218",
+            "schedule": [
+              {
+                "at": 6719,
+                "feeCents": 5768
+              },
+              {
+                "at": 6749,
+                "feeCents": 5768
+              },
+              {
+                "at": 6779,
+                "feeCents": 7306
+              },
+              {
+                "at": 6839,
+                "feeCents": 9613
+              }
+            ]
+          },
+          "reason": "Gig g218 is not open"
+        }
+      ],
+      "interruption": null,
+      "score": {
+        "marginCents": 810996,
+        "revenueCents": 2754103,
+        "marginShare": 0.2944682896754406,
+        "wonOrders": 273,
+        "onTimeShare": 0.9816849816849816,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2754103,
+        "driver_fee": -1903730,
+        "release_fee": -8469,
+        "late_refund": -20908,
+        "fine": -10000
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 561,
+      "unquoted": 0,
+      "lateOrders": 5
+    },
+    {
+      "variant": "frontier-place",
+      "worldId": "w5274695ce6e5f901b990",
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "frontier-place",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "chainOffers": false,
+        "readiness": false,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 1,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "82bb3e17fc97e929df1d3045da6f1845536b0a871d961b00cae6066021e808b8",
+      "status": "complete",
+      "actionErrors": [],
+      "interruption": null,
+      "score": {
+        "marginCents": 603711,
+        "revenueCents": 1983677,
+        "marginShare": 0.3043393657334334,
+        "wonOrders": 225,
+        "onTimeShare": 0.9911111111111112,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 1983677,
+        "driver_fee": -1369106,
+        "late_refund": -5605,
+        "release_fee": -5255
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 461,
+      "unquoted": 0,
+      "lateOrders": 2
+    },
+    {
+      "variant": "frontier-place",
+      "worldId": "w566fc6348194e5c4c9d0",
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "frontier-place",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "chainOffers": false,
+        "readiness": false,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 1,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "82bb3e17fc97e929df1d3045da6f1845536b0a871d961b00cae6066021e808b8",
+      "status": "complete",
+      "actionErrors": [],
+      "interruption": null,
+      "score": {
+        "marginCents": 906647,
+        "revenueCents": 2958755,
+        "marginShare": 0.30642854849421464,
+        "wonOrders": 284,
+        "onTimeShare": 0.971830985915493,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2958755,
+        "driver_fee": -2015641,
+        "release_fee": -10113,
+        "late_refund": -26354
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 471,
+      "unquoted": 0,
+      "lateOrders": 8
+    },
+    {
+      "variant": "frontier-home",
+      "worldId": "w58455be33975d14abe85",
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "frontier-home",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": true,
+        "readiness": false,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "943e5f0c11bae7705ff78ee262055c7c801a0c6f305ab069923ddea5f6fc759d",
+      "status": "complete",
+      "actionErrors": [],
+      "interruption": null,
+      "score": {
+        "marginCents": 870361,
+        "revenueCents": 2897315,
+        "marginShare": 0.30040261414447517,
+        "wonOrders": 284,
+        "onTimeShare": 0.9683098591549296,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2897315,
+        "driver_fee": -1988520,
+        "release_fee": -6557,
+        "late_refund": -31877
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 463,
+      "unquoted": 0,
+      "lateOrders": 9
+    },
+    {
+      "variant": "frontier-menu",
+      "worldId": "w5dd2ed60ca60ca57ffe7",
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "frontier-menu",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "sameDayPremium": 1.12,
+        "laterDiscount": 1,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "b275b77df060268224f5149bb915fa13d4ca38a51253d054b3be2f3617031037",
+      "status": "complete",
+      "actionErrors": [],
+      "interruption": null,
+      "score": {
+        "marginCents": 523509,
+        "revenueCents": 1814744,
+        "marginShare": 0.288475399284968,
+        "wonOrders": 203,
+        "onTimeShare": 1,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 1814744,
+        "driver_fee": -1291235
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 468,
+      "unquoted": 0,
+      "lateOrders": 0
+    },
+    {
+      "variant": "frontier-long-bundles",
+      "worldId": "w5eebc0627e34e58dc24a",
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "frontier-long-bundles",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 700,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+      "status": "complete",
+      "actionErrors": [
+        {
+          "at": 5159,
+          "action": {
+            "type": "reprice",
+            "gigId": "g181",
+            "schedule": [
+              {
+                "at": 5159,
+                "feeCents": 3000
+              },
+              {
+                "at": 5189,
+                "feeCents": 3000
+              },
+              {
+                "at": 5279,
+                "feeCents": 3800
+              },
+              {
+                "at": 5339,
+                "feeCents": 5000
+              }
+            ]
+          },
+          "reason": "Gig g181 is not open"
+        }
+      ],
+      "interruption": null,
+      "score": {
+        "marginCents": 941050,
+        "revenueCents": 3449233,
+        "marginShare": 0.2728287709180563,
+        "wonOrders": 292,
+        "onTimeShare": 0.9657534246575342,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 3449233,
+        "driver_fee": -2411055,
+        "release_fee": -3191,
+        "late_refund": -93937
+      },
+      "sharedLedger": [
+        {
+          "at": 976,
+          "kind": "driver_fee",
+          "cents": -7551,
+          "orderId": null,
+          "gigId": "g23",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 2086,
+          "kind": "driver_fee",
+          "cents": -8706,
+          "orderId": null,
+          "gigId": "g44",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 2317,
+          "kind": "driver_fee",
+          "cents": -13675,
+          "orderId": null,
+          "gigId": "g43",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 2386,
+          "kind": "driver_fee",
+          "cents": -5217,
+          "orderId": null,
+          "gigId": "g77",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 2589,
+          "kind": "driver_fee",
+          "cents": -3640,
+          "orderId": null,
+          "gigId": "g99",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3571,
+          "kind": "driver_fee",
+          "cents": -11726,
+          "orderId": null,
+          "gigId": "g68",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3676,
+          "kind": "driver_fee",
+          "cents": -5961,
+          "orderId": null,
+          "gigId": "g67",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3983,
+          "kind": "driver_fee",
+          "cents": -6040,
+          "orderId": null,
+          "gigId": "g100",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 5096,
+          "kind": "driver_fee",
+          "cents": -7219,
+          "orderId": null,
+          "gigId": "g139",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 5134,
+          "kind": "driver_fee",
+          "cents": -8091,
+          "orderId": null,
+          "gigId": "g131",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 5259,
+          "kind": "driver_fee",
+          "cents": -5345,
+          "orderId": null,
+          "gigId": "g165",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 5309,
+          "kind": "driver_fee",
+          "cents": -16025,
+          "orderId": null,
+          "gigId": "g120",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 5344,
+          "kind": "driver_fee",
+          "cents": -14242,
+          "orderId": null,
+          "gigId": "g152",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 5388,
+          "kind": "driver_fee",
+          "cents": -23609,
+          "orderId": null,
+          "gigId": "g179",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6442,
+          "kind": "driver_fee",
+          "cents": -6357,
+          "orderId": null,
+          "gigId": "g191",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6472,
+          "kind": "driver_fee",
+          "cents": -6112,
+          "orderId": null,
+          "gigId": "g215",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6568,
+          "kind": "driver_fee",
+          "cents": -7263,
+          "orderId": null,
+          "gigId": "g237",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6665,
+          "kind": "driver_fee",
+          "cents": -13439,
+          "orderId": null,
+          "gigId": "g172",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6670,
+          "kind": "driver_fee",
+          "cents": -9394,
+          "orderId": null,
+          "gigId": "g193",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6706,
+          "kind": "driver_fee",
+          "cents": -15252,
+          "orderId": null,
+          "gigId": "g239",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6794,
+          "kind": "driver_fee",
+          "cents": -31835,
+          "orderId": null,
+          "gigId": "g174",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6798,
+          "kind": "driver_fee",
+          "cents": -16129,
+          "orderId": null,
+          "gigId": "g209",
+          "detail": "Driver fee"
+        }
+      ],
+      "sharedLedgerCents": -242828,
+      "commercialQuotes": 488,
+      "unquoted": 0,
+      "lateOrders": 10
+    },
+    {
+      "variant": "frontier-auction-bundles",
+      "worldId": "w6510b58d9684c4e12af7",
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "frontier-auction-bundles",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": true,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "613614078c6d91c159073de4aacad323ae653d09f102df9bb13400c83538872c",
+      "status": "complete",
+      "actionErrors": [],
+      "interruption": null,
+      "score": {
+        "marginCents": 633999,
+        "revenueCents": 2059771,
+        "marginShare": 0.3078007215365203,
+        "wonOrders": 228,
+        "onTimeShare": 1,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2059771,
+        "driver_fee": -1417303,
+        "release_fee": -8469
+      },
+      "sharedLedger": [
+        {
+          "at": 2385,
+          "kind": "driver_fee",
+          "cents": -8810,
+          "orderId": null,
+          "gigId": "g34",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 2576,
+          "kind": "driver_fee",
+          "cents": -16582,
+          "orderId": null,
+          "gigId": "g21",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3530,
+          "kind": "driver_fee",
+          "cents": -3705,
+          "orderId": null,
+          "gigId": "g51",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3565,
+          "kind": "driver_fee",
+          "cents": -6124,
+          "orderId": null,
+          "gigId": "g42",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3578,
+          "kind": "driver_fee",
+          "cents": -4807,
+          "orderId": null,
+          "gigId": "g27",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3618,
+          "kind": "driver_fee",
+          "cents": -10331,
+          "orderId": null,
+          "gigId": "g25",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3698,
+          "kind": "driver_fee",
+          "cents": -9930,
+          "orderId": null,
+          "gigId": "g47",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 5170,
+          "kind": "driver_fee",
+          "cents": -14351,
+          "orderId": null,
+          "gigId": "g91",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 5246,
+          "kind": "driver_fee",
+          "cents": -7121,
+          "orderId": null,
+          "gigId": "g94",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6382,
+          "kind": "driver_fee",
+          "cents": -10961,
+          "orderId": null,
+          "gigId": "g59",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6399,
+          "kind": "driver_fee",
+          "cents": -10398,
+          "orderId": null,
+          "gigId": "g76",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6441,
+          "kind": "driver_fee",
+          "cents": -4481,
+          "orderId": null,
+          "gigId": "g137",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6446,
+          "kind": "driver_fee",
+          "cents": -8610,
+          "orderId": null,
+          "gigId": "g134",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6514,
+          "kind": "driver_fee",
+          "cents": -5122,
+          "orderId": null,
+          "gigId": "g173",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6554,
+          "kind": "driver_fee",
+          "cents": -11748,
+          "orderId": null,
+          "gigId": "g150",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6579,
+          "kind": "driver_fee",
+          "cents": -3691,
+          "orderId": null,
+          "gigId": "g182",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6611,
+          "kind": "driver_fee",
+          "cents": -4832,
+          "orderId": null,
+          "gigId": "g183",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6634,
+          "kind": "driver_fee",
+          "cents": -8384,
+          "orderId": null,
+          "gigId": "g136",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6657,
+          "kind": "driver_fee",
+          "cents": -9746,
+          "orderId": null,
+          "gigId": "g176",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6703,
+          "kind": "driver_fee",
+          "cents": -10673,
+          "orderId": null,
+          "gigId": "g140",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6793,
+          "kind": "driver_fee",
+          "cents": -10600,
+          "orderId": null,
+          "gigId": "g135",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6823,
+          "kind": "driver_fee",
+          "cents": -4571,
+          "orderId": null,
+          "gigId": "g184",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 7761,
+          "kind": "driver_fee",
+          "cents": -3262,
+          "orderId": null,
+          "gigId": "g203",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 7939,
+          "kind": "driver_fee",
+          "cents": -4830,
+          "orderId": null,
+          "gigId": "g202",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 10725,
+          "kind": "driver_fee",
+          "cents": -3563,
+          "orderId": null,
+          "gigId": "g198",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 10739,
+          "kind": "driver_fee",
+          "cents": -5320,
+          "orderId": null,
+          "gigId": "g199",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 11219,
+          "kind": "driver_fee",
+          "cents": -13168,
+          "orderId": null,
+          "gigId": "g197",
+          "detail": "Driver fee"
+        }
+      ],
+      "sharedLedgerCents": -215721,
+      "commercialQuotes": 470,
+      "unquoted": 0,
+      "lateOrders": 0
+    },
+    {
+      "variant": "frontier-auction-bundles",
+      "worldId": "w67dd2997c4471c9b2e6c",
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "frontier-auction-bundles",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": true,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "613614078c6d91c159073de4aacad323ae653d09f102df9bb13400c83538872c",
+      "status": "complete",
+      "actionErrors": [],
+      "interruption": null,
+      "score": {
+        "marginCents": 980608,
+        "revenueCents": 2998945,
+        "marginShare": 0.32698432282019174,
+        "wonOrders": 289,
+        "onTimeShare": 0.986159169550173,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2998945,
+        "driver_fee": -1996339,
+        "release_fee": -5833,
+        "late_refund": -16165
+      },
+      "sharedLedger": [
+        {
+          "at": 976,
+          "kind": "driver_fee",
+          "cents": -7551,
+          "orderId": null,
+          "gigId": "g23",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 1134,
+          "kind": "driver_fee",
+          "cents": -10577,
+          "orderId": null,
+          "gigId": "g32",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 2089,
+          "kind": "driver_fee",
+          "cents": -10271,
+          "orderId": null,
+          "gigId": "g34",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 2191,
+          "kind": "driver_fee",
+          "cents": -8706,
+          "orderId": null,
+          "gigId": "g43",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 2270,
+          "kind": "driver_fee",
+          "cents": -13675,
+          "orderId": null,
+          "gigId": "g42",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 2376,
+          "kind": "driver_fee",
+          "cents": -5217,
+          "orderId": null,
+          "gigId": "g76",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 2550,
+          "kind": "driver_fee",
+          "cents": -3640,
+          "orderId": null,
+          "gigId": "g100",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3570,
+          "kind": "driver_fee",
+          "cents": -11726,
+          "orderId": null,
+          "gigId": "g67",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3668,
+          "kind": "driver_fee",
+          "cents": -5961,
+          "orderId": null,
+          "gigId": "g66",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3860,
+          "kind": "driver_fee",
+          "cents": -23246,
+          "orderId": null,
+          "gigId": "g97",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3975,
+          "kind": "driver_fee",
+          "cents": -6040,
+          "orderId": null,
+          "gigId": "g99",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 5095,
+          "kind": "driver_fee",
+          "cents": -7219,
+          "orderId": null,
+          "gigId": "g134",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 5176,
+          "kind": "driver_fee",
+          "cents": -6111,
+          "orderId": null,
+          "gigId": "g126",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 5212,
+          "kind": "driver_fee",
+          "cents": -14242,
+          "orderId": null,
+          "gigId": "g146",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 5272,
+          "kind": "driver_fee",
+          "cents": -16025,
+          "orderId": null,
+          "gigId": "g119",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6428,
+          "kind": "driver_fee",
+          "cents": -5279,
+          "orderId": null,
+          "gigId": "g180",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6454,
+          "kind": "driver_fee",
+          "cents": -4657,
+          "orderId": null,
+          "gigId": "g179",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6458,
+          "kind": "driver_fee",
+          "cents": -5162,
+          "orderId": null,
+          "gigId": "g165",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6482,
+          "kind": "driver_fee",
+          "cents": -7263,
+          "orderId": null,
+          "gigId": "g233",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6587,
+          "kind": "driver_fee",
+          "cents": -6112,
+          "orderId": null,
+          "gigId": "g209",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6616,
+          "kind": "driver_fee",
+          "cents": -5999,
+          "orderId": null,
+          "gigId": "g238",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6686,
+          "kind": "driver_fee",
+          "cents": -3563,
+          "orderId": null,
+          "gigId": "g255",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6708,
+          "kind": "driver_fee",
+          "cents": -16129,
+          "orderId": null,
+          "gigId": "g202",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6763,
+          "kind": "driver_fee",
+          "cents": -15516,
+          "orderId": null,
+          "gigId": "g243",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6844,
+          "kind": "driver_fee",
+          "cents": -4505,
+          "orderId": null,
+          "gigId": "g213",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6855,
+          "kind": "driver_fee",
+          "cents": -14346,
+          "orderId": null,
+          "gigId": "g248",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 10741,
+          "kind": "driver_fee",
+          "cents": -10189,
+          "orderId": null,
+          "gigId": "g266",
+          "detail": "Driver fee"
+        }
+      ],
+      "sharedLedgerCents": -248927,
+      "commercialQuotes": 470,
+      "unquoted": 0,
+      "lateOrders": 4
+    },
+    {
+      "variant": "frontier-bundles",
+      "worldId": "w6a6204837557cd28bdf5",
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "frontier-bundles",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "613614078c6d91c159073de4aacad323ae653d09f102df9bb13400c83538872c",
+      "status": "complete",
+      "actionErrors": [],
+      "interruption": null,
+      "score": {
+        "marginCents": 965203,
+        "revenueCents": 2926536,
+        "marginShare": 0.3298107387026847,
+        "wonOrders": 281,
+        "onTimeShare": 0.9893238434163701,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2926536,
+        "driver_fee": -1948279,
+        "release_fee": -5557,
+        "late_refund": -7497
+      },
+      "sharedLedger": [
+        {
+          "at": 976,
+          "kind": "driver_fee",
+          "cents": -7551,
+          "orderId": null,
+          "gigId": "g23",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 2086,
+          "kind": "driver_fee",
+          "cents": -8706,
+          "orderId": null,
+          "gigId": "g44",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 2280,
+          "kind": "driver_fee",
+          "cents": -13675,
+          "orderId": null,
+          "gigId": "g43",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 2511,
+          "kind": "driver_fee",
+          "cents": -5217,
+          "orderId": null,
+          "gigId": "g75",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 2592,
+          "kind": "driver_fee",
+          "cents": -3640,
+          "orderId": null,
+          "gigId": "g97",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3557,
+          "kind": "driver_fee",
+          "cents": -11726,
+          "orderId": null,
+          "gigId": "g66",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3667,
+          "kind": "driver_fee",
+          "cents": -5961,
+          "orderId": null,
+          "gigId": "g65",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3839,
+          "kind": "driver_fee",
+          "cents": -6040,
+          "orderId": null,
+          "gigId": "g96",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 5024,
+          "kind": "driver_fee",
+          "cents": -6111,
+          "orderId": null,
+          "gigId": "g125",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 5103,
+          "kind": "driver_fee",
+          "cents": -7219,
+          "orderId": null,
+          "gigId": "g133",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 5264,
+          "kind": "driver_fee",
+          "cents": -5345,
+          "orderId": null,
+          "gigId": "g159",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 5342,
+          "kind": "driver_fee",
+          "cents": -14242,
+          "orderId": null,
+          "gigId": "g146",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6408,
+          "kind": "driver_fee",
+          "cents": -5279,
+          "orderId": null,
+          "gigId": "g179",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6458,
+          "kind": "driver_fee",
+          "cents": -5162,
+          "orderId": null,
+          "gigId": "g165",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6477,
+          "kind": "driver_fee",
+          "cents": -6112,
+          "orderId": null,
+          "gigId": "g207",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6484,
+          "kind": "driver_fee",
+          "cents": -7263,
+          "orderId": null,
+          "gigId": "g230",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6554,
+          "kind": "driver_fee",
+          "cents": -16620,
+          "orderId": null,
+          "gigId": "g221",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6679,
+          "kind": "driver_fee",
+          "cents": -5113,
+          "orderId": null,
+          "gigId": "g180",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6770,
+          "kind": "driver_fee",
+          "cents": -15516,
+          "orderId": null,
+          "gigId": "g241",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6785,
+          "kind": "driver_fee",
+          "cents": -15252,
+          "orderId": null,
+          "gigId": "g231",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6833,
+          "kind": "driver_fee",
+          "cents": -4657,
+          "orderId": null,
+          "gigId": "g178",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6855,
+          "kind": "driver_fee",
+          "cents": -16129,
+          "orderId": null,
+          "gigId": "g200",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6857,
+          "kind": "driver_fee",
+          "cents": -8337,
+          "orderId": null,
+          "gigId": "g250",
+          "detail": "Driver fee"
+        }
+      ],
+      "sharedLedgerCents": -200873,
+      "commercialQuotes": 461,
+      "unquoted": 0,
+      "lateOrders": 3
+    },
+    {
+      "variant": "frontier-hold-control",
+      "worldId": "w73a9b99847220c8c1e54",
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "frontier-hold-control",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": false,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+      "status": "complete",
+      "actionErrors": [],
+      "interruption": null,
+      "score": {
+        "marginCents": 932363,
+        "revenueCents": 2949885,
+        "marginShare": 0.3160675755156557,
+        "wonOrders": 283,
+        "onTimeShare": 0.9752650176678446,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2949885,
+        "driver_fee": -1990925,
+        "release_fee": -11841,
+        "late_refund": -14756
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 460,
+      "unquoted": 0,
+      "lateOrders": 7
+    },
+    {
+      "variant": "frontier-volume-auction",
+      "worldId": "w73d7e06307a17b7156b5",
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "frontier-volume-auction",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": true,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "chainOffers": false,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "a722a1aed31e3c7679535937cc13a201b9e1b0aef8066d371a4f7304870c6a59",
+      "status": "complete",
+      "actionErrors": [
+        {
+          "at": 3748,
+          "action": {
+            "type": "reprice",
+            "gigId": "g73",
+            "schedule": [
+              {
+                "at": 3748,
+                "feeCents": 6768
+              },
+              {
+                "at": 3778,
+                "feeCents": 6768
+              },
+              {
+                "at": 3897,
+                "feeCents": 8573
+              },
+              {
+                "at": 3957,
+                "feeCents": 11280
+              }
+            ]
+          },
+          "reason": "Gig g73 is not open"
+        }
+      ],
+      "interruption": null,
+      "score": {
+        "marginCents": 768585,
+        "revenueCents": 3758167,
+        "marginShare": 0.20451060317436665,
+        "wonOrders": 330,
+        "onTimeShare": 0.9424242424242424,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 3758167,
+        "driver_fee": -2834757,
+        "release_fee": -10457,
+        "late_refund": -144368
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 577,
+      "unquoted": 0,
+      "lateOrders": 19
+    },
+    {
+      "variant": "frontier-hold-control",
+      "worldId": "w756acf8ea6b691151370",
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "frontier-hold-control",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": false,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+      "status": "complete",
+      "actionErrors": [],
+      "interruption": null,
+      "score": {
+        "marginCents": 618261,
+        "revenueCents": 2034806,
+        "marginShare": 0.30384272505585297,
+        "wonOrders": 227,
+        "onTimeShare": 0.9955947136563876,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2034806,
+        "driver_fee": -1403244,
+        "release_fee": -11551,
+        "late_refund": -1750
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 459,
+      "unquoted": 0,
+      "lateOrders": 1
+    },
+    {
+      "variant": "frontier-private",
+      "worldId": "w771a67e4380c9de4d000",
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "frontier-private",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": true,
+        "tradeIns": false,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "b275b77df060268224f5149bb915fa13d4ca38a51253d054b3be2f3617031037",
+      "status": "complete",
+      "actionErrors": [
+        {
+          "at": 6706,
+          "action": {
+            "type": "withdraw",
+            "gigId": "g298"
+          },
+          "reason": "Gig g298 is not open"
+        }
+      ],
+      "interruption": null,
+      "score": {
+        "marginCents": 805828,
+        "revenueCents": 3081388,
+        "marginShare": 0.2615146161405185,
+        "wonOrders": 307,
+        "onTimeShare": 0.9576547231270358,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 3081388,
+        "driver_fee": -2218584,
+        "release_fee": -8199,
+        "late_refund": -48777
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 517,
+      "unquoted": 0,
+      "lateOrders": 13
+    },
+    {
+      "variant": "frontier-auction",
+      "worldId": "w8009f8eec43876a31c73",
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "frontier-auction",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": true,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "b5771f2b53463474c801350875253e32aa9d5f7d9b689125abed39c55914437d",
+      "status": "complete",
+      "actionErrors": [
+        {
+          "at": 2323,
+          "action": {
+            "type": "reprice",
+            "gigId": "g101",
+            "schedule": [
+              {
+                "at": 2323,
+                "feeCents": 9428
+              },
+              {
+                "at": 2353,
+                "feeCents": 9428
+              },
+              {
+                "at": 2406,
+                "feeCents": 11942
+              },
+              {
+                "at": 2466,
+                "feeCents": 15713
+              }
+            ]
+          },
+          "reason": "Gig g101 is not open"
+        }
+      ],
+      "interruption": null,
+      "score": {
+        "marginCents": 897028,
+        "revenueCents": 2996422,
+        "marginShare": 0.299366377633057,
+        "wonOrders": 288,
+        "onTimeShare": 0.9722222222222222,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2996422,
+        "driver_fee": -2053594,
+        "release_fee": -6557,
+        "late_refund": -39243
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 476,
+      "unquoted": 0,
+      "lateOrders": 8
+    },
+    {
+      "variant": "frontier-shadow",
+      "worldId": "w83e930b0f35b6c5f8b21",
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "frontier-shadow",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.5,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "backlog": 0.12,
+        "priceFloor": 0,
+        "costRatio": 2,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+      "status": "complete",
+      "actionErrors": [],
+      "interruption": null,
+      "score": {
+        "marginCents": 389492,
+        "revenueCents": 718880,
+        "marginShare": 0.5418039172045404,
+        "wonOrders": 38,
+        "onTimeShare": 1,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 718880,
+        "driver_fee": -325426,
+        "release_fee": -3962
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 535,
+      "unquoted": 0,
+      "lateOrders": 0
+    },
+    {
+      "variant": "frontier-volume-auction",
+      "worldId": "w979261929ce968cdba3d",
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "frontier-volume-auction",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": true,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "chainOffers": false,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "a722a1aed31e3c7679535937cc13a201b9e1b0aef8066d371a4f7304870c6a59",
+      "status": "complete",
+      "actionErrors": [],
+      "interruption": null,
+      "score": {
+        "marginCents": 841365,
+        "revenueCents": 2811763,
+        "marginShare": 0.29923041166698616,
+        "wonOrders": 276,
+        "onTimeShare": 0.9891304347826086,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2811763,
+        "driver_fee": -1949378,
+        "release_fee": -7831,
+        "late_refund": -3189,
+        "fine": -10000
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 568,
+      "unquoted": 0,
+      "lateOrders": 3
+    },
+    {
+      "variant": "frontier-shadow",
+      "worldId": "w99c7c7b8d252586f6e4e",
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "frontier-shadow",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.5,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "backlog": 0.12,
+        "priceFloor": 0,
+        "costRatio": 2,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+      "status": "complete",
+      "actionErrors": [],
+      "interruption": null,
+      "score": {
+        "marginCents": 82561,
+        "revenueCents": 156611,
+        "marginShare": 0.5271724208388938,
+        "wonOrders": 18,
+        "onTimeShare": 1,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 156611,
+        "driver_fee": -74050
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 547,
+      "unquoted": 0,
+      "lateOrders": 0
+    },
+    {
+      "variant": "frontier-trade",
+      "worldId": "w9cdbfcc2e855bb9ff85f",
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "frontier-trade",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "b275b77df060268224f5149bb915fa13d4ca38a51253d054b3be2f3617031037",
+      "status": "complete",
+      "actionErrors": [],
+      "interruption": null,
+      "score": {
+        "marginCents": 620985,
+        "revenueCents": 2043935,
+        "marginShare": 0.30381836995794875,
+        "wonOrders": 229,
+        "onTimeShare": 1,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2043935,
+        "driver_fee": -1414481,
+        "release_fee": -8469
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 465,
+      "unquoted": 0,
+      "lateOrders": 0
+    },
+    {
+      "variant": "frontier-readiness",
+      "worldId": "wa5afd1798215289a4e96",
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "frontier-readiness",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "chainOffers": false,
+        "readiness": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "82bb3e17fc97e929df1d3045da6f1845536b0a871d961b00cae6066021e808b8",
+      "status": "incomplete",
+      "actionErrors": [],
+      "interruption": "HTTP 502 during execution; coordinator reported server interruption. No terminal score exists, so this is not a failed delivery-policy result."
+    },
+    {
+      "variant": "frontier-menu",
+      "worldId": "wa95ca6d08a9dc0c7eaa8",
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "frontier-menu",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "sameDayPremium": 1.12,
+        "laterDiscount": 1,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "b275b77df060268224f5149bb915fa13d4ca38a51253d054b3be2f3617031037",
+      "status": "complete",
+      "actionErrors": [],
+      "interruption": null,
+      "score": {
+        "marginCents": 886295,
+        "revenueCents": 2847557,
+        "marginShare": 0.3112475009279885,
+        "wonOrders": 277,
+        "onTimeShare": 0.9855595667870036,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "release_fee": -11953,
+        "revenue": 2847557,
+        "driver_fee": -1931566,
+        "late_refund": -17743
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 476,
+      "unquoted": 0,
+      "lateOrders": 4
+    },
+    {
+      "variant": "frontier-readiness",
+      "worldId": "waeca76492dc84a5916dc",
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "frontier-readiness",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "chainOffers": false,
+        "readiness": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "82bb3e17fc97e929df1d3045da6f1845536b0a871d961b00cae6066021e808b8",
+      "status": "incomplete",
+      "actionErrors": [],
+      "interruption": "HTTP 502 during execution; coordinator reported server interruption. No terminal score exists, so this is not a failed delivery-policy result."
+    },
+    {
+      "variant": "frontier-volume",
+      "worldId": "wce8e82d056867e77200c",
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "frontier-volume",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+      "status": "complete",
+      "actionErrors": [
+        {
+          "at": 6719,
+          "action": {
+            "type": "reprice",
+            "gigId": "g218",
+            "schedule": [
+              {
+                "at": 6719,
+                "feeCents": 5768
+              },
+              {
+                "at": 6749,
+                "feeCents": 5768
+              },
+              {
+                "at": 6779,
+                "feeCents": 7306
+              },
+              {
+                "at": 6839,
+                "feeCents": 9613
+              }
+            ]
+          },
+          "reason": "Gig g218 is not open"
+        }
+      ],
+      "interruption": null,
+      "score": {
+        "marginCents": 810278,
+        "revenueCents": 2754103,
+        "marginShare": 0.29420758773364686,
+        "wonOrders": 273,
+        "onTimeShare": 0.9816849816849816,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2754103,
+        "driver_fee": -1904448,
+        "release_fee": -8469,
+        "late_refund": -20908,
+        "fine": -10000
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 561,
+      "unquoted": 0,
+      "lateOrders": 5
+    },
+    {
+      "variant": "frontier-volume-bundles",
+      "worldId": "we2b77ac2bf4ae7932f79",
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "frontier-volume-bundles",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "613614078c6d91c159073de4aacad323ae653d09f102df9bb13400c83538872c",
+      "status": "complete",
+      "actionErrors": [],
+      "interruption": null,
+      "score": {
+        "marginCents": 909626,
+        "revenueCents": 3819965,
+        "marginShare": 0.23812417129476318,
+        "wonOrders": 329,
+        "onTimeShare": 0.9361702127659575,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 3819965,
+        "driver_fee": -2781692,
+        "release_fee": -12053,
+        "late_refund": -116594
+      },
+      "sharedLedger": [
+        {
+          "at": 978,
+          "kind": "driver_fee",
+          "cents": -7551,
+          "orderId": null,
+          "gigId": "g24",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 1129,
+          "kind": "driver_fee",
+          "cents": -10577,
+          "orderId": null,
+          "gigId": "g35",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 2154,
+          "kind": "driver_fee",
+          "cents": -8706,
+          "orderId": null,
+          "gigId": "g46",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 2225,
+          "kind": "driver_fee",
+          "cents": -10271,
+          "orderId": null,
+          "gigId": "g37",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 2297,
+          "kind": "driver_fee",
+          "cents": -13675,
+          "orderId": null,
+          "gigId": "g45",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 2393,
+          "kind": "driver_fee",
+          "cents": -5217,
+          "orderId": null,
+          "gigId": "g80",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 2566,
+          "kind": "driver_fee",
+          "cents": -3640,
+          "orderId": null,
+          "gigId": "g104",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3565,
+          "kind": "driver_fee",
+          "cents": -6040,
+          "orderId": null,
+          "gigId": "g103",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3573,
+          "kind": "driver_fee",
+          "cents": -11726,
+          "orderId": null,
+          "gigId": "g70",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3653,
+          "kind": "driver_fee",
+          "cents": -5961,
+          "orderId": null,
+          "gigId": "g69",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3830,
+          "kind": "driver_fee",
+          "cents": -23246,
+          "orderId": null,
+          "gigId": "g101",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 5015,
+          "kind": "driver_fee",
+          "cents": -8091,
+          "orderId": null,
+          "gigId": "g136",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 5022,
+          "kind": "driver_fee",
+          "cents": -5345,
+          "orderId": null,
+          "gigId": "g175",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 5164,
+          "kind": "driver_fee",
+          "cents": -14242,
+          "orderId": null,
+          "gigId": "g160",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 5166,
+          "kind": "driver_fee",
+          "cents": -7219,
+          "orderId": null,
+          "gigId": "g145",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6446,
+          "kind": "driver_fee",
+          "cents": -6357,
+          "orderId": null,
+          "gigId": "g206",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6455,
+          "kind": "driver_fee",
+          "cents": -5667,
+          "orderId": null,
+          "gigId": "g205",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6462,
+          "kind": "driver_fee",
+          "cents": -6030,
+          "orderId": null,
+          "gigId": "g240",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6478,
+          "kind": "driver_fee",
+          "cents": -7263,
+          "orderId": null,
+          "gigId": "g263",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6501,
+          "kind": "driver_fee",
+          "cents": -4505,
+          "orderId": null,
+          "gigId": "g241",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6607,
+          "kind": "driver_fee",
+          "cents": -6112,
+          "orderId": null,
+          "gigId": "g235",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6662,
+          "kind": "driver_fee",
+          "cents": -9394,
+          "orderId": null,
+          "gigId": "g207",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6739,
+          "kind": "driver_fee",
+          "cents": -21955,
+          "orderId": null,
+          "gigId": "g186",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6763,
+          "kind": "driver_fee",
+          "cents": -21441,
+          "orderId": null,
+          "gigId": "g185",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6804,
+          "kind": "driver_fee",
+          "cents": -16129,
+          "orderId": null,
+          "gigId": "g224",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 10768,
+          "kind": "driver_fee",
+          "cents": -13741,
+          "orderId": null,
+          "gigId": "g304",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 11161,
+          "kind": "driver_fee",
+          "cents": -22605,
+          "orderId": null,
+          "gigId": "g290",
+          "detail": "Driver fee"
+        }
+      ],
+      "sharedLedgerCents": -282706,
+      "commercialQuotes": 558,
+      "unquoted": 0,
+      "lateOrders": 21
+    },
+    {
+      "variant": "frontier-lowfee",
+      "worldId": "wea7341e3bdc4e2a1d2aa",
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "frontier-lowfee",
+      "settings": {
+        "price": 1.42,
+        "fee": 0.85,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+      "status": "complete",
+      "actionErrors": [],
+      "interruption": null,
+      "score": {
+        "marginCents": 819425,
+        "revenueCents": 3257607,
+        "marginShare": 0.25154200614131783,
+        "wonOrders": 333,
+        "onTimeShare": 0.9459459459459459,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 3257607,
+        "driver_fee": -2333063,
+        "late_refund": -102435,
+        "release_fee": -2684
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 538,
+      "unquoted": 0,
+      "lateOrders": 18
+    },
+    {
+      "variant": "frontier-readiness",
+      "worldId": "wed656323634466eafdf7",
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "frontier-readiness",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "chainOffers": false,
+        "readiness": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "82bb3e17fc97e929df1d3045da6f1845536b0a871d961b00cae6066021e808b8",
+      "status": "complete",
+      "actionErrors": [],
+      "interruption": null,
+      "score": {
+        "marginCents": 832347,
+        "revenueCents": 2964807,
+        "marginShare": 0.2807423889649478,
+        "wonOrders": 287,
+        "onTimeShare": 0.9616724738675958,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2964807,
+        "driver_fee": -2076851,
+        "release_fee": -15397,
+        "late_refund": -40212
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 469,
+      "unquoted": 0,
+      "lateOrders": 11
+    },
+    {
+      "variant": "frontier-home-volume",
+      "worldId": "wf35eb3e3be383cc52619",
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "frontier-home-volume",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": true,
+        "readiness": false,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "943e5f0c11bae7705ff78ee262055c7c801a0c6f305ab069923ddea5f6fc759d",
+      "status": "complete",
+      "actionErrors": [
+        {
+          "at": 6659,
+          "action": {
+            "type": "reprice",
+            "gigId": "g318",
+            "schedule": [
+              {
+                "at": 6659,
+                "feeCents": 6992
+              },
+              {
+                "at": 6689,
+                "feeCents": 6992
+              },
+              {
+                "at": 6719,
+                "feeCents": 8856
+              },
+              {
+                "at": 6779,
+                "feeCents": 11653
+              }
+            ]
+          },
+          "reason": "Gig g318 is not open"
+        }
+      ],
+      "interruption": null,
+      "score": {
+        "marginCents": 912874,
+        "revenueCents": 3833123,
+        "marginShare": 0.23815411089078017,
+        "wonOrders": 331,
+        "onTimeShare": 0.9335347432024169,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 3833123,
+        "driver_fee": -2790421,
+        "release_fee": -11457,
+        "late_refund": -118371
+      },
+      "sharedLedger": [],
+      "sharedLedgerCents": 0,
+      "commercialQuotes": 566,
+      "unquoted": 0,
+      "lateOrders": 22
+    },
+    {
+      "variant": "frontier-bundles",
+      "worldId": "wfc46ca550b8a4944dbd3",
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "frontier-bundles",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "margin": 0.1,
+        "capacity": 0.18,
+        "maxKm": 550,
+        "minDrivers": 12,
+        "notes": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.04,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "revision": "613614078c6d91c159073de4aacad323ae653d09f102df9bb13400c83538872c",
+      "status": "complete",
+      "actionErrors": [],
+      "interruption": null,
+      "score": {
+        "marginCents": 631878,
+        "revenueCents": 2025965,
+        "marginShare": 0.31188988950944363,
+        "wonOrders": 226,
+        "onTimeShare": 1,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2025965,
+        "driver_fee": -1390771,
+        "release_fee": -3316
+      },
+      "sharedLedger": [
+        {
+          "at": 2369,
+          "kind": "driver_fee",
+          "cents": -8810,
+          "orderId": null,
+          "gigId": "g32",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 2522,
+          "kind": "driver_fee",
+          "cents": -16582,
+          "orderId": null,
+          "gigId": "g20",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3503,
+          "kind": "driver_fee",
+          "cents": -3705,
+          "orderId": null,
+          "gigId": "g49",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3582,
+          "kind": "driver_fee",
+          "cents": -4807,
+          "orderId": null,
+          "gigId": "g26",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3588,
+          "kind": "driver_fee",
+          "cents": -6124,
+          "orderId": null,
+          "gigId": "g41",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3605,
+          "kind": "driver_fee",
+          "cents": -10331,
+          "orderId": null,
+          "gigId": "g24",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 3696,
+          "kind": "driver_fee",
+          "cents": -9930,
+          "orderId": null,
+          "gigId": "g46",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 4988,
+          "kind": "driver_fee",
+          "cents": -7121,
+          "orderId": null,
+          "gigId": "g91",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 5194,
+          "kind": "driver_fee",
+          "cents": -14351,
+          "orderId": null,
+          "gigId": "g88",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6382,
+          "kind": "driver_fee",
+          "cents": -10398,
+          "orderId": null,
+          "gigId": "g73",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6382,
+          "kind": "driver_fee",
+          "cents": -10961,
+          "orderId": null,
+          "gigId": "g56",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6455,
+          "kind": "driver_fee",
+          "cents": -4481,
+          "orderId": null,
+          "gigId": "g135",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6484,
+          "kind": "driver_fee",
+          "cents": -8610,
+          "orderId": null,
+          "gigId": "g132",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6576,
+          "kind": "driver_fee",
+          "cents": -3691,
+          "orderId": null,
+          "gigId": "g181",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6588,
+          "kind": "driver_fee",
+          "cents": -10600,
+          "orderId": null,
+          "gigId": "g133",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6638,
+          "kind": "driver_fee",
+          "cents": -11748,
+          "orderId": null,
+          "gigId": "g149",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6660,
+          "kind": "driver_fee",
+          "cents": -9746,
+          "orderId": null,
+          "gigId": "g174",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6673,
+          "kind": "driver_fee",
+          "cents": -10673,
+          "orderId": null,
+          "gigId": "g138",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6686,
+          "kind": "driver_fee",
+          "cents": -4571,
+          "orderId": null,
+          "gigId": "g183",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6748,
+          "kind": "driver_fee",
+          "cents": -8384,
+          "orderId": null,
+          "gigId": "g134",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 6803,
+          "kind": "driver_fee",
+          "cents": -4832,
+          "orderId": null,
+          "gigId": "g182",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 7764,
+          "kind": "driver_fee",
+          "cents": -3262,
+          "orderId": null,
+          "gigId": "g202",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 7835,
+          "kind": "driver_fee",
+          "cents": -5531,
+          "orderId": null,
+          "gigId": "g200",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 10707,
+          "kind": "driver_fee",
+          "cents": -3563,
+          "orderId": null,
+          "gigId": "g197",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 10873,
+          "kind": "driver_fee",
+          "cents": -5320,
+          "orderId": null,
+          "gigId": "g198",
+          "detail": "Driver fee"
+        },
+        {
+          "at": 11146,
+          "kind": "driver_fee",
+          "cents": -13168,
+          "orderId": null,
+          "gigId": "g196",
+          "detail": "Driver fee"
+        }
+      ],
+      "sharedLedgerCents": -211300,
+      "commercialQuotes": 459,
+      "unquoted": 0,
+      "lateOrders": 0
+    }
+  ],
+  "interruptions": {
+    "waeca76492dc84a5916dc": "HTTP 502 during execution; coordinator reported server interruption. No terminal score exists, so this is not a failed delivery-policy result.",
+    "w0e07ef2533e2ef02bd0e": "HTTP 502 during execution; coordinator reported server interruption. No terminal score exists, so this is not a failed delivery-policy result.",
+    "wa5afd1798215289a4e96": "HTTP 502 during execution; coordinator reported server interruption. No terminal score exists, so this is not a failed delivery-policy result."
+  },
+  "lateDefinition": "An order is late if any leg is undelivered or exceeds its deadline; a private delivery uses min(order deadline, booked slot end + 30 minutes). The derived count reconciles to the terminal score.",
+  "limitations": [
+    "Two-seed adaptive screening is descriptive and cannot certify generalization or optimality.",
+    "Volume, shadow and lowfee labels represent coupled treatments; inspect full settings.",
+    "Order-set and ledger attribution is arithmetic on observed paths, not a causal mediation analysis.",
+    "Decision-point fork probes are not counted as full-week policy trials.",
+    "No future holdout outcomes were inspected.",
+    "Only terminal snapshots with score, reveal and events enter aggregate outcomes. Interrupted/incomplete attempts remain in the run manifest; their lack of a score is not a policy delivery failure."
+  ],
+  "requestDetailsFile": "runs/frontier-request-details.json"
+}

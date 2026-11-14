@@ -5,7 +5,8 @@ import { parseArgs } from "node:util"
 import { spawn } from "node:child_process"
 
 const { values } = parseArgs({ options: { plan: { type: "string" }, jobs: { type: "string", default: "3" }, "dry-run": { type: "boolean" } } })
-if (!values.plan) throw new Error("Use --plan FILE [--jobs 1–6] [--dry-run]")
+if (!values.plan) throw new Error("Use --plan FILE [--jobs 1–4] [--dry-run]")
+if (!/^[1-4]$/.test(values.jobs)) throw new Error("--jobs must be 1–4")
 const root = resolve(import.meta.dirname, "..")
 const files = [...await list(resolve(root, "src")), ...await list(resolve(root, "vendor"))].sort()
 const source = await Promise.all(files.map(async path => ({ path: relative(root, path), bytes: await readFile(path) })))

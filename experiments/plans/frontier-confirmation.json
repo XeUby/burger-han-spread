@@ -1,0 +1,118 @@
+[
+  {
+    "label": "frontier-confirm-bundles",
+    "seed": "formal-unseen-20261113-09",
+    "settings": {
+      "bundleWait": 15
+    }
+  },
+  {
+    "label": "frontier-confirm-volume",
+    "seed": "formal-unseen-20261113-09",
+    "settings": {
+      "bundleWait": 15,
+      "capacity": 0.35,
+      "backlog": 0.08,
+      "minDrivers": 8,
+      "maxKm": 700
+    }
+  },
+  {
+    "label": "frontier-confirm-middle",
+    "seed": "formal-unseen-20261113-09",
+    "settings": {
+      "bundleWait": 15,
+      "capacity": 0.25,
+      "backlog": 0.06,
+      "minDrivers": 12,
+      "maxKm": 700
+    }
+  },
+  {
+    "label": "frontier-confirm-bundles",
+    "seed": "formal-unseen-20261113-10",
+    "settings": {
+      "bundleWait": 15
+    }
+  },
+  {
+    "label": "frontier-confirm-volume",
+    "seed": "formal-unseen-20261113-10",
+    "settings": {
+      "bundleWait": 15,
+      "capacity": 0.35,
+      "backlog": 0.08,
+      "minDrivers": 8,
+      "maxKm": 700
+    }
+  },
+  {
+    "label": "frontier-confirm-middle",
+    "seed": "formal-unseen-20261113-10",
+    "settings": {
+      "bundleWait": 15,
+      "capacity": 0.25,
+      "backlog": 0.06,
+      "minDrivers": 12,
+      "maxKm": 700
+    }
+  },
+  {
+    "label": "frontier-confirm-bundles",
+    "seed": "formal-unseen-20261113-12",
+    "settings": {
+      "bundleWait": 15
+    }
+  },
+  {
+    "label": "frontier-confirm-volume",
+    "seed": "formal-unseen-20261113-12",
+    "settings": {
+      "bundleWait": 15,
+      "capacity": 0.35,
+      "backlog": 0.08,
+      "minDrivers": 8,
+      "maxKm": 700
+    }
+  },
+  {
+    "label": "frontier-confirm-middle",
+    "seed": "formal-unseen-20261113-12",
+    "settings": {
+      "bundleWait": 15,
+      "capacity": 0.25,
+      "backlog": 0.06,
+      "minDrivers": 12,
+      "maxKm": 700
+    }
+  },
+  {
+    "label": "frontier-confirm-bundles",
+    "seed": "formal-unseen-20261113-16",
+    "settings": {
+      "bundleWait": 15
+    }
+  },
+  {
+    "label": "frontier-confirm-volume",
+    "seed": "formal-unseen-20261113-16",
+    "settings": {
+      "bundleWait": 15,
+      "capacity": 0.35,
+      "backlog": 0.08,
+      "minDrivers": 8,
+      "maxKm": 700
+    }
+  },
+  {
+    "label": "frontier-confirm-middle",
+    "seed": "formal-unseen-20261113-16",
+    "settings": {
+      "bundleWait": 15,
+      "capacity": 0.25,
+      "backlog": 0.06,
+      "minDrivers": 12,
+      "maxKm": 700
+    }
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb": {
+    "bundle": "experiments/frontier/baseline",
+    "role": "baseline",
+    "settings": {
+      "price": 1.42,
+      "fee": 1.05,
+      "margin": 0.1,
+      "capacity": 0.18,
+      "maxKm": 550,
+      "minDrivers": 12,
+      "notes": true,
+      "adaptive": true,
+      "earlyOffers": false,
+      "safetySlack": false,
+      "backlog": 0.04,
+      "priceFloor": 0,
+      "costRatio": 1.15,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "demandSlope": 14
+    }
+  },
+  "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41": {
+    "bundle": "experiments/frontier/candidate",
+    "role": "candidate",
+    "settings": {
+      "price": 1.42,
+      "fee": 1.05,
+      "margin": 0.1,
+      "capacity": 0.35,
+      "maxKm": 700,
+      "minDrivers": 8,
+      "notes": true,
+      "adaptive": true,
+      "earlyOffers": false,
+      "safetySlack": false,
+      "auction": false,
+      "allowPrivate": false,
+      "tradeIns": false,
+      "homeOffers": false,
+      "readiness": false,
+      "bundlePairs": true,
+      "sameDayPremium": 1,
+      "laterDiscount": 1,
+      "placePrior": 0,
+      "bundleWait": 15,
+      "backlog": 0.08,
+      "priceFloor": 0,
+      "costRatio": 1.15,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "demandSlope": 14
+    }
+  }
+}

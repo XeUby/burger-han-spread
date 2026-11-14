@@ -1,0 +1,30 @@
+[
+  {
+    "label": "frontier-readiness",
+    "seed": "formal-unseen-20261113-14",
+    "settings": {
+      "readiness": true
+    }
+  },
+  {
+    "label": "frontier-readiness",
+    "seed": "formal-unseen-20261113-15",
+    "settings": {
+      "readiness": true
+    }
+  },
+  {
+    "label": "frontier-place",
+    "seed": "formal-unseen-20261113-14",
+    "settings": {
+      "placePrior": 1
+    }
+  },
+  {
+    "label": "frontier-place",
+    "seed": "formal-unseen-20261113-15",
+    "settings": {
+      "placePrior": 1
+    }
+  }
+]

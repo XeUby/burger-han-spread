@@ -1,0 +1,6611 @@
+{
+  "scope": "Only five named development worlds; no new/unseen validation outcomes.",
+  "limitations": [
+    "Handoff matches are optimistic feasibility screens. They do not reveal a driver remaining working time, desired gigs, reservation fee or offer-reading probability.",
+    "Actual earlier offers could change future assignments. Potential savings are not an estimated treatment effect.",
+    "Bundle candidates only include already-won simultaneously open single-leg gigs. Retrospective pair overlap is not a guaranteed match."
+  ],
+  "worlds": [
+    {
+      "world": "w7972495096c0af8b9de8",
+      "seed": "holdout-2",
+      "deliveries": 301,
+      "driversUsed": 202,
+      "naturalSameDayChains": 48,
+      "naturalNearbyChains": 10,
+      "handoffMatches": 343,
+      "uniqueHandoffGigs": 62,
+      "homewardMatches": 91,
+      "uniqueHomewardGigs": 27,
+      "optimistic25PercentSavingEuros": 246.07,
+      "availableBundlePairs": 191,
+      "availableBundleGigs": 81,
+      "availableReturnLoopPairs": 39,
+      "tradeinRequests": 20,
+      "tradeinMedianListToRef": 1.8137271572696259,
+      "tradeinNoNoteWithin240min": [
+        {
+          "id": "R00096",
+          "note": null,
+          "km": 99.8,
+          "driveMinutes": 126,
+          "listPriceCents": 8300,
+          "referenceFeeCents": 3518,
+          "ratio": 2.359295054007959,
+          "slotLead": 1527,
+          "premium": false
+        },
+        {
+          "id": "R00298",
+          "note": null,
+          "km": 110,
+          "driveMinutes": 132,
+          "listPriceCents": 8700,
+          "referenceFeeCents": 3748,
+          "ratio": 2.321237993596585,
+          "slotLead": 4401,
+          "premium": false
+        },
+        {
+          "id": "R00331",
+          "note": null,
+          "km": 12,
+          "driveMinutes": 50,
+          "listPriceCents": 4200,
+          "referenceFeeCents": 2599,
+          "ratio": 1.6160061562139285,
+          "slotLead": 1632,
+          "premium": false
+        },
+        {
+          "id": "R00845",
+          "note": null,
+          "km": 64.1,
+          "driveMinutes": 90,
+          "listPriceCents": 6600,
+          "referenceFeeCents": 2799,
+          "ratio": 2.357984994640943,
+          "slotLead": 1028,
+          "premium": true
+        },
+        {
+          "id": "R00898",
+          "note": null,
+          "km": 31.1,
+          "driveMinutes": 64,
+          "listPriceCents": 5100,
+          "referenceFeeCents": 2833,
+          "ratio": 1.8002117896223084,
+          "slotLead": 223,
+          "premium": false
+        },
+        {
+          "id": "R01011",
+          "note": null,
+          "km": 28.5,
+          "driveMinutes": 50,
+          "listPriceCents": 4600,
+          "referenceFeeCents": 2495,
+          "ratio": 1.843687374749499,
+          "slotLead": 4128,
+          "premium": false
+        }
+      ],
+      "tradeins": [
+        {
+          "id": "R00026",
+          "note": null,
+          "km": 602.1,
+          "driveMinutes": 794,
+          "listPriceCents": 29000,
+          "referenceFeeCents": 16542,
+          "ratio": 1.7531132873896749,
+          "slotLead": 1410,
+          "premium": false
+        },
+        {
+          "id": "R00096",
+          "note": null,
+          "km": 99.8,
+          "driveMinutes": 126,
+          "listPriceCents": 8300,
+          "referenceFeeCents": 3518,
+          "ratio": 2.359295054007959,
+          "slotLead": 1527,
+          "premium": false
+        },
+        {
+          "id": "R00148",
+          "note": null,
+          "km": 609.2,
+          "driveMinutes": 810,
+          "listPriceCents": 29300,
+          "referenceFeeCents": 18284,
+          "ratio": 1.6024939838109822,
+          "slotLead": 3893,
+          "premium": false
+        },
+        {
+          "id": "R00190",
+          "note": null,
+          "km": 178.6,
+          "driveMinutes": 242,
+          "listPriceCents": 11900,
+          "referenceFeeCents": 5427,
+          "ratio": 2.192740003685277,
+          "slotLead": 1346,
+          "premium": false
+        },
+        {
+          "id": "R00201",
+          "note": null,
+          "km": 178.6,
+          "driveMinutes": 242,
+          "listPriceCents": 11000,
+          "referenceFeeCents": 7746,
+          "ratio": 1.4200877872450297,
+          "slotLead": 1199,
+          "premium": false
+        },
+        {
+          "id": "R00293",
+          "note": null,
+          "km": 199.8,
+          "driveMinutes": 292,
+          "listPriceCents": 11900,
+          "referenceFeeCents": 7298,
+          "ratio": 1.6305837215675527,
+          "slotLead": 1467,
+          "premium": false
+        },
+        {
+          "id": "R00298",
+          "note": null,
+          "km": 110,
+          "driveMinutes": 132,
+          "listPriceCents": 8700,
+          "referenceFeeCents": 3748,
+          "ratio": 2.321237993596585,
+          "slotLead": 4401,
+          "premium": false
+        },
+        {
+          "id": "R00321",
+          "note": null,
+          "km": 571,
+          "driveMinutes": 768,
+          "listPriceCents": 27700,
+          "referenceFeeCents": 17514,
+          "ratio": 1.5815918693616535,
+          "slotLead": 2807,
+          "premium": false
+        },
+        {
+          "id": "R00331",
+          "note": null,
+          "km": 12,
+          "driveMinutes": 50,
+          "listPriceCents": 4200,
+          "referenceFeeCents": 2599,
+          "ratio": 1.6160061562139285,
+          "slotLead": 1632,
+          "premium": false
+        },
+        {
+          "id": "R00492",
+          "note": null,
+          "km": 480.5,
+          "driveMinutes": 656,
+          "listPriceCents": 23800,
+          "referenceFeeCents": 19720,
+          "ratio": 1.206896551724138,
+          "slotLead": 1396,
+          "premium": false
+        },
+        {
+          "id": "R00494",
+          "note": null,
+          "km": 308.5,
+          "driveMinutes": 448,
+          "listPriceCents": 16500,
+          "referenceFeeCents": 9030,
+          "ratio": 1.8272425249169435,
+          "slotLead": 1636,
+          "premium": false
+        },
+        {
+          "id": "R00751",
+          "note": {
+            "text": "lis\u00e4renkaat mukaan. vie uusi asiakkaalle ja tuo vaihtari takaisin. kiitos",
+            "language": "fi"
+          },
+          "km": 282,
+          "driveMinutes": 374,
+          "listPriceCents": 16600,
+          "referenceFeeCents": 8531,
+          "ratio": 1.9458445668737545,
+          "slotLead": 1438,
+          "premium": false
+        },
+        {
+          "id": "R00845",
+          "note": null,
+          "km": 64.1,
+          "driveMinutes": 90,
+          "listPriceCents": 6600,
+          "referenceFeeCents": 2799,
+          "ratio": 2.357984994640943,
+          "slotLead": 1028,
+          "premium": true
+        },
+        {
+          "id": "R00869",
+          "note": {
+            "text": "4 rengasta vanteilla tavaratilassa. soita liikkeeseen ennen kuin tulet. asiakkaan vanha auto takaisin meille. kiitos taas",
+            "language": "fi"
+          },
+          "km": 64.1,
+          "driveMinutes": 90,
+          "listPriceCents": 6600,
+          "referenceFeeCents": 3028,
+          "ratio": 2.179656538969617,
+          "slotLead": 353,
+          "premium": false
+        },
+        {
+          "id": "R00898",
+          "note": null,
+          "km": 31.1,
+          "driveMinutes": 64,
+          "listPriceCents": 5100,
+          "referenceFeeCents": 2833,
+          "ratio": 1.8002117896223084,
+          "slotLead": 223,
+          "premium": false
+        },
+        {
+          "id": "R00921",
+          "note": null,
+          "km": 194.4,
+          "driveMinutes": 290,
+          "listPriceCents": 11700,
+          "referenceFeeCents": 5677,
+          "ratio": 2.0609476836357232,
+          "slotLead": 4426,
+          "premium": false
+        },
+        {
+          "id": "R00941",
+          "note": {
+            "text": "Rengassarja mukaan. Vaihtari tulee takaisin meille.",
+            "language": "fi"
+          },
+          "km": 169.6,
+          "driveMinutes": 212,
+          "listPriceCents": 10600,
+          "referenceFeeCents": 4882,
+          "ratio": 2.1712412945514132,
+          "slotLead": 4382,
+          "premium": false
+        },
+        {
+          "id": "R00980",
+          "note": null,
+          "km": 408,
+          "driveMinutes": 600,
+          "listPriceCents": 20700,
+          "referenceFeeCents": 15891,
+          "ratio": 1.3026241268642629,
+          "slotLead": 3770,
+          "premium": false
+        },
+        {
+          "id": "R01011",
+          "note": null,
+          "km": 28.5,
+          "driveMinutes": 50,
+          "listPriceCents": 4600,
+          "referenceFeeCents": 2495,
+          "ratio": 1.843687374749499,
+          "slotLead": 4128,
+          "premium": false
+        },
+        {
+          "id": "R01024",
+          "note": null,
+          "km": 249.9,
+          "driveMinutes": 324,
+          "listPriceCents": 14000,
+          "referenceFeeCents": 8531,
+          "ratio": 1.6410737310983472,
+          "slotLead": 4141,
+          "premium": false
+        }
+      ],
+      "homewardHandoffs": [
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 3960,
+          "driver": "84qu-0273",
+          "home": "helsinki",
+          "here": "lempaala",
+          "gigId": "g59",
+          "orderId": "R00263",
+          "fromPlace": "lempaala",
+          "toPlace": "hyvinkaa",
+          "deadheadKm": 12,
+          "homeDistanceBefore": 163,
+          "homeDistanceAfter": 64.1,
+          "homeward": true,
+          "pickupAt": 3975,
+          "deliveryAt": 4070,
+          "observedFeeCents": 8014
+        },
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 3941,
+          "driver": "84qu-0627",
+          "home": "helsinki",
+          "here": "helsinki",
+          "gigId": "g142",
+          "orderId": "R00517",
+          "fromPlace": "vantaa",
+          "toPlace": "helsinki",
+          "deadheadKm": 22.5,
+          "homeDistanceBefore": 12,
+          "homeDistanceAfter": 12,
+          "homeward": true,
+          "pickupAt": 3985,
+          "deliveryAt": 4038,
+          "observedFeeCents": 2000
+        },
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 3644,
+          "driver": "84qu-0152",
+          "home": "vantaa",
+          "here": "helsinki",
+          "gigId": "g120",
+          "orderId": "R00449",
+          "fromPlace": "vantaa",
+          "toPlace": "espoo",
+          "deadheadKm": 22.5,
+          "homeDistanceBefore": 22.5,
+          "homeDistanceAfter": 28.5,
+          "homeward": true,
+          "pickupAt": 3688,
+          "deliveryAt": 3736,
+          "observedFeeCents": 2000
+        },
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 3644,
+          "driver": "84qu-0152",
+          "home": "vantaa",
+          "here": "helsinki",
+          "gigId": "g134",
+          "orderId": "R00500",
+          "fromPlace": "vantaa",
+          "toPlace": "espoo",
+          "deadheadKm": 22.5,
+          "homeDistanceBefore": 22.5,
+          "homeDistanceAfter": 28.5,
+          "homeward": true,
+          "pickupAt": 3688,
+          "deliveryAt": 3736,
+          "observedFeeCents": 2000
+        },
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 3644,
+          "driver": "84qu-0152",
+          "home": "vantaa",
+          "here": "helsinki",
+          "gigId": "g144",
+          "orderId": "R00523",
+          "fromPlace": "vantaa",
+          "toPlace": "espoo",
+          "deadheadKm": 22.5,
+          "homeDistanceBefore": 22.5,
+          "homeDistanceAfter": 28.5,
+          "homeward": true,
+          "pickupAt": 3705,
+          "deliveryAt": 3753,
+          "observedFeeCents": 2000
+        },
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 5312,
+          "driver": "84qu-0530",
+          "home": "vantaa",
+          "here": "helsinki",
+          "gigId": "g138",
+          "orderId": "R00508",
+          "fromPlace": "vantaa",
+          "toPlace": "helsinki",
+          "deadheadKm": 22.5,
+          "homeDistanceBefore": 22.5,
+          "homeDistanceAfter": 22.5,
+          "homeward": true,
+          "pickupAt": 5356,
+          "deliveryAt": 5409,
+          "observedFeeCents": 3000
+        },
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 3807,
+          "driver": "84qu-0176",
+          "home": "tampere",
+          "here": "helsinki",
+          "gigId": "g137",
+          "orderId": "R00505",
+          "fromPlace": "vantaa",
+          "toPlace": "hyvinkaa",
+          "deadheadKm": 22.5,
+          "homeDistanceBefore": 172.4,
+          "homeDistanceAfter": 124.3,
+          "homeward": true,
+          "pickupAt": 3851,
+          "deliveryAt": 3911,
+          "observedFeeCents": 3278
+        },
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 3807,
+          "driver": "84qu-0176",
+          "home": "tampere",
+          "here": "helsinki",
+          "gigId": "g169",
+          "orderId": "R00588",
+          "fromPlace": "vantaa",
+          "toPlace": "tampere",
+          "deadheadKm": 22.5,
+          "homeDistanceBefore": 172.4,
+          "homeDistanceAfter": 12,
+          "homeward": true,
+          "pickupAt": 3851,
+          "deliveryAt": 3992,
+          "observedFeeCents": 6896
+        },
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 5181,
+          "driver": "84qu-0387",
+          "home": "vantaa",
+          "here": "espoo",
+          "gigId": "g158",
+          "orderId": "R00566",
+          "fromPlace": "espoo",
+          "toPlace": "vantaa",
+          "deadheadKm": 12,
+          "homeDistanceBefore": 28.5,
+          "homeDistanceAfter": 12,
+          "homeward": true,
+          "pickupAt": 5196,
+          "deliveryAt": 5244,
+          "observedFeeCents": 2000
+        },
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 5350,
+          "driver": "84qu-0337",
+          "home": "vantaa",
+          "here": "espoo",
+          "gigId": "g150",
+          "orderId": "R00540",
+          "fromPlace": "vantaa",
+          "toPlace": "espoo",
+          "deadheadKm": 28.5,
+          "homeDistanceBefore": 28.5,
+          "homeDistanceAfter": 28.5,
+          "homeward": true,
+          "pickupAt": 5390,
+          "deliveryAt": 5438,
+          "observedFeeCents": 3800
+        },
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 5262,
+          "driver": "84qu-0088",
+          "home": "helsinki",
+          "here": "espoo",
+          "gigId": "g229",
+          "orderId": "R00753",
+          "fromPlace": "espoo",
+          "toPlace": "vantaa",
+          "deadheadKm": 12,
+          "homeDistanceBefore": 31.1,
+          "homeDistanceAfter": 22.5,
+          "homeward": true,
+          "pickupAt": 5277,
+          "deliveryAt": 5325,
+          "observedFeeCents": 2000
+        },
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 5350,
+          "driver": "84qu-0337",
+          "home": "vantaa",
+          "here": "espoo",
+          "gigId": "g249",
+          "orderId": "R00822",
+          "fromPlace": "vantaa",
+          "toPlace": "espoo",
+          "deadheadKm": 28.5,
+          "homeDistanceBefore": 28.5,
+          "homeDistanceAfter": 28.5,
+          "homeward": true,
+          "pickupAt": 5390,
+          "deliveryAt": 5438,
+          "observedFeeCents": 2033
+        },
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 6774,
+          "driver": "84qu-0166",
+          "home": "helsinki",
+          "here": "espoo",
+          "gigId": "g252",
+          "orderId": "R00835",
+          "fromPlace": "vantaa",
+          "toPlace": "vantaa",
+          "deadheadKm": 28.5,
+          "homeDistanceBefore": 31.1,
+          "homeDistanceAfter": 22.5,
+          "homeward": true,
+          "pickupAt": 6814,
+          "deliveryAt": 6862,
+          "observedFeeCents": 3000
+        },
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 6397,
+          "driver": "84qu-0008",
+          "home": "vantaa",
+          "here": "helsinki",
+          "gigId": "g272",
+          "orderId": "R00871",
+          "fromPlace": "helsinki",
+          "toPlace": "vantaa",
+          "deadheadKm": 12,
+          "homeDistanceBefore": 22.5,
+          "homeDistanceAfter": 12,
+          "homeward": true,
+          "pickupAt": 6412,
+          "deliveryAt": 6465,
+          "observedFeeCents": 2000
+        },
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 6420,
+          "driver": "84qu-0534",
+          "home": "tampere",
+          "here": "helsinki",
+          "gigId": "g271",
+          "orderId": "R00868",
+          "fromPlace": "helsinki",
+          "toPlace": "hyvinkaa",
+          "deadheadKm": 12,
+          "homeDistanceBefore": 172.4,
+          "homeDistanceAfter": 124.3,
+          "homeward": true,
+          "pickupAt": 6458,
+          "deliveryAt": 6529,
+          "observedFeeCents": 3534
+        },
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 6443,
+          "driver": "84qu-0690",
+          "home": "tampere",
+          "here": "vantaa",
+          "gigId": "g278",
+          "orderId": "R00884",
+          "fromPlace": "helsinki",
+          "toPlace": "lempaala",
+          "deadheadKm": 22.5,
+          "homeDistanceBefore": 169.6,
+          "homeDistanceAfter": 21.4,
+          "homeward": true,
+          "pickupAt": 6487,
+          "deliveryAt": 6626,
+          "observedFeeCents": 6035
+        },
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 6420,
+          "driver": "84qu-0534",
+          "home": "tampere",
+          "here": "helsinki",
+          "gigId": "g283",
+          "orderId": "R00891",
+          "fromPlace": "helsinki",
+          "toPlace": "lempaala",
+          "deadheadKm": 12,
+          "homeDistanceBefore": 172.4,
+          "homeDistanceAfter": 21.4,
+          "homeward": true,
+          "pickupAt": 6435,
+          "deliveryAt": 6574,
+          "observedFeeCents": 6258
+        },
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 6630,
+          "driver": "84qu-0306",
+          "home": "helsinki",
+          "here": "lempaala",
+          "gigId": "g263",
+          "orderId": "R00848",
+          "fromPlace": "lempaala",
+          "toPlace": "hyvinkaa",
+          "deadheadKm": 12,
+          "homeDistanceBefore": 163,
+          "homeDistanceAfter": 64.1,
+          "homeward": true,
+          "pickupAt": 6645,
+          "deliveryAt": 6740,
+          "observedFeeCents": 5957
+        },
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 6443,
+          "driver": "84qu-0690",
+          "home": "tampere",
+          "here": "vantaa",
+          "gigId": "g282",
+          "orderId": "R00890",
+          "fromPlace": "espoo",
+          "toPlace": "hyvinkaa",
+          "deadheadKm": 28.5,
+          "homeDistanceBefore": 169.6,
+          "homeDistanceAfter": 124.3,
+          "homeward": true,
+          "pickupAt": 6483,
+          "deliveryAt": 6555,
+          "observedFeeCents": 3421
+        },
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 6443,
+          "driver": "84qu-0690",
+          "home": "tampere",
+          "here": "vantaa",
+          "gigId": "g284",
+          "orderId": "R00893",
+          "fromPlace": "espoo",
+          "toPlace": "hyvinkaa",
+          "deadheadKm": 28.5,
+          "homeDistanceBefore": 169.6,
+          "homeDistanceAfter": 124.3,
+          "homeward": true,
+          "pickupAt": 6483,
+          "deliveryAt": 6555,
+          "observedFeeCents": 3145
+        },
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 6482,
+          "driver": "84qu-0438",
+          "home": "helsinki",
+          "here": "vantaa",
+          "gigId": "g254",
+          "orderId": "R00838",
+          "fromPlace": "helsinki",
+          "toPlace": "vantaa",
+          "deadheadKm": 22.5,
+          "homeDistanceBefore": 22.5,
+          "homeDistanceAfter": 22.5,
+          "homeward": true,
+          "pickupAt": 6526,
+          "deliveryAt": 6579,
+          "observedFeeCents": 2000
+        },
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 6561,
+          "driver": "84qu-0265",
+          "home": "tampere",
+          "here": "oulu",
+          "gigId": "g276",
+          "orderId": "R00880",
+          "fromPlace": "oulu",
+          "toPlace": "jyvaskyla",
+          "deadheadKm": 12,
+          "homeDistanceBefore": 485.5,
+          "homeDistanceAfter": 157,
+          "homeward": true,
+          "pickupAt": 6576,
+          "deliveryAt": 6857,
+          "observedFeeCents": 9020
+        },
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 6604,
+          "driver": "84qu-0425",
+          "home": "joensuu",
+          "here": "turku",
+          "gigId": "g292",
+          "orderId": "R00929",
+          "fromPlace": "turku",
+          "toPlace": "pori",
+          "deadheadKm": 12,
+          "homeDistanceBefore": 551.4,
+          "homeDistanceAfter": 507.7,
+          "homeward": true,
+          "pickupAt": 6619,
+          "deliveryAt": 6758,
+          "observedFeeCents": 5670
+        },
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 6632,
+          "driver": "84qu-0690",
+          "home": "tampere",
+          "here": "hyvinkaa",
+          "gigId": "g209",
+          "orderId": "R00685",
+          "fromPlace": "hyvinkaa",
+          "toPlace": "tampere",
+          "deadheadKm": 12,
+          "homeDistanceBefore": 124.3,
+          "homeDistanceAfter": 12,
+          "homeward": true,
+          "pickupAt": 6647,
+          "deliveryAt": 6754,
+          "observedFeeCents": 3367
+        },
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 6780,
+          "driver": "84qu-0614",
+          "home": "helsinki",
+          "here": "helsinki",
+          "gigId": "g299",
+          "orderId": "R00960",
+          "fromPlace": "vantaa",
+          "toPlace": "helsinki",
+          "deadheadKm": 22.5,
+          "homeDistanceBefore": 12,
+          "homeDistanceAfter": 12,
+          "homeward": true,
+          "pickupAt": 6824,
+          "deliveryAt": 6877,
+          "observedFeeCents": 2000
+        },
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 6851,
+          "driver": "84qu-0653",
+          "home": "helsinki",
+          "here": "vantaa",
+          "gigId": "g303",
+          "orderId": "R00975",
+          "fromPlace": "vantaa",
+          "toPlace": "helsinki",
+          "deadheadKm": 12,
+          "homeDistanceBefore": 22.5,
+          "homeDistanceAfter": 12,
+          "homeward": true,
+          "pickupAt": 6866,
+          "deliveryAt": 6919,
+          "observedFeeCents": 2000
+        },
+        {
+          "world": "w7972495096c0af8b9de8",
+          "at": 6851,
+          "driver": "84qu-0653",
+          "home": "helsinki",
+          "here": "vantaa",
+          "gigId": "g304",
+          "orderId": "R00977",
+          "fromPlace": "espoo",
+          "toPlace": "vantaa",
+          "deadheadKm": 28.5,
+          "homeDistanceBefore": 22.5,
+          "homeDistanceAfter": 22.5,
+          "homeward": true,
+          "pickupAt": 6891,
+          "deliveryAt": 6939,
+          "observedFeeCents": 2000
+        }
+      ],
+      "bundles": [
+        {
+          "at": 806,
+          "orders": [
+            "R00093",
+            "R00080"
+          ],
+          "gigs": [
+            "g18",
+            "g15"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 53.5,
+          "driveMinutes": 93,
+          "returnLoop": false
+        },
+        {
+          "at": 928,
+          "orders": [
+            "R00136",
+            "R00080"
+          ],
+          "gigs": [
+            "g27",
+            "g15"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 65.8,
+          "driveMinutes": 104,
+          "returnLoop": false
+        },
+        {
+          "at": 928,
+          "orders": [
+            "R00136",
+            "R00133"
+          ],
+          "gigs": [
+            "g27",
+            "g25"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 233.1,
+          "driveMinutes": 193,
+          "returnLoop": false
+        },
+        {
+          "at": 2041,
+          "orders": [
+            "R00224",
+            "R00225"
+          ],
+          "gigs": [
+            "g49",
+            "g50"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 65.2,
+          "driveMinutes": 99,
+          "returnLoop": false
+        },
+        {
+          "at": 2152,
+          "orders": [
+            "R00268",
+            "R00259"
+          ],
+          "gigs": [
+            "g60",
+            "g57"
+          ],
+          "connectorKm": 7.8,
+          "endsNearStartKm": 7.8,
+          "driveMinutes": 24,
+          "returnLoop": true
+        },
+        {
+          "at": 3445,
+          "orders": [
+            "R00223",
+            "R00457"
+          ],
+          "gigs": [
+            "g48",
+            "g123"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 93,
+          "returnLoop": false
+        },
+        {
+          "at": 3445,
+          "orders": [
+            "R00449",
+            "R00457"
+          ],
+          "gigs": [
+            "g120",
+            "g123"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 85,
+          "returnLoop": false
+        },
+        {
+          "at": 3476,
+          "orders": [
+            "R00449",
+            "R00468"
+          ],
+          "gigs": [
+            "g120",
+            "g127"
+          ],
+          "connectorKm": 31.1,
+          "endsNearStartKm": 384.4,
+          "driveMinutes": 290,
+          "returnLoop": false
+        },
+        {
+          "at": 3499,
+          "orders": [
+            "R00478",
+            "R00330"
+          ],
+          "gigs": [
+            "g130",
+            "g84"
+          ],
+          "connectorKm": 31.1,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 135,
+          "returnLoop": false
+        },
+        {
+          "at": 3499,
+          "orders": [
+            "R00478",
+            "R00449"
+          ],
+          "gigs": [
+            "g130",
+            "g120"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 28.5,
+          "driveMinutes": 83,
+          "returnLoop": true
+        },
+        {
+          "at": 3499,
+          "orders": [
+            "R00478",
+            "R00457"
+          ],
+          "gigs": [
+            "g130",
+            "g123"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 93,
+          "returnLoop": false
+        },
+        {
+          "at": 3499,
+          "orders": [
+            "R00478",
+            "R00468"
+          ],
+          "gigs": [
+            "g130",
+            "g127"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 384.4,
+          "driveMinutes": 262,
+          "returnLoop": false
+        },
+        {
+          "at": 3655,
+          "orders": [
+            "R00449",
+            "R00535"
+          ],
+          "gigs": [
+            "g120",
+            "g148"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 335.5,
+          "driveMinutes": 275,
+          "returnLoop": false
+        },
+        {
+          "at": 3655,
+          "orders": [
+            "R00500",
+            "R00535"
+          ],
+          "gigs": [
+            "g134",
+            "g148"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 335.5,
+          "driveMinutes": 275,
+          "returnLoop": false
+        },
+        {
+          "at": 3655,
+          "orders": [
+            "R00508",
+            "R00535"
+          ],
+          "gigs": [
+            "g138",
+            "g148"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 335.5,
+          "driveMinutes": 283,
+          "returnLoop": false
+        },
+        {
+          "at": 3655,
+          "orders": [
+            "R00517",
+            "R00535"
+          ],
+          "gigs": [
+            "g142",
+            "g148"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 335.5,
+          "driveMinutes": 283,
+          "returnLoop": false
+        },
+        {
+          "at": 3655,
+          "orders": [
+            "R00523",
+            "R00535"
+          ],
+          "gigs": [
+            "g144",
+            "g148"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 335.5,
+          "driveMinutes": 275,
+          "returnLoop": false
+        },
+        {
+          "at": 3660,
+          "orders": [
+            "R00449",
+            "R00539"
+          ],
+          "gigs": [
+            "g120",
+            "g149"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 384.4,
+          "driveMinutes": 293,
+          "returnLoop": false
+        },
+        {
+          "at": 3660,
+          "orders": [
+            "R00500",
+            "R00539"
+          ],
+          "gigs": [
+            "g134",
+            "g149"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 384.4,
+          "driveMinutes": 293,
+          "returnLoop": false
+        },
+        {
+          "at": 3660,
+          "orders": [
+            "R00508",
+            "R00539"
+          ],
+          "gigs": [
+            "g138",
+            "g149"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 384.4,
+          "driveMinutes": 301,
+          "returnLoop": false
+        },
+        {
+          "at": 3660,
+          "orders": [
+            "R00517",
+            "R00539"
+          ],
+          "gigs": [
+            "g142",
+            "g149"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 384.4,
+          "driveMinutes": 301,
+          "returnLoop": false
+        },
+        {
+          "at": 3660,
+          "orders": [
+            "R00523",
+            "R00539"
+          ],
+          "gigs": [
+            "g144",
+            "g149"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 384.4,
+          "driveMinutes": 293,
+          "returnLoop": false
+        },
+        {
+          "at": 3668,
+          "orders": [
+            "R00540",
+            "R00449"
+          ],
+          "gigs": [
+            "g150",
+            "g120"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 28.5,
+          "driveMinutes": 75,
+          "returnLoop": true
+        },
+        {
+          "at": 3668,
+          "orders": [
+            "R00540",
+            "R00457"
+          ],
+          "gigs": [
+            "g150",
+            "g123"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 85,
+          "returnLoop": false
+        },
+        {
+          "at": 3668,
+          "orders": [
+            "R00540",
+            "R00482"
+          ],
+          "gigs": [
+            "g150",
+            "g133"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 486.4,
+          "driveMinutes": 371,
+          "returnLoop": false
+        },
+        {
+          "at": 3668,
+          "orders": [
+            "R00540",
+            "R00500"
+          ],
+          "gigs": [
+            "g150",
+            "g134"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 28.5,
+          "driveMinutes": 75,
+          "returnLoop": true
+        },
+        {
+          "at": 3668,
+          "orders": [
+            "R00540",
+            "R00505"
+          ],
+          "gigs": [
+            "g150",
+            "g137"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 85,
+          "returnLoop": false
+        },
+        {
+          "at": 3668,
+          "orders": [
+            "R00508",
+            "R00540"
+          ],
+          "gigs": [
+            "g138",
+            "g150"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 28.5,
+          "driveMinutes": 83,
+          "returnLoop": true
+        },
+        {
+          "at": 3668,
+          "orders": [
+            "R00517",
+            "R00540"
+          ],
+          "gigs": [
+            "g142",
+            "g150"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 28.5,
+          "driveMinutes": 83,
+          "returnLoop": true
+        },
+        {
+          "at": 3668,
+          "orders": [
+            "R00540",
+            "R00523"
+          ],
+          "gigs": [
+            "g150",
+            "g144"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 28.5,
+          "driveMinutes": 75,
+          "returnLoop": true
+        },
+        {
+          "at": 3668,
+          "orders": [
+            "R00540",
+            "R00535"
+          ],
+          "gigs": [
+            "g150",
+            "g148"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 335.5,
+          "driveMinutes": 275,
+          "returnLoop": false
+        },
+        {
+          "at": 3668,
+          "orders": [
+            "R00540",
+            "R00539"
+          ],
+          "gigs": [
+            "g150",
+            "g149"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 384.4,
+          "driveMinutes": 293,
+          "returnLoop": false
+        },
+        {
+          "at": 3799,
+          "orders": [
+            "R00500",
+            "R00588"
+          ],
+          "gigs": [
+            "g134",
+            "g169"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 169.6,
+          "driveMinutes": 156,
+          "returnLoop": false
+        },
+        {
+          "at": 3799,
+          "orders": [
+            "R00508",
+            "R00588"
+          ],
+          "gigs": [
+            "g138",
+            "g169"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 169.6,
+          "driveMinutes": 164,
+          "returnLoop": false
+        },
+        {
+          "at": 3799,
+          "orders": [
+            "R00517",
+            "R00588"
+          ],
+          "gigs": [
+            "g142",
+            "g169"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 169.6,
+          "driveMinutes": 164,
+          "returnLoop": false
+        },
+        {
+          "at": 3799,
+          "orders": [
+            "R00523",
+            "R00588"
+          ],
+          "gigs": [
+            "g144",
+            "g169"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 169.6,
+          "driveMinutes": 156,
+          "returnLoop": false
+        },
+        {
+          "at": 3799,
+          "orders": [
+            "R00540",
+            "R00588"
+          ],
+          "gigs": [
+            "g150",
+            "g169"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 169.6,
+          "driveMinutes": 156,
+          "returnLoop": false
+        },
+        {
+          "at": 3799,
+          "orders": [
+            "R00566",
+            "R00588"
+          ],
+          "gigs": [
+            "g158",
+            "g169"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 185.8,
+          "driveMinutes": 131,
+          "returnLoop": false
+        },
+        {
+          "at": 3867,
+          "orders": [
+            "R00500",
+            "R00606"
+          ],
+          "gigs": [
+            "g134",
+            "g174"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 158.5,
+          "driveMinutes": 146,
+          "returnLoop": false
+        },
+        {
+          "at": 3867,
+          "orders": [
+            "R00508",
+            "R00606"
+          ],
+          "gigs": [
+            "g138",
+            "g174"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 158.5,
+          "driveMinutes": 154,
+          "returnLoop": false
+        },
+        {
+          "at": 3867,
+          "orders": [
+            "R00517",
+            "R00606"
+          ],
+          "gigs": [
+            "g142",
+            "g174"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 158.5,
+          "driveMinutes": 154,
+          "returnLoop": false
+        },
+        {
+          "at": 3867,
+          "orders": [
+            "R00523",
+            "R00606"
+          ],
+          "gigs": [
+            "g144",
+            "g174"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 158.5,
+          "driveMinutes": 146,
+          "returnLoop": false
+        },
+        {
+          "at": 3867,
+          "orders": [
+            "R00540",
+            "R00606"
+          ],
+          "gigs": [
+            "g150",
+            "g174"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 158.5,
+          "driveMinutes": 146,
+          "returnLoop": false
+        },
+        {
+          "at": 3867,
+          "orders": [
+            "R00566",
+            "R00606"
+          ],
+          "gigs": [
+            "g158",
+            "g174"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 153.3,
+          "driveMinutes": 121,
+          "returnLoop": false
+        },
+        {
+          "at": 3867,
+          "orders": [
+            "R00606",
+            "R00598"
+          ],
+          "gigs": [
+            "g174",
+            "g171"
+          ],
+          "connectorKm": 7.8,
+          "endsNearStartKm": 228.1,
+          "driveMinutes": 206,
+          "returnLoop": false
+        },
+        {
+          "at": 3911,
+          "orders": [
+            "R00370",
+            "R00614"
+          ],
+          "gigs": [
+            "g99",
+            "g177"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 178.6,
+          "driveMinutes": 126,
+          "returnLoop": false
+        },
+        {
+          "at": 3911,
+          "orders": [
+            "R00606",
+            "R00614"
+          ],
+          "gigs": [
+            "g174",
+            "g177"
+          ],
+          "connectorKm": 7.8,
+          "endsNearStartKm": 158.5,
+          "driveMinutes": 112,
+          "returnLoop": false
+        },
+        {
+          "at": 4949,
+          "orders": [
+            "R00657",
+            "R00660"
+          ],
+          "gigs": [
+            "g200",
+            "g201"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 68.8,
+          "driveMinutes": 83,
+          "returnLoop": false
+        },
+        {
+          "at": 4956,
+          "orders": [
+            "R00662",
+            "R00031"
+          ],
+          "gigs": [
+            "g202",
+            "g7"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 511.5,
+          "driveMinutes": 362,
+          "returnLoop": false
+        },
+        {
+          "at": 4956,
+          "orders": [
+            "R00508",
+            "R00662"
+          ],
+          "gigs": [
+            "g138",
+            "g202"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 169.6,
+          "driveMinutes": 164,
+          "returnLoop": false
+        },
+        {
+          "at": 4956,
+          "orders": [
+            "R00540",
+            "R00662"
+          ],
+          "gigs": [
+            "g150",
+            "g202"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 169.6,
+          "driveMinutes": 156,
+          "returnLoop": false
+        },
+        {
+          "at": 4956,
+          "orders": [
+            "R00566",
+            "R00662"
+          ],
+          "gigs": [
+            "g158",
+            "g202"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 185.8,
+          "driveMinutes": 131,
+          "returnLoop": false
+        },
+        {
+          "at": 5006,
+          "orders": [
+            "R00657",
+            "R00673"
+          ],
+          "gigs": [
+            "g200",
+            "g205"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 68.8,
+          "driveMinutes": 83,
+          "returnLoop": false
+        },
+        {
+          "at": 5007,
+          "orders": [
+            "R00657",
+            "R00674"
+          ],
+          "gigs": [
+            "g200",
+            "g206"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 68.8,
+          "driveMinutes": 83,
+          "returnLoop": false
+        },
+        {
+          "at": 5030,
+          "orders": [
+            "R00676",
+            "R00508"
+          ],
+          "gigs": [
+            "g207",
+            "g138"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 64.1,
+          "driveMinutes": 64,
+          "returnLoop": false
+        },
+        {
+          "at": 5030,
+          "orders": [
+            "R00676",
+            "R00535"
+          ],
+          "gigs": [
+            "g207",
+            "g148"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 303.7,
+          "driveMinutes": 260,
+          "returnLoop": false
+        },
+        {
+          "at": 5030,
+          "orders": [
+            "R00676",
+            "R00540"
+          ],
+          "gigs": [
+            "g207",
+            "g150"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 65.2,
+          "driveMinutes": 60,
+          "returnLoop": false
+        },
+        {
+          "at": 5030,
+          "orders": [
+            "R00676",
+            "R00566"
+          ],
+          "gigs": [
+            "g207",
+            "g158"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 85,
+          "returnLoop": false
+        },
+        {
+          "at": 5030,
+          "orders": [
+            "R00657",
+            "R00676"
+          ],
+          "gigs": [
+            "g200",
+            "g207"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 60,
+          "returnLoop": false
+        },
+        {
+          "at": 5059,
+          "orders": [
+            "R00508",
+            "R00686"
+          ],
+          "gigs": [
+            "g138",
+            "g210"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 28.5,
+          "driveMinutes": 83,
+          "returnLoop": true
+        },
+        {
+          "at": 5059,
+          "orders": [
+            "R00686",
+            "R00535"
+          ],
+          "gigs": [
+            "g210",
+            "g148"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 335.5,
+          "driveMinutes": 275,
+          "returnLoop": false
+        },
+        {
+          "at": 5059,
+          "orders": [
+            "R00686",
+            "R00540"
+          ],
+          "gigs": [
+            "g210",
+            "g150"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 28.5,
+          "driveMinutes": 75,
+          "returnLoop": true
+        },
+        {
+          "at": 5059,
+          "orders": [
+            "R00686",
+            "R00566"
+          ],
+          "gigs": [
+            "g210",
+            "g158"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 12,
+          "driveMinutes": 50,
+          "returnLoop": true
+        },
+        {
+          "at": 5066,
+          "orders": [
+            "R00690",
+            "R00508"
+          ],
+          "gigs": [
+            "g211",
+            "g138"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 177.7,
+          "driveMinutes": 171,
+          "returnLoop": false
+        },
+        {
+          "at": 5066,
+          "orders": [
+            "R00690",
+            "R00540"
+          ],
+          "gigs": [
+            "g211",
+            "g150"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 153.3,
+          "driveMinutes": 167,
+          "returnLoop": false
+        },
+        {
+          "at": 5066,
+          "orders": [
+            "R00690",
+            "R00566"
+          ],
+          "gigs": [
+            "g211",
+            "g158"
+          ],
+          "connectorKm": 31.1,
+          "endsNearStartKm": 158.5,
+          "driveMinutes": 170,
+          "returnLoop": false
+        },
+        {
+          "at": 5066,
+          "orders": [
+            "R00690",
+            "R00686"
+          ],
+          "gigs": [
+            "g211",
+            "g210"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 153.3,
+          "driveMinutes": 167,
+          "returnLoop": false
+        },
+        {
+          "at": 5225,
+          "orders": [
+            "R00753",
+            "R00508"
+          ],
+          "gigs": [
+            "g229",
+            "g138"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 31.1,
+          "driveMinutes": 54,
+          "returnLoop": true
+        },
+        {
+          "at": 5225,
+          "orders": [
+            "R00753",
+            "R00540"
+          ],
+          "gigs": [
+            "g229",
+            "g150"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 12,
+          "driveMinutes": 50,
+          "returnLoop": true
+        },
+        {
+          "at": 5225,
+          "orders": [
+            "R00753",
+            "R00566"
+          ],
+          "gigs": [
+            "g229",
+            "g158"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 28.5,
+          "driveMinutes": 75,
+          "returnLoop": true
+        },
+        {
+          "at": 5267,
+          "orders": [
+            "R00508",
+            "R00772"
+          ],
+          "gigs": [
+            "g138",
+            "g236"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 93,
+          "returnLoop": false
+        },
+        {
+          "at": 5267,
+          "orders": [
+            "R00540",
+            "R00772"
+          ],
+          "gigs": [
+            "g150",
+            "g236"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 85,
+          "returnLoop": false
+        },
+        {
+          "at": 5320,
+          "orders": [
+            "R00508",
+            "R00802"
+          ],
+          "gigs": [
+            "g138",
+            "g244"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 93,
+          "returnLoop": false
+        },
+        {
+          "at": 5320,
+          "orders": [
+            "R00540",
+            "R00802"
+          ],
+          "gigs": [
+            "g150",
+            "g244"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 85,
+          "returnLoop": false
+        },
+        {
+          "at": 5320,
+          "orders": [
+            "R00802",
+            "R00657"
+          ],
+          "gigs": [
+            "g244",
+            "g200"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 60,
+          "returnLoop": false
+        },
+        {
+          "at": 5348,
+          "orders": [
+            "R00540",
+            "R00822"
+          ],
+          "gigs": [
+            "g150",
+            "g249"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 28.5,
+          "driveMinutes": 75,
+          "returnLoop": true
+        },
+        {
+          "at": 5348,
+          "orders": [
+            "R00822",
+            "R00772"
+          ],
+          "gigs": [
+            "g249",
+            "g236"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 85,
+          "returnLoop": false
+        },
+        {
+          "at": 5348,
+          "orders": [
+            "R00822",
+            "R00802"
+          ],
+          "gigs": [
+            "g249",
+            "g244"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 85,
+          "returnLoop": false
+        },
+        {
+          "at": 5380,
+          "orders": [
+            "R00835",
+            "R00772"
+          ],
+          "gigs": [
+            "g252",
+            "g236"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 60,
+          "returnLoop": false
+        },
+        {
+          "at": 5380,
+          "orders": [
+            "R00835",
+            "R00802"
+          ],
+          "gigs": [
+            "g252",
+            "g244"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 60,
+          "returnLoop": false
+        },
+        {
+          "at": 5380,
+          "orders": [
+            "R00835",
+            "R00822"
+          ],
+          "gigs": [
+            "g252",
+            "g249"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 28.5,
+          "driveMinutes": 50,
+          "returnLoop": true
+        },
+        {
+          "at": 5470,
+          "orders": [
+            "R00772",
+            "R00843"
+          ],
+          "gigs": [
+            "g236",
+            "g260"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 169.6,
+          "driveMinutes": 111,
+          "returnLoop": false
+        },
+        {
+          "at": 6315,
+          "orders": [
+            "R00835",
+            "R00854"
+          ],
+          "gigs": [
+            "g252",
+            "g266"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 88,
+          "returnLoop": false
+        },
+        {
+          "at": 6316,
+          "orders": [
+            "R00835",
+            "R00855"
+          ],
+          "gigs": [
+            "g252",
+            "g267"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 88,
+          "returnLoop": false
+        },
+        {
+          "at": 6347,
+          "orders": [
+            "R00835",
+            "R00861"
+          ],
+          "gigs": [
+            "g252",
+            "g268"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 132.6,
+          "driveMinutes": 115,
+          "returnLoop": false
+        },
+        {
+          "at": 6365,
+          "orders": [
+            "R00835",
+            "R00868"
+          ],
+          "gigs": [
+            "g252",
+            "g271"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 99,
+          "returnLoop": false
+        },
+        {
+          "at": 6365,
+          "orders": [
+            "R00868",
+            "R00862"
+          ],
+          "gigs": [
+            "g271",
+            "g269"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 31.1,
+          "driveMinutes": 91,
+          "returnLoop": true
+        },
+        {
+          "at": 6376,
+          "orders": [
+            "R00835",
+            "R00872"
+          ],
+          "gigs": [
+            "g252",
+            "g273"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 158.5,
+          "driveMinutes": 121,
+          "returnLoop": false
+        },
+        {
+          "at": 6376,
+          "orders": [
+            "R00862",
+            "R00872"
+          ],
+          "gigs": [
+            "g269",
+            "g273"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 178.6,
+          "driveMinutes": 167,
+          "returnLoop": false
+        },
+        {
+          "at": 6376,
+          "orders": [
+            "R00871",
+            "R00872"
+          ],
+          "gigs": [
+            "g272",
+            "g273"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 177.7,
+          "driveMinutes": 125,
+          "returnLoop": false
+        },
+        {
+          "at": 6406,
+          "orders": [
+            "R00835",
+            "R00881"
+          ],
+          "gigs": [
+            "g252",
+            "g277"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 60,
+          "returnLoop": false
+        },
+        {
+          "at": 6406,
+          "orders": [
+            "R00871",
+            "R00881"
+          ],
+          "gigs": [
+            "g272",
+            "g277"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 64.1,
+          "driveMinutes": 64,
+          "returnLoop": false
+        },
+        {
+          "at": 6414,
+          "orders": [
+            "R00835",
+            "R00884"
+          ],
+          "gigs": [
+            "g252",
+            "g278"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 151.4,
+          "driveMinutes": 158,
+          "returnLoop": false
+        },
+        {
+          "at": 6414,
+          "orders": [
+            "R00884",
+            "R00848"
+          ],
+          "gigs": [
+            "g278",
+            "g263"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 64.1,
+          "driveMinutes": 170,
+          "returnLoop": false
+        },
+        {
+          "at": 6415,
+          "orders": [
+            "R00835",
+            "R00885"
+          ],
+          "gigs": [
+            "g252",
+            "g279"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 88,
+          "returnLoop": false
+        },
+        {
+          "at": 6416,
+          "orders": [
+            "R00887",
+            "R00685"
+          ],
+          "gigs": [
+            "g281",
+            "g209"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 185.8,
+          "driveMinutes": 122,
+          "returnLoop": false
+        },
+        {
+          "at": 6416,
+          "orders": [
+            "R00835",
+            "R00887"
+          ],
+          "gigs": [
+            "g252",
+            "g281"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 96,
+          "returnLoop": false
+        },
+        {
+          "at": 6418,
+          "orders": [
+            "R00835",
+            "R00891"
+          ],
+          "gigs": [
+            "g252",
+            "g283"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 151.4,
+          "driveMinutes": 158,
+          "returnLoop": false
+        },
+        {
+          "at": 6418,
+          "orders": [
+            "R00838",
+            "R00891"
+          ],
+          "gigs": [
+            "g254",
+            "g283"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 163,
+          "driveMinutes": 162,
+          "returnLoop": false
+        },
+        {
+          "at": 6418,
+          "orders": [
+            "R00891",
+            "R00848"
+          ],
+          "gigs": [
+            "g283",
+            "g263"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 64.1,
+          "driveMinutes": 170,
+          "returnLoop": false
+        },
+        {
+          "at": 6419,
+          "orders": [
+            "R00893",
+            "R00685"
+          ],
+          "gigs": [
+            "g284",
+            "g209"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 185.8,
+          "driveMinutes": 122,
+          "returnLoop": false
+        },
+        {
+          "at": 6419,
+          "orders": [
+            "R00835",
+            "R00893"
+          ],
+          "gigs": [
+            "g252",
+            "g284"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 96,
+          "returnLoop": false
+        },
+        {
+          "at": 6419,
+          "orders": [
+            "R00838",
+            "R00893"
+          ],
+          "gigs": [
+            "g254",
+            "g284"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 64.1,
+          "driveMinutes": 100,
+          "returnLoop": false
+        },
+        {
+          "at": 6455,
+          "orders": [
+            "R00835",
+            "R00904"
+          ],
+          "gigs": [
+            "g252",
+            "g286"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 113.8,
+          "driveMinutes": 118,
+          "returnLoop": false
+        },
+        {
+          "at": 6455,
+          "orders": [
+            "R00838",
+            "R00904"
+          ],
+          "gigs": [
+            "g254",
+            "g286"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 121.7,
+          "driveMinutes": 122,
+          "returnLoop": false
+        },
+        {
+          "at": 6472,
+          "orders": [
+            "R00908",
+            "R00848"
+          ],
+          "gigs": [
+            "g287",
+            "g263"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 355.2,
+          "driveMinutes": 290,
+          "returnLoop": false
+        },
+        {
+          "at": 6482,
+          "orders": [
+            "R00835",
+            "R00914"
+          ],
+          "gigs": [
+            "g252",
+            "g288"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 124,
+          "returnLoop": false
+        },
+        {
+          "at": 6482,
+          "orders": [
+            "R00838",
+            "R00914"
+          ],
+          "gigs": [
+            "g254",
+            "g288"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 87.2,
+          "driveMinutes": 128,
+          "returnLoop": false
+        },
+        {
+          "at": 6485,
+          "orders": [
+            "R00835",
+            "R00916"
+          ],
+          "gigs": [
+            "g252",
+            "g289"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 88,
+          "returnLoop": false
+        },
+        {
+          "at": 6485,
+          "orders": [
+            "R00838",
+            "R00916"
+          ],
+          "gigs": [
+            "g254",
+            "g289"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 87.2,
+          "driveMinutes": 92,
+          "returnLoop": false
+        },
+        {
+          "at": 6530,
+          "orders": [
+            "R00935",
+            "R00685"
+          ],
+          "gigs": [
+            "g295",
+            "g209"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 185.8,
+          "driveMinutes": 122,
+          "returnLoop": false
+        },
+        {
+          "at": 6530,
+          "orders": [
+            "R00835",
+            "R00935"
+          ],
+          "gigs": [
+            "g252",
+            "g295"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 96,
+          "returnLoop": false
+        },
+        {
+          "at": 6555,
+          "orders": [
+            "R00685",
+            "R00945"
+          ],
+          "gigs": [
+            "g209",
+            "g296"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 110,
+          "driveMinutes": 95,
+          "returnLoop": false
+        },
+        {
+          "at": 6555,
+          "orders": [
+            "R00945",
+            "R00848"
+          ],
+          "gigs": [
+            "g296",
+            "g263"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 124.3,
+          "driveMinutes": 85,
+          "returnLoop": false
+        },
+        {
+          "at": 6555,
+          "orders": [
+            "R00933",
+            "R00945"
+          ],
+          "gigs": [
+            "g294",
+            "g296"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 151.4,
+          "driveMinutes": 125,
+          "returnLoop": false
+        },
+        {
+          "at": 6616,
+          "orders": [
+            "R00835",
+            "R00959"
+          ],
+          "gigs": [
+            "g252",
+            "g298"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 124,
+          "returnLoop": false
+        },
+        {
+          "at": 6616,
+          "orders": [
+            "R00954",
+            "R00959"
+          ],
+          "gigs": [
+            "g297",
+            "g298"
+          ],
+          "connectorKm": 31.1,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 135,
+          "returnLoop": false
+        },
+        {
+          "at": 6618,
+          "orders": [
+            "R00835",
+            "R00960"
+          ],
+          "gigs": [
+            "g252",
+            "g299"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 22.5,
+          "driveMinutes": 54,
+          "returnLoop": true
+        },
+        {
+          "at": 6618,
+          "orders": [
+            "R00960",
+            "R00885"
+          ],
+          "gigs": [
+            "g299",
+            "g279"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 121,
+          "returnLoop": false
+        },
+        {
+          "at": 6618,
+          "orders": [
+            "R00960",
+            "R00893"
+          ],
+          "gigs": [
+            "g299",
+            "g284"
+          ],
+          "connectorKm": 31.1,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 107,
+          "returnLoop": false
+        },
+        {
+          "at": 6618,
+          "orders": [
+            "R00960",
+            "R00935"
+          ],
+          "gigs": [
+            "g299",
+            "g295"
+          ],
+          "connectorKm": 31.1,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 107,
+          "returnLoop": false
+        },
+        {
+          "at": 6618,
+          "orders": [
+            "R00960",
+            "R00954"
+          ],
+          "gigs": [
+            "g299",
+            "g297"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 22.5,
+          "driveMinutes": 87,
+          "returnLoop": true
+        },
+        {
+          "at": 6618,
+          "orders": [
+            "R00960",
+            "R00959"
+          ],
+          "gigs": [
+            "g299",
+            "g298"
+          ],
+          "connectorKm": 31.1,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 135,
+          "returnLoop": false
+        },
+        {
+          "at": 6619,
+          "orders": [
+            "R00835",
+            "R00961"
+          ],
+          "gigs": [
+            "g252",
+            "g300"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 124,
+          "returnLoop": false
+        },
+        {
+          "at": 6619,
+          "orders": [
+            "R00954",
+            "R00961"
+          ],
+          "gigs": [
+            "g297",
+            "g300"
+          ],
+          "connectorKm": 31.1,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 135,
+          "returnLoop": false
+        },
+        {
+          "at": 6619,
+          "orders": [
+            "R00960",
+            "R00961"
+          ],
+          "gigs": [
+            "g299",
+            "g300"
+          ],
+          "connectorKm": 31.1,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 135,
+          "returnLoop": false
+        },
+        {
+          "at": 6620,
+          "orders": [
+            "R00835",
+            "R00962"
+          ],
+          "gigs": [
+            "g252",
+            "g301"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 28.5,
+          "driveMinutes": 50,
+          "returnLoop": true
+        },
+        {
+          "at": 6620,
+          "orders": [
+            "R00962",
+            "R00885"
+          ],
+          "gigs": [
+            "g301",
+            "g279"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 113,
+          "returnLoop": false
+        },
+        {
+          "at": 6620,
+          "orders": [
+            "R00962",
+            "R00893"
+          ],
+          "gigs": [
+            "g301",
+            "g284"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 71,
+          "returnLoop": false
+        },
+        {
+          "at": 6620,
+          "orders": [
+            "R00962",
+            "R00935"
+          ],
+          "gigs": [
+            "g301",
+            "g295"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 71,
+          "returnLoop": false
+        },
+        {
+          "at": 6620,
+          "orders": [
+            "R00954",
+            "R00962"
+          ],
+          "gigs": [
+            "g297",
+            "g301"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 28.5,
+          "driveMinutes": 83,
+          "returnLoop": true
+        },
+        {
+          "at": 6620,
+          "orders": [
+            "R00962",
+            "R00959"
+          ],
+          "gigs": [
+            "g301",
+            "g298"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 99,
+          "returnLoop": false
+        },
+        {
+          "at": 6620,
+          "orders": [
+            "R00960",
+            "R00962"
+          ],
+          "gigs": [
+            "g299",
+            "g301"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 28.5,
+          "driveMinutes": 83,
+          "returnLoop": true
+        },
+        {
+          "at": 6620,
+          "orders": [
+            "R00962",
+            "R00961"
+          ],
+          "gigs": [
+            "g301",
+            "g300"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 99,
+          "returnLoop": false
+        },
+        {
+          "at": 6696,
+          "orders": [
+            "R00835",
+            "R00975"
+          ],
+          "gigs": [
+            "g252",
+            "g303"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 22.5,
+          "driveMinutes": 54,
+          "returnLoop": true
+        },
+        {
+          "at": 6696,
+          "orders": [
+            "R00975",
+            "R00881"
+          ],
+          "gigs": [
+            "g303",
+            "g277"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 93,
+          "returnLoop": false
+        },
+        {
+          "at": 6696,
+          "orders": [
+            "R00975",
+            "R00885"
+          ],
+          "gigs": [
+            "g303",
+            "g279"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 121,
+          "returnLoop": false
+        },
+        {
+          "at": 6696,
+          "orders": [
+            "R00975",
+            "R00893"
+          ],
+          "gigs": [
+            "g303",
+            "g284"
+          ],
+          "connectorKm": 31.1,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 107,
+          "returnLoop": false
+        },
+        {
+          "at": 6696,
+          "orders": [
+            "R00975",
+            "R00935"
+          ],
+          "gigs": [
+            "g303",
+            "g295"
+          ],
+          "connectorKm": 31.1,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 107,
+          "returnLoop": false
+        },
+        {
+          "at": 6696,
+          "orders": [
+            "R00975",
+            "R00954"
+          ],
+          "gigs": [
+            "g303",
+            "g297"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 22.5,
+          "driveMinutes": 87,
+          "returnLoop": true
+        },
+        {
+          "at": 6696,
+          "orders": [
+            "R00975",
+            "R00959"
+          ],
+          "gigs": [
+            "g303",
+            "g298"
+          ],
+          "connectorKm": 31.1,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 135,
+          "returnLoop": false
+        },
+        {
+          "at": 6696,
+          "orders": [
+            "R00975",
+            "R00960"
+          ],
+          "gigs": [
+            "g303",
+            "g299"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 22.5,
+          "driveMinutes": 87,
+          "returnLoop": true
+        },
+        {
+          "at": 6696,
+          "orders": [
+            "R00975",
+            "R00961"
+          ],
+          "gigs": [
+            "g303",
+            "g300"
+          ],
+          "connectorKm": 31.1,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 135,
+          "returnLoop": false
+        },
+        {
+          "at": 6696,
+          "orders": [
+            "R00975",
+            "R00962"
+          ],
+          "gigs": [
+            "g303",
+            "g301"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 28.5,
+          "driveMinutes": 83,
+          "returnLoop": true
+        },
+        {
+          "at": 6696,
+          "orders": [
+            "R00975",
+            "R00974"
+          ],
+          "gigs": [
+            "g303",
+            "g302"
+          ],
+          "connectorKm": 31.1,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 107,
+          "returnLoop": false
+        },
+        {
+          "at": 6699,
+          "orders": [
+            "R00977",
+            "R00835"
+          ],
+          "gigs": [
+            "g304",
+            "g252"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 28.5,
+          "driveMinutes": 50,
+          "returnLoop": true
+        },
+        {
+          "at": 6699,
+          "orders": [
+            "R00977",
+            "R00881"
+          ],
+          "gigs": [
+            "g304",
+            "g277"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 65.2,
+          "driveMinutes": 60,
+          "returnLoop": false
+        },
+        {
+          "at": 6699,
+          "orders": [
+            "R00977",
+            "R00885"
+          ],
+          "gigs": [
+            "g304",
+            "g279"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 108.5,
+          "driveMinutes": 88,
+          "returnLoop": false
+        },
+        {
+          "at": 6699,
+          "orders": [
+            "R00977",
+            "R00893"
+          ],
+          "gigs": [
+            "g304",
+            "g284"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 65.2,
+          "driveMinutes": 96,
+          "returnLoop": false
+        },
+        {
+          "at": 6699,
+          "orders": [
+            "R00977",
+            "R00935"
+          ],
+          "gigs": [
+            "g304",
+            "g295"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 65.2,
+          "driveMinutes": 96,
+          "returnLoop": false
+        },
+        {
+          "at": 6699,
+          "orders": [
+            "R00977",
+            "R00954"
+          ],
+          "gigs": [
+            "g304",
+            "g297"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 31.1,
+          "driveMinutes": 54,
+          "returnLoop": true
+        },
+        {
+          "at": 6699,
+          "orders": [
+            "R00977",
+            "R00959"
+          ],
+          "gigs": [
+            "g304",
+            "g298"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 108.5,
+          "driveMinutes": 124,
+          "returnLoop": false
+        },
+        {
+          "at": 6699,
+          "orders": [
+            "R00977",
+            "R00960"
+          ],
+          "gigs": [
+            "g304",
+            "g299"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 31.1,
+          "driveMinutes": 54,
+          "returnLoop": true
+        },
+        {
+          "at": 6699,
+          "orders": [
+            "R00977",
+            "R00961"
+          ],
+          "gigs": [
+            "g304",
+            "g300"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 108.5,
+          "driveMinutes": 124,
+          "returnLoop": false
+        },
+        {
+          "at": 6699,
+          "orders": [
+            "R00977",
+            "R00962"
+          ],
+          "gigs": [
+            "g304",
+            "g301"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 12,
+          "driveMinutes": 50,
+          "returnLoop": true
+        },
+        {
+          "at": 6699,
+          "orders": [
+            "R00977",
+            "R00974"
+          ],
+          "gigs": [
+            "g304",
+            "g302"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 65.2,
+          "driveMinutes": 96,
+          "returnLoop": false
+        },
+        {
+          "at": 6699,
+          "orders": [
+            "R00977",
+            "R00975"
+          ],
+          "gigs": [
+            "g304",
+            "g303"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 31.1,
+          "driveMinutes": 54,
+          "returnLoop": true
+        },
+        {
+          "at": 6738,
+          "orders": [
+            "R00835",
+            "R00983"
+          ],
+          "gigs": [
+            "g252",
+            "g307"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 28.5,
+          "driveMinutes": 50,
+          "returnLoop": true
+        },
+        {
+          "at": 6738,
+          "orders": [
+            "R00983",
+            "R00893"
+          ],
+          "gigs": [
+            "g307",
+            "g284"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 71,
+          "returnLoop": false
+        },
+        {
+          "at": 6738,
+          "orders": [
+            "R00983",
+            "R00935"
+          ],
+          "gigs": [
+            "g307",
+            "g295"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 71,
+          "returnLoop": false
+        },
+        {
+          "at": 6738,
+          "orders": [
+            "R00983",
+            "R00959"
+          ],
+          "gigs": [
+            "g307",
+            "g298"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 99,
+          "returnLoop": false
+        },
+        {
+          "at": 6738,
+          "orders": [
+            "R00983",
+            "R00961"
+          ],
+          "gigs": [
+            "g307",
+            "g300"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 99,
+          "returnLoop": false
+        },
+        {
+          "at": 6738,
+          "orders": [
+            "R00983",
+            "R00975"
+          ],
+          "gigs": [
+            "g307",
+            "g303"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 22.5,
+          "driveMinutes": 79,
+          "returnLoop": true
+        },
+        {
+          "at": 6738,
+          "orders": [
+            "R00983",
+            "R00977"
+          ],
+          "gigs": [
+            "g307",
+            "g304"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 12,
+          "driveMinutes": 50,
+          "returnLoop": true
+        },
+        {
+          "at": 6738,
+          "orders": [
+            "R00982",
+            "R00983"
+          ],
+          "gigs": [
+            "g306",
+            "g307"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 396.8,
+          "driveMinutes": 268,
+          "returnLoop": false
+        },
+        {
+          "at": 6745,
+          "orders": [
+            "R00835",
+            "R00984"
+          ],
+          "gigs": [
+            "g252",
+            "g308"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 28.5,
+          "driveMinutes": 50,
+          "returnLoop": true
+        },
+        {
+          "at": 6745,
+          "orders": [
+            "R00984",
+            "R00893"
+          ],
+          "gigs": [
+            "g308",
+            "g284"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 71,
+          "returnLoop": false
+        },
+        {
+          "at": 6745,
+          "orders": [
+            "R00984",
+            "R00935"
+          ],
+          "gigs": [
+            "g308",
+            "g295"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 71,
+          "returnLoop": false
+        },
+        {
+          "at": 6745,
+          "orders": [
+            "R00984",
+            "R00959"
+          ],
+          "gigs": [
+            "g308",
+            "g298"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 99,
+          "returnLoop": false
+        },
+        {
+          "at": 6745,
+          "orders": [
+            "R00984",
+            "R00961"
+          ],
+          "gigs": [
+            "g308",
+            "g300"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 99,
+          "returnLoop": false
+        },
+        {
+          "at": 6745,
+          "orders": [
+            "R00984",
+            "R00975"
+          ],
+          "gigs": [
+            "g308",
+            "g303"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 22.5,
+          "driveMinutes": 79,
+          "returnLoop": true
+        },
+        {
+          "at": 6745,
+          "orders": [
+            "R00984",
+            "R00977"
+          ],
+          "gigs": [
+            "g308",
+            "g304"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 12,
+          "driveMinutes": 50,
+          "returnLoop": true
+        },
+        {
+          "at": 6745,
+          "orders": [
+            "R00982",
+            "R00984"
+          ],
+          "gigs": [
+            "g306",
+            "g308"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 396.8,
+          "driveMinutes": 268,
+          "returnLoop": false
+        },
+        {
+          "at": 6748,
+          "orders": [
+            "R00835",
+            "R00987"
+          ],
+          "gigs": [
+            "g252",
+            "g309"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 88,
+          "returnLoop": false
+        },
+        {
+          "at": 6748,
+          "orders": [
+            "R00960",
+            "R00987"
+          ],
+          "gigs": [
+            "g299",
+            "g309"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 121,
+          "returnLoop": false
+        },
+        {
+          "at": 6748,
+          "orders": [
+            "R00962",
+            "R00987"
+          ],
+          "gigs": [
+            "g301",
+            "g309"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 113,
+          "returnLoop": false
+        },
+        {
+          "at": 6748,
+          "orders": [
+            "R00975",
+            "R00987"
+          ],
+          "gigs": [
+            "g303",
+            "g309"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 121,
+          "returnLoop": false
+        },
+        {
+          "at": 6748,
+          "orders": [
+            "R00977",
+            "R00987"
+          ],
+          "gigs": [
+            "g304",
+            "g309"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 108.5,
+          "driveMinutes": 88,
+          "returnLoop": false
+        },
+        {
+          "at": 6748,
+          "orders": [
+            "R00981",
+            "R00987"
+          ],
+          "gigs": [
+            "g305",
+            "g309"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 113,
+          "returnLoop": false
+        },
+        {
+          "at": 6748,
+          "orders": [
+            "R00982",
+            "R00987"
+          ],
+          "gigs": [
+            "g306",
+            "g309"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 288.1,
+          "driveMinutes": 306,
+          "returnLoop": false
+        },
+        {
+          "at": 6748,
+          "orders": [
+            "R00983",
+            "R00987"
+          ],
+          "gigs": [
+            "g307",
+            "g309"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 113,
+          "returnLoop": false
+        },
+        {
+          "at": 6748,
+          "orders": [
+            "R00984",
+            "R00987"
+          ],
+          "gigs": [
+            "g308",
+            "g309"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 113,
+          "returnLoop": false
+        },
+        {
+          "at": 6751,
+          "orders": [
+            "R00835",
+            "R00990"
+          ],
+          "gigs": [
+            "g252",
+            "g310"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 28.5,
+          "driveMinutes": 50,
+          "returnLoop": true
+        },
+        {
+          "at": 6751,
+          "orders": [
+            "R00990",
+            "R00893"
+          ],
+          "gigs": [
+            "g310",
+            "g284"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 71,
+          "returnLoop": false
+        },
+        {
+          "at": 6751,
+          "orders": [
+            "R00990",
+            "R00935"
+          ],
+          "gigs": [
+            "g310",
+            "g295"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 71,
+          "returnLoop": false
+        },
+        {
+          "at": 6751,
+          "orders": [
+            "R00990",
+            "R00959"
+          ],
+          "gigs": [
+            "g310",
+            "g298"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 99,
+          "returnLoop": false
+        },
+        {
+          "at": 6751,
+          "orders": [
+            "R00990",
+            "R00961"
+          ],
+          "gigs": [
+            "g310",
+            "g300"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 99,
+          "returnLoop": false
+        },
+        {
+          "at": 6751,
+          "orders": [
+            "R00990",
+            "R00975"
+          ],
+          "gigs": [
+            "g310",
+            "g303"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 22.5,
+          "driveMinutes": 79,
+          "returnLoop": true
+        },
+        {
+          "at": 6751,
+          "orders": [
+            "R00990",
+            "R00977"
+          ],
+          "gigs": [
+            "g310",
+            "g304"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 12,
+          "driveMinutes": 50,
+          "returnLoop": true
+        },
+        {
+          "at": 6751,
+          "orders": [
+            "R00982",
+            "R00990"
+          ],
+          "gigs": [
+            "g306",
+            "g310"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 396.8,
+          "driveMinutes": 268,
+          "returnLoop": false
+        },
+        {
+          "at": 6751,
+          "orders": [
+            "R00990",
+            "R00987"
+          ],
+          "gigs": [
+            "g310",
+            "g309"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 113,
+          "returnLoop": false
+        }
+      ]
+    },
+    {
+      "world": "wb865ff1c21970cb0fef2",
+      "seed": "holdout-3",
+      "deliveries": 231,
+      "driversUsed": 159,
+      "naturalSameDayChains": 37,
+      "naturalNearbyChains": 10,
+      "handoffMatches": 42,
+      "uniqueHandoffGigs": 13,
+      "homewardMatches": 0,
+      "uniqueHomewardGigs": 0,
+      "optimistic25PercentSavingEuros": 0.0,
+      "availableBundlePairs": 16,
+      "availableBundleGigs": 22,
+      "availableReturnLoopPairs": 0,
+      "tradeinRequests": 26,
+      "tradeinMedianListToRef": 1.8720061928108294,
+      "tradeinNoNoteWithin240min": [
+        {
+          "id": "R00075",
+          "note": null,
+          "km": 110,
+          "driveMinutes": 132,
+          "listPriceCents": 8700,
+          "referenceFeeCents": 4472,
+          "ratio": 1.945438282647585,
+          "slotLead": 247,
+          "premium": false
+        },
+        {
+          "id": "R00268",
+          "note": null,
+          "km": 183.7,
+          "driveMinutes": 236,
+          "listPriceCents": 12100,
+          "referenceFeeCents": 5690,
+          "ratio": 2.126537785588752,
+          "slotLead": 327,
+          "premium": false
+        },
+        {
+          "id": "R00554",
+          "note": null,
+          "km": 12,
+          "driveMinutes": 50,
+          "listPriceCents": 4200,
+          "referenceFeeCents": 2286,
+          "ratio": 1.837270341207349,
+          "slotLead": 1633,
+          "premium": false
+        },
+        {
+          "id": "R00674",
+          "note": null,
+          "km": 110,
+          "driveMinutes": 132,
+          "listPriceCents": 8700,
+          "referenceFeeCents": 3635,
+          "ratio": 2.393397524071527,
+          "slotLead": 270,
+          "premium": false
+        },
+        {
+          "id": "R00878",
+          "note": null,
+          "km": 150.2,
+          "driveMinutes": 212,
+          "listPriceCents": 10600,
+          "referenceFeeCents": 4806,
+          "ratio": 2.2055763628797336,
+          "slotLead": 293,
+          "premium": false
+        },
+        {
+          "id": "R01023",
+          "note": null,
+          "km": 166.4,
+          "driveMinutes": 204,
+          "listPriceCents": 10500,
+          "referenceFeeCents": 7990,
+          "ratio": 1.3141426783479349,
+          "slotLead": 4243,
+          "premium": false
+        }
+      ],
+      "tradeins": [
+        {
+          "id": "R00021",
+          "note": null,
+          "km": 602.1,
+          "driveMinutes": 794,
+          "listPriceCents": 29000,
+          "referenceFeeCents": 21287,
+          "ratio": 1.362333818762625,
+          "slotLead": 2917,
+          "premium": true
+        },
+        {
+          "id": "R00075",
+          "note": null,
+          "km": 110,
+          "driveMinutes": 132,
+          "listPriceCents": 8700,
+          "referenceFeeCents": 4472,
+          "ratio": 1.945438282647585,
+          "slotLead": 247,
+          "premium": false
+        },
+        {
+          "id": "R00099",
+          "note": {
+            "text": "Seller home tomorrow 7:00-10:00. Our ref: 626289. Bring the customer's old car back to us.",
+            "language": "en"
+          },
+          "km": 323.4,
+          "driveMinutes": 442,
+          "listPriceCents": 18500,
+          "referenceFeeCents": 8819,
+          "ratio": 2.097743508334278,
+          "slotLead": 1464,
+          "premium": false
+        },
+        {
+          "id": "R00103",
+          "note": null,
+          "km": 363.1,
+          "driveMinutes": 496,
+          "listPriceCents": 18800,
+          "referenceFeeCents": 9907,
+          "ratio": 1.8976481275865549,
+          "slotLead": 2821,
+          "premium": false
+        },
+        {
+          "id": "R00176",
+          "note": null,
+          "km": 308.7,
+          "driveMinutes": 422,
+          "listPriceCents": 17800,
+          "referenceFeeCents": 8763,
+          "ratio": 2.031267830651603,
+          "slotLead": 1304,
+          "premium": true
+        },
+        {
+          "id": "R00230",
+          "note": {
+            "text": "2 sarjaa renkaita, toinen sarja kontissa. Viitenro 178419",
+            "language": "fi"
+          },
+          "km": 78.5,
+          "driveMinutes": 116,
+          "listPriceCents": 6700,
+          "referenceFeeCents": 6059,
+          "ratio": 1.105793035154316,
+          "slotLead": 1305,
+          "premium": true
+        },
+        {
+          "id": "R00268",
+          "note": null,
+          "km": 183.7,
+          "driveMinutes": 236,
+          "listPriceCents": 12100,
+          "referenceFeeCents": 5690,
+          "ratio": 2.126537785588752,
+          "slotLead": 327,
+          "premium": false
+        },
+        {
+          "id": "R00270",
+          "note": {
+            "text": "Huolto kesken, valmis perjantaina klo 10.00. Huom aukioloajat klo 8.00-20.00",
+            "language": "fi"
+          },
+          "km": 511.5,
+          "driveMinutes": 680,
+          "listPriceCents": 25100,
+          "referenceFeeCents": 18414,
+          "ratio": 1.3630932985771695,
+          "slotLead": 8772,
+          "premium": false
+        },
+        {
+          "id": "R00300",
+          "note": {
+            "text": "Ready for pickup from tomorrow 8:00, second set of whels in the back, cheers",
+            "language": "en"
+          },
+          "km": 406.2,
+          "driveMinutes": 538,
+          "listPriceCents": 22300,
+          "referenceFeeCents": 12705,
+          "ratio": 1.7552144824872098,
+          "slotLead": 1518,
+          "premium": false
+        },
+        {
+          "id": "R00376",
+          "note": {
+            "text": "Vie uusi asiakkaalle ja tuo vaihtari takaisin, auto valmis vasta huomenna klo 9.00",
+            "language": "fi"
+          },
+          "km": 396.1,
+          "driveMinutes": 542,
+          "listPriceCents": 20200,
+          "referenceFeeCents": 9747,
+          "ratio": 2.072432543346671,
+          "slotLead": 2531,
+          "premium": false
+        },
+        {
+          "id": "R00478",
+          "note": {
+            "text": "asiakkaan vanha auto takaisin meille. lis\u00e4renkaat mukaan",
+            "language": "fi"
+          },
+          "km": 178.6,
+          "driveMinutes": 242,
+          "listPriceCents": 11900,
+          "referenceFeeCents": 6758,
+          "ratio": 1.760875998816218,
+          "slotLead": 340,
+          "premium": false
+        },
+        {
+          "id": "R00491",
+          "note": {
+            "text": "Moikka, soita n. tuntia ennen saapuumista.",
+            "language": "fi"
+          },
+          "km": 609.2,
+          "driveMinutes": 810,
+          "listPriceCents": 29300,
+          "referenceFeeCents": 18549,
+          "ratio": 1.5795999784354953,
+          "slotLead": 1253,
+          "premium": false
+        },
+        {
+          "id": "R00554",
+          "note": null,
+          "km": 12,
+          "driveMinutes": 50,
+          "listPriceCents": 4200,
+          "referenceFeeCents": 2286,
+          "ratio": 1.837270341207349,
+          "slotLead": 1633,
+          "premium": false
+        },
+        {
+          "id": "R00567",
+          "note": {
+            "text": "hei. ylim\u00e4\u00e4r\u00e4inen rengassarja takakontissa, mukaan. vaihtari tulee takaisin meille.",
+            "language": "fi"
+          },
+          "km": 64.1,
+          "driveMinutes": 90,
+          "listPriceCents": 6600,
+          "referenceFeeCents": 3101,
+          "ratio": 2.128345694937117,
+          "slotLead": 1428,
+          "premium": false
+        },
+        {
+          "id": "R00645",
+          "note": {
+            "text": "voi noutaa huomenna klo 11 alkaen. kes\u00e4renkaat vanteineen takakontissa. vaihtoauto takaisin liikkeelle.",
+            "language": "fi"
+          },
+          "km": 150.2,
+          "driveMinutes": 212,
+          "listPriceCents": 10600,
+          "referenceFeeCents": 5239,
+          "ratio": 2.02328688681046,
+          "slotLead": 1307,
+          "premium": false
+        },
+        {
+          "id": "R00654",
+          "note": null,
+          "km": 235.1,
+          "driveMinutes": 346,
+          "listPriceCents": 13400,
+          "referenceFeeCents": 7620,
+          "ratio": 1.7585301837270342,
+          "slotLead": 1659,
+          "premium": false
+        },
+        {
+          "id": "R00655",
+          "note": null,
+          "km": 602.1,
+          "driveMinutes": 794,
+          "listPriceCents": 29000,
+          "referenceFeeCents": 23152,
+          "ratio": 1.2525915687629579,
+          "slotLead": 5857,
+          "premium": false
+        },
+        {
+          "id": "R00674",
+          "note": null,
+          "km": 110,
+          "driveMinutes": 132,
+          "listPriceCents": 8700,
+          "referenceFeeCents": 3635,
+          "ratio": 2.393397524071527,
+          "slotLead": 270,
+          "premium": false
+        },
+        {
+          "id": "R00839",
+          "note": {
+            "text": "Rengassarja mukaan, soita 20 min ennen, vaihtoauto takaisin liikkeelle.",
+            "language": "fi"
+          },
+          "km": 178.6,
+          "driveMinutes": 242,
+          "listPriceCents": 11900,
+          "referenceFeeCents": 5293,
+          "ratio": 2.2482524088418665,
+          "slotLead": 1173,
+          "premium": false
+        },
+        {
+          "id": "R00878",
+          "note": null,
+          "km": 150.2,
+          "driveMinutes": 212,
+          "listPriceCents": 10600,
+          "referenceFeeCents": 4806,
+          "ratio": 2.2055763628797336,
+          "slotLead": 293,
+          "premium": false
+        },
+        {
+          "id": "R00924",
+          "note": {
+            "text": "Tilausnumero 618534, vaihtari tulee takaisin meille",
+            "language": "fi"
+          },
+          "km": 345.7,
+          "driveMinutes": 472,
+          "listPriceCents": 18100,
+          "referenceFeeCents": 11816,
+          "ratio": 1.531821259309411,
+          "slotLead": 4454,
+          "premium": false
+        },
+        {
+          "id": "R00931",
+          "note": {
+            "text": "Sumer tyres in the trunk, go with the car. Bring the trade-in back here.",
+            "language": "en"
+          },
+          "km": 113.8,
+          "driveMinutes": 142,
+          "listPriceCents": 8900,
+          "referenceFeeCents": 3763,
+          "ratio": 2.3651342014350254,
+          "slotLead": 302,
+          "premium": false
+        },
+        {
+          "id": "R00950",
+          "note": {
+            "text": "ostaja maksaa ensin, auton saa nelj\u00e4st\u00e4 alkaen. asiakkaan vanha auto takaisin meille",
+            "language": "fi"
+          },
+          "km": 109.6,
+          "driveMinutes": 164,
+          "listPriceCents": 8100,
+          "referenceFeeCents": 4177,
+          "ratio": 1.9391908067991381,
+          "slotLead": 4552,
+          "premium": false
+        },
+        {
+          "id": "R00963",
+          "note": {
+            "text": "noudettavissa arkisin klo 9.00-20.00. vaihtari tulee takaisin meille",
+            "language": "fi"
+          },
+          "km": 111.6,
+          "driveMinutes": 162,
+          "listPriceCents": 8100,
+          "referenceFeeCents": 4387,
+          "ratio": 1.8463642580351036,
+          "slotLead": 4145,
+          "premium": false
+        },
+        {
+          "id": "R01018",
+          "note": {
+            "text": "Rengassarja takapenkill\u00e4, kulkee mukana. Viitenro 796536. Hyv\u00e4\u00e4 p\u00e4iv\u00e4njatkoa.",
+            "language": "fi"
+          },
+          "km": 78.5,
+          "driveMinutes": 116,
+          "listPriceCents": 6700,
+          "referenceFeeCents": 4187,
+          "ratio": 1.60019106759016,
+          "slotLead": 4154,
+          "premium": false
+        },
+        {
+          "id": "R01023",
+          "note": null,
+          "km": 166.4,
+          "driveMinutes": 204,
+          "listPriceCents": 10500,
+          "referenceFeeCents": 7990,
+          "ratio": 1.3141426783479349,
+          "slotLead": 4243,
+          "premium": false
+        }
+      ],
+      "homewardHandoffs": [],
+      "bundles": [
+        {
+          "at": 2164,
+          "orders": [
+            "R00311",
+            "R00308"
+          ],
+          "gigs": [
+            "g58",
+            "g56"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 372.5,
+          "driveMinutes": 291,
+          "returnLoop": false
+        },
+        {
+          "at": 3771,
+          "orders": [
+            "R00578",
+            "R00549"
+          ],
+          "gigs": [
+            "g123",
+            "g117"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 228.1,
+          "driveMinutes": 188,
+          "returnLoop": false
+        },
+        {
+          "at": 4876,
+          "orders": [
+            "R00652",
+            "R00600"
+          ],
+          "gigs": [
+            "g145",
+            "g130"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 232.6,
+          "driveMinutes": 213,
+          "returnLoop": false
+        },
+        {
+          "at": 4945,
+          "orders": [
+            "R00673",
+            "R00599"
+          ],
+          "gigs": [
+            "g153",
+            "g129"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 110,
+          "driveMinutes": 91,
+          "returnLoop": false
+        },
+        {
+          "at": 4961,
+          "orders": [
+            "R00599",
+            "R00680"
+          ],
+          "gigs": [
+            "g129",
+            "g154"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 60,
+          "returnLoop": false
+        },
+        {
+          "at": 4961,
+          "orders": [
+            "R00680",
+            "R00600"
+          ],
+          "gigs": [
+            "g154",
+            "g130"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 232.9,
+          "driveMinutes": 223,
+          "returnLoop": false
+        },
+        {
+          "at": 4979,
+          "orders": [
+            "R00599",
+            "R00691"
+          ],
+          "gigs": [
+            "g129",
+            "g159"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 240.9,
+          "driveMinutes": 187,
+          "returnLoop": false
+        },
+        {
+          "at": 5382,
+          "orders": [
+            "R00824",
+            "R00846"
+          ],
+          "gigs": [
+            "g192",
+            "g202"
+          ],
+          "connectorKm": 7.8,
+          "endsNearStartKm": 282,
+          "driveMinutes": 318,
+          "returnLoop": false
+        },
+        {
+          "at": 6316,
+          "orders": [
+            "R00860",
+            "R00743"
+          ],
+          "gigs": [
+            "g207",
+            "g172"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 602.1,
+          "driveMinutes": 432,
+          "returnLoop": false
+        },
+        {
+          "at": 6316,
+          "orders": [
+            "R00860",
+            "R00822"
+          ],
+          "gigs": [
+            "g207",
+            "g191"
+          ],
+          "connectorKm": 21.4,
+          "endsNearStartKm": 151.4,
+          "driveMinutes": 129,
+          "returnLoop": false
+        },
+        {
+          "at": 6316,
+          "orders": [
+            "R00860",
+            "R00830"
+          ],
+          "gigs": [
+            "g207",
+            "g195"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 270.9,
+          "driveMinutes": 200,
+          "returnLoop": false
+        },
+        {
+          "at": 6415,
+          "orders": [
+            "R00822",
+            "R00902"
+          ],
+          "gigs": [
+            "g191",
+            "g212"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 296,
+          "driveMinutes": 243,
+          "returnLoop": false
+        },
+        {
+          "at": 6554,
+          "orders": [
+            "R00954",
+            "R00943"
+          ],
+          "gigs": [
+            "g216",
+            "g214"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 240.9,
+          "driveMinutes": 247,
+          "returnLoop": false
+        },
+        {
+          "at": 6557,
+          "orders": [
+            "R00956",
+            "R00953"
+          ],
+          "gigs": [
+            "g217",
+            "g215"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 116.9,
+          "driveMinutes": 289,
+          "returnLoop": false
+        },
+        {
+          "at": 6557,
+          "orders": [
+            "R00956",
+            "R00954"
+          ],
+          "gigs": [
+            "g217",
+            "g216"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 270.5,
+          "driveMinutes": 207,
+          "returnLoop": false
+        },
+        {
+          "at": 6627,
+          "orders": [
+            "R00822",
+            "R00973"
+          ],
+          "gigs": [
+            "g191",
+            "g220"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 161.2,
+          "driveMinutes": 122,
+          "returnLoop": false
+        }
+      ]
+    },
+    {
+      "world": "wd415561aaf36894b76de",
+      "seed": "spread-1",
+      "deliveries": 293,
+      "driversUsed": 192,
+      "naturalSameDayChains": 50,
+      "naturalNearbyChains": 14,
+      "handoffMatches": 84,
+      "uniqueHandoffGigs": 27,
+      "homewardMatches": 22,
+      "uniqueHomewardGigs": 9,
+      "optimistic25PercentSavingEuros": 81.8375,
+      "availableBundlePairs": 32,
+      "availableBundleGigs": 39,
+      "availableReturnLoopPairs": 5,
+      "tradeinRequests": 14,
+      "tradeinMedianListToRef": 1.8359043514840403,
+      "tradeinNoNoteWithin240min": [
+        {
+          "id": "R00015",
+          "note": null,
+          "km": 22.5,
+          "driveMinutes": 58,
+          "listPriceCents": 4700,
+          "referenceFeeCents": 3003,
+          "ratio": 1.5651015651015652,
+          "slotLead": 1825,
+          "premium": false
+        },
+        {
+          "id": "R00518",
+          "note": null,
+          "km": 51.1,
+          "driveMinutes": 70,
+          "listPriceCents": 6000,
+          "referenceFeeCents": 3666,
+          "ratio": 1.6366612111292962,
+          "slotLead": 1410,
+          "premium": true
+        },
+        {
+          "id": "R00580",
+          "note": null,
+          "km": 139.4,
+          "driveMinutes": 208,
+          "listPriceCents": 10100,
+          "referenceFeeCents": 6263,
+          "ratio": 1.6126456969503433,
+          "slotLead": 2604,
+          "premium": false
+        },
+        {
+          "id": "R00790",
+          "note": null,
+          "km": 110,
+          "driveMinutes": 132,
+          "listPriceCents": 8700,
+          "referenceFeeCents": 3589,
+          "ratio": 2.4240735580941766,
+          "slotLead": 1114,
+          "premium": false
+        },
+        {
+          "id": "R00968",
+          "note": null,
+          "km": 64.1,
+          "driveMinutes": 90,
+          "listPriceCents": 6100,
+          "referenceFeeCents": 2784,
+          "ratio": 2.1910919540229883,
+          "slotLead": 4169,
+          "premium": false
+        }
+      ],
+      "tradeins": [
+        {
+          "id": "R00015",
+          "note": null,
+          "km": 22.5,
+          "driveMinutes": 58,
+          "listPriceCents": 4700,
+          "referenceFeeCents": 3003,
+          "ratio": 1.5651015651015652,
+          "slotLead": 1825,
+          "premium": false
+        },
+        {
+          "id": "R00053",
+          "note": null,
+          "km": 485.5,
+          "driveMinutes": 680,
+          "listPriceCents": 24000,
+          "referenceFeeCents": 14437,
+          "ratio": 1.6623952344669946,
+          "slotLead": 2622,
+          "premium": false
+        },
+        {
+          "id": "R00157",
+          "note": {
+            "text": "Nouto liikkeen pihasta.",
+            "language": "fi"
+          },
+          "km": 161.1,
+          "driveMinutes": 212,
+          "listPriceCents": 11100,
+          "referenceFeeCents": 5524,
+          "ratio": 2.0094134685010863,
+          "slotLead": 1303,
+          "premium": false
+        },
+        {
+          "id": "R00369",
+          "note": {
+            "text": "Moi, vaihtari tulee takaisin meille, rengassarja mukaan",
+            "language": "fi"
+          },
+          "km": 51.1,
+          "driveMinutes": 70,
+          "listPriceCents": 5600,
+          "referenceFeeCents": 2684,
+          "ratio": 2.0864381520119224,
+          "slotLead": 1312,
+          "premium": false
+        },
+        {
+          "id": "R00518",
+          "note": null,
+          "km": 51.1,
+          "driveMinutes": 70,
+          "listPriceCents": 6000,
+          "referenceFeeCents": 3666,
+          "ratio": 1.6366612111292962,
+          "slotLead": 1410,
+          "premium": true
+        },
+        {
+          "id": "R00580",
+          "note": null,
+          "km": 139.4,
+          "driveMinutes": 208,
+          "listPriceCents": 10100,
+          "referenceFeeCents": 6263,
+          "ratio": 1.6126456969503433,
+          "slotLead": 2604,
+          "premium": false
+        },
+        {
+          "id": "R00629",
+          "note": {
+            "text": "second set of wheels in the back. trade-in comes back to us",
+            "language": "en"
+          },
+          "km": 384.9,
+          "driveMinutes": 526,
+          "listPriceCents": 21300,
+          "referenceFeeCents": 9227,
+          "ratio": 2.308442614067411,
+          "slotLead": 1627,
+          "premium": false
+        },
+        {
+          "id": "R00699",
+          "note": null,
+          "km": 508,
+          "driveMinutes": 688,
+          "listPriceCents": 25000,
+          "referenceFeeCents": 18310,
+          "ratio": 1.3653741125068268,
+          "slotLead": 1137,
+          "premium": true
+        },
+        {
+          "id": "R00769",
+          "note": null,
+          "km": 189.9,
+          "driveMinutes": 262,
+          "listPriceCents": 12400,
+          "referenceFeeCents": 5343,
+          "ratio": 2.320793561669474,
+          "slotLead": 1401,
+          "premium": false
+        },
+        {
+          "id": "R00790",
+          "note": null,
+          "km": 110,
+          "driveMinutes": 132,
+          "listPriceCents": 8700,
+          "referenceFeeCents": 3589,
+          "ratio": 2.4240735580941766,
+          "slotLead": 1114,
+          "premium": false
+        },
+        {
+          "id": "R00799",
+          "note": null,
+          "km": 508,
+          "driveMinutes": 688,
+          "listPriceCents": 25000,
+          "referenceFeeCents": 15693,
+          "ratio": 1.5930669725355253,
+          "slotLead": 5220,
+          "premium": false
+        },
+        {
+          "id": "R00898",
+          "note": {
+            "text": "manuaalivaihteinen. rengassarja mukaan",
+            "language": "fi"
+          },
+          "km": 161.2,
+          "driveMinutes": 224,
+          "listPriceCents": 11100,
+          "referenceFeeCents": 5134,
+          "ratio": 2.162056875730425,
+          "slotLead": 294,
+          "premium": false
+        },
+        {
+          "id": "R00903",
+          "note": null,
+          "km": 424.2,
+          "driveMinutes": 560,
+          "listPriceCents": 21400,
+          "referenceFeeCents": 13568,
+          "ratio": 1.5772405660377358,
+          "slotLead": 4303,
+          "premium": false
+        },
+        {
+          "id": "R00968",
+          "note": null,
+          "km": 64.1,
+          "driveMinutes": 90,
+          "listPriceCents": 6100,
+          "referenceFeeCents": 2784,
+          "ratio": 2.1910919540229883,
+          "slotLead": 4169,
+          "premium": false
+        }
+      ],
+      "homewardHandoffs": [
+        {
+          "world": "wd415561aaf36894b76de",
+          "at": 2284,
+          "driver": "11xx-0559",
+          "home": "helsinki",
+          "here": "espoo",
+          "gigId": "g44",
+          "orderId": "R00189",
+          "fromPlace": "vantaa",
+          "toPlace": "helsinki",
+          "deadheadKm": 28.5,
+          "homeDistanceBefore": 31.1,
+          "homeDistanceAfter": 12,
+          "homeward": true,
+          "pickupAt": 2324,
+          "deliveryAt": 2377,
+          "observedFeeCents": 2000
+        },
+        {
+          "world": "wd415561aaf36894b76de",
+          "at": 2517,
+          "driver": "11xx-0105",
+          "home": "helsinki",
+          "here": "espoo",
+          "gigId": "g112",
+          "orderId": "R00399",
+          "fromPlace": "espoo",
+          "toPlace": "helsinki",
+          "deadheadKm": 12,
+          "homeDistanceBefore": 31.1,
+          "homeDistanceAfter": 12,
+          "homeward": true,
+          "pickupAt": 2532,
+          "deliveryAt": 2588,
+          "observedFeeCents": 2000
+        },
+        {
+          "world": "wd415561aaf36894b76de",
+          "at": 3901,
+          "driver": "11xx-0597",
+          "home": "helsinki",
+          "here": "vantaa",
+          "gigId": "g178",
+          "orderId": "R00562",
+          "fromPlace": "espoo",
+          "toPlace": "helsinki",
+          "deadheadKm": 28.5,
+          "homeDistanceBefore": 22.5,
+          "homeDistanceAfter": 12,
+          "homeward": true,
+          "pickupAt": 3941,
+          "deliveryAt": 3997,
+          "observedFeeCents": 2000
+        },
+        {
+          "world": "wd415561aaf36894b76de",
+          "at": 6529,
+          "driver": "11xx-0444",
+          "home": "helsinki",
+          "here": "vantaa",
+          "gigId": "g273",
+          "orderId": "R00922",
+          "fromPlace": "vantaa",
+          "toPlace": "vantaa",
+          "deadheadKm": 12,
+          "homeDistanceBefore": 22.5,
+          "homeDistanceAfter": 22.5,
+          "homeward": true,
+          "pickupAt": 6544,
+          "deliveryAt": 6592,
+          "observedFeeCents": 2000
+        },
+        {
+          "world": "wd415561aaf36894b76de",
+          "at": 6626,
+          "driver": "11xx-0770",
+          "home": "espoo",
+          "here": "espoo",
+          "gigId": "g281",
+          "orderId": "R00967",
+          "fromPlace": "vantaa",
+          "toPlace": "espoo",
+          "deadheadKm": 28.5,
+          "homeDistanceBefore": 12,
+          "homeDistanceAfter": 12,
+          "homeward": true,
+          "pickupAt": 6666,
+          "deliveryAt": 6714,
+          "observedFeeCents": 3000
+        },
+        {
+          "world": "wd415561aaf36894b76de",
+          "at": 6662,
+          "driver": "11xx-0268",
+          "home": "tampere",
+          "here": "vaasa",
+          "gigId": "g283",
+          "orderId": "R00981",
+          "fromPlace": "vaasa",
+          "toPlace": "lahti",
+          "deadheadKm": 12,
+          "homeDistanceBefore": 233,
+          "homeDistanceAfter": 135.8,
+          "homeward": true,
+          "pickupAt": 6677,
+          "deliveryAt": 7005,
+          "observedFeeCents": 13117
+        },
+        {
+          "world": "wd415561aaf36894b76de",
+          "at": 6730,
+          "driver": "11xx-0300",
+          "home": "helsinki",
+          "here": "vantaa",
+          "gigId": "g287",
+          "orderId": "R00997",
+          "fromPlace": "helsinki",
+          "toPlace": "vantaa",
+          "deadheadKm": 22.5,
+          "homeDistanceBefore": 22.5,
+          "homeDistanceAfter": 22.5,
+          "homeward": true,
+          "pickupAt": 6774,
+          "deliveryAt": 6827,
+          "observedFeeCents": 2000
+        },
+        {
+          "world": "wd415561aaf36894b76de",
+          "at": 6845,
+          "driver": "11xx-0106",
+          "home": "helsinki",
+          "here": "vantaa",
+          "gigId": "g292",
+          "orderId": "R01015",
+          "fromPlace": "espoo",
+          "toPlace": "helsinki",
+          "deadheadKm": 28.5,
+          "homeDistanceBefore": 22.5,
+          "homeDistanceAfter": 12,
+          "homeward": true,
+          "pickupAt": 6885,
+          "deliveryAt": 6941,
+          "observedFeeCents": 2000
+        },
+        {
+          "world": "wd415561aaf36894b76de",
+          "at": 6791,
+          "driver": "11xx-0286",
+          "home": "lappeenranta",
+          "here": "espoo",
+          "gigId": "g288",
+          "orderId": "R01002",
+          "fromPlace": "vantaa",
+          "toPlace": "kouvola",
+          "deadheadKm": 28.5,
+          "homeDistanceBefore": 233.1,
+          "homeDistanceAfter": 98.6,
+          "homeward": true,
+          "pickupAt": 6831,
+          "deliveryAt": 6954,
+          "observedFeeCents": 4618
+        }
+      ],
+      "bundles": [
+        {
+          "at": 787,
+          "orders": [
+            "R00079",
+            "R00078"
+          ],
+          "gigs": [
+            "g17",
+            "g16"
+          ],
+          "connectorKm": 31.1,
+          "endsNearStartKm": 31.1,
+          "driveMinutes": 96,
+          "returnLoop": true
+        },
+        {
+          "at": 2017,
+          "orders": [
+            "R00229",
+            "R00230"
+          ],
+          "gigs": [
+            "g64",
+            "g65"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 49.9,
+          "driveMinutes": 95,
+          "returnLoop": false
+        },
+        {
+          "at": 2197,
+          "orders": [
+            "R00293",
+            "R00189"
+          ],
+          "gigs": [
+            "g83",
+            "g44"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 64.1,
+          "driveMinutes": 103,
+          "returnLoop": false
+        },
+        {
+          "at": 2197,
+          "orders": [
+            "R00293",
+            "R00283"
+          ],
+          "gigs": [
+            "g83",
+            "g78"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 68.8,
+          "driveMinutes": 80,
+          "returnLoop": false
+        },
+        {
+          "at": 2345,
+          "orders": [
+            "R00189",
+            "R00353"
+          ],
+          "gigs": [
+            "g44",
+            "g96"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 219,
+          "driveMinutes": 202,
+          "returnLoop": false
+        },
+        {
+          "at": 2363,
+          "orders": [
+            "R00189",
+            "R00359"
+          ],
+          "gigs": [
+            "g44",
+            "g98"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 85,
+          "returnLoop": false
+        },
+        {
+          "at": 2414,
+          "orders": [
+            "R00373",
+            "R00343"
+          ],
+          "gigs": [
+            "g104",
+            "g93"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 404.1,
+          "driveMinutes": 348,
+          "returnLoop": false
+        },
+        {
+          "at": 2439,
+          "orders": [
+            "R00380",
+            "R00340"
+          ],
+          "gigs": [
+            "g107",
+            "g92"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 323.6,
+          "driveMinutes": 267,
+          "returnLoop": false
+        },
+        {
+          "at": 2481,
+          "orders": [
+            "R00399",
+            "R00340"
+          ],
+          "gigs": [
+            "g112",
+            "g92"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 348.8,
+          "driveMinutes": 241,
+          "returnLoop": false
+        },
+        {
+          "at": 2610,
+          "orders": [
+            "R00416",
+            "R00422"
+          ],
+          "gigs": [
+            "g123",
+            "g124"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 432.6,
+          "driveMinutes": 313,
+          "returnLoop": false
+        },
+        {
+          "at": 3651,
+          "orders": [
+            "R00495",
+            "R00494"
+          ],
+          "gigs": [
+            "g156",
+            "g155"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 12,
+          "driveMinutes": 70,
+          "returnLoop": true
+        },
+        {
+          "at": 3662,
+          "orders": [
+            "R00498",
+            "R00494"
+          ],
+          "gigs": [
+            "g157",
+            "g155"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 12,
+          "driveMinutes": 70,
+          "returnLoop": true
+        },
+        {
+          "at": 3874,
+          "orders": [
+            "R00560",
+            "R00556"
+          ],
+          "gigs": [
+            "g177",
+            "g176"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 174,
+          "driveMinutes": 139,
+          "returnLoop": false
+        },
+        {
+          "at": 3881,
+          "orders": [
+            "R00551",
+            "R00562"
+          ],
+          "gigs": [
+            "g175",
+            "g178"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 22.5,
+          "driveMinutes": 57,
+          "returnLoop": true
+        },
+        {
+          "at": 3881,
+          "orders": [
+            "R00562",
+            "R00556"
+          ],
+          "gigs": [
+            "g178",
+            "g176"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 166.4,
+          "driveMinutes": 136,
+          "returnLoop": false
+        },
+        {
+          "at": 3881,
+          "orders": [
+            "R00560",
+            "R00562"
+          ],
+          "gigs": [
+            "g177",
+            "g178"
+          ],
+          "connectorKm": 31.1,
+          "endsNearStartKm": 49.9,
+          "driveMinutes": 99,
+          "returnLoop": false
+        },
+        {
+          "at": 3937,
+          "orders": [
+            "R00416",
+            "R00581"
+          ],
+          "gigs": [
+            "g123",
+            "g183"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 178.6,
+          "driveMinutes": 126,
+          "returnLoop": false
+        },
+        {
+          "at": 3970,
+          "orders": [
+            "R00581",
+            "R00597"
+          ],
+          "gigs": [
+            "g183",
+            "g191"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 236.6,
+          "driveMinutes": 168,
+          "returnLoop": false
+        },
+        {
+          "at": 4055,
+          "orders": [
+            "R00556",
+            "R00604"
+          ],
+          "gigs": [
+            "g176",
+            "g193"
+          ],
+          "connectorKm": 21.4,
+          "endsNearStartKm": 87.2,
+          "driveMinutes": 226,
+          "returnLoop": false
+        },
+        {
+          "at": 4057,
+          "orders": [
+            "R00556",
+            "R00605"
+          ],
+          "gigs": [
+            "g176",
+            "g194"
+          ],
+          "connectorKm": 21.4,
+          "endsNearStartKm": 87.2,
+          "driveMinutes": 226,
+          "returnLoop": false
+        },
+        {
+          "at": 4064,
+          "orders": [
+            "R00556",
+            "R00607"
+          ],
+          "gigs": [
+            "g176",
+            "g195"
+          ],
+          "connectorKm": 21.4,
+          "endsNearStartKm": 87.2,
+          "driveMinutes": 226,
+          "returnLoop": false
+        },
+        {
+          "at": 6395,
+          "orders": [
+            "R00880",
+            "R00887"
+          ],
+          "gigs": [
+            "g266",
+            "g268"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 64.1,
+          "driveMinutes": 64,
+          "returnLoop": false
+        },
+        {
+          "at": 6397,
+          "orders": [
+            "R00880",
+            "R00890"
+          ],
+          "gigs": [
+            "g266",
+            "g269"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 64.1,
+          "driveMinutes": 64,
+          "returnLoop": false
+        },
+        {
+          "at": 6418,
+          "orders": [
+            "R00893",
+            "R00887"
+          ],
+          "gigs": [
+            "g270",
+            "g268"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 85,
+          "returnLoop": false
+        },
+        {
+          "at": 6418,
+          "orders": [
+            "R00893",
+            "R00890"
+          ],
+          "gigs": [
+            "g270",
+            "g269"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 85,
+          "returnLoop": false
+        },
+        {
+          "at": 6501,
+          "orders": [
+            "R00922",
+            "R00820"
+          ],
+          "gigs": [
+            "g273",
+            "g244"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 22.5,
+          "driveMinutes": 54,
+          "returnLoop": true
+        },
+        {
+          "at": 6501,
+          "orders": [
+            "R00922",
+            "R00887"
+          ],
+          "gigs": [
+            "g273",
+            "g268"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 60,
+          "returnLoop": false
+        },
+        {
+          "at": 6501,
+          "orders": [
+            "R00922",
+            "R00890"
+          ],
+          "gigs": [
+            "g273",
+            "g269"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 51.1,
+          "driveMinutes": 60,
+          "returnLoop": false
+        },
+        {
+          "at": 6715,
+          "orders": [
+            "R00997",
+            "R00986"
+          ],
+          "gigs": [
+            "g287",
+            "g284"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 64.1,
+          "driveMinutes": 103,
+          "returnLoop": false
+        },
+        {
+          "at": 6715,
+          "orders": [
+            "R00997",
+            "R00996"
+          ],
+          "gigs": [
+            "g287",
+            "g286"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 49.9,
+          "driveMinutes": 67,
+          "returnLoop": false
+        },
+        {
+          "at": 6735,
+          "orders": [
+            "R00997",
+            "R01002"
+          ],
+          "gigs": [
+            "g287",
+            "g288"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 147.5,
+          "driveMinutes": 119,
+          "returnLoop": false
+        },
+        {
+          "at": 6775,
+          "orders": [
+            "R01015",
+            "R00986"
+          ],
+          "gigs": [
+            "g292",
+            "g284"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 65.2,
+          "driveMinutes": 77,
+          "returnLoop": false
+        }
+      ]
+    },
+    {
+      "world": "wbcb207675e32e9aff20f",
+      "seed": "validate-1",
+      "deliveries": 320,
+      "driversUsed": 188,
+      "naturalSameDayChains": 73,
+      "naturalNearbyChains": 23,
+      "handoffMatches": 60,
+      "uniqueHandoffGigs": 23,
+      "homewardMatches": 9,
+      "uniqueHomewardGigs": 7,
+      "optimistic25PercentSavingEuros": 90.1175,
+      "availableBundlePairs": 13,
+      "availableBundleGigs": 23,
+      "availableReturnLoopPairs": 4,
+      "tradeinRequests": 19,
+      "tradeinMedianListToRef": 1.7982420772518346,
+      "tradeinNoNoteWithin240min": [
+        {
+          "id": "R00469",
+          "note": null,
+          "km": 53.5,
+          "driveMinutes": 76,
+          "listPriceCents": 6100,
+          "referenceFeeCents": 3337,
+          "ratio": 1.8279892118669463,
+          "slotLead": 1559,
+          "premium": false
+        },
+        {
+          "id": "R00662",
+          "note": null,
+          "km": 151.4,
+          "driveMinutes": 182,
+          "listPriceCents": 10600,
+          "referenceFeeCents": 5236,
+          "ratio": 2.024446142093201,
+          "slotLead": 388,
+          "premium": false
+        },
+        {
+          "id": "R00687",
+          "note": null,
+          "km": 22.5,
+          "driveMinutes": 58,
+          "listPriceCents": 4700,
+          "referenceFeeCents": 2842,
+          "ratio": 1.6537649542575652,
+          "slotLead": 1658,
+          "premium": false
+        }
+      ],
+      "tradeins": [
+        {
+          "id": "R00103",
+          "note": null,
+          "km": 312.1,
+          "driveMinutes": 428,
+          "listPriceCents": 16700,
+          "referenceFeeCents": 7130,
+          "ratio": 2.3422159887798037,
+          "slotLead": 1442,
+          "premium": false
+        },
+        {
+          "id": "R00129",
+          "note": null,
+          "km": 288.1,
+          "driveMinutes": 380,
+          "listPriceCents": 16900,
+          "referenceFeeCents": 8814,
+          "ratio": 1.9174041297935103,
+          "slotLead": 1455,
+          "premium": false
+        },
+        {
+          "id": "R00182",
+          "note": {
+            "text": "Second set of wheels in the back. Bring the customer's old car back to us",
+            "language": "en"
+          },
+          "km": 389.3,
+          "driveMinutes": 546,
+          "listPriceCents": 19900,
+          "referenceFeeCents": 14395,
+          "ratio": 1.382424452935047,
+          "slotLead": 1225,
+          "premium": false
+        },
+        {
+          "id": "R00275",
+          "note": null,
+          "km": 185.8,
+          "driveMinutes": 244,
+          "listPriceCents": 12200,
+          "referenceFeeCents": 5899,
+          "ratio": 2.068147143583658,
+          "slotLead": 1424,
+          "premium": false
+        },
+        {
+          "id": "R00373",
+          "note": {
+            "text": "noudettavissa arkisin klo 9 - 20",
+            "language": "fi"
+          },
+          "km": 69.9,
+          "driveMinutes": 100,
+          "listPriceCents": 6400,
+          "referenceFeeCents": 3034,
+          "ratio": 2.109426499670402,
+          "slotLead": 1473,
+          "premium": false
+        },
+        {
+          "id": "R00379",
+          "note": null,
+          "km": 312.1,
+          "driveMinutes": 428,
+          "listPriceCents": 16700,
+          "referenceFeeCents": 9734,
+          "ratio": 1.7156359153482639,
+          "slotLead": 1277,
+          "premium": false
+        },
+        {
+          "id": "R00391",
+          "note": null,
+          "km": 194.4,
+          "driveMinutes": 290,
+          "listPriceCents": 11700,
+          "referenceFeeCents": 7594,
+          "ratio": 1.5406900184356072,
+          "slotLead": 1264,
+          "premium": false
+        },
+        {
+          "id": "R00469",
+          "note": null,
+          "km": 53.5,
+          "driveMinutes": 76,
+          "listPriceCents": 6100,
+          "referenceFeeCents": 3337,
+          "ratio": 1.8279892118669463,
+          "slotLead": 1559,
+          "premium": false
+        },
+        {
+          "id": "R00479",
+          "note": {
+            "text": "H\u00e4mtning vardagar kl 9-18. Bilen st\u00e5r klar. Extra d\u00e4cksats i bagaget, ska med. Kundens gamla bil tillbaka till oss. Tack",
+            "language": "sv"
+          },
+          "km": 341.9,
+          "driveMinutes": 512,
+          "listPriceCents": 17900,
+          "referenceFeeCents": 11029,
+          "ratio": 1.6229939251065373,
+          "slotLead": 1656,
+          "premium": false
+        },
+        {
+          "id": "R00490",
+          "note": {
+            "text": "Not ready before tomorrow 11:00. Pickup weekdays 9:00-20:00 only. Trade-in comes back to us",
+            "language": "en"
+          },
+          "km": 145.5,
+          "driveMinutes": 212,
+          "listPriceCents": 10400,
+          "referenceFeeCents": 5000,
+          "ratio": 2.08,
+          "slotLead": 1561,
+          "premium": false
+        },
+        {
+          "id": "R00499",
+          "note": {
+            "text": "our ref: 819907",
+            "language": "en"
+          },
+          "km": 369.3,
+          "driveMinutes": 486,
+          "listPriceCents": 19100,
+          "referenceFeeCents": 9694,
+          "ratio": 1.9702909015886114,
+          "slotLead": 1588,
+          "premium": false
+        },
+        {
+          "id": "R00502",
+          "note": {
+            "text": "Hei vaan. Kes\u00e4renkaat vanteineen takakontissa. Soita ennen noutoa! Vaihtari tulee takaisin meille.",
+            "language": "fi"
+          },
+          "km": 393.3,
+          "driveMinutes": 556,
+          "listPriceCents": 20100,
+          "referenceFeeCents": 12503,
+          "ratio": 1.6076141725985764,
+          "slotLead": 2724,
+          "premium": true
+        },
+        {
+          "id": "R00601",
+          "note": null,
+          "km": 445.4,
+          "driveMinutes": 600,
+          "listPriceCents": 22300,
+          "referenceFeeCents": 12401,
+          "ratio": 1.7982420772518346,
+          "slotLead": 2618,
+          "premium": false
+        },
+        {
+          "id": "R00662",
+          "note": null,
+          "km": 151.4,
+          "driveMinutes": 182,
+          "listPriceCents": 10600,
+          "referenceFeeCents": 5236,
+          "ratio": 2.024446142093201,
+          "slotLead": 388,
+          "premium": false
+        },
+        {
+          "id": "R00687",
+          "note": null,
+          "km": 22.5,
+          "driveMinutes": 58,
+          "listPriceCents": 4700,
+          "referenceFeeCents": 2842,
+          "ratio": 1.6537649542575652,
+          "slotLead": 1658,
+          "premium": false
+        },
+        {
+          "id": "R00710",
+          "note": {
+            "text": "liike kiinni klo 14.30, haettava ennen sit\u00e4. huolto kesken, valmis huomenna klo 9. kiitos, thx",
+            "language": "fi"
+          },
+          "km": 270.9,
+          "driveMinutes": 346,
+          "listPriceCents": 16100,
+          "referenceFeeCents": 6931,
+          "ratio": 2.322897128841437,
+          "slotLead": 1662,
+          "premium": false
+        },
+        {
+          "id": "R00749",
+          "note": null,
+          "km": 711.8,
+          "driveMinutes": 966,
+          "listPriceCents": 33700,
+          "referenceFeeCents": 26133,
+          "ratio": 1.28955726476103,
+          "slotLead": 5504,
+          "premium": false
+        },
+        {
+          "id": "R00784",
+          "note": {
+            "text": "vaihtari tulee takaisin meille. huom manuaali.",
+            "language": "fi"
+          },
+          "km": 68.8,
+          "driveMinutes": 116,
+          "listPriceCents": 6800,
+          "referenceFeeCents": 3792,
+          "ratio": 1.7932489451476794,
+          "slotLead": 1403,
+          "premium": false
+        },
+        {
+          "id": "R01005",
+          "note": null,
+          "km": 270.9,
+          "driveMinutes": 346,
+          "listPriceCents": 14900,
+          "referenceFeeCents": 9689,
+          "ratio": 1.5378264010733822,
+          "slotLead": 3947,
+          "premium": false
+        }
+      ],
+      "homewardHandoffs": [
+        {
+          "world": "wbcb207675e32e9aff20f",
+          "at": 3907,
+          "driver": "9ewv-0253",
+          "home": "espoo",
+          "here": "helsinki",
+          "gigId": "g84",
+          "orderId": "R00351",
+          "fromPlace": "helsinki",
+          "toPlace": "vantaa",
+          "deadheadKm": 12,
+          "homeDistanceBefore": 31.1,
+          "homeDistanceAfter": 28.5,
+          "homeward": true,
+          "pickupAt": 3922,
+          "deliveryAt": 3975,
+          "observedFeeCents": 5000
+        },
+        {
+          "world": "wbcb207675e32e9aff20f",
+          "at": 5362,
+          "driver": "9ewv-0112",
+          "home": "tampere",
+          "here": "vantaa",
+          "gigId": "g250",
+          "orderId": "R00795",
+          "fromPlace": "helsinki",
+          "toPlace": "hyvinkaa",
+          "deadheadKm": 22.5,
+          "homeDistanceBefore": 169.6,
+          "homeDistanceAfter": 124.3,
+          "homeward": true,
+          "pickupAt": 5406,
+          "deliveryAt": 5477,
+          "observedFeeCents": 3318
+        },
+        {
+          "world": "wbcb207675e32e9aff20f",
+          "at": 6483,
+          "driver": "9ewv-0559",
+          "home": "helsinki",
+          "here": "raisio",
+          "gigId": "g292",
+          "orderId": "R00910",
+          "fromPlace": "turku",
+          "toPlace": "helsinki",
+          "deadheadKm": 7.8,
+          "homeDistanceBefore": 174.7,
+          "homeDistanceAfter": 12,
+          "homeward": true,
+          "pickupAt": 6558,
+          "deliveryAt": 6707,
+          "observedFeeCents": 7856
+        },
+        {
+          "world": "wbcb207675e32e9aff20f",
+          "at": 6512,
+          "driver": "9ewv-0094",
+          "home": "helsinki",
+          "here": "vaasa",
+          "gigId": "g296",
+          "orderId": "R00917",
+          "fromPlace": "vaasa",
+          "toPlace": "raisio",
+          "deadheadKm": 12,
+          "homeDistanceBefore": 417.8,
+          "homeDistanceAfter": 174.7,
+          "homeward": true,
+          "pickupAt": 6527,
+          "deliveryAt": 6805,
+          "observedFeeCents": 10873
+        },
+        {
+          "world": "wbcb207675e32e9aff20f",
+          "at": 6729,
+          "driver": "9ewv-0100",
+          "home": "espoo",
+          "here": "vantaa",
+          "gigId": "g308",
+          "orderId": "R00981",
+          "fromPlace": "espoo",
+          "toPlace": "vantaa",
+          "deadheadKm": 28.5,
+          "homeDistanceBefore": 28.5,
+          "homeDistanceAfter": 28.5,
+          "homeward": true,
+          "pickupAt": 6769,
+          "deliveryAt": 6817,
+          "observedFeeCents": 2000
+        },
+        {
+          "world": "wbcb207675e32e9aff20f",
+          "at": 6729,
+          "driver": "9ewv-0100",
+          "home": "espoo",
+          "here": "vantaa",
+          "gigId": "g310",
+          "orderId": "R00984",
+          "fromPlace": "espoo",
+          "toPlace": "vantaa",
+          "deadheadKm": 28.5,
+          "homeDistanceBefore": 28.5,
+          "homeDistanceAfter": 28.5,
+          "homeward": true,
+          "pickupAt": 6769,
+          "deliveryAt": 6817,
+          "observedFeeCents": 2000
+        },
+        {
+          "world": "wbcb207675e32e9aff20f",
+          "at": 6788,
+          "driver": "9ewv-0556",
+          "home": "helsinki",
+          "here": "helsinki",
+          "gigId": "g237",
+          "orderId": "R00757",
+          "fromPlace": "helsinki",
+          "toPlace": "vantaa",
+          "deadheadKm": 12,
+          "homeDistanceBefore": 12,
+          "homeDistanceAfter": 22.5,
+          "homeward": true,
+          "pickupAt": 6803,
+          "deliveryAt": 6856,
+          "observedFeeCents": 5000
+        }
+      ],
+      "bundles": [
+        {
+          "at": 2373,
+          "orders": [
+            "R00342",
+            "R00345"
+          ],
+          "gigs": [
+            "g80",
+            "g82"
+          ],
+          "connectorKm": 31.1,
+          "endsNearStartKm": 69.9,
+          "driveMinutes": 134,
+          "returnLoop": false
+        },
+        {
+          "at": 2497,
+          "orders": [
+            "R00422",
+            "R00423"
+          ],
+          "gigs": [
+            "g113",
+            "g114"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 124.3,
+          "driveMinutes": 151,
+          "returnLoop": false
+        },
+        {
+          "at": 3896,
+          "orders": [
+            "R00614",
+            "R00596"
+          ],
+          "gigs": [
+            "g176",
+            "g170"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 228.1,
+          "driveMinutes": 202,
+          "returnLoop": false
+        },
+        {
+          "at": 4980,
+          "orders": [
+            "R00707",
+            "R00705"
+          ],
+          "gigs": [
+            "g214",
+            "g213"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 12,
+          "driveMinutes": 70,
+          "returnLoop": true
+        },
+        {
+          "at": 5165,
+          "orders": [
+            "R00744",
+            "R00743"
+          ],
+          "gigs": [
+            "g228",
+            "g227"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 28.5,
+          "driveMinutes": 50,
+          "returnLoop": true
+        },
+        {
+          "at": 5353,
+          "orders": [
+            "R00830",
+            "R00825"
+          ],
+          "gigs": [
+            "g264",
+            "g262"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 65.8,
+          "driveMinutes": 97,
+          "returnLoop": false
+        },
+        {
+          "at": 5356,
+          "orders": [
+            "R00831",
+            "R00825"
+          ],
+          "gigs": [
+            "g265",
+            "g262"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 65.8,
+          "driveMinutes": 97,
+          "returnLoop": false
+        },
+        {
+          "at": 6327,
+          "orders": [
+            "R00864",
+            "R00865"
+          ],
+          "gigs": [
+            "g277",
+            "g278"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 28.5,
+          "driveMinutes": 81,
+          "returnLoop": true
+        },
+        {
+          "at": 6480,
+          "orders": [
+            "R00905",
+            "R00904"
+          ],
+          "gigs": [
+            "g291",
+            "g290"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 99.8,
+          "driveMinutes": 99,
+          "returnLoop": false
+        },
+        {
+          "at": 6483,
+          "orders": [
+            "R00910",
+            "R00904"
+          ],
+          "gigs": [
+            "g292",
+            "g290"
+          ],
+          "connectorKm": 31.1,
+          "endsNearStartKm": 235.2,
+          "driveMinutes": 219,
+          "returnLoop": false
+        },
+        {
+          "at": 6725,
+          "orders": [
+            "R00984",
+            "R00981"
+          ],
+          "gigs": [
+            "g310",
+            "g308"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 28.5,
+          "driveMinutes": 75,
+          "returnLoop": true
+        },
+        {
+          "at": 6791,
+          "orders": [
+            "R00757",
+            "R01000"
+          ],
+          "gigs": [
+            "g237",
+            "g315"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 172.4,
+          "driveMinutes": 135,
+          "returnLoop": false
+        },
+        {
+          "at": 6794,
+          "orders": [
+            "R00757",
+            "R01007"
+          ],
+          "gigs": [
+            "g237",
+            "g319"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 177.7,
+          "driveMinutes": 125,
+          "returnLoop": false
+        }
+      ]
+    },
+    {
+      "world": "wb915d7ae809d2fec7776",
+      "seed": "holdout-4",
+      "deliveries": 281,
+      "driversUsed": 171,
+      "naturalSameDayChains": 55,
+      "naturalNearbyChains": 10,
+      "handoffMatches": 65,
+      "uniqueHandoffGigs": 23,
+      "homewardMatches": 1,
+      "uniqueHomewardGigs": 1,
+      "optimistic25PercentSavingEuros": 5.0,
+      "availableBundlePairs": 18,
+      "availableBundleGigs": 25,
+      "availableReturnLoopPairs": 1,
+      "tradeinRequests": 28,
+      "tradeinMedianListToRef": 1.848560181301014,
+      "tradeinNoNoteWithin240min": [
+        {
+          "id": "R00475",
+          "note": null,
+          "km": 99.8,
+          "driveMinutes": 126,
+          "listPriceCents": 7600,
+          "referenceFeeCents": 4237,
+          "ratio": 1.7937219730941705,
+          "slotLead": 1846,
+          "premium": false
+        },
+        {
+          "id": "R00488",
+          "note": null,
+          "km": 124.3,
+          "driveMinutes": 152,
+          "listPriceCents": 9400,
+          "referenceFeeCents": 4390,
+          "ratio": 2.14123006833713,
+          "slotLead": 1459,
+          "premium": false
+        },
+        {
+          "id": "R00575",
+          "note": null,
+          "km": 51.1,
+          "driveMinutes": 70,
+          "listPriceCents": 6000,
+          "referenceFeeCents": 3165,
+          "ratio": 1.8957345971563981,
+          "slotLead": 216,
+          "premium": false
+        },
+        {
+          "id": "R00615",
+          "note": null,
+          "km": 106.8,
+          "driveMinutes": 136,
+          "listPriceCents": 7900,
+          "referenceFeeCents": 3668,
+          "ratio": 2.153762268266085,
+          "slotLead": 1343,
+          "premium": false
+        },
+        {
+          "id": "R00625",
+          "note": null,
+          "km": 169.6,
+          "driveMinutes": 212,
+          "listPriceCents": 11500,
+          "referenceFeeCents": 6070,
+          "ratio": 1.8945634266886326,
+          "slotLead": 1348,
+          "premium": false
+        },
+        {
+          "id": "R00676",
+          "note": null,
+          "km": 22.5,
+          "driveMinutes": 58,
+          "listPriceCents": 4700,
+          "referenceFeeCents": 2412,
+          "ratio": 1.9485903814262022,
+          "slotLead": 1601,
+          "premium": false
+        },
+        {
+          "id": "R00853",
+          "note": null,
+          "km": 158.5,
+          "driveMinutes": 192,
+          "listPriceCents": 10100,
+          "referenceFeeCents": 5669,
+          "ratio": 1.7816193332157346,
+          "slotLead": 1202,
+          "premium": false
+        },
+        {
+          "id": "R00871",
+          "note": null,
+          "km": 177.7,
+          "driveMinutes": 226,
+          "listPriceCents": 11800,
+          "referenceFeeCents": 5445,
+          "ratio": 2.16712580348944,
+          "slotLead": 301,
+          "premium": false
+        },
+        {
+          "id": "R01022",
+          "note": null,
+          "km": 68.8,
+          "driveMinutes": 116,
+          "listPriceCents": 6300,
+          "referenceFeeCents": 3819,
+          "ratio": 1.6496465043205029,
+          "slotLead": 3884,
+          "premium": false
+        },
+        {
+          "id": "R01031",
+          "note": null,
+          "km": 135.8,
+          "driveMinutes": 206,
+          "listPriceCents": 9200,
+          "referenceFeeCents": 5134,
+          "ratio": 1.7919750681729645,
+          "slotLead": 3981,
+          "premium": false
+        }
+      ],
+      "tradeins": [
+        {
+          "id": "R00135",
+          "note": null,
+          "km": 399.7,
+          "driveMinutes": 546,
+          "listPriceCents": 20400,
+          "referenceFeeCents": 12949,
+          "ratio": 1.5754112286663062,
+          "slotLead": 1255,
+          "premium": false
+        },
+        {
+          "id": "R00148",
+          "note": null,
+          "km": 282,
+          "driveMinutes": 374,
+          "listPriceCents": 15400,
+          "referenceFeeCents": 10174,
+          "ratio": 1.5136622763908,
+          "slotLead": 1356,
+          "premium": false
+        },
+        {
+          "id": "R00210",
+          "note": {
+            "text": "Rengassarja mukaan, varaus 913851, vie uusi asiakkaalle ja tuo vaihtari takaisin, kiitos paljon",
+            "language": "fi"
+          },
+          "km": 12,
+          "driveMinutes": 50,
+          "listPriceCents": 3900,
+          "referenceFeeCents": 2554,
+          "ratio": 1.5270164447924823,
+          "slotLead": 2820,
+          "premium": false
+        },
+        {
+          "id": "R00237",
+          "note": {
+            "text": "vie uusi asiakkaalle ja tuo vaihtari takaisin. renkaat kyydiss\u00e4",
+            "language": "fi"
+          },
+          "km": 309.4,
+          "driveMinutes": 440,
+          "listPriceCents": 16500,
+          "referenceFeeCents": 9154,
+          "ratio": 1.8024907144417741,
+          "slotLead": 3077,
+          "premium": false
+        },
+        {
+          "id": "R00282",
+          "note": null,
+          "km": 270.9,
+          "driveMinutes": 346,
+          "listPriceCents": 16100,
+          "referenceFeeCents": 6073,
+          "ratio": 2.6510785443767495,
+          "slotLead": 1547,
+          "premium": false
+        },
+        {
+          "id": "R00313",
+          "note": null,
+          "km": 170.5,
+          "driveMinutes": 260,
+          "listPriceCents": 10600,
+          "referenceFeeCents": 6165,
+          "ratio": 1.7193836171938361,
+          "slotLead": 2907,
+          "premium": false
+        },
+        {
+          "id": "R00334",
+          "note": {
+            "text": "maksun j\u00e4lkeen, ei ennen klo 15.30. vie uusi asiakkaalle ja tuo vaihtari takaisin",
+            "language": "fi"
+          },
+          "km": 228,
+          "driveMinutes": 282,
+          "listPriceCents": 13100,
+          "referenceFeeCents": 6361,
+          "ratio": 2.0594246187706338,
+          "slotLead": 1263,
+          "premium": false
+        },
+        {
+          "id": "R00347",
+          "note": {
+            "text": "Rengassarja takapenkill\u00e4, kulkee mukana. Vaihtoauto takaisin liikkeelle.",
+            "language": "fi"
+          },
+          "km": 12,
+          "driveMinutes": 50,
+          "listPriceCents": 3900,
+          "referenceFeeCents": 2807,
+          "ratio": 1.389383683648023,
+          "slotLead": 4006,
+          "premium": false
+        },
+        {
+          "id": "R00404",
+          "note": {
+            "text": "Vie uusi asiakkaalle ja tuo vaihtari takaisin. Lis\u00e4ksi 4 kes\u00e4rengasta tavaratilassa",
+            "language": "fi"
+          },
+          "km": 177.3,
+          "driveMinutes": 238,
+          "listPriceCents": 10900,
+          "referenceFeeCents": 5882,
+          "ratio": 1.8531111866712002,
+          "slotLead": 2869,
+          "premium": false
+        },
+        {
+          "id": "R00412",
+          "note": null,
+          "km": 305.2,
+          "driveMinutes": 418,
+          "listPriceCents": 17700,
+          "referenceFeeCents": 9259,
+          "ratio": 1.9116535262987364,
+          "slotLead": 1300,
+          "premium": false
+        },
+        {
+          "id": "R00440",
+          "note": null,
+          "km": 270.9,
+          "driveMinutes": 346,
+          "listPriceCents": 16100,
+          "referenceFeeCents": 6612,
+          "ratio": 2.434966727162734,
+          "slotLead": 1307,
+          "premium": false
+        },
+        {
+          "id": "R00475",
+          "note": null,
+          "km": 99.8,
+          "driveMinutes": 126,
+          "listPriceCents": 7600,
+          "referenceFeeCents": 4237,
+          "ratio": 1.7937219730941705,
+          "slotLead": 1846,
+          "premium": false
+        },
+        {
+          "id": "R00488",
+          "note": null,
+          "km": 124.3,
+          "driveMinutes": 152,
+          "listPriceCents": 9400,
+          "referenceFeeCents": 4390,
+          "ratio": 2.14123006833713,
+          "slotLead": 1459,
+          "premium": false
+        },
+        {
+          "id": "R00575",
+          "note": null,
+          "km": 51.1,
+          "driveMinutes": 70,
+          "listPriceCents": 6000,
+          "referenceFeeCents": 3165,
+          "ratio": 1.8957345971563981,
+          "slotLead": 216,
+          "premium": false
+        },
+        {
+          "id": "R00615",
+          "note": null,
+          "km": 106.8,
+          "driveMinutes": 136,
+          "listPriceCents": 7900,
+          "referenceFeeCents": 3668,
+          "ratio": 2.153762268266085,
+          "slotLead": 1343,
+          "premium": false
+        },
+        {
+          "id": "R00625",
+          "note": null,
+          "km": 169.6,
+          "driveMinutes": 212,
+          "listPriceCents": 11500,
+          "referenceFeeCents": 6070,
+          "ratio": 1.8945634266886326,
+          "slotLead": 1348,
+          "premium": false
+        },
+        {
+          "id": "R00661",
+          "note": null,
+          "km": 406.2,
+          "driveMinutes": 538,
+          "listPriceCents": 20700,
+          "referenceFeeCents": 10449,
+          "ratio": 1.9810508182601205,
+          "slotLead": 1714,
+          "premium": false
+        },
+        {
+          "id": "R00676",
+          "note": null,
+          "km": 22.5,
+          "driveMinutes": 58,
+          "listPriceCents": 4700,
+          "referenceFeeCents": 2412,
+          "ratio": 1.9485903814262022,
+          "slotLead": 1601,
+          "premium": false
+        },
+        {
+          "id": "R00689",
+          "note": {
+            "text": "Aiakkaan vanha auto takaisin meille, 4 rengasta vanteilla tavaratilassa, avain autossa, kiitti",
+            "language": "fi"
+          },
+          "km": 151,
+          "driveMinutes": 228,
+          "listPriceCents": 9800,
+          "referenceFeeCents": 4601,
+          "ratio": 2.129971745272767,
+          "slotLead": 1734,
+          "premium": true
+        },
+        {
+          "id": "R00708",
+          "note": {
+            "text": "Inbytesbilen tillbaka till oss, ordernr 506867.",
+            "language": "sv"
+          },
+          "km": 51.1,
+          "driveMinutes": 70,
+          "listPriceCents": 5600,
+          "referenceFeeCents": 3054,
+          "ratio": 1.83366077275704,
+          "slotLead": 6004,
+          "premium": false
+        },
+        {
+          "id": "R00719",
+          "note": {
+            "text": "Huolto kesken, valmis huomenna klo 9, ei klo 8. Vie uusi asiakkaalle ja tuo vaihtari takaisin",
+            "language": "fi"
+          },
+          "km": 194.2,
+          "driveMinutes": 294,
+          "listPriceCents": 12600,
+          "referenceFeeCents": 6529,
+          "ratio": 1.9298514320722928,
+          "slotLead": 1596,
+          "premium": false
+        },
+        {
+          "id": "R00849",
+          "note": {
+            "text": "Moikka. Lis\u00e4renkaat mukaan.",
+            "language": "fi"
+          },
+          "km": 411.6,
+          "driveMinutes": 536,
+          "listPriceCents": 20900,
+          "referenceFeeCents": 11334,
+          "ratio": 1.8440091759308277,
+          "slotLead": 1152,
+          "premium": false
+        },
+        {
+          "id": "R00853",
+          "note": null,
+          "km": 158.5,
+          "driveMinutes": 192,
+          "listPriceCents": 10100,
+          "referenceFeeCents": 5669,
+          "ratio": 1.7816193332157346,
+          "slotLead": 1202,
+          "premium": false
+        },
+        {
+          "id": "R00871",
+          "note": null,
+          "km": 177.7,
+          "driveMinutes": 226,
+          "listPriceCents": 11800,
+          "referenceFeeCents": 5445,
+          "ratio": 2.16712580348944,
+          "slotLead": 301,
+          "premium": false
+        },
+        {
+          "id": "R00964",
+          "note": {
+            "text": "Asiakkaan vanha auto takaisin meille. Huom aukioloajat arkisin 8-19",
+            "language": "fi"
+          },
+          "km": 228,
+          "driveMinutes": 282,
+          "listPriceCents": 13100,
+          "referenceFeeCents": 7732,
+          "ratio": 1.69425763062597,
+          "slotLead": 4367,
+          "premium": false
+        },
+        {
+          "id": "R01008",
+          "note": {
+            "text": "Ei rekkareita, koekilvet tarvitaan. Varaus 357766. Vaihtoauto takaisin liikkeelle",
+            "language": "fi"
+          },
+          "km": 372.5,
+          "driveMinutes": 466,
+          "listPriceCents": 19200,
+          "referenceFeeCents": 11687,
+          "ratio": 1.6428510310601523,
+          "slotLead": 4163,
+          "premium": false
+        },
+        {
+          "id": "R01022",
+          "note": null,
+          "km": 68.8,
+          "driveMinutes": 116,
+          "listPriceCents": 6300,
+          "referenceFeeCents": 3819,
+          "ratio": 1.6496465043205029,
+          "slotLead": 3884,
+          "premium": false
+        },
+        {
+          "id": "R01031",
+          "note": null,
+          "km": 135.8,
+          "driveMinutes": 206,
+          "listPriceCents": 9200,
+          "referenceFeeCents": 5134,
+          "ratio": 1.7919750681729645,
+          "slotLead": 3981,
+          "premium": false
+        }
+      ],
+      "homewardHandoffs": [
+        {
+          "world": "wb915d7ae809d2fec7776",
+          "at": 6873,
+          "driver": "zgwk-0170",
+          "home": "helsinki",
+          "here": "vantaa",
+          "gigId": "g284",
+          "orderId": "R01039",
+          "fromPlace": "vantaa",
+          "toPlace": "helsinki",
+          "deadheadKm": 12,
+          "homeDistanceBefore": 22.5,
+          "homeDistanceAfter": 12,
+          "homeward": true,
+          "pickupAt": 6888,
+          "deliveryAt": 6941,
+          "observedFeeCents": 2000
+        }
+      ],
+      "bundles": [
+        {
+          "at": 724,
+          "orders": [
+            "R00071",
+            "R00072"
+          ],
+          "gigs": [
+            "g16",
+            "g17"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 228.1,
+          "driveMinutes": 188,
+          "returnLoop": false
+        },
+        {
+          "at": 1001,
+          "orders": [
+            "R00162",
+            "R00108"
+          ],
+          "gigs": [
+            "g40",
+            "g26"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 282,
+          "driveMinutes": 208,
+          "returnLoop": false
+        },
+        {
+          "at": 1061,
+          "orders": [
+            "R00193",
+            "R00153"
+          ],
+          "gigs": [
+            "g46",
+            "g37"
+          ],
+          "connectorKm": 31.1,
+          "endsNearStartKm": 240.9,
+          "driveMinutes": 264,
+          "returnLoop": false
+        },
+        {
+          "at": 1061,
+          "orders": [
+            "R00193",
+            "R00187"
+          ],
+          "gigs": [
+            "g46",
+            "g44"
+          ],
+          "connectorKm": 31.1,
+          "endsNearStartKm": 240.9,
+          "driveMinutes": 264,
+          "returnLoop": false
+        },
+        {
+          "at": 1075,
+          "orders": [
+            "R00108",
+            "R00207"
+          ],
+          "gigs": [
+            "g26",
+            "g49"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 479.2,
+          "driveMinutes": 330,
+          "returnLoop": false
+        },
+        {
+          "at": 1075,
+          "orders": [
+            "R00153",
+            "R00207"
+          ],
+          "gigs": [
+            "g37",
+            "g49"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 521.5,
+          "driveMinutes": 355,
+          "returnLoop": false
+        },
+        {
+          "at": 1075,
+          "orders": [
+            "R00187",
+            "R00207"
+          ],
+          "gigs": [
+            "g44",
+            "g49"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 521.5,
+          "driveMinutes": 355,
+          "returnLoop": false
+        },
+        {
+          "at": 2283,
+          "orders": [
+            "R00340",
+            "R00310"
+          ],
+          "gigs": [
+            "g86",
+            "g77"
+          ],
+          "connectorKm": 28.5,
+          "endsNearStartKm": 134,
+          "driveMinutes": 161,
+          "returnLoop": false
+        },
+        {
+          "at": 2302,
+          "orders": [
+            "R00351",
+            "R00310"
+          ],
+          "gigs": [
+            "g89",
+            "g77"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 132.6,
+          "driveMinutes": 115,
+          "returnLoop": false
+        },
+        {
+          "at": 2440,
+          "orders": [
+            "R00354",
+            "R00424"
+          ],
+          "gigs": [
+            "g91",
+            "g113"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 161.1,
+          "driveMinutes": 356,
+          "returnLoop": false
+        },
+        {
+          "at": 2453,
+          "orders": [
+            "R00354",
+            "R00428"
+          ],
+          "gigs": [
+            "g91",
+            "g114"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 354,
+          "driveMinutes": 287,
+          "returnLoop": false
+        },
+        {
+          "at": 2474,
+          "orders": [
+            "R00354",
+            "R00441"
+          ],
+          "gigs": [
+            "g91",
+            "g118"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 384.4,
+          "driveMinutes": 264,
+          "returnLoop": false
+        },
+        {
+          "at": 5405,
+          "orders": [
+            "R00829",
+            "R00854"
+          ],
+          "gigs": [
+            "g225",
+            "g236"
+          ],
+          "connectorKm": 7.8,
+          "endsNearStartKm": 96.6,
+          "driveMinutes": 218,
+          "returnLoop": false
+        },
+        {
+          "at": 6481,
+          "orders": [
+            "R00910",
+            "R00909"
+          ],
+          "gigs": [
+            "g253",
+            "g252"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 22.5,
+          "driveMinutes": 87,
+          "returnLoop": true
+        },
+        {
+          "at": 6646,
+          "orders": [
+            "R00969",
+            "R00967"
+          ],
+          "gigs": [
+            "g266",
+            "g265"
+          ],
+          "connectorKm": 12,
+          "endsNearStartKm": 185.8,
+          "driveMinutes": 474,
+          "returnLoop": false
+        },
+        {
+          "at": 6847,
+          "orders": [
+            "R01039",
+            "R01026"
+          ],
+          "gigs": [
+            "g284",
+            "g281"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 169.6,
+          "driveMinutes": 164,
+          "returnLoop": false
+        },
+        {
+          "at": 6847,
+          "orders": [
+            "R01039",
+            "R01027"
+          ],
+          "gigs": [
+            "g284",
+            "g282"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 169.6,
+          "driveMinutes": 164,
+          "returnLoop": false
+        },
+        {
+          "at": 6847,
+          "orders": [
+            "R01039",
+            "R01028"
+          ],
+          "gigs": [
+            "g284",
+            "g283"
+          ],
+          "connectorKm": 22.5,
+          "endsNearStartKm": 169.6,
+          "driveMinutes": 164,
+          "returnLoop": false
+        }
+      ]
+    }
+  ]
+}

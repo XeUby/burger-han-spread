@@ -10,7 +10,7 @@ type Trial = { label: string; seed: string; settings: Partial<Settings> }
 const { values } = parseArgs({ options: { plan: { type: "string" }, jobs: { type: "string", default: "3" } } })
 if (!values.plan) throw new Error("--plan FILE is required")
 const jobs = Number(values.jobs)
-if (!Number.isInteger(jobs) || jobs < 1 || jobs > 6) throw new Error("--jobs must be 1–6")
+if (!Number.isInteger(jobs) || jobs < 1 || jobs > 4) throw new Error("--jobs must be 1–4")
 const trials = JSON.parse(await readFile(values.plan, "utf8")) as Trial[]
 if (!Array.isArray(trials) || !trials.length) throw new Error("Plan must be a nonempty trial array")
 for (const trial of trials) {

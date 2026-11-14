@@ -1,0 +1,118 @@
+{
+  "selectionFrozenAt": "2026-11-14T00:10:10.522740+00:00",
+  "unseenDeclaration": "Eight fresh random seeds were reserved before candidate selection. No world on these seeds has been created or inspected. Prior14/15 screens and09/10/12/16 confirmation are development only.",
+  "selectionEvidence": {
+    "file": "docs/frontier-confirmation.json",
+    "candidate": {
+      "complete": 4,
+      "planned": 4,
+      "meanMarginCents": 1066009.5,
+      "meanPairedDifferenceCents": 184029,
+      "qualified": 4,
+      "worstOnTimeShare": 0.9562982005141388,
+      "positivePairs": 4
+    },
+    "rationale": "Highest mean profit of the three candidates on the same four prespecified development weeks, positive gain in all four and all qualified. Two earlier screening weeks also qualified. This does not prove a low tail-failure probability."
+  },
+  "baseline": {
+    "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+    "settings": {
+      "price": 1.42,
+      "fee": 1.05,
+      "margin": 0.1,
+      "capacity": 0.18,
+      "maxKm": 550,
+      "minDrivers": 12,
+      "notes": true,
+      "adaptive": true,
+      "earlyOffers": false,
+      "safetySlack": false,
+      "backlog": 0.04,
+      "priceFloor": 0,
+      "costRatio": 1.15,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "demandSlope": 14
+    },
+    "bundle": "runs/frozen/2d9e6b664ce5e0bbb073552cb68b8f48feae0c12c1172b3d591fa4e0659ee35d/df968f60bd8042e90c9d5712221ca0d3eb1c1273e4af3f7ee550cb9e32b32d12"
+  },
+  "candidate": {
+    "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+    "settings": {
+      "price": 1.42,
+      "fee": 1.05,
+      "margin": 0.1,
+      "capacity": 0.35,
+      "maxKm": 700,
+      "minDrivers": 8,
+      "notes": true,
+      "adaptive": true,
+      "earlyOffers": false,
+      "safetySlack": false,
+      "auction": false,
+      "allowPrivate": false,
+      "tradeIns": false,
+      "homeOffers": false,
+      "readiness": false,
+      "bundlePairs": true,
+      "sameDayPremium": 1,
+      "laterDiscount": 1,
+      "placePrior": 0,
+      "bundleWait": 15,
+      "backlog": 0.08,
+      "priceFloor": 0,
+      "costRatio": 1.15,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "demandSlope": 14
+    },
+    "bundle": "runs/frozen/91d72cd6e55939326bd03b5d22793c4c4d54b7f8c0c262d3bc92e1a1b672b306/224d7efbdedcc7d9bc4d38f44561e85f1eb97ecf3729e60302fd585d758f731b"
+  },
+  "pairs": [
+    {
+      "seed": "frontier-unseen-20261114-19325279220dd249",
+      "baselineWorldId": null,
+      "candidateWorldId": null
+    },
+    {
+      "seed": "frontier-unseen-20261114-779e9add6b14a18b",
+      "baselineWorldId": null,
+      "candidateWorldId": null
+    },
+    {
+      "seed": "frontier-unseen-20261114-7f39dd564e731085",
+      "baselineWorldId": null,
+      "candidateWorldId": null
+    },
+    {
+      "seed": "frontier-unseen-20261114-f5efce54acaddce6",
+      "baselineWorldId": null,
+      "candidateWorldId": null
+    },
+    {
+      "seed": "frontier-unseen-20261114-7233f333bf3d7c2e",
+      "baselineWorldId": null,
+      "candidateWorldId": null
+    },
+    {
+      "seed": "frontier-unseen-20261114-98dcde7a3d066a80",
+      "baselineWorldId": null,
+      "candidateWorldId": null
+    },
+    {
+      "seed": "frontier-unseen-20261114-4d17ec2759243bc1",
+      "baselineWorldId": null,
+      "candidateWorldId": null
+    },
+    {
+      "seed": "frontier-unseen-20261114-b256738651c1125d",
+      "baselineWorldId": null,
+      "candidateWorldId": null
+    }
+  ],
+  "bootstrap": {
+    "samples": 10000,
+    "seed": 20261114
+  },
+  "attempts": []
+}

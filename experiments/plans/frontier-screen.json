@@ -1,0 +1,66 @@
+[
+  {
+    "label": "frontier-volume",
+    "seed": "formal-unseen-20261113-14",
+    "settings": {
+      "capacity": 0.35,
+      "backlog": 0.08,
+      "minDrivers": 8,
+      "maxKm": 700
+    }
+  },
+  {
+    "label": "frontier-volume",
+    "seed": "formal-unseen-20261113-15",
+    "settings": {
+      "capacity": 0.35,
+      "backlog": 0.08,
+      "minDrivers": 8,
+      "maxKm": 700
+    }
+  },
+  {
+    "label": "frontier-shadow",
+    "seed": "formal-unseen-20261113-14",
+    "settings": {
+      "capacity": 0.5,
+      "backlog": 0.12,
+      "minDrivers": 8,
+      "maxKm": 700,
+      "costRatio": 2
+    }
+  },
+  {
+    "label": "frontier-shadow",
+    "seed": "formal-unseen-20261113-15",
+    "settings": {
+      "capacity": 0.5,
+      "backlog": 0.12,
+      "minDrivers": 8,
+      "maxKm": 700,
+      "costRatio": 2
+    }
+  },
+  {
+    "label": "frontier-lowfee",
+    "seed": "formal-unseen-20261113-14",
+    "settings": {
+      "capacity": 0.35,
+      "backlog": 0.08,
+      "minDrivers": 8,
+      "maxKm": 700,
+      "fee": 0.85
+    }
+  },
+  {
+    "label": "frontier-lowfee",
+    "seed": "formal-unseen-20261113-15",
+    "settings": {
+      "capacity": 0.35,
+      "backlog": 0.08,
+      "minDrivers": 8,
+      "maxKm": 700,
+      "fee": 0.85
+    }
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "label": "frontier-volume-auction",
+    "seed": "formal-unseen-20261113-14",
+    "settings": {
+      "auction": true,
+      "capacity": 0.35,
+      "backlog": 0.08,
+      "minDrivers": 8,
+      "maxKm": 700
+    }
+  },
+  {
+    "label": "frontier-volume-auction",
+    "seed": "formal-unseen-20261113-15",
+    "settings": {
+      "auction": true,
+      "capacity": 0.35,
+      "backlog": 0.08,
+      "minDrivers": 8,
+      "maxKm": 700
+    }
+  }
+]

@@ -20,8 +20,10 @@ export class DemandModel {
   }
 
   threshold(features: MarketFeatures): number {
-    return this.settings.threshold + this.vector(features).reduce((sum, [i, value]) => sum + this.means[i]! * value, 0)
+    return this.prior(features) + this.vector(features).reduce((sum, [i, value]) => sum + this.means[i]! * value, 0)
   }
+
+  protected prior(_features: MarketFeatures): number { return this.settings.threshold }
 
   optimize(features: MarketFeatures, inputs: PriceInputs): PriceChoice {
     return optimalLogisticPrice({ ...inputs, threshold: this.threshold(features), slope: this.settings.slope })
@@ -32,7 +34,7 @@ export class DemandModel {
     if (!Number.isFinite(normalizedRatio) || normalizedRatio <= 0) throw new Error("Quote ratio must be positive")
     const entries = this.vector(features)
     const slope = this.settings.slope
-    const threshold = this.settings.threshold + entries.reduce((sum, [i, value]) => sum + this.means[i]! * value, 0)
+    const threshold = this.prior(features) + entries.reduce((sum, [i, value]) => sum + this.means[i]! * value, 0)
     const probability = sigmoid(slope * (threshold - normalizedRatio))
     const projection = this.covariance.map(row => entries.reduce((sum, [i, value]) => sum + row[i]! * value * slope, 0))
     const variance = entries.reduce((sum, [i, value]) => sum + projection[i]! * value * slope, 0)

@@ -1,0 +1,16 @@
+[
+  {
+    "label": "frontier-bundles",
+    "seed": "formal-unseen-20261113-14",
+    "settings": {
+      "bundleWait": 15
+    }
+  },
+  {
+    "label": "frontier-bundles",
+    "seed": "formal-unseen-20261113-15",
+    "settings": {
+      "bundleWait": 15
+    }
+  }
+]

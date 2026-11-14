@@ -4,7 +4,7 @@ import { createHash } from "node:crypto"
 import { pathToFileURL } from "node:url"
 import { Client, SpreadError, Unreachable } from "../vendor/typescript/spread.ts"
 import type { World } from "../vendor/typescript/spread.ts"
-import type { DeskEventKind, Score } from "../vendor/typescript/types.ts"
+import type { Action, ActionResult, Advance, DeskEvent, DeskEventKind, DeskSnapshot, DriverProfile, Score, WorldMap } from "../vendor/typescript/types.ts"
 import { Dispatcher, validateSettings } from "./policy.ts"
 import type { Settings } from "./policy.ts"
 
@@ -17,10 +17,22 @@ export async function practice(client: Client, options: { level?: number; seed?:
   const world = options.worldId ? client.world(options.worldId) : await createPractice(client, level, options)
   console.log(`Practice ${world.id}, level ${level}, seed ${options.seed ?? "server-selected"}`)
   await mkdir("runs", { recursive: true })
-  const [map, drivers, snapshot, history] = await Promise.all([client.map(), world.roster(), world.snapshot(), world.events()])
-  const desk = new Dispatcher(world, level, snapshot.now, map, drivers, options.settings)
+  const [map, drivers, snapshot, history] = await retryReads(() => Promise.all([client.map(), world.roster(), world.snapshot(), world.events()]))
+  let desk: Dispatcher
+  const submitted = new Map<string, SubmittedBid>()
+  const connection = trackPractice(world, () => desk, submitted)
+  desk = new Dispatcher(connection, level, snapshot.now, map, drivers, options.settings)
+  const events: DeskEvent[] = []
+  const recorded = new Set<number>()
+  const record = (event: DeskEvent) => {
+    if (recorded.has(event.seq)) return
+    recorded.add(event.seq)
+    events.push(structuredClone(event))
+  }
+  history.forEach(record)
   await desk.rejoin(snapshot, history)
-  const events = [...history]
+  let recoveryUntil = 0
+  const recoveries: { at: number; message: string; resumedAt: number; lastSeq: number }[] = []
   const hash = createHash("sha256")
   const sourceFiles = (await readdir(new URL(".", import.meta.url))).filter(file => file.endsWith(".ts")).sort()
   const sources = await Promise.all(sourceFiles.map(async name => ({ name, text: await readFile(new URL(name, import.meta.url), "utf8") })))
@@ -32,33 +44,144 @@ export async function practice(client: Client, options: { level?: number; seed?:
   await writeFile(`runs/${world.id}.drivers.json`, JSON.stringify(drivers))
   try {
     while (desk.now < snapshot.endsAt) {
-      const day = Math.floor(desk.now / 1440)
-      await desk.tick()
-      const actions = desk.outbox.splice(0)
-      const step = await world.advance({ untilEvent: WAKE, max: Math.min(snapshot.endsAt, desk.now + 30), actions })
-      desk.readResults(actions, step.results)
-      desk.now = step.now
-      for (const event of step.events) {
-        if (event.seq <= desk.lastSeq) continue
-        events.push(event)
-        await desk.handle(event)
+      try {
+        const day = Math.floor(desk.now / 1440)
+        await desk.tick()
+        const actions = desk.takeActions()
+        const step = await connection.advance({ untilEvent: WAKE, max: Math.min(snapshot.endsAt, desk.nextDecisionAt()), actions })
+        desk.readResults(actions, step.results)
+        desk.now = step.now
+        for (const event of step.events) {
+          record(event)
+          if (event.seq <= desk.lastSeq) continue
+          await desk.handle(event)
+          if (event.kind === "order_won") submitted.delete(event.order.id)
+          if (event.kind === "order_lost") submitted.delete(event.requestId)
+        }
+        if (Math.floor(desk.now / 1440) > day) report(world.id, await world.score())
+        recoveryUntil = 0
+      } catch (error) {
+        if (!(error instanceof Unreachable)) throw error
+        const at = desk.now
+        if (!recoveryUntil) recoveryUntil = Date.now() + 60_000
+        else await sleep(Math.max(0, Math.min(1000, recoveryUntil - Date.now())))
+        console.error(`${world.id}: ${error.message}; recovering from server state for up to 60 seconds`)
+        const state = await retryReads(async () => {
+          const history = await world.events()
+          const snapshot = await world.snapshot()
+          return { history, snapshot }
+        }, recoveryUntil)
+        state.history.forEach(record)
+        desk = await rebuildPractice(desk, connection, map, drivers, state.snapshot, state.history, submitted)
+        recoveries.push({ at, message: error.message, resumedAt: desk.now, lastSeq: desk.lastSeq })
       }
-      if (Math.floor(desk.now / 1440) > day) report(world.id, await world.score())
     }
   } catch (error) {
     console.error(`World ${world.id} retained. Resume with --world ${world.id}; the practice clock is paused.`)
     throw error
   } finally {
-    await writeFile(`runs/${world.id}.events.json`, JSON.stringify(events))
+    await writeFile(`runs/${world.id}.events.json`, JSON.stringify(events.sort((a, b) => a.seq - b.seq)))
     await writeFile(`runs/${world.id}.errors.json`, JSON.stringify(desk.failures, null, 2))
+    await writeFile(`runs/${world.id}.recoveries.json`, JSON.stringify(recoveries, null, 2))
   }
-  const score = await world.score()
+  const score = await retryReads(() => world.score())
   await writeFile(`runs/${world.id}.score.json`, JSON.stringify(score, null, 2))
-  await writeFile(`runs/${world.id}.snapshot.json`, JSON.stringify(await world.snapshot()))
-  if (!options.board) await writeFile(`runs/${world.id}.reveal.json`, JSON.stringify(await world.reveal()))
+  await writeFile(`runs/${world.id}.snapshot.json`, JSON.stringify(await retryReads(() => world.snapshot())))
+  if (!options.board) await writeFile(`runs/${world.id}.reveal.json`, JSON.stringify(await retryReads(() => world.reveal())))
   await appendFile("runs/results.jsonl", JSON.stringify({ worldId: world.id, seed: options.seed, label: options.label, settings: desk.settings, revision, ...score }) + "\n")
   report("End " + world.id, score)
   return score
+}
+
+type SubmittedBid = { bid: NonNullable<ReturnType<Dispatcher["bids"]["get"]>>; prices: Record<string, number>; confirmed: boolean }
+
+function trackPractice(world: World, desk: () => Dispatcher, submitted: Map<string, SubmittedBid>): World {
+  const sent = (actions: readonly Action[]) => {
+    for (const action of actions) if (action.type === "quote") {
+      const bid = desk().bids.get(action.requestId)
+      if (bid && Object.values(action.prices).some(price => price! < 100_000_000)) submitted.set(action.requestId, { bid, prices: action.prices as Record<string, number>, confirmed: false })
+      else submitted.delete(action.requestId)
+    }
+  }
+  const answered = (actions: readonly Action[], results: ActionResult[]) => {
+    actions.forEach((action, i) => {
+      if (action.type !== "quote") return
+      const bid = submitted.get(action.requestId)
+      if (results[i]?.ok && bid) bid.confirmed = true
+      else submitted.delete(action.requestId)
+    })
+  }
+  return new Proxy(world, { get(target, key) {
+    if (key === "act") return async (actions: readonly Action[]) => {
+      sent(actions)
+      const results = await target.act(actions)
+      answered(actions, results)
+      return results
+    }
+    if (key === "advance") return async (input: Advance) => {
+      const actions = input.actions ?? []
+      sent(actions)
+      const step = await target.advance(input)
+      answered(actions, step.results)
+      return step
+    }
+    const value = Reflect.get(target, key, target)
+    return typeof value === "function" ? value.bind(target) : value
+  } })
+}
+
+async function rebuildPractice(previous: Dispatcher, world: World, map: WorldMap, drivers: DriverProfile[], snapshot: DeskSnapshot, history: DeskEvent[], submitted: Map<string, SubmittedBid>): Promise<Dispatcher> {
+  for (const event of history) {
+    if (event.kind !== "order_won" && event.kind !== "order_lost") continue
+    const id = event.kind === "order_won" ? event.order.id : event.requestId
+    const quote = submitted.get(id)
+    if (!quote) continue
+    const won = event.kind === "order_won"
+    const proven = event.kind === "order_won" && quote.prices[event.order.option] === event.order.priceCents
+    // A lost response cannot tell us whether an unacknowledged quote was ever submitted.
+    if (previous.bids.has(id) && (quote.confirmed || proven)) previous.market.observe(quote.bid.features, quote.bid.ratio, won)
+    previous.bids.delete(id)
+    submitted.delete(id)
+  }
+  const desk = new Dispatcher(world, previous.level, snapshot.now, map, drivers, previous.settings)
+  desk.market = previous.market
+  desk.failures.push(...previous.failures)
+  await desk.rejoin(snapshot, history)
+  for (const [key, count] of previous.offerCount) desk.offerCount.set(key, Math.max(count, desk.offerCount.get(key) ?? 0))
+  for (const [gig, offers] of previous.offers) desk.offers.set(gig, offers.filter(offer => offer.until > snapshot.now))
+  for (const [gig, drivers] of previous.offeredDrivers) desk.offeredDrivers.set(gig, new Set([...(desk.offeredDrivers.get(gig) ?? []), ...drivers]))
+  for (const [gig, count] of previous.homeOffersSent) desk.homeOffersSent.set(gig, Math.max(count, desk.homeOffersSent.get(gig) ?? 0))
+  for (const [gig, at] of previous.lastOffer) desk.lastOffer.set(gig, at)
+  for (const [gig, at] of previous.raised) desk.raised.set(gig, at)
+  for (const event of history) {
+    if (event.kind === "gig_viewed") desk.viewedAt.set(event.driverId, event.at)
+    if (event.kind === "gig_booked") desk.gigDriver.set(event.gigId, event.driverId)
+    if (event.kind === "picked_up" || event.kind === "delivered") {
+      const driver = desk.gigDriver.get(event.gigId)
+      if (driver) desk.driverPlace.set(driver, { place: event.placeId, at: event.at })
+    }
+  }
+  return desk
+}
+
+async function retryReads<T>(read: () => Promise<T>, until = Date.now() + 60_000): Promise<T> {
+  let delay = 250
+  for (;;) {
+    const remaining = until - Date.now()
+    if (remaining <= 0) throw new Unreachable(0, "Practice recovery exceeded 60 seconds")
+    let timer: ReturnType<typeof setTimeout> | undefined
+    try {
+      return await Promise.race([read(), new Promise<never>((_, reject) => {
+        timer = setTimeout(() => reject(new Unreachable(0, "Practice recovery exceeded 60 seconds")), remaining)
+      })])
+    } catch (error) {
+      if (!(error instanceof Unreachable) || Date.now() >= until) throw error
+      await sleep(Math.min(delay, until - Date.now()))
+      delay = Math.min(5000, delay * 2)
+    } finally {
+      clearTimeout(timer)
+    }
+  }
 }
 
 async function createPractice(client: Client, level: number, options: { board?: boolean; seed?: string }): Promise<World> {
@@ -66,9 +189,9 @@ async function createPractice(client: Client, level: number, options: { board?: 
     try {
       return await client.create(level as 8, options.board ? { board: true } : { seed: options.seed })
     } catch (error) {
-      if (options.board || !(error instanceof SpreadError) || error.status !== 409 || !error.message.includes("practice worlds") || attempt >= 59) throw error
+      if (options.board || !(error instanceof SpreadError) || error.status !== 409 || !error.message.includes("practice worlds") || attempt >= 119) throw error
       if (!attempt) console.log(`Waiting for a practice slot: ${options.seed}`)
-      await sleep(10000)
+      await sleep(5000)
     }
   }
 }

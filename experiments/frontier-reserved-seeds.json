@@ -1,0 +1,17 @@
+{
+  "reservedAt": "2026-11-13T23:55:24.282442+00:00",
+  "purpose": "Fresh eight-week evaluation reserved before any candidate is selected or these worlds are created. No outcomes have been inspected.",
+  "seeds": [
+    "frontier-unseen-20261114-19325279220dd249",
+    "frontier-unseen-20261114-779e9add6b14a18b",
+    "frontier-unseen-20261114-7f39dd564e731085",
+    "frontier-unseen-20261114-f5efce54acaddce6",
+    "frontier-unseen-20261114-7233f333bf3d7c2e",
+    "frontier-unseen-20261114-98dcde7a3d066a80",
+    "frontier-unseen-20261114-4d17ec2759243bc1",
+    "frontier-unseen-20261114-b256738651c1125d"
+  ],
+  "baselineRevision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
+  "baselineBundle": "runs/frozen/2d9e6b664ce5e0bbb073552cb68b8f48feae0c12c1172b3d591fa4e0659ee35d/df968f60bd8042e90c9d5712221ca0d3eb1c1273e4af3f7ee550cb9e32b32d12",
+  "policy": "Select and freeze a candidate before creating any of these worlds. Compare the same seeds against the exact prior validated baseline. Keep all outcomes. Interrupted retries use the same seed and frozen source, with the original attempt recorded separately."
+}

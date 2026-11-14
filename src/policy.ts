@@ -1,7 +1,15 @@
 import { Desk } from "./desk.ts"
 import { Network, lastPickup, needsCharge } from "./planning.ts"
 import { readNote } from "./notes.ts"
+import { readReadiness } from "./readiness.ts"
+import type { Readiness } from "./readiness.ts"
+import type { NoteRules } from "./notes.ts"
+import { PlaceDemandModel } from "./place-market.ts"
 import { DemandModel } from "./optimizer.ts"
+import { planBundles } from "./bundles.ts"
+import { requestFeasibility } from "./admission.ts"
+import { priceMenu } from "./menu.ts"
+import { chooseHomeOffers } from "./home-offers.ts"
 import type { MarketFeatures } from "./optimizer.ts"
 import type { World } from "../vendor/typescript/spread.ts"
 import type { Action, ActionResult, DeskEvent, DeskSnapshot, DriverProfile, FeeStep, Order, PostAction, PriceRequest, WorldMap } from "../vendor/typescript/types.ts"
@@ -9,11 +17,14 @@ import type { Action, ActionResult, DeskEvent, DeskSnapshot, DriverProfile, FeeS
 export type Settings = {
   price: number; fee: number; margin: number; capacity: number; maxKm: number; minDrivers: number
   notes: boolean; adaptive: boolean; earlyOffers: boolean; safetySlack: boolean
+  auction: boolean; allowPrivate: boolean; tradeIns: boolean; homeOffers: boolean; readiness: boolean; bundlePairs: boolean
+  sameDayPremium: number; laterDiscount: number; placePrior: number; bundleWait: number
   backlog: number; priceFloor: number; costRatio: number; trustStep: number; sameDayBacklog: number; demandSlope: number
 }
 export const defaults: Settings = {
   price: 1.42, fee: 1.05, margin: 0.1, capacity: 0.18, maxKm: 550, minDrivers: 12,
   notes: true, adaptive: true, earlyOffers: false, safetySlack: false,
+  auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 0,
   backlog: 0.04, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14,
 }
 
@@ -22,8 +33,10 @@ export function validateSettings(value: unknown): asserts value is Partial<Setti
   for (const [key, field] of Object.entries(value)) {
     if (!(key in defaults)) throw new Error(`Unknown setting: ${key}`)
     if (typeof defaults[key as keyof Settings] === "boolean") { if (typeof field !== "boolean") throw new Error(`${key} must be boolean`); continue }
-    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep"].includes(key))) throw new Error(`${key} must be a positive number`)
+    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait"].includes(key))) throw new Error(`${key} must be a positive number`)
+    if (key === "bundleWait" && (!Number.isInteger(field) || field > 30)) throw new Error("bundleWait must be an integer from 0 to 30")
     if ((key === "margin" || key === "capacity") && field >= 1) throw new Error(`${key} must be below 1`)
+    if (key === "placePrior" && field > 2) throw new Error("placePrior must be at most 2")
   }
 }
 
@@ -47,8 +60,11 @@ export class Dispatcher extends Desk {
   driverPlace = new Map<string, { place: string; at: number }>()
   gigDriver = new Map<string, string>()
   offeredDrivers = new Map<string, Set<string>>()
+  homeOffersSent = new Map<string, number>()
   market: DemandModel
   bids = new Map<string, { features: MarketFeatures; ratio: number }>()
+  deferred = new Map<string, PriceRequest>()
+  held = new Map<string, { post: PostAction; at: number }>()
 
   constructor(world: World, level: number, now: number, map: WorldMap, drivers: DriverProfile[], settings: Partial<Settings> = {}) {
     super(world, level, now)
@@ -56,20 +72,27 @@ export class Dispatcher extends Desk {
     this.network = new Network(map)
     this.drivers = drivers
     this.settings = { ...defaults, ...settings }
-    this.market = new DemandModel({ threshold: level === 8 ? 1.4 : level === 7 ? 1.25 : 1, slope: this.settings.demandSlope })
+    const marketSettings = { threshold: level === 8 ? 1.4 : level === 7 ? 1.25 : 1, slope: this.settings.demandSlope }
+    this.market = this.settings.placePrior > 0 ? new PlaceDemandModel(marketSettings, this.settings.placePrior) : new DemandModel(marketSettings)
   }
 
-  quote(request: PriceRequest): void {
+  quote(request: PriceRequest, immediate = false): void {
     this.requests.set(request.id, request)
     if (request.respondBy <= this.now || this.quoted.has(request.id)) return
+    if (this.settings.auction && this.level >= 4 && !immediate) {
+      if (this.deferred.has(request.id)) return
+      this.deferred.set(request.id, request)
+      this.outbox.push({ type: "quote", requestId: request.id, prices: { [request.options[0]!.kind]: 100_000_000 } })
+      return
+    }
     this.quoted.add(request.id)
     const reject = () => {
       if (this.level >= 4) this.outbox.push({ type: "quote", requestId: request.id, prices: { [request.options[0]!.kind]: 100_000_000 } })
     }
-    const rules = readNote(request.note)
-    if (request.legs.length !== 1 || !rules.safe || (!this.settings.notes && request.note)) return reject()
-    const leg = request.legs[0]!
-    if (leg.pickup.privateAddress || leg.delivery.privateAddress) return reject()
+    const rules = this.noteRules(request)
+    if (!rules.safe || (!this.settings.notes && request.note)) return reject()
+    const plan = this.plannedRequest(request)
+    const leg = plan.legs[0]!
     const road = this.network.road(leg.pickup.placeId, leg.delivery.placeId)
     const supply = this.supply(request)
     if (road.km > this.settings.maxKm || supply < this.settings.minDrivers) return reject()
@@ -79,7 +102,7 @@ export class Dispatcher extends Desk {
     for (const other of this.requests.values()) {
       const order = this.orders.get(other.id)
       if (!this.pending.has(other.id) && (!order || order.status === "cancelled")) continue
-      const first = other.legs[0]!
+      const first = this.plannedRequest(other).legs[0]!
       if (Math.floor(first.pickup.window.from / 1440) !== day) continue
       const distance = this.network.km(leg.pickup.placeId, first.pickup.placeId)
       if (distance <= 70) {
@@ -93,10 +116,12 @@ export class Dispatcher extends Desk {
     const fee = this.baseFee(request)
     const trust = 1 + this.settings.trustStep * Math.min(25, this.trust.get(request.dealerId) ?? 0)
     const prices: Record<string, number> = {}
-    for (const option of request.options) {
+    for (const option of plan.options) {
       if (option.kind === "same_day" && supply < 15) continue
       if (option.kind === "same_day" && day === Math.floor(this.now / 1440) && unbooked >= this.settings.sameDayBacklog) continue
-      const latest = lastPickup(leg, option.deadline, this.network, rules.plates)
+      const feasible = requestFeasibility(plan, option.deadline, this.network, this.settings)
+      if (!feasible) continue
+      const latest = feasible.latestPickupAt
       const buffer = supply < 30 || road.km > 300 ? 300 : 210
       if (latest < Math.max(this.now + buffer, leg.pickup.window.from + 120)) continue
       const price = Math.ceil(Math.max(option.listPriceCents * this.settings.price * trust, fee / (1 - this.settings.margin) + this.settings.priceFloor))
@@ -110,11 +135,46 @@ export class Dispatcher extends Desk {
       const features = this.features(request)
       const choice = this.market.optimize(features, { costCents: fee * this.settings.costRatio, listPriceCents: list, trust, minPrice: Math.ceil(fee / (1 - this.settings.margin) + this.settings.priceFloor) })
       if (choice.expectedProfitCents <= 0) return reject()
-      for (const option of options) prices[option.kind] = Math.ceil(option.listPriceCents * trust * choice.ratio)
-      this.bids.set(request.id, { features, ratio: choice.ratio })
+      if (this.settings.sameDayPremium === 1 && this.settings.laterDiscount === 1) {
+        for (const option of options) prices[option.kind] = Math.ceil(option.listPriceCents * trust * choice.ratio)
+        this.bids.set(request.id, { features, ratio: choice.ratio })
+      } else {
+        const menu = priceMenu(options, { ratio: choice.ratio, trust, minPriceCents: Math.ceil(fee / (1 - this.settings.margin) + this.settings.priceFloor), sameDayPremium: this.settings.sameDayPremium, laterDiscount: this.settings.laterDiscount })
+        Object.assign(prices, menu.prices)
+        this.bids.set(request.id, { features, ratio: menu.observationRatio })
+      }
     }
     this.pending.add(request.id)
     this.outbox.push({ type: "quote", requestId: request.id, prices })
+  }
+
+  readinessFor(request: PriceRequest): Readiness | null {
+    if (!this.settings.readiness || request.legs.length !== 1 || request.legs[0]!.pickup.privateAddress || request.legs[0]!.delivery.privateAddress) return null
+    return readReadiness(request.note, request.arrivedAt)
+  }
+
+  noteRules(request: PriceRequest | undefined): NoteRules {
+    return (request ? this.readinessFor(request) : null) ?? readNote(request?.note ?? null)
+  }
+
+  plannedRequest(request: PriceRequest): PriceRequest {
+    const readiness = this.readinessFor(request)
+    if (!readiness) return request
+    const first = request.legs[0]!
+    const readyAt = Math.max(first.pickup.window.from, readiness.readyAt)
+    const delay = Math.max(0, Math.floor(readyAt / 1440) - Math.floor(first.pickup.window.from / 1440)) * 1440
+    const equipment = [readiness.manual ? "Manual gearbox" : "", readiness.plates ? "No plates" : ""].filter(Boolean).join(". ")
+    const options = request.options.map(option => ({ ...option, deadline: option.deadline + delay }))
+      .filter(option => option.deadline <= 7 * 1440 + 1200 && Math.floor(option.deadline / 1440) % 7 < 5)
+    return {
+      ...request,
+      note: equipment ? { language: "en", text: equipment } : null,
+      legs: [{ ...first,
+        pickup: { ...first.pickup, window: { from: readyAt, to: first.pickup.window.to + delay } },
+        delivery: { ...first.delivery, window: { ...first.delivery.window, to: first.delivery.window.to + delay } },
+      }],
+      options,
+    }
   }
 
   features(request: PriceRequest): MarketFeatures {
@@ -122,13 +182,24 @@ export class Dispatcher extends Desk {
     return { day: Math.floor(request.arrivedAt / 1440), origin: leg.pickup.placeId, destination: leg.delivery.placeId, dealer: request.dealerId, km: this.network.km(leg.pickup.placeId, leg.delivery.placeId) }
   }
 
+  nextDecisionAt(): number {
+    return Math.min(this.now + 30, ...[...this.deferred.values()].map(request => Math.max(this.now + 1, request.respondBy - 5)), ...[...this.held.values()].map(item => Math.max(this.now + 1, item.at + this.settings.bundleWait)))
+  }
+
+  auctionValue(request: PriceRequest): number {
+    const fee = this.baseFee(request)
+    const trust = 1 + this.settings.trustStep * Math.min(25, this.trust.get(request.dealerId) ?? 0)
+    const list = Math.min(...request.options.map(option => option.listPriceCents))
+    return this.market.optimize(this.features(request), { costCents: fee * this.settings.costRatio, listPriceCents: list, trust, minPrice: Math.ceil(fee / (1 - this.settings.margin) + this.settings.priceFloor) }).expectedProfitCents
+  }
+
   supply(request: PriceRequest): number {
     const first = request.legs[0]!
-    const rules = readNote(request.note)
+    const rules = this.noteRules(request)
     let count = 0
     for (const driver of this.drivers) {
       if (rules.manual && driver.licence !== "manual") continue
-      if (first.car.premium && (driver.rating < 4.8 || driver.completedGigs < 50)) continue
+      if (request.legs.some(leg => leg.car.premium) && (driver.rating < 4.8 || driver.completedGigs < 50)) continue
       const km = this.network.km(driver.homePlaceId, first.pickup.placeId)
       count += km <= 35 ? 1 : km <= 70 ? 0.35 : 0
     }
@@ -143,8 +214,12 @@ export class Dispatcher extends Desk {
 
   pickupBy(order: Order): number {
     if (!this.settings.safetySlack || order.legs.length !== 1) return order.lastPickupAt
-    const rules = readNote(this.requests.get(order.id)?.note ?? null)
-    return Math.min(order.lastPickupAt, lastPickup(order.legs[0]!, order.deadline, this.network, rules.plates))
+    const request = this.requests.get(order.id)
+    const rules = this.noteRules(request)
+    const readiness = request ? this.readinessFor(request) : null
+    const first = order.legs[0]!
+    const leg = readiness ? { ...first, pickup: { ...first.pickup, window: { ...first.pickup.window, from: Math.max(first.pickup.window.from, readiness.readyAt) } } } : first
+    return Math.min(order.lastPickupAt, lastPickup(leg, order.deadline, this.network, rules.plates))
   }
 
   feesFor(order: Order, cars: number): FeeStep[] {
@@ -171,10 +246,10 @@ export class Dispatcher extends Desk {
   async post(order: Order, legs: number[], retry = { pickupFrom: 0, manualLicence: false, plates: false }): Promise<void> {
     if (!legs.length) return
     const request = this.requests.get(order.id)!
-    const rules = readNote(request.note)
+    const rules = this.noteRules(request)
     const stops: PostAction["stops"] = legs.flatMap(leg => {
       const car = order.legs[leg]!
-      const from = Math.max(car.pickup.window.from, retry.pickupFrom)
+      const from = Math.max(car.pickup.window.from, retry.pickupFrom, this.readinessFor(request)?.readyAt ?? 0)
       const cutoff = this.pickupBy(order)
       const to = this.settings.safetySlack && cutoff > Math.max(from, this.now + 30) ? Math.min(car.pickup.window.to, cutoff) : Math.max(from, car.pickup.window.to)
       return [
@@ -182,7 +257,31 @@ export class Dispatcher extends Desk {
         { orderId: order.id, leg, kind: "delivery" as const },
       ]
     })
-    this.outbox.push({ type: "post", stops, audience: { experienced: legs.some(i => order.legs[i]!.car.premium), manualLicence: rules.manual || retry.manualLicence }, schedule: this.feesFor(order, legs.length) })
+    const post: PostAction = { type: "post", stops, audience: { experienced: legs.some(i => order.legs[i]!.car.premium), manualLicence: rules.manual || retry.manualLicence }, schedule: this.feesFor(order, legs.length) }
+    if (this.settings.bundleWait > 0 && this.level >= 3 && order.legs.length === 1 && rules.safe && !order.legs[0]!.pickup.privateAddress && !order.legs[0]!.delivery.privateAddress && !retry.pickupFrom && !retry.manualLicence && !retry.plates && !this.urgent.has(order.id) && this.pickupBy(order) > this.now + 360) {
+      this.held.set(order.id, { post, at: this.held.get(order.id)?.at ?? this.now })
+    } else this.outbox.push(post)
+  }
+
+  flushBundles(): void {
+    if (![...this.held.values()].some(item => item.at + this.settings.bundleWait <= this.now)) return
+    const items = [...this.held.entries()].filter(([id]) => this.orders.has(id))
+    this.held.clear()
+    const candidates = items.map(([id, item]) => ({ order: this.orders.get(id)!, post: item.post, noteSafe: this.noteRules(this.requests.get(id)).safe }))
+    const bundles = this.settings.bundlePairs ? planBundles(this.now, candidates, this.network) : []
+    const paired = new Set(bundles.flatMap(bundle => bundle.indices))
+    this.outbox.push(...bundles.map(bundle => bundle.post), ...candidates.filter((_, i) => !paired.has(i)).map(candidate => candidate.post))
+  }
+
+  override async sendPostOf(orderId: string): Promise<void> {
+    const item = this.held.get(orderId)
+    if (item) { this.held.delete(orderId); this.outbox.push(item.post) }
+    await super.sendPostOf(orderId)
+  }
+
+  override async change(order: Order): Promise<void> {
+    this.held.delete(order.id)
+    await super.change(order)
   }
 
   async handle(event: DeskEvent): Promise<void> {
@@ -202,11 +301,19 @@ export class Dispatcher extends Desk {
       this.viewedAt.set(event.driverId, event.at)
     }
     if (event.kind === "gig_booked") this.gigDriver.set(event.gigId, event.driverId)
+    if (this.settings.homeOffers && event.kind === "offer_answered" && !this.offeredDrivers.get(event.gigId)?.has(event.driverId)) {
+      const key = `${Math.floor(event.at / 1440)}:${event.driverId}`
+      this.offerCount.set(key, (this.offerCount.get(key) ?? 0) + 1)
+      this.homeOffersSent.set(event.gigId, (this.homeOffersSent.get(event.gigId) ?? 0) + 1)
+      if (!this.offeredDrivers.has(event.gigId)) this.offeredDrivers.set(event.gigId, new Set())
+      this.offeredDrivers.get(event.gigId)!.add(event.driverId)
+    }
     if (event.kind === "picked_up" || event.kind === "delivered") {
       const driver = this.gigDriver.get(event.gigId)
       if (driver) this.driverPlace.set(driver, { place: event.placeId, at: event.at })
     }
     if (event.kind === "order_cancelled") {
+      this.held.delete(event.orderId)
       for (const gig of event.gigs) {
         if (gig.outcome === "withdrawn" || gig.outcome === "released") this.posts.delete(gig.gigId)
       }
@@ -225,15 +332,53 @@ export class Dispatcher extends Desk {
         order.status = "delivered"
         this.deliveredOrders.add(order.id)
         const count = this.trust.get(order.dealerId) ?? 0
-        this.trust.set(order.dealerId, Math.max(...order.deliveredAt as number[]) <= order.deadline ? Math.min(25, count + 1) : Math.floor(count / 2))
+        const onTime = order.legs.every((leg, i) => order.deliveredAt[i]! <= Math.min(order.deadline, leg.delivery.privateAddress ? leg.delivery.window.to + 30 : Infinity))
+        this.trust.set(order.dealerId, onTime ? Math.min(25, count + 1) : Math.floor(count / 2))
+      }
+    }
+  }
+
+  homeOffers(): void {
+    if (this.now < this.offersAfter) return
+    const day = Math.floor(this.now / 1440)
+    const usedToday = new Map(this.drivers.map(driver => [driver.id, this.offerCount.get(`${day}:${driver.id}`) ?? 0]))
+    for (const [gigId, post] of this.posts) {
+      const first = post.stops[0]!
+      const order = this.orders.get(first.orderId)
+      const request = this.requests.get(first.orderId)
+      if (!order || !request) continue
+      const active = (this.offers.get(gigId) ?? []).filter(offer => offer.until > this.now)
+      this.offers.set(gigId, active)
+      const shown = post.schedule.filter(step => step.at <= this.now).at(-1) ?? post.schedule[0]!
+      const actions = chooseHomeOffers(this.now, {
+        gigId, order, post, safe: this.noteRules(request).safe,
+        open: !this.booked.has(gigId) && this.legGigs.get(order.id)?.get(first.leg) === gigId && !this.outbox.some(action => action.type === "withdraw" && action.gigId === gigId),
+        openingFeeCents: this.baseFee(request), publicFeeCents: shown.feeCents, activeOffers: active.length, offersSent: this.homeOffersSent.get(gigId) ?? 0,
+      }, this.drivers, this.network, { usedToday, attempted: this.offeredDrivers.get(gigId) ?? new Set(), viewedAt: this.viewedAt })
+      for (const action of actions) {
+        const used = (usedToday.get(action.driverId) ?? 0) + 1
+        usedToday.set(action.driverId, used)
+        this.offerCount.set(`${day}:${action.driverId}`, used)
+        this.homeOffersSent.set(gigId, (this.homeOffersSent.get(gigId) ?? 0) + 1)
+        active.push({ driver: action.driverId, until: this.now + 11 })
+        if (!this.offeredDrivers.has(gigId)) this.offeredDrivers.set(gigId, new Set())
+        this.offeredDrivers.get(gigId)!.add(action.driverId)
+        this.outbox.push(action)
       }
     }
   }
 
   async tick(): Promise<void> {
+    this.flushBundles()
+    const ready = [...this.deferred.values()].filter(request => request.respondBy <= this.now + 5)
+      .sort((a, b) => this.auctionValue(b) - this.auctionValue(a) || a.id.localeCompare(b.id))
+    for (const request of ready) {
+      this.deferred.delete(request.id)
+      this.quote(request, true)
+    }
     for (const order of this.orders.values()) {
       if (order.status === "delivered" || order.status === "cancelled") continue
-      const missing = order.legs.map((_, leg) => leg).filter(leg => order.deliveredAt[leg] === null && !this.legGigs.get(order.id)?.has(leg) && !this.outbox.some(a => a.type === "post" && a.stops.some(s => s.orderId === order.id && s.leg === leg)))
+      const missing = order.legs.map((_, leg) => leg).filter(leg => order.deliveredAt[leg] === null && !this.held.has(order.id) && !this.legGigs.get(order.id)?.has(leg) && !this.outbox.some(a => a.type === "post" && a.stops.some(s => s.orderId === order.id && s.leg === leg)))
       if (missing.length) await this.post(order, missing)
       for (const gigId of this.gigsOf(order.id)) {
         if (this.booked.has(gigId)) continue
@@ -248,12 +393,19 @@ export class Dispatcher extends Desk {
         }
       }
     }
+    if (this.settings.homeOffers && this.level >= 3) {
+      const posts = this.outbox.filter(action => action.type === "post")
+      for (let i = this.outbox.length - 1; i >= 0; i--) if (this.outbox[i]!.type === "post") this.outbox.splice(i, 1)
+      if (posts.length) this.readResults(posts, await this.world.act(posts))
+      this.homeOffers()
+    }
   }
 
   offer(gigId: string, order: Order, limit = 3): void {
     if (this.now < this.offersAfter) return
     const post = this.posts.get(gigId)
     if (!post) return
+    if (new Set(post.stops.map(stop => stop.orderId)).size > 1) return
     const active = (this.offers.get(gigId) ?? []).filter(x => x.until > this.now)
     this.offers.set(gigId, active)
     const place = order.legs[post.stops[0]!.leg]!.pickup.placeId
@@ -286,6 +438,10 @@ export class Dispatcher extends Desk {
     super.readResults(actions, results)
     actions.forEach((action, i) => {
       const result = results[i]
+      if (result?.ok && action.type === "reprice") {
+        const post = this.posts.get(action.gigId)
+        if (post) post.schedule = action.schedule
+      }
       if (!result || !result.ok) {
         if (action.type === "quote") {
           this.pending.delete(action.requestId)
@@ -310,6 +466,11 @@ export class Dispatcher extends Desk {
       if (event.kind === "offer_answered") {
         const key = `${Math.floor(event.at / 1440)}:${event.driverId}`
         this.offerCount.set(key, (this.offerCount.get(key) ?? 0) + 1)
+        if (this.settings.homeOffers) {
+          this.homeOffersSent.set(event.gigId, (this.homeOffersSent.get(event.gigId) ?? 0) + 1)
+          if (!this.offeredDrivers.has(event.gigId)) this.offeredDrivers.set(event.gigId, new Set())
+          this.offeredDrivers.get(event.gigId)!.add(event.driverId)
+        }
       }
       if (event.kind === "ledger" && event.line.orderId) {
         const request = this.requests.get(event.line.orderId)

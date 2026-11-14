@@ -1,0 +1,125 @@
+{
+  "purpose": "Frozen transferable-prior training set; never include frontier or subsequent validation worlds",
+  "worlds": [
+    {
+      "seed": "spread-1",
+      "worldId": "wd415561aaf36894b76de",
+      "fold": 1
+    },
+    {
+      "seed": "validate-1",
+      "worldId": "wbcb207675e32e9aff20f",
+      "fold": 1
+    },
+    {
+      "seed": "validate-2",
+      "worldId": "wd010ab552268190f208a",
+      "fold": 4
+    },
+    {
+      "seed": "holdout-1",
+      "worldId": "wd219768ea907dfeb7b60",
+      "fold": 1
+    },
+    {
+      "seed": "holdout-2",
+      "worldId": "w9afefc9b7af4685ebbe7",
+      "fold": 3
+    },
+    {
+      "seed": "holdout-3",
+      "worldId": "w1161968626d8d95ecec7",
+      "fold": 2
+    },
+    {
+      "seed": "holdout-4",
+      "worldId": "wb915d7ae809d2fec7776",
+      "fold": 4
+    },
+    {
+      "seed": "holdout-5",
+      "worldId": "w65288bae5e4a8c3d8f5e",
+      "fold": 3
+    },
+    {
+      "seed": "formal-unseen-20261113-02",
+      "worldId": "wc77bebb20668e8d3378f",
+      "fold": 0
+    },
+    {
+      "seed": "formal-unseen-20261113-01",
+      "worldId": "w491340143d15a316668c",
+      "fold": 1
+    },
+    {
+      "seed": "formal-unseen-20261113-03",
+      "worldId": "waf9a9f4088b838638064",
+      "fold": 3
+    },
+    {
+      "seed": "formal-unseen-20261113-05",
+      "worldId": "w3cacf28249c0731760eb",
+      "fold": 4
+    },
+    {
+      "seed": "formal-unseen-20261113-04",
+      "worldId": "w5dbd69444b1f927e7ed3",
+      "fold": 3
+    },
+    {
+      "seed": "formal-unseen-20261113-06",
+      "worldId": "w5938f3809abe0d6f051b",
+      "fold": 2
+    },
+    {
+      "seed": "formal-unseen-20261113-07",
+      "worldId": "wb97a9a6e26526614e85b",
+      "fold": 2
+    },
+    {
+      "seed": "formal-unseen-20261113-08",
+      "worldId": "w6fb9cdd546c36f5fa418",
+      "fold": 0
+    },
+    {
+      "seed": "formal-unseen-20261113-09",
+      "worldId": "w09f7d47c59507d4e46cb",
+      "fold": 1
+    },
+    {
+      "seed": "formal-unseen-20261113-11",
+      "worldId": "w679c0fd4b18e923880c6",
+      "fold": 1
+    },
+    {
+      "seed": "formal-unseen-20261113-10",
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "fold": 1
+    },
+    {
+      "seed": "formal-unseen-20261113-13",
+      "worldId": "w2f96a475ae718d1589d9",
+      "fold": 2
+    },
+    {
+      "seed": "formal-unseen-20261113-12",
+      "worldId": "w6ffd0c010757c76f97d8",
+      "fold": 0
+    },
+    {
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w0b0a425cf803342bff2d",
+      "fold": 1
+    },
+    {
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "w8009f8eec43876a31c73",
+      "fold": 3
+    },
+    {
+      "seed": "formal-unseen-20261113-16",
+      "worldId": "wce13500dc9c2829611d1",
+      "fold": 2
+    }
+  ]
+}

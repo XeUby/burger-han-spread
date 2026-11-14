@@ -1,0 +1,129 @@
+{
+  "updatedAt": "2026-11-14T00:17:00.019999+00:00",
+  "objective": "Continue systematic search toward the global optimum; practice only, no ranking submission.",
+  "maximumConcurrentPlays": 4,
+  "currentConcurrency": {
+    "note": "The two user-named stuck worlds were deleted successfully. New unrelated worlds appeared afterwards. The paired runner now checks server occupancy before every create."
+  },
+  "completedCombinationStudy": {
+    "sessionId": 84558,
+    "terminal": true,
+    "study": "runs/study-1794613702470.json"
+  },
+  "screeningSummary": {
+    "frontier-bundles": {
+      "completed": 2,
+      "qualified": 2,
+      "meanMarginCents": 798540.5,
+      "meanPairedGainCents": 72812.5,
+      "worstOnTimeShare": 0.9893238434163701,
+      "bothSeedsComplete": true
+    },
+    "frontier-volume-bundles": {
+      "completed": 2,
+      "qualified": 2,
+      "meanMarginCents": 886171.5,
+      "meanPairedGainCents": 160443.5,
+      "worstOnTimeShare": 0.9361702127659575,
+      "bothSeedsComplete": true
+    },
+    "frontier-auction-bundles": {
+      "completed": 2,
+      "qualified": 2,
+      "meanMarginCents": 807303.5,
+      "meanPairedGainCents": 81575.5,
+      "worstOnTimeShare": 0.986159169550173,
+      "bothSeedsComplete": true
+    },
+    "frontier-long-bundles": {
+      "completed": 2,
+      "qualified": 2,
+      "meanMarginCents": 840906.5,
+      "meanPairedGainCents": 115178.5,
+      "worstOnTimeShare": 0.9657534246575342,
+      "bothSeedsComplete": true
+    },
+    "frontier-hold-control": {
+      "completed": 2,
+      "qualified": 2,
+      "meanMarginCents": 775312,
+      "meanPairedGainCents": 49584,
+      "worstOnTimeShare": 0.9752650176678446,
+      "bothSeedsComplete": true
+    }
+  },
+  "findings": [
+    "Bundles improved both screening weeks; 26 shared gigs per week. Bundle+auction adds only87.63 euros mean beyond bundles alone, so do not assume that small difference generalizes.",
+    "Broader volume plus bundles raises two-seed mean22.1%, but worsens seed15 from9652.03 euros and98.9% on time to9096.26 euros and93.6%.",
+    "Broader volume couples route length, minimum supply, daily capacity and backlog. Many added wins exceed550km. The current study isolates700km routes with original capacity and supply gates.",
+    "A separate15-minute hold-only control isolates the effect of matching from posting delay.",
+    "Whole-week scores and ledgers reconcile. Shared-gig fee lines have null orderId; individual order margins exclude shared costs and cannot be treated as net bundle profit.",
+    "Batch-timing replay on eight old development weeks gives266 pairs at15 minutes versus349 at30. Extra modeled saving is122.19 euros/week; this is not a causal profit forecast and does not yet justify a large timing sweep.",
+    "Long-route screen finds36.9 otherwise-feasible requests/week between550\u2013700km and10.4 between700\u2013900km. Dynamic capacity, wins and actual fulfillment remain unmodeled.",
+    "Hold-only control ends at6182.61/9323.63 euros. Its mean gain is495.84 euros versus the baseline; route pairing adds232.285 euros beyond the identical posting delay, positive on both screening seeds. Do not attribute all of the bundle treatment gain to matching.",
+    "700km-only bundle treatment ends at7407.63/9410.50 euros, minimum96.6% on time. It gains versus the old baseline in both weeks but not versus bundles alone. No900km experiment scheduled."
+  ],
+  "nextSteps": [
+    "Poll paired evaluation session65629; preserve its live manifest, which the runner writes. Do not modify the manifest while it is running.",
+    "Investigate structural ideas separately; the current candidate must remain frozen throughout fresh evaluation.",
+    "Once all16 trials finish, run analysis/frontier_validation.py on the explicit manifest and retain every outcome.",
+    "The hours parser has passed a45-case semantics probe but has not been integrated or tested for profit.",
+    "Push code checkpoints to codex/standalone-dispatcher as authorized."
+  ],
+  "validationStatus": "Candidate selected and frozen; fresh evaluation runner started, currently waiting on the server occupancy guard. No promotion or ranking submission.",
+  "checks": {
+    "nodeSuite": 89,
+    "pythonReportTests": 9,
+    "typecheck": "passed"
+  },
+  "completedControlsStudy": {
+    "sessionId": 72446,
+    "plan": "experiments/plans/frontier-bundle-controls.json",
+    "jobs": 2,
+    "frozenBundle": "runs/frozen/91d72cd6e55939326bd03b5d22793c4c4d54b7f8c0c262d3bc92e1a1b672b306/1e7efc49a28a23ae4617cdb8ec7c3a6684e74772eed38019c6a6b127ab40dc3e",
+    "firstWorlds": [
+      "w2d3a9c88f6ffd8d14e27",
+      "w5eebc0627e34e58dc24a"
+    ],
+    "terminal": true,
+    "study": "runs/study-1794613956170.json"
+  },
+  "completedConfirmationStudy": {
+    "sessionId": 83440,
+    "plan": "experiments/plans/frontier-confirmation.json",
+    "jobs": 2,
+    "trials": 12,
+    "protocol": "experiments/frontier-confirmation-protocol.json",
+    "frozenBundle": "runs/frozen/91d72cd6e55939326bd03b5d22793c4c4d54b7f8c0c262d3bc92e1a1b672b306/224d7efbdedcc7d9bc4d38f44561e85f1eb97ecf3729e60302fd585d758f731b",
+    "firstWorlds": [
+      "w96d2a3f86efc4146273b",
+      "w14d6b0034235af787311"
+    ],
+    "terminal": true,
+    "study": "runs/study-1794614812817.json"
+  },
+  "currentStudy": {
+    "sessionId": 65629,
+    "kind": "fresh paired evaluation",
+    "manifest": "experiments/frontier-validation-manifest.json",
+    "maximumJobs": 4,
+    "serverGuard": "Serialize creates; wait whenever four worlds are already unfinished.",
+    "trials": 16
+  },
+  "research": {
+    "noteHours": {
+      "parser": "research/note-hours/parser.ts",
+      "probeWorld": "wb318a0359116fd02c2a6",
+      "probeTerminal": true,
+      "truthCases": 45,
+      "unchangedCases": 44,
+      "unchangedUnmodeledRestrictions": 0,
+      "profitTested": false
+    },
+    "jointAcquisition": {
+      "directory": "research/joint-acquisition",
+      "screen": "docs/joint-acquisition-screen.json",
+      "finding": "Model-based screen:639 contemporaneous pairs across8 old weeks; joint pricing adds only88.46 euros/week beyond independent pricing with the same bundling savings. This does not justify integrating this particular model yet."
+    }
+  }
+}

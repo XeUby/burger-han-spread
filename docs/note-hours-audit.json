@@ -1,0 +1,6077 @@
+{
+  "parserSha256": "ef25daaf543becda6937d956758de0d2bce4f59480e361b142141330f990c385",
+  "scope": "Coverage on the eight explicitly named old development weeks; revealed-truth availability checked only in the24-world market-training allowlist.",
+  "summary": {
+    "eligibleUnsafeRequests": 1120,
+    "parsed": 281,
+    "meanParsedPerWeek": 35.125,
+    "pickupHours": 165,
+    "deliveryHours": 149,
+    "withReadiness": 36,
+    "historicalTruthCases": 0
+  },
+  "limitations": [
+    "Syntactic coverage does not prove simulator semantics or dispatch feasibility.",
+    "This parser is isolated research and is not enabled in any policy.",
+    "A targeted ordinary-practice reveal audit is required before integration; no inferred restriction should be dropped."
+  ],
+  "parsed": [
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00043",
+      "text": "kohde auki arkisin klo 7 - 21. nouto arkisin klo 8 - 16. avain autossa.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 324.1,
+      "supply": 18,
+      "listCents": 10100,
+      "feeCents": 12381,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1260
+        },
+        "pickup": {
+          "opens": 480,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00045",
+      "text": "Toimitusosoite auki arkisin klo 8.00 - 18.00. Kiitos etukäteen",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 353.5,
+      "supply": 18,
+      "listCents": 10800,
+      "feeCents": 11382,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00068",
+      "text": "Haettava ennen klo 18.00 / Collect before 18:00",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 110,
+      "supply": 65.10000000000002,
+      "listCents": 4400,
+      "feeCents": 5045,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00075",
+      "text": "Receiving 10:00-17:00 only",
+      "kinds": [],
+      "km": 12,
+      "supply": 12,
+      "listCents": 2300,
+      "feeCents": 2000,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 600,
+          "closes": 1020
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00125",
+      "text": "Receiving weekdays 8:00-20:00 only. Pickup weekdays 7:00-18:00 only",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 110,
+      "supply": 205.14999999999804,
+      "listCents": 4400,
+      "feeCents": 4867,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 1200
+        },
+        "pickup": {
+          "opens": 420,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00148",
+      "text": "Kohde sulkee klo 17",
+      "kinds": [],
+      "km": 65.8,
+      "supply": 174.29999999999848,
+      "listCents": 3400,
+      "feeCents": 3992,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 0,
+          "closes": 1020
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00175",
+      "text": "Collect before 15:30. Br, sales.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 308.5,
+      "supply": 65.10000000000002,
+      "listCents": 9700,
+      "feeCents": 9627,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 930
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00222",
+      "text": "hi there. receiving shop closes 6 pm. key box code 4306. thank you.",
+      "kinds": [],
+      "km": 110,
+      "supply": 205.14999999999804,
+      "listCents": 4800,
+      "feeCents": 5069,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 0,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00241",
+      "text": "auto valmis vasta ylihuomenna klo 7. kohde auki arkisin klo 9–21. kiitos paljon",
+      "kinds": [
+        "readiness",
+        "pickup-hours"
+      ],
+      "km": 161.7,
+      "supply": 467.4500000000003,
+      "listCents": 5600,
+      "feeCents": 6211,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 4740,
+        "delivery": {
+          "opens": 540,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00247",
+      "text": "Vastaanotto 8-16.30.",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 135.5,
+      "supply": 20.4,
+      "listCents": 5000,
+      "feeCents": 6564,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00288",
+      "text": "Nouto arkisin 9.00-16.00, t. myynti",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 125.1,
+      "supply": 65.10000000000002,
+      "listCents": 5100,
+      "feeCents": 6118,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00293",
+      "text": "liike kiinni klo 16.30, haettava ennen sitä!",
+      "kinds": [],
+      "km": 51.1,
+      "supply": 205.14999999999804,
+      "listCents": 3300,
+      "feeCents": 3257,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00301",
+      "text": "Auto valmis vasta huomenna klo 12. Vastaanotto klo 9 - 20. Soita ennen noutoa",
+      "kinds": [
+        "readiness",
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 51.1,
+      "supply": 467.4500000000003,
+      "listCents": 3300,
+      "feeCents": 3173,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 3600,
+        "delivery": {
+          "opens": 540,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00304",
+      "text": "Avoinna klo 7.00-18.00. Valmis noudettavaksi tänään klo 15.30 jälkeen. Avaimet toimistosta.",
+      "kinds": [
+        "readiness",
+        "pickup-hours"
+      ],
+      "km": 51.1,
+      "supply": 467.4500000000003,
+      "listCents": 3300,
+      "feeCents": 3093,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 2370,
+        "pickup": {
+          "opens": 420,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00321",
+      "text": "liike auki arkisin klo 9-16.30",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 51.1,
+      "supply": 467.4500000000003,
+      "listCents": 3300,
+      "feeCents": 3610,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00347",
+      "text": "Liike kiinni klo 18, haettava ennen sitä",
+      "kinds": [],
+      "km": 51.1,
+      "supply": 467.4500000000003,
+      "listCents": 3300,
+      "feeCents": 3007,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00388",
+      "text": "Moikka, huom aukioloajat arkisin klo 10 - 16.30.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 65.2,
+      "supply": 205.14999999999804,
+      "listCents": 3600,
+      "feeCents": 3675,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 600,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00420",
+      "text": "Nouto arkisin 8.00 - 16.30.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 49.9,
+      "supply": 174.29999999999848,
+      "listCents": 3200,
+      "feeCents": 3540,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 480,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00494",
+      "text": "moikka. nouto arkisin klo 10.00 - 15.00.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 64.1,
+      "supply": 467.4500000000003,
+      "listCents": 3600,
+      "feeCents": 4302,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 600,
+          "closes": 900
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00496",
+      "text": "destination closes at 17:00. extra set of tyres in the boot, take along.",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 639.1,
+      "supply": 40.050000000000004,
+      "listCents": 18000,
+      "feeCents": 18132,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 0,
+          "closes": 1020
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00564",
+      "text": "Hi. Open 9:00-14:30",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 270.9,
+      "supply": 467.4500000000003,
+      "listCents": 8800,
+      "feeCents": 8219,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 870
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00592",
+      "text": "Hei vaan. Noudettavissa aikaisintaan huomenna klo 10.30. Liike auki arkisin klo 8-18.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 78.5,
+      "supply": 174.29999999999848,
+      "listCents": 3700,
+      "feeCents": 4142,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 4950,
+        "pickup": {
+          "opens": 480,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00597",
+      "text": "open 9:00-16:30",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 222.5,
+      "supply": 37,
+      "listCents": 7600,
+      "feeCents": 8054,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00660",
+      "text": "We close at 15:00!",
+      "kinds": [],
+      "km": 121.7,
+      "supply": 467.4500000000003,
+      "listCents": 5000,
+      "feeCents": 4663,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 900
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00697",
+      "text": "Kohde auki 9.00 - 16.00",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 177.7,
+      "supply": 40.050000000000004,
+      "listCents": 6400,
+      "feeCents": 6713,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00767",
+      "text": "Vastaanottava liike auki 8-21. Voi noutaa huomenna klo 10.30 alkaen.",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 65.2,
+      "supply": 205.14999999999804,
+      "listCents": 3600,
+      "feeCents": 3413,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 6390,
+        "delivery": {
+          "opens": 480,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00774",
+      "text": "Noudettavissa arkisin 9.00-19.00.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 65.2,
+      "supply": 467.4500000000003,
+      "listCents": 3600,
+      "feeCents": 3837,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 1140
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00785",
+      "text": "Vastaanotto onnistuu arkisin 10.00–15.00.",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 51.1,
+      "supply": 205.14999999999804,
+      "listCents": 3300,
+      "feeCents": 3714,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 600,
+          "closes": 900
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00797",
+      "text": "nouto arkisin klo 10-14. kohde auki arkisin klo 7-21",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 51.4,
+      "supply": 34.40000000000001,
+      "listCents": 3300,
+      "feeCents": 3135,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1260
+        },
+        "pickup": {
+          "opens": 600,
+          "closes": 840
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00802",
+      "text": "Kohde auki arkisin 7 - 20",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 391,
+      "supply": 40.050000000000004,
+      "listCents": 11000,
+      "feeCents": 15373,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00814",
+      "text": "vastaanottava liike auki arkisin klo 9-16.",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 51.1,
+      "supply": 205.14999999999804,
+      "listCents": 3300,
+      "feeCents": 2469,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00818",
+      "text": "Liike kiinni klo 16, haettava ennen sitä.",
+      "kinds": [],
+      "km": 160.1,
+      "supply": 40.050000000000004,
+      "listCents": 6000,
+      "feeCents": 6579,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00821",
+      "text": "nouto arkisin klo 9-19",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 51.1,
+      "supply": 467.4500000000003,
+      "listCents": 3300,
+      "feeCents": 3461,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 1140
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00875",
+      "text": "We close at 18:00. Receiving weekdays 9:00-16:00 only.",
+      "kinds": [],
+      "km": 158.5,
+      "supply": 467.4500000000003,
+      "listCents": 6000,
+      "feeCents": 6308,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 960
+        },
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00892",
+      "text": "Destination closes at 17:00",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 236.6,
+      "supply": 40.050000000000004,
+      "listCents": 7900,
+      "feeCents": 10504,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 0,
+          "closes": 1020
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00901",
+      "text": "Nouto ennen klo 18. Avaimet toimistosta.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 197.5,
+      "supply": 20.650000000000002,
+      "listCents": 6900,
+      "feeCents": 7807,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00910",
+      "text": "ready, collect right away. receiving weekdays 7:00-20:00 only",
+      "kinds": [
+        "readiness",
+        "pickup-hours"
+      ],
+      "km": 240.9,
+      "supply": 205.14999999999804,
+      "listCents": 8000,
+      "feeCents": 7563,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R00960",
+      "text": "Hämtning vardagar 10-17",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 51.1,
+      "supply": 467.4500000000003,
+      "listCents": 3300,
+      "feeCents": 2988,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 600,
+          "closes": 1020
+        }
+      }
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "requestId": "R01020",
+      "text": "Valmiina pihalla. Vastaanotto ma-pe klo 9–21. Avaimet huollon tiskiltä",
+      "kinds": [
+        "readiness",
+        "delivery-time"
+      ],
+      "km": 163,
+      "supply": 467.4500000000003,
+      "listCents": 6100,
+      "feeCents": 11307,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00011",
+      "text": "Haettava ennen klo 18, soita asiakkaalle tuntia ennen perillä oloa, terveisin myynti.",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 332.9,
+      "supply": 119,
+      "listCents": 9600,
+      "feeCents": 9631,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00055",
+      "text": "Liike kiinni klo 14.30, haettava ennen sitä. Kohde auki klo 8-21",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 185.8,
+      "supply": 55,
+      "listCents": 6600,
+      "feeCents": 8857,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 1260
+        },
+        "pickup": {
+          "opens": 0,
+          "closes": 870
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00096",
+      "text": "moi, liike auki arkisin klo 9 - 18",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 602.1,
+      "supply": 442.85000000000036,
+      "listCents": 15900,
+      "feeCents": 15203,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00114",
+      "text": "liike auki 9-16.30.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 232.9,
+      "supply": 23.35,
+      "listCents": 7800,
+      "feeCents": 9182,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00116",
+      "text": "Receiving 9:00-21:00 only.",
+      "kinds": [],
+      "km": 65.2,
+      "supply": 174.69999999999845,
+      "listCents": 3600,
+      "feeCents": 3371,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00134",
+      "text": "Receiving 9:00 - 21:00 only.",
+      "kinds": [],
+      "km": 135.5,
+      "supply": 28.700000000000003,
+      "listCents": 5400,
+      "feeCents": 6392,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00140",
+      "text": "Hi there. Receiving weekdays 9:00-17:00 only. Pickup weekdays 7:00-18:00 only. Call 10 min before you arrive.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 172.4,
+      "supply": 55,
+      "listCents": 6300,
+      "feeCents": 5740,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1020
+        },
+        "pickup": {
+          "opens": 420,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00221",
+      "text": "Vastaanotto arkisin 9-18.",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 444.7,
+      "supply": 119,
+      "listCents": 13100,
+      "feeCents": 12392,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00239",
+      "text": "vastaanotto klo 8-16",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 241.6,
+      "supply": 13,
+      "listCents": 8700,
+      "feeCents": 9167,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00245",
+      "text": "Vastaanotto arkisin klo 7-21, hyvää päivänjatkoa",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 384.4,
+      "supply": 24,
+      "listCents": 11600,
+      "feeCents": 10762,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00252",
+      "text": "We close at 18:00",
+      "kinds": [],
+      "km": 219,
+      "supply": 442.85000000000036,
+      "listCents": 7500,
+      "feeCents": 8185,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00287",
+      "text": "Nouto ennen klo 14.30",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 147.4,
+      "supply": 28.700000000000003,
+      "listCents": 5300,
+      "feeCents": 6105,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 870
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00308",
+      "text": "hello. receiving weekdays 9:00 - 21:00 only. open weekdays 8:00 - 20:00",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 411.6,
+      "supply": 442.85000000000036,
+      "listCents": 12300,
+      "feeCents": 17789,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1260
+        },
+        "pickup": {
+          "opens": 480,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00361",
+      "text": "kohde auki arkisin 7 - 20",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 28.5,
+      "supply": 442.85000000000036,
+      "listCents": 2700,
+      "feeCents": 2000,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00364",
+      "text": "huom aukioloajat 7.00-18.00",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 160.8,
+      "supply": 442.85000000000036,
+      "listCents": 6000,
+      "feeCents": 7332,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 420,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00382",
+      "text": "Pickup weekdays 10:00-16:00 only",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 355.2,
+      "supply": 174.69999999999845,
+      "listCents": 10900,
+      "feeCents": 11503,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 600,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00388",
+      "text": "Vastaanotto 8 - 16",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 158.5,
+      "supply": 442.85000000000036,
+      "listCents": 6000,
+      "feeCents": 5757,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00397",
+      "text": "we close at 20:00",
+      "kinds": [],
+      "km": 240.9,
+      "supply": 174.69999999999845,
+      "listCents": 7500,
+      "feeCents": 7577,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00438",
+      "text": "hei vaan. nouto ennen klo 14.30. tilausnumero 257008",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 108.5,
+      "supply": 15.849999999999996,
+      "listCents": 4700,
+      "feeCents": 5472,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 870
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00444",
+      "text": "Auto valmiina, haettavissa heti. Vastaanottava liike auki arkisin 7.00-16.00. Ilmoita kun lähdet. Hyvää päivänjatkoa.",
+      "kinds": [
+        "readiness",
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 161.7,
+      "supply": 442.85000000000036,
+      "listCents": 6000,
+      "feeCents": 6782,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00474",
+      "text": "Nouto klo 9-15.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 51.1,
+      "supply": 442.85000000000036,
+      "listCents": 3300,
+      "feeCents": 2765,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 900
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00532",
+      "text": "nouto arkisin klo 9-16.30.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 396.8,
+      "supply": 442.85000000000036,
+      "listCents": 11100,
+      "feeCents": 11723,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00571",
+      "text": "Kohde auki klo 9-15",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 602.1,
+      "supply": 33.7,
+      "listCents": 17100,
+      "feeCents": 21745,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 900
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00572",
+      "text": "receiving weekdays 7:00 - 21:00 only",
+      "kinds": [],
+      "km": 602.1,
+      "supply": 442.85000000000036,
+      "listCents": 17100,
+      "feeCents": 16884,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00680",
+      "text": "Hi. Receiving weekdays 7:00 - 21:00 only. Second set of wheels in the back.",
+      "kinds": [],
+      "km": 51.1,
+      "supply": 442.85000000000036,
+      "listCents": 3300,
+      "feeCents": 3453,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00685",
+      "text": "huom aukioloajat klo 9-16",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 22.5,
+      "supply": 442.85000000000036,
+      "listCents": 2600,
+      "feeCents": 2000,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00698",
+      "text": "Open weekdays 7:00-18:00. Destination open weekdays 7:00-15:00",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 178.6,
+      "supply": 174.69999999999845,
+      "listCents": 6500,
+      "feeCents": 6194,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 900
+        },
+        "pickup": {
+          "opens": 420,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00717",
+      "text": "vastaanottava liike auki arkisin klo 7-20.",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 28.5,
+      "supply": 442.85000000000036,
+      "listCents": 2700,
+      "feeCents": 2030,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00726",
+      "text": "Kohde auki arkisin 9-20. Kiitos etukäteen",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 185.8,
+      "supply": 55,
+      "listCents": 6600,
+      "feeCents": 6839,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00764",
+      "text": "Kohde auki arkisin 9-20. Haettava ennen klo 17!",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 232.9,
+      "supply": 23.35,
+      "listCents": 7300,
+      "feeCents": 7668,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1200
+        },
+        "pickup": {
+          "opens": 0,
+          "closes": 1020
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00812",
+      "text": "vastaanottava liike auki arkisin 10-16.30. kiitos",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 22.5,
+      "supply": 442.85000000000036,
+      "listCents": 2400,
+      "feeCents": 2000,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 600,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00832",
+      "text": "Receiving weekdays 10:00 - 17:00 only",
+      "kinds": [],
+      "km": 172.4,
+      "supply": 442.85000000000036,
+      "listCents": 5900,
+      "feeCents": 5958,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 600,
+          "closes": 1020
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00840",
+      "text": "Kohde auki klo 9-16, meidän viite 492496.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 417.8,
+      "supply": 442.85000000000036,
+      "listCents": 11600,
+      "feeCents": 17836,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00851",
+      "text": "huom aukioloajat 8-14. soita asap jos tulee ongelmia",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 355.2,
+      "supply": 24,
+      "listCents": 10900,
+      "feeCents": 10824,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 480,
+          "closes": 840
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00873",
+      "text": "Huom aukioloajat arkisin klo 7-18",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 479.2,
+      "supply": 174.69999999999845,
+      "listCents": 14000,
+      "feeCents": 18458,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 420,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00897",
+      "text": "Moi, vastaanottava liike auki arkisin klo 7.00-21.00, kiitos taas.",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 232.9,
+      "supply": 174.69999999999845,
+      "listCents": 7800,
+      "feeCents": 9823,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00908",
+      "text": "Open 7:00 - 18:00.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 68.8,
+      "supply": 174.69999999999845,
+      "listCents": 3700,
+      "feeCents": 3248,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 420,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00986",
+      "text": "Vastaanotto arkisin klo 10 - 16.30. Ilmoita kun lähdet!",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 194.4,
+      "supply": 119,
+      "listCents": 6900,
+      "feeCents": 8890,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 600,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R00988",
+      "text": "Destination open weekdays 7:00-17:00, second set of wheels in the back.",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 22.5,
+      "supply": 442.85000000000036,
+      "listCents": 2600,
+      "feeCents": 2000,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1020
+        }
+      }
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "requestId": "R01014",
+      "text": "vastaanotto ma-pe 9:00-20:00 / receiving weekdays 9:00-20:00 only.",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 110,
+      "supply": 174.69999999999845,
+      "listCents": 4800,
+      "feeCents": 4727,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00018",
+      "text": "nouto ennen klo 17. huolto kesken, valmis huomenna klo 7.",
+      "kinds": [
+        "readiness",
+        "pickup-hours"
+      ],
+      "km": 125.1,
+      "supply": 156.6499999999987,
+      "listCents": 5100,
+      "feeCents": 4745,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 1860,
+        "pickup": {
+          "opens": 0,
+          "closes": 1020
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00049",
+      "text": "Noudettavissa aikaisintaan huomenna klo 12.00. Vastaanotto arkisin 9.00-21.00.",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 270.9,
+      "supply": 31.35,
+      "listCents": 8800,
+      "feeCents": 10549,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 2160,
+        "delivery": {
+          "opens": 540,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00078",
+      "text": "collect before 19:00. receiving weekdays 7:00-20:00 only. ref 276294.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 31.1,
+      "supply": 393.85,
+      "listCents": 2800,
+      "feeCents": 2000,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1200
+        },
+        "pickup": {
+          "opens": 0,
+          "closes": 1140
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00079",
+      "text": "liike auki arkisin klo 7.00-17.00",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 64.1,
+      "supply": 393.85,
+      "listCents": 3400,
+      "feeCents": 3066,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 420,
+          "closes": 1020
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00082",
+      "text": "hi there, destination open 9:00-20:00",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 551.4,
+      "supply": 12.399999999999999,
+      "listCents": 14700,
+      "feeCents": 20115,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00135",
+      "text": "terve, kohteen aukioloajat klo 8-21, avain autossa.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 110,
+      "supply": 24.75,
+      "listCents": 4400,
+      "feeCents": 5052,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00248",
+      "text": "mottagning vardagar 8-21 / vastaanotto arkisin klo 8-21. nycklar i receptionen.",
+      "kinds": [
+        "readiness",
+        "delivery-time"
+      ],
+      "km": 22.5,
+      "supply": 393.85,
+      "listCents": 2600,
+      "feeCents": 2000,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00294",
+      "text": "nouto ennen klo 19. vastaanottava liike auki arkisin klo 7-20. 2 sarjaa renkaita, toinen sarja kontissa",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 593.2,
+      "supply": 118,
+      "listCents": 15700,
+      "feeCents": 17070,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1200
+        },
+        "pickup": {
+          "opens": 0,
+          "closes": 1140
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00336",
+      "text": "moikka, vastaanottava liike auki arkisin 10.00-16.30, kiitos taas.",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 332.9,
+      "supply": 118,
+      "listCents": 10300,
+      "feeCents": 8932,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 600,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00389",
+      "text": "kohde sulkee klo 16.30. huom aukioloajat 7-19",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 68.8,
+      "supply": 156.6499999999987,
+      "listCents": 3500,
+      "feeCents": 4707,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 0,
+          "closes": 990
+        },
+        "pickup": {
+          "opens": 420,
+          "closes": 1140
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00430",
+      "text": "Destination open weekdays 9:00-18:00.",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 65.8,
+      "supply": 393.85,
+      "listCents": 3400,
+      "feeCents": 3724,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00491",
+      "text": "we close at 14:00. thanks",
+      "kinds": [],
+      "km": 308.7,
+      "supply": 12,
+      "listCents": 9000,
+      "feeCents": 12430,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 840
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00524",
+      "text": "Liike kiinni klo 14.30, haettava ennen sitä",
+      "kinds": [],
+      "km": 235.2,
+      "supply": 12.399999999999999,
+      "listCents": 7900,
+      "feeCents": 8889,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 870
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00537",
+      "text": "Kohde auki arkisin klo 7 - 20.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 593.2,
+      "supply": 393.85,
+      "listCents": 15700,
+      "feeCents": 16362,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00548",
+      "text": "Collect before 19:00. Thanks in advance",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 51.1,
+      "supply": 156.6499999999987,
+      "listCents": 3000,
+      "feeCents": 3472,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 1140
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00561",
+      "text": "Haettava ennen klo 15.30. Avain avainboksissa, koodi 8340",
+      "kinds": [],
+      "km": 571,
+      "supply": 156.6499999999987,
+      "listCents": 15100,
+      "feeCents": 18221,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 930
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00570",
+      "text": "Nouto ennen klo 14.30! Noudettavissa aikaisintaan huomenna klo 9. t. myynti",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 144.5,
+      "supply": 393.85,
+      "listCents": 5200,
+      "feeCents": 5540,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 4860,
+        "pickup": {
+          "opens": 0,
+          "closes": 870
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00572",
+      "text": "Receiving weekdays 8:00-16:00 only. In the workshop, ready tomorrow 7:00",
+      "kinds": [
+        "readiness"
+      ],
+      "km": 87.2,
+      "supply": 40.20000000000001,
+      "listCents": 4200,
+      "feeCents": 4374,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 4740,
+        "delivery": {
+          "opens": 480,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00589",
+      "text": "Vastaanottava liike auki arkisin klo 7-18",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 639.1,
+      "supply": 12.399999999999999,
+      "listCents": 18000,
+      "feeCents": 26580,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00632",
+      "text": "Liike kiinni klo 18, haettava ennen sitä. Kohde auki 9-21",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 166.4,
+      "supply": 393.85,
+      "listCents": 6200,
+      "feeCents": 6111,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1260
+        },
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00661",
+      "text": "Nouto arkisin 10.00-17.00.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 68.8,
+      "supply": 156.6499999999987,
+      "listCents": 3700,
+      "feeCents": 4880,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 600,
+          "closes": 1020
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00684",
+      "text": "kohde auki arkisin klo 9-20",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 99.8,
+      "supply": 40.20000000000001,
+      "listCents": 4500,
+      "feeCents": 5022,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00689",
+      "text": "Haettava ennen klo 19.00. Vastaanotto arkisin klo 8.00-20.00.",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 68.8,
+      "supply": 156.6499999999987,
+      "listCents": 3700,
+      "feeCents": 3510,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 1200
+        },
+        "pickup": {
+          "opens": 0,
+          "closes": 1140
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00748",
+      "text": "Vastaanotto arkisin klo 8-20",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 110,
+      "supply": 156.6499999999987,
+      "listCents": 4400,
+      "feeCents": 4530,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00752",
+      "text": "Destination open 9:00-17:00, thank you",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 147.4,
+      "supply": 12.399999999999999,
+      "listCents": 5700,
+      "feeCents": 8277,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1020
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00775",
+      "text": "in the workshop, ready tomorrow 10:45. pickup 9:00-19:00 only",
+      "kinds": [
+        "readiness",
+        "pickup-hours"
+      ],
+      "km": 250.5,
+      "supply": 28,
+      "listCents": 8300,
+      "feeCents": 10360,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 6405,
+        "pickup": {
+          "opens": 540,
+          "closes": 1140
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00781",
+      "text": "vastaanottava liike auki arkisin 10-16.30",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 406.2,
+      "supply": 156.6499999999987,
+      "listCents": 11300,
+      "feeCents": 12494,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 600,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00793",
+      "text": "voi noutaa huomenna klo 7 alkaen. vastaanotto arkisin 7-21. viite 983483.",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 236.6,
+      "supply": 40.20000000000001,
+      "listCents": 7900,
+      "feeCents": 8936,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 6180,
+        "delivery": {
+          "opens": 420,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00901",
+      "text": "Moi, vastaanotto arkisin klo 7-16.30",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 216.3,
+      "supply": 145.54999999999887,
+      "listCents": 7400,
+      "feeCents": 7310,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00939",
+      "text": "Vastaanottava liike auki arkisin 8-17.",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 87.2,
+      "supply": 40.20000000000001,
+      "listCents": 4200,
+      "feeCents": 4652,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 1020
+        }
+      }
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "requestId": "R00941",
+      "text": "Kohde auki arkisin 7.00-20.00, varaus 608285.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 51.1,
+      "supply": 393.85,
+      "listCents": 3300,
+      "feeCents": 3220,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00042",
+      "text": "Huom aukioloajat arkisin klo 9-17, kiitos etukäteen.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 64.1,
+      "supply": 385.6,
+      "listCents": 3600,
+      "feeCents": 3520,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 1020
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00059",
+      "text": "vastaanotto arkisin klo 9 - 18",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 355.2,
+      "supply": 49,
+      "listCents": 10900,
+      "feeCents": 13580,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00077",
+      "text": "Pickup 9:00-14:30 only",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 140,
+      "supply": 49,
+      "listCents": 5500,
+      "feeCents": 6504,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 870
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00092",
+      "text": "Hi there. Open weekdays 10:00 - 14:00",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 61.9,
+      "supply": 41.550000000000004,
+      "listCents": 3300,
+      "feeCents": 3771,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 600,
+          "closes": 840
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00095",
+      "text": "Hej. Hämtning vardagar 9.00-16.00.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 61.9,
+      "supply": 41.550000000000004,
+      "listCents": 3300,
+      "feeCents": 3615,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00101",
+      "text": "Auto valmis vasta huomenna klo 13.30. Vastaanotto arkisin klo 8-20. Tilausnumero 970349",
+      "kinds": [
+        "readiness",
+        "delivery-time"
+      ],
+      "km": 335.5,
+      "supply": 385.6,
+      "listCents": 10400,
+      "feeCents": 12238,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 2250,
+        "delivery": {
+          "opens": 480,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00167",
+      "text": "Auto valmiina, haettavissa heti. Vastaanotto ma-pe klo 7:00–16:00. Soita 20 min ennen",
+      "kinds": [
+        "readiness",
+        "delivery-time"
+      ],
+      "km": 353.5,
+      "supply": 385.6,
+      "listCents": 10800,
+      "feeCents": 12300,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00181",
+      "text": "Huom aukioloajat klo 9.00-20.00.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 602.1,
+      "supply": 385.6,
+      "listCents": 17100,
+      "feeCents": 18115,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00253",
+      "text": "Pickup 10:00-15:30 only",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 217.8,
+      "supply": 154.74999999999886,
+      "listCents": 6900,
+      "feeCents": 7400,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 600,
+          "closes": 930
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00281",
+      "text": "Kohde auki arkisin 8-20. Liike kiinni klo 14, haettava ennen sitä. t. myynti",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 369.3,
+      "supply": 154.74999999999886,
+      "listCents": 11200,
+      "feeCents": 11615,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 1200
+        },
+        "pickup": {
+          "opens": 0,
+          "closes": 840
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00299",
+      "text": "Pickup 9:00-20:00 only. Ref 524920.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 124.3,
+      "supply": 154.74999999999886,
+      "listCents": 5100,
+      "feeCents": 5836,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00344",
+      "text": "Liike kiinni klo 16, haettava ennen sitä",
+      "kinds": [],
+      "km": 166.4,
+      "supply": 385.6,
+      "listCents": 6200,
+      "feeCents": 5870,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00379",
+      "text": "Huom aukioloajat arkisin klo 9 - 19. Voi noutaa huomenna klo 13 alkaen. Avaimet myyjältä",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 153.3,
+      "supply": 27.250000000000007,
+      "listCents": 5800,
+      "feeCents": 6426,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 3660,
+        "pickup": {
+          "opens": 540,
+          "closes": 1140
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00424",
+      "text": "Liike kiinni klo 15, haettava ennen sitä.",
+      "kinds": [],
+      "km": 217.8,
+      "supply": 154.74999999999886,
+      "listCents": 7400,
+      "feeCents": 7367,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 900
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00459",
+      "text": "Liike auki arkisin klo 7-17",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 217.8,
+      "supply": 37,
+      "listCents": 8000,
+      "feeCents": 7804,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 420,
+          "closes": 1020
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00463",
+      "text": "haettava ennen klo 18",
+      "kinds": [],
+      "km": 87.2,
+      "supply": 14.249999999999996,
+      "listCents": 3900,
+      "feeCents": 4111,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00495",
+      "text": "hi there. receiving weekdays 7:00 - 20:00 only. not ready before tomorrow 10:30.",
+      "kinds": [
+        "readiness"
+      ],
+      "km": 108.5,
+      "supply": 14.249999999999996,
+      "listCents": 4700,
+      "feeCents": 5574,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 4950,
+        "delivery": {
+          "opens": 420,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00509",
+      "text": "Liike kiinni klo 15, haettava ennen sitä. Kiitos",
+      "kinds": [],
+      "km": 65.2,
+      "supply": 385.6,
+      "listCents": 3600,
+      "feeCents": 3276,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 900
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00541",
+      "text": "Kohde sulkee klo 15. Nouto ennen klo 18",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 270.9,
+      "supply": 385.6,
+      "listCents": 8800,
+      "feeCents": 7581,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 0,
+          "closes": 900
+        },
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00569",
+      "text": "Destination open 9:00 - 16:30. Order no 216778",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 12,
+      "supply": 27.250000000000007,
+      "listCents": 2100,
+      "feeCents": 2000,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00619",
+      "text": "Vastaanottava liike auki arkisin 7 - 20. Kiitos paljon",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 384.4,
+      "supply": 385.6,
+      "listCents": 11600,
+      "feeCents": 13016,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00655",
+      "text": "Kohde auki klo 8-20. Auto valmiina, haettavissa heti.",
+      "kinds": [
+        "readiness",
+        "pickup-hours"
+      ],
+      "km": 332.9,
+      "supply": 50,
+      "listCents": 9600,
+      "feeCents": 9816,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00672",
+      "text": "Huom aukioloajat arkisin klo 9-15. Soita asap jos tulee ongelmia",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 31.1,
+      "supply": 385.6,
+      "listCents": 2800,
+      "feeCents": 2000,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 900
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00674",
+      "text": "huolto kesken, valmis huomenna klo 7.00. liike auki 7.00-19.00. meidän viite 629519.",
+      "kinds": [
+        "readiness",
+        "pickup-hours"
+      ],
+      "km": 571,
+      "supply": 154.74999999999886,
+      "listCents": 16300,
+      "feeCents": 15604,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 6180,
+        "pickup": {
+          "opens": 420,
+          "closes": 1140
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00686",
+      "text": "Destination open weekdays 7:00-21:00. Our ref: 937770.",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 270.9,
+      "supply": 50,
+      "listCents": 8800,
+      "feeCents": 9209,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00734",
+      "text": "Kohde auki arkisin klo 7–21",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 108.5,
+      "supply": 385.6,
+      "listCents": 4700,
+      "feeCents": 4475,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00749",
+      "text": "vastaanottava liike auki arkisin 7.00 - 21.00. nouto ennen klo 18.00",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 639.1,
+      "supply": 27.250000000000007,
+      "listCents": 18000,
+      "feeCents": 24756,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1260
+        },
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00753",
+      "text": "Kohde auki arkisin 9 - 15.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 110,
+      "supply": 154.74999999999886,
+      "listCents": 4800,
+      "feeCents": 4702,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 900
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00775",
+      "text": "moi. auto valmis, nouto heti kun sopii. kohde auki arkisin klo 9 - 20. avaimet toimistosta.",
+      "kinds": [
+        "readiness",
+        "pickup-hours"
+      ],
+      "km": 479.2,
+      "supply": 154.74999999999886,
+      "listCents": 13000,
+      "feeCents": 20534,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00795",
+      "text": "Auto valmis vasta huomenna klo 9.00. Nouto arkisin klo 9.00-18.00.",
+      "kinds": [
+        "readiness",
+        "pickup-hours"
+      ],
+      "km": 378,
+      "supply": 14.249999999999996,
+      "listCents": 11500,
+      "feeCents": 14528,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 6300,
+        "pickup": {
+          "opens": 540,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00864",
+      "text": "Destination open weekdays 9:00-18:00, ref 92971",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 178.6,
+      "supply": 154.74999999999886,
+      "listCents": 6500,
+      "feeCents": 6882,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R00911",
+      "text": "liike auki arkisin 7-18.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 406.2,
+      "supply": 154.74999999999886,
+      "listCents": 12200,
+      "feeCents": 11726,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 420,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "requestId": "R01032",
+      "text": "vastaanottava liike auki arkisin klo 7 - 21.",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 61.9,
+      "supply": 17.549999999999997,
+      "listCents": 3500,
+      "feeCents": 4652,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00032",
+      "text": "Huom aukioloajat arkisin klo 9.00-15.00, soita ennen noutoa.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 110,
+      "supply": 156.39999999999893,
+      "listCents": 4800,
+      "feeCents": 5331,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 900
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00035",
+      "text": "open 8:00 - 16:30. summer tyres in the trunk, go with the car.",
+      "kinds": [
+        "pickup-hours",
+        "tyres-or-weather"
+      ],
+      "km": 270.9,
+      "supply": 362.2500000000001,
+      "listCents": 8800,
+      "feeCents": 8617,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 480,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00041",
+      "text": "Vastaanotto 8 - 21. Avaimet toimistosta",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 51.1,
+      "supply": 156.39999999999893,
+      "listCents": 3000,
+      "feeCents": 2683,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00044",
+      "text": "hi there, collect before 3pm! thank you",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 51.1,
+      "supply": 156.39999999999893,
+      "listCents": 3000,
+      "feeCents": 3227,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 900
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00066",
+      "text": "Auto valmis vasta huomenna klo 13. Liike kiinni klo 18, haettava ennen sitä. Avaimet toimistosta",
+      "kinds": [
+        "readiness"
+      ],
+      "km": 444.7,
+      "supply": 362.2500000000001,
+      "listCents": 12200,
+      "feeCents": 12147,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 2220,
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00139",
+      "text": "hi there. destination open weekdays 9:00-20:00. not ready before tomorrow 13:00",
+      "kinds": [
+        "readiness",
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 68.8,
+      "supply": 12.149999999999993,
+      "listCents": 3700,
+      "feeCents": 4565,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 2220,
+        "delivery": {
+          "opens": 540,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00184",
+      "text": "Haettava ennen klo 19. Voi noutaa huomenna klo 12 alkaen. Avaimet huollosta",
+      "kinds": [],
+      "km": 124.3,
+      "supply": 62,
+      "listCents": 4700,
+      "feeCents": 5684,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 2160,
+        "pickup": {
+          "opens": 0,
+          "closes": 1140
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00269",
+      "text": "Pickup 7:00 - 15:00 only. Br, sales.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 177.7,
+      "supply": 362.2500000000001,
+      "listCents": 6000,
+      "feeCents": 6529,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 420,
+          "closes": 900
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00290",
+      "text": "Vastaanottava liike auki arkisin klo 9-20. t. myynti",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 51.1,
+      "supply": 362.2500000000001,
+      "listCents": 3300,
+      "feeCents": 3175,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00291",
+      "text": "kohde auki 10–16.30. kiitos paljon.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 183.7,
+      "supply": 85.1,
+      "listCents": 6600,
+      "feeCents": 7199,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 600,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00321",
+      "text": "Moi, haettava ennen klo 18.00.",
+      "kinds": [],
+      "km": 65.2,
+      "supply": 156.39999999999893,
+      "listCents": 3600,
+      "feeCents": 3113,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00394",
+      "text": "receiving shop closes 4 pm, second set of wheels in the back",
+      "kinds": [],
+      "km": 270.9,
+      "supply": 362.2500000000001,
+      "listCents": 8800,
+      "feeCents": 11856,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 0,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00430",
+      "text": "Destination closes at 15:00. We close at 18:00.",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 28.5,
+      "supply": 362.2500000000001,
+      "listCents": 2700,
+      "feeCents": 2000,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 0,
+          "closes": 900
+        },
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00441",
+      "text": "Noudettavissa aikaisintaan huomenna klo 10.30. Kohde auki arkisin klo 8-20",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 147.4,
+      "supply": 62.35,
+      "listCents": 5700,
+      "feeCents": 6383,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 3510,
+        "delivery": {
+          "opens": 480,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00454",
+      "text": "Receiving weekdays 9:00-21:00 only.",
+      "kinds": [],
+      "km": 571,
+      "supply": 42,
+      "listCents": 15100,
+      "feeCents": 15854,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00457",
+      "text": "haettava ennen klo 15. meidän viite 610654. kiitos",
+      "kinds": [],
+      "km": 150.2,
+      "supply": 17.149999999999995,
+      "listCents": 5800,
+      "feeCents": 6243,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 900
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00471",
+      "text": "hei. noudettavissa arkisin klo 9.00-15.00",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 51.1,
+      "supply": 156.39999999999893,
+      "listCents": 3300,
+      "feeCents": 4056,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 900
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00475",
+      "text": "kohde auki 8-20. nouto 8-17. kiitti.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 12,
+      "supply": 17.149999999999995,
+      "listCents": 2300,
+      "feeCents": 2000,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 1200
+        },
+        "pickup": {
+          "opens": 480,
+          "closes": 1020
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00529",
+      "text": "Nouto ennen klo 19.00. Noudettavissa aikaisintaan huomenna klo 13.00",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 51.1,
+      "supply": 156.39999999999893,
+      "listCents": 3000,
+      "feeCents": 4113,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 5100,
+        "pickup": {
+          "opens": 0,
+          "closes": 1140
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00555",
+      "text": "Vastaanottava liike auki arkisin 7-21, kiitos paljon",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 106.8,
+      "supply": 362.2500000000001,
+      "listCents": 4700,
+      "feeCents": 5002,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00595",
+      "text": "Kohde auki arkisin klo 8.00-21.00. Auto valmis, nouto heti kun sopii. Ilmoita kun lähdet",
+      "kinds": [
+        "readiness",
+        "pickup-hours"
+      ],
+      "km": 169.6,
+      "supply": 28.7,
+      "listCents": 6200,
+      "feeCents": 7190,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00606",
+      "text": "Vastaanottava liike auki arkisin klo 7-20. Kiitos paljon.",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 434.8,
+      "supply": 362.2500000000001,
+      "listCents": 12900,
+      "feeCents": 15171,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00608",
+      "text": "nouto ennen klo 16.30!",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 96.6,
+      "supply": 362.2500000000001,
+      "listCents": 4100,
+      "feeCents": 4276,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00614",
+      "text": "we close at 20:00. receiving weekdays 9:00 - 20:00 only",
+      "kinds": [],
+      "km": 51.1,
+      "supply": 156.39999999999893,
+      "listCents": 3300,
+      "feeCents": 3093,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1200
+        },
+        "pickup": {
+          "opens": 0,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00669",
+      "text": "nouto ennen klo 18",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 161.2,
+      "supply": 62,
+      "listCents": 6000,
+      "feeCents": 6319,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00694",
+      "text": "nouto ennen klo 20, tilausnumero 782948",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 65.2,
+      "supply": 362.2500000000001,
+      "listCents": 3600,
+      "feeCents": 4047,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00764",
+      "text": "Hello. Not ready before tomorrow 12:30. Receiving weekdays 8:00-20:00 only. Extra set of tyres in the boot, take along",
+      "kinds": [
+        "readiness"
+      ],
+      "km": 96.6,
+      "supply": 362.2500000000001,
+      "listCents": 4400,
+      "feeCents": 3675,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 6510,
+        "delivery": {
+          "opens": 480,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00781",
+      "text": "Terve. Haettava ennen klo 15.",
+      "kinds": [],
+      "km": 288.1,
+      "supply": 17.149999999999995,
+      "listCents": 9900,
+      "feeCents": 9584,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 900
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00784",
+      "text": "Open weekdays 9:00 - 18:00. Thanks.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 51.1,
+      "supply": 156.39999999999893,
+      "listCents": 3300,
+      "feeCents": 3037,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00789",
+      "text": "Moi. Nouto arkisin 9–18.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 51.1,
+      "supply": 362.2500000000001,
+      "listCents": 3300,
+      "feeCents": 3599,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00794",
+      "text": "haettava ennen klo 20.00.",
+      "kinds": [],
+      "km": 31.1,
+      "supply": 362.2500000000001,
+      "listCents": 2800,
+      "feeCents": 2059,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00801",
+      "text": "Moikka. Liike kiinni klo 15.30, haettava ennen sitä. Viitenro 470567. Kiitos etukäteen",
+      "kinds": [],
+      "km": 161.7,
+      "supply": 85.1,
+      "listCents": 6000,
+      "feeCents": 6617,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 930
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00807",
+      "text": "Kohde auki arkisin 10-16.30, lisäksi 4 kesärengasta tavaratilassa",
+      "kinds": [
+        "pickup-hours",
+        "tyres-or-weather"
+      ],
+      "km": 124.3,
+      "supply": 62,
+      "listCents": 4700,
+      "feeCents": 6295,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 600,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00832",
+      "text": "Hei. Vastaanotto arkisin klo 7-20. Liike auki arkisin klo 7-19",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 151,
+      "supply": 85.1,
+      "listCents": 5400,
+      "feeCents": 5314,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1200
+        },
+        "pickup": {
+          "opens": 420,
+          "closes": 1140
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00842",
+      "text": "Open weekdays 9:00-16:30.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 142.6,
+      "supply": 85.1,
+      "listCents": 5600,
+      "feeCents": 5862,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00891",
+      "text": "kohde auki arkisin klo 8.00-21.00",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 324.1,
+      "supply": 18,
+      "listCents": 10100,
+      "feeCents": 11609,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00895",
+      "text": "hämtning vardagar kl 9 - 18.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 232.9,
+      "supply": 156.39999999999893,
+      "listCents": 7800,
+      "feeCents": 7359,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "requestId": "R00914",
+      "text": "Haettava ennen klo 18",
+      "kinds": [],
+      "km": 22.5,
+      "supply": 362.2500000000001,
+      "listCents": 2600,
+      "feeCents": 2000,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00065",
+      "text": "noudettavissa arkisin klo 9:00-16:00",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 65.2,
+      "supply": 207.2499999999982,
+      "listCents": 3600,
+      "feeCents": 3772,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00124",
+      "text": "Destination closes at 15:00",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 28.5,
+      "supply": 489.90000000000043,
+      "listCents": 2700,
+      "feeCents": 2000,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 0,
+          "closes": 900
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00135",
+      "text": "liike kiinni klo 18.00, haettava ennen sitä. kohde sulkee klo 16.30",
+      "kinds": [],
+      "km": 232.9,
+      "supply": 207.2499999999982,
+      "listCents": 7800,
+      "feeCents": 7323,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 0,
+          "closes": 990
+        },
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00150",
+      "text": "nouto arkisin 9 - 18. kiitos etukäteen.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 28.5,
+      "supply": 489.90000000000043,
+      "listCents": 2700,
+      "feeCents": 2000,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00180",
+      "text": "Noudettavissa arkisin klo 10-14.30",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 51.1,
+      "supply": 207.2499999999982,
+      "listCents": 3000,
+      "feeCents": 2964,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 600,
+          "closes": 870
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00181",
+      "text": "Nouto ennen klo 18",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 21.4,
+      "supply": 121.64999999999998,
+      "listCents": 2400,
+      "feeCents": 2000,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00245",
+      "text": "Kohde auki arkisin klo 8-20",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 49.9,
+      "supply": 489.90000000000043,
+      "listCents": 3200,
+      "feeCents": 2831,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00265",
+      "text": "Nouto ennen klo 18. Avain avainboksissa, koodi 1649",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 145.5,
+      "supply": 28,
+      "listCents": 5200,
+      "feeCents": 6092,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00289",
+      "text": "nouto arkisin 9-17. auto valmis vasta huomenna klo 7. kiitos etukäteen",
+      "kinds": [
+        "readiness",
+        "pickup-hours"
+      ],
+      "km": 486.4,
+      "supply": 41.75000000000001,
+      "listCents": 14200,
+      "feeCents": 12014,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 3300,
+        "pickup": {
+          "opens": 540,
+          "closes": 1020
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00332",
+      "text": "nouto ennen klo 19. kohde sulkee klo 15. kiitos etukäteen",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 200.4,
+      "supply": 28.800000000000026,
+      "listCents": 6500,
+      "feeCents": 8742,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 0,
+          "closes": 900
+        },
+        "pickup": {
+          "opens": 0,
+          "closes": 1140
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00352",
+      "text": "terve. nouto ennen klo 19. vastaanotto arkisin klo 9-20. kiitos, thx.",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 124.3,
+      "supply": 115,
+      "listCents": 5100,
+      "feeCents": 5014,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1200
+        },
+        "pickup": {
+          "opens": 0,
+          "closes": 1140
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00361",
+      "text": "Vastaanottava liike auki arkisin klo 7-16.30. Avaimet huollosta",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 571,
+      "supply": 207.2499999999982,
+      "listCents": 16300,
+      "feeCents": 13631,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00388",
+      "text": "pickup 8:00 - 16:00 only.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 241.6,
+      "supply": 489.90000000000043,
+      "listCents": 8000,
+      "feeCents": 8438,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 480,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00413",
+      "text": "Liike auki arkisin klo 9–16:30.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 161.2,
+      "supply": 107.75,
+      "listCents": 6000,
+      "feeCents": 7469,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00472",
+      "text": "Kohde auki arkisin klo 7 - 21. Liike kiinni klo 14.30, haettava ennen sitä.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 270.9,
+      "supply": 489.90000000000043,
+      "listCents": 8800,
+      "feeCents": 6918,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1260
+        },
+        "pickup": {
+          "opens": 0,
+          "closes": 870
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00505",
+      "text": "nouto ennen klo 16.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 675.8,
+      "supply": 207.2499999999982,
+      "listCents": 17600,
+      "feeCents": 25218,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00515",
+      "text": "hi there. destination closes at 18:00",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 132.6,
+      "supply": 489.90000000000043,
+      "listCents": 4900,
+      "feeCents": 5500,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 0,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00553",
+      "text": "Open weekdays 9:00-15:00.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 51.1,
+      "supply": 207.2499999999982,
+      "listCents": 3300,
+      "feeCents": 3028,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 900
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00554",
+      "text": "Noudettavissa arkisin 10-15. Kiitti",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 240.9,
+      "supply": 207.2499999999982,
+      "listCents": 7500,
+      "feeCents": 7865,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 600,
+          "closes": 900
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00559",
+      "text": "collect before 15:00",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 252.5,
+      "supply": 121.64999999999998,
+      "listCents": 9000,
+      "feeCents": 10548,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 900
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00586",
+      "text": "Liike auki arkisin klo 7-19.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 485.5,
+      "supply": 115,
+      "listCents": 14100,
+      "feeCents": 14241,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 420,
+          "closes": 1140
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00611",
+      "text": "Noudettavissa aikaisintaan huomenna klo 12.30. Kohde auki arkisin 8-21",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 65.2,
+      "supply": 207.2499999999982,
+      "listCents": 3600,
+      "feeCents": 3571,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 5070,
+        "delivery": {
+          "opens": 480,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00627",
+      "text": "hei. nouto ennen klo 16.30.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 109.6,
+      "supply": 115,
+      "listCents": 4400,
+      "feeCents": 4502,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00651",
+      "text": "liike sulkee 16.30",
+      "kinds": [],
+      "km": 384.4,
+      "supply": 489.90000000000043,
+      "listCents": 11600,
+      "feeCents": 11029,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00661",
+      "text": "Collect before 18:00. In the workshop, ready tomorrow 13:30",
+      "kinds": [
+        "readiness",
+        "pickup-hours"
+      ],
+      "km": 232.9,
+      "supply": 207.2499999999982,
+      "listCents": 7800,
+      "feeCents": 7676,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 6570,
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00684",
+      "text": "Hi. We close at 19:00",
+      "kinds": [],
+      "km": 151.4,
+      "supply": 489.90000000000043,
+      "listCents": 5800,
+      "feeCents": 5243,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 1140
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00721",
+      "text": "Nouto ennen klo 14. Avaimet huollosta",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 161.7,
+      "supply": 489.90000000000043,
+      "listCents": 6000,
+      "feeCents": 5720,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 840
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00804",
+      "text": "vastaanottava liike auki arkisin 7.00 - 21.00",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 369.3,
+      "supply": 207.2499999999982,
+      "listCents": 11200,
+      "feeCents": 9975,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00808",
+      "text": "Destination open weekdays 9:00 - 20:00",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 51.4,
+      "supply": 207.2499999999982,
+      "listCents": 3300,
+      "feeCents": 3634,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00818",
+      "text": "Kohde auki 7.00-17.00",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 51.1,
+      "supply": 489.90000000000043,
+      "listCents": 3300,
+      "feeCents": 3393,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1020
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00824",
+      "text": "we close at 16:00.",
+      "kinds": [],
+      "km": 235.2,
+      "supply": 107.75,
+      "listCents": 8500,
+      "feeCents": 6582,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00847",
+      "text": "Kohde sulkee klo 18.00",
+      "kinds": [],
+      "km": 228.1,
+      "supply": 489.90000000000043,
+      "listCents": 7700,
+      "feeCents": 6908,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 0,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00892",
+      "text": "Destination open weekdays 7:00 - 21:00, spare wheels in the boot.",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 22.5,
+      "supply": 489.90000000000043,
+      "listCents": 2600,
+      "feeCents": 2000,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R00903",
+      "text": "Moikka. Nouto arkisin klo 7.00-14.30. Meidän viite 451366",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 151.4,
+      "supply": 489.90000000000043,
+      "listCents": 5800,
+      "feeCents": 5688,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 420,
+          "closes": 870
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R01002",
+      "text": "Vastaanotto arkisin klo 9-20.",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 185.8,
+      "supply": 115,
+      "listCents": 6600,
+      "feeCents": 6294,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "requestId": "R01027",
+      "text": "Hei. Kohde auki arkisin klo 8 - 21. Liike auki arkisin klo 9 - 19",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 447.8,
+      "supply": 107.75,
+      "listCents": 13200,
+      "feeCents": 19847,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 1260
+        },
+        "pickup": {
+          "opens": 540,
+          "closes": 1140
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00002",
+      "text": "Moikka. Liike auki arkisin klo 10-15.30. Kiitos, thx",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 639.1,
+      "supply": 19.700000000000003,
+      "listCents": 16700,
+      "feeCents": 21187,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 600,
+          "closes": 930
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00089",
+      "text": "Nouto arkisin 7-18.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 53.5,
+      "supply": 367.05000000000007,
+      "listCents": 3100,
+      "feeCents": 3474,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 420,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00109",
+      "text": "Vastaanottava liike auki arkisin klo 7 - 21. Soita ennen noutoa",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 53.5,
+      "supply": 151.24999999999892,
+      "listCents": 3100,
+      "feeCents": 3377,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00111",
+      "text": "open 8:00-17:00. in the workshop, ready tomorrow 11:30.",
+      "kinds": [
+        "readiness",
+        "pickup-hours"
+      ],
+      "km": 150.2,
+      "supply": 17.39999999999999,
+      "listCents": 5400,
+      "feeCents": 7221,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 2130,
+        "pickup": {
+          "opens": 480,
+          "closes": 1020
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00123",
+      "text": "Vastaanotto arkipäivisin klo 9–21.",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 355.2,
+      "supply": 12,
+      "listCents": 10100,
+      "feeCents": 13221,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00132",
+      "text": "open 10:00 - 16:30",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 169.6,
+      "supply": 367.05000000000007,
+      "listCents": 6200,
+      "feeCents": 6906,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 600,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00203",
+      "text": "Huom aukioloajat arkisin klo 7-15.30",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 228.1,
+      "supply": 28.35,
+      "listCents": 7200,
+      "feeCents": 8267,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 420,
+          "closes": 930
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00204",
+      "text": "Nouto ennen klo 20. Kohde auki arkisin 10-17. Soita 30 min ennen",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 87.2,
+      "supply": 367.05000000000007,
+      "listCents": 3900,
+      "feeCents": 4209,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 600,
+          "closes": 1020
+        },
+        "pickup": {
+          "opens": 0,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00269",
+      "text": "pickup weekdays 9:00 - 16:00 only",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 147.4,
+      "supply": 19.700000000000003,
+      "listCents": 5300,
+      "feeCents": 7349,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00300",
+      "text": "terve, nouto ennen klo 20",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 99.8,
+      "supply": 367.05000000000007,
+      "listCents": 4500,
+      "feeCents": 4106,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00328",
+      "text": "Hei. Vastaanottava liike auki klo 9.00 - 21.00. Liike auki klo 9.00 - 16.00",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 235.2,
+      "supply": 19.700000000000003,
+      "listCents": 7900,
+      "feeCents": 8443,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1260
+        },
+        "pickup": {
+          "opens": 540,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00437",
+      "text": "Not ready before tomorrow 8:00. Receiving weekdays 7:00-16:30 only",
+      "kinds": [
+        "readiness"
+      ],
+      "km": 64.1,
+      "supply": 367.05000000000007,
+      "listCents": 3400,
+      "feeCents": 3548,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 4800,
+        "delivery": {
+          "opens": 420,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00455",
+      "text": "noudettavissa arkisin klo 9.00 - 20.00, kiitos, thx",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 153.3,
+      "supply": 19.700000000000003,
+      "listCents": 5800,
+      "feeCents": 6440,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00467",
+      "text": "Pickup 10 am–4 pm only",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 341.9,
+      "supply": 53,
+      "listCents": 10500,
+      "feeCents": 10779,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 600,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00540",
+      "text": "Kohde auki arkisin klo 9-15. Voi noutaa huomenna klo 8 alkaen.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 99.8,
+      "supply": 367.05000000000007,
+      "listCents": 4200,
+      "feeCents": 4789,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 4800,
+        "delivery": {
+          "opens": 540,
+          "closes": 900
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00563",
+      "text": "Huom aukioloajat arkisin klo 8-16, soita asap jos tulee ongelmia.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 447.8,
+      "supply": 12,
+      "listCents": 13200,
+      "feeCents": 15671,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 480,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00573",
+      "text": "Haettava ennen klo 14.30, lisäksi 4 kesärengasta tavaratilassa.",
+      "kinds": [
+        "tyres-or-weather"
+      ],
+      "km": 161.7,
+      "supply": 28.35,
+      "listCents": 5600,
+      "feeCents": 6205,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 870
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00583",
+      "text": "Vastaanotto arkisin 8-20. Noudettavissa aikaisintaan huomenna klo 12.",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 51.1,
+      "supply": 162.99999999999878,
+      "listCents": 3000,
+      "feeCents": 3129,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 5040,
+        "delivery": {
+          "opens": 480,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00602",
+      "text": "huolto kesken, valmis huomenna klo 12.15. kohde auki arkisin 8-15.",
+      "kinds": [
+        "readiness",
+        "pickup-hours"
+      ],
+      "km": 197.8,
+      "supply": 59.65000000000002,
+      "listCents": 6900,
+      "feeCents": 7806,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 5055,
+        "delivery": {
+          "opens": 480,
+          "closes": 900
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00642",
+      "text": "Destination open weekdays 7:00-16:00. Car in bay 2, keys at the desk",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 51.1,
+      "supply": 162.99999999999878,
+      "listCents": 3300,
+      "feeCents": 3619,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00646",
+      "text": "nouto klo 9.00-18.00. huolto kesken, valmis huomenna klo 11.00",
+      "kinds": [
+        "readiness",
+        "pickup-hours"
+      ],
+      "km": 571,
+      "supply": 162.99999999999878,
+      "listCents": 16300,
+      "feeCents": 14194,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 6420,
+        "pickup": {
+          "opens": 540,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00683",
+      "text": "kohde auki arkisin klo 8-20",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 65.2,
+      "supply": 162.99999999999878,
+      "listCents": 3600,
+      "feeCents": 3823,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00732",
+      "text": "Huolto kesken, valmis huomenna klo 11. Vastaanotto arkisin klo 7-20. Kiitos taas",
+      "kinds": [
+        "readiness",
+        "delivery-time"
+      ],
+      "km": 177.7,
+      "supply": 367.05000000000007,
+      "listCents": 6400,
+      "feeCents": 6993,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 6420,
+        "delivery": {
+          "opens": 420,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00758",
+      "text": "Liike kiinni klo 15.30, haettava ennen sitä. Soita 15 min ennen.",
+      "kinds": [],
+      "km": 135.8,
+      "supply": 17.39999999999999,
+      "listCents": 5400,
+      "feeCents": 6937,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 930
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00836",
+      "text": "Nouto arkisin klo 9.00 - 15.30",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 177.3,
+      "supply": 24,
+      "listCents": 6400,
+      "feeCents": 6574,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 930
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00849",
+      "text": "liike kiinni klo 15.30, haettava ennen sita",
+      "kinds": [],
+      "km": 296.8,
+      "supply": 48,
+      "listCents": 9400,
+      "feeCents": 9164,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 930
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00856",
+      "text": "We close at 14:00.",
+      "kinds": [],
+      "km": 22.5,
+      "supply": 28.35,
+      "listCents": 2600,
+      "feeCents": 2000,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 840
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00910",
+      "text": "Kohde sulkee klo 16. Auto valmiina, haettavissa heti.",
+      "kinds": [
+        "readiness"
+      ],
+      "km": 110,
+      "supply": 162.99999999999878,
+      "listCents": 4800,
+      "feeCents": 4974,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 0,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00926",
+      "text": "Moi. Kohde auki arkisin 9-20. Huom aukioloajat arkisin 8-20. Rengassarja mukaan.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 296.8,
+      "supply": 48,
+      "listCents": 9400,
+      "feeCents": 10685,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1200
+        },
+        "pickup": {
+          "opens": 480,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00939",
+      "text": "Destination open weekdays 9:00 - 21:00. Collect before 20:00",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 353.8,
+      "supply": 48,
+      "listCents": 10800,
+      "feeCents": 11367,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1260
+        },
+        "pickup": {
+          "opens": 0,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R00980",
+      "text": "Vastaanottava liike auki ma–pe klo 7:00–20:00. Noudettavissa ma–pe klo 7:00–19:00",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 359.7,
+      "supply": 12,
+      "listCents": 11000,
+      "feeCents": 14017,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1200
+        },
+        "pickup": {
+          "opens": 420,
+          "closes": 1140
+        }
+      }
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "requestId": "R01037",
+      "text": "Vastaanottava liike auki klo 7-18. Huom aukioloajat klo 8-20",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 151.4,
+      "supply": 59.65000000000002,
+      "listCents": 5800,
+      "feeCents": 6530,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1080
+        },
+        "pickup": {
+          "opens": 480,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00110",
+      "text": "Vastaanotto arkisin klo 7 - 21, kiitos, thx.",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 366.7,
+      "supply": 117.29999999999995,
+      "listCents": 10400,
+      "feeCents": 10806,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00130",
+      "text": "Vastaanotto arkipäivisin 9–16, hyvää päivänjatkoa",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 158.5,
+      "supply": 426.65000000000015,
+      "listCents": 5500,
+      "feeCents": 5759,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00157",
+      "text": "vastaanotto arkisin 8-21, hyvää päivänjatkoa",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 593.2,
+      "supply": 16,
+      "listCents": 15700,
+      "feeCents": 21017,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00172",
+      "text": "vastaanotto arkisin 9-20.",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 160.1,
+      "supply": 111,
+      "listCents": 6000,
+      "feeCents": 5982,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00180",
+      "text": "Noudettavissa arkisin klo 7-20",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 187.6,
+      "supply": 111,
+      "listCents": 6200,
+      "feeCents": 6257,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 420,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00210",
+      "text": "receiving weekdays 7:00-16:00 only. call asap if any issues.",
+      "kinds": [],
+      "km": 22.5,
+      "supply": 426.65000000000015,
+      "listCents": 2400,
+      "feeCents": 2000,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00228",
+      "text": "destination open weekdays 8:00 - 21:00 / vastaanotto klo 8 - 21.",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 369.3,
+      "supply": 180.24999999999847,
+      "listCents": 11200,
+      "feeCents": 12671,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00232",
+      "text": "Huom aukioloajat klo 7-16.30. Vastaanotto klo 7-20",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 64.1,
+      "supply": 180.24999999999847,
+      "listCents": 3600,
+      "feeCents": 3765,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1200
+        },
+        "pickup": {
+          "opens": 420,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00235",
+      "text": "Huom aukioloajat arkisin klo 9-19.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 110,
+      "supply": 117.29999999999995,
+      "listCents": 4800,
+      "feeCents": 4329,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 1140
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00249",
+      "text": "Noudettavissa arkisin 9-14. Auto pihalla ruudussa 7, avain tiskiltä",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 571,
+      "supply": 16,
+      "listCents": 16300,
+      "feeCents": 17836,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 840
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00272",
+      "text": "haettava ennen klo 14.30. viite 492852",
+      "kinds": [],
+      "km": 602.1,
+      "supply": 16,
+      "listCents": 17100,
+      "feeCents": 20231,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 870
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00349",
+      "text": "Nouto ennen klo 18.00, soita ennen noutoa",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 135.5,
+      "supply": 12.1,
+      "listCents": 5400,
+      "feeCents": 6027,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00398",
+      "text": "noudettavissa arkisin 10-16",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 183.7,
+      "supply": 180.24999999999847,
+      "listCents": 6600,
+      "feeCents": 6494,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 600,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00402",
+      "text": "Liike auki klo 8.00-18.00. Noudettavissa aikaisintaan huomenna klo 8.00",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 163,
+      "supply": 426.65000000000015,
+      "listCents": 5600,
+      "feeCents": 6174,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 3360,
+        "pickup": {
+          "opens": 480,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00416",
+      "text": "Vastaanottava liike auki arkipäivisin 9-20.",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 262.9,
+      "supply": 111,
+      "listCents": 8600,
+      "feeCents": 7378,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00426",
+      "text": "Receiving 10:00 - 17:00 only",
+      "kinds": [],
+      "km": 64.1,
+      "supply": 180.24999999999847,
+      "listCents": 3400,
+      "feeCents": 3777,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 600,
+          "closes": 1020
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00438",
+      "text": "vastaanottava liike auki klo 8 - 21",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 163,
+      "supply": 117.29999999999995,
+      "listCents": 6100,
+      "feeCents": 6615,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00584",
+      "text": "Nouto ennen klo 18",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 28.5,
+      "supply": 426.65000000000015,
+      "listCents": 2500,
+      "feeCents": 2000,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00596",
+      "text": "Vastaanottava liike auki 9-16.30. Rengassarja takapenkillä, kulkee mukana",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 602.1,
+      "supply": 426.65000000000015,
+      "listCents": 17100,
+      "feeCents": 16832,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 990
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00625",
+      "text": "liike kiinni klo 20, haettava ennen sitä. soita n. tuntia ennen saapumista",
+      "kinds": [],
+      "km": 185.8,
+      "supply": 111,
+      "listCents": 7200,
+      "feeCents": 6244,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00657",
+      "text": "Vastaanotto arkisin 7.00-21.00. Huolto kesken, valmis huomenna klo 11.00",
+      "kinds": [
+        "readiness",
+        "delivery-time"
+      ],
+      "km": 108.9,
+      "supply": 426.65000000000015,
+      "listCents": 4700,
+      "feeCents": 5121,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 6420,
+        "delivery": {
+          "opens": 420,
+          "closes": 1260
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00713",
+      "text": "Kohde auki klo 8.00-18.00. Auto valmis vasta huomenna klo 9.00.",
+      "kinds": [
+        "readiness",
+        "pickup-hours"
+      ],
+      "km": 161.7,
+      "supply": 426.65000000000015,
+      "listCents": 6000,
+      "feeCents": 6748,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 6300,
+        "delivery": {
+          "opens": 480,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00738",
+      "text": "nouto ennen klo 18.00. noudettavissa aikaisintaan huomenna klo 13.00",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 28.5,
+      "supply": 426.65000000000015,
+      "listCents": 2700,
+      "feeCents": 2124,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 6540,
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00775",
+      "text": "Pickup 9:00-18:00 only.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 51.1,
+      "supply": 180.24999999999847,
+      "listCents": 3300,
+      "feeCents": 3082,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00807",
+      "text": "Destination closes at 15:00, cheers.",
+      "kinds": [
+        "delivery-time"
+      ],
+      "km": 65.2,
+      "supply": 180.24999999999847,
+      "listCents": 3900,
+      "feeCents": 3707,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 0,
+          "closes": 900
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00822",
+      "text": "Nouto ennen klo 18. Rengassarja takapenkillä, kulkee mukana.",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 308.6,
+      "supply": 45.45,
+      "listCents": 9700,
+      "feeCents": 10841,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00864",
+      "text": "Noudettavissa ma-pe 10–16",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 185.8,
+      "supply": 426.65000000000015,
+      "listCents": 7200,
+      "feeCents": 6517,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 600,
+          "closes": 960
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00868",
+      "text": "kohde auki arkisin klo 7-20, valmiina pihalla",
+      "kinds": [
+        "readiness",
+        "pickup-hours"
+      ],
+      "km": 22.5,
+      "supply": 426.65000000000015,
+      "listCents": 2800,
+      "feeCents": 2245,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00907",
+      "text": "Liike kiinni klo 15.00, haettava ennen sita",
+      "kinds": [],
+      "km": 110,
+      "supply": 180.24999999999847,
+      "listCents": 4800,
+      "feeCents": 4264,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 900
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00970",
+      "text": "huom aukioloajat arkisin klo 10-17",
+      "kinds": [
+        "pickup-hours"
+      ],
+      "km": 508,
+      "supply": 13.699999999999994,
+      "listCents": 14700,
+      "feeCents": 17530,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 600,
+          "closes": 1020
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R00976",
+      "text": "hi there, destination open weekdays 9:00-20:00, thank you.",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 485.5,
+      "supply": 16,
+      "listCents": 14100,
+      "feeCents": 17744,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1200
+        }
+      }
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "requestId": "R01030",
+      "text": "Vastaanottava liike auki arkisin 8 - 21.",
+      "kinds": [
+        "delivery-time",
+        "pickup-hours"
+      ],
+      "km": 319.1,
+      "supply": 16,
+      "listCents": 10000,
+      "feeCents": 18163,
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 1260
+        }
+      }
+    }
+  ],
+  "checked": []
+}

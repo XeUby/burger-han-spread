@@ -51,7 +51,14 @@ export abstract class Desk {
     else if (event.kind === "order_won") await this.win(event.order)
     else if (event.kind === "order_changed") await this.change(event.order)
     // The world has stopped a cancelled order's car and told each of its gigs what happens.
-    else if (event.kind === "order_cancelled") for (const books of [this.orders, this.legGigs]) books.delete(event.orderId)
+    else if (event.kind === "order_cancelled") {
+      for (const gig of event.gigs) if (gig.outcome === "withdrawn" || gig.outcome === "released") this.forgetGig(gig.gigId)
+      for (const books of [this.orders, this.legGigs]) books.delete(event.orderId)
+      for (let i = this.outbox.length - 1; i >= 0; i--) {
+        const action = this.outbox[i]!
+        if (action.type === "post" && action.stops.some(stop => stop.orderId === event.orderId)) this.outbox.splice(i, 1)
+      }
+    }
     else if (event.kind === "visit_failed") await this.retry(event.orderId, event.leg, event.reason)
     else if (event.kind === "gig_expired") this.repost(event.gigId)
     // It comes again when a driver drops the car after the first warning.
@@ -87,7 +94,15 @@ export abstract class Desk {
     const action = this.posts.get(gigId)
     // A gig the dispatcher has already taken off and posted again, after a change of plan, needs nothing.
     if (!action || !action.stops.some(({ orderId, leg }) => this.legGigs.get(orderId)?.get(leg) === gigId)) return
-    for (const { orderId, leg } of action.stops) this.legGigs.get(orderId)?.delete(leg)
+    const survivors = action.stops.filter(stop => stop.kind === "pickup" && this.legGigs.get(stop.orderId)?.get(stop.leg) === gigId && this.orders.get(stop.orderId)?.deliveredAt[stop.leg] === null)
+    this.forgetGig(gigId)
+    if (new Set(action.stops.map(stop => stop.orderId)).size > 1) {
+      for (const { orderId, leg } of survivors) {
+        const order = this.orders.get(orderId)!
+        this.outbox.push({ ...action, stops: withoutWindows(action.stops.filter(stop => stop.orderId === orderId && stop.leg === leg), Infinity), schedule: this.feesFor(order, 1) })
+      }
+      return
+    }
     const order = this.orders.get(action.stops[0]!.orderId)
     if (!order) return
     // One of its windows has ended, perhaps at a site's closing time before the window's own end: post without its own stop windows.
@@ -101,12 +116,20 @@ export abstract class Desk {
     this.urgent.add(orderId)
     await this.sendPostOf(orderId)
     for (const gigId of this.gigsOf(orderId)) {
-      if (!this.booked.has(gigId)) this.outbox.push({ type: "reprice", gigId, schedule: this.feesFor(order, pickups(this.posts.get(gigId)!)) })
+      if (!this.booked.has(gigId)) this.outbox.push({ type: "reprice", gigId, schedule: this.feesForPost(this.posts.get(gigId)!) })
     }
   }
 
   /** The fees for some of the order's cars from now: rising, or steep once its deadline warning has come. */
   abstract feesFor(order: Order, cars: number): FeeStep[]
+
+  feesForPost(post: PostAction): FeeStep[] {
+    if (new Set(post.stops.map(stop => stop.orderId)).size > 1) {
+      const current = post.schedule.findLast(step => step.at <= this.now) ?? post.schedule[0]!
+      return [{ at: this.now, feeCents: current.feeCents }, ...post.schedule.filter(step => step.at > this.now).map(step => ({ ...step }))]
+    }
+    return this.feesFor(this.orders.get(post.stops[0]!.orderId)!, pickups(post))
+  }
 
   async retry(orderId: string, leg: number, reason: string): Promise<void> {
     const order = this.orders.get(orderId)
@@ -139,30 +162,33 @@ export abstract class Desk {
     const actions: Action[] = gigs.map(gigId => ({ type: "withdraw", gigId }))
     const results = await this.world.act(actions)
     this.readResults(actions, results)
-    for (let i = 0; i < gigs.length; i++) {
-      if (!results[i]?.ok) continue
-      const gigId = gigs[i]!
-      this.posts.delete(gigId)
-      for (const [leg, carrying] of this.legGigs.get(orderId) ?? []) if (carrying === gigId) this.legGigs.get(orderId)!.delete(leg)
-    }
     return results.length === gigs.length && results.every(result => result.ok)
   }
 
-  /** A post of the order still in the outbox goes to the world now, so the dispatcher knows its gig. Each gig carries one order. */
+  /** Sends a queued post containing the order so its shared gig can be changed safely. */
   async sendPostOf(orderId: string): Promise<void> {
-    if (this.outbox.some((action) => action.type === "post" && action.stops[0]!.orderId === orderId)) await this.send()
+    if (this.outbox.some((action) => action.type === "post" && action.stops.some(stop => stop.orderId === orderId))) await this.send()
   }
 
   /** Sends the outbox now. In practice, the outbox goes with the next advance instead. */
   async send(): Promise<void> {
-    const actions = this.outbox.splice(0)
+    const actions = this.takeActions()
     if (actions.length > 0) this.readResults(actions, await this.world.act(actions))
   }
+
+  takeActions(): Action[] { return this.outbox.splice(0) }
 
   readResults(actions: Action[], results: ActionResult[]): void {
     actions.forEach((action, i) => {
       if (action.type === "post" && results[i]?.ok) this.carry(action, results[i]!.id)
+      else if ((action.type === "withdraw" || action.type === "release") && results[i]?.ok) this.forgetGig(action.gigId)
     })
+  }
+
+  private forgetGig(gigId: string): void {
+    for (const legs of this.legGigs.values()) for (const [leg, carrying] of legs) if (carrying === gigId) legs.delete(leg)
+    this.posts.delete(gigId)
+    this.booked.delete(gigId)
   }
 }
 

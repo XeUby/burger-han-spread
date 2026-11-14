@@ -1,0 +1,46 @@
+[
+  {
+    "label": "frontier-private",
+    "seed": "formal-unseen-20261113-14",
+    "settings": {
+      "allowPrivate": true
+    }
+  },
+  {
+    "label": "frontier-private",
+    "seed": "formal-unseen-20261113-15",
+    "settings": {
+      "allowPrivate": true
+    }
+  },
+  {
+    "label": "frontier-trade",
+    "seed": "formal-unseen-20261113-14",
+    "settings": {
+      "tradeIns": true
+    }
+  },
+  {
+    "label": "frontier-trade",
+    "seed": "formal-unseen-20261113-15",
+    "settings": {
+      "tradeIns": true
+    }
+  },
+  {
+    "label": "frontier-menu",
+    "seed": "formal-unseen-20261113-14",
+    "settings": {
+      "sameDayPremium": 1.12,
+      "laterDiscount": 1
+    }
+  },
+  {
+    "label": "frontier-menu",
+    "seed": "formal-unseen-20261113-15",
+    "settings": {
+      "sameDayPremium": 1.12,
+      "laterDiscount": 1
+    }
+  }
+]

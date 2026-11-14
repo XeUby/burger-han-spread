@@ -1,0 +1,16 @@
+[
+  {
+    "label": "frontier-auction",
+    "seed": "formal-unseen-20261113-14",
+    "settings": {
+      "auction": true
+    }
+  },
+  {
+    "label": "frontier-auction",
+    "seed": "formal-unseen-20261113-15",
+    "settings": {
+      "auction": true
+    }
+  }
+]

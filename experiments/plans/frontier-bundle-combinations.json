@@ -1,0 +1,40 @@
+[
+  {
+    "label": "frontier-volume-bundles",
+    "seed": "formal-unseen-20261113-14",
+    "settings": {
+      "bundleWait": 15,
+      "capacity": 0.35,
+      "backlog": 0.08,
+      "minDrivers": 8,
+      "maxKm": 700
+    }
+  },
+  {
+    "label": "frontier-volume-bundles",
+    "seed": "formal-unseen-20261113-15",
+    "settings": {
+      "bundleWait": 15,
+      "capacity": 0.35,
+      "backlog": 0.08,
+      "minDrivers": 8,
+      "maxKm": 700
+    }
+  },
+  {
+    "label": "frontier-auction-bundles",
+    "seed": "formal-unseen-20261113-14",
+    "settings": {
+      "bundleWait": 15,
+      "auction": true
+    }
+  },
+  {
+    "label": "frontier-auction-bundles",
+    "seed": "formal-unseen-20261113-15",
+    "settings": {
+      "bundleWait": 15,
+      "auction": true
+    }
+  }
+]
