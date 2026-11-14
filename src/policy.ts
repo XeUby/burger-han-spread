@@ -10,11 +10,13 @@ export type Settings = {
   price: number; fee: number; margin: number; capacity: number; maxKm: number; minDrivers: number
   notes: boolean; adaptive: boolean; earlyOffers: boolean; safetySlack: boolean
   backlog: number; priceFloor: number; costRatio: number; trustStep: number; sameDayBacklog: number; demandSlope: number
+  openFee: number; ladderMinutes: number; minFee: number
 }
 export const defaults: Settings = {
   price: 1.42, fee: 1.05, margin: 0.1, capacity: 0.18, maxKm: 550, minDrivers: 12,
   notes: true, adaptive: true, earlyOffers: false, safetySlack: false,
   backlog: 0.04, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14,
+  openFee: 1, ladderMinutes: 0, minFee: 2000,
 }
 
 export function validateSettings(value: unknown): asserts value is Partial<Settings> {
@@ -22,7 +24,7 @@ export function validateSettings(value: unknown): asserts value is Partial<Setti
   for (const [key, field] of Object.entries(value)) {
     if (!(key in defaults)) throw new Error(`Unknown setting: ${key}`)
     if (typeof defaults[key as keyof Settings] === "boolean") { if (typeof field !== "boolean") throw new Error(`${key} must be boolean`); continue }
-    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep"].includes(key))) throw new Error(`${key} must be a positive number`)
+    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "ladderMinutes", "minFee"].includes(key))) throw new Error(`${key} must be a positive number`)
     if ((key === "margin" || key === "capacity") && field >= 1) throw new Error(`${key} must be below 1`)
   }
 }
@@ -49,6 +51,7 @@ export class Dispatcher extends Desk {
   offeredDrivers = new Map<string, Set<string>>()
   market: DemandModel
   bids = new Map<string, { features: MarketFeatures; ratio: number }>()
+  fullFeeAt = new Map<string, number>() // order id -> the minute its gig reaches the full fee
 
   constructor(world: World, level: number, now: number, map: WorldMap, drivers: DriverProfile[], settings: Partial<Settings> = {}) {
     super(world, level, now)
@@ -85,7 +88,8 @@ export class Dispatcher extends Desk {
       if (distance <= 70) {
         const weight = distance <= 30 ? 1 : 0.5
         load += weight
-        if (this.pending.has(other.id) || (order?.status !== "delivered" && !this.gigsOf(other.id).some(id => this.booked.has(id)))) unbooked += weight
+        // A gig still on its fee ladder has no driver by design. Only a gig that no driver takes at the full fee shows a shortage.
+        if (this.pending.has(other.id) || (order?.status !== "delivered" && !this.gigsOf(other.id).some(id => this.booked.has(id)) && this.now >= (this.fullFeeAt.get(other.id) ?? 0))) unbooked += weight
       }
     }
     if (load >= Math.max(1, supply * this.settings.capacity)) return reject()
@@ -138,7 +142,7 @@ export class Dispatcher extends Desk {
   baseFee(request: PriceRequest): number {
     const supply = this.supply(request)
     const extra = supply < 20 ? 0.18 : supply < 50 ? 0.08 : 0
-    return Math.max(2000, Math.round(request.referenceFeeCents * (this.settings.fee + extra)))
+    return Math.max(this.settings.minFee, Math.round(request.referenceFeeCents * (this.settings.fee + extra)))
   }
 
   pickupBy(order: Order): number {
@@ -158,10 +162,17 @@ export class Dispatcher extends Desk {
     const remaining = pickupBy - this.now
     const start = rescue ? remaining <= 60 ? 2.5 : remaining <= 120 ? 1.9 : 1.5 : 1
     if (this.level === 1) return [{ at: this.now, feeCents: Math.round(fee * start) }]
-    // A steady initial price avoids teaching drivers to wait for hourly increases.
     const due = Math.max(this.now + 30, pickupBy - 240)
+    // The fee ladder: an order with time to spare opens below the full fee, so the drivers for whom the
+    // car is cheap take it first. The fee climbs to the full fee only as that time runs out.
+    const open = !rescue && remaining > 360 ? Math.min(1, this.settings.openFee) : 1
+    const end = Math.min(this.now + this.settings.ladderMinutes, due - 30)
+    const rungs = open < 1 ? Math.max(0, Math.min(6, Math.floor((end - this.now) / 20))) : 0
+    const ladder = Array.from({ length: rungs }, (_, i) => ({ at: Math.round(this.now + (end - this.now) * (i + 1) / rungs), feeCents: Math.round(fee * (open + (1 - open) * (i + 1) / rungs)) }))
+    if (!this.fullFeeAt.has(order.id) || open < 1) this.fullFeeAt.set(order.id, open < 1 ? ladder.at(-1)?.at ?? due : this.now)
     return [
-      { at: this.now, feeCents: Math.round(fee * start) },
+      { at: this.now, feeCents: Math.round(fee * start * open) },
+      ...ladder,
       { at: due, feeCents: Math.round(fee * Math.max(start, 1.45)) },
       { at: Math.max(due + 30, pickupBy - 120), feeCents: Math.round(fee * Math.max(start, 1.9)) },
       { at: Math.max(due + 60, pickupBy - 60), feeCents: Math.round(fee * Math.max(start, 2.5)) },

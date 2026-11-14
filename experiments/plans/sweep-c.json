@@ -1,0 +1,231 @@
+[
+ {
+  "label": "ladder-noop",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {}
+ },
+ {
+  "label": "open-090",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "openFee": 0.9
+  }
+ },
+ {
+  "label": "open-090",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "openFee": 0.9
+  }
+ },
+ {
+  "label": "open-090",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "openFee": 0.9
+  }
+ },
+ {
+  "label": "open-090",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "openFee": 0.9
+  }
+ },
+ {
+  "label": "open-080",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "openFee": 0.8
+  }
+ },
+ {
+  "label": "open-080",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "openFee": 0.8
+  }
+ },
+ {
+  "label": "open-080",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "openFee": 0.8
+  }
+ },
+ {
+  "label": "open-080",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "openFee": 0.8
+  }
+ },
+ {
+  "label": "f085-open-085",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "fee": 0.85,
+   "openFee": 0.85
+  }
+ },
+ {
+  "label": "f085-open-085",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "fee": 0.85,
+   "openFee": 0.85
+  }
+ },
+ {
+  "label": "f085-open-085",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "fee": 0.85,
+   "openFee": 0.85
+  }
+ },
+ {
+  "label": "f085-open-085",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "fee": 0.85,
+   "openFee": 0.85
+  }
+ },
+ {
+  "label": "f085-lad-085-180",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "fee": 0.85,
+   "openFee": 0.85,
+   "ladderMinutes": 180
+  }
+ },
+ {
+  "label": "f085-lad-085-180",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "fee": 0.85,
+   "openFee": 0.85,
+   "ladderMinutes": 180
+  }
+ },
+ {
+  "label": "f085-lad-085-180",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "fee": 0.85,
+   "openFee": 0.85,
+   "ladderMinutes": 180
+  }
+ },
+ {
+  "label": "f085-lad-085-180",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "fee": 0.85,
+   "openFee": 0.85,
+   "ladderMinutes": 180
+  }
+ },
+ {
+  "label": "f085-minfee-1000",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "fee": 0.85,
+   "minFee": 1000
+  }
+ },
+ {
+  "label": "f085-minfee-1000",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "fee": 0.85,
+   "minFee": 1000
+  }
+ },
+ {
+  "label": "f085-minfee-1000",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "fee": 0.85,
+   "minFee": 1000
+  }
+ },
+ {
+  "label": "f085-minfee-1000",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "fee": 0.85,
+   "minFee": 1000
+  }
+ },
+ {
+  "label": "f085-lad-070-240",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "fee": 0.85,
+   "openFee": 0.7,
+   "ladderMinutes": 240
+  }
+ },
+ {
+  "label": "f085-lad-070-240",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "fee": 0.85,
+   "openFee": 0.7,
+   "ladderMinutes": 240
+  }
+ },
+ {
+  "label": "f085-lad-070-240",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "fee": 0.85,
+   "openFee": 0.7,
+   "ladderMinutes": 240
+  }
+ },
+ {
+  "label": "f085-lad-070-240",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "fee": 0.85,
+   "openFee": 0.7,
+   "ladderMinutes": 240
+  }
+ },
+ {
+  "label": "lad-070-240",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "openFee": 0.7,
+   "ladderMinutes": 240
+  }
+ },
+ {
+  "label": "lad-070-240",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "openFee": 0.7,
+   "ladderMinutes": 240
+  }
+ },
+ {
+  "label": "lad-070-240",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "openFee": 0.7,
+   "ladderMinutes": 240
+  }
+ },
+ {
+  "label": "lad-070-240",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "openFee": 0.7,
+   "ladderMinutes": 240
+  }
+ }
+]
