@@ -1,0 +1,1623 @@
+{
+  "role": "pre-quote descriptive model comparison only",
+  "split": {
+    "train": [
+      "cost-development-20261114-0671a6fd582581ca",
+      "cost-development-20261114-5540924d1a9eab19",
+      "cost-development-20261114-92b3ba4ed4d2e449",
+      "formal-unseen-20261113-03",
+      "formal-unseen-20261113-06",
+      "formal-unseen-20261113-07",
+      "formal-unseen-20261113-08",
+      "formal-unseen-20261113-09",
+      "formal-unseen-20261113-11",
+      "formal-unseen-20261113-12",
+      "formal-unseen-20261113-13",
+      "formal-unseen-20261113-14",
+      "formal-unseen-20261113-15",
+      "formal-unseen-20261113-16",
+      "frontier-unseen-20261114-7233f333bf3d7c2e",
+      "frontier-unseen-20261114-779e9add6b14a18b",
+      "frontier-unseen-20261114-7f39dd564e731085",
+      "frontier-unseen-20261114-98dcde7a3d066a80",
+      "frontier-unseen-20261114-b256738651c1125d",
+      "holdout-1",
+      "holdout-2",
+      "holdout-3",
+      "holdout-4",
+      "holdout-5",
+      "late-rescue-unseen-20261114-5916726ab4e9f863",
+      "late-rescue-unseen-20261114-824df9f835246148",
+      "late-rescue-unseen-20261114-864cfcc97f2cade5",
+      "late-rescue-unseen-20261114-9b483a1a53deba54",
+      "late-rescue-unseen-20261114-c551e105a48e2148",
+      "late-rescue-unseen-20261114-e48160564a27cf74",
+      "late-rescue-unseen-20261114-e4ee0c5739a75ad0",
+      "level-compatibility-20261114",
+      "levels-development-2dba6ebe7258e63082c0",
+      "levels-development-bd4beddd353cf287138f",
+      "levels-development-fbc5ca1adb2a1671179f",
+      "note-spelling-unseen-20261114-309e12dc0f90a102",
+      "note-spelling-unseen-20261114-5914d58b5b701bdc",
+      "note-spelling-unseen-20261114-6e740a3630050c2d",
+      "note-spelling-unseen-20261114-8bc883348a90d012",
+      "note-spelling-unseen-20261114-b0a0611536d3eb20",
+      "note-spelling-unseen-20261114-c07ddff01f6c5f00",
+      "note-spelling-unseen-20261114-f78979dd4e5b3a7c",
+      "payout-unseen-20261114-11d2bc22e5a2e17d",
+      "payout-unseen-20261114-166d26adce8afd0e",
+      "payout-unseen-20261114-1c6cfe93689d0a32",
+      "payout-unseen-20261114-266a2575198d039b",
+      "payout-unseen-20261114-2b782dea15c2c930",
+      "payout-unseen-20261114-8a0fdb3994ac5c0e",
+      "payout-unseen-20261114-bdbb0af73763c605",
+      "payout-unseen-20261114-bfc8b37c1c3b01b5",
+      "payout-unseen-20261114-df10216ee874354b",
+      "payout-unseen-20261114-e2258b662e732c8e",
+      "relisting-unseen-20261114-5291bd44e58fc0b8",
+      "relisting-unseen-20261114-593862ba0453d993",
+      "relisting-unseen-20261114-85e7c8159eb228d3",
+      "relisting-unseen-20261114-ae921d2f5a004c5c",
+      "spread-1"
+    ],
+    "test": [
+      "cost-development-20261114-a92ca803a91fbe65",
+      "formal-unseen-20261113-01",
+      "formal-unseen-20261113-02",
+      "formal-unseen-20261113-04",
+      "formal-unseen-20261113-05",
+      "formal-unseen-20261113-10",
+      "frontier-unseen-20261114-19325279220dd249",
+      "frontier-unseen-20261114-4d17ec2759243bc1",
+      "frontier-unseen-20261114-f5efce54acaddce6",
+      "late-rescue-unseen-20261114-5e15a0a3962a54ba",
+      "note-spelling-unseen-20261114-df5da3c0bccf1e98",
+      "payout-unseen-20261114-1954b8aff04d03b3",
+      "payout-unseen-20261114-619e961538a5119e",
+      "relisting-unseen-20261114-44179069f811e12a",
+      "relisting-unseen-20261114-49994c1da1bed296",
+      "relisting-unseen-20261114-664fad94342f003c",
+      "relisting-unseen-20261114-be6ccba2d5332cc6",
+      "validate-1",
+      "validate-2"
+    ]
+  },
+  "sourceWeeks": [
+    {
+      "seed": "cost-development-20261114-0671a6fd582581ca",
+      "worldId": "w1c625a913b4253e4af9a",
+      "level": 8,
+      "eventsSha256": "006f392a72484bbb1fd6a099b688d6944e6fda9b62fb0ce08cdce6406c9c442a",
+      "rows": 218
+    },
+    {
+      "seed": "cost-development-20261114-5540924d1a9eab19",
+      "worldId": "wc14f6ddca184f36568fb",
+      "level": 8,
+      "eventsSha256": "1e84f0009d1a9556549b16b7e9fe660cf5b4a916821288d16d2dc2a251272ca4",
+      "rows": 455
+    },
+    {
+      "seed": "cost-development-20261114-92b3ba4ed4d2e449",
+      "worldId": "w0af413244da4ca9f7714",
+      "level": 8,
+      "eventsSha256": "4dcf5f261759a96c85476d918ed6655753cf244cc59b5b1210bb29b8dcf1e19d",
+      "rows": 393
+    },
+    {
+      "seed": "cost-development-20261114-a92ca803a91fbe65",
+      "worldId": "w46c2c116aa79bff82fc9",
+      "level": 8,
+      "eventsSha256": "f7ccb9fe5353f562063b87c04b89fc6c1239b3bcc6a1a7d90de9f5e223f54a96",
+      "rows": 362
+    },
+    {
+      "seed": "formal-unseen-20261113-01",
+      "worldId": "w491340143d15a316668c",
+      "level": 8,
+      "eventsSha256": "4e54477f6b248a958acd3d9bdadd9a0c438965144fb31e1e320e9b074b2140fb",
+      "rows": 271
+    },
+    {
+      "seed": "formal-unseen-20261113-02",
+      "worldId": "wc77bebb20668e8d3378f",
+      "level": 8,
+      "eventsSha256": "401792b50425bf96107b4f24e99c508410445e4e5629f148de1d4682520bbf0a",
+      "rows": 247
+    },
+    {
+      "seed": "formal-unseen-20261113-03",
+      "worldId": "waf9a9f4088b838638064",
+      "level": 8,
+      "eventsSha256": "24f50cd93ea2449ac9b0e8c00ddcfce39b8dc845d376aa4ca0bb073956d47a76",
+      "rows": 278
+    },
+    {
+      "seed": "formal-unseen-20261113-04",
+      "worldId": "w5dbd69444b1f927e7ed3",
+      "level": 8,
+      "eventsSha256": "ff346e48e936d1bb7c60068903edc980ea58d7714fe038f245d8e1bad048450b",
+      "rows": 351
+    },
+    {
+      "seed": "formal-unseen-20261113-05",
+      "worldId": "w3cacf28249c0731760eb",
+      "level": 8,
+      "eventsSha256": "5c87d2ff8514a55d4c8869ee2fe8bf80cd6e20a500d1e7e941e76aa4b31a0f95",
+      "rows": 262
+    },
+    {
+      "seed": "formal-unseen-20261113-06",
+      "worldId": "w5938f3809abe0d6f051b",
+      "level": 8,
+      "eventsSha256": "e7ee149aacd97d6adf1aa1d887d85f060cfc912a34c8fc23f2bbe7d678566106",
+      "rows": 203
+    },
+    {
+      "seed": "formal-unseen-20261113-07",
+      "worldId": "wb97a9a6e26526614e85b",
+      "level": 8,
+      "eventsSha256": "8398b6fdf783250a46aa39b193f39acfa3cf1d0ba5669c47027dd3955691ef54",
+      "rows": 229
+    },
+    {
+      "seed": "formal-unseen-20261113-08",
+      "worldId": "w6fb9cdd546c36f5fa418",
+      "level": 8,
+      "eventsSha256": "8b0d8271acb63d61ace1ec2e822d45469e65a91d4cbc21fcb7e6649e09898acd",
+      "rows": 307
+    },
+    {
+      "seed": "formal-unseen-20261113-09",
+      "worldId": "w09f7d47c59507d4e46cb",
+      "level": 8,
+      "eventsSha256": "9efe7dc483997b2e7b1bc8c624a2708cc4642d8895406d31edbe1637a139ec22",
+      "rows": 278
+    },
+    {
+      "seed": "formal-unseen-20261113-10",
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "level": 8,
+      "eventsSha256": "f88ba5b8c46998ad07149ea3e75511170b82d7e616c07ecb5b8e91ee439a144e",
+      "rows": 390
+    },
+    {
+      "seed": "formal-unseen-20261113-11",
+      "worldId": "w679c0fd4b18e923880c6",
+      "level": 8,
+      "eventsSha256": "72e0e8fa5b859f66eb28c14afa300a29e53b64e3efef6de8a90a02a561d50bb2",
+      "rows": 248
+    },
+    {
+      "seed": "formal-unseen-20261113-12",
+      "worldId": "w1a7b82a91f712427b624",
+      "level": 8,
+      "eventsSha256": "fe3b4da1b3057f2e9b3fbe897b3828cb3a2a122388c1154c8f676d5526991bd5",
+      "rows": 368
+    },
+    {
+      "seed": "formal-unseen-20261113-13",
+      "worldId": "w2f96a475ae718d1589d9",
+      "level": 8,
+      "eventsSha256": "e5992c65fc8025fab3e070d7ac0ee2092a6df3f4a605fa35f4c0b4b7ffbfca4d",
+      "rows": 307
+    },
+    {
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w0b0a425cf803342bff2d",
+      "level": 8,
+      "eventsSha256": "3b927770fbde0c88e27de7cd092733d2d445468d72880ae475f93b9f1c9edbda",
+      "rows": 233
+    },
+    {
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "w039210a04d4ae45b4567",
+      "level": 8,
+      "eventsSha256": "c0a072ebc7d2cfa877f0f0ed286f6d69cddcffc259bd6f8b596905ede791fc59",
+      "rows": 339
+    },
+    {
+      "seed": "formal-unseen-20261113-16",
+      "worldId": "w3b92ad0e00a3d9a0302b",
+      "level": 8,
+      "eventsSha256": "81e605ffd3a9ebb7ca323e98e86dfc67313000d6380e1b25803a8d3d2494ff5a",
+      "rows": 364
+    },
+    {
+      "seed": "frontier-unseen-20261114-19325279220dd249",
+      "worldId": "w2aabdee2d303f39f1b63",
+      "level": 8,
+      "eventsSha256": "d78ad662cbb1c4fc0b0e91bfff261e1e732bf8840dd26ee74571cfc2a6b54871",
+      "rows": 330
+    },
+    {
+      "seed": "frontier-unseen-20261114-4d17ec2759243bc1",
+      "worldId": "w7d747b57779c24ebbe3c",
+      "level": 8,
+      "eventsSha256": "3fa3bf9425e9a58dc76477f9f5de834a34e710aa451ab69baff03628aa95c416",
+      "rows": 297
+    },
+    {
+      "seed": "frontier-unseen-20261114-7233f333bf3d7c2e",
+      "worldId": "w08aa7edba012c50a9f39",
+      "level": 8,
+      "eventsSha256": "a7b31d2e44530a8b6ed359f7044fa5417c27666132889dd6b4502d357ea7568a",
+      "rows": 315
+    },
+    {
+      "seed": "frontier-unseen-20261114-779e9add6b14a18b",
+      "worldId": "wed077baaf55738a03245",
+      "level": 8,
+      "eventsSha256": "95bb9abc7a8b29a609f2083595061f1d985360dcb647e9fb941d5ca03c0e00e6",
+      "rows": 278
+    },
+    {
+      "seed": "frontier-unseen-20261114-7f39dd564e731085",
+      "worldId": "w6780460f61aa419c17c2",
+      "level": 8,
+      "eventsSha256": "36afcf2bb10783abb9cfae8f147b9bcab014d70f6847ecc173f60abdd3b18e15",
+      "rows": 240
+    },
+    {
+      "seed": "frontier-unseen-20261114-98dcde7a3d066a80",
+      "worldId": "w9bad3f6f3bb2a05f6e37",
+      "level": 8,
+      "eventsSha256": "f74c5fb47db3247494b8105a4176fac83e8ce5fd711ae1c408318227da156bd1",
+      "rows": 251
+    },
+    {
+      "seed": "frontier-unseen-20261114-b256738651c1125d",
+      "worldId": "w94ce568c0df96c131a31",
+      "level": 8,
+      "eventsSha256": "2c2ec17d7cfc872f0cd0d469cba9bbac69890c29477392561bf3762dc821f13e",
+      "rows": 266
+    },
+    {
+      "seed": "frontier-unseen-20261114-f5efce54acaddce6",
+      "worldId": "w531ed4987e09834cc1c1",
+      "level": 8,
+      "eventsSha256": "68d955b3352b43950dbf36596e1db481ddec346d791e9ac2cc0608540e040128",
+      "rows": 388
+    },
+    {
+      "seed": "holdout-1",
+      "worldId": "wd219768ea907dfeb7b60",
+      "level": 8,
+      "eventsSha256": "1b4be31d2dcf88ec8d8c88cc231d9c41497b77bc25a1a9add6321a14b493acf7",
+      "rows": 139
+    },
+    {
+      "seed": "holdout-2",
+      "worldId": "w1bffb098519f0532dddf",
+      "level": 8,
+      "eventsSha256": "5bafc7e39cb6e1ba2c93635a997bf91422b27fcda1d1565ebdb1b8be92647fa0",
+      "rows": 287
+    },
+    {
+      "seed": "holdout-3",
+      "worldId": "w1161968626d8d95ecec7",
+      "level": 8,
+      "eventsSha256": "d20ba390b763f5cee07ba77f670770ac62596764d0e2150b268ffe9da780c7e8",
+      "rows": 229
+    },
+    {
+      "seed": "holdout-4",
+      "worldId": "wb915d7ae809d2fec7776",
+      "level": 8,
+      "eventsSha256": "70c31b68d0a9e2da243f2ed6cdeef3db7c78db537ad00dba9b7116037be2d734",
+      "rows": 283
+    },
+    {
+      "seed": "holdout-5",
+      "worldId": "w65288bae5e4a8c3d8f5e",
+      "level": 8,
+      "eventsSha256": "ada5fd9be1579036948f06339717b2253d07de66f29041ebc79e0becf3b8ed8b",
+      "rows": 198
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-5916726ab4e9f863",
+      "worldId": "wa6e982433a45fbcdd401",
+      "level": 8,
+      "eventsSha256": "6e8b1e880bb0f44f1cc513f815e314237c5b5be7b58483ccebdc4ec97389eadb",
+      "rows": 254
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-5e15a0a3962a54ba",
+      "worldId": "w19ad9c95aa672e0b58b4",
+      "level": 8,
+      "eventsSha256": "f81beb23b771829528eb64bddfe4f2530ba023a34cc0cdab4dfb5abee2b9a46f",
+      "rows": 316
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-824df9f835246148",
+      "worldId": "w1c1994a0583f1b960853",
+      "level": 8,
+      "eventsSha256": "d3004d4bbad00eb8811ff62a6c7de68c20959b6cdbbab570270a42518231abdf",
+      "rows": 208
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-864cfcc97f2cade5",
+      "worldId": "w2a2f50f79c60f9a8503f",
+      "level": 8,
+      "eventsSha256": "2f05e10e18dcb156fe17f8a3308e37a792f643197ab1664404888fa8ebc82978",
+      "rows": 333
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-9b483a1a53deba54",
+      "worldId": "wa8a176feea958e9bf80f",
+      "level": 8,
+      "eventsSha256": "7096166ee41a7ba6fb18021bc48d62654d94fa25222e8a53fce8ca8068f93dcb",
+      "rows": 296
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-c551e105a48e2148",
+      "worldId": "w23b23a9de15d1374e9d6",
+      "level": 8,
+      "eventsSha256": "0cf9f16acdd8f879262109824218f617b4fdf55422397c7bba16f0262410a90b",
+      "rows": 346
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-e48160564a27cf74",
+      "worldId": "w49061de8484c00420b4f",
+      "level": 8,
+      "eventsSha256": "4376966e4d27f5876531f39402f4968acc9b06081714a8e9104c0c1993c0041f",
+      "rows": 277
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-e4ee0c5739a75ad0",
+      "worldId": "wbea5dbdaebeff5638d1c",
+      "level": 8,
+      "eventsSha256": "1a68f865ac38d73eeb88a2f30db166bed40c1fa11c2abf8d9e06ef014016ec66",
+      "rows": 313
+    },
+    {
+      "seed": "level-compatibility-20261114",
+      "worldId": "w00020b2903e9a263e9b6",
+      "level": 7,
+      "eventsSha256": "18d5a6c34674479020a67f1bfc91ed2af95a25a0e20095f9d2f8a2c10ca96f7a",
+      "rows": 167
+    },
+    {
+      "seed": "levels-development-2dba6ebe7258e63082c0",
+      "worldId": "w27a9907f165ecf084fdd",
+      "level": 1,
+      "eventsSha256": "a1287d34c5a0fb9c2fc5a3d6872fc94bb54cde661c67313a2c8fc9973f851fe1",
+      "rows": 640
+    },
+    {
+      "seed": "levels-development-bd4beddd353cf287138f",
+      "worldId": "w04ecb99ab29bf586a64f",
+      "level": 7,
+      "eventsSha256": "1ef65256542add60bf2447addc534f58ceaf925f9bdb8f8cd9a1014dda5d18a7",
+      "rows": 329
+    },
+    {
+      "seed": "levels-development-fbc5ca1adb2a1671179f",
+      "worldId": "w1c1a0a0dc2ae65b6f9fd",
+      "level": 2,
+      "eventsSha256": "579641b93ed9fc1f359551af2dea099df1da17ad406b949cfbfd8c6e2ce35f69",
+      "rows": 68
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-309e12dc0f90a102",
+      "worldId": "w2e9187237875066192e1",
+      "level": 8,
+      "eventsSha256": "a474af9c10ac871b670741ed3a360f3e4e45991d96f9643ea17c11d4c566b5ee",
+      "rows": 363
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-5914d58b5b701bdc",
+      "worldId": "w3fc02045dd321beb8d6f",
+      "level": 8,
+      "eventsSha256": "d98fbcc58438620e0fd0b9753124a73b88990cd9fea64d9dde974479805a4f61",
+      "rows": 316
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-6e740a3630050c2d",
+      "worldId": "w05c7c136c1ff39724db3",
+      "level": 8,
+      "eventsSha256": "90ceb5504ffdd1ffe130c009b17510c4ad1c458d0d3bdc40ae2a4066eda0af8f",
+      "rows": 313
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-8bc883348a90d012",
+      "worldId": "w0be5b75baa67039789b8",
+      "level": 8,
+      "eventsSha256": "a53cbff1333a9f6062b2217fc4d3e66e09d40fdedfaec61928aabec4a9d505ea",
+      "rows": 280
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-b0a0611536d3eb20",
+      "worldId": "wb6570508fe39f334178a",
+      "level": 8,
+      "eventsSha256": "c4e3624c4095fce3ef7ddf6f6d15e9c82886aa8b43c861d109e497d43491d7db",
+      "rows": 235
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-c07ddff01f6c5f00",
+      "worldId": "w0a2762d880b912ef91d1",
+      "level": 8,
+      "eventsSha256": "01559e49c9ed8759d095a5183927ace067961d209e67e9956f0603978e542554",
+      "rows": 318
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-df5da3c0bccf1e98",
+      "worldId": "wddbfe455d9d22b4aa67c",
+      "level": 8,
+      "eventsSha256": "147eeb97e46341d136c4c7373adc632c7bcd0d84e901daeab36042d26a132151",
+      "rows": 293
+    },
+    {
+      "seed": "note-spelling-unseen-20261114-f78979dd4e5b3a7c",
+      "worldId": "w8c4afff7ce388130bd35",
+      "level": 8,
+      "eventsSha256": "db6bbbb6af5804be94515cdbc432191ff4f94b2977886e08556f129ba100fbc6",
+      "rows": 340
+    },
+    {
+      "seed": "payout-unseen-20261114-11d2bc22e5a2e17d",
+      "worldId": "w62f0984788410938c8b4",
+      "level": 8,
+      "eventsSha256": "b31f877205ced52a036b7cf8f00e61df9bb72101c079e24e003f950aaf44d473",
+      "rows": 272
+    },
+    {
+      "seed": "payout-unseen-20261114-166d26adce8afd0e",
+      "worldId": "w41dfb468b53ad569c41a",
+      "level": 8,
+      "eventsSha256": "6bdf71950163a16bd296aaa6c9a93b6fa33024ceac2a4eb001dab116d6e92f2e",
+      "rows": 268
+    },
+    {
+      "seed": "payout-unseen-20261114-1954b8aff04d03b3",
+      "worldId": "w09695636c500760ddad6",
+      "level": 8,
+      "eventsSha256": "d8d5b4cabdca42e37e2e6c5aefa262f8cfac920aeb343bce7e228aa556571dea",
+      "rows": 368
+    },
+    {
+      "seed": "payout-unseen-20261114-1c6cfe93689d0a32",
+      "worldId": "w15a04360a544c329bb74",
+      "level": 8,
+      "eventsSha256": "344af20c6e7d187804dfbb2630f38c045ff7c98750336fe0c996989c9d10811c",
+      "rows": 262
+    },
+    {
+      "seed": "payout-unseen-20261114-266a2575198d039b",
+      "worldId": "w52ad5b635ac9d9a2a4a7",
+      "level": 8,
+      "eventsSha256": "5410a1375254627005b05a2d8f8ee2d5e93b42d56a0cbdef5989130c3ee37af2",
+      "rows": 300
+    },
+    {
+      "seed": "payout-unseen-20261114-2b782dea15c2c930",
+      "worldId": "w49612a1b08ad3d5d7143",
+      "level": 8,
+      "eventsSha256": "39ec50380dfbb0e0f81319447d827fa2b7824dea2e6742e7a40fec8cb9061bbb",
+      "rows": 306
+    },
+    {
+      "seed": "payout-unseen-20261114-619e961538a5119e",
+      "worldId": "wd481f1b570d17886c38b",
+      "level": 8,
+      "eventsSha256": "b0e3785d0a0e9996609360907b419c264dead5c73bb5247715a6ddbea7f4b234",
+      "rows": 281
+    },
+    {
+      "seed": "payout-unseen-20261114-8a0fdb3994ac5c0e",
+      "worldId": "w41c1a8d2426d61c029e1",
+      "level": 8,
+      "eventsSha256": "76c84f9f81129338b320ca47df1bd70056b5503430820034859ed473bcc9c8dc",
+      "rows": 373
+    },
+    {
+      "seed": "payout-unseen-20261114-bdbb0af73763c605",
+      "worldId": "w14cd72c5bdfa45326d2e",
+      "level": 8,
+      "eventsSha256": "878baee160525f876df3ebca7bad902362d9d36e0f4969c8a21e7ba2b45ad817",
+      "rows": 232
+    },
+    {
+      "seed": "payout-unseen-20261114-bfc8b37c1c3b01b5",
+      "worldId": "w8efb30b6ad8d38f3b698",
+      "level": 8,
+      "eventsSha256": "9ced1a5312234000c7d443c23c2e10ea9734967604a5e23359427b7150094c49",
+      "rows": 302
+    },
+    {
+      "seed": "payout-unseen-20261114-df10216ee874354b",
+      "worldId": "w69dc986161ca61b80710",
+      "level": 8,
+      "eventsSha256": "3afe56666f9bf004036d78b57dbde5b29ba496f1da13525d459e7c2e107e3cc6",
+      "rows": 369
+    },
+    {
+      "seed": "payout-unseen-20261114-e2258b662e732c8e",
+      "worldId": "w9318346c090839395093",
+      "level": 8,
+      "eventsSha256": "794820257ad3b8efb06140d1f6a43b582a2c9ed86d9d888f8ab06733a33d21eb",
+      "rows": 262
+    },
+    {
+      "seed": "relisting-unseen-20261114-44179069f811e12a",
+      "worldId": "w04e60027b7b2b4d7b58b",
+      "level": 8,
+      "eventsSha256": "cf49ef103522a6f5996a71741ec3b585261bd974e0f462174b024706cb02c029",
+      "rows": 269
+    },
+    {
+      "seed": "relisting-unseen-20261114-49994c1da1bed296",
+      "worldId": "w119bd36598fdf32552b2",
+      "level": 8,
+      "eventsSha256": "18149b287e16ffbf459a475b9a56dee27de9e38df6c33d6dbce238106321e995",
+      "rows": 271
+    },
+    {
+      "seed": "relisting-unseen-20261114-5291bd44e58fc0b8",
+      "worldId": "w204e5b617a8a34fb8b1b",
+      "level": 8,
+      "eventsSha256": "3abf7661bca9aebfdd9d6dd4c9c13b1fbe399eff0daea5158d1999a79c70c2e6",
+      "rows": 244
+    },
+    {
+      "seed": "relisting-unseen-20261114-593862ba0453d993",
+      "worldId": "w7eaa6b3210b790c25028",
+      "level": 8,
+      "eventsSha256": "18a0ef6717c513c12c0b9a8737b3b4a7adede1e9a9520bc00d578ed4870e7fba",
+      "rows": 267
+    },
+    {
+      "seed": "relisting-unseen-20261114-664fad94342f003c",
+      "worldId": "w84f9b01fde2cae59d96e",
+      "level": 8,
+      "eventsSha256": "3ee8012cea55323d4f8968f2cfdf9ab02016dfc9b83818bc36d0deabeaa30e3b",
+      "rows": 268
+    },
+    {
+      "seed": "relisting-unseen-20261114-85e7c8159eb228d3",
+      "worldId": "w25bd5a8dbece356a4b6a",
+      "level": 8,
+      "eventsSha256": "6cb340771be68c406f8c12ab6e87efb9057acda64698f3cddaed5429f851c1ee",
+      "rows": 321
+    },
+    {
+      "seed": "relisting-unseen-20261114-ae921d2f5a004c5c",
+      "worldId": "w129775e44fd461f4366b",
+      "level": 8,
+      "eventsSha256": "db95d24b4cc0a4459fb03f75673d9b2306d5bd607f22572caf3ac2fec84ea64d",
+      "rows": 245
+    },
+    {
+      "seed": "relisting-unseen-20261114-be6ccba2d5332cc6",
+      "worldId": "w20a5b10fafcb6b7ad129",
+      "level": 8,
+      "eventsSha256": "f6b84363469316363068cb07710a7e4d743472490c8b5f51d9fa80185e9eae64",
+      "rows": 296
+    },
+    {
+      "seed": "spread-1",
+      "worldId": "wd415561aaf36894b76de",
+      "level": 8,
+      "eventsSha256": "121c3eaf6b0c64f6dcc272f31fe2810e1021ae6693148e432a8f33ca66e0f228",
+      "rows": 296
+    },
+    {
+      "seed": "validate-1",
+      "worldId": "wbcb207675e32e9aff20f",
+      "level": 8,
+      "eventsSha256": "303f661dac6d40d69fc44954210b503cd849e0fbe54c8ce37080e0c2acb9f24c",
+      "rows": 322
+    },
+    {
+      "seed": "validate-2",
+      "worldId": "wd010ab552268190f208a",
+      "level": 8,
+      "eventsSha256": "192d1f71cc47fc1f0422f57ec964686181e2d6f28fa77b9a0cc01260f829b02f",
+      "rows": 168
+    }
+  ],
+  "scores": {
+    "booking120": {
+      "labeled": 22141,
+      "censored": 30,
+      "meanWeekPooledBrier": 0.0906536673854192,
+      "meanWeekLogisticBrier": 0.0766161928592496,
+      "weeks": [
+        {
+          "seed": "cost-development-20261114-a92ca803a91fbe65",
+          "orders": 360,
+          "pooledBrier": 0.1615118730406518,
+          "logisticBrier": 0.13380078654110428
+        },
+        {
+          "seed": "formal-unseen-20261113-01",
+          "orders": 271,
+          "pooledBrier": 0.06682982782757038,
+          "logisticBrier": 0.05825532053580252
+        },
+        {
+          "seed": "formal-unseen-20261113-02",
+          "orders": 247,
+          "pooledBrier": 0.03744748028487112,
+          "logisticBrier": 0.028702994642160796
+        },
+        {
+          "seed": "formal-unseen-20261113-04",
+          "orders": 351,
+          "pooledBrier": 0.06991696762145898,
+          "logisticBrier": 0.05906525000372718
+        },
+        {
+          "seed": "formal-unseen-20261113-05",
+          "orders": 262,
+          "pooledBrier": 0.04492202438631227,
+          "logisticBrier": 0.04066197196520977
+        },
+        {
+          "seed": "formal-unseen-20261113-10",
+          "orders": 390,
+          "pooledBrier": 0.14803061197653072,
+          "logisticBrier": 0.12781338692792638
+        },
+        {
+          "seed": "frontier-unseen-20261114-19325279220dd249",
+          "orders": 330,
+          "pooledBrier": 0.08066969810731983,
+          "logisticBrier": 0.07342610827137962
+        },
+        {
+          "seed": "frontier-unseen-20261114-4d17ec2759243bc1",
+          "orders": 297,
+          "pooledBrier": 0.09614313953819277,
+          "logisticBrier": 0.08606865292349684
+        },
+        {
+          "seed": "frontier-unseen-20261114-f5efce54acaddce6",
+          "orders": 388,
+          "pooledBrier": 0.09854269908212072,
+          "logisticBrier": 0.08249168056846598
+        },
+        {
+          "seed": "late-rescue-unseen-20261114-5e15a0a3962a54ba",
+          "orders": 316,
+          "pooledBrier": 0.09602694763729586,
+          "logisticBrier": 0.0846792737311474
+        },
+        {
+          "seed": "note-spelling-unseen-20261114-df5da3c0bccf1e98",
+          "orders": 292,
+          "pooledBrier": 0.05489978972941139,
+          "logisticBrier": 0.04636270299958891
+        },
+        {
+          "seed": "payout-unseen-20261114-1954b8aff04d03b3",
+          "orders": 367,
+          "pooledBrier": 0.18413301823321823,
+          "logisticBrier": 0.14872518732889553
+        },
+        {
+          "seed": "payout-unseen-20261114-619e961538a5119e",
+          "orders": 281,
+          "pooledBrier": 0.12586924542957967,
+          "logisticBrier": 0.10987028630389656
+        },
+        {
+          "seed": "relisting-unseen-20261114-44179069f811e12a",
+          "orders": 269,
+          "pooledBrier": 0.12225231737946163,
+          "logisticBrier": 0.10746405881929681
+        },
+        {
+          "seed": "relisting-unseen-20261114-49994c1da1bed296",
+          "orders": 271,
+          "pooledBrier": 0.06682982782757038,
+          "logisticBrier": 0.053142504190924617
+        },
+        {
+          "seed": "relisting-unseen-20261114-664fad94342f003c",
+          "orders": 268,
+          "pooledBrier": 0.07906677013718512,
+          "logisticBrier": 0.06651725029536015
+        },
+        {
+          "seed": "relisting-unseen-20261114-be6ccba2d5332cc6",
+          "orders": 296,
+          "pooledBrier": 0.07800632402685692,
+          "logisticBrier": 0.06378816801747215
+        },
+        {
+          "seed": "validate-1",
+          "orders": 322,
+          "pooledBrier": 0.038828365694076064,
+          "logisticBrier": 0.03039989534071944
+        },
+        {
+          "seed": "validate-2",
+          "orders": 168,
+          "pooledBrier": 0.07249275236328104,
+          "logisticBrier": 0.054472184919167506
+        }
+      ]
+    },
+    "dropped": {
+      "labeled": 21936,
+      "censored": 235,
+      "meanWeekPooledBrier": 0.10185112798426965,
+      "meanWeekLogisticBrier": 0.10106385200619397,
+      "weeks": [
+        {
+          "seed": "cost-development-20261114-a92ca803a91fbe65",
+          "orders": 358,
+          "pooledBrier": 0.12422707363079948,
+          "logisticBrier": 0.12185301545959816
+        },
+        {
+          "seed": "formal-unseen-20261113-01",
+          "orders": 269,
+          "pooledBrier": 0.0723322490104738,
+          "logisticBrier": 0.07305615398344631
+        },
+        {
+          "seed": "formal-unseen-20261113-02",
+          "orders": 245,
+          "pooledBrier": 0.07520598668629828,
+          "logisticBrier": 0.0756793594885879
+        },
+        {
+          "seed": "formal-unseen-20261113-04",
+          "orders": 350,
+          "pooledBrier": 0.11533803904596153,
+          "logisticBrier": 0.11441337079315587
+        },
+        {
+          "seed": "formal-unseen-20261113-05",
+          "orders": 261,
+          "pooledBrier": 0.09587572033049392,
+          "logisticBrier": 0.09535150111109697
+        },
+        {
+          "seed": "formal-unseen-20261113-10",
+          "orders": 389,
+          "pooledBrier": 0.11300578314794746,
+          "logisticBrier": 0.11473166360555809
+        },
+        {
+          "seed": "frontier-unseen-20261114-19325279220dd249",
+          "orders": 325,
+          "pooledBrier": 0.11108697675313466,
+          "logisticBrier": 0.107894654498946
+        },
+        {
+          "seed": "frontier-unseen-20261114-4d17ec2759243bc1",
+          "orders": 291,
+          "pooledBrier": 0.10634896574406187,
+          "logisticBrier": 0.10346380541899221
+        },
+        {
+          "seed": "frontier-unseen-20261114-f5efce54acaddce6",
+          "orders": 382,
+          "pooledBrier": 0.13811145456187549,
+          "logisticBrier": 0.13800699041170333
+        },
+        {
+          "seed": "late-rescue-unseen-20261114-5e15a0a3962a54ba",
+          "orders": 312,
+          "pooledBrier": 0.09982461380373568,
+          "logisticBrier": 0.09650426160479061
+        },
+        {
+          "seed": "note-spelling-unseen-20261114-df5da3c0bccf1e98",
+          "orders": 288,
+          "pooledBrier": 0.09056846688431373,
+          "logisticBrier": 0.08927307052494075
+        },
+        {
+          "seed": "payout-unseen-20261114-1954b8aff04d03b3",
+          "orders": 365,
+          "pooledBrier": 0.07344857590477251,
+          "logisticBrier": 0.07392901630025676
+        },
+        {
+          "seed": "payout-unseen-20261114-619e961538a5119e",
+          "orders": 277,
+          "pooledBrier": 0.12288610452498205,
+          "logisticBrier": 0.12369143243173164
+        },
+        {
+          "seed": "relisting-unseen-20261114-44179069f811e12a",
+          "orders": 267,
+          "pooledBrier": 0.13920979708982584,
+          "logisticBrier": 0.14164915441051393
+        },
+        {
+          "seed": "relisting-unseen-20261114-49994c1da1bed296",
+          "orders": 269,
+          "pooledBrier": 0.1292567123337209,
+          "logisticBrier": 0.12491310062024905
+        },
+        {
+          "seed": "relisting-unseen-20261114-664fad94342f003c",
+          "orders": 265,
+          "pooledBrier": 0.09152941658204748,
+          "logisticBrier": 0.09053399351350212
+        },
+        {
+          "seed": "relisting-unseen-20261114-be6ccba2d5332cc6",
+          "orders": 295,
+          "pooledBrier": 0.04766328890125573,
+          "logisticBrier": 0.04930891355445905
+        },
+        {
+          "seed": "validate-1",
+          "orders": 320,
+          "pooledBrier": 0.0723790618914962,
+          "logisticBrier": 0.07299579817550479
+        },
+        {
+          "seed": "validate-2",
+          "orders": 165,
+          "pooledBrier": 0.11687314487392679,
+          "logisticBrier": 0.11296393221065161
+        }
+      ]
+    },
+    "late": {
+      "labeled": 21936,
+      "censored": 235,
+      "meanWeekPooledBrier": 0.019108514924730785,
+      "meanWeekLogisticBrier": 0.017991482863024683,
+      "weeks": [
+        {
+          "seed": "cost-development-20261114-a92ca803a91fbe65",
+          "orders": 358,
+          "pooledBrier": 0.032581488537973304,
+          "logisticBrier": 0.02478607223367741
+        },
+        {
+          "seed": "formal-unseen-20261113-01",
+          "orders": 269,
+          "pooledBrier": 0.003965522358955606,
+          "logisticBrier": 0.004024415549473532
+        },
+        {
+          "seed": "formal-unseen-20261113-02",
+          "orders": 245,
+          "pooledBrier": 0.008234374177745168,
+          "logisticBrier": 0.0071541722798203295
+        },
+        {
+          "seed": "formal-unseen-20261113-04",
+          "orders": 350,
+          "pooledBrier": 0.008626292655306397,
+          "logisticBrier": 0.008486334117570512
+        },
+        {
+          "seed": "formal-unseen-20261113-05",
+          "orders": 261,
+          "pooledBrier": 0.004074932864164338,
+          "logisticBrier": 0.004099498454906172
+        },
+        {
+          "seed": "formal-unseen-20261113-10",
+          "orders": 389,
+          "pooledBrier": 0.04235848429342315,
+          "logisticBrier": 0.038395906120111886
+        },
+        {
+          "seed": "frontier-unseen-20261114-19325279220dd249",
+          "orders": 325,
+          "pooledBrier": 0.012213854103751467,
+          "logisticBrier": 0.01211058522390607
+        },
+        {
+          "seed": "frontier-unseen-20261114-4d17ec2759243bc1",
+          "orders": 291,
+          "pooledBrier": 0.013594633767757821,
+          "logisticBrier": 0.013702172420062202
+        },
+        {
+          "seed": "frontier-unseen-20261114-f5efce54acaddce6",
+          "orders": 382,
+          "pooledBrier": 0.012964070988104473,
+          "logisticBrier": 0.013079039401740548
+        },
+        {
+          "seed": "late-rescue-unseen-20261114-5e15a0a3962a54ba",
+          "orders": 312,
+          "pooledBrier": 0.02501652437075153,
+          "logisticBrier": 0.024433282056515775
+        },
+        {
+          "seed": "note-spelling-unseen-20261114-df5da3c0bccf1e98",
+          "orders": 288,
+          "pooledBrier": 0.017066148203343637,
+          "logisticBrier": 0.016224038304221196
+        },
+        {
+          "seed": "payout-unseen-20261114-1954b8aff04d03b3",
+          "orders": 365,
+          "pooledBrier": 0.04248697536734276,
+          "logisticBrier": 0.040749435684752026
+        },
+        {
+          "seed": "payout-unseen-20261114-619e961538a5119e",
+          "orders": 277,
+          "pooledBrier": 0.041993128237712174,
+          "logisticBrier": 0.03837900367926755
+        },
+        {
+          "seed": "relisting-unseen-20261114-44179069f811e12a",
+          "orders": 267,
+          "pooledBrier": 0.014781027398430823,
+          "logisticBrier": 0.01487472783351611
+        },
+        {
+          "seed": "relisting-unseen-20261114-49994c1da1bed296",
+          "orders": 269,
+          "pooledBrier": 0.02538262875356537,
+          "logisticBrier": 0.02423190928784409
+        },
+        {
+          "seed": "relisting-unseen-20261114-664fad94342f003c",
+          "orders": 265,
+          "pooledBrier": 0.029383182589539647,
+          "logisticBrier": 0.028125463903741012
+        },
+        {
+          "seed": "relisting-unseen-20261114-be6ccba2d5332cc6",
+          "orders": 295,
+          "pooledBrier": 0.006905836965673216,
+          "logisticBrier": 0.007828735984968856
+        },
+        {
+          "seed": "validate-1",
+          "orders": 320,
+          "pooledBrier": 0.00939788215800506,
+          "logisticBrier": 0.009050444874425101
+        },
+        {
+          "seed": "validate-2",
+          "orders": 165,
+          "pooledBrier": 0.012034795778338879,
+          "logisticBrier": 0.01210293698694857
+        }
+      ]
+    }
+  },
+  "fixtures": [
+    {
+      "target": "booking120",
+      "x": [
+        8.0,
+        5.733333333333333,
+        58.85000000000009,
+        168.0,
+        0.0,
+        0.0,
+        113.08,
+        0.85,
+        1.05,
+        2.446527777777778,
+        1.1548611111111111,
+        9.283333333333333,
+        0.0
+      ],
+      "probability": 0.8749753130044767
+    },
+    {
+      "target": "booking120",
+      "x": [
+        8.0,
+        5.733333333333333,
+        26.0,
+        23.800000000000004,
+        0.0,
+        0.0,
+        174.25,
+        1.0,
+        1.05,
+        3.1166666666666667,
+        -0.010416666666666666,
+        17.2,
+        4.0
+      ],
+      "probability": 0.886603419746016
+    },
+    {
+      "target": "booking120",
+      "x": [
+        8.0,
+        2.5166666666666666,
+        156.6499999999987,
+        5.35,
+        0.0,
+        0.0,
+        80.56,
+        1.0,
+        1.05,
+        4.192361111111111,
+        -0.010416666666666666,
+        15.383333333333333,
+        3.0
+      ],
+      "probability": 0.8003805229252267
+    },
+    {
+      "target": "booking120",
+      "x": [
+        8.0,
+        0.5833333333333334,
+        351.8500000000001,
+        160.1999999999987,
+        0.0,
+        0.0,
+        30.33,
+        1.0,
+        1.05,
+        1.461111111111111,
+        1.0027777777777778,
+        8.933333333333334,
+        3.0
+      ],
+      "probability": 0.9845491671467423
+    },
+    {
+      "target": "booking120",
+      "x": [
+        8.0,
+        1.1333333333333333,
+        373.8000000000001,
+        14.549999999999992,
+        0.0,
+        0.0,
+        42.61,
+        1.0,
+        1.05,
+        3.3506944444444446,
+        0.13402777777777777,
+        11.583333333333334,
+        4.0
+      ],
+      "probability": 0.8632210813973444
+    },
+    {
+      "target": "booking120",
+      "x": [
+        8.0,
+        0.48333333333333334,
+        446.1,
+        446.1,
+        0.0,
+        0.0,
+        18.73,
+        1.0,
+        1.05,
+        0.2388888888888889,
+        -0.010416666666666666,
+        14.266666666666667,
+        1.0
+      ],
+      "probability": 0.9796478915873362
+    },
+    {
+      "target": "booking120",
+      "x": [
+        8.0,
+        2.8,
+        401.95000000000016,
+        3.7,
+        0.0,
+        0.0,
+        89.52,
+        1.0,
+        1.05,
+        1.4361111111111111,
+        -0.010416666666666666,
+        9.533333333333333,
+        2.0
+      ],
+      "probability": 0.9585689436059528
+    },
+    {
+      "target": "booking120",
+      "x": [
+        8.0,
+        1.2833333333333334,
+        437.0500000000002,
+        3.35,
+        0.0,
+        0.0,
+        46.49,
+        1.0,
+        1.05,
+        1.301388888888889,
+        0.7597222222222222,
+        12.766666666666667,
+        3.0
+      ],
+      "probability": 0.9458528616762326
+    },
+    {
+      "target": "booking120",
+      "x": [
+        8.0,
+        0.48333333333333334,
+        436.10000000000036,
+        436.10000000000036,
+        0.0,
+        0.0,
+        19.08,
+        0.85,
+        1.05,
+        2.140972222222222,
+        1.5993055555555555,
+        16.616666666666667,
+        0.0
+      ],
+      "probability": 0.9812521820620635
+    },
+    {
+      "target": "booking120",
+      "x": [
+        8.0,
+        1.7666666666666666,
+        460.4000000000002,
+        49.0,
+        0.0,
+        0.0,
+        62.6,
+        1.0,
+        1.05,
+        3.316666666666667,
+        -0.010416666666666666,
+        12.4,
+        4.0
+      ],
+      "probability": 0.8868090361932571
+    },
+    {
+      "target": "booking120",
+      "x": [
+        8.0,
+        2.1666666666666665,
+        354.95000000000016,
+        5.0,
+        0.0,
+        0.0,
+        67.53,
+        1.0,
+        1.05,
+        3.0930555555555554,
+        0.009722222222222222,
+        17.766666666666666,
+        4.0
+      ],
+      "probability": 0.7186647675381979
+    },
+    {
+      "target": "dropped",
+      "x": [
+        8.0,
+        5.733333333333333,
+        58.85000000000009,
+        168.0,
+        0.0,
+        0.0,
+        113.08,
+        0.85,
+        1.05,
+        2.446527777777778,
+        1.1548611111111111,
+        9.283333333333333,
+        0.0
+      ],
+      "probability": 0.07262440718110763
+    },
+    {
+      "target": "dropped",
+      "x": [
+        8.0,
+        0.5333333333333333,
+        392.00000000000034,
+        392.00000000000034,
+        0.0,
+        0.0,
+        18.71,
+        1.0,
+        1.05,
+        3.0965277777777778,
+        0.05486111111111111,
+        17.683333333333334,
+        4.0
+      ],
+      "probability": 0.10946029086111697
+    },
+    {
+      "target": "dropped",
+      "x": [
+        8.0,
+        1.2333333333333334,
+        393.85,
+        40.20000000000001,
+        0.0,
+        0.0,
+        44.8,
+        1.0,
+        1.05,
+        1.2097222222222221,
+        0.6680555555555555,
+        14.966666666666667,
+        3.0
+      ],
+      "probability": 0.12346779375829046
+    },
+    {
+      "target": "dropped",
+      "x": [
+        8.0,
+        0.48333333333333334,
+        351.8500000000001,
+        351.8500000000001,
+        0.0,
+        0.0,
+        16.13,
+        1.0,
+        1.05,
+        0.42430555555555555,
+        -0.010416666666666666,
+        9.816666666666666,
+        3.0
+      ],
+      "probability": 0.07198085719550862
+    },
+    {
+      "target": "dropped",
+      "x": [
+        8.0,
+        0.48333333333333334,
+        373.8000000000001,
+        373.8000000000001,
+        0.0,
+        0.0,
+        18.31,
+        1.0,
+        1.05,
+        0.2375,
+        -0.010416666666666666,
+        14.3,
+        4.0
+      ],
+      "probability": 0.09828481803257388
+    },
+    {
+      "target": "dropped",
+      "x": [
+        8.0,
+        0.5833333333333334,
+        169.99999999999847,
+        446.1,
+        0.0,
+        0.0,
+        32.98,
+        1.0,
+        1.05,
+        1.2055555555555555,
+        0.7472222222222222,
+        15.066666666666666,
+        1.0
+      ],
+      "probability": 0.11292650119595395
+    },
+    {
+      "target": "dropped",
+      "x": [
+        8.0,
+        0.5833333333333334,
+        188.19999999999834,
+        401.95000000000016,
+        0.0,
+        0.0,
+        32.16,
+        1.0,
+        1.05,
+        1.425,
+        0.8833333333333333,
+        9.8,
+        2.0
+      ],
+      "probability": 0.09099187750965097
+    },
+    {
+      "target": "dropped",
+      "x": [
+        8.0,
+        0.8333333333333334,
+        211.39999999999804,
+        97.69999999999996,
+        0.0,
+        0.0,
+        42.57,
+        1.0,
+        1.05,
+        1.2854166666666667,
+        0.7854166666666667,
+        13.15,
+        3.0
+      ],
+      "probability": 0.1165807593985895
+    },
+    {
+      "target": "dropped",
+      "x": [
+        8.0,
+        1.1,
+        194.04999999999845,
+        35.050000000000004,
+        0.0,
+        0.0,
+        54.04,
+        0.85,
+        1.05,
+        1.117361111111111,
+        -0.010416666666666666,
+        17.183333333333334,
+        0.0
+      ],
+      "probability": 0.10591264495733597
+    },
+    {
+      "target": "dropped",
+      "x": [
+        8.0,
+        0.48333333333333334,
+        460.4000000000002,
+        460.4000000000002,
+        0.0,
+        0.0,
+        18.77,
+        1.0,
+        1.05,
+        0.3486111111111111,
+        -0.010416666666666666,
+        11.633333333333333,
+        4.0
+      ],
+      "probability": 0.08165548925998083
+    },
+    {
+      "target": "dropped",
+      "x": [
+        8.0,
+        3.3,
+        101.0,
+        1.0,
+        0.0,
+        0.0,
+        89.3,
+        1.0,
+        1.05,
+        3.123611111111111,
+        -0.010416666666666666,
+        17.033333333333335,
+        4.0
+      ],
+      "probability": 0.08937100710968181
+    },
+    {
+      "target": "late",
+      "x": [
+        8.0,
+        5.733333333333333,
+        58.85000000000009,
+        168.0,
+        0.0,
+        0.0,
+        113.08,
+        0.85,
+        1.05,
+        2.446527777777778,
+        1.1548611111111111,
+        9.283333333333333,
+        0.0
+      ],
+      "probability": 0.08732946174894281
+    },
+    {
+      "target": "late",
+      "x": [
+        8.0,
+        0.5333333333333333,
+        392.00000000000034,
+        392.00000000000034,
+        0.0,
+        0.0,
+        18.71,
+        1.0,
+        1.05,
+        3.0965277777777778,
+        0.05486111111111111,
+        17.683333333333334,
+        4.0
+      ],
+      "probability": 0.0016332413239694798
+    },
+    {
+      "target": "late",
+      "x": [
+        8.0,
+        1.2333333333333334,
+        393.85,
+        40.20000000000001,
+        0.0,
+        0.0,
+        44.8,
+        1.0,
+        1.05,
+        1.2097222222222221,
+        0.6680555555555555,
+        14.966666666666667,
+        3.0
+      ],
+      "probability": 0.011372810849808004
+    },
+    {
+      "target": "late",
+      "x": [
+        8.0,
+        0.48333333333333334,
+        351.8500000000001,
+        351.8500000000001,
+        0.0,
+        0.0,
+        16.13,
+        1.0,
+        1.05,
+        0.42430555555555555,
+        -0.010416666666666666,
+        9.816666666666666,
+        3.0
+      ],
+      "probability": 0.011131149914582023
+    },
+    {
+      "target": "late",
+      "x": [
+        8.0,
+        0.48333333333333334,
+        373.8000000000001,
+        373.8000000000001,
+        0.0,
+        0.0,
+        18.31,
+        1.0,
+        1.05,
+        0.2375,
+        -0.010416666666666666,
+        14.3,
+        4.0
+      ],
+      "probability": 0.016227409351750165
+    },
+    {
+      "target": "late",
+      "x": [
+        8.0,
+        0.5833333333333334,
+        169.99999999999847,
+        446.1,
+        0.0,
+        0.0,
+        32.98,
+        1.0,
+        1.05,
+        1.2055555555555555,
+        0.7472222222222222,
+        15.066666666666666,
+        1.0
+      ],
+      "probability": 0.003986800015103677
+    },
+    {
+      "target": "late",
+      "x": [
+        8.0,
+        0.5833333333333334,
+        188.19999999999834,
+        401.95000000000016,
+        0.0,
+        0.0,
+        32.16,
+        1.0,
+        1.05,
+        1.425,
+        0.8833333333333333,
+        9.8,
+        2.0
+      ],
+      "probability": 0.004603927143434077
+    },
+    {
+      "target": "late",
+      "x": [
+        8.0,
+        0.8333333333333334,
+        211.39999999999804,
+        97.69999999999996,
+        0.0,
+        0.0,
+        42.57,
+        1.0,
+        1.05,
+        1.2854166666666667,
+        0.7854166666666667,
+        13.15,
+        3.0
+      ],
+      "probability": 0.010008133538862561
+    },
+    {
+      "target": "late",
+      "x": [
+        8.0,
+        1.1,
+        194.04999999999845,
+        35.050000000000004,
+        0.0,
+        0.0,
+        54.04,
+        0.85,
+        1.05,
+        1.117361111111111,
+        -0.010416666666666666,
+        17.183333333333334,
+        0.0
+      ],
+      "probability": 0.008903766693161468
+    },
+    {
+      "target": "late",
+      "x": [
+        8.0,
+        0.48333333333333334,
+        460.4000000000002,
+        460.4000000000002,
+        0.0,
+        0.0,
+        18.77,
+        1.0,
+        1.05,
+        0.3486111111111111,
+        -0.010416666666666666,
+        11.633333333333333,
+        4.0
+      ],
+      "probability": 0.010861201404545794
+    },
+    {
+      "target": "late",
+      "x": [
+        8.0,
+        3.3,
+        101.0,
+        1.0,
+        0.0,
+        0.0,
+        89.3,
+        1.0,
+        1.05,
+        3.123611111111111,
+        -0.010416666666666666,
+        17.033333333333335,
+        4.0
+      ],
+      "probability": 0.012146457843789994
+    }
+  ],
+  "limitations": [
+    "Accepted-work associations; no causal payment response is fitted.",
+    "Chosen option identifies the conditional training target; all inference features use the original public request and its known response time.",
+    "No open-order count, hidden readiness, final deadline, reveal field or future event enters predictors.",
+    "Manual-licence supply is not included in these priors; live feasibility still enforces licences.",
+    "Model-test weeks are familiar development data, not policy validation."
+  ]
+}

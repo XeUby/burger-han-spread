@@ -1,12 +1,12 @@
 # Route portfolios, pricing and fulfillment under uncertainty
 
-Status: the [standard solver component and bridge](../research/portfolio/README.md) are implemented and tested; the live planner is not implemented or frozen. No worlds or validation seeds have been generated for this design. It incorporates the [researcher note supplied on 14 November](researcher-note-2026-11-14.md) and the [completed second-round evidence](second-round-findings.md).
+Status: the [standard solver and live adapter](../research/portfolio/README.md) are implemented and checked. The first 16-world comparison is frozen in [the manifest](../experiments/portfolio-development-v1.json) and [executable protocol](../experiments/portfolio-v1-protocol.json); results are tracked in [the complete-attempt audit](portfolio-development-v1-results.json). Only four familiar development seed blocks are used. It incorporates the [researcher note supplied on 14 November](researcher-note-2026-11-14.md) and the [completed second-round evidence](second-round-findings.md).
 
 ## What the completed panel establishes
 
 The local capacity-price implementation lost €287.32/week at level 8. Anchoring acquisition to already-won work gained €126.49, and their combination gained €172.87, on four familiar blocks. The combination gained €1,620.86 in revenue but spent an additional €1,021.06 on drivers and €404.18 on refunds, plus fines. Five additional return offers produced three expirations and two declines. None of these facts rejects the broader joint-planning hypothesis.
 
-The implemented planner assigns a discounted credit to one anchor at a time and still relies on inherited fulfillment rules. It does not compare a portfolio of customer prices, route commitments and payment schedules under a common set of futures. The next departure should address that omission instead of tuning the same capacity coefficient or repeating the old two-uncertain-request bundle heuristic.
+The completed precursor assigned a discounted credit to one anchor at a time and still relied on inherited fulfillment rules. The new adapter compares competing customer prices, route commitments and payment schedules under common parameter scenarios. This addresses that omission; uncertain outcomes are still integrated analytically rather than modeled as a full multistage scenario tree.
 
 ## Decision contract
 

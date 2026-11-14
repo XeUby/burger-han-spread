@@ -1,0 +1,119 @@
+{
+  "generatedAt": "2026-11-14T09:11:27.471470+00:00",
+  "role": "Adaptive development only; no confirmatory or multiplicity-adjusted claims",
+  "planSha256": "35ca42bd77ba388320bea18623bb08d64446d8c3c38c56b7471f011c23909f5e",
+  "policyRevision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+  "terminal": false,
+  "completed": 0,
+  "expected": 16,
+  "uniqueSeedBlocks": 4,
+  "records": [
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-09",
+      "label": "portfolio-v1-benchmark",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-09",
+      "label": "portfolio-v1-planner",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-09",
+      "label": "portfolio-v1-future",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-09",
+      "label": "portfolio-v1-payments",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-10",
+      "label": "portfolio-v1-benchmark",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-10",
+      "label": "portfolio-v1-planner",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-10",
+      "label": "portfolio-v1-future",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-10",
+      "label": "portfolio-v1-payments",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "portfolio-v1-benchmark",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "portfolio-v1-planner",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "portfolio-v1-future",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-14",
+      "label": "portfolio-v1-payments",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "portfolio-v1-benchmark",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "portfolio-v1-planner",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "portfolio-v1-future",
+      "status": "pending"
+    },
+    {
+      "level": 8,
+      "seed": "formal-unseen-20261113-15",
+      "label": "portfolio-v1-payments",
+      "status": "pending"
+    }
+  ],
+  "summary": {},
+  "contrasts": {},
+  "selectedForValidation": null,
+  "benchmarkReplications": [],
+  "limitations": [
+    "Four familiar underlying seed blocks; sixteen worlds are not sixteen independent weeks.",
+    "All confidence intervals are descriptive under IID-week assumptions. Four successes imply only a 47.3% one-sided 95% qualification lower bound. Bootstrap cannot reveal unseen tails.",
+    "An operational interruption leaves the panel incomplete; complete-case means are not used to select a finalist.",
+    "Payment and tail models contain explicit unvalidated assumptions. Solver optimality is restricted to the supplied finite model.",
+    "No result here promotes a policy, establishes rank, or proves a global optimum."
+  ]
+}
