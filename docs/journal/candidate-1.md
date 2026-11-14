@@ -33,3 +33,17 @@ Played with this build (`7fa2d8a`) on the live clock: €9,749 margin, 258 order
 The live loop lost track of gigs: 5,821 refused posts ("already in a live gig") for 51 of 261 orders, and 301 reprices and offers to gigs that had been withdrawn. Practice weeks of the same build show none. Replayed offline with the final's own events and a world that accepts every action, the dispatcher posts every order on time and repeats no post, so the cause is in how the live world answers or in the order in which its events arrive, not in the policy. Not found yet.
 
 The fix does not depend on the cause: every five seconds the live loop reads the world's gigs and makes the dispatcher's gigs match them (`syncGigs`), and a refused duplicate post makes it read them at once. On two practice weeks with the sync after every step: €10,171 and €15,930 against €10,175 and €16,007 without it, the same on-time shares.
+
+## Tried on top of candidate 1, and dropped
+
+Sixteen weeks each, the same sixteen, against candidate 1 (€11,436 a week, lowest on-time share 91.7%).
+
+| Variant | Mean difference | Weeks up / down | Lowest on-time share | Why dropped |
+| --- | ---: | ---: | ---: | --- |
+| Full fee once a gig has sat six hours without a driver (`sitAfter` 360, as Halal Team does) | −€108 (standard error €211) | 5 / 11 | 91.2% | No gain: our fee already climbs a day and half a day ahead |
+| More open work near a pickup (`capacity` 0.45 instead of 0.35) | +€110 (standard error €122) | 10 / 6 | 91.2% | Within the noise |
+| More unbooked work allowed (`backlog` 0.12 instead of 0.08) | +€58 (standard error €252) | 9 / 7 | 89.0%, one week not ranked | Costs a ranked week |
+| Lower cost estimate in the price (`costRatio` 1.05 instead of 1.15) | −€736 (standard error €285) | 5 / 11 | 88.9%, two weeks not ranked | Wins orders that drivers cannot move |
+| Lower price floor (`price` 1.35 instead of 1.42) | €0 | 0 / 0 | 91.7% | The learned price is always above the floor, so nothing changes |
+
+The drivers are the limit, as Halal Team found: more orders without more driver capacity make more late orders, not more margin.

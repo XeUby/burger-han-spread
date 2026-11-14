@@ -32,6 +32,8 @@ export type Settings = {
   lateRepost: boolean
   /** The first fee of a gig posted again after its last pickup time, in full fees. */
   lateFee: number
+  /** Minutes after posting when a gig that no driver took goes to `sitFee` times the full fee; 0 for never. */
+  sitAfter: number; sitFee: number
   /** The fee, in full fees, a day and half a day before the last pickup, for a gig that no driver has taken. */
   climbDay: number; climbHalfDay: number
   /** What a route really costs against the dispatcher's estimate, for routes under 50 km, from 50 km to 100 km, and longer. */
@@ -41,7 +43,7 @@ export const defaults: Settings = {
   price: 1.42, fee: 1.05, payout: 0.85, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
   notes: true, noteSpelling: false, relist: false, openingOnly: true, adaptive: true, earlyOffers: false, safetySlack: false,
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, noteReader: true, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
-  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1,
+  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1,
   earlyClimb: true,
 }
 
@@ -50,7 +52,7 @@ export function validateSettings(value: unknown): asserts value is Partial<Setti
   for (const [key, field] of Object.entries(value)) {
     if (!(key in defaults)) throw new Error(`Unknown setting: ${key}`)
     if (typeof defaults[key as keyof Settings] === "boolean") { if (typeof field !== "boolean") throw new Error(`${key} must be boolean`); continue }
-    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait"].includes(key))) throw new Error(`${key} must be a positive number`)
+    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait", "sitAfter"].includes(key))) throw new Error(`${key} must be a positive number`)
     if (key === "bundleWait" && (!Number.isInteger(field) || field > 30)) throw new Error("bundleWait must be an integer from 0 to 30")
     if ((key === "margin" || key === "capacity") && field >= 1) throw new Error(`${key} must be below 1`)
     if (key === "placePrior" && field > 2) throw new Error("placePrior must be at most 2")
@@ -322,9 +324,11 @@ export class Dispatcher extends Desk {
     const due = Math.max(this.now + 30, pickupBy - 240)
     // A gig that no driver has taken a day before its last pickup will not find one in the last four hours:
     // a driver needs time to see the gig and to reach the car. So the fee starts to climb a day ahead.
+    const sit = this.settings.sitAfter > 0 && start === 1 ? [{ at: this.now + this.settings.sitAfter, feeCents: Math.round(fee * this.settings.sitFee) }].filter(step => step.at < pickupBy - 1440 && step.at < due) : []
     const early = this.settings.earlyClimb ? [{ at: pickupBy - 1440, feeCents: Math.round(fee * Math.max(start, this.settings.climbDay)) }, { at: pickupBy - 720, feeCents: Math.round(fee * Math.max(start, this.settings.climbHalfDay)) }].filter(step => step.at >= this.now + 30 && step.at < due) : []
     return pay([
       { at: this.now, feeCents: Math.round(fee * start) },
+      ...sit,
       ...early,
       { at: due, feeCents: Math.round(fee * Math.max(start, 1.45)) },
       { at: Math.max(due + 30, pickupBy - 120), feeCents: Math.round(fee * Math.max(start, 1.9)) },

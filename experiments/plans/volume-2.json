@@ -1,0 +1,450 @@
+[
+ {
+  "label": "cap045",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "backlog012",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "cost105",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "costRatio": 1.05
+  }
+ },
+ {
+  "label": "price135",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "price": 1.35
+  }
+ },
+ {
+  "label": "cap045",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "backlog012",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "cost105",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "costRatio": 1.05
+  }
+ },
+ {
+  "label": "price135",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "price": 1.35
+  }
+ },
+ {
+  "label": "cap045",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "backlog012",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "cost105",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "costRatio": 1.05
+  }
+ },
+ {
+  "label": "price135",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "price": 1.35
+  }
+ },
+ {
+  "label": "cap045",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "backlog012",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "cost105",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "costRatio": 1.05
+  }
+ },
+ {
+  "label": "price135",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "price": 1.35
+  }
+ },
+ {
+  "label": "cap045",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "backlog012",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "cost105",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "costRatio": 1.05
+  }
+ },
+ {
+  "label": "price135",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "price": 1.35
+  }
+ },
+ {
+  "label": "cap045",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "backlog012",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "cost105",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "costRatio": 1.05
+  }
+ },
+ {
+  "label": "price135",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "price": 1.35
+  }
+ },
+ {
+  "label": "cap045",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "backlog012",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "cost105",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "costRatio": 1.05
+  }
+ },
+ {
+  "label": "price135",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "price": 1.35
+  }
+ },
+ {
+  "label": "cap045",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "backlog012",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "cost105",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "costRatio": 1.05
+  }
+ },
+ {
+  "label": "price135",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "price": 1.35
+  }
+ },
+ {
+  "label": "cap045",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "backlog012",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "cost105",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "costRatio": 1.05
+  }
+ },
+ {
+  "label": "price135",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "price": 1.35
+  }
+ },
+ {
+  "label": "cap045",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "backlog012",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "cost105",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "costRatio": 1.05
+  }
+ },
+ {
+  "label": "price135",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "price": 1.35
+  }
+ },
+ {
+  "label": "cap045",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "backlog012",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "cost105",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "costRatio": 1.05
+  }
+ },
+ {
+  "label": "price135",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "price": 1.35
+  }
+ },
+ {
+  "label": "cap045",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "backlog012",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "cost105",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "costRatio": 1.05
+  }
+ },
+ {
+  "label": "price135",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "price": 1.35
+  }
+ },
+ {
+  "label": "cap045",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "backlog012",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "cost105",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "costRatio": 1.05
+  }
+ },
+ {
+  "label": "price135",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "price": 1.35
+  }
+ },
+ {
+  "label": "cap045",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "backlog012",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "cost105",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "costRatio": 1.05
+  }
+ },
+ {
+  "label": "price135",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "price": 1.35
+  }
+ },
+ {
+  "label": "cap045",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "backlog012",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "cost105",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "costRatio": 1.05
+  }
+ },
+ {
+  "label": "price135",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "price": 1.35
+  }
+ },
+ {
+  "label": "cap045",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "backlog012",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "cost105",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "costRatio": 1.05
+  }
+ },
+ {
+  "label": "price135",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "price": 1.35
+  }
+ }
+]
