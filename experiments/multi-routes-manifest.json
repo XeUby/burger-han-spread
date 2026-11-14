@@ -1,0 +1,65 @@
+{
+  "protocol": "experiments/multi-routes-protocol.json",
+  "protocolSha256": "cd285b4ae85672f7f967cc93bb054503006571f4a4f3969d7231b6772bae3761",
+  "worlds": [
+    {
+      "label": "multi-routes-control",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w7614b7389a072cf595cc"
+    },
+    {
+      "label": "multi-routes",
+      "seed": "formal-unseen-20261113-09",
+      "worldId": "w406b70eb89ac72b49962"
+    },
+    {
+      "label": "multi-routes-volume",
+      "seed": "formal-unseen-20261113-09",
+      "worldId": null
+    },
+    {
+      "label": "multi-routes",
+      "seed": "formal-unseen-20261113-10",
+      "worldId": null
+    },
+    {
+      "label": "multi-routes-volume",
+      "seed": "formal-unseen-20261113-10",
+      "worldId": null
+    },
+    {
+      "label": "multi-routes",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": null
+    },
+    {
+      "label": "multi-routes-volume",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": null
+    },
+    {
+      "label": "multi-routes",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": null
+    },
+    {
+      "label": "multi-routes-volume",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": null
+    }
+  ],
+  "attempts": [
+    {
+      "label": "multi-routes-control",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w7614b7389a072cf595cc",
+      "startedAt": "2026-11-14T05:42:03.772Z"
+    },
+    {
+      "label": "multi-routes",
+      "seed": "formal-unseen-20261113-09",
+      "worldId": "w406b70eb89ac72b49962",
+      "startedAt": "2026-11-14T05:42:03.991Z"
+    }
+  ]
+}

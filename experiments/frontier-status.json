@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-14T05:26:40.614369+00:00",
+  "updatedAt": "2026-11-14T05:43:06.194459+00:00",
   "objective": "Continue systematic search toward the global optimum; practice only, no ranking submission.",
   "maximumConcurrentPlays": 4,
   "currentConcurrency": {
-    "activeRunners": 0,
+    "activeRunners": 1,
     "maximumConcurrentPlays": 4,
-    "note": "The viewed-fee runner completed all three worlds and exited0. Verify shared inventory before another create."
+    "note": "Runner65170 uses two workers and checks team unfinished worlds before each serialized create. Inventory was empty before launch. Initial inventory approval timed out; the permitted retry succeeded before launch."
   },
   "completedCombinationStudy": {
     "sessionId": 84558,
@@ -66,9 +66,9 @@
     "700km-only bundle treatment ends at7407.63/9410.50 euros, minimum96.6% on time. It gains versus the old baseline in both weeks but not versus bundles alone. No900km experiment scheduled."
   ],
   "nextSteps": [
-    "Preserve the validated control. Reject the bounded first-view premium implementation; no pulse parameter rescue or independent validation.",
-    "Probe route composition beyond pairs: old control weeks09,10,14,15 had55,109,46,85won requests in batches of at least3wins. These include later cancellations and do not yet prove feasible multi-car routes or savings.",
-    "Use actual time-window feasibility and whole-route work to determine whether larger routes justify a frozen whole-week test. No global-optimality or unmatched rank claims."
+    "Complete all8frozen multi-route treatment weeks and exact control replication; preserve all outcomes and counters.",
+    "Require1500euros mean matched gain, worst loss no worse than1000euros, all qualifications, zero undelivered orders and failed visits before confirmation.",
+    "Do not tune the running candidates. Preserve the validated control and avoid ranking/final submissions."
   ],
   "validationStatus": "All16 fresh paired trials complete. Candidate mean10411.59 euros versus8242.34, +26.32%;7/8 positive;8/8 qualified; minimum94.94% on time; no undelivered orders. Full report docs/frontier-validation.md. No ranking submission.",
   "checks": {
@@ -78,7 +78,8 @@
     "typecheck": "passed",
     "selectedPolicyConformanceActions": 5614,
     "architectureResearchTests": 6,
-    "viewedFeeResearchTests": 5
+    "viewedFeeResearchTests": 5,
+    "multiRoutesResearchTests": 8
   },
   "completedControlsStudy": {
     "sessionId": 72446,
@@ -556,18 +557,18 @@
     "decision": "Stop under declared failure rule. Four-play guard saw3external active worlds. No offers accepted among7same-fee and7discount offers; no target booking/view difference. Retain as incomplete, not a12case negative study. Defer this version."
   },
   "currentStudy": {
-    "kind": "bounded first-view driver fee experiment",
-    "sessionId": 46336,
-    "terminal": true,
-    "phase": "complete: rejected",
-    "protocol": "experiments/viewed-fee-protocol.json",
-    "manifest": "experiments/viewed-fee-manifest.json",
-    "report": "docs/viewed-fee-results.json",
-    "revision": "0e657e59f7b50d5295f526bc70a703ca666c30e063faf7e297620bf48540333d",
+    "kind": "multi-car route fulfillment and volume interaction",
+    "sessionId": 65170,
+    "terminal": false,
+    "phase": "frozen eight-week treatment screen plus control replication",
+    "protocol": "experiments/multi-routes-protocol.json",
+    "manifest": "experiments/multi-routes-manifest.json",
+    "report": "docs/multi-routes-results.json",
+    "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
+    "treatmentTrials": 8,
+    "controlTrials": 1,
     "maximumJobs": 2,
-    "maximumConcurrentPlays": 4,
-    "study": "runs/study-1794633884275.json",
-    "decision": "experiments/viewed-fee-decision.json"
+    "maximumConcurrentPlays": 4
   },
   "completedPayoutScreen": {
     "sessionId": 76828,
@@ -938,5 +939,57 @@
       },
       "gatePassed": false
     }
+  },
+  "completedViewedFeeStudy": {
+    "kind": "bounded first-view driver fee experiment",
+    "sessionId": 46336,
+    "terminal": true,
+    "phase": "complete: rejected",
+    "protocol": "experiments/viewed-fee-protocol.json",
+    "manifest": "experiments/viewed-fee-manifest.json",
+    "report": "docs/viewed-fee-results.json",
+    "revision": "0e657e59f7b50d5295f526bc70a703ca666c30e063faf7e297620bf48540333d",
+    "maximumJobs": 2,
+    "maximumConcurrentPlays": 4,
+    "study": "runs/study-1794633884275.json",
+    "decision": "experiments/viewed-fee-decision.json"
+  },
+  "multiRoutesScreen": {
+    "report": "docs/multi-routes-screen.json",
+    "summary": [
+      {
+        "label": "validated-pairs",
+        "weeks": 4,
+        "largeRoutes": 0,
+        "coveredOrders": 306,
+        "meanOpeningSavingVsValidatedEuros": 0,
+        "truncatedBatches": 0
+      },
+      {
+        "label": "economic-pairs",
+        "weeks": 4,
+        "largeRoutes": 0,
+        "coveredOrders": 20,
+        "meanOpeningSavingVsValidatedEuros": 320.26,
+        "truncatedBatches": 0
+      },
+      {
+        "label": "economic-four",
+        "weeks": 4,
+        "largeRoutes": 11,
+        "coveredOrders": 50,
+        "meanOpeningSavingVsValidatedEuros": 325.115,
+        "truncatedBatches": 0
+      },
+      {
+        "label": "route-cost-four",
+        "weeks": 4,
+        "largeRoutes": 57,
+        "coveredOrders": 290,
+        "meanOpeningSavingVsValidatedEuros": 504.1375,
+        "truncatedBatches": 0
+      }
+    ],
+    "interpretation": "Opening-fee opportunity only, not profit. Whole-policy trials test changed driver behavior and a larger accepted-work pool."
   }
 }
