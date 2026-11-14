@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-14T10:11:52.199724+00:00",
+  "updatedAt": "2026-11-14T10:26:46.733972+00:00",
   "unit": "unique simulation seed/week; repeated worlds are not independent replications",
-  "worldRecords": 460,
+  "worldRecords": 476,
   "uniqueNamedWeeks": 84,
-  "distinctLabels": 114,
+  "distinctLabels": 116,
   "distinctSourceSettingsCombinations": 93,
   "interpretation": "Counts document the adaptive search, not independent tests or a guarantee that distinct deterministic seeds are IID. Every observed seed is conservatively unavailable for any future untouched panel.",
   "hiddenSeedWorlds": [
@@ -2775,6 +2775,190 @@
       "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
     },
     {
+      "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+      "retiredAt": "2026-11-14T10:11:52.199724+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w59b538e829103da34e81",
+          "label": "level8-estimate-v1-payments",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "c8119cf1ca51cdd6610445c50b9a56aec470a2aa237bb01692da138808c56197"
+        },
+        {
+          "worldId": "wc7a371b7fa789aba4647",
+          "label": "level8-estimate-v1-benchmark",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "e9b90bb378c9d1892344508b6409a75a5d7b3b11122f7d8d64d7bae7a1747dae"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+      "retiredAt": "2026-11-14T10:11:52.199724+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w50c39505daec000eee54",
+          "label": "level8-estimate-v1-benchmark",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "f882acd29a2166bdc5a5f4b5a9af2fbc9818a0dd4a03b814a97e156362ca7f9b"
+        },
+        {
+          "worldId": "we50f015c9133beb203b5",
+          "label": "level8-estimate-v1-payments",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "569bb9ef330fc87d6815cd30dce327b5a4e231d803623f39a0696b925dc9c202"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+      "retiredAt": "2026-11-14T10:11:52.199724+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w56e86c0c852e4e944201",
+          "label": "level8-estimate-v1-payments",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "411071e70d62f9214fa03afcd295be8d9afb17a3c7182026a5baa283a837de72"
+        },
+        {
+          "worldId": "w68bdba29c2d1ebdba17d",
+          "label": "level8-estimate-v1-benchmark",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "69c8c8bf89d254b1c905730948bd82d1e9bbdd3eea11e83372f13fe01bcf0480"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "level8-estimate-4421e0179044aca015374bc1",
+      "retiredAt": "2026-11-14T10:11:52.199724+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "wc216c19be2c4f630c0ea",
+          "label": "level8-estimate-v1-benchmark",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "8e39f67b26debcdeadcf1ff1b2c8c87e32358d00a204b04d393b73f28c5a365b"
+        },
+        {
+          "worldId": "wc3af93a033080246cb56",
+          "label": "level8-estimate-v1-payments",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "7f0a3711632a30b9cf5872e5590b0d95409e6627d3338936cb7f289fb3d4f3ba"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+      "retiredAt": "2026-11-14T10:11:52.199724+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w531d72f556749db1f781",
+          "label": "level8-estimate-v1-benchmark",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "5b58745a2cf5ca0c7c9986ae601b59f5fa56212cd75b4f88a062b4f9ac010ce9"
+        },
+        {
+          "worldId": "wcec3ccd3a02b20ed13a9",
+          "label": "level8-estimate-v1-payments",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "aa5dc67d85994347cb70046d96b9c573bd19441b5e7c516d9219726c8693d999"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "level8-estimate-b87f6821707b892a55d34716",
+      "retiredAt": "2026-11-14T10:11:52.199724+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w5f0e575885726f779d25",
+          "label": "level8-estimate-v1-payments",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "22548c3ac8292280cf5f5e2ef5071aca90e560e73e853c92c4e57a2c6ff02ac9"
+        },
+        {
+          "worldId": "wabef671504f94aec0e06",
+          "label": "level8-estimate-v1-benchmark",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "10a03fd21462497d7ceddd5f04263bd8aef2d2c62048f8f0ddca5f28932b4754"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+      "retiredAt": "2026-11-14T10:11:52.199724+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w68739c55fea234f8b7d3",
+          "label": "level8-estimate-v1-payments",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "4042e8ed64b9758577e1c013a0a0460968a225bb0dfebcb7addb0ad31fdfaea9"
+        },
+        {
+          "worldId": "wd983bdac6a5faa67c066",
+          "label": "level8-estimate-v1-benchmark",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "6630feec3b51260462ce4d1ee3c4af2cb8419598331df6e0a82ec41f68742048"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
+      "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+      "retiredAt": "2026-11-14T10:11:52.199724+00:00",
+      "role": "development-or-historical-evidence",
+      "eligibleForFreshValidation": false,
+      "worlds": [
+        {
+          "worldId": "w03285c79f3f1f6d251a3",
+          "label": "level8-estimate-v1-benchmark",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "cc41e881e92128149e6fc3f79fb1f3e3dd46b30fe22e5565ae72bc7368b3d3a8"
+        },
+        {
+          "worldId": "wef657bf51113144113f2",
+          "label": "level8-estimate-v1-payments",
+          "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "230a3004c559cb7cdee01ab7ffce831c22ceb8308095138a77dfc770ab8cb301"
+        }
+      ],
+      "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
+    },
+    {
       "seed": "levels-development-2dba6ebe7258e63082c0",
       "retiredAt": "2026-11-14T06:29:18.149983+00:00",
       "role": "development-or-historical-evidence",
@@ -4304,70 +4488,6 @@
         }
       ],
       "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
-    },
-    {
-      "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
-      "retiredAt": "2026-11-14T10:11:52.199724+00:00",
-      "role": "reserved-development-estimation",
-      "eligibleForFreshValidation": false,
-      "worlds": [],
-      "reason": "Reserved by experiments/level8-estimate-v1.json before play"
-    },
-    {
-      "seed": "level8-estimate-502fd2d71b59b218d9af949c",
-      "retiredAt": "2026-11-14T10:11:52.199724+00:00",
-      "role": "reserved-development-estimation",
-      "eligibleForFreshValidation": false,
-      "worlds": [],
-      "reason": "Reserved by experiments/level8-estimate-v1.json before play"
-    },
-    {
-      "seed": "level8-estimate-b87f6821707b892a55d34716",
-      "retiredAt": "2026-11-14T10:11:52.199724+00:00",
-      "role": "reserved-development-estimation",
-      "eligibleForFreshValidation": false,
-      "worlds": [],
-      "reason": "Reserved by experiments/level8-estimate-v1.json before play"
-    },
-    {
-      "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
-      "retiredAt": "2026-11-14T10:11:52.199724+00:00",
-      "role": "reserved-development-estimation",
-      "eligibleForFreshValidation": false,
-      "worlds": [],
-      "reason": "Reserved by experiments/level8-estimate-v1.json before play"
-    },
-    {
-      "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
-      "retiredAt": "2026-11-14T10:11:52.199724+00:00",
-      "role": "reserved-development-estimation",
-      "eligibleForFreshValidation": false,
-      "worlds": [],
-      "reason": "Reserved by experiments/level8-estimate-v1.json before play"
-    },
-    {
-      "seed": "level8-estimate-2e646af6a3e79187503ccc80",
-      "retiredAt": "2026-11-14T10:11:52.199724+00:00",
-      "role": "reserved-development-estimation",
-      "eligibleForFreshValidation": false,
-      "worlds": [],
-      "reason": "Reserved by experiments/level8-estimate-v1.json before play"
-    },
-    {
-      "seed": "level8-estimate-13b39f93b74b237bc46f579b",
-      "retiredAt": "2026-11-14T10:11:52.199724+00:00",
-      "role": "reserved-development-estimation",
-      "eligibleForFreshValidation": false,
-      "worlds": [],
-      "reason": "Reserved by experiments/level8-estimate-v1.json before play"
-    },
-    {
-      "seed": "level8-estimate-4421e0179044aca015374bc1",
-      "retiredAt": "2026-11-14T10:11:52.199724+00:00",
-      "role": "reserved-development-estimation",
-      "eligibleForFreshValidation": false,
-      "worlds": [],
-      "reason": "Reserved by experiments/level8-estimate-v1.json before play"
     }
   ]
 }

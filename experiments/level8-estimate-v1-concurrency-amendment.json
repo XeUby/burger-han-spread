@@ -1,0 +1,15 @@
+{
+  "at": "2026-11-14T10:22:04.326Z",
+  "instruction": "submit more worlds and get it done faster without doing anything else yet",
+  "maximumUnfinishedTeamWorlds": 8,
+  "originalWorkersBlockedBySharedLock": true,
+  "remaining": [
+    "8:level8-estimate-2e646af6a3e79187503ccc80:level8-estimate-v1-payments",
+    "8:level8-estimate-13b39f93b74b237bc46f579b:level8-estimate-v1-benchmark",
+    "8:level8-estimate-13b39f93b74b237bc46f579b:level8-estimate-v1-payments",
+    "8:level8-estimate-4421e0179044aca015374bc1:level8-estimate-v1-benchmark",
+    "8:level8-estimate-4421e0179044aca015374bc1:level8-estimate-v1-payments"
+  ],
+  "policyAndSeedsUnchanged": true,
+  "note": "The shared creation lock stays held until the original workers drain and are stopped; this controller creates sequentially within that lock. All outcomes append to the original inventory."
+}

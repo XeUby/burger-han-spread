@@ -12,6 +12,8 @@ NAME = "level8-estimate-v1"
 plan, report = audit(ROOT / f"experiments/{NAME}.json")
 report["role"] = "Fixed eight-pair development estimate; no policy promotion"
 report["analysisVersions"] = {name: importlib.metadata.version(name) for name in ["numpy", "scipy"]}
+report["concurrencyAmendment"] = json.loads((ROOT / f"experiments/{NAME}-concurrency-amendment.json").read_text())
+report["runnerDrain"] = "Original runner stopped only after all eleven worlds it created completed. Continuation completed the other five. No active policy world was interrupted or repeated."
 report["limitations"] = [
     "Practice seeds differ from ranked seeds. Leaderboard differences are descriptive benchmarks, not matched policy effects or predicted ranks.",
     "Eight independent seed blocks are assumed for intervals; sixteen policy worlds do not double the sample size. Small samples cannot resolve unseen tails.",
