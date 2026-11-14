@@ -1,0 +1,450 @@
+[
+ {
+  "label": "pq060",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "pairQuote": 0.6
+  }
+ },
+ {
+  "label": "pq080",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "pairQuote": 0.8
+  }
+ },
+ {
+  "label": "patience60",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "pairPatience": 60
+  }
+ },
+ {
+  "label": "hold30",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "bundleWait": 30
+  }
+ },
+ {
+  "label": "pq060",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "pairQuote": 0.6
+  }
+ },
+ {
+  "label": "pq080",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "pairQuote": 0.8
+  }
+ },
+ {
+  "label": "patience60",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "pairPatience": 60
+  }
+ },
+ {
+  "label": "hold30",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "bundleWait": 30
+  }
+ },
+ {
+  "label": "pq060",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "pairQuote": 0.6
+  }
+ },
+ {
+  "label": "pq080",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "pairQuote": 0.8
+  }
+ },
+ {
+  "label": "patience60",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "pairPatience": 60
+  }
+ },
+ {
+  "label": "hold30",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "bundleWait": 30
+  }
+ },
+ {
+  "label": "pq060",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "pairQuote": 0.6
+  }
+ },
+ {
+  "label": "pq080",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "pairQuote": 0.8
+  }
+ },
+ {
+  "label": "patience60",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "pairPatience": 60
+  }
+ },
+ {
+  "label": "hold30",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "bundleWait": 30
+  }
+ },
+ {
+  "label": "pq060",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "pairQuote": 0.6
+  }
+ },
+ {
+  "label": "pq080",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "pairQuote": 0.8
+  }
+ },
+ {
+  "label": "patience60",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "pairPatience": 60
+  }
+ },
+ {
+  "label": "hold30",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "bundleWait": 30
+  }
+ },
+ {
+  "label": "pq060",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "pairQuote": 0.6
+  }
+ },
+ {
+  "label": "pq080",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "pairQuote": 0.8
+  }
+ },
+ {
+  "label": "patience60",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "pairPatience": 60
+  }
+ },
+ {
+  "label": "hold30",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "bundleWait": 30
+  }
+ },
+ {
+  "label": "pq060",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "pairQuote": 0.6
+  }
+ },
+ {
+  "label": "pq080",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "pairQuote": 0.8
+  }
+ },
+ {
+  "label": "patience60",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "pairPatience": 60
+  }
+ },
+ {
+  "label": "hold30",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "bundleWait": 30
+  }
+ },
+ {
+  "label": "pq060",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "pairQuote": 0.6
+  }
+ },
+ {
+  "label": "pq080",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "pairQuote": 0.8
+  }
+ },
+ {
+  "label": "patience60",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "pairPatience": 60
+  }
+ },
+ {
+  "label": "hold30",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "bundleWait": 30
+  }
+ },
+ {
+  "label": "pq060",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "pairQuote": 0.6
+  }
+ },
+ {
+  "label": "pq080",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "pairQuote": 0.8
+  }
+ },
+ {
+  "label": "patience60",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "pairPatience": 60
+  }
+ },
+ {
+  "label": "hold30",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "bundleWait": 30
+  }
+ },
+ {
+  "label": "pq060",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "pairQuote": 0.6
+  }
+ },
+ {
+  "label": "pq080",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "pairQuote": 0.8
+  }
+ },
+ {
+  "label": "patience60",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "pairPatience": 60
+  }
+ },
+ {
+  "label": "hold30",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "bundleWait": 30
+  }
+ },
+ {
+  "label": "pq060",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "pairQuote": 0.6
+  }
+ },
+ {
+  "label": "pq080",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "pairQuote": 0.8
+  }
+ },
+ {
+  "label": "patience60",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "pairPatience": 60
+  }
+ },
+ {
+  "label": "hold30",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "bundleWait": 30
+  }
+ },
+ {
+  "label": "pq060",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "pairQuote": 0.6
+  }
+ },
+ {
+  "label": "pq080",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "pairQuote": 0.8
+  }
+ },
+ {
+  "label": "patience60",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "pairPatience": 60
+  }
+ },
+ {
+  "label": "hold30",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "bundleWait": 30
+  }
+ },
+ {
+  "label": "pq060",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "pairQuote": 0.6
+  }
+ },
+ {
+  "label": "pq080",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "pairQuote": 0.8
+  }
+ },
+ {
+  "label": "patience60",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "pairPatience": 60
+  }
+ },
+ {
+  "label": "hold30",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "bundleWait": 30
+  }
+ },
+ {
+  "label": "pq060",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "pairQuote": 0.6
+  }
+ },
+ {
+  "label": "pq080",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "pairQuote": 0.8
+  }
+ },
+ {
+  "label": "patience60",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "pairPatience": 60
+  }
+ },
+ {
+  "label": "hold30",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "bundleWait": 30
+  }
+ },
+ {
+  "label": "pq060",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "pairQuote": 0.6
+  }
+ },
+ {
+  "label": "pq080",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "pairQuote": 0.8
+  }
+ },
+ {
+  "label": "patience60",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "pairPatience": 60
+  }
+ },
+ {
+  "label": "hold30",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "bundleWait": 30
+  }
+ },
+ {
+  "label": "pq060",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "pairQuote": 0.6
+  }
+ },
+ {
+  "label": "pq080",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "pairQuote": 0.8
+  }
+ },
+ {
+  "label": "patience60",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "pairPatience": 60
+  }
+ },
+ {
+  "label": "hold30",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "bundleWait": 30
+  }
+ }
+]

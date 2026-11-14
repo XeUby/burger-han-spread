@@ -1,0 +1,226 @@
+[
+ {
+  "label": "menu-sd110",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "sameDayPremium": 1.1
+  }
+ },
+ {
+  "label": "menu-ld090",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "laterDiscount": 0.9
+  }
+ },
+ {
+  "label": "menu-sd110",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "sameDayPremium": 1.1
+  }
+ },
+ {
+  "label": "menu-ld090",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "laterDiscount": 0.9
+  }
+ },
+ {
+  "label": "menu-sd110",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "sameDayPremium": 1.1
+  }
+ },
+ {
+  "label": "menu-ld090",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "laterDiscount": 0.9
+  }
+ },
+ {
+  "label": "menu-sd110",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "sameDayPremium": 1.1
+  }
+ },
+ {
+  "label": "menu-ld090",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "laterDiscount": 0.9
+  }
+ },
+ {
+  "label": "menu-sd110",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "sameDayPremium": 1.1
+  }
+ },
+ {
+  "label": "menu-ld090",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "laterDiscount": 0.9
+  }
+ },
+ {
+  "label": "menu-sd110",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "sameDayPremium": 1.1
+  }
+ },
+ {
+  "label": "menu-ld090",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "laterDiscount": 0.9
+  }
+ },
+ {
+  "label": "menu-sd110",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "sameDayPremium": 1.1
+  }
+ },
+ {
+  "label": "menu-ld090",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "laterDiscount": 0.9
+  }
+ },
+ {
+  "label": "menu-sd110",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "sameDayPremium": 1.1
+  }
+ },
+ {
+  "label": "menu-ld090",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "laterDiscount": 0.9
+  }
+ },
+ {
+  "label": "menu-sd110",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "sameDayPremium": 1.1
+  }
+ },
+ {
+  "label": "menu-ld090",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "laterDiscount": 0.9
+  }
+ },
+ {
+  "label": "menu-sd110",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "sameDayPremium": 1.1
+  }
+ },
+ {
+  "label": "menu-ld090",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "laterDiscount": 0.9
+  }
+ },
+ {
+  "label": "menu-sd110",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "sameDayPremium": 1.1
+  }
+ },
+ {
+  "label": "menu-ld090",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "laterDiscount": 0.9
+  }
+ },
+ {
+  "label": "menu-sd110",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "sameDayPremium": 1.1
+  }
+ },
+ {
+  "label": "menu-ld090",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "laterDiscount": 0.9
+  }
+ },
+ {
+  "label": "menu-sd110",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "sameDayPremium": 1.1
+  }
+ },
+ {
+  "label": "menu-ld090",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "laterDiscount": 0.9
+  }
+ },
+ {
+  "label": "menu-sd110",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "sameDayPremium": 1.1
+  }
+ },
+ {
+  "label": "menu-ld090",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "laterDiscount": 0.9
+  }
+ },
+ {
+  "label": "menu-sd110",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "sameDayPremium": 1.1
+  }
+ },
+ {
+  "label": "menu-ld090",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "laterDiscount": 0.9
+  }
+ },
+ {
+  "label": "menu-sd110",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "sameDayPremium": 1.1
+  }
+ },
+ {
+  "label": "menu-ld090",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "laterDiscount": 0.9
+  }
+ }
+]

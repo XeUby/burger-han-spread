@@ -38,6 +38,8 @@ export type Settings = {
   pairOpen: number
   /** A request whose car can ride with one of our waiting cars is priced at this share of its cost, and the limits on open work do not refuse it; 0 for off. */
   pairQuote: number
+  /** Minutes a gig with two cars may wait for a driver before its cars go alone; 0 for no limit. */
+  pairPatience: number
   /** The fee, in full fees, a day and half a day before the last pickup, for a gig that no driver has taken. */
   climbDay: number; climbHalfDay: number
   /** What a route really costs against the dispatcher's estimate, for routes under 50 km, from 50 km to 100 km, and longer. */
@@ -47,7 +49,7 @@ export const defaults: Settings = {
   price: 1.42, fee: 1.05, payout: 0.85, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
   notes: true, noteSpelling: false, relist: false, openingOnly: true, adaptive: true, earlyOffers: false, safetySlack: false,
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, noteReader: true, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
-  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0,
+  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0,
   earlyClimb: true,
 }
 
@@ -56,7 +58,7 @@ export function validateSettings(value: unknown): asserts value is Partial<Setti
   for (const [key, field] of Object.entries(value)) {
     if (!(key in defaults)) throw new Error(`Unknown setting: ${key}`)
     if (typeof defaults[key as keyof Settings] === "boolean") { if (typeof field !== "boolean") throw new Error(`${key} must be boolean`); continue }
-    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait", "sitAfter", "pairOpen", "pairQuote"].includes(key))) throw new Error(`${key} must be a positive number`)
+    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait", "sitAfter", "pairOpen", "pairQuote", "pairPatience"].includes(key))) throw new Error(`${key} must be a positive number`)
     if (key === "bundleWait" && (!Number.isInteger(field) || field > 30)) throw new Error("bundleWait must be an integer from 0 to 30")
     if ((key === "margin" || key === "capacity") && field >= 1) throw new Error(`${key} must be below 1`)
     if (key === "placePrior" && field > 2) throw new Error("placePrior must be at most 2")
@@ -73,6 +75,8 @@ export class Dispatcher extends Desk {
   lateReposts = new Map<string, number>()
   /** Request or order id -> the waiting order that its car can ride with. */
   partners = new Map<string, string>()
+  /** Orders whose two-car gig found no driver in time: they go alone from now on. */
+  unpaired = new Set<string>()
   /** A post was refused because the world already has a live gig for its car, so the dispatcher lost track of a gig. */
   resync = false
   noteFacts = new Map<string, { rules: NoteRules; timed: TimedNote | null }>()
@@ -274,6 +278,19 @@ export class Dispatcher extends Desk {
     return this.market.optimize(this.features(request), { costCents: fee * this.settings.costRatio * this.routeCost(request), listPriceCents: list, trust, minPrice: Math.ceil(fee / (1 - this.settings.margin) + this.settings.priceFloor) }).expectedProfitCents
   }
 
+  /** A gig with two cars that no driver took within `pairPatience` minutes is taken out, and each car goes alone. */
+  async splitWaitingPairs(): Promise<void> {
+    for (const [gigId, post] of [...this.posts]) {
+      const ids = [...new Set(post.stops.map(stop => stop.orderId))]
+      if (ids.length < 2 || this.booked.has(gigId) || this.now - (this.postedAt.get(gigId) ?? this.now) < this.settings.pairPatience) continue
+      if (!ids.every(id => this.legGigs.get(id)?.get(0) === gigId)) continue
+      const actions: Action[] = [{ type: "withdraw", gigId }]
+      const results = await this.world.act(actions)
+      this.readResults(actions, results)
+      if (results[0]?.ok) for (const id of ids) this.unpaired.add(id)
+    }
+  }
+
   /** One of our waiting cars that this request's car can share a gig with: the new car's pickup near the waiting car's
    * delivery, or its delivery near the waiting car's pickup, on the same day and in time for both deadlines. */
   partnerFor(request: PriceRequest): string | null {
@@ -390,7 +407,7 @@ export class Dispatcher extends Desk {
         { orderId: order.id, leg, kind: "delivery" as const },
       ]
     })
-    const hold = this.settings.bundleWait > 0 && this.level >= 3 && order.legs.length === 1 && rules.safe && !(this.settings.noteReader && this.hoursFor(request)) && !order.legs[0]!.pickup.privateAddress && !order.legs[0]!.delivery.privateAddress && !retry.pickupFrom && !retry.manualLicence && !retry.plates && !this.urgent.has(order.id) && this.pickupBy(order) > this.now + 360
+    const hold = this.settings.bundleWait > 0 && this.level >= 3 && !this.unpaired.has(order.id) && order.legs.length === 1 && rules.safe && !(this.settings.noteReader && this.hoursFor(request)) && !order.legs[0]!.pickup.privateAddress && !order.legs[0]!.delivery.privateAddress && !retry.pickupFrom && !retry.manualLicence && !retry.plates && !this.urgent.has(order.id) && this.pickupBy(order) > this.now + 360
     const post: PostAction = { type: "post", stops, audience: { experienced: legs.some(i => order.legs[i]!.car.premium), manualLicence: rules.manual || retry.manualLicence }, schedule: this.feesFor(order, legs.length, !hold) }
     const hours = this.hoursFor(request)
     if (hours) {
@@ -420,7 +437,7 @@ export class Dispatcher extends Desk {
     const waiting: string[] = []
     if ((this.settings.pairOpen > 0 || this.settings.pairQuote > 0) && this.settings.bundlePairs) for (const [gigId, post] of this.posts) {
       const order = this.orders.get(post.stops[0]!.orderId)
-      if (!order || post.stops.length !== 2 || order.legs.length !== 1 || this.booked.has(gigId) || this.urgent.has(order.id) || this.legGigs.get(order.id)?.get(0) !== gigId) continue
+      if (!order || post.stops.length !== 2 || order.legs.length !== 1 || this.unpaired.has(order.id) || this.booked.has(gigId) || this.urgent.has(order.id) || this.legGigs.get(order.id)?.get(0) !== gigId) continue
       const partnered = items.some(([id]) => this.partners.get(id) === order.id)
       if ((!partnered && (this.settings.pairOpen === 0 || this.now - (this.postedAt.get(gigId) ?? this.now) < this.settings.pairOpen)) || this.pickupBy(order) < this.now + 360 || this.hoursFor(this.requests.get(order.id))) continue
       if (this.outbox.some(action => "gigId" in action && action.gigId === gigId)) continue
@@ -569,6 +586,7 @@ export class Dispatcher extends Desk {
 
   async tick(): Promise<void> {
     if (this.resync) await this.relearnGigs()
+    if (this.settings.pairPatience > 0) await this.splitWaitingPairs()
     await this.flushBundles()
     const ready = [...this.deferred.values()].filter(request => request.respondBy <= this.now + 5)
       .sort((a, b) => this.auctionValue(b) - this.auctionValue(a) || a.id.localeCompare(b.id))
