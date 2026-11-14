@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-14T04:34:56.686589+00:00",
+  "updatedAt": "2026-11-14T04:53:37.418718+00:00",
   "objective": "Continue systematic search toward the global optimum; practice only, no ranking submission.",
   "maximumConcurrentPlays": 4,
   "currentConcurrency": {
     "maximumConcurrentPlays": 4,
-    "activeRunners": 0,
-    "note": "Paired runner84112 completed all24trials with one worker. Final API check found zero unfinished team worlds. Both user-named stuck worlds were absent. Future studies must keep the shared total at most four."
+    "activeRunners": 1,
+    "note": "Architecture control replication uses one worker. After exact reproduction,12frozen treatment weeks will use two workers, with the shared four-world guard and no ranking/final."
   },
   "completedCombinationStudy": {
     "sessionId": 84558,
@@ -66,9 +66,9 @@
     "700km-only bundle treatment ends at7407.63/9410.50 euros, minimum96.6% on time. It gains versus the old baseline in both weeks but not versus bundles alone. No900km experiment scheduled."
   ],
   "nextSteps": [
-    "Continue broader pricing/capacity search on explicitly designated development seeds against the newly validated payout baseline. Do not reuse inspected evaluation seeds as unseen.",
-    "Report delivery reliability alongside profit: on-time share declined in every payout pair despite all12weeks qualifying. New candidates require a fresh frozen evaluation panel.",
-    "No ranking or final; maximum four unfinished team practice worlds."
+    "Require architecture0 to reproduce the archived seed14 control; otherwise rerun matched controls before interpreting treatments.",
+    "Complete all12fixed trials of joint acquisition, calendar scarcity pricing and high-volume proactive fulfillment on old seeds09,10,14,15. Keep every outcome and do not tune during the panel.",
+    "Require at least1500euros mean paired gain and all safety gates before confirmation. Revisit narrow model deferrals through actual policy evidence; retain the validated payout dispatcher as control."
   ],
   "validationStatus": "All16 fresh paired trials complete. Candidate mean10411.59 euros versus8242.34, +26.32%;7/8 positive;8/8 qualified; minimum94.94% on time; no undelivered orders. Full report docs/frontier-validation.md. No ranking submission.",
   "checks": {
@@ -553,7 +553,20 @@
     "attemptedCases": 8,
     "decision": "Stop under declared failure rule. Four-play guard saw3external active worlds. No offers accepted among7same-fee and7discount offers; no target booking/view difference. Retain as incomplete, not a12case negative study. Defer this version."
   },
-  "currentStudy": null,
+  "currentStudy": {
+    "kind": "three architectural departures on matched development weeks",
+    "phase": "control replication",
+    "sessionId": 6450,
+    "terminal": false,
+    "protocol": "experiments/architectures-protocol.json",
+    "manifest": "experiments/architectures-manifest.json",
+    "report": "docs/architectures-results.json",
+    "revision": "7aefc3b1aee04d3f73f28be3ab572c189b28195655f3217a939b922f0e28d0cb",
+    "treatmentTrials": 12,
+    "controlTrials": 1,
+    "maximumJobs": 2,
+    "maximumConcurrentPlays": 4
+  },
   "completedPayoutScreen": {
     "sessionId": 76828,
     "kind": "unbundled payout-only screen",

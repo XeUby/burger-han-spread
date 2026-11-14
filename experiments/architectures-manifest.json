@@ -1,0 +1,79 @@
+{
+  "protocol": "experiments/architectures-protocol.json",
+  "protocolSha256": "ff80e48a47bc238d64e6f748420df52e0f795bf8b4953845123917a4d88228f2",
+  "worlds": [
+    {
+      "label": "architecture-control",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w889572145e5939648feb"
+    },
+    {
+      "label": "architecture-joint",
+      "seed": "formal-unseen-20261113-09",
+      "worldId": null
+    },
+    {
+      "label": "architecture-calendar",
+      "seed": "formal-unseen-20261113-09",
+      "worldId": null
+    },
+    {
+      "label": "architecture-volume",
+      "seed": "formal-unseen-20261113-09",
+      "worldId": null
+    },
+    {
+      "label": "architecture-joint",
+      "seed": "formal-unseen-20261113-10",
+      "worldId": null
+    },
+    {
+      "label": "architecture-calendar",
+      "seed": "formal-unseen-20261113-10",
+      "worldId": null
+    },
+    {
+      "label": "architecture-volume",
+      "seed": "formal-unseen-20261113-10",
+      "worldId": null
+    },
+    {
+      "label": "architecture-joint",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": null
+    },
+    {
+      "label": "architecture-calendar",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": null
+    },
+    {
+      "label": "architecture-volume",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": null
+    },
+    {
+      "label": "architecture-joint",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": null
+    },
+    {
+      "label": "architecture-calendar",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": null
+    },
+    {
+      "label": "architecture-volume",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": null
+    }
+  ],
+  "attempts": [
+    {
+      "label": "architecture-control",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w889572145e5939648feb",
+      "startedAt": "2026-11-14T04:51:32.837Z"
+    }
+  ]
+}
