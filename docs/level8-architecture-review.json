@@ -142,7 +142,43 @@
     },
     "budget": "At most24 new unranked worlds in this tranche; at most8 unfinished team worlds, or a stricter frozen protocol limit. Stop creation on operational failure, account for every planned case, and never infer that a polling timeout stopped a worker.",
     "validation": "Separate protected budget. Freeze one finalist before generating untouched seeds, obey search-integrity alpha allocation and minimum24 unique pairs, size upward for variance and reliability; no revision using validation outcomes while retaining the untouched label.",
-    "ranking": "Not authorized; only after explicit permission for a concrete frozen policy and round, and scheduler tests."
+    "ranking": "Not authorized; only after explicit permission for a concrete frozen policy and round, and scheduler tests.",
+    "revision": "External review adds payment-confound identification ahead of model work. The original proposed24-world tranche is superseded by the staged sequence below; interrupted outcomes remain retained."
   },
-  "status": "Architecture review complete; replacement architecture and experiments are proposed, not implemented or validated."
+  "status": "Review incorporated. Graph and runner foundations implemented and tested; graph not deployed. Payment ablation interrupted and fully retained; no policy promotion or leaderboard superiority established.",
+  "externalReview": {
+    "source": "docs/researcher-architecture-review-2026-11-14.txt",
+    "acceptedNewFinding": "The original candidate/control contrast confounded bundle-payment convention with the architecture package. Independently reproduced10848vs9221cent opening fees and281vs518 bundle posts. Prior whole-policy gains remain valid; attribution to joint optimization is unresolved.",
+    "reproduction": "docs/bundle-payment-confound.json",
+    "changes": [
+      "Prioritize the whole-week architecture-package x bundle-payment ablation before structural policy evaluation.",
+      "Use actual option-specific revenue, deadlines and continuation value; test single-option offers before a richer menu-choice model.",
+      "Instrument rejection stages, payment exposure and censored offer/drop outcomes.",
+      "Evaluate escalation policy regimes over whole weeks because drivers learn."
+    ],
+    "agreement": "Broader feasible candidates, action-conditioned economics, driver/market/trust beliefs and partial-win routes are required; keep OR-Tools."
+  },
+  "implementationProgress": {
+    "graph": "research/graph: typed constraints, option routes, private/trade-in scope, two-new-request pairs and four-branch valuation;9 unit tests. Offline7107/8269 requests modeled versus4844 previously considered;2263 newly covered,2778 distinct pairs on recorded frames. These are not policy outcomes;1150 unresolved notes still abstain.",
+    "runner": "research/runner: shared creation lock, eight-world cap, ranked per-level serialization, cancellation, full case journal and mutation deadline. Ten tests including fake HTTP server adapter. Actual unranked launch retained all eight ablation cases including four network failures.",
+    "ablation": "experiments/bundle-payment-ablation-v1.json: eight new cases plus eight archived references on four familiar blocks. Four control-low weeks complete; four portfolio-high worlds failed on HTTP502 and were administratively closed after preserving partial state. No failed case replaced.",
+    "ablationDiagnostic": "Complete control payment contrast lost130.745euros/week, t95 interval[-2007.07,1745.58], and qualified3/4 versus4/4. The full factorial and its interaction remain unestimated."
+  },
+  "revisedSequence": [
+    {
+      "priority": 1,
+      "work": "Resolve the payment confound with an explicitly frozen follow-up protocol after diagnosing interruption handling. Preserve the failed v1 panel; never pool partial administrative scores into whole-policy means.",
+      "status": "Eight new v1 worlds attempted; full factorial incomplete. A follow-up is not yet frozen or launched."
+    },
+    {
+      "priority": 2,
+      "work": "Bounded randomized acquisition/payment/offer coverage across eight predeclared development weeks; log exact probabilities, unsupported work and censoring. Freeze weekly escalation regimes separately from post-level interventions.",
+      "maximumNewWorlds": 8
+    },
+    {
+      "priority": 3,
+      "work": "Two structural replacements on six predeclared paired development seeds, reusing exact archived candidate controls only with verified conformance. Test option-aware acquisition/capacity, then two-new-request routing with driver-aware fulfillment.",
+      "maximumNewWorlds": 12
+    }
+  ]
 }

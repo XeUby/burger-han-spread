@@ -1,0 +1,134 @@
+**The architecture needs substantial revision. The strongest evidence points to restricted acquisition choices and weak economic models—not insufficient solver power.** Preserve the current candidate as a benchmark, but do not treat its structure as the destination.
+
+This is a read-only review of the evaluated source, frozen bundle, eight candidate decision logs, ledger results, and retained leaderboard snapshot. No files or live worlds were changed.
+
+**What the latest experiment actually established**
+
+| Weekly average | Control | Candidate |
+|---|---:|---:|
+| Customer revenue | €30,027.91 | €29,964.95 |
+| Driver payments | €19,655.91 | €18,111.46 |
+| Refunds | €754.71 | €475.25 |
+| Net profit | €9,575.97 | €11,357.38 |
+| Orders counted in score | 294.4 | 299.5 |
+
+The €1,781.41 improvement comprises approximately €1,544.45 lower driver payments, €279.46 lower refunds, €20.46 lower release fees, and €62.97 lower revenue. **It improved fulfillment economics without materially expanding the business acquired.** [Audited results](/Users/yerzham/Documents/ChatGPT/BAHN/docs/level8-estimate-v1-results.json)
+
+The retained leader averaged 446.2 orders and €19,090.55 profit per week, versus our 299.5 orders and €11,357.38. That is approximately €42.78 versus €37.92 net profit per scored order. These are different seeds and workloads, so this is a diagnostic comparison—not a causal decomposition of the gap. It nevertheless motivates investigating profitable volume alongside unit economics. [Leaderboard snapshot](/Users/yerzham/Documents/ChatGPT/BAHN/docs/level8-estimate-board.json)
+
+**1. The inherited admission policy prevents the optimizer from considering much of the work.**
+
+Across the eight candidate worlds:
+
+- 8,269 requests arrived.
+- The planner explicitly declined 3,730.
+- **3,426 declines—91.8%—had no acquisition alternative in the solver input.**
+- All 10,109 solver calls returned `OPTIMAL` for their supplied model.
+- No solve reached the 120-alternative cap.
+
+`proposal()` calls the incumbent’s `quote()` method to obtain candidates. Although it loosens two capacity settings, it retains other screening rules: minimum home-based supply, distance limits, booking buffers, same-day restrictions, note handling, excluded job types, and incumbent economic checks. The joint optimizer therefore cannot rescue work that becomes attractive only with different fulfillment or pricing.
+
+Of those 3,426 declines, 1,092 involved private addresses or multiple legs. Those exclusions do not explain the whole bottleneck. Nor do these counts establish that the rejected requests were profitable.
+
+**Required change:** separate *legal and physical feasibility* from *economic desirability*. Generate feasible delivery options first; let the joint model evaluate their economics. Retain uncertainty limits and workload controls. Do not simply remove every gate.
+
+Every rejection should carry a reason and stage: unsupported work, physically infeasible, insufficient model support, negative value, capacity restriction, risk restriction, or candidate omission. [Candidate generation](/Users/yerzham/Documents/ChatGPT/BAHN/research/portfolio/policy.ts:120)
+
+**2. The architecture comparison contains a consequential payment difference.**
+
+The control forms bundles from undiscounted held-order schedules. The portfolio first applies the 0.85 opening-payout factor, then forms bundles.
+
+I reproduced this without a server: the same two held orders generated a **€108.48 control opening fee versus €92.21 portfolio opening fee**. The candidate also posted 518 bundles across the panel, versus 281 for the control.
+
+Consequently, the improvement combines different route selection, more bundling, different acquisition decisions, and a different bundle-payment convention. The whole-policy gain is real on these seeds; its attribution to joint optimization remains unresolved.
+
+**Required experiment:** cross incumbent/portfolio architecture with the two bundle-payment conventions. Otherwise, an effective payment change may be mistaken for evidence that the economic planner is accurate. This does not imply the lower convention is always preferable: booking delays, escalation and driver learning can reverse its benefit.
+
+Sources: [control bundling](/Users/yerzham/Documents/ChatGPT/BAHN/src/policy.ts:316), [portfolio held-order pricing](/Users/yerzham/Documents/ChatGPT/BAHN/research/portfolio/policy.ts:106).
+
+**3. The fulfillment model does not represent the decisions it is supposed to optimize.**
+
+The core cost estimate starts from:
+
+`max(current opening fee, base fee × costRatio)`
+
+It then applies hand-set payment-response adjustments. Booking predictions use request features and static home supply; the online adjustment is a coarse matured-booking cohort statistic.
+
+Missing from the central decision model are:
+
+- Booking probability conditional on the actual route, current payment schedule, elapsed exposure and recent views.
+- Driver-specific availability beliefs and observed positions.
+- How previous escalation teaches drivers to wait.
+- Drop and rebooking consequences conditional on the proposed payment.
+- The distribution of eventual payment and refund severity under the continuation policy.
+
+The available dropped-booking model is not used in this objective. Changing opening payment only between 100% and 108%, while inheriting later escalation and rescue, is a narrow action set for a game with strategic driver responses.
+
+**Required change:** evaluate a route together with its payment and rescue policy. Begin with interpretable booking/drop hazards and expected continuation costs. Preserve censoring and distinguish an expired offer from an observed refusal.
+
+The current logs contain 1,650 offer answers: 15 accepted, 328 declined and 1,307 expired. That warrants examining offer targeting and timing. It does **not** prove offers are ineffective: these are selected operational exposures, and expiration has multiple causes. [Fulfillment valuation](/Users/yerzham/Documents/ChatGPT/BAHN/research/portfolio/policy.ts:164)
+
+**4. Delivery options are collapsed into an economically inconsistent surrogate.**
+
+For a multi-option quote, the planner uses the **earliest offered deadline** and **lowest quoted revenue**, while estimating one overall win probability.
+
+Those attributes can belong to different options. A cheap, later delivery and an expensive, urgent delivery consume different capacity and incur different risk. Collapsing them can distort pricing, route feasibility and admission.
+
+This is material: **2,503 of 4,532 substantive candidate quotes offered multiple options.**
+
+**Required change:** value the actual alternatives:
+
+`P(customer selects option j | offered menu, state) × value(option j)`
+
+Each option needs its own revenue, deadline, fulfillment plan and capacity usage. A practical first comparison is explicit single-option offers against the existing multi-option policy; then introduce a menu-choice model. [Option construction and valuation](/Users/yerzham/Documents/ChatGPT/BAHN/research/portfolio/policy.ts:130)
+
+**5. “Joint planning” currently covers a small, local subset of the decision problem.**
+
+The planner considers three pending requests and six owned anchors at a time. It supports one uncertain new request paired with existing work, but not two uncertain requests acquired together. Pair routing is inherited; larger routes and several work categories remain absent. Urgent and other non-held fulfillment can bypass portfolio selection.
+
+The eight scenarios are parameter perturbations with analytically averaged wins. They are not trajectories of partial wins, bookings, drops and subsequent rescue.
+
+The logs record 148 held-work overflows and seven quote expirations. These expose coverage and scheduling limitations, although their monetary cost is not established.
+
+**Required change:** generate route opportunities before acceptance, including two pending requests and explicit outcomes for neither, either, or both winning. Include standalone fallback costs, holding costs and booking uncertainty. Execute one action and replan.
+
+Keep OR-Tools. Its solver is doing its job. Increase candidate diversity and relevance before increasing candidate limits or solve time. [Portfolio construction](/Users/yerzham/Documents/ChatGPT/BAHN/research/portfolio/policy.ts:137)
+
+**6. Capacity, market adaptation and future value need a coherent state model.**
+
+Current capacity constraints largely count nearby orders against weighted home-driver counts. They do not represent when capacity becomes available, which driver groups can serve overlapping regions, or where completed work leaves drivers.
+
+The future-value term was nonzero in only **56 of 10,109 frames—0.55%**. The current implementation therefore provides little evidence about the value of meaningful forward planning.
+
+Two other state effects deserve explicit treatment:
+
+- **Market changes:** the demand model has additive world/day/location/dealer effects, but no explicit intraday regime mechanism for the outage or price war.
+- **Dealer trust:** current trust affects quoted prices, but the objective does not explicitly value future trust gains or the downstream cost of losing trust through lateness.
+
+**Required change:** maintain a belief state over available capacity by region/time, market conditions, and dealer relationships. Use observable evidence only. Driver home locations are priors, not assignments or guaranteed capacity. [Capacity and future value](/Users/yerzham/Documents/ChatGPT/BAHN/research/portfolio/policy.ts:252), [demand model](/Users/yerzham/Documents/ChatGPT/BAHN/src/optimizer.ts:54).
+
+**Recommended architecture**
+
+Use a rolling-horizon dispatcher with five explicit components:
+
+1. **Feasibility and candidate generation:** delivery options, routes, schedules and offers; no hidden incumbent economic veto.
+2. **Belief state:** customer response, current market regime, driver availability/booking response, outstanding commitments and trust.
+3. **Action-conditioned valuation:** revenue minus eventual fulfillment, refunds, penalties and displaced capacity, plus future-state value.
+4. **Portfolio selection:** mutually compatible actions under time/location capacity and risk constraints, including partial-acquisition outcomes.
+5. **Execution and observation:** perform the next action, record its result, update beliefs and replan.
+
+This can remain modular and interpretable. A switch to end-to-end reinforcement learning is not justified by the present evidence.
+
+**A bounded research sequence**
+
+| Priority | Experiment | Decision it should resolve |
+|---|---|---|
+| 1 | Four-arm architecture × bundle-payment ablation on four predeclared development seeds; reuse exact archived arms where appropriate | How much improvement comes from payment convention, architecture and their interaction? |
+| 2 | Instrument the acquisition funnel; collect bounded randomized acceptance/payment/offer coverage across eight development weeks | Which excluded work is worth acquiring, and which fulfillment responses can actually be learned? |
+| 3 | Compare the current candidate against two structural replacements on six paired development seeds: option-aware acquisition/capacity, then route-before-acceptance with driver-aware fulfillment | Does the redesigned system produce materially more whole-week profit, and through which mechanism? |
+
+Payment-schedule experiments must account for driver learning across the week; isolated post-level randomization alone cannot establish the value of a changed weekly escalation policy. Analyze at the underlying-week level and retain all failures.
+
+Reject implementations whose predicted savings disappear into escalation, refunds or qualification failures. Do not rescue them through repeated threshold searches on the same panel. A candidate that passes development still requires the separate frozen validation procedure; eight qualifying weeks provide only a 68.8% one-sided 95% qualification lower bound under IID assumptions.
+
+**Recommendation to the mainline researcher:** preserve the €11.36k candidate, isolate the bundle-payment effect, and replace the acquisition/fulfillment interface. The immediate objective is to make profitable actions visible and value their actual consequences. Another round of solver tuning cannot address the strongest bottlenecks identified here.

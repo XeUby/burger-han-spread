@@ -1,0 +1,200 @@
+{
+  "scope": "Offline reproduction on identical held orders. Successful bundle posts counted from action_result for both architectures, rather than portfolio-specific telemetry.",
+  "fixture": {
+    "controlSchedule": [
+      {
+        "at": 500,
+        "feeCents": 10848
+      },
+      {
+        "at": 718,
+        "feeCents": 15730
+      },
+      {
+        "at": 838,
+        "feeCents": 20611
+      },
+      {
+        "at": 898,
+        "feeCents": 27120
+      }
+    ],
+    "portfolioSchedule": [
+      {
+        "at": 500,
+        "feeCents": 9221
+      },
+      {
+        "at": 718,
+        "feeCents": 13370
+      },
+      {
+        "at": 838,
+        "feeCents": 17520
+      },
+      {
+        "at": 898,
+        "feeCents": 23052
+      }
+    ],
+    "ratio": 0.8500184365781711,
+    "sameRoute": true
+  },
+  "outcomes": [
+    {
+      "worldId": "wc7a371b7fa789aba4647",
+      "label": "level8-estimate-v1-benchmark",
+      "bundles": 32,
+      "offers": {
+        "expired": 458,
+        "declined": 115,
+        "accepted": 3
+      }
+    },
+    {
+      "worldId": "w59b538e829103da34e81",
+      "label": "level8-estimate-v1-payments",
+      "bundles": 66,
+      "offers": {
+        "expired": 353,
+        "declined": 83,
+        "accepted": 2
+      }
+    },
+    {
+      "worldId": "w531d72f556749db1f781",
+      "label": "level8-estimate-v1-benchmark",
+      "bundles": 38,
+      "offers": {
+        "expired": 267,
+        "declined": 45
+      }
+    },
+    {
+      "worldId": "wcec3ccd3a02b20ed13a9",
+      "label": "level8-estimate-v1-payments",
+      "bundles": 74,
+      "offers": {
+        "expired": 107,
+        "declined": 24,
+        "accepted": 1
+      }
+    },
+    {
+      "worldId": "wabef671504f94aec0e06",
+      "label": "level8-estimate-v1-benchmark",
+      "bundles": 27,
+      "offers": {
+        "expired": 101,
+        "declined": 28
+      }
+    },
+    {
+      "worldId": "w5f0e575885726f779d25",
+      "label": "level8-estimate-v1-payments",
+      "bundles": 48,
+      "offers": {
+        "expired": 10,
+        "declined": 5
+      }
+    },
+    {
+      "worldId": "wd983bdac6a5faa67c066",
+      "label": "level8-estimate-v1-benchmark",
+      "bundles": 39,
+      "offers": {
+        "declined": 72,
+        "expired": 289,
+        "accepted": 2
+      }
+    },
+    {
+      "worldId": "w68739c55fea234f8b7d3",
+      "label": "level8-estimate-v1-payments",
+      "bundles": 63,
+      "offers": {
+        "accepted": 3,
+        "declined": 44,
+        "expired": 157
+      }
+    },
+    {
+      "worldId": "w03285c79f3f1f6d251a3",
+      "label": "level8-estimate-v1-benchmark",
+      "bundles": 50,
+      "offers": {
+        "declined": 116,
+        "expired": 410,
+        "accepted": 2
+      }
+    },
+    {
+      "worldId": "wef657bf51113144113f2",
+      "label": "level8-estimate-v1-payments",
+      "bundles": 87,
+      "offers": {
+        "expired": 305,
+        "declined": 83,
+        "accepted": 2
+      }
+    },
+    {
+      "worldId": "w68bdba29c2d1ebdba17d",
+      "label": "level8-estimate-v1-benchmark",
+      "bundles": 32,
+      "offers": {
+        "expired": 414,
+        "declined": 90
+      }
+    },
+    {
+      "worldId": "w56e86c0c852e4e944201",
+      "label": "level8-estimate-v1-payments",
+      "bundles": 73,
+      "offers": {
+        "expired": 251,
+        "declined": 53,
+        "accepted": 5
+      }
+    },
+    {
+      "worldId": "w50c39505daec000eee54",
+      "label": "level8-estimate-v1-benchmark",
+      "bundles": 20,
+      "offers": {
+        "declined": 6,
+        "expired": 17,
+        "accepted": 1
+      }
+    },
+    {
+      "worldId": "we50f015c9133beb203b5",
+      "label": "level8-estimate-v1-payments",
+      "bundles": 39,
+      "offers": {
+        "declined": 3,
+        "expired": 15
+      }
+    },
+    {
+      "worldId": "wc216c19be2c4f630c0ea",
+      "label": "level8-estimate-v1-benchmark",
+      "bundles": 43,
+      "offers": {
+        "expired": 303,
+        "declined": 78,
+        "accepted": 1
+      }
+    },
+    {
+      "worldId": "wc3af93a033080246cb56",
+      "label": "level8-estimate-v1-payments",
+      "bundles": 68,
+      "offers": {
+        "accepted": 2,
+        "expired": 109,
+        "declined": 33
+      }
+    }
+  ]
+}

@@ -4,7 +4,7 @@ import { PortfolioSolver } from "./bridge.ts"
 import type { Outcome, Portfolio, Solution } from "./bridge.ts"
 import { features, prediction } from "./models.ts"
 import { planBundles } from "../../src/bundles.ts"
-import type { BundlePlan } from "../../src/bundles.ts"
+import type { BundleCandidate, BundlePlan } from "../../src/bundles.ts"
 import { requestFeasibility } from "../../src/admission.ts"
 import type { World } from "../../vendor/typescript/spread.ts"
 import type { Action, ActionResult, DeskEvent, DriverProfile, Order, PostAction, PriceRequest, WorldMap } from "../../vendor/typescript/types.ts"
@@ -60,6 +60,9 @@ export class Dispatcher extends Mechanisms {
     return Math.min(this.now+30,this.waiting.size ? this.now+1 : Infinity,...[...this.held].map(([id,h])=>Math.max(this.now+1,this.holdDue(id,h.at))))
   }
   closeSolver(): void { this.solver?.close(); this.solver = undefined }
+  bundlePlans(now: number, candidates: BundleCandidate[]): BundlePlan[] {
+    return planBundles(now, candidates, this.network)
+  }
   holdDue(id: string, at: number): number {
     const request=this.reservations.get(id)
     return Math.max(at+this.settings.bundleWait,request && this.pending.has(request) ? this.requests.get(request)!.respondBy+1 : 0)
@@ -203,7 +206,7 @@ export class Dispatcher extends Mechanisms {
     for (let a=0;a<owned.length;a++) for (let b=a+1;b<owned.length;b++) {
       const items=[owned[a]!,owned[b]!]
       if (this.level<3 || items.every(o=>o.gigId) || items.some(o=>reserved(o.order.id))) continue
-      const route=planBundles(this.now,items.map(o=>({order:o.order,post:o.post,noteSafe:this.noteRules(this.requests.get(o.order.id)).safe})),this.network)[0]
+      const route=this.bundlePlans(this.now,items.map(o=>({order:o.order,post:o.post,noteSafe:this.noteRules(this.requests.get(o.order.id)).safe})))[0]
       if (route) for (const multiplier of feeOptions) add(items.map(o=>o.order.id),{kind:"fulfill",due:Math.min(...items.map(o=>o.due)),owned:items,action:pay(route.post,multiplier),multiplier},ownedOutcomes(items,multiplier,route))
     }
     for (const o of owned.filter(o=>!o.gigId)) for (const multiplier of feeOptions.filter(m=>m!==1)) add([o.order.id],{kind:"fulfill",due:o.due,owned:[o],action:pay(o.post,multiplier),multiplier},ownedOutcomes([o],multiplier))
@@ -214,7 +217,7 @@ export class Dispatcher extends Mechanisms {
       const choices: { anchor?:Owned; route?:BundlePlan }[]=[{}]
       for (const anchor of owned) {
         if (this.level<3 || reserved(anchor.order.id)) continue
-        const route=planBundles(request.respondBy,[{order:anchor.order,post:anchor.post,noteSafe:this.noteRules(this.requests.get(anchor.order.id)).safe},{order,post,noteSafe:true}],this.network)[0]
+        const route=this.bundlePlans(request.respondBy,[{order:anchor.order,post:anchor.post,noteSafe:this.noteRules(this.requests.get(anchor.order.id)).safe},{order,post,noteSafe:true}])[0]
         if (route) choices.push({anchor,route})
       }
       const best=choices.slice(1).sort((a,b)=>b.route!.feeSavingCents-a.route!.feeSavingCents).slice(0,2)

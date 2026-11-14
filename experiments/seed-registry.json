@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-14T10:26:46.733972+00:00",
+  "updatedAt": "2026-11-14T10:58:47.880111+00:00",
   "unit": "unique simulation seed/week; repeated worlds are not independent replications",
-  "worldRecords": 476,
+  "worldRecords": 484,
   "uniqueNamedWeeks": 84,
-  "distinctLabels": 116,
-  "distinctSourceSettingsCombinations": 93,
+  "distinctLabels": 124,
+  "distinctSourceSettingsCombinations": 95,
   "interpretation": "Counts document the adaptive search, not independent tests or a guarantee that distinct deterministic seeds are IID. Every observed seed is conservatively unavailable for any future untouched panel.",
   "hiddenSeedWorlds": [
     {
@@ -2781,6 +2781,20 @@
       "eligibleForFreshValidation": false,
       "worlds": [
         {
+          "worldId": "w3a3e47337c3864c953c5",
+          "label": "bundle-payment-ablation-v1-portfolio-high-1",
+          "revision": "8e54dff93813f8a70dceeadba90e85289bb983adf257cbbad67f2461c6794615",
+          "hasTerminalArtifacts": false,
+          "metaSha256": "ce856b991793aed133fd7b7c8379643c8487619fea906bd95cdc867c3708bd71"
+        },
+        {
+          "worldId": "w42923abff48ee107c771",
+          "label": "bundle-payment-ablation-v1-control-low-1",
+          "revision": "8e54dff93813f8a70dceeadba90e85289bb983adf257cbbad67f2461c6794615",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "7164fb03131a5cb5f4b0933248d395b5c2ab458ae81cd17066680cd8d8b28870"
+        },
+        {
           "worldId": "w59b538e829103da34e81",
           "label": "level8-estimate-v1-payments",
           "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
@@ -2873,11 +2887,25 @@
       "eligibleForFreshValidation": false,
       "worlds": [
         {
+          "worldId": "w1e087102c53bb12c9714",
+          "label": "bundle-payment-ablation-v1-control-low-2",
+          "revision": "8e54dff93813f8a70dceeadba90e85289bb983adf257cbbad67f2461c6794615",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "64c5a31fdcb459dacb9c5ec5bd4444c78927b0659f6608a24ace1f1893041870"
+        },
+        {
           "worldId": "w531d72f556749db1f781",
           "label": "level8-estimate-v1-benchmark",
           "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
           "hasTerminalArtifacts": true,
           "metaSha256": "5b58745a2cf5ca0c7c9986ae601b59f5fa56212cd75b4f88a062b4f9ac010ce9"
+        },
+        {
+          "worldId": "wa7c66383e270709c216f",
+          "label": "bundle-payment-ablation-v1-portfolio-high-2",
+          "revision": "8e54dff93813f8a70dceeadba90e85289bb983adf257cbbad67f2461c6794615",
+          "hasTerminalArtifacts": false,
+          "metaSha256": "921f7e4f3f7426a545f6003e85f9e67db9aec4e31209356838e9137d84ad5d47"
         },
         {
           "worldId": "wcec3ccd3a02b20ed13a9",
@@ -2903,11 +2931,25 @@
           "metaSha256": "22548c3ac8292280cf5f5e2ef5071aca90e560e73e853c92c4e57a2c6ff02ac9"
         },
         {
+          "worldId": "wa279565ddcd2b2eb0fc8",
+          "label": "bundle-payment-ablation-v1-portfolio-high-3",
+          "revision": "8e54dff93813f8a70dceeadba90e85289bb983adf257cbbad67f2461c6794615",
+          "hasTerminalArtifacts": false,
+          "metaSha256": "0e1bee7969ae508b6e76bd8c87e2c19abe4e3cca4250685782ebb11b7cd42194"
+        },
+        {
           "worldId": "wabef671504f94aec0e06",
           "label": "level8-estimate-v1-benchmark",
           "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
           "hasTerminalArtifacts": true,
           "metaSha256": "10a03fd21462497d7ceddd5f04263bd8aef2d2c62048f8f0ddca5f28932b4754"
+        },
+        {
+          "worldId": "wfa87673230a4c685d6c3",
+          "label": "bundle-payment-ablation-v1-control-low-3",
+          "revision": "8e54dff93813f8a70dceeadba90e85289bb983adf257cbbad67f2461c6794615",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "c7b2df3583f62001c0e5c326f7a0a9d5885caba928830987ef1b9d82a577156a"
         }
       ],
       "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
@@ -2919,11 +2961,25 @@
       "eligibleForFreshValidation": false,
       "worlds": [
         {
+          "worldId": "w54e224be5334692d044e",
+          "label": "bundle-payment-ablation-v1-portfolio-high-4",
+          "revision": "8e54dff93813f8a70dceeadba90e85289bb983adf257cbbad67f2461c6794615",
+          "hasTerminalArtifacts": false,
+          "metaSha256": "5477846c08f1075fe083b87bf2e6d036878bb67c339506bf237c6475d8b5da75"
+        },
+        {
           "worldId": "w68739c55fea234f8b7d3",
           "label": "level8-estimate-v1-payments",
           "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
           "hasTerminalArtifacts": true,
           "metaSha256": "4042e8ed64b9758577e1c013a0a0460968a225bb0dfebcb7addb0ad31fdfaea9"
+        },
+        {
+          "worldId": "waf26bf46d2c781be6dc6",
+          "label": "bundle-payment-ablation-v1-control-low-4",
+          "revision": "8e54dff93813f8a70dceeadba90e85289bb983adf257cbbad67f2461c6794615",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "bcf735db8bfdddef2d22cc37e547998d90bc89026a86802ca0a31a0a624ed630"
         },
         {
           "worldId": "wd983bdac6a5faa67c066",

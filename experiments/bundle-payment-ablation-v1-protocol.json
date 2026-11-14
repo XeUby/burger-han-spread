@@ -1,0 +1,39 @@
+{
+  "frozenAt": "2026-11-14T10:52:43.384732+00:00",
+  "role": "Four-block whole-week architecture-package x bundle-payment development ablation; not promotion",
+  "motivation": "Independently reproduced10848cent versus9221cent bundle opening fees on identical held orders. Original gain confounded bundle-payment convention with architecture.",
+  "seeds": [
+    "level8-estimate-12912cd52d9ef00ea35490e8",
+    "level8-estimate-502fd2d71b59b218d9af949c",
+    "level8-estimate-b87f6821707b892a55d34716",
+    "level8-estimate-c5d2d97a139c8d2c999d17b2"
+  ],
+  "seedChoice": "First four seeds in the already completed level8-estimate-v1 manifest, in manifest order; not selected by outcomes. All are development.",
+  "arms": {
+    "control-high": "Archived benchmark",
+    "portfolio-low": "Archived payments candidate",
+    "control-low": "New crossed arm",
+    "portfolio-high": "New crossed arm"
+  },
+  "factorDefinition": "Architecture is the complete retained policy package: incumbent versus portfolio plus future/payment-choice flags. This does not isolate mathematical optimization alone.",
+  "paymentDefinition": "High uses raw held/prospective solo schedules as bundle inputs. Low applies the existing0.85 opening payout before bundle construction. The resulting entire bundle ladder can change. Live open-anchor schedules remain as posted, with no inverse rounding. Solo posting, later rescue logic, feasibility and all other settings are unchanged. In the portfolio, changed bundle inputs also affect the existing modeled savings and route selection; this is a policy-level intervention, not an isolated posted-fee effect.",
+  "reuse": "Eight exact archived full weeks form control-high and portfolio-low. Those convention branches explicitly delegate to original behavior; tests compare control posts and complete portfolio frames. Do not reclassify these familiar outcomes as fresh validation.",
+  "comparisons": [
+    "Control low minus control high",
+    "Portfolio low minus portfolio high",
+    "Portfolio high minus control high",
+    "Portfolio low minus control low",
+    "(Portfolio low - portfolio high) - (Control low - control high)"
+  ],
+  "stopping": "Complete all eight new cases regardless of profit. No retries or replacements on creation uncertainty; retain every pending, failed, partial and completed case. Runtime failure stops new creation while existing jobs retain their outcomes. Original600-second policy budget remains. No mid-panel tuning.",
+  "operations": {
+    "workers": 8,
+    "maximumUnfinishedTeamWorlds": 8,
+    "sharedLock": "runs/team-world-creation.lock",
+    "ranked": false,
+    "testFinal": false,
+    "final": false
+  },
+  "analysis": "Four underlying seed blocks, sixteen policy outcomes including eight archived cases. Report all per-week ledger, reliability and operational outcomes plus descriptive paired-t/bootstrap intervals and exact qualification bounds. No multiplicity-adjusted promotion claim. Fixed full-week regimes capture within-week learning; post-level interventions cannot substitute.",
+  "decision": "Determine whether lower bundle payments explain most of the old candidate gain and whether the portfolio retains positive value at matched convention. Report interactions and contradictions. No automatic promotion from four blocks."
+}
