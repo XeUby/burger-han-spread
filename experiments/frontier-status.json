@@ -1,9 +1,10 @@
 {
-  "updatedAt": "2026-11-14T00:45:04.443283+00:00",
+  "updatedAt": "2026-11-14T00:49:28.395530+00:00",
   "objective": "Continue systematic search toward the global optimum; practice only, no ranking submission.",
   "maximumConcurrentPlays": 4,
   "currentConcurrency": {
-    "note": "The two user-named stuck worlds were deleted successfully. New unrelated worlds appeared afterwards. The paired runner now checks server occupancy before every create."
+    "ourActivePlays": 0,
+    "note": "All16 fresh evaluation worlds,4 hours-screen worlds,4 hours-confirmation worlds finished. Offer probe base and all30 temporary forks deleted after saving evidence."
   },
   "completedCombinationStudy": {
     "sessionId": 84558,
@@ -64,11 +65,11 @@
     "700km-only bundle treatment ends at7407.63/9410.50 euros, minimum96.6% on time. It gains versus the old baseline in both weeks but not versus bundles alone. No900km experiment scheduled."
   ],
   "nextSteps": [
-    "Poll note-hours confirmation session88871. First two weeks completed, second two running. Preserve all four outcomes.",
-    "Build the four-week confirmation report against experiments/note-hours-confirmation-protocol.json; use exact source/settings and ledger reconciliation. Audit parsed-hours failed visits, late orders, changes and action errors. No promotion from partial outcomes.",
-    "Offer-window probe session42393 is terminal; all its temporary worlds deleted. Evidence docs/offer-window-probe.json shows no accepted cheap offers and one fewer prompt booking. Do not repeat this weak profile-selected variant.",
-    "No ranking or final submissions; maximum4 unfinished plays. Continue structural research without adapting to the completed fresh evaluation panel.",
-    "Push coherent checkpoints to codex/standalone-dispatcher."
+    "No studies currently running. Keep the frozen volume-plus-bundles policy as the best independently validated incumbent.",
+    "Do not promote note-hours: confirmation failed. Do not repeat the ineffective profile-selected offer-window variant without new evidence.",
+    "Continue structural optimization on old development seeds only. Potential next screen: whether steep rescue fees remain economically justified once on-time delivery is already impossible; quantify the opportunity before using plays.",
+    "Maintain at most4 unfinished plays and no ranking/final submissions. Do not tune on the completed eight-week fresh frontier evaluation and still call it unseen.",
+    "Semi-regularly push coherent checkpoints to codex/standalone-dispatcher."
   ],
   "validationStatus": "All16 fresh paired trials complete. Candidate mean10411.59 euros versus8242.34, +26.32%;7/8 positive;8/8 qualified; minimum94.94% on time; no undelivered orders. Full report docs/frontier-validation.md. No ranking submission.",
   "checks": {
@@ -111,7 +112,7 @@
       "truthCases": 45,
       "unchangedCases": 44,
       "unchangedUnmodeledRestrictions": 0,
-      "profitTested": "Two development pairs complete: gains22.22/1032.36 euros; both qualified;36 parsed-hours orders all on time, no failed visits or action errors. Four-week confirmation running.",
+      "profitTested": "Screen +527.29 euros/week over2 old seeds; confirmation -274.725 over4 old seeds,2/4 positive. Fails predeclared selection rule; remains opt-in and disabled in the incumbent.",
       "probeEvidence": "docs/note-hours-probe.json"
     },
     "jointAcquisition": {
@@ -170,7 +171,7 @@
       "hoursUndelivered": 0
     }
   },
-  "currentStudy": {
+  "completedHoursConfirmation": {
     "sessionId": 88871,
     "kind": "Note-hours development confirmation",
     "plan": "experiments/plans/note-hours-confirmation.json",
@@ -185,6 +186,24 @@
     "secondWorlds": [
       "wb642dfe9ed8ec3e241f2",
       "wacd4f422afb1a4c54f81"
-    ]
-  }
+    ],
+    "terminal": true,
+    "study": "runs/study-1794617289885.json",
+    "summary": {
+      "pairs": 4,
+      "pairedGainsCents": [
+        36244,
+        -86101,
+        -82059,
+        22026
+      ],
+      "meanGainCents": -27472.5,
+      "positivePairs": 2,
+      "qualifiedTreatments": 4,
+      "hoursFailedVisits": 0,
+      "hoursUndelivered": 0
+    },
+    "decision": "Not selected: mean gain -274.725 euros, only2/4 positive. All4 qualified; no parsed-hours failed visits or undelivered orders."
+  },
+  "currentStudy": null
 }

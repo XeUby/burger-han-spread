@@ -24,7 +24,7 @@ The prior policy had independently improved mean margin from €5,541.90 to €8
 
 The selected source is frozen under `experiments/frontier/candidate/`; the previous source is under `experiments/frontier/baseline/`. Exact source hashes and settings are in [source-index.json](experiments/frontier/source-index.json). The selected configuration is also in [frontier-selected-config.json](experiments/frontier-selected-config.json). The default executable still uses the previous validated settings; research features remain opt-in.
 
-Development selection used [screening trials](docs/frontier-experiments.md) and a [four-week confirmation](docs/frontier-confirmation.md). A separate note-hours treatment is now being tested on old development seeds. It does not change the frozen evaluated candidate. [Current experiment state](experiments/frontier-status.json) records active runs and decisions. No ranking submission has been made by this research.
+Development selection used [screening trials](docs/frontier-experiments.md) and a [four-week confirmation](docs/frontier-confirmation.md). A separate note-hours treatment passed an initial screen but [failed confirmation](docs/note-hours-confirmation.md), so it remains disabled. A controlled [direct-offer head-start probe](docs/offer-window-probe.json) also found no benefit. [Current experiment state](experiments/frontier-status.json) records runs and decisions. No ranking submission has been made by this research.
 
 Both study runners cap workers at four, serialize their own creations, and check total unfinished server worlds before each creation. Coordinate separate runners so their creation checks cannot race. Raw world logs and credentials remain local.
 
@@ -49,6 +49,12 @@ npm ci
 npm run check
 npm test
 npm run practice -- --seed new-trial-1
+```
+
+Run the exact latest validated bundle source on an ordinary practice seed:
+
+```bash
+node --env-file=.env experiments/frontier/candidate/src/run.ts --seed new-bundle-trial-1 --config '{"capacity":0.35,"backlog":0.08,"minDrivers":8,"maxKm":700,"bundleWait":15}'
 ```
 
 The optimized policy is the default. Its complete settings are in [final-config.json](experiments/final-config.json). Runtime and integration tests: **94 passing**; isolated research tests: **8 passing**; statistical-report tests: **9 passing**. TypeScript checks include the experiment launchers.

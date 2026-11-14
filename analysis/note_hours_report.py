@@ -4,15 +4,21 @@ import hashlib
 import json
 import statistics
 import subprocess
+import sys
 from pathlib import Path
 
 from frontier_validation import load_world
 
 ROOT = Path(__file__).resolve().parents[1]
-BUNDLE = ROOT / "runs/frozen/91cbeb051868111637bf4a872c630803895c5f7969a70d41212bc3fe04cb6056/fdea9891bc11b3a1669cdf10ca9472b9173c1341e049a244eb107bf963e45f80"
+confirmation = "--confirmation" in sys.argv
+name = "note-hours-confirmation" if confirmation else "note-hours"
+study = "7a2ba42d56b09cfd2b52ef157c663831d05cd591fe87d74a707e4db6577f60c0" if confirmation else "fdea9891bc11b3a1669cdf10ca9472b9173c1341e049a244eb107bf963e45f80"
+BUNDLE = ROOT / "runs/frozen/91cbeb051868111637bf4a872c630803895c5f7969a70d41212bc3fe04cb6056" / study
 REVISION = "f34787f4f6a814a3d16254c970b95acf07382378c5c868a4e834d1bc2e7da642"
+protocol = json.loads((ROOT / f"experiments/{name}-protocol.json").read_text())
+baselines = {row["seed"]: load_world(ROOT, row["worldId"], row["seed"], row) for row in protocol.get("baselines", [])}
 plan = json.loads((BUNDLE / "plan.json").read_text())
-if plan != json.loads((ROOT / "experiments/plans/note-hours.json").read_text()):
+if plan != json.loads((ROOT / f"experiments/plans/{name}.json").read_text()):
     raise ValueError("Plan changed after source freeze")
 digest = hashlib.sha256()
 for path in sorted((BUNDLE / "src").glob("*.ts")):
@@ -55,17 +61,24 @@ for key, trial in requested.items():
             "changedOrders": sorted({event["order"]["id"] for event in events if event["kind"] == "order_changed" and event["order"]["id"] in ids}),
         }
         row["actionErrors"] = json.loads((ROOT / "runs" / f"{world}.errors.json").read_text())
+        if confirmation:
+            row["baseline"] = baselines[key[1]]
+            row["differenceCents"] = row["result"]["marginCents"] - row["baseline"]["marginCents"]
     records.append(row)
 
 summary = None
 if all(row["status"] == "complete" for row in records):
     differences = []
     for seed in dict.fromkeys(trial["seed"] for trial in plan):
-        control = next(row for row in records if row["seed"] == seed and row["label"] == "hours-control")
-        treatment = next(row for row in records if row["seed"] == seed and row["label"] == "hours-treatment")
-        differences.append(treatment["result"]["marginCents"] - control["result"]["marginCents"])
-    treated = [row for row in records if row["label"] == "hours-treatment"]
+        if confirmation:
+            differences.append(next(row["differenceCents"] for row in records if row["seed"] == seed))
+        else:
+            control = next(row for row in records if row["seed"] == seed and row["label"] == "hours-control")
+            treatment = next(row for row in records if row["seed"] == seed and row["label"] == "hours-treatment")
+            differences.append(treatment["result"]["marginCents"] - control["result"]["marginCents"])
+    treated = records if confirmation else [row for row in records if row["label"] == "hours-treatment"]
     summary = {"pairs": len(differences), "pairedGainsCents": differences, "meanGainCents": statistics.mean(differences), "positivePairs": sum(value > 0 for value in differences), "qualifiedTreatments": sum(row["result"]["ranked"] for row in treated), "hoursFailedVisits": sum(len(row["hoursOrders"]["failedVisits"]) for row in treated), "hoursUndelivered": sum(len(row["hoursOrders"]["undeliveredOrderIds"]) for row in treated)}
-report = {"scope": "Two previously inspected development weeks; not fresh validation. No partial-panel mean or per-order profit inference. Shared fees are included in reconciled whole-week scores.", "revision": REVISION, "protocol": json.loads((ROOT / "experiments/note-hours-protocol.json").read_text()), "summary": summary, "records": records}
-(ROOT / "docs/note-hours-results.json").write_text(json.dumps(report, indent=2) + "\n")
+report = {"scope": "Previously inspected development weeks; not fresh validation. No partial-panel mean or per-order profit inference. Shared fees are included in reconciled whole-week scores.", "revision": REVISION, "protocol": protocol, "summary": summary, "records": records}
+output = "note-hours-confirmation" if confirmation else "note-hours-results"
+(ROOT / f"docs/{output}.json").write_text(json.dumps(report, indent=2) + "\n")
 print(json.dumps(summary if summary else [{key: row[key] for key in ["seed", "label", "worldId", "status"]} for row in records], indent=2))
