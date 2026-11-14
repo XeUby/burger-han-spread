@@ -1,0 +1,4999 @@
+{
+  "worldId": "wb318a0359116fd02c2a6",
+  "seed": "formal-unseen-20261113-09",
+  "purpose": "Bounded note-semantics probe, not a profit or reliability benchmark. One-euro quotes, no dispatch, no ranking attempt.",
+  "terminal": true,
+  "summary": {
+    "won": 45,
+    "unchanged": 44,
+    "unchangedWithUnmodeledRestrictions": 0,
+    "changed": 1
+  },
+  "sourceEvidenceSha256": "67c3e03b15889b954dfe9f6e2fc28a66c3ce2d0f1571cdb45f7c96eb060af5c8",
+  "dependencies": {
+    "src/hours-note.ts": "70fd7f597e68a0970b88286eddd4a798536f77a6c5ce940b8558bce107511304",
+    "src/notes.ts": "84b9e4d932f6aa8610a5a3a611cf325cfb086c3ebbdb93f6f97b0eb4f4cdee83",
+    "src/readiness.ts": "c70f1a917bab0e4b1c0912d8a3de4b7655a458f1f39763e8d079596c9b5343e9"
+  },
+  "cases": [
+    {
+      "requestId": "R00043",
+      "note": {
+        "text": "kohde auki arkisin klo 7 - 21. nouto arkisin klo 8 - 16. avain autossa.",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1260
+        },
+        "pickup": {
+          "opens": 480,
+          "closes": 960
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": true,
+          "chargePercent": 30
+        },
+        "pickup": {
+          "placeId": "seinajoki",
+          "privateAddress": false,
+          "window": {
+            "from": 888,
+            "to": 2640
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "oulu",
+          "privateAddress": false,
+          "window": {
+            "from": 888,
+            "to": 2640
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1260,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 888,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 480,
+          "closes": 960,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 420,
+          "closes": 1260,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00045",
+      "note": {
+        "text": "Toimitusosoite auki arkisin klo 8.00 - 18.00. Kiitos etuk\u00e4teen",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 1080
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "seinajoki",
+          "privateAddress": false,
+          "window": {
+            "from": 888,
+            "to": 2640
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "vantaa",
+          "privateAddress": false,
+          "window": {
+            "from": 888,
+            "to": 2640
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1260,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 888,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 480,
+          "closes": 1080,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 480,
+          "closes": 1080,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00068",
+      "note": {
+        "text": "Haettava ennen klo 18.00 / Collect before 18:00",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "lempaala",
+          "privateAddress": false,
+          "window": {
+            "from": 725,
+            "to": 5520
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "hyvinkaa",
+          "privateAddress": false,
+          "window": {
+            "from": 725,
+            "to": 5520
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1200,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 725,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 480,
+          "closes": 1080,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 420,
+          "closes": 1200,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00075",
+      "note": {
+        "text": "Receiving 10:00-17:00 only",
+        "language": "en"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 600,
+          "closes": 1020
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": true,
+          "chargePercent": 35
+        },
+        "pickup": {
+          "placeId": "kuopio",
+          "privateAddress": false,
+          "window": {
+            "from": 3360,
+            "to": 5520
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "kuopio",
+          "privateAddress": false,
+          "window": {
+            "from": 3360,
+            "to": 5520
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1260,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 3360,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 480,
+          "closes": 1080,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 600,
+          "closes": 1020,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00087",
+      "note": {
+        "text": "Pickup weekdays 9:00 - 17:00 only.",
+        "language": "en"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 1020
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "mikkeli",
+          "privateAddress": false,
+          "window": {
+            "from": 1920,
+            "to": 4080
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "vantaa",
+          "privateAddress": false,
+          "window": {
+            "from": 1920,
+            "to": 4080
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1260,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 1920,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 540,
+          "closes": 1020,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 480,
+          "closes": 1260,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00095",
+      "note": {
+        "text": "Nouto ennen klo 15.00!",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 900
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "mikkeli",
+          "privateAddress": false,
+          "window": {
+            "from": 1920,
+            "to": 4080
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1140,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "espoo",
+          "privateAddress": false,
+          "window": {
+            "from": 1920,
+            "to": 4080
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1260,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 1920,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 480,
+          "closes": 900,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 480,
+          "closes": 1260,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00125",
+      "note": {
+        "text": "Receiving weekdays 8:00-20:00 only. Pickup weekdays 7:00-18:00 only",
+        "language": "en"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 1200
+        },
+        "pickup": {
+          "opens": 420,
+          "closes": 1080
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "hyvinkaa",
+          "privateAddress": false,
+          "window": {
+            "from": 1020,
+            "to": 5520
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "lempaala",
+          "privateAddress": false,
+          "window": {
+            "from": 1020,
+            "to": 5520
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1200,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 1020,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 420,
+          "closes": 1080,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 480,
+          "closes": 1200,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00148",
+      "note": {
+        "text": "Kohde sulkee klo 17",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 0,
+          "closes": 1020
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": true,
+          "chargePercent": 24
+        },
+        "pickup": {
+          "placeId": "porvoo",
+          "privateAddress": false,
+          "window": {
+            "from": 1860,
+            "to": 6960
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "espoo",
+          "privateAddress": false,
+          "window": {
+            "from": 1860,
+            "to": 6960
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1200,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 1860,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 420,
+          "closes": 1080,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 540,
+          "closes": 1020,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00175",
+      "note": {
+        "text": "Collect before 15:30. Br, sales.",
+        "language": "en"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 930
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": true,
+          "chargePercent": 33
+        },
+        "pickup": {
+          "placeId": "lempaala",
+          "privateAddress": false,
+          "window": {
+            "from": 6180,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "kuopio",
+          "privateAddress": false,
+          "window": {
+            "from": 6180,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1200,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 6180,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 420,
+          "closes": 930,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 480,
+          "closes": 1200,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00222",
+      "note": {
+        "text": "hi there. receiving shop closes 6 pm. key box code 4306. thank you.",
+        "language": "en"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 0,
+          "closes": 1080
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": true,
+          "chargePercent": 11
+        },
+        "pickup": {
+          "placeId": "hyvinkaa",
+          "privateAddress": false,
+          "window": {
+            "from": 1984,
+            "to": 4080
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1140,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "lempaala",
+          "privateAddress": false,
+          "window": {
+            "from": 1984,
+            "to": 4080
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1200,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 1984,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 540,
+          "closes": 1140,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 480,
+          "closes": 1080,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00241",
+      "note": {
+        "text": "auto valmis vasta ylihuomenna klo 7. kohde auki arkisin klo 9\u201321. kiitos paljon",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 4740,
+        "delivery": {
+          "opens": 540,
+          "closes": 1260
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "vantaa",
+          "privateAddress": false,
+          "window": {
+            "from": 4740,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "raisio",
+          "privateAddress": false,
+          "window": {
+            "from": 4740,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1260,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 4740,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 420,
+          "closes": 1080,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 540,
+          "closes": 1260,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00247",
+      "note": {
+        "text": "Vastaanotto 8-16.30.",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 990
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": true,
+          "chargePercent": 37
+        },
+        "pickup": {
+          "placeId": "pori",
+          "privateAddress": false,
+          "window": {
+            "from": 2053,
+            "to": 6960
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "raisio",
+          "privateAddress": false,
+          "window": {
+            "from": 2053,
+            "to": 6960
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1200,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 2053,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 420,
+          "closes": 1080,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 480,
+          "closes": 990,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00288",
+      "note": {
+        "text": "Nouto arkisin 9.00-16.00, t. myynti",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 960
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "lempaala",
+          "privateAddress": false,
+          "window": {
+            "from": 2185,
+            "to": 4080
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "pori",
+          "privateAddress": false,
+          "window": {
+            "from": 2185,
+            "to": 4080
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1260,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 2185,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 540,
+          "closes": 960,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 480,
+          "closes": 1260,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": true,
+      "problems": []
+    },
+    {
+      "requestId": "R00293",
+      "note": {
+        "text": "liike kiinni klo 16.30, haettava ennen sit\u00e4!",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 990
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "hyvinkaa",
+          "privateAddress": false,
+          "window": {
+            "from": 3495,
+            "to": 5520
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1140,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "vantaa",
+          "privateAddress": false,
+          "window": {
+            "from": 3495,
+            "to": 5520
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1260,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 3495,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 540,
+          "closes": 990,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 420,
+          "closes": 1260,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00301",
+      "note": {
+        "text": "Auto valmis vasta huomenna klo 12. Vastaanotto klo 9 - 20. Soita ennen noutoa",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 3600,
+        "delivery": {
+          "opens": 540,
+          "closes": 1200
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "vantaa",
+          "privateAddress": false,
+          "window": {
+            "from": 2202,
+            "to": 4080
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": null
+          }
+        },
+        "delivery": {
+          "placeId": "hyvinkaa",
+          "privateAddress": false,
+          "window": {
+            "from": 2202,
+            "to": 4080
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1200,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 3600,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 420,
+          "closes": 1080,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": null
+        },
+        "deliveryHours": {
+          "opens": 540,
+          "closes": 1200,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00304",
+      "note": {
+        "text": "Avoinna klo 7.00-18.00. Valmis noudettavaksi t\u00e4n\u00e4\u00e4n klo 15.30 j\u00e4lkeen. Avaimet toimistosta.",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 2370,
+        "pickup": {
+          "opens": 420,
+          "closes": 1080
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "vantaa",
+          "privateAddress": false,
+          "window": {
+            "from": 2206,
+            "to": 4080
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": null
+          }
+        },
+        "delivery": {
+          "placeId": "hyvinkaa",
+          "privateAddress": false,
+          "window": {
+            "from": 2206,
+            "to": 4080
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1260,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 2370,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 420,
+          "closes": 1080,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": null
+        },
+        "deliveryHours": {
+          "opens": 540,
+          "closes": 1260,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00312",
+      "note": {
+        "text": "Hei. Haettava ennen klo 15.30. Vastaanotto 9.00-21.00",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1260
+        },
+        "pickup": {
+          "opens": 0,
+          "closes": 930
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "vantaa",
+          "privateAddress": false,
+          "window": {
+            "from": 2215,
+            "to": 4080
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": null
+          }
+        },
+        "delivery": {
+          "placeId": "kemi",
+          "privateAddress": false,
+          "window": {
+            "from": 2215,
+            "to": 4080
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1260,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 2215,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 420,
+          "closes": 930,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": null
+        },
+        "deliveryHours": {
+          "opens": 540,
+          "closes": 1260,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00321",
+      "note": {
+        "text": "liike auki arkisin klo 9-16.30",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 990
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "vantaa",
+          "privateAddress": false,
+          "window": {
+            "from": 3420,
+            "to": 5520
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1200,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "hyvinkaa",
+          "privateAddress": false,
+          "window": {
+            "from": 3420,
+            "to": 5520
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1200,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 3420,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 540,
+          "closes": 990,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 420,
+          "closes": 1200,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00347",
+      "note": {
+        "text": "Liike kiinni klo 18, haettava ennen sit\u00e4",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "vantaa",
+          "privateAddress": false,
+          "window": {
+            "from": 2268,
+            "to": 4080
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": null
+          }
+        },
+        "delivery": {
+          "placeId": "hyvinkaa",
+          "privateAddress": false,
+          "window": {
+            "from": 2268,
+            "to": 4080
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1260,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 2268,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 420,
+          "closes": 1080,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": null
+        },
+        "deliveryHours": {
+          "opens": 480,
+          "closes": 1260,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00388",
+      "note": {
+        "text": "Moikka, huom aukioloajat arkisin klo 10 - 16.30.",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 600,
+          "closes": 990
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "hyvinkaa",
+          "privateAddress": false,
+          "window": {
+            "from": 3495,
+            "to": 5520
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1140,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "espoo",
+          "privateAddress": false,
+          "window": {
+            "from": 3495,
+            "to": 5520
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1200,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 3495,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 600,
+          "closes": 990,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 420,
+          "closes": 1200,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00420",
+      "note": {
+        "text": "Nouto arkisin 8.00 - 16.30.",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 480,
+          "closes": 990
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "porvoo",
+          "privateAddress": false,
+          "window": {
+            "from": 3360,
+            "to": 5520
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "helsinki",
+          "privateAddress": false,
+          "window": {
+            "from": 3360,
+            "to": 5520
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1260,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 3360,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 480,
+          "closes": 990,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 540,
+          "closes": 1260,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00482",
+      "note": {
+        "text": "Kohde sulkee klo 17. Auto pihalla ruudussa 15, avain tiskilt\u00e4",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 0,
+          "closes": 1020
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "kokkola",
+          "privateAddress": false,
+          "window": {
+            "from": 6240,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "helsinki",
+          "privateAddress": false,
+          "window": {
+            "from": 6240,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1260,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 6240,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 480,
+          "closes": 1080,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 480,
+          "closes": 1020,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00494",
+      "note": {
+        "text": "moikka. nouto arkisin klo 10.00 - 15.00.",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 600,
+          "closes": 900
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "helsinki",
+          "privateAddress": false,
+          "window": {
+            "from": 4740,
+            "to": 6960
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": null
+          }
+        },
+        "delivery": {
+          "placeId": "hyvinkaa",
+          "privateAddress": false,
+          "window": {
+            "from": 4740,
+            "to": 6960
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1200,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 4740,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 600,
+          "closes": 900,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": null
+        },
+        "deliveryHours": {
+          "opens": 420,
+          "closes": 1200,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00496",
+      "note": {
+        "text": "destination closes at 17:00. extra set of tyres in the boot, take along.",
+        "language": "en"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 0,
+          "closes": 1020
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "raisio",
+          "privateAddress": false,
+          "window": {
+            "from": 4800,
+            "to": 6960
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "oulu",
+          "privateAddress": false,
+          "window": {
+            "from": 4800,
+            "to": 6960
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1260,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 4800,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 480,
+          "closes": 1080,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 420,
+          "closes": 1020,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00564",
+      "note": {
+        "text": "Hi. Open 9:00-14:30",
+        "language": "en"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 870
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "vantaa",
+          "privateAddress": false,
+          "window": {
+            "from": 4800,
+            "to": 6960
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "jyvaskyla",
+          "privateAddress": false,
+          "window": {
+            "from": 4800,
+            "to": 6960
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1200,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 4800,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 540,
+          "closes": 870,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 540,
+          "closes": 1200,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00592",
+      "note": {
+        "text": "Hei vaan. Noudettavissa aikaisintaan huomenna klo 10.30. Liike auki arkisin klo 8-18.",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 4950,
+        "pickup": {
+          "opens": 480,
+          "closes": 1080
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "porvoo",
+          "privateAddress": false,
+          "window": {
+            "from": 4800,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": null
+          }
+        },
+        "delivery": {
+          "placeId": "lahti",
+          "privateAddress": false,
+          "window": {
+            "from": 4800,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1200,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 4950,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 480,
+          "closes": 1080,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": null
+        },
+        "deliveryHours": {
+          "opens": 540,
+          "closes": 1200,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00597",
+      "note": {
+        "text": "open 9:00-16:30",
+        "language": "en"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 990
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "oulu",
+          "privateAddress": false,
+          "window": {
+            "from": 4800,
+            "to": 6960
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "rovaniemi",
+          "privateAddress": false,
+          "window": {
+            "from": 4800,
+            "to": 6960
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1200,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 4800,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 540,
+          "closes": 990,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 540,
+          "closes": 1200,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00631",
+      "note": {
+        "text": "Vastaanottava liike auki arkisin klo 9 - 17. Huolto kesken, valmis huomenna klo 8.",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 4800,
+        "delivery": {
+          "opens": 540,
+          "closes": 1020
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "lappeenranta",
+          "privateAddress": false,
+          "window": {
+            "from": 4800,
+            "to": 6960
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "kouvola",
+          "privateAddress": false,
+          "window": {
+            "from": 4800,
+            "to": 6960
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1260,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 4800,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 480,
+          "closes": 1080,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 540,
+          "closes": 1020,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00660",
+      "note": {
+        "text": "We close at 15:00!",
+        "language": "en"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 900
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "helsinki",
+          "privateAddress": false,
+          "window": {
+            "from": 5152,
+            "to": 6960
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "salo",
+          "privateAddress": false,
+          "window": {
+            "from": 5152,
+            "to": 6960
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1200,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 5152,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 540,
+          "closes": 900,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 540,
+          "closes": 1200,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00697",
+      "note": {
+        "text": "Kohde auki 9.00 - 16.00",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 960
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "turku",
+          "privateAddress": false,
+          "window": {
+            "from": 6180,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "helsinki",
+          "privateAddress": false,
+          "window": {
+            "from": 6180,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1260,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 6180,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 420,
+          "closes": 1080,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 540,
+          "closes": 960,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00767",
+      "note": {
+        "text": "Vastaanottava liike auki 8-21. Voi noutaa huomenna klo 10.30 alkaen.",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "readyAt": 6390,
+        "delivery": {
+          "opens": 480,
+          "closes": 1260
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": true,
+          "chargePercent": 87
+        },
+        "pickup": {
+          "placeId": "hyvinkaa",
+          "privateAddress": false,
+          "window": {
+            "from": 6300,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1140,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "espoo",
+          "privateAddress": false,
+          "window": {
+            "from": 6300,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1260,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 6390,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 540,
+          "closes": 1140,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 480,
+          "closes": 1260,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00774",
+      "note": {
+        "text": "Noudettavissa arkisin 9.00-19.00.",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 1140
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "espoo",
+          "privateAddress": false,
+          "window": {
+            "from": 5230,
+            "to": 6960
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1140,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "hyvinkaa",
+          "privateAddress": false,
+          "window": {
+            "from": 5230,
+            "to": 6960
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1260,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 5230,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 540,
+          "closes": 1140,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 420,
+          "closes": 1260,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00785",
+      "note": {
+        "text": "Vastaanotto onnistuu arkisin 10.00\u201315.00.",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 600,
+          "closes": 900
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "hyvinkaa",
+          "privateAddress": false,
+          "window": {
+            "from": 6450,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "vantaa",
+          "privateAddress": false,
+          "window": {
+            "from": 6450,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1200,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 6450,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 420,
+          "closes": 1080,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 600,
+          "closes": 900,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00797",
+      "note": {
+        "text": "nouto arkisin klo 10-14. kohde auki arkisin klo 7-21",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1260
+        },
+        "pickup": {
+          "opens": 600,
+          "closes": 840
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "hameenlinna",
+          "privateAddress": false,
+          "window": {
+            "from": 6180,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "hyvinkaa",
+          "privateAddress": false,
+          "window": {
+            "from": 6180,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1260,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 6180,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 600,
+          "closes": 840,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 420,
+          "closes": 1260,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00802",
+      "note": {
+        "text": "Kohde auki arkisin 7 - 20",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1200
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": true,
+          "chargePercent": 70
+        },
+        "pickup": {
+          "placeId": "turku",
+          "privateAddress": false,
+          "window": {
+            "from": 5340,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "lappeenranta",
+          "privateAddress": false,
+          "window": {
+            "from": 5340,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1200,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 5340,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 420,
+          "closes": 1080,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 420,
+          "closes": 1200,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00814",
+      "note": {
+        "text": "vastaanottava liike auki arkisin klo 9-16.",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 960
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "hyvinkaa",
+          "privateAddress": false,
+          "window": {
+            "from": 6510,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "vantaa",
+          "privateAddress": false,
+          "window": {
+            "from": 6510,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1260,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 6510,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 420,
+          "closes": 1080,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 540,
+          "closes": 960,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00818",
+      "note": {
+        "text": "Liike kiinni klo 16, haettava ennen sit\u00e4.",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 960
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "turku",
+          "privateAddress": false,
+          "window": {
+            "from": 6180,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "tampere",
+          "privateAddress": false,
+          "window": {
+            "from": 6180,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1200,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 6180,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 420,
+          "closes": 960,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 540,
+          "closes": 1200,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00821",
+      "note": {
+        "text": "nouto arkisin klo 9-19",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 540,
+          "closes": 1140
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "vantaa",
+          "privateAddress": false,
+          "window": {
+            "from": 5400,
+            "to": 6960
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1140,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": null
+          }
+        },
+        "delivery": {
+          "placeId": "hyvinkaa",
+          "privateAddress": false,
+          "window": {
+            "from": 5400,
+            "to": 6960
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1200,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 5400,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 540,
+          "closes": 1140,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": null
+        },
+        "deliveryHours": {
+          "opens": 480,
+          "closes": 1200,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00850",
+      "note": {
+        "text": "Vastaanottava liike auki arkisin klo 8 - 21",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 480,
+          "closes": 1260
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "mikkeli",
+          "privateAddress": false,
+          "window": {
+            "from": 6180,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "lempaala",
+          "privateAddress": false,
+          "window": {
+            "from": 6180,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1260,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 6180,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 420,
+          "closes": 1080,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 480,
+          "closes": 1260,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00875",
+      "note": {
+        "text": "We close at 18:00. Receiving weekdays 9:00-16:00 only.",
+        "language": "en"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 960
+        },
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "vantaa",
+          "privateAddress": false,
+          "window": {
+            "from": 6449,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "turku",
+          "privateAddress": false,
+          "window": {
+            "from": 6449,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1200,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 6449,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 480,
+          "closes": 1080,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 540,
+          "closes": 960,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00892",
+      "note": {
+        "text": "Destination closes at 17:00",
+        "language": "en"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 0,
+          "closes": 1020
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": true,
+          "chargePercent": 45
+        },
+        "pickup": {
+          "placeId": "raisio",
+          "privateAddress": false,
+          "window": {
+            "from": 6436,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "lahti",
+          "privateAddress": false,
+          "window": {
+            "from": 6436,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1260,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 6436,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 480,
+          "closes": 1080,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 540,
+          "closes": 1020,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00901",
+      "note": {
+        "text": "Nouto ennen klo 18. Avaimet toimistosta.",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 0,
+          "closes": 1080
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "kouvola",
+          "privateAddress": false,
+          "window": {
+            "from": 6469,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "jyvaskyla",
+          "privateAddress": false,
+          "window": {
+            "from": 6469,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1200,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 6469,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 480,
+          "closes": 1080,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 540,
+          "closes": 1200,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00910",
+      "note": {
+        "text": "ready, collect right away. receiving weekdays 7:00-20:00 only",
+        "language": "en"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 420,
+          "closes": 1200
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "hyvinkaa",
+          "privateAddress": false,
+          "window": {
+            "from": 6534,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "jyvaskyla",
+          "privateAddress": false,
+          "window": {
+            "from": 6534,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 420,
+            "closes": 1200,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 6534,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 420,
+          "closes": 1080,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 420,
+          "closes": 1200,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R00960",
+      "note": {
+        "text": "H\u00e4mtning vardagar 10-17",
+        "language": "sv"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "pickup": {
+          "opens": 600,
+          "closes": 1020
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "vantaa",
+          "privateAddress": false,
+          "window": {
+            "from": 6682,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1200,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "hyvinkaa",
+          "privateAddress": false,
+          "window": {
+            "from": 6682,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1260,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 6682,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 600,
+          "closes": 1020,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 480,
+          "closes": 1260,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    },
+    {
+      "requestId": "R01020",
+      "note": {
+        "text": "Valmiina pihalla. Vastaanotto ma-pe klo 9\u201321. Avaimet huollon tiskilt\u00e4",
+        "language": "fi"
+      },
+      "parsed": {
+        "safe": true,
+        "manual": false,
+        "plates": false,
+        "delivery": {
+          "opens": 540,
+          "closes": 1260
+        }
+      },
+      "publicLeg": {
+        "car": {
+          "premium": false,
+          "electric": false,
+          "chargePercent": null
+        },
+        "pickup": {
+          "placeId": "helsinki",
+          "privateAddress": false,
+          "window": {
+            "from": 6815,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 480,
+            "closes": 1080,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        },
+        "delivery": {
+          "placeId": "lempaala",
+          "privateAddress": false,
+          "window": {
+            "from": 6815,
+            "to": 11280
+          },
+          "hours": {
+            "opens": 540,
+            "closes": 1260,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "saturday": {
+              "opens": 540,
+              "closes": 840
+            }
+          }
+        }
+      },
+      "truth": {
+        "readyAt": 6815,
+        "releasedAt": null,
+        "pickupHours": {
+          "opens": 480,
+          "closes": 1080,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "deliveryHours": {
+          "opens": 540,
+          "closes": 1260,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "saturday": {
+            "opens": 540,
+            "closes": 840
+          }
+        },
+        "manualGearbox": false,
+        "needsPlates": false,
+        "summerTyres": false,
+        "noteDeadline": null,
+        "pickedUpAt": null,
+        "deliveredAt": null
+      },
+      "changed": false,
+      "problems": []
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 import fs from "node:fs"
 import { createHash } from "node:crypto"
-import { readHours } from "./parser.ts"
+import { readHours } from "../../src/hours-note.ts"
 import type { Reveal } from "../../vendor/typescript/types.ts"
 
 const opportunities = JSON.parse(fs.readFileSync("docs/note-opportunities.json", "utf8"))
@@ -29,7 +29,7 @@ for (const { worldId, seed } of training.worlds) {
   }
 }
 const report = {
-  parserSha256: createHash("sha256").update(fs.readFileSync("research/note-hours/parser.ts")).digest("hex"),
+  parserSha256: createHash("sha256").update(fs.readFileSync("src/hours-note.ts")).digest("hex"),
   scope: "Coverage on the eight explicitly named old development weeks; revealed-truth availability checked only in the24-world market-training allowlist.",
   summary: { eligibleUnsafeRequests: opportunities.rows.length, parsed: parsed.length, meanParsedPerWeek: parsed.length / 8, pickupHours: parsed.filter((row: { parsed: { pickup?: unknown } }) => row.parsed.pickup).length, deliveryHours: parsed.filter((row: { parsed: { delivery?: unknown } }) => row.parsed.delivery).length, withReadiness: parsed.filter((row: { parsed: { readyAt?: number } }) => row.parsed.readyAt !== undefined).length, historicalTruthCases: checked.length },
   limitations: ["Syntactic coverage does not prove simulator semantics or dispatch feasibility.", "This parser is isolated research and is not enabled in any policy.", "A targeted ordinary-practice reveal audit is required before integration; no inferred restriction should be dropped."],

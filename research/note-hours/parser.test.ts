@@ -1,6 +1,6 @@
 import test from "node:test"
 import assert from "node:assert/strict"
-import { readHours } from "./parser.ts"
+import { readHours } from "../../src/hours-note.ts"
 
 const parse = (text: string) => readHours({ text, language: "fi" }, 600)
 

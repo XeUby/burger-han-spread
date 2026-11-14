@@ -1,0 +1,2082 @@
+{
+  "scope": "Eight explicitly named old development worlds. No fresh evaluation outcomes.",
+  "hypothesis": "A temporarily higher opening fee followed by a permitted downward reprice might change drivers expectations of subsequent increases. This count only screens exposure and obvious cost risk; it cannot observe beliefs or counterfactual acceptance.",
+  "limitations": [
+    "Higher opening fees would change who books and when; the premium estimate is not a treatment cost forecast.",
+    "Many early viewers cannot do the work and would learn nothing.",
+    "A temporary high fee may teach no useful behavior or merely overpay early bookers."
+  ],
+  "summary": {
+    "weeks": 8,
+    "futureDayGigs": 206,
+    "perWeek": 25.75,
+    "withEarlyViews": 198,
+    "bookWithin10": 155,
+    "bookLater": 51,
+    "bookerViewedEarlyButBookedLater": 2,
+    "meanEarlyViewers": 2.383495145631068,
+    "thirtyPercentPremiumOnObservedEarlyBookingsEurosPerWeek": 309.7773749999999
+  },
+  "rows": [
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "orderId": "R00032",
+      "gigId": "g5",
+      "leadMinutes": 2688,
+      "bookDelay": 1,
+      "feeCents": 4857,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "orderId": "R00084",
+      "gigId": "g18",
+      "leadMinutes": 4169,
+      "bookDelay": 3,
+      "feeCents": 7537,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "orderId": "R00178",
+      "gigId": "g47",
+      "leadMinutes": 5181,
+      "bookDelay": 1368,
+      "feeCents": 2000,
+      "earlyViewers": 3,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "orderId": "R00191",
+      "gigId": "g51",
+      "leadMinutes": 3755,
+      "bookDelay": 1250,
+      "feeCents": 9159,
+      "earlyViewers": 1,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "orderId": "R00243",
+      "gigId": "g63",
+      "leadMinutes": 2692,
+      "bookDelay": 1,
+      "feeCents": 2000,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "orderId": "R00251",
+      "gigId": "g64",
+      "leadMinutes": 2783,
+      "bookDelay": 1,
+      "feeCents": 2000,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "orderId": "R00252",
+      "gigId": "g65",
+      "leadMinutes": 4161,
+      "bookDelay": 1,
+      "feeCents": 8170,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "orderId": "R00290",
+      "gigId": "g82",
+      "leadMinutes": 3976,
+      "bookDelay": 3,
+      "feeCents": 4411,
+      "earlyViewers": 3,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "orderId": "R00370",
+      "gigId": "g103",
+      "leadMinutes": 3856,
+      "bookDelay": 1,
+      "feeCents": 4223,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "orderId": "R00374",
+      "gigId": "g104",
+      "leadMinutes": 3849,
+      "bookDelay": 1,
+      "feeCents": 2000,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "orderId": "R00381",
+      "gigId": "g106",
+      "leadMinutes": 2437,
+      "bookDelay": 1,
+      "feeCents": 3527,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "orderId": "R00382",
+      "gigId": "g107",
+      "leadMinutes": 3876,
+      "bookDelay": 1,
+      "feeCents": 3355,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "orderId": "R00389",
+      "gigId": "g108",
+      "leadMinutes": 3786,
+      "bookDelay": 1,
+      "feeCents": 3546,
+      "earlyViewers": 3,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w09f7d47c59507d4e46cb",
+      "orderId": "R00412",
+      "gigId": "g115",
+      "leadMinutes": 3838,
+      "bookDelay": 2,
+      "feeCents": 9458,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "orderId": "R00042",
+      "gigId": "g3",
+      "leadMinutes": 5867,
+      "bookDelay": 3,
+      "feeCents": 3662,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "orderId": "R00043",
+      "gigId": "g4",
+      "leadMinutes": 5864,
+      "bookDelay": 4,
+      "feeCents": 3592,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "orderId": "R00044",
+      "gigId": "g5",
+      "leadMinutes": 5863,
+      "bookDelay": 7,
+      "feeCents": 14638,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "orderId": "R00067",
+      "gigId": "g8",
+      "leadMinutes": 5820,
+      "bookDelay": 35,
+      "feeCents": 3280,
+      "earlyViewers": 8,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "orderId": "R00068",
+      "gigId": "g9",
+      "leadMinutes": 5818,
+      "bookDelay": 5,
+      "feeCents": 4001,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "orderId": "R00088",
+      "gigId": "g12",
+      "leadMinutes": 2562,
+      "bookDelay": 1,
+      "feeCents": 12323,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "orderId": "R00194",
+      "gigId": "g29",
+      "leadMinutes": 3759,
+      "bookDelay": 2886,
+      "feeCents": 6260,
+      "earlyViewers": 5,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "orderId": "R00220",
+      "gigId": "g38",
+      "leadMinutes": 1456,
+      "bookDelay": 1,
+      "feeCents": 6968,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "orderId": "R00260",
+      "gigId": "g51",
+      "leadMinutes": 4071,
+      "bookDelay": 1,
+      "feeCents": 5265,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "orderId": "R00284",
+      "gigId": "g58",
+      "leadMinutes": 4120,
+      "bookDelay": 3,
+      "feeCents": 3509,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "orderId": "R00285",
+      "gigId": "g59",
+      "leadMinutes": 4119,
+      "bookDelay": 1,
+      "feeCents": 3679,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "orderId": "R00328",
+      "gigId": "g76",
+      "leadMinutes": 4196,
+      "bookDelay": 6,
+      "feeCents": 4297,
+      "earlyViewers": 3,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "orderId": "R00355",
+      "gigId": "g87",
+      "leadMinutes": 4132,
+      "bookDelay": 4,
+      "feeCents": 2000,
+      "earlyViewers": 4,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "orderId": "R00401",
+      "gigId": "g111",
+      "leadMinutes": 3686,
+      "bookDelay": 55,
+      "feeCents": 3448,
+      "earlyViewers": 2,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "orderId": "R00431",
+      "gigId": "g121",
+      "leadMinutes": 2726,
+      "bookDelay": 4,
+      "feeCents": 4350,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "orderId": "R00447",
+      "gigId": "g122",
+      "leadMinutes": 2700,
+      "bookDelay": 2,
+      "feeCents": 11091,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "orderId": "R00456",
+      "gigId": "g127",
+      "leadMinutes": 2740,
+      "bookDelay": 1,
+      "feeCents": 5874,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "orderId": "R00469",
+      "gigId": "g133",
+      "leadMinutes": 2709,
+      "bookDelay": 34,
+      "feeCents": 5814,
+      "earlyViewers": 3,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "orderId": "R00470",
+      "gigId": "g134",
+      "leadMinutes": 1509,
+      "bookDelay": 2,
+      "feeCents": 8826,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "orderId": "R00621",
+      "gigId": "g176",
+      "leadMinutes": 1596,
+      "bookDelay": 19,
+      "feeCents": 12066,
+      "earlyViewers": 4,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "orderId": "R00627",
+      "gigId": "g179",
+      "leadMinutes": 1559,
+      "bookDelay": 1,
+      "feeCents": 5250,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w5e573ada5fed0a67a4a8",
+      "orderId": "R00679",
+      "gigId": "g190",
+      "leadMinutes": 1471,
+      "bookDelay": 1,
+      "feeCents": 4258,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "orderId": "R00052",
+      "gigId": "g9",
+      "leadMinutes": 5563,
+      "bookDelay": 3,
+      "feeCents": 8421,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "orderId": "R00187",
+      "gigId": "g39",
+      "leadMinutes": 2363,
+      "bookDelay": 1,
+      "feeCents": 5751,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "orderId": "R00277",
+      "gigId": "g49",
+      "leadMinutes": 4372,
+      "bookDelay": 1,
+      "feeCents": 4932,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "orderId": "R00286",
+      "gigId": "g50",
+      "leadMinutes": 4083,
+      "bookDelay": 2,
+      "feeCents": 5088,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "orderId": "R00310",
+      "gigId": "g51",
+      "leadMinutes": 2609,
+      "bookDelay": 1,
+      "feeCents": 10399,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "orderId": "R00311",
+      "gigId": "g52",
+      "leadMinutes": 4106,
+      "bookDelay": 1,
+      "feeCents": 9215,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "orderId": "R00312",
+      "gigId": "g53",
+      "leadMinutes": 4105,
+      "bookDelay": 4,
+      "feeCents": 8580,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "orderId": "R00317",
+      "gigId": "g54",
+      "leadMinutes": 4090,
+      "bookDelay": 6,
+      "feeCents": 5306,
+      "earlyViewers": 4,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "orderId": "R00318",
+      "gigId": "g55",
+      "leadMinutes": 4090,
+      "bookDelay": 251,
+      "feeCents": 4870,
+      "earlyViewers": 4,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "orderId": "R00330",
+      "gigId": "g56",
+      "leadMinutes": 4067,
+      "bookDelay": 21,
+      "feeCents": 4929,
+      "earlyViewers": 2,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "orderId": "R00331",
+      "gigId": "g57",
+      "leadMinutes": 4062,
+      "bookDelay": 59,
+      "feeCents": 4841,
+      "earlyViewers": 2,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "orderId": "R00339",
+      "gigId": "g58",
+      "leadMinutes": 4052,
+      "bookDelay": 1196,
+      "feeCents": 4348,
+      "earlyViewers": 6,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "orderId": "R00370",
+      "gigId": "g65",
+      "leadMinutes": 2408,
+      "bookDelay": 1,
+      "feeCents": 7185,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "orderId": "R00391",
+      "gigId": "g68",
+      "leadMinutes": 2367,
+      "bookDelay": 105,
+      "feeCents": 8970,
+      "earlyViewers": 2,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "orderId": "R00495",
+      "gigId": "g93",
+      "leadMinutes": 1471,
+      "bookDelay": 1,
+      "feeCents": 7600,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "orderId": "R00529",
+      "gigId": "g100",
+      "leadMinutes": 2810,
+      "bookDelay": 203,
+      "feeCents": 3513,
+      "earlyViewers": 0,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "orderId": "R00580",
+      "gigId": "g120",
+      "leadMinutes": 2605,
+      "bookDelay": 3,
+      "feeCents": 7063,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "orderId": "R00617",
+      "gigId": "g131",
+      "leadMinutes": 2368,
+      "bookDelay": 11,
+      "feeCents": 3344,
+      "earlyViewers": 1,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "orderId": "R00625",
+      "gigId": "g134",
+      "leadMinutes": 2278,
+      "bookDelay": 1,
+      "feeCents": 11901,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "orderId": "R00628",
+      "gigId": "g135",
+      "leadMinutes": 2268,
+      "bookDelay": 129,
+      "feeCents": 2951,
+      "earlyViewers": 5,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "orderId": "R00639",
+      "gigId": "g137",
+      "leadMinutes": 2346,
+      "bookDelay": 1,
+      "feeCents": 8388,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "orderId": "R00691",
+      "gigId": "g157",
+      "leadMinutes": 1441,
+      "bookDelay": 1,
+      "feeCents": 5901,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w679c0fd4b18e923880c6",
+      "orderId": "R00712",
+      "gigId": "g165",
+      "leadMinutes": 1458,
+      "bookDelay": 1,
+      "feeCents": 9120,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00002",
+      "gigId": "g2",
+      "leadMinutes": 1466,
+      "bookDelay": 8,
+      "feeCents": 7566,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00003",
+      "gigId": "g3",
+      "leadMinutes": 1465,
+      "bookDelay": 1,
+      "feeCents": 11509,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00008",
+      "gigId": "g4",
+      "leadMinutes": 4253,
+      "bookDelay": 29,
+      "feeCents": 7179,
+      "earlyViewers": 0,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00026",
+      "gigId": "g8",
+      "leadMinutes": 2795,
+      "bookDelay": 1,
+      "feeCents": 2000,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00028",
+      "gigId": "g10",
+      "leadMinutes": 2793,
+      "bookDelay": 1,
+      "feeCents": 2000,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00029",
+      "gigId": "g11",
+      "leadMinutes": 2789,
+      "bookDelay": 1,
+      "feeCents": 2000,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00031",
+      "gigId": "g12",
+      "leadMinutes": 2781,
+      "bookDelay": 1,
+      "feeCents": 7166,
+      "earlyViewers": 3,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00043",
+      "gigId": "g16",
+      "leadMinutes": 1537,
+      "bookDelay": 15,
+      "feeCents": 2850,
+      "earlyViewers": 27,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00044",
+      "gigId": "g17",
+      "leadMinutes": 1537,
+      "bookDelay": 1,
+      "feeCents": 2961,
+      "earlyViewers": 4,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00049",
+      "gigId": "g20",
+      "leadMinutes": 4360,
+      "bookDelay": 1,
+      "feeCents": 3692,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00085",
+      "gigId": "g37",
+      "leadMinutes": 4147,
+      "bookDelay": 2,
+      "feeCents": 6061,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00091",
+      "gigId": "g42",
+      "leadMinutes": 4138,
+      "bookDelay": 1297,
+      "feeCents": 4438,
+      "earlyViewers": 0,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00115",
+      "gigId": "g50",
+      "leadMinutes": 4241,
+      "bookDelay": 1204,
+      "feeCents": 4977,
+      "earlyViewers": 0,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00117",
+      "gigId": "g52",
+      "leadMinutes": 2588,
+      "bookDelay": 3,
+      "feeCents": 10974,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00215",
+      "gigId": "g85",
+      "leadMinutes": 3847,
+      "bookDelay": 71,
+      "feeCents": 4112,
+      "earlyViewers": 9,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00262",
+      "gigId": "g101",
+      "leadMinutes": 2800,
+      "bookDelay": 33,
+      "feeCents": 2044,
+      "earlyViewers": 5,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00284",
+      "gigId": "g109",
+      "leadMinutes": 1490,
+      "bookDelay": 2,
+      "feeCents": 8983,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00294",
+      "gigId": "g116",
+      "leadMinutes": 1544,
+      "bookDelay": 1,
+      "feeCents": 2000,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00410",
+      "gigId": "g148",
+      "leadMinutes": 2275,
+      "bookDelay": 859,
+      "feeCents": 6796,
+      "earlyViewers": 5,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00414",
+      "gigId": "g149",
+      "leadMinutes": 3911,
+      "bookDelay": 19,
+      "feeCents": 10613,
+      "earlyViewers": 2,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00444",
+      "gigId": "g154",
+      "leadMinutes": 2313,
+      "bookDelay": 2,
+      "feeCents": 5884,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00477",
+      "gigId": "g162",
+      "leadMinutes": 2712,
+      "bookDelay": 2,
+      "feeCents": 3611,
+      "earlyViewers": 4,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00478",
+      "gigId": "g163",
+      "leadMinutes": 2710,
+      "bookDelay": 2,
+      "feeCents": 3024,
+      "earlyViewers": 3,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00484",
+      "gigId": "g167",
+      "leadMinutes": 2708,
+      "bookDelay": 1,
+      "feeCents": 6752,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00485",
+      "gigId": "g168",
+      "leadMinutes": 2708,
+      "bookDelay": 103,
+      "feeCents": 5659,
+      "earlyViewers": 2,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00486",
+      "gigId": "g169",
+      "leadMinutes": 2753,
+      "bookDelay": 1,
+      "feeCents": 3453,
+      "earlyViewers": 3,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00499",
+      "gigId": "g173",
+      "leadMinutes": 1451,
+      "bookDelay": 1,
+      "feeCents": 3483,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00570",
+      "gigId": "g197",
+      "leadMinutes": 2442,
+      "bookDelay": 7,
+      "feeCents": 14423,
+      "earlyViewers": 3,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w6ffd0c010757c76f97d8",
+      "orderId": "R00666",
+      "gigId": "g234",
+      "leadMinutes": 1461,
+      "bookDelay": 1,
+      "feeCents": 7364,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00007",
+      "gigId": "g2",
+      "leadMinutes": 2831,
+      "bookDelay": 1,
+      "feeCents": 5518,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00010",
+      "gigId": "g4",
+      "leadMinutes": 1580,
+      "bookDelay": 3,
+      "feeCents": 5992,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00091",
+      "gigId": "g24",
+      "leadMinutes": 3958,
+      "bookDelay": 1,
+      "feeCents": 2000,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00103",
+      "gigId": "g29",
+      "leadMinutes": 2618,
+      "bookDelay": 1,
+      "feeCents": 3155,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00108",
+      "gigId": "g32",
+      "leadMinutes": 5433,
+      "bookDelay": 11,
+      "feeCents": 9446,
+      "earlyViewers": 2,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00121",
+      "gigId": "g36",
+      "leadMinutes": 3950,
+      "bookDelay": 1,
+      "feeCents": 6084,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00122",
+      "gigId": "g37",
+      "leadMinutes": 5384,
+      "bookDelay": 4,
+      "feeCents": 2101,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00138",
+      "gigId": "g41",
+      "leadMinutes": 2382,
+      "bookDelay": 5,
+      "feeCents": 2000,
+      "earlyViewers": 3,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00149",
+      "gigId": "g46",
+      "leadMinutes": 2351,
+      "bookDelay": 22,
+      "feeCents": 2000,
+      "earlyViewers": 18,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00150",
+      "gigId": "g47",
+      "leadMinutes": 2350,
+      "bookDelay": 1,
+      "feeCents": 2000,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00151",
+      "gigId": "g48",
+      "leadMinutes": 2350,
+      "bookDelay": 3,
+      "feeCents": 2000,
+      "earlyViewers": 6,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00152",
+      "gigId": "g49",
+      "leadMinutes": 2350,
+      "bookDelay": 4,
+      "feeCents": 2000,
+      "earlyViewers": 10,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00153",
+      "gigId": "g50",
+      "leadMinutes": 2347,
+      "bookDelay": 2,
+      "feeCents": 2000,
+      "earlyViewers": 3,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00156",
+      "gigId": "g51",
+      "leadMinutes": 2336,
+      "bookDelay": 2,
+      "feeCents": 2000,
+      "earlyViewers": 3,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00195",
+      "gigId": "g64",
+      "leadMinutes": 2431,
+      "bookDelay": 2,
+      "feeCents": 2000,
+      "earlyViewers": 3,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00226",
+      "gigId": "g71",
+      "leadMinutes": 4161,
+      "bookDelay": 2,
+      "feeCents": 6944,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00254",
+      "gigId": "g80",
+      "leadMinutes": 4258,
+      "bookDelay": 1,
+      "feeCents": 2000,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00268",
+      "gigId": "g82",
+      "leadMinutes": 1468,
+      "bookDelay": 1,
+      "feeCents": 2000,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00283",
+      "gigId": "g86",
+      "leadMinutes": 4108,
+      "bookDelay": 1,
+      "feeCents": 2746,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00300",
+      "gigId": "g92",
+      "leadMinutes": 4067,
+      "bookDelay": 14,
+      "feeCents": 9414,
+      "earlyViewers": 1,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00324",
+      "gigId": "g100",
+      "leadMinutes": 4023,
+      "bookDelay": 3,
+      "feeCents": 2000,
+      "earlyViewers": 3,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00333",
+      "gigId": "g102",
+      "leadMinutes": 4010,
+      "bookDelay": 10,
+      "feeCents": 3723,
+      "earlyViewers": 6,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00334",
+      "gigId": "g103",
+      "leadMinutes": 4009,
+      "bookDelay": 11,
+      "feeCents": 3446,
+      "earlyViewers": 10,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00382",
+      "gigId": "g113",
+      "leadMinutes": 3957,
+      "bookDelay": 5,
+      "feeCents": 5675,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00407",
+      "gigId": "g121",
+      "leadMinutes": 3920,
+      "bookDelay": 13,
+      "feeCents": 13978,
+      "earlyViewers": 0,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00408",
+      "gigId": "g122",
+      "leadMinutes": 3916,
+      "bookDelay": 14,
+      "feeCents": 6001,
+      "earlyViewers": 1,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00411",
+      "gigId": "g123",
+      "leadMinutes": 4077,
+      "bookDelay": 111,
+      "feeCents": 4674,
+      "earlyViewers": 3,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00413",
+      "gigId": "g125",
+      "leadMinutes": 3766,
+      "bookDelay": 52,
+      "feeCents": 5637,
+      "earlyViewers": 0,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00415",
+      "gigId": "g126",
+      "leadMinutes": 3762,
+      "bookDelay": 1186,
+      "feeCents": 2000,
+      "earlyViewers": 0,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00435",
+      "gigId": "g131",
+      "leadMinutes": 3764,
+      "bookDelay": 15,
+      "feeCents": 2000,
+      "earlyViewers": 2,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00438",
+      "gigId": "g133",
+      "leadMinutes": 2314,
+      "bookDelay": 17,
+      "feeCents": 6308,
+      "earlyViewers": 7,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00445",
+      "gigId": "g137",
+      "leadMinutes": 2358,
+      "bookDelay": 413,
+      "feeCents": 4910,
+      "earlyViewers": 6,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00446",
+      "gigId": "g138",
+      "leadMinutes": 3916,
+      "bookDelay": 769,
+      "feeCents": 6298,
+      "earlyViewers": 6,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00489",
+      "gigId": "g147",
+      "leadMinutes": 2810,
+      "bookDelay": 2,
+      "feeCents": 6085,
+      "earlyViewers": 3,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00499",
+      "gigId": "g150",
+      "leadMinutes": 1531,
+      "bookDelay": 1,
+      "feeCents": 14400,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00502",
+      "gigId": "g151",
+      "leadMinutes": 1530,
+      "bookDelay": 1,
+      "feeCents": 2000,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00504",
+      "gigId": "g152",
+      "leadMinutes": 1527,
+      "bookDelay": 2,
+      "feeCents": 2000,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00507",
+      "gigId": "g154",
+      "leadMinutes": 1561,
+      "bookDelay": 903,
+      "feeCents": 20654,
+      "earlyViewers": 4,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00511",
+      "gigId": "g155",
+      "leadMinutes": 2646,
+      "bookDelay": 2,
+      "feeCents": 2000,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00522",
+      "gigId": "g161",
+      "leadMinutes": 2663,
+      "bookDelay": 1,
+      "feeCents": 5709,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00601",
+      "gigId": "g171",
+      "leadMinutes": 2430,
+      "bookDelay": 1,
+      "feeCents": 4352,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00655",
+      "gigId": "g188",
+      "leadMinutes": 1589,
+      "bookDelay": 1,
+      "feeCents": 5569,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w2f96a475ae718d1589d9",
+      "orderId": "R00704",
+      "gigId": "g203",
+      "leadMinutes": 1542,
+      "bookDelay": 1,
+      "feeCents": 10850,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "orderId": "R00117",
+      "gigId": "g4",
+      "leadMinutes": 3984,
+      "bookDelay": 1,
+      "feeCents": 3415,
+      "earlyViewers": 3,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "orderId": "R00212",
+      "gigId": "g11",
+      "leadMinutes": 3772,
+      "bookDelay": 1,
+      "feeCents": 2000,
+      "earlyViewers": 4,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "orderId": "R00261",
+      "gigId": "g28",
+      "leadMinutes": 1475,
+      "bookDelay": 1,
+      "feeCents": 2000,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "orderId": "R00304",
+      "gigId": "g38",
+      "leadMinutes": 4385,
+      "bookDelay": 1,
+      "feeCents": 2000,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "orderId": "R00313",
+      "gigId": "g41",
+      "leadMinutes": 2646,
+      "bookDelay": 1,
+      "feeCents": 7030,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "orderId": "R00396",
+      "gigId": "g58",
+      "leadMinutes": 2382,
+      "bookDelay": 1,
+      "feeCents": 5672,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "orderId": "R00424",
+      "gigId": "g62",
+      "leadMinutes": 1528,
+      "bookDelay": 1,
+      "feeCents": 4401,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "orderId": "R00432",
+      "gigId": "g66",
+      "leadMinutes": 2838,
+      "bookDelay": 1,
+      "feeCents": 3564,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "orderId": "R00433",
+      "gigId": "g67",
+      "leadMinutes": 2837,
+      "bookDelay": 1,
+      "feeCents": 3638,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "orderId": "R00440",
+      "gigId": "g69",
+      "leadMinutes": 2830,
+      "bookDelay": 1,
+      "feeCents": 7894,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "orderId": "R00442",
+      "gigId": "g70",
+      "leadMinutes": 2829,
+      "bookDelay": 1,
+      "feeCents": 8591,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "orderId": "R00490",
+      "gigId": "g79",
+      "leadMinutes": 2710,
+      "bookDelay": 2,
+      "feeCents": 4595,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "orderId": "R00503",
+      "gigId": "g83",
+      "leadMinutes": 2569,
+      "bookDelay": 1,
+      "feeCents": 2642,
+      "earlyViewers": 6,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "orderId": "R00624",
+      "gigId": "g121",
+      "leadMinutes": 1656,
+      "bookDelay": 1,
+      "feeCents": 2000,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "orderId": "R00633",
+      "gigId": "g123",
+      "leadMinutes": 1639,
+      "bookDelay": 1,
+      "feeCents": 5829,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "orderId": "R00652",
+      "gigId": "g129",
+      "leadMinutes": 1560,
+      "bookDelay": 1,
+      "feeCents": 3242,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "orderId": "R00654",
+      "gigId": "g130",
+      "leadMinutes": 1454,
+      "bookDelay": 1,
+      "feeCents": 5131,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "orderId": "R00659",
+      "gigId": "g131",
+      "leadMinutes": 1451,
+      "bookDelay": 2,
+      "feeCents": 4393,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w8b85572a9b6fc286e4ec",
+      "orderId": "R00662",
+      "gigId": "g132",
+      "leadMinutes": 1445,
+      "bookDelay": 2,
+      "feeCents": 9296,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "orderId": "R00023",
+      "gigId": "g5",
+      "leadMinutes": 4179,
+      "bookDelay": 1,
+      "feeCents": 10732,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "orderId": "R00042",
+      "gigId": "g13",
+      "leadMinutes": 4098,
+      "bookDelay": 1,
+      "feeCents": 3127,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "orderId": "R00044",
+      "gigId": "g15",
+      "leadMinutes": 4095,
+      "bookDelay": 1,
+      "feeCents": 3309,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "orderId": "R00138",
+      "gigId": "g40",
+      "leadMinutes": 5277,
+      "bookDelay": 1,
+      "feeCents": 3474,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "orderId": "R00222",
+      "gigId": "g69",
+      "leadMinutes": 1577,
+      "bookDelay": 1,
+      "feeCents": 2000,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "orderId": "R00272",
+      "gigId": "g83",
+      "leadMinutes": 4304,
+      "bookDelay": 1,
+      "feeCents": 5513,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "orderId": "R00291",
+      "gigId": "g91",
+      "leadMinutes": 4125,
+      "bookDelay": 6,
+      "feeCents": 3390,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "orderId": "R00297",
+      "gigId": "g95",
+      "leadMinutes": 2774,
+      "bookDelay": 38,
+      "feeCents": 4538,
+      "earlyViewers": 1,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "orderId": "R00299",
+      "gigId": "g97",
+      "leadMinutes": 2773,
+      "bookDelay": 26,
+      "feeCents": 6928,
+      "earlyViewers": 2,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "orderId": "R00319",
+      "gigId": "g100",
+      "leadMinutes": 2523,
+      "bookDelay": 2,
+      "feeCents": 5277,
+      "earlyViewers": 3,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "orderId": "R00327",
+      "gigId": "g102",
+      "leadMinutes": 2692,
+      "bookDelay": 25,
+      "feeCents": 4833,
+      "earlyViewers": 3,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "orderId": "R00408",
+      "gigId": "g121",
+      "leadMinutes": 3747,
+      "bookDelay": 3,
+      "feeCents": 7597,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "orderId": "R00411",
+      "gigId": "g122",
+      "leadMinutes": 2363,
+      "bookDelay": 48,
+      "feeCents": 4754,
+      "earlyViewers": 1,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "orderId": "R00448",
+      "gigId": "g132",
+      "leadMinutes": 2705,
+      "bookDelay": 122,
+      "feeCents": 2000,
+      "earlyViewers": 0,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "orderId": "R00477",
+      "gigId": "g141",
+      "leadMinutes": 2598,
+      "bookDelay": 1,
+      "feeCents": 8108,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "orderId": "R00512",
+      "gigId": "g150",
+      "leadMinutes": 2446,
+      "bookDelay": 1,
+      "feeCents": 2000,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "orderId": "R00524",
+      "gigId": "g155",
+      "leadMinutes": 2484,
+      "bookDelay": 21,
+      "feeCents": 6466,
+      "earlyViewers": 2,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "orderId": "R00560",
+      "gigId": "g163",
+      "leadMinutes": 2511,
+      "bookDelay": 3,
+      "feeCents": 14617,
+      "earlyViewers": 7,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "orderId": "R00578",
+      "gigId": "g171",
+      "leadMinutes": 2590,
+      "bookDelay": 137,
+      "feeCents": 7104,
+      "earlyViewers": 6,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "orderId": "R00616",
+      "gigId": "g177",
+      "leadMinutes": 1476,
+      "bookDelay": 1,
+      "feeCents": 3183,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "orderId": "R00617",
+      "gigId": "g178",
+      "leadMinutes": 1545,
+      "bookDelay": 1,
+      "feeCents": 4193,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "w735d87d8fe1b99845667",
+      "orderId": "R00708",
+      "gigId": "g217",
+      "leadMinutes": 1446,
+      "bookDelay": 2,
+      "feeCents": 8635,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00011",
+      "gigId": "g2",
+      "leadMinutes": 1455,
+      "bookDelay": 1,
+      "feeCents": 10045,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00012",
+      "gigId": "g3",
+      "leadMinutes": 4271,
+      "bookDelay": 1,
+      "feeCents": 6574,
+      "earlyViewers": 3,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00060",
+      "gigId": "g17",
+      "leadMinutes": 5636,
+      "bookDelay": 2,
+      "feeCents": 6891,
+      "earlyViewers": 4,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00070",
+      "gigId": "g19",
+      "leadMinutes": 1518,
+      "bookDelay": 1,
+      "feeCents": 2000,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00072",
+      "gigId": "g21",
+      "leadMinutes": 4173,
+      "bookDelay": 3,
+      "feeCents": 2000,
+      "earlyViewers": 5,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00073",
+      "gigId": "g22",
+      "leadMinutes": 4171,
+      "bookDelay": 2,
+      "feeCents": 2000,
+      "earlyViewers": 3,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00143",
+      "gigId": "g40",
+      "leadMinutes": 5406,
+      "bookDelay": 27,
+      "feeCents": 10794,
+      "earlyViewers": 1,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00153",
+      "gigId": "g43",
+      "leadMinutes": 3816,
+      "bookDelay": 1363,
+      "feeCents": 6151,
+      "earlyViewers": 6,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00155",
+      "gigId": "g45",
+      "leadMinutes": 4006,
+      "bookDelay": 12,
+      "feeCents": 3504,
+      "earlyViewers": 7,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00186",
+      "gigId": "g50",
+      "leadMinutes": 3783,
+      "bookDelay": 1,
+      "feeCents": 3463,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00193",
+      "gigId": "g53",
+      "leadMinutes": 2315,
+      "bookDelay": 34,
+      "feeCents": 7386,
+      "earlyViewers": 5,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00242",
+      "gigId": "g65",
+      "leadMinutes": 1493,
+      "bookDelay": 1,
+      "feeCents": 7862,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00244",
+      "gigId": "g66",
+      "leadMinutes": 1492,
+      "bookDelay": 1,
+      "feeCents": 7871,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00251",
+      "gigId": "g70",
+      "leadMinutes": 1483,
+      "bookDelay": 1,
+      "feeCents": 2000,
+      "earlyViewers": 3,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00252",
+      "gigId": "g71",
+      "leadMinutes": 1483,
+      "bookDelay": 1,
+      "feeCents": 2000,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00253",
+      "gigId": "g72",
+      "leadMinutes": 1481,
+      "bookDelay": 1,
+      "feeCents": 3520,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00256",
+      "gigId": "g73",
+      "leadMinutes": 2815,
+      "bookDelay": 3,
+      "feeCents": 6746,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00262",
+      "gigId": "g75",
+      "leadMinutes": 2945,
+      "bookDelay": 5,
+      "feeCents": 3106,
+      "earlyViewers": 10,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00263",
+      "gigId": "g76",
+      "leadMinutes": 1473,
+      "bookDelay": 1,
+      "feeCents": 2000,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00305",
+      "gigId": "g91",
+      "leadMinutes": 2660,
+      "bookDelay": 1,
+      "feeCents": 5963,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00316",
+      "gigId": "g94",
+      "leadMinutes": 2507,
+      "bookDelay": 2,
+      "feeCents": 6928,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00317",
+      "gigId": "g95",
+      "leadMinutes": 2506,
+      "bookDelay": 2,
+      "feeCents": 8391,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00319",
+      "gigId": "g97",
+      "leadMinutes": 2499,
+      "bookDelay": 5,
+      "feeCents": 9987,
+      "earlyViewers": 5,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00430",
+      "gigId": "g138",
+      "leadMinutes": 1441,
+      "bookDelay": 2,
+      "feeCents": 2901,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00434",
+      "gigId": "g139",
+      "leadMinutes": 2717,
+      "bookDelay": 17,
+      "feeCents": 3981,
+      "earlyViewers": 1,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00440",
+      "gigId": "g140",
+      "leadMinutes": 2814,
+      "bookDelay": 1209,
+      "feeCents": 5312,
+      "earlyViewers": 3,
+      "bookerViewedEarly": false
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00465",
+      "gigId": "g144",
+      "leadMinutes": 2903,
+      "bookDelay": 1,
+      "feeCents": 10927,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00589",
+      "gigId": "g169",
+      "leadMinutes": 2356,
+      "bookDelay": 1,
+      "feeCents": 2000,
+      "earlyViewers": 3,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00599",
+      "gigId": "g174",
+      "leadMinutes": 2371,
+      "bookDelay": 1,
+      "feeCents": 2898,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00600",
+      "gigId": "g175",
+      "leadMinutes": 2369,
+      "bookDelay": 1,
+      "feeCents": 3711,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00611",
+      "gigId": "g183",
+      "leadMinutes": 2134,
+      "bookDelay": 2,
+      "feeCents": 6000,
+      "earlyViewers": 4,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00640",
+      "gigId": "g197",
+      "leadMinutes": 1483,
+      "bookDelay": 1,
+      "feeCents": 5484,
+      "earlyViewers": 2,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00642",
+      "gigId": "g198",
+      "leadMinutes": 1481,
+      "bookDelay": 1,
+      "feeCents": 5758,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    },
+    {
+      "worldId": "wce13500dc9c2829611d1",
+      "orderId": "R00669",
+      "gigId": "g207",
+      "leadMinutes": 1449,
+      "bookDelay": 1,
+      "feeCents": 9233,
+      "earlyViewers": 1,
+      "bookerViewedEarly": true
+    }
+  ]
+}

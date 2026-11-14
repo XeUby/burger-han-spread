@@ -2,31 +2,33 @@
 
 A TypeScript dispatcher for Bahn's level 8 challenge. It learns the price market from its own wins and losses, optimizes expected contribution, and limits exposure to scarce drivers. Node 22.18 or newer; no runtime packages required.
 
-## Final independent comparison
+## Latest independent comparison
 
-The final source was frozen before testing on eight fresh weeks, with the original baseline run on the same eight seeds. No final policy tuning used these outcomes.
+The broader-admission bundle candidate was frozen before an eight-week paired evaluation on new seeds. All sixteen ordinary practice worlds reached their terminal minute; their ledger totals and delivery counts reconcile with the official scores.
 
-| Metric | Original baseline | Final solver |
+| Metric | Previous validated policy | Bundle candidate |
 | --- | ---: | ---: |
-| Mean weekly margin | €5,541.90 | **€8,418.62** |
-| Lowest weekly margin | €3,381.06 | **€6,136.34** |
+| Mean weekly margin | €8,242.34 | **€10,411.59** |
 | Qualified weeks | 8/8 | **8/8** |
-| Orders won | 1,311 | 2,263 |
-| Aggregate on-time delivery | 99.39% | 98.59% |
-| Lowest weekly on-time delivery | 98.31% | 96.14% |
-| Undelivered orders | 1 | **0** |
+| Aggregate on-time delivery | 99.14% | 97.95% |
+| Lowest weekly on-time delivery | 98.10% | 94.94% |
+| Undelivered orders | 0 | 0 |
 
-Profit increased on **every week**, averaging **€2,876.73 more per week (+51.9%)**. The paired 95% bootstrap interval for that increase is €2,459.73–€3,253.70. Whole weeks, not individual orders, are resampled. These are practice results, not official leaderboard placements. The final policy trades some on-time percentage for more profitable volume while staying above the 90% qualification threshold in every tested week.
+Mean gain is **€2,169.25/week (+26.32%)**, positive in seven of eight paired weeks. The 95% paired bootstrap interval is €1,195.42–€3,048.48; the exact two-sided sign-test p-value is 0.0703. Eight weeks cannot establish a low rare-failure probability or global optimality. These are unranked practice results. See the [complete comparison](docs/frontier-validation.md), [machine-readable evidence](docs/frontier-validation.json), and [frozen manifest](experiments/frontier-validation-manifest.json).
 
-[Full paired results](docs/optimization-validation.md) and [machine-readable evidence](docs/optimization-validation.json) include every seed, world ID, setting, score and source hash. Final source: `f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb`.
+The public leaderboard leader averaged €16,006.00 over five different secret weeks at the recorded observation. That is a comparison target, not a controlled estimate of our rank. The [public snapshot](docs/leaderboard-observation.json) preserves the observation.
 
-An earlier eight-week evaluation exposed one car stranded after its dealer changed a local trip into a longer route. The fee correction was verified on that case, then the final source was evaluated on the fresh panel above. The [initial evaluation](docs/optimization-validation-round1.md) and [reroute regression](docs/reroute-regression.md) are preserved. The regression now delivers all 305 orders on time.
+The prior policy had independently improved mean margin from €5,541.90 to €8,418.62 on an earlier eight-week panel. That historical evaluation and its reroute correction remain in [the earlier report](docs/optimization-validation.md). Those older seeds became development data for this research.
+
+## Research and reproducibility
+
+The selected source is frozen under `experiments/frontier/candidate/`; the previous source is under `experiments/frontier/baseline/`. Exact source hashes and settings are in [source-index.json](experiments/frontier/source-index.json). The selected configuration is also in [frontier-selected-config.json](experiments/frontier-selected-config.json). The default executable still uses the previous validated settings; research features remain opt-in.
+
+Development selection used [screening trials](docs/frontier-experiments.md) and a [four-week confirmation](docs/frontier-confirmation.md). A separate note-hours treatment is now being tested on old development seeds. It does not change the frozen evaluated candidate. [Current experiment state](experiments/frontier-status.json) records active runs and decisions. No ranking submission has been made by this research.
+
+Both study runners cap workers at four, serialize their own creations, and check total unfinished server worlds before each creation. Coordinate separate runners so their creation checks cannot race. Raw world logs and credentials remain local.
 
 ## Method
-
-Further research is in progress. On four additional, previously inspected weeks, a bundle policy with broader admission averaged €10,660 versus €8,820 for the prior validated policy (+20.9%), with four qualifications and a minimum on-time share of 95.6%. These are development results, not independent validation. See the [confirmation panel](docs/frontier-confirmation.md), [screening results](docs/frontier-experiments.md) and [current experiment state](experiments/frontier-status.json). Eight entirely new paired weeks are reserved in an explicit validation manifest. No ranking submission has been made by this research. The default configuration remains the previously validated policy.
-
-Frozen baseline and candidate source snapshots are committed under `experiments/frontier/`; their source hashes and complete settings are in `experiments/frontier/source-index.json`. Raw world logs and credentials remain local. The paired study runner caps its workers at four and checks total unfinished server worlds before each serialized creation. Isolated experiments in `research/` are not enabled in the candidate.
 
 The [formal model](docs/optimization-model.md) treats the game as partially observed stochastic control with a qualification constraint. The implementation has three main decisions:
 
@@ -36,7 +38,7 @@ The [formal model](docs/optimization-model.md) treats the game as partially obse
 
 The [development experiments](docs/experiments.md) cover eleven policy variants and five-seed confirmation. Lower quote floors, broader note coverage, early offers, lower fees, longer routes, queue control, demand-curve slopes and pickup cutoffs were tested. Coupled treatments and source-provenance limitations are identified explicitly. Early offers and explicit pickup cutoffs remain experimental switches and are disabled by default.
 
-The quote subproblem is solved exactly for the fitted curve and estimated cost. Full-game global optimality and a future qualification guarantee are not claimed. Eight independent weeks give limited evidence about rare failures. The solver still declines private-address jobs, trade-ins and notes with unrecognized timing constraints. It does not bundle separate orders or observe drivers' hidden daily schedules.
+The quote subproblem is solved exactly for the fitted curve and estimated cost. Full-game global optimality and a future qualification guarantee are not claimed. Eight independent weeks give limited evidence about rare failures. The solver still declines private-address jobs, trade-ins and notes with unrecognized timing constraints. The frozen bundle candidate pairs compatible orders into sequential gigs; neither policy observes drivers' hidden daily schedules.
 
 ## Run
 
@@ -49,7 +51,7 @@ npm test
 npm run practice -- --seed new-trial-1
 ```
 
-The optimized policy is the default. Its complete settings are in [final-config.json](experiments/final-config.json). Runtime and integration tests: **34 passing**; statistical-report tests: **5 passing**. TypeScript checks include the experiment launchers.
+The optimized policy is the default. Its complete settings are in [final-config.json](experiments/final-config.json). Runtime and integration tests: **94 passing**; isolated research tests: **8 passing**; statistical-report tests: **9 passing**. TypeScript checks include the experiment launchers.
 
 To play an active test final or final:
 

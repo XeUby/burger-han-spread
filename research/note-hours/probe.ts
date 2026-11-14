@@ -1,6 +1,6 @@
 import fs from "node:fs"
 import { Client } from "../../vendor/typescript/spread.ts"
-import { readHours } from "./parser.ts"
+import { readHours } from "../../src/hours-note.ts"
 import type { DeskEvent, PriceRequest, QuoteAction } from "../../vendor/typescript/types.ts"
 
 if (!process.argv.includes("--execute")) throw new Error("Use --execute after reserving one of the four practice slots")

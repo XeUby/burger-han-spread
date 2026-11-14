@@ -2,6 +2,9 @@ import { Desk } from "./desk.ts"
 import { Network, lastPickup, needsCharge } from "./planning.ts"
 import { readNote } from "./notes.ts"
 import { readReadiness } from "./readiness.ts"
+import { readHours } from "./hours-note.ts"
+import { planTimedLeg, withNoteHours } from "./hours-plan.ts"
+import type { TimedNote } from "./hours-note.ts"
 import type { Readiness } from "./readiness.ts"
 import type { NoteRules } from "./notes.ts"
 import { PlaceDemandModel } from "./place-market.ts"
@@ -17,14 +20,14 @@ import type { Action, ActionResult, DeskEvent, DeskSnapshot, DriverProfile, FeeS
 export type Settings = {
   price: number; fee: number; margin: number; capacity: number; maxKm: number; minDrivers: number
   notes: boolean; adaptive: boolean; earlyOffers: boolean; safetySlack: boolean
-  auction: boolean; allowPrivate: boolean; tradeIns: boolean; homeOffers: boolean; readiness: boolean; bundlePairs: boolean
+  auction: boolean; allowPrivate: boolean; tradeIns: boolean; homeOffers: boolean; readiness: boolean; bundlePairs: boolean; timedNotes: boolean
   sameDayPremium: number; laterDiscount: number; placePrior: number; bundleWait: number
   backlog: number; priceFloor: number; costRatio: number; trustStep: number; sameDayBacklog: number; demandSlope: number
 }
 export const defaults: Settings = {
   price: 1.42, fee: 1.05, margin: 0.1, capacity: 0.18, maxKm: 550, minDrivers: 12,
   notes: true, adaptive: true, earlyOffers: false, safetySlack: false,
-  auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 0,
+  auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 0,
   backlog: 0.04, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14,
 }
 
@@ -124,6 +127,8 @@ export class Dispatcher extends Desk {
       const latest = feasible.latestPickupAt
       const buffer = supply < 30 || road.km > 300 ? 300 : 210
       if (latest < Math.max(this.now + buffer, leg.pickup.window.from + 120)) continue
+      const hours = this.hoursFor(request)
+      if (hours && !planTimedLeg(leg, hours, option.deadline, Math.max(this.now + buffer, leg.pickup.window.from + 120), this.network)) continue
       const price = Math.ceil(Math.max(option.listPriceCents * this.settings.price * trust, fee / (1 - this.settings.margin) + this.settings.priceFloor))
       if (this.level <= 3 && option.listPriceCents < fee * 1.3) continue
       prices[option.kind] = price
@@ -148,31 +153,41 @@ export class Dispatcher extends Desk {
     this.outbox.push({ type: "quote", requestId: request.id, prices })
   }
 
+  hoursFor(request: PriceRequest | undefined): TimedNote | null {
+    if (!this.settings.timedNotes || !request || request.legs.length !== 1 || request.legs[0]!.pickup.privateAddress || request.legs[0]!.delivery.privateAddress) return null
+    return readHours(request.note, request.arrivedAt)
+  }
+
   readinessFor(request: PriceRequest): Readiness | null {
+    const hours = this.hoursFor(request)
+    if (hours?.readyAt !== undefined) return { safe: true, manual: hours.manual, plates: hours.plates, readyAt: hours.readyAt }
     if (!this.settings.readiness || request.legs.length !== 1 || request.legs[0]!.pickup.privateAddress || request.legs[0]!.delivery.privateAddress) return null
     return readReadiness(request.note, request.arrivedAt)
   }
 
   noteRules(request: PriceRequest | undefined): NoteRules {
-    return (request ? this.readinessFor(request) : null) ?? readNote(request?.note ?? null)
+    return this.hoursFor(request) ?? (request ? this.readinessFor(request) : null) ?? readNote(request?.note ?? null)
   }
 
   plannedRequest(request: PriceRequest): PriceRequest {
     const readiness = this.readinessFor(request)
-    if (!readiness) return request
+    const hours = this.hoursFor(request)
+    if (!readiness && !hours) return request
     const first = request.legs[0]!
-    const readyAt = Math.max(first.pickup.window.from, readiness.readyAt)
+    const readyAt = Math.max(first.pickup.window.from, readiness?.readyAt ?? 0)
     const delay = Math.max(0, Math.floor(readyAt / 1440) - Math.floor(first.pickup.window.from / 1440)) * 1440
-    const equipment = [readiness.manual ? "Manual gearbox" : "", readiness.plates ? "No plates" : ""].filter(Boolean).join(". ")
+    const rules = hours ?? readiness!
+    const equipment = [rules.manual ? "Manual gearbox" : "", rules.plates ? "No plates" : ""].filter(Boolean).join(". ")
     const options = request.options.map(option => ({ ...option, deadline: option.deadline + delay }))
       .filter(option => option.deadline <= 7 * 1440 + 1200 && Math.floor(option.deadline / 1440) % 7 < 5)
+    const leg = { ...first,
+      pickup: { ...first.pickup, window: { from: readyAt, to: first.pickup.window.to + delay } },
+      delivery: { ...first.delivery, window: { ...first.delivery.window, to: first.delivery.window.to + delay } },
+    }
     return {
       ...request,
       note: equipment ? { language: "en", text: equipment } : null,
-      legs: [{ ...first,
-        pickup: { ...first.pickup, window: { from: readyAt, to: first.pickup.window.to + delay } },
-        delivery: { ...first.delivery, window: { ...first.delivery.window, to: first.delivery.window.to + delay } },
-      }],
+      legs: [hours ? withNoteHours(leg, hours) : leg],
       options,
     }
   }
@@ -213,6 +228,8 @@ export class Dispatcher extends Desk {
   }
 
   pickupBy(order: Order): number {
+    const hours = this.hoursFor(this.requests.get(order.id))
+    if (hours) return planTimedLeg(order.legs[0]!, hours, order.deadline, this.now, this.network)?.latestPickupAt ?? this.now
     if (!this.settings.safetySlack || order.legs.length !== 1) return order.lastPickupAt
     const request = this.requests.get(order.id)
     const rules = this.noteRules(request)
@@ -258,6 +275,19 @@ export class Dispatcher extends Desk {
       ]
     })
     const post: PostAction = { type: "post", stops, audience: { experienced: legs.some(i => order.legs[i]!.car.premium), manualLicence: rules.manual || retry.manualLicence }, schedule: this.feesFor(order, legs.length) }
+    const hours = this.hoursFor(request)
+    if (hours) {
+      const restrictions = { ...hours, plates: hours.plates || retry.plates, readyAt: Math.max(hours.readyAt ?? 0, retry.pickupFrom) }
+      const timed = planTimedLeg(order.legs[0]!, restrictions, order.deadline, this.now + 30, this.network)
+        ?? planTimedLeg(order.legs[0]!, restrictions, Math.max(order.deadline, this.now + 7 * 1440), this.now + 30, this.network)
+      if (!timed) {
+        const reason = `No route inside parsed note hours for ${order.id}`
+        if (!this.failures.some(failure => failure.reason === reason)) this.failures.push({ at: this.now, action: post, reason })
+        return
+      }
+      post.stops[0]!.window = timed.pickup
+      post.stops[1]!.window = timed.delivery
+    }
     if (this.settings.bundleWait > 0 && this.level >= 3 && order.legs.length === 1 && rules.safe && !order.legs[0]!.pickup.privateAddress && !order.legs[0]!.delivery.privateAddress && !retry.pickupFrom && !retry.manualLicence && !retry.plates && !this.urgent.has(order.id) && this.pickupBy(order) > this.now + 360) {
       this.held.set(order.id, { post, at: this.held.get(order.id)?.at ?? this.now })
     } else this.outbox.push(post)
@@ -282,6 +312,14 @@ export class Dispatcher extends Desk {
   override async change(order: Order): Promise<void> {
     this.held.delete(order.id)
     await super.change(order)
+  }
+
+  override async repost(gigId: string): Promise<void> {
+    const post = this.posts.get(gigId)
+    if (!post?.stops.some(stop => this.hoursFor(this.requests.get(stop.orderId)))) return super.repost(gigId)
+    const survivors = post.stops.filter(stop => stop.kind === "pickup" && this.legGigs.get(stop.orderId)?.get(stop.leg) === gigId && this.orders.get(stop.orderId)?.deliveredAt[stop.leg] === null)
+    this.forgetGig(gigId)
+    for (const stop of survivors) await this.post(this.orders.get(stop.orderId)!, [stop.leg])
   }
 
   async handle(event: DeskEvent): Promise<void> {

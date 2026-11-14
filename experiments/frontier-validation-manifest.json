@@ -71,48 +71,161 @@
   "pairs": [
     {
       "seed": "frontier-unseen-20261114-19325279220dd249",
-      "baselineWorldId": null,
-      "candidateWorldId": null
+      "baselineWorldId": "w2aabdee2d303f39f1b63",
+      "candidateWorldId": "w370727e2f84b6616e27d"
     },
     {
       "seed": "frontier-unseen-20261114-779e9add6b14a18b",
-      "baselineWorldId": null,
-      "candidateWorldId": null
+      "baselineWorldId": "wff88ce1176b470133d6b",
+      "candidateWorldId": "wed077baaf55738a03245"
     },
     {
       "seed": "frontier-unseen-20261114-7f39dd564e731085",
-      "baselineWorldId": null,
-      "candidateWorldId": null
+      "baselineWorldId": "w90cc53e21105f50b767c",
+      "candidateWorldId": "w6780460f61aa419c17c2"
     },
     {
       "seed": "frontier-unseen-20261114-f5efce54acaddce6",
-      "baselineWorldId": null,
-      "candidateWorldId": null
+      "baselineWorldId": "wf2522db2a6cd59f8b269",
+      "candidateWorldId": "w531ed4987e09834cc1c1"
     },
     {
       "seed": "frontier-unseen-20261114-7233f333bf3d7c2e",
-      "baselineWorldId": null,
-      "candidateWorldId": null
+      "baselineWorldId": "w08aa7edba012c50a9f39",
+      "candidateWorldId": "w99ca20e04eb4a3578ba3"
     },
     {
       "seed": "frontier-unseen-20261114-98dcde7a3d066a80",
-      "baselineWorldId": null,
-      "candidateWorldId": null
+      "baselineWorldId": "w9bad3f6f3bb2a05f6e37",
+      "candidateWorldId": "wda6efe29b349ddafa66e"
     },
     {
       "seed": "frontier-unseen-20261114-4d17ec2759243bc1",
-      "baselineWorldId": null,
-      "candidateWorldId": null
+      "baselineWorldId": "w7d747b57779c24ebbe3c",
+      "candidateWorldId": "wf97529eaa1a9ec8a52c5"
     },
     {
       "seed": "frontier-unseen-20261114-b256738651c1125d",
-      "baselineWorldId": null,
-      "candidateWorldId": null
+      "baselineWorldId": "w94ce568c0df96c131a31",
+      "candidateWorldId": "wcda57d99f627c20ea663"
     }
   ],
   "bootstrap": {
     "samples": 10000,
     "seed": 20261114
   },
-  "attempts": []
+  "attempts": [
+    {
+      "seed": "frontier-unseen-20261114-19325279220dd249",
+      "side": "baseline",
+      "worldId": "w2aabdee2d303f39f1b63",
+      "startedAt": "2026-11-14T00:18:10.029Z",
+      "completedAt": "2026-11-14T00:20:24.807Z"
+    },
+    {
+      "seed": "frontier-unseen-20261114-19325279220dd249",
+      "side": "candidate",
+      "worldId": "w370727e2f84b6616e27d",
+      "startedAt": "2026-11-14T00:18:31.888Z",
+      "completedAt": "2026-11-14T00:20:56.659Z"
+    },
+    {
+      "seed": "frontier-unseen-20261114-779e9add6b14a18b",
+      "side": "baseline",
+      "worldId": "wff88ce1176b470133d6b",
+      "startedAt": "2026-11-14T00:19:59.184Z",
+      "completedAt": "2026-11-14T00:23:06.937Z"
+    },
+    {
+      "seed": "frontier-unseen-20261114-779e9add6b14a18b",
+      "side": "candidate",
+      "worldId": "wed077baaf55738a03245",
+      "startedAt": "2026-11-14T00:20:15.450Z",
+      "completedAt": "2026-11-14T00:22:58.236Z"
+    },
+    {
+      "seed": "frontier-unseen-20261114-7f39dd564e731085",
+      "side": "baseline",
+      "worldId": "w90cc53e21105f50b767c",
+      "startedAt": "2026-11-14T00:20:24.939Z",
+      "completedAt": "2026-11-14T00:23:06.937Z"
+    },
+    {
+      "seed": "frontier-unseen-20261114-7f39dd564e731085",
+      "side": "candidate",
+      "worldId": "w6780460f61aa419c17c2",
+      "startedAt": "2026-11-14T00:20:56.810Z",
+      "completedAt": "2026-11-14T00:24:30.207Z"
+    },
+    {
+      "seed": "frontier-unseen-20261114-f5efce54acaddce6",
+      "side": "baseline",
+      "worldId": "wf2522db2a6cd59f8b269",
+      "startedAt": "2026-11-14T00:22:58.385Z",
+      "completedAt": "2026-11-14T00:27:35.554Z"
+    },
+    {
+      "seed": "frontier-unseen-20261114-f5efce54acaddce6",
+      "side": "candidate",
+      "worldId": "w531ed4987e09834cc1c1",
+      "startedAt": "2026-11-14T00:23:07.235Z",
+      "completedAt": "2026-11-14T00:28:08.194Z"
+    },
+    {
+      "seed": "frontier-unseen-20261114-7233f333bf3d7c2e",
+      "side": "baseline",
+      "worldId": "w08aa7edba012c50a9f39",
+      "startedAt": "2026-11-14T00:23:07.786Z",
+      "completedAt": "2026-11-14T00:27:56.142Z"
+    },
+    {
+      "seed": "frontier-unseen-20261114-7233f333bf3d7c2e",
+      "side": "candidate",
+      "worldId": "w99ca20e04eb4a3578ba3",
+      "startedAt": "2026-11-14T00:24:32.610Z",
+      "completedAt": "2026-11-14T00:29:10.615Z"
+    },
+    {
+      "seed": "frontier-unseen-20261114-98dcde7a3d066a80",
+      "side": "baseline",
+      "worldId": "w9bad3f6f3bb2a05f6e37",
+      "startedAt": "2026-11-14T00:27:35.734Z",
+      "completedAt": "2026-11-14T00:30:48.236Z"
+    },
+    {
+      "seed": "frontier-unseen-20261114-98dcde7a3d066a80",
+      "side": "candidate",
+      "worldId": "wda6efe29b349ddafa66e",
+      "startedAt": "2026-11-14T00:27:56.283Z",
+      "completedAt": "2026-11-14T00:31:25.447Z"
+    },
+    {
+      "seed": "frontier-unseen-20261114-4d17ec2759243bc1",
+      "side": "baseline",
+      "worldId": "w7d747b57779c24ebbe3c",
+      "startedAt": "2026-11-14T00:28:08.385Z",
+      "completedAt": "2026-11-14T00:31:14.733Z"
+    },
+    {
+      "seed": "frontier-unseen-20261114-4d17ec2759243bc1",
+      "side": "candidate",
+      "worldId": "wf97529eaa1a9ec8a52c5",
+      "startedAt": "2026-11-14T00:29:10.887Z",
+      "completedAt": "2026-11-14T00:32:21.610Z"
+    },
+    {
+      "seed": "frontier-unseen-20261114-b256738651c1125d",
+      "side": "baseline",
+      "worldId": "w94ce568c0df96c131a31",
+      "startedAt": "2026-11-14T00:30:48.507Z",
+      "completedAt": "2026-11-14T00:34:06.811Z"
+    },
+    {
+      "seed": "frontier-unseen-20261114-b256738651c1125d",
+      "side": "candidate",
+      "worldId": "wcda57d99f627c20ea663",
+      "startedAt": "2026-11-14T00:31:14.960Z",
+      "completedAt": "2026-11-14T00:34:40.198Z"
+    }
+  ]
 }

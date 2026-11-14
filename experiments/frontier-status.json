@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T00:17:00.019999+00:00",
+  "updatedAt": "2026-11-14T00:36:15.527792+00:00",
   "objective": "Continue systematic search toward the global optimum; practice only, no ranking submission.",
   "maximumConcurrentPlays": 4,
   "currentConcurrency": {
@@ -64,15 +64,16 @@
     "700km-only bundle treatment ends at7407.63/9410.50 euros, minimum96.6% on time. It gains versus the old baseline in both weeks but not versus bundles alone. No900km experiment scheduled."
   ],
   "nextSteps": [
-    "Poll paired evaluation session65629; preserve its live manifest, which the runner writes. Do not modify the manifest while it is running.",
-    "Investigate structural ideas separately; the current candidate must remain frozen throughout fresh evaluation.",
-    "Once all16 trials finish, run analysis/frontier_validation.py on the explicit manifest and retain every outcome.",
-    "The hours parser has passed a45-case semantics probe but has not been integrated or tested for profit.",
-    "Push code checkpoints to codex/standalone-dispatcher as authorized."
+    "Poll session5231. Preserve all four note-hours development outcomes. Audit note-specific failed visits and compare matched controls before any further experiment.",
+    "Do not tune against the completed fresh frontier evaluation and continue calling it unseen.",
+    "Maintain at most4 unfinished plays. No ranking or final submissions.",
+    "Continue structural optimization research, screening weak hypotheses before using simulation slots.",
+    "Push coherent checkpoints to codex/standalone-dispatcher."
   ],
-  "validationStatus": "Candidate selected and frozen; fresh evaluation runner started, currently waiting on the server occupancy guard. No promotion or ranking submission.",
+  "validationStatus": "All16 fresh paired trials complete. Candidate mean10411.59 euros versus8242.34, +26.32%;7/8 positive;8/8 qualified; minimum94.94% on time; no undelivered orders. Full report docs/frontier-validation.md. No ranking submission.",
   "checks": {
-    "nodeSuite": 89,
+    "nodeSuite": 94,
+    "researchTests": 8,
     "pythonReportTests": 9,
     "typecheck": "passed"
   },
@@ -102,28 +103,47 @@
     "terminal": true,
     "study": "runs/study-1794614812817.json"
   },
-  "currentStudy": {
-    "sessionId": 65629,
-    "kind": "fresh paired evaluation",
-    "manifest": "experiments/frontier-validation-manifest.json",
-    "maximumJobs": 4,
-    "serverGuard": "Serialize creates; wait whenever four worlds are already unfinished.",
-    "trials": 16
-  },
   "research": {
     "noteHours": {
-      "parser": "research/note-hours/parser.ts",
+      "parser": "src/hours-note.ts",
       "probeWorld": "wb318a0359116fd02c2a6",
       "probeTerminal": true,
       "truthCases": 45,
       "unchangedCases": 44,
       "unchangedUnmodeledRestrictions": 0,
-      "profitTested": false
+      "profitTested": "Development experiment running; no completed profit inference yet.",
+      "probeEvidence": "docs/note-hours-probe.json"
     },
     "jointAcquisition": {
       "directory": "research/joint-acquisition",
       "screen": "docs/joint-acquisition-screen.json",
       "finding": "Model-based screen:639 contemporaneous pairs across8 old weeks; joint pricing adds only88.46 euros/week beyond independent pricing with the same bundling savings. This does not justify integrating this particular model yet."
+    },
+    "trustInvestment": {
+      "screen": "docs/trust-investment-screen.json",
+      "finding": "Optimistic retrospective continuation-value pricing screen models318.60 euros/week but adds28.36 expected wins; no capacity displacement or booking delay modeled. Do not integrate this weak version ahead of larger structural gains."
     }
+  },
+  "completedFreshEvaluation": {
+    "sessionId": 65629,
+    "kind": "fresh paired evaluation",
+    "manifest": "experiments/frontier-validation-manifest.json",
+    "maximumJobs": 4,
+    "serverGuard": "Serialize creates; wait whenever four worlds are already unfinished.",
+    "trials": 16,
+    "terminal": true
+  },
+  "currentStudy": {
+    "sessionId": 5231,
+    "kind": "Note-hours development screen",
+    "plan": "experiments/plans/note-hours.json",
+    "protocol": "experiments/note-hours-protocol.json",
+    "maximumJobs": 2,
+    "trials": 4,
+    "frozenBundle": "runs/frozen/91cbeb051868111637bf4a872c630803895c5f7969a70d41212bc3fe04cb6056/fdea9891bc11b3a1669cdf10ca9472b9173c1341e049a244eb107bf963e45f80",
+    "firstWorlds": [
+      "w9d5670b3d63668d52477",
+      "we902c03beea299d5f314"
+    ]
   }
 }

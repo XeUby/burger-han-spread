@@ -60,7 +60,7 @@ export abstract class Desk {
       }
     }
     else if (event.kind === "visit_failed") await this.retry(event.orderId, event.leg, event.reason)
-    else if (event.kind === "gig_expired") this.repost(event.gigId)
+    else if (event.kind === "gig_expired") await this.repost(event.gigId)
     // It comes again when a driver drops the car after the first warning.
     else if (event.kind === "deadline_close") await this.raise(event.orderId)
     else if (event.kind === "gig_booked") this.booked.add(event.gigId)
@@ -90,7 +90,7 @@ export abstract class Desk {
   }
 
   /** Posts a gig again when one of its windows ended before a driver booked it. */
-  repost(gigId: string): void {
+  async repost(gigId: string): Promise<void> {
     const action = this.posts.get(gigId)
     // A gig the dispatcher has already taken off and posted again, after a change of plan, needs nothing.
     if (!action || !action.stops.some(({ orderId, leg }) => this.legGigs.get(orderId)?.get(leg) === gigId)) return
@@ -185,7 +185,7 @@ export abstract class Desk {
     })
   }
 
-  private forgetGig(gigId: string): void {
+  protected forgetGig(gigId: string): void {
     for (const legs of this.legGigs.values()) for (const [leg, carrying] of legs) if (carrying === gigId) legs.delete(leg)
     this.posts.delete(gigId)
     this.booked.delete(gigId)

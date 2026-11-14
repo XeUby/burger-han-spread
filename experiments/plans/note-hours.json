@@ -1,0 +1,50 @@
+[
+  {
+    "label": "hours-control",
+    "seed": "formal-unseen-20261113-14",
+    "settings": {
+      "capacity": 0.35,
+      "backlog": 0.08,
+      "minDrivers": 8,
+      "maxKm": 700,
+      "bundleWait": 15,
+      "timedNotes": false
+    }
+  },
+  {
+    "label": "hours-treatment",
+    "seed": "formal-unseen-20261113-14",
+    "settings": {
+      "capacity": 0.35,
+      "backlog": 0.08,
+      "minDrivers": 8,
+      "maxKm": 700,
+      "bundleWait": 15,
+      "timedNotes": true
+    }
+  },
+  {
+    "label": "hours-control",
+    "seed": "formal-unseen-20261113-15",
+    "settings": {
+      "capacity": 0.35,
+      "backlog": 0.08,
+      "minDrivers": 8,
+      "maxKm": 700,
+      "bundleWait": 15,
+      "timedNotes": false
+    }
+  },
+  {
+    "label": "hours-treatment",
+    "seed": "formal-unseen-20261113-15",
+    "settings": {
+      "capacity": 0.35,
+      "backlog": 0.08,
+      "minDrivers": 8,
+      "maxKm": 700,
+      "bundleWait": 15,
+      "timedNotes": true
+    }
+  }
+]

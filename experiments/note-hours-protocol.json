@@ -1,0 +1,13 @@
+{
+  "frozenAt": "2026-11-14T00:33:09.055553+00:00",
+  "plan": "experiments/plans/note-hours.json",
+  "seeds": "Previously used development seeds14 and15; not an unseen validation panel.",
+  "hypothesis": "Fully parsed note hours allow profitable incremental demand while explicit stop windows preserve fulfillment reliability.",
+  "contrast": "Identical frozen source and selected volume+bundles settings, differing only in timedNotes.",
+  "primary": "Paired whole-week margin including shared-gig costs; retain both outcomes and all errors.",
+  "safety": "Both treatment weeks must qualify; separately audit note-specific failed visits and unresolved orders.",
+  "decision": "Only if both weeks gain margin with no parser-induced failed visits proceed to a separate development confirmation panel. No promotion from two weeks.",
+  "maximumConcurrentPlays": 4,
+  "jobs": 2,
+  "rankedSubmission": false
+}

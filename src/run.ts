@@ -250,7 +250,7 @@ export async function live(client: Client, settings: Partial<Settings>): Promise
 }
 
 function report(label: string, score: Score): void {
-  console.log(`${label}: €${(score.marginCents / 100).toFixed(2)} margin, ${score.wonOrders} orders, ${(score.onTimeShare * 100).toFixed(1)}% on time, ${score.ranked ? "ranked" : "not ranked"}`)
+  console.log(`${label}: €${(score.marginCents / 100).toFixed(2)} margin, ${score.wonOrders} orders, ${(score.onTimeShare * 100).toFixed(1)}% on time, ${score.ranked ? "qualified" : "not qualified"}`)
 }
 
 async function main(): Promise<void> {

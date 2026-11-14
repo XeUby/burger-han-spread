@@ -19,15 +19,34 @@ for (const trial of trials) {
 }
 await mkdir("runs", { recursive: true })
 const results: { trial: Trial; score?: Score; error?: string }[] = []
-let next = 0
+let next = 0, stopped = false, gate = Promise.resolve()
 const client = new Client()
+async function create(seed: string) {
+  const previous = gate
+  let unlock!: () => void
+  gate = new Promise(resolve => { unlock = resolve })
+  await previous
+  try {
+    let announced = false
+    while (!stopped) {
+      if ((await client.worlds()).filter(world => !world.ended).length < 4) return await client.create(8, { seed })
+      if (!announced) console.log(`Waiting below the four-play cap: ${seed}`)
+      announced = true
+      await new Promise(resolve => setTimeout(resolve, 5000))
+    }
+    return null
+  } finally { unlock() }
+}
 await Promise.all(Array.from({ length: jobs }, async () => {
-  while (next < trials.length) {
+  while (!stopped && next < trials.length) {
     const trial = trials[next++]!
     try {
-      const score = await practice(client, { ...trial, label: trial.label })
+      const world = await create(trial.seed)
+      if (!world) return
+      const score = await practice(client, { ...trial, worldId: world.id, label: trial.label })
       results.push({ trial, score })
     } catch (error) {
+      stopped = true
       results.push({ trial, error: String(error) })
       console.error(`Trial ${trial.label}/${trial.seed} failed: ${String(error)}`)
       process.exitCode = 1

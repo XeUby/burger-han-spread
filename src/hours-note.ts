@@ -1,6 +1,6 @@
-import { readNote } from "../../src/notes.ts"
-import { readReadiness } from "../../src/readiness.ts"
-import type { Note } from "../../vendor/typescript/types.ts"
+import { readNote } from "./notes.ts"
+import { readReadiness } from "./readiness.ts"
+import type { Note } from "../vendor/typescript/types.ts"
 
 export type HoursBound = { opens: number; closes: number }
 export type TimedNote = {
@@ -12,7 +12,7 @@ export type TimedNote = {
   readyAt?: number
 }
 
-/** Research parser: deployment also needs explicit stop windows and a revealed-truth audit. */
+/** Reads explicit opening hours, equipment and supported readiness clauses; rejects any unknown remainder. */
 export function readHours(note: Note | null, arrivedAt: number): TimedNote | null {
   if (!note) return null
   let text = note.text.toLowerCase().normalize("NFD").replace(/\p{M}/gu, "").replace(/[–—−]/g, "-").replace(/\s+/g, " ").trim()
