@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T03:35:57.289541+00:00",
+  "updatedAt": "2026-11-14T03:48:18.363448+00:00",
   "objective": "Continue systematic search toward the global optimum; practice only, no ranking submission.",
   "maximumConcurrentPlays": 4,
   "currentConcurrency": {
@@ -66,8 +66,8 @@
     "700km-only bundle treatment ends at7407.63/9410.50 euros, minimum96.6% on time. It gains versus the old baseline in both weeks but not versus bundles alone. No900km experiment scheduled."
   ],
   "nextSteps": [
-    "Complete all12frozen paired evaluation weeks with one worker and inspect every operational failure. No tuning or promotion from partial results.",
-    "Evaluate whether deadline-flexible requests are unnecessarily rejected by ready-day admission limits, using only old development streams; do not alter the frozen evaluation policies.",
+    "Complete all12frozen payout evaluation pairs with one worker. Retain losses, inspect operational errors, and do not tune or promote from partial results.",
+    "Flexible-day admission is deferred after capacity screening. Prioritize stronger hypotheses over expanding this conservative prototype.",
     "Respect the shared four-play cap. No ranking or final."
   ],
   "validationStatus": "All16 fresh paired trials complete. Candidate mean10411.59 euros versus8242.34, +26.32%;7/8 positive;8/8 qualified; minimum94.94% on time; no undelivered orders. Full report docs/frontier-validation.md. No ranking submission.",
@@ -560,8 +560,9 @@
     "trials": 24,
     "pairs": 12,
     "candidateRevision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
-    "completedTrials": 3,
-    "startedTrials": 4
+    "completedTrials": 8,
+    "startedTrials": 9,
+    "audit": "docs/payout-validation-audit.json"
   },
   "completedPayoutScreen": {
     "sessionId": 76828,
@@ -670,6 +671,15 @@
       "meanModeledAdditionalWins": 26.845077757947237,
       "meanModeledAdditionalMarginEuros": 518.9876324333575
     },
-    "decision": "Potential next candidate, not a measured profit gain. Need a bounded future-day allocation accounting for existing work before any rollout. Do not alter the frozen payout evaluation."
+    "decision": "Defer live trial: protecting booked commitments and assigning each unbooked job once leaves only84.15euros/week modeled contribution. This does not rule out less conservative calendar policies.",
+    "capacityReport": "docs/flexible-admission-capacity.json",
+    "capacitySummary": {
+      "weeks": 6,
+      "candidates": 346,
+      "admitted": 64,
+      "meanAdmittedRequests": 10.666666666666666,
+      "meanModeledWins": 4.165922886566611,
+      "meanModeledMarginEuros": 84.14940402068716
+    }
   }
 }

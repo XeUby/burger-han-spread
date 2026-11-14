@@ -10,4 +10,8 @@ The screen requires pickup and delivery within one day strictly after both the c
 
 Of the 346 requests, 120 arrived on Friday and 206 can use the last Monday. This suggests evaluating capacity across service days rather than simply widening the ready-day quota. It does not prove that those days have spare driver capacity.
 
-The next required evidence is a bounded allocation of future-day capacity that accounts for existing obligations. No admission change or extra play has been launched; the independent payout evaluation remains frozen. Exact worlds, source revision, request records and reconstruction checks are in the [JSON audit](flexible-admission-screen.json).
+The follow-up [capacity screen](flexible-admission-capacity.json) protects booked commitments on every feasible service day and assigns each known unbooked job once by integral max flow. It reserves a full unit for each earlier hypothetical admission, regardless of win probability. Nearby jobs receive a full unit even where the incumbent normally charges half, and quotas are rounded down. Existing over-reservations leave zero room on that day rather than invalidating unrelated future days.
+
+Only 64 requests survive across six weeks: 10.67 requests and 4.17 modeled wins per week, with €84.15/week of modeled contribution. That is insufficient to prioritize a live trial. This does not rule out a less conservative calendar policy: driver schedules remain hidden, and the proxy does not model displacement of future work or booking spillovers. The max-flow solver matches exhaustive assignment on 4,096 small calendars, but that verifies the abstract allocation algorithm, not the economic assumptions.
+
+No admission change or extra play has been launched; the independent payout evaluation remains frozen. Exact worlds, source revision, request records and reconstruction checks are in the [exposure audit](flexible-admission-screen.json).
