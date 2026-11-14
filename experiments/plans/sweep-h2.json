@@ -1,0 +1,232 @@
+[
+ {
+  "label": "h-hold-180",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "openHold": 180
+  }
+ },
+ {
+  "label": "h-km-300",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "openKm": 300
+  }
+ },
+ {
+  "label": "h-hold-180-o85",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "openHold": 180,
+   "openFee": 0.85,
+   "laterFee": 0.85
+  }
+ },
+ {
+  "label": "h-hold-180",
+  "seed": "bh-unseen1-20261114-08",
+  "settings": {
+   "openHold": 180
+  }
+ },
+ {
+  "label": "h-km-300",
+  "seed": "bh-unseen1-20261114-08",
+  "settings": {
+   "openKm": 300
+  }
+ },
+ {
+  "label": "h-hold-180-o85",
+  "seed": "bh-unseen1-20261114-08",
+  "settings": {
+   "openHold": 180,
+   "openFee": 0.85,
+   "laterFee": 0.85
+  }
+ },
+ {
+  "label": "h-hold-180",
+  "seed": "bh-unseen1-20261114-06",
+  "settings": {
+   "openHold": 180
+  }
+ },
+ {
+  "label": "h-km-300",
+  "seed": "bh-unseen1-20261114-06",
+  "settings": {
+   "openKm": 300
+  }
+ },
+ {
+  "label": "h-hold-180-o85",
+  "seed": "bh-unseen1-20261114-06",
+  "settings": {
+   "openHold": 180,
+   "openFee": 0.85,
+   "laterFee": 0.85
+  }
+ },
+ {
+  "label": "h-hold-180",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "openHold": 180
+  }
+ },
+ {
+  "label": "h-km-300",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "openKm": 300
+  }
+ },
+ {
+  "label": "h-hold-180-o85",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "openHold": 180,
+   "openFee": 0.85,
+   "laterFee": 0.85
+  }
+ },
+ {
+  "label": "h-hold-180",
+  "seed": "bh-unseen1-20261114-05",
+  "settings": {
+   "openHold": 180
+  }
+ },
+ {
+  "label": "h-km-300",
+  "seed": "bh-unseen1-20261114-05",
+  "settings": {
+   "openKm": 300
+  }
+ },
+ {
+  "label": "h-hold-180-o85",
+  "seed": "bh-unseen1-20261114-05",
+  "settings": {
+   "openHold": 180,
+   "openFee": 0.85,
+   "laterFee": 0.85
+  }
+ },
+ {
+  "label": "h-hold-180",
+  "seed": "bh-unseen1-20261114-07",
+  "settings": {
+   "openHold": 180
+  }
+ },
+ {
+  "label": "h-km-300",
+  "seed": "bh-unseen1-20261114-07",
+  "settings": {
+   "openKm": 300
+  }
+ },
+ {
+  "label": "h-hold-180-o85",
+  "seed": "bh-unseen1-20261114-07",
+  "settings": {
+   "openHold": 180,
+   "openFee": 0.85,
+   "laterFee": 0.85
+  }
+ },
+ {
+  "label": "h-hold-180",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "openHold": 180
+  }
+ },
+ {
+  "label": "h-km-300",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "openKm": 300
+  }
+ },
+ {
+  "label": "h-hold-180-o85",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "openHold": 180,
+   "openFee": 0.85,
+   "laterFee": 0.85
+  }
+ },
+ {
+  "label": "h-hold-180",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "openHold": 180
+  }
+ },
+ {
+  "label": "h-km-300",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "openKm": 300
+  }
+ },
+ {
+  "label": "h-hold-180-o85",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "openHold": 180,
+   "openFee": 0.85,
+   "laterFee": 0.85
+  }
+ },
+ {
+  "label": "h-hold-180",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "openHold": 180
+  }
+ },
+ {
+  "label": "h-km-300",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "openKm": 300
+  }
+ },
+ {
+  "label": "h-hold-180-o85",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "openHold": 180,
+   "openFee": 0.85,
+   "laterFee": 0.85
+  }
+ },
+ {
+  "label": "h-hold-180",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "openHold": 180
+  }
+ },
+ {
+  "label": "h-km-300",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "openKm": 300
+  }
+ },
+ {
+  "label": "h-hold-180-o85",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "openHold": 180,
+   "openFee": 0.85,
+   "laterFee": 0.85
+  }
+ }
+]

@@ -1,0 +1,106 @@
+[
+ {
+  "label": "u1-full-fee",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "openFee": 1,
+   "laterFee": 1
+  }
+ },
+ {
+  "label": "u1-open-fee",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {}
+ },
+ {
+  "label": "u1-full-fee",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "openFee": 1,
+   "laterFee": 1
+  }
+ },
+ {
+  "label": "u1-open-fee",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {}
+ },
+ {
+  "label": "u1-full-fee",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "openFee": 1,
+   "laterFee": 1
+  }
+ },
+ {
+  "label": "u1-open-fee",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {}
+ },
+ {
+  "label": "u1-full-fee",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "openFee": 1,
+   "laterFee": 1
+  }
+ },
+ {
+  "label": "u1-open-fee",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {}
+ },
+ {
+  "label": "u1-full-fee",
+  "seed": "bh-unseen1-20261114-05",
+  "settings": {
+   "openFee": 1,
+   "laterFee": 1
+  }
+ },
+ {
+  "label": "u1-open-fee",
+  "seed": "bh-unseen1-20261114-05",
+  "settings": {}
+ },
+ {
+  "label": "u1-full-fee",
+  "seed": "bh-unseen1-20261114-06",
+  "settings": {
+   "openFee": 1,
+   "laterFee": 1
+  }
+ },
+ {
+  "label": "u1-open-fee",
+  "seed": "bh-unseen1-20261114-06",
+  "settings": {}
+ },
+ {
+  "label": "u1-full-fee",
+  "seed": "bh-unseen1-20261114-07",
+  "settings": {
+   "openFee": 1,
+   "laterFee": 1
+  }
+ },
+ {
+  "label": "u1-open-fee",
+  "seed": "bh-unseen1-20261114-07",
+  "settings": {}
+ },
+ {
+  "label": "u1-full-fee",
+  "seed": "bh-unseen1-20261114-08",
+  "settings": {
+   "openFee": 1,
+   "laterFee": 1
+  }
+ },
+ {
+  "label": "u1-open-fee",
+  "seed": "bh-unseen1-20261114-08",
+  "settings": {}
+ }
+]
