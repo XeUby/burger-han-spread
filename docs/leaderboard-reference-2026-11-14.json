@@ -1,0 +1,56 @@
+{
+  "checkedAt": "2026-11-14T08:25:43.273Z",
+  "source": "https://spread.bahnexpress.com/leaderboard",
+  "api": "GET /v1/leaderboards/practice?level=8",
+  "readOnly": true,
+  "level": 8,
+  "rawSha256": "7e90ea43b13345b9f4ddfad3c33799a7927f90d10b30aa1652022965e760509b",
+  "currentSeason": 5,
+  "currentTopThree": [
+    {
+      "rank": 1,
+      "team": "davinci-s-night-shift",
+      "played": 5,
+      "ranked": true,
+      "marginCents": 7757265,
+      "onTimeShare": 0.9723200805234021
+    },
+    {
+      "rank": 2,
+      "team": "source-exp",
+      "played": 5,
+      "ranked": true,
+      "marginCents": 7394986,
+      "onTimeShare": 0.9777777777777777
+    },
+    {
+      "rank": 3,
+      "team": "no-empty-miles",
+      "played": 5,
+      "ranked": true,
+      "marginCents": 7199888,
+      "onTimeShare": 0.9822175732217573
+    }
+  ],
+  "ourCurrent": [
+    {
+      "rank": null,
+      "team": "burger-han",
+      "played": 0,
+      "ranked": false,
+      "marginCents": null,
+      "onTimeShare": null
+    }
+  ],
+  "ourPrevious": [
+    {
+      "rank": 56,
+      "team": "burger-han",
+      "played": 5,
+      "ranked": true,
+      "marginCents": 3960309,
+      "onTimeShare": 0.9898033503277495
+    }
+  ],
+  "limitation": "A timestamped public benchmark only. Unmatched development seeds cannot estimate a leaderboard position or a paired profit gap. No new ranked entry was made."
+}

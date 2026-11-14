@@ -1,6 +1,6 @@
 # Route portfolios, pricing and fulfillment under uncertainty
 
-Status: research design, not an implemented or frozen policy. No worlds or validation seeds have been generated for this design. It incorporates the [researcher note supplied on 14 November](researcher-note-2026-11-14.md) and the [completed second-round evidence](second-round-findings.md).
+Status: the [standard solver component and bridge](../research/portfolio/README.md) are implemented and tested; the live planner is not implemented or frozen. No worlds or validation seeds have been generated for this design. It incorporates the [researcher note supplied on 14 November](researcher-note-2026-11-14.md) and the [completed second-round evidence](second-round-findings.md).
 
 ## What the completed panel establishes
 
