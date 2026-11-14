@@ -34,6 +34,8 @@ export type Settings = {
   lateFee: number
   /** Minutes after posting when a gig that no driver took goes to `sitFee` times the full fee; 0 for never. */
   sitAfter: number; sitFee: number
+  /** Pair a newly won car with a car whose gig has waited at least this many minutes without a driver; 0 for never. */
+  pairOpen: number
   /** The fee, in full fees, a day and half a day before the last pickup, for a gig that no driver has taken. */
   climbDay: number; climbHalfDay: number
   /** What a route really costs against the dispatcher's estimate, for routes under 50 km, from 50 km to 100 km, and longer. */
@@ -43,7 +45,7 @@ export const defaults: Settings = {
   price: 1.42, fee: 1.05, payout: 0.85, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
   notes: true, noteSpelling: false, relist: false, openingOnly: true, adaptive: true, earlyOffers: false, safetySlack: false,
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, noteReader: true, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
-  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1,
+  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180,
   earlyClimb: true,
 }
 
@@ -52,7 +54,7 @@ export function validateSettings(value: unknown): asserts value is Partial<Setti
   for (const [key, field] of Object.entries(value)) {
     if (!(key in defaults)) throw new Error(`Unknown setting: ${key}`)
     if (typeof defaults[key as keyof Settings] === "boolean") { if (typeof field !== "boolean") throw new Error(`${key} must be boolean`); continue }
-    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait", "sitAfter"].includes(key))) throw new Error(`${key} must be a positive number`)
+    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait", "sitAfter", "pairOpen"].includes(key))) throw new Error(`${key} must be a positive number`)
     if (key === "bundleWait" && (!Number.isInteger(field) || field > 30)) throw new Error("bundleWait must be an integer from 0 to 30")
     if ((key === "margin" || key === "capacity") && field >= 1) throw new Error(`${key} must be below 1`)
     if (key === "placePrior" && field > 2) throw new Error("placePrior must be at most 2")
@@ -370,14 +372,36 @@ export class Dispatcher extends Desk {
     } else this.outbox.push(post)
   }
 
-  flushBundles(): void {
+  async flushBundles(): Promise<void> {
     if (![...this.held.values()].some(item => item.at + this.settings.bundleWait <= this.now)) return
     const items = [...this.held.entries()].filter(([id]) => this.orders.has(id))
     this.held.clear()
     const candidates = items.map(([id, item]) => ({ order: this.orders.get(id)!, post: item.post, noteSafe: this.noteRules(this.requests.get(id)).safe }))
-    const bundles = this.settings.bundlePairs ? planBundles(this.now, candidates, this.network) : []
-    const paired = new Set(bundles.flatMap(bundle => bundle.indices))
-    this.outbox.push(...bundles.map(bundle => bundle.post), ...candidates.filter((_, i) => !paired.has(i)).map(candidate => ({ ...candidate.post, schedule: this.payoutSchedule(candidate.post.schedule, true) })))
+    const fresh = candidates.length
+    // Cars whose gig has waited without a driver can ride with a newly won car, as the second car of one gig.
+    const waiting: string[] = []
+    if (this.settings.pairOpen > 0 && this.settings.bundlePairs) for (const [gigId, post] of this.posts) {
+      const order = this.orders.get(post.stops[0]!.orderId)
+      if (!order || post.stops.length !== 2 || order.legs.length !== 1 || this.booked.has(gigId) || this.urgent.has(order.id) || this.legGigs.get(order.id)?.get(0) !== gigId) continue
+      if (this.now - (this.postedAt.get(gigId) ?? this.now) < this.settings.pairOpen || this.pickupBy(order) < this.now + 360 || this.hoursFor(this.requests.get(order.id))) continue
+      if (this.outbox.some(action => "gigId" in action && action.gigId === gigId)) continue
+      candidates.push({ order, post: { ...post, schedule: this.feesFor(order, 1, false) }, noteSafe: this.noteRules(this.requests.get(order.id)).safe })
+      waiting.push(gigId)
+    }
+    const bundles = this.settings.bundlePairs ? planBundles(this.now, candidates, this.network).filter(bundle => bundle.indices.some(i => i < fresh)) : []
+    const paired = new Set<number>()
+    for (const bundle of bundles) {
+      const old = bundle.indices.filter(i => i >= fresh).map(i => waiting[i - fresh]!)
+      if (old.length) {
+        const actions: Action[] = old.map(gigId => ({ type: "withdraw", gigId }))
+        const results = await this.world.act(actions)
+        this.readResults(actions, results)
+        if (!results.every(result => result.ok)) continue
+      }
+      for (const i of bundle.indices) paired.add(i)
+      this.outbox.push(bundle.post)
+    }
+    this.outbox.push(...candidates.slice(0, fresh).filter((_, i) => !paired.has(i)).map(candidate => ({ ...candidate.post, schedule: this.payoutSchedule(candidate.post.schedule, true) })))
   }
 
   override async sendPostOf(orderId: string): Promise<void> {
@@ -485,7 +509,7 @@ export class Dispatcher extends Desk {
 
   override carry(post: PostAction, gigId: string): void {
     super.carry(post, gigId)
-    if (this.settings.relist) this.postedAt.set(gigId, this.now)
+    this.postedAt.set(gigId, this.now)
   }
 
   async relistOpenGigs(): Promise<void> {
@@ -505,7 +529,7 @@ export class Dispatcher extends Desk {
 
   async tick(): Promise<void> {
     if (this.resync) await this.relearnGigs()
-    this.flushBundles()
+    await this.flushBundles()
     const ready = [...this.deferred.values()].filter(request => request.respondBy <= this.now + 5)
       .sort((a, b) => this.auctionValue(b) - this.auctionValue(a) || a.id.localeCompare(b.id))
     for (const request of ready) {
@@ -579,6 +603,7 @@ export class Dispatcher extends Desk {
         this.legGigs.set(stop.orderId, (this.legGigs.get(stop.orderId) ?? new Map()).set(stop.leg, gig.id))
       }
       this.posts.set(gig.id, { type: "post", stops: gig.stops, audience: gig.audience, schedule: gig.schedule })
+      this.postedAt.set(gig.id, gig.postedAt)
       console.error(JSON.stringify({ at: this.now, relearned: gig.id, orders: [...new Set(gig.stops.map(stop => stop.orderId))] }))
     }
   }

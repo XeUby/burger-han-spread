@@ -39,5 +39,8 @@
   "climbHalfDay": 1.25,
   "shortCost": 1,
   "middleCost": 1,
-  "longCost": 1
+  "longCost": 1,
+  "sitAfter": 0,
+  "sitFee": 1,
+  "pairOpen": 180
 }
