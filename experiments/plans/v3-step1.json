@@ -1,0 +1,242 @@
+[
+ {
+  "label": "v3-trade",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "tradeIns": true
+  }
+ },
+ {
+  "label": "v3-trade-private",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true
+  }
+ },
+ {
+  "label": "v3-trade",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "tradeIns": true
+  }
+ },
+ {
+  "label": "v3-trade-private",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true
+  }
+ },
+ {
+  "label": "v3-trade",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "tradeIns": true
+  }
+ },
+ {
+  "label": "v3-trade-private",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true
+  }
+ },
+ {
+  "label": "v3-trade",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "tradeIns": true
+  }
+ },
+ {
+  "label": "v3-trade-private",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true
+  }
+ },
+ {
+  "label": "v3-trade",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "tradeIns": true
+  }
+ },
+ {
+  "label": "v3-trade-private",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true
+  }
+ },
+ {
+  "label": "v3-trade",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "tradeIns": true
+  }
+ },
+ {
+  "label": "v3-trade-private",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true
+  }
+ },
+ {
+  "label": "v3-trade",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "tradeIns": true
+  }
+ },
+ {
+  "label": "v3-trade-private",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true
+  }
+ },
+ {
+  "label": "v3-trade",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "tradeIns": true
+  }
+ },
+ {
+  "label": "v3-trade-private",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true
+  }
+ },
+ {
+  "label": "v3-trade",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "tradeIns": true
+  }
+ },
+ {
+  "label": "v3-trade-private",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true
+  }
+ },
+ {
+  "label": "v3-trade",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "tradeIns": true
+  }
+ },
+ {
+  "label": "v3-trade-private",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true
+  }
+ },
+ {
+  "label": "v3-trade",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "tradeIns": true
+  }
+ },
+ {
+  "label": "v3-trade-private",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true
+  }
+ },
+ {
+  "label": "v3-trade",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "tradeIns": true
+  }
+ },
+ {
+  "label": "v3-trade-private",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true
+  }
+ },
+ {
+  "label": "v3-trade",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "tradeIns": true
+  }
+ },
+ {
+  "label": "v3-trade-private",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true
+  }
+ },
+ {
+  "label": "v3-trade",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "tradeIns": true
+  }
+ },
+ {
+  "label": "v3-trade-private",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true
+  }
+ },
+ {
+  "label": "v3-trade",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "tradeIns": true
+  }
+ },
+ {
+  "label": "v3-trade-private",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true
+  }
+ },
+ {
+  "label": "v3-trade",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "tradeIns": true
+  }
+ },
+ {
+  "label": "v3-trade-private",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "tradeIns": true,
+   "allowPrivate": true
+  }
+ }
+]
