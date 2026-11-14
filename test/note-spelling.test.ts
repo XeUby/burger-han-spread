@@ -31,8 +31,8 @@ test("the opt-in policy uses the same corrected note for admission, planning and
   const request: PriceRequest = { id: "r", dealerId: "d", batchId: null, arrivedAt: 500, respondBy: 515, note: note("Manual gearbox. No plates. Papres in the glovebox"), referenceFeeCents: 2000, legs: [{ car: { premium: false, electric: false, chargePercent: null }, pickup: stop, delivery: { ...stop, placeId: "b" } }], options: [{ kind: "next_day", deadline: 2640, listPriceCents: 8000 }] }
   const map = { places: [], roads: [{ from: "a", to: "a", km: 12, minutes: 25 }, { from: "a", to: "b", km: 100, minutes: 90 }] }
   const drivers = Array.from({ length: 40 }, (_, i) => ({ id: `d${i}`, homePlaceId: "a", rating: 4.9, completedGigs: 100, licence: "manual" as const, drops: 0 }))
-  const off = new Dispatcher({} as World, 8, 500, map, drivers)
-  const on = new Dispatcher({} as World, 8, 500, map, drivers, { noteSpelling: true, bundleWait: 0 })
+  const off = new Dispatcher({} as World, 8, 500, map, drivers, { noteReader: false })
+  const on = new Dispatcher({} as World, 8, 500, map, drivers, { noteSpelling: true, noteReader: false, bundleWait: 0 })
   off.quote(request)
   on.quote(request)
   assert.equal(off.pending.has(request.id), false)

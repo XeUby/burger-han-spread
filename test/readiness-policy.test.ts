@@ -21,7 +21,7 @@ function request(id = "R00059"): PriceRequest {
     options: [{ kind: "same_day", deadline: 1200, listPriceCents: 10000 }, { kind: "next_day", deadline: 2640, listPriceCents: 9000 }],
   }
 }
-const desk = (enabled = true) => new Dispatcher({} as World, 8, 648, map, drivers, { readiness: enabled, adaptive: false, bundleWait: 0, backlog: 0.04 })
+const desk = (enabled = true) => new Dispatcher({} as World, 8, 648, map, drivers, { readiness: enabled, noteReader: false, adaptive: false, bundleWait: 0, backlog: 0.04 })
 function won(r: PriceRequest): Order {
   return { id: r.id, dealerId: r.dealerId, option: "same_day", priceCents: 14200, deadline: 2640, legs: r.legs, status: "waiting", deliveredAt: [null], lastPickupAt: 2539 }
 }
@@ -107,7 +107,7 @@ test("pure readiness equipment affects eligible supply and place priors stay opt
   const r = request()
   r.note!.text += ". Manual gearbox."
   const mixed = drivers.map((driver, i) => ({ ...driver, licence: i < 10 ? "manual" as const : "automatic_only" as const }))
-  const d = new Dispatcher({} as World, 8, 648, map, mixed, { readiness: true, minDrivers: 12 })
+  const d = new Dispatcher({} as World, 8, 648, map, mixed, { readiness: true, noteReader: false, minDrivers: 12 })
   assert.equal(d.supply(r), 10)
   d.quote(r)
   assert.equal(d.pending.size, 0)

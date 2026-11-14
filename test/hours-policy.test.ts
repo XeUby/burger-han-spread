@@ -20,7 +20,7 @@ function request(id = "R1"): PriceRequest {
     options: [{ kind: "same_day", deadline: 1200, listPriceCents: 10000 }, { kind: "next_day", deadline: 2640, listPriceCents: 9000 }],
   }
 }
-const desk = (enabled = true) => new Dispatcher({} as World, 8, 600, map, drivers, { timedNotes: enabled, adaptive: false, bundleWait: 0 })
+const desk = (enabled = true) => new Dispatcher({} as World, 8, 600, map, drivers, { timedNotes: enabled, noteReader: false, adaptive: false, bundleWait: 0 })
 const won = (r: PriceRequest, deadline = 2640): Order => ({ id: r.id, dealerId: r.dealerId, option: "next_day", priceCents: 14200, deadline, legs: structuredClone(r.legs), status: "waiting", deliveredAt: [null], lastPickupAt: deadline - 150 })
 const nextPost = (d: Dispatcher): PostAction => {
   const action = d.outbox.shift()!

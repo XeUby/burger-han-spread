@@ -276,7 +276,7 @@ const phrases: [Kind, string[]][] = [
     `manuell,? inte automat`, `manuell vaxellada`, `manuellt vaxlad`, `obs manuell`,
   ]],
   ["plates", [
-    `car has no plates,? bring trade plates`, `plates removed,? bring trade plates`, `unregistered,? needs trade plates`, `no plates,? bring transfer plates`, `car has no plates`,
+    `car has no plates,? bring trade plates`, `plates removed,? bring trade plates`, `unregistered,? needs trade plates`, `no plates,? bring transfer plates`, `car has no plates`, `no plates`,
     `kilvet puuttuu,? tuo siirtokilvet`, `kilvet poistettu,? ota koekilvet`, `poistettu rekisterista,? tarvitaan siirtokilvet`, `ei rekkareita,? koekilvet tarvitaan`, `ei kilpia,? siirtokilvet mukaan`, `rekisterikilvet irrotettu`, `auto ilman kilpia`,
     `skyltarna borttagna,? ta med provskyltar`, `saknar skyltar,? ta med provskyltar`, `saknar skyltar`, `inga skyltar pa bilen`,
   ]],

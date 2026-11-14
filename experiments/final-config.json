@@ -31,5 +31,13 @@
   "trustStep": 0.01,
   "sameDayBacklog": 4,
   "demandSlope": 14,
-  "earlyClimb": true
+  "earlyClimb": true,
+  "noteReader": true,
+  "lateRepost": true,
+  "lateFee": 1,
+  "climbDay": 1.1,
+  "climbHalfDay": 1.25,
+  "shortCost": 1,
+  "middleCost": 1,
+  "longCost": 1
 }

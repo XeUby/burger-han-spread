@@ -9,7 +9,7 @@ const stop = { placeId: "a", privateAddress: false, hours: null, window: { from:
 const request: PriceRequest = { id: "r", dealerId: "d", batchId: null, arrivedAt: 480, respondBy: 495, note: null, referenceFeeCents: 4000, legs: [{ car: { premium: false, electric: false, chargePercent: null }, pickup: stop, delivery: { ...stop, placeId: "b" } }], options: [{ kind: "same_day", deadline: 1200, listPriceCents: 8000 }] }
 const order: Order = { id: "r", dealerId: "d", option: "same_day", priceCents: 10000, deadline: 1200, lastPickupAt: 1000, legs: request.legs, status: "waiting", deliveredAt: [null] }
 function desk(enabled = true) {
-  const d = new Dispatcher({} as World, 8, 1001, { places: [], roads: [{ from: "a", to: "b", km: 200, minutes: 180 }] }, [], { lateRescue: enabled })
+  const d = new Dispatcher({} as World, 8, 1001, { places: [], roads: [{ from: "a", to: "b", km: 200, minutes: 180 }] }, [], { lateRescue: enabled, lateRepost: false, lateFee: 1.2 })
   d.requests.set(order.id, request)
   d.orders.set(order.id, structuredClone(order))
   d.urgent.add(order.id)
