@@ -28,6 +28,8 @@ export type Settings = {
   sameDayPremium: number; laterDiscount: number; placePrior: number; bundleWait: number
   backlog: number; priceFloor: number; costRatio: number; trustStep: number; sameDayBacklog: number; demandSlope: number
   earlyClimb: boolean
+  /** Post a gig again as soon as its last pickup time has passed, so a driver can take the late car for the next day. */
+  lateRepost: boolean
   /** The fee, in full fees, a day and half a day before the last pickup, for a gig that no driver has taken. */
   climbDay: number; climbHalfDay: number
   /** What a route really costs against the dispatcher's estimate, for routes under 50 km, from 50 km to 100 km, and longer. */
@@ -37,7 +39,7 @@ export const defaults: Settings = {
   price: 1.42, fee: 1.05, payout: 0.85, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
   notes: true, noteSpelling: false, relist: false, openingOnly: true, adaptive: true, earlyOffers: false, safetySlack: false,
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, noteReader: false, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
-  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.2, climbHalfDay: 1.45,
+  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.2, climbHalfDay: 1.45, lateRepost: false,
   earlyClimb: true,
 }
 
@@ -514,6 +516,7 @@ export class Dispatcher extends Desk {
         if (resetLate || this.now >= this.pickupBy(order) - 240 && (this.raised.get(gigId) ?? -Infinity) < this.now - 60) {
           if (resetLate) this.lateResets.set(gigId, order.lastPickupAt)
           this.raised.set(gigId, this.now)
+          if (resetLate && this.settings.lateRepost && !this.hoursFor(this.requests.get(order.id)) && await this.repostLate(order, gigId)) continue
           await this.raise(order.id)
           if (this.level >= 3) this.offer(gigId, order)
         }
@@ -526,6 +529,15 @@ export class Dispatcher extends Desk {
       if (posts.length) this.readResults(posts, await this.world.act(posts))
       this.homeOffers()
     }
+  }
+
+  /** A gig keeps the windows it was posted with, and after the last pickup time no driver can meet them.
+   * Posted again, its stops run to the end of the world, and a driver can take the car for the next day. */
+  async repostLate(order: Order, gigId: string): Promise<boolean> {
+    const post = this.posts.get(gigId)
+    if (!post || !await this.withdraw(order.id)) return false
+    this.outbox.push({ ...post, stops: post.stops.map(stop => ({ ...stop, window: undefined })), schedule: this.feesFor(order, 1) })
+    return true
   }
 
   offer(gigId: string, order: Order, limit = 3): void {
