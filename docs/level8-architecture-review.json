@@ -163,7 +163,8 @@
     "runner": "research/runner: shared creation lock, eight-world cap, ranked per-level serialization, cancellation, full case journal and mutation deadline. Ten tests including fake HTTP server adapter. Actual unranked launch retained all eight ablation cases including four network failures.",
     "ablation": "experiments/bundle-payment-ablation-v1.json: eight new cases plus eight archived references on four familiar blocks. Four control-low weeks complete; four portfolio-high worlds failed on HTTP502 and were administratively closed after preserving partial state. No failed case replaced.",
     "ablationDiagnostic": "Portfolio low-high +1025.405euros/week (paired-t95[-42.92,2093.73]); portfolio-control at high +611.235[-403.36,1625.83], at low +1767.385[-288.78,3823.55]. Control low-high -130.745[-2007.07,1745.58]. Interaction+1156.15[-1589.46,3901.76]. Payment convention contributes materially on these blocks but is not a portable control improvement; whole-package contrast does not isolate the optimizer. Retain candidate, proceed to coverage/intervention stage, no promotion.",
-    "ablationFollowup": "bundle-payment-followup-v1: exact unchanged portfolio/high freeze completed4/4, all qualified, zero undelivered/failed visits/fines/action errors/recoveries. Observed event prefixes exactly reproduce all four interrupted attempts. Original panel remains incomplete, total20attempts across four seed blocks,16whole-policy outcomes plus4retained failures."
+    "ablationFollowup": "bundle-payment-followup-v1: exact unchanged portfolio/high freeze completed4/4, all qualified, zero undelivered/failed visits/fines/action errors/recoveries. Observed event prefixes exactly reproduce all four interrupted attempts. Original panel remains incomplete, total20attempts across four seed blocks,16whole-policy outcomes plus4retained failures.",
+    "coverage": "coverage-development-v2:8/8 complete and qualified, mean10874.72375euros, paired loss482.6575 versus archived candidate.192 acquisition assignments,30wins;320 randomized direct-post openings,263 booked within120. Batch interception gap left2097offers unrandomized;protocolConformant=false. H3 unsupported, H2 direct-only. Corrected source hook and10policy/7report tests; correction not deployed. No replacement or promotion."
   },
   "revisedSequence": [
     {
@@ -174,7 +175,8 @@
     {
       "priority": 2,
       "work": "Bounded randomized acquisition/payment/offer coverage across eight predeclared development weeks; log exact probabilities, unsupported work and censoring. Freeze weekly escalation regimes separately from post-level interventions.",
-      "maximumNewWorlds": 8
+      "maximumNewWorlds": 8,
+      "status": "Eight worlds executed under prospective identification plan. Preserve protocol deviation and inspect restricted data before model fitting; offer intervention requires separate corrected freeze. Current candidate retained."
     },
     {
       "priority": 3,

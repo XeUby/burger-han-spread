@@ -1,0 +1,1043 @@
+{
+  "scope": "Randomized development coverage; eight familiar underlying weeks. No economic-model validation, architecture validation, promotion or rank claim.",
+  "terminal": true,
+  "completed": 8,
+  "expected": 8,
+  "records": [
+    {
+      "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+      "label": "coverage-development-v2-1",
+      "level": 8,
+      "delay": 60,
+      "status": "complete",
+      "worldId": "w5df35efe5742cd286daf",
+      "runtimeFailures": [],
+      "artifactHashes": {
+        "meta": "a48515b99f937a6ce3ee6a199c8ddf229846cfdf3a3270ada7cee2d0e4b19495",
+        "events": "ceca897f3f208baa1195699a9d232ec74a002b094a2a97f61248da0a152ad301",
+        "decisions": "a1b73495d0d8f757f40cdf89890a2b42658bb7ecb177f59c746246b12b4357f7",
+        "errors": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recoveries": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "score": "89d6e6ac2fd38670be6c4b7712dc979898a19921f09dc8900623d93529d6caa2",
+        "snapshot": "8755c541339fc4d5b5c83def7e67a5a67900cdc1b6b593e28348c5bcc32e3b1f"
+      },
+      "funnel": {
+        "unsupported_or_insufficient_slack": 307,
+        "incumbent_candidate": 617,
+        "eligible_exploration": 24,
+        "assignment_budget": 81,
+        "exposure_limit": 9
+      },
+      "assignments": {
+        "acquisition_randomized": 24,
+        "opening_randomized": 40
+      },
+      "observedOfferActions": 468,
+      "observedOfferAnswers": 468,
+      "score": {
+        "marginCents": 1244184,
+        "revenueCents": 3609038,
+        "wonOrders": 318,
+        "onTimeOrders": 300,
+        "onTimeShare": 0.9433962264150944,
+        "undeliveredOrders": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 3609038,
+        "driver_fee": -2267648,
+        "release_fee": -1337,
+        "late_refund": -95869
+      },
+      "failedVisits": 0,
+      "actionErrors": [],
+      "recoveries": [],
+      "mechanisms": {
+        "acquisition_funnel": 1038,
+        "portfolio_solve": 1272,
+        "action_result": 2432,
+        "portfolio_action": 1257,
+        "acquisition_randomized": 24,
+        "opening_randomized": 40,
+        "post": 302,
+        "portfolio_withdraw": 15,
+        "portfolio_overflow": 12
+      },
+      "unallocatedLedgerCents": -533737,
+      "referenceWorld": "w59b538e829103da34e81",
+      "profitDifferenceEuros": 124.81
+    },
+    {
+      "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+      "label": "coverage-development-v2-2",
+      "level": 8,
+      "delay": 0,
+      "status": "complete",
+      "worldId": "wd820ad4cebadb01283c0",
+      "runtimeFailures": [],
+      "artifactHashes": {
+        "meta": "cae03fc41a6c71e6b83ac5cde0b7d0d2465e7e4e2b5f3aeac8fd2ff4e99b246a",
+        "events": "10fc4b8265d6f134940d7e6fd2d9dc0c2a8698d699f0f9664bb6f8cd78c13382",
+        "decisions": "1aea4b02470a0ba27e61ae4c95b9bd1a89020ee0cec9f93ffaefd913894c9642",
+        "errors": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recoveries": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "score": "837462d05db6902196d5a5e79f5cceb3275b248e7e3b7760af2ccaaeaee2e3d3",
+        "snapshot": "acd73c3a6867bbda86b483bbb0cd20cbe75d4980d542a160ee81817e52b00573"
+      },
+      "funnel": {
+        "incumbent_candidate": 591,
+        "unsupported_or_insufficient_slack": 318,
+        "eligible_exploration": 24,
+        "exposure_limit": 1,
+        "assignment_budget": 97
+      },
+      "assignments": {
+        "opening_randomized": 40,
+        "acquisition_randomized": 24
+      },
+      "observedOfferActions": 138,
+      "observedOfferAnswers": 138,
+      "score": {
+        "marginCents": 1682021,
+        "revenueCents": 4049107,
+        "wonOrders": 370,
+        "onTimeOrders": 360,
+        "onTimeShare": 0.972972972972973,
+        "undeliveredOrders": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 4049107,
+        "driver_fee": -2319730,
+        "late_refund": -40880,
+        "release_fee": -6476
+      },
+      "failedVisits": 0,
+      "actionErrors": [],
+      "recoveries": [],
+      "mechanisms": {
+        "acquisition_funnel": 1031,
+        "portfolio_solve": 1286,
+        "action_result": 2033,
+        "portfolio_action": 1271,
+        "portfolio_overflow": 43,
+        "opening_randomized": 40,
+        "post": 339,
+        "acquisition_randomized": 24,
+        "portfolio_withdraw": 15
+      },
+      "unallocatedLedgerCents": -545580,
+      "referenceWorld": "wcec3ccd3a02b20ed13a9",
+      "profitDifferenceEuros": 425.98
+    },
+    {
+      "seed": "level8-estimate-b87f6821707b892a55d34716",
+      "label": "coverage-development-v2-3",
+      "level": 8,
+      "delay": 0,
+      "status": "complete",
+      "worldId": "w46870f3259ec08d9c079",
+      "runtimeFailures": [],
+      "artifactHashes": {
+        "meta": "f6b9253ff9dd2be42f42c36d96261d2289b9e4f99192fa16166e28c9ea26be0b",
+        "events": "c9ffa96703cc52e56dc5e12fd458403e9b4a6fb0c8e81a750bb512bf53f6cbc5",
+        "decisions": "4d448595201ec025bcf8066361e114d56d0fc1c3cb2e59efe85b4fc738626cba",
+        "errors": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recoveries": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "score": "c905920576d7d99d93fc4cb24e994a5d3160afb1c3f5bd972576005a9f7c2346",
+        "snapshot": "32990c66d5617d64ff4ae0ea1a2808eac596fb942c93641d38256c9b8dafac08"
+      },
+      "funnel": {
+        "incumbent_candidate": 609,
+        "unsupported_or_insufficient_slack": 316,
+        "eligible_exploration": 24,
+        "exposure_limit": 6,
+        "assignment_budget": 75
+      },
+      "assignments": {
+        "opening_randomized": 40,
+        "acquisition_randomized": 24
+      },
+      "observedOfferActions": 42,
+      "observedOfferAnswers": 42,
+      "score": {
+        "marginCents": 934967,
+        "revenueCents": 2358028,
+        "wonOrders": 258,
+        "onTimeOrders": 253,
+        "onTimeShare": 0.9806201550387597,
+        "undeliveredOrders": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2358028,
+        "driver_fee": -1405591,
+        "release_fee": -3107,
+        "late_refund": -14363
+      },
+      "failedVisits": 0,
+      "actionErrors": [],
+      "recoveries": [],
+      "mechanisms": {
+        "acquisition_funnel": 1030,
+        "portfolio_solve": 1206,
+        "action_result": 1709,
+        "portfolio_action": 1203,
+        "opening_randomized": 40,
+        "post": 221,
+        "acquisition_randomized": 24,
+        "portfolio_withdraw": 3,
+        "portfolio_overflow": 7
+      },
+      "unallocatedLedgerCents": -318354,
+      "referenceWorld": "w5f0e575885726f779d25",
+      "profitDifferenceEuros": -229.65
+    },
+    {
+      "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+      "label": "coverage-development-v2-4",
+      "level": 8,
+      "delay": 0,
+      "status": "complete",
+      "worldId": "w658a1378b2ad0a8c7eae",
+      "runtimeFailures": [],
+      "artifactHashes": {
+        "meta": "a518b07a93ffd17a5d2603d23be08f06c3801856a80d5ff0d46510ef28e13c08",
+        "events": "cb3afcf0daf993d8b0c4a3d8362a5488d3065e0ef49f2845e923ac2640d20ea9",
+        "decisions": "b472a4a1f2374350e6e69a19d6cd2af882fb58304d0bc5d157b0812e36d8cc01",
+        "errors": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recoveries": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "score": "4cf98aee2a4c98acbcac575637b1a13d488f707b08dfc69013b12dfd5b21e244",
+        "snapshot": "00ba7e57e4ad775f8d359a35b50ffe3ae8ffc7ba51e73dda7feee982799c1334"
+      },
+      "funnel": {
+        "unsupported_or_insufficient_slack": 309,
+        "incumbent_candidate": 563,
+        "eligible_exploration": 24,
+        "assignment_budget": 134,
+        "exposure_limit": 4
+      },
+      "assignments": {
+        "acquisition_randomized": 24,
+        "opening_randomized": 40
+      },
+      "observedOfferActions": 222,
+      "observedOfferAnswers": 222,
+      "score": {
+        "marginCents": 920207,
+        "revenueCents": 2509174,
+        "wonOrders": 281,
+        "onTimeOrders": 273,
+        "onTimeShare": 0.9715302491103203,
+        "undeliveredOrders": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2509174,
+        "driver_fee": -1537887,
+        "late_refund": -51080
+      },
+      "failedVisits": 0,
+      "actionErrors": [],
+      "recoveries": [],
+      "mechanisms": {
+        "acquisition_funnel": 1034,
+        "portfolio_solve": 1226,
+        "action_result": 1989,
+        "portfolio_action": 1211,
+        "acquisition_randomized": 24,
+        "opening_randomized": 40,
+        "post": 243,
+        "portfolio_withdraw": 15,
+        "portfolio_overflow": 21
+      },
+      "unallocatedLedgerCents": -474027,
+      "referenceWorld": "w68739c55fea234f8b7d3",
+      "profitDifferenceEuros": 424.72
+    },
+    {
+      "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+      "label": "coverage-development-v2-5",
+      "level": 8,
+      "delay": 60,
+      "status": "complete",
+      "worldId": "w1006906b294a00137a7c",
+      "runtimeFailures": [],
+      "artifactHashes": {
+        "meta": "79f2208350996e7baba7ea6a2de28687a2e7c96afab4f074eaae02745c4e853e",
+        "events": "78dcd0fdeb605cce06439c2ae5ca7e5e3bfe5ea55f663ffaec2782917a490ec9",
+        "decisions": "b1105b33f6e6b32ab61639141ca0c2fa62c0ef41b99909b5f34ffee5e19ab860",
+        "errors": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recoveries": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "score": "627b966a0ed91260e52f32f1bfcfe65f7e7fc64e5934ddf91dd1e44316548653",
+        "snapshot": "8166f837100b4b608f842c0cfc53333be96939dcf902a9d0ef7067a0b674c590"
+      },
+      "funnel": {
+        "incumbent_candidate": 583,
+        "eligible_exploration": 24,
+        "exposure_limit": 5,
+        "unsupported_or_insufficient_slack": 306,
+        "assignment_budget": 118
+      },
+      "assignments": {
+        "acquisition_randomized": 24,
+        "opening_randomized": 40
+      },
+      "observedOfferActions": 549,
+      "observedOfferAnswers": 549,
+      "score": {
+        "marginCents": 1181054,
+        "revenueCents": 3337489,
+        "wonOrders": 337,
+        "onTimeOrders": 317,
+        "onTimeShare": 0.9406528189910979,
+        "undeliveredOrders": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 3337489,
+        "driver_fee": -2059093,
+        "late_refund": -96492,
+        "release_fee": -850
+      },
+      "failedVisits": 0,
+      "actionErrors": [],
+      "recoveries": [],
+      "mechanisms": {
+        "acquisition_funnel": 1036,
+        "portfolio_solve": 1275,
+        "action_result": 2560,
+        "portfolio_action": 1253,
+        "acquisition_randomized": 24,
+        "opening_randomized": 40,
+        "post": 312,
+        "portfolio_overflow": 30,
+        "portfolio_withdraw": 22,
+        "stale_skipped": 2
+      },
+      "unallocatedLedgerCents": -707371,
+      "referenceWorld": "wef657bf51113144113f2",
+      "profitDifferenceEuros": -1902.57
+    },
+    {
+      "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+      "label": "coverage-development-v2-6",
+      "level": 8,
+      "delay": 60,
+      "status": "complete",
+      "worldId": "w57a87111e7f8c70f7ff2",
+      "runtimeFailures": [],
+      "artifactHashes": {
+        "meta": "339876a33d7448e8accf3c4dd93b8ec810bf2119d5796704f637b4d42bf904c3",
+        "events": "3dfc1fa8ac4516fc91982da31774c0e7a373f840ec0677fc0918c3a2c2b4f81f",
+        "decisions": "c1ef47bb7c75a4e587ed46981dbb5de34ef0e0c19d1cb639ad8c195837e0743b",
+        "errors": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recoveries": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "score": "c9f16c5b79f41d6c45654bc92ef99479cac51ef375787201ce50f9702785d9f5",
+        "snapshot": "bd32bf53e2704f501a9f6553ce35e59a298a213bdb817f7edc1cd0627caaf437"
+      },
+      "funnel": {
+        "incumbent_candidate": 610,
+        "unsupported_or_insufficient_slack": 326,
+        "eligible_exploration": 24,
+        "assignment_budget": 77
+      },
+      "assignments": {
+        "acquisition_randomized": 24,
+        "opening_randomized": 40
+      },
+      "observedOfferActions": 432,
+      "observedOfferAnswers": 432,
+      "score": {
+        "marginCents": 968150,
+        "revenueCents": 3172805,
+        "wonOrders": 312,
+        "onTimeOrders": 297,
+        "onTimeShare": 0.9519230769230769,
+        "undeliveredOrders": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 3172805,
+        "driver_fee": -2101203,
+        "release_fee": -4326,
+        "late_refund": -99126
+      },
+      "failedVisits": 0,
+      "actionErrors": [],
+      "recoveries": [],
+      "mechanisms": {
+        "acquisition_funnel": 1037,
+        "portfolio_solve": 1265,
+        "action_result": 2410,
+        "portfolio_action": 1246,
+        "acquisition_randomized": 24,
+        "opening_randomized": 40,
+        "post": 296,
+        "portfolio_overflow": 14,
+        "portfolio_baseline_expired": 10,
+        "portfolio_withdraw": 19,
+        "stale_skipped": 1
+      },
+      "unallocatedLedgerCents": -523504,
+      "referenceWorld": "w56e86c0c852e4e944201",
+      "profitDifferenceEuros": -1621.25
+    },
+    {
+      "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+      "label": "coverage-development-v2-7",
+      "level": 8,
+      "delay": 0,
+      "status": "complete",
+      "worldId": "wc646ec655db115b7184c",
+      "runtimeFailures": [],
+      "artifactHashes": {
+        "meta": "b3d443ced89f390fbf4f2e91f6f6a2d8a983000a92dc4cf2ee1342dfa3928308",
+        "events": "6fc26e8713e9a1a94410e4703de383e0395644fc1d4fd2ac2e2bebf90973fb3e",
+        "decisions": "8090f88fc9a3d4cb5b918c84f26a2c7a45bba57acafda0a25848a3733cf79de2",
+        "errors": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recoveries": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "score": "48670053f1daa663469a0009134aaba008dd1f2f4a2369a7287b2581c021209d",
+        "snapshot": "c78c127dca8e4cb13f2145adba5cb64ad1a1303249e3bde849fdabc4c78bd8eb"
+      },
+      "funnel": {
+        "unsupported_or_insufficient_slack": 303,
+        "incumbent_candidate": 656,
+        "eligible_exploration": 24,
+        "exposure_limit": 2,
+        "assignment_budget": 48
+      },
+      "assignments": {
+        "acquisition_randomized": 24,
+        "opening_randomized": 40
+      },
+      "observedOfferActions": 15,
+      "observedOfferAnswers": 15,
+      "score": {
+        "marginCents": 951164,
+        "revenueCents": 2421895,
+        "wonOrders": 234,
+        "onTimeOrders": 231,
+        "onTimeShare": 0.9871794871794872,
+        "undeliveredOrders": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2421895,
+        "driver_fee": -1462587,
+        "release_fee": -1748,
+        "late_refund": -6396
+      },
+      "failedVisits": 0,
+      "actionErrors": [],
+      "recoveries": [],
+      "mechanisms": {
+        "acquisition_funnel": 1033,
+        "portfolio_solve": 1198,
+        "action_result": 1668,
+        "portfolio_action": 1193,
+        "acquisition_randomized": 24,
+        "opening_randomized": 40,
+        "post": 202,
+        "portfolio_withdraw": 5,
+        "portfolio_overflow": 7
+      },
+      "unallocatedLedgerCents": -388247,
+      "referenceWorld": "we50f015c9133beb203b5",
+      "profitDifferenceEuros": -48.25
+    },
+    {
+      "seed": "level8-estimate-4421e0179044aca015374bc1",
+      "label": "coverage-development-v2-8",
+      "level": 8,
+      "delay": 60,
+      "status": "complete",
+      "worldId": "wf6b5a0c39ea1134a8da9",
+      "runtimeFailures": [],
+      "artifactHashes": {
+        "meta": "1a2ca364d541779bc94f6221d969ba0dabeb6ff090dbdb735ed37708dcd1b9cc",
+        "events": "8a72e619348edc24f5f24430b0dc80fc7d6e47c3b0ebf3f2db10e898cb01819b",
+        "decisions": "05ee2749db44638143e6b3518d6add825de5ece4f31a3901156906d99d71032c",
+        "errors": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recoveries": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "score": "1775cf3b1358af08b92fd46d5cd613419210566e820b7e6ba56b7abdf6ba47e6",
+        "snapshot": "0fc42764b6e55eb0aca5c9c5ef7d540dbb2e9610a673a079618ca74f2e54b048"
+      },
+      "funnel": {
+        "incumbent_candidate": 602,
+        "unsupported_or_insufficient_slack": 317,
+        "eligible_exploration": 24,
+        "assignment_budget": 79,
+        "exposure_limit": 8
+      },
+      "assignments": {
+        "opening_randomized": 40,
+        "acquisition_randomized": 24
+      },
+      "observedOfferActions": 231,
+      "observedOfferAnswers": 231,
+      "score": {
+        "marginCents": 818032,
+        "revenueCents": 2415169,
+        "wonOrders": 268,
+        "onTimeOrders": 258,
+        "onTimeShare": 0.9626865671641791,
+        "undeliveredOrders": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 2415169,
+        "driver_fee": -1533002,
+        "release_fee": -8242,
+        "late_refund": -55893
+      },
+      "failedVisits": 0,
+      "actionErrors": [],
+      "recoveries": [],
+      "mechanisms": {
+        "acquisition_funnel": 1030,
+        "portfolio_solve": 1213,
+        "action_result": 2027,
+        "portfolio_action": 1199,
+        "opening_randomized": 40,
+        "post": 233,
+        "acquisition_randomized": 24,
+        "portfolio_withdraw": 14,
+        "portfolio_overflow": 13
+      },
+      "unallocatedLedgerCents": -512520,
+      "referenceWorld": "wc3af93a033080246cb56",
+      "profitDifferenceEuros": -1035.05
+    }
+  ],
+  "summary": {
+    "weeks": 8,
+    "meanProfitEuros": 10874.72375,
+    "qualified": 8,
+    "qualificationLower95": 0.6876560219336321,
+    "meanOrders": 297.25,
+    "aggregateOnTime": 0.9625735912531539,
+    "minimumOnTime": 0.9406528189910979,
+    "meanDriverPaymentsEuros": 18358.42625,
+    "meanRefundsEuros": 575.12375,
+    "undelivered": 0,
+    "failedVisits": 0,
+    "actionErrors": 0,
+    "recoveries": 0,
+    "finesEuros": 0.0,
+    "mechanisms": {
+      "acquisition_funnel": 8269,
+      "portfolio_solve": 9941,
+      "action_result": 16828,
+      "portfolio_action": 9833,
+      "acquisition_randomized": 192,
+      "opening_randomized": 320,
+      "post": 2148,
+      "portfolio_withdraw": 108,
+      "portfolio_overflow": 147,
+      "stale_skipped": 3,
+      "portfolio_baseline_expired": 10
+    }
+  },
+  "support": {
+    "acquisition_randomized": {
+      "arms": {
+        "decline": {
+          "assigned": 79,
+          "weeks": 8,
+          "observed": 79
+        },
+        "quote_125": {
+          "assigned": 67,
+          "weeks": 8,
+          "observed": 67
+        },
+        "quote_150": {
+          "assigned": 46,
+          "weeks": 8,
+          "observed": 46
+        }
+      },
+      "relevantEvents": 30,
+      "minimumSupportPassed": true,
+      "modelDecision": "Eligible for held-out development model checks; not validated",
+      "contributionIncompleteAssignments": 5,
+      "scope": "Minimum support covers acquisition response, not a complete cost or capacity-value model. Shared unattributed costs and displaced work prevent interpreting attributed request contribution as incremental policy profit."
+    },
+    "opening_randomized": {
+      "arms": {
+        "0.92": {
+          "assigned": 112,
+          "weeks": 8,
+          "observed": 112
+        },
+        "1": {
+          "assigned": 117,
+          "weeks": 8,
+          "observed": 117
+        },
+        "1.08": {
+          "assigned": 91,
+          "weeks": 8,
+          "observed": 91
+        }
+      },
+      "relevantEvents": 263,
+      "minimumSupportPassed": true,
+      "modelDecision": "Eligible for held-out development model checks; not validated",
+      "scope": "Randomized direct-action posts only; batched post interception was missing. Assess this restricted support before modeling."
+    },
+    "offer_randomized": {
+      "arms": {
+        "1": {
+          "assigned": 0,
+          "weeks": 0,
+          "observed": 0
+        },
+        "1.08": {
+          "assigned": 0,
+          "weeks": 0,
+          "observed": 0
+        }
+      },
+      "relevantEvents": 0,
+      "minimumSupportPassed": false,
+      "modelDecision": "Instrumentation failure: no randomized offer evidence despite actual offers. A separately frozen corrected study is required."
+    }
+  },
+  "assignmentContrasts": {
+    "acquisition_randomized": {
+      "metric": "attributedContributionEuros",
+      "unit": "euros per eligible assignment",
+      "perWeek": [
+        {
+          "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+          "eligibleAssignments": 24,
+          "weightedScores": {
+            "decline": 0.0,
+            "quote_125": 16.05875,
+            "quote_150": 44.60875000000001
+          }
+        },
+        {
+          "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+          "eligibleAssignments": 24,
+          "weightedScores": {
+            "decline": 0.0,
+            "quote_125": -1.5324999999999995,
+            "quote_150": 11.839999999999998
+          }
+        },
+        {
+          "seed": "level8-estimate-b87f6821707b892a55d34716",
+          "eligibleAssignments": 24,
+          "weightedScores": {
+            "decline": 0.0,
+            "quote_125": 40.885000000000005,
+            "quote_150": 0.0
+          }
+        },
+        {
+          "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+          "eligibleAssignments": 24,
+          "weightedScores": {
+            "decline": 0.0,
+            "quote_125": 14.107500000000002,
+            "quote_150": 7.63375
+          }
+        },
+        {
+          "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+          "eligibleAssignments": 24,
+          "weightedScores": {
+            "decline": 0.0,
+            "quote_125": 37.60125,
+            "quote_150": 16.84
+          }
+        },
+        {
+          "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+          "eligibleAssignments": 24,
+          "weightedScores": {
+            "decline": 0.0,
+            "quote_125": 15.996250000000002,
+            "quote_150": -24.901250000000005
+          }
+        },
+        {
+          "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+          "eligibleAssignments": 24,
+          "weightedScores": {
+            "decline": 0.0,
+            "quote_125": 17.36,
+            "quote_150": 0.0
+          }
+        },
+        {
+          "seed": "level8-estimate-4421e0179044aca015374bc1",
+          "eligibleAssignments": 24,
+          "weightedScores": {
+            "decline": 0.0,
+            "quote_125": -52.035,
+            "quote_150": 29.461249999999996
+          }
+        }
+      ],
+      "contrasts": {
+        "quote_125": {
+          "versus": "decline",
+          "weeks": 8,
+          "mean": 11.055156250000001,
+          "descriptiveT95": [
+            -13.075619886086939,
+            35.18593238608694
+          ],
+          "differences": [
+            16.05875,
+            -1.5324999999999995,
+            40.885000000000005,
+            14.107500000000002,
+            37.60125,
+            15.996250000000002,
+            17.36,
+            -52.035
+          ]
+        },
+        "quote_150": {
+          "versus": "decline",
+          "weeks": 8,
+          "mean": 10.6853125,
+          "descriptiveT95": [
+            -6.755913070095522,
+            28.12653807009552
+          ],
+          "differences": [
+            44.60875000000001,
+            11.839999999999998,
+            0.0,
+            7.63375,
+            16.84,
+            -24.901250000000005,
+            0.0,
+            29.461249999999996
+          ]
+        }
+      }
+    },
+    "opening_randomized": {
+      "metric": "booking120",
+      "unit": "outcome probability per eligible assignment",
+      "perWeek": [
+        {
+          "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+          "eligibleAssignments": 40,
+          "weightedScores": {
+            "0.92": 0.675,
+            "1": 0.75,
+            "1.08": 0.825
+          }
+        },
+        {
+          "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+          "eligibleAssignments": 40,
+          "weightedScores": {
+            "0.92": 0.6,
+            "1": 1.5,
+            "1.08": 0.525
+          }
+        },
+        {
+          "seed": "level8-estimate-b87f6821707b892a55d34716",
+          "eligibleAssignments": 40,
+          "weightedScores": {
+            "0.92": 0.45,
+            "1": 1.275,
+            "1.08": 0.9
+          }
+        },
+        {
+          "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+          "eligibleAssignments": 40,
+          "weightedScores": {
+            "0.92": 0.75,
+            "1": 0.75,
+            "1.08": 0.975
+          }
+        },
+        {
+          "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+          "eligibleAssignments": 40,
+          "weightedScores": {
+            "0.92": 0.975,
+            "1": 0.6,
+            "1.08": 0.525
+          }
+        },
+        {
+          "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+          "eligibleAssignments": 40,
+          "weightedScores": {
+            "0.92": 1.05,
+            "1": 0.75,
+            "1.08": 0.9
+          }
+        },
+        {
+          "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+          "eligibleAssignments": 40,
+          "weightedScores": {
+            "0.92": 0.75,
+            "1": 1.05,
+            "1.08": 0.525
+          }
+        },
+        {
+          "seed": "level8-estimate-4421e0179044aca015374bc1",
+          "eligibleAssignments": 40,
+          "weightedScores": {
+            "0.92": 0.9,
+            "1": 0.975,
+            "1.08": 0.75
+          }
+        }
+      ],
+      "contrasts": {
+        "1": {
+          "versus": "0.92",
+          "weeks": 8,
+          "mean": 0.1875,
+          "descriptiveT95": [
+            -0.20478768144359583,
+            0.5797876814435958
+          ],
+          "differences": [
+            0.07499999999999996,
+            0.9,
+            0.825,
+            0.0,
+            -0.375,
+            -0.30000000000000004,
+            0.30000000000000004,
+            0.07499999999999996
+          ]
+        },
+        "1.08": {
+          "versus": "0.92",
+          "weeks": 8,
+          "mean": -0.028125000000000004,
+          "descriptiveT95": [
+            -0.2673261152426935,
+            0.21107611524269349
+          ],
+          "differences": [
+            0.1499999999999999,
+            -0.07499999999999996,
+            0.45,
+            0.22499999999999998,
+            -0.44999999999999996,
+            -0.15000000000000002,
+            -0.22499999999999998,
+            -0.15000000000000002
+          ]
+        }
+      }
+    },
+    "offer_randomized": {
+      "metric": "accepted",
+      "unit": "outcome probability per eligible assignment",
+      "perWeek": [
+        {
+          "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+          "eligibleAssignments": 0,
+          "weightedScores": {
+            "1": null,
+            "1.08": null
+          }
+        },
+        {
+          "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+          "eligibleAssignments": 0,
+          "weightedScores": {
+            "1": null,
+            "1.08": null
+          }
+        },
+        {
+          "seed": "level8-estimate-b87f6821707b892a55d34716",
+          "eligibleAssignments": 0,
+          "weightedScores": {
+            "1": null,
+            "1.08": null
+          }
+        },
+        {
+          "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+          "eligibleAssignments": 0,
+          "weightedScores": {
+            "1": null,
+            "1.08": null
+          }
+        },
+        {
+          "seed": "level8-estimate-fa0f948061c4c308cc69f2ac",
+          "eligibleAssignments": 0,
+          "weightedScores": {
+            "1": null,
+            "1.08": null
+          }
+        },
+        {
+          "seed": "level8-estimate-2e646af6a3e79187503ccc80",
+          "eligibleAssignments": 0,
+          "weightedScores": {
+            "1": null,
+            "1.08": null
+          }
+        },
+        {
+          "seed": "level8-estimate-13b39f93b74b237bc46f579b",
+          "eligibleAssignments": 0,
+          "weightedScores": {
+            "1": null,
+            "1.08": null
+          }
+        },
+        {
+          "seed": "level8-estimate-4421e0179044aca015374bc1",
+          "eligibleAssignments": 0,
+          "weightedScores": {
+            "1": null,
+            "1.08": null
+          }
+        }
+      ],
+      "contrasts": {
+        "1.08": {
+          "versus": "1",
+          "weeks": 0,
+          "mean": null,
+          "descriptiveT95": null,
+          "differences": []
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Interventions change later eligibility and interfere within a week. Descriptive conditional assignment contrasts do not add up to whole-policy effects.",
+    "Request contribution omits costs without explicit order attribution and does not estimate displaced capacity.",
+    "Only targeted offers are randomized; no comparison to sending no offer.",
+    "Nominal arms may produce identical prices after floors or clipping.",
+    "Four versus four weekly regimes and eight reused development seeds give weak generalization evidence."
+  ],
+  "versusArchivedCandidate": {
+    "pairs": 8,
+    "meanEuros": -482.65749999999997,
+    "standardDeviationEuros": 917.1677936023639,
+    "t95Euros": [
+      -1249.428964096537,
+      284.113964096537
+    ],
+    "bootstrap95Euros": [
+      -1102.7475,
+      83.92125000000001
+    ],
+    "differencesEuros": [
+      124.81,
+      425.98,
+      -229.65,
+      424.72,
+      -1902.57,
+      -1621.25,
+      -48.25,
+      -1035.05
+    ],
+    "wins": 3,
+    "losses": 5
+  },
+  "weeklyRegimes": {
+    "0": {
+      "weeks": 4,
+      "meanProfitEuros": 11220.8975,
+      "qualified": 4,
+      "qualificationLower95": 0.4728708045015879,
+      "meanOrders": 285.75,
+      "aggregateOnTime": 0.9772528433945756,
+      "minimumOnTime": 0.9715302491103203,
+      "meanDriverPaymentsEuros": 16814.4875,
+      "meanRefundsEuros": 281.7975,
+      "undelivered": 0,
+      "failedVisits": 0,
+      "actionErrors": 0,
+      "recoveries": 0,
+      "finesEuros": 0.0,
+      "mechanisms": {
+        "acquisition_funnel": 4128,
+        "portfolio_solve": 4916,
+        "action_result": 7399,
+        "portfolio_action": 4878,
+        "portfolio_overflow": 78,
+        "opening_randomized": 160,
+        "post": 1005,
+        "acquisition_randomized": 96,
+        "portfolio_withdraw": 38
+      }
+    },
+    "60": {
+      "weeks": 4,
+      "meanProfitEuros": 10528.55,
+      "qualified": 4,
+      "qualificationLower95": 0.4728708045015879,
+      "meanOrders": 308.75,
+      "aggregateOnTime": 0.9489878542510122,
+      "minimumOnTime": 0.9406528189910979,
+      "meanDriverPaymentsEuros": 19902.365,
+      "meanRefundsEuros": 868.45,
+      "undelivered": 0,
+      "failedVisits": 0,
+      "actionErrors": 0,
+      "recoveries": 0,
+      "finesEuros": 0.0,
+      "mechanisms": {
+        "acquisition_funnel": 4141,
+        "portfolio_solve": 5025,
+        "action_result": 9429,
+        "portfolio_action": 4955,
+        "acquisition_randomized": 96,
+        "opening_randomized": 160,
+        "post": 1143,
+        "portfolio_withdraw": 70,
+        "portfolio_overflow": 69,
+        "stale_skipped": 3,
+        "portfolio_baseline_expired": 10
+      }
+    }
+  },
+  "weeklyRegimeContrast": {
+    "delayMinusOriginalEuros": -692.3474999999999,
+    "allocations": 70,
+    "sharpNullTwoSidedP": 0.8285714285714286,
+    "interpretation": "Exact randomization diagnostic for the eight fixed development weeks under the sharp null; not a generalization or promotion claim."
+  },
+  "realizedActionSeparation": {
+    "acquisition_randomized": {
+      "assigned": 192,
+      "reconstructed": 192,
+      "coincidentArms": 121
+    },
+    "opening_randomized": {
+      "assigned": 320,
+      "reconstructed": 320,
+      "coincidentArms": 0
+    }
+  },
+  "protocolConformant": false,
+  "executionDeviation": {
+    "kind": "batch_interception_gap",
+    "observedOfferActions": 2097,
+    "offerAssignments": 0,
+    "cause": "Frozen practice loop advances through an external connection, bypassing the dispatcher world proxy for takeActions batches. Direct world.act actions were intercepted; queued batches were not.",
+    "impact": "H3 was not executed. H2 assignments cover intercepted direct posts only, not the promised first eligible posts across both paths. H1 and weekly regimes executed, but the package is narrower than planned. Do not claim complete protocol execution or fit an offer response model.",
+    "correction": "Current research source adds takeActions interception and a practice-batch-path regression test. Frozen executed bundle remains unchanged; no replacement worlds were launched. Any follow-up will have a separate freeze."
+  },
+  "decision": "Reject this exploratory package as a policy replacement. Preserve the batch-interception deviation; H3 has no randomized evidence. H1 and restricted direct-post H2 data may support held-out simple-model checks, not validation. Repair and separately freeze any further coverage; no automatic rerun."
+}

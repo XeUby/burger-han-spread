@@ -1,0 +1,25 @@
+{
+  "frozenAt": "2026-11-14T11:17:10.749000+00:00",
+  "role": "Bounded randomized development coverage, not promotion or a fitted replacement dispatcher",
+  "seeds": [
+    "level8-estimate-12912cd52d9ef00ea35490e8",
+    "level8-estimate-502fd2d71b59b218d9af949c",
+    "level8-estimate-b87f6821707b892a55d34716",
+    "level8-estimate-c5d2d97a139c8d2c999d17b2",
+    "level8-estimate-fa0f948061c4c308cc69f2ac",
+    "level8-estimate-2e646af6a3e79187503ccc80",
+    "level8-estimate-13b39f93b74b237bc46f579b",
+    "level8-estimate-4421e0179044aca015374bc1"
+  ],
+  "seedRole": "All eight familiar level8-estimate development weeks; exact archived candidate outcomes retained as whole-policy references. No new independent weeks claimed.",
+  "assignmentNonce": "fce060966cf88260b63fe1c4d78e9c2c",
+  "weeklyRegime": "First four seeds sorted by SHA256(nonce:seed) get60minute delayed intermediate escalation, remaining four get0. Opening and last rescue steps and urgent schedules unchanged. Analyze week-level effects; four versus four is weak evidence and post counts do not increase sample size.",
+  "acquisition": "At most24 assignments/week and6/day among incumbent-excluded requests with a graph-feasible plain-note public single-leg option and180minutes booking slack. At most2 exploratory quotes/jobs pending or unbooked. Choose latest-start option, then randomize1/3 each decline,1.25list,1.50list, with1.35baseFee floor. Log realized prices when floors collapse arms. Other work, including private/trade-in and unresolved notes, is logged but excluded from this first safe-fulfillment coverage panel.",
+  "payments": "First40 nonurgent posts with at least360minutes pickup slack, including portfolio direct actions, randomize opening multipliers0.92/1/1.08 at1/3 each, capped at next step. Record actual action and original schedule; no invented unchosen outcome.",
+  "offers": "First40 existing-policy targeted offers randomize price multipliers1/1.08 at1/2 each. This tests price conditional on targeting, not the value of offers versus no offer. Expirations remain distinct from declines.",
+  "randomization": "SHA256 with independent domains and frozen per-week random seeds; rejection sampling eliminates modulo bias. Probability is conditional on recorded eligibility and prior trajectory. Budgets count assignments, including controls and failed actions.",
+  "analysis": "Retain decision-time features, every assignment and action result, booking/drop/offer/cancellation/censoring outcomes, all weekly ledgers and reliability metrics. Estimate descriptive effects clustered by underlying week; no IID-order confidence claims or causal comparisons to historically rejected unassigned requests. Interventions interfere within week; weekly regime estimates concern the full exploratory policy.",
+  "stopping": "Exactly8planned worlds;8workers;8unfinished team cap under shared lock. Original600second runtime budget. Any runtime failure stops new creation; active jobs finish. No retries or replacements; preserve partial evidence.",
+  "decision": "Use coverage to choose interpretable action-conditioned cost/booking models and structural acquisition tests. Reject savings that become escalation/refunds or qualification failures. No threshold sweep or promotion from this panel.",
+  "authorization": "Unranked only, no ranked submissions/test finals/finals/deletion/forks"
+}
