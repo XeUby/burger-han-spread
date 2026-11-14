@@ -76,21 +76,35 @@
       "seed": "payout-unseen-20261114-df10216ee874354b",
       "side": "baseline",
       "worldId": "w69dc986161ca61b80710",
-      "startedAt": "2026-11-14T03:53:29.692Z"
+      "startedAt": "2026-11-14T03:53:29.692Z",
+      "completedAt": "2026-11-14T03:57:23.001Z"
+    },
+    {
+      "seed": "payout-unseen-20261114-df10216ee874354b",
+      "side": "candidate",
+      "worldId": "w9e1bab078a65289af454",
+      "startedAt": "2026-11-14T03:57:23.139Z",
+      "completedAt": "2026-11-14T04:00:39.380Z"
+    },
+    {
+      "seed": "payout-unseen-20261114-bdbb0af73763c605",
+      "side": "baseline",
+      "worldId": "wf3375255613b903cec06",
+      "startedAt": "2026-11-14T04:00:39.612Z"
     }
   ],
   "runnerErrors": [],
   "summary": {
     "baseline": {
-      "completed": 5,
+      "completed": 6,
       "failedVisits": 0,
       "actionErrors": 2,
       "recoveries": 0
     },
     "candidate": {
-      "completed": 5,
+      "completed": 6,
       "failedVisits": 0,
-      "actionErrors": 2,
+      "actionErrors": 4,
       "recoveries": 0
     }
   },
@@ -754,18 +768,213 @@
       "seed": "payout-unseen-20261114-df10216ee874354b",
       "side": "baseline",
       "worldId": "w69dc986161ca61b80710",
-      "status": "pending"
+      "status": "complete",
+      "marginCents": 1146938,
+      "qualified": true,
+      "onTimeShare": 0.9641873278236914,
+      "undeliveredOrders": 0,
+      "eventCounts": {
+        "price_request": 1035,
+        "order_lost": 666,
+        "order_won": 369,
+        "gig_viewed": 4456,
+        "gig_booked": 356,
+        "gig_started": 322,
+        "picked_up": 364,
+        "delivered": 363,
+        "ledger": 703,
+        "gig_dropped": 33,
+        "offer_answered": 267,
+        "order_changed": 12,
+        "order_cancelled": 6,
+        "forecast": 2,
+        "deadline_close": 21,
+        "gig_expired": 11
+      },
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": [],
+      "actionErrorContexts": []
     },
     {
       "seed": "payout-unseen-20261114-df10216ee874354b",
       "side": "candidate",
-      "worldId": null,
-      "status": "pending"
+      "worldId": "w9e1bab078a65289af454",
+      "status": "complete",
+      "marginCents": 1145735,
+      "qualified": true,
+      "onTimeShare": 0.9385964912280702,
+      "undeliveredOrders": 0,
+      "eventCounts": {
+        "price_request": 1035,
+        "order_lost": 687,
+        "order_won": 348,
+        "gig_viewed": 8303,
+        "gig_booked": 342,
+        "gig_started": 301,
+        "picked_up": 343,
+        "delivered": 342,
+        "ledger": 668,
+        "offer_answered": 528,
+        "gig_dropped": 39,
+        "order_changed": 9,
+        "order_cancelled": 6,
+        "forecast": 2,
+        "deadline_close": 41,
+        "gig_expired": 20,
+        "no_show": 1
+      },
+      "failedVisits": [],
+      "actionErrors": [
+        {
+          "at": 7021,
+          "action": {
+            "type": "reprice",
+            "gigId": "g324",
+            "schedule": [
+              {
+                "at": 7021,
+                "feeCents": 8082
+              },
+              {
+                "at": 7100,
+                "feeCents": 10591
+              },
+              {
+                "at": 7220,
+                "feeCents": 13935
+              }
+            ]
+          },
+          "reason": "Gig g324 is not open"
+        },
+        {
+          "at": 7021,
+          "action": {
+            "type": "reprice",
+            "gigId": "g324",
+            "schedule": [
+              {
+                "at": 7021,
+                "feeCents": 8082
+              },
+              {
+                "at": 7100,
+                "feeCents": 10591
+              },
+              {
+                "at": 7220,
+                "feeCents": 13935
+              }
+            ]
+          },
+          "reason": "Gig g324 is not open"
+        }
+      ],
+      "recoveries": [],
+      "actionErrorContexts": [
+        {
+          "error": {
+            "at": 7021,
+            "action": {
+              "type": "reprice",
+              "gigId": "g324",
+              "schedule": [
+                {
+                  "at": 7021,
+                  "feeCents": 8082
+                },
+                {
+                  "at": 7100,
+                  "feeCents": 10591
+                },
+                {
+                  "at": 7220,
+                  "feeCents": 13935
+                }
+              ]
+            },
+            "reason": "Gig g324 is not open"
+          },
+          "sameMinuteGigEvents": [
+            {
+              "seq": 12761,
+              "at": 7021,
+              "kind": "gig_dropped",
+              "gigId": "g324",
+              "driverId": "5j61-0609"
+            },
+            {
+              "seq": 12763,
+              "at": 7021,
+              "kind": "gig_viewed",
+              "gigId": "g324",
+              "driverId": "5j61-0384"
+            },
+            {
+              "seq": 12764,
+              "at": 7021,
+              "kind": "gig_booked",
+              "gigId": "g324",
+              "driverId": "5j61-0384",
+              "feeCents": 8082
+            }
+          ]
+        },
+        {
+          "error": {
+            "at": 7021,
+            "action": {
+              "type": "reprice",
+              "gigId": "g324",
+              "schedule": [
+                {
+                  "at": 7021,
+                  "feeCents": 8082
+                },
+                {
+                  "at": 7100,
+                  "feeCents": 10591
+                },
+                {
+                  "at": 7220,
+                  "feeCents": 13935
+                }
+              ]
+            },
+            "reason": "Gig g324 is not open"
+          },
+          "sameMinuteGigEvents": [
+            {
+              "seq": 12761,
+              "at": 7021,
+              "kind": "gig_dropped",
+              "gigId": "g324",
+              "driverId": "5j61-0609"
+            },
+            {
+              "seq": 12763,
+              "at": 7021,
+              "kind": "gig_viewed",
+              "gigId": "g324",
+              "driverId": "5j61-0384"
+            },
+            {
+              "seq": 12764,
+              "at": 7021,
+              "kind": "gig_booked",
+              "gigId": "g324",
+              "driverId": "5j61-0384",
+              "feeCents": 8082
+            }
+          ]
+        }
+      ]
     },
     {
       "seed": "payout-unseen-20261114-bdbb0af73763c605",
       "side": "baseline",
-      "worldId": null,
+      "worldId": "wf3375255613b903cec06",
       "status": "pending"
     },
     {
