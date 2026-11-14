@@ -1,0 +1,362 @@
+[
+ {
+  "label": "base2",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {}
+ },
+ {
+  "label": "g-open-090",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "openFee": 0.9,
+   "laterFee": 0.9
+  }
+ },
+ {
+  "label": "g-later-080",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "openFee": 0.9,
+   "laterFee": 0.8
+  }
+ },
+ {
+  "label": "g-trust-1",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "trustValue": 1
+  }
+ },
+ {
+  "label": "g-open-090-trust-1",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "openFee": 0.9,
+   "laterFee": 0.9,
+   "trustValue": 1
+  }
+ },
+ {
+  "label": "g-open-085",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "openFee": 0.85,
+   "laterFee": 0.85
+  }
+ },
+ {
+  "label": "base2",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {}
+ },
+ {
+  "label": "g-open-090",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "openFee": 0.9,
+   "laterFee": 0.9
+  }
+ },
+ {
+  "label": "g-later-080",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "openFee": 0.9,
+   "laterFee": 0.8
+  }
+ },
+ {
+  "label": "g-trust-1",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "trustValue": 1
+  }
+ },
+ {
+  "label": "g-open-090-trust-1",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "openFee": 0.9,
+   "laterFee": 0.9,
+   "trustValue": 1
+  }
+ },
+ {
+  "label": "g-open-085",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "openFee": 0.85,
+   "laterFee": 0.85
+  }
+ },
+ {
+  "label": "base2",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {}
+ },
+ {
+  "label": "g-open-090",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "openFee": 0.9,
+   "laterFee": 0.9
+  }
+ },
+ {
+  "label": "g-later-080",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "openFee": 0.9,
+   "laterFee": 0.8
+  }
+ },
+ {
+  "label": "g-trust-1",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "trustValue": 1
+  }
+ },
+ {
+  "label": "g-open-090-trust-1",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "openFee": 0.9,
+   "laterFee": 0.9,
+   "trustValue": 1
+  }
+ },
+ {
+  "label": "g-open-085",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "openFee": 0.85,
+   "laterFee": 0.85
+  }
+ },
+ {
+  "label": "base2",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {}
+ },
+ {
+  "label": "g-open-090",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "openFee": 0.9,
+   "laterFee": 0.9
+  }
+ },
+ {
+  "label": "g-later-080",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "openFee": 0.9,
+   "laterFee": 0.8
+  }
+ },
+ {
+  "label": "g-trust-1",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "trustValue": 1
+  }
+ },
+ {
+  "label": "g-open-090-trust-1",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "openFee": 0.9,
+   "laterFee": 0.9,
+   "trustValue": 1
+  }
+ },
+ {
+  "label": "g-open-085",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "openFee": 0.85,
+   "laterFee": 0.85
+  }
+ },
+ {
+  "label": "base2",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {}
+ },
+ {
+  "label": "g-open-090",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "openFee": 0.9,
+   "laterFee": 0.9
+  }
+ },
+ {
+  "label": "g-later-080",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "openFee": 0.9,
+   "laterFee": 0.8
+  }
+ },
+ {
+  "label": "g-trust-1",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "trustValue": 1
+  }
+ },
+ {
+  "label": "g-open-090-trust-1",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "openFee": 0.9,
+   "laterFee": 0.9,
+   "trustValue": 1
+  }
+ },
+ {
+  "label": "g-open-085",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "openFee": 0.85,
+   "laterFee": 0.85
+  }
+ },
+ {
+  "label": "base2",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {}
+ },
+ {
+  "label": "g-open-090",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "openFee": 0.9,
+   "laterFee": 0.9
+  }
+ },
+ {
+  "label": "g-later-080",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "openFee": 0.9,
+   "laterFee": 0.8
+  }
+ },
+ {
+  "label": "g-trust-1",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "trustValue": 1
+  }
+ },
+ {
+  "label": "g-open-090-trust-1",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "openFee": 0.9,
+   "laterFee": 0.9,
+   "trustValue": 1
+  }
+ },
+ {
+  "label": "g-open-085",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "openFee": 0.85,
+   "laterFee": 0.85
+  }
+ },
+ {
+  "label": "base2",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {}
+ },
+ {
+  "label": "g-open-090",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "openFee": 0.9,
+   "laterFee": 0.9
+  }
+ },
+ {
+  "label": "g-later-080",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "openFee": 0.9,
+   "laterFee": 0.8
+  }
+ },
+ {
+  "label": "g-trust-1",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "trustValue": 1
+  }
+ },
+ {
+  "label": "g-open-090-trust-1",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "openFee": 0.9,
+   "laterFee": 0.9,
+   "trustValue": 1
+  }
+ },
+ {
+  "label": "g-open-085",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "openFee": 0.85,
+   "laterFee": 0.85
+  }
+ },
+ {
+  "label": "base2",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {}
+ },
+ {
+  "label": "g-open-090",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "openFee": 0.9,
+   "laterFee": 0.9
+  }
+ },
+ {
+  "label": "g-later-080",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "openFee": 0.9,
+   "laterFee": 0.8
+  }
+ },
+ {
+  "label": "g-trust-1",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "trustValue": 1
+  }
+ },
+ {
+  "label": "g-open-090-trust-1",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "openFee": 0.9,
+   "laterFee": 0.9,
+   "trustValue": 1
+  }
+ },
+ {
+  "label": "g-open-085",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "openFee": 0.85,
+   "laterFee": 0.85
+  }
+ }
+]

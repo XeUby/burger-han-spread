@@ -26,12 +26,14 @@ export type Settings = {
   auction: boolean; allowPrivate: boolean; tradeIns: boolean; homeOffers: boolean; readiness: boolean; bundlePairs: boolean; timedNotes: boolean; lateRescue: boolean
   sameDayPremium: number; laterDiscount: number; placePrior: number; bundleWait: number
   backlog: number; priceFloor: number; costRatio: number; trustStep: number; sameDayBacklog: number; demandSlope: number
+  openFee: number; laterFee: number; trustValue: number
 }
 export const defaults: Settings = {
   price: 1.42, fee: 1.05, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
   notes: true, noteSpelling: false, relist: false, adaptive: true, earlyOffers: false, safetySlack: false,
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
   backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14,
+  openFee: 1, laterFee: 1, trustValue: 0,
 }
 
 export function validateSettings(value: unknown): asserts value is Partial<Settings> {
@@ -39,7 +41,7 @@ export function validateSettings(value: unknown): asserts value is Partial<Setti
   for (const [key, field] of Object.entries(value)) {
     if (!(key in defaults)) throw new Error(`Unknown setting: ${key}`)
     if (typeof defaults[key as keyof Settings] === "boolean") { if (typeof field !== "boolean") throw new Error(`${key} must be boolean`); continue }
-    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait"].includes(key))) throw new Error(`${key} must be a positive number`)
+    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait", "trustValue"].includes(key))) throw new Error(`${key} must be a positive number`)
     if (key === "bundleWait" && (!Number.isInteger(field) || field > 30)) throw new Error("bundleWait must be an integer from 0 to 30")
     if ((key === "margin" || key === "capacity") && field >= 1) throw new Error(`${key} must be below 1`)
     if (key === "placePrior" && field > 2) throw new Error("placePrior must be at most 2")
@@ -70,6 +72,8 @@ export class Dispatcher extends Desk {
   homeOffersSent = new Map<string, number>()
   market: DemandModel
   bids = new Map<string, { features: MarketFeatures; ratio: number }>()
+  dealers = new Map<string, { requests: number; listCents: number; won: number }>() // what each dealer has asked for and bought so far
+  counted = new Set<string>()
   deferred = new Map<string, PriceRequest>()
   held = new Map<string, { post: PostAction; at: number }>()
   postedAt = new Map<string, number>()
@@ -87,6 +91,7 @@ export class Dispatcher extends Desk {
 
   quote(request: PriceRequest, immediate = false): void {
     this.requests.set(request.id, request)
+    this.count(request)
     if (request.respondBy <= this.now || this.quoted.has(request.id)) return
     if (this.settings.auction && this.level >= 4 && !immediate) {
       if (this.deferred.has(request.id)) return
@@ -144,7 +149,8 @@ export class Dispatcher extends Desk {
       const options = request.options.filter(option => option.kind in prices)
       const list = Math.min(...options.map(option => option.listPriceCents))
       const features = this.features(request)
-      const choice = this.market.optimize(features, { costCents: fee * this.settings.costRatio, listPriceCents: list, trust, minPrice: Math.ceil(fee / (1 - this.settings.margin) + this.settings.priceFloor) })
+      const invest = this.trustValue(request)
+      const choice = this.market.optimize(features, { costCents: Math.max(0, fee * this.settings.costRatio - invest), listPriceCents: list, trust, minPrice: Math.ceil(Math.max(1, (fee - invest) / (1 - this.settings.margin) + this.settings.priceFloor)) })
       if (choice.expectedProfitCents <= 0) return reject()
       if (this.settings.sameDayPremium === 1 && this.settings.laterDiscount === 1) {
         for (const option of options) prices[option.kind] = Math.ceil(option.listPriceCents * trust * choice.ratio)
@@ -201,6 +207,32 @@ export class Dispatcher extends Desk {
       legs: [hours ? withNoteHours(leg, hours) : leg],
       options,
     }
+  }
+
+  count(request: PriceRequest): void {
+    if (this.counted.has(request.id)) return
+    this.counted.add(request.id)
+    const dealer = this.dealers.get(request.dealerId) ?? { requests: 0, listCents: 0, won: 0 }
+    dealer.requests++
+    dealer.listCents += Math.min(...request.options.map(option => option.listPriceCents))
+    this.dealers.set(request.dealerId, dealer)
+  }
+
+  /** What one more order on time is worth beyond its own price. At level 8 each of a dealer's first 25 orders
+   * on time raises by 1% the prices that the dealer accepts. So the order lifts the price of each later order
+   * from that dealer, until the dealer's count is full. */
+  trustValue(request: PriceRequest): number {
+    const dealer = this.dealers.get(request.dealerId)
+    if (!(this.settings.trustValue > 0) || this.level < 8 || !dealer) return 0
+    let onTheWay = 0
+    for (const order of this.orders.values()) if (order.dealerId === request.dealerId && order.status !== "delivered" && order.status !== "cancelled") onTheWay++
+    const room = 25 - Math.min(25, this.trust.get(request.dealerId) ?? 0) - onTheWay
+    if (room <= 0) return 0
+    // The order counts once its car has arrived: for the requests from the morning after the car is ready.
+    const counts = (Math.floor(request.legs[0]!.pickup.window.from / 1440) + 1) * 1440 + 480
+    const rate = dealer.requests / Math.max(120, businessMinutes(480, this.now))
+    const laterOrders = rate * businessMinutes(counts, 4 * 1440 + 1080) * (dealer.won + 3) / (dealer.requests + 10)
+    return this.settings.trustValue * this.settings.trustStep * 1.45 * dealer.listCents / dealer.requests * Math.min(room, laterOrders)
   }
 
   features(request: PriceRequest): MarketFeatures {
@@ -264,8 +296,12 @@ export class Dispatcher extends Desk {
     if (this.level === 1) return [{ at: this.now, feeCents: Math.round(fee * start) }]
     // A steady initial price avoids teaching drivers to wait for hourly increases.
     const due = Math.max(this.now + 30, pickupBy - 240)
+    // The typical fee is what a driver is usually paid, not the least that a driver takes. An order with hours
+    // to spare opens below it, and a car that is ready on a later day lower still: it can wait for a driver whom the trip suits.
+    const later = Math.floor(order.legs[0]!.pickup.window.from / 1440) > Math.floor(this.now / 1440)
+    const open = !rescue && remaining > 360 ? Math.min(1, later ? this.settings.laterFee : this.settings.openFee) : 1
     return [
-      { at: this.now, feeCents: Math.round(fee * start) },
+      { at: this.now, feeCents: Math.round(fee * start * open) },
       { at: due, feeCents: Math.round(fee * Math.max(start, 1.45)) },
       { at: Math.max(due + 30, pickupBy - 120), feeCents: Math.round(fee * Math.max(start, 1.9)) },
       { at: Math.max(due + 60, pickupBy - 60), feeCents: Math.round(fee * Math.max(start, 2.5)) },
@@ -343,7 +379,11 @@ export class Dispatcher extends Desk {
       if (bid) this.market.observe(bid.features, bid.ratio, event.kind === "order_won")
       this.bids.delete(id)
     }
-    if (event.kind === "order_won") this.pending.delete(event.order.id)
+    if (event.kind === "order_won") {
+      this.pending.delete(event.order.id)
+      const dealer = this.dealers.get(event.order.dealerId)
+      if (dealer) dealer.won++
+    }
     if (event.kind === "order_lost") this.pending.delete(event.requestId)
     if (event.kind === "gig_viewed") {
       if (!this.seen.has(event.gigId)) this.seen.set(event.gigId, new Set())
@@ -531,7 +571,14 @@ export class Dispatcher extends Desk {
     this.now = snapshot.now
     if (history.length) this.offersAfter = snapshot.now + 11
     for (const event of history) {
-      if (event.kind === "price_request") this.requests.set(event.request.id, event.request)
+      if (event.kind === "price_request") {
+        this.requests.set(event.request.id, event.request)
+        this.count(event.request)
+      }
+      if (event.kind === "order_won") {
+        const dealer = this.dealers.get(event.order.dealerId)
+        if (dealer) dealer.won++
+      }
       if (event.kind === "gig_viewed") {
         if (!this.seen.has(event.gigId)) this.seen.set(event.gigId, new Set())
         this.seen.get(event.gigId)!.add(event.driverId)
@@ -564,4 +611,11 @@ export class Dispatcher extends Desk {
     for (const order of snapshot.orders) if (order.status === "delivered") this.deliveredOrders.add(order.id)
     this.lastSeq = history.at(-1)?.seq ?? -1
   }
+}
+
+/** The minutes from `from` to `to` in which dealers send requests: Monday to Friday, 08:00 to 18:00. */
+export function businessMinutes(from: number, to: number): number {
+  let minutes = 0
+  for (let day = 0; day < 5; day++) minutes += Math.max(0, Math.min(to, day * 1440 + 1080) - Math.max(from, day * 1440 + 480))
+  return minutes
 }
