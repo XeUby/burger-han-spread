@@ -28,6 +28,8 @@ export type Settings = {
   sameDayPremium: number; laterDiscount: number; placePrior: number; bundleWait: number
   backlog: number; priceFloor: number; costRatio: number; trustStep: number; sameDayBacklog: number; demandSlope: number
   earlyClimb: boolean
+  /** The fee, in full fees, a day and half a day before the last pickup, for a gig that no driver has taken. */
+  climbDay: number; climbHalfDay: number
   /** What a route really costs against the dispatcher's estimate, for routes under 50 km, from 50 km to 100 km, and longer. */
   shortCost: number; middleCost: number; longCost: number
 }
@@ -35,7 +37,7 @@ export const defaults: Settings = {
   price: 1.42, fee: 1.05, payout: 0.85, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
   notes: true, noteSpelling: false, relist: false, openingOnly: true, adaptive: true, earlyOffers: false, safetySlack: false,
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, noteReader: false, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
-  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1,
+  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.2, climbHalfDay: 1.45,
   earlyClimb: true,
 }
 
@@ -313,7 +315,7 @@ export class Dispatcher extends Desk {
     const due = Math.max(this.now + 30, pickupBy - 240)
     // A gig that no driver has taken a day before its last pickup will not find one in the last four hours:
     // a driver needs time to see the gig and to reach the car. So the fee starts to climb a day ahead.
-    const early = this.settings.earlyClimb ? [{ at: pickupBy - 1440, feeCents: Math.round(fee * Math.max(start, 1.2)) }, { at: pickupBy - 720, feeCents: Math.round(fee * Math.max(start, 1.45)) }].filter(step => step.at >= this.now + 30 && step.at < due) : []
+    const early = this.settings.earlyClimb ? [{ at: pickupBy - 1440, feeCents: Math.round(fee * Math.max(start, this.settings.climbDay)) }, { at: pickupBy - 720, feeCents: Math.round(fee * Math.max(start, this.settings.climbHalfDay)) }].filter(step => step.at >= this.now + 30 && step.at < due) : []
     return pay([
       { at: this.now, feeCents: Math.round(fee * start) },
       ...early,

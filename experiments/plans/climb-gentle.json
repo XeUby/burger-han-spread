@@ -1,0 +1,66 @@
+[
+ {
+  "label": "climb-gentle",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "climb-gentle",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "climb-gentle",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "climb-gentle",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "climb-gentle",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "climb-gentle",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "climb-gentle",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ },
+ {
+  "label": "climb-gentle",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "climbDay": 1.1,
+   "climbHalfDay": 1.25
+  }
+ }
+]

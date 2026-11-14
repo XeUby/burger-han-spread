@@ -49,20 +49,37 @@ Sixteen weeks, the same for both versions: `bh-robust-20261114-03`, `-06`, `-09`
 
 The gate (`analysis/gate.py`) would not pass this: the lowest on-time share is under 94%.
 
+Eight fresh weeks that the reader was not built on (`bh-reader-20261114-01` to `-08`), played once with each version:
+
+| | Base | Note reader |
+| --- | ---: | ---: |
+| Mean margin a week | €8,854 | €9,797 |
+| Paired difference | | +€943 (standard error €167); 8 weeks up, 0 down |
+| Late orders, share of all orders | 1.48% | 1.78% |
+| Lowest on-time share | 96.9% | 96.1% |
+| Notes understood | | 3,502 of 3,504 |
+| Failed visits | | 0 |
+
+On all 24 weeks the reader gains €693 a week, and every week is ranked.
+
 ## Why on-time share falls
 
 Not because notes are misread: orders with times in the note were late 1.0% of the time, against 4.0% for orders without a note. The week gets about 50 more orders, and the same drivers must move them. The fee paid for an order without a note rose from €68 to €71, and its late share from 2.2% to 4.0%.
 
+The extra late orders are orders that found no driver before their last pickup time: 9.9 a week against 5.6. Most are routes of 250 km or more. A higher fee does not find them a driver: they are booked minutes after the last pickup time has passed, at 1.2 times the fee, when the gig no longer has to fit a driver's day before the deadline. A long route from a town with other long gigs still open is stuck more often: 2.1% with none open, 7.3% with five or more. From Oulu 8.3% of long routes are stuck.
+
 ## What did not work
 
-Each on the first weeks of the same sixteen, with the note reader on, against the note reader alone. Both were stopped early.
+Each on the first weeks of the same sixteen, with the note reader on, against the note reader alone. The first two were stopped early.
 
 | Variant | Weeks | Mean difference | Lowest on-time share | What happened |
 | --- | ---: | ---: | ---: | --- |
 | Count a route under 50 km as 1.3 times dearer when pricing (`shortCost`) | 6 | −€305 (standard error €278) | 90.7% | No gain. Such routes cost 1.58 times the typical fee and earn €9 an order against €34, but pricing them out did not free drivers for better orders |
 | The same, and count routes over 100 km as 0.85 times as dear (`longCost`) | 5 | −€3,249 | 87.8%, 2 of 5 weeks not ranked | Lower prices on long routes win more orders than the drivers can move |
+| Count every route as 1.09 times dearer (`costRatio` 1.25) | 8 | +€127 (standard error €308) | 92.7% | Noise |
+| Stricter limit on open work near the pickup (`capacity` 0.30) | 8 | +€151 (standard error €137) | 92.0% | Noise; no fewer late orders |
 
 ## What we do not know
 
-- How the reader does on a week with phrases it has never seen. It declines what it does not understand, so the risk is lost orders, not failed visits.
-- Whether the extra orders are worth more with a stricter limit on open work. Not tried.
+- Whether a week exists where the extra orders push the on-time share under 90%. The lowest of 24 weeks was 92.0%, on the week where the base had 94.4%.
+- How to keep long routes from towns with few drivers on time. Declining them when four long gigs are open there would cost about 15 orders a week at €60 each.

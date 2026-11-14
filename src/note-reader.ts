@@ -283,7 +283,7 @@ const phrases: [Kind, string[]][] = [
   ["tyres", [
     `auto viela kesarenkailla`, `huom viela kesarenkaat alla`, `kesarenkaat alla,? ei talvirenkaita`, `viela kesarenkaat,? talvet puuttuu`, `kesakumit alla`,
     `still on summer tyres`, `summer tyres on,? no winters`, `winter tyres not fitted yet`,
-    `har fortfarande sommardack pa`, `obs sommardack pa`, `inga vinterdack an`, `summers still on`, `sommardack pa,? inga vinterdack`, `talvirenkaita ei viela vaihdettu`,
+    `har fortfarande sommardack pa`, `obs sommardack pa`, `sommardacken sitter kvar`, `inga vinterdack an`, `summers still on`, `sommardack pa,? inga vinterdack`, `talvirenkaita ei viela vaihdettu`,
   ]],
   ["harmless", [
     `(?:booking ref|our ref|reference|ref|order no|varaus|viitenro|viite|meidan viite|tilausnumero|tilausnro|referens|var ref|ordernr)\\.?:? ?${REF}`,
