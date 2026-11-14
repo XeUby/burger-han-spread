@@ -1,0 +1,27 @@
+{
+  "assignedAt": "2026-11-14T03:08:27.936877+00:00",
+  "protocol": "experiments/payout-confirmation-protocol.json",
+  "protocolSha256": "2f1f65d39ed420f571fab8ba7dcfac8a04ee42a4af6ee8c718bb846051b6ba6c",
+  "worlds": [
+    {
+      "label": "payout-confirmation",
+      "seed": "formal-unseen-20261113-09",
+      "worldId": "wccca731d04dbfacbaba0"
+    },
+    {
+      "label": "payout-confirmation",
+      "seed": "formal-unseen-20261113-10",
+      "worldId": null
+    },
+    {
+      "label": "payout-confirmation",
+      "seed": "formal-unseen-20261113-12",
+      "worldId": null
+    },
+    {
+      "label": "payout-confirmation",
+      "seed": "formal-unseen-20261113-16",
+      "worldId": null
+    }
+  ]
+}

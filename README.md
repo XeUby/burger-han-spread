@@ -34,7 +34,9 @@ A zero-time creation-fee anchor probe produced identical11,941-event histories a
 
 A recent-viewer offer probe stopped at the shared four-play guard when3external worlds appeared. Its7completed cases had no accepted offers at either the public fee or a10% discount, and matched control bookings. All21forks and the archived paused base were deleted. This is an incomplete probe, not a12-case completed result ([audit](docs/viewer-offers-results.json)). Future full-week tests use1worker to reserve3slots for teammates.
 
-A frozen payout-only screen separates a15% unbundled fee cut from customer pricing: full-curve and opening-only variants retain the incumbent quote formulas and bundle schedules. Four old development trials run serially against archived controls; defaults retain `payout=1` ([protocol](experiments/payout-protocol.json)).
+A payout-only screen separates a 15% unbundled fee cut from customer pricing: full-curve and opening-only variants retain the incumbent quote formulas and bundle schedules. Opening-only gained €1,093.57/week across two old development seeds, both qualified. Full-curve failed because one week delivered only 89.10% on time. Four predeclared confirmation weeks now test opening-only unchanged; defaults retain `payout=1` ([results](docs/payout-results.md), [confirmation protocol](experiments/payout-confirmation-protocol.json)).
+
+Recombining already-waiting single-car gigs found only three extra pairs per week and €42.96/week of modeled opening-fee savings in six old weeks. This is an opportunity screen, not measured profit; the small exposure does not justify a live test yet ([screen](docs/rolling-bundles-screen.json)).
 
 Both study runners cap workers at four, serialize their own creations, and check total unfinished server worlds before each creation. Coordinate separate runners so their creation checks cannot race. Raw world logs and credentials remain local.
 

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T02:56:11.760938+00:00",
+  "updatedAt": "2026-11-14T03:09:38.132968+00:00",
   "objective": "Continue systematic search toward the global optimum; practice only, no ranking submission.",
   "maximumConcurrentPlays": 4,
   "currentConcurrency": {
@@ -66,10 +66,9 @@
     "700km-only bundle treatment ends at7407.63/9410.50 euros, minimum96.6% on time. It gains versus the old baseline in both weeks but not versus bundles alone. No900km experiment scheduled."
   ],
   "nextSteps": [
-    "Poll runner76828 without restarting. Record each exact worldID in payout-manifest as it appears.",
-    "Apply frozen screening rule separately to full and opening-only variants; do not tune after outcomes.",
-    "Customer pricing and bundle schedules remain unchanged at identical states. Default payout remains1.",
-    "Keep relist and noteSpelling off. No ranking/final; totalunfinished guard4 and ownworkers1."
+    "Complete the four frozen payout-opening confirmation weeks serially. Record exact world IDs when each starts.",
+    "Only if confirmation passes, reserve a fresh paired panel; keep defaults unchanged until independent evaluation passes.",
+    "Respect the shared four-play cap and use one worker while external teammates run worlds. No ranking or final."
   ],
   "validationStatus": "All16 fresh paired trials complete. Candidate mean10411.59 euros versus8242.34, +26.32%;7/8 positive;8/8 qualified; minimum94.94% on time; no undelivered orders. Full report docs/frontier-validation.md. No ranking submission.",
   "checks": {
@@ -553,13 +552,55 @@
     "decision": "Stop under declared failure rule. Four-play guard saw3external active worlds. No offers accepted among7same-fee and7discount offers; no target booking/view difference. Retain as incomplete, not a12case negative study. Defer this version."
   },
   "currentStudy": {
+    "sessionId": 32843,
+    "kind": "opening-only payout confirmation",
+    "terminal": false,
+    "protocol": "experiments/payout-confirmation-protocol.json",
+    "manifest": "experiments/payout-confirmation-manifest.json",
+    "plan": "experiments/plans/payout-confirmation.json",
+    "maximumJobs": 1,
+    "trials": 4
+  },
+  "completedPayoutScreen": {
     "sessionId": 76828,
     "kind": "unbundled payout-only screen",
-    "terminal": false,
+    "terminal": true,
     "protocol": "experiments/payout-protocol.json",
     "manifest": "experiments/payout-manifest.json",
     "plan": "experiments/plans/payout.json",
     "maximumJobs": 1,
-    "trials": 4
+    "trials": 4,
+    "study": "runs/study-1794625664334.json",
+    "report": "docs/payout-results.json",
+    "summary": {
+      "payout-full": {
+        "weeks": 2,
+        "meanGainCents": 105402,
+        "minimumGainCents": 73316,
+        "qualified": 1,
+        "undelivered": 0,
+        "failedVisits": 0,
+        "gatePassed": false
+      },
+      "payout-opening": {
+        "weeks": 2,
+        "meanGainCents": 109357,
+        "minimumGainCents": 69411,
+        "qualified": 2,
+        "undelivered": 0,
+        "failedVisits": 0,
+        "gatePassed": true
+      }
+    },
+    "selectedForConfirmation": "payout-opening"
+  },
+  "rollingBundleScreen": {
+    "report": "docs/rolling-bundles-screen.json",
+    "summary": {
+      "weeks": 6,
+      "pairs": 18,
+      "meanModeledFeeSavingEuros": 42.95666666666667
+    },
+    "decision": "Defer live test: three additional pairs per week and only42.96euros modeled opening-fee discount; no counterfactual bookings or profits."
   }
 }

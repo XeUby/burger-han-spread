@@ -3,16 +3,21 @@
 import hashlib
 import json
 import statistics
+import sys
 from collections import Counter
 from pathlib import Path
 
 from frontier_validation import load_world
 
 ROOT = Path(__file__).resolve().parents[1]
-manifest = json.loads((ROOT / "experiments/payout-manifest.json").read_text())
+confirmation = "--confirmation" in sys.argv
+name = "payout-confirmation" if confirmation else "payout"
+manifest = json.loads((ROOT / f"experiments/{name}-manifest.json").read_text())
 path = ROOT / manifest["protocol"]
 assert hashlib.sha256(path.read_bytes()).hexdigest() == manifest["protocolSha256"]
 protocol = json.loads(path.read_text())
+if confirmation:
+    assert hashlib.sha256((ROOT / protocol["parentProtocol"]).read_bytes()).hexdigest() == protocol["parentProtocolSha256"]
 plan = json.loads((ROOT / protocol["plan"]).read_text())
 trials = {(trial["label"], trial["seed"]): trial for trial in plan}
 assert len(trials) == len(plan) == len(manifest["worlds"])
@@ -56,21 +61,27 @@ for entry in manifest["worlds"]:
             row["eventCounts"] = dict(Counter(event["kind"] for event in events))
             row["actionErrors"] = json.loads((ROOT / f"runs/{world}.errors.json").read_text())
             row["recoveries"] = json.loads((ROOT / f"runs/{world}.recoveries.json").read_text())
+            row["errorContexts"] = [
+                {"error": error, "sameMinuteGigEvents": [event for event in events if error["action"].get("gigId") is not None and event["at"] == error["at"] and event.get("gigId") == error["action"].get("gigId") and event["kind"] != "gig_viewed"]}
+                for error in row["actionErrors"]
+            ]
     records.append(row)
 
 terminal = all(row["status"] == "complete" for row in records)
 summary = {}
 selected = None
 if terminal:
-    gate = protocol["screeningGate"]
+    gate = protocol["confirmationGate" if confirmation else "screeningGate"]
     for label in protocol["variants"]:
         rows = [row for row in records if row["label"] == label]
         result = {"weeks": len(rows), "meanGainCents": statistics.mean(row["gainCents"] for row in rows), "minimumGainCents": min(row["gainCents"] for row in rows), "qualified": sum(row["result"]["ranked"] for row in rows), "undelivered": sum(row["result"]["undeliveredOrders"] for row in rows), "failedVisits": sum(len(row["failedVisits"]) for row in rows)}
         result["gatePassed"] = result["meanGainCents"] > 100 * gate["meanPairedGainEurosGreaterThan"] and result["minimumGainCents"] >= 100 * gate["worstPairedGainEurosAtLeast"] and result["qualified"] == len(rows) and result["undelivered"] == result["failedVisits"] == 0
         summary[label] = result
     passing = [label for label in summary if summary[label]["gatePassed"]]
-    if passing:
+    if passing and not confirmation:
         selected = max(passing, key=lambda label: (summary[label]["meanGainCents"], label == "payout-opening"))
 report = {"protocol": protocol, "manifest": manifest, "terminal": terminal, "summary": summary, "selectedForConfirmation": selected, "records": records, "limitation": "Old development streams. Payout changes can alter later admissions through capacity, trust and demand learning, even though the pricing formulas remain unchanged. This is not independent validation."}
-(ROOT / "docs/payout-results.json").write_text(json.dumps(report, indent=2) + "\n")
+if confirmation:
+    report["eligibleForIndependentEvaluation"] = terminal and all(row["gatePassed"] for row in summary.values())
+(ROOT / f"docs/{name}-results.json").write_text(json.dumps(report, indent=2) + "\n")
 print(json.dumps({"terminal": terminal, "summary": summary, "selectedForConfirmation": selected, "trials": [{key: row[key] for key in ["label", "seed", "worldId", "status"]} for row in records]}, indent=2))

@@ -1,0 +1,368 @@
+{
+  "scope": "Six explicit old development weeks with the validated late-rescue baseline. No fresh evaluation data or new plays.",
+  "hypothesis": "Merge compatible unbooked public singles already waiting on the board, without delaying every newly won car for a longer initial batching window.",
+  "method": "At 15-minute intervals from 08:00 to 18:00, consider original single-car listings aged at least 30 minutes, ready within 180 minutes, with at least 360 minutes to last feasible pickup. Exclude any order already booked, expired, warned, changed or cancelled at that time. Use the frozen bundle helper and canonical fees. Count an order only in its first selected pair.",
+  "limitations": [
+    "Retrospective opportunity screen with fixed baseline arrivals and bookings. Counterfactual driver behavior, trust, congestion and later admissions are not simulated.",
+    "Fee savings are the helper's opening-fee discount, not expected realized profit or a bound. Removing two listings to create a bundle can lose viewers or fail to book.",
+    "Gig appearance times and stop references are reconstructed from the final public snapshot. Conservatively exclude any gig shortened by a cancellation anywhere in the week because its original stops are missing. This forensic exclusion uses future history and is not a deployable admission rule. No final booking fee or private revealed driver state is used.",
+    "Once a hypothetical pair is selected, its orders are excluded from later matching; interactions with all other orders remain those of the baseline."
+  ],
+  "summary": {
+    "weeks": 6,
+    "pairs": 18,
+    "meanModeledFeeSavingEuros": 42.95666666666667
+  },
+  "weeks": [
+    {
+      "worldId": "w9092313fc502252b79ab",
+      "seed": "formal-unseen-20261113-09",
+      "eligibleWaitingSingles": 8,
+      "pairs": 0,
+      "modeledFeeSavingsCents": 0
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "eligibleWaitingSingles": 55,
+      "pairs": 9,
+      "modeledFeeSavingsCents": 9810
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "eligibleWaitingSingles": 45,
+      "pairs": 6,
+      "modeledFeeSavingsCents": 9089
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "eligibleWaitingSingles": 20,
+      "pairs": 1,
+      "modeledFeeSavingsCents": 1359
+    },
+    {
+      "worldId": "w6893e7d9cdd984154dfe",
+      "seed": "formal-unseen-20261113-15",
+      "eligibleWaitingSingles": 29,
+      "pairs": 2,
+      "modeledFeeSavingsCents": 5516
+    },
+    {
+      "worldId": "wa7bcf5d1654b6d337c61",
+      "seed": "formal-unseen-20261113-16",
+      "eligibleWaitingSingles": 12,
+      "pairs": 0,
+      "modeledFeeSavingsCents": 0
+    }
+  ],
+  "details": [
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "at": 3825,
+      "orderIds": [
+        "R00501",
+        "R00543"
+      ],
+      "ages": [
+        172,
+        35
+      ],
+      "feeSavingCents": 1974,
+      "savedWorkMinutes": 166,
+      "drivingMinutes": 434,
+      "latestPickupAt": 4939
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "at": 5220,
+      "orderIds": [
+        "R00754",
+        "R00709"
+      ],
+      "ages": [
+        30,
+        139
+      ],
+      "feeSavingCents": 1753,
+      "savedWorkMinutes": 149,
+      "drivingMinutes": 356,
+      "latestPickupAt": 6498
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "at": 5355,
+      "orderIds": [
+        "R00792",
+        "R00777"
+      ],
+      "ages": [
+        39,
+        90
+      ],
+      "feeSavingCents": 616,
+      "savedWorkMinutes": 61,
+      "drivingMinutes": 299,
+      "latestPickupAt": 6535
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "at": 5385,
+      "orderIds": [
+        "R00821",
+        "R00775"
+      ],
+      "ages": [
+        31,
+        120
+      ],
+      "feeSavingCents": 401,
+      "savedWorkMinutes": 41,
+      "drivingMinutes": 289,
+      "latestPickupAt": 6546
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "at": 6240,
+      "orderIds": [
+        "R00829",
+        "R00850"
+      ],
+      "ages": [
+        870,
+        836
+      ],
+      "feeSavingCents": 496,
+      "savedWorkMinutes": 51,
+      "drivingMinutes": 398,
+      "latestPickupAt": 6450
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "at": 6780,
+      "orderIds": [
+        "R00969",
+        "R00985"
+      ],
+      "ages": [
+        46,
+        30
+      ],
+      "feeSavingCents": 3129,
+      "savedWorkMinutes": 297,
+      "drivingMinutes": 327,
+      "latestPickupAt": 10793
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "at": 6810,
+      "orderIds": [
+        "R00999",
+        "R00934"
+      ],
+      "ages": [
+        42,
+        200
+      ],
+      "feeSavingCents": 477,
+      "savedWorkMinutes": 42,
+      "drivingMinutes": 110,
+      "latestPickupAt": 7861
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "at": 6810,
+      "orderIds": [
+        "R01000",
+        "R00935"
+      ],
+      "ages": [
+        42,
+        200
+      ],
+      "feeSavingCents": 488,
+      "savedWorkMinutes": 42,
+      "drivingMinutes": 110,
+      "latestPickupAt": 7861
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "at": 6825,
+      "orderIds": [
+        "R01005",
+        "R00876"
+      ],
+      "ages": [
+        40,
+        476
+      ],
+      "feeSavingCents": 476,
+      "savedWorkMinutes": 47,
+      "drivingMinutes": 399,
+      "latestPickupAt": 10740
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "at": 2400,
+      "orderIds": [
+        "R00286",
+        "R00367"
+      ],
+      "ages": [
+        304,
+        34
+      ],
+      "feeSavingCents": 1806,
+      "savedWorkMinutes": 160,
+      "drivingMinutes": 346,
+      "latestPickupAt": 3601
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "at": 2415,
+      "orderIds": [
+        "R00372",
+        "R00309"
+      ],
+      "ages": [
+        31,
+        261
+      ],
+      "feeSavingCents": 506,
+      "savedWorkMinutes": 58,
+      "drivingMinutes": 384,
+      "latestPickupAt": 3557
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "at": 3360,
+      "orderIds": [
+        "R00384",
+        "R00417"
+      ],
+      "ages": [
+        933,
+        866
+      ],
+      "feeSavingCents": 591,
+      "savedWorkMinutes": 57,
+      "drivingMinutes": 218,
+      "latestPickupAt": 3748
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "at": 6705,
+      "orderIds": [
+        "R00955",
+        "R00945"
+      ],
+      "ages": [
+        34,
+        56
+      ],
+      "feeSavingCents": 1862,
+      "savedWorkMinutes": 178,
+      "drivingMinutes": 334,
+      "latestPickupAt": 10814
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "at": 6720,
+      "orderIds": [
+        "R00960",
+        "R00936"
+      ],
+      "ages": [
+        33,
+        96
+      ],
+      "feeSavingCents": 1217,
+      "savedWorkMinutes": 102,
+      "drivingMinutes": 219,
+      "latestPickupAt": 10947
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "at": 6765,
+      "orderIds": [
+        "R00981",
+        "R00957"
+      ],
+      "ages": [
+        36,
+        78
+      ],
+      "feeSavingCents": 3107,
+      "savedWorkMinutes": 320,
+      "drivingMinutes": 360,
+      "latestPickupAt": 10785
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "at": 6735,
+      "orderIds": [
+        "R00971",
+        "R00962"
+      ],
+      "ages": [
+        39,
+        62
+      ],
+      "feeSavingCents": 1359,
+      "savedWorkMinutes": 111,
+      "drivingMinutes": 222,
+      "latestPickupAt": 10930
+    },
+    {
+      "worldId": "w6893e7d9cdd984154dfe",
+      "seed": "formal-unseen-20261113-15",
+      "at": 5100,
+      "orderIds": [
+        "R00687",
+        "R00722"
+      ],
+      "ages": [
+        117,
+        36
+      ],
+      "feeSavingCents": 3620,
+      "savedWorkMinutes": 355,
+      "drivingMinutes": 436,
+      "latestPickupAt": 6377
+    },
+    {
+      "worldId": "w6893e7d9cdd984154dfe",
+      "seed": "formal-unseen-20261113-15",
+      "at": 6645,
+      "orderIds": [
+        "R00952",
+        "R00918"
+      ],
+      "ages": [
+        42,
+        160
+      ],
+      "feeSavingCents": 1896,
+      "savedWorkMinutes": 175,
+      "drivingMinutes": 224,
+      "latestPickupAt": 10942
+    }
+  ]
+}
