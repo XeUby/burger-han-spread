@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T03:19:00.331070+00:00",
+  "updatedAt": "2026-11-14T03:25:49.128181+00:00",
   "objective": "Continue systematic search toward the global optimum; practice only, no ranking submission.",
   "maximumConcurrentPlays": 4,
   "currentConcurrency": {
@@ -66,9 +66,9 @@
     "700km-only bundle treatment ends at7407.63/9410.50 euros, minimum96.6% on time. It gains versus the old baseline in both weeks but not versus bundles alone. No900km experiment scheduled."
   ],
   "nextSteps": [
-    "Complete the four frozen payout-opening confirmation weeks serially. Record exact world IDs when each starts.",
-    "Only if confirmation passes, reserve a fresh paired panel; keep defaults unchanged until independent evaluation passes.",
-    "Respect the shared four-play cap and use one worker while external teammates run worlds. No ranking or final."
+    "Complete all12frozen paired evaluation weeks with one worker and inspect every operational failure. No tuning or promotion from partial results.",
+    "Evaluate whether deadline-flexible requests are unnecessarily rejected by ready-day admission limits, using only old development streams; do not alter the frozen evaluation policies.",
+    "Respect the shared four-play cap. No ranking or final."
   ],
   "validationStatus": "All16 fresh paired trials complete. Candidate mean10411.59 euros versus8242.34, +26.32%;7/8 positive;8/8 qualified; minimum94.94% on time; no undelivered orders. Full report docs/frontier-validation.md. No ranking submission.",
   "checks": {
@@ -552,19 +552,14 @@
     "decision": "Stop under declared failure rule. Four-play guard saw3external active worlds. No offers accepted among7same-fee and7discount offers; no target booking/view difference. Retain as incomplete, not a12case negative study. Defer this version."
   },
   "currentStudy": {
-    "sessionId": 32843,
-    "kind": "opening-only payout confirmation",
+    "sessionId": 84112,
+    "kind": "fresh paired opening-only payout evaluation",
     "terminal": false,
-    "protocol": "experiments/payout-confirmation-protocol.json",
-    "manifest": "experiments/payout-confirmation-manifest.json",
-    "plan": "experiments/plans/payout-confirmation.json",
+    "manifest": "experiments/payout-validation-manifest.json",
     "maximumJobs": 1,
-    "trials": 4,
-    "completedTrials": 2,
-    "completedGainsCents": [
-      155600,
-      221277
-    ]
+    "trials": 24,
+    "pairs": 12,
+    "candidateRevision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea"
   },
   "completedPayoutScreen": {
     "sessionId": 76828,
@@ -624,7 +619,38 @@
     "script": "research/payout/freeze-validation.py",
     "pairs": 12,
     "workers": 1,
-    "status": "Not reserved or launched. Requires all four confirmation weeks and the frozen gate to pass.",
+    "status": "Reserved and launched after all confirmation criteria passed. All24attempts must complete before the promotion decision.",
     "promotionRule": "All12candidate weeks qualified; zero undelivered and failed visits; positive paired mean and positive95%paired bootstrap lower endpoint; inspect every action error."
-  }
+  },
+  "completedPayoutConfirmation": {
+    "sessionId": 32843,
+    "kind": "opening-only payout confirmation",
+    "terminal": true,
+    "protocol": "experiments/payout-confirmation-protocol.json",
+    "manifest": "experiments/payout-confirmation-manifest.json",
+    "plan": "experiments/plans/payout-confirmation.json",
+    "maximumJobs": 1,
+    "trials": 4,
+    "completedTrials": 4,
+    "completedGainsCents": [
+      155600,
+      221277,
+      184042,
+      149829
+    ],
+    "study": "runs/study-1794626617836.json",
+    "report": "docs/payout-confirmation-results.json",
+    "summary": {
+      "payout-confirmation": {
+        "weeks": 4,
+        "meanGainCents": 177687,
+        "minimumGainCents": 149829,
+        "qualified": 4,
+        "undelivered": 0,
+        "failedVisits": 0,
+        "gatePassed": true
+      }
+    }
+  },
+  "leaderboardMetrics": "docs/leaderboard-metrics.json"
 }

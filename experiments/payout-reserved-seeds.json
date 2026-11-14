@@ -1,0 +1,18 @@
+{
+  "reservedAt": "2026-11-14T03:24:40.100829+00:00",
+  "purpose": "Independent paired evaluation after frozen opening-only payout policy passes both development gates. Cryptographically random seeds have not been played or inspected.",
+  "seeds": [
+    "payout-unseen-20261114-1c6cfe93689d0a32",
+    "payout-unseen-20261114-11d2bc22e5a2e17d",
+    "payout-unseen-20261114-619e961538a5119e",
+    "payout-unseen-20261114-8a0fdb3994ac5c0e",
+    "payout-unseen-20261114-166d26adce8afd0e",
+    "payout-unseen-20261114-df10216ee874354b",
+    "payout-unseen-20261114-bdbb0af73763c605",
+    "payout-unseen-20261114-bfc8b37c1c3b01b5",
+    "payout-unseen-20261114-2b782dea15c2c930",
+    "payout-unseen-20261114-e2258b662e732c8e",
+    "payout-unseen-20261114-1954b8aff04d03b3",
+    "payout-unseen-20261114-266a2575198d039b"
+  ]
+}

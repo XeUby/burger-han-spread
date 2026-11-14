@@ -1,5 +1,5 @@
 {
-  "observedAt": "2026-11-14T03:02:49.219Z",
+  "observedAt": "2026-11-14T03:23:03.816Z",
   "source": "https://spread.bahnexpress.com/v1/leaderboards/practice?level=8",
   "data": {
     "level": 8,
@@ -3580,6 +3580,33 @@
         },
         {
           "rank": null,
+          "team": "freya",
+          "name": "freya",
+          "played": 2,
+          "ranked": false,
+          "marginCents": null,
+          "onTimeShare": null,
+          "runs": [
+            {
+              "run": 1,
+              "marginCents": 1721086,
+              "onTimeShare": 0.9889624724061811,
+              "wonOrders": 453,
+              "ranked": true,
+              "deletedAt": null
+            },
+            {
+              "run": 2,
+              "marginCents": 1750309,
+              "onTimeShare": 0.9860788863109049,
+              "wonOrders": 431,
+              "ranked": true,
+              "deletedAt": null
+            }
+          ]
+        },
+        {
+          "rank": null,
           "team": "newkaabi",
           "name": "NewKaabi",
           "played": 2,
@@ -3848,6 +3875,16 @@
           "rank": null,
           "team": "ex-actum",
           "name": "EX-ACTUM",
+          "played": 0,
+          "ranked": false,
+          "marginCents": null,
+          "onTimeShare": null,
+          "runs": []
+        },
+        {
+          "rank": null,
+          "team": "fenec-sisu",
+          "name": "Fenec-Sisu",
           "played": 0,
           "ranked": false,
           "marginCents": null,
@@ -5769,6 +5806,16 @@
         },
         {
           "rank": null,
+          "team": "fenec-sisu",
+          "name": "Fenec-Sisu",
+          "played": 0,
+          "ranked": false,
+          "marginCents": null,
+          "onTimeShare": null,
+          "runs": []
+        },
+        {
+          "rank": null,
           "team": "fluiidd",
           "name": "Fluiidd",
           "played": 0,
@@ -5791,6 +5838,16 @@
           "rank": null,
           "team": "fourth-affair",
           "name": "Fourth Affair",
+          "played": 0,
+          "ranked": false,
+          "marginCents": null,
+          "onTimeShare": null,
+          "runs": []
+        },
+        {
+          "rank": null,
+          "team": "freya",
+          "name": "freya",
           "played": 0,
           "ranked": false,
           "marginCents": null,
