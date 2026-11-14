@@ -1,0 +1,84 @@
+{
+  "method": "Whole-week candidate-minus-baseline ledger differences, including shared-gig fees with null orderId. Descriptive decomposition, not independent causal effects.",
+  "meanDifferenceEuros": {
+    "driver_fee": -137.3175,
+    "fine": -12.5,
+    "release_fee": -23.08375,
+    "late_refund": -4.965,
+    "revenue": 217.32375
+  },
+  "pairs": [
+    {
+      "seed": "relisting-unseen-20261114-44179069f811e12a",
+      "deltaCents": {
+        "driver_fee": -26317,
+        "fine": -10000,
+        "release_fee": 0,
+        "late_refund": -3184,
+        "revenue": 12443
+      }
+    },
+    {
+      "seed": "relisting-unseen-20261114-593862ba0453d993",
+      "deltaCents": {
+        "late_refund": -28198,
+        "driver_fee": -139201,
+        "revenue": 129758
+      }
+    },
+    {
+      "seed": "relisting-unseen-20261114-ae921d2f5a004c5c",
+      "deltaCents": {
+        "late_refund": 9777,
+        "driver_fee": 43683,
+        "revenue": 1514,
+        "release_fee": 0
+      }
+    },
+    {
+      "seed": "relisting-unseen-20261114-5291bd44e58fc0b8",
+      "deltaCents": {
+        "late_refund": 2789,
+        "driver_fee": -17948,
+        "revenue": 27201,
+        "release_fee": 0
+      }
+    },
+    {
+      "seed": "relisting-unseen-20261114-664fad94342f003c",
+      "deltaCents": {
+        "late_refund": 11977,
+        "driver_fee": 31744,
+        "revenue": -52018,
+        "release_fee": -1163
+      }
+    },
+    {
+      "seed": "relisting-unseen-20261114-be6ccba2d5332cc6",
+      "deltaCents": {
+        "late_refund": 4399,
+        "driver_fee": -18493,
+        "revenue": 30752,
+        "release_fee": -10163
+      }
+    },
+    {
+      "seed": "relisting-unseen-20261114-85e7c8159eb228d3",
+      "deltaCents": {
+        "late_refund": 5588,
+        "driver_fee": 2286,
+        "revenue": 19991,
+        "release_fee": -7141
+      }
+    },
+    {
+      "seed": "relisting-unseen-20261114-49994c1da1bed296",
+      "deltaCents": {
+        "late_refund": -7120,
+        "driver_fee": 14392,
+        "revenue": 4218,
+        "release_fee": 0
+      }
+    }
+  ]
+}

@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-14T02:29:07.016560+00:00",
+  "updatedAt": "2026-11-14T02:56:11.760938+00:00",
   "objective": "Continue systematic search toward the global optimum; practice only, no ranking submission.",
   "maximumConcurrentPlays": 4,
   "currentConcurrency": {
     "maximumConcurrentPlays": 4,
     "activeRunners": 1,
-    "note": "Only paired runner2921; four unfinished worlds at most. All earlier probes/screens/confirmation terminal."
+    "note": "Our runner76828 uses1worker and waits whenever4team worlds are unfinished. Another runner is using the shared key; do not delete its worlds. Viewer probe27448 stopped and all its worlds are deleted."
   },
   "completedCombinationStudy": {
     "sessionId": 84558,
@@ -66,15 +66,14 @@
     "700km-only bundle treatment ends at7407.63/9410.50 euros, minimum96.6% on time. It gains versus the old baseline in both weeks but not versus bundles alone. No900km experiment scheduled."
   ],
   "nextSteps": [
-    "Poll runner2921 without restarting or rewriting its live manifest. Preserve every attempt.",
-    "After all16finish run python3 analysis/frontier_validation.py --manifest experiments/relisting-validation-manifest.json --output docs/relisting-validation and python3 analysis/policy_audit.py --manifest experiments/relisting-validation-manifest.json --output docs/relisting-validation-audit.json.",
-    "Apply frozen promotion rule: all8candidate weeks qualified, no undelivered orders, positive mean and positive95% paired bootstrap lower endpoint, no failed visits, inspect all errors.",
-    "Only if gate passes consider promotion; current default remains validated late-rescue with relist false.",
-    "Keep at most4unfinished plays and no ranking/final. Push coherent checkpoint."
+    "Poll runner76828 without restarting. Record each exact worldID in payout-manifest as it appears.",
+    "Apply frozen screening rule separately to full and opening-only variants; do not tune after outcomes.",
+    "Customer pricing and bundle schedules remain unchanged at identical states. Default payout remains1.",
+    "Keep relist and noteSpelling off. No ranking/final; totalunfinished guard4 and ownworkers1."
   ],
   "validationStatus": "All16 fresh paired trials complete. Candidate mean10411.59 euros versus8242.34, +26.32%;7/8 positive;8/8 qualified; minimum94.94% on time; no undelivered orders. Full report docs/frontier-validation.md. No ranking submission.",
   "checks": {
-    "nodeSuite": 105,
+    "nodeSuite": 109,
     "researchTests": 12,
     "pythonReportTests": 9,
     "typecheck": "passed"
@@ -257,7 +256,7 @@
   "runtimeDefault": {
     "selection": "experiments/current-selection.json",
     "config": "experiments/final-config.json",
-    "revision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c",
+    "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
     "sourceReference": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
     "conformance": "docs/late-rescue-conformance.json"
   },
@@ -504,13 +503,63 @@
       "gatePassed": true
     }
   },
-  "currentStudy": {
+  "completedRelistingValidation": {
     "sessionId": 2921,
     "kind": "fresh paired relisting evaluation",
-    "terminal": false,
+    "terminal": true,
     "manifest": "experiments/relisting-validation-manifest.json",
     "maximumJobs": 4,
     "trials": 16,
-    "candidateRevision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c"
+    "candidateRevision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c",
+    "report": "docs/relisting-validation.json",
+    "audit": "docs/relisting-validation-audit.json",
+    "decision": "experiments/relisting-decision.json",
+    "paired": {
+      "meanDifferenceCents": 3945.75,
+      "medianDifferenceCents": 8992.5,
+      "minimumDifferenceCents": -37641,
+      "maximumDifferenceCents": 54974,
+      "totalDifferenceCents": 31566,
+      "relativeMeanImprovement": 0.005044186569385767,
+      "meanDifferenceBootstrap95Cents": [
+        -14262.94375,
+        23304.625
+      ],
+      "wins": 5,
+      "ties": 0,
+      "losses": 3,
+      "twoSidedExactSignTestP": 0.7265625
+    }
+  },
+  "destinationSupplyScreen": {
+    "report": "docs/destination-supply-screen.json",
+    "requestsPerWeek": 22.666666666666668,
+    "decision": "Static exposure only. Defer any admission expansion until dispatch mechanism research gives a stronger basis."
+  },
+  "interruptedViewerOffers": {
+    "sessionId": 27448,
+    "kind": "recent-viewer direct-offer mechanism probe",
+    "terminal": false,
+    "protocol": "experiments/viewer-offers-protocol.json",
+    "manifest": "runs/viewer-offers-probe.json",
+    "baseWorldId": "w506347aee75ef1aa8dae",
+    "maximumConcurrentPlays": 4,
+    "runnerTerminal": true,
+    "probeComplete": false,
+    "report": "docs/viewer-offers-results.json",
+    "cleanup": "docs/viewer-offers-cleanup.json",
+    "completedCases": 7,
+    "attemptedCases": 8,
+    "decision": "Stop under declared failure rule. Four-play guard saw3external active worlds. No offers accepted among7same-fee and7discount offers; no target booking/view difference. Retain as incomplete, not a12case negative study. Defer this version."
+  },
+  "currentStudy": {
+    "sessionId": 76828,
+    "kind": "unbundled payout-only screen",
+    "terminal": false,
+    "protocol": "experiments/payout-protocol.json",
+    "manifest": "experiments/payout-manifest.json",
+    "plan": "experiments/plans/payout.json",
+    "maximumJobs": 1,
+    "trials": 4
   }
 }

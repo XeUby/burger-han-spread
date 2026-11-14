@@ -1,0 +1,27 @@
+{
+  "assignedAt": "2026-11-14T02:56:11.759566+00:00",
+  "protocol": "experiments/payout-protocol.json",
+  "protocolSha256": "ef039282fc34a2d92dd5eb8d8883500bc0a05951970870e1ddfc5d2df8f01669",
+  "worlds": [
+    {
+      "label": "payout-full",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "wb1b8eab4c135037229ed"
+    },
+    {
+      "label": "payout-opening",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": null
+    },
+    {
+      "label": "payout-full",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": null
+    },
+    {
+      "label": "payout-opening",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": null
+    }
+  ]
+}

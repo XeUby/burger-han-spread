@@ -1,0 +1,12 @@
+{
+  "decidedAt": "2026-11-14T02:40:51.060481+00:00",
+  "selected": false,
+  "candidateRevision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c",
+  "baselineRevision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+  "validation": "docs/relisting-validation.json",
+  "audit": "docs/relisting-validation-audit.json",
+  "rule": "Require all8 candidate weeks qualified, no undelivered orders, positive mean paired gain with a positive95% paired bootstrap lower endpoint, and no failed visits. Inspect all action errors and retain every attempt. No default change before all trials and audit complete.",
+  "failedCondition": "Positive95%paired bootstrap lower endpoint; observed-14262.94375cents.",
+  "defaultRelist": false,
+  "interpretation": "The fresh sample does not establish a positive profit improvement under the declared gate. Mean+39.46euros and improved on-time performance do not override the profit criterion. Do not tune on this panel while continuing to call it unseen."
+}

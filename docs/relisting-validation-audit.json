@@ -1,42 +1,130 @@
 {
   "manifest": "experiments/relisting-validation-manifest.json",
-  "terminal": false,
+  "terminal": true,
   "attempts": [
     {
       "seed": "relisting-unseen-20261114-44179069f811e12a",
       "side": "baseline",
       "worldId": "w91564fd780e4bc249119",
-      "startedAt": "2026-11-14T02:27:57.603Z"
+      "startedAt": "2026-11-14T02:27:57.603Z",
+      "completedAt": "2026-11-14T02:30:07.451Z"
     },
     {
       "seed": "relisting-unseen-20261114-44179069f811e12a",
       "side": "candidate",
       "worldId": "w04e60027b7b2b4d7b58b",
-      "startedAt": "2026-11-14T02:27:57.822Z"
+      "startedAt": "2026-11-14T02:27:57.822Z",
+      "completedAt": "2026-11-14T02:30:11.029Z"
     },
     {
       "seed": "relisting-unseen-20261114-593862ba0453d993",
       "side": "baseline",
       "worldId": "w7eaa6b3210b790c25028",
-      "startedAt": "2026-11-14T02:27:58.017Z"
+      "startedAt": "2026-11-14T02:27:58.017Z",
+      "completedAt": "2026-11-14T02:30:03.254Z"
     },
     {
       "seed": "relisting-unseen-20261114-593862ba0453d993",
       "side": "candidate",
       "worldId": "w8baaaa6df86b54b0124f",
-      "startedAt": "2026-11-14T02:27:58.204Z"
+      "startedAt": "2026-11-14T02:27:58.204Z",
+      "completedAt": "2026-11-14T02:30:10.625Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-ae921d2f5a004c5c",
+      "side": "baseline",
+      "worldId": "w129775e44fd461f4366b",
+      "startedAt": "2026-11-14T02:30:03.416Z",
+      "completedAt": "2026-11-14T02:32:18.456Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-ae921d2f5a004c5c",
+      "side": "candidate",
+      "worldId": "wdff0665ab413b6995114",
+      "startedAt": "2026-11-14T02:30:07.620Z",
+      "completedAt": "2026-11-14T02:32:24.993Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-5291bd44e58fc0b8",
+      "side": "baseline",
+      "worldId": "w204e5b617a8a34fb8b1b",
+      "startedAt": "2026-11-14T02:30:11.024Z",
+      "completedAt": "2026-11-14T02:32:22.374Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-5291bd44e58fc0b8",
+      "side": "candidate",
+      "worldId": "w90976401207ea6e356ad",
+      "startedAt": "2026-11-14T02:30:11.201Z",
+      "completedAt": "2026-11-14T02:32:23.949Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-664fad94342f003c",
+      "side": "baseline",
+      "worldId": "w84f9b01fde2cae59d96e",
+      "startedAt": "2026-11-14T02:32:18.670Z",
+      "completedAt": "2026-11-14T02:36:13.285Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-664fad94342f003c",
+      "side": "candidate",
+      "worldId": "wfc55b9fd2c33edcf38d2",
+      "startedAt": "2026-11-14T02:32:22.547Z",
+      "completedAt": "2026-11-14T02:36:13.749Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-be6ccba2d5332cc6",
+      "side": "baseline",
+      "worldId": "w20a5b10fafcb6b7ad129",
+      "startedAt": "2026-11-14T02:32:24.112Z",
+      "completedAt": "2026-11-14T02:36:21.677Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-be6ccba2d5332cc6",
+      "side": "candidate",
+      "worldId": "w5c65064df8ed758335b3",
+      "startedAt": "2026-11-14T02:32:25.159Z",
+      "completedAt": "2026-11-14T02:36:24.345Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-85e7c8159eb228d3",
+      "side": "baseline",
+      "worldId": "w25bd5a8dbece356a4b6a",
+      "startedAt": "2026-11-14T02:36:13.745Z",
+      "completedAt": "2026-11-14T02:40:00.260Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-85e7c8159eb228d3",
+      "side": "candidate",
+      "worldId": "w948237ee99b62929f498",
+      "startedAt": "2026-11-14T02:36:14.210Z",
+      "completedAt": "2026-11-14T02:40:08.613Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-49994c1da1bed296",
+      "side": "baseline",
+      "worldId": "w119bd36598fdf32552b2",
+      "startedAt": "2026-11-14T02:36:22.164Z",
+      "completedAt": "2026-11-14T02:40:18.033Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-49994c1da1bed296",
+      "side": "candidate",
+      "worldId": "wcab3544664a8a0e5ac1e",
+      "startedAt": "2026-11-14T02:36:24.628Z",
+      "completedAt": "2026-11-14T02:40:12.411Z"
     }
   ],
   "runnerErrors": [],
   "summary": {
     "baseline": {
-      "completed": 0,
+      "completed": 8,
       "failedVisits": 0,
-      "actionErrors": 0,
+      "actionErrors": 1,
       "recoveries": 0
     },
     "candidate": {
-      "completed": 0,
+      "completed": 8,
       "failedVisits": 0,
       "actionErrors": 0,
       "recoveries": 0
@@ -47,97 +135,524 @@
       "seed": "relisting-unseen-20261114-44179069f811e12a",
       "side": "baseline",
       "worldId": "w91564fd780e4bc249119",
-      "status": "pending"
+      "status": "complete",
+      "marginCents": 784218,
+      "qualified": true,
+      "onTimeShare": 0.9774436090225563,
+      "undeliveredOrders": 0,
+      "eventCounts": {
+        "price_request": 1037,
+        "order_lost": 769,
+        "order_won": 268,
+        "gig_viewed": 3687,
+        "gig_booked": 275,
+        "gig_started": 241,
+        "picked_up": 266,
+        "delivered": 266,
+        "ledger": 519,
+        "offer_answered": 87,
+        "deadline_close": 8,
+        "gig_dropped": 32,
+        "order_cancelled": 2,
+        "forecast": 1,
+        "order_changed": 5,
+        "gig_expired": 4
+      },
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": []
     },
     {
       "seed": "relisting-unseen-20261114-44179069f811e12a",
       "side": "candidate",
       "worldId": "w04e60027b7b2b4d7b58b",
-      "status": "pending"
+      "status": "complete",
+      "marginCents": 757160,
+      "qualified": true,
+      "onTimeShare": 0.9850187265917603,
+      "undeliveredOrders": 0,
+      "eventCounts": {
+        "price_request": 1037,
+        "order_lost": 768,
+        "order_won": 269,
+        "gig_viewed": 4203,
+        "gig_booked": 288,
+        "gig_started": 244,
+        "picked_up": 267,
+        "delivered": 267,
+        "ledger": 522,
+        "offer_answered": 105,
+        "deadline_close": 7,
+        "gig_dropped": 42,
+        "order_cancelled": 2,
+        "forecast": 1,
+        "order_changed": 5,
+        "gig_expired": 5
+      },
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": []
     },
     {
       "seed": "relisting-unseen-20261114-593862ba0453d993",
       "side": "baseline",
       "worldId": "w7eaa6b3210b790c25028",
-      "status": "pending"
+      "status": "complete",
+      "marginCents": 762373,
+      "qualified": true,
+      "onTimeShare": 0.981203007518797,
+      "undeliveredOrders": 0,
+      "eventCounts": {
+        "forecast": 1,
+        "price_request": 1035,
+        "order_lost": 768,
+        "order_won": 267,
+        "gig_viewed": 3481,
+        "gig_booked": 261,
+        "gig_started": 234,
+        "picked_up": 266,
+        "delivered": 266,
+        "ledger": 507,
+        "offer_answered": 159,
+        "gig_dropped": 27,
+        "order_changed": 5,
+        "deadline_close": 12,
+        "gig_expired": 7,
+        "order_cancelled": 1
+      },
+      "failedVisits": [],
+      "actionErrors": [
+        {
+          "at": 2314,
+          "action": {
+            "type": "reprice",
+            "gigId": "g74",
+            "schedule": [
+              {
+                "at": 2314,
+                "feeCents": 4593
+              },
+              {
+                "at": 2364,
+                "feeCents": 4593
+              },
+              {
+                "at": 2484,
+                "feeCents": 5818
+              },
+              {
+                "at": 2544,
+                "feeCents": 7655
+              }
+            ]
+          },
+          "reason": "Gig g74 is not open"
+        }
+      ],
+      "recoveries": []
     },
     {
       "seed": "relisting-unseen-20261114-593862ba0453d993",
       "side": "candidate",
       "worldId": "w8baaaa6df86b54b0124f",
-      "status": "pending"
+      "status": "complete",
+      "marginCents": 724732,
+      "qualified": true,
+      "onTimeShare": 0.9744525547445255,
+      "undeliveredOrders": 0,
+      "eventCounts": {
+        "forecast": 1,
+        "price_request": 1035,
+        "order_lost": 760,
+        "order_won": 275,
+        "gig_viewed": 4033,
+        "gig_booked": 276,
+        "gig_started": 243,
+        "picked_up": 274,
+        "delivered": 274,
+        "ledger": 526,
+        "offer_answered": 198,
+        "gig_dropped": 33,
+        "order_changed": 4,
+        "deadline_close": 15,
+        "gig_expired": 7,
+        "order_cancelled": 1
+      },
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": []
     },
     {
       "seed": "relisting-unseen-20261114-ae921d2f5a004c5c",
       "side": "baseline",
-      "worldId": null,
-      "status": "pending"
+      "worldId": "w129775e44fd461f4366b",
+      "status": "complete",
+      "marginCents": 598932,
+      "qualified": true,
+      "onTimeShare": 0.983402489626556,
+      "undeliveredOrders": 0,
+      "eventCounts": {
+        "forecast": 1,
+        "price_request": 1035,
+        "order_lost": 790,
+        "order_won": 245,
+        "gig_viewed": 2996,
+        "gig_booked": 232,
+        "gig_started": 216,
+        "offer_answered": 81,
+        "picked_up": 242,
+        "delivered": 241,
+        "ledger": 462,
+        "gig_dropped": 15,
+        "order_cancelled": 4,
+        "order_changed": 4,
+        "deadline_close": 5,
+        "gig_expired": 2
+      },
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": []
     },
     {
       "seed": "relisting-unseen-20261114-ae921d2f5a004c5c",
       "side": "candidate",
-      "worldId": null,
-      "status": "pending"
+      "worldId": "wdff0665ab413b6995114",
+      "status": "complete",
+      "marginCents": 653906,
+      "qualified": true,
+      "onTimeShare": 0.991701244813278,
+      "undeliveredOrders": 0,
+      "eventCounts": {
+        "forecast": 1,
+        "price_request": 1035,
+        "order_lost": 790,
+        "order_won": 245,
+        "gig_viewed": 2443,
+        "gig_booked": 239,
+        "gig_started": 217,
+        "offer_answered": 45,
+        "picked_up": 242,
+        "delivered": 241,
+        "ledger": 462,
+        "gig_dropped": 21,
+        "order_cancelled": 4,
+        "order_changed": 5,
+        "deadline_close": 3,
+        "gig_expired": 1
+      },
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": []
     },
     {
       "seed": "relisting-unseen-20261114-5291bd44e58fc0b8",
       "side": "baseline",
-      "worldId": null,
-      "status": "pending"
+      "worldId": "w204e5b617a8a34fb8b1b",
+      "status": "complete",
+      "marginCents": 564262,
+      "qualified": true,
+      "onTimeShare": 0.9873417721518988,
+      "undeliveredOrders": 0,
+      "eventCounts": {
+        "forecast": 1,
+        "price_request": 1037,
+        "order_lost": 793,
+        "order_won": 244,
+        "gig_viewed": 1840,
+        "gig_booked": 229,
+        "gig_started": 204,
+        "picked_up": 237,
+        "delivered": 237,
+        "ledger": 448,
+        "gig_dropped": 21,
+        "order_changed": 7,
+        "no_show": 2,
+        "offer_answered": 18,
+        "gig_expired": 2,
+        "order_cancelled": 7,
+        "deadline_close": 1
+      },
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": []
     },
     {
       "seed": "relisting-unseen-20261114-5291bd44e58fc0b8",
       "side": "candidate",
-      "worldId": null,
-      "status": "pending"
+      "worldId": "w90976401207ea6e356ad",
+      "status": "complete",
+      "marginCents": 576304,
+      "qualified": true,
+      "onTimeShare": 0.9917355371900827,
+      "undeliveredOrders": 0,
+      "eventCounts": {
+        "forecast": 1,
+        "price_request": 1037,
+        "order_lost": 789,
+        "order_won": 248,
+        "gig_viewed": 2136,
+        "gig_booked": 233,
+        "gig_started": 206,
+        "picked_up": 242,
+        "delivered": 242,
+        "ledger": 454,
+        "gig_dropped": 23,
+        "order_changed": 6,
+        "no_show": 2,
+        "offer_answered": 12,
+        "gig_expired": 1,
+        "order_cancelled": 6
+      },
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": []
     },
     {
       "seed": "relisting-unseen-20261114-664fad94342f003c",
       "side": "baseline",
-      "worldId": null,
-      "status": "pending"
+      "worldId": "w84f9b01fde2cae59d96e",
+      "status": "complete",
+      "marginCents": 773571,
+      "qualified": true,
+      "onTimeShare": 0.969811320754717,
+      "undeliveredOrders": 0,
+      "eventCounts": {
+        "price_request": 1037,
+        "order_lost": 769,
+        "order_won": 268,
+        "gig_viewed": 2847,
+        "gig_booked": 271,
+        "gig_started": 239,
+        "picked_up": 265,
+        "delivered": 265,
+        "ledger": 516,
+        "order_changed": 3,
+        "offer_answered": 117,
+        "gig_dropped": 28,
+        "forecast": 1,
+        "order_cancelled": 3,
+        "deadline_close": 16,
+        "gig_expired": 8,
+        "no_show": 1
+      },
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": []
     },
     {
       "seed": "relisting-unseen-20261114-664fad94342f003c",
       "side": "candidate",
-      "worldId": null,
-      "status": "pending"
+      "worldId": "wfc55b9fd2c33edcf38d2",
+      "status": "complete",
+      "marginCents": 764111,
+      "qualified": true,
+      "onTimeShare": 0.9923076923076923,
+      "undeliveredOrders": 0,
+      "eventCounts": {
+        "price_request": 1037,
+        "order_lost": 773,
+        "order_won": 264,
+        "gig_viewed": 2212,
+        "gig_booked": 261,
+        "gig_started": 236,
+        "picked_up": 262,
+        "delivered": 260,
+        "ledger": 501,
+        "order_changed": 2,
+        "offer_answered": 48,
+        "gig_dropped": 23,
+        "forecast": 1,
+        "order_cancelled": 4,
+        "gig_expired": 3,
+        "deadline_close": 4
+      },
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": []
     },
     {
       "seed": "relisting-unseen-20261114-be6ccba2d5332cc6",
       "side": "baseline",
-      "worldId": null,
-      "status": "pending"
+      "worldId": "w20a5b10fafcb6b7ad129",
+      "status": "complete",
+      "marginCents": 786098,
+      "qualified": true,
+      "onTimeShare": 0.9932203389830508,
+      "undeliveredOrders": 0,
+      "eventCounts": {
+        "price_request": 1038,
+        "order_lost": 742,
+        "order_won": 296,
+        "gig_viewed": 2484,
+        "gig_booked": 263,
+        "gig_started": 249,
+        "picked_up": 295,
+        "delivered": 295,
+        "ledger": 549,
+        "order_changed": 6,
+        "forecast": 1,
+        "gig_dropped": 14,
+        "order_cancelled": 1,
+        "offer_answered": 9,
+        "driver_late": 1
+      },
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": []
     },
     {
       "seed": "relisting-unseen-20261114-be6ccba2d5332cc6",
       "side": "candidate",
-      "worldId": null,
-      "status": "pending"
+      "worldId": "w5c65064df8ed758335b3",
+      "status": "complete",
+      "marginCents": 792593,
+      "qualified": true,
+      "onTimeShare": 0.9966329966329966,
+      "undeliveredOrders": 0,
+      "eventCounts": {
+        "price_request": 1038,
+        "order_lost": 740,
+        "order_won": 298,
+        "gig_viewed": 2230,
+        "gig_booked": 266,
+        "gig_started": 250,
+        "picked_up": 297,
+        "delivered": 297,
+        "ledger": 552,
+        "order_changed": 6,
+        "gig_dropped": 15,
+        "forecast": 1,
+        "order_cancelled": 1,
+        "offer_answered": 9
+      },
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": []
     },
     {
       "seed": "relisting-unseen-20261114-85e7c8159eb228d3",
       "side": "baseline",
-      "worldId": null,
-      "status": "pending"
+      "worldId": "w25bd5a8dbece356a4b6a",
+      "status": "complete",
+      "marginCents": 1099898,
+      "qualified": true,
+      "onTimeShare": 0.9875,
+      "undeliveredOrders": 0,
+      "eventCounts": {
+        "forecast": 2,
+        "price_request": 1037,
+        "order_lost": 716,
+        "order_won": 321,
+        "gig_viewed": 3780,
+        "gig_booked": 316,
+        "gig_started": 284,
+        "picked_up": 320,
+        "delivered": 320,
+        "ledger": 609,
+        "offer_answered": 42,
+        "deadline_close": 5,
+        "gig_expired": 2,
+        "gig_dropped": 32,
+        "order_changed": 6,
+        "order_cancelled": 1
+      },
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": []
     },
     {
       "seed": "relisting-unseen-20261114-85e7c8159eb228d3",
       "side": "candidate",
-      "worldId": null,
-      "status": "pending"
+      "worldId": "w948237ee99b62929f498",
+      "status": "complete",
+      "marginCents": 1120622,
+      "qualified": true,
+      "onTimeShare": 0.9937888198757764,
+      "undeliveredOrders": 0,
+      "eventCounts": {
+        "forecast": 2,
+        "price_request": 1037,
+        "order_lost": 713,
+        "order_won": 324,
+        "gig_viewed": 3273,
+        "gig_booked": 324,
+        "gig_started": 284,
+        "picked_up": 323,
+        "delivered": 322,
+        "ledger": 611,
+        "offer_answered": 36,
+        "deadline_close": 3,
+        "gig_expired": 2,
+        "gig_dropped": 36,
+        "order_changed": 6,
+        "no_show": 3,
+        "order_cancelled": 2
+      },
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": []
     },
     {
       "seed": "relisting-unseen-20261114-49994c1da1bed296",
       "side": "baseline",
-      "worldId": null,
-      "status": "pending"
+      "worldId": "w119bd36598fdf32552b2",
+      "status": "complete",
+      "marginCents": 888545,
+      "qualified": true,
+      "onTimeShare": 0.9739776951672863,
+      "undeliveredOrders": 0,
+      "eventCounts": {
+        "forecast": 1,
+        "price_request": 1037,
+        "order_lost": 766,
+        "order_won": 271,
+        "gig_viewed": 2732,
+        "gig_booked": 286,
+        "gig_started": 248,
+        "picked_up": 269,
+        "delivered": 269,
+        "ledger": 529,
+        "gig_dropped": 37,
+        "order_changed": 7,
+        "offer_answered": 117,
+        "order_cancelled": 2,
+        "deadline_close": 10,
+        "gig_expired": 5
+      },
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": []
     },
     {
       "seed": "relisting-unseen-20261114-49994c1da1bed296",
       "side": "candidate",
-      "worldId": null,
-      "status": "pending"
+      "worldId": "wcab3544664a8a0e5ac1e",
+      "status": "complete",
+      "marginCents": 900035,
+      "qualified": true,
+      "onTimeShare": 0.9777777777777777,
+      "undeliveredOrders": 0,
+      "eventCounts": {
+        "forecast": 1,
+        "price_request": 1037,
+        "order_lost": 766,
+        "order_won": 271,
+        "gig_viewed": 2323,
+        "gig_booked": 284,
+        "gig_started": 248,
+        "picked_up": 270,
+        "delivered": 270,
+        "ledger": 529,
+        "gig_dropped": 35,
+        "order_changed": 7,
+        "offer_answered": 120,
+        "order_cancelled": 1,
+        "deadline_close": 8,
+        "gig_expired": 3
+      },
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": []
     }
   ]
 }

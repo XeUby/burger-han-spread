@@ -1,0 +1,10 @@
+{
+  "deletedAt": "2026-11-14T02:48:11.524Z",
+  "worldId": "w506347aee75ef1aa8dae",
+  "reason": "Probe stopped at the shared four-play cap. Public snapshot,2907-event prefix and all7complete cases retained; no replay or replacement.",
+  "remainingUnfinished": [
+    "w18a6d6e05ff482c2c3df",
+    "w51aeb2aec327fe340967",
+    "w4b6deac77f9e6f86db08"
+  ]
+}

@@ -21,15 +21,15 @@ import type { World } from "../vendor/typescript/spread.ts"
 import type { Action, ActionResult, DeskEvent, DeskSnapshot, DriverProfile, FeeStep, Order, PostAction, PriceRequest, WorldMap } from "../vendor/typescript/types.ts"
 
 export type Settings = {
-  price: number; fee: number; margin: number; capacity: number; maxKm: number; minDrivers: number
-  notes: boolean; noteSpelling: boolean; relist: boolean; adaptive: boolean; earlyOffers: boolean; safetySlack: boolean
+  price: number; fee: number; payout: number; margin: number; capacity: number; maxKm: number; minDrivers: number
+  notes: boolean; noteSpelling: boolean; relist: boolean; openingOnly: boolean; adaptive: boolean; earlyOffers: boolean; safetySlack: boolean
   auction: boolean; allowPrivate: boolean; tradeIns: boolean; homeOffers: boolean; readiness: boolean; bundlePairs: boolean; timedNotes: boolean; lateRescue: boolean
   sameDayPremium: number; laterDiscount: number; placePrior: number; bundleWait: number
   backlog: number; priceFloor: number; costRatio: number; trustStep: number; sameDayBacklog: number; demandSlope: number
 }
 export const defaults: Settings = {
-  price: 1.42, fee: 1.05, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
-  notes: true, noteSpelling: false, relist: false, adaptive: true, earlyOffers: false, safetySlack: false,
+  price: 1.42, fee: 1.05, payout: 1, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
+  notes: true, noteSpelling: false, relist: false, openingOnly: false, adaptive: true, earlyOffers: false, safetySlack: false,
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
   backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14,
 }
@@ -43,6 +43,7 @@ export function validateSettings(value: unknown): asserts value is Partial<Setti
     if (key === "bundleWait" && (!Number.isInteger(field) || field > 30)) throw new Error("bundleWait must be an integer from 0 to 30")
     if ((key === "margin" || key === "capacity") && field >= 1) throw new Error(`${key} must be below 1`)
     if (key === "placePrior" && field > 2) throw new Error("placePrior must be at most 2")
+    if (key === "payout" && field > 1) throw new Error("payout must be at most 1")
   }
 }
 
@@ -250,26 +251,32 @@ export class Dispatcher extends Desk {
     return Math.min(order.lastPickupAt, lastPickup(leg, order.deadline, this.network, rules.plates))
   }
 
-  feesFor(order: Order, cars: number): FeeStep[] {
+  payoutSchedule(schedule: FeeStep[], opening: boolean): FeeStep[] {
+    if (this.settings.payout === 1) return schedule
+    return schedule.map((step, index) => ({ ...step, feeCents: Math.max(1, Math.round(step.feeCents * (this.settings.openingOnly && (!opening || index > 0) ? 1 : this.settings.payout))) }))
+  }
+
+  feesFor(order: Order, cars: number, discounted = true): FeeStep[] {
     const request = this.requests.get(order.id)!
     const duration = (legs: Order["legs"]) => 45 + legs.reduce((sum, leg) => sum + this.network.minutes(leg.pickup.placeId, leg.delivery.placeId), 0)
     // A dealer can replace a local trip with a long one after the price is agreed.
     const routeChange = Math.max(1, duration(order.legs) / duration(request.legs))
     const fee = this.baseFee({ ...request, legs: order.legs }) * routeChange * cars / order.legs.length
-    if (this.level >= 2 && this.settings.lateRescue && cars === 1 && lateRescueApplies(order, this.now)) return lateRescueSchedule(order, this.now, fee)
+    const pay = (schedule: FeeStep[], opening: boolean) => discounted ? this.payoutSchedule(schedule, opening) : schedule
+    if (this.level >= 2 && this.settings.lateRescue && cars === 1 && lateRescueApplies(order, this.now)) return pay(lateRescueSchedule(order, this.now, fee), false)
     const rescue = this.urgent.has(order.id)
     const pickupBy = this.pickupBy(order)
     const remaining = pickupBy - this.now
     const start = rescue ? remaining <= 60 ? 2.5 : remaining <= 120 ? 1.9 : 1.5 : 1
-    if (this.level === 1) return [{ at: this.now, feeCents: Math.round(fee * start) }]
+    if (this.level === 1) return pay([{ at: this.now, feeCents: Math.round(fee * start) }], start === 1)
     // A steady initial price avoids teaching drivers to wait for hourly increases.
     const due = Math.max(this.now + 30, pickupBy - 240)
-    return [
+    return pay([
       { at: this.now, feeCents: Math.round(fee * start) },
       { at: due, feeCents: Math.round(fee * Math.max(start, 1.45)) },
       { at: Math.max(due + 30, pickupBy - 120), feeCents: Math.round(fee * Math.max(start, 1.9)) },
       { at: Math.max(due + 60, pickupBy - 60), feeCents: Math.round(fee * Math.max(start, 2.5)) },
-    ]
+    ], start === 1)
   }
 
   async post(order: Order, legs: number[], retry = { pickupFrom: 0, manualLicence: false, plates: false }): Promise<void> {
@@ -286,7 +293,8 @@ export class Dispatcher extends Desk {
         { orderId: order.id, leg, kind: "delivery" as const },
       ]
     })
-    const post: PostAction = { type: "post", stops, audience: { experienced: legs.some(i => order.legs[i]!.car.premium), manualLicence: rules.manual || retry.manualLicence }, schedule: this.feesFor(order, legs.length) }
+    const hold = this.settings.bundleWait > 0 && this.level >= 3 && order.legs.length === 1 && rules.safe && !order.legs[0]!.pickup.privateAddress && !order.legs[0]!.delivery.privateAddress && !retry.pickupFrom && !retry.manualLicence && !retry.plates && !this.urgent.has(order.id) && this.pickupBy(order) > this.now + 360
+    const post: PostAction = { type: "post", stops, audience: { experienced: legs.some(i => order.legs[i]!.car.premium), manualLicence: rules.manual || retry.manualLicence }, schedule: this.feesFor(order, legs.length, !hold) }
     const hours = this.hoursFor(request)
     if (hours) {
       const restrictions = { ...hours, plates: hours.plates || retry.plates, readyAt: Math.max(hours.readyAt ?? 0, retry.pickupFrom) }
@@ -300,7 +308,7 @@ export class Dispatcher extends Desk {
       post.stops[0]!.window = timed.pickup
       post.stops[1]!.window = timed.delivery
     }
-    if (this.settings.bundleWait > 0 && this.level >= 3 && order.legs.length === 1 && rules.safe && !order.legs[0]!.pickup.privateAddress && !order.legs[0]!.delivery.privateAddress && !retry.pickupFrom && !retry.manualLicence && !retry.plates && !this.urgent.has(order.id) && this.pickupBy(order) > this.now + 360) {
+    if (hold) {
       this.held.set(order.id, { post, at: this.held.get(order.id)?.at ?? this.now })
     } else this.outbox.push(post)
   }
@@ -312,12 +320,12 @@ export class Dispatcher extends Desk {
     const candidates = items.map(([id, item]) => ({ order: this.orders.get(id)!, post: item.post, noteSafe: this.noteRules(this.requests.get(id)).safe }))
     const bundles = this.settings.bundlePairs ? planBundles(this.now, candidates, this.network) : []
     const paired = new Set(bundles.flatMap(bundle => bundle.indices))
-    this.outbox.push(...bundles.map(bundle => bundle.post), ...candidates.filter((_, i) => !paired.has(i)).map(candidate => candidate.post))
+    this.outbox.push(...bundles.map(bundle => bundle.post), ...candidates.filter((_, i) => !paired.has(i)).map(candidate => ({ ...candidate.post, schedule: this.payoutSchedule(candidate.post.schedule, true) })))
   }
 
   override async sendPostOf(orderId: string): Promise<void> {
     const item = this.held.get(orderId)
-    if (item) { this.held.delete(orderId); this.outbox.push(item.post) }
+    if (item) { this.held.delete(orderId); this.outbox.push({ ...item.post, schedule: this.payoutSchedule(item.post.schedule, true) }) }
     await super.sendPostOf(orderId)
   }
 

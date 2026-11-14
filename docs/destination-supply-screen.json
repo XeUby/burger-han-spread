@@ -1,0 +1,2829 @@
+{
+  "scope": "Six explicit old development weeks. No fresh evaluation data or new plays.",
+  "hypothesis": "Origin-only supply gates reject trips ending near many eligible drivers. With at least a day of pickup flexibility, destination-home drivers could travel out ahead and drive home, as described in the handbook.",
+  "criterion": "Safe public single-car request,<=700road km,<8weighted eligible origin drivers,>=50weighted eligible destination drivers,non-same-day option with last feasible pickup at least24h after respondBy.",
+  "limitations": [
+    "Static exposure only. No counterfactual bookings, willingness to travel, demand, capacity displacement or profit is estimated.",
+    "Destination-home supply is shared across remote origins; counting each lane independently would overstate available capacity.",
+    "Driver notifications target the pickup neighborhood. Destination-home drivers may never view these remote pickups even when they could serve them economically."
+  ],
+  "summary": {
+    "weeks": 6,
+    "requests": 136,
+    "requestsPerWeek": 22.666666666666668
+  },
+  "weeks": [
+    {
+      "worldId": "w9092313fc502252b79ab",
+      "seed": "formal-unseen-20261113-09",
+      "originRejected": 55,
+      "destinationBacked": 15
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "originRejected": 90,
+      "destinationBacked": 34
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "originRejected": 106,
+      "destinationBacked": 29
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "originRejected": 94,
+      "destinationBacked": 30
+    },
+    {
+      "worldId": "w6893e7d9cdd984154dfe",
+      "seed": "formal-unseen-20261113-15",
+      "originRejected": 54,
+      "destinationBacked": 17
+    },
+    {
+      "worldId": "wa7bcf5d1654b6d337c61",
+      "seed": "formal-unseen-20261113-16",
+      "originRejected": 47,
+      "destinationBacked": 11
+    }
+  ],
+  "opportunities": [
+    {
+      "worldId": "w9092313fc502252b79ab",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00154",
+      "arrivedAt": 937,
+      "origin": "kotka",
+      "destination": "espoo",
+      "roadKm": 141,
+      "originSupply": 3.4500000000000006,
+      "destinationSupply": 467.4500000000003,
+      "openingFeeCents": 6194,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 2640,
+          "listPriceCents": 5500
+        }
+      ]
+    },
+    {
+      "worldId": "w9092313fc502252b79ab",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00155",
+      "arrivedAt": 945,
+      "origin": "vaasa",
+      "destination": "vantaa",
+      "roadKm": 411.6,
+      "originSupply": 4,
+      "destinationSupply": 467.4500000000003,
+      "openingFeeCents": 13873,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 4080,
+          "listPriceCents": 12300
+        }
+      ]
+    },
+    {
+      "worldId": "w9092313fc502252b79ab",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00215",
+      "arrivedAt": 1076,
+      "origin": "ylivieska",
+      "destination": "tampere",
+      "roadKm": 341.9,
+      "originSupply": 0,
+      "destinationSupply": 56,
+      "openingFeeCents": 12497,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 4080,
+          "listPriceCents": 10500
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 6960,
+          "listPriceCents": 9800
+        }
+      ]
+    },
+    {
+      "worldId": "w9092313fc502252b79ab",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00364",
+      "arrivedAt": 2298,
+      "origin": "savonlinna",
+      "destination": "lempaala",
+      "roadKm": 330.9,
+      "originSupply": 5,
+      "destinationSupply": 65.10000000000002,
+      "openingFeeCents": 13170,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 4080,
+          "listPriceCents": 10300
+        }
+      ]
+    },
+    {
+      "worldId": "w9092313fc502252b79ab",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00365",
+      "arrivedAt": 2298,
+      "origin": "vaasa",
+      "destination": "lempaala",
+      "roadKm": 270,
+      "originSupply": 4,
+      "destinationSupply": 65.10000000000002,
+      "openingFeeCents": 11246,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 4080,
+          "listPriceCents": 8800
+        }
+      ]
+    },
+    {
+      "worldId": "w9092313fc502252b79ab",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00408",
+      "arrivedAt": 2442,
+      "origin": "kokkola",
+      "destination": "vantaa",
+      "roadKm": 486.4,
+      "originSupply": 0,
+      "destinationSupply": 467.4500000000003,
+      "openingFeeCents": 17684,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 5520,
+          "listPriceCents": 14200
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 13200
+        }
+      ]
+    },
+    {
+      "worldId": "w9092313fc502252b79ab",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00409",
+      "arrivedAt": 2442,
+      "origin": "kokkola",
+      "destination": "vantaa",
+      "roadKm": 486.4,
+      "originSupply": 0,
+      "destinationSupply": 467.4500000000003,
+      "openingFeeCents": 19006,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 5520,
+          "listPriceCents": 14200
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 13200
+        }
+      ]
+    },
+    {
+      "worldId": "w9092313fc502252b79ab",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00513",
+      "arrivedAt": 3546,
+      "origin": "kokkola",
+      "destination": "lempaala",
+      "roadKm": 338.1,
+      "originSupply": 0,
+      "destinationSupply": 65.10000000000002,
+      "openingFeeCents": 11223,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 10500
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 9700
+        }
+      ]
+    },
+    {
+      "worldId": "w9092313fc502252b79ab",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00669",
+      "arrivedAt": 4935,
+      "origin": "rovaniemi",
+      "destination": "jyvaskyla",
+      "roadKm": 557.2,
+      "originSupply": 1,
+      "destinationSupply": 63,
+      "openingFeeCents": 19184,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 15900
+        }
+      ]
+    },
+    {
+      "worldId": "w9092313fc502252b79ab",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00670",
+      "arrivedAt": 4935,
+      "origin": "rovaniemi",
+      "destination": "jyvaskyla",
+      "roadKm": 557.2,
+      "originSupply": 1,
+      "destinationSupply": 63,
+      "openingFeeCents": 20075,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 15900
+        }
+      ]
+    },
+    {
+      "worldId": "w9092313fc502252b79ab",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00928",
+      "arrivedAt": 6581,
+      "origin": "kemi",
+      "destination": "helsinki",
+      "roadKm": 698.7,
+      "originSupply": 7,
+      "destinationSupply": 467.4500000000003,
+      "openingFeeCents": 24588,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 19500
+        }
+      ]
+    },
+    {
+      "worldId": "w9092313fc502252b79ab",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00990",
+      "arrivedAt": 6751,
+      "origin": "vaasa",
+      "destination": "helsinki",
+      "roadKm": 417.8,
+      "originSupply": 4,
+      "destinationSupply": 467.4500000000003,
+      "openingFeeCents": 13762,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 12400
+        }
+      ]
+    },
+    {
+      "worldId": "w9092313fc502252b79ab",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R00992",
+      "arrivedAt": 6754,
+      "origin": "vaasa",
+      "destination": "helsinki",
+      "roadKm": 417.8,
+      "originSupply": 4,
+      "destinationSupply": 467.4500000000003,
+      "openingFeeCents": 13649,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 12400
+        }
+      ]
+    },
+    {
+      "worldId": "w9092313fc502252b79ab",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R01010",
+      "arrivedAt": 6801,
+      "origin": "vaasa",
+      "destination": "jyvaskyla",
+      "roadKm": 282.2,
+      "originSupply": 4,
+      "destinationSupply": 63,
+      "openingFeeCents": 18272,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 9100
+        }
+      ]
+    },
+    {
+      "worldId": "w9092313fc502252b79ab",
+      "seed": "formal-unseen-20261113-09",
+      "requestId": "R01012",
+      "arrivedAt": 6805,
+      "origin": "vaasa",
+      "destination": "jyvaskyla",
+      "roadKm": 282.2,
+      "originSupply": 4,
+      "destinationSupply": 63,
+      "openingFeeCents": 14978,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 9100
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00020",
+      "arrivedAt": 590,
+      "origin": "mikkeli",
+      "destination": "hyvinkaa",
+      "roadKm": 198.3,
+      "originSupply": 1,
+      "destinationSupply": 174.69999999999845,
+      "openingFeeCents": 7761,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 5520,
+          "listPriceCents": 7000
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00021",
+      "arrivedAt": 595,
+      "origin": "mikkeli",
+      "destination": "hyvinkaa",
+      "roadKm": 198.3,
+      "originSupply": 1,
+      "destinationSupply": 174.69999999999845,
+      "openingFeeCents": 7795,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 5520,
+          "listPriceCents": 7000
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00022",
+      "arrivedAt": 596,
+      "origin": "mikkeli",
+      "destination": "hyvinkaa",
+      "roadKm": 198.3,
+      "originSupply": 1,
+      "destinationSupply": 174.69999999999845,
+      "openingFeeCents": 7257,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 5520,
+          "listPriceCents": 7000
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00023",
+      "arrivedAt": 596,
+      "origin": "mikkeli",
+      "destination": "hyvinkaa",
+      "roadKm": 198.3,
+      "originSupply": 1,
+      "destinationSupply": 174.69999999999845,
+      "openingFeeCents": 8574,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 5520,
+          "listPriceCents": 7000
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00026",
+      "arrivedAt": 607,
+      "origin": "ylivieska",
+      "destination": "oulu",
+      "roadKm": 130.8,
+      "originSupply": 3,
+      "destinationSupply": 119,
+      "openingFeeCents": 6330,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 2640,
+          "listPriceCents": 5300
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 5520,
+          "listPriceCents": 4900
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00086",
+      "arrivedAt": 716,
+      "origin": "ylivieska",
+      "destination": "tampere",
+      "roadKm": 341.9,
+      "originSupply": 3,
+      "destinationSupply": 55,
+      "openingFeeCents": 13270,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 2640,
+          "listPriceCents": 10500
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 5520,
+          "listPriceCents": 9800
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00131",
+      "arrivedAt": 864,
+      "origin": "ylivieska",
+      "destination": "tampere",
+      "roadKm": 341.9,
+      "originSupply": 3,
+      "destinationSupply": 55,
+      "openingFeeCents": 13678,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 2640,
+          "listPriceCents": 10500
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 5520,
+          "listPriceCents": 9800
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00135",
+      "arrivedAt": 869,
+      "origin": "ylivieska",
+      "destination": "oulu",
+      "roadKm": 130.8,
+      "originSupply": 3,
+      "destinationSupply": 119,
+      "openingFeeCents": 6129,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 4080,
+          "listPriceCents": 5300
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00161",
+      "arrivedAt": 926,
+      "origin": "jyvaskyla",
+      "destination": "espoo",
+      "roadKm": 282,
+      "originSupply": 6,
+      "destinationSupply": 442.85000000000036,
+      "openingFeeCents": 11389,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 4080,
+          "listPriceCents": 9100
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 6960,
+          "listPriceCents": 8400
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00211",
+      "arrivedAt": 1139,
+      "origin": "jyvaskyla",
+      "destination": "tampere",
+      "roadKm": 157,
+      "originSupply": 6,
+      "destinationSupply": 55,
+      "openingFeeCents": 8306,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 5900
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00273",
+      "arrivedAt": 2136,
+      "origin": "mikkeli",
+      "destination": "hyvinkaa",
+      "roadKm": 198.3,
+      "originSupply": 1,
+      "destinationSupply": 174.69999999999845,
+      "openingFeeCents": 8000,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 4080,
+          "listPriceCents": 7000
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00288",
+      "arrivedAt": 2169,
+      "origin": "kokkola",
+      "destination": "oulu",
+      "roadKm": 194.4,
+      "originSupply": 4,
+      "destinationSupply": 119,
+      "openingFeeCents": 7654,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 5520,
+          "listPriceCents": 6900
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 6400
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00359",
+      "arrivedAt": 2421,
+      "origin": "mikkeli",
+      "destination": "tampere",
+      "roadKm": 262.9,
+      "originSupply": 1,
+      "destinationSupply": 55,
+      "openingFeeCents": 8461,
+      "options": [
+        {
+          "kind": "within_3_days",
+          "deadline": 6960,
+          "listPriceCents": 8000
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00439",
+      "arrivedAt": 3456,
+      "origin": "jyvaskyla",
+      "destination": "tampere",
+      "roadKm": 157,
+      "originSupply": 6,
+      "destinationSupply": 55,
+      "openingFeeCents": 7407,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 5900
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 5500
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00455",
+      "arrivedAt": 3484,
+      "origin": "kokkola",
+      "destination": "helsinki",
+      "roadKm": 498.2,
+      "originSupply": 4,
+      "destinationSupply": 442.85000000000036,
+      "openingFeeCents": 17253,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 14500
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00538",
+      "arrivedAt": 3755,
+      "origin": "kokkola",
+      "destination": "oulu",
+      "roadKm": 194.4,
+      "originSupply": 4,
+      "destinationSupply": 119,
+      "openingFeeCents": 7421,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 6900
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00539",
+      "arrivedAt": 3756,
+      "origin": "seinajoki",
+      "destination": "oulu",
+      "roadKm": 324.1,
+      "originSupply": 3,
+      "destinationSupply": 119,
+      "openingFeeCents": 13568,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 5520,
+          "listPriceCents": 10100
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 9400
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00542",
+      "arrivedAt": 3762,
+      "origin": "seinajoki",
+      "destination": "lempaala",
+      "roadKm": 203.4,
+      "originSupply": 3,
+      "destinationSupply": 59.55000000000001,
+      "openingFeeCents": 9025,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 5520,
+          "listPriceCents": 7100
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 6600
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00546",
+      "arrivedAt": 3774,
+      "origin": "seinajoki",
+      "destination": "lempaala",
+      "roadKm": 203.4,
+      "originSupply": 3,
+      "destinationSupply": 59.55000000000001,
+      "openingFeeCents": 8695,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 5520,
+          "listPriceCents": 7100
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 6600
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00547",
+      "arrivedAt": 3774,
+      "origin": "seinajoki",
+      "destination": "lempaala",
+      "roadKm": 203.4,
+      "originSupply": 3,
+      "destinationSupply": 59.55000000000001,
+      "openingFeeCents": 9721,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 5520,
+          "listPriceCents": 7100
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 6600
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00567",
+      "arrivedAt": 3851,
+      "origin": "jyvaskyla",
+      "destination": "oulu",
+      "roadKm": 332.9,
+      "originSupply": 6,
+      "destinationSupply": 119,
+      "openingFeeCents": 10047,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 10300
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 9600
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00643",
+      "arrivedAt": 4908,
+      "origin": "ylivieska",
+      "destination": "helsinki",
+      "roadKm": 507.3,
+      "originSupply": 3,
+      "destinationSupply": 442.85000000000036,
+      "openingFeeCents": 20514,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 14700
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 13700
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00664",
+      "arrivedAt": 4947,
+      "origin": "jyvaskyla",
+      "destination": "helsinki",
+      "roadKm": 270.5,
+      "originSupply": 6,
+      "destinationSupply": 442.85000000000036,
+      "openingFeeCents": 9915,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 8800
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 8100
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00671",
+      "arrivedAt": 4967,
+      "origin": "mikkeli",
+      "destination": "vantaa",
+      "roadKm": 228,
+      "originSupply": 1,
+      "destinationSupply": 442.85000000000036,
+      "openingFeeCents": 11293,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 7700
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00676",
+      "arrivedAt": 4973,
+      "origin": "mikkeli",
+      "destination": "helsinki",
+      "roadKm": 215.9,
+      "originSupply": 1,
+      "destinationSupply": 442.85000000000036,
+      "openingFeeCents": 7846,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 7400
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00704",
+      "arrivedAt": 5049,
+      "origin": "rovaniemi",
+      "destination": "oulu",
+      "roadKm": 222.5,
+      "originSupply": 5,
+      "destinationSupply": 119,
+      "openingFeeCents": 8321,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 7600
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 7000
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00723",
+      "arrivedAt": 5095,
+      "origin": "ylivieska",
+      "destination": "lempaala",
+      "roadKm": 366.7,
+      "originSupply": 3,
+      "destinationSupply": 59.55000000000001,
+      "openingFeeCents": 11870,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 11200
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00724",
+      "arrivedAt": 5096,
+      "origin": "ylivieska",
+      "destination": "tampere",
+      "roadKm": 341.9,
+      "originSupply": 3,
+      "destinationSupply": 55,
+      "openingFeeCents": 13924,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 10500
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00748",
+      "arrivedAt": 5164,
+      "origin": "kokkola",
+      "destination": "tampere",
+      "roadKm": 312.1,
+      "originSupply": 4,
+      "destinationSupply": 55,
+      "openingFeeCents": 10621,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 9800
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00872",
+      "arrivedAt": 6327,
+      "origin": "jyvaskyla",
+      "destination": "espoo",
+      "roadKm": 282,
+      "originSupply": 6,
+      "destinationSupply": 442.85000000000036,
+      "openingFeeCents": 11380,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 9100
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00906",
+      "arrivedAt": 6494,
+      "origin": "kokkola",
+      "destination": "tampere",
+      "roadKm": 312.1,
+      "originSupply": 4,
+      "destinationSupply": 55,
+      "openingFeeCents": 11143,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 9800
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00917",
+      "arrivedAt": 6540,
+      "origin": "jyvaskyla",
+      "destination": "lempaala",
+      "roadKm": 156.1,
+      "originSupply": 6,
+      "destinationSupply": 59.55000000000001,
+      "openingFeeCents": 7161,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 5900
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00918",
+      "arrivedAt": 6541,
+      "origin": "jyvaskyla",
+      "destination": "lempaala",
+      "roadKm": 156.1,
+      "originSupply": 6,
+      "destinationSupply": 59.55000000000001,
+      "openingFeeCents": 6758,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 5900
+        }
+      ]
+    },
+    {
+      "worldId": "w47c0ea9c41007983b01e",
+      "seed": "formal-unseen-20261113-10",
+      "requestId": "R00919",
+      "arrivedAt": 6544,
+      "origin": "jyvaskyla",
+      "destination": "lempaala",
+      "roadKm": 156.1,
+      "originSupply": 6,
+      "destinationSupply": 59.55000000000001,
+      "openingFeeCents": 6808,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 5900
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00013",
+      "arrivedAt": 540,
+      "origin": "joensuu",
+      "destination": "oulu",
+      "roadKm": 393.3,
+      "originSupply": 5,
+      "destinationSupply": 63,
+      "openingFeeCents": 14120,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 11800
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00024",
+      "arrivedAt": 605,
+      "origin": "mikkeli",
+      "destination": "hyvinkaa",
+      "roadKm": 198.3,
+      "originSupply": 2,
+      "destinationSupply": 154.74999999999886,
+      "openingFeeCents": 6804,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 2640,
+          "listPriceCents": 7000
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00052",
+      "arrivedAt": 666,
+      "origin": "kajaani",
+      "destination": "oulu",
+      "roadKm": 184.6,
+      "originSupply": 4,
+      "destinationSupply": 63,
+      "openingFeeCents": 6845,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 4080,
+          "listPriceCents": 6600
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00124",
+      "arrivedAt": 822,
+      "origin": "vaasa",
+      "destination": "espoo",
+      "roadKm": 424.2,
+      "originSupply": 7,
+      "destinationSupply": 385.6,
+      "openingFeeCents": 15238,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 4080,
+          "listPriceCents": 12600
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00190",
+      "arrivedAt": 925,
+      "origin": "ylivieska",
+      "destination": "oulu",
+      "roadKm": 130.8,
+      "originSupply": 6,
+      "destinationSupply": 63,
+      "openingFeeCents": 5488,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 2640,
+          "listPriceCents": 5300
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00249",
+      "arrivedAt": 1065,
+      "origin": "joensuu",
+      "destination": "espoo",
+      "roadKm": 444.7,
+      "originSupply": 5,
+      "destinationSupply": 385.6,
+      "openingFeeCents": 15380,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 4080,
+          "listPriceCents": 13100
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00265",
+      "arrivedAt": 1991,
+      "origin": "savonlinna",
+      "destination": "vantaa",
+      "roadKm": 335.5,
+      "originSupply": 1,
+      "destinationSupply": 385.6,
+      "openingFeeCents": 10371,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 4080,
+          "listPriceCents": 10400
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00296",
+      "arrivedAt": 2095,
+      "origin": "kouvola",
+      "destination": "vantaa",
+      "roadKm": 132.6,
+      "originSupply": 6.199999999999999,
+      "destinationSupply": 385.6,
+      "openingFeeCents": 6994,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 5520,
+          "listPriceCents": 5300
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00297",
+      "arrivedAt": 2101,
+      "origin": "kouvola",
+      "destination": "vantaa",
+      "roadKm": 132.6,
+      "originSupply": 6.199999999999999,
+      "destinationSupply": 385.6,
+      "openingFeeCents": 6519,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 5520,
+          "listPriceCents": 5300
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00341",
+      "arrivedAt": 2200,
+      "origin": "pori",
+      "destination": "vantaa",
+      "roadKm": 228.1,
+      "originSupply": 4.699999999999999,
+      "destinationSupply": 385.6,
+      "openingFeeCents": 8157,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 4080,
+          "listPriceCents": 7700
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00345",
+      "arrivedAt": 2208,
+      "origin": "pori",
+      "destination": "vantaa",
+      "roadKm": 228.1,
+      "originSupply": 4.699999999999999,
+      "destinationSupply": 385.6,
+      "openingFeeCents": 9989,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 4080,
+          "listPriceCents": 7700
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00359",
+      "arrivedAt": 2284,
+      "origin": "kokkola",
+      "destination": "jyvaskyla",
+      "roadKm": 263.1,
+      "originSupply": 7,
+      "destinationSupply": 50,
+      "openingFeeCents": 9390,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 4080,
+          "listPriceCents": 8600
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00430",
+      "arrivedAt": 2495,
+      "origin": "rovaniemi",
+      "destination": "oulu",
+      "roadKm": 222.5,
+      "originSupply": 4,
+      "destinationSupply": 63,
+      "openingFeeCents": 9347,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 5520,
+          "listPriceCents": 7600
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 7000
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00480",
+      "arrivedAt": 3464,
+      "origin": "vaasa",
+      "destination": "helsinki",
+      "roadKm": 417.8,
+      "originSupply": 7,
+      "destinationSupply": 385.6,
+      "openingFeeCents": 13545,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 12400
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00507",
+      "arrivedAt": 3559,
+      "origin": "rovaniemi",
+      "destination": "jyvaskyla",
+      "roadKm": 557.2,
+      "originSupply": 4,
+      "destinationSupply": 50,
+      "openingFeeCents": 19771,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 15900
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 14800
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00515",
+      "arrivedAt": 3585,
+      "origin": "mikkeli",
+      "destination": "oulu",
+      "roadKm": 445.4,
+      "originSupply": 2,
+      "destinationSupply": 63,
+      "openingFeeCents": 14224,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 5520,
+          "listPriceCents": 13100
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00601",
+      "arrivedAt": 3894,
+      "origin": "kokkola",
+      "destination": "helsinki",
+      "roadKm": 498.2,
+      "originSupply": 7,
+      "destinationSupply": 385.6,
+      "openingFeeCents": 17237,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 14500
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 13400
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00602",
+      "arrivedAt": 3896,
+      "origin": "kokkola",
+      "destination": "oulu",
+      "roadKm": 194.4,
+      "originSupply": 7,
+      "destinationSupply": 63,
+      "openingFeeCents": 7963,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 6900
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 6400
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00762",
+      "arrivedAt": 5172,
+      "origin": "kemi",
+      "destination": "oulu",
+      "roadKm": 111.6,
+      "originSupply": 1,
+      "destinationSupply": 63,
+      "openingFeeCents": 6391,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 4800
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 4500
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00764",
+      "arrivedAt": 5174,
+      "origin": "kemi",
+      "destination": "oulu",
+      "roadKm": 111.6,
+      "originSupply": 1,
+      "destinationSupply": 63,
+      "openingFeeCents": 5456,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 4800
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 4500
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00765",
+      "arrivedAt": 5175,
+      "origin": "kemi",
+      "destination": "hyvinkaa",
+      "roadKm": 675.8,
+      "originSupply": 1,
+      "destinationSupply": 154.74999999999886,
+      "openingFeeCents": 27263,
+      "options": [
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 17600
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00770",
+      "arrivedAt": 5181,
+      "origin": "vaasa",
+      "destination": "vantaa",
+      "roadKm": 411.6,
+      "originSupply": 7,
+      "destinationSupply": 385.6,
+      "openingFeeCents": 14701,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 12300
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00790",
+      "arrivedAt": 5251,
+      "origin": "vaasa",
+      "destination": "helsinki",
+      "roadKm": 417.8,
+      "originSupply": 7,
+      "destinationSupply": 385.6,
+      "openingFeeCents": 15476,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 12400
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00816",
+      "arrivedAt": 5308,
+      "origin": "kouvola",
+      "destination": "porvoo",
+      "roadKm": 92.2,
+      "originSupply": 6.199999999999999,
+      "destinationSupply": 140.54999999999893,
+      "openingFeeCents": 4840,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 4300
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00886",
+      "arrivedAt": 6404,
+      "origin": "ylivieska",
+      "destination": "oulu",
+      "roadKm": 130.8,
+      "originSupply": 6,
+      "destinationSupply": 63,
+      "openingFeeCents": 6004,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 5300
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00908",
+      "arrivedAt": 6472,
+      "origin": "mikkeli",
+      "destination": "oulu",
+      "roadKm": 445.4,
+      "originSupply": 2,
+      "destinationSupply": 63,
+      "openingFeeCents": 13237,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 13100
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00925",
+      "arrivedAt": 6542,
+      "origin": "rovaniemi",
+      "destination": "oulu",
+      "roadKm": 222.5,
+      "originSupply": 4,
+      "destinationSupply": 63,
+      "openingFeeCents": 8567,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 7600
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00926",
+      "arrivedAt": 6550,
+      "origin": "mikkeli",
+      "destination": "oulu",
+      "roadKm": 445.4,
+      "originSupply": 2,
+      "destinationSupply": 63,
+      "openingFeeCents": 14183,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 13100
+        }
+      ]
+    },
+    {
+      "worldId": "w488ffad22efd5faf742a",
+      "seed": "formal-unseen-20261113-12",
+      "requestId": "R00964",
+      "arrivedAt": 6669,
+      "origin": "vaasa",
+      "destination": "espoo",
+      "roadKm": 424.2,
+      "originSupply": 7,
+      "destinationSupply": 385.6,
+      "openingFeeCents": 14724,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 12600
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00003",
+      "arrivedAt": 484,
+      "origin": "pori",
+      "destination": "hyvinkaa",
+      "roadKm": 232.9,
+      "originSupply": 2.35,
+      "destinationSupply": 207.2499999999982,
+      "openingFeeCents": 10911,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 2640,
+          "listPriceCents": 7800
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00038",
+      "arrivedAt": 640,
+      "origin": "kotka",
+      "destination": "hyvinkaa",
+      "roadKm": 144.2,
+      "originSupply": 4,
+      "destinationSupply": 207.2499999999982,
+      "openingFeeCents": 6414,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 4080,
+          "listPriceCents": 5600
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00040",
+      "arrivedAt": 642,
+      "origin": "kotka",
+      "destination": "hyvinkaa",
+      "roadKm": 144.2,
+      "originSupply": 4,
+      "destinationSupply": 207.2499999999982,
+      "openingFeeCents": 5813,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 4080,
+          "listPriceCents": 5600
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00164",
+      "arrivedAt": 962,
+      "origin": "pori",
+      "destination": "raisio",
+      "roadKm": 135.5,
+      "originSupply": 2.35,
+      "destinationSupply": 107.75,
+      "openingFeeCents": 5646,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 4080,
+          "listPriceCents": 5400
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00183",
+      "arrivedAt": 1029,
+      "origin": "kouvola",
+      "destination": "lempaala",
+      "roadKm": 197.8,
+      "originSupply": 5.249999999999999,
+      "destinationSupply": 121.64999999999998,
+      "openingFeeCents": 9311,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 5520,
+          "listPriceCents": 6900
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00316",
+      "arrivedAt": 2214,
+      "origin": "pori",
+      "destination": "turku",
+      "roadKm": 139.4,
+      "originSupply": 2.35,
+      "destinationSupply": 107.75,
+      "openingFeeCents": 6715,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 4080,
+          "listPriceCents": 5500
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00341",
+      "arrivedAt": 2286,
+      "origin": "ylivieska",
+      "destination": "porvoo",
+      "roadKm": 491.8,
+      "originSupply": 1,
+      "destinationSupply": 183.7499999999983,
+      "openingFeeCents": 15798,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 5520,
+          "listPriceCents": 14300
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 13300
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00364",
+      "arrivedAt": 2382,
+      "origin": "kouvola",
+      "destination": "vantaa",
+      "roadKm": 132.6,
+      "originSupply": 5.249999999999999,
+      "destinationSupply": 489.90000000000043,
+      "openingFeeCents": 6476,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 5520,
+          "listPriceCents": 5300
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00386",
+      "arrivedAt": 2443,
+      "origin": "kuopio",
+      "destination": "tampere",
+      "roadKm": 296,
+      "originSupply": 6,
+      "destinationSupply": 115,
+      "openingFeeCents": 10010,
+      "options": [
+        {
+          "kind": "within_3_days",
+          "deadline": 6960,
+          "listPriceCents": 8700
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00398",
+      "arrivedAt": 2465,
+      "origin": "ylivieska",
+      "destination": "helsinki",
+      "roadKm": 507.3,
+      "originSupply": 1,
+      "destinationSupply": 489.90000000000043,
+      "openingFeeCents": 22445,
+      "options": [
+        {
+          "kind": "within_3_days",
+          "deadline": 6960,
+          "listPriceCents": 13700
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00399",
+      "arrivedAt": 2466,
+      "origin": "ylivieska",
+      "destination": "hyvinkaa",
+      "roadKm": 479.2,
+      "originSupply": 1,
+      "destinationSupply": 207.2499999999982,
+      "openingFeeCents": 20545,
+      "options": [
+        {
+          "kind": "within_3_days",
+          "deadline": 6960,
+          "listPriceCents": 13000
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00439",
+      "arrivedAt": 3454,
+      "origin": "mikkeli",
+      "destination": "helsinki",
+      "roadKm": 215.9,
+      "originSupply": 1,
+      "destinationSupply": 489.90000000000043,
+      "openingFeeCents": 8829,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 5520,
+          "listPriceCents": 7400
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00444",
+      "arrivedAt": 3461,
+      "origin": "kouvola",
+      "destination": "hyvinkaa",
+      "roadKm": 134,
+      "originSupply": 5.249999999999999,
+      "destinationSupply": 207.2499999999982,
+      "openingFeeCents": 6974,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 5520,
+          "listPriceCents": 5400
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00458",
+      "arrivedAt": 3477,
+      "origin": "kouvola",
+      "destination": "hyvinkaa",
+      "roadKm": 134,
+      "originSupply": 5.249999999999999,
+      "destinationSupply": 207.2499999999982,
+      "openingFeeCents": 6086,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 5520,
+          "listPriceCents": 5400
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00461",
+      "arrivedAt": 3479,
+      "origin": "pori",
+      "destination": "porvoo",
+      "roadKm": 287.5,
+      "originSupply": 2.35,
+      "destinationSupply": 183.7499999999983,
+      "openingFeeCents": 9371,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 9200
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00476",
+      "arrivedAt": 3520,
+      "origin": "savonlinna",
+      "destination": "turku",
+      "roadKm": 461.7,
+      "originSupply": 0,
+      "destinationSupply": 107.75,
+      "openingFeeCents": 17701,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 5520,
+          "listPriceCents": 13500
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00489",
+      "arrivedAt": 3562,
+      "origin": "kuopio",
+      "destination": "lempaala",
+      "roadKm": 308.5,
+      "originSupply": 6,
+      "destinationSupply": 121.64999999999998,
+      "openingFeeCents": 10205,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 9700
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00507",
+      "arrivedAt": 3615,
+      "origin": "pori",
+      "destination": "hyvinkaa",
+      "roadKm": 232.9,
+      "originSupply": 2.35,
+      "destinationSupply": 207.2499999999982,
+      "openingFeeCents": 8551,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 5520,
+          "listPriceCents": 7800
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00531",
+      "arrivedAt": 3700,
+      "origin": "ylivieska",
+      "destination": "hyvinkaa",
+      "roadKm": 479.2,
+      "originSupply": 1,
+      "destinationSupply": 207.2499999999982,
+      "openingFeeCents": 20286,
+      "options": [
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 13000
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00600",
+      "arrivedAt": 3947,
+      "origin": "kotka",
+      "destination": "raisio",
+      "roadKm": 311.4,
+      "originSupply": 4,
+      "destinationSupply": 107.75,
+      "openingFeeCents": 13127,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 9800
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00674",
+      "arrivedAt": 5027,
+      "origin": "joensuu",
+      "destination": "turku",
+      "roadKm": 551.4,
+      "originSupply": 3,
+      "destinationSupply": 107.75,
+      "openingFeeCents": 17580,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 15800
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00696",
+      "arrivedAt": 5072,
+      "origin": "kuopio",
+      "destination": "vantaa",
+      "roadKm": 384.4,
+      "originSupply": 6,
+      "destinationSupply": 489.90000000000043,
+      "openingFeeCents": 11209,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 11600
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00707",
+      "arrivedAt": 5087,
+      "origin": "mikkeli",
+      "destination": "vantaa",
+      "roadKm": 228,
+      "originSupply": 1,
+      "destinationSupply": 489.90000000000043,
+      "openingFeeCents": 8860,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 7700
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00726",
+      "arrivedAt": 5113,
+      "origin": "kuopio",
+      "destination": "espoo",
+      "roadKm": 396.8,
+      "originSupply": 6,
+      "destinationSupply": 489.90000000000043,
+      "openingFeeCents": 14111,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 11900
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00727",
+      "arrivedAt": 5114,
+      "origin": "kuopio",
+      "destination": "espoo",
+      "roadKm": 396.8,
+      "originSupply": 6,
+      "destinationSupply": 489.90000000000043,
+      "openingFeeCents": 12802,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 11900
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00728",
+      "arrivedAt": 5117,
+      "origin": "kuopio",
+      "destination": "espoo",
+      "roadKm": 396.8,
+      "originSupply": 6,
+      "destinationSupply": 489.90000000000043,
+      "openingFeeCents": 15443,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 11900
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00756",
+      "arrivedAt": 5157,
+      "origin": "kuopio",
+      "destination": "tampere",
+      "roadKm": 296,
+      "originSupply": 6,
+      "destinationSupply": 115,
+      "openingFeeCents": 9914,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 9400
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00787",
+      "arrivedAt": 5246,
+      "origin": "kouvola",
+      "destination": "lempaala",
+      "roadKm": 197.8,
+      "originSupply": 5.249999999999999,
+      "destinationSupply": 121.64999999999998,
+      "openingFeeCents": 15390,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 6900
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 6500
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00904",
+      "arrivedAt": 6463,
+      "origin": "kuopio",
+      "destination": "hyvinkaa",
+      "roadKm": 355.2,
+      "originSupply": 6,
+      "destinationSupply": 207.2499999999982,
+      "openingFeeCents": 12951,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 10900
+        }
+      ]
+    },
+    {
+      "worldId": "w3faccc007c8c0bd5ff41",
+      "seed": "formal-unseen-20261113-14",
+      "requestId": "R00905",
+      "arrivedAt": 6468,
+      "origin": "kuopio",
+      "destination": "hyvinkaa",
+      "roadKm": 355.2,
+      "originSupply": 6,
+      "destinationSupply": 207.2499999999982,
+      "openingFeeCents": 14516,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 10900
+        }
+      ]
+    },
+    {
+      "worldId": "w6893e7d9cdd984154dfe",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00047",
+      "arrivedAt": 709,
+      "origin": "ylivieska",
+      "destination": "vantaa",
+      "roadKm": 511.5,
+      "originSupply": 7,
+      "destinationSupply": 367.05000000000007,
+      "openingFeeCents": 19281,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 2640,
+          "listPriceCents": 14800
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 5520,
+          "listPriceCents": 13800
+        }
+      ]
+    },
+    {
+      "worldId": "w6893e7d9cdd984154dfe",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00068",
+      "arrivedAt": 752,
+      "origin": "ylivieska",
+      "destination": "hyvinkaa",
+      "roadKm": 479.2,
+      "originSupply": 7,
+      "destinationSupply": 162.99999999999878,
+      "openingFeeCents": 16413,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 2640,
+          "listPriceCents": 14000
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 5520,
+          "listPriceCents": 13000
+        }
+      ]
+    },
+    {
+      "worldId": "w6893e7d9cdd984154dfe",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00100",
+      "arrivedAt": 822,
+      "origin": "kokkola",
+      "destination": "hyvinkaa",
+      "roadKm": 446.9,
+      "originSupply": 6,
+      "destinationSupply": 162.99999999999878,
+      "openingFeeCents": 13604,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 2640,
+          "listPriceCents": 13200
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 5520,
+          "listPriceCents": 12300
+        }
+      ]
+    },
+    {
+      "worldId": "w6893e7d9cdd984154dfe",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00104",
+      "arrivedAt": 825,
+      "origin": "kokkola",
+      "destination": "hyvinkaa",
+      "roadKm": 446.9,
+      "originSupply": 6,
+      "destinationSupply": 162.99999999999878,
+      "openingFeeCents": 16491,
+      "options": [
+        {
+          "kind": "within_3_days",
+          "deadline": 5520,
+          "listPriceCents": 12300
+        }
+      ]
+    },
+    {
+      "worldId": "w6893e7d9cdd984154dfe",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00239",
+      "arrivedAt": 2027,
+      "origin": "kotka",
+      "destination": "vantaa",
+      "roadKm": 127.7,
+      "originSupply": 0.35,
+      "destinationSupply": 367.05000000000007,
+      "openingFeeCents": 5664,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 5520,
+          "listPriceCents": 5200
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 4800
+        }
+      ]
+    },
+    {
+      "worldId": "w6893e7d9cdd984154dfe",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00321",
+      "arrivedAt": 2269,
+      "origin": "lappeenranta",
+      "destination": "vantaa",
+      "roadKm": 219,
+      "originSupply": 7,
+      "destinationSupply": 367.05000000000007,
+      "openingFeeCents": 9294,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 7500
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 7000
+        }
+      ]
+    },
+    {
+      "worldId": "w6893e7d9cdd984154dfe",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00374",
+      "arrivedAt": 2399,
+      "origin": "ylivieska",
+      "destination": "lempaala",
+      "roadKm": 366.7,
+      "originSupply": 7,
+      "destinationSupply": 59.65000000000002,
+      "openingFeeCents": 12879,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 11200
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 10400
+        }
+      ]
+    },
+    {
+      "worldId": "w6893e7d9cdd984154dfe",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00376",
+      "arrivedAt": 2400,
+      "origin": "ylivieska",
+      "destination": "tampere",
+      "roadKm": 341.9,
+      "originSupply": 7,
+      "destinationSupply": 53,
+      "openingFeeCents": 15353,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 10500
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 9800
+        }
+      ]
+    },
+    {
+      "worldId": "w6893e7d9cdd984154dfe",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00377",
+      "arrivedAt": 2401,
+      "origin": "ylivieska",
+      "destination": "tampere",
+      "roadKm": 341.9,
+      "originSupply": 7,
+      "destinationSupply": 53,
+      "openingFeeCents": 16280,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 10500
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 9800
+        }
+      ]
+    },
+    {
+      "worldId": "w6893e7d9cdd984154dfe",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00380",
+      "arrivedAt": 2407,
+      "origin": "ylivieska",
+      "destination": "hyvinkaa",
+      "roadKm": 479.2,
+      "originSupply": 7,
+      "destinationSupply": 162.99999999999878,
+      "openingFeeCents": 16412,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 14000
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 13000
+        }
+      ]
+    },
+    {
+      "worldId": "w6893e7d9cdd984154dfe",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00383",
+      "arrivedAt": 2409,
+      "origin": "ylivieska",
+      "destination": "tampere",
+      "roadKm": 341.9,
+      "originSupply": 7,
+      "destinationSupply": 53,
+      "openingFeeCents": 11721,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 10500
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 9800
+        }
+      ]
+    },
+    {
+      "worldId": "w6893e7d9cdd984154dfe",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00543",
+      "arrivedAt": 3790,
+      "origin": "kouvola",
+      "destination": "hyvinkaa",
+      "roadKm": 134,
+      "originSupply": 4.15,
+      "destinationSupply": 162.99999999999878,
+      "openingFeeCents": 7015,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 5520,
+          "listPriceCents": 5400
+        }
+      ]
+    },
+    {
+      "worldId": "w6893e7d9cdd984154dfe",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00852",
+      "arrivedAt": 5388,
+      "origin": "kouvola",
+      "destination": "lempaala",
+      "roadKm": 197.8,
+      "originSupply": 4.15,
+      "destinationSupply": 59.65000000000002,
+      "openingFeeCents": 13905,
+      "options": [
+        {
+          "kind": "within_3_days",
+          "deadline": 11280,
+          "listPriceCents": 6500
+        }
+      ]
+    },
+    {
+      "worldId": "w6893e7d9cdd984154dfe",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00885",
+      "arrivedAt": 6377,
+      "origin": "lappeenranta",
+      "destination": "lempaala",
+      "roadKm": 273.1,
+      "originSupply": 7,
+      "destinationSupply": 59.65000000000002,
+      "openingFeeCents": 13066,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 8800
+        }
+      ]
+    },
+    {
+      "worldId": "w6893e7d9cdd984154dfe",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00895",
+      "arrivedAt": 6388,
+      "origin": "lappeenranta",
+      "destination": "hyvinkaa",
+      "roadKm": 217.8,
+      "originSupply": 7,
+      "destinationSupply": 162.99999999999878,
+      "openingFeeCents": 7886,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 7400
+        }
+      ]
+    },
+    {
+      "worldId": "w6893e7d9cdd984154dfe",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R00928",
+      "arrivedAt": 6489,
+      "origin": "kouvola",
+      "destination": "hyvinkaa",
+      "roadKm": 134,
+      "originSupply": 4.15,
+      "destinationSupply": 162.99999999999878,
+      "openingFeeCents": 7155,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 5400
+        }
+      ]
+    },
+    {
+      "worldId": "w6893e7d9cdd984154dfe",
+      "seed": "formal-unseen-20261113-15",
+      "requestId": "R01002",
+      "arrivedAt": 6726,
+      "origin": "kouvola",
+      "destination": "helsinki",
+      "roadKm": 147.5,
+      "originSupply": 4.15,
+      "destinationSupply": 367.05000000000007,
+      "openingFeeCents": 7268,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 5700
+        }
+      ]
+    },
+    {
+      "worldId": "wa7bcf5d1654b6d337c61",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00029",
+      "arrivedAt": 597,
+      "origin": "savonlinna",
+      "destination": "hyvinkaa",
+      "roadKm": 303.7,
+      "originSupply": 1,
+      "destinationSupply": 180.24999999999847,
+      "openingFeeCents": 12735,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 2640,
+          "listPriceCents": 9600
+        }
+      ]
+    },
+    {
+      "worldId": "wa7bcf5d1654b6d337c61",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00080",
+      "arrivedAt": 714,
+      "origin": "ylivieska",
+      "destination": "tampere",
+      "roadKm": 341.9,
+      "originSupply": 0,
+      "destinationSupply": 111,
+      "openingFeeCents": 13240,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 2640,
+          "listPriceCents": 10500
+        }
+      ]
+    },
+    {
+      "worldId": "wa7bcf5d1654b6d337c61",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00093",
+      "arrivedAt": 753,
+      "origin": "savonlinna",
+      "destination": "lempaala",
+      "roadKm": 330.9,
+      "originSupply": 1,
+      "destinationSupply": 117.29999999999995,
+      "openingFeeCents": 10387,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 2640,
+          "listPriceCents": 10300
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 5520,
+          "listPriceCents": 9600
+        }
+      ]
+    },
+    {
+      "worldId": "wa7bcf5d1654b6d337c61",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00094",
+      "arrivedAt": 761,
+      "origin": "savonlinna",
+      "destination": "lempaala",
+      "roadKm": 330.9,
+      "originSupply": 1,
+      "destinationSupply": 117.29999999999995,
+      "openingFeeCents": 13197,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 2640,
+          "listPriceCents": 10300
+        },
+        {
+          "kind": "within_3_days",
+          "deadline": 5520,
+          "listPriceCents": 9600
+        }
+      ]
+    },
+    {
+      "worldId": "wa7bcf5d1654b6d337c61",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00334",
+      "arrivedAt": 2283,
+      "origin": "ylivieska",
+      "destination": "tampere",
+      "roadKm": 341.9,
+      "originSupply": 0,
+      "destinationSupply": 111,
+      "openingFeeCents": 13712,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 4080,
+          "listPriceCents": 10500
+        }
+      ]
+    },
+    {
+      "worldId": "wa7bcf5d1654b6d337c61",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00532",
+      "arrivedAt": 3752,
+      "origin": "ylivieska",
+      "destination": "hyvinkaa",
+      "roadKm": 479.2,
+      "originSupply": 0,
+      "destinationSupply": 180.24999999999847,
+      "openingFeeCents": 17980,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 14000
+        }
+      ]
+    },
+    {
+      "worldId": "wa7bcf5d1654b6d337c61",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00692",
+      "arrivedAt": 5078,
+      "origin": "kouvola",
+      "destination": "hyvinkaa",
+      "roadKm": 134,
+      "originSupply": 4.8500000000000005,
+      "destinationSupply": 180.24999999999847,
+      "openingFeeCents": 6584,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 5400
+        }
+      ]
+    },
+    {
+      "worldId": "wa7bcf5d1654b6d337c61",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00747",
+      "arrivedAt": 5235,
+      "origin": "ylivieska",
+      "destination": "porvoo",
+      "roadKm": 491.8,
+      "originSupply": 0,
+      "destinationSupply": 169.8999999999986,
+      "openingFeeCents": 17620,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 14300
+        }
+      ]
+    },
+    {
+      "worldId": "wa7bcf5d1654b6d337c61",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00802",
+      "arrivedAt": 5346,
+      "origin": "kouvola",
+      "destination": "espoo",
+      "roadKm": 144.5,
+      "originSupply": 4.8500000000000005,
+      "destinationSupply": 426.65000000000015,
+      "openingFeeCents": 6395,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 6960,
+          "listPriceCents": 5600
+        }
+      ]
+    },
+    {
+      "worldId": "wa7bcf5d1654b6d337c61",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00804",
+      "arrivedAt": 5350,
+      "origin": "savonlinna",
+      "destination": "hyvinkaa",
+      "roadKm": 303.7,
+      "originSupply": 1,
+      "destinationSupply": 180.24999999999847,
+      "openingFeeCents": 11558,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 9600
+        }
+      ]
+    },
+    {
+      "worldId": "wa7bcf5d1654b6d337c61",
+      "seed": "formal-unseen-20261113-16",
+      "requestId": "R00811",
+      "arrivedAt": 5354,
+      "origin": "savonlinna",
+      "destination": "hyvinkaa",
+      "roadKm": 303.7,
+      "originSupply": 1,
+      "destinationSupply": 180.24999999999847,
+      "openingFeeCents": 11494,
+      "options": [
+        {
+          "kind": "next_day",
+          "deadline": 11280,
+          "listPriceCents": 9600
+        }
+      ]
+    }
+  ]
+}

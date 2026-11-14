@@ -106,33 +106,33 @@
     },
     {
       "seed": "relisting-unseen-20261114-ae921d2f5a004c5c",
-      "baselineWorldId": null,
-      "candidateWorldId": null
+      "baselineWorldId": "w129775e44fd461f4366b",
+      "candidateWorldId": "wdff0665ab413b6995114"
     },
     {
       "seed": "relisting-unseen-20261114-5291bd44e58fc0b8",
-      "baselineWorldId": null,
-      "candidateWorldId": null
+      "baselineWorldId": "w204e5b617a8a34fb8b1b",
+      "candidateWorldId": "w90976401207ea6e356ad"
     },
     {
       "seed": "relisting-unseen-20261114-664fad94342f003c",
-      "baselineWorldId": null,
-      "candidateWorldId": null
+      "baselineWorldId": "w84f9b01fde2cae59d96e",
+      "candidateWorldId": "wfc55b9fd2c33edcf38d2"
     },
     {
       "seed": "relisting-unseen-20261114-be6ccba2d5332cc6",
-      "baselineWorldId": null,
-      "candidateWorldId": null
+      "baselineWorldId": "w20a5b10fafcb6b7ad129",
+      "candidateWorldId": "w5c65064df8ed758335b3"
     },
     {
       "seed": "relisting-unseen-20261114-85e7c8159eb228d3",
-      "baselineWorldId": null,
-      "candidateWorldId": null
+      "baselineWorldId": "w25bd5a8dbece356a4b6a",
+      "candidateWorldId": "w948237ee99b62929f498"
     },
     {
       "seed": "relisting-unseen-20261114-49994c1da1bed296",
-      "baselineWorldId": null,
-      "candidateWorldId": null
+      "baselineWorldId": "w119bd36598fdf32552b2",
+      "candidateWorldId": "wcab3544664a8a0e5ac1e"
     }
   ],
   "attempts": [
@@ -140,25 +140,113 @@
       "seed": "relisting-unseen-20261114-44179069f811e12a",
       "side": "baseline",
       "worldId": "w91564fd780e4bc249119",
-      "startedAt": "2026-11-14T02:27:57.603Z"
+      "startedAt": "2026-11-14T02:27:57.603Z",
+      "completedAt": "2026-11-14T02:30:07.451Z"
     },
     {
       "seed": "relisting-unseen-20261114-44179069f811e12a",
       "side": "candidate",
       "worldId": "w04e60027b7b2b4d7b58b",
-      "startedAt": "2026-11-14T02:27:57.822Z"
+      "startedAt": "2026-11-14T02:27:57.822Z",
+      "completedAt": "2026-11-14T02:30:11.029Z"
     },
     {
       "seed": "relisting-unseen-20261114-593862ba0453d993",
       "side": "baseline",
       "worldId": "w7eaa6b3210b790c25028",
-      "startedAt": "2026-11-14T02:27:58.017Z"
+      "startedAt": "2026-11-14T02:27:58.017Z",
+      "completedAt": "2026-11-14T02:30:03.254Z"
     },
     {
       "seed": "relisting-unseen-20261114-593862ba0453d993",
       "side": "candidate",
       "worldId": "w8baaaa6df86b54b0124f",
-      "startedAt": "2026-11-14T02:27:58.204Z"
+      "startedAt": "2026-11-14T02:27:58.204Z",
+      "completedAt": "2026-11-14T02:30:10.625Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-ae921d2f5a004c5c",
+      "side": "baseline",
+      "worldId": "w129775e44fd461f4366b",
+      "startedAt": "2026-11-14T02:30:03.416Z",
+      "completedAt": "2026-11-14T02:32:18.456Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-ae921d2f5a004c5c",
+      "side": "candidate",
+      "worldId": "wdff0665ab413b6995114",
+      "startedAt": "2026-11-14T02:30:07.620Z",
+      "completedAt": "2026-11-14T02:32:24.993Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-5291bd44e58fc0b8",
+      "side": "baseline",
+      "worldId": "w204e5b617a8a34fb8b1b",
+      "startedAt": "2026-11-14T02:30:11.024Z",
+      "completedAt": "2026-11-14T02:32:22.374Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-5291bd44e58fc0b8",
+      "side": "candidate",
+      "worldId": "w90976401207ea6e356ad",
+      "startedAt": "2026-11-14T02:30:11.201Z",
+      "completedAt": "2026-11-14T02:32:23.949Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-664fad94342f003c",
+      "side": "baseline",
+      "worldId": "w84f9b01fde2cae59d96e",
+      "startedAt": "2026-11-14T02:32:18.670Z",
+      "completedAt": "2026-11-14T02:36:13.285Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-664fad94342f003c",
+      "side": "candidate",
+      "worldId": "wfc55b9fd2c33edcf38d2",
+      "startedAt": "2026-11-14T02:32:22.547Z",
+      "completedAt": "2026-11-14T02:36:13.749Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-be6ccba2d5332cc6",
+      "side": "baseline",
+      "worldId": "w20a5b10fafcb6b7ad129",
+      "startedAt": "2026-11-14T02:32:24.112Z",
+      "completedAt": "2026-11-14T02:36:21.677Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-be6ccba2d5332cc6",
+      "side": "candidate",
+      "worldId": "w5c65064df8ed758335b3",
+      "startedAt": "2026-11-14T02:32:25.159Z",
+      "completedAt": "2026-11-14T02:36:24.345Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-85e7c8159eb228d3",
+      "side": "baseline",
+      "worldId": "w25bd5a8dbece356a4b6a",
+      "startedAt": "2026-11-14T02:36:13.745Z",
+      "completedAt": "2026-11-14T02:40:00.260Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-85e7c8159eb228d3",
+      "side": "candidate",
+      "worldId": "w948237ee99b62929f498",
+      "startedAt": "2026-11-14T02:36:14.210Z",
+      "completedAt": "2026-11-14T02:40:08.613Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-49994c1da1bed296",
+      "side": "baseline",
+      "worldId": "w119bd36598fdf32552b2",
+      "startedAt": "2026-11-14T02:36:22.164Z",
+      "completedAt": "2026-11-14T02:40:18.033Z"
+    },
+    {
+      "seed": "relisting-unseen-20261114-49994c1da1bed296",
+      "side": "candidate",
+      "worldId": "wcab3544664a8a0e5ac1e",
+      "startedAt": "2026-11-14T02:36:24.628Z",
+      "completedAt": "2026-11-14T02:40:12.411Z"
     }
   ]
 }

@@ -1,0 +1,2837 @@
+{
+  "protocol": {
+    "seed": "formal-unseen-20261113-15",
+    "bundle": "experiments/frontier/late-rescue",
+    "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+    "settings": {
+      "price": 1.42,
+      "fee": 1.05,
+      "margin": 0.1,
+      "capacity": 0.35,
+      "maxKm": 700,
+      "minDrivers": 8,
+      "notes": true,
+      "adaptive": true,
+      "earlyOffers": false,
+      "safetySlack": false,
+      "auction": false,
+      "allowPrivate": false,
+      "tradeIns": false,
+      "homeOffers": false,
+      "readiness": false,
+      "bundlePairs": true,
+      "sameDayPremium": 1,
+      "laterDiscount": 1,
+      "placePrior": 0,
+      "bundleWait": 15,
+      "backlog": 0.08,
+      "priceFloor": 0,
+      "costRatio": 1.15,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "demandSlope": 14,
+      "timedNotes": false,
+      "lateRescue": true
+    },
+    "archivedControl": "w6893e7d9cdd984154dfe",
+    "declaredAt": "2026-11-14T02:33:47.153682+00:00",
+    "scope": "Twelve chronological isolated viewer-offer cases on one old development seed; ordinary practice only. No ranking or final.",
+    "hypothesis": "A direct offer can bypass waiting for an expected public raise. A nearby eligible driver who viewed the gig within2minutes is a more informed target than profile-only selection. This remains uncertain because a view does not establish availability or sufficient fee.",
+    "source": "https://spread.bahnexpress.com/kit/HANDBOOK.md",
+    "maximumCases": 12,
+    "maximumConcurrentPlays": 4,
+    "arms": [
+      "hold",
+      "same-fee-offer",
+      "discount-offer"
+    ],
+    "selection": "At most once per10min,08:00-18:00, take the most recent qualifying view in the unchanged base advance. Distinct order,view age<=2min,open public single-car gig,waiting order,lastPickupAt>=now+300,pickup ready<=now+180. Driver home within35road km,eligible audience,no booked/working gig known,under3successful base offers that day. No active base offers on target gig.",
+    "measurement": "Compare target-gig views, bookings and fees at10and30min. Retain every offer answer. Public schedule unchanged in all arms. Offer only to the observed viewer at either current shown fee or90% of it.",
+    "decision": "Proceed to a separately frozen policy experiment only if at least3discount offers are accepted or the same-fee offer creates at least3net additional booked cases by30min versus holding. Otherwise drop this targeting version. Do not expand sample after outcomes. Mechanism success alone never promotes a policy.",
+    "failureRule": "Refuse launch while any other play is unfinished. Stop on uncertain mutations, missing acknowledgements or refused fork actions; retain every case. Delete all known temporary forks before another case. Base remains paused if error.",
+    "baseCheck": "Unchanged archived16dpolicy continues through full week; its events and score must reproduce archived control exactly.",
+    "limitations": [
+      "One selected old stream and12cases, not independent profit evidence.",
+      "Offers may change random draws or later competition; acceptance is observable, exact internal cause is not.",
+      "The base decision clock is unchanged; very short-lived views between base advances can be missed.",
+      "Forks receive no other dispatch actions for30min, identically in all arms.",
+      "A view does not prove the driver works today or can economically do the gig."
+    ],
+    "probeSha256": "e0b2913fec54b55bbb91947bab1f9e2e1d4961963d6864509fc8b769a0a04baa"
+  },
+  "terminal": false,
+  "probeError": "Error: Viewer-offer probe stopped: Error: Four-play cap reached",
+  "rawSha256": "ec54f5e3dc4cc02b4e84d56cdda5bc90c5b4053295afdc026cd05dc4fda4d2f7",
+  "baseWorldId": "w506347aee75ef1aa8dae",
+  "cases": [
+    {
+      "orderId": "R00094",
+      "at": 833,
+      "gigId": "g29",
+      "driverId": "pif6-0163",
+      "publicFeeCents": 3235,
+      "arms": {
+        "hold": {
+          "10": {
+            "views": 16,
+            "booked": true,
+            "bookings": [
+              {
+                "seq": 415,
+                "at": 840,
+                "kind": "gig_booked",
+                "gigId": "g29",
+                "driverId": "pif6-0529",
+                "feeCents": 3235
+              }
+            ],
+            "answers": [],
+            "accepted": false,
+            "snapshot": {
+              "id": "g29",
+              "stops": [
+                {
+                  "orderId": "R00094",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": true,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00094",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 822,
+                  "feeCents": 3235
+                },
+                {
+                  "at": 2279,
+                  "feeCents": 4691
+                },
+                {
+                  "at": 2399,
+                  "feeCents": 6147
+                },
+                {
+                  "at": 2459,
+                  "feeCents": 8088
+                }
+              ],
+              "status": "booked",
+              "postedAt": 832,
+              "feeCents": 3235,
+              "driverId": "pif6-0529"
+            }
+          },
+          "30": {
+            "views": 16,
+            "booked": true,
+            "bookings": [
+              {
+                "seq": 415,
+                "at": 840,
+                "kind": "gig_booked",
+                "gigId": "g29",
+                "driverId": "pif6-0529",
+                "feeCents": 3235
+              }
+            ],
+            "answers": [],
+            "accepted": false,
+            "snapshot": {
+              "id": "g29",
+              "stops": [
+                {
+                  "orderId": "R00094",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": true,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00094",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 822,
+                  "feeCents": 3235
+                },
+                {
+                  "at": 2279,
+                  "feeCents": 4691
+                },
+                {
+                  "at": 2399,
+                  "feeCents": 6147
+                },
+                {
+                  "at": 2459,
+                  "feeCents": 8088
+                }
+              ],
+              "status": "booked",
+              "postedAt": 832,
+              "feeCents": 3235,
+              "driverId": "pif6-0529"
+            }
+          }
+        },
+        "same-fee-offer": {
+          "10": {
+            "views": 16,
+            "booked": true,
+            "bookings": [
+              {
+                "seq": 415,
+                "at": 840,
+                "kind": "gig_booked",
+                "gigId": "g29",
+                "driverId": "pif6-0529",
+                "feeCents": 3235
+              }
+            ],
+            "answers": [
+              {
+                "seq": 422,
+                "at": 843,
+                "kind": "offer_answered",
+                "gigId": "g29",
+                "driverId": "pif6-0163",
+                "answer": "expired"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g29",
+              "stops": [
+                {
+                  "orderId": "R00094",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": true,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00094",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 822,
+                  "feeCents": 3235
+                },
+                {
+                  "at": 2279,
+                  "feeCents": 4691
+                },
+                {
+                  "at": 2399,
+                  "feeCents": 6147
+                },
+                {
+                  "at": 2459,
+                  "feeCents": 8088
+                }
+              ],
+              "status": "booked",
+              "postedAt": 832,
+              "feeCents": 3235,
+              "driverId": "pif6-0529"
+            }
+          },
+          "30": {
+            "views": 16,
+            "booked": true,
+            "bookings": [
+              {
+                "seq": 415,
+                "at": 840,
+                "kind": "gig_booked",
+                "gigId": "g29",
+                "driverId": "pif6-0529",
+                "feeCents": 3235
+              }
+            ],
+            "answers": [
+              {
+                "seq": 422,
+                "at": 843,
+                "kind": "offer_answered",
+                "gigId": "g29",
+                "driverId": "pif6-0163",
+                "answer": "expired"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g29",
+              "stops": [
+                {
+                  "orderId": "R00094",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": true,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00094",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 822,
+                  "feeCents": 3235
+                },
+                {
+                  "at": 2279,
+                  "feeCents": 4691
+                },
+                {
+                  "at": 2399,
+                  "feeCents": 6147
+                },
+                {
+                  "at": 2459,
+                  "feeCents": 8088
+                }
+              ],
+              "status": "booked",
+              "postedAt": 832,
+              "feeCents": 3235,
+              "driverId": "pif6-0529"
+            }
+          }
+        },
+        "discount-offer": {
+          "10": {
+            "views": 16,
+            "booked": true,
+            "bookings": [
+              {
+                "seq": 415,
+                "at": 840,
+                "kind": "gig_booked",
+                "gigId": "g29",
+                "driverId": "pif6-0529",
+                "feeCents": 3235
+              }
+            ],
+            "answers": [
+              {
+                "seq": 422,
+                "at": 843,
+                "kind": "offer_answered",
+                "gigId": "g29",
+                "driverId": "pif6-0163",
+                "answer": "expired"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g29",
+              "stops": [
+                {
+                  "orderId": "R00094",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": true,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00094",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 822,
+                  "feeCents": 3235
+                },
+                {
+                  "at": 2279,
+                  "feeCents": 4691
+                },
+                {
+                  "at": 2399,
+                  "feeCents": 6147
+                },
+                {
+                  "at": 2459,
+                  "feeCents": 8088
+                }
+              ],
+              "status": "booked",
+              "postedAt": 832,
+              "feeCents": 3235,
+              "driverId": "pif6-0529"
+            }
+          },
+          "30": {
+            "views": 16,
+            "booked": true,
+            "bookings": [
+              {
+                "seq": 415,
+                "at": 840,
+                "kind": "gig_booked",
+                "gigId": "g29",
+                "driverId": "pif6-0529",
+                "feeCents": 3235
+              }
+            ],
+            "answers": [
+              {
+                "seq": 422,
+                "at": 843,
+                "kind": "offer_answered",
+                "gigId": "g29",
+                "driverId": "pif6-0163",
+                "answer": "expired"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g29",
+              "stops": [
+                {
+                  "orderId": "R00094",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": true,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00094",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 822,
+                  "feeCents": 3235
+                },
+                {
+                  "at": 2279,
+                  "feeCents": 4691
+                },
+                {
+                  "at": 2399,
+                  "feeCents": 6147
+                },
+                {
+                  "at": 2459,
+                  "feeCents": 8088
+                }
+              ],
+              "status": "booked",
+              "postedAt": 832,
+              "feeCents": 3235,
+              "driverId": "pif6-0529"
+            }
+          }
+        }
+      }
+    },
+    {
+      "orderId": "R00142",
+      "at": 929,
+      "gigId": "g44",
+      "driverId": "pif6-0239",
+      "publicFeeCents": 9846,
+      "arms": {
+        "hold": {
+          "10": {
+            "views": 1,
+            "booked": false,
+            "bookings": [],
+            "answers": [],
+            "accepted": false,
+            "snapshot": {
+              "id": "g44",
+              "stops": [
+                {
+                  "orderId": "R00142",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00142",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 912,
+                  "feeCents": 9846
+                },
+                {
+                  "at": 2196,
+                  "feeCents": 14277
+                },
+                {
+                  "at": 2316,
+                  "feeCents": 18707
+                },
+                {
+                  "at": 2376,
+                  "feeCents": 24615
+                }
+              ],
+              "status": "open",
+              "postedAt": 927,
+              "feeCents": 9846,
+              "driverId": null
+            }
+          },
+          "30": {
+            "views": 2,
+            "booked": false,
+            "bookings": [],
+            "answers": [],
+            "accepted": false,
+            "snapshot": {
+              "id": "g44",
+              "stops": [
+                {
+                  "orderId": "R00142",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00142",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 912,
+                  "feeCents": 9846
+                },
+                {
+                  "at": 2196,
+                  "feeCents": 14277
+                },
+                {
+                  "at": 2316,
+                  "feeCents": 18707
+                },
+                {
+                  "at": 2376,
+                  "feeCents": 24615
+                }
+              ],
+              "status": "open",
+              "postedAt": 927,
+              "feeCents": 9846,
+              "driverId": null
+            }
+          }
+        },
+        "same-fee-offer": {
+          "10": {
+            "views": 1,
+            "booked": false,
+            "bookings": [],
+            "answers": [
+              {
+                "seq": 603,
+                "at": 939,
+                "kind": "offer_answered",
+                "gigId": "g44",
+                "driverId": "pif6-0239",
+                "answer": "declined"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g44",
+              "stops": [
+                {
+                  "orderId": "R00142",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00142",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 912,
+                  "feeCents": 9846
+                },
+                {
+                  "at": 2196,
+                  "feeCents": 14277
+                },
+                {
+                  "at": 2316,
+                  "feeCents": 18707
+                },
+                {
+                  "at": 2376,
+                  "feeCents": 24615
+                }
+              ],
+              "status": "open",
+              "postedAt": 927,
+              "feeCents": 9846,
+              "driverId": null
+            }
+          },
+          "30": {
+            "views": 2,
+            "booked": false,
+            "bookings": [],
+            "answers": [
+              {
+                "seq": 603,
+                "at": 939,
+                "kind": "offer_answered",
+                "gigId": "g44",
+                "driverId": "pif6-0239",
+                "answer": "declined"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g44",
+              "stops": [
+                {
+                  "orderId": "R00142",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00142",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 912,
+                  "feeCents": 9846
+                },
+                {
+                  "at": 2196,
+                  "feeCents": 14277
+                },
+                {
+                  "at": 2316,
+                  "feeCents": 18707
+                },
+                {
+                  "at": 2376,
+                  "feeCents": 24615
+                }
+              ],
+              "status": "open",
+              "postedAt": 927,
+              "feeCents": 9846,
+              "driverId": null
+            }
+          }
+        },
+        "discount-offer": {
+          "10": {
+            "views": 1,
+            "booked": false,
+            "bookings": [],
+            "answers": [
+              {
+                "seq": 603,
+                "at": 939,
+                "kind": "offer_answered",
+                "gigId": "g44",
+                "driverId": "pif6-0239",
+                "answer": "declined"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g44",
+              "stops": [
+                {
+                  "orderId": "R00142",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00142",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 912,
+                  "feeCents": 9846
+                },
+                {
+                  "at": 2196,
+                  "feeCents": 14277
+                },
+                {
+                  "at": 2316,
+                  "feeCents": 18707
+                },
+                {
+                  "at": 2376,
+                  "feeCents": 24615
+                }
+              ],
+              "status": "open",
+              "postedAt": 927,
+              "feeCents": 9846,
+              "driverId": null
+            }
+          },
+          "30": {
+            "views": 2,
+            "booked": false,
+            "bookings": [],
+            "answers": [
+              {
+                "seq": 603,
+                "at": 939,
+                "kind": "offer_answered",
+                "gigId": "g44",
+                "driverId": "pif6-0239",
+                "answer": "declined"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g44",
+              "stops": [
+                {
+                  "orderId": "R00142",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00142",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 912,
+                  "feeCents": 9846
+                },
+                {
+                  "at": 2196,
+                  "feeCents": 14277
+                },
+                {
+                  "at": 2316,
+                  "feeCents": 18707
+                },
+                {
+                  "at": 2376,
+                  "feeCents": 24615
+                }
+              ],
+              "status": "open",
+              "postedAt": 927,
+              "feeCents": 9846,
+              "driverId": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "orderId": "R00163",
+      "at": 1008,
+      "gigId": "g50",
+      "driverId": "pif6-0379",
+      "publicFeeCents": 3061,
+      "arms": {
+        "hold": {
+          "10": {
+            "views": 1,
+            "booked": true,
+            "bookings": [
+              {
+                "seq": 708,
+                "at": 1009,
+                "kind": "gig_booked",
+                "gigId": "g50",
+                "driverId": "pif6-0155",
+                "feeCents": 3061
+              }
+            ],
+            "answers": [],
+            "accepted": false,
+            "snapshot": {
+              "id": "g50",
+              "stops": [
+                {
+                  "orderId": "R00163",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00163",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 988,
+                  "feeCents": 3061
+                },
+                {
+                  "at": 2339,
+                  "feeCents": 4438
+                },
+                {
+                  "at": 2459,
+                  "feeCents": 5816
+                },
+                {
+                  "at": 2519,
+                  "feeCents": 7653
+                }
+              ],
+              "status": "booked",
+              "postedAt": 1001,
+              "feeCents": 3061,
+              "driverId": "pif6-0155"
+            }
+          },
+          "30": {
+            "views": 1,
+            "booked": true,
+            "bookings": [
+              {
+                "seq": 708,
+                "at": 1009,
+                "kind": "gig_booked",
+                "gigId": "g50",
+                "driverId": "pif6-0155",
+                "feeCents": 3061
+              }
+            ],
+            "answers": [],
+            "accepted": false,
+            "snapshot": {
+              "id": "g50",
+              "stops": [
+                {
+                  "orderId": "R00163",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00163",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 988,
+                  "feeCents": 3061
+                },
+                {
+                  "at": 2339,
+                  "feeCents": 4438
+                },
+                {
+                  "at": 2459,
+                  "feeCents": 5816
+                },
+                {
+                  "at": 2519,
+                  "feeCents": 7653
+                }
+              ],
+              "status": "booked",
+              "postedAt": 1001,
+              "feeCents": 3061,
+              "driverId": "pif6-0155"
+            }
+          }
+        },
+        "same-fee-offer": {
+          "10": {
+            "views": 1,
+            "booked": true,
+            "bookings": [
+              {
+                "seq": 708,
+                "at": 1009,
+                "kind": "gig_booked",
+                "gigId": "g50",
+                "driverId": "pif6-0155",
+                "feeCents": 3061
+              }
+            ],
+            "answers": [
+              {
+                "seq": 720,
+                "at": 1018,
+                "kind": "offer_answered",
+                "gigId": "g50",
+                "driverId": "pif6-0379",
+                "answer": "expired"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g50",
+              "stops": [
+                {
+                  "orderId": "R00163",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00163",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 988,
+                  "feeCents": 3061
+                },
+                {
+                  "at": 2339,
+                  "feeCents": 4438
+                },
+                {
+                  "at": 2459,
+                  "feeCents": 5816
+                },
+                {
+                  "at": 2519,
+                  "feeCents": 7653
+                }
+              ],
+              "status": "booked",
+              "postedAt": 1001,
+              "feeCents": 3061,
+              "driverId": "pif6-0155"
+            }
+          },
+          "30": {
+            "views": 1,
+            "booked": true,
+            "bookings": [
+              {
+                "seq": 708,
+                "at": 1009,
+                "kind": "gig_booked",
+                "gigId": "g50",
+                "driverId": "pif6-0155",
+                "feeCents": 3061
+              }
+            ],
+            "answers": [
+              {
+                "seq": 720,
+                "at": 1018,
+                "kind": "offer_answered",
+                "gigId": "g50",
+                "driverId": "pif6-0379",
+                "answer": "expired"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g50",
+              "stops": [
+                {
+                  "orderId": "R00163",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00163",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 988,
+                  "feeCents": 3061
+                },
+                {
+                  "at": 2339,
+                  "feeCents": 4438
+                },
+                {
+                  "at": 2459,
+                  "feeCents": 5816
+                },
+                {
+                  "at": 2519,
+                  "feeCents": 7653
+                }
+              ],
+              "status": "booked",
+              "postedAt": 1001,
+              "feeCents": 3061,
+              "driverId": "pif6-0155"
+            }
+          }
+        },
+        "discount-offer": {
+          "10": {
+            "views": 1,
+            "booked": true,
+            "bookings": [
+              {
+                "seq": 708,
+                "at": 1009,
+                "kind": "gig_booked",
+                "gigId": "g50",
+                "driverId": "pif6-0155",
+                "feeCents": 3061
+              }
+            ],
+            "answers": [
+              {
+                "seq": 720,
+                "at": 1018,
+                "kind": "offer_answered",
+                "gigId": "g50",
+                "driverId": "pif6-0379",
+                "answer": "expired"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g50",
+              "stops": [
+                {
+                  "orderId": "R00163",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00163",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 988,
+                  "feeCents": 3061
+                },
+                {
+                  "at": 2339,
+                  "feeCents": 4438
+                },
+                {
+                  "at": 2459,
+                  "feeCents": 5816
+                },
+                {
+                  "at": 2519,
+                  "feeCents": 7653
+                }
+              ],
+              "status": "booked",
+              "postedAt": 1001,
+              "feeCents": 3061,
+              "driverId": "pif6-0155"
+            }
+          },
+          "30": {
+            "views": 1,
+            "booked": true,
+            "bookings": [
+              {
+                "seq": 708,
+                "at": 1009,
+                "kind": "gig_booked",
+                "gigId": "g50",
+                "driverId": "pif6-0155",
+                "feeCents": 3061
+              }
+            ],
+            "answers": [
+              {
+                "seq": 720,
+                "at": 1018,
+                "kind": "offer_answered",
+                "gigId": "g50",
+                "driverId": "pif6-0379",
+                "answer": "expired"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g50",
+              "stops": [
+                {
+                  "orderId": "R00163",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00163",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 988,
+                  "feeCents": 3061
+                },
+                {
+                  "at": 2339,
+                  "feeCents": 4438
+                },
+                {
+                  "at": 2459,
+                  "feeCents": 5816
+                },
+                {
+                  "at": 2519,
+                  "feeCents": 7653
+                }
+              ],
+              "status": "booked",
+              "postedAt": 1001,
+              "feeCents": 3061,
+              "driverId": "pif6-0155"
+            }
+          }
+        }
+      }
+    },
+    {
+      "orderId": "R00172",
+      "at": 1034,
+      "gigId": "g53",
+      "driverId": "pif6-0666",
+      "publicFeeCents": 3893,
+      "arms": {
+        "hold": {
+          "10": {
+            "views": 1,
+            "booked": false,
+            "bookings": [],
+            "answers": [],
+            "accepted": false,
+            "snapshot": {
+              "id": "g53",
+              "stops": [
+                {
+                  "orderId": "R00172",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00172",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 1010,
+                  "feeCents": 3893
+                },
+                {
+                  "at": 2344,
+                  "feeCents": 5645
+                },
+                {
+                  "at": 2464,
+                  "feeCents": 7397
+                },
+                {
+                  "at": 2524,
+                  "feeCents": 9733
+                }
+              ],
+              "status": "open",
+              "postedAt": 1024,
+              "feeCents": 3893,
+              "driverId": null
+            }
+          },
+          "30": {
+            "views": 4,
+            "booked": false,
+            "bookings": [],
+            "answers": [],
+            "accepted": false,
+            "snapshot": {
+              "id": "g53",
+              "stops": [
+                {
+                  "orderId": "R00172",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00172",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 1010,
+                  "feeCents": 3893
+                },
+                {
+                  "at": 2344,
+                  "feeCents": 5645
+                },
+                {
+                  "at": 2464,
+                  "feeCents": 7397
+                },
+                {
+                  "at": 2524,
+                  "feeCents": 9733
+                }
+              ],
+              "status": "open",
+              "postedAt": 1024,
+              "feeCents": 3893,
+              "driverId": null
+            }
+          }
+        },
+        "same-fee-offer": {
+          "10": {
+            "views": 1,
+            "booked": false,
+            "bookings": [],
+            "answers": [
+              {
+                "seq": 850,
+                "at": 1044,
+                "kind": "offer_answered",
+                "gigId": "g53",
+                "driverId": "pif6-0666",
+                "answer": "expired"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g53",
+              "stops": [
+                {
+                  "orderId": "R00172",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00172",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 1010,
+                  "feeCents": 3893
+                },
+                {
+                  "at": 2344,
+                  "feeCents": 5645
+                },
+                {
+                  "at": 2464,
+                  "feeCents": 7397
+                },
+                {
+                  "at": 2524,
+                  "feeCents": 9733
+                }
+              ],
+              "status": "open",
+              "postedAt": 1024,
+              "feeCents": 3893,
+              "driverId": null
+            }
+          },
+          "30": {
+            "views": 4,
+            "booked": false,
+            "bookings": [],
+            "answers": [
+              {
+                "seq": 850,
+                "at": 1044,
+                "kind": "offer_answered",
+                "gigId": "g53",
+                "driverId": "pif6-0666",
+                "answer": "expired"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g53",
+              "stops": [
+                {
+                  "orderId": "R00172",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00172",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 1010,
+                  "feeCents": 3893
+                },
+                {
+                  "at": 2344,
+                  "feeCents": 5645
+                },
+                {
+                  "at": 2464,
+                  "feeCents": 7397
+                },
+                {
+                  "at": 2524,
+                  "feeCents": 9733
+                }
+              ],
+              "status": "open",
+              "postedAt": 1024,
+              "feeCents": 3893,
+              "driverId": null
+            }
+          }
+        },
+        "discount-offer": {
+          "10": {
+            "views": 1,
+            "booked": false,
+            "bookings": [],
+            "answers": [
+              {
+                "seq": 850,
+                "at": 1044,
+                "kind": "offer_answered",
+                "gigId": "g53",
+                "driverId": "pif6-0666",
+                "answer": "expired"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g53",
+              "stops": [
+                {
+                  "orderId": "R00172",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00172",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 1010,
+                  "feeCents": 3893
+                },
+                {
+                  "at": 2344,
+                  "feeCents": 5645
+                },
+                {
+                  "at": 2464,
+                  "feeCents": 7397
+                },
+                {
+                  "at": 2524,
+                  "feeCents": 9733
+                }
+              ],
+              "status": "open",
+              "postedAt": 1024,
+              "feeCents": 3893,
+              "driverId": null
+            }
+          },
+          "30": {
+            "views": 4,
+            "booked": false,
+            "bookings": [],
+            "answers": [
+              {
+                "seq": 850,
+                "at": 1044,
+                "kind": "offer_answered",
+                "gigId": "g53",
+                "driverId": "pif6-0666",
+                "answer": "expired"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g53",
+              "stops": [
+                {
+                  "orderId": "R00172",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00172",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 1010,
+                  "feeCents": 3893
+                },
+                {
+                  "at": 2344,
+                  "feeCents": 5645
+                },
+                {
+                  "at": 2464,
+                  "feeCents": 7397
+                },
+                {
+                  "at": 2524,
+                  "feeCents": 9733
+                }
+              ],
+              "status": "open",
+              "postedAt": 1024,
+              "feeCents": 3893,
+              "driverId": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "orderId": "R00173",
+      "at": 1044,
+      "gigId": "g54",
+      "driverId": "pif6-0475",
+      "publicFeeCents": 4015,
+      "arms": {
+        "hold": {
+          "10": {
+            "views": 5,
+            "booked": false,
+            "bookings": [],
+            "answers": [],
+            "accepted": false,
+            "snapshot": {
+              "id": "g54",
+              "stops": [
+                {
+                  "orderId": "R00173",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00173",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 1016,
+                  "feeCents": 4015
+                },
+                {
+                  "at": 2344,
+                  "feeCents": 5822
+                },
+                {
+                  "at": 2464,
+                  "feeCents": 7629
+                },
+                {
+                  "at": 2524,
+                  "feeCents": 10038
+                }
+              ],
+              "status": "open",
+              "postedAt": 1024,
+              "feeCents": 4015,
+              "driverId": null
+            }
+          },
+          "30": {
+            "views": 12,
+            "booked": false,
+            "bookings": [],
+            "answers": [],
+            "accepted": false,
+            "snapshot": {
+              "id": "g54",
+              "stops": [
+                {
+                  "orderId": "R00173",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00173",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 1016,
+                  "feeCents": 4015
+                },
+                {
+                  "at": 2344,
+                  "feeCents": 5822
+                },
+                {
+                  "at": 2464,
+                  "feeCents": 7629
+                },
+                {
+                  "at": 2524,
+                  "feeCents": 10038
+                }
+              ],
+              "status": "open",
+              "postedAt": 1024,
+              "feeCents": 4015,
+              "driverId": null
+            }
+          }
+        },
+        "same-fee-offer": {
+          "10": {
+            "views": 5,
+            "booked": false,
+            "bookings": [],
+            "answers": [
+              {
+                "seq": 974,
+                "at": 1054,
+                "kind": "offer_answered",
+                "gigId": "g54",
+                "driverId": "pif6-0475",
+                "answer": "expired"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g54",
+              "stops": [
+                {
+                  "orderId": "R00173",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00173",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 1016,
+                  "feeCents": 4015
+                },
+                {
+                  "at": 2344,
+                  "feeCents": 5822
+                },
+                {
+                  "at": 2464,
+                  "feeCents": 7629
+                },
+                {
+                  "at": 2524,
+                  "feeCents": 10038
+                }
+              ],
+              "status": "open",
+              "postedAt": 1024,
+              "feeCents": 4015,
+              "driverId": null
+            }
+          },
+          "30": {
+            "views": 12,
+            "booked": false,
+            "bookings": [],
+            "answers": [
+              {
+                "seq": 974,
+                "at": 1054,
+                "kind": "offer_answered",
+                "gigId": "g54",
+                "driverId": "pif6-0475",
+                "answer": "expired"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g54",
+              "stops": [
+                {
+                  "orderId": "R00173",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00173",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 1016,
+                  "feeCents": 4015
+                },
+                {
+                  "at": 2344,
+                  "feeCents": 5822
+                },
+                {
+                  "at": 2464,
+                  "feeCents": 7629
+                },
+                {
+                  "at": 2524,
+                  "feeCents": 10038
+                }
+              ],
+              "status": "open",
+              "postedAt": 1024,
+              "feeCents": 4015,
+              "driverId": null
+            }
+          }
+        },
+        "discount-offer": {
+          "10": {
+            "views": 5,
+            "booked": false,
+            "bookings": [],
+            "answers": [
+              {
+                "seq": 974,
+                "at": 1054,
+                "kind": "offer_answered",
+                "gigId": "g54",
+                "driverId": "pif6-0475",
+                "answer": "expired"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g54",
+              "stops": [
+                {
+                  "orderId": "R00173",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00173",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 1016,
+                  "feeCents": 4015
+                },
+                {
+                  "at": 2344,
+                  "feeCents": 5822
+                },
+                {
+                  "at": 2464,
+                  "feeCents": 7629
+                },
+                {
+                  "at": 2524,
+                  "feeCents": 10038
+                }
+              ],
+              "status": "open",
+              "postedAt": 1024,
+              "feeCents": 4015,
+              "driverId": null
+            }
+          },
+          "30": {
+            "views": 12,
+            "booked": false,
+            "bookings": [],
+            "answers": [
+              {
+                "seq": 974,
+                "at": 1054,
+                "kind": "offer_answered",
+                "gigId": "g54",
+                "driverId": "pif6-0475",
+                "answer": "expired"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g54",
+              "stops": [
+                {
+                  "orderId": "R00173",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00173",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 1016,
+                  "feeCents": 4015
+                },
+                {
+                  "at": 2344,
+                  "feeCents": 5822
+                },
+                {
+                  "at": 2464,
+                  "feeCents": 7629
+                },
+                {
+                  "at": 2524,
+                  "feeCents": 10038
+                }
+              ],
+              "status": "open",
+              "postedAt": 1024,
+              "feeCents": 4015,
+              "driverId": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "orderId": "R00371",
+      "at": 2430,
+      "gigId": "g110",
+      "driverId": "pif6-0339",
+      "publicFeeCents": 18644,
+      "arms": {
+        "hold": {
+          "10": {
+            "views": 0,
+            "booked": false,
+            "bookings": [],
+            "answers": [],
+            "accepted": false,
+            "snapshot": {
+              "id": "g110",
+              "stops": [
+                {
+                  "orderId": "R00371",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00371",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 2406,
+                  "feeCents": 18644
+                },
+                {
+                  "at": 3492,
+                  "feeCents": 27034
+                },
+                {
+                  "at": 3612,
+                  "feeCents": 35424
+                },
+                {
+                  "at": 3672,
+                  "feeCents": 46610
+                }
+              ],
+              "status": "open",
+              "postedAt": 2421,
+              "feeCents": 18644,
+              "driverId": null
+            }
+          },
+          "30": {
+            "views": 3,
+            "booked": false,
+            "bookings": [],
+            "answers": [],
+            "accepted": false,
+            "snapshot": {
+              "id": "g110",
+              "stops": [
+                {
+                  "orderId": "R00371",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00371",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 2406,
+                  "feeCents": 18644
+                },
+                {
+                  "at": 3492,
+                  "feeCents": 27034
+                },
+                {
+                  "at": 3612,
+                  "feeCents": 35424
+                },
+                {
+                  "at": 3672,
+                  "feeCents": 46610
+                }
+              ],
+              "status": "open",
+              "postedAt": 2421,
+              "feeCents": 18644,
+              "driverId": null
+            }
+          }
+        },
+        "same-fee-offer": {
+          "10": {
+            "views": 0,
+            "booked": false,
+            "bookings": [],
+            "answers": [
+              {
+                "seq": 2111,
+                "at": 2440,
+                "kind": "offer_answered",
+                "gigId": "g110",
+                "driverId": "pif6-0339",
+                "answer": "expired"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g110",
+              "stops": [
+                {
+                  "orderId": "R00371",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00371",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 2406,
+                  "feeCents": 18644
+                },
+                {
+                  "at": 3492,
+                  "feeCents": 27034
+                },
+                {
+                  "at": 3612,
+                  "feeCents": 35424
+                },
+                {
+                  "at": 3672,
+                  "feeCents": 46610
+                }
+              ],
+              "status": "open",
+              "postedAt": 2421,
+              "feeCents": 18644,
+              "driverId": null
+            }
+          },
+          "30": {
+            "views": 3,
+            "booked": false,
+            "bookings": [],
+            "answers": [
+              {
+                "seq": 2111,
+                "at": 2440,
+                "kind": "offer_answered",
+                "gigId": "g110",
+                "driverId": "pif6-0339",
+                "answer": "expired"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g110",
+              "stops": [
+                {
+                  "orderId": "R00371",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00371",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 2406,
+                  "feeCents": 18644
+                },
+                {
+                  "at": 3492,
+                  "feeCents": 27034
+                },
+                {
+                  "at": 3612,
+                  "feeCents": 35424
+                },
+                {
+                  "at": 3672,
+                  "feeCents": 46610
+                }
+              ],
+              "status": "open",
+              "postedAt": 2421,
+              "feeCents": 18644,
+              "driverId": null
+            }
+          }
+        },
+        "discount-offer": {
+          "10": {
+            "views": 0,
+            "booked": false,
+            "bookings": [],
+            "answers": [
+              {
+                "seq": 2111,
+                "at": 2440,
+                "kind": "offer_answered",
+                "gigId": "g110",
+                "driverId": "pif6-0339",
+                "answer": "expired"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g110",
+              "stops": [
+                {
+                  "orderId": "R00371",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00371",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 2406,
+                  "feeCents": 18644
+                },
+                {
+                  "at": 3492,
+                  "feeCents": 27034
+                },
+                {
+                  "at": 3612,
+                  "feeCents": 35424
+                },
+                {
+                  "at": 3672,
+                  "feeCents": 46610
+                }
+              ],
+              "status": "open",
+              "postedAt": 2421,
+              "feeCents": 18644,
+              "driverId": null
+            }
+          },
+          "30": {
+            "views": 3,
+            "booked": false,
+            "bookings": [],
+            "answers": [
+              {
+                "seq": 2111,
+                "at": 2440,
+                "kind": "offer_answered",
+                "gigId": "g110",
+                "driverId": "pif6-0339",
+                "answer": "expired"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g110",
+              "stops": [
+                {
+                  "orderId": "R00371",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00371",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 2406,
+                  "feeCents": 18644
+                },
+                {
+                  "at": 3492,
+                  "feeCents": 27034
+                },
+                {
+                  "at": 3612,
+                  "feeCents": 35424
+                },
+                {
+                  "at": 3672,
+                  "feeCents": 46610
+                }
+              ],
+              "status": "open",
+              "postedAt": 2421,
+              "feeCents": 18644,
+              "driverId": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "orderId": "R00365",
+      "at": 2450,
+      "gigId": "g108",
+      "driverId": "pif6-0336",
+      "publicFeeCents": 9284,
+      "arms": {
+        "hold": {
+          "10": {
+            "views": 1,
+            "booked": false,
+            "bookings": [],
+            "answers": [],
+            "accepted": false,
+            "snapshot": {
+              "id": "g108",
+              "stops": [
+                {
+                  "orderId": "R00365",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00365",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 2395,
+                  "feeCents": 9284
+                },
+                {
+                  "at": 3642,
+                  "feeCents": 13462
+                },
+                {
+                  "at": 3762,
+                  "feeCents": 17640
+                },
+                {
+                  "at": 3822,
+                  "feeCents": 23210
+                }
+              ],
+              "status": "open",
+              "postedAt": 2404,
+              "feeCents": 9284,
+              "driverId": null
+            }
+          },
+          "30": {
+            "views": 2,
+            "booked": false,
+            "bookings": [],
+            "answers": [],
+            "accepted": false,
+            "snapshot": {
+              "id": "g108",
+              "stops": [
+                {
+                  "orderId": "R00365",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00365",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 2395,
+                  "feeCents": 9284
+                },
+                {
+                  "at": 3642,
+                  "feeCents": 13462
+                },
+                {
+                  "at": 3762,
+                  "feeCents": 17640
+                },
+                {
+                  "at": 3822,
+                  "feeCents": 23210
+                }
+              ],
+              "status": "open",
+              "postedAt": 2404,
+              "feeCents": 9284,
+              "driverId": null
+            }
+          }
+        },
+        "same-fee-offer": {
+          "10": {
+            "views": 1,
+            "booked": false,
+            "bookings": [],
+            "answers": [
+              {
+                "seq": 2154,
+                "at": 2460,
+                "kind": "offer_answered",
+                "gigId": "g108",
+                "driverId": "pif6-0336",
+                "answer": "expired"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g108",
+              "stops": [
+                {
+                  "orderId": "R00365",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00365",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 2395,
+                  "feeCents": 9284
+                },
+                {
+                  "at": 3642,
+                  "feeCents": 13462
+                },
+                {
+                  "at": 3762,
+                  "feeCents": 17640
+                },
+                {
+                  "at": 3822,
+                  "feeCents": 23210
+                }
+              ],
+              "status": "open",
+              "postedAt": 2404,
+              "feeCents": 9284,
+              "driverId": null
+            }
+          },
+          "30": {
+            "views": 2,
+            "booked": false,
+            "bookings": [],
+            "answers": [
+              {
+                "seq": 2154,
+                "at": 2460,
+                "kind": "offer_answered",
+                "gigId": "g108",
+                "driverId": "pif6-0336",
+                "answer": "expired"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g108",
+              "stops": [
+                {
+                  "orderId": "R00365",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00365",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 2395,
+                  "feeCents": 9284
+                },
+                {
+                  "at": 3642,
+                  "feeCents": 13462
+                },
+                {
+                  "at": 3762,
+                  "feeCents": 17640
+                },
+                {
+                  "at": 3822,
+                  "feeCents": 23210
+                }
+              ],
+              "status": "open",
+              "postedAt": 2404,
+              "feeCents": 9284,
+              "driverId": null
+            }
+          }
+        },
+        "discount-offer": {
+          "10": {
+            "views": 1,
+            "booked": false,
+            "bookings": [],
+            "answers": [
+              {
+                "seq": 2154,
+                "at": 2460,
+                "kind": "offer_answered",
+                "gigId": "g108",
+                "driverId": "pif6-0336",
+                "answer": "expired"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g108",
+              "stops": [
+                {
+                  "orderId": "R00365",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00365",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 2395,
+                  "feeCents": 9284
+                },
+                {
+                  "at": 3642,
+                  "feeCents": 13462
+                },
+                {
+                  "at": 3762,
+                  "feeCents": 17640
+                },
+                {
+                  "at": 3822,
+                  "feeCents": 23210
+                }
+              ],
+              "status": "open",
+              "postedAt": 2404,
+              "feeCents": 9284,
+              "driverId": null
+            }
+          },
+          "30": {
+            "views": 2,
+            "booked": false,
+            "bookings": [],
+            "answers": [
+              {
+                "seq": 2154,
+                "at": 2460,
+                "kind": "offer_answered",
+                "gigId": "g108",
+                "driverId": "pif6-0336",
+                "answer": "expired"
+              }
+            ],
+            "accepted": false,
+            "snapshot": {
+              "id": "g108",
+              "stops": [
+                {
+                  "orderId": "R00365",
+                  "leg": 0,
+                  "kind": "pickup",
+                  "withPlates": false,
+                  "withCharging": false
+                },
+                {
+                  "orderId": "R00365",
+                  "leg": 0,
+                  "kind": "delivery"
+                }
+              ],
+              "audience": {
+                "experienced": false,
+                "manualLicence": false
+              },
+              "schedule": [
+                {
+                  "at": 2395,
+                  "feeCents": 9284
+                },
+                {
+                  "at": 3642,
+                  "feeCents": 13462
+                },
+                {
+                  "at": 3762,
+                  "feeCents": 17640
+                },
+                {
+                  "at": 3822,
+                  "feeCents": 23210
+                }
+              ],
+              "status": "open",
+              "postedAt": 2404,
+              "feeCents": 9284,
+              "driverId": null
+            }
+          }
+        }
+      }
+    }
+  ],
+  "incompleteCases": [
+    {
+      "at": 3662,
+      "afterSeq": 2906,
+      "gig": {
+        "id": "g139",
+        "stops": [
+          {
+            "orderId": "R00476",
+            "leg": 0,
+            "kind": "pickup",
+            "withPlates": false,
+            "withCharging": false
+          },
+          {
+            "orderId": "R00476",
+            "leg": 0,
+            "kind": "delivery"
+          }
+        ],
+        "audience": {
+          "experienced": false,
+          "manualLicence": false
+        },
+        "schedule": [
+          {
+            "at": 3642,
+            "feeCents": 8408
+          },
+          {
+            "at": 5117,
+            "feeCents": 12192
+          },
+          {
+            "at": 5237,
+            "feeCents": 15975
+          },
+          {
+            "at": 5297,
+            "feeCents": 21020
+          }
+        ],
+        "status": "open",
+        "postedAt": 3657,
+        "feeCents": 8408,
+        "driverId": null
+      },
+      "order": {
+        "id": "R00476",
+        "dealerId": "D02",
+        "option": "next_day",
+        "priceCents": 12179,
+        "deadline": 5520,
+        "legs": [
+          {
+            "car": {
+              "premium": false,
+              "electric": false,
+              "chargePercent": null
+            },
+            "pickup": {
+              "placeId": "vantaa",
+              "privateAddress": false,
+              "window": {
+                "from": 3687,
+                "to": 5520
+              },
+              "hours": {
+                "opens": 480,
+                "closes": 1200,
+                "weekdays": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "saturday": null
+              }
+            },
+            "delivery": {
+              "placeId": "rauma",
+              "privateAddress": false,
+              "window": {
+                "from": 3687,
+                "to": 5520
+              },
+              "hours": {
+                "opens": 420,
+                "closes": 1200,
+                "weekdays": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "saturday": {
+                  "opens": 540,
+                  "closes": 840
+                }
+              }
+            }
+          }
+        ],
+        "status": "waiting",
+        "deliveredAt": [
+          null
+        ],
+        "lastPickupAt": 5357
+      },
+      "driver": {
+        "id": "pif6-0522",
+        "homePlaceId": "vantaa",
+        "rating": 4.6,
+        "licence": "automatic_only",
+        "completedGigs": 3,
+        "drops": 0
+      },
+      "viewAt": 3662,
+      "priorDriverOffers": 0,
+      "arms": []
+    }
+  ],
+  "summary": {
+    "hold": {
+      "10": {
+        "views": 25,
+        "bookedCases": 2,
+        "acceptedOffers": 0,
+        "answers": {}
+      },
+      "30": {
+        "views": 40,
+        "bookedCases": 2,
+        "acceptedOffers": 0,
+        "answers": {}
+      }
+    },
+    "same-fee-offer": {
+      "10": {
+        "views": 25,
+        "bookedCases": 2,
+        "acceptedOffers": 0,
+        "answers": {
+          "expired": 6,
+          "declined": 1
+        }
+      },
+      "30": {
+        "views": 40,
+        "bookedCases": 2,
+        "acceptedOffers": 0,
+        "answers": {
+          "expired": 6,
+          "declined": 1
+        }
+      }
+    },
+    "discount-offer": {
+      "10": {
+        "views": 25,
+        "bookedCases": 2,
+        "acceptedOffers": 0,
+        "answers": {
+          "expired": 6,
+          "declined": 1
+        }
+      },
+      "30": {
+        "views": 40,
+        "bookedCases": 2,
+        "acceptedOffers": 0,
+        "answers": {
+          "expired": 6,
+          "declined": 1
+        }
+      }
+    }
+  },
+  "sameFeeNetAddedBookings": 0,
+  "gatePassed": false,
+  "deletedForks": 21,
+  "base": {
+    "worldId": "w506347aee75ef1aa8dae",
+    "now": 3662,
+    "endsAt": 14280,
+    "score": {
+      "marginCents": 252408,
+      "revenueCents": 786058,
+      "marginShare": 0.32110607614196407,
+      "wonOrders": 153,
+      "onTimeShare": 1,
+      "undeliveredShare": 0,
+      "ranked": true
+    }
+  },
+  "baseVersusArchive": {
+    "scope": "prefix through interruption",
+    "eventsIdentical": true,
+    "baseEventCount": 2907,
+    "controlEventCount": 2907,
+    "marginDifferenceCents": null
+  }
+}
