@@ -33,7 +33,7 @@ export const defaults: Settings = {
   notes: true, noteSpelling: false, relist: false, adaptive: true, earlyOffers: false, safetySlack: false,
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
   backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14,
-  openFee: 1, laterFee: 1, trustValue: 0,
+  openFee: 0.9, laterFee: 0.9, trustValue: 0,
 }
 
 export function validateSettings(value: unknown): asserts value is Partial<Settings> {

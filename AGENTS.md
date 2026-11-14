@@ -10,7 +10,7 @@ So every change must do one of two things: raise margin on weeks we have not tun
 
 ## The champion
 
-The champion is the dispatcher on the default branch, played with its default settings. `experiments/champion.json` holds its source hash and its result on eight fixed weeks: mean €8,418.62 a week, lowest on-time share 96.14%. `npm run final` plays the champion.
+The champion is the dispatcher on the default branch, played with its default settings. `experiments/champion.json` holds its source hash and its result on eight fixed weeks; `python analysis/gate.py status` prints its mean margin. `npm run final` plays the champion.
 
 Check that your checkout is the champion before you start an idea:
 
