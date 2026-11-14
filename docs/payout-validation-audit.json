@@ -90,19 +90,47 @@
       "seed": "payout-unseen-20261114-bdbb0af73763c605",
       "side": "baseline",
       "worldId": "wf3375255613b903cec06",
-      "startedAt": "2026-11-14T04:00:39.612Z"
+      "startedAt": "2026-11-14T04:00:39.612Z",
+      "completedAt": "2026-11-14T04:03:20.038Z"
+    },
+    {
+      "seed": "payout-unseen-20261114-bdbb0af73763c605",
+      "side": "candidate",
+      "worldId": "w14cd72c5bdfa45326d2e",
+      "startedAt": "2026-11-14T04:03:20.255Z",
+      "completedAt": "2026-11-14T04:06:01.187Z"
+    },
+    {
+      "seed": "payout-unseen-20261114-bfc8b37c1c3b01b5",
+      "side": "baseline",
+      "worldId": "wad509d6e69fbca969ac3",
+      "startedAt": "2026-11-14T04:06:01.421Z",
+      "completedAt": "2026-11-14T04:08:26.086Z"
+    },
+    {
+      "seed": "payout-unseen-20261114-bfc8b37c1c3b01b5",
+      "side": "candidate",
+      "worldId": "w8efb30b6ad8d38f3b698",
+      "startedAt": "2026-11-14T04:08:26.212Z",
+      "completedAt": "2026-11-14T04:10:56.590Z"
+    },
+    {
+      "seed": "payout-unseen-20261114-2b782dea15c2c930",
+      "side": "baseline",
+      "worldId": "w49612a1b08ad3d5d7143",
+      "startedAt": "2026-11-14T04:10:56.771Z"
     }
   ],
   "runnerErrors": [],
   "summary": {
     "baseline": {
-      "completed": 6,
+      "completed": 8,
       "failedVisits": 0,
       "actionErrors": 2,
       "recoveries": 0
     },
     "candidate": {
-      "completed": 6,
+      "completed": 8,
       "failedVisits": 0,
       "actionErrors": 4,
       "recoveries": 0
@@ -975,30 +1003,135 @@
       "seed": "payout-unseen-20261114-bdbb0af73763c605",
       "side": "baseline",
       "worldId": "wf3375255613b903cec06",
-      "status": "pending"
+      "status": "complete",
+      "marginCents": 666686,
+      "qualified": true,
+      "onTimeShare": 0.9872881355932204,
+      "undeliveredOrders": 0,
+      "eventCounts": {
+        "price_request": 1033,
+        "order_lost": 796,
+        "order_won": 237,
+        "gig_viewed": 2421,
+        "gig_booked": 241,
+        "offer_answered": 87,
+        "gig_started": 218,
+        "picked_up": 236,
+        "order_changed": 5,
+        "delivered": 236,
+        "ledger": 458,
+        "gig_dropped": 22,
+        "forecast": 1,
+        "deadline_close": 6,
+        "gig_expired": 3,
+        "order_cancelled": 1
+      },
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": [],
+      "actionErrorContexts": []
     },
     {
       "seed": "payout-unseen-20261114-bdbb0af73763c605",
       "side": "candidate",
-      "worldId": null,
-      "status": "pending"
+      "worldId": "w14cd72c5bdfa45326d2e",
+      "status": "complete",
+      "marginCents": 792898,
+      "qualified": true,
+      "onTimeShare": 0.9826839826839827,
+      "undeliveredOrders": 0,
+      "eventCounts": {
+        "price_request": 1033,
+        "order_lost": 801,
+        "order_won": 232,
+        "gig_viewed": 4678,
+        "gig_booked": 238,
+        "offer_answered": 96,
+        "gig_started": 215,
+        "picked_up": 231,
+        "order_changed": 6,
+        "delivered": 231,
+        "ledger": 451,
+        "gig_dropped": 21,
+        "deadline_close": 6,
+        "forecast": 1,
+        "order_cancelled": 1,
+        "gig_expired": 3,
+        "no_show": 1
+      },
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": [],
+      "actionErrorContexts": []
     },
     {
       "seed": "payout-unseen-20261114-bfc8b37c1c3b01b5",
       "side": "baseline",
-      "worldId": null,
-      "status": "pending"
+      "worldId": "wad509d6e69fbca969ac3",
+      "status": "complete",
+      "marginCents": 848671,
+      "qualified": true,
+      "onTimeShare": 0.9611650485436893,
+      "undeliveredOrders": 0,
+      "eventCounts": {
+        "price_request": 1030,
+        "order_won": 312,
+        "order_lost": 718,
+        "gig_viewed": 3847,
+        "gig_booked": 323,
+        "gig_started": 278,
+        "picked_up": 309,
+        "gig_dropped": 43,
+        "delivered": 309,
+        "ledger": 604,
+        "order_changed": 10,
+        "forecast": 1,
+        "offer_answered": 201,
+        "deadline_close": 16,
+        "order_cancelled": 3,
+        "gig_expired": 6
+      },
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": [],
+      "actionErrorContexts": []
     },
     {
       "seed": "payout-unseen-20261114-bfc8b37c1c3b01b5",
       "side": "candidate",
-      "worldId": null,
-      "status": "pending"
+      "worldId": "w8efb30b6ad8d38f3b698",
+      "status": "complete",
+      "marginCents": 933084,
+      "qualified": true,
+      "onTimeShare": 0.9466666666666667,
+      "undeliveredOrders": 0,
+      "eventCounts": {
+        "price_request": 1030,
+        "order_won": 302,
+        "order_lost": 728,
+        "gig_viewed": 7290,
+        "gig_booked": 307,
+        "gig_dropped": 36,
+        "gig_started": 271,
+        "offer_answered": 393,
+        "picked_up": 300,
+        "order_changed": 10,
+        "delivered": 300,
+        "ledger": 590,
+        "forecast": 1,
+        "deadline_close": 23,
+        "order_cancelled": 2,
+        "gig_expired": 11
+      },
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": [],
+      "actionErrorContexts": []
     },
     {
       "seed": "payout-unseen-20261114-2b782dea15c2c930",
       "side": "baseline",
-      "worldId": null,
+      "worldId": "w49612a1b08ad3d5d7143",
       "status": "pending"
     },
     {

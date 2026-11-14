@@ -136,16 +136,16 @@
     {
       "seed": "payout-unseen-20261114-bdbb0af73763c605",
       "baselineWorldId": "wf3375255613b903cec06",
-      "candidateWorldId": null
+      "candidateWorldId": "w14cd72c5bdfa45326d2e"
     },
     {
       "seed": "payout-unseen-20261114-bfc8b37c1c3b01b5",
-      "baselineWorldId": null,
-      "candidateWorldId": null
+      "baselineWorldId": "wad509d6e69fbca969ac3",
+      "candidateWorldId": "w8efb30b6ad8d38f3b698"
     },
     {
       "seed": "payout-unseen-20261114-2b782dea15c2c930",
-      "baselineWorldId": null,
+      "baselineWorldId": "w49612a1b08ad3d5d7143",
       "candidateWorldId": null
     },
     {
@@ -253,7 +253,35 @@
       "seed": "payout-unseen-20261114-bdbb0af73763c605",
       "side": "baseline",
       "worldId": "wf3375255613b903cec06",
-      "startedAt": "2026-11-14T04:00:39.612Z"
+      "startedAt": "2026-11-14T04:00:39.612Z",
+      "completedAt": "2026-11-14T04:03:20.038Z"
+    },
+    {
+      "seed": "payout-unseen-20261114-bdbb0af73763c605",
+      "side": "candidate",
+      "worldId": "w14cd72c5bdfa45326d2e",
+      "startedAt": "2026-11-14T04:03:20.255Z",
+      "completedAt": "2026-11-14T04:06:01.187Z"
+    },
+    {
+      "seed": "payout-unseen-20261114-bfc8b37c1c3b01b5",
+      "side": "baseline",
+      "worldId": "wad509d6e69fbca969ac3",
+      "startedAt": "2026-11-14T04:06:01.421Z",
+      "completedAt": "2026-11-14T04:08:26.086Z"
+    },
+    {
+      "seed": "payout-unseen-20261114-bfc8b37c1c3b01b5",
+      "side": "candidate",
+      "worldId": "w8efb30b6ad8d38f3b698",
+      "startedAt": "2026-11-14T04:08:26.212Z",
+      "completedAt": "2026-11-14T04:10:56.590Z"
+    },
+    {
+      "seed": "payout-unseen-20261114-2b782dea15c2c930",
+      "side": "baseline",
+      "worldId": "w49612a1b08ad3d5d7143",
+      "startedAt": "2026-11-14T04:10:56.771Z"
     }
   ]
 }

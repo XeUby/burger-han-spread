@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T04:01:24.534939+00:00",
+  "updatedAt": "2026-11-14T04:11:40.121275+00:00",
   "objective": "Continue systematic search toward the global optimum; practice only, no ranking submission.",
   "maximumConcurrentPlays": 4,
   "currentConcurrency": {
@@ -561,24 +561,24 @@
     "trials": 24,
     "pairs": 12,
     "candidateRevision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
-    "completedTrials": 12,
-    "startedTrials": 13,
+    "completedTrials": 16,
+    "startedTrials": 17,
     "audit": "docs/payout-validation-audit.json",
     "auditSummary": {
       "baseline": {
-        "completed": 6,
+        "completed": 8,
         "failedVisits": 0,
         "actionErrors": 2,
         "recoveries": 0
       },
       "candidate": {
-        "completed": 6,
+        "completed": 8,
         "failedVisits": 0,
         "actionErrors": 4,
         "recoveries": 0
       }
     },
-    "reviewedErrors": "Six action errors across the first six complete pairs: two baseline and four candidate. Each follows a same-minute gig drop and rebooking; exact contexts are retained in the audit. All twelve completed worlds qualified with zero failed visits, undelivered orders and recoveries. Four positive candidate pairs and two negative pairs; no promotion decision from this partial panel."
+    "reviewedErrors": "Six action errors across the first eight complete pairs: two baseline and four candidate. Each follows a same-minute gig drop and rebooking; exact contexts are retained in the audit. All sixteen completed worlds qualified with zero failed visits, undelivered orders and recoveries. Six positive candidate pairs and two negative pairs; no promotion decision from this partial panel."
   },
   "completedPayoutScreen": {
     "sessionId": 76828,
