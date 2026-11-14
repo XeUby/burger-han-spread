@@ -1,7 +1,7 @@
 {
   "price": 1.42,
   "fee": 1.05,
-  "payout": 1,
+  "payout": 0.85,
   "margin": 0.1,
   "capacity": 0.35,
   "maxKm": 700,
@@ -9,7 +9,7 @@
   "notes": true,
   "noteSpelling": false,
   "relist": false,
-  "openingOnly": false,
+  "openingOnly": true,
   "adaptive": true,
   "earlyOffers": false,
   "safetySlack": false,

@@ -1,0 +1,109 @@
+{
+  "decidedAt": "2026-11-14T04:32:34.801714+00:00",
+  "selected": true,
+  "rule": "Require all12 candidate weeks qualified, no undelivered orders, positive mean paired gain with a positive95% paired bootstrap lower endpoint, and no failed visits. Inspect all action errors and retain every attempt. No default change before all trials and audit complete.",
+  "conditions": {
+    "all12CandidateWeeksQualified": true,
+    "noUndeliveredCandidateOrders": true,
+    "noFailedCandidateVisits": true,
+    "positiveMeanPairedGain": true,
+    "positive95PercentBootstrapLowerEndpoint": true
+  },
+  "candidateRevision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+  "baselineRevision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+  "settings": {
+    "price": 1.42,
+    "fee": 1.05,
+    "payout": 0.85,
+    "margin": 0.1,
+    "capacity": 0.35,
+    "maxKm": 700,
+    "minDrivers": 8,
+    "notes": true,
+    "noteSpelling": false,
+    "relist": false,
+    "openingOnly": true,
+    "adaptive": true,
+    "earlyOffers": false,
+    "safetySlack": false,
+    "auction": false,
+    "allowPrivate": false,
+    "tradeIns": false,
+    "homeOffers": false,
+    "readiness": false,
+    "bundlePairs": true,
+    "timedNotes": false,
+    "lateRescue": true,
+    "sameDayPremium": 1,
+    "laterDiscount": 1,
+    "placePrior": 0,
+    "bundleWait": 15,
+    "backlog": 0.08,
+    "priceFloor": 0,
+    "costRatio": 1.15,
+    "trustStep": 0.01,
+    "sameDayBacklog": 4,
+    "demandSlope": 14
+  },
+  "validation": "docs/payout-validation.json",
+  "validationSha256": "49ee777dab4ea51b1e24a96641ac2a6a5a242b7d14835c75b4c1a7a288d75529",
+  "audit": "docs/payout-validation-audit.json",
+  "auditSha256": "a55325f999310daf7e79bf475560cc39ef56acf7a232031665e17f89c0990394",
+  "paired": {
+    "meanDifferenceCents": 63644.166666666664,
+    "medianDifferenceCents": 89325.5,
+    "minimumDifferenceCents": -88763,
+    "maximumDifferenceCents": 172336,
+    "totalDifferenceCents": 763730,
+    "relativeMeanImprovement": 0.06757462203230147,
+    "meanDifferenceBootstrap95Cents": [
+      22852.604166666668,
+      100866.13333333327
+    ],
+    "wins": 10,
+    "ties": 0,
+    "losses": 2,
+    "twoSidedExactSignTestP": 0.03857421875
+  },
+  "candidate": {
+    "weeks": 12,
+    "qualifiedWeeks": 12,
+    "qualificationOneSided95Lower": 0.779077808054444,
+    "meanMarginCents": 1005479.5,
+    "medianMarginCents": 985200.0,
+    "minMarginCents": 704191,
+    "maxMarginCents": 1551932,
+    "totalMarginCents": 12065754,
+    "totalRevenueCents": 36348912,
+    "wonOrders": 3486,
+    "onTimeOrders": 3354,
+    "undeliveredOrders": 0,
+    "aggregateOnTimeShare": 0.9621342512908778,
+    "aggregateUndeliveredShare": 0.0,
+    "minOnTimeShare": 0.937984496124031
+  },
+  "operationalSummary": {
+    "baseline": {
+      "completed": 12,
+      "failedVisits": 0,
+      "actionErrors": 4,
+      "recoveries": 0
+    },
+    "candidate": {
+      "completed": 12,
+      "failedVisits": 0,
+      "actionErrors": 4,
+      "recoveries": 0
+    }
+  },
+  "operationalReview": "Every action error was inspected: stale reprices after same-minute drops and rebookings. Every attempt is retained.",
+  "deliveryTradeoff": {
+    "baselineAggregateOnTimeShare": 0.9797615747158304,
+    "candidateAggregateOnTimeShare": 0.9621342512908778,
+    "pairsWithLowerCandidateOnTimeShare": 12,
+    "minimumCandidateOnTimeShare": 0.937984496124031,
+    "qualificationOneSided95Lower": 0.779077808054444,
+    "interpretation": "All candidate weeks qualified, but delivery reliability declined. Twelve weeks do not establish rare-failure safety; the qualification bound assumes independent identically distributed weeks."
+  },
+  "scope": "Ordinary practice only. This is an independently validated improvement, not proof of global optimality or a forecast of leaderboard rank."
+}

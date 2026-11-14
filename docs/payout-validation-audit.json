@@ -1,6 +1,6 @@
 {
   "manifest": "experiments/payout-validation-manifest.json",
-  "terminal": false,
+  "terminal": true,
   "attempts": [
     {
       "seed": "payout-unseen-20261114-1c6cfe93689d0a32",
@@ -146,19 +146,41 @@
       "seed": "payout-unseen-20261114-1954b8aff04d03b3",
       "side": "baseline",
       "worldId": "w43eaf76796aa26a5b328",
-      "startedAt": "2026-11-14T04:21:16.545Z"
+      "startedAt": "2026-11-14T04:21:16.545Z",
+      "completedAt": "2026-11-14T04:23:51.005Z"
+    },
+    {
+      "seed": "payout-unseen-20261114-1954b8aff04d03b3",
+      "side": "candidate",
+      "worldId": "w09695636c500760ddad6",
+      "startedAt": "2026-11-14T04:23:51.266Z",
+      "completedAt": "2026-11-14T04:26:21.299Z"
+    },
+    {
+      "seed": "payout-unseen-20261114-266a2575198d039b",
+      "side": "baseline",
+      "worldId": "w52ad5b635ac9d9a2a4a7",
+      "startedAt": "2026-11-14T04:26:21.452Z",
+      "completedAt": "2026-11-14T04:28:39.046Z"
+    },
+    {
+      "seed": "payout-unseen-20261114-266a2575198d039b",
+      "side": "candidate",
+      "worldId": "w899f3eb9598758f34fcb",
+      "startedAt": "2026-11-14T04:28:39.181Z",
+      "completedAt": "2026-11-14T04:30:39.030Z"
     }
   ],
   "runnerErrors": [],
   "summary": {
     "baseline": {
-      "completed": 10,
+      "completed": 12,
       "failedVisits": 0,
-      "actionErrors": 2,
+      "actionErrors": 4,
       "recoveries": 0
     },
     "candidate": {
-      "completed": 10,
+      "completed": 12,
       "failedVisits": 0,
       "actionErrors": 4,
       "recoveries": 0
@@ -1289,25 +1311,305 @@
       "seed": "payout-unseen-20261114-1954b8aff04d03b3",
       "side": "baseline",
       "worldId": "w43eaf76796aa26a5b328",
-      "status": "pending"
+      "status": "complete",
+      "marginCents": 1533996,
+      "qualified": true,
+      "onTimeShare": 0.9815789473684211,
+      "undeliveredOrders": 0,
+      "eventCounts": {
+        "price_request": 1036,
+        "order_lost": 653,
+        "order_won": 383,
+        "gig_viewed": 5754,
+        "gig_booked": 370,
+        "gig_started": 337,
+        "picked_up": 381,
+        "delivered": 380,
+        "ledger": 730,
+        "gig_dropped": 31,
+        "order_changed": 7,
+        "offer_answered": 129,
+        "deadline_close": 11,
+        "forecast": 1,
+        "order_cancelled": 3,
+        "gig_expired": 7,
+        "driver_late": 1,
+        "no_show": 1
+      },
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": [],
+      "actionErrorContexts": []
     },
     {
       "seed": "payout-unseen-20261114-1954b8aff04d03b3",
       "side": "candidate",
-      "worldId": null,
-      "status": "pending"
+      "worldId": "w09695636c500760ddad6",
+      "status": "complete",
+      "marginCents": 1551932,
+      "qualified": true,
+      "onTimeShare": 0.9561643835616438,
+      "undeliveredOrders": 0,
+      "eventCounts": {
+        "price_request": 1036,
+        "order_lost": 668,
+        "order_won": 368,
+        "gig_viewed": 11662,
+        "gig_booked": 354,
+        "gig_started": 322,
+        "picked_up": 366,
+        "delivered": 365,
+        "ledger": 708,
+        "offer_answered": 378,
+        "order_changed": 8,
+        "gig_dropped": 28,
+        "deadline_close": 30,
+        "no_show": 3,
+        "gig_expired": 14,
+        "forecast": 1,
+        "order_cancelled": 3,
+        "driver_late": 1
+      },
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": [],
+      "actionErrorContexts": []
     },
     {
       "seed": "payout-unseen-20261114-266a2575198d039b",
       "side": "baseline",
-      "worldId": null,
-      "status": "pending"
+      "worldId": "w52ad5b635ac9d9a2a4a7",
+      "status": "complete",
+      "marginCents": 938293,
+      "qualified": true,
+      "onTimeShare": 0.9966329966329966,
+      "undeliveredOrders": 0,
+      "eventCounts": {
+        "price_request": 1030,
+        "order_lost": 730,
+        "order_won": 300,
+        "gig_viewed": 1985,
+        "gig_booked": 288,
+        "gig_started": 261,
+        "picked_up": 297,
+        "gig_dropped": 25,
+        "delivered": 297,
+        "ledger": 562,
+        "order_changed": 2,
+        "offer_answered": 30,
+        "order_cancelled": 3,
+        "deadline_close": 4,
+        "forecast": 1
+      },
+      "failedVisits": [],
+      "actionErrors": [
+        {
+          "at": 6708,
+          "action": {
+            "type": "reprice",
+            "gigId": "g218",
+            "schedule": [
+              {
+                "at": 6708,
+                "feeCents": 3000
+              },
+              {
+                "at": 6738,
+                "feeCents": 3000
+              },
+              {
+                "at": 6768,
+                "feeCents": 3800
+              },
+              {
+                "at": 6798,
+                "feeCents": 5000
+              }
+            ]
+          },
+          "reason": "Gig g218 is not open"
+        },
+        {
+          "at": 6708,
+          "action": {
+            "type": "reprice",
+            "gigId": "g218",
+            "schedule": [
+              {
+                "at": 6708,
+                "feeCents": 3000
+              },
+              {
+                "at": 6738,
+                "feeCents": 3000
+              },
+              {
+                "at": 6768,
+                "feeCents": 3800
+              },
+              {
+                "at": 6798,
+                "feeCents": 5000
+              }
+            ]
+          },
+          "reason": "Gig g218 is not open"
+        }
+      ],
+      "recoveries": [],
+      "actionErrorContexts": [
+        {
+          "error": {
+            "at": 6708,
+            "action": {
+              "type": "reprice",
+              "gigId": "g218",
+              "schedule": [
+                {
+                  "at": 6708,
+                  "feeCents": 3000
+                },
+                {
+                  "at": 6738,
+                  "feeCents": 3000
+                },
+                {
+                  "at": 6768,
+                  "feeCents": 3800
+                },
+                {
+                  "at": 6798,
+                  "feeCents": 5000
+                }
+              ]
+            },
+            "reason": "Gig g218 is not open"
+          },
+          "sameMinuteGigEvents": [
+            {
+              "seq": 5032,
+              "at": 6708,
+              "kind": "gig_dropped",
+              "gigId": "g218",
+              "driverId": "8gq5-0165"
+            },
+            {
+              "seq": 5044,
+              "at": 6708,
+              "kind": "gig_viewed",
+              "gigId": "g218",
+              "driverId": "8gq5-0103"
+            },
+            {
+              "seq": 5048,
+              "at": 6708,
+              "kind": "gig_viewed",
+              "gigId": "g218",
+              "driverId": "8gq5-0871"
+            },
+            {
+              "seq": 5049,
+              "at": 6708,
+              "kind": "gig_booked",
+              "gigId": "g218",
+              "driverId": "8gq5-0871",
+              "feeCents": 2900
+            }
+          ]
+        },
+        {
+          "error": {
+            "at": 6708,
+            "action": {
+              "type": "reprice",
+              "gigId": "g218",
+              "schedule": [
+                {
+                  "at": 6708,
+                  "feeCents": 3000
+                },
+                {
+                  "at": 6738,
+                  "feeCents": 3000
+                },
+                {
+                  "at": 6768,
+                  "feeCents": 3800
+                },
+                {
+                  "at": 6798,
+                  "feeCents": 5000
+                }
+              ]
+            },
+            "reason": "Gig g218 is not open"
+          },
+          "sameMinuteGigEvents": [
+            {
+              "seq": 5032,
+              "at": 6708,
+              "kind": "gig_dropped",
+              "gigId": "g218",
+              "driverId": "8gq5-0165"
+            },
+            {
+              "seq": 5044,
+              "at": 6708,
+              "kind": "gig_viewed",
+              "gigId": "g218",
+              "driverId": "8gq5-0103"
+            },
+            {
+              "seq": 5048,
+              "at": 6708,
+              "kind": "gig_viewed",
+              "gigId": "g218",
+              "driverId": "8gq5-0871"
+            },
+            {
+              "seq": 5049,
+              "at": 6708,
+              "kind": "gig_booked",
+              "gigId": "g218",
+              "driverId": "8gq5-0871",
+              "feeCents": 2900
+            }
+          ]
+        }
+      ]
     },
     {
       "seed": "payout-unseen-20261114-266a2575198d039b",
       "side": "candidate",
-      "worldId": null,
-      "status": "pending"
+      "worldId": "w899f3eb9598758f34fcb",
+      "status": "complete",
+      "marginCents": 1043795,
+      "qualified": true,
+      "onTimeShare": 0.9829931972789115,
+      "undeliveredOrders": 0,
+      "eventCounts": {
+        "price_request": 1030,
+        "order_lost": 733,
+        "order_won": 297,
+        "gig_viewed": 4751,
+        "gig_booked": 287,
+        "gig_started": 258,
+        "picked_up": 294,
+        "gig_dropped": 26,
+        "delivered": 294,
+        "ledger": 560,
+        "offer_answered": 102,
+        "order_changed": 2,
+        "deadline_close": 9,
+        "order_cancelled": 3,
+        "gig_expired": 3,
+        "forecast": 1,
+        "no_show": 1
+      },
+      "failedVisits": [],
+      "actionErrors": [],
+      "recoveries": [],
+      "actionErrorContexts": []
     }
   ]
 }

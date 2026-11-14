@@ -1,16 +1,17 @@
 {
-  "selectedAt": "2026-11-14T01:27:38.214662+00:00",
-  "policy": "validated volume+bundles+late-rescue",
-  "validationReport": "docs/late-rescue-validation.json",
-  "sourceReference": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
-  "runtimeRevision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+  "selectedAt": "2026-11-14T04:32:01.440491+00:00",
+  "policy": "validated volume+bundles+late-rescue+opening payout reduction",
+  "validationReport": "docs/payout-validation.json",
+  "sourceReference": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+  "runtimeRevision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
   "configuration": "experiments/final-config.json",
-  "conformance": "docs/late-rescue-conformance.json",
+  "conformance": "docs/payout-conformance.json",
   "lateRescue": true,
   "timedNotes": false,
   "rankingSubmitted": false,
   "noteSpelling": false,
   "relist": false,
-  "payout": 1,
-  "openingOnly": false
+  "payout": 0.85,
+  "openingOnly": true,
+  "decision": "experiments/payout-decision.json"
 }

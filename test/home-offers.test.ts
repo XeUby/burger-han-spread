@@ -74,7 +74,7 @@ function desk() {
     return actions.map(() => ({ ok: true as const, id: `g${sequence++}` }))
   } } as unknown as World
   const drivers = [profile("a"), profile("b"), ...Array.from({ length: 40 }, (_, i) => profile(`local${i}`, "pickup"))]
-  return { d: new Dispatcher(world, 8, 500, map, drivers, { homeOffers: true, bundleWait: 0 }), sent }
+  return { d: new Dispatcher(world, 8, 500, map, drivers, { homeOffers: true, bundleWait: 0, payout: 1 }), sent }
 }
 function add(d: Dispatcher, id: string) {
   const candidate = gig(id)

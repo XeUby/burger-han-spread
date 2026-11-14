@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-14T04:22:02.488783+00:00",
+  "updatedAt": "2026-11-14T04:34:56.686589+00:00",
   "objective": "Continue systematic search toward the global optimum; practice only, no ranking submission.",
   "maximumConcurrentPlays": 4,
   "currentConcurrency": {
     "maximumConcurrentPlays": 4,
-    "activeRunners": 1,
-    "note": "Paired runner84112 uses one worker and waits whenever four team worlds are unfinished. Last API check found one unfinished world, belonging to this study. Both user-named stuck worlds are absent. Do not delete external worlds."
+    "activeRunners": 0,
+    "note": "Paired runner84112 completed all24trials with one worker. Final API check found zero unfinished team worlds. Both user-named stuck worlds were absent. Future studies must keep the shared total at most four."
   },
   "completedCombinationStudy": {
     "sessionId": 84558,
@@ -66,16 +66,17 @@
     "700km-only bundle treatment ends at7407.63/9410.50 euros, minimum96.6% on time. It gains versus the old baseline in both weeks but not versus bundles alone. No900km experiment scheduled."
   ],
   "nextSteps": [
-    "Complete all12frozen payout evaluation pairs with one worker. Retain losses, inspect operational errors, and do not tune or promote from partial results.",
-    "Flexible-day admission is deferred after capacity screening. Prioritize stronger hypotheses over expanding this conservative prototype.",
-    "Respect the shared four-play cap. No ranking or final."
+    "Continue broader pricing/capacity search on explicitly designated development seeds against the newly validated payout baseline. Do not reuse inspected evaluation seeds as unseen.",
+    "Report delivery reliability alongside profit: on-time share declined in every payout pair despite all12weeks qualifying. New candidates require a fresh frozen evaluation panel.",
+    "No ranking or final; maximum four unfinished team practice worlds."
   ],
   "validationStatus": "All16 fresh paired trials complete. Candidate mean10411.59 euros versus8242.34, +26.32%;7/8 positive;8/8 qualified; minimum94.94% on time; no undelivered orders. Full report docs/frontier-validation.md. No ranking submission.",
   "checks": {
     "nodeSuite": 109,
-    "researchTests": 12,
+    "researchTests": 15,
     "pythonReportTests": 9,
-    "typecheck": "passed"
+    "typecheck": "passed",
+    "selectedPolicyConformanceActions": 5614
   },
   "completedControlsStudy": {
     "sessionId": 72446,
@@ -552,34 +553,7 @@
     "attemptedCases": 8,
     "decision": "Stop under declared failure rule. Four-play guard saw3external active worlds. No offers accepted among7same-fee and7discount offers; no target booking/view difference. Retain as incomplete, not a12case negative study. Defer this version."
   },
-  "currentStudy": {
-    "sessionId": 84112,
-    "kind": "fresh paired opening-only payout evaluation",
-    "terminal": false,
-    "manifest": "experiments/payout-validation-manifest.json",
-    "maximumJobs": 1,
-    "trials": 24,
-    "pairs": 12,
-    "candidateRevision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
-    "completedTrials": 20,
-    "startedTrials": 21,
-    "audit": "docs/payout-validation-audit.json",
-    "auditSummary": {
-      "baseline": {
-        "completed": 10,
-        "failedVisits": 0,
-        "actionErrors": 2,
-        "recoveries": 0
-      },
-      "candidate": {
-        "completed": 10,
-        "failedVisits": 0,
-        "actionErrors": 4,
-        "recoveries": 0
-      }
-    },
-    "reviewedErrors": "Six action errors across the first ten complete pairs: two baseline and four candidate. Each follows a same-minute gig drop and rebooking; exact contexts are retained in the audit. All twenty completed worlds qualified with zero failed visits, undelivered orders and recoveries. Eight positive candidate pairs and two negative pairs; no promotion decision from this partial panel."
-  },
+  "currentStudy": null,
   "completedPayoutScreen": {
     "sessionId": 76828,
     "kind": "unbundled payout-only screen",
@@ -638,7 +612,7 @@
     "script": "research/payout/freeze-validation.py",
     "pairs": 12,
     "workers": 1,
-    "status": "Reserved and launched after all confirmation criteria passed. All24attempts must complete before the promotion decision.",
+    "status": "Complete: all12pairs and operational audits passed the frozen promotion rule. Selected payout0.85 with openingOnly true.",
     "promotionRule": "All12candidate weeks qualified; zero undelivered and failed visits; positive paired mean and positive95%paired bootstrap lower endpoint; inspect every action error."
   },
   "completedPayoutConfirmation": {
@@ -696,6 +670,70 @@
       "meanAdmittedRequests": 10.666666666666666,
       "meanModeledWins": 4.165922886566611,
       "meanModeledMarginEuros": 84.14940402068716
+    }
+  },
+  "completedPayoutValidation": {
+    "sessionId": 84112,
+    "kind": "fresh paired opening-only payout evaluation",
+    "terminal": true,
+    "manifest": "experiments/payout-validation-manifest.json",
+    "maximumJobs": 1,
+    "trials": 24,
+    "pairs": 12,
+    "candidateRevision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+    "completedTrials": 24,
+    "startedTrials": 24,
+    "audit": "docs/payout-validation-audit.json",
+    "auditSummary": {
+      "baseline": {
+        "completed": 12,
+        "failedVisits": 0,
+        "actionErrors": 4,
+        "recoveries": 0
+      },
+      "candidate": {
+        "completed": 12,
+        "failedVisits": 0,
+        "actionErrors": 4,
+        "recoveries": 0
+      }
+    },
+    "reviewedErrors": "All eight action errors (four per side) follow same-minute drops and rebookings. All24worlds qualified; no undelivered orders, failed visits, recoveries or coordinator failures. The candidate passed the predeclared gate and is now the default; delivery reliability declined and is reported explicitly.",
+    "report": "docs/payout-validation.json",
+    "decision": "experiments/payout-decision.json",
+    "conformance": "docs/payout-conformance.json",
+    "paired": {
+      "meanDifferenceCents": 63644.166666666664,
+      "medianDifferenceCents": 89325.5,
+      "minimumDifferenceCents": -88763,
+      "maximumDifferenceCents": 172336,
+      "totalDifferenceCents": 763730,
+      "relativeMeanImprovement": 0.06757462203230147,
+      "meanDifferenceBootstrap95Cents": [
+        22852.604166666668,
+        100866.13333333327
+      ],
+      "wins": 10,
+      "ties": 0,
+      "losses": 2,
+      "twoSidedExactSignTestP": 0.03857421875
+    },
+    "candidate": {
+      "weeks": 12,
+      "qualifiedWeeks": 12,
+      "qualificationOneSided95Lower": 0.779077808054444,
+      "meanMarginCents": 1005479.5,
+      "medianMarginCents": 985200.0,
+      "minMarginCents": 704191,
+      "maxMarginCents": 1551932,
+      "totalMarginCents": 12065754,
+      "totalRevenueCents": 36348912,
+      "wonOrders": 3486,
+      "onTimeOrders": 3354,
+      "undeliveredOrders": 0,
+      "aggregateOnTimeShare": 0.9621342512908778,
+      "aggregateUndeliveredShare": 0.0,
+      "minOnTimeShare": 0.937984496124031
     }
   }
 }

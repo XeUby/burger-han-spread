@@ -1,0 +1,286 @@
+{
+  "evaluation": "docs/payout-validation.json",
+  "interpretation": "Positive differences improve candidate margin. Every ledger line, including shared gig fees and cancellations, is included. This is an accounting decomposition, not an isolated causal effect of each component: fees, demand, assignments and dealer trust change together.",
+  "meanDifferencesCents": {
+    "driver_fee": 208137.58333333334,
+    "late_refund": -25696.083333333332,
+    "release_fee": 2475.6666666666665,
+    "revenue": -121273.0
+  },
+  "weeks": [
+    {
+      "seed": "payout-unseen-20261114-1c6cfe93689d0a32",
+      "ledgersCents": {
+        "baseline": {
+          "driver_fee": -1791476,
+          "late_refund": -2030,
+          "release_fee": -19217,
+          "revenue": 2576932
+        },
+        "candidate": {
+          "driver_fee": -1594441,
+          "late_refund": -10985,
+          "release_fee": -10321,
+          "revenue": 2552292
+        }
+      },
+      "differencesCents": {
+        "driver_fee": 197035,
+        "late_refund": -8955,
+        "release_fee": 8896,
+        "revenue": -24640
+      }
+    },
+    {
+      "seed": "payout-unseen-20261114-11d2bc22e5a2e17d",
+      "ledgersCents": {
+        "baseline": {
+          "driver_fee": -2040085,
+          "late_refund": -24837,
+          "release_fee": -3082,
+          "revenue": 2850587
+        },
+        "candidate": {
+          "driver_fee": -1845031,
+          "late_refund": -48694,
+          "release_fee": -2620,
+          "revenue": 2773166
+        }
+      },
+      "differencesCents": {
+        "driver_fee": 195054,
+        "late_refund": -23857,
+        "release_fee": 462,
+        "revenue": -77421
+      }
+    },
+    {
+      "seed": "payout-unseen-20261114-619e961538a5119e",
+      "ledgersCents": {
+        "baseline": {
+          "driver_fee": -2272773,
+          "late_refund": -75396,
+          "release_fee": -6317,
+          "revenue": 3030282
+        },
+        "candidate": {
+          "driver_fee": -1985795,
+          "late_refund": -81695,
+          "revenue": 2771681
+        }
+      },
+      "differencesCents": {
+        "driver_fee": 286978,
+        "late_refund": -6299,
+        "release_fee": 6317,
+        "revenue": -258601
+      }
+    },
+    {
+      "seed": "payout-unseen-20261114-8a0fdb3994ac5c0e",
+      "ledgersCents": {
+        "baseline": {
+          "driver_fee": -2703839,
+          "late_refund": -38577,
+          "release_fee": -10539,
+          "revenue": 3970495
+        },
+        "candidate": {
+          "driver_fee": -2529665,
+          "late_refund": -139594,
+          "release_fee": -2466,
+          "revenue": 3800502
+        }
+      },
+      "differencesCents": {
+        "driver_fee": 174174,
+        "late_refund": -101017,
+        "release_fee": 8073,
+        "revenue": -169993
+      }
+    },
+    {
+      "seed": "payout-unseen-20261114-166d26adce8afd0e",
+      "ledgersCents": {
+        "baseline": {
+          "driver_fee": -2110533,
+          "late_refund": -3667,
+          "release_fee": -2323,
+          "revenue": 3029387
+        },
+        "candidate": {
+          "driver_fee": -1875866,
+          "late_refund": -6377,
+          "release_fee": -1974,
+          "revenue": 2918072
+        }
+      },
+      "differencesCents": {
+        "driver_fee": 234667,
+        "late_refund": -2710,
+        "release_fee": 349,
+        "revenue": -111315
+      }
+    },
+    {
+      "seed": "payout-unseen-20261114-df10216ee874354b",
+      "ledgersCents": {
+        "baseline": {
+          "driver_fee": -2540118,
+          "late_refund": -64164,
+          "release_fee": -4560,
+          "revenue": 3755780
+        },
+        "candidate": {
+          "driver_fee": -2298613,
+          "late_refund": -101325,
+          "release_fee": -3876,
+          "revenue": 3549549
+        }
+      },
+      "differencesCents": {
+        "driver_fee": 241505,
+        "late_refund": -37161,
+        "release_fee": 684,
+        "revenue": -206231
+      }
+    },
+    {
+      "seed": "payout-unseen-20261114-bdbb0af73763c605",
+      "ledgersCents": {
+        "baseline": {
+          "driver_fee": -1589959,
+          "late_refund": -14539,
+          "release_fee": -2805,
+          "revenue": 2273989
+        },
+        "candidate": {
+          "driver_fee": -1410166,
+          "late_refund": -13204,
+          "release_fee": -2384,
+          "revenue": 2218652
+        }
+      },
+      "differencesCents": {
+        "driver_fee": 179793,
+        "late_refund": 1335,
+        "release_fee": 421,
+        "revenue": -55337
+      }
+    },
+    {
+      "seed": "payout-unseen-20261114-bfc8b37c1c3b01b5",
+      "ledgersCents": {
+        "baseline": {
+          "driver_fee": -2322657,
+          "late_refund": -66165,
+          "release_fee": -7307,
+          "revenue": 3244800
+        },
+        "candidate": {
+          "driver_fee": -2111655,
+          "late_refund": -97710,
+          "revenue": 3142449
+        }
+      },
+      "differencesCents": {
+        "driver_fee": 211002,
+        "late_refund": -31545,
+        "release_fee": 7307,
+        "revenue": -102351
+      }
+    },
+    {
+      "seed": "payout-unseen-20261114-2b782dea15c2c930",
+      "ledgersCents": {
+        "baseline": {
+          "driver_fee": -2084159,
+          "late_refund": -1327,
+          "release_fee": -10204,
+          "revenue": 3157191
+        },
+        "candidate": {
+          "driver_fee": -1853478,
+          "late_refund": -28241,
+          "release_fee": -16520,
+          "revenue": 3056917
+        }
+      },
+      "differencesCents": {
+        "driver_fee": 230681,
+        "late_refund": -26914,
+        "release_fee": -6316,
+        "revenue": -100274
+      }
+    },
+    {
+      "seed": "payout-unseen-20261114-e2258b662e732c8e",
+      "ledgersCents": {
+        "baseline": {
+          "driver_fee": -1816431,
+          "late_refund": -36961,
+          "release_fee": -3997,
+          "revenue": 2610336
+        },
+        "candidate": {
+          "driver_fee": -1688701,
+          "late_refund": -61774,
+          "release_fee": -2766,
+          "revenue": 2512684
+        }
+      },
+      "differencesCents": {
+        "driver_fee": 127730,
+        "late_refund": -24813,
+        "release_fee": 1231,
+        "revenue": -97652
+      }
+    },
+    {
+      "seed": "payout-unseen-20261114-1954b8aff04d03b3",
+      "ledgersCents": {
+        "baseline": {
+          "driver_fee": -2901899,
+          "late_refund": -40510,
+          "release_fee": -5894,
+          "revenue": 4482299
+        },
+        "candidate": {
+          "driver_fee": -2672738,
+          "late_refund": -71537,
+          "release_fee": -5010,
+          "revenue": 4301217
+        }
+      },
+      "differencesCents": {
+        "driver_fee": 229161,
+        "late_refund": -31027,
+        "release_fee": 884,
+        "revenue": -181082
+      }
+    },
+    {
+      "seed": "payout-unseen-20261114-266a2575198d039b",
+      "ledgersCents": {
+        "baseline": {
+          "driver_fee": -1869503,
+          "late_refund": -4983,
+          "release_fee": -9331,
+          "revenue": 2822110
+        },
+        "candidate": {
+          "driver_fee": -1679632,
+          "late_refund": -20373,
+          "release_fee": -7931,
+          "revenue": 2751731
+        }
+      },
+      "differencesCents": {
+        "driver_fee": 189871,
+        "late_refund": -15390,
+        "release_fee": 1400,
+        "revenue": -70379
+      }
+    }
+  ]
+}

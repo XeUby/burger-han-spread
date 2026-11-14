@@ -1,0 +1,63 @@
+{
+  "method": "Run the current default dispatcher and the candidate from the selected validation report through identical old development event streams and decision clocks. Verify the archived source hash and selected settings. Both receive identical deterministic action acknowledgements. Compare every emitted action and every next-decision time.",
+  "limitation": "Behavioral conformance on recorded inputs, not a new simulation or a profit estimate. Fake acknowledgements do not reproduce every real server refusal. The immutable fresh evaluation policies are unaffected by this check.",
+  "referenceRevision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+  "currentRevision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+  "defaults": {
+    "price": 1.42,
+    "fee": 1.05,
+    "payout": 0.85,
+    "margin": 0.1,
+    "capacity": 0.35,
+    "maxKm": 700,
+    "minDrivers": 8,
+    "notes": true,
+    "noteSpelling": false,
+    "relist": false,
+    "openingOnly": true,
+    "adaptive": true,
+    "earlyOffers": false,
+    "safetySlack": false,
+    "auction": false,
+    "allowPrivate": false,
+    "tradeIns": false,
+    "homeOffers": false,
+    "readiness": false,
+    "bundlePairs": true,
+    "timedNotes": false,
+    "lateRescue": true,
+    "sameDayPremium": 1,
+    "laterDiscount": 1,
+    "placePrior": 0,
+    "bundleWait": 15,
+    "backlog": 0.08,
+    "priceFloor": 0,
+    "costRatio": 1.15,
+    "trustStep": 0.01,
+    "sameDayBacklog": 4,
+    "demandSlope": 14
+  },
+  "results": [
+    {
+      "worldId": "w0c6ce51dfdf6d4cc3970",
+      "seed": "formal-unseen-20261113-10",
+      "events": 14573,
+      "decisionFrames": 4268,
+      "identicalActions": 2098
+    },
+    {
+      "worldId": "wde70f6509f014550a4a8",
+      "seed": "formal-unseen-20261113-15",
+      "events": 11635,
+      "decisionFrames": 3567,
+      "identicalActions": 2192
+    },
+    {
+      "worldId": "w9d5670b3d63668d52477",
+      "seed": "formal-unseen-20261113-14",
+      "events": 6824,
+      "decisionFrames": 2939,
+      "identicalActions": 1324
+    }
+  ]
+}

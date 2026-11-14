@@ -160,7 +160,7 @@
   },
   "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea": {
     "bundle": "experiments/frontier/payout",
-    "role": "Unbundled payout-only experiment; no default change",
+    "role": "Frozen payout experiment archive; opening-only alternative independently validated and selected",
     "settings": {
       "price": 1.42,
       "fee": 1.05,
@@ -230,6 +230,9 @@
         "sameDayBacklog": 4,
         "demandSlope": 14
       }
-    }
+    },
+    "selectedAlternative": "opening",
+    "validationReport": "docs/payout-validation.json",
+    "decision": "experiments/payout-decision.json"
   }
 }

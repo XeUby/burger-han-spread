@@ -156,12 +156,12 @@
     {
       "seed": "payout-unseen-20261114-1954b8aff04d03b3",
       "baselineWorldId": "w43eaf76796aa26a5b328",
-      "candidateWorldId": null
+      "candidateWorldId": "w09695636c500760ddad6"
     },
     {
       "seed": "payout-unseen-20261114-266a2575198d039b",
-      "baselineWorldId": null,
-      "candidateWorldId": null
+      "baselineWorldId": "w52ad5b635ac9d9a2a4a7",
+      "candidateWorldId": "w899f3eb9598758f34fcb"
     }
   ],
   "attempts": [
@@ -309,7 +309,29 @@
       "seed": "payout-unseen-20261114-1954b8aff04d03b3",
       "side": "baseline",
       "worldId": "w43eaf76796aa26a5b328",
-      "startedAt": "2026-11-14T04:21:16.545Z"
+      "startedAt": "2026-11-14T04:21:16.545Z",
+      "completedAt": "2026-11-14T04:23:51.005Z"
+    },
+    {
+      "seed": "payout-unseen-20261114-1954b8aff04d03b3",
+      "side": "candidate",
+      "worldId": "w09695636c500760ddad6",
+      "startedAt": "2026-11-14T04:23:51.266Z",
+      "completedAt": "2026-11-14T04:26:21.299Z"
+    },
+    {
+      "seed": "payout-unseen-20261114-266a2575198d039b",
+      "side": "baseline",
+      "worldId": "w52ad5b635ac9d9a2a4a7",
+      "startedAt": "2026-11-14T04:26:21.452Z",
+      "completedAt": "2026-11-14T04:28:39.046Z"
+    },
+    {
+      "seed": "payout-unseen-20261114-266a2575198d039b",
+      "side": "candidate",
+      "worldId": "w899f3eb9598758f34fcb",
+      "startedAt": "2026-11-14T04:28:39.181Z",
+      "completedAt": "2026-11-14T04:30:39.030Z"
     }
   ]
 }

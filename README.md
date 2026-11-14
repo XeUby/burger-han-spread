@@ -4,25 +4,29 @@ A TypeScript dispatcher for Bahn's level 8 challenge. It learns the price market
 
 ## Latest independent comparison
 
-The late-rescue candidate was frozen before eight fresh paired weeks. All sixteen ordinary practice worlds reached their terminal minute; their whole-week ledgers and delivery counts match the official scores.
+The opening-fee candidate was frozen before twelve fresh paired weeks. All twenty-four ordinary practice worlds reached their terminal minute; their whole-week ledgers and delivery counts match the official scores. The selected default reduces the initial unbundled driver fee by 15%, while retaining customer pricing formulas, bundle fees, escalation and late rescue.
 
-| Metric | Validated bundle policy | Bundle policy + late rescue |
+| Metric | Previous validated policy | Opening-fee reduction |
 | --- | ---: | ---: |
-| Mean weekly margin | €9,070.28 | **€9,352.92** |
-| Qualified weeks | 8/8 | **8/8** |
-| Aggregate on-time delivery | 97.80% | 97.85% |
-| Lowest weekly on-time delivery | 96.46% | 96.78% |
+| Mean weekly margin | €9,418.35 | **€10,054.80** |
+| Qualified weeks | 12/12 | **12/12** |
+| Aggregate on-time delivery | 97.98% | 96.21% |
+| Lowest weekly on-time delivery | 95.67% | 93.80% |
 | Undelivered orders | 0 | 0 |
 
-Mean gain is **€282.64/week (+3.12%)**, with seven wins, one tie and no losses. The 95% paired bootstrap interval is €149.16–€423.22; the exact two-sided sign-test p-value is 0.015625. Most of the gain is lower driver fees (€273.78/week), with smaller refunds (€8.75/week). Both arms had the same single rejected reprice and no network recoveries. See the [complete comparison](docs/late-rescue-validation.md), [audit](docs/late-rescue-validation-audit.json), and [frozen manifest](experiments/late-rescue-validation-manifest.json). These are ordinary practice results, with no ranking submissions.
+Mean gain is **€636.44/week (+6.76%)**, with ten wins and two losses. The 95% paired bootstrap interval is €228.53–€1,008.66; the exact two-sided sign-test p-value is 0.038574. The candidate passed every predeclared promotion condition. See the [complete comparison](docs/payout-validation.md), [audit](docs/payout-validation-audit.json), [decision](experiments/payout-decision.json), and [frozen manifest](experiments/payout-validation-manifest.json). These are ordinary practice results, with no ranking submissions.
 
-The public leaderboard leader averaged €16,631.51 over five different secret weeks at the recorded observation. That is a comparison target, not a controlled estimate of our rank. The [public snapshot](docs/leaderboard-observation.json) preserves the observation.
+The gain comes with lower delivery reliability: on-time share fell in every pair, and won orders fell from 3,607 to 3,486. Average driver fees decreased by €2,081.38/week, revenue decreased by €1,212.73, late refunds increased by €256.96, and release fees decreased by €24.76 ([ledger breakdown](docs/payout-validation-ledger.json)). These accounting changes sum to the net gain; they are not separate causal effects. Each arm had four stale reprices after same-minute drops and rebookings, with no failed visits or network recoveries. Twelve qualified weeks do not establish rare-failure safety: the one-sided 95% exact lower bound on weekly qualification is 77.91% under independent identical week sampling.
+
+The public leaderboard leader, freya, averaged €17,185.02 over five different secret weeks at the recorded observation. That is a comparison target, not a controlled estimate of our rank. The [public snapshot](docs/leaderboard-observation.json) preserves the observation.
+
+On the previous independent panel, late rescue improved mean margin by €282.64/week (+3.12%), with a 95% paired interval of €149.16–€423.22 and all eight candidate weeks qualified ([report](docs/late-rescue-validation.md)).
 
 On an earlier independent panel, broader admission plus bundles improved mean weekly margin from €8,242.34 to €10,411.59, a **26.32%** gain, with all eight weeks qualified. See the [bundle comparison](docs/frontier-validation.md). The earlier policy had improved from €5,541.90 to €8,418.62 on another panel ([report](docs/optimization-validation.md)). Means from different panels are not paired treatment comparisons. None establishes global optimality or a rare-failure guarantee.
 
 ## Research and reproducibility
 
-The selected source is frozen under `experiments/frontier/late-rescue/`; the previous validated bundle source remains under `experiments/frontier/candidate/`. Exact source hashes and settings are in [source-index.json](experiments/frontier/source-index.json). The complete current configuration is [final-config.json](experiments/final-config.json), with provenance in [current-selection.json](experiments/current-selection.json). The standalone default uses the validated late-rescue policy. [Conformance evidence](docs/late-rescue-conformance.json) compares all 5,614 emitted actions and decision times against the frozen source on three old development streams. Other research features remain opt-in.
+The selected source is frozen under `experiments/frontier/payout/`; previous validated sources remain archived. Exact source hashes and settings are in [source-index.json](experiments/frontier/source-index.json). The complete current configuration is [final-config.json](experiments/final-config.json), with provenance in [current-selection.json](experiments/current-selection.json). The standalone default uses `payout=0.85` and `openingOnly=true`. [Conformance evidence](docs/payout-conformance.json) compares all 5,614 emitted actions and decision times against the frozen candidate with its evaluated settings on three old development streams. Other research features remain opt-in.
 
 The late-rescue policy briefly lowers an unbooked single-car gig's fee after its last possible on-time pickup. It then escalates again on a fixed clock, reaching the full rescue fee within six hours. Repricing cannot restart that clock. Booked drivers and shared gigs are excluded. Development [screening](docs/late-rescue-results.md) and [confirmation](docs/late-rescue-confirmation.md) preceded the fresh evaluation.
 
@@ -34,7 +38,7 @@ A zero-time creation-fee anchor probe produced identical11,941-event histories a
 
 A recent-viewer offer probe stopped at the shared four-play guard when3external worlds appeared. Its7completed cases had no accepted offers at either the public fee or a10% discount, and matched control bookings. All21forks and the archived paused base were deleted. This is an incomplete probe, not a12-case completed result ([audit](docs/viewer-offers-results.json)). Future full-week tests use1worker to reserve3slots for teammates.
 
-A payout-only screen separates a 15% unbundled fee cut from customer pricing: full-curve and opening-only variants retain the incumbent quote formulas and bundle schedules. Opening-only gained €1,093.57/week across two old development seeds, both qualified. Full-curve failed because one week delivered only 89.10% on time. Opening-only then gained €1,776.87/week in four predeclared confirmation weeks, improving every week with all four qualified and no undelivered work or failed visits. Two stale reprices followed a same-minute drop and expiry. A frozen 12-pair independent evaluation is running serially; defaults retain `payout=1` ([screen](docs/payout-results.md), [confirmation](docs/payout-confirmation.md), [evaluation manifest](experiments/payout-validation-manifest.json)).
+A payout-only screen separates a 15% unbundled fee cut from customer pricing: full-curve and opening-only variants retain the incumbent quote formulas and bundle schedules. Opening-only gained €1,093.57/week across two old development seeds, both qualified. Full-curve failed because one week delivered only 89.10% on time. Opening-only then gained €1,776.87/week in four predeclared confirmation weeks, improving every week with all four qualified and no undelivered work or failed visits. Two stale reprices followed a same-minute drop and expiry. The completed independent evaluation and promotion are reported above ([screen](docs/payout-results.md), [confirmation](docs/payout-confirmation.md)).
 
 Recombining already-waiting single-car gigs found only three extra pairs per week and €42.96/week of modeled opening-fee savings in six old weeks. This is an opportunity screen, not measured profit; the small exposure does not justify a live test yet ([screen](docs/rolling-bundles-screen.json)).
 
@@ -52,7 +56,7 @@ The [formal model](docs/optimization-model.md) treats the game as partially obse
 
 The [development experiments](docs/experiments.md) cover eleven policy variants and five-seed confirmation. Lower quote floors, broader note coverage, early offers, lower fees, longer routes, queue control, demand-curve slopes and pickup cutoffs were tested. Coupled treatments and source-provenance limitations are identified explicitly. Early offers and explicit pickup cutoffs remain experimental switches and are disabled by default.
 
-The quote subproblem is solved exactly for the fitted curve and estimated cost. Full-game global optimality and a future qualification guarantee are not claimed. Eight independent weeks give limited evidence about rare failures. The solver still declines private-address jobs, trade-ins and notes with unrecognized timing constraints. The frozen bundle candidate pairs compatible orders into sequential gigs; neither policy observes drivers' hidden daily schedules.
+The quote subproblem is solved exactly for the fitted curve and estimated cost. Full-game global optimality and a future qualification guarantee are not claimed. Twelve independent weeks still give limited evidence about rare failures. The solver still declines private-address jobs, trade-ins and notes with unrecognized timing constraints. The selected policy pairs compatible orders into sequential gigs; it cannot observe drivers' hidden daily schedules.
 
 ## Run
 
@@ -68,10 +72,10 @@ npm run practice -- --seed new-trial-1
 Run the latest validated standalone default on an ordinary practice seed:
 
 ```bash
-node --env-file=.env src/run.ts --seed new-late-rescue-trial-1
+node --env-file=.env src/run.ts --seed new-selected-trial-1
 ```
 
-The independently validated bundle policy with late rescue is the default. Its complete settings are in [final-config.json](experiments/final-config.json), including disabled research switches. Runtime and integration tests: **109 passing**; isolated research tests: **12 passing**; statistical-report tests: **9 passing**. The live integration fixture advances the clock through the default bundle window. TypeScript checks include the experiment launchers.
+The independently validated opening-fee reduction, bundles and late rescue are the default. Its complete settings are in [final-config.json](experiments/final-config.json), including disabled research switches. Runtime and integration tests: **109 passing**; isolated research tests: **15 passing**; statistical-report tests: **9 passing**. The live integration fixture advances the clock through the default bundle window. TypeScript checks include the experiment launchers.
 
 To play an active test final or final:
 
