@@ -13,7 +13,7 @@ const {practice}=await import(pathToFileURL(resolve(bundle,'src/run.ts')).href)
 const {Client}=await import(pathToFileURL(resolve(bundle,'vendor/typescript/spread.ts')).href)
 const jobs=plan.jobs ?? 4
 const capacity=plan.maximumConcurrentWorlds ?? 4
-if(!Number.isInteger(jobs)||jobs<1||jobs>8||!Number.isInteger(capacity)||capacity<jobs||capacity>8) throw new Error('Invalid concurrency limits')
+if(!Number.isInteger(jobs)||jobs<1||jobs>4||!Number.isInteger(capacity)||capacity<jobs||capacity>4) throw new Error('At most four unfinished team worlds; historical eight-slot plans are no longer authorized')
 const client=new Client()
 let next=0,stopped=false,gate=Promise.resolve()
 const results:any[]=[]
