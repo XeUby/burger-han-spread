@@ -126,9 +126,24 @@
     ]
   },
   "summary": {
-    "terminal": false,
+    "terminal": true,
     "controlExactMatch": true,
-    "decision": "pending complete frozen panel"
+    "decision": "Reject this pulse implementation; no parameter rescue or fresh validation",
+    "meanMarginCents": 1037749,
+    "meanGainCents": -21449.5,
+    "minimumGainCents": -39629,
+    "qualified": 2,
+    "orders": 599,
+    "aggregateOnTimeShare": 0.9532554257095158,
+    "undelivered": 0,
+    "failedVisits": 0,
+    "meanLedgerGainCents": {
+      "driver_fee": -115649,
+      "late_refund": -2674.5,
+      "release_fee": 684.5,
+      "revenue": 96189.5
+    },
+    "gatePassed": false
   },
   "records": [
     {
@@ -1037,7 +1052,1125 @@
       "label": "viewed-fee-pulse",
       "seed": "formal-unseen-20261113-15",
       "worldId": "w382de8fc40c146afa28f",
-      "status": "pending"
+      "status": "complete",
+      "result": {
+        "worldId": "w382de8fc40c146afa28f",
+        "revision": "0e657e59f7b50d5295f526bc70a703ca666c30e063faf7e297620bf48540333d",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "payout": 0.85,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "noteSpelling": false,
+          "relist": false,
+          "openingOnly": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 1.15,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14,
+          "viewedFee": true
+        },
+        "marginCents": 1103107,
+        "revenueCents": 3840988,
+        "wonOrders": 326,
+        "onTimeShare": 0.9263803680981595,
+        "undeliveredShare": 0,
+        "ranked": true,
+        "onTimeOrders": 302,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00138",
+          "R00220",
+          "R00244",
+          "R00357",
+          "R00509",
+          "R00522",
+          "R00547",
+          "R00619",
+          "R00621",
+          "R00628",
+          "R00645",
+          "R00687",
+          "R00694",
+          "R00698",
+          "R00699",
+          "R00708",
+          "R00736",
+          "R00742",
+          "R00775",
+          "R00779",
+          "R00804",
+          "R00832",
+          "R00843",
+          "R00845"
+        ],
+        "undeliveredOrderIds": [],
+        "label": "viewed-fee-pulse",
+        "files": {
+          "meta": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w382de8fc40c146afa28f.meta.json",
+            "sha256": "61ac56f9737471aba353c541053b80272126597923bf2f257293afb6fd33d643"
+          },
+          "snapshot": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w382de8fc40c146afa28f.snapshot.json",
+            "sha256": "48908f5afeff2cd049f7de88e165cdbac5189bbede43b4c050db1bc6f8435a32"
+          },
+          "score": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w382de8fc40c146afa28f.score.json",
+            "sha256": "27eaad72831569d08f1526c51acd215e83557630f86a71981a34ca37076e5117"
+          },
+          "events": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w382de8fc40c146afa28f.events.json",
+            "sha256": "a73c828547aa1323612595a5e3e35f1d13e7b5388f0ac54236d62017abbae812"
+          }
+        }
+      },
+      "ledgerCents": {
+        "driver_fee": -2580347,
+        "late_refund": -147601,
+        "release_fee": -9933,
+        "revenue": 3840988
+      },
+      "exposure": {
+        "reservedCents": 59121,
+        "exposures": [
+          {
+            "at": 577,
+            "until": 582,
+            "feeCents": 19755,
+            "extraCents": 6585,
+            "original": [
+              {
+                "at": 562,
+                "feeCents": 13170
+              },
+              {
+                "at": 10655,
+                "feeCents": 22466
+              },
+              {
+                "at": 10775,
+                "feeCents": 29439
+              },
+              {
+                "at": 10835,
+                "feeCents": 38735
+              }
+            ],
+            "orders": [
+              "R00004"
+            ],
+            "views": 1,
+            "gigId": "g1",
+            "bookedAt": 578,
+            "bookedFeeCents": 19755
+          },
+          {
+            "at": 595,
+            "until": 600,
+            "feeCents": 2550,
+            "extraCents": 850,
+            "original": [
+              {
+                "at": 580,
+                "feeCents": 1700
+              },
+              {
+                "at": 3815,
+                "feeCents": 2900
+              },
+              {
+                "at": 3935,
+                "feeCents": 3800
+              },
+              {
+                "at": 3995,
+                "feeCents": 5000
+              }
+            ],
+            "orders": [
+              "R00008"
+            ],
+            "views": 0,
+            "gigId": "g2",
+            "restoredAt": 600,
+            "bookedAt": 775,
+            "bookedFeeCents": 1700
+          },
+          {
+            "at": 626,
+            "until": 631,
+            "feeCents": 4871,
+            "extraCents": 1624,
+            "original": [
+              {
+                "at": 611,
+                "feeCents": 3247
+              },
+              {
+                "at": 914,
+                "feeCents": 5539
+              },
+              {
+                "at": 1034,
+                "feeCents": 7258
+              },
+              {
+                "at": 1094,
+                "feeCents": 9550
+              }
+            ],
+            "orders": [
+              "R00016"
+            ],
+            "views": 1,
+            "gigId": "g3",
+            "bookedAt": 627,
+            "bookedFeeCents": 4871
+          },
+          {
+            "at": 626,
+            "until": 631,
+            "feeCents": 4503,
+            "extraCents": 1501,
+            "original": [
+              {
+                "at": 612,
+                "feeCents": 3002
+              },
+              {
+                "at": 914,
+                "feeCents": 5121
+              },
+              {
+                "at": 1034,
+                "feeCents": 6711
+              },
+              {
+                "at": 1094,
+                "feeCents": 8830
+              }
+            ],
+            "orders": [
+              "R00017"
+            ],
+            "views": 3,
+            "gigId": "g4",
+            "bookedAt": 627,
+            "bookedFeeCents": 4503
+          },
+          {
+            "at": 626,
+            "until": 631,
+            "feeCents": 13683,
+            "extraCents": 4561,
+            "original": [
+              {
+                "at": 621,
+                "feeCents": 9122
+              },
+              {
+                "at": 6486,
+                "feeCents": 15561
+              },
+              {
+                "at": 6606,
+                "feeCents": 20391
+              },
+              {
+                "at": 6666,
+                "feeCents": 26830
+              }
+            ],
+            "orders": [
+              "R00023"
+            ],
+            "views": 3,
+            "gigId": "g5",
+            "bookedAt": 627,
+            "bookedFeeCents": 13683
+          },
+          {
+            "at": 626,
+            "until": 631,
+            "feeCents": 4574,
+            "extraCents": 1525,
+            "original": [
+              {
+                "at": 622,
+                "feeCents": 3049
+              },
+              {
+                "at": 2364,
+                "feeCents": 5201
+              },
+              {
+                "at": 2484,
+                "feeCents": 6815
+              },
+              {
+                "at": 2544,
+                "feeCents": 8968
+              }
+            ],
+            "orders": [
+              "R00024"
+            ],
+            "views": 2,
+            "gigId": "g6",
+            "bookedAt": 627,
+            "bookedFeeCents": 4574
+          },
+          {
+            "at": 626,
+            "until": 631,
+            "feeCents": 3956,
+            "extraCents": 1319,
+            "original": [
+              {
+                "at": 622,
+                "feeCents": 2637
+              },
+              {
+                "at": 2365,
+                "feeCents": 4498
+              },
+              {
+                "at": 2485,
+                "feeCents": 5894
+              },
+              {
+                "at": 2545,
+                "feeCents": 7755
+              }
+            ],
+            "orders": [
+              "R00025"
+            ],
+            "views": 7,
+            "gigId": "g7",
+            "bookedAt": 627,
+            "bookedFeeCents": 3956
+          },
+          {
+            "at": 626,
+            "until": 631,
+            "feeCents": 4773,
+            "extraCents": 1591,
+            "original": [
+              {
+                "at": 622,
+                "feeCents": 3182
+              },
+              {
+                "at": 2364,
+                "feeCents": 5429
+              },
+              {
+                "at": 2484,
+                "feeCents": 7114
+              },
+              {
+                "at": 2544,
+                "feeCents": 9360
+              }
+            ],
+            "orders": [
+              "R00026"
+            ],
+            "views": 1,
+            "gigId": "g8",
+            "bookedAt": 627,
+            "bookedFeeCents": 4773
+          },
+          {
+            "at": 659,
+            "until": 664,
+            "feeCents": 20018,
+            "extraCents": 6673,
+            "original": [
+              {
+                "at": 644,
+                "feeCents": 13345
+              },
+              {
+                "at": 2053,
+                "feeCents": 22765
+              },
+              {
+                "at": 2173,
+                "feeCents": 29830
+              },
+              {
+                "at": 2233,
+                "feeCents": 39250
+              }
+            ],
+            "orders": [
+              "R00031"
+            ],
+            "views": 1,
+            "gigId": "g9",
+            "bookedAt": 660,
+            "bookedFeeCents": 20018
+          },
+          {
+            "at": 659,
+            "until": 664,
+            "feeCents": 3888,
+            "extraCents": 1296,
+            "original": [
+              {
+                "at": 646,
+                "feeCents": 2592
+              },
+              {
+                "at": 2365,
+                "feeCents": 4421
+              },
+              {
+                "at": 2485,
+                "feeCents": 5793
+              },
+              {
+                "at": 2545,
+                "feeCents": 7623
+              }
+            ],
+            "orders": [
+              "R00032"
+            ],
+            "views": 3,
+            "gigId": "g10",
+            "bookedAt": 660,
+            "bookedFeeCents": 3888
+          },
+          {
+            "at": 659,
+            "until": 664,
+            "feeCents": 7394,
+            "extraCents": 2465,
+            "original": [
+              {
+                "at": 659,
+                "feeCents": 4929
+              },
+              {
+                "at": 2308,
+                "feeCents": 8409
+              },
+              {
+                "at": 2428,
+                "feeCents": 11018
+              },
+              {
+                "at": 2488,
+                "feeCents": 14498
+              }
+            ],
+            "orders": [
+              "R00034"
+            ],
+            "views": 3,
+            "gigId": "g11",
+            "bookedAt": 660,
+            "bookedFeeCents": 7394
+          },
+          {
+            "at": 681,
+            "until": 686,
+            "feeCents": 11990,
+            "extraCents": 3997,
+            "original": [
+              {
+                "at": 666,
+                "feeCents": 7993
+              },
+              {
+                "at": 2223,
+                "feeCents": 13634
+              },
+              {
+                "at": 2343,
+                "feeCents": 17866
+              },
+              {
+                "at": 2403,
+                "feeCents": 23508
+              }
+            ],
+            "orders": [
+              "R00038"
+            ],
+            "views": 1,
+            "gigId": "g12",
+            "bookedAt": 682,
+            "bookedFeeCents": 11990
+          },
+          {
+            "at": 713,
+            "until": 718,
+            "feeCents": 7244,
+            "extraCents": 2415,
+            "original": [
+              {
+                "at": 698,
+                "feeCents": 4829
+              },
+              {
+                "at": 867,
+                "feeCents": 8237
+              },
+              {
+                "at": 987,
+                "feeCents": 10794
+              },
+              {
+                "at": 1047,
+                "feeCents": 14203
+              }
+            ],
+            "orders": [
+              "R00041"
+            ],
+            "views": 1,
+            "gigId": "g14",
+            "bookedAt": 714,
+            "bookedFeeCents": 7244
+          },
+          {
+            "at": 713,
+            "until": 718,
+            "feeCents": 3987,
+            "extraCents": 1329,
+            "original": [
+              {
+                "at": 702,
+                "feeCents": 2658
+              },
+              {
+                "at": 6684,
+                "feeCents": 4534
+              },
+              {
+                "at": 6804,
+                "feeCents": 5941
+              },
+              {
+                "at": 6864,
+                "feeCents": 7818
+              }
+            ],
+            "orders": [
+              "R00042"
+            ],
+            "views": 6,
+            "gigId": "g15",
+            "bookedAt": 715,
+            "bookedFeeCents": 3987
+          },
+          {
+            "at": 713,
+            "until": 718,
+            "feeCents": 4220,
+            "extraCents": 1407,
+            "original": [
+              {
+                "at": 705,
+                "feeCents": 2813
+              },
+              {
+                "at": 6684,
+                "feeCents": 4798
+              },
+              {
+                "at": 6804,
+                "feeCents": 6287
+              },
+              {
+                "at": 6864,
+                "feeCents": 8273
+              }
+            ],
+            "orders": [
+              "R00044"
+            ],
+            "views": 1,
+            "gigId": "g16",
+            "bookedAt": 714,
+            "bookedFeeCents": 4220
+          },
+          {
+            "at": 734,
+            "until": 739,
+            "feeCents": 5513,
+            "extraCents": 1838,
+            "original": [
+              {
+                "at": 719,
+                "feeCents": 3675
+              },
+              {
+                "at": 2279,
+                "feeCents": 6268
+              },
+              {
+                "at": 2399,
+                "feeCents": 8214
+              },
+              {
+                "at": 2459,
+                "feeCents": 10808
+              }
+            ],
+            "orders": [
+              "R00045"
+            ],
+            "views": 4,
+            "gigId": "g17",
+            "bookedAt": 735,
+            "bookedFeeCents": 5513
+          },
+          {
+            "at": 734,
+            "until": 739,
+            "feeCents": 12317,
+            "extraCents": 4106,
+            "original": [
+              {
+                "at": 731,
+                "feeCents": 8211
+              },
+              {
+                "at": 3606,
+                "feeCents": 14007
+              },
+              {
+                "at": 3726,
+                "feeCents": 18354
+              },
+              {
+                "at": 3786,
+                "feeCents": 24150
+              }
+            ],
+            "orders": [
+              "R00049"
+            ],
+            "views": 1,
+            "gigId": "g18",
+            "bookedAt": 735,
+            "bookedFeeCents": 12317
+          },
+          {
+            "at": 734,
+            "until": 739,
+            "feeCents": 6200,
+            "extraCents": 2067,
+            "original": [
+              {
+                "at": 732,
+                "feeCents": 4133
+              },
+              {
+                "at": 893,
+                "feeCents": 7050
+              },
+              {
+                "at": 1013,
+                "feeCents": 9238
+              },
+              {
+                "at": 1073,
+                "feeCents": 12155
+              }
+            ],
+            "orders": [
+              "R00051"
+            ],
+            "views": 1,
+            "gigId": "g19",
+            "bookedAt": 735,
+            "bookedFeeCents": 6200
+          },
+          {
+            "at": 757,
+            "until": 762,
+            "feeCents": 11637,
+            "extraCents": 3879,
+            "original": [
+              {
+                "at": 742,
+                "feeCents": 7758
+              },
+              {
+                "at": 2159,
+                "feeCents": 13234
+              },
+              {
+                "at": 2279,
+                "feeCents": 17341
+              },
+              {
+                "at": 2339,
+                "feeCents": 22818
+              }
+            ],
+            "orders": [
+              "R00053"
+            ],
+            "views": 3,
+            "gigId": "g20",
+            "bookedAt": 758,
+            "bookedFeeCents": 11637
+          },
+          {
+            "at": 757,
+            "until": 762,
+            "feeCents": 4068,
+            "extraCents": 1356,
+            "original": [
+              {
+                "at": 747,
+                "feeCents": 2712
+              },
+              {
+                "at": 2279,
+                "feeCents": 4627
+              },
+              {
+                "at": 2399,
+                "feeCents": 6063
+              },
+              {
+                "at": 2459,
+                "feeCents": 7978
+              }
+            ],
+            "orders": [
+              "R00057"
+            ],
+            "views": 2,
+            "gigId": "g21",
+            "bookedAt": 758,
+            "bookedFeeCents": 4068
+          },
+          {
+            "at": 757,
+            "until": 762,
+            "feeCents": 5096,
+            "extraCents": 1699,
+            "original": [
+              {
+                "at": 748,
+                "feeCents": 3397
+              },
+              {
+                "at": 896,
+                "feeCents": 5794
+              },
+              {
+                "at": 1016,
+                "feeCents": 7592
+              },
+              {
+                "at": 1076,
+                "feeCents": 9990
+              }
+            ],
+            "orders": [
+              "R00058"
+            ],
+            "views": 1,
+            "gigId": "g22",
+            "bookedAt": 758,
+            "bookedFeeCents": 5096
+          },
+          {
+            "at": 757,
+            "until": 762,
+            "feeCents": 4109,
+            "extraCents": 1370,
+            "original": [
+              {
+                "at": 756,
+                "feeCents": 2739
+              },
+              {
+                "at": 2365,
+                "feeCents": 4672
+              },
+              {
+                "at": 2485,
+                "feeCents": 6122
+              },
+              {
+                "at": 2545,
+                "feeCents": 8055
+              }
+            ],
+            "orders": [
+              "R00060"
+            ],
+            "views": 1,
+            "gigId": "g23",
+            "bookedAt": 758,
+            "bookedFeeCents": 4109
+          },
+          {
+            "at": 774,
+            "until": 779,
+            "feeCents": 2550,
+            "extraCents": 850,
+            "original": [
+              {
+                "at": 759,
+                "feeCents": 1700
+              },
+              {
+                "at": 2370,
+                "feeCents": 2900
+              },
+              {
+                "at": 2490,
+                "feeCents": 3800
+              },
+              {
+                "at": 2550,
+                "feeCents": 5000
+              }
+            ],
+            "orders": [
+              "R00061"
+            ],
+            "views": 2,
+            "gigId": "g25",
+            "bookedAt": 778,
+            "bookedFeeCents": 2550
+          },
+          {
+            "at": 832,
+            "until": 837,
+            "feeCents": 8454,
+            "extraCents": 2818,
+            "original": [
+              {
+                "at": 817,
+                "feeCents": 5636
+              },
+              {
+                "at": 3735,
+                "feeCents": 9615
+              },
+              {
+                "at": 3855,
+                "feeCents": 12599
+              },
+              {
+                "at": 3915,
+                "feeCents": 16578
+              }
+            ],
+            "orders": [
+              "R00092"
+            ],
+            "views": 1,
+            "gigId": "g28",
+            "bookedAt": 833,
+            "bookedFeeCents": 8454
+          }
+        ]
+      },
+      "metrics": {
+        "exposures": 24,
+        "reservedCents": 59121,
+        "viewsDuringExposure": 50,
+        "earlyPremiumBookings": 23,
+        "earlyPremiumCents": 58271,
+        "restored": 1,
+        "firstBookingsBelowExposedFee": 1
+      },
+      "failedVisits": [],
+      "actionErrors": [
+        {
+          "at": 1875,
+          "action": {
+            "type": "reprice",
+            "gigId": "g18",
+            "schedule": [
+              {
+                "at": 1875,
+                "feeCents": 8211
+              },
+              {
+                "at": 3606,
+                "feeCents": 14007
+              },
+              {
+                "at": 3726,
+                "feeCents": 18354
+              },
+              {
+                "at": 3786,
+                "feeCents": 24150
+              }
+            ]
+          },
+          "reason": "Gig g18 is not open"
+        },
+        {
+          "at": 10716,
+          "action": {
+            "type": "reprice",
+            "gigId": "g192",
+            "schedule": [
+              {
+                "at": 10716,
+                "feeCents": 21864
+              },
+              {
+                "at": 10746,
+                "feeCents": 21864
+              },
+              {
+                "at": 10776,
+                "feeCents": 27694
+              },
+              {
+                "at": 10836,
+                "feeCents": 36440
+              }
+            ]
+          },
+          "reason": "Gig g192 is not open"
+        }
+      ],
+      "recoveries": [],
+      "errorContexts": [
+        {
+          "error": {
+            "at": 1875,
+            "action": {
+              "type": "reprice",
+              "gigId": "g18",
+              "schedule": [
+                {
+                  "at": 1875,
+                  "feeCents": 8211
+                },
+                {
+                  "at": 3606,
+                  "feeCents": 14007
+                },
+                {
+                  "at": 3726,
+                  "feeCents": 18354
+                },
+                {
+                  "at": 3786,
+                  "feeCents": 24150
+                }
+              ]
+            },
+            "reason": "Gig g18 is not open"
+          },
+          "sameMinuteGigEvents": [
+            {
+              "seq": 1405,
+              "at": 1875,
+              "kind": "gig_dropped",
+              "gigId": "g18",
+              "driverId": "pif6-0062"
+            },
+            {
+              "seq": 1406,
+              "at": 1875,
+              "kind": "gig_viewed",
+              "gigId": "g18",
+              "driverId": "pif6-0142"
+            },
+            {
+              "seq": 1407,
+              "at": 1875,
+              "kind": "gig_viewed",
+              "gigId": "g18",
+              "driverId": "pif6-0064"
+            },
+            {
+              "seq": 1408,
+              "at": 1875,
+              "kind": "gig_booked",
+              "gigId": "g18",
+              "driverId": "pif6-0064",
+              "feeCents": 12317
+            }
+          ]
+        },
+        {
+          "error": {
+            "at": 10716,
+            "action": {
+              "type": "reprice",
+              "gigId": "g192",
+              "schedule": [
+                {
+                  "at": 10716,
+                  "feeCents": 21864
+                },
+                {
+                  "at": 10746,
+                  "feeCents": 21864
+                },
+                {
+                  "at": 10776,
+                  "feeCents": 27694
+                },
+                {
+                  "at": 10836,
+                  "feeCents": 36440
+                }
+              ]
+            },
+            "reason": "Gig g192 is not open"
+          },
+          "sameMinuteGigEvents": [
+            {
+              "seq": 14849,
+              "at": 10716,
+              "kind": "gig_viewed",
+              "gigId": "g192",
+              "driverId": "pif6-0042"
+            },
+            {
+              "seq": 14851,
+              "at": 10716,
+              "kind": "gig_booked",
+              "gigId": "g192",
+              "driverId": "pif6-0042",
+              "feeCents": 21864
+            }
+          ]
+        }
+      ],
+      "baseline": {
+        "worldId": "w657d3e2075cdc8dcb443",
+        "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
+        "settings": {
+          "price": 1.42,
+          "fee": 1.05,
+          "payout": 0.85,
+          "margin": 0.1,
+          "capacity": 0.35,
+          "maxKm": 700,
+          "minDrivers": 8,
+          "notes": true,
+          "noteSpelling": false,
+          "relist": false,
+          "openingOnly": true,
+          "adaptive": true,
+          "earlyOffers": false,
+          "safetySlack": false,
+          "auction": false,
+          "allowPrivate": false,
+          "tradeIns": false,
+          "homeOffers": false,
+          "readiness": false,
+          "bundlePairs": true,
+          "timedNotes": false,
+          "lateRescue": true,
+          "sameDayPremium": 1,
+          "laterDiscount": 1,
+          "placePrior": 0,
+          "bundleWait": 15,
+          "backlog": 0.08,
+          "priceFloor": 0,
+          "costRatio": 1.15,
+          "trustStep": 0.01,
+          "sameDayBacklog": 4,
+          "demandSlope": 14
+        },
+        "marginCents": 1106377,
+        "revenueCents": 3684261,
+        "wonOrders": 323,
+        "onTimeShare": 0.9287925696594427,
+        "undeliveredShare": 0,
+        "ranked": true,
+        "onTimeOrders": 300,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00053",
+          "R00244",
+          "R00357",
+          "R00361",
+          "R00426",
+          "R00491",
+          "R00608",
+          "R00619",
+          "R00621",
+          "R00628",
+          "R00643",
+          "R00645",
+          "R00687",
+          "R00698",
+          "R00699",
+          "R00708",
+          "R00736",
+          "R00779",
+          "R00781",
+          "R00786",
+          "R00804",
+          "R00832",
+          "R00835"
+        ],
+        "undeliveredOrderIds": [],
+        "label": "payout-opening",
+        "files": {
+          "meta": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w657d3e2075cdc8dcb443.meta.json",
+            "sha256": "6cfe18c0f48328dcc2df0b3ba6b1b54c8096738b68c9b4a367d3ffcff8c42c97"
+          },
+          "snapshot": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w657d3e2075cdc8dcb443.snapshot.json",
+            "sha256": "02af2fd6bf1840ee75a7e0d3ec86b8d1064b7a8217dc0dd4eb0c14036e89d3f0"
+          },
+          "score": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w657d3e2075cdc8dcb443.score.json",
+            "sha256": "d5facd2174719447043489ecebee6d200dd8fe6ec4e26da9bf6c4d9a62a5c1b5"
+          },
+          "events": {
+            "path": "/Users/yerzham/Documents/ChatGPT/BAHN/runs/w657d3e2075cdc8dcb443.events.json",
+            "sha256": "90b9450c287db94bdc5a3e00bec0a593c620a563d85381f037ff6237226a2ad3"
+          }
+        }
+      },
+      "baselineLedgerCents": {
+        "driver_fee": -2425573,
+        "late_refund": -141009,
+        "release_fee": -11302,
+        "revenue": 3684261
+      },
+      "gainCents": -3270
     }
   ],
   "attempts": [
@@ -1070,6 +2203,12 @@
       "seed": "formal-unseen-20261113-14",
       "worldId": "w10682dbecb79031bcb6a",
       "completedAt": "2026-11-14T05:22:55.528Z"
+    },
+    {
+      "label": "viewed-fee-pulse",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "w382de8fc40c146afa28f",
+      "completedAt": "2026-11-14T05:24:44.274Z"
     }
   ],
   "interpretation": "Exposure counts and lower subsequent fees do not reveal hidden beliefs or establish that every viewer was eligible. Early premiums compare actual initial bookings with that same gig's intended opening fee, not a counterfactual world. Whole-week matched net profit is the economic test."

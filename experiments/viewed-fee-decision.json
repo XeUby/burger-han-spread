@@ -1,0 +1,51 @@
+{
+  "decidedAt": "2026-11-14T05:26:40.614369+00:00",
+  "report": "docs/viewed-fee-results.json",
+  "summary": {
+    "terminal": true,
+    "controlExactMatch": true,
+    "decision": "Reject this pulse implementation; no parameter rescue or fresh validation",
+    "meanMarginCents": 1037749,
+    "meanGainCents": -21449.5,
+    "minimumGainCents": -39629,
+    "qualified": 2,
+    "orders": 599,
+    "aggregateOnTimeShare": 0.9532554257095158,
+    "undelivered": 0,
+    "failedVisits": 0,
+    "meanLedgerGainCents": {
+      "driver_fee": -115649,
+      "late_refund": -2674.5,
+      "release_fee": 684.5,
+      "revenue": 96189.5
+    },
+    "gatePassed": false
+  },
+  "metrics": [
+    {
+      "seed": "formal-unseen-20261113-14",
+      "exposures": 15,
+      "reservedCents": 23910,
+      "viewsDuringExposure": 27,
+      "earlyPremiumBookings": 15,
+      "earlyPremiumCents": 23910,
+      "restored": 0,
+      "firstBookingsBelowExposedFee": 0
+    },
+    {
+      "seed": "formal-unseen-20261113-15",
+      "exposures": 24,
+      "reservedCents": 59121,
+      "viewsDuringExposure": 50,
+      "earlyPremiumBookings": 23,
+      "earlyPremiumCents": 58271,
+      "restored": 1,
+      "firstBookingsBelowExposedFee": 1
+    }
+  ],
+  "selectedPolicyChanged": false,
+  "rankingSubmitted": false,
+  "finalPlayed": false,
+  "decision": "Reject the frozen exposure policy; do not rescue it with pulse parameter changes or use fresh validation.",
+  "interpretation": "38of39exposed gigs booked before restoration; only one later booked below its exposure fee. Little evidence of falling-fee learning was created, and whole-week profit fell on both seeds."
+}

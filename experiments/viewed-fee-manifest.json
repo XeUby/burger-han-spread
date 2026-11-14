@@ -48,6 +48,12 @@
       "seed": "formal-unseen-20261113-14",
       "worldId": "w10682dbecb79031bcb6a",
       "completedAt": "2026-11-14T05:22:55.528Z"
+    },
+    {
+      "label": "viewed-fee-pulse",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "w382de8fc40c146afa28f",
+      "completedAt": "2026-11-14T05:24:44.274Z"
     }
   ]
 }

@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-14T05:23:24.786637+00:00",
+  "updatedAt": "2026-11-14T05:26:40.614369+00:00",
   "objective": "Continue systematic search toward the global optimum; practice only, no ranking submission.",
   "maximumConcurrentPlays": 4,
   "currentConcurrency": {
-    "activeRunners": 1,
+    "activeRunners": 0,
     "maximumConcurrentPlays": 4,
-    "note": "Runner46336 has two workers and checks team unfinished worlds before every serialized create. Team inventory was empty before launch."
+    "note": "The viewed-fee runner completed all three worlds and exited0. Verify shared inventory before another create."
   },
   "completedCombinationStudy": {
     "sessionId": 84558,
@@ -66,9 +66,9 @@
     "700km-only bundle treatment ends at7407.63/9410.50 euros, minimum96.6% on time. It gains versus the old baseline in both weeks but not versus bundles alone. No900km experiment scheduled."
   ],
   "nextSteps": [
-    "Finish both frozen first-view premium treatment weeks and verify exact control replication before interpreting outcomes.",
-    "Continue unchanged to seeds09and10 only if mean gain is at least1500euros, neither week loses profit, and both meet qualification and delivery gates. No magnitude, duration or budget rescue after failure.",
-    "Preserve the validated control and all failed architecture trials; no ranking or final submissions."
+    "Preserve the validated control. Reject the bounded first-view premium implementation; no pulse parameter rescue or independent validation.",
+    "Probe route composition beyond pairs: old control weeks09,10,14,15 had55,109,46,85won requests in batches of at least3wins. These include later cancellations and do not yet prove feasible multi-car routes or savings.",
+    "Use actual time-window feasibility and whole-route work to determine whether larger routes justify a frozen whole-week test. No global-optimality or unmatched rank claims."
   ],
   "validationStatus": "All16 fresh paired trials complete. Candidate mean10411.59 euros versus8242.34, +26.32%;7/8 positive;8/8 qualified; minimum94.94% on time; no undelivered orders. Full report docs/frontier-validation.md. No ranking submission.",
   "checks": {
@@ -558,14 +558,16 @@
   "currentStudy": {
     "kind": "bounded first-view driver fee experiment",
     "sessionId": 46336,
-    "terminal": false,
-    "phase": "frozen two-week treatment screen plus control replication",
+    "terminal": true,
+    "phase": "complete: rejected",
     "protocol": "experiments/viewed-fee-protocol.json",
     "manifest": "experiments/viewed-fee-manifest.json",
     "report": "docs/viewed-fee-results.json",
     "revision": "0e657e59f7b50d5295f526bc70a703ca666c30e063faf7e297620bf48540333d",
     "maximumJobs": 2,
-    "maximumConcurrentPlays": 4
+    "maximumConcurrentPlays": 4,
+    "study": "runs/study-1794633884275.json",
+    "decision": "experiments/viewed-fee-decision.json"
   },
   "completedPayoutScreen": {
     "sessionId": 76828,
@@ -912,5 +914,29 @@
     "study": "runs/study-1794633170323.json",
     "decision": "experiments/architectures-decision.json",
     "completedTreatmentTrials": 12
+  },
+  "viewedFeeResults": {
+    "report": "docs/viewed-fee-results.json",
+    "decision": "experiments/viewed-fee-decision.json",
+    "summary": {
+      "terminal": true,
+      "controlExactMatch": true,
+      "decision": "Reject this pulse implementation; no parameter rescue or fresh validation",
+      "meanMarginCents": 1037749,
+      "meanGainCents": -21449.5,
+      "minimumGainCents": -39629,
+      "qualified": 2,
+      "orders": 599,
+      "aggregateOnTimeShare": 0.9532554257095158,
+      "undelivered": 0,
+      "failedVisits": 0,
+      "meanLedgerGainCents": {
+        "driver_fee": -115649,
+        "late_refund": -2674.5,
+        "release_fee": 684.5,
+        "revenue": 96189.5
+      },
+      "gatePassed": false
+    }
   }
 }

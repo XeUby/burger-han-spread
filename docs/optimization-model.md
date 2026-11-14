@@ -132,4 +132,23 @@ Each architecture also incurred a €100 charging fine on seed 14 after the same
 
 The control stays selected. No architecture met either the promotion screen or its optional redesign condition of at least 25% more throughput with nonnegative mean profit gain. Therefore there is no fresh validation panel or ranking/final submission for these candidates. More demand and more composed routes are demonstrated; a competitive improvement is not.
 
-The next distinct mechanism worth a bounded test is driver price learning: compare a policy that rarely rewards waiting with deadline escalation, measuring realized booking costs and later booking behavior. The documented learning anchor is the first fee actually viewed, not the creation fee; the earlier zero-time creation-price probe does not test this. Any experiment must count the cost of establishing that behavior and retain rescue failures. It should not be presented as a proven gain or as another way to tune away the losses above.
+Driver price learning remained a distinct mechanism for a bounded test. The documented learning anchor is the first fee actually viewed, not the creation fee; the earlier zero-time creation-price probe did not test this. Any experiment must count the cost of establishing that behavior and retain rescue failures. The following trial tested actual exposure and failed its continuation rule.
+
+## Bounded first-view fee experiment
+
+The [frozen protocol](../experiments/viewed-fee-protocol.json) tested whether a limited early investment could change later driver behavior enough to improve whole-week profit. During the first day, eligible new posts displayed 1.5 times their normal opening fee for five minutes, then restored the exact normal schedule if unbooked. Exposure reserved its entire possible initial premium against a €600 weekly cap. Customer pricing, admission and route composition remained the validated control. This isolated an untested mechanism after the larger architecture trials; it was not a new validated dispatcher.
+
+The two matched old development seeds were 14 and 15. A third world, with the exposure disabled, exactly reproduced the archived seed14 events and score. The predetermined continuation rule required at least €1,500 average gain, no loss on either week, both qualified, and no undelivered orders or failed visits. Code and settings stayed frozen throughout. Five focused tests and strict TypeScript checking passed before launch.
+
+| Seed | Control net | Exposure net | Paired gain | Orders | On time | Driver fees | Late refunds |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 14 | €10,120.20 | €9,723.91 | −€396.29 | 273 | 98.53% | €17,748.36 | €194.44 |
+| 15 | €11,063.77 | €11,031.07 | −€32.70 | 326 | 92.64% | €25,803.47 | €1,476.01 |
+
+Both treatment weeks qualified, with zero undelivered orders, failed visits, fines or recoveries. Mean profit fell €214.50/week. Mean driver fees rose €1,156.49 while revenue rose only €961.90; changes in late refunds and release fees account for the rest. The three refused reprices followed same-minute bookings and remain in the [full report](viewed-fee-results.json). There were no failed restorations or runner interruptions.
+
+Of 39 exposed gigs, 38 booked during the higher-fee period. They incurred €821.81 in total initial premiums across both weeks, relative to those same gigs' intended opening fees. Only one gig reached restoration and subsequently booked below its exposed fee. There were 77 view events during exposure, but views do not prove that a driver could perform the job. The intervention mostly bought immediate bookings at higher prices; it supplied little evidence about learning from falling fees. Its whole-week economics were negative.
+
+Decision: reject this implementation, with no adjustment of pulse duration, size or budget and no further confirmation or fresh validation. This does not prove that driver learning has no value. It shows that this bounded attempt to influence it did not earn back its cost. The validated control remains unchanged; no ranking or final was played.
+
+The next route-composition question is whether the pair-only architecture leaves useful three-or-more-car routes unused. In the four archived development controls, respectively 55, 109, 46 and 85 won requests belonged to batches containing at least three wins. These are acquisition-event counts, including later cancellations, not feasible route counts or a profit forecast. A useful next probe must test stop-window feasibility and actual shared work for larger routes before treating those batches as savings.
