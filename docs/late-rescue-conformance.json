@@ -1,6 +1,6 @@
 {
-  "method": "Run the current default dispatcher and the archived validated late-rescue policy through identical old development event streams and decision clocks. Both receive identical deterministic action acknowledgements. Compare every emitted action and every next-decision time.",
-  "limitation": "Behavioral conformance on recorded inputs, not a new simulation or a profit estimate. Fake acknowledgements do not reproduce every real server refusal. The immutable fresh evaluation policies are unaffected by this default change.",
+  "method": "Run the current default dispatcher and the candidate from the selected validation report through identical old development event streams and decision clocks. Verify the archived source hash and selected settings. Both receive identical deterministic action acknowledgements. Compare every emitted action and every next-decision time.",
+  "limitation": "Behavioral conformance on recorded inputs, not a new simulation or a profit estimate. Fake acknowledgements do not reproduce every real server refusal. The immutable fresh evaluation policies are unaffected by this check.",
   "referenceRevision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
   "currentRevision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
   "defaults": {
