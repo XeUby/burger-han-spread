@@ -1,0 +1,338 @@
+[
+ {
+  "label": "book06",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "bookMiss": 0.6
+  }
+ },
+ {
+  "label": "book10",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "bookMiss": 1.0
+  }
+ },
+ {
+  "label": "book15",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "bookMiss": 1.5
+  }
+ },
+ {
+  "label": "book06",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "bookMiss": 0.6
+  }
+ },
+ {
+  "label": "book10",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "bookMiss": 1.0
+  }
+ },
+ {
+  "label": "book15",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "bookMiss": 1.5
+  }
+ },
+ {
+  "label": "book06",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "bookMiss": 0.6
+  }
+ },
+ {
+  "label": "book10",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "bookMiss": 1.0
+  }
+ },
+ {
+  "label": "book15",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "bookMiss": 1.5
+  }
+ },
+ {
+  "label": "book06",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "bookMiss": 0.6
+  }
+ },
+ {
+  "label": "book10",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "bookMiss": 1.0
+  }
+ },
+ {
+  "label": "book15",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "bookMiss": 1.5
+  }
+ },
+ {
+  "label": "book06",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "bookMiss": 0.6
+  }
+ },
+ {
+  "label": "book10",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "bookMiss": 1.0
+  }
+ },
+ {
+  "label": "book15",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "bookMiss": 1.5
+  }
+ },
+ {
+  "label": "book06",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "bookMiss": 0.6
+  }
+ },
+ {
+  "label": "book10",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "bookMiss": 1.0
+  }
+ },
+ {
+  "label": "book15",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "bookMiss": 1.5
+  }
+ },
+ {
+  "label": "book06",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "bookMiss": 0.6
+  }
+ },
+ {
+  "label": "book10",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "bookMiss": 1.0
+  }
+ },
+ {
+  "label": "book15",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "bookMiss": 1.5
+  }
+ },
+ {
+  "label": "book06",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "bookMiss": 0.6
+  }
+ },
+ {
+  "label": "book10",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "bookMiss": 1.0
+  }
+ },
+ {
+  "label": "book15",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "bookMiss": 1.5
+  }
+ },
+ {
+  "label": "book06",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "bookMiss": 0.6
+  }
+ },
+ {
+  "label": "book10",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "bookMiss": 1.0
+  }
+ },
+ {
+  "label": "book15",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "bookMiss": 1.5
+  }
+ },
+ {
+  "label": "book06",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "bookMiss": 0.6
+  }
+ },
+ {
+  "label": "book10",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "bookMiss": 1.0
+  }
+ },
+ {
+  "label": "book15",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "bookMiss": 1.5
+  }
+ },
+ {
+  "label": "book06",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "bookMiss": 0.6
+  }
+ },
+ {
+  "label": "book10",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "bookMiss": 1.0
+  }
+ },
+ {
+  "label": "book15",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "bookMiss": 1.5
+  }
+ },
+ {
+  "label": "book06",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "bookMiss": 0.6
+  }
+ },
+ {
+  "label": "book10",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "bookMiss": 1.0
+  }
+ },
+ {
+  "label": "book15",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "bookMiss": 1.5
+  }
+ },
+ {
+  "label": "book06",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "bookMiss": 0.6
+  }
+ },
+ {
+  "label": "book10",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "bookMiss": 1.0
+  }
+ },
+ {
+  "label": "book15",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "bookMiss": 1.5
+  }
+ },
+ {
+  "label": "book06",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "bookMiss": 0.6
+  }
+ },
+ {
+  "label": "book10",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "bookMiss": 1.0
+  }
+ },
+ {
+  "label": "book15",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "bookMiss": 1.5
+  }
+ },
+ {
+  "label": "book06",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "bookMiss": 0.6
+  }
+ },
+ {
+  "label": "book10",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "bookMiss": 1.0
+  }
+ },
+ {
+  "label": "book15",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "bookMiss": 1.5
+  }
+ },
+ {
+  "label": "book06",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "bookMiss": 0.6
+  }
+ },
+ {
+  "label": "book10",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "bookMiss": 1.0
+  }
+ },
+ {
+  "label": "book15",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "bookMiss": 1.5
+  }
+ }
+]

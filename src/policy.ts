@@ -6,6 +6,7 @@ import { canRelist } from "./relisting.ts"
 import { readReadiness } from "./readiness.ts"
 import { readHours } from "./hours-note.ts"
 import { readFacts } from "./note-reader.ts"
+import { openingRatio } from "./booking.ts"
 import { planTimedLeg, withNoteHours } from "./hours-plan.ts"
 import type { TimedNote } from "./hours-note.ts"
 import { lateRescueApplies, lateRescueSchedule } from "./late-rescue.ts"
@@ -42,6 +43,10 @@ export type Settings = {
   pairPatience: number
   /** Decline routes shorter than this many kilometres; 0 for none. */
   minKm: number
+  /** The opening fee, in full fees, of a single car on a route of 250 km or more; the same as `payout` by default. */
+  longPayout: number
+  /** Choose each single car's opening fee with the booking model: what a gig that no driver takes at its opening costs more, in typical fees; 0 for off. */
+  bookMiss: number
   /** The fee, in full fees, a day and half a day before the last pickup, for a gig that no driver has taken. */
   climbDay: number; climbHalfDay: number
   /** What a route really costs against the dispatcher's estimate, for routes under 50 km, from 50 km to 100 km, and longer. */
@@ -51,7 +56,7 @@ export const defaults: Settings = {
   price: 1.42, fee: 1.05, payout: 0.85, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
   notes: true, noteSpelling: false, relist: false, openingOnly: true, adaptive: true, earlyOffers: false, safetySlack: false,
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, noteReader: true, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
-  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0, minKm: 0,
+  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0, minKm: 0, longPayout: 0.85, bookMiss: 0,
   earlyClimb: true,
 }
 
@@ -60,7 +65,7 @@ export function validateSettings(value: unknown): asserts value is Partial<Setti
   for (const [key, field] of Object.entries(value)) {
     if (!(key in defaults)) throw new Error(`Unknown setting: ${key}`)
     if (typeof defaults[key as keyof Settings] === "boolean") { if (typeof field !== "boolean") throw new Error(`${key} must be boolean`); continue }
-    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait", "sitAfter", "pairOpen", "pairQuote", "pairPatience", "minKm"].includes(key))) throw new Error(`${key} must be a positive number`)
+    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait", "sitAfter", "pairOpen", "pairQuote", "pairPatience", "minKm", "bookMiss"].includes(key))) throw new Error(`${key} must be a positive number`)
     if (key === "bundleWait" && (!Number.isInteger(field) || field > 30)) throw new Error("bundleWait must be an integer from 0 to 30")
     if ((key === "margin" || key === "capacity") && field >= 1) throw new Error(`${key} must be below 1`)
     if (key === "placePrior" && field > 2) throw new Error("placePrior must be at most 2")
@@ -324,6 +329,17 @@ export class Dispatcher extends Desk {
     return null
   }
 
+  /** The opening fee of a single car, in typical fees, from the booking model. */
+  openingFor(order: Order, request: PriceRequest): number {
+    const leg = order.legs[0]!
+    const near = (place: string) => this.drivers.reduce((sum, driver) => { const km = this.network.km(driver.homePlaceId, place); return sum + (km <= 35 ? 1 : km <= 70 ? 0.35 : 0) }, 0)
+    const from = Math.max(this.now, leg.pickup.window.from)
+    return openingRatio({
+      km: this.network.km(leg.pickup.placeId, leg.delivery.placeId), pickupDrivers: this.supply(request), deliveryDrivers: near(leg.delivery.placeId),
+      slackHours: (this.pickupBy(order) - from) / 60, weekday: Math.floor(from / 1440) % 7, hour: Math.floor((from % 1440) / 60), premium: leg.car.premium,
+    }, this.settings.bookMiss)
+  }
+
   /** Drivers ask more than the typical fee for a short route, which hardly pays their trip to the car and home. */
   routeCost(request: PriceRequest): number {
     const km = this.network.km(request.legs[0]!.pickup.placeId, request.legs[0]!.delivery.placeId)
@@ -361,9 +377,19 @@ export class Dispatcher extends Desk {
     return Math.min(order.lastPickupAt, lastPickup(leg, order.deadline, this.network, rules.plates))
   }
 
-  payoutSchedule(schedule: FeeStep[], opening: boolean): FeeStep[] {
-    if (this.settings.payout === 1) return schedule
-    return schedule.map((step, index) => ({ ...step, feeCents: Math.max(1, Math.round(step.feeCents * (this.settings.openingOnly && (!opening || index > 0) ? 1 : this.settings.payout))) }))
+  payoutSchedule(schedule: FeeStep[], opening: boolean, order?: Order): FeeStep[] {
+    const leg = order?.legs.length === 1 ? order.legs[0]! : null
+    const payout = leg && this.network.km(leg.pickup.placeId, leg.delivery.placeId) >= 250 ? this.settings.longPayout : this.settings.payout
+    if (opening && order && leg && this.settings.bookMiss > 0 && schedule.length) {
+      // The booking model sets the opening fee; no later step may be lower.
+      const request = this.requests.get(order.id)
+      if (request) {
+        const opens = Math.max(1, Math.round(request.referenceFeeCents * this.openingFor(order, request)))
+        return schedule.map((step, index) => ({ ...step, feeCents: index === 0 ? opens : Math.max(step.feeCents, opens) }))
+      }
+    }
+    if (payout === 1) return schedule
+    return schedule.map((step, index) => ({ ...step, feeCents: Math.max(1, Math.round(step.feeCents * (this.settings.openingOnly && (!opening || index > 0) ? 1 : payout))) }))
   }
 
   feesFor(order: Order, cars: number, discounted = true): FeeStep[] {
@@ -372,7 +398,7 @@ export class Dispatcher extends Desk {
     // A dealer can replace a local trip with a long one after the price is agreed.
     const routeChange = Math.max(1, duration(order.legs) / duration(request.legs))
     const fee = this.baseFee({ ...request, legs: order.legs }) * routeChange * cars / order.legs.length
-    const pay = (schedule: FeeStep[], opening: boolean) => discounted ? this.payoutSchedule(schedule, opening) : schedule
+    const pay = (schedule: FeeStep[], opening: boolean) => discounted ? this.payoutSchedule(schedule, opening, cars === 1 ? order : undefined) : schedule
     if (this.level >= 2 && this.settings.lateRescue && cars === 1 && lateRescueApplies(order, this.now)) return pay(lateRescueSchedule(order, this.now, this.settings.lateRepost ? fee * this.settings.lateFee / 1.2 : fee), false)
     const rescue = this.urgent.has(order.id)
     const pickupBy = this.pickupBy(order)
@@ -459,12 +485,12 @@ export class Dispatcher extends Desk {
       for (const i of bundle.indices) paired.add(i)
       this.outbox.push(bundle.post)
     }
-    this.outbox.push(...candidates.slice(0, fresh).filter((_, i) => !paired.has(i)).map(candidate => ({ ...candidate.post, schedule: this.payoutSchedule(candidate.post.schedule, true) })))
+    this.outbox.push(...candidates.slice(0, fresh).filter((_, i) => !paired.has(i)).map(candidate => ({ ...candidate.post, schedule: this.payoutSchedule(candidate.post.schedule, true, candidate.order) })))
   }
 
   override async sendPostOf(orderId: string): Promise<void> {
     const item = this.held.get(orderId)
-    if (item) { this.held.delete(orderId); this.outbox.push({ ...item.post, schedule: this.payoutSchedule(item.post.schedule, true) }) }
+    if (item) { this.held.delete(orderId); this.outbox.push({ ...item.post, schedule: this.payoutSchedule(item.post.schedule, true, this.orders.get(orderId)) }) }
     await super.sendPostOf(orderId)
   }
 

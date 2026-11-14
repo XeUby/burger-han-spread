@@ -1,0 +1,386 @@
+[
+ {
+  "label": "long100",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "longPayout": 1.0
+  }
+ },
+ {
+  "label": "long100-cap045",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "long100-cap045-bl012",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45,
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "long100",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "longPayout": 1.0
+  }
+ },
+ {
+  "label": "long100-cap045",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "long100-cap045-bl012",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45,
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "long100",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "longPayout": 1.0
+  }
+ },
+ {
+  "label": "long100-cap045",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "long100-cap045-bl012",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45,
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "long100",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "longPayout": 1.0
+  }
+ },
+ {
+  "label": "long100-cap045",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "long100-cap045-bl012",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45,
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "long100",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "longPayout": 1.0
+  }
+ },
+ {
+  "label": "long100-cap045",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "long100-cap045-bl012",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45,
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "long100",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "longPayout": 1.0
+  }
+ },
+ {
+  "label": "long100-cap045",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "long100-cap045-bl012",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45,
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "long100",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "longPayout": 1.0
+  }
+ },
+ {
+  "label": "long100-cap045",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "long100-cap045-bl012",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45,
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "long100",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "longPayout": 1.0
+  }
+ },
+ {
+  "label": "long100-cap045",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "long100-cap045-bl012",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45,
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "long100",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "longPayout": 1.0
+  }
+ },
+ {
+  "label": "long100-cap045",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "long100-cap045-bl012",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45,
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "long100",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "longPayout": 1.0
+  }
+ },
+ {
+  "label": "long100-cap045",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "long100-cap045-bl012",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45,
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "long100",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "longPayout": 1.0
+  }
+ },
+ {
+  "label": "long100-cap045",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "long100-cap045-bl012",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45,
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "long100",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "longPayout": 1.0
+  }
+ },
+ {
+  "label": "long100-cap045",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "long100-cap045-bl012",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45,
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "long100",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "longPayout": 1.0
+  }
+ },
+ {
+  "label": "long100-cap045",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "long100-cap045-bl012",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45,
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "long100",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "longPayout": 1.0
+  }
+ },
+ {
+  "label": "long100-cap045",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "long100-cap045-bl012",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45,
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "long100",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "longPayout": 1.0
+  }
+ },
+ {
+  "label": "long100-cap045",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "long100-cap045-bl012",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45,
+   "backlog": 0.12
+  }
+ },
+ {
+  "label": "long100",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "longPayout": 1.0
+  }
+ },
+ {
+  "label": "long100-cap045",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45
+  }
+ },
+ {
+  "label": "long100-cap045-bl012",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "longPayout": 1.0,
+   "capacity": 0.45,
+   "backlog": 0.12
+  }
+ }
+]
