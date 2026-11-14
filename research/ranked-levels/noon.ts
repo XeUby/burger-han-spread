@@ -1,19 +1,19 @@
 import { readFile, writeFile, appendFile, readdir, mkdir, rmdir, rm } from 'node:fs/promises'
 import { createHash } from 'node:crypto'
-import { Client } from '../low-level/bundle/vendor/typescript/spread.ts'
-import type { Score } from '../low-level/bundle/vendor/typescript/types.ts'
-import { practice } from '../low-level/bundle/src/run.ts'
+import { Client } from '../../runs/frozen/portfolio-development-v1/vendor/typescript/spread.ts'
+import type { Score } from '../../runs/frozen/portfolio-development-v1/vendor/typescript/types.ts'
+import { practice } from '../../runs/frozen/portfolio-development-v1/src/run.ts'
 import { allowMutation, nextAvailable } from './guard.ts'
 
 const mode = 'noon-ranked'
 const protocol = JSON.parse(await readFile('experiments/levels-noon-protocol.json','utf8'))
-if (protocol.authorization === 'pending') throw new Error('The concrete frozen ranking plan still needs explicit user authorization')
-if (protocol.maximumUnfinishedTeamWorlds !== 4 || JSON.stringify(protocol.levels) !== '[1,2,3,4]') throw new Error('Only levels 1–4 and four unfinished team worlds are in scope')
+if (protocol.authorization?.approved !== true) throw new Error('The concrete frozen ranking plan still needs explicit user authorization')
+if (protocol.maximumUnfinishedTeamWorlds !== 8 || JSON.stringify(protocol.levels) !== '[1,2,3,4]') throw new Error('Only levels 1–4 and eight unfinished team worlds are in scope')
 for (const [file, expected] of Object.entries(protocol.sourceFiles)) if (createHash('sha256').update(await readFile(file)).digest('hex') !== expected) throw new Error(`Frozen source changed: ${file}`)
 if (createHash('sha256').update(await readFile(new URL(import.meta.url))).digest('hex') !== protocol.launcherSha256) throw new Error('Frozen ranking launcher changed')
 try { await readFile(`experiments/levels-${mode}-attempts.jsonl`); throw new Error('Previous ranking attempts exist; reconcile them before any continuation') } catch (error) { if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error }
 const source = createHash('sha256')
-for (const name of (await readdir('research/low-level/bundle/src')).filter(n=>n.endsWith('.ts')).sort()) source.update(name).update(await readFile(`research/low-level/bundle/src/${name}`))
+for (const name of (await readdir('runs/frozen/portfolio-development-v1/src')).filter(n=>n.endsWith('.ts')).sort()) source.update(name).update(await readFile(`runs/frozen/portfolio-development-v1/src/${name}`))
 if (source.digest('hex') !== protocol.revision) throw new Error('Frozen policy hash mismatch')
 const ranked = true
 const deadline = Date.parse(protocol.stopRankedRequestsAt)
@@ -66,7 +66,7 @@ try {
         await writeFile(`${creationLock}/owner.json`,JSON.stringify({pid:process.pid,plan:'experiments/levels-noon-protocol.json',at:new Date().toISOString()}))
         const worlds = await client.worlds()
         await log({event:'occupancy',unfinished:worlds.filter(w=>!w.ended).map(w=>w.worldId)})
-        if (worlds.filter(w=>!w.ended).length<4) {
+        if (worlds.filter(w=>!w.ended).length<8) {
           if (ranked) {
             const board=await client.board(task.level as 1)
             if(board.current?.season!==protocol.season) throw new Error('Ranking season changed')

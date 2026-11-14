@@ -1,0 +1,685 @@
+{
+  "generatedAt": "2026-11-14T09:38:37.468056+00:00",
+  "role": "Adaptive development only; no confirmatory or multiplicity-adjusted claims",
+  "planSha256": "b2cc575fca3e5d0c9bb0023dab68f98f06472ac6b39a1d2ce04ffcadce8f32ae",
+  "policyRevision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
+  "terminal": true,
+  "completed": 6,
+  "expected": 6,
+  "uniqueSeedBlocks": 2,
+  "records": [
+    {
+      "level": 1,
+      "seed": "levels-development-2dba6ebe7258e63082c0",
+      "label": "corrected-v1-capacity",
+      "status": "complete",
+      "worldId": "wd8f72a73046cf47ad970",
+      "runtimeFailures": [],
+      "artifactHashes": {
+        "meta": "e694f3d062a6c2bb40794757fea1446b6c1ef77c13d0bc1fc5466601c1150786",
+        "events": "94a2f6d919ec184130f4a5928588b6d53571930d5a86c00f53a372d85aaa24e4",
+        "snapshot": "20bdc074ffe8461c97c9f5b2897604ad1b0ccaf53089fe895d346dabdc4d3683",
+        "score": "10e538cd77c3589bc25bc131071712a94de6f18803fffd1a317e06a171f34c31",
+        "errors": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recoveries": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "decisions": "e2a5f5c0c0e6041261335af72d753401c124c891fdab1cffc0fe9680174bfe0a"
+      },
+      "mechanisms": {
+        "action_result": 1094,
+        "post": 534
+      },
+      "planner": {
+        "solves": 0,
+        "statuses": {},
+        "fallbacks": 0,
+        "omittedCandidates": 0,
+        "largestCandidateSet": 0,
+        "framesWithFutureValue": 0,
+        "framesWithPaymentChoices": 0,
+        "actions": {},
+        "changedQuotes": 0,
+        "anchoredQuotes": 0,
+        "bundledPosts": 0,
+        "higherPaidPosts": 0,
+        "meaningfulActions": 0,
+        "withdrawals": [],
+        "heldOverflow": 0,
+        "neutralDeadlineExpirations": 0
+      },
+      "chargingRisks": [],
+      "score": {
+        "marginCents": 611742,
+        "revenueCents": 3422600,
+        "wonOrders": 529,
+        "onTimeOrders": 525,
+        "onTimeShare": 0.9924385633270322,
+        "undeliveredOrders": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 3422600,
+        "driver_fee": -2783177,
+        "late_refund": -9280,
+        "release_fee": -18401
+      },
+      "failedVisits": 0,
+      "actionErrors": [],
+      "recoveries": [],
+      "fines": []
+    },
+    {
+      "level": 1,
+      "seed": "levels-development-2dba6ebe7258e63082c0",
+      "label": "corrected-v1-payment",
+      "status": "complete",
+      "worldId": "w8487682446873d6bfad6",
+      "runtimeFailures": [],
+      "artifactHashes": {
+        "meta": "def451b6adb8253a486608e9a91f9aee0b974bed787068b9c3acfa0eda73121a",
+        "events": "41ab6a7edf45ba183f2d0cf2a09cc1dd8d157a801251b313e07d1e78224784f0",
+        "snapshot": "ef75e6a919b5081cc60b1eb694e77510cf9295af040505c90f2e992bcae590a2",
+        "score": "36bdb5fcc257c211135273bb07ed2602335a5f64bb3162bb849450c48555dc21",
+        "errors": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recoveries": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "decisions": "0039748148cd725a3b2578e767ff886e328b115c67c8948457bb88ee9dac52e0"
+      },
+      "mechanisms": {
+        "action_result": 1476,
+        "post": 644,
+        "stale_skipped": 1
+      },
+      "planner": {
+        "solves": 0,
+        "statuses": {},
+        "fallbacks": 0,
+        "omittedCandidates": 0,
+        "largestCandidateSet": 0,
+        "framesWithFutureValue": 0,
+        "framesWithPaymentChoices": 0,
+        "actions": {},
+        "changedQuotes": 0,
+        "anchoredQuotes": 0,
+        "bundledPosts": 0,
+        "higherPaidPosts": 0,
+        "meaningfulActions": 0,
+        "withdrawals": [],
+        "heldOverflow": 0,
+        "neutralDeadlineExpirations": 0
+      },
+      "chargingRisks": [],
+      "score": {
+        "marginCents": 725218,
+        "revenueCents": 4339400,
+        "wonOrders": 634,
+        "onTimeOrders": 621,
+        "onTimeShare": 0.9794952681388013,
+        "undeliveredOrders": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 4339400,
+        "driver_fee": -3554004,
+        "late_refund": -48265,
+        "release_fee": -11913
+      },
+      "failedVisits": 0,
+      "actionErrors": [],
+      "recoveries": [],
+      "fines": []
+    },
+    {
+      "level": 1,
+      "seed": "levels-development-2dba6ebe7258e63082c0",
+      "label": "corrected-v1-joint",
+      "status": "complete",
+      "worldId": "w273c9e0e1663fdc68a40",
+      "runtimeFailures": [],
+      "artifactHashes": {
+        "meta": "b8576fa55734da42196dea12a1100e115ab4c73908555d592959714e4888de9f",
+        "events": "fb4c997405114855307e1a9c9a47a5ed44cbca9b4c233a7587083ea2544eb8f6",
+        "snapshot": "326f5ce845749be3e5a45611cf5c8cf1e7c9f3d622561a754c81c20f31583334",
+        "score": "fd4e38fd268055fb3d2d977d6250f1eb45bcc5d4100a1ef4df46175b9481db31",
+        "errors": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recoveries": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "decisions": "b856f5b6232465af597719186f3ff6ddb2db3935beb0044fdbe562020f795fed"
+      },
+      "mechanisms": {
+        "action_result": 1508,
+        "post": 658,
+        "stale_skipped": 1
+      },
+      "planner": {
+        "solves": 0,
+        "statuses": {},
+        "fallbacks": 0,
+        "omittedCandidates": 0,
+        "largestCandidateSet": 0,
+        "framesWithFutureValue": 0,
+        "framesWithPaymentChoices": 0,
+        "actions": {},
+        "changedQuotes": 0,
+        "anchoredQuotes": 0,
+        "bundledPosts": 0,
+        "higherPaidPosts": 0,
+        "meaningfulActions": 0,
+        "withdrawals": [],
+        "heldOverflow": 0,
+        "neutralDeadlineExpirations": 0
+      },
+      "chargingRisks": [],
+      "score": {
+        "marginCents": 717058,
+        "revenueCents": 4416700,
+        "wonOrders": 648,
+        "onTimeOrders": 631,
+        "onTimeShare": 0.9737654320987654,
+        "undeliveredOrders": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 4416700,
+        "driver_fee": -3633044,
+        "late_refund": -54685,
+        "release_fee": -11913
+      },
+      "failedVisits": 0,
+      "actionErrors": [],
+      "recoveries": [],
+      "fines": []
+    },
+    {
+      "level": 1,
+      "seed": "levels-development-fbc5ca1adb2a1671179f",
+      "label": "corrected-v1-capacity",
+      "status": "complete",
+      "worldId": "w53236a0e9eb12f7ba063",
+      "runtimeFailures": [],
+      "artifactHashes": {
+        "meta": "142dbbf4c0357496ae6b50756c0be2fe72d8ae125018b8396933c4bd0a2cf767",
+        "events": "be8f4a7ab9fd7abf0aa9876aa18a64dc0fd8dba27048c6bb3f5dd0d65353bf59",
+        "snapshot": "93147711d40b4c837b3f66e039eecbef50ee456609899cc5a99cb331837a3288",
+        "score": "26d3c5f3db7600f53724644d4e51f275a5ad6e123a01bc53917700bb95a20072",
+        "errors": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recoveries": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "decisions": "9e4d2b4f62bbf1b7bc866cae6a676afd8208d59f3ea33eb881082e57c9194455"
+      },
+      "mechanisms": {
+        "action_result": 1136,
+        "post": 556
+      },
+      "planner": {
+        "solves": 0,
+        "statuses": {},
+        "fallbacks": 0,
+        "omittedCandidates": 0,
+        "largestCandidateSet": 0,
+        "framesWithFutureValue": 0,
+        "framesWithPaymentChoices": 0,
+        "actions": {},
+        "changedQuotes": 0,
+        "anchoredQuotes": 0,
+        "bundledPosts": 0,
+        "higherPaidPosts": 0,
+        "meaningfulActions": 0,
+        "withdrawals": [],
+        "heldOverflow": 0,
+        "neutralDeadlineExpirations": 0
+      },
+      "chargingRisks": [],
+      "score": {
+        "marginCents": 694531,
+        "revenueCents": 3690300,
+        "wonOrders": 551,
+        "onTimeOrders": 547,
+        "onTimeShare": 0.9927404718693285,
+        "undeliveredOrders": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 3690300,
+        "driver_fee": -2979435,
+        "release_fee": -11574,
+        "late_refund": -4760
+      },
+      "failedVisits": 0,
+      "actionErrors": [],
+      "recoveries": [],
+      "fines": []
+    },
+    {
+      "level": 1,
+      "seed": "levels-development-fbc5ca1adb2a1671179f",
+      "label": "corrected-v1-payment",
+      "status": "complete",
+      "worldId": "w92f6ea2ac05be84ec7f6",
+      "runtimeFailures": [],
+      "artifactHashes": {
+        "meta": "40dbd32246dcef37ca903d7d82887e1af028478f0f61615e1f0809ae5e033045",
+        "events": "2d1af0a09948bc86c18c062e6e4b85652b632051889b66b9b3ebdff577365a60",
+        "snapshot": "9814c9aa8d043e086bc2a439316c36c52f538001681d36bd218dd49e2e316bfa",
+        "score": "3ba6d5a932b5f9e0f672c90a443231693bf2a6d9c031e5f62730fc806fd48e41",
+        "errors": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recoveries": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "decisions": "7d55aa237af41c1b0234c490c5e3b8ded28a0564c5a37845655576d6822e6b6d"
+      },
+      "mechanisms": {
+        "action_result": 1447,
+        "post": 658
+      },
+      "planner": {
+        "solves": 0,
+        "statuses": {},
+        "fallbacks": 0,
+        "omittedCandidates": 0,
+        "largestCandidateSet": 0,
+        "framesWithFutureValue": 0,
+        "framesWithPaymentChoices": 0,
+        "actions": {},
+        "changedQuotes": 0,
+        "anchoredQuotes": 0,
+        "bundledPosts": 0,
+        "higherPaidPosts": 0,
+        "meaningfulActions": 0,
+        "withdrawals": [],
+        "heldOverflow": 0,
+        "neutralDeadlineExpirations": 0
+      },
+      "chargingRisks": [],
+      "score": {
+        "marginCents": 957510,
+        "revenueCents": 4448500,
+        "wonOrders": 649,
+        "onTimeOrders": 643,
+        "onTimeShare": 0.9907550077041603,
+        "undeliveredOrders": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 4448500,
+        "driver_fee": -3465539,
+        "late_refund": -15730,
+        "release_fee": -9721
+      },
+      "failedVisits": 0,
+      "actionErrors": [],
+      "recoveries": [],
+      "fines": []
+    },
+    {
+      "level": 1,
+      "seed": "levels-development-fbc5ca1adb2a1671179f",
+      "label": "corrected-v1-joint",
+      "status": "complete",
+      "worldId": "wca076c37abfc10536c76",
+      "runtimeFailures": [],
+      "artifactHashes": {
+        "meta": "7ca21a525695bd90b6542250bc900b1f2db699a39bfd448473847bc56dd41726",
+        "events": "c1c6348752c547a63e73bb5c05edde01af5b9df67b6c6e95b80c753958d6e659",
+        "snapshot": "a631e58c16e43b72b891441df619054f6b7bd8ec8aa150f3e6037f98eed3f7bf",
+        "score": "bb95b96b342125b413dba7591b245edcf9d309018b118a08f29acc31e49308d8",
+        "errors": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recoveries": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "decisions": "b946e839cf3cf1dec74a7746d95231e3d2be519d31bb5d05fe4ea96baa755dee"
+      },
+      "mechanisms": {
+        "action_result": 1456,
+        "post": 669
+      },
+      "planner": {
+        "solves": 0,
+        "statuses": {},
+        "fallbacks": 0,
+        "omittedCandidates": 0,
+        "largestCandidateSet": 0,
+        "framesWithFutureValue": 0,
+        "framesWithPaymentChoices": 0,
+        "actions": {},
+        "changedQuotes": 0,
+        "anchoredQuotes": 0,
+        "bundledPosts": 0,
+        "higherPaidPosts": 0,
+        "meaningfulActions": 0,
+        "withdrawals": [],
+        "heldOverflow": 0,
+        "neutralDeadlineExpirations": 0
+      },
+      "chargingRisks": [],
+      "score": {
+        "marginCents": 957859,
+        "revenueCents": 4503800,
+        "wonOrders": 661,
+        "onTimeOrders": 650,
+        "onTimeShare": 0.983358547655068,
+        "undeliveredOrders": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 4503800,
+        "driver_fee": -3512690,
+        "late_refund": -23530,
+        "release_fee": -9721
+      },
+      "failedVisits": 0,
+      "actionErrors": [],
+      "recoveries": [],
+      "fines": []
+    }
+  ],
+  "summary": {
+    "capacity": {
+      "weeks": 2,
+      "meanProfitEuros": 6531.365,
+      "qualified": 2,
+      "qualificationLower95": 0.22360679774997896,
+      "meanOrders": 540.0,
+      "aggregateOnTime": 0.9925925925925926,
+      "minimumOnTime": 0.9924385633270322,
+      "meanDriverPaymentsEuros": 28813.06,
+      "meanRefundsEuros": 70.2,
+      "undelivered": 0,
+      "failedVisits": 0,
+      "actionErrors": 0,
+      "recoveries": 0,
+      "finesEuros": 0.0,
+      "mechanisms": {
+        "action_result": 2230,
+        "post": 1090
+      },
+      "pairedGain": {
+        "pairs": 2,
+        "meanEuros": -55.795,
+        "standardDeviationEuros": 132.33503409906237,
+        "t95Euros": [
+          -1244.7781082116333,
+          1133.188108211633
+        ],
+        "bootstrap95Euros": [
+          -149.37,
+          37.78
+        ],
+        "differencesEuros": [
+          -149.37,
+          37.78
+        ],
+        "wins": 1,
+        "losses": 1
+      },
+      "deploymentScreenPassed": false,
+      "promotionAllowed": false
+    },
+    "payment": {
+      "weeks": 2,
+      "meanProfitEuros": 8413.64,
+      "qualified": 2,
+      "qualificationLower95": 0.22360679774997896,
+      "meanOrders": 641.5,
+      "aggregateOnTime": 0.9851909586905689,
+      "minimumOnTime": 0.9794952681388013,
+      "meanDriverPaymentsEuros": 35097.715,
+      "meanRefundsEuros": 319.975,
+      "undelivered": 0,
+      "failedVisits": 0,
+      "actionErrors": 0,
+      "recoveries": 0,
+      "finesEuros": 0.0,
+      "mechanisms": {
+        "action_result": 2923,
+        "post": 1302,
+        "stale_skipped": 1
+      },
+      "pairedGain": {
+        "pairs": 2,
+        "meanEuros": 1826.48,
+        "standardDeviationEuros": 1189.4808851763867,
+        "t95Euros": [
+          -8860.58174176567,
+          12513.54174176567
+        ],
+        "bootstrap95Euros": [
+          985.39,
+          2667.57
+        ],
+        "differencesEuros": [
+          985.39,
+          2667.57
+        ],
+        "wins": 2,
+        "losses": 0
+      },
+      "deploymentScreenPassed": true,
+      "promotionAllowed": false
+    },
+    "joint": {
+      "weeks": 2,
+      "meanProfitEuros": 8374.585,
+      "qualified": 2,
+      "qualificationLower95": 0.22360679774997896,
+      "meanOrders": 654.5,
+      "aggregateOnTime": 0.9786096256684492,
+      "minimumOnTime": 0.9737654320987654,
+      "meanDriverPaymentsEuros": 35728.67,
+      "meanRefundsEuros": 391.075,
+      "undelivered": 0,
+      "failedVisits": 0,
+      "actionErrors": 0,
+      "recoveries": 0,
+      "finesEuros": 0.0,
+      "mechanisms": {
+        "action_result": 2964,
+        "post": 1327,
+        "stale_skipped": 1
+      },
+      "pairedGain": {
+        "pairs": 2,
+        "meanEuros": 1787.425,
+        "standardDeviationEuros": 1249.6486011875497,
+        "t95Euros": [
+          -9440.222222277172,
+          13015.072222277171
+        ],
+        "bootstrap95Euros": [
+          903.79,
+          2671.06
+        ],
+        "differencesEuros": [
+          903.79,
+          2671.06
+        ],
+        "wins": 2,
+        "losses": 0
+      },
+      "deploymentScreenPassed": true,
+      "promotionAllowed": false
+    },
+    "control": {
+      "weeks": 2,
+      "meanProfitEuros": 6587.16,
+      "qualified": 2,
+      "qualificationLower95": 0.22360679774997896,
+      "meanOrders": 531.5,
+      "aggregateOnTime": 0.9952963311382879,
+      "minimumOnTime": 0.9944852941176471,
+      "meanDriverPaymentsEuros": 28470.86,
+      "meanRefundsEuros": 39.125,
+      "undelivered": 0,
+      "failedVisits": 0,
+      "actionErrors": 0,
+      "recoveries": 0,
+      "finesEuros": 0.0,
+      "mechanisms": {
+        "action_result": 2188,
+        "post": 1070
+      },
+      "pairedGain": {
+        "pairs": 2,
+        "meanEuros": 0.0,
+        "standardDeviationEuros": 0.0,
+        "t95Euros": [
+          0.0,
+          0.0
+        ],
+        "bootstrap95Euros": [
+          0.0,
+          0.0
+        ],
+        "differencesEuros": [
+          0.0,
+          0.0
+        ],
+        "wins": 0,
+        "losses": 0
+      },
+      "deploymentScreenPassed": false,
+      "promotionAllowed": false
+    }
+  },
+  "contrasts": {
+    "interaction": {
+      "pairs": 2,
+      "meanEuros": 16.74,
+      "standardDeviationEuros": 72.16731808789903,
+      "t95Euros": [
+        -631.6576277001298,
+        665.1376277001298
+      ],
+      "bootstrap95Euros": [
+        -34.29,
+        67.77
+      ],
+      "differencesEuros": [
+        67.77,
+        -34.29
+      ],
+      "wins": 1,
+      "losses": 1
+    }
+  },
+  "selectedForValidation": null,
+  "controlPlanSha256": "ac1957028d1333948dd23337a7a2a81d437353f3405750dcca84d1f3a764f84c",
+  "controls": [
+    {
+      "level": 1,
+      "seed": "levels-development-2dba6ebe7258e63082c0",
+      "label": "lower-v1-benchmark",
+      "status": "complete",
+      "worldId": "w0fbb0ba5d96f4f34261d",
+      "runtimeFailures": [],
+      "artifactHashes": {
+        "meta": "94df2bf7ba11b477407b178a69bfd44aff5582f585f2d15013654a22782284d7",
+        "events": "07b253349e20d3c3c2095f2c5c7dc221198b53643a023bb320262e14871f33b5",
+        "snapshot": "e44645dc7e20cd9f97e3de3782997b5f54920e4dadfd84cfc968b2cf0dfdbee4",
+        "score": "b21afac1175608c3bb0d502478e69f6be776ea15097d7556f45a3207c9087a6a",
+        "errors": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recoveries": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "decisions": "e061e2b30ef02403ef09a98778046ad17533fc54dc577e32b68c026c4dca52fc"
+      },
+      "mechanisms": {
+        "action_result": 1062,
+        "post": 522
+      },
+      "planner": {
+        "solves": 0,
+        "statuses": {},
+        "fallbacks": 0,
+        "omittedCandidates": 0,
+        "largestCandidateSet": 0,
+        "framesWithFutureValue": 0,
+        "framesWithPaymentChoices": 0,
+        "actions": {},
+        "changedQuotes": 0,
+        "anchoredQuotes": 0,
+        "bundledPosts": 0,
+        "higherPaidPosts": 0,
+        "meaningfulActions": 0,
+        "withdrawals": [],
+        "heldOverflow": 0,
+        "neutralDeadlineExpirations": 0
+      },
+      "chargingRisks": [],
+      "score": {
+        "marginCents": 626679,
+        "revenueCents": 3376300,
+        "wonOrders": 519,
+        "onTimeOrders": 517,
+        "onTimeShare": 0.9961464354527938,
+        "undeliveredOrders": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 3376300,
+        "driver_fee": -2733737,
+        "late_refund": -4550,
+        "release_fee": -11334
+      },
+      "failedVisits": 0,
+      "actionErrors": [],
+      "recoveries": [],
+      "fines": []
+    },
+    {
+      "level": 1,
+      "seed": "levels-development-fbc5ca1adb2a1671179f",
+      "label": "lower-v1-benchmark",
+      "status": "complete",
+      "worldId": "wfe156eed4a6abf5d75d1",
+      "runtimeFailures": [],
+      "artifactHashes": {
+        "meta": "7a674f7ed7505c20efc78e8882a9fd7c83d568145e50a7a04c5594f5098b19b7",
+        "events": "78d4914769d0de638c9e08c4f48df4d537eb93eb79a6c97f801a07f6b48e3280",
+        "snapshot": "a1e6756355566357b1a7d9aca34c2ff78ea1456423e1986f39900d9959ce4daa",
+        "score": "a9b7fbb4dff5cc38f450ad69c2c78f93be0d1933d705edb018cf12ac67f6df36",
+        "errors": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recoveries": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "decisions": "4655790bfb9bca3efe93cb3ff082990c0e0a3e5cb6b7aea23cdc963d30722e61"
+      },
+      "mechanisms": {
+        "action_result": 1126,
+        "post": 548
+      },
+      "planner": {
+        "solves": 0,
+        "statuses": {},
+        "fallbacks": 0,
+        "omittedCandidates": 0,
+        "largestCandidateSet": 0,
+        "framesWithFutureValue": 0,
+        "framesWithPaymentChoices": 0,
+        "actions": {},
+        "changedQuotes": 0,
+        "anchoredQuotes": 0,
+        "bundledPosts": 0,
+        "higherPaidPosts": 0,
+        "meaningfulActions": 0,
+        "withdrawals": [],
+        "heldOverflow": 0,
+        "neutralDeadlineExpirations": 0
+      },
+      "chargingRisks": [],
+      "score": {
+        "marginCents": 690753,
+        "revenueCents": 3662900,
+        "wonOrders": 544,
+        "onTimeOrders": 541,
+        "onTimeShare": 0.9944852941176471,
+        "undeliveredOrders": 0,
+        "ranked": true
+      },
+      "ledger": {
+        "revenue": 3662900,
+        "driver_fee": -2960435,
+        "release_fee": -8437,
+        "late_refund": -3275
+      },
+      "failedVisits": 0,
+      "actionErrors": [],
+      "recoveries": [],
+      "fines": []
+    }
+  ],
+  "deploymentNominee": "payment",
+  "limitations": [
+    "Two familiar development seeds, not independent validation. Deployment nomination is not statistical promotion or a reliability guarantee.",
+    "The screen was frozen before these trials. It leaves any on-time loss versus control explicit and does not alter the prospective validation gates.",
+    "Level1 driver behavior does not establish transfer to levels2\u20134. A ranked deployment exception needs explicit user authorization of its exact frozen scope."
+  ]
+}

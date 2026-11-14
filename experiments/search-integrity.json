@@ -40,9 +40,9 @@
     "failureRule": "A failed or interrupted validation panel cannot promote. Retain all observed outcomes; any follow-up redesign treats its seeds as development and spends the next validation allocation on new seeds."
   },
   "operations": {
-    "desiredConcurrentPracticeWorlds": 2,
-    "maximumUnfinishedTeamPracticeWorlds": 4,
-    "coordination": "Current user instruction supersedes the earlier eight-slot exception: at most four unfinished team worlds total. Check shared occupancy before every serialized creation, use the shared local creation lock for new research runners, and coordinate independent runners. Never duplicate a runner after a polling timeout.",
+    "desiredConcurrentPracticeWorlds": 8,
+    "maximumUnfinishedTeamPracticeWorlds": 8,
+    "coordination": "User explicitly increased the limit at approximately11:35Helsinki on14November: remove4worldlimit,go8. This supersedes the four-world limit. Check shared occupancy before every serialized creation and use runs/team-world-creation.lock. Earlier running manifests retain their more restrictive guards; new eight-world manifests record the amendment. Never duplicate a runner after a polling timeout.",
     "rankingAllowed": false,
     "finalAllowed": false,
     "rankingAuthorization": {

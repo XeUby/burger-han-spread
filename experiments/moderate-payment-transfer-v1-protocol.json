@@ -1,0 +1,62 @@
+{
+  "frozenAt": "2026-11-14T09:39:55.774717+00:00",
+  "role": "Four-world transfer development check; no promotion",
+  "selection": "The complete six-world level1 study nominated fee0.90 with original capacity. Its two-week mean gain was1826.48euros; minimum on-time97.9495%. Capacity expansion did not improve the mean. Freeze that exact policy before testing levels2\u20133; do not assume the level1 result transfers.",
+  "hypothesis": "Moderate payment reduction with corrected first-option/opening-cost admission remains profitable under level2 driver learning and level3 bundling.",
+  "settings": {
+    "price": 1.42,
+    "fee": 0.9,
+    "payout": 0.85,
+    "margin": 0.1,
+    "capacity": 0.35,
+    "maxKm": 700,
+    "minDrivers": 8,
+    "notes": true,
+    "noteSpelling": false,
+    "relist": false,
+    "openingOnly": true,
+    "adaptive": true,
+    "earlyOffers": false,
+    "safetySlack": false,
+    "auction": false,
+    "allowPrivate": false,
+    "tradeIns": false,
+    "homeOffers": false,
+    "readiness": false,
+    "bundlePairs": true,
+    "timedNotes": false,
+    "lateRescue": true,
+    "sameDayPremium": 1,
+    "laterDiscount": 1,
+    "placePrior": 0,
+    "bundleWait": 15,
+    "backlog": 0.08,
+    "priceFloor": 0,
+    "costRatio": 1.15,
+    "trustStep": 0.01,
+    "sameDayBacklog": 4,
+    "demandSlope": 14,
+    "firstOptionOnly": true,
+    "openingCostAdmission": true,
+    "actionGuard": true,
+    "portfolio": false
+  },
+  "seeds": [
+    "levels-development-2dba6ebe7258e63082c0",
+    "levels-development-fbc5ca1adb2a1671179f"
+  ],
+  "levels": [
+    2,
+    3
+  ],
+  "control": "Verified same-seed corrected-option benchmark worlds from portfolio-lower-v1.",
+  "stopping": "Complete all four irrespective of profit; inherited600-second runtime budget and failure preservation. No tuning during play.",
+  "operations": {
+    "workers": 4,
+    "maximumUnfinishedTeamWorlds": 8,
+    "capacityAuthorization": "remove 4 world limit, go 8",
+    "ranked": false
+  },
+  "deploymentScreen": "Per level, gains on both weeks, mean gain>=1500euros, both qualified and>=92%on-time, zero undelivered/failed visits/runtime failures. Report any on-time loss versus control. No statistical promotion or24-pair validation claim.",
+  "search": "Adaptive follow-up on the same two familiar seed blocks, not four independent weeks and not an untouched panel. All earlier moderate, strong and joint variants remain in the record."
+}
