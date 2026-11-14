@@ -78,3 +78,23 @@ The supplemental cost/tail study uses the same fixed 57/19 seed split and does n
 For delivered orders, the boosted 99th-percentile lateness model improves mean weekly pinball loss from 0.4128 to 0.2264 hours; empirical mean weekly coverage is 98.91%, below the nominal 99%. The 95th-percentile models both predict zero and tie. These are conditional delivery-tail results: cancelled and undelivered orders are excluded from this target, retained elsewhere, and must not be called timely. The features are known at award, so transferring these models to pre-acceptance pricing requires a separate feature contract. See `booking-cost-and-tail-models.json`.
 
 Prospective sizing uses the existing alpha-spending policy. At the first allocation, alpha is 0.0125 per claim. With zero failures, 86 independent weeks are needed for an exact lower qualification bound of 95%; a 99% lower bound would need 437. `panel_size.py` also uses a conservative variance bound from development when sizing the profit comparison. It generates no seeds and spends no alpha. Four or two development successes provide much weaker reliability evidence.
+
+## Reproducing the analysis
+
+The source archives contain only manifest-listed files. Restore tests create fresh temporary checkouts and check both versions byte for byte; extraction supports Python 3.9 without relying on newer tar APIs. The archives exclude macOS metadata. This packaging repair does not change either frozen policy.
+
+Model and outcome analyses require the ignored local `runs/` artifacts named in the reports. Their hashes are versioned, but the raw events and decision journals are not included in Git. Preserve that directory when moving the research workspace. The saved model manifest fixes the original 76 source worlds, so newly completed development worlds cannot silently change the training data.
+
+```bash
+python3 -m pip install -r research/booking-response/requirements.txt
+python3 research/booking-response/dataset.py --manifest docs/booking-response-models.json
+python3 research/booking-response/train.py
+python3 research/booking-response/tails_and_cost.py
+python3 research/value/matching_check.py
+python3 research/value/report.py experiments/value-development-v2.json
+python3 research/value/panel_size.py
+python3 research/value/write_summary.py
+node --env-file=.env research/value/operations.ts
+```
+
+The final three reports require a complete audited replacement panel. None of these analysis commands starts a world. Re-running training writes the saved model report and pooled prior; frozen executable bundles remain independently checked against their manifests.

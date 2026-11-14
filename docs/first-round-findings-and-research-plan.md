@@ -1,5 +1,7 @@
 # First-round findings and the next research program
 
+Continuation: [second-round results and decisions](second-round-findings.md), [reproducible methods](value-research.md), and [next portfolio-planner design](portfolio-research-design.md). The second round did not replace either preserved selection.
+
 Recorded 14 November 2026, after the first five-run ranking round at levels 1–7. This is an evidence review and proposed research program. Proposed models and planners below are not implemented or validated merely because they appear here.
 
 The main failure was transferring a dispatcher designed around level-8 scarcity and competitive pricing into different market rules without sufficiently checking its economic and operational assumptions. Seven qualifying compatibility runs established that it could complete those worlds. They did not establish competitive performance. Starting ranking from that evidence was my mistake. The later deadline deployment improved the outcome, but it was an explicitly authorized deployment exception, not a successful independent validation.

@@ -34,15 +34,24 @@ def freeze():
         raise RuntimeError("Bundle exists; inspect it instead of overwriting")
     archive=ROOT/f"experiments/{name}-source.tar.gz"
     if saved and archive.exists():
-        bundle.mkdir(parents=True)
         with tarfile.open(archive,"r:gz") as source:
+            files={}
             for member in source.getmembers():
-                if not member.isdir() and (not member.isfile() or member.name not in saved["files"]):
+                if member.isdir():
+                    continue
+                if not member.isfile() or member.name not in saved["files"] or member.name in files:
                     raise RuntimeError("Unexpected archive member")
-            source.extractall(bundle,filter="data")
-        actual={str(p.relative_to(bundle)):hashlib.sha256(p.read_bytes()).hexdigest() for p in bundle.rglob("*") if p.is_file()}
+                target=bundle/member.name
+                if not target.resolve().is_relative_to(bundle.resolve()):
+                    raise RuntimeError("Archive path escapes bundle")
+                files[member.name]=source.extractfile(member).read()
+        actual={name:hashlib.sha256(data).hexdigest() for name,data in files.items()}
         if actual!=saved["files"]:
             raise RuntimeError("Archived source does not match frozen manifest")
+        for name,data in files.items():
+            target=bundle/name
+            target.parent.mkdir(parents=True,exist_ok=True)
+            target.write_bytes(data)
         print("Restored archived source; every file matches the frozen manifest")
         return
     shutil.copytree(ROOT / "src", bundle / "src")

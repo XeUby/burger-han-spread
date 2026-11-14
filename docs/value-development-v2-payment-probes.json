@@ -1,0 +1,1342 @@
+{
+  "scope": "Bounded randomized development interventions, sequential interference within two seed blocks; descriptive outcomes only",
+  "rows": [
+    {
+      "kind": "payment_randomized",
+      "at": 617,
+      "orderId": "R00012",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1,
+      "probability": 0.3333333333333333,
+      "opening": 2724,
+      "selectedFee": 2724,
+      "slack": 1902,
+      "worldId": "w1973f06b1ef50d7cc9b1",
+      "gigId": "g1",
+      "postResult": {
+        "ok": true,
+        "id": "g1"
+      },
+      "bookingDelay": 59,
+      "booking120": 1,
+      "observedMinutes": 13663,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 2724
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 667,
+      "orderId": "R00018",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 0.92,
+      "probability": 0.3333333333333333,
+      "opening": 5068,
+      "selectedFee": 4663,
+      "slack": 1852,
+      "worldId": "w1973f06b1ef50d7cc9b1",
+      "gigId": "g3",
+      "postResult": {
+        "ok": true,
+        "id": "g3"
+      },
+      "bookingDelay": 1,
+      "booking120": 1,
+      "observedMinutes": 13613,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": true,
+      "firstGigDriverPaymentsCents": 4663
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 667,
+      "orderId": "R00024",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1.08,
+      "probability": 0.3333333333333333,
+      "opening": 14493,
+      "selectedFee": 15652,
+      "slack": 1578,
+      "worldId": "w1973f06b1ef50d7cc9b1",
+      "gigId": "g4",
+      "postResult": {
+        "ok": true,
+        "id": "g4"
+      },
+      "bookingDelay": 1,
+      "booking120": 1,
+      "observedMinutes": 13613,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 15652
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 687,
+      "orderId": "R00032",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1,
+      "probability": 0.3333333333333333,
+      "opening": 4128,
+      "selectedFee": 4128,
+      "slack": 3272,
+      "worldId": "w1973f06b1ef50d7cc9b1",
+      "gigId": "g6",
+      "postResult": {
+        "ok": true,
+        "id": "g6"
+      },
+      "bookingDelay": 6,
+      "booking120": 1,
+      "observedMinutes": 13593,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 4128
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 687,
+      "orderId": "R00038",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 0.92,
+      "probability": 0.3333333333333333,
+      "opening": 5233,
+      "selectedFee": 4814,
+      "slack": 1832,
+      "worldId": "w1973f06b1ef50d7cc9b1",
+      "gigId": "g7",
+      "postResult": {
+        "ok": true,
+        "id": "g7"
+      },
+      "bookingDelay": 1,
+      "booking120": 1,
+      "observedMinutes": 13593,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 4814
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 687,
+      "orderId": "R00040",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 0.92,
+      "probability": 0.3333333333333333,
+      "opening": 7316,
+      "selectedFee": 6731,
+      "slack": 1779,
+      "worldId": "w1973f06b1ef50d7cc9b1",
+      "gigId": "g8",
+      "postResult": {
+        "ok": true,
+        "id": "g8"
+      },
+      "bookingDelay": 23,
+      "booking120": 1,
+      "observedMinutes": 13593,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 6731
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 687,
+      "orderId": "R00042",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1.08,
+      "probability": 0.3333333333333333,
+      "opening": 5075,
+      "selectedFee": 5481,
+      "slack": 3272,
+      "worldId": "w1973f06b1ef50d7cc9b1",
+      "gigId": "g9",
+      "postResult": {
+        "ok": true,
+        "id": "g9"
+      },
+      "bookingDelay": 1,
+      "booking120": 1,
+      "observedMinutes": 13593,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 5481
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 732,
+      "orderId": "R00060",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1,
+      "probability": 0.3333333333333333,
+      "opening": 7028,
+      "selectedFee": 7028,
+      "slack": 1727,
+      "worldId": "w1973f06b1ef50d7cc9b1",
+      "gigId": "g12",
+      "postResult": {
+        "ok": true,
+        "id": "g12"
+      },
+      "bookingDelay": 2,
+      "booking120": 1,
+      "observedMinutes": 13548,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 7028
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 732,
+      "orderId": "R00065",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1,
+      "probability": 0.3333333333333333,
+      "opening": 1700,
+      "selectedFee": 1700,
+      "slack": 1787,
+      "worldId": "w1973f06b1ef50d7cc9b1",
+      "gigId": "g13",
+      "postResult": {
+        "ok": true,
+        "id": "g13"
+      },
+      "bookingDelay": 6,
+      "booking120": 1,
+      "observedMinutes": 13548,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 1700
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 749,
+      "orderId": "R00066",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 0.92,
+      "probability": 0.3333333333333333,
+      "opening": 2934,
+      "selectedFee": 2699,
+      "slack": 1830,
+      "worldId": "w1973f06b1ef50d7cc9b1",
+      "gigId": "g14",
+      "postResult": {
+        "ok": true,
+        "id": "g14"
+      },
+      "bookingDelay": 131,
+      "booking120": 0,
+      "observedMinutes": 13531,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 2699
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 805,
+      "orderId": "R00080",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1,
+      "probability": 0.3333333333333333,
+      "opening": 7313,
+      "selectedFee": 7313,
+      "slack": 1658,
+      "worldId": "w1973f06b1ef50d7cc9b1",
+      "gigId": "g18",
+      "postResult": {
+        "ok": true,
+        "id": "g18"
+      },
+      "bookingDelay": 14,
+      "booking120": 1,
+      "observedMinutes": 13475,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 7313
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 826,
+      "orderId": "R00084",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 0.92,
+      "probability": 0.3333333333333333,
+      "opening": 6406,
+      "selectedFee": 5894,
+      "slack": 4572,
+      "worldId": "w1973f06b1ef50d7cc9b1",
+      "gigId": "g20",
+      "postResult": {
+        "ok": true,
+        "id": "g20"
+      },
+      "bookingDelay": 15,
+      "booking120": 1,
+      "observedMinutes": 13454,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 5894
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 826,
+      "orderId": "R00085",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1,
+      "probability": 0.3333333333333333,
+      "opening": 2723,
+      "selectedFee": 2723,
+      "slack": 4573,
+      "worldId": "w1973f06b1ef50d7cc9b1",
+      "gigId": "g21",
+      "postResult": {
+        "ok": true,
+        "id": "g21"
+      },
+      "bookingDelay": 1,
+      "booking120": 1,
+      "observedMinutes": 13454,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 2723
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 826,
+      "orderId": "R00088",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1.08,
+      "probability": 0.3333333333333333,
+      "opening": 1700,
+      "selectedFee": 1836,
+      "slack": 1693,
+      "worldId": "w1973f06b1ef50d7cc9b1",
+      "gigId": "g22",
+      "postResult": {
+        "ok": true,
+        "id": "g22"
+      },
+      "bookingDelay": 1,
+      "booking120": 1,
+      "observedMinutes": 13454,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 1836
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 858,
+      "orderId": "R00093",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 0.92,
+      "probability": 0.3333333333333333,
+      "opening": 1700,
+      "selectedFee": 1564,
+      "slack": 1661,
+      "worldId": "w1973f06b1ef50d7cc9b1",
+      "gigId": "g24",
+      "postResult": {
+        "ok": true,
+        "id": "g24"
+      },
+      "bookingDelay": 3,
+      "booking120": 1,
+      "observedMinutes": 13422,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 1564
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 883,
+      "orderId": "R00100",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1,
+      "probability": 0.3333333333333333,
+      "opening": 6108,
+      "selectedFee": 6108,
+      "slack": 1589,
+      "worldId": "w1973f06b1ef50d7cc9b1",
+      "gigId": "g25",
+      "postResult": {
+        "ok": true,
+        "id": "g25"
+      },
+      "bookingDelay": 972,
+      "booking120": 0,
+      "observedMinutes": 13397,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 6108
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 883,
+      "orderId": "R00101",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1,
+      "probability": 0.3333333333333333,
+      "opening": 6612,
+      "selectedFee": 6612,
+      "slack": 1588,
+      "worldId": "w1973f06b1ef50d7cc9b1",
+      "gigId": "g26",
+      "postResult": {
+        "ok": true,
+        "id": "g26"
+      },
+      "bookingDelay": 939,
+      "booking120": 0,
+      "observedMinutes": 13397,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 6612
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 883,
+      "orderId": "R00103",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1,
+      "probability": 0.3333333333333333,
+      "opening": 5431,
+      "selectedFee": 5431,
+      "slack": 1636,
+      "worldId": "w1973f06b1ef50d7cc9b1",
+      "gigId": "g27",
+      "postResult": {
+        "ok": true,
+        "id": "g27"
+      },
+      "bookingDelay": 1,
+      "booking120": 1,
+      "observedMinutes": 13397,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 5431
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 883,
+      "orderId": "R00110",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 0.92,
+      "probability": 0.3333333333333333,
+      "opening": 5816,
+      "selectedFee": 5351,
+      "slack": 1636,
+      "worldId": "w1973f06b1ef50d7cc9b1",
+      "gigId": "g28",
+      "postResult": {
+        "ok": true,
+        "id": "g28"
+      },
+      "bookingDelay": 2,
+      "booking120": 1,
+      "observedMinutes": 13397,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 5351
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 905,
+      "orderId": "R00114",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1.08,
+      "probability": 0.3333333333333333,
+      "opening": 3904,
+      "selectedFee": 4216,
+      "slack": 1614,
+      "worldId": "w1973f06b1ef50d7cc9b1",
+      "gigId": "g29",
+      "postResult": {
+        "ok": true,
+        "id": "g29"
+      },
+      "bookingDelay": 25,
+      "booking120": 1,
+      "observedMinutes": 13375,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": true,
+      "firstGigDriverPaymentsCents": 4216
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 615,
+      "orderId": "R00019",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1,
+      "probability": 0.3333333333333333,
+      "opening": 4003,
+      "selectedFee": 4003,
+      "slack": 514,
+      "worldId": "w6376a379ac70c4382c77",
+      "gigId": "g1",
+      "postResult": {
+        "ok": true,
+        "id": "g1"
+      },
+      "bookingDelay": 1,
+      "booking120": 1,
+      "observedMinutes": 13665,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 4003
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 640,
+      "orderId": "R00029",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1,
+      "probability": 0.3333333333333333,
+      "opening": 1700,
+      "selectedFee": 1700,
+      "slack": 1879,
+      "worldId": "w6376a379ac70c4382c77",
+      "gigId": "g2",
+      "postResult": {
+        "ok": true,
+        "id": "g2"
+      },
+      "bookingDelay": 1,
+      "booking120": 1,
+      "observedMinutes": 13640,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 1700
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 673,
+      "orderId": "R00042",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 0.92,
+      "probability": 0.3333333333333333,
+      "opening": 3113,
+      "selectedFee": 2864,
+      "slack": 6166,
+      "worldId": "w6376a379ac70c4382c77",
+      "gigId": "g3",
+      "postResult": {
+        "ok": true,
+        "id": "g3"
+      },
+      "bookingDelay": 73,
+      "booking120": 1,
+      "observedMinutes": 13607,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 2864
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 673,
+      "orderId": "R00043",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1.08,
+      "probability": 0.3333333333333333,
+      "opening": 3053,
+      "selectedFee": 3297,
+      "slack": 6166,
+      "worldId": "w6376a379ac70c4382c77",
+      "gigId": "g4",
+      "postResult": {
+        "ok": true,
+        "id": "g4"
+      },
+      "bookingDelay": 42,
+      "booking120": 1,
+      "observedMinutes": 13607,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 3297
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 673,
+      "orderId": "R00044",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 0.92,
+      "probability": 0.3333333333333333,
+      "opening": 12442,
+      "selectedFee": 11447,
+      "slack": 10310,
+      "worldId": "w6376a379ac70c4382c77",
+      "gigId": "g5",
+      "postResult": {
+        "ok": true,
+        "id": "g5"
+      },
+      "bookingDelay": 11,
+      "booking120": 1,
+      "observedMinutes": 13607,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 11447
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 673,
+      "orderId": "R00051",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1,
+      "probability": 0.3333333333333333,
+      "opening": 9544,
+      "selectedFee": 9544,
+      "slack": 1720,
+      "worldId": "w6376a379ac70c4382c77",
+      "gigId": "g6",
+      "postResult": {
+        "ok": true,
+        "id": "g6"
+      },
+      "bookingDelay": 1,
+      "booking120": 1,
+      "observedMinutes": 13607,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 9544
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 713,
+      "orderId": "R00065",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 0.92,
+      "probability": 0.3333333333333333,
+      "opening": 9656,
+      "selectedFee": 8884,
+      "slack": 4560,
+      "worldId": "w6376a379ac70c4382c77",
+      "gigId": "g7",
+      "postResult": {
+        "ok": true,
+        "id": "g7"
+      },
+      "bookingDelay": 1112,
+      "booking120": 0,
+      "observedMinutes": 13567,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 8884
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 713,
+      "orderId": "R00067",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1,
+      "probability": 0.3333333333333333,
+      "opening": 2788,
+      "selectedFee": 2788,
+      "slack": 6126,
+      "worldId": "w6376a379ac70c4382c77",
+      "gigId": "g8",
+      "postResult": {
+        "ok": true,
+        "id": "g8"
+      },
+      "bookingDelay": 4203,
+      "booking120": 0,
+      "observedMinutes": 13567,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 2788
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 713,
+      "orderId": "R00068",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1,
+      "probability": 0.3333333333333333,
+      "opening": 3401,
+      "selectedFee": 3401,
+      "slack": 6126,
+      "worldId": "w6376a379ac70c4382c77",
+      "gigId": "g9",
+      "postResult": {
+        "ok": true,
+        "id": "g9"
+      },
+      "bookingDelay": 146,
+      "booking120": 0,
+      "observedMinutes": 13567,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 3401
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 713,
+      "orderId": "R00073",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1,
+      "probability": 0.3333333333333333,
+      "opening": 17262,
+      "selectedFee": 17262,
+      "slack": 2973,
+      "worldId": "w6376a379ac70c4382c77",
+      "gigId": "g10",
+      "postResult": {
+        "ok": true,
+        "id": "g10"
+      },
+      "bookingDelay": 33,
+      "booking120": 1,
+      "observedMinutes": 13567,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 17262
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 736,
+      "orderId": "R00080",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1.08,
+      "probability": 0.3333333333333333,
+      "opening": 6935,
+      "selectedFee": 7490,
+      "slack": 1741,
+      "worldId": "w6376a379ac70c4382c77",
+      "gigId": "g12",
+      "postResult": {
+        "ok": true,
+        "id": "g12"
+      },
+      "bookingDelay": 8,
+      "booking120": 1,
+      "observedMinutes": 13544,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 7490
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 821,
+      "orderId": "R00113",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1,
+      "probability": 0.3333333333333333,
+      "opening": 15071,
+      "selectedFee": 15071,
+      "slack": 1478,
+      "worldId": "w6376a379ac70c4382c77",
+      "gigId": "g16",
+      "postResult": {
+        "ok": true,
+        "id": "g16"
+      },
+      "bookingDelay": 136,
+      "booking120": 0,
+      "observedMinutes": 13459,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": true,
+      "firstGigDriverPaymentsCents": 26597
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 868,
+      "orderId": "R00122",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1,
+      "probability": 0.3333333333333333,
+      "opening": 7255,
+      "selectedFee": 7255,
+      "slack": 1616,
+      "worldId": "w6376a379ac70c4382c77",
+      "gigId": "g17",
+      "postResult": {
+        "ok": true,
+        "id": "g17"
+      },
+      "bookingDelay": 952,
+      "booking120": 0,
+      "observedMinutes": 13412,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 7255
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 888,
+      "orderId": "R00126",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 0.92,
+      "probability": 0.3333333333333333,
+      "opening": 6916,
+      "selectedFee": 6363,
+      "slack": 1576,
+      "worldId": "w6376a379ac70c4382c77",
+      "gigId": "g18",
+      "postResult": {
+        "ok": true,
+        "id": "g18"
+      },
+      "bookingDelay": 212,
+      "booking120": 0,
+      "observedMinutes": 13392,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 6363
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 888,
+      "orderId": "R00129",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 0.92,
+      "probability": 0.3333333333333333,
+      "opening": 4041,
+      "selectedFee": 3718,
+      "slack": 1631,
+      "worldId": "w6376a379ac70c4382c77",
+      "gigId": "g19",
+      "postResult": {
+        "ok": true,
+        "id": "g19"
+      },
+      "bookingDelay": 58,
+      "booking120": 1,
+      "observedMinutes": 13392,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 3718
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 888,
+      "orderId": "R00136",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1.08,
+      "probability": 0.3333333333333333,
+      "opening": 6336,
+      "selectedFee": 6843,
+      "slack": 1601,
+      "worldId": "w6376a379ac70c4382c77",
+      "gigId": "g20",
+      "postResult": {
+        "ok": true,
+        "id": "g20"
+      },
+      "bookingDelay": 5,
+      "booking120": 1,
+      "observedMinutes": 13392,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 6843
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 888,
+      "orderId": "R00137",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1,
+      "probability": 0.3333333333333333,
+      "opening": 5528,
+      "selectedFee": 5528,
+      "slack": 1601,
+      "worldId": "w6376a379ac70c4382c77",
+      "gigId": "g21",
+      "postResult": {
+        "ok": true,
+        "id": "g21"
+      },
+      "bookingDelay": 273,
+      "booking120": 0,
+      "observedMinutes": 13392,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 5528
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 941,
+      "orderId": "R00152",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1.08,
+      "probability": 0.3333333333333333,
+      "opening": 4446,
+      "selectedFee": 4802,
+      "slack": 1578,
+      "worldId": "w6376a379ac70c4382c77",
+      "gigId": "g22",
+      "postResult": {
+        "ok": true,
+        "id": "g22"
+      },
+      "bookingDelay": 34,
+      "booking120": 1,
+      "observedMinutes": 13339,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 4802
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 1049,
+      "orderId": "R00191",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 0.92,
+      "probability": 0.3333333333333333,
+      "opening": 1700,
+      "selectedFee": 1564,
+      "slack": 1558,
+      "worldId": "w6376a379ac70c4382c77",
+      "gigId": "g24",
+      "postResult": {
+        "ok": true,
+        "id": "g24"
+      },
+      "bookingDelay": 1,
+      "booking120": 1,
+      "observedMinutes": 13231,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 1564
+    },
+    {
+      "kind": "payment_randomized",
+      "at": 1049,
+      "orderId": "R00194",
+      "choices": [
+        0.92,
+        1,
+        1.08
+      ],
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "multiplier": 1,
+      "probability": 0.3333333333333333,
+      "opening": 5321,
+      "selectedFee": 5321,
+      "slack": 4307,
+      "worldId": "w6376a379ac70c4382c77",
+      "gigId": "g25",
+      "postResult": {
+        "ok": true,
+        "id": "g25"
+      },
+      "bookingDelay": 2671,
+      "booking120": 0,
+      "observedMinutes": 13231,
+      "closedBy": "week_end",
+      "cancelled": false,
+      "firstGigDropped": false,
+      "firstGigDriverPaymentsCents": 5321
+    }
+  ],
+  "summary": {
+    "0.92": {
+      "assigned": 13,
+      "observed120": 13,
+      "booked120": 10
+    },
+    "1": {
+      "assigned": 19,
+      "observed120": 19,
+      "booked120": 11
+    },
+    "1.08": {
+      "assigned": 8,
+      "observed120": 8,
+      "booked120": 8
+    }
+  }
+}

@@ -2,6 +2,7 @@
 
 import hashlib
 import json
+import argparse
 from collections import defaultdict
 from pathlib import Path
 
@@ -9,10 +10,17 @@ ROOT = Path(__file__).resolve().parents[2]
 
 
 def build():
+    parser=argparse.ArgumentParser()
+    parser.add_argument("--manifest",type=Path,help="Reproduce the exact sourceWeeks selection in a saved model report")
+    args=parser.parse_args()
+    manifest=json.loads(args.manifest.read_text()) if args.manifest else None
+    chosen={w["worldId"]:w for w in manifest["sourceWeeks"]} if manifest else None
     roads = {(r["from"], r["to"]): r for r in json.loads((ROOT / "docs/map.json").read_text())["roads"]}
     by_seed = defaultdict(list)
     for path in sorted((ROOT / "runs").glob("*.meta.json")):
         meta = json.loads(path.read_text())
+        if chosen is not None and meta["worldId"] not in chosen:
+            continue
         if meta.get("seed") and all((ROOT / f'runs/{meta["worldId"]}.{kind}.json').exists() for kind in ["events", "snapshot", "score", "drivers"]):
             by_seed[meta["seed"]].append(meta)
     rows, weeks = [], []
@@ -22,6 +30,8 @@ def build():
         meta = min(worlds, key=lambda m: (m["level"] != 8, m["worldId"]))
         world = meta["worldId"]
         events_path = ROOT / f"runs/{world}.events.json"
+        if chosen is not None and hashlib.sha256(events_path.read_bytes()).hexdigest()!=chosen[world]["eventsSha256"]:
+            raise ValueError(f"Historical events changed: {world}")
         events = json.loads(events_path.read_text())
         snapshot = json.loads((ROOT / f"runs/{world}.snapshot.json").read_text())
         if snapshot["now"] < snapshot["endsAt"]:
@@ -68,8 +78,13 @@ def build():
             rows.append(row)
         weeks.append({"seed": seed, "worldId": world, "level": meta["level"], "eventsSha256": hashlib.sha256(events_path.read_bytes()).hexdigest(), "rows": len(samples)})
     output = {"features": names, "weeks": weeks, "rows": rows, "limitations": ["Accepted-order prediction, not causal payment or acceptance effects.", "Targets use final gig membership; cancelled/shortened routes can lose membership. Unmapped outcomes remain censored.", "Booking is measured from award, including posting delay; payments at posting are unavailable in old logs.", "Training and model comparison are development only. Seed and IDs are grouping keys, never features."]}
+    if chosen is not None and {w["worldId"] for w in weeks}!=set(chosen):
+        raise ValueError("Missing frozen source weeks")
+    encoded=json.dumps(output)
+    if manifest and hashlib.sha256(encoded.encode()).hexdigest()!=manifest["dataSha256"]:
+        raise ValueError("Dataset does not reproduce the saved model report")
     path = ROOT / "runs/booking-response-data.json"
-    path.write_text(json.dumps(output))
+    path.write_text(encoded)
     print(json.dumps({"path": str(path), "weeks": len(weeks), "rows": len(rows)}))
 
 

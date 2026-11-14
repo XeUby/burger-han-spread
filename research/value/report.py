@@ -42,8 +42,13 @@ def probes(world, decisions, events, snapshot):
         gig=result["result"]["id"] if result and result["result"] and result["result"].get("ok") else None
         booking=next((e for e in events if e["kind"]=="gig_booked" and e["gigId"]==gig),None)
         cancellation=next((e for e in events if e["kind"]=="order_cancelled" and e["orderId"]==d["orderId"]),None)
-        observed=min(snapshot["endsAt"],cancellation["at"] if cancellation else snapshot["endsAt"])-d["at"]
-        row={**d,"worldId":world,"gigId":gig,"postResult":result["result"] if result else None,"bookingDelay":booking["at"]-d["at"] if booking else None,"booking120":None if not gig or not booking and observed<120 else int(bool(booking and booking["at"]<=d["at"]+120)),"observedMinutes":observed,"cancelled":bool(cancellation),"firstGigDriverPaymentsCents":-sum(e["line"]["cents"] for e in events if e["kind"]=="ledger" and e["line"]["kind"]=="driver_fee" and e["line"].get("gigId")==gig)}
+        closed=[{"at":snapshot["endsAt"],"reason":"week_end"}]
+        if cancellation:closed.append({"at":cancellation["at"],"reason":"cancelled"})
+        closed.extend({"at":e["at"],"reason":"expired"} for e in events if e["kind"]=="gig_expired" and e["gigId"]==gig)
+        closed.extend({"at":r["at"],"reason":"withdrawn"} for r in decisions if r["kind"]=="action_result" and r["action"]["type"]=="withdraw" and r["action"]["gigId"]==gig and r["result"] and r["result"].get("ok"))
+        close=min(closed,key=lambda r:r["at"])
+        observed=close["at"]-d["at"]
+        row={**d,"worldId":world,"gigId":gig,"postResult":result["result"] if result else None,"bookingDelay":booking["at"]-d["at"] if booking else None,"booking120":None if not gig or not booking and observed<120 else int(bool(booking and booking["at"]<=d["at"]+120)),"observedMinutes":observed,"closedBy":close["reason"],"cancelled":bool(cancellation),"firstGigDropped":any(e["kind"] in ["gig_dropped","no_show"] and e["gigId"]==gig for e in events),"firstGigDriverPaymentsCents":-sum(e["line"]["cents"] for e in events if e["kind"]=="ledger" and e["line"]["kind"]=="driver_fee" and e["line"].get("gigId")==gig)}
         rows.append(row)
     return rows
 
@@ -88,6 +93,9 @@ def main():
                 row.update(status="complete",score={k:v for k,v in result.items() if k in ["marginCents","revenueCents","wonOrders","onTimeOrders","onTimeShare","undeliveredOrders","ranked"]},ledger=dict(ledger),failedVisits=sum(e["kind"]=="visit_failed" for e in events),actionErrors=read("errors"),recoveries=read("recoveries"),mechanisms=dict(Counter(d["kind"] for d in decisions)),artifactHashes={kind:hashlib.sha256((ROOT/f"runs/{world}.{kind}.json").read_bytes()).hexdigest() for kind in ["meta","events","snapshot","score","errors","recoveries","decisions"]})
                 row["errorContexts"]=[{"error":error,"events":[e for e in events if e["at"]==error["at"] and e.get("gigId")==error["action"].get("gigId")]} for error in row["actionErrors"]]
                 row["routeOutcomes"]={"joined":sum(d["kind"]=="route_joined" for d in decisions),"fallback":sum(d["kind"]=="route_fallback" for d in decisions),"quotesWithCredit":sum(d["kind"]=="quote_value" and d["credit"]>0 for d in decisions),"predictedCreditCents":sum(d.get("credit",0) for d in decisions if d["kind"]=="quote_value"),"requestedOpeningSavingCents":sum(d["openingSaving"] for d in decisions if d["kind"]=="route_joined")}
+                row["returnOfferOutcomes"]=[{**d,"answer":next((e for e in events if e["kind"]=="offer_answered" and e["at"]>=d["at"] and e["gigId"]==d["action"]["gigId"] and e["driverId"]==d["action"]["driverId"]),None)} for d in decisions if d["kind"]=="return_offer"]
+                row["chargingRisks"]=[d for d in decisions if d["kind"]=="booked_charge_risk"]
+                row["fines"]=[e for e in events if e["kind"]=="ledger" and e["line"]["kind"]=="fine"]
                 if trial["label"].endswith("payment-probe"):
                     intervention.extend(probes(world,decisions,events,snapshot))
         records.append(row)

@@ -1,6 +1,6 @@
 import unittest
 from panel_size import required_pairs
-from report import paired
+from report import paired, probes
 
 
 class StatisticsTests(unittest.TestCase):
@@ -23,6 +23,23 @@ class StatisticsTests(unittest.TestCase):
         result=required_pairs(5000,4,.0125)
         self.assertGreater(result["requiredPairs"],86)
         self.assertGreater(result["oneSided95UpperSdEuros"],5000)
+
+    def test_closed_unbooked_probe_is_censored_before_its_horizon(self):
+        decisions=[{"kind":"payment_randomized","at":0,"orderId":"r1"},{"kind":"action_result","at":0,"action":{"type":"post","stops":[{"orderId":"r1"}]},"result":{"ok":True,"id":"g1"}}]
+        for kind,extra in [("order_cancelled",{"orderId":"r1"}),("gig_expired",{"gigId":"g1"})]:
+            with self.subTest(kind=kind):
+                row=probes("world",decisions,[{"kind":kind,"at":60,**extra}],{"endsAt":1000})[0]
+                self.assertIsNone(row["booking120"])
+                self.assertEqual(row["observedMinutes"],60)
+
+    def test_observed_booking_and_failed_post_are_distinct(self):
+        probe={"kind":"payment_randomized","at":0,"orderId":"r1"}
+        posted={"kind":"action_result","at":0,"action":{"type":"post","stops":[{"orderId":"r1"}]},"result":{"ok":True,"id":"g1"}}
+        for minute,expected in [(60,1),(121,0)]:
+            row=probes("world",[probe,posted],[{"kind":"gig_booked","at":minute,"gigId":"g1"}],{"endsAt":1000})[0]
+            self.assertEqual(row["booking120"],expected)
+        failed={**posted,"result":{"ok":False,"reason":"refused"}}
+        self.assertIsNone(probes("world",[probe,failed],[],{"endsAt":1000})[0]["booking120"])
 
 
 if __name__=="__main__":

@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-14T07:08:17.780338+00:00",
+  "updatedAt": "2026-11-14T08:18:05.967246+00:00",
   "unit": "unique simulation seed/week; repeated worlds are not independent replications",
-  "worldRecords": 365,
+  "worldRecords": 406,
   "uniqueNamedWeeks": 76,
-  "distinctLabels": 89,
-  "distinctSourceSettingsCombinations": 70,
+  "distinctLabels": 102,
+  "distinctSourceSettingsCombinations": 84,
   "interpretation": "Counts document the adaptive search, not independent tests or a guarantee that distinct deterministic seeds are IID. Every observed seed is conservatively unavailable for any future untouched panel.",
   "hiddenSeedWorlds": [
     {
@@ -579,11 +579,32 @@
           "metaSha256": "e39cc3783edbefdc2b57e1a0b60119305e527482f8cb79e5f533ed740d9dee90"
         },
         {
+          "worldId": "w0bb4b81957471d5eb13a",
+          "label": "value-v2-benchmark",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "5e994d6c57e1177b3df6f96a9e4e86e9d6ff69a6ff6558ccbf3217c33238185a"
+        },
+        {
           "worldId": "w14d6b0034235af787311",
           "label": "frontier-confirm-volume",
           "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
           "hasTerminalArtifacts": true,
           "metaSha256": "b343e06da7b442ccadea24d6712827f6492d965bce0d81a19473b3e274cab43f"
+        },
+        {
+          "worldId": "w1973f06b1ef50d7cc9b1",
+          "label": "value-v2-payment-probe",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "af439654380557fb1d53316f82aaf18b27fd13aacd540ad5702a4e383e70e3a3"
+        },
+        {
+          "worldId": "w2546c5963b2652566461",
+          "label": "value-v1-capacity-routes",
+          "revision": "07484b381d9147cf8c5dbc659e521f0e494a83f234f53bbdd4d446bba2b1a8e3",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "108639da80d54e460fd1612160a00085f06121e258ec556f860f8067fb5ab098"
         },
         {
           "worldId": "w26cfd2cb7171bcbe2330",
@@ -600,6 +621,13 @@
           "metaSha256": "d3aeef52ae29e0008c6c588dc8d0b554fe557a7ed9bc99619c064249fe161f13"
         },
         {
+          "worldId": "w311c0dd9fefaa82866e5",
+          "label": "value-v2-capacity",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "0278e389843f69569ec7f896a9f81e1ad8a7f55e6397332644ef64b59e945296"
+        },
+        {
           "worldId": "w406b70eb89ac72b49962",
           "label": "multi-routes",
           "revision": "96595edd3733dd06d9efeefc34c6123a8deaa54c60876c8489e2ff14ea84e713",
@@ -614,11 +642,39 @@
           "metaSha256": "db3d736093627af918c6d4dbd6de99fe48f55f1d3bb7edd0128dfc7fb542f541"
         },
         {
+          "worldId": "w4f5092ee77b772ec000b",
+          "label": "value-v2-capacity-routes",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "cbbf8117e80facbf55675887f43f3e8be6d77a508589803b8adb9ea89a1c6347"
+        },
+        {
+          "worldId": "w65989a19dc7433429faa",
+          "label": "value-v2-routes",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "11a7634de92df1cc622ccc078dc82a2cef1cce1b40de52f8baac4ec5e3870534"
+        },
+        {
+          "worldId": "w65ad22507ef96c4a9e2f",
+          "label": "value-v1-benchmark",
+          "revision": "07484b381d9147cf8c5dbc659e521f0e494a83f234f53bbdd4d446bba2b1a8e3",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "16903d937f07675ee8d644902a64a4452caf247031fda170e099c3515cd4d0bb"
+        },
+        {
           "worldId": "w6a557fa3a54f6b98cb9d",
           "label": "frontier-confirm-middle",
           "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
           "hasTerminalArtifacts": true,
           "metaSha256": "cd46643090a3e171ad5ad17fecc59e9c4ca3e23921c993071df3c013af852c3b"
+        },
+        {
+          "worldId": "w747e73ed5288d9da1793",
+          "label": "value-v2-combined",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "1ab86e7620e7c8827d7e1b7c80a3df2e2c732225232b7071ba556520807cd293"
         },
         {
           "worldId": "w83fed5c0ac39bf69a814",
@@ -642,11 +698,25 @@
           "metaSha256": "6a603c7008d1de2a687a96b8852364531464838262c55fadf83d1c208185d3e0"
         },
         {
+          "worldId": "w90a9656b93bbb10ad9af",
+          "label": "value-v2-mechanisms",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "33fa9b13af326f70a5d1ef616fe2bbce0ccabc61790f08217dd3688fe3af5d2d"
+        },
+        {
           "worldId": "w96d2a3f86efc4146273b",
           "label": "frontier-confirm-bundles",
           "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
           "hasTerminalArtifacts": true,
           "metaSha256": "938e9f6826f3e2aa1cb32bc19874447d5a9273b5d5aabaa9b4d1ccb8b025fd0f"
+        },
+        {
+          "worldId": "wa7eb92af3766c12e3aef",
+          "label": "value-v1-mechanisms",
+          "revision": "07484b381d9147cf8c5dbc659e521f0e494a83f234f53bbdd4d446bba2b1a8e3",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "e114d98bf0c6c55b16b456ffdd0919a9468639fa397ff9cf8f69526451c3b1d1"
         },
         {
           "worldId": "wba03b8b4a03344ef49c2",
@@ -670,6 +740,27 @@
           "metaSha256": "c9ea8ad99248b548da36cbf9b925461a4f96d367105889bf7a756091c597c93f"
         },
         {
+          "worldId": "we89d8fc49f29979073e8",
+          "label": "value-v1-routes",
+          "revision": "07484b381d9147cf8c5dbc659e521f0e494a83f234f53bbdd4d446bba2b1a8e3",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "6d4ed5af8587092357ef2882ced9ed7c0c71df34576c7a7f8f72002f92fef166"
+        },
+        {
+          "worldId": "wec124a8fce19ba36c838",
+          "label": "value-v1-capacity",
+          "revision": "07484b381d9147cf8c5dbc659e521f0e494a83f234f53bbdd4d446bba2b1a8e3",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "f62285141f12058886cd5dfd64b6cf92242ba447e80a3a5ba2f7104d8adbc48e"
+        },
+        {
+          "worldId": "wf6dadb9aa1076a8201ac",
+          "label": "value-v1-combined",
+          "revision": "07484b381d9147cf8c5dbc659e521f0e494a83f234f53bbdd4d446bba2b1a8e3",
+          "hasTerminalArtifacts": false,
+          "metaSha256": "f780a1bffd6c1418043ecefb9815cf86ec2fe61f5aba6f00630ba995ab45601d"
+        },
+        {
           "worldId": "wfe07e294d16b34f26734",
           "label": "relisting-confirmation",
           "revision": "922033da58fb2c06c2d0cec1f6b8d67c5a320354d1dd93feb5591ab8d85eb49c",
@@ -691,6 +782,13 @@
           "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
           "hasTerminalArtifacts": true,
           "metaSha256": "a1d67e373f9540ab321c8eb5b438bc961d38f21a409d68dc962399beabbb0a8f"
+        },
+        {
+          "worldId": "w1ea6a9293e6560e1e12a",
+          "label": "value-v2-benchmark",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "d3b80b9dbac60f000fc467de28b2ed5a61fb47ab604dcf0367b1a585a6f29052"
         },
         {
           "worldId": "w23bc77907bce490b80f8",
@@ -721,6 +819,20 @@
           "metaSha256": "71e2eaa1273f490aab59b07d7644e8045281176fca6b27a939dd4fe6f5aae402"
         },
         {
+          "worldId": "w6376a379ac70c4382c77",
+          "label": "value-v2-payment-probe",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "72a106f875e008fbbe75d8ce90fb069d6732e959fee077503609f9ed4fd53be7"
+        },
+        {
+          "worldId": "w71552c8689053fc410d0",
+          "label": "value-v2-combined",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "3fa4fd529b25bad544ade8b96b4f60f511de907c9404b0b50bd6d4c781cf6fe0"
+        },
+        {
           "worldId": "w795d29e846e3829728f4",
           "label": "frontier-confirm-volume",
           "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
@@ -749,11 +861,46 @@
           "metaSha256": "92356ccfbc0e6451354de089def6bf2f8341b6897b54e3e9a32b0a7796cc33b9"
         },
         {
+          "worldId": "wa0804cfb5ddf9f747b79",
+          "label": "value-v1-benchmark",
+          "revision": "07484b381d9147cf8c5dbc659e521f0e494a83f234f53bbdd4d446bba2b1a8e3",
+          "hasTerminalArtifacts": false,
+          "metaSha256": "1b4d8237dd54a9f0ef9bc26884b138ef7ae77f6e86c36c9bb402b1f99eeac2cc"
+        },
+        {
+          "worldId": "waa2fcfee14d54c9b8b72",
+          "label": "value-v2-capacity-routes",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "753cc4d629cb52ea9bbc797babc4a69e877d972647ef46d10885b18614ea4c15"
+        },
+        {
+          "worldId": "wc08238e881aa471fc7ab",
+          "label": "value-v2-capacity",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "77958f0d50c556579c6a53ef3e96d4982a54a251a6620358501a10e8160fed17"
+        },
+        {
           "worldId": "wc664ad40d8c725e20ceb",
           "label": "frontier-confirm-bundles",
           "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
           "hasTerminalArtifacts": true,
           "metaSha256": "bbf0ad2ee712206d683c3a8cd43bde059e8f5669ca3db799174248641f655dc2"
+        },
+        {
+          "worldId": "wd2ff4e15dfbb1527ee09",
+          "label": "value-v2-mechanisms",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "296d6e87fb71cad68e4df8ebb68594920ba3513814238b84afa5da0e5b086328"
+        },
+        {
+          "worldId": "wd3c8eef3c48a345d39aa",
+          "label": "value-v2-routes",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "f78ef2e841d6be4e4e59706f3f6ce8d635e8c0dc1260316450beb6a3ac8427d0"
         },
         {
           "worldId": "wdf16d36a697cd6bb2ae8",
@@ -953,6 +1100,13 @@
           "metaSha256": "f22e38b0e2de40b1acff2d4910a7c25385e10b4563d1268e8cebfaf9585b19a5"
         },
         {
+          "worldId": "w1077a6c16b36ea026b10",
+          "label": "value-v2-benchmark",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "ca2158f4088908700f3173879c38b61d983c1dae13f1571f5056003d5aab5cbf"
+        },
+        {
           "worldId": "w161b1029585b69b3b961",
           "label": "frontier-private",
           "revision": "b275b77df060268224f5149bb915fa13d4ca38a51253d054b3be2f3617031037",
@@ -1058,6 +1212,13 @@
           "metaSha256": "7eb5f1823c49e9ec3471df1e457d326574847f4dcc83434b784e65dd42c82beb"
         },
         {
+          "worldId": "w4942198ed86c34ca1b05",
+          "label": "value-v2-combined",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "bbdd80dc522b72b43c36aa18835f46db418b4a077de75117fa493516c72b1b81"
+        },
+        {
           "worldId": "w4fb61d1e0897ffb8fda9",
           "label": "frontier-volume-bundles",
           "revision": "613614078c6d91c159073de4aacad323ae653d09f102df9bb13400c83538872c",
@@ -1070,6 +1231,13 @@
           "revision": "943e5f0c11bae7705ff78ee262055c7c801a0c6f305ab069923ddea5f6fc759d",
           "hasTerminalArtifacts": true,
           "metaSha256": "9a43bffe2b290f53098397a04dbb7b7ffe404702155d96cb93453d30bf3a92c9"
+        },
+        {
+          "worldId": "w507ed945e29582a382ce",
+          "label": "value-v2-mechanisms",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "58085088a95d45efe95e1faa469f861fba0fa085adfe903237af1547e031b296"
         },
         {
           "worldId": "w5274695ce6e5f901b990",
@@ -1098,6 +1266,13 @@
           "revision": "7aefc3b1aee04d3f73f28be3ab572c189b28195655f3217a939b922f0e28d0cb",
           "hasTerminalArtifacts": true,
           "metaSha256": "7e5116dd142d3f6e490578b31e73dd61b64c64d7633ecab7eaa302ebd5744412"
+        },
+        {
+          "worldId": "w735563cd558554ef4147",
+          "label": "value-v2-routes",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "565436e16fd1621805b897296c5313eac38b722c477050a704cd4b7f5cf619f5"
         },
         {
           "worldId": "w756acf8ea6b691151370",
@@ -1170,6 +1345,13 @@
           "metaSha256": "545067d329c83d6362e27cb9d9d49eafb5c1ef3b53b6bd1adc5104b8e9603834"
         },
         {
+          "worldId": "wade03bf91d5203659ff8",
+          "label": "value-v2-capacity-routes",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "f0c8db4ca56c9f0e74dc702db9a7b17217352b34d6418b705a92547c9c59ce39"
+        },
+        {
           "worldId": "wb1b8eab4c135037229ed",
           "label": "payout-full",
           "revision": "45f4a853adb028d983d3c211a5b03f04b3b1c0d00ec67631bbee9959e00fdeea",
@@ -1182,6 +1364,13 @@
           "revision": "f8a730aaed7e169b0e8df8fd1dee9cc5543a69ccaf93ea1780fb78d31747befb",
           "hasTerminalArtifacts": true,
           "metaSha256": "527ad2f3c3714ae10bb3752e05553b42b86d5e7ee857bc3f8c5b12eaf8731439"
+        },
+        {
+          "worldId": "we6668bdb7c727693efab",
+          "label": "value-v2-capacity",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "9f20a31f1a8fe76bc7e231db24a79f4babb47b67d1a94556390f87d301c7d45c"
         },
         {
           "worldId": "we902c03beea299d5f314",
@@ -1233,6 +1422,13 @@
           "revision": "b275b77df060268224f5149bb915fa13d4ca38a51253d054b3be2f3617031037",
           "hasTerminalArtifacts": true,
           "metaSha256": "7a7630fc20d4e19c0c25e4b5b7fa5e0ba8f53dc0b69fc410435ae10ee4401775"
+        },
+        {
+          "worldId": "w2ed2b4de393c5720f137",
+          "label": "value-v2-capacity",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "c0052d096e37ac1eeba532d3b64ac14a1311a8ece45fe06ba72195d9cc569ed0"
         },
         {
           "worldId": "w382de8fc40c146afa28f",
@@ -1289,6 +1485,13 @@
           "revision": "f34787f4f6a814a3d16254c970b95acf07382378c5c868a4e834d1bc2e7da642",
           "hasTerminalArtifacts": true,
           "metaSha256": "6d7aaa69f602f9f3d16e589db9f144c0d9384e70461c315cb519e9169c42ecc7"
+        },
+        {
+          "worldId": "w5ea9fbfa898f3f9b792c",
+          "label": "value-v2-routes",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "e4c7faf99c788b862b15e459d05f4b7dcb65d52c477f90f51ad44020e7993f80"
         },
         {
           "worldId": "w5eebc0627e34e58dc24a",
@@ -1410,6 +1613,13 @@
           "metaSha256": "f5f77559e8722ff87ef3157a7af93e8d537ec8133f56d81aec753b226afbc80a"
         },
         {
+          "worldId": "w98a64984d8afaaf6cad1",
+          "label": "value-v2-mechanisms",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "fa1b0b9858f07737d4abeee2ef44d8ed5824a67376cef467fb1d07d04a7cc3dc"
+        },
+        {
           "worldId": "w99b4289766e90c5fab26",
           "label": "architecture-volume",
           "revision": "7aefc3b1aee04d3f73f28be3ab572c189b28195655f3217a939b922f0e28d0cb",
@@ -1452,11 +1662,32 @@
           "metaSha256": "845069b87d18b97959d99f667968e0895e921d5db2c87346ab0c444097383427"
         },
         {
+          "worldId": "wc79b92c4aad13dd519a4",
+          "label": "value-v2-capacity-routes",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "a3b24c4cd2d62eebb907f6653a6842fc3e90cf321ca9edbdc06999741c0815ef"
+        },
+        {
           "worldId": "wd214406cadcb458eff7b",
           "label": "relisting-probe-base",
           "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
           "hasTerminalArtifacts": true,
           "metaSha256": "eba1194fb44c0c4dd523fbdd9705ffc5081d8b1ecae7036f145d82a2ab078482"
+        },
+        {
+          "worldId": "wd6717995281f4df10adc",
+          "label": "value-v2-combined",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "dbba306340e1db3eb2a95da3481714e38c35adda65791dfa756e2fdf59896421"
+        },
+        {
+          "worldId": "wdac087eccf5a1712110c",
+          "label": "value-v2-benchmark",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "8b3de7a1b1154f64a41343f940b8bc7bd98812d09222c364ba19477776a8c5d3"
         },
         {
           "worldId": "wdc572ff35a8e729813c7",
@@ -2382,6 +2613,13 @@
           "metaSha256": "fadde8f3ff28dd68e97d33b4af03a6169be619154d398ec4f1cd5bedbafc92df"
         },
         {
+          "worldId": "w9e99ce76d9eb67ebb0b9",
+          "label": "value-v2-capacity",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "985fc4b44c3a3d7623b9bbb59e1b97248f82cf30523779f41cb86ec6a03aefac"
+        },
+        {
           "worldId": "waeda567296abb9f833de",
           "label": "levels-first-option-cost",
           "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
@@ -2394,6 +2632,13 @@
           "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
           "hasTerminalArtifacts": true,
           "metaSha256": "4a6dc0b5f9a1c2fa6750ff98a01e96ffd70fcceee9a774dfc125645d5c9ba481"
+        },
+        {
+          "worldId": "wb5151ad0dcab1567f1a7",
+          "label": "value-v2-mechanisms",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "c3d568d6100c73a05a677dbd57e3a9ddf0299b9377a748b84d294d8440298a08"
         },
         {
           "worldId": "wb8f8ebcb1d0d64d2a2f0",
@@ -2422,6 +2667,20 @@
           "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
           "hasTerminalArtifacts": true,
           "metaSha256": "0f313984f04dc2a18dab6e9d3df6c3b34f3076ad37b6bb2ebf803eefee4ee37d"
+        },
+        {
+          "worldId": "we3fd53fb23731ad45173",
+          "label": "value-v2-mechanisms",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "37680318755b40e9746c8bfa1afb3d0de3958edb01ae4ce82e4170cb45bae208"
+        },
+        {
+          "worldId": "weefb9f0d7b39abe68da5",
+          "label": "value-v2-capacity",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "640b6aa02fb4edef97a14d0053c09b9edfd42f89542c742be24905c23595a3f8"
         },
         {
           "worldId": "wefba6c81a14aa79c4e3a",
@@ -2603,6 +2862,13 @@
       "eligibleForFreshValidation": false,
       "worlds": [
         {
+          "worldId": "w1ba57cb7df8f46c66227",
+          "label": "value-v2-capacity",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "b129973a47a62e771a58bbc396d26dd3912a7df7403b6041d08b263cad18c9f6"
+        },
+        {
           "worldId": "w1c1a0a0dc2ae65b6f9fd",
           "label": "levels-first-option",
           "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
@@ -2615,6 +2881,13 @@
           "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
           "hasTerminalArtifacts": true,
           "metaSha256": "1467683bfc686f44ce8395756ed298dfb57500d0b8780c114d161459f7dba7fd"
+        },
+        {
+          "worldId": "w3895c62b96546f004435",
+          "label": "value-v2-mechanisms",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "72b7017eca3ca5cb35bf709ead40ce10aa37ef0b6d59ae8422e0e9e571269ac6"
         },
         {
           "worldId": "w3a58b1ba436d071dfe02",
@@ -2636,6 +2909,13 @@
           "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
           "hasTerminalArtifacts": true,
           "metaSha256": "175ece35148c20484e4f0e808b647d526bb1ba95e6fa5a7ef9fbf7e2600b32bb"
+        },
+        {
+          "worldId": "w44b3af53d868ad3da792",
+          "label": "value-v2-mechanisms",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "6ecd77582aa59f1d112a5d9075fb2e4a371d4c877c672eee2c9bcb253d04c475"
         },
         {
           "worldId": "w520345cfa861a3014f9b",
@@ -2734,6 +3014,13 @@
           "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
           "hasTerminalArtifacts": true,
           "metaSha256": "e547061741b3788b583513e174dc1dffcf0715a72d4b6f266ebc96bfb358ee0a"
+        },
+        {
+          "worldId": "wecaf1be4c7da695c9bef",
+          "label": "value-v2-capacity",
+          "revision": "0064ae8658a5ed76e861afa471a5c70c03d7982032d96fe779faa3cd3de3abfd",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "4fd006b79fd46e6f23b301bc3d88533e842a683327460c97a85e982fc8b5ee98"
         },
         {
           "worldId": "wecb449d07efbd8d35f8c",

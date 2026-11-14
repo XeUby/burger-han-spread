@@ -1,0 +1,62 @@
+{
+  "role": "prospective sizing only; no finalist, seeds, allocation or worlds created by this script",
+  "nextLook": 1,
+  "designs": {
+    "capacity": {
+      "minimumUniquePairs": 24,
+      "profitPairsNormalApproximation": 38,
+      "zeroFailureReliabilityPairs": 86,
+      "requiredPairs": 86,
+      "standardDeviationEuros": 1014.9065859928521,
+      "oneSided95UpperSdEuros": 2963.5359025870894,
+      "meaningfulGainEuros": 1500,
+      "profitTestPower": 0.8,
+      "claimAlpha": 0.0125,
+      "qualificationLowerBoundTarget": 0.95
+    },
+    "capacity-routes": {
+      "minimumUniquePairs": 24,
+      "profitPairsNormalApproximation": 3,
+      "zeroFailureReliabilityPairs": 86,
+      "requiredPairs": 86,
+      "standardDeviationEuros": 280.88629567851825,
+      "oneSided95UpperSdEuros": 820.1903833086806,
+      "meaningfulGainEuros": 1500,
+      "profitTestPower": 0.8,
+      "claimAlpha": 0.0125,
+      "qualificationLowerBoundTarget": 0.95
+    },
+    "combined": {
+      "minimumUniquePairs": 24,
+      "profitPairsNormalApproximation": 3,
+      "zeroFailureReliabilityPairs": 86,
+      "requiredPairs": 86,
+      "standardDeviationEuros": 280.88629567851825,
+      "oneSided95UpperSdEuros": 820.1903833086806,
+      "meaningfulGainEuros": 1500,
+      "profitTestPower": 0.8,
+      "claimAlpha": 0.0125,
+      "qualificationLowerBoundTarget": 0.95
+    },
+    "routes": {
+      "minimumUniquePairs": 24,
+      "profitPairsNormalApproximation": 38,
+      "zeroFailureReliabilityPairs": 86,
+      "requiredPairs": 86,
+      "standardDeviationEuros": 1019.7803936591773,
+      "oneSided95UpperSdEuros": 2977.7674626151775,
+      "meaningfulGainEuros": 1500,
+      "profitTestPower": 0.8,
+      "claimAlpha": 0.0125,
+      "qualificationLowerBoundTarget": 0.95
+    }
+  },
+  "zeroFailurePairsFor99PercentWeeklyQualification": 437,
+  "limitations": [
+    "Variance upper bound assumes independent normally distributed paired differences; four development weeks provide a poor variance estimate.",
+    "Power calculation approximates the positive-mean test, not the separate point-estimate>=1500 gate.",
+    "The qualification bound assumes IID weeks and zero observed failures; dependencies or mixed levels require a different design.",
+    "Freeze one finalist and its entire evaluation procedure before drawing a cryptographically random panel disjoint from all played/reserved seeds. Record alpha allocation and fixed sample size before play.",
+    "The24-pair floor is not enough to certify95% weekly qualification at the first allocated alpha, even with no failures."
+  ]
+}

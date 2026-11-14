@@ -5,24 +5,24 @@
       "state": "stale",
       "oldSupplyScans": 19200,
       "newSupplyScans": 0,
-      "oldMs": 87.941958,
-      "newMs": 0.208958999999993,
+      "oldMs": 121.56841699999995,
+      "newMs": 0.18299999999999272,
       "identicalOffers": 0
     },
     {
       "state": "current",
       "oldSupplyScans": 19200,
       "newSupplyScans": 8,
-      "oldMs": 99.13116600000001,
-      "newMs": 1.535833000000025,
+      "oldMs": 126.71354199999996,
+      "newMs": 1.3995840000000044,
       "identicalOffers": 8
     },
     {
       "state": "night",
       "oldSupplyScans": 19200,
       "newSupplyScans": 0,
-      "oldMs": 85.50800000000004,
-      "newMs": 0.0012909999999806132,
+      "oldMs": 143.30820900000003,
+      "newMs": 0.001916000000051099,
       "identicalOffers": 0
     }
   ]

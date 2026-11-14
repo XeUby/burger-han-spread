@@ -1,0 +1,11 @@
+{
+  "role": "development selection only",
+  "selectedForValidation": null,
+  "promoted": false,
+  "preservedSelection": "experiments/current-selection.json",
+  "lowerLevelCandidate": "research/low-level/bundle",
+  "report": "docs/value-development-v2-results.json",
+  "findings": "docs/second-round-findings.md",
+  "rankingAuthorized": false,
+  "finalAuthorized": false
+}

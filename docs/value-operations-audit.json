@@ -1,0 +1,433 @@
+{
+  "checkedAt": "2026-11-14T08:18:27.685Z",
+  "studies": [
+    {
+      "version": 1,
+      "created": 7,
+      "completedByPolicy": 5,
+      "maximumObservedOccupancyBeforeCreation": 3,
+      "worlds": [
+        {
+          "worldId": "wa7eb92af3766c12e3aef",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 76.682
+        },
+        {
+          "worldId": "w65ad22507ef96c4a9e2f",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 76.401
+        },
+        {
+          "worldId": "wec124a8fce19ba36c838",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 76.8
+        },
+        {
+          "worldId": "we89d8fc49f29979073e8",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 79.967
+        },
+        {
+          "worldId": "w2546c5963b2652566461",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 811.72
+        },
+        {
+          "worldId": "wf6dadb9aa1076a8201ac",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": null
+        },
+        {
+          "worldId": "wa0804cfb5ddf9f747b79",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": null
+        }
+      ]
+    },
+    {
+      "version": 2,
+      "created": 34,
+      "completedByPolicy": 34,
+      "maximumObservedOccupancyBeforeCreation": 3,
+      "worlds": [
+        {
+          "worldId": "w90a9656b93bbb10ad9af",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 78.421
+        },
+        {
+          "worldId": "w0bb4b81957471d5eb13a",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 77.812
+        },
+        {
+          "worldId": "w311c0dd9fefaa82866e5",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 80.169
+        },
+        {
+          "worldId": "w65989a19dc7433429faa",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 79.933
+        },
+        {
+          "worldId": "w4f5092ee77b772ec000b",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 83.288
+        },
+        {
+          "worldId": "w747e73ed5288d9da1793",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 83.459
+        },
+        {
+          "worldId": "w1ea6a9293e6560e1e12a",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 82.354
+        },
+        {
+          "worldId": "wd2ff4e15dfbb1527ee09",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 81.606
+        },
+        {
+          "worldId": "wc08238e881aa471fc7ab",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 80.783
+        },
+        {
+          "worldId": "wd3c8eef3c48a345d39aa",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 83.326
+        },
+        {
+          "worldId": "waa2fcfee14d54c9b8b72",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 89.431
+        },
+        {
+          "worldId": "w71552c8689053fc410d0",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 91.124
+        },
+        {
+          "worldId": "w1077a6c16b36ea026b10",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 79.842
+        },
+        {
+          "worldId": "w507ed945e29582a382ce",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 79.479
+        },
+        {
+          "worldId": "we6668bdb7c727693efab",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 78.325
+        },
+        {
+          "worldId": "w735563cd558554ef4147",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 79.357
+        },
+        {
+          "worldId": "wade03bf91d5203659ff8",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 82.563
+        },
+        {
+          "worldId": "w4942198ed86c34ca1b05",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 88.205
+        },
+        {
+          "worldId": "wdac087eccf5a1712110c",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 83.939
+        },
+        {
+          "worldId": "w98a64984d8afaaf6cad1",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 82.714
+        },
+        {
+          "worldId": "w2ed2b4de393c5720f137",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 82.79
+        },
+        {
+          "worldId": "w5ea9fbfa898f3f9b792c",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 83.912
+        },
+        {
+          "worldId": "wc79b92c4aad13dd519a4",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 89.437
+        },
+        {
+          "worldId": "wd6717995281f4df10adc",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 94.968
+        },
+        {
+          "worldId": "wb5151ad0dcab1567f1a7",
+          "kind": "practice",
+          "level": 1,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 83.975
+        },
+        {
+          "worldId": "w9e99ce76d9eb67ebb0b9",
+          "kind": "practice",
+          "level": 1,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 83.92
+        },
+        {
+          "worldId": "we3fd53fb23731ad45173",
+          "kind": "practice",
+          "level": 4,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 72.506
+        },
+        {
+          "worldId": "weefb9f0d7b39abe68da5",
+          "kind": "practice",
+          "level": 4,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 75.137
+        },
+        {
+          "worldId": "w44b3af53d868ad3da792",
+          "kind": "practice",
+          "level": 1,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 84.737
+        },
+        {
+          "worldId": "w1ba57cb7df8f46c66227",
+          "kind": "practice",
+          "level": 1,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 79.664
+        },
+        {
+          "worldId": "w3895c62b96546f004435",
+          "kind": "practice",
+          "level": 4,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 70.105
+        },
+        {
+          "worldId": "wecaf1be4c7da695c9bef",
+          "kind": "practice",
+          "level": 4,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 74.874
+        },
+        {
+          "worldId": "w1973f06b1ef50d7cc9b1",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 85.309
+        },
+        {
+          "worldId": "w6376a379ac70c4382c77",
+          "kind": "practice",
+          "level": 8,
+          "parent": null,
+          "season": null,
+          "boardRun": null,
+          "ended": true,
+          "completedPolicyWallSeconds": 92.906
+        }
+      ]
+    }
+  ],
+  "otherUnfinishedWorlds": [],
+  "limitation": "Occupancy is observed before each creation under a shared local lock. External runners do not share this lock; these observations cannot prove the team's occupancy between checks. Other runners' worlds were not altered."
+}
