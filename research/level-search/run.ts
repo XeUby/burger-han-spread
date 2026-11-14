@@ -11,6 +11,9 @@ if(hash.digest('hex')!==plan.revision) throw new Error('Frozen source hash misma
 for(const task of plan.trials) if(!task.seed || 'board' in task || 'worldId' in task) throw new Error('Only new seeded unranked trials allowed')
 const {practice}=await import(pathToFileURL(resolve(bundle,'src/run.ts')).href)
 const {Client}=await import(pathToFileURL(resolve(bundle,'vendor/typescript/spread.ts')).href)
+const jobs=plan.jobs ?? 4
+const capacity=plan.maximumConcurrentWorlds ?? 4
+if(!Number.isInteger(jobs)||jobs<1||jobs>8||!Number.isInteger(capacity)||capacity<jobs||capacity>8) throw new Error('Invalid concurrency limits')
 const client=new Client()
 let next=0,stopped=false,gate=Promise.resolve()
 const results:any[]=[]
@@ -18,7 +21,7 @@ async function create(task:any){
  const previous=gate;let unlock!:()=>void;gate=new Promise(r=>{unlock=r});await previous
  try{
   while(!stopped){
-   if((await client.worlds()).filter((w:{ended:boolean})=>!w.ended).length<4){
+   if((await client.worlds()).filter((w:{ended:boolean})=>!w.ended).length<capacity){
     const world=await client.create(task.level,{seed:task.seed})
     await appendFile(plan.attempts,JSON.stringify({event:'created',...task,worldId:world.id,at:new Date().toISOString()})+'\n');return world
    }
@@ -26,7 +29,7 @@ async function create(task:any){
   }
  }finally{unlock()}
 }
-await Promise.all(Array.from({length:4},async()=>{
+await Promise.all(Array.from({length:jobs},async()=>{
  while(!stopped&&next<plan.trials.length){
   const task=plan.trials[next++]
   let worldId:string|undefined

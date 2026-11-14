@@ -1,11 +1,12 @@
 {
-  "updatedAt": "2026-11-14T06:24:29.227168+00:00",
+  "updatedAt": "2026-11-14T06:46:29.831447+00:00",
   "objective": "Broader optimization retained; current user priority is levels1-7 compatibility followed by five ranked runs each before09:00 Helsinki, using unchanged validated control.",
-  "maximumConcurrentPlays": 4,
+  "maximumConcurrentPlays": 8,
   "currentConcurrency": {
-    "activeRunners": 4,
-    "maximumConcurrentPlays": 4,
-    "note": "levels compatibility scheduler; live team inventory remains authoritative"
+    "maximumConcurrentPlays": 8,
+    "rankedWorkers": 7,
+    "unrankedWorkers": 1,
+    "note": "User raised shared maximum to8. One ranked world perlevel, fixed policy choices through deadline."
   },
   "completedCombinationStudy": {
     "sessionId": 84558,
@@ -1170,12 +1171,10 @@
     "decision": "Reject feature model: four-week mean RMSE gain over scalar only0.365%, wins2/4; no fresh policy validation."
   },
   "currentOperation": {
-    "protocol": "experiments/plans/levels-factorial.json",
-    "role": "development only",
-    "trials": 36,
-    "uniqueSeedBlocks": 3,
-    "maximumConcurrentWorlds": 4,
-    "rankingHeld": true,
+    "protocol": "experiments/levels-deadline-protocol.json",
+    "role": "explicit deadline-priority ranked deployment, not statistical promotion",
+    "maximumConcurrentWorlds": 8,
+    "rankingHeld": false,
     "noFinal": true
   },
   "rankedOutcome": {
@@ -1189,5 +1188,11 @@
     "runsPerLevel": 1,
     "remainingAttemptsNotCreated": 31,
     "reason": "Cross-level competitiveness not established. User instructed finish existing worlds and work on improvement."
+  },
+  "completedFactorialStudy": {
+    "report": "docs/levels-factorial-analysis.json",
+    "trials": 36,
+    "uniqueSeedBlocks": 3,
+    "promotionGatesPassed": 0
   }
 }
