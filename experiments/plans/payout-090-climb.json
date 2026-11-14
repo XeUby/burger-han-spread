@@ -1,0 +1,322 @@
+[
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-unseen1-20261114-05",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-unseen1-20261114-06",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-unseen1-20261114-07",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-unseen1-20261114-08",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-robust-20261114-01",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-robust-20261114-02",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-robust-20261114-04",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-robust-20261114-05",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-robust-20261114-07",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-robust-20261114-08",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-robust-20261114-10",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-robust-20261114-11",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-robust-20261114-12",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-robust-20261114-13",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-robust-20261114-14",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-robust-20261114-15",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-robust-20261114-16",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-robust-20261114-17",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-robust-20261114-18",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-robust-20261114-19",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-robust-20261114-21",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-robust-20261114-22",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-robust-20261114-23",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ },
+ {
+  "label": "t-p90-climb-1",
+  "seed": "bh-robust-20261114-24",
+  "settings": {
+   "payout": 0.9,
+   "earlyClimb": 1
+  }
+ }
+]

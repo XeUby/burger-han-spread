@@ -30,5 +30,6 @@
   "costRatio": 1.15,
   "trustStep": 0.01,
   "sameDayBacklog": 4,
-  "demandSlope": 14
+  "demandSlope": 14,
+  "earlyClimb": true
 }
