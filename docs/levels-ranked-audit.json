@@ -1,0 +1,4746 @@
+{
+  "generatedAt": "2026-11-14T07:08:20.933642+00:00",
+  "season": 4,
+  "complete": true,
+  "completed": 35,
+  "lastCompletedAt": "2026-11-14T06:49:14.582Z",
+  "cutoffHelsinki": "2026-11-14T09:00:00+02:00",
+  "evidenceStatus": "DEADLINE DEPLOYMENT EXCEPTION. No promotion gate passed; no fresh independent validation or safety guarantee. Earlier request for ranking was corrected, then explicitly renewed. This selection is not a statistical validation success.",
+  "policyChanges": "Initial first runs atlevels1-4used old control. Remaining31use one frozen level-aware deadline policy. Operational concurrency changed from4to8without changing policy settings.",
+  "statisticalLimit": "Official ranking scores are retained outcomes, not a fresh paired validation panel or a reliability guarantee. No policy tuning from ranked results.",
+  "summary": [
+    {
+      "level": 1,
+      "completed": 5,
+      "qualifiedWeeks": 5,
+      "totalProfitEuros": 27111.04,
+      "meanProfitEuros": 5422.2080000000005,
+      "onTimeShare": 0.9895359417652412,
+      "orders": 2198,
+      "undelivered": 0,
+      "failedVisits": 0,
+      "actionErrors": 0,
+      "recoveries": 1,
+      "finesEuros": 0.0,
+      "officialRank": 9,
+      "officialQualified": true,
+      "officialPlayed": 5
+    },
+    {
+      "level": 2,
+      "completed": 5,
+      "qualifiedWeeks": 5,
+      "totalProfitEuros": 30337.65,
+      "meanProfitEuros": 6067.530000000001,
+      "onTimeShare": 0.9916077738515902,
+      "orders": 2264,
+      "undelivered": 0,
+      "failedVisits": 0,
+      "actionErrors": 7,
+      "recoveries": 0,
+      "finesEuros": 0.0,
+      "officialRank": 10,
+      "officialQualified": true,
+      "officialPlayed": 5
+    },
+    {
+      "level": 3,
+      "completed": 5,
+      "qualifiedWeeks": 5,
+      "totalProfitEuros": 26373.18,
+      "meanProfitEuros": 5274.636,
+      "onTimeShare": 0.9910913140311804,
+      "orders": 2245,
+      "undelivered": 0,
+      "failedVisits": 0,
+      "actionErrors": 0,
+      "recoveries": 1,
+      "finesEuros": 0.0,
+      "officialRank": 9,
+      "officialQualified": true,
+      "officialPlayed": 5
+    },
+    {
+      "level": 4,
+      "completed": 5,
+      "qualifiedWeeks": 5,
+      "totalProfitEuros": 19343.93,
+      "meanProfitEuros": 3868.786,
+      "onTimeShare": 0.9691067830758898,
+      "orders": 1489,
+      "undelivered": 0,
+      "failedVisits": 0,
+      "actionErrors": 3,
+      "recoveries": 1,
+      "finesEuros": 0.0,
+      "officialRank": 10,
+      "officialQualified": true,
+      "officialPlayed": 5
+    },
+    {
+      "level": 5,
+      "completed": 5,
+      "qualifiedWeeks": 5,
+      "totalProfitEuros": 17799.86,
+      "meanProfitEuros": 3559.972,
+      "onTimeShare": 0.9511278195488722,
+      "orders": 1596,
+      "undelivered": 0,
+      "failedVisits": 0,
+      "actionErrors": 5,
+      "recoveries": 0,
+      "finesEuros": 100.0,
+      "officialRank": 10,
+      "officialQualified": true,
+      "officialPlayed": 5
+    },
+    {
+      "level": 6,
+      "completed": 5,
+      "qualifiedWeeks": 5,
+      "totalProfitEuros": 17168.14,
+      "meanProfitEuros": 3433.6279999999997,
+      "onTimeShare": 0.9538554948391014,
+      "orders": 1647,
+      "undelivered": 0,
+      "failedVisits": 0,
+      "actionErrors": 12,
+      "recoveries": 0,
+      "finesEuros": 0.0,
+      "officialRank": 20,
+      "officialQualified": true,
+      "officialPlayed": 5
+    },
+    {
+      "level": 7,
+      "completed": 5,
+      "qualifiedWeeks": 5,
+      "totalProfitEuros": 27886.32,
+      "meanProfitEuros": 5577.264,
+      "onTimeShare": 0.9844961240310077,
+      "orders": 1032,
+      "undelivered": 0,
+      "failedVisits": 0,
+      "actionErrors": 2,
+      "recoveries": 0,
+      "finesEuros": 0.0,
+      "officialRank": 18,
+      "officialQualified": true,
+      "officialPlayed": 5
+    }
+  ],
+  "worlds": [
+    {
+      "worldId": "w6516d12e279ef0a68c15",
+      "kind": "practice",
+      "level": 1,
+      "parent": null,
+      "season": 4,
+      "boardRun": 1,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:18:31.506Z",
+      "completedAt": "2026-11-14T06:21:13.757Z",
+      "policy": "initial level8 transfer",
+      "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "payout": 0.85,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "score": {
+        "marginCents": 92347,
+        "revenueCents": 274600,
+        "marginShare": 0.3362964311726147,
+        "wonOrders": 75,
+        "onTimeShare": 0.9866666666666667,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 75,
+        "onTimeOrders": 74,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00232"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 274600,
+        "driver_fee": -180913,
+        "late_refund": -1340
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [
+        {
+          "at": 6367,
+          "message": "Cannot reach https://spread.bahnexpress.com: no answer in 20 seconds. Check SPREAD_URL, and that the server runs",
+          "resumedAt": 6370,
+          "lastSeq": 4279
+        }
+      ],
+      "files": {
+        "meta": {
+          "path": "runs/w6516d12e279ef0a68c15.meta.json",
+          "sha256": "2ba041a106bd358fe0975f2a20587cca02ead0ee29e4ae7af76692116f5ecf55"
+        },
+        "score": {
+          "path": "runs/w6516d12e279ef0a68c15.score.json",
+          "sha256": "730d7d7217255b9222be39e22fbc1df30ea2444255bb509c6c022747965bd402"
+        },
+        "snapshot": {
+          "path": "runs/w6516d12e279ef0a68c15.snapshot.json",
+          "sha256": "9dbdfeeda4bae5dbe8e19a05dd391a7f53d0922d24770471bfeb9d533df3de0c"
+        },
+        "events": {
+          "path": "runs/w6516d12e279ef0a68c15.events.json",
+          "sha256": "1138b2acb0003799c87e5ab0cca33999cd10f3cd838ede3093957f1e83a4e3a0"
+        },
+        "errors": {
+          "path": "runs/w6516d12e279ef0a68c15.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w6516d12e279ef0a68c15.recoveries.json",
+          "sha256": "d8fb9ef16ab35f770c83d5f19c8b222afaf8aa6ed824a86c1f774f5d3f520bb4"
+        }
+      }
+    },
+    {
+      "worldId": "w3f7d117ff54116111b3c",
+      "kind": "practice",
+      "level": 1,
+      "parent": null,
+      "season": 4,
+      "boardRun": 2,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:42:17.156Z",
+      "completedAt": "2026-11-14T06:43:39.162Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "payout": 0.85,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": true,
+        "openingCostAdmission": true
+      },
+      "score": {
+        "marginCents": 687596,
+        "revenueCents": 3769700,
+        "marginShare": 0.18240072154282835,
+        "wonOrders": 551,
+        "onTimeShare": 0.9891107078039928,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 551,
+        "onTimeOrders": 545,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00174",
+          "R00179",
+          "R00655",
+          "R00721",
+          "R00755",
+          "R00812"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 3769700,
+        "driver_fee": -3056750,
+        "release_fee": -6874,
+        "late_refund": -18480
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w3f7d117ff54116111b3c.meta.json",
+          "sha256": "b2e460c4d432d0c3dd01cfa42014db58a3731e7fe5122d745e5ed218ecb9702a"
+        },
+        "score": {
+          "path": "runs/w3f7d117ff54116111b3c.score.json",
+          "sha256": "8537726a176fc4049f26c0bd7aa2f204173555dfa6c6789ed549bed56a2d93ee"
+        },
+        "snapshot": {
+          "path": "runs/w3f7d117ff54116111b3c.snapshot.json",
+          "sha256": "272269210c6319bde8d0e5d6f19272545dd2706d4f08266494c2c6ef385c52b1"
+        },
+        "events": {
+          "path": "runs/w3f7d117ff54116111b3c.events.json",
+          "sha256": "88813a0921faec6e2c3b86e0578dfa4987eae9a055d90979549f3c36e3663499"
+        },
+        "errors": {
+          "path": "runs/w3f7d117ff54116111b3c.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w3f7d117ff54116111b3c.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "wd9e15aeab78de774ddbb",
+      "kind": "practice",
+      "level": 1,
+      "parent": null,
+      "season": 4,
+      "boardRun": 3,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:43:50.407Z",
+      "completedAt": "2026-11-14T06:45:13.890Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "payout": 0.85,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": true,
+        "openingCostAdmission": true
+      },
+      "score": {
+        "marginCents": 613586,
+        "revenueCents": 3503000,
+        "marginShare": 0.1751601484441907,
+        "wonOrders": 523,
+        "onTimeShare": 0.9904397705544933,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 523,
+        "onTimeOrders": 518,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00070",
+          "R00107",
+          "R00382",
+          "R00823",
+          "R00887"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 3503000,
+        "driver_fee": -2872583,
+        "release_fee": -10291,
+        "late_refund": -6540
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/wd9e15aeab78de774ddbb.meta.json",
+          "sha256": "4fe910a0a526302e5795cf895a358a033b676b2fee53c505330131b9348f7691"
+        },
+        "score": {
+          "path": "runs/wd9e15aeab78de774ddbb.score.json",
+          "sha256": "50fbe4b8404b9f5bc6ba70761f73b204463b062e7bfb4b30793439a778bd3cd6"
+        },
+        "snapshot": {
+          "path": "runs/wd9e15aeab78de774ddbb.snapshot.json",
+          "sha256": "3ec6f6f3270aec379c8c979c1ad87d9cecb7e2879c0f6307248959afbab9a66f"
+        },
+        "events": {
+          "path": "runs/wd9e15aeab78de774ddbb.events.json",
+          "sha256": "60f653eabf125c45d86de2c8cfb9fa38a8c474cfeb36ca5a5c573b2d1c3d09a4"
+        },
+        "errors": {
+          "path": "runs/wd9e15aeab78de774ddbb.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/wd9e15aeab78de774ddbb.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "we1dbfc58340710c528e0",
+      "kind": "practice",
+      "level": 1,
+      "parent": null,
+      "season": 4,
+      "boardRun": 4,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:45:14.044Z",
+      "completedAt": "2026-11-14T06:46:45.546Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "payout": 0.85,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": true,
+        "openingCostAdmission": true
+      },
+      "score": {
+        "marginCents": 669408,
+        "revenueCents": 3665400,
+        "marginShare": 0.18262890816827632,
+        "wonOrders": 524,
+        "onTimeShare": 0.9961832061068703,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 524,
+        "onTimeOrders": 522,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00280",
+          "R00656"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 3665400,
+        "driver_fee": -2981395,
+        "release_fee": -7847,
+        "late_refund": -6750
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/we1dbfc58340710c528e0.meta.json",
+          "sha256": "a6ee5bed3ef761e0cc18218baeb05c92db710b2fedc0b61b971fb146c10f6f53"
+        },
+        "score": {
+          "path": "runs/we1dbfc58340710c528e0.score.json",
+          "sha256": "ce80c274042768af2a5bbe66f92f326f36f093e1f334bdc634635af807396f44"
+        },
+        "snapshot": {
+          "path": "runs/we1dbfc58340710c528e0.snapshot.json",
+          "sha256": "391cc202444cc72fed9e7ffca40bfd370eabfd441fea5f81b529a21c1392393e"
+        },
+        "events": {
+          "path": "runs/we1dbfc58340710c528e0.events.json",
+          "sha256": "c4df02cd6f9a2ade5ebaf8c285cb09d9cd51ee35c0b1dba68118d440decc7d0f"
+        },
+        "errors": {
+          "path": "runs/we1dbfc58340710c528e0.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/we1dbfc58340710c528e0.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "w46c5562ae471c0106d82",
+      "kind": "practice",
+      "level": 1,
+      "parent": null,
+      "season": 4,
+      "boardRun": 5,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:46:45.896Z",
+      "completedAt": "2026-11-14T06:48:19.769Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "payout": 0.85,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": true,
+        "openingCostAdmission": true
+      },
+      "score": {
+        "marginCents": 648167,
+        "revenueCents": 3464200,
+        "marginShare": 0.18710438196408982,
+        "wonOrders": 525,
+        "onTimeShare": 0.9828571428571429,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 525,
+        "onTimeOrders": 516,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00172",
+          "R00387",
+          "R00465",
+          "R00489",
+          "R00757",
+          "R00823",
+          "R00836",
+          "R00855",
+          "R00963"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 3464200,
+        "driver_fee": -2780241,
+        "release_fee": -9302,
+        "late_refund": -26490
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w46c5562ae471c0106d82.meta.json",
+          "sha256": "36d34b7b578d477d15595846335788ed3cbf6c8b143a7dc09350749a54e2f070"
+        },
+        "score": {
+          "path": "runs/w46c5562ae471c0106d82.score.json",
+          "sha256": "cee4f07519c2b1b214ea2478bdae84a4ad93fda051bf3871fe08970cee171f23"
+        },
+        "snapshot": {
+          "path": "runs/w46c5562ae471c0106d82.snapshot.json",
+          "sha256": "4c08875380fd3040f0dd6c8c202a409c92f3b7b7079a6f568066845382621804"
+        },
+        "events": {
+          "path": "runs/w46c5562ae471c0106d82.events.json",
+          "sha256": "bdfd9a9ab9e7e45b365444806f3268b533a200d24f14f82a976717972e78adb0"
+        },
+        "errors": {
+          "path": "runs/w46c5562ae471c0106d82.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w46c5562ae471c0106d82.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "wc3bc19d05e17f5628fd3",
+      "kind": "practice",
+      "level": 2,
+      "parent": null,
+      "season": 4,
+      "boardRun": 1,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:18:31.663Z",
+      "completedAt": "2026-11-14T06:21:15.576Z",
+      "policy": "initial level8 transfer",
+      "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "payout": 0.85,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "score": {
+        "marginCents": 60536,
+        "revenueCents": 203200,
+        "marginShare": 0.2979133858267716,
+        "wonOrders": 59,
+        "onTimeShare": 0.9830508474576272,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 59,
+        "onTimeOrders": 58,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00501"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 203200,
+        "driver_fee": -140904,
+        "late_refund": -1760
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/wc3bc19d05e17f5628fd3.meta.json",
+          "sha256": "0fef9188452e7068e68482a2ee75e2e39ddb80e3af9084ea7b4c6500a1bc566c"
+        },
+        "score": {
+          "path": "runs/wc3bc19d05e17f5628fd3.score.json",
+          "sha256": "fdf8eb840dff81381a89bbab43279f26d83c98885b404f0e3c666aae580f3e82"
+        },
+        "snapshot": {
+          "path": "runs/wc3bc19d05e17f5628fd3.snapshot.json",
+          "sha256": "646d0785d0585fee5e836e28dc06f29c04ee3f7ea162056a74ec70b68458a1db"
+        },
+        "events": {
+          "path": "runs/wc3bc19d05e17f5628fd3.events.json",
+          "sha256": "ac1af8914788fd139bb7cc03889007d6d48e46e33095938bd7bcb486a4cf4ab8"
+        },
+        "errors": {
+          "path": "runs/wc3bc19d05e17f5628fd3.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/wc3bc19d05e17f5628fd3.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "w5291ea4d051d3dc3685c",
+      "kind": "practice",
+      "level": 2,
+      "parent": null,
+      "season": 4,
+      "boardRun": 2,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:43:15.745Z",
+      "completedAt": "2026-11-14T06:44:42.719Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "payout": 0.85,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": true,
+        "openingCostAdmission": true
+      },
+      "score": {
+        "marginCents": 819840,
+        "revenueCents": 3893400,
+        "marginShare": 0.210571736785329,
+        "wonOrders": 573,
+        "onTimeShare": 0.9895287958115183,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 573,
+        "onTimeOrders": 567,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00160",
+          "R00427",
+          "R00791",
+          "R00819",
+          "R00849",
+          "R00913"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 3893400,
+        "driver_fee": -3060967,
+        "late_refund": -7935,
+        "release_fee": -4658
+      },
+      "failedVisits": 0,
+      "errors": [
+        {
+          "at": 6780,
+          "action": {
+            "type": "reprice",
+            "gigId": "g480",
+            "schedule": [
+              {
+                "at": 6780,
+                "feeCents": 5000
+              },
+              {
+                "at": 6810,
+                "feeCents": 5000
+              },
+              {
+                "at": 6840,
+                "feeCents": 5000
+              },
+              {
+                "at": 6870,
+                "feeCents": 5000
+              }
+            ]
+          },
+          "reason": "Gig g480 is not open"
+        },
+        {
+          "at": 6780,
+          "action": {
+            "type": "reprice",
+            "gigId": "g480",
+            "schedule": [
+              {
+                "at": 6780,
+                "feeCents": 5000
+              },
+              {
+                "at": 6810,
+                "feeCents": 5000
+              },
+              {
+                "at": 6840,
+                "feeCents": 5000
+              },
+              {
+                "at": 6870,
+                "feeCents": 5000
+              }
+            ]
+          },
+          "reason": "Gig g480 is not open"
+        }
+      ],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w5291ea4d051d3dc3685c.meta.json",
+          "sha256": "fed742883106be0074ef69a52b1ebe9debcf08340d8471b630083157c4399b91"
+        },
+        "score": {
+          "path": "runs/w5291ea4d051d3dc3685c.score.json",
+          "sha256": "6192d7e1c3b3f98641514a07ad374865949d5ef3b30d9c5001218c30b6767b0f"
+        },
+        "snapshot": {
+          "path": "runs/w5291ea4d051d3dc3685c.snapshot.json",
+          "sha256": "8e1789354ebafc051859a4a84a75f51dc30e35588b308c3e3ae2e713262c79da"
+        },
+        "events": {
+          "path": "runs/w5291ea4d051d3dc3685c.events.json",
+          "sha256": "46f88540a5f15b8531ee4f1d85d12e7d5e294eea1b8d60306705b0b6f6cad635"
+        },
+        "errors": {
+          "path": "runs/w5291ea4d051d3dc3685c.errors.json",
+          "sha256": "4a8d04466eb0293802f4f0541d6b8e85d957d8ba323b21568b08f221990e3a65"
+        },
+        "recoveries": {
+          "path": "runs/w5291ea4d051d3dc3685c.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "wb5ae6ddcf78736fe83f0",
+      "kind": "practice",
+      "level": 2,
+      "parent": null,
+      "season": 4,
+      "boardRun": 3,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:44:42.848Z",
+      "completedAt": "2026-11-14T06:46:09.755Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "payout": 0.85,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": true,
+        "openingCostAdmission": true
+      },
+      "score": {
+        "marginCents": 719967,
+        "revenueCents": 3573600,
+        "marginShare": 0.20146826729348555,
+        "wonOrders": 547,
+        "onTimeShare": 0.9945155393053017,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 547,
+        "onTimeOrders": 544,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00218",
+          "R00341",
+          "R00880"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 3573600,
+        "driver_fee": -2839190,
+        "release_fee": -8438,
+        "late_refund": -6005
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/wb5ae6ddcf78736fe83f0.meta.json",
+          "sha256": "9a6d4ca9817f1d135d12e0c54b8385dd09427c81676df40f4db9ff716f11a0bd"
+        },
+        "score": {
+          "path": "runs/wb5ae6ddcf78736fe83f0.score.json",
+          "sha256": "d7d41b9230dc23b436710a04140316ad23c6352de32ee5bba627df8931dfce5f"
+        },
+        "snapshot": {
+          "path": "runs/wb5ae6ddcf78736fe83f0.snapshot.json",
+          "sha256": "1c2d7b6769752bf7b567b36ed3976d18c6f252855c1a062beacae0c402384e39"
+        },
+        "events": {
+          "path": "runs/wb5ae6ddcf78736fe83f0.events.json",
+          "sha256": "dcc782d6c5ed79feeebf7ba29e1e2217ef7e2ca29cee24a7f4665654df2a1cb2"
+        },
+        "errors": {
+          "path": "runs/wb5ae6ddcf78736fe83f0.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/wb5ae6ddcf78736fe83f0.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "w12973b4a81379979d636",
+      "kind": "practice",
+      "level": 2,
+      "parent": null,
+      "season": 4,
+      "boardRun": 4,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:46:09.967Z",
+      "completedAt": "2026-11-14T06:47:43.306Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "payout": 0.85,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": true,
+        "openingCostAdmission": true
+      },
+      "score": {
+        "marginCents": 700494,
+        "revenueCents": 3713700,
+        "marginShare": 0.188624283060021,
+        "wonOrders": 517,
+        "onTimeShare": 0.9961315280464217,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 517,
+        "onTimeOrders": 515,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00595",
+          "R00715"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 3713700,
+        "driver_fee": -2988236,
+        "release_fee": -16395,
+        "late_refund": -8575
+      },
+      "failedVisits": 0,
+      "errors": [
+        {
+          "at": 5350,
+          "action": {
+            "type": "reprice",
+            "gigId": "g335",
+            "schedule": [
+              {
+                "at": 5350,
+                "feeCents": 10125
+              },
+              {
+                "at": 5380,
+                "feeCents": 10125
+              },
+              {
+                "at": 5410,
+                "feeCents": 10125
+              },
+              {
+                "at": 5440,
+                "feeCents": 10125
+              }
+            ]
+          },
+          "reason": "Gig g335 is not open"
+        },
+        {
+          "at": 5350,
+          "action": {
+            "type": "reprice",
+            "gigId": "g335",
+            "schedule": [
+              {
+                "at": 5350,
+                "feeCents": 10125
+              },
+              {
+                "at": 5380,
+                "feeCents": 10125
+              },
+              {
+                "at": 5410,
+                "feeCents": 10125
+              },
+              {
+                "at": 5440,
+                "feeCents": 10125
+              }
+            ]
+          },
+          "reason": "Gig g335 is not open"
+        }
+      ],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w12973b4a81379979d636.meta.json",
+          "sha256": "fba1c9b6cc6e6cccbe0d3319b1aae62b753f7cca610a5e13721e5514d27877f3"
+        },
+        "score": {
+          "path": "runs/w12973b4a81379979d636.score.json",
+          "sha256": "64d3fec477141e2ee5988a4c0075524af65cf8c1dbcbe91ea0e1a67e139127d1"
+        },
+        "snapshot": {
+          "path": "runs/w12973b4a81379979d636.snapshot.json",
+          "sha256": "2d614c8b9458a785463cd94ffb617f998d23b194897a25527e1611492259e2ca"
+        },
+        "events": {
+          "path": "runs/w12973b4a81379979d636.events.json",
+          "sha256": "37d5af6b0a2e0bfbb1f238bd10bfde065a11925395467920f2bf5a607cab51a6"
+        },
+        "errors": {
+          "path": "runs/w12973b4a81379979d636.errors.json",
+          "sha256": "d4c3b119ce693f0aab7ef91a4bb00ab19cb817ba592786c0c545ad6f78ad45a6"
+        },
+        "recoveries": {
+          "path": "runs/w12973b4a81379979d636.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "wa0ecfe487807712262b4",
+      "kind": "practice",
+      "level": 2,
+      "parent": null,
+      "season": 4,
+      "boardRun": 5,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:47:43.441Z",
+      "completedAt": "2026-11-14T06:49:14.582Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "payout": 0.85,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": true,
+        "openingCostAdmission": true
+      },
+      "score": {
+        "marginCents": 732928,
+        "revenueCents": 3900500,
+        "marginShare": 0.18790616587616973,
+        "wonOrders": 568,
+        "onTimeShare": 0.9876760563380281,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 568,
+        "onTimeOrders": 561,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00058",
+          "R00088",
+          "R00312",
+          "R00399",
+          "R00638",
+          "R00711",
+          "R00998"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 3900500,
+        "driver_fee": -3138913,
+        "late_refund": -20070,
+        "release_fee": -8589
+      },
+      "failedVisits": 0,
+      "errors": [
+        {
+          "at": 6676,
+          "action": {
+            "type": "reprice",
+            "gigId": "g523",
+            "schedule": [
+              {
+                "at": 6676,
+                "feeCents": 7176
+              },
+              {
+                "at": 6706,
+                "feeCents": 7176
+              },
+              {
+                "at": 6736,
+                "feeCents": 9090
+              },
+              {
+                "at": 6796,
+                "feeCents": 11960
+              }
+            ]
+          },
+          "reason": "Gig g523 is not open"
+        },
+        {
+          "at": 6813,
+          "action": {
+            "type": "reprice",
+            "gigId": "g420",
+            "schedule": [
+              {
+                "at": 6813,
+                "feeCents": 3800
+              },
+              {
+                "at": 6843,
+                "feeCents": 3800
+              },
+              {
+                "at": 6873,
+                "feeCents": 3800
+              },
+              {
+                "at": 6903,
+                "feeCents": 5000
+              }
+            ]
+          },
+          "reason": "Gig g420 is not open"
+        },
+        {
+          "at": 6813,
+          "action": {
+            "type": "reprice",
+            "gigId": "g420",
+            "schedule": [
+              {
+                "at": 6813,
+                "feeCents": 3800
+              },
+              {
+                "at": 6843,
+                "feeCents": 3800
+              },
+              {
+                "at": 6873,
+                "feeCents": 3800
+              },
+              {
+                "at": 6903,
+                "feeCents": 5000
+              }
+            ]
+          },
+          "reason": "Gig g420 is not open"
+        }
+      ],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/wa0ecfe487807712262b4.meta.json",
+          "sha256": "b825c51b904eaaf5652d0215e51f8ccdc9515ee6051a4768f8386ff1835f9710"
+        },
+        "score": {
+          "path": "runs/wa0ecfe487807712262b4.score.json",
+          "sha256": "2dced36fd6af50aedef5d31c8ae61d3ea53db47e4200a6505db1391511c06319"
+        },
+        "snapshot": {
+          "path": "runs/wa0ecfe487807712262b4.snapshot.json",
+          "sha256": "cf53974818f92b74cdce1d3dcdf881032b872ece72e9530f702e83a68b23eacd"
+        },
+        "events": {
+          "path": "runs/wa0ecfe487807712262b4.events.json",
+          "sha256": "5fe0f26ba29927438abc1b9c6debf0dee86b8b798960f7a5eab1e61f8ad87a38"
+        },
+        "errors": {
+          "path": "runs/wa0ecfe487807712262b4.errors.json",
+          "sha256": "671562916d2fd3c34ea80e40d218a009e0df94051a138af92cdd0973f41a7762"
+        },
+        "recoveries": {
+          "path": "runs/wa0ecfe487807712262b4.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "web5c08517e2d75e2e404",
+      "kind": "practice",
+      "level": 3,
+      "parent": null,
+      "season": 4,
+      "boardRun": 1,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:18:31.811Z",
+      "completedAt": "2026-11-14T06:21:16.680Z",
+      "policy": "initial level8 transfer",
+      "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "payout": 0.85,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "score": {
+        "marginCents": 86972,
+        "revenueCents": 291600,
+        "marginShare": 0.29825788751714677,
+        "wonOrders": 78,
+        "onTimeShare": 1,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 78,
+        "onTimeOrders": 78,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 291600,
+        "driver_fee": -204628
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [
+        {
+          "at": 5578,
+          "message": "Cannot reach https://spread.bahnexpress.com: no answer in 20 seconds. Check SPREAD_URL, and that the server runs",
+          "resumedAt": 5590,
+          "lastSeq": 2758
+        }
+      ],
+      "files": {
+        "meta": {
+          "path": "runs/web5c08517e2d75e2e404.meta.json",
+          "sha256": "980edb64a18696e32b81d9d3cf6d3d9f9bf948c33c1134aff94e983948eedde0"
+        },
+        "score": {
+          "path": "runs/web5c08517e2d75e2e404.score.json",
+          "sha256": "d0f89993b58e44ee1f52d2ac8dc767f692eaab9b4e6a57e773bee0b5a2575fd8"
+        },
+        "snapshot": {
+          "path": "runs/web5c08517e2d75e2e404.snapshot.json",
+          "sha256": "8d2e67ccc630077206641c26bc568d6f3558524883d48f051b68e344d2dd9f39"
+        },
+        "events": {
+          "path": "runs/web5c08517e2d75e2e404.events.json",
+          "sha256": "725bd3237f87aa596e6ec7cafad281006f35bfb48e7e8cb161fe62b2b379f8ff"
+        },
+        "errors": {
+          "path": "runs/web5c08517e2d75e2e404.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/web5c08517e2d75e2e404.recoveries.json",
+          "sha256": "bff4f0b347ac9c95c76b095fa9f44584221905d7219ee3a142fbd1b7646b9181"
+        }
+      }
+    },
+    {
+      "worldId": "wd07b6776dda99a550ae0",
+      "kind": "practice",
+      "level": 3,
+      "parent": null,
+      "season": 4,
+      "boardRun": 2,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:43:15.893Z",
+      "completedAt": "2026-11-14T06:44:39.161Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "payout": 0.85,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": true,
+        "openingCostAdmission": true
+      },
+      "score": {
+        "marginCents": 579443,
+        "revenueCents": 3302100,
+        "marginShare": 0.17547712062021137,
+        "wonOrders": 525,
+        "onTimeShare": 0.9904761904761905,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 525,
+        "onTimeOrders": 520,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00106",
+          "R00218",
+          "R00417",
+          "R00772",
+          "R00787"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 3302100,
+        "driver_fee": -2694688,
+        "late_refund": -12775,
+        "release_fee": -15194
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/wd07b6776dda99a550ae0.meta.json",
+          "sha256": "ac81cd5314ed414b056ed6db8996e951d3e7058701420f7ffae9b5beed1f904e"
+        },
+        "score": {
+          "path": "runs/wd07b6776dda99a550ae0.score.json",
+          "sha256": "c250d5cb129559e78a0a93ebd1923deba9a6f07a01aa527a6a8c6c991a32304a"
+        },
+        "snapshot": {
+          "path": "runs/wd07b6776dda99a550ae0.snapshot.json",
+          "sha256": "23c6921dd501ab22089b3603b2da1b3c1c64739a0841bded546b07a711d9cafe"
+        },
+        "events": {
+          "path": "runs/wd07b6776dda99a550ae0.events.json",
+          "sha256": "a0790d133e003840096ad9387d7fd54d8d027292e2a2c38e2281be0e145971f4"
+        },
+        "errors": {
+          "path": "runs/wd07b6776dda99a550ae0.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/wd07b6776dda99a550ae0.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "w19c9653c99814f697e64",
+      "kind": "practice",
+      "level": 3,
+      "parent": null,
+      "season": 4,
+      "boardRun": 3,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:44:39.295Z",
+      "completedAt": "2026-11-14T06:46:04.276Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "payout": 0.85,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": true,
+        "openingCostAdmission": true
+      },
+      "score": {
+        "marginCents": 575107,
+        "revenueCents": 3555000,
+        "marginShare": 0.16177412095639943,
+        "wonOrders": 513,
+        "onTimeShare": 0.9902534113060428,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 513,
+        "onTimeOrders": 508,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00212",
+          "R00262",
+          "R00440",
+          "R00713",
+          "R00869"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 3555000,
+        "driver_fee": -2952604,
+        "release_fee": -11589,
+        "late_refund": -15700
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w19c9653c99814f697e64.meta.json",
+          "sha256": "7e99a8987c9869089bf30ea9470d31993519926e61cfe9bf1471b3a528e6aded"
+        },
+        "score": {
+          "path": "runs/w19c9653c99814f697e64.score.json",
+          "sha256": "31c9e56b9a6799fa18091c67b97ce8c56c989be1d888623552ebad9cdc77f2fa"
+        },
+        "snapshot": {
+          "path": "runs/w19c9653c99814f697e64.snapshot.json",
+          "sha256": "70103e7a8d8fa2af03fd0e97e9e18f54d203936257eb7a91ae96a8ba3dde0642"
+        },
+        "events": {
+          "path": "runs/w19c9653c99814f697e64.events.json",
+          "sha256": "aa1a87c40ab454c0d4a19c9cc7cf11b6fbf438f70f52bac3407ccfe7561d5347"
+        },
+        "errors": {
+          "path": "runs/w19c9653c99814f697e64.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w19c9653c99814f697e64.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "w1271b9c7232c147897fe",
+      "kind": "practice",
+      "level": 3,
+      "parent": null,
+      "season": 4,
+      "boardRun": 4,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:46:04.470Z",
+      "completedAt": "2026-11-14T06:47:37.632Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "payout": 0.85,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": true,
+        "openingCostAdmission": true
+      },
+      "score": {
+        "marginCents": 698506,
+        "revenueCents": 3709400,
+        "marginShare": 0.18830700382811236,
+        "wonOrders": 553,
+        "onTimeShare": 0.9891500904159132,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 553,
+        "onTimeOrders": 547,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00140",
+          "R00328",
+          "R00468",
+          "R00533",
+          "R00652",
+          "R00742"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 3709400,
+        "driver_fee": -2992009,
+        "release_fee": -7360,
+        "late_refund": -11525
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w1271b9c7232c147897fe.meta.json",
+          "sha256": "fc00547a8deadc6d2e864e96c8e4a9bda02303f029a5b9e88cbe83bc7992d0ef"
+        },
+        "score": {
+          "path": "runs/w1271b9c7232c147897fe.score.json",
+          "sha256": "800c52c2ab6032df76ca27a32e2f05b124270cbd03ed7e5905f89274d426faa3"
+        },
+        "snapshot": {
+          "path": "runs/w1271b9c7232c147897fe.snapshot.json",
+          "sha256": "479d2d1e7326edc270e56ac7d8f0883a408e3b65e5a5cb92808816e8fe1bb20c"
+        },
+        "events": {
+          "path": "runs/w1271b9c7232c147897fe.events.json",
+          "sha256": "be15432d5d6110dbbf2e1b4a6b4a6c86eb750d06959e2270d770f14c1e143432"
+        },
+        "errors": {
+          "path": "runs/w1271b9c7232c147897fe.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w1271b9c7232c147897fe.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "w41d45a769c0a63c538fb",
+      "kind": "practice",
+      "level": 3,
+      "parent": null,
+      "season": 4,
+      "boardRun": 5,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:47:37.797Z",
+      "completedAt": "2026-11-14T06:49:11.949Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "payout": 0.85,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": true,
+        "openingCostAdmission": true
+      },
+      "score": {
+        "marginCents": 697290,
+        "revenueCents": 4162300,
+        "marginShare": 0.16752516637436032,
+        "wonOrders": 576,
+        "onTimeShare": 0.9930555555555556,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 576,
+        "onTimeOrders": 572,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00604",
+          "R00681",
+          "R00853",
+          "R00901"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 4162300,
+        "driver_fee": -3450437,
+        "release_fee": -4098,
+        "late_refund": -10475
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w41d45a769c0a63c538fb.meta.json",
+          "sha256": "b166318a2a52a75bc2e54699137d7c846e116a498114b8b2a95d21b3e4816b49"
+        },
+        "score": {
+          "path": "runs/w41d45a769c0a63c538fb.score.json",
+          "sha256": "f8592fc4d6bb102f0ee2db4c60b6225c7be2aed337655e40d21e64cd2a52d39c"
+        },
+        "snapshot": {
+          "path": "runs/w41d45a769c0a63c538fb.snapshot.json",
+          "sha256": "d9476277c1fea2e9f135aa9a8add766efd63cdd74068bcfff2bdfc0e6e7e45d3"
+        },
+        "events": {
+          "path": "runs/w41d45a769c0a63c538fb.events.json",
+          "sha256": "0e81ca84f06f4149cc4edb52eeab04a8386100b04e3452323a754e3564cd1586"
+        },
+        "errors": {
+          "path": "runs/w41d45a769c0a63c538fb.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w41d45a769c0a63c538fb.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "wdb4f2388e35cbbf8be8d",
+      "kind": "practice",
+      "level": 4,
+      "parent": null,
+      "season": 4,
+      "boardRun": 1,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:18:31.981Z",
+      "completedAt": "2026-11-14T06:21:17.399Z",
+      "policy": "initial level8 transfer",
+      "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "payout": 0.85,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14
+      },
+      "score": {
+        "marginCents": 84988,
+        "revenueCents": 338319,
+        "marginShare": 0.25120670136764417,
+        "wonOrders": 47,
+        "onTimeShare": 1,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 47,
+        "onTimeOrders": 47,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 338319,
+        "driver_fee": -251348,
+        "release_fee": -1983
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [
+        {
+          "at": 5397,
+          "message": "Cannot reach https://spread.bahnexpress.com: no answer in 20 seconds. Check SPREAD_URL, and that the server runs",
+          "resumedAt": 5399,
+          "lastSeq": 3699
+        }
+      ],
+      "files": {
+        "meta": {
+          "path": "runs/wdb4f2388e35cbbf8be8d.meta.json",
+          "sha256": "d0c57ced9a646f5a8be80c70b7df33a615a0e761fde0fed45027d548c0b0fe61"
+        },
+        "score": {
+          "path": "runs/wdb4f2388e35cbbf8be8d.score.json",
+          "sha256": "6bdb177902142c316e7c6e32280c6b86eab306e02270ad3397bf8066378a3440"
+        },
+        "snapshot": {
+          "path": "runs/wdb4f2388e35cbbf8be8d.snapshot.json",
+          "sha256": "342e4c1bd7cfcc72fb64390b55ec1e99328c2131667969a8d4ffc0f186ed74b1"
+        },
+        "events": {
+          "path": "runs/wdb4f2388e35cbbf8be8d.events.json",
+          "sha256": "a9f37e198e0ca90f2774e43e3396092fd1900a82bf56f8883b40e80f0e13b02a"
+        },
+        "errors": {
+          "path": "runs/wdb4f2388e35cbbf8be8d.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/wdb4f2388e35cbbf8be8d.recoveries.json",
+          "sha256": "c3cea15f93b6281ed84d2e743cd591ec16f924f764c712708a929b73e4e9253a"
+        }
+      }
+    },
+    {
+      "worldId": "w8d97c1a400a8617d3c6e",
+      "kind": "practice",
+      "level": 4,
+      "parent": null,
+      "season": 4,
+      "boardRun": 2,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:40:54.350Z",
+      "completedAt": "2026-11-14T06:42:16.941Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 0.72,
+        "payout": 0.85,
+        "margin": 0.05,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": false,
+        "openingCostAdmission": false
+      },
+      "score": {
+        "marginCents": 320178,
+        "revenueCents": 2335228,
+        "marginShare": 0.1371078113143556,
+        "wonOrders": 344,
+        "onTimeShare": 0.9854651162790697,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 344,
+        "onTimeOrders": 339,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00065",
+          "R00302",
+          "R00410",
+          "R00445",
+          "R00734"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 2335228,
+        "driver_fee": -2001370,
+        "late_refund": -13680
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w8d97c1a400a8617d3c6e.meta.json",
+          "sha256": "afd0e3d91ad1d3855c096535fecf285c3ef1729b73b450a9de02136453624e97"
+        },
+        "score": {
+          "path": "runs/w8d97c1a400a8617d3c6e.score.json",
+          "sha256": "01034b2429b76a8dc4d4e3cfd13b3449369f44510382b05f90b06f81103a5462"
+        },
+        "snapshot": {
+          "path": "runs/w8d97c1a400a8617d3c6e.snapshot.json",
+          "sha256": "652dbca637f3981f906f09a30502a54e481cf7915b6488c521fbdc67268b1816"
+        },
+        "events": {
+          "path": "runs/w8d97c1a400a8617d3c6e.events.json",
+          "sha256": "2a60585a067bd90137361b6af3a30f2b7dcee469469986502daaf75cc1ab1898"
+        },
+        "errors": {
+          "path": "runs/w8d97c1a400a8617d3c6e.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w8d97c1a400a8617d3c6e.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "w31cbd8708f164a778bf3",
+      "kind": "practice",
+      "level": 4,
+      "parent": null,
+      "season": 4,
+      "boardRun": 3,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:43:16.032Z",
+      "completedAt": "2026-11-14T06:44:45.629Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 0.72,
+        "payout": 0.85,
+        "margin": 0.05,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": false,
+        "openingCostAdmission": false
+      },
+      "score": {
+        "marginCents": 707635,
+        "revenueCents": 3654221,
+        "marginShare": 0.19364866000168024,
+        "wonOrders": 421,
+        "onTimeShare": 0.9477434679334917,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 421,
+        "onTimeOrders": 399,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00001",
+          "R00043",
+          "R00049",
+          "R00104",
+          "R00114",
+          "R00147",
+          "R00252",
+          "R00261",
+          "R00373",
+          "R00394",
+          "R00412",
+          "R00487",
+          "R00494",
+          "R00512",
+          "R00565",
+          "R00623",
+          "R00720",
+          "R00737",
+          "R00799",
+          "R00817",
+          "R00844",
+          "R00906"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 3654221,
+        "driver_fee": -2888047,
+        "late_refund": -58539
+      },
+      "failedVisits": 0,
+      "errors": [
+        {
+          "at": 4195,
+          "action": {
+            "type": "reprice",
+            "gigId": "g176",
+            "schedule": [
+              {
+                "at": 4195,
+                "feeCents": 4392
+              },
+              {
+                "at": 4254,
+                "feeCents": 5755
+              },
+              {
+                "at": 4374,
+                "feeCents": 7573
+              }
+            ]
+          },
+          "reason": "Gig g176 is not open"
+        },
+        {
+          "at": 4195,
+          "action": {
+            "type": "reprice",
+            "gigId": "g176",
+            "schedule": [
+              {
+                "at": 4195,
+                "feeCents": 4392
+              },
+              {
+                "at": 4254,
+                "feeCents": 5755
+              },
+              {
+                "at": 4374,
+                "feeCents": 7573
+              }
+            ]
+          },
+          "reason": "Gig g176 is not open"
+        },
+        {
+          "at": 10859,
+          "action": {
+            "type": "reprice",
+            "gigId": "g337",
+            "schedule": [
+              {
+                "at": 10859,
+                "feeCents": 11531
+              },
+              {
+                "at": 10889,
+                "feeCents": 11531
+              },
+              {
+                "at": 10935,
+                "feeCents": 14605
+              },
+              {
+                "at": 10995,
+                "feeCents": 19218
+              }
+            ]
+          },
+          "reason": "Gig g337 is not open"
+        }
+      ],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w31cbd8708f164a778bf3.meta.json",
+          "sha256": "cae6a2b1398653bb5ba7ee3d9cb562421a98024764065747052936b0e288e1a9"
+        },
+        "score": {
+          "path": "runs/w31cbd8708f164a778bf3.score.json",
+          "sha256": "6bbbe82804219cc3091c6033ae22c410ea5a3b53b5627aa98a453d51a584cd0d"
+        },
+        "snapshot": {
+          "path": "runs/w31cbd8708f164a778bf3.snapshot.json",
+          "sha256": "c87e156796010b3208ca3c21f94e275510738d74cf23ddf4c21459f0bb98c8f1"
+        },
+        "events": {
+          "path": "runs/w31cbd8708f164a778bf3.events.json",
+          "sha256": "12d47a4c7fd09a3c5770d4df9792d440766dac55164c8ba84df6ea94120dae0c"
+        },
+        "errors": {
+          "path": "runs/w31cbd8708f164a778bf3.errors.json",
+          "sha256": "8d93669e78e00f61d981199b7eecf67962f060e8b6b311c997a9d42c7841df0c"
+        },
+        "recoveries": {
+          "path": "runs/w31cbd8708f164a778bf3.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "wc4f59046ef1f6f99f930",
+      "kind": "practice",
+      "level": 4,
+      "parent": null,
+      "season": 4,
+      "boardRun": 4,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:44:45.833Z",
+      "completedAt": "2026-11-14T06:46:17.446Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 0.72,
+        "payout": 0.85,
+        "margin": 0.05,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": false,
+        "openingCostAdmission": false
+      },
+      "score": {
+        "marginCents": 505462,
+        "revenueCents": 3039726,
+        "marginShare": 0.16628538230090475,
+        "wonOrders": 393,
+        "onTimeShare": 0.9720101781170484,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 393,
+        "onTimeOrders": 382,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00041",
+          "R00101",
+          "R00123",
+          "R00178",
+          "R00214",
+          "R00352",
+          "R00536",
+          "R00624",
+          "R00638",
+          "R00742",
+          "R00753"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 3039726,
+        "driver_fee": -2501968,
+        "late_refund": -32296
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/wc4f59046ef1f6f99f930.meta.json",
+          "sha256": "e440fe6cc7573ed5cfaaac56d1ec501c348b74b3c54c1aec554752adea6a0aff"
+        },
+        "score": {
+          "path": "runs/wc4f59046ef1f6f99f930.score.json",
+          "sha256": "77a5011fcc40f12bf4b70f45aa130968eb58a193a5304e8087b549367b7617b6"
+        },
+        "snapshot": {
+          "path": "runs/wc4f59046ef1f6f99f930.snapshot.json",
+          "sha256": "7c715fd5078441826357db43448d51ff4c54030e7b843650f15cd12e1de4d98c"
+        },
+        "events": {
+          "path": "runs/wc4f59046ef1f6f99f930.events.json",
+          "sha256": "c0235865ec99d007f9d41be8c44b8ec8bd527fe84c0bb02112e89a9aa8313fb4"
+        },
+        "errors": {
+          "path": "runs/wc4f59046ef1f6f99f930.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/wc4f59046ef1f6f99f930.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "w74560f9274421f8e6df8",
+      "kind": "practice",
+      "level": 4,
+      "parent": null,
+      "season": 4,
+      "boardRun": 5,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:46:17.665Z",
+      "completedAt": "2026-11-14T06:47:48.724Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 0.72,
+        "payout": 0.85,
+        "margin": 0.05,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": false,
+        "openingCostAdmission": false
+      },
+      "score": {
+        "marginCents": 316130,
+        "revenueCents": 2330186,
+        "marginShare": 0.1356672814959836,
+        "wonOrders": 284,
+        "onTimeShare": 0.971830985915493,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 284,
+        "onTimeOrders": 276,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00346",
+          "R00420",
+          "R00520",
+          "R00537",
+          "R00621",
+          "R00903",
+          "R00916",
+          "R00920"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 2330186,
+        "driver_fee": -1985234,
+        "late_refund": -22493,
+        "release_fee": -6329
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w74560f9274421f8e6df8.meta.json",
+          "sha256": "c21e9a80acbb36e2c25a4325aa9a6cd8a6133722375302c363257124c67b29c1"
+        },
+        "score": {
+          "path": "runs/w74560f9274421f8e6df8.score.json",
+          "sha256": "abb572b4707e842dd3ccf0d8f4b185fde11aa52662d6332258063100c40b3649"
+        },
+        "snapshot": {
+          "path": "runs/w74560f9274421f8e6df8.snapshot.json",
+          "sha256": "5432a313c1401d446d6c09a0f069f984d282d16f0a18f42e38795bbfee0e82f2"
+        },
+        "events": {
+          "path": "runs/w74560f9274421f8e6df8.events.json",
+          "sha256": "7a603be60da6861ac48a10d477c3caa657117afbc9d49cc0625c277ae8eda2f2"
+        },
+        "errors": {
+          "path": "runs/w74560f9274421f8e6df8.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w74560f9274421f8e6df8.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "w4bca72b69372975a3ba2",
+      "kind": "practice",
+      "level": 5,
+      "parent": null,
+      "season": 4,
+      "boardRun": 1,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:40:53.976Z",
+      "completedAt": "2026-11-14T06:42:16.795Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 0.72,
+        "payout": 0.85,
+        "margin": 0.05,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": false,
+        "openingCostAdmission": false
+      },
+      "score": {
+        "marginCents": 493981,
+        "revenueCents": 2956549,
+        "marginShare": 0.1670802682451737,
+        "wonOrders": 364,
+        "onTimeShare": 0.9615384615384616,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 364,
+        "onTimeOrders": 350,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00125",
+          "R00216",
+          "R00237",
+          "R00268",
+          "R00451",
+          "R00516",
+          "R00539",
+          "R00754",
+          "R00843",
+          "R00867",
+          "R00870",
+          "R00871",
+          "R00911",
+          "R00998"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 2956549,
+        "driver_fee": -2425286,
+        "late_refund": -37282
+      },
+      "failedVisits": 0,
+      "errors": [
+        {
+          "at": 5024,
+          "action": {
+            "type": "reprice",
+            "gigId": "g48",
+            "schedule": [
+              {
+                "at": 5024,
+                "feeCents": 12768
+              },
+              {
+                "at": 5054,
+                "feeCents": 12768
+              },
+              {
+                "at": 5132,
+                "feeCents": 16173
+              },
+              {
+                "at": 5192,
+                "feeCents": 21280
+              }
+            ]
+          },
+          "reason": "Gig g48 is not open"
+        }
+      ],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w4bca72b69372975a3ba2.meta.json",
+          "sha256": "8644e3992fe28ac2161cfecd714367ab63fb24fe4e3ed75daf1c0c137c8f61b5"
+        },
+        "score": {
+          "path": "runs/w4bca72b69372975a3ba2.score.json",
+          "sha256": "e56a6f3f864eccff5ca16c03c32731bdc2fc11aef3dc97929c7b4a6f458e93c5"
+        },
+        "snapshot": {
+          "path": "runs/w4bca72b69372975a3ba2.snapshot.json",
+          "sha256": "1cfe2a6d2069326489b6d16f8be4de1947529b66d97c1761177edd2b60d300f8"
+        },
+        "events": {
+          "path": "runs/w4bca72b69372975a3ba2.events.json",
+          "sha256": "f782430404403d42a1ad5162132cb0a11e10884b43c124e7e27261b42acc17bd"
+        },
+        "errors": {
+          "path": "runs/w4bca72b69372975a3ba2.errors.json",
+          "sha256": "0f8974d9c7e8df3f00ca9a2ac35bee17ae672086b786a10fb65461e1ac1ef0b9"
+        },
+        "recoveries": {
+          "path": "runs/w4bca72b69372975a3ba2.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "w4fb5c21855eff6787142",
+      "kind": "practice",
+      "level": 5,
+      "parent": null,
+      "season": 4,
+      "boardRun": 2,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:42:17.010Z",
+      "completedAt": "2026-11-14T06:43:44.588Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 0.72,
+        "payout": 0.85,
+        "margin": 0.05,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": false,
+        "openingCostAdmission": false
+      },
+      "score": {
+        "marginCents": 349535,
+        "revenueCents": 2735969,
+        "marginShare": 0.12775546798958615,
+        "wonOrders": 333,
+        "onTimeShare": 0.9429429429429429,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 333,
+        "onTimeOrders": 314,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00004",
+          "R00059",
+          "R00280",
+          "R00470",
+          "R00497",
+          "R00521",
+          "R00535",
+          "R00604",
+          "R00662",
+          "R00673",
+          "R00694",
+          "R00697",
+          "R00794",
+          "R00822",
+          "R00848",
+          "R00907",
+          "R00913",
+          "R00926",
+          "R00955"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 2735969,
+        "driver_fee": -2327400,
+        "release_fee": -3489,
+        "late_refund": -55545
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w4fb5c21855eff6787142.meta.json",
+          "sha256": "244dbd1bbfa8cff19e8a01711ba3fe8b2e8f82a44279f8caf18ae87b2bd74bc1"
+        },
+        "score": {
+          "path": "runs/w4fb5c21855eff6787142.score.json",
+          "sha256": "a42a4215a7cdce226ecb48efa5632349c351469fb3b6b9d47232577bd71711e7"
+        },
+        "snapshot": {
+          "path": "runs/w4fb5c21855eff6787142.snapshot.json",
+          "sha256": "a114ea04871b7fb8689401149b5138acb169210e1d70413192a77bbceb3d54fa"
+        },
+        "events": {
+          "path": "runs/w4fb5c21855eff6787142.events.json",
+          "sha256": "593a1a588711003137e0d322f8bc13609ff54142ca785b4b804a8777a6b645eb"
+        },
+        "errors": {
+          "path": "runs/w4fb5c21855eff6787142.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w4fb5c21855eff6787142.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "wf1f450dcdfb0070b6a6c",
+      "kind": "practice",
+      "level": 5,
+      "parent": null,
+      "season": 4,
+      "boardRun": 3,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:43:44.642Z",
+      "completedAt": "2026-11-14T06:45:12.849Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 0.72,
+        "payout": 0.85,
+        "margin": 0.05,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": false,
+        "openingCostAdmission": false
+      },
+      "score": {
+        "marginCents": 341338,
+        "revenueCents": 2379052,
+        "marginShare": 0.14347647718503,
+        "wonOrders": 316,
+        "onTimeShare": 0.9651898734177216,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 316,
+        "onTimeOrders": 305,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00079",
+          "R00100",
+          "R00143",
+          "R00187",
+          "R00224",
+          "R00225",
+          "R00258",
+          "R00326",
+          "R00345",
+          "R00428",
+          "R00644"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 2379052,
+        "driver_fee": -2010753,
+        "late_refund": -24477,
+        "release_fee": -2484
+      },
+      "failedVisits": 0,
+      "errors": [
+        {
+          "at": 6589,
+          "action": {
+            "type": "reprice",
+            "gigId": "g191",
+            "schedule": [
+              {
+                "at": 6589,
+                "feeCents": 8981
+              },
+              {
+                "at": 6619,
+                "feeCents": 8981
+              },
+              {
+                "at": 6671,
+                "feeCents": 11375
+              },
+              {
+                "at": 6731,
+                "feeCents": 14968
+              }
+            ]
+          },
+          "reason": "Gig g191 is not open"
+        }
+      ],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/wf1f450dcdfb0070b6a6c.meta.json",
+          "sha256": "c3c05da66fa7f2143127c8c3512fcc7ed80140087248059f89d9325b079ae0c9"
+        },
+        "score": {
+          "path": "runs/wf1f450dcdfb0070b6a6c.score.json",
+          "sha256": "72eacf60c6bc05dc8b2d3c4fe662b3b3a16825f50a299aa47ef5b84d8178f54a"
+        },
+        "snapshot": {
+          "path": "runs/wf1f450dcdfb0070b6a6c.snapshot.json",
+          "sha256": "b230674822c89669778dfbb86b42e16045bcce84d9112816368e3bab525eb405"
+        },
+        "events": {
+          "path": "runs/wf1f450dcdfb0070b6a6c.events.json",
+          "sha256": "e014eb47111cd71a5af18e2afa4377e6256b13ae05c6e2f86f9edd9833bb29d4"
+        },
+        "errors": {
+          "path": "runs/wf1f450dcdfb0070b6a6c.errors.json",
+          "sha256": "17cd62b3cee6a0d95fb288589592b361e7cac58f2f56a0ffcbd0285e9a579699"
+        },
+        "recoveries": {
+          "path": "runs/wf1f450dcdfb0070b6a6c.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "w5a2fa10fa078e74afee7",
+      "kind": "practice",
+      "level": 5,
+      "parent": null,
+      "season": 4,
+      "boardRun": 4,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:45:12.991Z",
+      "completedAt": "2026-11-14T06:46:43.901Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 0.72,
+        "payout": 0.85,
+        "margin": 0.05,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": false,
+        "openingCostAdmission": false
+      },
+      "score": {
+        "marginCents": 223177,
+        "revenueCents": 1913659,
+        "marginShare": 0.1166231810369559,
+        "wonOrders": 262,
+        "onTimeShare": 0.9351145038167938,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 262,
+        "onTimeOrders": 245,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00040",
+          "R00159",
+          "R00163",
+          "R00187",
+          "R00208",
+          "R00226",
+          "R00228",
+          "R00375",
+          "R00519",
+          "R00579",
+          "R00621",
+          "R00641",
+          "R00745",
+          "R00749",
+          "R00790",
+          "R00795",
+          "R00972"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "release_fee": -7578,
+        "revenue": 1913659,
+        "driver_fee": -1650500,
+        "late_refund": -32404
+      },
+      "failedVisits": 0,
+      "errors": [
+        {
+          "at": 6675,
+          "action": {
+            "type": "reprice",
+            "gigId": "g193",
+            "schedule": [
+              {
+                "at": 6675,
+                "feeCents": 4250
+              },
+              {
+                "at": 6705,
+                "feeCents": 4250
+              },
+              {
+                "at": 6735,
+                "feeCents": 5383
+              },
+              {
+                "at": 6779,
+                "feeCents": 7083
+              }
+            ]
+          },
+          "reason": "Gig g193 is not open"
+        },
+        {
+          "at": 6675,
+          "action": {
+            "type": "reprice",
+            "gigId": "g193",
+            "schedule": [
+              {
+                "at": 6675,
+                "feeCents": 4250
+              },
+              {
+                "at": 6705,
+                "feeCents": 4250
+              },
+              {
+                "at": 6735,
+                "feeCents": 5383
+              },
+              {
+                "at": 6779,
+                "feeCents": 7083
+              }
+            ]
+          },
+          "reason": "Gig g193 is not open"
+        }
+      ],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w5a2fa10fa078e74afee7.meta.json",
+          "sha256": "e0ef919229f689238f76955998eb88f935972d1c13367460587af5ebf20d385a"
+        },
+        "score": {
+          "path": "runs/w5a2fa10fa078e74afee7.score.json",
+          "sha256": "97f9ed26231ded496f1c22f18f9a3ac35b0bd0c02014020c5ba7a416e1505a1d"
+        },
+        "snapshot": {
+          "path": "runs/w5a2fa10fa078e74afee7.snapshot.json",
+          "sha256": "65acad9807d0c1534fd6fa52dbc965c67c28d65f0a2c86eeb190ca00acd743b0"
+        },
+        "events": {
+          "path": "runs/w5a2fa10fa078e74afee7.events.json",
+          "sha256": "f64be1351595b8b6832379ab37abdce4c735b1d05582c04dad5eb96842ce5212"
+        },
+        "errors": {
+          "path": "runs/w5a2fa10fa078e74afee7.errors.json",
+          "sha256": "4ac77a32307aae6a87a6bea1a10635c2d35287286ad8ae84a63f3ce1cf302591"
+        },
+        "recoveries": {
+          "path": "runs/w5a2fa10fa078e74afee7.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "w8450063f272a02c11ce4",
+      "kind": "practice",
+      "level": 5,
+      "parent": null,
+      "season": 4,
+      "boardRun": 5,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:46:44.094Z",
+      "completedAt": "2026-11-14T06:48:19.552Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 0.72,
+        "payout": 0.85,
+        "margin": 0.05,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": false,
+        "openingCostAdmission": false
+      },
+      "score": {
+        "marginCents": 371955,
+        "revenueCents": 2613535,
+        "marginShare": 0.14231873688318694,
+        "wonOrders": 321,
+        "onTimeShare": 0.9470404984423676,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 321,
+        "onTimeOrders": 304,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00005",
+          "R00193",
+          "R00231",
+          "R00300",
+          "R00386",
+          "R00412",
+          "R00414",
+          "R00421",
+          "R00422",
+          "R00439",
+          "R00483",
+          "R00542",
+          "R00558",
+          "R00562",
+          "R00704",
+          "R00734",
+          "R00809"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 2613535,
+        "driver_fee": -2185978,
+        "release_fee": -4459,
+        "fine": -10000,
+        "late_refund": -41143
+      },
+      "failedVisits": 0,
+      "errors": [
+        {
+          "at": 10814,
+          "action": {
+            "type": "reprice",
+            "gigId": "g236",
+            "schedule": [
+              {
+                "at": 10814,
+                "feeCents": 12576
+              },
+              {
+                "at": 10844,
+                "feeCents": 12576
+              },
+              {
+                "at": 10891,
+                "feeCents": 15930
+              },
+              {
+                "at": 10951,
+                "feeCents": 20960
+              }
+            ]
+          },
+          "reason": "Gig g236 is not open"
+        }
+      ],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w8450063f272a02c11ce4.meta.json",
+          "sha256": "0756d512d9400ffd97a8a4fea993790a4204cf4a43d5e6072955f16543071d35"
+        },
+        "score": {
+          "path": "runs/w8450063f272a02c11ce4.score.json",
+          "sha256": "f29aaae1d0f8e3091416d0152b4c6e1ec7962577b62cde081675a4e3f7b23191"
+        },
+        "snapshot": {
+          "path": "runs/w8450063f272a02c11ce4.snapshot.json",
+          "sha256": "152eca7b791f9340ca92f78ff3d81ae116046d22cf51cf1de52599d6fd99da9e"
+        },
+        "events": {
+          "path": "runs/w8450063f272a02c11ce4.events.json",
+          "sha256": "d29d49994c36c967770ba7dae30393890de0093542f0e3975a6cdcc966171295"
+        },
+        "errors": {
+          "path": "runs/w8450063f272a02c11ce4.errors.json",
+          "sha256": "395b1960789c069d79aed9862d59d201f57cd81da686321c32b44085b59daed8"
+        },
+        "recoveries": {
+          "path": "runs/w8450063f272a02c11ce4.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "w3c236f0739af313f57e9",
+      "kind": "practice",
+      "level": 6,
+      "parent": null,
+      "season": 4,
+      "boardRun": 1,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:40:54.219Z",
+      "completedAt": "2026-11-14T06:42:17.040Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 0.72,
+        "payout": 0.85,
+        "margin": 0.05,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": false,
+        "openingCostAdmission": false
+      },
+      "score": {
+        "marginCents": 365111,
+        "revenueCents": 2451845,
+        "marginShare": 0.14891275753565172,
+        "wonOrders": 314,
+        "onTimeShare": 0.9490445859872612,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 314,
+        "onTimeOrders": 298,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00068",
+          "R00101",
+          "R00151",
+          "R00195",
+          "R00206",
+          "R00207",
+          "R00209",
+          "R00216",
+          "R00217",
+          "R00279",
+          "R00418",
+          "R00481",
+          "R00597",
+          "R00629",
+          "R00788",
+          "R00993"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 2451845,
+        "driver_fee": -2043474,
+        "late_refund": -43260
+      },
+      "failedVisits": 0,
+      "errors": [
+        {
+          "at": 996,
+          "action": {
+            "type": "reprice",
+            "gigId": "g22",
+            "schedule": [
+              {
+                "at": 996,
+                "feeCents": 3884
+              },
+              {
+                "at": 1026,
+                "feeCents": 3884
+              },
+              {
+                "at": 1056,
+                "feeCents": 3884
+              },
+              {
+                "at": 1086,
+                "feeCents": 5110
+              }
+            ]
+          },
+          "reason": "Gig g22 is not open"
+        },
+        {
+          "at": 996,
+          "action": {
+            "type": "reprice",
+            "gigId": "g22",
+            "schedule": [
+              {
+                "at": 996,
+                "feeCents": 3884
+              },
+              {
+                "at": 1026,
+                "feeCents": 3884
+              },
+              {
+                "at": 1056,
+                "feeCents": 3884
+              },
+              {
+                "at": 1086,
+                "feeCents": 5110
+              }
+            ]
+          },
+          "reason": "Gig g22 is not open"
+        },
+        {
+          "at": 6776,
+          "action": {
+            "type": "reprice",
+            "gigId": "g252",
+            "schedule": [
+              {
+                "at": 6776,
+                "feeCents": 4298
+              },
+              {
+                "at": 6806,
+                "feeCents": 4298
+              },
+              {
+                "at": 6836,
+                "feeCents": 4298
+              },
+              {
+                "at": 6866,
+                "feeCents": 5655
+              }
+            ]
+          },
+          "reason": "Gig g252 is not open"
+        },
+        {
+          "at": 6776,
+          "action": {
+            "type": "reprice",
+            "gigId": "g252",
+            "schedule": [
+              {
+                "at": 6776,
+                "feeCents": 4298
+              },
+              {
+                "at": 6806,
+                "feeCents": 4298
+              },
+              {
+                "at": 6836,
+                "feeCents": 4298
+              },
+              {
+                "at": 6866,
+                "feeCents": 5655
+              }
+            ]
+          },
+          "reason": "Gig g252 is not open"
+        }
+      ],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w3c236f0739af313f57e9.meta.json",
+          "sha256": "1957022f0f92251be1ac3569bbc4de28e45731060e804ec003682bbbad1ccc56"
+        },
+        "score": {
+          "path": "runs/w3c236f0739af313f57e9.score.json",
+          "sha256": "68d8cf0629da681b70542ce1425e16de96cf4a422625dac824f08088745708ab"
+        },
+        "snapshot": {
+          "path": "runs/w3c236f0739af313f57e9.snapshot.json",
+          "sha256": "84fb88a0635e4a4e7ec283c8bdbbf79851a48d585522ce9d4f76741344c2eccf"
+        },
+        "events": {
+          "path": "runs/w3c236f0739af313f57e9.events.json",
+          "sha256": "c45e9abc9787bab51be085e46d47f0904712484cf5f4b750ee113b5d2ad79afc"
+        },
+        "errors": {
+          "path": "runs/w3c236f0739af313f57e9.errors.json",
+          "sha256": "6360f1ce6ee7d6d17726b0ceff71ad9835dc462658c944141bfca7f5a274f282"
+        },
+        "recoveries": {
+          "path": "runs/w3c236f0739af313f57e9.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "w93f8a53fdbc8c0830d12",
+      "kind": "practice",
+      "level": 6,
+      "parent": null,
+      "season": 4,
+      "boardRun": 2,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:42:17.303Z",
+      "completedAt": "2026-11-14T06:43:49.845Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 0.72,
+        "payout": 0.85,
+        "margin": 0.05,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": false,
+        "openingCostAdmission": false
+      },
+      "score": {
+        "marginCents": 452650,
+        "revenueCents": 2411105,
+        "marginShare": 0.18773549886877594,
+        "wonOrders": 360,
+        "onTimeShare": 0.9666666666666667,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 360,
+        "onTimeOrders": 348,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00004",
+          "R00158",
+          "R00288",
+          "R00311",
+          "R00333",
+          "R00414",
+          "R00432",
+          "R00447",
+          "R00471",
+          "R00548",
+          "R00555",
+          "R00810"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 2411105,
+        "driver_fee": -1921959,
+        "late_refund": -36496
+      },
+      "failedVisits": 0,
+      "errors": [
+        {
+          "at": 5172,
+          "action": {
+            "type": "reprice",
+            "gigId": "g182",
+            "schedule": [
+              {
+                "at": 5172,
+                "feeCents": 7454
+              },
+              {
+                "at": 5202,
+                "feeCents": 7454
+              },
+              {
+                "at": 5232,
+                "feeCents": 9441
+              },
+              {
+                "at": 5292,
+                "feeCents": 12423
+              }
+            ]
+          },
+          "reason": "Gig g182 is not open"
+        },
+        {
+          "at": 5251,
+          "action": {
+            "type": "reprice",
+            "gigId": "g188",
+            "schedule": [
+              {
+                "at": 5251,
+                "feeCents": 3000
+              },
+              {
+                "at": 5281,
+                "feeCents": 3000
+              },
+              {
+                "at": 5374,
+                "feeCents": 3800
+              },
+              {
+                "at": 5434,
+                "feeCents": 5000
+              }
+            ]
+          },
+          "reason": "Gig g188 is not open"
+        },
+        {
+          "at": 6705,
+          "action": {
+            "type": "reprice",
+            "gigId": "g221",
+            "schedule": [
+              {
+                "at": 6705,
+                "feeCents": 6719
+              },
+              {
+                "at": 6735,
+                "feeCents": 6719
+              },
+              {
+                "at": 6765,
+                "feeCents": 8510
+              },
+              {
+                "at": 6795,
+                "feeCents": 11198
+              }
+            ]
+          },
+          "reason": "Gig g221 is not open"
+        },
+        {
+          "at": 6705,
+          "action": {
+            "type": "reprice",
+            "gigId": "g221",
+            "schedule": [
+              {
+                "at": 6705,
+                "feeCents": 6719
+              },
+              {
+                "at": 6735,
+                "feeCents": 6719
+              },
+              {
+                "at": 6765,
+                "feeCents": 8510
+              },
+              {
+                "at": 6795,
+                "feeCents": 11198
+              }
+            ]
+          },
+          "reason": "Gig g221 is not open"
+        }
+      ],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w93f8a53fdbc8c0830d12.meta.json",
+          "sha256": "4a0aff961a4abeaa84dc52138ea9a2aa2c1e08c305237070e051bc752fd446d2"
+        },
+        "score": {
+          "path": "runs/w93f8a53fdbc8c0830d12.score.json",
+          "sha256": "eeb057e048ab6513df9deb57ae6012b92d25ed9a0370140904192e91e58f98fc"
+        },
+        "snapshot": {
+          "path": "runs/w93f8a53fdbc8c0830d12.snapshot.json",
+          "sha256": "e2dc7792bbe934b73405441065e20a993c82d843cf7f93158e07a441f643455e"
+        },
+        "events": {
+          "path": "runs/w93f8a53fdbc8c0830d12.events.json",
+          "sha256": "2ea72374346d98dbc0131678f94ef8543eb056ce1c96180e986cbf22e6039ab4"
+        },
+        "errors": {
+          "path": "runs/w93f8a53fdbc8c0830d12.errors.json",
+          "sha256": "a5880e544329d6f7c8634905f86576b4351ce406965dce5eb55ee1d99ec7b7fa"
+        },
+        "recoveries": {
+          "path": "runs/w93f8a53fdbc8c0830d12.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "w9a17028eb87c1e331daf",
+      "kind": "practice",
+      "level": 6,
+      "parent": null,
+      "season": 4,
+      "boardRun": 3,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:43:50.258Z",
+      "completedAt": "2026-11-14T06:45:15.568Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 0.72,
+        "payout": 0.85,
+        "margin": 0.05,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": false,
+        "openingCostAdmission": false
+      },
+      "score": {
+        "marginCents": 230395,
+        "revenueCents": 2489652,
+        "marginShare": 0.0925410458971776,
+        "wonOrders": 300,
+        "onTimeShare": 0.93,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 300,
+        "onTimeOrders": 279,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00047",
+          "R00089",
+          "R00135",
+          "R00149",
+          "R00155",
+          "R00156",
+          "R00199",
+          "R00215",
+          "R00234",
+          "R00235",
+          "R00238",
+          "R00243",
+          "R00246",
+          "R00379",
+          "R00419",
+          "R00502",
+          "R00659",
+          "R00705",
+          "R00710",
+          "R00757",
+          "R00965"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 2489652,
+        "driver_fee": -2199181,
+        "late_refund": -60076
+      },
+      "failedVisits": 0,
+      "errors": [
+        {
+          "at": 2909,
+          "action": {
+            "type": "reprice",
+            "gigId": "g84",
+            "schedule": [
+              {
+                "at": 2909,
+                "feeCents": 5945
+              },
+              {
+                "at": 2943,
+                "feeCents": 7823
+              }
+            ]
+          },
+          "reason": "Gig g84 is not open"
+        },
+        {
+          "at": 2909,
+          "action": {
+            "type": "reprice",
+            "gigId": "g84",
+            "schedule": [
+              {
+                "at": 2909,
+                "feeCents": 5945
+              },
+              {
+                "at": 2943,
+                "feeCents": 7823
+              }
+            ]
+          },
+          "reason": "Gig g84 is not open"
+        }
+      ],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w9a17028eb87c1e331daf.meta.json",
+          "sha256": "5c51ec7d284f5b0ff1f7ac5f77f5628d6029fdf0924f9d137a72be761c27057b"
+        },
+        "score": {
+          "path": "runs/w9a17028eb87c1e331daf.score.json",
+          "sha256": "99b3bbbf79f286a04539e684b2ef26fd671f94ae085fc347da9c8d04549f3bfb"
+        },
+        "snapshot": {
+          "path": "runs/w9a17028eb87c1e331daf.snapshot.json",
+          "sha256": "0d6694e379c95f7cb844b42f2ddd795f74ca97a69d28ae70da5584f2c089e90e"
+        },
+        "events": {
+          "path": "runs/w9a17028eb87c1e331daf.events.json",
+          "sha256": "75bf5257416983047e3c4f8ed3736bcb87a6046ea88e187ebe2ea07918dc3628"
+        },
+        "errors": {
+          "path": "runs/w9a17028eb87c1e331daf.errors.json",
+          "sha256": "276421e95a29e0636fb35db770846af5afb41846cc5b32db35b135f69547a5be"
+        },
+        "recoveries": {
+          "path": "runs/w9a17028eb87c1e331daf.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "waa88d5a68c6c3d66fd34",
+      "kind": "practice",
+      "level": 6,
+      "parent": null,
+      "season": 4,
+      "boardRun": 4,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:45:15.802Z",
+      "completedAt": "2026-11-14T06:46:52.521Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 0.72,
+        "payout": 0.85,
+        "margin": 0.05,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": false,
+        "openingCostAdmission": false
+      },
+      "score": {
+        "marginCents": 289195,
+        "revenueCents": 2600725,
+        "marginShare": 0.11119783906410713,
+        "wonOrders": 336,
+        "onTimeShare": 0.9494047619047619,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 336,
+        "onTimeOrders": 319,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00040",
+          "R00167",
+          "R00168",
+          "R00195",
+          "R00217",
+          "R00246",
+          "R00291",
+          "R00303",
+          "R00338",
+          "R00347",
+          "R00348",
+          "R00354",
+          "R00672",
+          "R00745",
+          "R00820",
+          "R00968",
+          "R00978"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 2600725,
+        "driver_fee": -2268618,
+        "late_refund": -42912
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/waa88d5a68c6c3d66fd34.meta.json",
+          "sha256": "04b5f0a3a0d14f80ff2e4b0d1e9db7649e44ada7e27a58fb55a32d3bb8295e8d"
+        },
+        "score": {
+          "path": "runs/waa88d5a68c6c3d66fd34.score.json",
+          "sha256": "c0c26012793380bce3ea47d8e17bd015d7ae9c36f3b4069e2257bdb6baf94bc9"
+        },
+        "snapshot": {
+          "path": "runs/waa88d5a68c6c3d66fd34.snapshot.json",
+          "sha256": "6cedd7e9a3a4c937a0cd1391ccbfd4fabf88f5b40d8bf4cbd2e561d4008ece46"
+        },
+        "events": {
+          "path": "runs/waa88d5a68c6c3d66fd34.events.json",
+          "sha256": "15a1aa6c9e77fa5764acfdfc20b572f90a31abb0db9cd06f7f6573849087d127"
+        },
+        "errors": {
+          "path": "runs/waa88d5a68c6c3d66fd34.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/waa88d5a68c6c3d66fd34.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "wc65812d5a0ecf5507eba",
+      "kind": "practice",
+      "level": 6,
+      "parent": null,
+      "season": 4,
+      "boardRun": 5,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:46:52.707Z",
+      "completedAt": "2026-11-14T06:48:26.253Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 0.72,
+        "payout": 0.85,
+        "margin": 0.05,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": false,
+        "openingCostAdmission": false
+      },
+      "score": {
+        "marginCents": 379463,
+        "revenueCents": 2353609,
+        "marginShare": 0.16122601502628517,
+        "wonOrders": 337,
+        "onTimeShare": 0.9703264094955489,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 337,
+        "onTimeOrders": 327,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00005",
+          "R00047",
+          "R00122",
+          "R00357",
+          "R00417",
+          "R00418",
+          "R00515",
+          "R00703",
+          "R00735",
+          "R00803"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 2353609,
+        "driver_fee": -1951612,
+        "late_refund": -22534
+      },
+      "failedVisits": 0,
+      "errors": [
+        {
+          "at": 2520,
+          "action": {
+            "type": "reprice",
+            "gigId": "g26",
+            "schedule": [
+              {
+                "at": 2520,
+                "feeCents": 5648
+              },
+              {
+                "at": 2550,
+                "feeCents": 5648
+              },
+              {
+                "at": 2580,
+                "feeCents": 5648
+              },
+              {
+                "at": 2610,
+                "feeCents": 5648
+              }
+            ]
+          },
+          "reason": "Gig g26 is not open"
+        },
+        {
+          "at": 2520,
+          "action": {
+            "type": "reprice",
+            "gigId": "g26",
+            "schedule": [
+              {
+                "at": 2520,
+                "feeCents": 5648
+              },
+              {
+                "at": 2550,
+                "feeCents": 5648
+              },
+              {
+                "at": 2580,
+                "feeCents": 5648
+              },
+              {
+                "at": 2610,
+                "feeCents": 5648
+              }
+            ]
+          },
+          "reason": "Gig g26 is not open"
+        }
+      ],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/wc65812d5a0ecf5507eba.meta.json",
+          "sha256": "e996c1b44d6188e272c94ef6cf3a31aa376ebecaccc35ccfd730598c65475fe9"
+        },
+        "score": {
+          "path": "runs/wc65812d5a0ecf5507eba.score.json",
+          "sha256": "16c9ac9019bafe436cb52e40ed7a338ea127f82753042e22d876b4f3e289f2c9"
+        },
+        "snapshot": {
+          "path": "runs/wc65812d5a0ecf5507eba.snapshot.json",
+          "sha256": "b3d730305b1e9a43fecf831e867ed042d018262e1e8272d97d00b7ee89ef084f"
+        },
+        "events": {
+          "path": "runs/wc65812d5a0ecf5507eba.events.json",
+          "sha256": "bd818826269429e7eda6fc2e00ed1e087605cfda1a05cda05f4562591f7a0fcc"
+        },
+        "errors": {
+          "path": "runs/wc65812d5a0ecf5507eba.errors.json",
+          "sha256": "ba2d049a0adcf632a849bbdf053b5eabbc4eac2821c66e2485991c3379d56fe0"
+        },
+        "recoveries": {
+          "path": "runs/wc65812d5a0ecf5507eba.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "w0d621a637f6d8dc88c27",
+      "kind": "practice",
+      "level": 7,
+      "parent": null,
+      "season": 4,
+      "boardRun": 1,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:40:53.841Z",
+      "completedAt": "2026-11-14T06:42:04.373Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "payout": 0.85,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": false,
+        "openingCostAdmission": false
+      },
+      "score": {
+        "marginCents": 517489,
+        "revenueCents": 1589829,
+        "marginShare": 0.32549978645502126,
+        "wonOrders": 179,
+        "onTimeShare": 0.9832402234636871,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 179,
+        "onTimeOrders": 176,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00414",
+          "R00624",
+          "R00638"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 1589829,
+        "driver_fee": -1061800,
+        "release_fee": -1709,
+        "late_refund": -8831
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w0d621a637f6d8dc88c27.meta.json",
+          "sha256": "255b67072ad87a9e5c29b6df475bc6528f2f1aca78f270624b0fc10d1ae399af"
+        },
+        "score": {
+          "path": "runs/w0d621a637f6d8dc88c27.score.json",
+          "sha256": "395f5fcfd2c523c7ef174c054a0abb978eac84f642762739277f1d8003e13655"
+        },
+        "snapshot": {
+          "path": "runs/w0d621a637f6d8dc88c27.snapshot.json",
+          "sha256": "37d23598d04c3945a448da02f73644c5433c635226f1203e7ff40eb633055e9c"
+        },
+        "events": {
+          "path": "runs/w0d621a637f6d8dc88c27.events.json",
+          "sha256": "a09f3a4cd3624ceed377606b4308e3ed471e4a1ae1759ebcc9aede0a274d961d"
+        },
+        "errors": {
+          "path": "runs/w0d621a637f6d8dc88c27.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w0d621a637f6d8dc88c27.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "web9187f12139b4bf4f4f",
+      "kind": "practice",
+      "level": 7,
+      "parent": null,
+      "season": 4,
+      "boardRun": 2,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:42:04.510Z",
+      "completedAt": "2026-11-14T06:43:21.517Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "payout": 0.85,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": false,
+        "openingCostAdmission": false
+      },
+      "score": {
+        "marginCents": 648867,
+        "revenueCents": 2064182,
+        "marginShare": 0.31434582803260563,
+        "wonOrders": 249,
+        "onTimeShare": 0.9799196787148594,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 249,
+        "onTimeOrders": 244,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00099",
+          "R00146",
+          "R00277",
+          "R00563",
+          "R00740"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 2064182,
+        "driver_fee": -1389237,
+        "late_refund": -24062,
+        "release_fee": -2016
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/web9187f12139b4bf4f4f.meta.json",
+          "sha256": "433d4a94da78b561468d8aec085ffa479e2c30871f68f8e60859d8041a425478"
+        },
+        "score": {
+          "path": "runs/web9187f12139b4bf4f4f.score.json",
+          "sha256": "f020d4d4c6bba19894e34079d4520ebf9db5a42ceffd10e9a292f219a833c4e7"
+        },
+        "snapshot": {
+          "path": "runs/web9187f12139b4bf4f4f.snapshot.json",
+          "sha256": "35cbd61a0ceab4a96158247ba9dd3b115cdd230529e2bef3598e19b9715008e4"
+        },
+        "events": {
+          "path": "runs/web9187f12139b4bf4f4f.events.json",
+          "sha256": "acfe5a67b53d0bf2ca931766b0b3df995588e19c428e2cc6ec144c551e7cb3f0"
+        },
+        "errors": {
+          "path": "runs/web9187f12139b4bf4f4f.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/web9187f12139b4bf4f4f.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "w8b780d80cc0ccdf1b46c",
+      "kind": "practice",
+      "level": 7,
+      "parent": null,
+      "season": 4,
+      "boardRun": 3,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:43:22.468Z",
+      "completedAt": "2026-11-14T06:44:38.502Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "payout": 0.85,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": false,
+        "openingCostAdmission": false
+      },
+      "score": {
+        "marginCents": 511547,
+        "revenueCents": 1852451,
+        "marginShare": 0.27614603571160584,
+        "wonOrders": 189,
+        "onTimeShare": 0.9788359788359788,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 189,
+        "onTimeOrders": 185,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00316",
+          "R00332",
+          "R00365",
+          "R00431"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 1852451,
+        "driver_fee": -1324978,
+        "release_fee": -877,
+        "late_refund": -15049
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w8b780d80cc0ccdf1b46c.meta.json",
+          "sha256": "04f38b2ed7ed4b429e798f60cdbf77763426c3e4b7403c28ba7b674fa5a890fb"
+        },
+        "score": {
+          "path": "runs/w8b780d80cc0ccdf1b46c.score.json",
+          "sha256": "0d0920770fad3cf8aaf066548ee06311b9b001170680e52bee01f5bac4bb2f1b"
+        },
+        "snapshot": {
+          "path": "runs/w8b780d80cc0ccdf1b46c.snapshot.json",
+          "sha256": "38d88b158c545e236c09bc94d070bfd7ca7cfda01fb43717fa811622a271149c"
+        },
+        "events": {
+          "path": "runs/w8b780d80cc0ccdf1b46c.events.json",
+          "sha256": "63d4ee8967befa6aaf58626f4fa17912323d37c117c88babda8d52b4f4479b0c"
+        },
+        "errors": {
+          "path": "runs/w8b780d80cc0ccdf1b46c.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w8b780d80cc0ccdf1b46c.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "w5dc8cd4af86670b58f43",
+      "kind": "practice",
+      "level": 7,
+      "parent": null,
+      "season": 4,
+      "boardRun": 4,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:44:38.638Z",
+      "completedAt": "2026-11-14T06:45:57.005Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "payout": 0.85,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": false,
+        "openingCostAdmission": false
+      },
+      "score": {
+        "marginCents": 707893,
+        "revenueCents": 2008475,
+        "marginShare": 0.3524529804951518,
+        "wonOrders": 251,
+        "onTimeShare": 0.9880478087649402,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 251,
+        "onTimeOrders": 248,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00065",
+          "R00110",
+          "R00256"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 2008475,
+        "driver_fee": -1294542,
+        "late_refund": -4022,
+        "release_fee": -2018
+      },
+      "failedVisits": 0,
+      "errors": [
+        {
+          "at": 6659,
+          "action": {
+            "type": "reprice",
+            "gigId": "g214",
+            "schedule": [
+              {
+                "at": 6659,
+                "feeCents": 7175
+              },
+              {
+                "at": 6689,
+                "feeCents": 7175
+              },
+              {
+                "at": 6719,
+                "feeCents": 9088
+              },
+              {
+                "at": 6779,
+                "feeCents": 11958
+              }
+            ]
+          },
+          "reason": "Gig g214 is not open"
+        },
+        {
+          "at": 6659,
+          "action": {
+            "type": "reprice",
+            "gigId": "g214",
+            "schedule": [
+              {
+                "at": 6659,
+                "feeCents": 7175
+              },
+              {
+                "at": 6689,
+                "feeCents": 7175
+              },
+              {
+                "at": 6719,
+                "feeCents": 9088
+              },
+              {
+                "at": 6779,
+                "feeCents": 11958
+              }
+            ]
+          },
+          "reason": "Gig g214 is not open"
+        }
+      ],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w5dc8cd4af86670b58f43.meta.json",
+          "sha256": "48e9ae9ec8eccc620f31b119e28b997fa1627285bd969ce9dccbd0f0cd5ebd2c"
+        },
+        "score": {
+          "path": "runs/w5dc8cd4af86670b58f43.score.json",
+          "sha256": "5e6048d7ecbda1f55f3dc7157f8da717ca661507dba64af7036f4752c24271de"
+        },
+        "snapshot": {
+          "path": "runs/w5dc8cd4af86670b58f43.snapshot.json",
+          "sha256": "adc46ddb7c44e872d558843d43d10b593ef8637ff4ad87942e36cc0331d39743"
+        },
+        "events": {
+          "path": "runs/w5dc8cd4af86670b58f43.events.json",
+          "sha256": "f494f3e4b395682566c392ac864d28f6852b26988af3980ac58a2e69a5f53a2c"
+        },
+        "errors": {
+          "path": "runs/w5dc8cd4af86670b58f43.errors.json",
+          "sha256": "4c7eac5311b4d3d5d2ca1a20fe5a7525096fd5b9d751b6fc16af0a941e3cabea"
+        },
+        "recoveries": {
+          "path": "runs/w5dc8cd4af86670b58f43.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    {
+      "worldId": "w88b2932b4decb0824298",
+      "kind": "practice",
+      "level": 7,
+      "parent": null,
+      "season": 4,
+      "boardRun": 5,
+      "ended": true,
+      "status": "complete",
+      "startedAt": "2026-11-14T06:45:57.270Z",
+      "completedAt": "2026-11-14T06:47:20.510Z",
+      "policy": "frozen deadline policy",
+      "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+      "settings": {
+        "price": 1.42,
+        "fee": 1.05,
+        "payout": 0.85,
+        "margin": 0.1,
+        "capacity": 0.35,
+        "maxKm": 700,
+        "minDrivers": 8,
+        "notes": true,
+        "noteSpelling": false,
+        "relist": false,
+        "openingOnly": true,
+        "adaptive": true,
+        "earlyOffers": false,
+        "safetySlack": false,
+        "auction": false,
+        "allowPrivate": false,
+        "tradeIns": false,
+        "homeOffers": false,
+        "readiness": false,
+        "bundlePairs": true,
+        "timedNotes": false,
+        "lateRescue": true,
+        "sameDayPremium": 1,
+        "laterDiscount": 1,
+        "placePrior": 0,
+        "bundleWait": 15,
+        "backlog": 0.08,
+        "priceFloor": 0,
+        "costRatio": 1.15,
+        "trustStep": 0.01,
+        "sameDayBacklog": 4,
+        "demandSlope": 14,
+        "firstOptionOnly": false,
+        "openingCostAdmission": false
+      },
+      "score": {
+        "marginCents": 402836,
+        "revenueCents": 1290951,
+        "marginShare": 0.3120459258329712,
+        "wonOrders": 164,
+        "onTimeShare": 0.9939024390243902,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "counts": {
+        "wonOrders": 164,
+        "onTimeOrders": 163,
+        "undeliveredOrders": 0,
+        "lateOrderIds": [
+          "R00691"
+        ],
+        "undeliveredOrderIds": []
+      },
+      "ledgerCents": {
+        "revenue": 1290951,
+        "driver_fee": -880739,
+        "release_fee": -3071,
+        "late_refund": -4305
+      },
+      "failedVisits": 0,
+      "errors": [],
+      "recoveries": [],
+      "files": {
+        "meta": {
+          "path": "runs/w88b2932b4decb0824298.meta.json",
+          "sha256": "41f8a342fe714d145d4e58bd682fd774950d9220b42bcab6299ed781b71f05b6"
+        },
+        "score": {
+          "path": "runs/w88b2932b4decb0824298.score.json",
+          "sha256": "bdb8a38860c39861c3f1207eaedadcd2615b639c413def45a8755688ea4f87e8"
+        },
+        "snapshot": {
+          "path": "runs/w88b2932b4decb0824298.snapshot.json",
+          "sha256": "95e4beb8071c304d0a5e5434d8e39ac6680b5490981419ecc9e34dc41412d20b"
+        },
+        "events": {
+          "path": "runs/w88b2932b4decb0824298.events.json",
+          "sha256": "6c1f93b10d3a849dfef252dbb77f44c997be320f577e26afd5d27ab89eabb427"
+        },
+        "errors": {
+          "path": "runs/w88b2932b4decb0824298.errors.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "recoveries": {
+          "path": "runs/w88b2932b4decb0824298.recoveries.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    }
+  ],
+  "nonWorldFailures": [
+    {
+      "event": "failed",
+      "level": 5,
+      "run": 1,
+      "error": "Error: Cannot reach https://spread.bahnexpress.com: New ranked attempts held by user: finish existing worlds only. Check SPREAD_URL, and that the server runs",
+      "at": "2026-11-14T06:21:13.844Z"
+    },
+    {
+      "event": "failed",
+      "level": 2,
+      "run": 2,
+      "error": "Error: Another runner already created this ranked attempt",
+      "at": "2026-11-14T06:48:26.925Z"
+    },
+    {
+      "event": "failed",
+      "level": 3,
+      "run": 2,
+      "error": "Error: Another runner already created this ranked attempt",
+      "at": "2026-11-14T06:48:27.077Z"
+    }
+  ]
+}

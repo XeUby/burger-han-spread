@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-14T06:46:29.831447+00:00",
-  "objective": "Broader optimization retained; current user priority is levels1-7 compatibility followed by five ranked runs each before09:00 Helsinki, using unchanged validated control.",
+  "updatedAt": "2026-11-14T07:08:17.585468+00:00",
+  "objective": "First ranking round and queued development complete. Document findings and design the next generalizable optimization and learning program.",
   "maximumConcurrentPlays": 8,
   "currentConcurrency": {
     "maximumConcurrentPlays": 8,
-    "rankedWorkers": 7,
-    "unrankedWorkers": 1,
-    "note": "User raised shared maximum to8. One ranked world perlevel, fixed policy choices through deadline."
+    "rankedWorkers": 0,
+    "unrankedWorkers": 0,
+    "note": "No unfinished team worlds in docs/first-round-closed-inventory.json."
   },
   "completedCombinationStudy": {
     "sessionId": 84558,
@@ -67,9 +67,9 @@
     "700km-only bundle treatment ends at7407.63/9410.50 euros, minimum96.6% on time. It gains versus the old baseline in both weeks but not versus bundles alone. No900km experiment scheduled."
   ],
   "nextSteps": [
-    "Preserve the validated control and reject both frozen multi-route policies; no further confirmation or fresh validation for them.",
-    "Do not assume driver displacement explains the losses: only1of23matched newly-late seed10orders had its baseline driver physically occupied on a treatment large route at the old pickup minute.",
-    "Investigate whether arrival-time fulfillment-cost prediction can identify costly standalone exposure before pricing and acceptance. The current fixed1.15cost multiplier ignores the observed variation in rescue costs. Use old development data and a bounded held-out screen before authorizing another frozen whole-week experiment."
+    "Verify mechanism contracts across intended levels, preserving the validated level-8 control and the separate corrected low-level candidate.",
+    "Develop booking-response and capacity-value models, then compare distinct joint acquisition/fulfillment planners on matched development weeks.",
+    "Select and freeze a finalist before a new adequately sized independent validation panel under experiments/search-integrity.json."
   ],
   "validationStatus": "All16 fresh paired trials complete. Candidate mean10411.59 euros versus8242.34, +26.32%;7/8 positive;8/8 qualified; minimum94.94% on time; no undelivered orders. Full report docs/frontier-validation.md. No ranking submission.",
   "checks": {
@@ -1171,28 +1171,47 @@
     "decision": "Reject feature model: four-week mean RMSE gain over scalar only0.365%, wins2/4; no fresh policy validation."
   },
   "currentOperation": {
-    "protocol": "experiments/levels-deadline-protocol.json",
-    "role": "explicit deadline-priority ranked deployment, not statistical promotion",
+    "role": "completed first-round research review",
+    "report": "docs/first-round-findings-and-research-plan.md",
     "maximumConcurrentWorlds": 8,
-    "rankingHeld": false,
+    "rankingHeld": true,
     "noFinal": true
   },
   "rankedOutcome": {
-    "report": "docs/levels-ranked.json",
-    "completedLevels": [
-      1,
-      2,
-      3,
-      4
-    ],
-    "runsPerLevel": 1,
-    "remainingAttemptsNotCreated": 31,
-    "reason": "Cross-level competitiveness not established. User instructed finish existing worlds and work on improvement."
+    "report": "docs/levels-ranked-audit.json",
+    "completed": 35,
+    "qualified": 35,
+    "lastCompletedAt": "2026-11-14T06:49:14.582Z",
+    "allLevelsFinished": true,
+    "noRankedWorldsRemain": true,
+    "positionsAtAudit": [
+      9,
+      10,
+      9,
+      10,
+      10,
+      20,
+      18
+    ]
   },
   "completedFactorialStudy": {
     "report": "docs/levels-factorial-analysis.json",
     "trials": 36,
     "uniqueSeedBlocks": 3,
     "promotionGatesPassed": 0
+  },
+  "completedFirstOptionStudy": {
+    "report": "docs/levels-first-option-complete-analysis.json",
+    "trials": 27,
+    "uniqueSeedBlocks": 3,
+    "terminal": true,
+    "developmentGatePassedAtLevels": [
+      1,
+      2,
+      3
+    ],
+    "promotionAllowed": false,
+    "controlConformance": "docs/levels-first-option-control-conformance.json",
+    "decision": "Corrected admission is promising on development; no independent validation claim."
   }
 }

@@ -1,0 +1,38 @@
+{
+  "allExact": true,
+  "checks": [
+    {
+      "seed": "levels-development-2dba6ebe7258e63082c0",
+      "reference": "w5116b209e946fa965290",
+      "replication": "w8720d3e7691d0e5b6ae3",
+      "eventsSha256": [
+        "ade9894caeeae57ef703c58988a64441a008b16980df31e29564610d27492c0c",
+        "ade9894caeeae57ef703c58988a64441a008b16980df31e29564610d27492c0c"
+      ],
+      "exactEventMatch": true,
+      "sameResult": true
+    },
+    {
+      "seed": "levels-development-fbc5ca1adb2a1671179f",
+      "reference": "wbf4daaa0a55e39e76ed0",
+      "replication": "wf1472f7c40cf99f76443",
+      "eventsSha256": [
+        "9d6ed24307be0aff83bc61557c57a7318a989e97c40f51d409f12bae521bcef7",
+        "9d6ed24307be0aff83bc61557c57a7318a989e97c40f51d409f12bae521bcef7"
+      ],
+      "exactEventMatch": true,
+      "sameResult": true
+    },
+    {
+      "seed": "levels-development-bd4beddd353cf287138f",
+      "reference": "w0f5629ba2596c81d3b2d",
+      "replication": "wfb9dc5b4ee6ee7fd2479",
+      "eventsSha256": [
+        "8fceb2e0018485ea6f4e7a2603c7af42c4f300b8b688466e26e9e23e64df3b45",
+        "8fceb2e0018485ea6f4e7a2603c7af42c4f300b8b688466e26e9e23e64df3b45"
+      ],
+      "exactEventMatch": true,
+      "sameResult": true
+    }
+  ]
+}

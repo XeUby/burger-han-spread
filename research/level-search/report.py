@@ -7,7 +7,8 @@ root=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(root/'analysis'))
 from frontier_validation import load_world
 path=Path(sys.argv[1]);plan=json.loads(path.read_text())
-attempts=[json.loads(line) for line in (root/plan['attempts']).read_text().splitlines()]
+attemptFiles=plan.get('attemptFiles',[plan['attempts']])
+attempts=[json.loads(line) for file in attemptFiles for line in (root/file).read_text().splitlines()]
 records=[]
 for trial in plan['trials']:
  matching=[r for r in attempts if all(r.get(k)==trial[k] for k in ['label','seed','level'])]
@@ -24,7 +25,9 @@ for trial in plan['trials']:
    for event in events:
     if event['kind']=='ledger':ledger[event['line']['kind']]+=event['line']['cents']
    row.update(status='complete',result=result,ledgerCents=dict(ledger),failedVisits=sum(e['kind']=='visit_failed' for e in events),errors=json.loads((root/f'runs/{world}.errors.json').read_text()),recoveries=json.loads((root/f'runs/{world}.recoveries.json').read_text()))
- if any(r['event']=='failed' for r in matching):row['status']='failed'
+ interruptions=[r for r in matching if r['event']=='failed']
+ row['operationalInterruptions']=interruptions
+ if any(r.get('worldId') or not any(message in r.get('error','') for message in ['New ranked attempts held by user','New world creation held for scheduler handover']) for r in interruptions):row['status']='failed'
  records.append(row)
 assert sum(len(r['attempts']) for r in records)==len(attempts)
 terminal=all(r['status']=='complete' for r in records)

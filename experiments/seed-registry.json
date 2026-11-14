@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-14T06:47:18.780537+00:00",
+  "updatedAt": "2026-11-14T07:08:17.780338+00:00",
   "unit": "unique simulation seed/week; repeated worlds are not independent replications",
-  "worldRecords": 348,
+  "worldRecords": 365,
   "uniqueNamedWeeks": 76,
   "distinctLabels": 89,
   "distinctSourceSettingsCombinations": 70,
@@ -54,6 +54,13 @@
       "level": 1,
       "label": "levels-deadline-ranked-1-2",
       "metaSha256": "b2e460c4d432d0c3dd01cfa42014db58a3731e7fe5122d745e5ed218ecb9702a",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    },
+    {
+      "worldId": "w41d45a769c0a63c538fb",
+      "level": 3,
+      "label": "levels-deadline-eight-ranked-3-5",
+      "metaSha256": "b166318a2a52a75bc2e54699137d7c846e116a498114b8b2a95d21b3e4816b49",
       "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
     },
     {
@@ -152,6 +159,13 @@
       "level": 6,
       "label": "levels-deadline-eight-ranked-6-3",
       "metaSha256": "5c51ec7d284f5b0ff1f7ac5f77f5628d6029fdf0924f9d137a72be761c27057b",
+      "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
+    },
+    {
+      "worldId": "wa0ecfe487807712262b4",
+      "level": 2,
+      "label": "levels-deadline-eight-ranked-2-5",
+      "metaSha256": "b825c51b904eaaf5652d0215e51f8ccdc9515ee6051a4768f8386ff1835f9710",
       "reason": "Server-selected ranked seed is hidden; never counted as an independent named development week."
     },
     {
@@ -2454,6 +2468,13 @@
           "metaSha256": "15e4fabde2c87987542a16c5b9ac6ce65551fcd87350c7eff308267f46652184"
         },
         {
+          "worldId": "w3595fb33d862cb34b8ea",
+          "label": "levels-first-option",
+          "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "044430f248032fc87fc1490b9a91a4b68676c06eb8d3204b0ed34202e1c3e5c6"
+        },
+        {
           "worldId": "w47ab8cce909f52a843ed",
           "label": "levels-factorial-economics",
           "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
@@ -2473,6 +2494,13 @@
           "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
           "hasTerminalArtifacts": true,
           "metaSha256": "9f631602894367b6ed704103f0cc8224bc5ab1ad05fe9ff0852ac4e90431ac20"
+        },
+        {
+          "worldId": "w71e17e682696170955ba",
+          "label": "levels-control",
+          "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "1ba94d97c3bf338aade39c6e605aeb969265563f9ea2e7624c771a81ca336997"
         },
         {
           "worldId": "w74c29d7e3925d428839f",
@@ -2503,6 +2531,41 @@
           "metaSha256": "e3e9e7b678ed8b65f7e67641d7f93ecdaebda8310b82662f2e6b22b47bbbca65"
         },
         {
+          "worldId": "wa29404ad72dc36eaf4ed",
+          "label": "levels-first-option-cost",
+          "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "394b0565b7f546d7dcc8c2b11804996473a66e4aa929c31d2ab796b108a8e435"
+        },
+        {
+          "worldId": "wa5f241db95cb22bd454c",
+          "label": "levels-first-option-cost",
+          "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "8546e305659d47f11be60014e11581a608cce66f48a7173ec3e8c4345bc581e6"
+        },
+        {
+          "worldId": "wb8a95b56e023cff2ecc3",
+          "label": "levels-control",
+          "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "ad93711153ad2bee9729fc61b78d2c5b67a96a8a3c46142090bfb0348dd2fcd2"
+        },
+        {
+          "worldId": "wbe73aac4f6b4b1d066e9",
+          "label": "levels-first-option-cost",
+          "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "e44f949fd14773527f6dbeaea6ee20ade7e4cfbb89139eb4aaae0bae5f9d7fdc"
+        },
+        {
+          "worldId": "wc49b822a9852fd2877df",
+          "label": "levels-first-option",
+          "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "614d5216a00d66906263f2f71572bef6e5779cdfb5947c9b787c8a939ad29d15"
+        },
+        {
           "worldId": "wcf60f65de30877eedb75",
           "label": "levels-factorial-coupled",
           "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
@@ -2510,11 +2573,25 @@
           "metaSha256": "732efc7d1dff005baad8beed6d1d9672851b4b654a0990036fd83d0ee811e5f9"
         },
         {
+          "worldId": "wd1421e0691bf34567cce",
+          "label": "levels-first-option",
+          "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "097e9269ede4490564e6808fe4557b5c852e1c60efb532e18b81833a9d2ae57e"
+        },
+        {
           "worldId": "wfa7995206b70b38192f8",
           "label": "levels-factorial-coupled",
           "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
           "hasTerminalArtifacts": true,
           "metaSha256": "a7e3aa7672f3b6e144c4d0880f102b1e7c844e3503e5d641e07da2362d96b9c0"
+        },
+        {
+          "worldId": "wfb9dc5b4ee6ee7fd2479",
+          "label": "levels-control",
+          "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "1e60521a52e430e5020ee4f2b9713c4a5526281c471e1a4454562d50b5afca84"
         }
       ],
       "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
@@ -2526,11 +2603,25 @@
       "eligibleForFreshValidation": false,
       "worlds": [
         {
+          "worldId": "w1c1a0a0dc2ae65b6f9fd",
+          "label": "levels-first-option",
+          "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "688a674e959f8ecff8e9a09c68a70225f777d5b023b705a686800253d591eb31"
+        },
+        {
           "worldId": "w2c5eb295add36a159cd3",
           "label": "levels-factorial-economics",
           "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
           "hasTerminalArtifacts": true,
           "metaSha256": "1467683bfc686f44ce8395756ed298dfb57500d0b8780c114d161459f7dba7fd"
+        },
+        {
+          "worldId": "w3a58b1ba436d071dfe02",
+          "label": "levels-first-option",
+          "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "70376ea996bc8a849111a3b6f22ab0c5feff68c81e319c70f019d53a83b68b7a"
         },
         {
           "worldId": "w3ac748ff7e9ee163adef",
@@ -2540,11 +2631,32 @@
           "metaSha256": "85ac44707744a17d6cd205d8e460eed0a0da6a276a01cdaefbef95963b62d815"
         },
         {
+          "worldId": "w41fcda39c672d64d63b8",
+          "label": "levels-first-option-cost",
+          "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "175ece35148c20484e4f0e808b647d526bb1ba95e6fa5a7ef9fbf7e2600b32bb"
+        },
+        {
+          "worldId": "w520345cfa861a3014f9b",
+          "label": "levels-control",
+          "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "42c228e4ec5d3503c2cd34b95738228cd3e3bf593282751c8a026ee1388bcd2f"
+        },
+        {
           "worldId": "w5bd9370b385b3afab88d",
           "label": "levels-factorial-economics",
           "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
           "hasTerminalArtifacts": true,
           "metaSha256": "e8ecc7b52e80677b3e141c8f52556a9b4d78f3ceef4b9827fd903c22c13a3cf5"
+        },
+        {
+          "worldId": "w64260bd13dcab8147e94",
+          "label": "levels-first-option-cost",
+          "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "ee3edd0c9a0d3d38c7021f01191d5995b7852fdeee0b37ab9d733309ac43d2f0"
         },
         {
           "worldId": "w691fc93cd1779dc26409",
@@ -2575,11 +2687,25 @@
           "metaSha256": "2cff5e553890121f0de030b163aece71fb64ef2ca9b4d78e41656f7441a21dbd"
         },
         {
+          "worldId": "wab80f10837679f27d1e2",
+          "label": "levels-first-option",
+          "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "8892e27ce2b4898b2084260ecf0fd9f22ec0d26926ddc4ae39f3bbd3fddc6898"
+        },
+        {
           "worldId": "wbf4daaa0a55e39e76ed0",
           "label": "levels-factorial-control",
           "revision": "bdaec082250da2c16cbc862142e37a00feca4740e6fc59db846de37380f6ed39",
           "hasTerminalArtifacts": true,
           "metaSha256": "c7f2a1b7854aafdd3fc94fedd76bfc70ba7aadd6de214e8e55856aac876830fd"
+        },
+        {
+          "worldId": "wc85adfa7efe086abddf6",
+          "label": "levels-first-option-cost",
+          "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "0b62af2e0ddf5ede3933ba0cd2c7f44601fa40aeee7a8751ca8cdbc5e3a65319"
         },
         {
           "worldId": "wc88a5a099c3a0aea4d2f",
@@ -2610,10 +2736,17 @@
           "metaSha256": "e547061741b3788b583513e174dc1dffcf0715a72d4b6f266ebc96bfb358ee0a"
         },
         {
+          "worldId": "wecb449d07efbd8d35f8c",
+          "label": "levels-control",
+          "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "c615d3d7cfe72720da9c6568df5b40e8103c5d46436287ccc92bca0a4769bbf7"
+        },
+        {
           "worldId": "wf1472f7c40cf99f76443",
           "label": "levels-control",
           "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
-          "hasTerminalArtifacts": false,
+          "hasTerminalArtifacts": true,
           "metaSha256": "3688c43e5b8ea194da85c360499cd05ac8590fe1be8d4997cc3c8e4a54c56c3d"
         }
       ],

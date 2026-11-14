@@ -1,5 +1,7 @@
 # Optimization model and experimental protocol
 
+For the completed first ranking round, corrected cross-level findings, and the next research program, see [First-round findings and research plan](first-round-findings-and-research-plan.md). This document describes the original level-8 formulation; its assumptions do not automatically transfer to other levels.
+
 The problem is an online, partially observed stochastic control problem. We observe requests, drivers' profiles, gig views, bookings and completed deliveries. We do not observe drivers' work schedules or reservation costs, or the competing quotes. Decisions change future driver behavior and dealer trust. A deterministic vehicle-routing optimum on the visible requests would therefore solve a different problem.
 
 ## Objective and constraints
@@ -9,7 +11,7 @@ For a policy π and a complete simulated week ω, let M(π,ω) be final ledger m
     maximizeπ  E[M(π,ω)]
     subject to Prω(N > 0 and L ≤ 0.10 N) ≥ 1 − δ.
 
-This chance constraint is a design objective, not a guarantee supplied by the implementation. Driver failures, snow, flu and common origins correlate lateness, so a binomial calculation treating individual orders as independent would overstate certainty. Whole unseen weeks are the appropriate evaluation units. The game ranks realized margin in one secret week, rather than this expected objective, so the lower tail and probability of disqualification must also be reported.
+This chance constraint is a design objective, not a guarantee supplied by the implementation. Driver failures, snow, flu and common origins correlate lateness, so a binomial calculation treating individual orders as independent would overstate certainty. Whole unseen weeks are the appropriate evaluation units. The final ranks realized margin in one secret week. Practice rankings use five secret worlds, putting teams that qualify in all five first, then ordering each group by total margin. Both differ from this expected objective, so the lower tail and probability of disqualification must also be reported.
 
 A useful local approximation assigns each request j an expected delivery cost c_j, lateness probability ℓ_j, resource demand a_j, and win probability q_j(p) at quote p. For fixed delivery decisions, a relaxed admission/price objective is:
 

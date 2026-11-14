@@ -1,0 +1,470 @@
+{
+  "mode": "deadline-ranked",
+  "revision": "8362ec3bb165c855c4e382b3ef7675438d4c35821cd9d0e27ac38e4f12de1fe4",
+  "season": 4,
+  "finishedAt": "2026-11-14T06:48:27.078Z",
+  "stopped": true,
+  "remaining": [
+    {
+      "level": 5,
+      "run": 3
+    },
+    {
+      "level": 6,
+      "run": 3
+    },
+    {
+      "level": 1,
+      "run": 3
+    },
+    {
+      "level": 2,
+      "run": 3
+    },
+    {
+      "level": 3,
+      "run": 3
+    },
+    {
+      "level": 7,
+      "run": 4
+    },
+    {
+      "level": 4,
+      "run": 4
+    },
+    {
+      "level": 5,
+      "run": 4
+    },
+    {
+      "level": 6,
+      "run": 4
+    },
+    {
+      "level": 1,
+      "run": 4
+    },
+    {
+      "level": 2,
+      "run": 4
+    },
+    {
+      "level": 3,
+      "run": 4
+    },
+    {
+      "level": 7,
+      "run": 5
+    },
+    {
+      "level": 4,
+      "run": 5
+    },
+    {
+      "level": 5,
+      "run": 5
+    },
+    {
+      "level": 6,
+      "run": 5
+    },
+    {
+      "level": 1,
+      "run": 5
+    },
+    {
+      "level": 2,
+      "run": 5
+    },
+    {
+      "level": 3,
+      "run": 5
+    }
+  ],
+  "results": [
+    {
+      "level": 1,
+      "run": 2,
+      "worldId": "w3f7d117ff54116111b3c",
+      "score": {
+        "marginCents": 687596,
+        "revenueCents": 3769700,
+        "marginShare": 0.18240072154282835,
+        "wonOrders": 551,
+        "onTimeShare": 0.9891107078039928,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [],
+      "completedAt": "2026-11-14T06:43:39.162Z"
+    },
+    {
+      "level": 2,
+      "run": 2,
+      "error": "Error: Another runner already created this ranked attempt"
+    },
+    {
+      "level": 3,
+      "run": 2,
+      "error": "Error: Another runner already created this ranked attempt"
+    },
+    {
+      "level": 4,
+      "run": 2,
+      "worldId": "w8d97c1a400a8617d3c6e",
+      "score": {
+        "marginCents": 320178,
+        "revenueCents": 2335228,
+        "marginShare": 0.1371078113143556,
+        "wonOrders": 344,
+        "onTimeShare": 0.9854651162790697,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [],
+      "completedAt": "2026-11-14T06:42:16.941Z"
+    },
+    {
+      "level": 5,
+      "run": 1,
+      "worldId": "w4bca72b69372975a3ba2",
+      "score": {
+        "marginCents": 493981,
+        "revenueCents": 2956549,
+        "marginShare": 0.1670802682451737,
+        "wonOrders": 364,
+        "onTimeShare": 0.9615384615384616,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [
+        {
+          "at": 5024,
+          "action": {
+            "type": "reprice",
+            "gigId": "g48",
+            "schedule": [
+              {
+                "at": 5024,
+                "feeCents": 12768
+              },
+              {
+                "at": 5054,
+                "feeCents": 12768
+              },
+              {
+                "at": 5132,
+                "feeCents": 16173
+              },
+              {
+                "at": 5192,
+                "feeCents": 21280
+              }
+            ]
+          },
+          "reason": "Gig g48 is not open"
+        }
+      ],
+      "recoveries": [],
+      "completedAt": "2026-11-14T06:42:16.795Z"
+    },
+    {
+      "level": 5,
+      "run": 2,
+      "worldId": "w4fb5c21855eff6787142",
+      "score": {
+        "marginCents": 349535,
+        "revenueCents": 2735969,
+        "marginShare": 0.12775546798958615,
+        "wonOrders": 333,
+        "onTimeShare": 0.9429429429429429,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [],
+      "completedAt": "2026-11-14T06:43:44.588Z"
+    },
+    {
+      "level": 6,
+      "run": 1,
+      "worldId": "w3c236f0739af313f57e9",
+      "score": {
+        "marginCents": 365111,
+        "revenueCents": 2451845,
+        "marginShare": 0.14891275753565172,
+        "wonOrders": 314,
+        "onTimeShare": 0.9490445859872612,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [
+        {
+          "at": 996,
+          "action": {
+            "type": "reprice",
+            "gigId": "g22",
+            "schedule": [
+              {
+                "at": 996,
+                "feeCents": 3884
+              },
+              {
+                "at": 1026,
+                "feeCents": 3884
+              },
+              {
+                "at": 1056,
+                "feeCents": 3884
+              },
+              {
+                "at": 1086,
+                "feeCents": 5110
+              }
+            ]
+          },
+          "reason": "Gig g22 is not open"
+        },
+        {
+          "at": 996,
+          "action": {
+            "type": "reprice",
+            "gigId": "g22",
+            "schedule": [
+              {
+                "at": 996,
+                "feeCents": 3884
+              },
+              {
+                "at": 1026,
+                "feeCents": 3884
+              },
+              {
+                "at": 1056,
+                "feeCents": 3884
+              },
+              {
+                "at": 1086,
+                "feeCents": 5110
+              }
+            ]
+          },
+          "reason": "Gig g22 is not open"
+        },
+        {
+          "at": 6776,
+          "action": {
+            "type": "reprice",
+            "gigId": "g252",
+            "schedule": [
+              {
+                "at": 6776,
+                "feeCents": 4298
+              },
+              {
+                "at": 6806,
+                "feeCents": 4298
+              },
+              {
+                "at": 6836,
+                "feeCents": 4298
+              },
+              {
+                "at": 6866,
+                "feeCents": 5655
+              }
+            ]
+          },
+          "reason": "Gig g252 is not open"
+        },
+        {
+          "at": 6776,
+          "action": {
+            "type": "reprice",
+            "gigId": "g252",
+            "schedule": [
+              {
+                "at": 6776,
+                "feeCents": 4298
+              },
+              {
+                "at": 6806,
+                "feeCents": 4298
+              },
+              {
+                "at": 6836,
+                "feeCents": 4298
+              },
+              {
+                "at": 6866,
+                "feeCents": 5655
+              }
+            ]
+          },
+          "reason": "Gig g252 is not open"
+        }
+      ],
+      "recoveries": [],
+      "completedAt": "2026-11-14T06:42:17.040Z"
+    },
+    {
+      "level": 6,
+      "run": 2,
+      "worldId": "w93f8a53fdbc8c0830d12",
+      "score": {
+        "marginCents": 452650,
+        "revenueCents": 2411105,
+        "marginShare": 0.18773549886877594,
+        "wonOrders": 360,
+        "onTimeShare": 0.9666666666666667,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [
+        {
+          "at": 5172,
+          "action": {
+            "type": "reprice",
+            "gigId": "g182",
+            "schedule": [
+              {
+                "at": 5172,
+                "feeCents": 7454
+              },
+              {
+                "at": 5202,
+                "feeCents": 7454
+              },
+              {
+                "at": 5232,
+                "feeCents": 9441
+              },
+              {
+                "at": 5292,
+                "feeCents": 12423
+              }
+            ]
+          },
+          "reason": "Gig g182 is not open"
+        },
+        {
+          "at": 5251,
+          "action": {
+            "type": "reprice",
+            "gigId": "g188",
+            "schedule": [
+              {
+                "at": 5251,
+                "feeCents": 3000
+              },
+              {
+                "at": 5281,
+                "feeCents": 3000
+              },
+              {
+                "at": 5374,
+                "feeCents": 3800
+              },
+              {
+                "at": 5434,
+                "feeCents": 5000
+              }
+            ]
+          },
+          "reason": "Gig g188 is not open"
+        },
+        {
+          "at": 6705,
+          "action": {
+            "type": "reprice",
+            "gigId": "g221",
+            "schedule": [
+              {
+                "at": 6705,
+                "feeCents": 6719
+              },
+              {
+                "at": 6735,
+                "feeCents": 6719
+              },
+              {
+                "at": 6765,
+                "feeCents": 8510
+              },
+              {
+                "at": 6795,
+                "feeCents": 11198
+              }
+            ]
+          },
+          "reason": "Gig g221 is not open"
+        },
+        {
+          "at": 6705,
+          "action": {
+            "type": "reprice",
+            "gigId": "g221",
+            "schedule": [
+              {
+                "at": 6705,
+                "feeCents": 6719
+              },
+              {
+                "at": 6735,
+                "feeCents": 6719
+              },
+              {
+                "at": 6765,
+                "feeCents": 8510
+              },
+              {
+                "at": 6795,
+                "feeCents": 11198
+              }
+            ]
+          },
+          "reason": "Gig g221 is not open"
+        }
+      ],
+      "recoveries": [],
+      "completedAt": "2026-11-14T06:43:49.845Z"
+    },
+    {
+      "level": 7,
+      "run": 1,
+      "worldId": "w0d621a637f6d8dc88c27",
+      "score": {
+        "marginCents": 517489,
+        "revenueCents": 1589829,
+        "marginShare": 0.32549978645502126,
+        "wonOrders": 179,
+        "onTimeShare": 0.9832402234636871,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [],
+      "completedAt": "2026-11-14T06:42:04.373Z"
+    },
+    {
+      "level": 7,
+      "run": 2,
+      "worldId": "web9187f12139b4bf4f4f",
+      "score": {
+        "marginCents": 648867,
+        "revenueCents": 2064182,
+        "marginShare": 0.31434582803260563,
+        "wonOrders": 249,
+        "onTimeShare": 0.9799196787148594,
+        "undeliveredShare": 0,
+        "ranked": true
+      },
+      "errors": [],
+      "recoveries": [],
+      "completedAt": "2026-11-14T06:43:21.517Z"
+    }
+  ]
+}
