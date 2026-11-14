@@ -31,3 +31,16 @@ When a request has such a partner: price it as if it cost `pairQuote` times its 
 ## Not known yet
 
 Whether the extra orders really ride together. A driver must book the pair, and a pair that does not book is two cars with one driver's fee less than they need. It has to be played on practice weeks before it can be switched on.
+
+## Played: it does not work
+
+Sixteen weeks, against candidate 1 with pairing after three hours (€11,752 a week, lowest on-time share 93.2%):
+
+| Variant | Mean difference | Weeks up / down | Late orders | Lowest on-time share |
+| --- | ---: | ---: | ---: | ---: |
+| Pair-aware price at 0.6 of the cost (`pairQuote` 0.6) | −€740 (standard error €205) | 2 / 14 | 3.5% → 4.5% | 90.7% |
+| Pair-aware price at 0.8 of the cost | −€278 (standard error €239) | 7 / 9 | 3.5% → 4.6% | 90.3% |
+| A two-car gig without a driver after 60 minutes goes back to two gigs (`pairPatience` 60, Halal Team's rule) | −€51 (standard error €166) | 8 / 8 | 3.7% | 92.4% |
+| Wait 30 minutes for a partner instead of 15 (`bundleWait` 30) | −€484 (standard error €205) | 6 / 10 | 4.2% | 91.3% |
+
+The extra cars that the pair-aware price wins mostly do not ride with their partner: they need drivers of their own, and the late share rises. All four stay off.

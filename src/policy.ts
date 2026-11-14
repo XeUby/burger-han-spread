@@ -40,6 +40,8 @@ export type Settings = {
   pairQuote: number
   /** Minutes a gig with two cars may wait for a driver before its cars go alone; 0 for no limit. */
   pairPatience: number
+  /** Decline routes shorter than this many kilometres; 0 for none. */
+  minKm: number
   /** The fee, in full fees, a day and half a day before the last pickup, for a gig that no driver has taken. */
   climbDay: number; climbHalfDay: number
   /** What a route really costs against the dispatcher's estimate, for routes under 50 km, from 50 km to 100 km, and longer. */
@@ -49,7 +51,7 @@ export const defaults: Settings = {
   price: 1.42, fee: 1.05, payout: 0.85, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
   notes: true, noteSpelling: false, relist: false, openingOnly: true, adaptive: true, earlyOffers: false, safetySlack: false,
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, noteReader: true, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
-  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0,
+  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0, minKm: 0,
   earlyClimb: true,
 }
 
@@ -58,7 +60,7 @@ export function validateSettings(value: unknown): asserts value is Partial<Setti
   for (const [key, field] of Object.entries(value)) {
     if (!(key in defaults)) throw new Error(`Unknown setting: ${key}`)
     if (typeof defaults[key as keyof Settings] === "boolean") { if (typeof field !== "boolean") throw new Error(`${key} must be boolean`); continue }
-    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait", "sitAfter", "pairOpen", "pairQuote", "pairPatience"].includes(key))) throw new Error(`${key} must be a positive number`)
+    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait", "sitAfter", "pairOpen", "pairQuote", "pairPatience", "minKm"].includes(key))) throw new Error(`${key} must be a positive number`)
     if (key === "bundleWait" && (!Number.isInteger(field) || field > 30)) throw new Error("bundleWait must be an integer from 0 to 30")
     if ((key === "margin" || key === "capacity") && field >= 1) throw new Error(`${key} must be below 1`)
     if (key === "placePrior" && field > 2) throw new Error("placePrior must be at most 2")
@@ -132,7 +134,7 @@ export class Dispatcher extends Desk {
     const leg = plan.legs[0]!
     const road = this.network.road(leg.pickup.placeId, leg.delivery.placeId)
     const supply = this.supply(request)
-    if (road.km > this.settings.maxKm || supply < this.settings.minDrivers) return reject()
+    if (road.km > this.settings.maxKm || road.km < this.settings.minKm || supply < this.settings.minDrivers) return reject()
     const day = Math.floor(leg.pickup.window.from / 1440)
     let load = 0
     let unbooked = 0
