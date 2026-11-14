@@ -1,0 +1,8 @@
+{
+  "at": "2026-11-14T16:40:25.465486+00:00",
+  "status": "superseded_before_execution",
+  "createdWorlds": 0,
+  "reason": "Outer adapter type check rejects nominal Client types from the separately preserved SDK copies. Runtime APIs are identical; add an explicit type bridge for the coverage arm. No economic code changes.",
+  "successor": "experiments/private-coverage-development-v2.json",
+  "preserved": "All eight seeds and per-week assignment randomSeed values remain identical; source, protocol and archive v1 remain untouched."
+}

@@ -1,0 +1,17 @@
+{
+  "study": "private-coverage-development-v2",
+  "completed": 14,
+  "failed": 1,
+  "notStarted": 1,
+  "failedWorld": "wf488bd0523f1119e8cd7",
+  "failure": "First solver response exceeded frozen three-second budget",
+  "worldDisposition": "Retained unfinished; no resumption, replacement, deletion or administrative advancement. Counts toward shared occupancy.",
+  "decision": "Panel incomplete. No planned paired economic result, support gate, model fitting or promotion. Preserve all observed assignments and action errors.",
+  "replayInterpretation": "Four frozen-policy local replays solved the reconstructed nine-alternative/eight-scenario frame. Historical timeout was not reproduced; startup contention is not established as its cause.",
+  "repair": "Unfrozen bridge now waits for version-checked readiness, bounded at 15 seconds, before starting the unchanged 3-second response budget. CP-SAT remains limited to 0.2 seconds. Frozen bundles remain unchanged.",
+  "artifacts": {
+    "docs/private-coverage-development-v2-results.json": "3c084fe923cd09c720289cdc3410575873cfc3eb6fb3a9e574c17b48c459ce98",
+    "docs/private-coverage-solver-replay.json": "e1665e2e9aff9a8ada6b165734299abeec5c9deb74e2d4da0abed3ec1a6b4806",
+    "experiments/private-coverage-development-v2-attempts.jsonl": "cc96de763e26704c82bacef0a375a87ffa6cddd2aa23017c8901814169f15833"
+  }
+}

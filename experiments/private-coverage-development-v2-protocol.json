@@ -1,0 +1,25 @@
+{
+  "frozenAt": "2026-11-14T16:40:25.691110+00:00",
+  "design": "docs/private-coverage-study-design.md",
+  "role": "Eight fresh paired development weeks, sixteen unranked worlds; bounded randomized private-work coverage, no promotion",
+  "seeds": [
+    "private-coverage-development-v1-6472ef39849044ffa24442c3",
+    "private-coverage-development-v1-0933d16fcf55ad4ff889d032",
+    "private-coverage-development-v1-4759d08b51567f8e60f89862",
+    "private-coverage-development-v1-e95f54e59697d5f9df8c3c7f",
+    "private-coverage-development-v1-30c7a51508c793ef3f29d9e0",
+    "private-coverage-development-v1-82080ec772f029ad97f60e8f",
+    "private-coverage-development-v1-9fcb9cb5668de9cbb195dce0",
+    "private-coverage-development-v1-1b96d39670c7374aac804708"
+  ],
+  "seedRole": "All seeds are reserved for development now and excluded from untouched validation.",
+  "assignment": "SHA256(private-coverage:randomSeed:requestId) low bit gives equal quote/decline assignment conditional on logged eligibility. Per-week randomSeed is frozen in each coverage trial.",
+  "stopping": "Exactly sixteen worlds; no replacement or tuning. Runtime failure stops creation; private visit failure stops only further exploration within that week while existing obligations continue.",
+  "operations": {
+    "workers": 4,
+    "capacity": 8,
+    "mode": "practice",
+    "sharedLock": "runs/team-world-creation.lock"
+  },
+  "authorization": "Unranked only; no ranking, finals, forks or deletion."
+}

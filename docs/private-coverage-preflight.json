@@ -1,0 +1,56 @@
+{
+  "at": "2026-11-14T16:39:48.479Z",
+  "unfinished": [],
+  "season": 8,
+  "leader": {
+    "rank": 1,
+    "team": "juhus",
+    "name": "Juhus",
+    "played": 5,
+    "ranked": true,
+    "marginCents": 9444461,
+    "onTimeShare": 0.9739016963897347,
+    "runs": [
+      {
+        "run": 1,
+        "marginCents": 2020757,
+        "onTimeShare": 0.9799107142857143,
+        "wonOrders": 448,
+        "ranked": true,
+        "deletedAt": null
+      },
+      {
+        "run": 2,
+        "marginCents": 2326423,
+        "onTimeShare": 0.9682539682539683,
+        "wonOrders": 504,
+        "ranked": true,
+        "deletedAt": null
+      },
+      {
+        "run": 3,
+        "marginCents": 1896499,
+        "onTimeShare": 0.9528907922912205,
+        "wonOrders": 467,
+        "ranked": true,
+        "deletedAt": null
+      },
+      {
+        "run": 4,
+        "marginCents": 1487504,
+        "onTimeShare": 0.9863325740318907,
+        "wonOrders": 439,
+        "ranked": true,
+        "deletedAt": null
+      },
+      {
+        "run": 5,
+        "marginCents": 1713278,
+        "onTimeShare": 0.9841269841269841,
+        "wonOrders": 441,
+        "ranked": true,
+        "deletedAt": null
+      }
+    ]
+  }
+}

@@ -20,12 +20,17 @@ export type Solution = {
 
 export class PortfolioSolver {
   private child
-  private pending?: { resolve: (value: Solution) => void; reject: (error: Error) => void; timer: ReturnType<typeof setTimeout> }
+  private pending?: { resolve: (value: Solution) => void; reject: (error: Error) => void; timer?: ReturnType<typeof setTimeout>; encoded: string }
   private failure?: Error
   private stderr = ""
+  private ready = false
+  private startupTimer: ReturnType<typeof setTimeout>
+  private responseMs: number
 
-  constructor(python = resolve("runs/portfolio-venv/bin/python")) {
-    this.child = spawn(python, [fileURLToPath(new URL("./solver.py", import.meta.url)), "--stream"], {
+  constructor(python = resolve("runs/portfolio-venv/bin/python"), options: { script?: string; startupMs?: number; responseMs?: number } = {}) {
+    this.responseMs = options.responseMs ?? 3000
+    this.startupTimer = setTimeout(() => this.stop(new Error("Portfolio solver exceeded its startup budget")), options.startupMs ?? 15000)
+    this.child = spawn(python, [options.script ?? fileURLToPath(new URL("./solver.py", import.meta.url)), "--stream"], {
       env: { PATH: process.env.PATH ?? "/usr/bin:/bin", PYTHONUNBUFFERED: "1", PYTHONDONTWRITEBYTECODE: "1" },
       stdio: ["pipe", "pipe", "pipe"],
     })
@@ -34,6 +39,17 @@ export class PortfolioSolver {
     this.child.on("error", error => this.stop(error))
     this.child.on("exit", (code, signal) => this.stop(new Error(`Portfolio solver exited (${code ?? signal}): ${this.stderr}`)))
     createInterface({ input: this.child.stdout }).on("line", line => {
+      if (this.failure) return
+      if (!this.ready) {
+        try {
+          const message = JSON.parse(line)
+          if (message.ready !== true || message.version !== "9.11.4210") throw new Error("Invalid solver readiness or unfrozen solver version")
+          clearTimeout(this.startupTimer)
+          this.ready = true
+          this.send()
+        } catch (error) { this.stop(new Error(`Invalid solver startup: ${error}`)) }
+        return
+      }
       const pending = this.pending
       if (!pending) { this.stop(new Error("Unexpected solver response")); return }
       clearTimeout(pending.timer)
@@ -52,15 +68,22 @@ export class PortfolioSolver {
     if (this.pending) return Promise.reject(new Error("One portfolio decision must finish before another starts"))
     const encoded = JSON.stringify(problem) + "\n"
     return new Promise((resolve, reject) => {
-      const timer = setTimeout(() => this.stop(new Error("Portfolio solver exceeded its three-second response budget")), 3000)
-      this.pending = { resolve, reject, timer }
-      this.child.stdin.write(encoded, error => { if (error) this.stop(error) })
+      this.pending = { resolve, reject, encoded }
+      if (this.ready) this.send()
     })
+  }
+
+  private send(): void {
+    const pending = this.pending
+    if (!pending) return
+    pending.timer = setTimeout(() => this.stop(new Error("Portfolio solver exceeded its response budget")), this.responseMs)
+    this.child.stdin.write(pending.encoded, error => { if (error) this.stop(error) })
   }
 
   close(): void { this.stop(new Error("Portfolio solver closed")) }
 
   private stop(error: Error, pending = this.pending): void {
+    clearTimeout(this.startupTimer)
     this.failure ??= error
     this.pending = undefined
     if (pending) { clearTimeout(pending.timer); pending.reject(error) }

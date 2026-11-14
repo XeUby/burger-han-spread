@@ -2,6 +2,18 @@
 
 **Latest capacity instruction: this assistant may run at most FOUR concurrent worlds.** The shared team cap remains EIGHT unfinished worlds. Use at most4own workers, count existing team worlds under the shared lock, and let previously launched runs drain. See `experiments/team-capacity-policy.json`.
 
+## Private acquisition coverage: interrupted, no promotion
+
+The eight-pair frozen `private-coverage-development-v2` study completed 14 worlds. Coverage case 8 (`wf488bd0523f1119e8cd7`) failed at the first solver call, before any private assignment; its paired control was never started under the stopping rule. The failed world remains unfinished, retained without advancement or replacement, and counts toward occupancy. Official provenance and journal audit confirm maximum four own concurrent worlds. The other unfinished worlds belong to another researcher.
+
+The report preserves completed outcomes, assignments, action errors and unknown contributions, but withholds the planned paired comparison and support gate because the panel is incomplete. Do not fit or promote from this interrupted panel. Version 1 failed typechecking before any world was created; version 2 corrected only the cross-bundle SDK type bridge and retained the same seed plan. Both freezes remain available.
+
+Four concurrent local replays of the reconstructed failed frame (nine alternatives, eight scenarios) all solved. They did not reproduce the original timeout or establish its cause. The old bridge includes Python/ORTools startup in its three-second response budget. The unfrozen bridge now requires a version-checked readiness message within 15 seconds before starting each three-second response budget; the CP-SAT 0.2-second solve limit is unchanged. Frozen source archives and historical outcomes are unchanged. Any subsequent study requires a new freeze, not continuation under the old manifest.
+
+Evidence: `docs/private-coverage-development-v2-interruption.json`, results/runs/operations reports, `docs/private-coverage-solver-replay.json`, the study design, frozen manifests/archives/attempt journal, and `research/private-coverage/`. Raw failure events, interruption snapshot and score remain under ignored `runs/`. Bridge tests cover delayed startup, overlapping requests, startup/response timeout, readiness version, exit and close; the real solver still rejects invalid input and handles the next valid decision.
+
+The external architecture review is supported as a diagnosis, not a profit result: schedule-dependent payment costs, menu-dependent customer choice and immutable game semantics need separate tests. The hybrid's six development pairs give +€225.89/week with descriptive 95% interval [−€973.99,+€1,425.77]. Its recorded structural audit reruns exactly, but preserving finite-model optima does not validate economics or action tie-breaking. Next structural work should compare menu-preserving, schedule-aware economics with the incumbent and target interventions where predictions change actions. Do not launch another broad parameter sweep or treat the existing negative admission/menu/payment ablations as positive evidence.
+
 ## Quote payment consistency ablation: rejected
 
 The incumbent's eight-week exposure audit found699premium quote choices among4,532executed quotes, with423awards. Acquisition values credit a hypothetical1.08payment multiplier, but quote execution stores no such multiplier; fulfillment is replanned after award. This is an unvalidated continuation assumption, not proof that each later payment was wrong. `docs/quote-payment-exposure.json` retains the hash-checked counts. The concurrent hybrid package also changes this choice, but mixes it with other changes, so it cannot isolate the effect.

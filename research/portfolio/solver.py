@@ -134,6 +134,7 @@ if __name__ == "__main__":
     parser.add_argument("--seconds", type=float, default=0.2)
     args = parser.parse_args()
     if args.stream:
+        print(json.dumps({"ready": True, "version": ortools.__version__}), flush=True)
         for line in sys.stdin:
             try:
                 print(json.dumps(solve(json.loads(line), args.seconds)), flush=True)

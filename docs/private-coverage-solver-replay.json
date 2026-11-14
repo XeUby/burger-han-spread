@@ -1,0 +1,1126 @@
+{
+  "checkedAt": "2026-11-14T16:59:04.075Z",
+  "worldId": "wf488bd0523f1119e8cd7",
+  "scope": "Four concurrent local solver replays; no world advances, quotes or new worlds.",
+  "reconstruction": "First public request and forecast replayed through the unchanged frozen policy using retained events and roster plus the map. This reconstructs the input; the failed solve did not log its original input.",
+  "originalState": {
+    "now": 492,
+    "orders": 0,
+    "gigs": 0,
+    "privateAssignments": 0
+  },
+  "frameSha256": "4bb302b2008af2cec8daf8b623d9792340659e69979381f9c12bdd8bc992bfe4",
+  "frame": {
+    "now": 492,
+    "weights": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "capacity": [
+      {
+        "daily:porvoo:0": 71504,
+        "backlog:porvoo:0": 16343
+      },
+      {
+        "daily:porvoo:0": 71504,
+        "backlog:porvoo:0": 16343
+      },
+      {
+        "daily:porvoo:0": 71504,
+        "backlog:porvoo:0": 16343
+      },
+      {
+        "daily:porvoo:0": 71504,
+        "backlog:porvoo:0": 16343
+      },
+      {
+        "daily:porvoo:0": 71504,
+        "backlog:porvoo:0": 16343
+      },
+      {
+        "daily:porvoo:0": 71504,
+        "backlog:porvoo:0": 16343
+      },
+      {
+        "daily:porvoo:0": 71504,
+        "backlog:porvoo:0": 16343
+      },
+      {
+        "daily:porvoo:0": 71504,
+        "backlog:porvoo:0": 16343
+      }
+    ],
+    "lateBudget": [
+      12000,
+      12000,
+      12000,
+      12000,
+      12000,
+      12000,
+      12000,
+      12000
+    ],
+    "mandatory": [
+      "R00001"
+    ],
+    "baseline": [
+      "p0"
+    ],
+    "alternatives": [
+      {
+        "id": "p0",
+        "observedAt": 492,
+        "claims": [
+          "R00001"
+        ],
+        "outcomes": [
+          {
+            "revenueCents": 0,
+            "fulfillmentCents": 0,
+            "refundCents": 0,
+            "penaltyCents": 0,
+            "futureCents": 0,
+            "capacity": {},
+            "late": 0
+          },
+          {
+            "revenueCents": 0,
+            "fulfillmentCents": 0,
+            "refundCents": 0,
+            "penaltyCents": 0,
+            "futureCents": 0,
+            "capacity": {},
+            "late": 0
+          },
+          {
+            "revenueCents": 0,
+            "fulfillmentCents": 0,
+            "refundCents": 0,
+            "penaltyCents": 0,
+            "futureCents": 0,
+            "capacity": {},
+            "late": 0
+          },
+          {
+            "revenueCents": 0,
+            "fulfillmentCents": 0,
+            "refundCents": 0,
+            "penaltyCents": 0,
+            "futureCents": 0,
+            "capacity": {},
+            "late": 0
+          },
+          {
+            "revenueCents": 0,
+            "fulfillmentCents": 0,
+            "refundCents": 0,
+            "penaltyCents": 0,
+            "futureCents": 0,
+            "capacity": {},
+            "late": 0
+          },
+          {
+            "revenueCents": 0,
+            "fulfillmentCents": 0,
+            "refundCents": 0,
+            "penaltyCents": 0,
+            "futureCents": 0,
+            "capacity": {},
+            "late": 0
+          },
+          {
+            "revenueCents": 0,
+            "fulfillmentCents": 0,
+            "refundCents": 0,
+            "penaltyCents": 0,
+            "futureCents": 0,
+            "capacity": {},
+            "late": 0
+          },
+          {
+            "revenueCents": 0,
+            "fulfillmentCents": 0,
+            "refundCents": 0,
+            "penaltyCents": 0,
+            "futureCents": 0,
+            "capacity": {},
+            "late": 0
+          }
+        ]
+      },
+      {
+        "id": "p1",
+        "observedAt": 492,
+        "claims": [
+          "R00001"
+        ],
+        "outcomes": [
+          {
+            "revenueCents": 2937,
+            "fulfillmentCents": 2675,
+            "refundCents": 14,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 822,
+              "backlog:porvoo:0": 822
+            },
+            "late": 70
+          },
+          {
+            "revenueCents": 2937,
+            "fulfillmentCents": 2675,
+            "refundCents": 14,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 822,
+              "backlog:porvoo:0": 822
+            },
+            "late": 70
+          },
+          {
+            "revenueCents": 2937,
+            "fulfillmentCents": 2675,
+            "refundCents": 13,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 822,
+              "backlog:porvoo:0": 822
+            },
+            "late": 63
+          },
+          {
+            "revenueCents": 2937,
+            "fulfillmentCents": 2675,
+            "refundCents": 13,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 822,
+              "backlog:porvoo:0": 822
+            },
+            "late": 63
+          },
+          {
+            "revenueCents": 1564,
+            "fulfillmentCents": 1425,
+            "refundCents": 7,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 537,
+              "backlog:porvoo:0": 537
+            },
+            "late": 37
+          },
+          {
+            "revenueCents": 1564,
+            "fulfillmentCents": 1425,
+            "refundCents": 7,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 537,
+              "backlog:porvoo:0": 537
+            },
+            "late": 37
+          },
+          {
+            "revenueCents": 1565,
+            "fulfillmentCents": 1425,
+            "refundCents": 7,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 537,
+              "backlog:porvoo:0": 537
+            },
+            "late": 33
+          },
+          {
+            "revenueCents": 1565,
+            "fulfillmentCents": 1425,
+            "refundCents": 7,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 537,
+              "backlog:porvoo:0": 537
+            },
+            "late": 33
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "observedAt": 492,
+        "claims": [
+          "R00001"
+        ],
+        "outcomes": [
+          {
+            "revenueCents": 3634,
+            "fulfillmentCents": 3438,
+            "refundCents": 17,
+            "penaltyCents": 2,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 959,
+              "backlog:porvoo:0": 959
+            },
+            "late": 90
+          },
+          {
+            "revenueCents": 3634,
+            "fulfillmentCents": 3438,
+            "refundCents": 17,
+            "penaltyCents": 2,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 959,
+              "backlog:porvoo:0": 959
+            },
+            "late": 90
+          },
+          {
+            "revenueCents": 3634,
+            "fulfillmentCents": 3438,
+            "refundCents": 16,
+            "penaltyCents": 2,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 959,
+              "backlog:porvoo:0": 959
+            },
+            "late": 80
+          },
+          {
+            "revenueCents": 3634,
+            "fulfillmentCents": 3438,
+            "refundCents": 16,
+            "penaltyCents": 2,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 959,
+              "backlog:porvoo:0": 959
+            },
+            "late": 80
+          },
+          {
+            "revenueCents": 2362,
+            "fulfillmentCents": 2234,
+            "refundCents": 11,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 730,
+              "backlog:porvoo:0": 730
+            },
+            "late": 59
+          },
+          {
+            "revenueCents": 2362,
+            "fulfillmentCents": 2234,
+            "refundCents": 11,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 730,
+              "backlog:porvoo:0": 730
+            },
+            "late": 59
+          },
+          {
+            "revenueCents": 2362,
+            "fulfillmentCents": 2234,
+            "refundCents": 10,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 730,
+              "backlog:porvoo:0": 730
+            },
+            "late": 52
+          },
+          {
+            "revenueCents": 2362,
+            "fulfillmentCents": 2234,
+            "refundCents": 10,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 730,
+              "backlog:porvoo:0": 730
+            },
+            "late": 52
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "observedAt": 492,
+        "claims": [
+          "R00001"
+        ],
+        "outcomes": [
+          {
+            "revenueCents": 2872,
+            "fulfillmentCents": 2609,
+            "refundCents": 14,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 809,
+              "backlog:porvoo:0": 809
+            },
+            "late": 68
+          },
+          {
+            "revenueCents": 2872,
+            "fulfillmentCents": 2609,
+            "refundCents": 14,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 809,
+              "backlog:porvoo:0": 809
+            },
+            "late": 68
+          },
+          {
+            "revenueCents": 2872,
+            "fulfillmentCents": 2609,
+            "refundCents": 12,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 809,
+              "backlog:porvoo:0": 809
+            },
+            "late": 61
+          },
+          {
+            "revenueCents": 2872,
+            "fulfillmentCents": 2609,
+            "refundCents": 12,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 809,
+              "backlog:porvoo:0": 809
+            },
+            "late": 61
+          },
+          {
+            "revenueCents": 1506,
+            "fulfillmentCents": 1368,
+            "refundCents": 7,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 522,
+              "backlog:porvoo:0": 522
+            },
+            "late": 36
+          },
+          {
+            "revenueCents": 1506,
+            "fulfillmentCents": 1368,
+            "refundCents": 7,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 522,
+              "backlog:porvoo:0": 522
+            },
+            "late": 36
+          },
+          {
+            "revenueCents": 1506,
+            "fulfillmentCents": 1368,
+            "refundCents": 6,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 522,
+              "backlog:porvoo:0": 522
+            },
+            "late": 32
+          },
+          {
+            "revenueCents": 1506,
+            "fulfillmentCents": 1368,
+            "refundCents": 6,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 522,
+              "backlog:porvoo:0": 522
+            },
+            "late": 32
+          }
+        ]
+      },
+      {
+        "id": "p4",
+        "observedAt": 492,
+        "claims": [
+          "R00001"
+        ],
+        "outcomes": [
+          {
+            "revenueCents": 1946,
+            "fulfillmentCents": 1700,
+            "refundCents": 9,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 606,
+              "backlog:porvoo:0": 606
+            },
+            "late": 45
+          },
+          {
+            "revenueCents": 1946,
+            "fulfillmentCents": 1700,
+            "refundCents": 9,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 606,
+              "backlog:porvoo:0": 606
+            },
+            "late": 45
+          },
+          {
+            "revenueCents": 1946,
+            "fulfillmentCents": 1700,
+            "refundCents": 8,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 606,
+              "backlog:porvoo:0": 606
+            },
+            "late": 40
+          },
+          {
+            "revenueCents": 1946,
+            "fulfillmentCents": 1700,
+            "refundCents": 8,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 606,
+              "backlog:porvoo:0": 606
+            },
+            "late": 40
+          },
+          {
+            "revenueCents": 842,
+            "fulfillmentCents": 736,
+            "refundCents": 4,
+            "penaltyCents": 0,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 341,
+              "backlog:porvoo:0": 341
+            },
+            "late": 19
+          },
+          {
+            "revenueCents": 842,
+            "fulfillmentCents": 736,
+            "refundCents": 4,
+            "penaltyCents": 0,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 341,
+              "backlog:porvoo:0": 341
+            },
+            "late": 19
+          },
+          {
+            "revenueCents": 842,
+            "fulfillmentCents": 736,
+            "refundCents": 4,
+            "penaltyCents": 0,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 341,
+              "backlog:porvoo:0": 341
+            },
+            "late": 17
+          },
+          {
+            "revenueCents": 842,
+            "fulfillmentCents": 736,
+            "refundCents": 4,
+            "penaltyCents": 0,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 341,
+              "backlog:porvoo:0": 341
+            },
+            "late": 17
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "observedAt": 492,
+        "claims": [
+          "R00001"
+        ],
+        "outcomes": [
+          {
+            "revenueCents": 2937,
+            "fulfillmentCents": 2822,
+            "refundCents": 14,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 822,
+              "backlog:porvoo:0": 822
+            },
+            "late": 70
+          },
+          {
+            "revenueCents": 2937,
+            "fulfillmentCents": 2766,
+            "refundCents": 10,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 822,
+              "backlog:porvoo:0": 822
+            },
+            "late": 51
+          },
+          {
+            "revenueCents": 2937,
+            "fulfillmentCents": 2832,
+            "refundCents": 13,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 822,
+              "backlog:porvoo:0": 822
+            },
+            "late": 63
+          },
+          {
+            "revenueCents": 2937,
+            "fulfillmentCents": 2824,
+            "refundCents": 9,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 822,
+              "backlog:porvoo:0": 822
+            },
+            "late": 45
+          },
+          {
+            "revenueCents": 1564,
+            "fulfillmentCents": 1503,
+            "refundCents": 7,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 537,
+              "backlog:porvoo:0": 537
+            },
+            "late": 37
+          },
+          {
+            "revenueCents": 1565,
+            "fulfillmentCents": 1474,
+            "refundCents": 5,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 537,
+              "backlog:porvoo:0": 537
+            },
+            "late": 27
+          },
+          {
+            "revenueCents": 1565,
+            "fulfillmentCents": 1509,
+            "refundCents": 7,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 537,
+              "backlog:porvoo:0": 537
+            },
+            "late": 33
+          },
+          {
+            "revenueCents": 1565,
+            "fulfillmentCents": 1504,
+            "refundCents": 5,
+            "penaltyCents": 0,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 537,
+              "backlog:porvoo:0": 537
+            },
+            "late": 24
+          }
+        ]
+      },
+      {
+        "id": "p6",
+        "observedAt": 492,
+        "claims": [
+          "R00001"
+        ],
+        "outcomes": [
+          {
+            "revenueCents": 3128,
+            "fulfillmentCents": 3032,
+            "refundCents": 15,
+            "penaltyCents": 2,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 861,
+              "backlog:porvoo:0": 861
+            },
+            "late": 75
+          },
+          {
+            "revenueCents": 3128,
+            "fulfillmentCents": 2972,
+            "refundCents": 11,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 861,
+              "backlog:porvoo:0": 861
+            },
+            "late": 55
+          },
+          {
+            "revenueCents": 3128,
+            "fulfillmentCents": 3043,
+            "refundCents": 13,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 861,
+              "backlog:porvoo:0": 861
+            },
+            "late": 67
+          },
+          {
+            "revenueCents": 3128,
+            "fulfillmentCents": 3034,
+            "refundCents": 10,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 861,
+              "backlog:porvoo:0": 861
+            },
+            "late": 49
+          },
+          {
+            "revenueCents": 1749,
+            "fulfillmentCents": 1695,
+            "refundCents": 8,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 583,
+              "backlog:porvoo:0": 583
+            },
+            "late": 42
+          },
+          {
+            "revenueCents": 1749,
+            "fulfillmentCents": 1662,
+            "refundCents": 6,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 583,
+              "backlog:porvoo:0": 583
+            },
+            "late": 31
+          },
+          {
+            "revenueCents": 1749,
+            "fulfillmentCents": 1701,
+            "refundCents": 7,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 583,
+              "backlog:porvoo:0": 583
+            },
+            "late": 38
+          },
+          {
+            "revenueCents": 1749,
+            "fulfillmentCents": 1696,
+            "refundCents": 5,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 583,
+              "backlog:porvoo:0": 583
+            },
+            "late": 27
+          }
+        ]
+      },
+      {
+        "id": "p7",
+        "observedAt": 492,
+        "claims": [
+          "R00001"
+        ],
+        "outcomes": [
+          {
+            "revenueCents": 2193,
+            "fulfillmentCents": 2042,
+            "refundCents": 10,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 663,
+              "backlog:porvoo:0": 663
+            },
+            "late": 51
+          },
+          {
+            "revenueCents": 2193,
+            "fulfillmentCents": 2001,
+            "refundCents": 8,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 663,
+              "backlog:porvoo:0": 663
+            },
+            "late": 37
+          },
+          {
+            "revenueCents": 2193,
+            "fulfillmentCents": 2049,
+            "refundCents": 9,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 663,
+              "backlog:porvoo:0": 663
+            },
+            "late": 45
+          },
+          {
+            "revenueCents": 2194,
+            "fulfillmentCents": 2043,
+            "refundCents": 7,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 663,
+              "backlog:porvoo:0": 663
+            },
+            "late": 33
+          },
+          {
+            "revenueCents": 995,
+            "fulfillmentCents": 926,
+            "refundCents": 5,
+            "penaltyCents": 0,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 384,
+              "backlog:porvoo:0": 384
+            },
+            "late": 23
+          },
+          {
+            "revenueCents": 995,
+            "fulfillmentCents": 907,
+            "refundCents": 3,
+            "penaltyCents": 0,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 384,
+              "backlog:porvoo:0": 384
+            },
+            "late": 17
+          },
+          {
+            "revenueCents": 995,
+            "fulfillmentCents": 929,
+            "refundCents": 4,
+            "penaltyCents": 0,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 384,
+              "backlog:porvoo:0": 384
+            },
+            "late": 21
+          },
+          {
+            "revenueCents": 995,
+            "fulfillmentCents": 926,
+            "refundCents": 3,
+            "penaltyCents": 0,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 384,
+              "backlog:porvoo:0": 384
+            },
+            "late": 15
+          }
+        ]
+      },
+      {
+        "id": "p8",
+        "observedAt": 492,
+        "claims": [
+          "R00001"
+        ],
+        "outcomes": [
+          {
+            "revenueCents": 1310,
+            "fulfillmentCents": 1172,
+            "refundCents": 6,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 452,
+              "backlog:porvoo:0": 452
+            },
+            "late": 29
+          },
+          {
+            "revenueCents": 1310,
+            "fulfillmentCents": 1149,
+            "refundCents": 5,
+            "penaltyCents": 0,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 452,
+              "backlog:porvoo:0": 452
+            },
+            "late": 21
+          },
+          {
+            "revenueCents": 1310,
+            "fulfillmentCents": 1176,
+            "refundCents": 6,
+            "penaltyCents": 1,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 452,
+              "backlog:porvoo:0": 452
+            },
+            "late": 26
+          },
+          {
+            "revenueCents": 1310,
+            "fulfillmentCents": 1173,
+            "refundCents": 4,
+            "penaltyCents": 0,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 452,
+              "backlog:porvoo:0": 452
+            },
+            "late": 19
+          },
+          {
+            "revenueCents": 509,
+            "fulfillmentCents": 456,
+            "refundCents": 2,
+            "penaltyCents": 0,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 238,
+              "backlog:porvoo:0": 238
+            },
+            "late": 11
+          },
+          {
+            "revenueCents": 509,
+            "fulfillmentCents": 447,
+            "refundCents": 2,
+            "penaltyCents": 0,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 238,
+              "backlog:porvoo:0": 238
+            },
+            "late": 8
+          },
+          {
+            "revenueCents": 509,
+            "fulfillmentCents": 458,
+            "refundCents": 2,
+            "penaltyCents": 0,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 238,
+              "backlog:porvoo:0": 238
+            },
+            "late": 10
+          },
+          {
+            "revenueCents": 509,
+            "fulfillmentCents": 456,
+            "refundCents": 2,
+            "penaltyCents": 0,
+            "futureCents": 0,
+            "capacity": {
+              "daily:porvoo:0": 238,
+              "backlog:porvoo:0": 238
+            },
+            "late": 7
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": [
+    {
+      "index": 0,
+      "coldStartPlusSolveMs": 1497.2251250000002,
+      "result": {
+        "solver": "OR-Tools CP-SAT",
+        "version": "9.11.4210",
+        "status": "OPTIMAL",
+        "provenOptimal": true,
+        "usedBaselineFallback": false,
+        "selected": [
+          "p3"
+        ],
+        "weightedObjectiveCents": 1518,
+        "totalWeight": 8,
+        "expectedCents": 189.75,
+        "baselineExpectedCents": 0,
+        "solverUpperBoundCents": 189.75,
+        "wallSeconds": 0.014218000000000001,
+        "scenarioNetCents": [
+          248,
+          248,
+          250,
+          250,
+          130,
+          130,
+          131,
+          131
+        ],
+        "limits": "Optimality, feasibility and risk refer only to the supplied candidates and modeled scenarios, not to simulator outcomes."
+      }
+    },
+    {
+      "index": 1,
+      "coldStartPlusSolveMs": 1494.56975,
+      "result": {
+        "solver": "OR-Tools CP-SAT",
+        "version": "9.11.4210",
+        "status": "OPTIMAL",
+        "provenOptimal": true,
+        "usedBaselineFallback": false,
+        "selected": [
+          "p3"
+        ],
+        "weightedObjectiveCents": 1518,
+        "totalWeight": 8,
+        "expectedCents": 189.75,
+        "baselineExpectedCents": 0,
+        "solverUpperBoundCents": 189.75,
+        "wallSeconds": 0.014427,
+        "scenarioNetCents": [
+          248,
+          248,
+          250,
+          250,
+          130,
+          130,
+          131,
+          131
+        ],
+        "limits": "Optimality, feasibility and risk refer only to the supplied candidates and modeled scenarios, not to simulator outcomes."
+      }
+    },
+    {
+      "index": 2,
+      "coldStartPlusSolveMs": 1493.728833,
+      "result": {
+        "solver": "OR-Tools CP-SAT",
+        "version": "9.11.4210",
+        "status": "OPTIMAL",
+        "provenOptimal": true,
+        "usedBaselineFallback": false,
+        "selected": [
+          "p3"
+        ],
+        "weightedObjectiveCents": 1518,
+        "totalWeight": 8,
+        "expectedCents": 189.75,
+        "baselineExpectedCents": 0,
+        "solverUpperBoundCents": 189.75,
+        "wallSeconds": 0.014360000000000001,
+        "scenarioNetCents": [
+          248,
+          248,
+          250,
+          250,
+          130,
+          130,
+          131,
+          131
+        ],
+        "limits": "Optimality, feasibility and risk refer only to the supplied candidates and modeled scenarios, not to simulator outcomes."
+      }
+    },
+    {
+      "index": 3,
+      "coldStartPlusSolveMs": 1493.460541,
+      "result": {
+        "solver": "OR-Tools CP-SAT",
+        "version": "9.11.4210",
+        "status": "OPTIMAL",
+        "provenOptimal": true,
+        "usedBaselineFallback": false,
+        "selected": [
+          "p3"
+        ],
+        "weightedObjectiveCents": 1518,
+        "totalWeight": 8,
+        "expectedCents": 189.75,
+        "baselineExpectedCents": 0,
+        "solverUpperBoundCents": 189.75,
+        "wallSeconds": 0.014422,
+        "scenarioNetCents": [
+          248,
+          248,
+          250,
+          250,
+          130,
+          130,
+          131,
+          131
+        ],
+        "limits": "Optimality, feasibility and risk refer only to the supplied candidates and modeled scenarios, not to simulator outcomes."
+      }
+    }
+  ],
+  "limitation": "Successful local replays cannot establish why the historical response exceeded three seconds. The existing response timer includes Python process startup and OR-Tools import, not just CP-SAT search."
+}
