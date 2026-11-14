@@ -4,7 +4,7 @@ import { live } from "../src/run.ts"
 import type { Client } from "../vendor/typescript/spread.ts"
 import type { Action, DeskEvent, DeskSnapshot, DriverProfile, Order, PriceRequest, WorldMap } from "../vendor/typescript/types.ts"
 
-test("live runner quotes, posts, reads delivery events and stops at world end", async () => {
+test("live runner quotes, waits for the default bundle window, posts and stops at world end", { timeout: 15000 }, async () => {
   const hours = { opens: 480, closes: 1200, weekdays: [0, 1, 2, 3, 4], saturday: null }
   const stop = { placeId: "a", privateAddress: false, hours, window: { from: 500, to: 1200 } }
   const request: PriceRequest = { id: "R1", dealerId: "D1", batchId: null, arrivedAt: 500, respondBy: 515, legs: [{ car: { premium: false, electric: false, chargePercent: null }, pickup: stop, delivery: stop }], options: [{ kind: "same_day", deadline: 1200, listPriceCents: 5000 }], referenceFeeCents: 2500, note: null }
@@ -20,21 +20,22 @@ test("live runner quotes, posts, reads delivery events and stops at world end", 
     id: "w1",
     snapshot: async () => structuredClone(snapshot),
     roster: async () => drivers,
-    events: async (after = -1) => structuredClone(events.filter(e => e.seq > after)),
+    events: async (after = -1) => structuredClone(events.filter(e => e.seq > after && e.at <= now)),
     score: async () => score,
     act: async (actions: Action[]) => {
       sent.push(...actions)
       return actions.map(action => {
         if (action.type === "quote") events.push({ seq: 1, at: 515, kind: "order_won", order })
         if (action.type === "post") {
-          events.push({ seq: 2, at: 516, kind: "gig_booked", gigId: "g1", driverId: "d1", feeCents: 2500 }, { seq: 3, at: 800, kind: "delivered", gigId: "g1", orderId: "R1", leg: 0, placeId: "a" })
+          assert.ok(now >= 530)
+          events.push({ seq: 2, at: now + 1, kind: "gig_booked", gigId: "g1", driverId: "d1", feeCents: 2500 }, { seq: 3, at: 800, kind: "delivered", gigId: "g1", orderId: "R1", leg: 0, placeId: "a" })
           now = 1000
         }
         return { ok: true, id: action.type === "post" ? "g1" : "R1" }
       })
     },
   }
-  const client = { world: () => world, map: async () => map, final: async () => ({ worldId: "w1", startsAt: "2026-11-15T06:00:00Z", now }) } as unknown as Client
+  const client = { world: () => world, map: async () => map, final: async () => { now = Math.min(1000, now + 5); return { worldId: "w1", startsAt: "2026-11-15T06:00:00Z", now } } } as unknown as Client
   await live(client, {})
   assert.deepEqual(sent.map(a => a.type), ["quote", "post"])
 })

@@ -26,10 +26,10 @@ export type Settings = {
   backlog: number; priceFloor: number; costRatio: number; trustStep: number; sameDayBacklog: number; demandSlope: number
 }
 export const defaults: Settings = {
-  price: 1.42, fee: 1.05, margin: 0.1, capacity: 0.18, maxKm: 550, minDrivers: 12,
+  price: 1.42, fee: 1.05, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
   notes: true, adaptive: true, earlyOffers: false, safetySlack: false,
-  auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, lateRescue: false, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 0,
-  backlog: 0.04, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14,
+  auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, lateRescue: false, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
+  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14,
 }
 
 export function validateSettings(value: unknown): asserts value is Partial<Settings> {

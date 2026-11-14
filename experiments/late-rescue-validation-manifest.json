@@ -1,0 +1,187 @@
+{
+  "selectionFrozenAt": "2026-11-14T01:04:41.762245+00:00",
+  "labelPrefix": "late-rescue-evaluation",
+  "unseenDeclaration": "All8 seeds were randomly reserved before the development confirmation outcomes. None has been played or inspected. No tuning will use this panel while treating it as unseen.",
+  "reservation": {
+    "reservedAt": "2026-11-14T00:59:29.353152+00:00",
+    "purpose": "Fresh paired evaluation only if the frozen late-rescue candidate passes development confirmation. None of these seeds has been played or inspected.",
+    "seeds": [
+      "late-rescue-unseen-20261114-5916726ab4e9f863",
+      "late-rescue-unseen-20261114-e4ee0c5739a75ad0",
+      "late-rescue-unseen-20261114-e48160564a27cf74",
+      "late-rescue-unseen-20261114-824df9f835246148",
+      "late-rescue-unseen-20261114-9b483a1a53deba54",
+      "late-rescue-unseen-20261114-864cfcc97f2cade5",
+      "late-rescue-unseen-20261114-c551e105a48e2148",
+      "late-rescue-unseen-20261114-5e15a0a3962a54ba"
+    ]
+  },
+  "baseline": {
+    "bundle": "experiments/frontier/candidate",
+    "role": "candidate",
+    "settings": {
+      "price": 1.42,
+      "fee": 1.05,
+      "margin": 0.1,
+      "capacity": 0.35,
+      "maxKm": 700,
+      "minDrivers": 8,
+      "notes": true,
+      "adaptive": true,
+      "earlyOffers": false,
+      "safetySlack": false,
+      "auction": false,
+      "allowPrivate": false,
+      "tradeIns": false,
+      "homeOffers": false,
+      "readiness": false,
+      "bundlePairs": true,
+      "sameDayPremium": 1,
+      "laterDiscount": 1,
+      "placePrior": 0,
+      "bundleWait": 15,
+      "backlog": 0.08,
+      "priceFloor": 0,
+      "costRatio": 1.15,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "demandSlope": 14
+    },
+    "revision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41"
+  },
+  "candidate": {
+    "bundle": "experiments/frontier/late-rescue",
+    "role": "late-rescue experimental candidate; confirmation pending",
+    "settings": {
+      "price": 1.42,
+      "fee": 1.05,
+      "margin": 0.1,
+      "capacity": 0.35,
+      "maxKm": 700,
+      "minDrivers": 8,
+      "notes": true,
+      "adaptive": true,
+      "earlyOffers": false,
+      "safetySlack": false,
+      "auction": false,
+      "allowPrivate": false,
+      "tradeIns": false,
+      "homeOffers": false,
+      "readiness": false,
+      "bundlePairs": true,
+      "sameDayPremium": 1,
+      "laterDiscount": 1,
+      "placePrior": 0,
+      "bundleWait": 15,
+      "backlog": 0.08,
+      "priceFloor": 0,
+      "costRatio": 1.15,
+      "trustStep": 0.01,
+      "sameDayBacklog": 4,
+      "demandSlope": 14,
+      "timedNotes": false,
+      "lateRescue": true
+    },
+    "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef"
+  },
+  "pairs": [
+    {
+      "seed": "late-rescue-unseen-20261114-5916726ab4e9f863",
+      "baselineWorldId": "wd88b3ed2a95472802fe4",
+      "candidateWorldId": "wa6e982433a45fbcdd401"
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-e4ee0c5739a75ad0",
+      "baselineWorldId": "wc950e844bea34b4bd79a",
+      "candidateWorldId": "wbea5dbdaebeff5638d1c"
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-e48160564a27cf74",
+      "baselineWorldId": "w49061de8484c00420b4f",
+      "candidateWorldId": "w70550a8c599b38df78ac"
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-824df9f835246148",
+      "baselineWorldId": "w1c1994a0583f1b960853",
+      "candidateWorldId": "wada29dbdd78bf506f315"
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-9b483a1a53deba54",
+      "baselineWorldId": null,
+      "candidateWorldId": null
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-864cfcc97f2cade5",
+      "baselineWorldId": null,
+      "candidateWorldId": null
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-c551e105a48e2148",
+      "baselineWorldId": null,
+      "candidateWorldId": null
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-5e15a0a3962a54ba",
+      "baselineWorldId": null,
+      "candidateWorldId": null
+    }
+  ],
+  "bootstrap": {
+    "samples": 10000,
+    "seed": 2026111402
+  },
+  "attempts": [
+    {
+      "seed": "late-rescue-unseen-20261114-5916726ab4e9f863",
+      "side": "baseline",
+      "worldId": "wd88b3ed2a95472802fe4",
+      "startedAt": "2026-11-14T01:04:46.733Z",
+      "completedAt": "2026-11-14T01:08:58.968Z"
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-5916726ab4e9f863",
+      "side": "candidate",
+      "worldId": "wa6e982433a45fbcdd401",
+      "startedAt": "2026-11-14T01:04:47.154Z",
+      "completedAt": "2026-11-14T01:08:48.366Z"
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-e4ee0c5739a75ad0",
+      "side": "baseline",
+      "worldId": "wc950e844bea34b4bd79a",
+      "startedAt": "2026-11-14T01:04:47.582Z",
+      "completedAt": "2026-11-14T01:09:01.007Z"
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-e4ee0c5739a75ad0",
+      "side": "candidate",
+      "worldId": "wbea5dbdaebeff5638d1c",
+      "startedAt": "2026-11-14T01:04:48.318Z",
+      "completedAt": "2026-11-14T01:09:08.424Z"
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-e48160564a27cf74",
+      "side": "baseline",
+      "worldId": "w49061de8484c00420b4f",
+      "startedAt": "2026-11-14T01:08:48.851Z"
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-e48160564a27cf74",
+      "side": "candidate",
+      "worldId": "w70550a8c599b38df78ac",
+      "startedAt": "2026-11-14T01:08:59.186Z"
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-824df9f835246148",
+      "side": "baseline",
+      "worldId": "w1c1994a0583f1b960853",
+      "startedAt": "2026-11-14T01:09:01.342Z"
+    },
+    {
+      "seed": "late-rescue-unseen-20261114-824df9f835246148",
+      "side": "candidate",
+      "worldId": "wada29dbdd78bf506f315",
+      "startedAt": "2026-11-14T01:09:08.603Z"
+    }
+  ]
+}

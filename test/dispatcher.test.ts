@@ -30,7 +30,7 @@ function order(r = request()): Order {
 }
 function desk(): Dispatcher {
   const world = { act: async (actions: unknown[]) => actions.map((_, i) => ({ ok: true, id: `g${i}` })) } as unknown as World
-  return new Dispatcher(world, 8, 500, map, drivers)
+  return new Dispatcher(world, 8, 500, map, drivers, { bundleWait: 0, backlog: 0.04 })
 }
 
 test("uncertain notes cannot win, but harmless tyres in the boot are allowed", () => {

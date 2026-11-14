@@ -1,0 +1,12 @@
+{
+  "selectedAt": "2026-11-14T01:11:08.085098+00:00",
+  "policy": "validated volume+bundles",
+  "validationReport": "docs/frontier-validation.json",
+  "sourceReference": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+  "runtimeRevision": "2a3754e9e1cf8d7e10cd74e970e662a511ca3a3b40703bdd9d65bb56fe0c4487",
+  "configuration": "experiments/final-config.json",
+  "conformance": "docs/default-conformance.json",
+  "lateRescue": false,
+  "timedNotes": false,
+  "rankingSubmitted": false
+}

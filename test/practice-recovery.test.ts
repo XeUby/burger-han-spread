@@ -116,7 +116,7 @@ test("practice recovers unknown commits, preserves learned state and provenance,
     },
   }
   const client = { create: async () => { creates++; return world }, map: async () => map } as unknown as Client
-  assert.deepEqual(await practice(client, { seed: "recovery-fixture", label: "test-provenance", settings: { adaptive: true } }), score)
+  assert.deepEqual(await practice(client, { seed: "recovery-fixture", label: "test-provenance", settings: { adaptive: true, bundleWait: 0 } }), score)
   assert.equal(creates, 1)
   assert.equal(sent.filter(action => action.type === "post").length, 1)
   assert.deepEqual(observations.map(observation => observation.won), [true, false])

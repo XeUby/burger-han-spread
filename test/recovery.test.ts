@@ -44,7 +44,7 @@ test("a concurrent booking that prevents withdrawal keeps its gig and queues no 
     sent.push(...actions)
     return actions.map(() => ({ ok: false as const, reason: "Gig g1 is booked" }))
   } } as unknown as World
-  const d = new Dispatcher(world, 8, 500, map, drivers)
+  const d = new Dispatcher(world, 8, 500, map, drivers, { bundleWait: 0 })
   const r = request()
   const o = order(r)
   d.requests.set(r.id, r)

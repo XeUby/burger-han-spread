@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-14T00:59:29.494555+00:00",
+  "updatedAt": "2026-11-14T01:11:08.085098+00:00",
   "objective": "Continue systematic search toward the global optimum; practice only, no ranking submission.",
   "maximumConcurrentPlays": 4,
   "currentConcurrency": {
     "maximumConcurrentPlays": 4,
-    "note": "Four ordinary confirmation worlds running; source and settings frozen."
+    "note": "Paired runner30614 is active with four workers and a serialized server occupancy guard. Do not edit its live manifest or restart after a mere observation timeout."
   },
   "completedCombinationStudy": {
     "sessionId": 84558,
@@ -65,10 +65,10 @@
     "700km-only bundle treatment ends at7407.63/9410.50 euros, minimum96.6% on time. It gains versus the old baseline in both weeks but not versus bundles alone. No900km experiment scheduled."
   ],
   "nextSteps": [
-    "Poll confirmation session19904; collect all4 old-seed outcomes, including no-exposure controls09/14. Verify explicit protocol criteria before further action.",
-    "If confirmation passes, use only the8 seeds reserved in experiments/late-rescue-reserved-seeds.json for a fresh paired comparison against frozen volume+bundles source36a. Freeze selection and exactsource/settings first. Do not use the older f8 source as the new baseline.",
-    "Maintain at most4 unfinished plays. No ranking or final submissions.",
-    "Keep note-hours and profile-selected offer-window variants disabled; neither passed its required evidence threshold.",
+    "Poll paired session30614. Let all16 declared worlds complete; preserve the live manifest and every attempt.",
+    "After completion run python3 analysis/frontier_validation.py --manifest experiments/late-rescue-validation-manifest.json --output docs/late-rescue-validation. Do not compare against old f8 baseline or tune the frozen source during evaluation.",
+    "Assess all8 paired profits, qualifications, undelivered counts and operational errors before promoting lateRescue. Root default is already the independently validated bundle incumbent, with new feature off.",
+    "Maintain at most4 unfinished plays. No ranking or final submissions. Continue structural research separately on old development data only.",
     "Push coherent checkpoints to codex/standalone-dispatcher."
   ],
   "validationStatus": "All16 fresh paired trials complete. Candidate mean10411.59 euros versus8242.34, +26.32%;7/8 positive;8/8 qualified; minimum94.94% on time; no undelivered orders. Full report docs/frontier-validation.md. No ranking submission.",
@@ -210,23 +210,6 @@
     },
     "decision": "Not selected: mean gain -274.725 euros, only2/4 positive. All4 qualified; no parsed-hours failed visits or undelivered orders."
   },
-  "currentStudy": {
-    "sessionId": 19904,
-    "kind": "Late-rescue development confirmation",
-    "plan": "experiments/plans/late-rescue-confirmation.json",
-    "protocol": "experiments/late-rescue-confirmation-protocol.json",
-    "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
-    "maximumJobs": 4,
-    "trials": 4,
-    "frozenBundle": "runs/frozen/4de3c61aece07401bd4e610a35fb52bf3e2f441826c43567a2a923c5d8aadcae/6a3646054553eee8eb07f5ca7e89f35b199e632e4c1d2462d1bcf7dc681d0e2a",
-    "manifest": "experiments/late-rescue-confirmation-manifest.json",
-    "worlds": [
-      "w9092313fc502252b79ab",
-      "w488ffad22efd5faf742a",
-      "w3faccc007c8c0bd5ff41",
-      "wa7bcf5d1654b6d337c61"
-    ]
-  },
   "completedLateRescueScreen": {
     "sessionId": 76830,
     "terminal": true,
@@ -241,5 +224,50 @@
       "undeliveredTreatments": 0,
       "minimumTreatmentOnTimeShare": 0.9361702127659575
     }
+  },
+  "completedLateRescueConfirmation": {
+    "sessionId": 19904,
+    "kind": "Late-rescue development confirmation",
+    "plan": "experiments/plans/late-rescue-confirmation.json",
+    "protocol": "experiments/late-rescue-confirmation-protocol.json",
+    "revision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef",
+    "maximumJobs": 4,
+    "trials": 4,
+    "frozenBundle": "runs/frozen/4de3c61aece07401bd4e610a35fb52bf3e2f441826c43567a2a923c5d8aadcae/6a3646054553eee8eb07f5ca7e89f35b199e632e4c1d2462d1bcf7dc681d0e2a",
+    "manifest": "experiments/late-rescue-confirmation-manifest.json",
+    "worlds": [
+      "w9092313fc502252b79ab",
+      "w488ffad22efd5faf742a",
+      "w3faccc007c8c0bd5ff41",
+      "wa7bcf5d1654b6d337c61"
+    ],
+    "terminal": true,
+    "study": "runs/study-1794618192381.json",
+    "summary": {
+      "pairs": 4,
+      "meanGainCents": 5216,
+      "positivePairs": 1,
+      "qualifiedTreatments": 4,
+      "undeliveredTreatments": 0,
+      "minimumTreatmentOnTimeShare": 0.9624664879356568
+    },
+    "decision": "Passed the predeclared criteria: all4 qualified with no undelivered orders, +208.64 euros on12 and exact unchanged ledgers on09/14/16. The2 rejected reprices on16 also occur in its control."
+  },
+  "currentStudy": {
+    "sessionId": 30614,
+    "kind": "Fresh late-rescue paired evaluation",
+    "manifest": "experiments/late-rescue-validation-manifest.json",
+    "maximumJobs": 4,
+    "trials": 16,
+    "baselineRevision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+    "candidateRevision": "16d908dd8e96325d972aa45529f69d6ca82910be212b68857e7cf3f0677530ef"
+  },
+  "runtimeDefault": {
+    "selectedPolicy": "validated volume+bundles",
+    "settings": "experiments/final-config.json",
+    "referenceRevision": "36a1c9ad35990355fcaa0cfa0902ed6de1bcf20adc32a868fbf46a4878d23d41",
+    "conformance": "docs/default-conformance.json",
+    "runtimeRevision": "2a3754e9e1cf8d7e10cd74e970e662a511ca3a3b40703bdd9d65bb56fe0c4487",
+    "note": "Root defaults now match the validated bundle policy. Hours and late-rescue remain disabled. Unit fixtures explicitly select immediate posting where appropriate; live fixture exercises the default15-minute wait."
   }
 }

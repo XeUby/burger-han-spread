@@ -73,7 +73,7 @@ await Promise.all(Array.from({ length: Number(values.jobs) }, async () => {
     }
     if (!world) return
     try {
-      await policy.practice(policy.client, { worldId: world.id, seed: task.seed, settings: policy.settings, label: `frontier-evaluation-${task.side}` })
+      await policy.practice(policy.client, { worldId: world.id, seed: task.seed, settings: policy.settings, label: `${manifest.labelPrefix ?? "frontier-evaluation"}-${task.side}` })
       await locked(async () => { manifest.attempts.find((attempt: { worldId: string }) => attempt.worldId === world.id).completedAt = new Date().toISOString(); await save() })
     } catch (error) {
       stopped = true

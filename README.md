@@ -22,11 +22,11 @@ The prior policy had independently improved mean margin from €5,541.90 to €8
 
 ## Research and reproducibility
 
-The selected source is frozen under `experiments/frontier/candidate/`; the previous source is under `experiments/frontier/baseline/`. Exact source hashes and settings are in [source-index.json](experiments/frontier/source-index.json). The selected configuration is also in [frontier-selected-config.json](experiments/frontier-selected-config.json). The default executable still uses the previous validated settings; research features remain opt-in.
+The selected source is frozen under `experiments/frontier/candidate/`; the previous source is under `experiments/frontier/baseline/`. Exact source hashes and settings are in [source-index.json](experiments/frontier/source-index.json). The selected configuration is also in [frontier-selected-config.json](experiments/frontier-selected-config.json). The standalone default now uses this validated bundle policy. [Conformance evidence](docs/default-conformance.json) compares every emitted action and decision time with the frozen implementation over three old development event streams. Research features remain opt-in.
 
 Development selection used [screening trials](docs/frontier-experiments.md) and a [four-week confirmation](docs/frontier-confirmation.md). A separate note-hours treatment passed an initial screen but [failed confirmation](docs/note-hours-confirmation.md), so it remains disabled. A controlled [direct-offer head-start probe](docs/offer-window-probe.json) also found no benefit. [Current experiment state](experiments/frontier-status.json) records runs and decisions. No ranking submission has been made by this research.
 
-A bounded fee reset after on-time pickup is already impossible gained €891.79 and €1,273.40 in two deliberately high-exposure development weeks. [Complete screening evidence](docs/late-rescue-results.md) includes all costs and refunds. Broader confirmation is running; this feature is not enabled in the validated incumbent.
+A bounded fee reset after on-time pickup is already impossible gained €891.79 and €1,273.40 in two deliberately high-exposure development weeks. [Complete screening evidence](docs/late-rescue-results.md) includes all costs and refunds. [Broader confirmation](docs/late-rescue-confirmation.md) gained €208.64 on one week and left three unchanged. An eight-week fresh paired evaluation is running; this feature is not enabled in the validated incumbent.
 
 Both study runners cap workers at four, serialize their own creations, and check total unfinished server worlds before each creation. Coordinate separate runners so their creation checks cannot race. Raw world logs and credentials remain local.
 
@@ -35,8 +35,8 @@ Both study runners cap workers at four, serialize their own creations, and check
 The [formal model](docs/optimization-model.md) treats the game as partially observed stochastic control with a qualification constraint. The implementation has three main decisions:
 
 1. **Price:** a regularized online Bayesian approximation estimates demand effects for world, day, origin, destination, dealer and distance. It accounts for the documented dealer-trust multiplier. Using the least-expensive feasible option as a pricing reference, it solves `(price − estimated cost) × P(win)` to the best integer cent under its logistic model, then applies the same normalized price ratio to the other options. Unimodality gives a bounded scalar optimization, checked against exhaustive integer search.
-2. **Admit work:** reserve capacity for pending quotes and won orders, enforce local backlog and daily workload limits, and remove the same-day option when today's queue reaches four weighted unbooked jobs. Later feasible options remain available. Expanded note recognition and a 550 km route ceiling admit more work within these safeguards.
-3. **Fulfill and recover:** post gigs with equipment and driver restrictions, use scheduled rescue fees, and handle changes, drops, cancellations and expired gigs. Rerouted work receives a fee scaled to its new driving duration. Failed quotes cannot create false demand observations; failed withdrawals preserve the existing gig.
+2. **Admit work:** reserve capacity for pending quotes and won orders, enforce local backlog and daily workload limits, and remove the same-day option when today's queue reaches four weighted unbooked jobs. Later feasible options remain available. The validated bundle policy uses a 700 km route ceiling, eight weighted eligible local drivers, daily capacity factor 0.35 and backlog factor 0.08.
+3. **Fulfill and recover:** briefly hold suitable orders for 15 minutes and pair compatible routes into sequential gigs. Preserve equipment and driver restrictions, use scheduled rescue fees, and handle changes, drops, cancellations and expired gigs. Rerouted work receives a fee scaled to its new driving duration. Failed quotes cannot create false demand observations; failed withdrawals preserve the existing gig.
 
 The [development experiments](docs/experiments.md) cover eleven policy variants and five-seed confirmation. Lower quote floors, broader note coverage, early offers, lower fees, longer routes, queue control, demand-curve slopes and pickup cutoffs were tested. Coupled treatments and source-provenance limitations are identified explicitly. Early offers and explicit pickup cutoffs remain experimental switches and are disabled by default.
 
@@ -59,7 +59,7 @@ Run the exact latest validated bundle source on an ordinary practice seed:
 node --env-file=.env experiments/frontier/candidate/src/run.ts --seed new-bundle-trial-1 --config '{"capacity":0.35,"backlog":0.08,"minDrivers":8,"maxKm":700,"bundleWait":15}'
 ```
 
-The earlier optimized policy is the default. Its complete settings are in [final-config.json](experiments/final-config.json). Runtime and integration tests: **98 passing**; isolated research tests: **8 passing**; statistical-report tests: **9 passing**. TypeScript checks include the experiment launchers.
+The independently validated bundle policy is the default. Its complete settings are in [final-config.json](experiments/final-config.json), including disabled research switches. Runtime and integration tests: **98 passing**; isolated research tests: **8 passing**; statistical-report tests: **9 passing**. The live integration fixture advances the clock through the default bundle window. TypeScript checks include the experiment launchers.
 
 To play an active test final or final:
 
