@@ -26,8 +26,8 @@ Complete the fixed panel before the planned economic comparison. Report paired w
 
 ## Decision rule
 
-This is a data collection study, not a promotion candidate. Require at least 100 acknowledged assignments per arm across at least six weeks, plus at least 20 later-option awards overall, before fitting a menu-response model. These counts only permit analysis; they do not establish identification outside the two tested menus. If support fails, stop without extending the panel or tuning the price shift.
+This is a data collection study, not a promotion candidate. Require at least 100 acknowledged assignments per arm across at least six weeks, plus at least 20 later-option awards overall, and no unknown assignment outcomes before fitting a menu-response model. These counts only permit analysis; they do not establish identification outside the two tested menus. If support fails, stop without extending the panel or tuning the price shift.
 
 First report the randomized contrasts, including null or adverse results. A reduction in same-day awards without a corresponding increase in later awards indicates demand loss rather than substitution at this perturbation. Assess whether uncertainty is narrow enough to justify implementing option-specific choice valuation; do not infer a response merely from the sign of the mean. Any fitted model must face a separate frozen whole-week holdout against a constant option-share baseline and the existing scalar model. Final policy promotion still requires the existing untouched validation and reliability rules.
 
-Status: design and historical support screen only. No source freeze, assignment or live world for this study has yet been created.
+Execution status is recorded in the versioned manifest, attempt journal and results report. This design is frozen before any world creation.

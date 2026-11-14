@@ -1,0 +1,29 @@
+{
+  "frozenAt": "2026-11-14T17:17:43.115480+00:00",
+  "design": "docs/menu-choice-study-design.md",
+  "role": "Eight fresh paired development seeds, sixteen unranked worlds; randomized menu-choice evidence, no promotion",
+  "seeds": [
+    "menu-choice-development-v1-b800bbb2b9c68af929001ead",
+    "menu-choice-development-v1-1bff1ce1486bf44a98053863",
+    "menu-choice-development-v1-0a05d13e398ed6403768ce2b",
+    "menu-choice-development-v1-20b32e949170b76ffbc8be12",
+    "menu-choice-development-v1-c92b7bb57e9633450d7661d9",
+    "menu-choice-development-v1-c65661a499871aed1f2c1cc4",
+    "menu-choice-development-v1-a138ffde8caa4b9a906cb3bd",
+    "menu-choice-development-v1-5a85e96babaaa6ebddfaa947"
+  ],
+  "seedRole": "Reserved development now; excluded from untouched validation",
+  "assignment": "SHA256(menu-choice:randomSeed:requestId) low bit, independently seeded per exploratory week; original versus 10% same-day premium with probability 1/2 each",
+  "stopping": "Fixed panel, no replacements or tuning. Runtime failure stops new creation and preserves active outcomes.",
+  "operations": {
+    "workers": 3,
+    "capacity": 8,
+    "mode": "practice",
+    "sharedLock": "runs/team-world-creation.lock",
+    "existingOwnUnfinished": [
+      "wf488bd0523f1119e8cd7"
+    ]
+  },
+  "controlChange": "Only bridge readiness handshake and solver ready message; all other original benchmark files hash-identical",
+  "authorization": "Unranked only; no rankings, finals, forks or deletion."
+}

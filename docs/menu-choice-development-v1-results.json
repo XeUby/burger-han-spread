@@ -1,0 +1,146 @@
+{
+  "scope": "Eight paired development weeks; randomized menu-choice coverage, no promotion.",
+  "terminal": false,
+  "completed": 0,
+  "expected": 16,
+  "records": [
+    {
+      "label": "menu-choice-development-v1-control-1",
+      "seed": "menu-choice-development-v1-b800bbb2b9c68af929001ead",
+      "arm": "control",
+      "status": "running",
+      "level": 8,
+      "worldId": "w0af499851f04c19df7bb",
+      "runtimeFailures": [],
+      "artifactHashes": {
+        "meta": "1e5c9d551b6fecb0a62b12d0a0062f9669b7cca22561ae9b1348aea00a0d35af"
+      }
+    },
+    {
+      "label": "menu-choice-development-v1-menu-1",
+      "seed": "menu-choice-development-v1-b800bbb2b9c68af929001ead",
+      "arm": "menu",
+      "status": "running",
+      "level": 8,
+      "worldId": "w8e9c8531d2b51d32eef4",
+      "runtimeFailures": [],
+      "artifactHashes": {
+        "meta": "cfe738d1cc414faecc8632544bfcb09f223c33188685f733538b97c3c32f866e"
+      }
+    },
+    {
+      "label": "menu-choice-development-v1-menu-2",
+      "seed": "menu-choice-development-v1-1bff1ce1486bf44a98053863",
+      "arm": "menu",
+      "status": "running",
+      "level": 8,
+      "worldId": "w2417863ed7200481ae2c",
+      "runtimeFailures": [],
+      "artifactHashes": {
+        "meta": "2dc69cccbf5a7dd2c9c8742b71f3fa99376b8bd4fd617d70e650efffb4290e6f"
+      }
+    },
+    {
+      "label": "menu-choice-development-v1-control-2",
+      "seed": "menu-choice-development-v1-1bff1ce1486bf44a98053863",
+      "arm": "control",
+      "status": "not_started",
+      "level": 8
+    },
+    {
+      "label": "menu-choice-development-v1-control-3",
+      "seed": "menu-choice-development-v1-0a05d13e398ed6403768ce2b",
+      "arm": "control",
+      "status": "not_started",
+      "level": 8
+    },
+    {
+      "label": "menu-choice-development-v1-menu-3",
+      "seed": "menu-choice-development-v1-0a05d13e398ed6403768ce2b",
+      "arm": "menu",
+      "status": "not_started",
+      "level": 8
+    },
+    {
+      "label": "menu-choice-development-v1-menu-4",
+      "seed": "menu-choice-development-v1-20b32e949170b76ffbc8be12",
+      "arm": "menu",
+      "status": "not_started",
+      "level": 8
+    },
+    {
+      "label": "menu-choice-development-v1-control-4",
+      "seed": "menu-choice-development-v1-20b32e949170b76ffbc8be12",
+      "arm": "control",
+      "status": "not_started",
+      "level": 8
+    },
+    {
+      "label": "menu-choice-development-v1-control-5",
+      "seed": "menu-choice-development-v1-c92b7bb57e9633450d7661d9",
+      "arm": "control",
+      "status": "not_started",
+      "level": 8
+    },
+    {
+      "label": "menu-choice-development-v1-menu-5",
+      "seed": "menu-choice-development-v1-c92b7bb57e9633450d7661d9",
+      "arm": "menu",
+      "status": "not_started",
+      "level": 8
+    },
+    {
+      "label": "menu-choice-development-v1-menu-6",
+      "seed": "menu-choice-development-v1-c65661a499871aed1f2c1cc4",
+      "arm": "menu",
+      "status": "not_started",
+      "level": 8
+    },
+    {
+      "label": "menu-choice-development-v1-control-6",
+      "seed": "menu-choice-development-v1-c65661a499871aed1f2c1cc4",
+      "arm": "control",
+      "status": "not_started",
+      "level": 8
+    },
+    {
+      "label": "menu-choice-development-v1-control-7",
+      "seed": "menu-choice-development-v1-a138ffde8caa4b9a906cb3bd",
+      "arm": "control",
+      "status": "not_started",
+      "level": 8
+    },
+    {
+      "label": "menu-choice-development-v1-menu-7",
+      "seed": "menu-choice-development-v1-a138ffde8caa4b9a906cb3bd",
+      "arm": "menu",
+      "status": "not_started",
+      "level": 8
+    },
+    {
+      "label": "menu-choice-development-v1-menu-8",
+      "seed": "menu-choice-development-v1-5a85e96babaaa6ebddfaa947",
+      "arm": "menu",
+      "status": "not_started",
+      "level": 8
+    },
+    {
+      "label": "menu-choice-development-v1-control-8",
+      "seed": "menu-choice-development-v1-5a85e96babaaa6ebddfaa947",
+      "arm": "control",
+      "status": "not_started",
+      "level": 8
+    }
+  ],
+  "observations": [],
+  "operationalProblems": [],
+  "summary": {},
+  "paired": null,
+  "supportPassed": false,
+  "limitations": [
+    "Eight whole-seed blocks, not independent requests.",
+    "Local contrasts concern the two menus under sequential exploratory eligibility; capacity and trust interfere across assignments.",
+    "Whole-week package includes suppressed scalar demand updates as well as relative-price exploration.",
+    "Unknown actions and outcomes are not no-purchase observations. No conditional-on-win comparison identifies substitution."
+  ]
+}

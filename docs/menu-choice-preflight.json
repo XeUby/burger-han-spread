@@ -1,0 +1,91 @@
+{
+  "checkedAt": "2026-11-14T17:16:55.482Z",
+  "unfinished": [
+    {
+      "worldId": "wf488bd0523f1119e8cd7",
+      "kind": "practice",
+      "level": 8,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": false
+    },
+    {
+      "worldId": "wccacb5c10ef3d8f25c78",
+      "kind": "practice",
+      "level": 2,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": false
+    },
+    {
+      "worldId": "w62ee77c893bf1d9faf58",
+      "kind": "practice",
+      "level": 3,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": false
+    },
+    {
+      "worldId": "w0ef190bc886f406c560e",
+      "kind": "practice",
+      "level": 3,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": false
+    },
+    {
+      "worldId": "wefc066ccc239f579a5ab",
+      "kind": "practice",
+      "level": 4,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": false
+    }
+  ],
+  "validation": {
+    "sourceAndFrozenPolicyTests": 4,
+    "reportTests": 2,
+    "typecheck": "Source and frozen root passed",
+    "controlConformance": "Every historical control file except src/bridge.ts and src/solver.py matched the preserved benchmark hash. Both arms share the tested readiness lifecycle.",
+    "plannedNewWorkers": 3,
+    "retainedOwnWorld": "wf488bd0523f1119e8cd7"
+  },
+  "leaderboard": {
+    "level": 8,
+    "season": 8,
+    "name": "Saturday 18:00",
+    "topThree": [
+      {
+        "rank": 1,
+        "team": "juhus",
+        "played": 5,
+        "ranked": true,
+        "marginCents": 9444461,
+        "onTimeShare": 0.9739016963897347
+      },
+      {
+        "rank": 2,
+        "team": "mathnet1",
+        "played": 5,
+        "ranked": true,
+        "marginCents": 8245355,
+        "onTimeShare": 0.9613686534216336
+      },
+      {
+        "rank": 3,
+        "team": "source-exp",
+        "played": 5,
+        "ranked": true,
+        "marginCents": 7982880,
+        "onTimeShare": 0.9795918367346939
+      }
+    ],
+    "comparisonLimitation": "Leaderboard seeds are unmatched; no competitive superiority inference."
+  },
+  "fullLocalSnapshot": "runs/menu-choice-preflight-full.json"
+}

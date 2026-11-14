@@ -2,13 +2,21 @@
 
 **Latest capacity instruction: this assistant may run at most FOUR concurrent worlds.** The shared team cap remains EIGHT unfinished worlds. Use at most4own workers, count existing team worlds under the shared lock, and let previously launched runs drain. See `experiments/team-capacity-policy.json`.
 
+## Menu-choice panel: frozen and running
+
+`menu-choice-development-v1` froze eight new paired development seeds and sixteen unranked worlds. The control preserves the eight-week benchmark byte-for-byte except the tested solver readiness handshake. The menu arm changes only selected unanchored plain public menus: equal-probability original versus 10% same-day premium, with later options and prices unchanged, maximum 40 assignments/week and eight/day. Both assigned arms skip unsupported scalar demand learning. The full-week comparison therefore evaluates that exploration package, not the premium alone.
+
+Source and frozen-policy execution tests (four each), two outcome-accounting tests and typechecks passed. The report logic and dependencies were hashed before creation. Unknown acknowledgements/outcomes remain unknown. Model support requires at least 100 known assignments per arm over six weeks, 20 later awards, no unknown outcomes, and the complete fixed panel. There is no automatic promotion. The historical exposure screen is not a profit estimate.
+
+Three new workers run under the shared eight-world creation lock; one slot remains reserved for the unfinished private study, keeping this assistant at most four unfinished worlds. Runtime failure stops creation without replacement. Read the attempt journal and actual runner/server state for progress; this entry does not establish that the panel completed. Evidence lives under `research/menu-choice/`, `experiments/menu-choice-development-v1*` and `docs/menu-choice*`. Do not modify frozen study/report sources while this panel runs.
+
 ## Capability corrections and review correction
 
 The unfrozen main dispatcher now evaluates only the server-awarded first option at levels 1–3, regardless of the research `firstOptionOnly` flag. Dealer trust enters prices and auction valuation only at level 8; the value and portfolio adapters use the same inherited factor. Counterexamples failed before these edits and passed after them; the full main/value/portfolio suite passed 135 tests, and all three TypeScript configurations passed. Historical bundles remain unchanged. This is rule conformance, not new profit evidence; other researchers' separate hybrid/regime implementations are outside these edits.
 
 **Correction to the review and my earlier acceptance:** cancelled orders do not remain in the live order map. `src/desk.ts` deletes them on cancellation and excludes them during snapshot recovery. A manually inserted cancelled order was an unreachable-state test, not evidence of a live counting bug. No cancellation-count fix was retained. An event-path regression confirms cancellation removes orders and leaves the portfolio allowance unchanged. The allowance remains a heuristic rather than a qualification guarantee.
 
-Next economic experiment: `docs/menu-choice-study-design.md` specifies a bounded randomized same-day price increase with later options/prices preserved. The historical screen finds 1,354 eligible menus and 318 bounded assignments across eight familiar weeks. This supports collecting option-choice evidence, not predicted profit or new deployment. No study worlds or freeze exist yet. The interrupted private world still counts toward this assistant's cap, so the proposed launcher permits three new concurrent worlds until that state is resolved.
+Next economic experiment: `docs/menu-choice-study-design.md` specifies a bounded randomized same-day price increase with later options/prices preserved. The historical screen finds 1,354 eligible menus and 318 bounded assignments across eight familiar weeks. This supports collecting option-choice evidence, not predicted profit or new deployment. The follow-up panel is now frozen and running as described above. The interrupted private world still counts toward this assistant's cap.
 
 ## Private acquisition coverage: interrupted, no promotion
 
