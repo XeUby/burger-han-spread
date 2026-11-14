@@ -1,0 +1,93 @@
+{
+  "checkedAt": "2026-11-14T11:08:39.965Z",
+  "unfinished": [
+    {
+      "worldId": "w7f8c1d1e39d4c0170156",
+      "kind": "practice",
+      "level": 8,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": false
+    },
+    {
+      "worldId": "wf5557c338febb89e31bc",
+      "kind": "practice",
+      "level": 8,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": false
+    },
+    {
+      "worldId": "wea821b05912a40da1ff2",
+      "kind": "practice",
+      "level": 8,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": false
+    },
+    {
+      "worldId": "wb8bc116baefa7fc85a97",
+      "kind": "practice",
+      "level": 8,
+      "parent": null,
+      "season": null,
+      "boardRun": null,
+      "ended": false
+    }
+  ],
+  "season": 6,
+  "leader": {
+    "rank": 1,
+    "team": "davinci-s-night-shift",
+    "name": "DaVinci’s Night Shift",
+    "played": 5,
+    "ranked": true,
+    "marginCents": 9921108,
+    "onTimeShare": 0.9775885253249664,
+    "runs": [
+      {
+        "run": 1,
+        "marginCents": 1886574,
+        "onTimeShare": 0.9699769053117783,
+        "wonOrders": 433,
+        "ranked": true,
+        "deletedAt": null
+      },
+      {
+        "run": 2,
+        "marginCents": 2233981,
+        "onTimeShare": 0.978494623655914,
+        "wonOrders": 465,
+        "ranked": true,
+        "deletedAt": null
+      },
+      {
+        "run": 3,
+        "marginCents": 1595775,
+        "onTimeShare": 0.9907834101382489,
+        "wonOrders": 434,
+        "ranked": true,
+        "deletedAt": null
+      },
+      {
+        "run": 4,
+        "marginCents": 2247930,
+        "onTimeShare": 0.9848484848484849,
+        "wonOrders": 462,
+        "ranked": true,
+        "deletedAt": null
+      },
+      {
+        "run": 5,
+        "marginCents": 1956848,
+        "onTimeShare": 0.9633867276887872,
+        "wonOrders": 437,
+        "ranked": true,
+        "deletedAt": null
+      }
+    ]
+  }
+}

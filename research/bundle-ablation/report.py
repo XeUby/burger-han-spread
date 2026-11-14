@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 from research.value.report import load_world, paired, summarize
 
-NAME = 'bundle-payment-ablation-v1'
+NAME = sys.argv[1] if len(sys.argv) > 1 else 'bundle-payment-ablation-v1'
 read = lambda path: json.loads((ROOT / path).read_text())
 plan = read(f'experiments/{NAME}.json')
 for file, expected in plan['files'].items():
@@ -54,9 +54,23 @@ for old in archived['records']:
     for kind, expected in old['artifactHashes'].items():
         assert hashlib.sha256((ROOT / f"runs/{old['worldId']}.{kind}.json").read_bytes()).hexdigest() == expected
     records.append({**old, 'origin': 'archived', 'arm': 'control-high' if old['label'].endswith('-benchmark') else 'portfolio-low'})
+original = read(plan['originalOutcomes']) if 'originalOutcomes' in plan else None
+if original:
+    for old in original['records']:
+        if old['arm'] != 'control-low': continue
+        assert old['status'] == 'complete'
+        for kind, expected in old['artifactHashes'].items():
+            assert hashlib.sha256((ROOT / f"runs/{old['worldId']}.{kind}.json").read_bytes()).hexdigest() == expected
+        records.append({**old, 'origin': 'archived-original-ablation'})
 assert len(records) == 16
 terminal = all(r['status'] == 'complete' for r in records) and not any(e['event'] in ['scheduler_failed', 'creation_unknown', 'failed'] for e in attempts)
 report = {'scope': 'Four familiar underlying seed blocks; whole-week policy-package x bundle-input payment convention ablation. Eight new and eight exact archived outcomes. No independent validation or promotion.', 'terminal': terminal, 'completed': sum(r['status'] == 'complete' for r in records), 'expected': 16, 'newWorlds': len(starts), 'records': records, 'summary': {}, 'contrasts': {}, 'limitations': ['The architecture factor includes the whole retained portfolio package, including future/payment choices.', 'Convention changes the entire derived bundle ladder and the existing modeled saving, not only a single posted opening fee. Solo payment and existing open-anchor schedules are retained.', 'Four blocks provide weak uncertainty and qualification evidence. More posts do not increase the independent sample size.', 'No counterfactual driver outcomes are inferred from unchosen fees. Whole-week random worlds capture the policy-dependent event trajectory.']}
+if original:
+    report['scope'] = 'Supplementary four-world portfolio-high attempt plus twelve exact archived outcomes on four familiar seed blocks. Original interrupted panel remains incomplete. Contrasts are conditional on supplementary execution, not an uninterrupted factorial or promotion.'
+    report['originalPanelTerminal'] = original['terminal']
+    report['originalFailures'] = [r for r in original['records'] if r['status'] != 'complete']
+    report['totalAttemptsIncludingOriginalFailures'] = len(records) + len(report['originalFailures'])
+    report['limitations'].append('Supplementary runs were predeclared after observing original operational failures. They do not erase failures, add independent seed blocks, or establish runtime reliability.')
 if not terminal:
     controls = {arm: {r['seed']: r for r in records if r['arm'] == arm and r['status'] == 'complete'} for arm in ['control-high', 'control-low']}
     if all(set(rows) == set(plan['archivedSeeds']) for rows in controls.values()):
@@ -66,6 +80,8 @@ if not terminal:
             'controlPaymentEffect': paired([controls['control-low'][s]['score']['marginCents'] - controls['control-high'][s]['score']['marginCents'] for s in plan['archivedSeeds']]),
         }
     report['decision'] = 'Full factorial inference unavailable after four HTTP502 interruptions. Keep the current candidate and control unchanged; do not silently replace the failed portfolio-high cases. Lower bundle payments alone are not a reliable control improvement on these development blocks.'
+    if original:
+        report['decision'] = 'Supplementary portfolio-high outcomes are incomplete. Retain the original four failures and every new attempt; do not estimate the unresolved portfolio payment contrast or promote a policy.'
 if terminal:
     arms = {arm: {r['seed']: r for r in records if r['arm'] == arm} for arm in ['control-high', 'control-low', 'portfolio-high', 'portfolio-low']}
     for arm, rows in arms.items():
@@ -77,5 +93,6 @@ if terminal:
         kinds = set().union(*(r['ledger'] for r in arms[a].values()), *(r['ledger'] for r in arms[b].values()))
         report['contrasts'][name]['meanLedgerDifferenceEuros'] = {k: statistics.mean(arms[a][s]['ledger'].get(k, 0) - arms[b][s]['ledger'].get(k, 0) for s in plan['archivedSeeds']) / 100 for k in sorted(kinds)}
     report['contrasts']['interaction'] = paired([(arms['portfolio-low'][s]['score']['marginCents'] - arms['portfolio-high'][s]['score']['marginCents']) - (arms['control-low'][s]['score']['marginCents'] - arms['control-high'][s]['score']['marginCents']) for s in plan['archivedSeeds']])
+    report['decision'] = 'Use these four development blocks to assess the payment confound and choose the next structural experiment. No promotion: the original operational failures, small sample, familiar seeds and whole-package architecture factor limit attribution and reliability claims.'
 (ROOT / f'docs/{NAME}-results.json').write_text(json.dumps(report, indent=2) + '\n')
 print(json.dumps({k: report[k] for k in ['terminal', 'completed', 'expected', 'summary', 'contrasts']}, indent=2))

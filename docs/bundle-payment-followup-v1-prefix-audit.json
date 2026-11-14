@@ -1,0 +1,33 @@
+{
+  "scope": "Observed event prefixes only; does not establish unacknowledged mutation effects or independent replication.",
+  "rows": [
+    {
+      "seed": "level8-estimate-12912cd52d9ef00ea35490e8",
+      "originalWorld": "w3a3e47337c3864c953c5",
+      "followupWorld": "w7f8c1d1e39d4c0170156",
+      "originalObservedEvents": 6374,
+      "identicalObservedPrefix": true
+    },
+    {
+      "seed": "level8-estimate-502fd2d71b59b218d9af949c",
+      "originalWorld": "wa7c66383e270709c216f",
+      "followupWorld": "wf5557c338febb89e31bc",
+      "originalObservedEvents": 4904,
+      "identicalObservedPrefix": true
+    },
+    {
+      "seed": "level8-estimate-b87f6821707b892a55d34716",
+      "originalWorld": "wa279565ddcd2b2eb0fc8",
+      "followupWorld": "wea821b05912a40da1ff2",
+      "originalObservedEvents": 4044,
+      "identicalObservedPrefix": true
+    },
+    {
+      "seed": "level8-estimate-c5d2d97a139c8d2c999d17b2",
+      "originalWorld": "w54e224be5334692d044e",
+      "followupWorld": "wb8bc116baefa7fc85a97",
+      "originalObservedEvents": 5835,
+      "identicalObservedPrefix": true
+    }
+  ]
+}

@@ -162,13 +162,14 @@
     "graph": "research/graph: typed constraints, option routes, private/trade-in scope, two-new-request pairs and four-branch valuation;9 unit tests. Offline7107/8269 requests modeled versus4844 previously considered;2263 newly covered,2778 distinct pairs on recorded frames. These are not policy outcomes;1150 unresolved notes still abstain.",
     "runner": "research/runner: shared creation lock, eight-world cap, ranked per-level serialization, cancellation, full case journal and mutation deadline. Ten tests including fake HTTP server adapter. Actual unranked launch retained all eight ablation cases including four network failures.",
     "ablation": "experiments/bundle-payment-ablation-v1.json: eight new cases plus eight archived references on four familiar blocks. Four control-low weeks complete; four portfolio-high worlds failed on HTTP502 and were administratively closed after preserving partial state. No failed case replaced.",
-    "ablationDiagnostic": "Complete control payment contrast lost130.745euros/week, t95 interval[-2007.07,1745.58], and qualified3/4 versus4/4. The full factorial and its interaction remain unestimated."
+    "ablationDiagnostic": "Portfolio low-high +1025.405euros/week (paired-t95[-42.92,2093.73]); portfolio-control at high +611.235[-403.36,1625.83], at low +1767.385[-288.78,3823.55]. Control low-high -130.745[-2007.07,1745.58]. Interaction+1156.15[-1589.46,3901.76]. Payment convention contributes materially on these blocks but is not a portable control improvement; whole-package contrast does not isolate the optimizer. Retain candidate, proceed to coverage/intervention stage, no promotion.",
+    "ablationFollowup": "bundle-payment-followup-v1: exact unchanged portfolio/high freeze completed4/4, all qualified, zero undelivered/failed visits/fines/action errors/recoveries. Observed event prefixes exactly reproduce all four interrupted attempts. Original panel remains incomplete, total20attempts across four seed blocks,16whole-policy outcomes plus4retained failures."
   },
   "revisedSequence": [
     {
       "priority": 1,
       "work": "Resolve the payment confound with an explicitly frozen follow-up protocol after diagnosing interruption handling. Preserve the failed v1 panel; never pool partial administrative scores into whole-policy means.",
-      "status": "Eight new v1 worlds attempted; full factorial incomplete. A follow-up is not yet frozen or launched."
+      "status": "Resolved descriptively on four familiar blocks using a separately frozen four-world follow-up. All follow-ups completed and qualified; original four HTTP502 failures remain recorded. No further payment-convention tuning planned from this panel."
     },
     {
       "priority": 2,

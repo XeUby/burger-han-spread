@@ -1,0 +1,127 @@
+{
+  "scope": "Retrospective event-integrity audit, not proof that failed mutations had no effect.",
+  "rows": [
+    {
+      "worldId": "w3a3e47337c3864c953c5",
+      "lastObservedSeq": 6373,
+      "lastObservedAt": 5060,
+      "interruptedAt": 5060,
+      "unobservedEventsThroughSnapshotTime": [],
+      "lastDecisionKinds": [
+        {
+          "kind": "portfolio_action",
+          "at": 5058
+        },
+        {
+          "kind": "portfolio_solve",
+          "at": 5059
+        },
+        {
+          "kind": "action_result",
+          "at": 5059
+        },
+        {
+          "kind": "portfolio_action",
+          "at": 5059
+        },
+        {
+          "kind": "portfolio_solve",
+          "at": 5060
+        }
+      ],
+      "serverHistorySha256": "e87a802ecb8f4183f50ca236f22a492e3e4dd97b079d7faea987e6aaed3aef8a"
+    },
+    {
+      "worldId": "wa7c66383e270709c216f",
+      "lastObservedSeq": 4903,
+      "lastObservedAt": 4988,
+      "interruptedAt": 4988,
+      "unobservedEventsThroughSnapshotTime": [],
+      "lastDecisionKinds": [
+        {
+          "kind": "portfolio_action",
+          "at": 4978
+        },
+        {
+          "kind": "portfolio_solve",
+          "at": 4979
+        },
+        {
+          "kind": "action_result",
+          "at": 4979
+        },
+        {
+          "kind": "portfolio_action",
+          "at": 4979
+        },
+        {
+          "kind": "portfolio_solve",
+          "at": 4988
+        }
+      ],
+      "serverHistorySha256": "12a9e20b0ed0cb040e57bb9a593f140c4da63585cea0da295a9cfa18d3e18cb4"
+    },
+    {
+      "worldId": "wa279565ddcd2b2eb0fc8",
+      "lastObservedSeq": 4043,
+      "lastObservedAt": 5202,
+      "interruptedAt": 5202,
+      "unobservedEventsThroughSnapshotTime": [],
+      "lastDecisionKinds": [
+        {
+          "kind": "portfolio_action",
+          "at": 5194
+        },
+        {
+          "kind": "portfolio_solve",
+          "at": 5200
+        },
+        {
+          "kind": "action_result",
+          "at": 5200
+        },
+        {
+          "kind": "portfolio_action",
+          "at": 5200
+        },
+        {
+          "kind": "portfolio_solve",
+          "at": 5202
+        }
+      ],
+      "serverHistorySha256": "cb0fb9d1b57f67b024a90958bff94bfb6b14570467688b0cdba9c56e603e98c0"
+    },
+    {
+      "worldId": "w54e224be5334692d044e",
+      "lastObservedSeq": 5834,
+      "lastObservedAt": 5016,
+      "interruptedAt": 5016,
+      "unobservedEventsThroughSnapshotTime": [],
+      "lastDecisionKinds": [
+        {
+          "kind": "action_result",
+          "at": 5015
+        },
+        {
+          "kind": "portfolio_action",
+          "at": 5015
+        },
+        {
+          "kind": "portfolio_solve",
+          "at": 5016
+        },
+        {
+          "kind": "action_result",
+          "at": 5016
+        },
+        {
+          "kind": "portfolio_action",
+          "at": 5016
+        }
+      ],
+      "serverHistorySha256": "7d95beca1dbd2372aed90e38a944a294b8b9841518fd42eb2401a28c7849da28"
+    }
+  ],
+  "finding": "Observed events exactly match complete server history; no unobserved events appear between the last received event and the pre-closure snapshot time. Absence of events cannot identify an unacknowledged quote or another mutation without a public event.",
+  "decision": "Do not rebuild portfolio reservations or replay ambiguous mutations from this evidence. Preserve original failures. A separately frozen, bounded follow-up uses unchanged runtime and economic policy; there is no automatic replacement loop."
+}

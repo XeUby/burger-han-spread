@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-14T10:58:47.880111+00:00",
+  "updatedAt": "2026-11-14T11:11:12.367589+00:00",
   "unit": "unique simulation seed/week; repeated worlds are not independent replications",
-  "worldRecords": 484,
+  "worldRecords": 488,
   "uniqueNamedWeeks": 84,
-  "distinctLabels": 124,
+  "distinctLabels": 128,
   "distinctSourceSettingsCombinations": 95,
   "interpretation": "Counts document the adaptive search, not independent tests or a guarantee that distinct deterministic seeds are IID. Every observed seed is conservatively unavailable for any future untouched panel.",
   "hiddenSeedWorlds": [
@@ -2802,6 +2802,13 @@
           "metaSha256": "c8119cf1ca51cdd6610445c50b9a56aec470a2aa237bb01692da138808c56197"
         },
         {
+          "worldId": "w7f8c1d1e39d4c0170156",
+          "label": "bundle-payment-followup-v1-portfolio-high-1",
+          "revision": "8e54dff93813f8a70dceeadba90e85289bb983adf257cbbad67f2461c6794615",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "ed14e26e1d653e9257606c89126bfe0f783d336ac920f3d44c49cdae1f87ae36"
+        },
+        {
           "worldId": "wc7a371b7fa789aba4647",
           "label": "level8-estimate-v1-benchmark",
           "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
@@ -2913,6 +2920,13 @@
           "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
           "hasTerminalArtifacts": true,
           "metaSha256": "aa5dc67d85994347cb70046d96b9c573bd19441b5e7c516d9219726c8693d999"
+        },
+        {
+          "worldId": "wf5557c338febb89e31bc",
+          "label": "bundle-payment-followup-v1-portfolio-high-2",
+          "revision": "8e54dff93813f8a70dceeadba90e85289bb983adf257cbbad67f2461c6794615",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "d9b2bc634ffe31f3b3b690d8f7d27da1e7e00a7b2683e030119b243c8d961ae8"
         }
       ],
       "reason": "This seed has already been played or inspected. Prior validation reports retain their historical role; this retirement forbids future reuse as untouched evidence."
@@ -2943,6 +2957,13 @@
           "revision": "13cdfca46c9c62fa4b816071f2e411f442b49cf9b31c6d5bc46b615847f7d16c",
           "hasTerminalArtifacts": true,
           "metaSha256": "10a03fd21462497d7ceddd5f04263bd8aef2d2c62048f8f0ddca5f28932b4754"
+        },
+        {
+          "worldId": "wea821b05912a40da1ff2",
+          "label": "bundle-payment-followup-v1-portfolio-high-3",
+          "revision": "8e54dff93813f8a70dceeadba90e85289bb983adf257cbbad67f2461c6794615",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "3b5d80bff908511ec4777327a60de2ecf70e39d04c148cdeb1ff8ebafb37fba7"
         },
         {
           "worldId": "wfa87673230a4c685d6c3",
@@ -2980,6 +3001,13 @@
           "revision": "8e54dff93813f8a70dceeadba90e85289bb983adf257cbbad67f2461c6794615",
           "hasTerminalArtifacts": true,
           "metaSha256": "bcf735db8bfdddef2d22cc37e547998d90bc89026a86802ca0a31a0a624ed630"
+        },
+        {
+          "worldId": "wb8bc116baefa7fc85a97",
+          "label": "bundle-payment-followup-v1-portfolio-high-4",
+          "revision": "8e54dff93813f8a70dceeadba90e85289bb983adf257cbbad67f2461c6794615",
+          "hasTerminalArtifacts": true,
+          "metaSha256": "d8477ca7cfbecee7054847ae0a376862085a5c9d5d0d8f7d1ac1542d52858ae8"
         },
         {
           "worldId": "wd983bdac6a5faa67c066",

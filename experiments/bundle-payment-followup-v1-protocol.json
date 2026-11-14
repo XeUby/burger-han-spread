@@ -1,0 +1,18 @@
+{
+  "frozenAt": "2026-11-14T11:07:45.446686+00:00",
+  "role": "One bounded supplementary attempt to resolve the portfolio bundle-payment contrast, after the original four attempts failed on HTTP502.",
+  "originalPanel": "experiments/bundle-payment-ablation-v1.json",
+  "originalOutcomes": "docs/bundle-payment-ablation-v1-results.json",
+  "interruptionRecord": "docs/bundle-payment-ablation-v1-interruption.json",
+  "seeds": [
+    "level8-estimate-12912cd52d9ef00ea35490e8",
+    "level8-estimate-502fd2d71b59b218d9af949c",
+    "level8-estimate-b87f6821707b892a55d34716",
+    "level8-estimate-c5d2d97a139c8d2c999d17b2"
+  ],
+  "selection": "All four interrupted portfolio-high cases; none selected by profit. Familiar development seeds, not new independent weeks.",
+  "policy": "Exact original frozen bundle, settings, dependencies and 600-second budget. No recovery changes or economic tuning. Original source archive retained.",
+  "stopping": "Four new worlds only, at most eight unfinished team worlds. No replacements or automatic retries. Any interruption remains visible. This follow-up does not overwrite or complete the original attempt record.",
+  "analysis": "Show all original operational failures beside supplementary outcomes. Complete supplementary scores may support descriptive payment/architecture contrasts against exact archived arms on the same four development seeds, conditional on successful execution. Do not call the original factorial complete. No promotion or untouched validation.",
+  "authorization": "Unranked research only; no ranked submissions, finals, deletion or forks."
+}
