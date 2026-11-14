@@ -176,7 +176,11 @@ export abstract class Desk {
     if (actions.length > 0) this.readResults(actions, await this.world.act(actions))
   }
 
-  takeActions(): Action[] { return this.outbox.splice(0) }
+  /** The outbox, quotes first: a dealer waits only 15 minutes of world time, which in the final is 4.5 seconds. */
+  takeActions(): Action[] {
+    const actions = this.outbox.splice(0)
+    return [...actions.filter(action => action.type === "quote"), ...actions.filter(action => action.type !== "quote")]
+  }
 
   readResults(actions: Action[], results: ActionResult[]): void {
     actions.forEach((action, i) => {
