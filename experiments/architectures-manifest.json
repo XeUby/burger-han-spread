@@ -10,62 +10,62 @@
     {
       "label": "architecture-joint",
       "seed": "formal-unseen-20261113-09",
-      "worldId": null
+      "worldId": "wd563bc13b1f42700786d"
     },
     {
       "label": "architecture-calendar",
       "seed": "formal-unseen-20261113-09",
-      "worldId": null
+      "worldId": "w895f839f04cb5bd7d8f3"
     },
     {
       "label": "architecture-volume",
       "seed": "formal-unseen-20261113-09",
-      "worldId": null
+      "worldId": "w26cfd2cb7171bcbe2330"
     },
     {
       "label": "architecture-joint",
       "seed": "formal-unseen-20261113-10",
-      "worldId": null
+      "worldId": "we222deaf9db3752f0a43"
     },
     {
       "label": "architecture-calendar",
       "seed": "formal-unseen-20261113-10",
-      "worldId": null
+      "worldId": "w97b999bf37a6bef0cebd"
     },
     {
       "label": "architecture-volume",
       "seed": "formal-unseen-20261113-10",
-      "worldId": null
+      "worldId": "we3efda00d277484da060"
     },
     {
       "label": "architecture-joint",
       "seed": "formal-unseen-20261113-14",
-      "worldId": null
+      "worldId": "w1aad6d5a3f1151d2f113"
     },
     {
       "label": "architecture-calendar",
       "seed": "formal-unseen-20261113-14",
-      "worldId": null
+      "worldId": "w395b7bda84b55781e474"
     },
     {
       "label": "architecture-volume",
       "seed": "formal-unseen-20261113-14",
-      "worldId": null
+      "worldId": "w7273d67bac0d5ac43621"
     },
     {
       "label": "architecture-joint",
       "seed": "formal-unseen-20261113-15",
-      "worldId": null
+      "worldId": "wb1b1a8df323bb1093170"
     },
     {
       "label": "architecture-calendar",
       "seed": "formal-unseen-20261113-15",
-      "worldId": null
+      "worldId": "wa4e6f5d74f88f5e31e1d"
     },
     {
       "label": "architecture-volume",
       "seed": "formal-unseen-20261113-15",
-      "worldId": null
+      "worldId": "w99b4289766e90c5fab26"
     }
   ],
   "attempts": [
@@ -74,6 +74,156 @@
       "seed": "formal-unseen-20261113-14",
       "worldId": "w889572145e5939648feb",
       "startedAt": "2026-11-14T04:51:32.837Z"
+    },
+    {
+      "label": "architecture-control",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w889572145e5939648feb",
+      "completedAt": "2026-11-14T04:54:05.390Z"
+    },
+    {
+      "label": "architecture-joint",
+      "seed": "formal-unseen-20261113-09",
+      "worldId": "wd563bc13b1f42700786d",
+      "startedAt": "2026-11-14T04:55:07.402Z"
+    },
+    {
+      "label": "architecture-calendar",
+      "seed": "formal-unseen-20261113-09",
+      "worldId": "w895f839f04cb5bd7d8f3",
+      "startedAt": "2026-11-14T04:55:07.744Z"
+    },
+    {
+      "label": "architecture-joint",
+      "seed": "formal-unseen-20261113-09",
+      "worldId": "wd563bc13b1f42700786d",
+      "completedAt": "2026-11-14T04:57:54.160Z"
+    },
+    {
+      "label": "architecture-volume",
+      "seed": "formal-unseen-20261113-09",
+      "worldId": "w26cfd2cb7171bcbe2330",
+      "startedAt": "2026-11-14T04:57:54.385Z"
+    },
+    {
+      "label": "architecture-calendar",
+      "seed": "formal-unseen-20261113-09",
+      "worldId": "w895f839f04cb5bd7d8f3",
+      "completedAt": "2026-11-14T04:58:01.681Z"
+    },
+    {
+      "label": "architecture-joint",
+      "seed": "formal-unseen-20261113-10",
+      "worldId": "we222deaf9db3752f0a43",
+      "startedAt": "2026-11-14T04:58:01.811Z"
+    },
+    {
+      "label": "architecture-volume",
+      "seed": "formal-unseen-20261113-09",
+      "worldId": "w26cfd2cb7171bcbe2330",
+      "completedAt": "2026-11-14T05:00:33.489Z"
+    },
+    {
+      "label": "architecture-calendar",
+      "seed": "formal-unseen-20261113-10",
+      "worldId": "w97b999bf37a6bef0cebd",
+      "startedAt": "2026-11-14T05:00:33.675Z"
+    },
+    {
+      "label": "architecture-joint",
+      "seed": "formal-unseen-20261113-10",
+      "worldId": "we222deaf9db3752f0a43",
+      "completedAt": "2026-11-14T05:00:49.608Z"
+    },
+    {
+      "label": "architecture-volume",
+      "seed": "formal-unseen-20261113-10",
+      "worldId": "we3efda00d277484da060",
+      "startedAt": "2026-11-14T05:00:49.741Z"
+    },
+    {
+      "label": "architecture-calendar",
+      "seed": "formal-unseen-20261113-10",
+      "worldId": "w97b999bf37a6bef0cebd",
+      "completedAt": "2026-11-14T05:03:15.625Z"
+    },
+    {
+      "label": "architecture-joint",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w1aad6d5a3f1151d2f113",
+      "startedAt": "2026-11-14T05:03:15.824Z"
+    },
+    {
+      "label": "architecture-volume",
+      "seed": "formal-unseen-20261113-10",
+      "worldId": "we3efda00d277484da060",
+      "completedAt": "2026-11-14T05:03:38.105Z"
+    },
+    {
+      "label": "architecture-calendar",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w395b7bda84b55781e474",
+      "startedAt": "2026-11-14T05:03:38.381Z"
+    },
+    {
+      "label": "architecture-joint",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w1aad6d5a3f1151d2f113",
+      "completedAt": "2026-11-14T05:06:18.757Z"
+    },
+    {
+      "label": "architecture-volume",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w7273d67bac0d5ac43621",
+      "startedAt": "2026-11-14T05:06:18.926Z"
+    },
+    {
+      "label": "architecture-calendar",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w395b7bda84b55781e474",
+      "completedAt": "2026-11-14T05:06:40.082Z"
+    },
+    {
+      "label": "architecture-joint",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "wb1b1a8df323bb1093170",
+      "startedAt": "2026-11-14T05:06:40.348Z"
+    },
+    {
+      "label": "architecture-volume",
+      "seed": "formal-unseen-20261113-14",
+      "worldId": "w7273d67bac0d5ac43621",
+      "completedAt": "2026-11-14T05:09:17.727Z"
+    },
+    {
+      "label": "architecture-calendar",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "wa4e6f5d74f88f5e31e1d",
+      "startedAt": "2026-11-14T05:09:17.857Z"
+    },
+    {
+      "label": "architecture-joint",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "wb1b1a8df323bb1093170",
+      "completedAt": "2026-11-14T05:09:41.392Z"
+    },
+    {
+      "label": "architecture-volume",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "w99b4289766e90c5fab26",
+      "startedAt": "2026-11-14T05:09:41.556Z"
+    },
+    {
+      "label": "architecture-calendar",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "wa4e6f5d74f88f5e31e1d",
+      "completedAt": "2026-11-14T05:12:32.659Z"
+    },
+    {
+      "label": "architecture-volume",
+      "seed": "formal-unseen-20261113-15",
+      "worldId": "w99b4289766e90c5fab26",
+      "completedAt": "2026-11-14T05:12:50.322Z"
     }
   ]
 }

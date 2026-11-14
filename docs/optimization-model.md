@@ -84,3 +84,52 @@ The selected opening-only payout policy reduces the initial unbundled fee by 15%
 An initial eight-week evaluation exposed a recovery defect: after a dealer changed a local trip into a longer one, the fee ceiling still reflected the original short trip. The final version scales the fee by `max(1, (45 + new road minutes) / (45 + original road minutes))`, and recomputes local driver eligibility/supply using the changed legs. The 45 minutes represent fixed mobilization work. This is a conservative cost approximation for a changed contractual obligation, not an estimate of a driver's hidden reservation price. It does not change the agreed customer quote. A targeted replay checks the failed order, and a fresh eight-week panel evaluates the corrected source; the first panel is retained as development evidence for this correction.
 
 The final experimental runner copies source, official client and trial plan into a content-addressed directory before starting Node. This prevents a later edit from changing the source associated with a delayed trial. The final validation uses one frozen revision and configuration across every reserved week, and the report rejects missing, duplicate or mixed-revision comparisons.
+
+## Architectural development screen, 14 November
+
+Three substantially different policies completed four matched development weeks each (09, 10, 14 and 15). All twelve outcomes are retained in [architectures-results.json](architectures-results.json), with the frozen hypotheses, settings, source hash, world IDs, ledgers and action-error contexts. The [protocol](../experiments/architectures-protocol.json) was fixed before the trials. An additional control replication exactly reproduced the archived seed 14 event history and terminal score. The existing validated policy remains selected and unchanged.
+
+The selection rule required at least €1,500 mean weekly improvement, no paired loss worse than €1,000, all four qualifications, no undelivered orders and no failed visits. None passed; none proceeds to independent validation. These four selected development weeks are not a fresh estimate of generalization performance. Their control mean differs from the earlier independent panel because the seeds differ.
+
+| Policy | Mean weekly net profit | Paired gain | Mean orders | Qualified | Aggregate on time | Mean driver fees | Mean late refunds |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Validated control | €11,790.90 | — | 316.25 | 4/4 | 96.28% | €20,969.28 | €664.68 |
+| Joint acquisition and routes | €11,287.25 | −€503.66 | 358.25 | 4/4 | 94.84% | €24,809.44 | €1,024.07 |
+| Service-day capacity pricing | €3,196.02 | −€8,594.89 | 459.75 | 2/4 | 87.55% | €40,439.62 | €4,183.83 |
+| High volume and proactive pay | €4,787.61 | −€7,003.29 | 387.25 | 3/4 | 93.29% | €37,021.00 | €1,554.03 |
+
+Order counts follow the terminal score, which excludes cancelled orders. Across four weeks, the control had 47 late and 0 undelivered orders; joint acquisition had 74 late and 0 undelivered; calendar planning had 227 late and 2 undelivered; high volume had 104 late and 0 undelivered. All policies had zero failed visits. Qualification is the simulator's eligibility flag, not a ranking submission.
+
+### Joint acquisition and routes
+
+Mechanism: collect requests until just before their response deadlines, form feasible hypothetical pairs and optimize both customer prices before either order is accepted. The modeled objective is `q1(p1−c1) + q2(p2−c2) + q1*q2*S`, where S is the modeled shared-route saving. This assumes conditionally independent wins. A leg may be priced below its standalone cost; unmatched requests use incumbent admission. Accepted jobs wait 30 minutes for route composition, with connectors up to 90 km.
+
+The potential large gain was access to complementary work that standalone admission rejects, plus lower combined fulfillment cost. The hypothesis would fail if the additional acquired routes did not cover solo fallback costs, driver fees and refunds. The earlier roughly €299/week estimate used narrower connectors, discounts and incumbent demand; it was a model-based deferral, not adequate evidence against this architecture.
+
+Result:1,216 jointly quoted requests and 402 custom bundle compositions. Terminal multi-order gig counts were 397 across four weeks, compared with 153 for the control; cancellations can shorten terminal routes, so these are not original creation counts. Throughput rose 13.28%. Mean revenue rose €3,712.96, but driver fees rose €3,840.16 and late refunds rose €359.39. Mean net fell €503.66; the worst paired loss was €1,207.37. More shared routes alone did not create enough economic value. Reject this implementation, without claiming that joint acquisition is intrinsically inferior.
+
+### Service-day capacity pricing
+
+Mechanism: replace ready-day count and backlog gates with expected pending work and committed won work assigned to service days. Compare option/day choices using a convex load-dependent quote cost and enforce the chosen service day in posted stop windows. The potential gain was selling idle future service capacity and charging for scarce days. The workload budget was a heuristic, not a feasible schedule for individual drivers.
+
+Falsification: additional work must book and deliver without driver costs and lateness consuming its revenue. The earlier €84/week screen protected booked work on every possible day and kept incumbent quotas; that conservative model did not rule out this policy.
+
+Result:2,651 calendar quotes, including 1,172 assigned later than the original ready day. Throughput rose 45.38%, establishing that substantially more demand was available. But the capacity estimate did not protect fulfillment: mean driver fees rose €19,470.34 against €14,741.56 additional revenue, late refunds rose €3,519.16, and two orders remained undelivered. Seed 15 ended at−€8,331.35 and 76.83% on time. Reject this implementation. The findings require a different model of bookable driver capacity before another calendar policy deserves testing; they do not prove that future-day scheduling has no value.
+
+### High volume and proactive pay
+
+Mechanism: remove cumulative daily admission limits, expand live backlog and route eligibility, pay 1.10 times canonical fees initially and 1.30 after 45 minutes, then 1.50 after 120 minutes, with deadline rescue. Hold new jobs 5 minutes and repeatedly rematch compatible open singles into routes. The potential gain was earlier driver commitment supporting more throughput and dealer trust, with shared routes offsetting the higher pay.
+
+Falsification: extra revenue must exceed the combined cost of generous pay, congestion and refunds. Earlier low-fee volume failures and static early-rescue exposure screens did not test this combination.
+
+Result:2,633 high-volume quotes,206 initial custom compositions and 74 successful rematches. Throughput rose 22.45%, but mean driver costs rose €16,051.72 against only €10,001.04 additional revenue. Mean net fell €7,003.29 and seed 15 failed qualification at 88.92% on time. Reject this implementation. Paying more early did not make the extra work profitable or reliably deliverable.
+
+### Audit and decisions
+
+All thirteen worlds, including control replication, ended. Source and protocol hashes match their frozen values, and every terminal ledger sums to its score. There were no runner interruptions or recoveries. Five action errors remain in the report: four stale reprices after same-minute drop/rebooking, and one withdrawal refused after a same-minute order change and booking of an existing bundle. That bundle remained booked and reached terminal status `done`. No failed outcome was replaced.
+
+Each architecture also incurred a €100 charging fine on seed 14 after the same low-charge car's destination changed from Vantaa to Pori while booked. This is an exposed route-change handling limitation, not a failed visit, and is included in net profit. The frozen trials were not patched or rerun to remove it. Future broader policies need to reassess equipment when booked routes change.
+
+The control stays selected. No architecture met either the promotion screen or its optional redesign condition of at least 25% more throughput with nonnegative mean profit gain. Therefore there is no fresh validation panel or ranking/final submission for these candidates. More demand and more composed routes are demonstrated; a competitive improvement is not.
+
+The next distinct mechanism worth a bounded test is driver price learning: compare a policy that rarely rewards waiting with deadline escalation, measuring realized booking costs and later booking behavior. The documented learning anchor is the first fee actually viewed, not the creation fee; the earlier zero-time creation-price probe does not test this. Any experiment must count the cost of establishing that behavior and retain rescue failures. It should not be presented as a proven gain or as another way to tune away the losses above.

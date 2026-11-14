@@ -1,11 +1,12 @@
 {
-  "updatedAt": "2026-11-14T04:53:37.418718+00:00",
+  "updatedAt": "2026-11-14T05:15:09.866179+00:00",
   "objective": "Continue systematic search toward the global optimum; practice only, no ranking submission.",
   "maximumConcurrentPlays": 4,
   "currentConcurrency": {
     "maximumConcurrentPlays": 4,
-    "activeRunners": 1,
-    "note": "Architecture control replication uses one worker. After exact reproduction,12frozen treatment weeks will use two workers, with the shared four-world guard and no ranking/final."
+    "activeRunners": 0,
+    "note": "Both architecture workers and the control replication ended. Shared API inventory contains no unfinished team worlds.",
+    "unfinishedTeamWorlds": 0
   },
   "completedCombinationStudy": {
     "sessionId": 84558,
@@ -66,9 +67,9 @@
     "700km-only bundle treatment ends at7407.63/9410.50 euros, minimum96.6% on time. It gains versus the old baseline in both weeks but not versus bundles alone. No900km experiment scheduled."
   ],
   "nextSteps": [
-    "Require architecture0 to reproduce the archived seed14 control; otherwise rerun matched controls before interpreting treatments.",
-    "Complete all12fixed trials of joint acquisition, calendar scarcity pricing and high-volume proactive fulfillment on old seeds09,10,14,15. Keep every outcome and do not tune during the panel.",
-    "Require at least1500euros mean paired gain and all safety gates before confirmation. Revisit narrow model deferrals through actual policy evidence; retain the validated payout dispatcher as control."
+    "Preserve current validated control and every completed architecture outcome. No candidate passed the substantial-gain screen; do not start fresh validation.",
+    "Investigate a distinct driver-learning/payment mechanism with a bounded probe before any further full-week panel. First viewed fee is the learning anchor; creation-only changes were already disproven.",
+    "Before future expanded admission trials, reassess charging and equipment when a booked route changes. Do not rewrite frozen outcomes or attribute the architecture losses to the small fine."
   ],
   "validationStatus": "All16 fresh paired trials complete. Candidate mean10411.59 euros versus8242.34, +26.32%;7/8 positive;8/8 qualified; minimum94.94% on time; no undelivered orders. Full report docs/frontier-validation.md. No ranking submission.",
   "checks": {
@@ -76,7 +77,8 @@
     "researchTests": 15,
     "pythonReportTests": 9,
     "typecheck": "passed",
-    "selectedPolicyConformanceActions": 5614
+    "selectedPolicyConformanceActions": 5614,
+    "architectureResearchTests": 6
   },
   "completedControlsStudy": {
     "sessionId": 72446,
@@ -555,9 +557,9 @@
   },
   "currentStudy": {
     "kind": "three architectural departures on matched development weeks",
-    "phase": "control replication",
-    "sessionId": 6450,
-    "terminal": false,
+    "phase": "completed: all three implementations rejected",
+    "sessionId": 77504,
+    "terminal": true,
     "protocol": "experiments/architectures-protocol.json",
     "manifest": "experiments/architectures-manifest.json",
     "report": "docs/architectures-results.json",
@@ -565,7 +567,15 @@
     "treatmentTrials": 12,
     "controlTrials": 1,
     "maximumJobs": 2,
-    "maximumConcurrentPlays": 4
+    "maximumConcurrentPlays": 4,
+    "controlSessionId": 6450,
+    "controlTerminal": true,
+    "controlWorldId": "w889572145e5939648feb",
+    "controlExactEventMatch": true,
+    "controlStudy": "runs/study-1794632045391.json",
+    "study": "runs/study-1794633170323.json",
+    "decision": "experiments/architectures-decision.json",
+    "completedTreatmentTrials": 12
   },
   "completedPayoutScreen": {
     "sessionId": 76828,
@@ -747,6 +757,148 @@
       "aggregateOnTimeShare": 0.9621342512908778,
       "aggregateUndeliveredShare": 0.0,
       "minOnTimeShare": 0.937984496124031
+    }
+  },
+  "architectureResults": {
+    "report": "docs/architectures-results.json",
+    "decision": "experiments/architectures-decision.json",
+    "summary": {
+      "architecture-joint": {
+        "completed": 4,
+        "decision": "reject this implementation as insufficient; no general rejection of the architecture",
+        "meanMarginCents": 1128724.5,
+        "meanGainCents": -50365.5,
+        "minimumGainCents": -120737,
+        "qualified": 4,
+        "undelivered": 0,
+        "failedVisits": 0,
+        "meanOrders": 358.25,
+        "relativeThroughputChange": 0.13280632411067184,
+        "aggregateOnTimeShare": 0.9483600837404047,
+        "minimumOnTimeShare": 0.9100817438692098,
+        "meanDriverFeesCents": 2480944,
+        "meanLateRefundsCents": 102407,
+        "actionErrors": 2,
+        "gatePassed": false,
+        "baseline": {
+          "meanMarginCents": 1179090,
+          "meanOrders": 316.25,
+          "aggregateOnTimeShare": 0.9628458498023715,
+          "meanDriverFeesCents": 2096928,
+          "meanLateRefundsCents": 66467.75,
+          "qualified": 4,
+          "lateOrders": 47,
+          "undelivered": 0
+        },
+        "mechanismTotals": {
+          "jointQuotedRequests": 1216,
+          "calendarQuotes": 0,
+          "laterDayQuotes": 0,
+          "composedBundles": 402,
+          "rematchedBundles": 0,
+          "highVolumeQuotes": 0
+        },
+        "meanLedgerGainCents": {
+          "driver_fee": -384016,
+          "fine": -2500,
+          "late_refund": -35939.25,
+          "release_fee": 793.5,
+          "revenue": 371296.25
+        },
+        "lateOrders": 74,
+        "fineCents": 10000
+      },
+      "architecture-calendar": {
+        "completed": 4,
+        "decision": "reject this implementation as insufficient; no general rejection of the architecture",
+        "meanMarginCents": 319601.5,
+        "meanGainCents": -859488.5,
+        "minimumGainCents": -1939512,
+        "qualified": 2,
+        "undelivered": 2,
+        "failedVisits": 0,
+        "meanOrders": 459.75,
+        "relativeThroughputChange": 0.4537549407114625,
+        "aggregateOnTimeShare": 0.8754758020663403,
+        "minimumOnTimeShare": 0.7682926829268293,
+        "meanDriverFeesCents": 4043961.75,
+        "meanLateRefundsCents": 418383.25,
+        "actionErrors": 2,
+        "gatePassed": false,
+        "baseline": {
+          "meanMarginCents": 1179090,
+          "meanOrders": 316.25,
+          "aggregateOnTimeShare": 0.9628458498023715,
+          "meanDriverFeesCents": 2096928,
+          "meanLateRefundsCents": 66467.75,
+          "qualified": 4,
+          "lateOrders": 47,
+          "undelivered": 0
+        },
+        "mechanismTotals": {
+          "jointQuotedRequests": 0,
+          "calendarQuotes": 2651,
+          "laterDayQuotes": 1172,
+          "composedBundles": 0,
+          "rematchedBundles": 0,
+          "highVolumeQuotes": 0
+        },
+        "meanLedgerGainCents": {
+          "driver_fee": -1947033.75,
+          "fine": -2500,
+          "late_refund": -351915.5,
+          "release_fee": -75.5,
+          "revenue": 1474156.25,
+          "undelivered_penalty": -32120
+        },
+        "lateOrders": 227,
+        "fineCents": 10000
+      },
+      "architecture-volume": {
+        "completed": 4,
+        "decision": "reject this implementation as insufficient; no general rejection of the architecture",
+        "meanMarginCents": 478761.25,
+        "meanGainCents": -700328.75,
+        "minimumGainCents": -978097,
+        "qualified": 3,
+        "undelivered": 0,
+        "failedVisits": 0,
+        "meanOrders": 387.25,
+        "relativeThroughputChange": 0.22450592885375498,
+        "aggregateOnTimeShare": 0.9328599096191091,
+        "minimumOnTimeShare": 0.8891625615763546,
+        "meanDriverFeesCents": 3702099.5,
+        "meanLateRefundsCents": 155402.5,
+        "actionErrors": 1,
+        "gatePassed": false,
+        "baseline": {
+          "meanMarginCents": 1179090,
+          "meanOrders": 316.25,
+          "aggregateOnTimeShare": 0.9628458498023715,
+          "meanDriverFeesCents": 2096928,
+          "meanLateRefundsCents": 66467.75,
+          "qualified": 4,
+          "lateOrders": 47,
+          "undelivered": 0
+        },
+        "mechanismTotals": {
+          "jointQuotedRequests": 0,
+          "calendarQuotes": 0,
+          "laterDayQuotes": 0,
+          "composedBundles": 206,
+          "rematchedBundles": 74,
+          "highVolumeQuotes": 2633
+        },
+        "meanLedgerGainCents": {
+          "driver_fee": -1605171.5,
+          "fine": -2500,
+          "late_refund": -88934.75,
+          "release_fee": -3826.75,
+          "revenue": 1000104.25
+        },
+        "lateOrders": 104,
+        "fineCents": 10000
+      }
     }
   }
 }
