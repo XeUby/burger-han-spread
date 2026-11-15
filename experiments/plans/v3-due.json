@@ -1,0 +1,218 @@
+[
+ {
+  "label": "due135cap",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "due135cap",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "due135cap",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "due135cap",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "due135cap",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "due135cap",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "due135cap",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "due135cap",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "due135cap",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "due135cap",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "due135cap",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "due135cap",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "due135cap",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "due135cap",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "due135cap",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "due135cap",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "due135cap",
+  "seed": "bh-reader-20261114-01",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "due135cap",
+  "seed": "bh-reader-20261114-02",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "due135cap",
+  "seed": "bh-reader-20261114-03",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "due135cap",
+  "seed": "bh-reader-20261114-04",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "due135cap",
+  "seed": "bh-reader-20261114-05",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "due135cap",
+  "seed": "bh-reader-20261114-06",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "due135cap",
+  "seed": "bh-reader-20261114-07",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "due135cap",
+  "seed": "bh-reader-20261114-08",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ }
+]
