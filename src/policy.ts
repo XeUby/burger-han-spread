@@ -65,6 +65,8 @@ export type Settings = {
   shortGate: number; longGate: number
   /** A late car halves its dealer's trust, so a car of a trusted dealer gets a dearer fee: × (1 + trustGuard × trust / 25). */
   trustGuard: number
+  /** Right after posting, offer a single car to up to this many drivers who live near its delivery, at `homeShare` of the public fee; 0 for none. */
+  homeDrivers: number; homeShare: number
   /** The fee, in full fees, a day and half a day before the last pickup, for a gig that no driver has taken. */
   climbDay: number; climbHalfDay: number
   /** What a route really costs against the dispatcher's estimate, for routes under 50 km, from 50 km to 100 km, and longer. */
@@ -74,7 +76,7 @@ export const defaults: Settings = {
   price: 1.42, fee: 1.05, payout: 0.85, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
   notes: true, noteSpelling: false, relist: false, openingOnly: true, adaptive: true, earlyOffers: false, safetySlack: false,
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, noteReader: true, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
-  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0, minKm: 0, longPayout: 0.85, bookMiss: 0, summerTyres: false, softLimits: 0, flatFee: 0, dueFee: 1.45, rescue2: 1.6, rescue1: 1.8, bundleKm: 30, bundleDiscount: 0.2, chainCars: 2, marketDayOrigin: 0, marketLane: 0, shortGate: 1, longGate: 1, trustGuard: 0,
+  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0, minKm: 0, longPayout: 0.85, bookMiss: 0, summerTyres: false, softLimits: 0, flatFee: 0, dueFee: 1.45, rescue2: 1.6, rescue1: 1.8, bundleKm: 30, bundleDiscount: 0.2, chainCars: 2, marketDayOrigin: 0, marketLane: 0, shortGate: 1, longGate: 1, trustGuard: 0, homeDrivers: 0, homeShare: 0.8,
   earlyClimb: true,
 }
 
@@ -83,7 +85,7 @@ export function validateSettings(value: unknown): asserts value is Partial<Setti
   for (const [key, field] of Object.entries(value)) {
     if (!(key in defaults)) throw new Error(`Unknown setting: ${key}`)
     if (typeof defaults[key as keyof Settings] === "boolean") { if (typeof field !== "boolean") throw new Error(`${key} must be boolean`); continue }
-    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait", "sitAfter", "pairOpen", "pairQuote", "pairPatience", "minKm", "bookMiss", "softLimits", "flatFee", "marketDayOrigin", "marketLane", "trustGuard"].includes(key))) throw new Error(`${key} must be a positive number`)
+    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait", "sitAfter", "pairOpen", "pairQuote", "pairPatience", "minKm", "bookMiss", "softLimits", "flatFee", "marketDayOrigin", "marketLane", "trustGuard", "homeDrivers"].includes(key))) throw new Error(`${key} must be a positive number`)
     if (key === "bundleWait" && (!Number.isInteger(field) || field > 30)) throw new Error("bundleWait must be an integer from 0 to 30")
     if ((key === "margin" || key === "capacity") && field >= 1) throw new Error(`${key} must be below 1`)
     if (key === "placePrior" && field > 2) throw new Error("placePrior must be at most 2")
@@ -98,6 +100,8 @@ export class Dispatcher extends Desk {
   pending = new Set<string>()
   quoted = new Set<string>()
   lateReposts = new Map<string, number>()
+  /** Gigs already offered to drivers who live near the delivery. */
+  homeOffered = new Set<string>()
   /** Request or order id -> the waiting order that its car can ride with. */
   partners = new Map<string, string>()
   /** Orders whose two-car gig found no driver in time: they go alone from now on. */
@@ -718,6 +722,7 @@ export class Dispatcher extends Desk {
       }
     }
     await this.relistOpenGigs()
+    if (this.settings.homeDrivers > 0 && this.level >= 3) this.offerHome()
     if (this.settings.homeOffers && this.level >= 3) {
       const posts = this.outbox.filter(action => action.type === "post")
       for (let i = this.outbox.length - 1; i >= 0; i--) if (this.outbox[i]!.type === "post") this.outbox.splice(i, 1)
@@ -766,6 +771,39 @@ export class Dispatcher extends Desk {
       this.posts.set(gig.id, { type: "post", stops: gig.stops, audience: gig.audience, schedule: gig.schedule })
       this.postedAt.set(gig.id, gig.postedAt)
       console.error(JSON.stringify({ at: this.now, relearned: gig.id, orders: [...new Set(gig.stops.map(stop => stop.orderId))] }))
+    }
+  }
+
+  /** A driver who lives near the delivery needs no trip home, so the car costs them less: offer it to them first, below the
+   * public fee. The public gig stays open; an offer that nobody takes costs nothing. */
+  offerHome(): void {
+    const hour = this.now % 1440
+    if (hour < 420 || hour >= 1380) return
+    const day = Math.floor(this.now / 1440)
+    for (const [gigId, post] of this.posts) {
+      if (this.booked.has(gigId) || this.homeOffered.has(gigId) || post.stops.length !== 2) continue
+      if (this.now - (this.postedAt.get(gigId) ?? -Infinity) > 20) continue
+      const order = this.orders.get(post.stops[0]!.orderId)
+      if (!order || order.legs.length !== 1 || this.urgent.has(order.id)) continue
+      const leg = order.legs[0]!
+      if (leg.pickup.privateAddress || leg.delivery.privateAddress) continue
+      const lastPickup = this.pickupBy(order)
+      const shown = post.schedule.filter(step => step.at <= this.now).at(-1) ?? post.schedule[0]!
+      const fee = Math.round(shown.feeCents * this.settings.homeShare)
+      const chosen = this.drivers.filter(driver => {
+        if ((this.offerCount.get(`${day}:${driver.id}`) ?? 0) >= 3) return false
+        if (post.audience.experienced && (driver.rating < 4.8 || driver.completedGigs < 50)) return false
+        if (post.audience.manualLicence && driver.licence !== "manual") return false
+        if (this.network.km(driver.homePlaceId, leg.delivery.placeId) > 35) return false
+        // The driver must reach the car by public transport before its last pickup.
+        return this.now + 60 + 1.3 * this.network.minutes(driver.homePlaceId, leg.pickup.placeId) <= lastPickup
+      }).sort((a, b) => this.network.km(a.homePlaceId, leg.delivery.placeId) - this.network.km(b.homePlaceId, leg.delivery.placeId) || a.id.localeCompare(b.id)).slice(0, this.settings.homeDrivers)
+      this.homeOffered.add(gigId)
+      for (const driver of chosen) {
+        const key = `${day}:${driver.id}`
+        this.offerCount.set(key, (this.offerCount.get(key) ?? 0) + 1)
+        this.outbox.push({ type: "offer", gigId, driverId: driver.id, feeCents: fee })
+      }
     }
   }
 
