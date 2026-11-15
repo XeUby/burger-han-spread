@@ -80,6 +80,8 @@ export type Settings = {
   feeModel: number
   /** A new car makes our unbooked cars near its pickup later: add harmWeight × their number × the rise in late chance it causes × (refund + penalty). */
   harmWeight: number
+  /** Learn from a won order at the ratio of the option the dealer chose, not the cheapest one. */
+  learnChosen: boolean
   /** The fee, in full fees, a day and half a day before the last pickup, for a gig that no driver has taken. */
   climbDay: number; climbHalfDay: number
   /** What a route really costs against the dispatcher's estimate, for routes under 50 km, from 50 km to 100 km, and longer. */
@@ -89,7 +91,7 @@ export const defaults: Settings = {
   price: 1.42, fee: 1.05, payout: 0.85, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
   notes: true, noteSpelling: false, relist: false, openingOnly: true, adaptive: true, earlyOffers: false, safetySlack: false,
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, noteReader: true, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
-  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0, minKm: 0, longPayout: 0.85, bookMiss: 0, summerTyres: false, softLimits: 0, flatFee: 0, dueFee: 1.45, rescue2: 1.6, rescue1: 1.8, bundleKm: 30, bundleDiscount: 0.2, chainCars: 2, marketDayOrigin: 0, marketLane: 0, shortGate: 1, longGate: 1, trustGuard: 0, homeDrivers: 0, homeShare: 0.8, postAt: 0, riskPenalty: 100, maxLate: 0.3, riskGate: 2, riskTrust: 0, minSlack: 0, feeModel: 0, harmWeight: 0,
+  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0, minKm: 0, longPayout: 0.85, bookMiss: 0, summerTyres: false, softLimits: 0, flatFee: 0, dueFee: 1.45, rescue2: 1.6, rescue1: 1.8, bundleKm: 30, bundleDiscount: 0.2, chainCars: 2, marketDayOrigin: 0, marketLane: 0, shortGate: 1, longGate: 1, trustGuard: 0, homeDrivers: 0, homeShare: 0.8, postAt: 0, riskPenalty: 100, maxLate: 0.3, riskGate: 2, riskTrust: 0, minSlack: 0, feeModel: 0, harmWeight: 0, learnChosen: false,
   earlyClimb: true,
 }
 
@@ -147,7 +149,7 @@ export class Dispatcher extends Desk {
   offeredDrivers = new Map<string, Set<string>>()
   homeOffersSent = new Map<string, number>()
   market: DemandModel
-  bids = new Map<string, { features: MarketFeatures; ratio: number }>()
+  bids = new Map<string, { features: MarketFeatures; ratio: number; ratios?: Record<string, number> }>()
   deferred = new Map<string, PriceRequest>()
   held = new Map<string, { post: PostAction; at: number }>()
   postedAt = new Map<string, number>()
@@ -265,14 +267,16 @@ export class Dispatcher extends Desk {
       if (this.settings.riskPenalty > 0) {
         // Each option at the price that is best for its own cost: the fee and its own risk of being late.
         let ratio = Infinity
+        const ratios: Record<string, number> = {}
         for (const option of options) {
           const own = this.market.optimize(features, { costCents: (feeCost[option.kind] ?? fee * this.settings.costRatio * this.routeCost(request)) + (risk[option.kind] ?? 0), listPriceCents: option.listPriceCents, trust, minPrice: Math.ceil(fee / (1 - this.settings.margin) + this.settings.priceFloor) })
           if (own.expectedProfitCents <= 0) { delete prices[option.kind]; continue }
           prices[option.kind] = Math.ceil(option.listPriceCents * trust * own.ratio)
           ratio = Math.min(ratio, own.ratio)
+          ratios[option.kind] = own.ratio
         }
         if (!Object.keys(prices).length) return reject("no profit")
-        this.bids.set(request.id, { features, ratio })
+        this.bids.set(request.id, { features, ratio, ratios })
       } else if (this.settings.sameDayPremium === 1 && this.settings.laterDiscount === 1) {
         for (const option of options) prices[option.kind] = Math.ceil(option.listPriceCents * trust * choice.ratio)
         this.bids.set(request.id, { features, ratio: choice.ratio })
@@ -645,7 +649,7 @@ export class Dispatcher extends Desk {
     if (event.kind === "order_won" || event.kind === "order_lost") {
       const id = event.kind === "order_won" ? event.order.id : event.requestId
       const bid = this.bids.get(id)
-      if (bid) this.market.observe(bid.features, bid.ratio, event.kind === "order_won")
+      if (bid) this.market.observe(bid.features, this.settings.learnChosen && event.kind === "order_won" ? bid.ratios?.[event.order.option] ?? bid.ratio : bid.ratio, event.kind === "order_won")
       this.bids.delete(id)
     }
     if (event.kind === "order_won") this.pending.delete(event.order.id)
