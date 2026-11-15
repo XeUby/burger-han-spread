@@ -250,7 +250,7 @@ export class Dispatcher extends Desk {
         if (this.settings.harmWeight > 0 && unbooked > 0) {
           const step = 1 / (supply * 0.08 + 2)
           const rise = lateChance({ ...signs, unbookedShare: signs.unbookedShare + step }) - late
-          risk[option.kind] += this.settings.harmWeight * unbooked * Math.max(0, rise) * (REFUND_SHARE * option.listPriceCents * 1.45 + this.settings.riskPenalty * 100)
+          risk[option.kind] = risk[option.kind]! + this.settings.harmWeight * unbooked * Math.max(0, rise) * (REFUND_SHARE * option.listPriceCents * 1.45 + this.settings.riskPenalty * 100)
         }
       }
       prices[option.kind] = price
