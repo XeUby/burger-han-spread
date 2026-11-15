@@ -61,6 +61,8 @@ export type Settings = {
   chainCars: number
   /** How far the market model lets a level per day and pickup town, and per lane, stray from the rest; 0 for none. */
   marketDayOrigin: number; marketLane: number
+  /** Room under the limits on open and unbooked work, as a multiple, for routes under 100 km and for routes of 250 km or more: drivers go to the cars that earn most. */
+  shortGate: number; longGate: number
   /** The fee, in full fees, a day and half a day before the last pickup, for a gig that no driver has taken. */
   climbDay: number; climbHalfDay: number
   /** What a route really costs against the dispatcher's estimate, for routes under 50 km, from 50 km to 100 km, and longer. */
@@ -70,7 +72,7 @@ export const defaults: Settings = {
   price: 1.42, fee: 1.05, payout: 0.85, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
   notes: true, noteSpelling: false, relist: false, openingOnly: true, adaptive: true, earlyOffers: false, safetySlack: false,
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, noteReader: true, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
-  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0, minKm: 0, longPayout: 0.85, bookMiss: 0, summerTyres: false, softLimits: 0, flatFee: 0, dueFee: 1.45, rescue2: 1.6, rescue1: 1.8, bundleKm: 30, bundleDiscount: 0.2, chainCars: 2, marketDayOrigin: 0, marketLane: 0,
+  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0, minKm: 0, longPayout: 0.85, bookMiss: 0, summerTyres: false, softLimits: 0, flatFee: 0, dueFee: 1.45, rescue2: 1.6, rescue1: 1.8, bundleKm: 30, bundleDiscount: 0.2, chainCars: 2, marketDayOrigin: 0, marketLane: 0, shortGate: 1, longGate: 1,
   earlyClimb: true,
 }
 
@@ -184,12 +186,13 @@ export class Dispatcher extends Desk {
     const partner = this.settings.pairQuote > 0 ? this.partnerFor(request) : null
     if (partner) this.partners.set(request.id, partner)
     else this.partners.delete(request.id)
-    const capacityLimit = Math.max(1, supply * this.settings.capacity)
+    const gate = road.km < 100 ? this.settings.shortGate : road.km >= 250 ? this.settings.longGate : 1
+    const capacityLimit = Math.max(1, supply * this.settings.capacity * gate)
     if (!partner && load >= capacityLimit) {
       if (!this.settings.softLimits) return reject("capacity")
       overload += (load + 1 - capacityLimit) / capacityLimit
     }
-    const backlogLimit = Math.max(2, supply * this.settings.backlog)
+    const backlogLimit = Math.max(2, supply * this.settings.backlog * gate)
     if (!partner && unbooked >= backlogLimit) {
       if (!this.settings.softLimits) return reject("backlog")
       overload += (unbooked + 1 - backlogLimit) / backlogLimit
