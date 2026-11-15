@@ -1,0 +1,258 @@
+[
+ {
+  "label": "risk150-g25",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "riskPenalty": 150,
+   "riskGate": 2.5
+  }
+ },
+ {
+  "label": "risk100-g2",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "riskPenalty": 100,
+   "riskGate": 2
+  }
+ },
+ {
+  "label": "risk150-g25",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "riskPenalty": 150,
+   "riskGate": 2.5
+  }
+ },
+ {
+  "label": "risk100-g2",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "riskPenalty": 100,
+   "riskGate": 2
+  }
+ },
+ {
+  "label": "risk150-g25",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "riskPenalty": 150,
+   "riskGate": 2.5
+  }
+ },
+ {
+  "label": "risk100-g2",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "riskPenalty": 100,
+   "riskGate": 2
+  }
+ },
+ {
+  "label": "risk150-g25",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "riskPenalty": 150,
+   "riskGate": 2.5
+  }
+ },
+ {
+  "label": "risk100-g2",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "riskPenalty": 100,
+   "riskGate": 2
+  }
+ },
+ {
+  "label": "risk150-g25",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "riskPenalty": 150,
+   "riskGate": 2.5
+  }
+ },
+ {
+  "label": "risk100-g2",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "riskPenalty": 100,
+   "riskGate": 2
+  }
+ },
+ {
+  "label": "risk150-g25",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "riskPenalty": 150,
+   "riskGate": 2.5
+  }
+ },
+ {
+  "label": "risk100-g2",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "riskPenalty": 100,
+   "riskGate": 2
+  }
+ },
+ {
+  "label": "risk150-g25",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "riskPenalty": 150,
+   "riskGate": 2.5
+  }
+ },
+ {
+  "label": "risk100-g2",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "riskPenalty": 100,
+   "riskGate": 2
+  }
+ },
+ {
+  "label": "risk150-g25",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "riskPenalty": 150,
+   "riskGate": 2.5
+  }
+ },
+ {
+  "label": "risk100-g2",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "riskPenalty": 100,
+   "riskGate": 2
+  }
+ },
+ {
+  "label": "risk150-g25",
+  "seed": "bh-reader-20261114-01",
+  "settings": {
+   "riskPenalty": 150,
+   "riskGate": 2.5
+  }
+ },
+ {
+  "label": "risk100-g2",
+  "seed": "bh-reader-20261114-01",
+  "settings": {
+   "riskPenalty": 100,
+   "riskGate": 2
+  }
+ },
+ {
+  "label": "risk150-g25",
+  "seed": "bh-reader-20261114-02",
+  "settings": {
+   "riskPenalty": 150,
+   "riskGate": 2.5
+  }
+ },
+ {
+  "label": "risk100-g2",
+  "seed": "bh-reader-20261114-02",
+  "settings": {
+   "riskPenalty": 100,
+   "riskGate": 2
+  }
+ },
+ {
+  "label": "risk150-g25",
+  "seed": "bh-reader-20261114-03",
+  "settings": {
+   "riskPenalty": 150,
+   "riskGate": 2.5
+  }
+ },
+ {
+  "label": "risk100-g2",
+  "seed": "bh-reader-20261114-03",
+  "settings": {
+   "riskPenalty": 100,
+   "riskGate": 2
+  }
+ },
+ {
+  "label": "risk150-g25",
+  "seed": "bh-reader-20261114-04",
+  "settings": {
+   "riskPenalty": 150,
+   "riskGate": 2.5
+  }
+ },
+ {
+  "label": "risk100-g2",
+  "seed": "bh-reader-20261114-04",
+  "settings": {
+   "riskPenalty": 100,
+   "riskGate": 2
+  }
+ },
+ {
+  "label": "risk150-g25",
+  "seed": "bh-reader-20261114-05",
+  "settings": {
+   "riskPenalty": 150,
+   "riskGate": 2.5
+  }
+ },
+ {
+  "label": "risk100-g2",
+  "seed": "bh-reader-20261114-05",
+  "settings": {
+   "riskPenalty": 100,
+   "riskGate": 2
+  }
+ },
+ {
+  "label": "risk150-g25",
+  "seed": "bh-reader-20261114-06",
+  "settings": {
+   "riskPenalty": 150,
+   "riskGate": 2.5
+  }
+ },
+ {
+  "label": "risk100-g2",
+  "seed": "bh-reader-20261114-06",
+  "settings": {
+   "riskPenalty": 100,
+   "riskGate": 2
+  }
+ },
+ {
+  "label": "risk150-g25",
+  "seed": "bh-reader-20261114-07",
+  "settings": {
+   "riskPenalty": 150,
+   "riskGate": 2.5
+  }
+ },
+ {
+  "label": "risk100-g2",
+  "seed": "bh-reader-20261114-07",
+  "settings": {
+   "riskPenalty": 100,
+   "riskGate": 2
+  }
+ },
+ {
+  "label": "risk150-g25",
+  "seed": "bh-reader-20261114-08",
+  "settings": {
+   "riskPenalty": 150,
+   "riskGate": 2.5
+  }
+ },
+ {
+  "label": "risk100-g2",
+  "seed": "bh-reader-20261114-08",
+  "settings": {
+   "riskPenalty": 100,
+   "riskGate": 2
+  }
+ }
+]
