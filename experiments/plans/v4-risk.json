@@ -1,0 +1,314 @@
+[
+ {
+  "label": "risk100",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "riskPenalty": 100
+  }
+ },
+ {
+  "label": "risk300",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "riskPenalty": 300
+  }
+ },
+ {
+  "label": "risk100-g15",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "riskPenalty": 100,
+   "riskGate": 1.5
+  }
+ },
+ {
+  "label": "risk300-g15",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "riskPenalty": 300,
+   "riskGate": 1.5
+  }
+ },
+ {
+  "label": "risk300-g2-m2",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "riskPenalty": 300,
+   "riskGate": 2,
+   "maxLate": 0.2
+  }
+ },
+ {
+  "label": "risk100",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "riskPenalty": 100
+  }
+ },
+ {
+  "label": "risk300",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "riskPenalty": 300
+  }
+ },
+ {
+  "label": "risk100-g15",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "riskPenalty": 100,
+   "riskGate": 1.5
+  }
+ },
+ {
+  "label": "risk300-g15",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "riskPenalty": 300,
+   "riskGate": 1.5
+  }
+ },
+ {
+  "label": "risk300-g2-m2",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "riskPenalty": 300,
+   "riskGate": 2,
+   "maxLate": 0.2
+  }
+ },
+ {
+  "label": "risk100",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "riskPenalty": 100
+  }
+ },
+ {
+  "label": "risk300",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "riskPenalty": 300
+  }
+ },
+ {
+  "label": "risk100-g15",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "riskPenalty": 100,
+   "riskGate": 1.5
+  }
+ },
+ {
+  "label": "risk300-g15",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "riskPenalty": 300,
+   "riskGate": 1.5
+  }
+ },
+ {
+  "label": "risk300-g2-m2",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "riskPenalty": 300,
+   "riskGate": 2,
+   "maxLate": 0.2
+  }
+ },
+ {
+  "label": "risk100",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "riskPenalty": 100
+  }
+ },
+ {
+  "label": "risk300",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "riskPenalty": 300
+  }
+ },
+ {
+  "label": "risk100-g15",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "riskPenalty": 100,
+   "riskGate": 1.5
+  }
+ },
+ {
+  "label": "risk300-g15",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "riskPenalty": 300,
+   "riskGate": 1.5
+  }
+ },
+ {
+  "label": "risk300-g2-m2",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "riskPenalty": 300,
+   "riskGate": 2,
+   "maxLate": 0.2
+  }
+ },
+ {
+  "label": "risk100",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "riskPenalty": 100
+  }
+ },
+ {
+  "label": "risk300",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "riskPenalty": 300
+  }
+ },
+ {
+  "label": "risk100-g15",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "riskPenalty": 100,
+   "riskGate": 1.5
+  }
+ },
+ {
+  "label": "risk300-g15",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "riskPenalty": 300,
+   "riskGate": 1.5
+  }
+ },
+ {
+  "label": "risk300-g2-m2",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "riskPenalty": 300,
+   "riskGate": 2,
+   "maxLate": 0.2
+  }
+ },
+ {
+  "label": "risk100",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "riskPenalty": 100
+  }
+ },
+ {
+  "label": "risk300",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "riskPenalty": 300
+  }
+ },
+ {
+  "label": "risk100-g15",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "riskPenalty": 100,
+   "riskGate": 1.5
+  }
+ },
+ {
+  "label": "risk300-g15",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "riskPenalty": 300,
+   "riskGate": 1.5
+  }
+ },
+ {
+  "label": "risk300-g2-m2",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "riskPenalty": 300,
+   "riskGate": 2,
+   "maxLate": 0.2
+  }
+ },
+ {
+  "label": "risk100",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "riskPenalty": 100
+  }
+ },
+ {
+  "label": "risk300",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "riskPenalty": 300
+  }
+ },
+ {
+  "label": "risk100-g15",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "riskPenalty": 100,
+   "riskGate": 1.5
+  }
+ },
+ {
+  "label": "risk300-g15",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "riskPenalty": 300,
+   "riskGate": 1.5
+  }
+ },
+ {
+  "label": "risk300-g2-m2",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "riskPenalty": 300,
+   "riskGate": 2,
+   "maxLate": 0.2
+  }
+ },
+ {
+  "label": "risk100",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "riskPenalty": 100
+  }
+ },
+ {
+  "label": "risk300",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "riskPenalty": 300
+  }
+ },
+ {
+  "label": "risk100-g15",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "riskPenalty": 100,
+   "riskGate": 1.5
+  }
+ },
+ {
+  "label": "risk300-g15",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "riskPenalty": 300,
+   "riskGate": 1.5
+  }
+ },
+ {
+  "label": "risk300-g2-m2",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "riskPenalty": 300,
+   "riskGate": 2,
+   "maxLate": 0.2
+  }
+ }
+]
