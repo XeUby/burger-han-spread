@@ -53,3 +53,9 @@ Played once on `bh-sunday-20261115-01` to `-16`, the weeks the v3 build played f
 | Cost multiplier 1.05, 1.1 or 1.2 instead of 1.15 | −€906, −€754, +€139 |
 | 1.2 with limits ×2.5, or 1.25 with limits ×3, or 1.2 with a €75 penalty | −€50, −€222, −€28 |
 | Learn from the price of the option the dealer chose, 16 weeks | +€17 |
+
+## Sixteen more fresh weeks, both builds
+
+`bh-sunday-20261115-17` to `-32`, each week played once by each build (the v3 build is the same code with `riskPenalty` 0): €11,668 a week against €11,337, +€331 (standard error €200), 12 up and 4 down; late orders 3.7% → 2.3%; worst week 95.2% against 92.8%. All 32 ranked.
+
+Over the 56 weeks played with both builds the risk pricing gains about €500 a week, and its worst week is 95% on time instead of 93%.
