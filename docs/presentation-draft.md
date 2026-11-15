@@ -6,8 +6,8 @@ Fill in the final's result at the top. Every number below is level 8 practice, t
 
 - Final: € … margin, … % on time, place … of …
 - Best ranking round (Sunday 00:00): €60,399 over five weeks, €12,080 a week, every week ranked, lowest week 96.8% on time.
-- 16 weeks no version of ours had played: €12,516 a week, 16 of 16 ranked, worst week 92.4% on time.
-- The trunk dispatcher before tonight's ideas, on 16 shared weeks: €9,810 a week. With them: €11,877.
+- 16 weeks no version of ours had played: €12,990 a week, 16 of 16 ranked, worst week 95.3% on time.
+- The trunk dispatcher before tonight's ideas, on 16 shared weeks: €9,810 a week. With them: about €12,500.
 
 ## 2. Idea: read the whole note
 
@@ -38,17 +38,23 @@ Fill in the final's result at the top. Every number below is level 8 practice, t
 - Why: orders finally paid 1.9 times lost €22 each and were late 28% of the time; at 2.5 times, −€75 and 47%.
 - Effect: +€138 a week on 24 weeks, 20 up and 1 down, the same late share.
 
-## 7. What did not work (the jury asks)
+## 7. Idea: price each delivery option by its own risk of being late
+
+- The idea: a model gives the chance that a car arrives late from what is known when its request comes — above all the slack to the last pickup, which differs between the same-day and the next-day option of one request. Each option's cost is the fee plus P(late) × (the refund + €100); each option gets its own price; options over 30% are not sold; with the risk priced, the limits on open work are twice as wide.
+- Why: at level 8 every way to take more orders added late orders, but the late ones are predictable (AUC 0.81 on held-out weeks).
+- Effect: +€636 a week on 24 weeks (18 up, 6 down); +€474 on 16 fresh weeks, worst week 95.3% on time against 92.4%; €35.3 a car against €33.5.
+
+## 8. What did not work (the jury asks)
 
 At level 8 the drivers are the limit. Every way to take more orders — trade-ins, private addresses, any route length, fewer-driver towns, softer limits, pair-aware prices, longer chains — raised the late share and lost €300 to €3,800 a week (`docs/journal/v3-night.md`). Paying differently (a flat fee, a fitted booking model, higher or lower openings, more for trusted dealers) and pricing differently (flatter demand, outage levels, lanes, dearer or cheaper options) also lost or was noise.
 
-## 8. Robustness
+## 9. Robustness
 
 - Restart: the final's loop rebuilds from the world's state; every five seconds it checks its gigs against the world's.
 - Test finals: 20:00 €9,749 (half week), 01:00 €9,337, 320 orders, 96.3% on time, no failed action of note.
 - Quotes go out first in every batch: in the final a dealer waits 4.5 real seconds.
 
-## 9. What would break it
+## 10. What would break it
 
 - A week with far fewer drivers than ours: the lowest of 64 weeks was 92.4% on time, and the line is 90%.
 - Note phrasings outside the reader's vocabulary: declined, so lost orders, not failed visits.
