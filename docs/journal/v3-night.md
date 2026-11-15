@@ -57,3 +57,19 @@ The booking model failed because its target, "booked at the opening fee", mixes 
 | A larger cost estimate in the price (`costRatio` 1.3, 1.45, 1.6) | −€655, −€1,750, −€3,809 |
 
 Higher prices win fewer orders and earn less in all; lower ones win orders the drivers cannot move. The learned price sits near the best point.
+
+## Reach drivers differently: no gain
+
+| Variant | Mean difference | Note |
+| --- | ---: | --- |
+| Right after posting, offer a single car to two or three drivers who live near its delivery, at 0.7, 0.8 or 0.9 of the public fee (`homeDrivers`) | −€89 to −€404 | 4 to 6 offers a week were taken; over 1,000 expired unread: a driver who does not work that day reads few offers |
+| Post a car whose pickup is on a later day on the morning of that day, at 06:00, 07:00 or 08:00 (`postAt`) | −€801 to −€1,453 | Late orders rise from 4.2% to 4.9–6.0%: a gig posted the day before finds drivers who plan their next day |
+| A dearer fee for cars of trusted dealers (`trustGuard` 0.1, 0.2, 0.35) | −€734 to −€2,989 | Paying more did not make these cars more punctual |
+| Towns with five or three drivers instead of eight (`minDrivers`) | −€507, −€308 | |
+| Routes up to 1,000 km (`maxKm`) | −€1,322 | Two of eight weeks not ranked |
+| Cars on summer tyres, collected after forecast snow (`summerTyres`) | −€394 | |
+| Stop selling same-day delivery sooner or later (`sameDayBacklog` 0, 2, 8 instead of 4) | −€738, −€229, −€105 | |
+
+## The build on sixteen fresh weeks
+
+The v3 build (`36ee181`), played once on `bh-sunday-20261115-01` to `-16`, weeks no version of ours had played: €12,516 a week in the mean, 374 orders, 96.8% on time in the mean and 92.4% in the worst week, 16 of 16 ranked. The weeks ranged from €9,276 to €16,245.
