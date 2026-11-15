@@ -28,3 +28,16 @@ export function lateChance(s: RiskSigns): number {
   const z = INTERCEPT + x.reduce((sum, value, i) => sum + value * W[i]!, 0)
   return 1 / (1 + Math.exp(-z))
 }
+
+const FEE = [-0.1010, -0.0111, -0.0305, 0.0053, 0.4046, -0.1311, -0.1954, -0.2549, 0.0146, 0.1261, 0.0264, 0.1024, -0.0220]
+const FEE_INTERCEPT = 2.2095
+
+/** What a won single car finally costs in driver fees and other costs, in typical fees: a linear model fitted by
+ * `analysis/fitcost.py` on the same cars (it explains 12% of the spread; the rest is the week). */
+export function feeRatio(s: RiskSigns): number {
+  const km = Math.log(Math.max(1, s.km))
+  const slack = Math.log(Math.max(1, Math.min(72, s.slackHours)))
+  const x = [km, slack, Math.log(s.pickupDrivers + 1), Math.log(s.deliveryDrivers + 1), s.unbookedShare, s.loadShare, s.unbookedShare ** 2,
+    +s.sameDay, +s.threeDays, +s.friday, +s.afternoon, +s.premium, km * slack]
+  return Math.max(0.6, FEE_INTERCEPT + x.reduce((sum, value, i) => sum + value * FEE[i]!, 0))
+}

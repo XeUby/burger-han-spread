@@ -7,7 +7,7 @@ import { readReadiness } from "./readiness.ts"
 import { readHours } from "./hours-note.ts"
 import { readFacts } from "./note-reader.ts"
 import { openingRatio } from "./booking.ts"
-import { lateChance, REFUND_SHARE } from "./risk.ts"
+import { feeRatio, lateChance, REFUND_SHARE } from "./risk.ts"
 import { planTimedLeg, withNoteHours } from "./hours-plan.ts"
 import type { TimedNote } from "./hours-note.ts"
 import { lateRescueApplies, lateRescueSchedule } from "./late-rescue.ts"
@@ -76,6 +76,8 @@ export type Settings = {
   riskPenalty: number; maxLate: number; riskGate: number
   /** The penalty grows with the dealer's trust, which a late car halves: × (1 + riskTrust × trust / 25). And the least minutes to the last pickup an option needs. */
   riskTrust: number; minSlack: number
+  /** Cost each option's fee from the fee model, times this; 0 keeps the fee estimate times costRatio. */
+  feeModel: number
   /** The fee, in full fees, a day and half a day before the last pickup, for a gig that no driver has taken. */
   climbDay: number; climbHalfDay: number
   /** What a route really costs against the dispatcher's estimate, for routes under 50 km, from 50 km to 100 km, and longer. */
@@ -85,7 +87,7 @@ export const defaults: Settings = {
   price: 1.42, fee: 1.05, payout: 0.85, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
   notes: true, noteSpelling: false, relist: false, openingOnly: true, adaptive: true, earlyOffers: false, safetySlack: false,
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, noteReader: true, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
-  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0, minKm: 0, longPayout: 0.85, bookMiss: 0, summerTyres: false, softLimits: 0, flatFee: 0, dueFee: 1.45, rescue2: 1.6, rescue1: 1.8, bundleKm: 30, bundleDiscount: 0.2, chainCars: 2, marketDayOrigin: 0, marketLane: 0, shortGate: 1, longGate: 1, trustGuard: 0, homeDrivers: 0, homeShare: 0.8, postAt: 0, riskPenalty: 100, maxLate: 0.3, riskGate: 2, riskTrust: 0, minSlack: 0,
+  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0, minKm: 0, longPayout: 0.85, bookMiss: 0, summerTyres: false, softLimits: 0, flatFee: 0, dueFee: 1.45, rescue2: 1.6, rescue1: 1.8, bundleKm: 30, bundleDiscount: 0.2, chainCars: 2, marketDayOrigin: 0, marketLane: 0, shortGate: 1, longGate: 1, trustGuard: 0, homeDrivers: 0, homeShare: 0.8, postAt: 0, riskPenalty: 100, maxLate: 0.3, riskGate: 2, riskTrust: 0, minSlack: 0, feeModel: 0,
   earlyClimb: true,
 }
 
@@ -94,7 +96,7 @@ export function validateSettings(value: unknown): asserts value is Partial<Setti
   for (const [key, field] of Object.entries(value)) {
     if (!(key in defaults)) throw new Error(`Unknown setting: ${key}`)
     if (typeof defaults[key as keyof Settings] === "boolean") { if (typeof field !== "boolean") throw new Error(`${key} must be boolean`); continue }
-    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait", "sitAfter", "pairOpen", "pairQuote", "pairPatience", "minKm", "bookMiss", "softLimits", "flatFee", "marketDayOrigin", "marketLane", "trustGuard", "homeDrivers", "postAt", "riskPenalty", "riskTrust", "minSlack"].includes(key))) throw new Error(`${key} must be a positive number`)
+    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait", "sitAfter", "pairOpen", "pairQuote", "pairPatience", "minKm", "bookMiss", "softLimits", "flatFee", "marketDayOrigin", "marketLane", "trustGuard", "homeDrivers", "postAt", "riskPenalty", "riskTrust", "minSlack", "feeModel"].includes(key))) throw new Error(`${key} must be a positive number`)
     if (key === "bundleWait" && (!Number.isInteger(field) || field > 30)) throw new Error("bundleWait must be an integer from 0 to 30")
     if ((key === "margin" || key === "capacity") && field >= 1) throw new Error(`${key} must be below 1`)
     if (key === "placePrior" && field > 2) throw new Error("placePrior must be at most 2")
@@ -219,6 +221,7 @@ export class Dispatcher extends Desk {
     const trust = 1 + this.settings.trustStep * Math.min(25, this.trust.get(request.dealerId) ?? 0)
     const prices: Record<string, number> = {}
     const risk: Record<string, number> = {}
+    const feeCost: Record<string, number> = {}
     const deliveryDrivers = this.settings.riskPenalty > 0 ? this.drivers.reduce((sum, driver) => { const k = this.network.km(driver.homePlaceId, leg.delivery.placeId); return sum + (k <= 35 ? 1 : k <= 70 ? 0.35 : 0) }, 0) : 0
     for (const option of plan.options) {
       if (option.kind === "same_day" && supply < 15) continue
@@ -233,12 +236,14 @@ export class Dispatcher extends Desk {
       const price = Math.ceil(Math.max(option.listPriceCents * this.settings.price * trust, fee / (1 - this.settings.margin) + this.settings.priceFloor))
       if (this.level <= 3 && option.listPriceCents < fee * 1.3) continue
       if (this.settings.riskPenalty > 0) {
-        const late = lateChance({
+        const signs = {
           km: road.km, slackHours: (latest - Math.max(this.now, leg.pickup.window.from)) / 60, pickupDrivers: supply, deliveryDrivers,
           unbookedShare: unbooked / (supply * 0.08 + 2), loadShare: load / (supply * 0.35 + 1), sameDay: option.kind === "same_day", threeDays: option.kind === "within_3_days",
           friday: Math.floor(this.now / 1440) % 7 === 4, afternoon: this.now % 1440 >= 900, premium: leg.car.premium,
-        })
+        }
+        const late = lateChance(signs)
         if (late > this.settings.maxLate) continue
+        if (this.settings.feeModel > 0) feeCost[option.kind] = request.referenceFeeCents * feeRatio(signs) * this.settings.feeModel
         risk[option.kind] = late * (REFUND_SHARE * option.listPriceCents * 1.45 + this.settings.riskPenalty * 100 * (1 + this.settings.riskTrust * Math.min(25, this.trust.get(request.dealerId) ?? 0) / 25))
       }
       prices[option.kind] = price
@@ -254,7 +259,7 @@ export class Dispatcher extends Desk {
         // Each option at the price that is best for its own cost: the fee and its own risk of being late.
         let ratio = Infinity
         for (const option of options) {
-          const own = this.market.optimize(features, { costCents: fee * this.settings.costRatio * this.routeCost(request) + (risk[option.kind] ?? 0), listPriceCents: option.listPriceCents, trust, minPrice: Math.ceil(fee / (1 - this.settings.margin) + this.settings.priceFloor) })
+          const own = this.market.optimize(features, { costCents: (feeCost[option.kind] ?? fee * this.settings.costRatio * this.routeCost(request)) + (risk[option.kind] ?? 0), listPriceCents: option.listPriceCents, trust, minPrice: Math.ceil(fee / (1 - this.settings.margin) + this.settings.priceFloor) })
           if (own.expectedProfitCents <= 0) { delete prices[option.kind]; continue }
           prices[option.kind] = Math.ceil(option.listPriceCents * trust * own.ratio)
           ratio = Math.min(ratio, own.ratio)
