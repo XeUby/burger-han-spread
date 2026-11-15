@@ -1,0 +1,194 @@
+[
+ {
+  "label": "v4-cr120-g25",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "costRatio": 1.2,
+   "riskGate": 2.5
+  }
+ },
+ {
+  "label": "v4-cr125-g3",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "costRatio": 1.25,
+   "riskGate": 3
+  }
+ },
+ {
+  "label": "v4-cr120-r75",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "costRatio": 1.2,
+   "riskPenalty": 75
+  }
+ },
+ {
+  "label": "v4-cr120-g25",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "costRatio": 1.2,
+   "riskGate": 2.5
+  }
+ },
+ {
+  "label": "v4-cr125-g3",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "costRatio": 1.25,
+   "riskGate": 3
+  }
+ },
+ {
+  "label": "v4-cr120-r75",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "costRatio": 1.2,
+   "riskPenalty": 75
+  }
+ },
+ {
+  "label": "v4-cr120-g25",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "costRatio": 1.2,
+   "riskGate": 2.5
+  }
+ },
+ {
+  "label": "v4-cr125-g3",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "costRatio": 1.25,
+   "riskGate": 3
+  }
+ },
+ {
+  "label": "v4-cr120-r75",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "costRatio": 1.2,
+   "riskPenalty": 75
+  }
+ },
+ {
+  "label": "v4-cr120-g25",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "costRatio": 1.2,
+   "riskGate": 2.5
+  }
+ },
+ {
+  "label": "v4-cr125-g3",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "costRatio": 1.25,
+   "riskGate": 3
+  }
+ },
+ {
+  "label": "v4-cr120-r75",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "costRatio": 1.2,
+   "riskPenalty": 75
+  }
+ },
+ {
+  "label": "v4-cr120-g25",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "costRatio": 1.2,
+   "riskGate": 2.5
+  }
+ },
+ {
+  "label": "v4-cr125-g3",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "costRatio": 1.25,
+   "riskGate": 3
+  }
+ },
+ {
+  "label": "v4-cr120-r75",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "costRatio": 1.2,
+   "riskPenalty": 75
+  }
+ },
+ {
+  "label": "v4-cr120-g25",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "costRatio": 1.2,
+   "riskGate": 2.5
+  }
+ },
+ {
+  "label": "v4-cr125-g3",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "costRatio": 1.25,
+   "riskGate": 3
+  }
+ },
+ {
+  "label": "v4-cr120-r75",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "costRatio": 1.2,
+   "riskPenalty": 75
+  }
+ },
+ {
+  "label": "v4-cr120-g25",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "costRatio": 1.2,
+   "riskGate": 2.5
+  }
+ },
+ {
+  "label": "v4-cr125-g3",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "costRatio": 1.25,
+   "riskGate": 3
+  }
+ },
+ {
+  "label": "v4-cr120-r75",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "costRatio": 1.2,
+   "riskPenalty": 75
+  }
+ },
+ {
+  "label": "v4-cr120-g25",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "costRatio": 1.2,
+   "riskGate": 2.5
+  }
+ },
+ {
+  "label": "v4-cr125-g3",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "costRatio": 1.25,
+   "riskGate": 3
+  }
+ },
+ {
+  "label": "v4-cr120-r75",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "costRatio": 1.2,
+   "riskPenalty": 75
+  }
+ }
+]
