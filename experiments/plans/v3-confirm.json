@@ -1,0 +1,250 @@
+[
+ {
+  "label": "v3head",
+  "seed": "bh-robust-20261114-03",
+  "settings": {}
+ },
+ {
+  "label": "v3head",
+  "seed": "bh-robust-20261114-06",
+  "settings": {}
+ },
+ {
+  "label": "v3head",
+  "seed": "bh-robust-20261114-09",
+  "settings": {}
+ },
+ {
+  "label": "v3head",
+  "seed": "bh-robust-20261114-20",
+  "settings": {}
+ },
+ {
+  "label": "v3head",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {}
+ },
+ {
+  "label": "v3head",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {}
+ },
+ {
+  "label": "v3head",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {}
+ },
+ {
+  "label": "v3head",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {}
+ },
+ {
+  "label": "v3head",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {}
+ },
+ {
+  "label": "v3head",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {}
+ },
+ {
+  "label": "v3head",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {}
+ },
+ {
+  "label": "v3head",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {}
+ },
+ {
+  "label": "v3head",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {}
+ },
+ {
+  "label": "v3head",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {}
+ },
+ {
+  "label": "v3head",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {}
+ },
+ {
+  "label": "v3head",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {}
+ },
+ {
+  "label": "v3head",
+  "seed": "bh-reader-20261114-01",
+  "settings": {}
+ },
+ {
+  "label": "v3head",
+  "seed": "bh-reader-20261114-02",
+  "settings": {}
+ },
+ {
+  "label": "v3head",
+  "seed": "bh-reader-20261114-03",
+  "settings": {}
+ },
+ {
+  "label": "v3head",
+  "seed": "bh-reader-20261114-04",
+  "settings": {}
+ },
+ {
+  "label": "v3head",
+  "seed": "bh-reader-20261114-05",
+  "settings": {}
+ },
+ {
+  "label": "v3head",
+  "seed": "bh-reader-20261114-06",
+  "settings": {}
+ },
+ {
+  "label": "v3head",
+  "seed": "bh-reader-20261114-07",
+  "settings": {}
+ },
+ {
+  "label": "v3head",
+  "seed": "bh-reader-20261114-08",
+  "settings": {}
+ },
+ {
+  "label": "rescuecap2",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "rescuecap2",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "rescuecap2",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "rescuecap2",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "rescuecap2",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "rescuecap2",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "rescuecap2",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "rescuecap2",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "rescuecap2",
+  "seed": "bh-reader-20261114-01",
+  "settings": {
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "rescuecap2",
+  "seed": "bh-reader-20261114-02",
+  "settings": {
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "rescuecap2",
+  "seed": "bh-reader-20261114-03",
+  "settings": {
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "rescuecap2",
+  "seed": "bh-reader-20261114-04",
+  "settings": {
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "rescuecap2",
+  "seed": "bh-reader-20261114-05",
+  "settings": {
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "rescuecap2",
+  "seed": "bh-reader-20261114-06",
+  "settings": {
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "rescuecap2",
+  "seed": "bh-reader-20261114-07",
+  "settings": {
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "rescuecap2",
+  "seed": "bh-reader-20261114-08",
+  "settings": {
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ }
+]
