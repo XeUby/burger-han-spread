@@ -1,0 +1,202 @@
+[
+ {
+  "label": "v4-pay080",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "payout": 0.8,
+   "longPayout": 0.8
+  }
+ },
+ {
+  "label": "v4-climb105",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "climbDay": 1.05,
+   "climbHalfDay": 1.2
+  }
+ },
+ {
+  "label": "v4-due135",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "v4-pay080",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "payout": 0.8,
+   "longPayout": 0.8
+  }
+ },
+ {
+  "label": "v4-climb105",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "climbDay": 1.05,
+   "climbHalfDay": 1.2
+  }
+ },
+ {
+  "label": "v4-due135",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "v4-pay080",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "payout": 0.8,
+   "longPayout": 0.8
+  }
+ },
+ {
+  "label": "v4-climb105",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "climbDay": 1.05,
+   "climbHalfDay": 1.2
+  }
+ },
+ {
+  "label": "v4-due135",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "v4-pay080",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "payout": 0.8,
+   "longPayout": 0.8
+  }
+ },
+ {
+  "label": "v4-climb105",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "climbDay": 1.05,
+   "climbHalfDay": 1.2
+  }
+ },
+ {
+  "label": "v4-due135",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "v4-pay080",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "payout": 0.8,
+   "longPayout": 0.8
+  }
+ },
+ {
+  "label": "v4-climb105",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "climbDay": 1.05,
+   "climbHalfDay": 1.2
+  }
+ },
+ {
+  "label": "v4-due135",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "v4-pay080",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "payout": 0.8,
+   "longPayout": 0.8
+  }
+ },
+ {
+  "label": "v4-climb105",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "climbDay": 1.05,
+   "climbHalfDay": 1.2
+  }
+ },
+ {
+  "label": "v4-due135",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "v4-pay080",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "payout": 0.8,
+   "longPayout": 0.8
+  }
+ },
+ {
+  "label": "v4-climb105",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "climbDay": 1.05,
+   "climbHalfDay": 1.2
+  }
+ },
+ {
+  "label": "v4-due135",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "v4-pay080",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "payout": 0.8,
+   "longPayout": 0.8
+  }
+ },
+ {
+  "label": "v4-climb105",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "climbDay": 1.05,
+   "climbHalfDay": 1.2
+  }
+ },
+ {
+  "label": "v4-due135",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "dueFee": 1.35,
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ }
+]
