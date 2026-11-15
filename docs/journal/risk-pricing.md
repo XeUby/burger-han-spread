@@ -35,3 +35,18 @@ On the first eight weeks, other settings:
 | Penalty €50, limits ×2 | +€36 | → 5.4% | 90.7% |
 
 Priced risk alone makes the week safer at the same margin; the safety is then spent on wider limits.
+
+## Sixteen fresh weeks
+
+Played once on `bh-sunday-20261115-01` to `-16`, the weeks the v3 build played for its record: €12,990 a week against €12,516, +€474 (standard error €212), 12 weeks up and 4 down. Late orders 3.2% → 2.2%; the worst week 95.3% on time against 92.4%. All 16 ranked.
+
+## Tried on top, and dropped (eight weeks each, against risk pricing)
+
+| Variant | Difference |
+| --- | ---: |
+| Do not sell options over 20% or 40% late chance (instead of 30%) | −€159, −€241 |
+| Towns with four drivers; routes up to 1,000 km; both | −€44, −€571, −€673 |
+| Penalty grows with the dealer's trust | −€129, −€249 |
+| Least slack 150 or 240 minutes instead of 210–300 | −€454, −€283 |
+| Fee from a fitted fee model instead of the fee estimate | −€912 to −€1,646 |
+| Harm to our waiting cars in the cost (×0.5, ×1, ×2) | −€89, +€128, −€189 |
