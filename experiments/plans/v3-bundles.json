@@ -1,0 +1,178 @@
+[
+ {
+  "label": "bkm60",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "bundleKm": 60
+  }
+ },
+ {
+  "label": "bkm60-d30",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "bundleKm": 60,
+   "bundleDiscount": 0.3
+  }
+ },
+ {
+  "label": "bkm100",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "bundleKm": 100
+  }
+ },
+ {
+  "label": "bkm60",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "bundleKm": 60
+  }
+ },
+ {
+  "label": "bkm60-d30",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "bundleKm": 60,
+   "bundleDiscount": 0.3
+  }
+ },
+ {
+  "label": "bkm100",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "bundleKm": 100
+  }
+ },
+ {
+  "label": "bkm60",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "bundleKm": 60
+  }
+ },
+ {
+  "label": "bkm60-d30",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "bundleKm": 60,
+   "bundleDiscount": 0.3
+  }
+ },
+ {
+  "label": "bkm100",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "bundleKm": 100
+  }
+ },
+ {
+  "label": "bkm60",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "bundleKm": 60
+  }
+ },
+ {
+  "label": "bkm60-d30",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "bundleKm": 60,
+   "bundleDiscount": 0.3
+  }
+ },
+ {
+  "label": "bkm100",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "bundleKm": 100
+  }
+ },
+ {
+  "label": "bkm60",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "bundleKm": 60
+  }
+ },
+ {
+  "label": "bkm60-d30",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "bundleKm": 60,
+   "bundleDiscount": 0.3
+  }
+ },
+ {
+  "label": "bkm100",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "bundleKm": 100
+  }
+ },
+ {
+  "label": "bkm60",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "bundleKm": 60
+  }
+ },
+ {
+  "label": "bkm60-d30",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "bundleKm": 60,
+   "bundleDiscount": 0.3
+  }
+ },
+ {
+  "label": "bkm100",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "bundleKm": 100
+  }
+ },
+ {
+  "label": "bkm60",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "bundleKm": 60
+  }
+ },
+ {
+  "label": "bkm60-d30",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "bundleKm": 60,
+   "bundleDiscount": 0.3
+  }
+ },
+ {
+  "label": "bkm100",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "bundleKm": 100
+  }
+ },
+ {
+  "label": "bkm60",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "bundleKm": 60
+  }
+ },
+ {
+  "label": "bkm60-d30",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "bundleKm": 60,
+   "bundleDiscount": 0.3
+  }
+ },
+ {
+  "label": "bkm100",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "bundleKm": 100
+  }
+ }
+]

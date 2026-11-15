@@ -1,0 +1,194 @@
+[
+ {
+  "label": "rescuecap",
+  "seed": "formal-unseen-20261113-09",
+  "settings": {
+   "rescue2": 1.6,
+   "rescue1": 1.8
+  }
+ },
+ {
+  "label": "rescuecap",
+  "seed": "formal-unseen-20261113-10",
+  "settings": {
+   "rescue2": 1.6,
+   "rescue1": 1.8
+  }
+ },
+ {
+  "label": "rescuecap",
+  "seed": "formal-unseen-20261113-11",
+  "settings": {
+   "rescue2": 1.6,
+   "rescue1": 1.8
+  }
+ },
+ {
+  "label": "rescuecap",
+  "seed": "formal-unseen-20261113-12",
+  "settings": {
+   "rescue2": 1.6,
+   "rescue1": 1.8
+  }
+ },
+ {
+  "label": "rescuecap",
+  "seed": "formal-unseen-20261113-13",
+  "settings": {
+   "rescue2": 1.6,
+   "rescue1": 1.8
+  }
+ },
+ {
+  "label": "rescuecap",
+  "seed": "formal-unseen-20261113-14",
+  "settings": {
+   "rescue2": 1.6,
+   "rescue1": 1.8
+  }
+ },
+ {
+  "label": "rescuecap",
+  "seed": "formal-unseen-20261113-15",
+  "settings": {
+   "rescue2": 1.6,
+   "rescue1": 1.8
+  }
+ },
+ {
+  "label": "rescuecap",
+  "seed": "formal-unseen-20261113-16",
+  "settings": {
+   "rescue2": 1.6,
+   "rescue1": 1.8
+  }
+ },
+ {
+  "label": "rescuecap",
+  "seed": "bh-reader-20261114-01",
+  "settings": {
+   "rescue2": 1.6,
+   "rescue1": 1.8
+  }
+ },
+ {
+  "label": "rescuecap",
+  "seed": "bh-reader-20261114-02",
+  "settings": {
+   "rescue2": 1.6,
+   "rescue1": 1.8
+  }
+ },
+ {
+  "label": "rescuecap",
+  "seed": "bh-reader-20261114-03",
+  "settings": {
+   "rescue2": 1.6,
+   "rescue1": 1.8
+  }
+ },
+ {
+  "label": "rescuecap",
+  "seed": "bh-reader-20261114-04",
+  "settings": {
+   "rescue2": 1.6,
+   "rescue1": 1.8
+  }
+ },
+ {
+  "label": "rescuecap",
+  "seed": "bh-reader-20261114-05",
+  "settings": {
+   "rescue2": 1.6,
+   "rescue1": 1.8
+  }
+ },
+ {
+  "label": "rescuecap",
+  "seed": "bh-reader-20261114-06",
+  "settings": {
+   "rescue2": 1.6,
+   "rescue1": 1.8
+  }
+ },
+ {
+  "label": "rescuecap",
+  "seed": "bh-reader-20261114-07",
+  "settings": {
+   "rescue2": 1.6,
+   "rescue1": 1.8
+  }
+ },
+ {
+  "label": "rescuecap",
+  "seed": "bh-reader-20261114-08",
+  "settings": {
+   "rescue2": 1.6,
+   "rescue1": 1.8
+  }
+ },
+ {
+  "label": "rescuecap2",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "rescuecap2",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "rescuecap2",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "rescuecap2",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "rescuecap2",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "rescuecap2",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "rescuecap2",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ },
+ {
+  "label": "rescuecap2",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "rescue2": 1.5,
+   "rescue1": 1.6
+  }
+ }
+]
