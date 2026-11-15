@@ -50,3 +50,6 @@ Played once on `bh-sunday-20261115-01` to `-16`, the weeks the v3 build played f
 | Least slack 150 or 240 minutes instead of 210–300 | −€454, −€283 |
 | Fee from a fitted fee model instead of the fee estimate | −€912 to −€1,646 |
 | Harm to our waiting cars in the cost (×0.5, ×1, ×2) | −€89, +€128, −€189 |
+| Cost multiplier 1.05, 1.1 or 1.2 instead of 1.15 | −€906, −€754, +€139 |
+| 1.2 with limits ×2.5, or 1.25 with limits ×3, or 1.2 with a €75 penalty | −€50, −€222, −€28 |
+| Learn from the price of the option the dealer chose, 16 weeks | +€17 |
