@@ -42,5 +42,10 @@
   "longCost": 1,
   "sitAfter": 0,
   "sitFee": 1,
-  "pairOpen": 180
+  "pairOpen": 180,
+  "riskPenalty": 100,
+  "maxLate": 0.3,
+  "riskGate": 2,
+  "rescue2": 1.6,
+  "rescue1": 1.8
 }

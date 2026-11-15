@@ -83,7 +83,7 @@ export const defaults: Settings = {
   price: 1.42, fee: 1.05, payout: 0.85, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
   notes: true, noteSpelling: false, relist: false, openingOnly: true, adaptive: true, earlyOffers: false, safetySlack: false,
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, noteReader: true, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
-  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0, minKm: 0, longPayout: 0.85, bookMiss: 0, summerTyres: false, softLimits: 0, flatFee: 0, dueFee: 1.45, rescue2: 1.6, rescue1: 1.8, bundleKm: 30, bundleDiscount: 0.2, chainCars: 2, marketDayOrigin: 0, marketLane: 0, shortGate: 1, longGate: 1, trustGuard: 0, homeDrivers: 0, homeShare: 0.8, postAt: 0, riskPenalty: 0, maxLate: 0.3, riskGate: 1,
+  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0, minKm: 0, longPayout: 0.85, bookMiss: 0, summerTyres: false, softLimits: 0, flatFee: 0, dueFee: 1.45, rescue2: 1.6, rescue1: 1.8, bundleKm: 30, bundleDiscount: 0.2, chainCars: 2, marketDayOrigin: 0, marketLane: 0, shortGate: 1, longGate: 1, trustGuard: 0, homeDrivers: 0, homeShare: 0.8, postAt: 0, riskPenalty: 100, maxLate: 0.3, riskGate: 2,
   earlyClimb: true,
 }
 

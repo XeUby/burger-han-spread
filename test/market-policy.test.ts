@@ -19,7 +19,7 @@ function request(id = "R1"): PriceRequest {
     options: [{ kind: "same_day", deadline: 1200, listPriceCents: 10000 }, { kind: "next_day", deadline: 2640, listPriceCents: 9000 }],
   }
 }
-const desk = () => new Dispatcher({} as World, 8, 500, map, drivers, { adaptive: true, trustStep: 0.01 })
+const desk = () => new Dispatcher({} as World, 8, 500, map, drivers, { adaptive: true, trustStep: 0.01, riskPenalty: 0 })
 
 test("intentional rejection supplies no artificial price observation", async () => {
   const d = desk()
