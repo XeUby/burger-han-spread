@@ -4,7 +4,7 @@ Fill in the final's result at the top. Every number below is level 8 practice, t
 
 ## 1. The answer
 
-- Final: € … margin, … % on time, place … of …
+- Final (Sunday 09:00, level 8): €13,958 margin, 357 orders, 98.9% on time, ranked; place 43 (10th place €19,084).
 - Best ranking round (Sunday 00:00): €60,399 over five weeks, €12,080 a week, every week ranked, lowest week 96.8% on time.
 - 16 weeks no version of ours had played: €12,990 a week, 16 of 16 ranked, worst week 95.3% on time.
 - The trunk dispatcher before tonight's ideas, on 16 shared weeks: €9,810 a week. With them: about €12,500.
