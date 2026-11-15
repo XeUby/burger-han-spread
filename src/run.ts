@@ -83,6 +83,7 @@ export async function practice(client: Client, options: { level?: number; seed?:
   } finally {
     await writeFile(`runs/${world.id}.events.json`, JSON.stringify(events.sort((a, b) => a.seq - b.seq)))
     await writeFile(`runs/${world.id}.errors.json`, JSON.stringify(desk.failures, null, 2))
+    await writeFile(`runs/${world.id}.declines.json`, JSON.stringify(Object.fromEntries(desk.declines)))
     await writeFile(`runs/${world.id}.recoveries.json`, JSON.stringify(recoveries, null, 2))
   }
   const score = await retryReads(() => world.score())
