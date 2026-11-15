@@ -59,3 +59,12 @@ Played once on `bh-sunday-20261115-01` to `-16`, the weeks the v3 build played f
 `bh-sunday-20261115-17` to `-32`, each week played once by each build (the v3 build is the same code with `riskPenalty` 0): €11,668 a week against €11,337, +€331 (standard error €200), 12 up and 4 down; late orders 3.7% → 2.3%; worst week 95.2% against 92.8%. All 32 ranked.
 
 Over the 56 weeks played with both builds the risk pricing gains about €500 a week, and its worst week is 95% on time instead of 93%.
+
+## Also tried on top of risk pricing (eight weeks each)
+
+| Variant | Difference |
+| --- | ---: |
+| Cheaper opening (0.80), gentler early climb (1.05/1.2), lower last-hours fees | −€239, −€292, −€12 |
+| Trade-ins, private addresses, summer tyres | −€115, +€66, −€147 |
+| Pair with a waiting car after 120 or 240 minutes; hold 20 minutes for a partner | −€196, −€265, −€119 |
+| A week-level barrier: the penalty follows the expected late share of the cars won (5% or 6%), alone or with limits ×2.5 | −€242, −€103, −€37 |
