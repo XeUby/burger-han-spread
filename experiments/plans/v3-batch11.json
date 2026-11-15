@@ -1,0 +1,170 @@
+[
+ {
+  "label": "sdb0",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "sameDayBacklog": 0.001
+  }
+ },
+ {
+  "label": "sdb2",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "sameDayBacklog": 2
+  }
+ },
+ {
+  "label": "sdb8",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "sameDayBacklog": 8
+  }
+ },
+ {
+  "label": "sdb0",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "sameDayBacklog": 0.001
+  }
+ },
+ {
+  "label": "sdb2",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "sameDayBacklog": 2
+  }
+ },
+ {
+  "label": "sdb8",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "sameDayBacklog": 8
+  }
+ },
+ {
+  "label": "sdb0",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "sameDayBacklog": 0.001
+  }
+ },
+ {
+  "label": "sdb2",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "sameDayBacklog": 2
+  }
+ },
+ {
+  "label": "sdb8",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "sameDayBacklog": 8
+  }
+ },
+ {
+  "label": "sdb0",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "sameDayBacklog": 0.001
+  }
+ },
+ {
+  "label": "sdb2",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "sameDayBacklog": 2
+  }
+ },
+ {
+  "label": "sdb8",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "sameDayBacklog": 8
+  }
+ },
+ {
+  "label": "sdb0",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "sameDayBacklog": 0.001
+  }
+ },
+ {
+  "label": "sdb2",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "sameDayBacklog": 2
+  }
+ },
+ {
+  "label": "sdb8",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "sameDayBacklog": 8
+  }
+ },
+ {
+  "label": "sdb0",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "sameDayBacklog": 0.001
+  }
+ },
+ {
+  "label": "sdb2",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "sameDayBacklog": 2
+  }
+ },
+ {
+  "label": "sdb8",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "sameDayBacklog": 8
+  }
+ },
+ {
+  "label": "sdb0",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "sameDayBacklog": 0.001
+  }
+ },
+ {
+  "label": "sdb2",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "sameDayBacklog": 2
+  }
+ },
+ {
+  "label": "sdb8",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "sameDayBacklog": 8
+  }
+ },
+ {
+  "label": "sdb0",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "sameDayBacklog": 0.001
+  }
+ },
+ {
+  "label": "sdb2",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "sameDayBacklog": 2
+  }
+ },
+ {
+  "label": "sdb8",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "sameDayBacklog": 8
+  }
+ }
+]
