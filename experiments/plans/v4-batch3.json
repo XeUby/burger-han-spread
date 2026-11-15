@@ -1,0 +1,226 @@
+[
+ {
+  "label": "v4-rt1",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "riskTrust": 1
+  }
+ },
+ {
+  "label": "v4-rt3",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "riskTrust": 3
+  }
+ },
+ {
+  "label": "v4-slack150",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "minSlack": 150
+  }
+ },
+ {
+  "label": "v4-slack240",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "minSlack": 240
+  }
+ },
+ {
+  "label": "v4-rt1",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "riskTrust": 1
+  }
+ },
+ {
+  "label": "v4-rt3",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "riskTrust": 3
+  }
+ },
+ {
+  "label": "v4-slack150",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "minSlack": 150
+  }
+ },
+ {
+  "label": "v4-slack240",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "minSlack": 240
+  }
+ },
+ {
+  "label": "v4-rt1",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "riskTrust": 1
+  }
+ },
+ {
+  "label": "v4-rt3",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "riskTrust": 3
+  }
+ },
+ {
+  "label": "v4-slack150",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "minSlack": 150
+  }
+ },
+ {
+  "label": "v4-slack240",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "minSlack": 240
+  }
+ },
+ {
+  "label": "v4-rt1",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "riskTrust": 1
+  }
+ },
+ {
+  "label": "v4-rt3",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "riskTrust": 3
+  }
+ },
+ {
+  "label": "v4-slack150",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "minSlack": 150
+  }
+ },
+ {
+  "label": "v4-slack240",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "minSlack": 240
+  }
+ },
+ {
+  "label": "v4-rt1",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "riskTrust": 1
+  }
+ },
+ {
+  "label": "v4-rt3",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "riskTrust": 3
+  }
+ },
+ {
+  "label": "v4-slack150",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "minSlack": 150
+  }
+ },
+ {
+  "label": "v4-slack240",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "minSlack": 240
+  }
+ },
+ {
+  "label": "v4-rt1",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "riskTrust": 1
+  }
+ },
+ {
+  "label": "v4-rt3",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "riskTrust": 3
+  }
+ },
+ {
+  "label": "v4-slack150",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "minSlack": 150
+  }
+ },
+ {
+  "label": "v4-slack240",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "minSlack": 240
+  }
+ },
+ {
+  "label": "v4-rt1",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "riskTrust": 1
+  }
+ },
+ {
+  "label": "v4-rt3",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "riskTrust": 3
+  }
+ },
+ {
+  "label": "v4-slack150",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "minSlack": 150
+  }
+ },
+ {
+  "label": "v4-slack240",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "minSlack": 240
+  }
+ },
+ {
+  "label": "v4-rt1",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "riskTrust": 1
+  }
+ },
+ {
+  "label": "v4-rt3",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "riskTrust": 3
+  }
+ },
+ {
+  "label": "v4-slack150",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "minSlack": 150
+  }
+ },
+ {
+  "label": "v4-slack240",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "minSlack": 240
+  }
+ }
+]

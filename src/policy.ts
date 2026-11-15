@@ -74,6 +74,8 @@ export type Settings = {
   /** Price each option by its own risk: the cost adds P(late) × (the refund + riskPenalty euros); 0 is off. Options with P(late) over `maxLate` are not sold,
    * and the limits on open work are `riskGate` times wider. */
   riskPenalty: number; maxLate: number; riskGate: number
+  /** The penalty grows with the dealer's trust, which a late car halves: × (1 + riskTrust × trust / 25). And the least minutes to the last pickup an option needs. */
+  riskTrust: number; minSlack: number
   /** The fee, in full fees, a day and half a day before the last pickup, for a gig that no driver has taken. */
   climbDay: number; climbHalfDay: number
   /** What a route really costs against the dispatcher's estimate, for routes under 50 km, from 50 km to 100 km, and longer. */
@@ -83,7 +85,7 @@ export const defaults: Settings = {
   price: 1.42, fee: 1.05, payout: 0.85, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
   notes: true, noteSpelling: false, relist: false, openingOnly: true, adaptive: true, earlyOffers: false, safetySlack: false,
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, noteReader: true, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
-  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0, minKm: 0, longPayout: 0.85, bookMiss: 0, summerTyres: false, softLimits: 0, flatFee: 0, dueFee: 1.45, rescue2: 1.6, rescue1: 1.8, bundleKm: 30, bundleDiscount: 0.2, chainCars: 2, marketDayOrigin: 0, marketLane: 0, shortGate: 1, longGate: 1, trustGuard: 0, homeDrivers: 0, homeShare: 0.8, postAt: 0, riskPenalty: 100, maxLate: 0.3, riskGate: 2,
+  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0, minKm: 0, longPayout: 0.85, bookMiss: 0, summerTyres: false, softLimits: 0, flatFee: 0, dueFee: 1.45, rescue2: 1.6, rescue1: 1.8, bundleKm: 30, bundleDiscount: 0.2, chainCars: 2, marketDayOrigin: 0, marketLane: 0, shortGate: 1, longGate: 1, trustGuard: 0, homeDrivers: 0, homeShare: 0.8, postAt: 0, riskPenalty: 100, maxLate: 0.3, riskGate: 2, riskTrust: 0, minSlack: 0,
   earlyClimb: true,
 }
 
@@ -92,7 +94,7 @@ export function validateSettings(value: unknown): asserts value is Partial<Setti
   for (const [key, field] of Object.entries(value)) {
     if (!(key in defaults)) throw new Error(`Unknown setting: ${key}`)
     if (typeof defaults[key as keyof Settings] === "boolean") { if (typeof field !== "boolean") throw new Error(`${key} must be boolean`); continue }
-    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait", "sitAfter", "pairOpen", "pairQuote", "pairPatience", "minKm", "bookMiss", "softLimits", "flatFee", "marketDayOrigin", "marketLane", "trustGuard", "homeDrivers", "postAt", "riskPenalty"].includes(key))) throw new Error(`${key} must be a positive number`)
+    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait", "sitAfter", "pairOpen", "pairQuote", "pairPatience", "minKm", "bookMiss", "softLimits", "flatFee", "marketDayOrigin", "marketLane", "trustGuard", "homeDrivers", "postAt", "riskPenalty", "riskTrust", "minSlack"].includes(key))) throw new Error(`${key} must be a positive number`)
     if (key === "bundleWait" && (!Number.isInteger(field) || field > 30)) throw new Error("bundleWait must be an integer from 0 to 30")
     if ((key === "margin" || key === "capacity") && field >= 1) throw new Error(`${key} must be below 1`)
     if (key === "placePrior" && field > 2) throw new Error("placePrior must be at most 2")
@@ -224,7 +226,7 @@ export class Dispatcher extends Desk {
       const feasible = requestFeasibility(plan, option.deadline, this.network, this.settings)
       if (!feasible) continue
       const latest = feasible.latestPickupAt
-      const buffer = supply < 30 || road.km > 300 ? 300 : 210
+      const buffer = this.settings.minSlack > 0 ? this.settings.minSlack : supply < 30 || road.km > 300 ? 300 : 210
       if (latest < Math.max(this.now + buffer, leg.pickup.window.from + 120)) continue
       const hours = this.hoursFor(request)
       if (hours && !planTimedLeg(leg, hours, option.deadline, Math.max(this.now + buffer, leg.pickup.window.from + 120), this.network)) continue
@@ -237,7 +239,7 @@ export class Dispatcher extends Desk {
           friday: Math.floor(this.now / 1440) % 7 === 4, afternoon: this.now % 1440 >= 900, premium: leg.car.premium,
         })
         if (late > this.settings.maxLate) continue
-        risk[option.kind] = late * (REFUND_SHARE * option.listPriceCents * 1.45 + this.settings.riskPenalty * 100)
+        risk[option.kind] = late * (REFUND_SHARE * option.listPriceCents * 1.45 + this.settings.riskPenalty * 100 * (1 + this.settings.riskTrust * Math.min(25, this.trust.get(request.dealerId) ?? 0) / 25))
       }
       prices[option.kind] = price
     }
