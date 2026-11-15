@@ -14,7 +14,7 @@ import type { Readiness } from "./readiness.ts"
 import type { NoteRules } from "./notes.ts"
 import { PlaceDemandModel } from "./place-market.ts"
 import { DemandModel } from "./optimizer.ts"
-import { planBundles } from "./bundles.ts"
+import { extendBundle, planBundles } from "./bundles.ts"
 import { requestFeasibility } from "./admission.ts"
 import { priceMenu } from "./menu.ts"
 import { chooseHomeOffers } from "./home-offers.ts"
@@ -57,6 +57,8 @@ export type Settings = {
   dueFee: number; rescue2: number; rescue1: number
   /** Two cars in one gig: the most kilometres from the first delivery to the second pickup, and the largest discount on the two fees. */
   bundleKm: number; bundleDiscount: number
+  /** The most cars in one gig: two, or more by adding a car whose pickup is near the gig's last delivery. */
+  chainCars: number
   /** The fee, in full fees, a day and half a day before the last pickup, for a gig that no driver has taken. */
   climbDay: number; climbHalfDay: number
   /** What a route really costs against the dispatcher's estimate, for routes under 50 km, from 50 km to 100 km, and longer. */
@@ -66,7 +68,7 @@ export const defaults: Settings = {
   price: 1.42, fee: 1.05, payout: 0.85, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
   notes: true, noteSpelling: false, relist: false, openingOnly: true, adaptive: true, earlyOffers: false, safetySlack: false,
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, noteReader: true, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
-  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0, minKm: 0, longPayout: 0.85, bookMiss: 0, summerTyres: false, softLimits: 0, flatFee: 0, dueFee: 1.45, rescue2: 1.9, rescue1: 2.5, bundleKm: 30, bundleDiscount: 0.2,
+  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0, minKm: 0, longPayout: 0.85, bookMiss: 0, summerTyres: false, softLimits: 0, flatFee: 0, dueFee: 1.45, rescue2: 1.9, rescue1: 2.5, bundleKm: 30, bundleDiscount: 0.2, chainCars: 2,
   earlyClimb: true,
 }
 
@@ -517,7 +519,26 @@ export class Dispatcher extends Desk {
       candidates.push({ order, post: { ...post, schedule: this.feesFor(order, 1, false) }, noteSafe: this.noteRules(this.requests.get(order.id)).safe })
       waiting.push(gigId)
     }
-    const bundles = this.settings.bundlePairs ? planBundles(this.now, candidates, this.network, { maxConnectorKm: this.settings.bundleKm, maxDiscount: this.settings.bundleDiscount }).filter(bundle => bundle.indices.some(i => i < fresh)) : []
+    const limits = { maxConnectorKm: this.settings.bundleKm, maxDiscount: this.settings.bundleDiscount }
+    const bundles = this.settings.bundlePairs ? planBundles(this.now, candidates, this.network, limits).filter(bundle => bundle.indices.some(i => i < fresh)) : []
+    // A pair can take more cars: each time the car that saves most, whose pickup is near the gig's last delivery.
+    if (this.settings.chainCars > 2) {
+      const taken = new Set(bundles.flatMap(bundle => bundle.indices))
+      for (let b = 0; b < bundles.length; b++) {
+        while (bundles[b]!.indices.length < this.settings.chainCars) {
+          let best: { plan: ReturnType<typeof extendBundle>; index: number } | null = null
+          candidates.forEach((candidate, i) => {
+            if (taken.has(i)) return
+            const plan = extendBundle(this.now, bundles[b]!, candidate, this.network, limits)
+            if (plan && (!best || plan.feeSavingCents > best.plan!.feeSavingCents)) best = { plan, index: i }
+          })
+          if (!best) break
+          const chosen = best as { plan: NonNullable<ReturnType<typeof extendBundle>>; index: number }
+          bundles[b] = { ...chosen.plan, indices: [...bundles[b]!.indices, chosen.index] }
+          taken.add(chosen.index)
+        }
+      }
+    }
     const paired = new Set<number>()
     for (const bundle of bundles) {
       const old = bundle.indices.filter(i => i >= fresh).map(i => waiting[i - fresh]!)

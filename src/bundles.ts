@@ -11,8 +11,11 @@ export type BundleLimits = {
   maxDiscount?: number
 }
 export type BundlePlan = {
-  indices: [number, number]
-  orderIds: [string, string]
+  indices: number[]
+  orderIds: string[]
+  /** The stops' places with their windows, and the minutes between them: what a longer gig must fit. */
+  places: StopPlace[]
+  gaps: number[]
   post: PostAction
   drivingMinutes: number
   connectorKm: number
@@ -68,9 +71,9 @@ export function planBundles(now: number, candidates: readonly BundleCandidate[],
         if (feeSavingCents <= 0) continue
         // Explicit windows prevent the engine from silently extending an infeasible bundle.
         for (let k = 0; k < stops.length; k++) stops[k]!.window = { from: Math.max(places[k]!.window.from, dayStart), to: Math.min(places[k]!.window.to, dayEnd, k === 0 ? latest : Infinity) }
-        choices.push({ indices: [a, b], orderIds: [first.order.id, second.order.id], post: { type: "post", stops, audience: { experienced: first.post.audience.experienced || second.post.audience.experienced, manualLicence: first.post.audience.manualLicence || second.post.audience.manualLicence }, schedule }, drivingMinutes, connectorKm, latestPickupAt: latest, earliestDeliveryAt: earliest, savedWorkMinutes, feeSavingCents, discount })
+        choices.push({ indices: [a, b], orderIds: [first.order.id, second.order.id], places, gaps, post: { type: "post", stops, audience: { experienced: first.post.audience.experienced || second.post.audience.experienced, manualLicence: first.post.audience.manualLicence || second.post.audience.manualLicence }, schedule }, drivingMinutes, connectorKm, latestPickupAt: latest, earliestDeliveryAt: earliest, savedWorkMinutes, feeSavingCents, discount })
       }
-      choices.sort((a, b) => b.feeSavingCents - a.feeSavingCents || a.drivingMinutes - b.drivingMinutes || a.orderIds[0].localeCompare(b.orderIds[0]))
+      choices.sort((a, b) => b.feeSavingCents - a.feeSavingCents || a.drivingMinutes - b.drivingMinutes || a.orderIds[0]!.localeCompare(b.orderIds[0]!))
       if (choices[0]) pairs.push(choices[0])
     }
   }
@@ -156,7 +159,7 @@ function selectPairs(pairs: BundlePlan[]): BundlePlan[] {
       const remaining = mask & ~(1 << bit)
       let best = solve(remaining)
       for (const pair of adjacent.get(index)!) {
-        const other = positions.get(pair.indices[0] === index ? pair.indices[1] : pair.indices[0])!
+        const other = positions.get(pair.indices[0] === index ? pair.indices[1]! : pair.indices[0]!)!
         if (!(remaining & 1 << other)) continue
         const rest = solve(remaining & ~(1 << other)), value = rest.value + pair.feeSavingCents
         if (value > best.value) best = { value, chosen: [pair, ...rest.chosen] }
@@ -167,4 +170,43 @@ function selectPairs(pairs: BundlePlan[]): BundlePlan[] {
     selected.push(...solve((1 << component.length) - 1).chosen)
   }
   return selected
+}
+
+/** Adds one more car to a planned gig: its pickup near the gig's last delivery, on the same day, inside 12 hours of
+ * driving. The new car's fee falls by the gig's discount. Returns the longer gig, or null. */
+export function extendBundle(now: number, bundle: BundlePlan, next: BundleCandidate, network: Network, limits: BundleLimits = {}): BundlePlan | null {
+  const maxConnectorKm = limits.maxConnectorKm ?? 30
+  const bookingMinutes = limits.bookingMinutes ?? 90
+  const deadlineBuffer = limits.deadlineBufferMinutes ?? 30
+  if (!eligible(next, network) || bundle.orderIds.includes(next.order.id)) return null
+  const z = next.order.legs[0]!
+  const lastPlace = bundle.places.at(-1)!
+  if (network.km(lastPlace.placeId, z.pickup.placeId) > maxConnectorKm) return null
+  const driveZ = network.minutes(z.pickup.placeId, z.delivery.placeId)
+  const connector = network.minutes(lastPlace.placeId, z.pickup.placeId)
+  const drivingMinutes = bundle.drivingMinutes + connector + driveZ
+  if (drivingMinutes > 720) return null
+  const nextStops = next.post.stops.map(stop => ({ ...stop }))
+  const nextPlaces = [z.pickup, z.delivery].map((place, k) => {
+    const own = nextStops[k]!.window
+    return { ...place, window: { from: Math.max(place.window.from, own?.from ?? -Infinity), to: Math.min(place.window.to, own?.to ?? Infinity, next.order.deadline - deadlineBuffer, k === 0 ? next.order.lastPickupAt : Infinity) } }
+  })
+  const places = [...bundle.places, ...nextPlaces]
+  const gaps = [...bundle.gaps, Math.ceil(connector * 1.15) + 10, workMinutes(driveZ, nextStops[0]!)]
+  const timing = sameDayTiming(places, gaps, now + bookingMinutes)
+  if (!timing) return null
+  const { earliest, latest, dayStart, dayEnd } = timing
+  const opening = feeAt(next.post.schedule, now)
+  const nextFee = Math.round(opening * (1 - bundle.discount))
+  const stops = [...bundle.post.stops.map(stop => ({ ...stop })), ...nextStops]
+  for (let k = 0; k < stops.length; k++) stops[k]!.window = { from: Math.max(places[k]!.window.from, dayStart), to: Math.min(places[k]!.window.to, dayEnd, k === 0 ? latest : Infinity) }
+  const due = Math.max(now + 30, latest - 240)
+  const base = bundle.post.schedule[0]!.feeCents + nextFee
+  const schedule: FeeStep[] = [{ at: now, feeCents: base }, { at: due, feeCents: Math.round(base * 1.45) }, { at: Math.max(due + 30, latest - 120), feeCents: Math.round(base * 1.9) }, { at: Math.max(due + 60, latest - 60), feeCents: Math.round(base * 2.5) }]
+  return {
+    ...bundle,
+    orderIds: [...bundle.orderIds, next.order.id],
+    post: { type: "post", stops, audience: { experienced: bundle.post.audience.experienced || next.post.audience.experienced, manualLicence: bundle.post.audience.manualLicence || next.post.audience.manualLicence }, schedule },
+    drivingMinutes, latestPickupAt: latest, earliestDeliveryAt: earliest, feeSavingCents: bundle.feeSavingCents + opening - nextFee, places, gaps,
+  }
 }

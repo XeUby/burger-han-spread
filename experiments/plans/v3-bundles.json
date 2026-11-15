@@ -1,5 +1,117 @@
 [
  {
+  "label": "chain3",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "chainCars": 3
+  }
+ },
+ {
+  "label": "chain4",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "chainCars": 4
+  }
+ },
+ {
+  "label": "chain3",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "chainCars": 3
+  }
+ },
+ {
+  "label": "chain4",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "chainCars": 4
+  }
+ },
+ {
+  "label": "chain3",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "chainCars": 3
+  }
+ },
+ {
+  "label": "chain4",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "chainCars": 4
+  }
+ },
+ {
+  "label": "chain3",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "chainCars": 3
+  }
+ },
+ {
+  "label": "chain4",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "chainCars": 4
+  }
+ },
+ {
+  "label": "chain3",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "chainCars": 3
+  }
+ },
+ {
+  "label": "chain4",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "chainCars": 4
+  }
+ },
+ {
+  "label": "chain3",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "chainCars": 3
+  }
+ },
+ {
+  "label": "chain4",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "chainCars": 4
+  }
+ },
+ {
+  "label": "chain3",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "chainCars": 3
+  }
+ },
+ {
+  "label": "chain4",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "chainCars": 4
+  }
+ },
+ {
+  "label": "chain3",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "chainCars": 3
+  }
+ },
+ {
+  "label": "chain4",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "chainCars": 4
+  }
+ },
+ {
   "label": "bkm60",
   "seed": "bh-robust-20261114-03",
   "settings": {
