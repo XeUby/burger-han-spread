@@ -1,0 +1,226 @@
+[
+ {
+  "label": "md5",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "minDrivers": 5
+  }
+ },
+ {
+  "label": "md3",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "far1000",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "maxKm": 1000
+  }
+ },
+ {
+  "label": "tyres",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "md5",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "minDrivers": 5
+  }
+ },
+ {
+  "label": "md3",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "far1000",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "maxKm": 1000
+  }
+ },
+ {
+  "label": "tyres",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "md5",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "minDrivers": 5
+  }
+ },
+ {
+  "label": "md3",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "far1000",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "maxKm": 1000
+  }
+ },
+ {
+  "label": "tyres",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "md5",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "minDrivers": 5
+  }
+ },
+ {
+  "label": "md3",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "far1000",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "maxKm": 1000
+  }
+ },
+ {
+  "label": "tyres",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "md5",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "minDrivers": 5
+  }
+ },
+ {
+  "label": "md3",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "far1000",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "maxKm": 1000
+  }
+ },
+ {
+  "label": "tyres",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "md5",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "minDrivers": 5
+  }
+ },
+ {
+  "label": "md3",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "far1000",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "maxKm": 1000
+  }
+ },
+ {
+  "label": "tyres",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "md5",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "minDrivers": 5
+  }
+ },
+ {
+  "label": "md3",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "far1000",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "maxKm": 1000
+  }
+ },
+ {
+  "label": "tyres",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "md5",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "minDrivers": 5
+  }
+ },
+ {
+  "label": "md3",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "minDrivers": 3
+  }
+ },
+ {
+  "label": "far1000",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "maxKm": 1000
+  }
+ },
+ {
+  "label": "tyres",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "summerTyres": true
+  }
+ }
+]
