@@ -1,0 +1,305 @@
+[
+ {
+  "label": "v4ctl",
+  "seed": "bh-robust-20261114-03",
+  "settings": {}
+ },
+ {
+  "label": "v4ctl",
+  "seed": "bh-robust-20261114-06",
+  "settings": {}
+ },
+ {
+  "label": "v4ctl",
+  "seed": "bh-robust-20261114-09",
+  "settings": {}
+ },
+ {
+  "label": "v4-ml20",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "maxLate": 0.2
+  }
+ },
+ {
+  "label": "v4-ml40",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "maxLate": 0.4
+  }
+ },
+ {
+  "label": "v4-md4",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "minDrivers": 4
+  }
+ },
+ {
+  "label": "v4-far",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "maxKm": 1000
+  }
+ },
+ {
+  "label": "v4-md4-far",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "minDrivers": 4,
+   "maxKm": 1000
+  }
+ },
+ {
+  "label": "v4-ml20",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "maxLate": 0.2
+  }
+ },
+ {
+  "label": "v4-ml40",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "maxLate": 0.4
+  }
+ },
+ {
+  "label": "v4-md4",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "minDrivers": 4
+  }
+ },
+ {
+  "label": "v4-far",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "maxKm": 1000
+  }
+ },
+ {
+  "label": "v4-md4-far",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "minDrivers": 4,
+   "maxKm": 1000
+  }
+ },
+ {
+  "label": "v4-ml20",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "maxLate": 0.2
+  }
+ },
+ {
+  "label": "v4-ml40",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "maxLate": 0.4
+  }
+ },
+ {
+  "label": "v4-md4",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "minDrivers": 4
+  }
+ },
+ {
+  "label": "v4-far",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "maxKm": 1000
+  }
+ },
+ {
+  "label": "v4-md4-far",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "minDrivers": 4,
+   "maxKm": 1000
+  }
+ },
+ {
+  "label": "v4-ml20",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "maxLate": 0.2
+  }
+ },
+ {
+  "label": "v4-ml40",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "maxLate": 0.4
+  }
+ },
+ {
+  "label": "v4-md4",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "minDrivers": 4
+  }
+ },
+ {
+  "label": "v4-far",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "maxKm": 1000
+  }
+ },
+ {
+  "label": "v4-md4-far",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "minDrivers": 4,
+   "maxKm": 1000
+  }
+ },
+ {
+  "label": "v4-ml20",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "maxLate": 0.2
+  }
+ },
+ {
+  "label": "v4-ml40",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "maxLate": 0.4
+  }
+ },
+ {
+  "label": "v4-md4",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "minDrivers": 4
+  }
+ },
+ {
+  "label": "v4-far",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "maxKm": 1000
+  }
+ },
+ {
+  "label": "v4-md4-far",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "minDrivers": 4,
+   "maxKm": 1000
+  }
+ },
+ {
+  "label": "v4-ml20",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "maxLate": 0.2
+  }
+ },
+ {
+  "label": "v4-ml40",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "maxLate": 0.4
+  }
+ },
+ {
+  "label": "v4-md4",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "minDrivers": 4
+  }
+ },
+ {
+  "label": "v4-far",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "maxKm": 1000
+  }
+ },
+ {
+  "label": "v4-md4-far",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "minDrivers": 4,
+   "maxKm": 1000
+  }
+ },
+ {
+  "label": "v4-ml20",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "maxLate": 0.2
+  }
+ },
+ {
+  "label": "v4-ml40",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "maxLate": 0.4
+  }
+ },
+ {
+  "label": "v4-md4",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "minDrivers": 4
+  }
+ },
+ {
+  "label": "v4-far",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "maxKm": 1000
+  }
+ },
+ {
+  "label": "v4-md4-far",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "minDrivers": 4,
+   "maxKm": 1000
+  }
+ },
+ {
+  "label": "v4-ml20",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "maxLate": 0.2
+  }
+ },
+ {
+  "label": "v4-ml40",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "maxLate": 0.4
+  }
+ },
+ {
+  "label": "v4-md4",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "minDrivers": 4
+  }
+ },
+ {
+  "label": "v4-far",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "maxKm": 1000
+  }
+ },
+ {
+  "label": "v4-md4-far",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "minDrivers": 4,
+   "maxKm": 1000
+  }
+ }
+]
