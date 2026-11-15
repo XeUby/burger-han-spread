@@ -1,0 +1,234 @@
+[
+ {
+  "label": "mdo10",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "marketDayOrigin": 0.1
+  }
+ },
+ {
+  "label": "mdo20",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "marketDayOrigin": 0.2
+  }
+ },
+ {
+  "label": "lane05",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "marketLane": 0.05
+  }
+ },
+ {
+  "label": "mdo10-lane05",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "marketDayOrigin": 0.1,
+   "marketLane": 0.05
+  }
+ },
+ {
+  "label": "mdo10",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "marketDayOrigin": 0.1
+  }
+ },
+ {
+  "label": "mdo20",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "marketDayOrigin": 0.2
+  }
+ },
+ {
+  "label": "lane05",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "marketLane": 0.05
+  }
+ },
+ {
+  "label": "mdo10-lane05",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "marketDayOrigin": 0.1,
+   "marketLane": 0.05
+  }
+ },
+ {
+  "label": "mdo10",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "marketDayOrigin": 0.1
+  }
+ },
+ {
+  "label": "mdo20",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "marketDayOrigin": 0.2
+  }
+ },
+ {
+  "label": "lane05",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "marketLane": 0.05
+  }
+ },
+ {
+  "label": "mdo10-lane05",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "marketDayOrigin": 0.1,
+   "marketLane": 0.05
+  }
+ },
+ {
+  "label": "mdo10",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "marketDayOrigin": 0.1
+  }
+ },
+ {
+  "label": "mdo20",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "marketDayOrigin": 0.2
+  }
+ },
+ {
+  "label": "lane05",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "marketLane": 0.05
+  }
+ },
+ {
+  "label": "mdo10-lane05",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "marketDayOrigin": 0.1,
+   "marketLane": 0.05
+  }
+ },
+ {
+  "label": "mdo10",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "marketDayOrigin": 0.1
+  }
+ },
+ {
+  "label": "mdo20",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "marketDayOrigin": 0.2
+  }
+ },
+ {
+  "label": "lane05",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "marketLane": 0.05
+  }
+ },
+ {
+  "label": "mdo10-lane05",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "marketDayOrigin": 0.1,
+   "marketLane": 0.05
+  }
+ },
+ {
+  "label": "mdo10",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "marketDayOrigin": 0.1
+  }
+ },
+ {
+  "label": "mdo20",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "marketDayOrigin": 0.2
+  }
+ },
+ {
+  "label": "lane05",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "marketLane": 0.05
+  }
+ },
+ {
+  "label": "mdo10-lane05",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "marketDayOrigin": 0.1,
+   "marketLane": 0.05
+  }
+ },
+ {
+  "label": "mdo10",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "marketDayOrigin": 0.1
+  }
+ },
+ {
+  "label": "mdo20",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "marketDayOrigin": 0.2
+  }
+ },
+ {
+  "label": "lane05",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "marketLane": 0.05
+  }
+ },
+ {
+  "label": "mdo10-lane05",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "marketDayOrigin": 0.1,
+   "marketLane": 0.05
+  }
+ },
+ {
+  "label": "mdo10",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "marketDayOrigin": 0.1
+  }
+ },
+ {
+  "label": "mdo20",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "marketDayOrigin": 0.2
+  }
+ },
+ {
+  "label": "lane05",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "marketLane": 0.05
+  }
+ },
+ {
+  "label": "mdo10-lane05",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "marketDayOrigin": 0.1,
+   "marketLane": 0.05
+  }
+ }
+]

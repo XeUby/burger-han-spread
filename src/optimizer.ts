@@ -1,7 +1,7 @@
 export type MarketFeatures = { day: number; origin: string; destination: string; dealer: string; km: number }
 export type PriceInputs = { costCents: number; listPriceCents: number; trust: number; minPrice?: number; maxPrice?: number }
 export type PriceChoice = { priceCents: number; probability: number; expectedProfitCents: number; ratio: number }
-export type DemandSettings = { threshold: number; slope: number }
+export type DemandSettings = { threshold: number; slope: number; dayOrigin?: number; lane?: number }
 
 /** Learns acceptance thresholds from quotes, with separate effects for each day and market. */
 export class DemandModel {
@@ -60,6 +60,9 @@ export class DemandModel {
       [this.key(`destination:${features.destination}`, 0.06), 1],
       [this.key(`dealer:${features.dealer}`, 0.04), 1],
       [this.key("distance", 0.04), distance],
+      // One day each week the competitor is down in one region, and cars leaving it fetch more: a level per day and pickup town.
+      ...(this.settings.dayOrigin ? [[this.key(`day-origin:${features.day}:${features.origin}`, this.settings.dayOrigin), 1] as [number, number]] : []),
+      ...(this.settings.lane ? [[this.key(`lane:${features.origin}:${features.destination}`, this.settings.lane), 1] as [number, number]] : []),
     ]
   }
 
