@@ -67,6 +67,9 @@ export type Settings = {
   trustGuard: number
   /** Right after posting, offer a single car to up to this many drivers who live near its delivery, at `homeShare` of the public fee; 0 for none. */
   homeDrivers: number; homeShare: number
+  /** Post a single car whose pickup starts on a later day at this minute of that day (420 = 07:00), when its last pickup leaves time; 0 posts at once.
+   * A driver hears of each order once, and books a later day only when they know they work then. */
+  postAt: number
   /** The fee, in full fees, a day and half a day before the last pickup, for a gig that no driver has taken. */
   climbDay: number; climbHalfDay: number
   /** What a route really costs against the dispatcher's estimate, for routes under 50 km, from 50 km to 100 km, and longer. */
@@ -76,7 +79,7 @@ export const defaults: Settings = {
   price: 1.42, fee: 1.05, payout: 0.85, margin: 0.1, capacity: 0.35, maxKm: 700, minDrivers: 8,
   notes: true, noteSpelling: false, relist: false, openingOnly: true, adaptive: true, earlyOffers: false, safetySlack: false,
   auction: false, allowPrivate: false, tradeIns: false, homeOffers: false, readiness: false, bundlePairs: true, timedNotes: false, noteReader: true, lateRescue: true, sameDayPremium: 1, laterDiscount: 1, placePrior: 0, bundleWait: 15,
-  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0, minKm: 0, longPayout: 0.85, bookMiss: 0, summerTyres: false, softLimits: 0, flatFee: 0, dueFee: 1.45, rescue2: 1.6, rescue1: 1.8, bundleKm: 30, bundleDiscount: 0.2, chainCars: 2, marketDayOrigin: 0, marketLane: 0, shortGate: 1, longGate: 1, trustGuard: 0, homeDrivers: 0, homeShare: 0.8,
+  backlog: 0.08, priceFloor: 0, costRatio: 1.15, trustStep: 0.01, sameDayBacklog: 4, demandSlope: 14, shortCost: 1, middleCost: 1, longCost: 1, climbDay: 1.1, climbHalfDay: 1.25, lateRepost: true, lateFee: 1, sitAfter: 0, sitFee: 1, pairOpen: 180, pairQuote: 0, pairPatience: 0, minKm: 0, longPayout: 0.85, bookMiss: 0, summerTyres: false, softLimits: 0, flatFee: 0, dueFee: 1.45, rescue2: 1.6, rescue1: 1.8, bundleKm: 30, bundleDiscount: 0.2, chainCars: 2, marketDayOrigin: 0, marketLane: 0, shortGate: 1, longGate: 1, trustGuard: 0, homeDrivers: 0, homeShare: 0.8, postAt: 0,
   earlyClimb: true,
 }
 
@@ -85,7 +88,7 @@ export function validateSettings(value: unknown): asserts value is Partial<Setti
   for (const [key, field] of Object.entries(value)) {
     if (!(key in defaults)) throw new Error(`Unknown setting: ${key}`)
     if (typeof defaults[key as keyof Settings] === "boolean") { if (typeof field !== "boolean") throw new Error(`${key} must be boolean`); continue }
-    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait", "sitAfter", "pairOpen", "pairQuote", "pairPatience", "minKm", "bookMiss", "softLimits", "flatFee", "marketDayOrigin", "marketLane", "trustGuard", "homeDrivers"].includes(key))) throw new Error(`${key} must be a positive number`)
+    if (typeof field !== "number" || !Number.isFinite(field) || field < 0 || (field === 0 && !["margin", "priceFloor", "trustStep", "placePrior", "bundleWait", "sitAfter", "pairOpen", "pairQuote", "pairPatience", "minKm", "bookMiss", "softLimits", "flatFee", "marketDayOrigin", "marketLane", "trustGuard", "homeDrivers", "postAt"].includes(key))) throw new Error(`${key} must be a positive number`)
     if (key === "bundleWait" && (!Number.isInteger(field) || field > 30)) throw new Error("bundleWait must be an integer from 0 to 30")
     if ((key === "margin" || key === "capacity") && field >= 1) throw new Error(`${key} must be below 1`)
     if (key === "placePrior" && field > 2) throw new Error("placePrior must be at most 2")
@@ -102,6 +105,8 @@ export class Dispatcher extends Desk {
   lateReposts = new Map<string, number>()
   /** Gigs already offered to drivers who live near the delivery. */
   homeOffered = new Set<string>()
+  /** Single cars waiting for the morning of their pickup day: order id -> when to post, and the post. */
+  morning = new Map<string, { at: number; post: PostAction }>()
   /** Request or order id -> the waiting order that its car can ride with. */
   partners = new Map<string, string>()
   /** Orders whose two-car gig found no driver in time: they go alone from now on. */
@@ -563,17 +568,25 @@ export class Dispatcher extends Desk {
       for (const i of bundle.indices) paired.add(i)
       this.outbox.push(bundle.post)
     }
-    this.outbox.push(...candidates.slice(0, fresh).filter((_, i) => !paired.has(i)).map(candidate => ({ ...candidate.post, schedule: this.payoutSchedule(candidate.post.schedule, true, candidate.order) })))
+    for (const candidate of candidates.slice(0, fresh).filter((_, i) => !paired.has(i))) {
+      const post = { ...candidate.post, schedule: this.payoutSchedule(candidate.post.schedule, true, candidate.order) }
+      const at = this.morningFor(candidate.order)
+      if (at !== null) this.morning.set(candidate.order.id, { at, post })
+      else this.outbox.push(post)
+    }
   }
 
   override async sendPostOf(orderId: string): Promise<void> {
     const item = this.held.get(orderId)
     if (item) { this.held.delete(orderId); this.outbox.push({ ...item.post, schedule: this.payoutSchedule(item.post.schedule, true, this.orders.get(orderId)) }) }
+    const waiting = this.morning.get(orderId)
+    if (waiting) { this.morning.delete(orderId); this.outbox.push(waiting.post) }
     await super.sendPostOf(orderId)
   }
 
   override async change(order: Order): Promise<void> {
     this.held.delete(order.id)
+    this.morning.delete(order.id)
     await super.change(order)
   }
 
@@ -693,6 +706,13 @@ export class Dispatcher extends Desk {
 
   async tick(): Promise<void> {
     if (this.resync) await this.relearnGigs()
+    for (const [id, item] of this.morning) {
+      if (item.at > this.now && this.orders.has(id) && !this.urgent.has(id)) continue
+      this.morning.delete(id)
+      const order = this.orders.get(id)
+      // Fees again from now: the schedule's steps must start at the posting.
+      if (order && order.status !== "cancelled") this.outbox.push({ ...item.post, schedule: this.feesFor(order, 1) })
+    }
     if (this.settings.pairPatience > 0) await this.splitWaitingPairs()
     await this.flushBundles()
     const ready = [...this.deferred.values()].filter(request => request.respondBy <= this.now + 5)
@@ -703,7 +723,7 @@ export class Dispatcher extends Desk {
     }
     for (const order of this.orders.values()) {
       if (order.status === "delivered" || order.status === "cancelled") continue
-      const missing = order.legs.map((_, leg) => leg).filter(leg => order.deliveredAt[leg] === null && !this.held.has(order.id) && !this.legGigs.get(order.id)?.has(leg) && !this.outbox.some(a => a.type === "post" && a.stops.some(s => s.orderId === order.id && s.leg === leg)))
+      const missing = order.legs.map((_, leg) => leg).filter(leg => order.deliveredAt[leg] === null && !this.held.has(order.id) && !this.morning.has(order.id) && !this.legGigs.get(order.id)?.has(leg) && !this.outbox.some(a => a.type === "post" && a.stops.some(s => s.orderId === order.id && s.leg === leg)))
       if (missing.length) await this.post(order, missing)
       for (const gigId of this.gigsOf(order.id)) {
         if (this.booked.has(gigId)) continue
@@ -772,6 +792,16 @@ export class Dispatcher extends Desk {
       this.postedAt.set(gig.id, gig.postedAt)
       console.error(JSON.stringify({ at: this.now, relearned: gig.id, orders: [...new Set(gig.stops.map(stop => stop.orderId))] }))
     }
+  }
+
+  /** When to post a single car whose pickup starts on a later day: that day at `postAt`, if its last pickup is at least eight hours later. */
+  morningFor(order: Order): number | null {
+    if (!this.settings.postAt || order.legs.length !== 1) return null
+    const from = order.legs[0]!.pickup.window.from
+    const day = Math.floor(from / 1440)
+    if (day <= Math.floor(this.now / 1440)) return null
+    const at = Math.max(from - 120, day * 1440 + this.settings.postAt)
+    return this.pickupBy(order) - at >= 480 ? at : null
   }
 
   /** A driver who lives near the delivery needs no trip home, so the car costs them less: offer it to them first, below the
