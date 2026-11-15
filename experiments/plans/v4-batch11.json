@@ -1,0 +1,170 @@
+[
+ {
+  "label": "v4-trade",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "tradeIns": true
+  }
+ },
+ {
+  "label": "v4-private",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "allowPrivate": true
+  }
+ },
+ {
+  "label": "v4-tyres",
+  "seed": "bh-robust-20261114-03",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "v4-trade",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "tradeIns": true
+  }
+ },
+ {
+  "label": "v4-private",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "allowPrivate": true
+  }
+ },
+ {
+  "label": "v4-tyres",
+  "seed": "bh-robust-20261114-06",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "v4-trade",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "tradeIns": true
+  }
+ },
+ {
+  "label": "v4-private",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "allowPrivate": true
+  }
+ },
+ {
+  "label": "v4-tyres",
+  "seed": "bh-robust-20261114-09",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "v4-trade",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "tradeIns": true
+  }
+ },
+ {
+  "label": "v4-private",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "allowPrivate": true
+  }
+ },
+ {
+  "label": "v4-tyres",
+  "seed": "bh-robust-20261114-20",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "v4-trade",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "tradeIns": true
+  }
+ },
+ {
+  "label": "v4-private",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "allowPrivate": true
+  }
+ },
+ {
+  "label": "v4-tyres",
+  "seed": "bh-unseen1-20261114-01",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "v4-trade",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "tradeIns": true
+  }
+ },
+ {
+  "label": "v4-private",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "allowPrivate": true
+  }
+ },
+ {
+  "label": "v4-tyres",
+  "seed": "bh-unseen1-20261114-02",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "v4-trade",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "tradeIns": true
+  }
+ },
+ {
+  "label": "v4-private",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "allowPrivate": true
+  }
+ },
+ {
+  "label": "v4-tyres",
+  "seed": "bh-unseen1-20261114-03",
+  "settings": {
+   "summerTyres": true
+  }
+ },
+ {
+  "label": "v4-trade",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "tradeIns": true
+  }
+ },
+ {
+  "label": "v4-private",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "allowPrivate": true
+  }
+ },
+ {
+  "label": "v4-tyres",
+  "seed": "bh-unseen1-20261114-04",
+  "settings": {
+   "summerTyres": true
+  }
+ }
+]
